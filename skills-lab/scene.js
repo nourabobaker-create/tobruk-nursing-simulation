@@ -102,22 +102,23 @@ export class Room {
   ellipsoid(f,[0,0,-.50],[.205,.12,.295],scrub,trans);ellipsoid(f,[0,-.005,-.16],[.17,.112,.16],scrub,trans);ellipsoid(f,[0,-.005,.035],[.18,.117,.15],scrub,trans);
   cylinder(f,[0,0,-.77],[0,.008,-.93],.065,.063,skin,12,trans);
   // Head rotates independently at the neck for prone face clearance.
-  let hr=-Math.min(1,s.head/70)*Math.PI/2;const headT=p=>{let x=p[0],y=p[1]-.022;return trans([x*Math.cos(hr)-y*Math.sin(hr),.022+x*Math.sin(hr)+y*Math.cos(hr),p[2]]);};
+  let hr=-Math.min(1,s.head/70)*Math.PI/2;const headT=p=>{let x=p[0],y=p[1]-.022;const v=trans([x*Math.cos(hr)-y*Math.sin(hr),.022+x*Math.sin(hr)+y*Math.cos(hr),p[2]]);v[1]+=.075;return v;};
   ellipsoid(f,[0,.015,-1.034],[.098,.105,.13],flash('head'),headT);ellipsoid(f,[0,-.025,-1.067],[.101,.075,.101],'#3c3933',headT);
   ellipsoid(f,[0,.074,-.977],[.066,.061,.051],skin,headT);ellipsoid(f,[0,.123,-1.009],[.02,.034,.047],'#c49170',headT);
   for(let x of [-.039,.039]){ellipsoid(f,[x,.104,-1.044],[.023,.006,.012],'#d8c8ad',headT);ellipsoid(f,[x,.110,-1.044],[.012,.004,.006],'#263a3b',headT);cylinder(f,[x-.023,.111,-1.063],[x+.019,.111,-1.066],.004,.004,'#564638',6,headT);}
   cylinder(f,[-.025,.115,-.960],[.025,.115,-.960],.004,.004,'#865348',8,headT);for(let x of [-.102,.102])ellipsoid(f,[x,.015,-1.033],[.018,.029,.034],skin,headT);
   // Arms: far arm folds across chest; near arm remains outside the trunk.
-  const a=clamp(s.farArm/82,0,1),n=clamp(s.nearArm/88,0,1);const fs=[.204,0,-.692],fe=lerp([.26,-.035,-.37],[.26,.12,-.51],a),fw=lerp([.24,-.03,-.10],[-.07,.19,-.62],a);
-  const ns=[-.204,0,-.692],ne=lerp([-.10,-.11,-.4],[-.285,.015,-.44],n),nw=lerp([-.03,-.12,-.15],[-.31,.035,-.19],n);
+  const a=clamp(s.farArm/82,0,1),n=clamp(s.nearArm/88,0,1),side=Math.sin(roll);const fs=[.204,0,-.692],fe=lerp([.26,-.035,-.37],[.26,.12,-.51],a),fw=lerp([.24,-.03,-.10],[-.07+(s.supports.arm?.14*side:0),.19,-.62],a);
+  const ns=[-.204,0,-.692],ne=lerp(lerp([-.10,-.11,-.4],[-.285,.015,-.44],n),[-.14,.27,-.54],side*n),nw=lerp(lerp([-.03,-.12,-.15],[-.31,.035,-.19],n),[-.16,.43,-.37],side*n);
   const arm=(shoulder,elbow,wrist,color)=>{cylinder(f,shoulder,lerp(shoulder,elbow,.4),.069,.058,scrub,12,trans);limb(f,lerp(shoulder,elbow,.33),elbow,wrist,.047,color,trans);ellipsoid(f,add(wrist,[0,.006,.052]),[.038,.025,.065],color,trans);for(let i=0;i<4;i++)cylinder(f,add(wrist,[-.024+i*.015,.014,.06]),add(wrist,[-.024+i*.015,.009,.1]),.007,.006,color,6,trans);};
   arm(fs,fe,fw,flash('farArm'));arm(ns,ne,nw,flash('nearArm'));
   const k=clamp(s.leg/80,0,1),fk=s.scenario==='slide'?lerp([.21,-.015,.52],[.11,-.015,.52],k):lerp([.125,-.018,.52],[-.05,.18,.48],k),ff=s.scenario==='slide'?lerp([.25,-.025,.95],[.11,-.025,.95],k):lerp([.13,-.025,.94],[-.16,.04,.85],k);const nk=[-.12,-.018,.51],nf=[-.12,-.025,.96];
+  if(s.supports.leg&&s.scenario==='side'){fk[0]+=.14;ff[0]+=.2;}
   for(let [hip,knee,foot,color] of [[[.105,0,.09],fk,ff,flash('leg')],[[-.105,0,.09],nk,nf,skin]]){cylinder(f,hip,lerp(hip,knee,.38),.087,.08,scrub,12,trans);limb(f,lerp(hip,knee,.30),knee,foot,.067,color,trans);ellipsoid(f,add(foot,[0,.026,.07]),[.043,.07,.09],color,trans);}
   // Gown seam and modest lower-body coverage move with torso.
   cylinder(f,[0,.123,-.7],[0,.128,-.1],.002,.002,'#8ba7b4',6,trans);
-  if(s.supports.arm)ellipsoid(f,[-.25,bed+.2,-.5],[.26,.11,.22],'#f2ebd8');
-  if(s.supports.leg)ellipsoid(f,s.scenario==='prone'?[slide,bed+.09,.88]:[-.06,bed+.17,.5],s.scenario==='prone'?[.29,.07,.16]:[.23,.10,.28],'#f2ebd8');
+  if(s.supports.arm)ellipsoid(f,[-.25,bed+.15,-.5],[.26,.085,.22],'#f2ebd8');
+  if(s.supports.leg)ellipsoid(f,s.scenario==='prone'?[slide,bed+.06,.88]:[-.13,bed+.17,.67],s.scenario==='prone'?[.29,.05,.16]:[.21,.09,.42],'#f2ebd8');
   if(s.supports.back)ellipsoid(f,[.21,bed+.20,-.35],[.13,.2,.4],'#e7e0ce');
   this.parts={farArm:trans(fw),nearArm:trans(nw),leg:trans(fk),head:headT([0,.1,-1.04]),body:trans([0,.14,-.35]),support_arm:[-.38,bed+.22,-.53],support_leg:[-.15,bed+.2,.6],support_back:[.3,bed+.21,-.2]};
  }

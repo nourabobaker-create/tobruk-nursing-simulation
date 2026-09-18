@@ -110,7 +110,7 @@ export class Simulation {
   if(s.scenario==='prone'&&s.progress>=.5&&(s.head<65||s.nearArm<90)){s.flash='head';return this.event('safety','prone',msg.prone,'R19/R20');}
   s.progress=v;s.contact=true;s.post=false;
   if(v===.5&&s.scenario!=='side'&&!s.pauseChecked){s.count=0;s.grip='none';return this.result('pause',s.scenario==='prone'?msg.prone:msg.slide,s.scenario==='prone'?'R20':'R21');}
-  if(v>=1){s.count=0;return this.result('movement',pair('The coordinated movement is complete. Inspect the new posture, place supports and reassess comfort.','اكتملت الحركة المنسقة. افحص الوضع الجديد، وضع الدعامات وأعد تقييم الراحة.'),'S5/S6 movement steps');}
+  if(v>=1){s.count=0;s.grip='none';return this.result('movement',pair('The coordinated movement is complete. Inspect the new posture, place supports and reassess comfort.','اكتملت الحركة المنسقة. افحص الوضع الجديد، وضع الدعامات وأعد تقييم الراحة.'),'S5/S6 movement steps');}
   return this.event('incomplete','movement',pair('A controlled part of the movement is complete. Continue the handle without jerking; release whenever you need to pause.','اكتمل جزء مضبوط من الحركة. تابع المقبض دون نفض؛ اتركه عندما تحتاج إلى التوقف.'),'S5/S6 movement steps');
  }
  if(action==='checkPause'){
@@ -138,6 +138,6 @@ export class Simulation {
  return this.event('unnecessary',action,pair('That action does not apply to this task.','هذا الإجراء لا ينطبق على المهمة الحالية.'));
  }
  omissions(){let s=this.s;const done={...s,arm:s.farArm>=75&&s.nearArm>=70,leg:s.leg>=70,movement:s.progress>=1,supports:this.allSupports(),lower:s.height<=40};return Object.keys(required).filter(k=>!done[k]);}
- hint(){const s=this.s;if(!s.talk)return 'patient';if(!s.assess)return 'patient';if(!s.hygiene)return 'sink';if(!s.privacy)return 'curtain';if(!s.brakes||!s.rail||s.height<55)return 'bed';if(!s.helper||!s.sheet)return 'sheet';if(s.farArm<75)return 'farArm';if(s.nearArm<70)return 'nearArm';if(s.leg<70)return 'leg';if(!this.isReadyStance())return 'stance';if(s.progress===.5&&!s.pauseChecked)return s.scenario==='prone'?'head':'body';if(s.progress<1)return 'body';if(!this.allSupports())return s.held?'support_'+this.supportKeys().find(k=>!s.supports[k]):'pillows';if(!s.comfort)return 'patient';if(s.height>40)return 'bed';if(!s.bell)return 'bell';if(!s.post)return 'sink';return 'finish';}
+ hint(){const s=this.s;if(s.progress>=1){if(!this.allSupports())return s.held?'support_'+this.supportKeys().find(k=>!s.supports[k]):'pillows';if(!s.comfort)return 'patient';if(s.height>40)return 'bed';if(!s.bell)return 'bell';if(!s.post)return 'sink';return 'finish';}if(!s.talk)return 'patient';if(!s.assess)return 'patient';if(!s.hygiene)return 'sink';if(!s.privacy)return 'curtain';if(!s.brakes||!s.rail||s.height<55||s.height>85)return 'bed';if(!s.helper||!s.sheet)return 'sheet';if(s.farArm<75)return 'farArm';if(s.nearArm<70)return 'nearArm';if(s.leg<70)return 'leg';if(!this.isReadyStance())return 'stance';if(s.progress===.5&&!s.pauseChecked){if(s.scenario==='prone'&&s.nearArm<90)return 'nearArm';if(s.scenario==='prone'&&s.head<65)return 'head';return 'body';}return 'body';}
  export(){return {version:VERSION,scenario:this.s.scenario,mode:this.s.mode,attempt:this.s.attempt,completed:this.s.complete,omitted:this.omissions().map(k=>({key:k,label:required[k],why:omissionReasons[k]})),assisted:this.s.assisted,events:this.s.log};}
 }
