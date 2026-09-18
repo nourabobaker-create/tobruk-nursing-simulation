@@ -11,7 +11,7 @@ header{display:flex;align-items:center;gap:12px;padding:10px 16px;background:#ff
 .btn{border:1px solid var(--line);background:#fff;border-radius:11px;padding:9px 12px;font-weight:700;cursor:pointer}.btn.green{background:var(--g);color:#fff;border-color:var(--g)}.btn.soft{background:var(--mint);color:var(--g)}
 main{max-width:1480px;margin:auto;padding:14px;display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:14px}
 .card{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden}.bar{padding:11px 13px;display:flex;gap:8px;justify-content:space-between;align-items:center;flex-wrap:wrap;border-bottom:1px solid var(--line)}
-.pill{background:var(--mint);color:var(--g);padding:6px 9px;border-radius:999px;font-size:12px;font-weight:800}.pill.gray{background:#f1f4f3;color:#52645e}
+.pill{background:var(--mint);color:var(--g);padding:6px 9px;border-radius:999px;font-size:12px;font-weight:800}.pill.gray{background:#f1f4f3;color:#52645e}.coachline{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:10px 13px;background:#f8fbfa;border-bottom:1px solid var(--line);font-size:12px;flex-wrap:wrap}.coachline b{color:var(--g)}.coachline .why{color:var(--muted);max-width:720px}.sequence-list{display:grid;gap:8px;margin:12px 0}.sequence-item{display:flex;gap:10px;align-items:flex-start;padding:10px;border:1px solid var(--line);border-radius:12px;background:#fbfdfc}.sequence-num{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--mint);color:var(--g);font-weight:900;flex:0 0 auto}.sequence-item.done{background:#edf9f4;border-color:#9fd4c3}.sequence-item.missing{background:#fff8e8;border-color:#e8cf92}.sequence-item small{display:block;color:var(--muted);margin-top:2px}
 .room{position:relative;min-height:520px;background:linear-gradient(#edf5f2 0 62%,#cbb995 62%);overflow:hidden}.room svg{width:100%;height:100%;display:block;position:absolute;inset:0}
 .hot{position:absolute;transform:translate(-50%,-50%);border:0;border-radius:999px;min-width:48px;min-height:48px;padding:8px 10px;background:rgba(11,107,79,.94);color:#fff;font-weight:800;cursor:pointer;box-shadow:0 5px 16px rgba(0,0,0,.22)}.hot small{display:block;font-size:10px;font-weight:600}.hot:hover{background:#084f3b}
 #hPatient{left:58%;top:49%}#hNurse{left:28%;top:51%}#hMonitor{left:78%;top:31%}#hIV{left:89%;top:37%}#hChart{left:14%;top:68%}#hMed{left:84%;top:72%}
@@ -41,7 +41,7 @@ textarea{width:100%;min-height:150px;border:1px solid var(--line);border-radius:
 
 <main>
 <section class="card">
-<div class="bar"><div><span class="pill" id="scenarioText">Pain Assessment</span> <span class="pill gray">Khaled Salem • 58 • Bed 3</span></div><b id="missionText">Assess safely, act, document, reassess.</b></div>
+<div class="bar"><div><span class="pill" id="scenarioText">Pain Assessment</span> <span class="pill gray">Khaled Salem • 58 • Bed 3</span></div><b id="missionText">Assess safely, act, document, reassess.</b></div><div class="coachline"><div>🧭 <b id="coachLabel">Recommended next:</b> <span id="nextStep">Introduce & verify identity</span></div><span class="why" id="coachWhy">Start with the patient before using patient-specific data or treatment.</span></div>
 <div class="room">
 <svg viewBox="0 0 1200 650" preserveAspectRatio="xMidYMid slice">
 <defs><linearGradient id="w" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#edf5f2"/><stop offset="1" stop-color="#d5e4df"/></linearGradient><linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#eaf8f3"/><stop offset="1" stop-color="#add4c6"/></linearGradient></defs>
@@ -59,7 +59,7 @@ textarea{width:100%;min-height:150px;border:1px solid var(--line);border-radius:
 <button class="hot" id="hPatient" data-open="pain">👨🏻<small>Patient</small></button><button class="hot" id="hNurse" data-open="intro">👨‍⚕️<small>Nurse</small></button><button class="hot" id="hMonitor" data-open="vitals">♥<small>Monitor</small></button><button class="hot" id="hIV" data-open="iv">💧<small>IV</small></button><button class="hot" id="hChart" data-open="chart">📋<small>Chart</small></button><button class="hot" id="hMed" data-open="intervene">💊<small>Meds</small></button>
 </div>
 <div class="dock">
-<button class="task" data-open="intro" data-step="intro"><span>👋</span><i>Introduce & ID</i></button><button class="task" data-open="pain" data-step="pain"><span>🗣️</span><i>Assess Pain</i></button><button class="task" data-open="vitals" data-step="vitals"><span>🩺</span><i>Vital Signs</i></button><button class="task" data-open="chart" data-step="chart"><span>📋</span><i>Review Chart</i></button><button class="task" data-open="intervene" data-step="intervene"><span>💊</span><i>Intervene</i></button><button class="task" data-open="document" data-step="document"><span>✍️</span><i>Document</i></button><button class="task" data-open="reassess" data-step="reassess"><span>🔁</span><i>Reassess</i></button>
+<button class="task" data-open="intro" data-step="intro"><span>👋</span><i>Introduce & ID</i></button><button class="task" data-open="pain" data-step="pain"><span>🗣️</span><i>Assess Pain</i></button><button class="task" data-open="vitals" data-step="vitals"><span>🩺</span><i>Vital Signs</i></button><button class="task" data-open="chart" data-step="chart"><span>📋</span><i>Review Chart</i></button><button class="task" data-open="intervene" data-step="intervene"><span>💊</span><i>Intervene</i></button><button class="task" data-open="reassess" data-step="reassess"><span>🔁</span><i>Reassess</i></button><button class="task" data-open="document" data-step="document"><span>✍️</span><i>Document</i></button>
 </div>
 </section>
 
@@ -80,7 +80,32 @@ var app=document.getElementById('app'),overlay=document.getElementById('overlay'
 function tt(en,ar){return lang==='ar'?ar:en}
 function mark(k){if(!state[k]){state[k]=true;score+=10}update()}
 function penalize(n){score=Math.max(0,score-n);update()}
-function openBox(k){overlay.classList.add('open');render(k)}
+function stepName(k){var m={intro:tt('Introduce & verify identity','التعريف والتحقق من الهوية'),pain:tt('Pain assessment','تقييم الألم'),vitals:tt('Vital signs','العلامات الحيوية'),chart:tt('Chart review','مراجعة الملف'),intervene:tt('Intervention','التدخل'),reassess:tt('Reassessment','إعادة التقييم'),document:tt('Final documentation','التوثيق النهائي')};return m[k]||k}
+function missingFor(k){
+ var req={pain:['intro'],vitals:['intro'],intervene:['intro','pain','vitals','chart'],reassess:['intervene'],document:['reassess']};
+ return (req[k]||[]).filter(function(x){return !state[x]});
+}
+function sequenceReason(k){
+ var r={
+  pain:tt('Introduce yourself and verify identity before a patient-specific assessment. This reduces wrong-patient risk and establishes therapeutic communication.','عرّف بنفسك وتحقق من الهوية قبل التقييم الخاص بالمريض. هذا يقلل خطر التعامل مع المريض الخطأ ويؤسس للتواصل العلاجي.'),
+  vitals:tt('At the bedside, identify the patient before recording observations as belonging to him.','عند سرير المريض، تحقق من الهوية قبل تسجيل الملاحظات باعتبارها تخص هذا المريض.'),
+  intervene:tt('Intervention should follow adequate assessment and safety checks. You need the pain assessment, vital signs, and relevant chart information before deciding what is appropriate.','يجب أن يأتي التدخل بعد تقييم كافٍ وفحوص السلامة. تحتاج إلى تقييم الألم والعلامات الحيوية ومعلومات الملف ذات الصلة قبل اتخاذ القرار.'),
+  reassess:tt('Reassessment measures the patient response to an intervention. Without an intervention there is no treatment response to compare with baseline.','إعادة التقييم تقيس استجابة المريض للتدخل. من دون تدخل لا توجد استجابة علاجية يمكن مقارنتها بخط الأساس.'),
+  document:tt('In this scenario, final documentation comes after reassessment so the note includes assessment, intervention, and the patient response. Interim charting can occur earlier in real practice.','في هذا السيناريو يأتي التوثيق النهائي بعد إعادة التقييم حتى تتضمن الملاحظة التقييم والتدخل واستجابة المريض. ويمكن إجراء توثيق مرحلي مبكرًا في الممارسة الواقعية.')
+ };
+ return r[k]||'';
+}
+function showSequenceFeedback(k,missing){
+ overlay.classList.add('open');mTitle.textContent=tt('Clinical reasoning: sequence matters','التفكير السريري: ترتيب الخطوات مهم');
+ var list=missing.map(function(x,i){return '<div class="sequence-item missing"><span class="sequence-num">'+(i+1)+'</span><div><b>'+stepName(x)+'</b><small>'+tt('Complete this before the selected step.','أكمل هذه الخطوة قبل الإجراء الذي اخترته.')+'</small></div></div>'}).join('');
+ mBody.innerHTML='<div class="note">'+sequenceReason(k)+'</div><div class="sequence-list">'+list+'</div><button class="btn green" id="goMissing">'+tt('Go to: ','انتقل إلى: ')+stepName(missing[0])+'</button>';
+ document.getElementById('goMissing').onclick=function(){render(missing[0])};
+}
+function openBox(k){
+ var missing=missingFor(k);
+ if(missing.length){penalize(k==='intervene'||k==='reassess'?3:1);showSequenceFeedback(k,missing);return}
+ overlay.classList.add('open');render(k)
+}
 function closeBox(){overlay.classList.remove('open')}
 function choice(label,key,cls){return '<button class="choice '+(cls||'')+'" data-key="'+key+'">'+label+'</button>'}
 function render(k){
@@ -160,7 +185,7 @@ function bind(k){
    }
    if(k==='intervene'){
     if(x==='unsafe'){penalize(8);document.getElementById('intOut').innerHTML='<div class="note bad">'+tt('Unsafe: verify identity, review orders/allergy, and assess before medication.','غير آمن: تحقق من الهوية وراجع الأوامر/الحساسية وأجرِ التقييم قبل الدواء.')+'</div>';return}
-    if(x==='med'&&!(state.id&&state.chart&&state.pain)){penalize(4);document.getElementById('intOut').innerHTML='<div class="note bad">'+tt('Not yet. Complete identity, chart review, and pain assessment first.','ليس بعد. أكمل التحقق من الهوية ومراجعة الملف وتقييم الألم أولًا.')+'</div>';return}
+    if(x==='med'&&!(state.id&&state.chart&&state.pain&&state.vitals)){penalize(4);document.getElementById('intOut').innerHTML='<div class="note bad">'+tt('Not yet. Before medication, complete identity verification, pain assessment, vital signs, and chart/allergy review.','ليس بعد. قبل الدواء أكمل التحقق من الهوية وتقييم الألم والعلامات الحيوية ومراجعة الملف والحساسية.')+'</div>';return}
     b.classList.add('selected');state['int_'+x]=true;document.getElementById('intOut').innerHTML='<div class="note ok">'+tt('Appropriate action recorded.','تم تسجيل إجراء مناسب.')+'</div>';
    }
   })
@@ -172,16 +197,31 @@ function bind(k){
  var fr=document.getElementById('finishRe');if(fr)fr.onclick=function(){mark('reassess');score+=5;document.getElementById('painSide').textContent='4/10';update();closeBox()};
 }
 function update(){
- var steps=['intro','pain','vitals','chart','intervene','document','reassess'],done=steps.filter(function(k){return state[k]}).length;
+ var steps=['intro','pain','vitals','chart','intervene','reassess','document'],done=steps.filter(function(k){return state[k]}).length;
  document.getElementById('bar').style.width=(done/7*100)+'%';document.getElementById('count').textContent=done+' / 7';document.getElementById('score').textContent=tt('Score ','النقاط ')+score;
  document.querySelectorAll('.task').forEach(function(b){b.classList.toggle('done',!!state[b.getAttribute('data-step')])});
  var items=[];if(state.id)items.push([tt('Identity','الهوية'),tt('Verified','تم التحقق')]);if(state.pain)items.push([tt('Pain','الألم'),'7/10']);if(state.vitals)items.push([tt('Vitals','العلامات'),'138/84 • 88 • 20 • 97%']);if(state.chart)items.push([tt('Chart','الملف'),tt('Reviewed','تمت المراجعة')]);if(state.intervene)items.push([tt('Intervention','التدخل'),tt('Completed','مكتمل')]);if(state.reassess)items.push([tt('Reassessment','إعادة التقييم'),'4/10']);
  document.getElementById('findings').innerHTML=items.length?items.map(function(x){return '<div class="finding"><span>'+x[0]+'</span><b>'+x[1]+'</b></div>'}).join(''):'<div class="finding"><span>'+tt('No findings yet.','لم تجمع بيانات بعد.')+'</span><b>—</b></div>';
+ updateCoach();
+}
+function updateCoach(){
+ var next,why;
+ if(!state.intro){next=tt('Introduce & verify identity','التعريف والتحقق من الهوية');why=tt('First establish who the patient is and begin therapeutic communication.','ابدأ بتأكيد هوية المريض وبدء التواصل العلاجي.')}
+ else if(!(state.pain&&state.vitals&&state.chart)){
+  var missing=[];if(!state.pain)missing.push(tt('pain assessment','تقييم الألم'));if(!state.vitals)missing.push(tt('vital signs','العلامات الحيوية'));if(!state.chart)missing.push(tt('chart review','مراجعة الملف'));
+  next=tt('Complete assessment: ','أكمل التقييم: ')+missing.join(' • ');
+  why=tt('These assessment elements can be completed in a flexible order, but all should precede treatment decisions.','يمكن إكمال عناصر التقييم هذه بترتيب مرن، لكن ينبغي أن تسبق جميعها قرارات العلاج.')
+ }
+ else if(!state.intervene){next=tt('Choose appropriate intervention','اختر التدخل المناسب');why=tt('Now you have enough assessment and safety information to act.','لديك الآن معلومات تقييم وسلامة كافية لاتخاذ الإجراء.')}
+ else if(!state.reassess){next=tt('Reassess Khaled','أعد تقييم خالد');why=tt('Check whether the intervention worked and whether the patient remains stable.','تحقق من فاعلية التدخل ومن بقاء حالة المريض مستقرة.')}
+ else if(!state.document){next=tt('Complete final documentation','أكمل التوثيق النهائي');why=tt('Document the full clinical cycle: assessment, intervention, and response.','وثّق الدورة السريرية كاملة: التقييم والتدخل والاستجابة.')}
+ else{next=tt('Scenario complete','اكتمل السيناريو');why=tt('You completed the clinical reasoning cycle in a safe logical sequence.','أكملت دورة التفكير السريري بتسلسل منطقي وآمن.')}
+ document.getElementById('nextStep').textContent=next;document.getElementById('coachWhy').textContent=why;document.getElementById('coachLabel').textContent=tt('Recommended next:','الخطوة المقترحة التالية:')
 }
 function applyLang(){
  var ar=lang==='ar';document.documentElement.lang=ar?'ar':'en';document.documentElement.dir=ar?'rtl':'ltr';app.classList.toggle('rtl',ar);
  document.getElementById('langBtn').textContent=ar?'English':'العربية';document.getElementById('titleText').textContent=tt('Tobruk Nursing Clinical Simulation','محاكاة التمريض السريرية – جامعة طبرق');document.getElementById('subText').textContent=tt('Faculty of Nursing • Tobruk University • Interactive prototype','كلية التمريض • جامعة طبرق • نموذج تفاعلي');document.getElementById('scenarioText').textContent=tt('Pain Assessment','تقييم الألم');document.getElementById('missionText').textContent=tt('Assess safely, act, document, reassess.','قيّم بأمان، اتخذ الإجراء، وثّق ثم أعد التقييم.');document.getElementById('patientHdr').textContent=tt('Patient','المريض');document.getElementById('demoText').textContent=tt('58 years • Male • Surgical ward','58 سنة • ذكر • جناح الجراحة');document.getElementById('procedureLbl').textContent=tt('Procedure','العملية');document.getElementById('procedureVal').textContent=tt('Colon resection','استئصال جزء من القولون');document.getElementById('dayLbl').textContent=tt('Day','اليوم');document.getElementById('dayVal').textContent=tt('Post-op Day 1','اليوم الأول بعد العملية');document.getElementById('allergyLbl').textContent=tt('Allergy','الحساسية');document.getElementById('painLbl').textContent=tt('Pain','الألم');document.getElementById('progressHdr').textContent=tt('Clinical progress','التقدم السريري');document.getElementById('findingsHdr').textContent=tt('Collected findings','البيانات المجمعة');
- var labelsEn=['Introduce & ID','Assess Pain','Vital Signs','Review Chart','Intervene','Document','Reassess'],labelsAr=['التعريف والتحقق','تقييم الألم','العلامات الحيوية','مراجعة الملف','التدخل','التوثيق','إعادة التقييم'];document.querySelectorAll('.task i').forEach(function(x,i){x.textContent=ar?labelsAr[i]:labelsEn[i]});update()
+ var labelsEn=['Introduce & ID','Assess Pain','Vital Signs','Review Chart','Intervene','Reassess','Document'],labelsAr=['التعريف والتحقق','تقييم الألم','العلامات الحيوية','مراجعة الملف','التدخل','إعادة التقييم','التوثيق'];document.querySelectorAll('.task i').forEach(function(x,i){x.textContent=ar?labelsAr[i]:labelsEn[i]});update()
 }
 document.querySelectorAll('[data-open]').forEach(function(b){b.onclick=function(){openBox(b.getAttribute('data-open'))}});
 document.getElementById('closeBtn').onclick=closeBox;overlay.onclick=function(e){if(e.target===overlay)closeBox()};
