@@ -7,9 +7,9 @@ const clamp=(x,a,b)=>Math.max(a,Math.min(b,x));
 const palette={skin:'#c18e70',skin2:'#a87559',scrub:'#718e9f',scrubLight:'#85a0af',metal:'#b7c5c7',white:'#eff2ec',navy:'#214651'};
 const shadeCache=new Map();
 function shade(color,amount){const k=color+Math.round(amount*40);if(shadeCache.has(k))return shadeCache.get(k);const n=parseInt(color.slice(1),16),r=(n>>16)&255,g=(n>>8)&255,b=n&255;const v=`rgb(${clamp(r*amount,0,255)|0},${clamp(g*amount,0,255)|0},${clamp(b*amount,0,255)|0})`;shadeCache.set(k,v);return v;}
-function box(faces,c,w,h,d,color){const v=[[-1,-1,-1],[1,-1,-1],[1,1,-1],[-1,1,-1],[-1,-1,1],[1,-1,1],[1,1,1],[-1,1,1]].map(p=>[c[0]+p[0]*w/2,c[1]+p[1]*h/2,c[2]+p[2]*d/2]);for(const ids of [[0,3,2,1],[4,5,6,7],[0,4,7,3],[1,2,6,5],[3,7,6,2],[0,1,5,4]])faces.push({v:ids.map(i=>v[i]),color});}
+function box(faces,c,w,h,d,color,split=false){const v=[[-1,-1,-1],[1,-1,-1],[1,1,-1],[-1,1,-1],[-1,-1,1],[1,-1,1],[1,1,1],[-1,1,1]].map(p=>[c[0]+p[0]*w/2,c[1]+p[1]*h/2,c[2]+p[2]*d/2]);for(const ids of [[0,3,2,1],[4,5,6,7],[0,4,7,3],[1,2,6,5],[3,7,6,2],[0,1,5,4]]){const q=ids.map(i=>v[i]);if(!split){faces.push({v:q,color});continue;}const u=sub(q[1],q[0]),v2=sub(q[3],q[0]),nu=Math.max(1,Math.ceil(len(u)/.14)),nv=Math.max(1,Math.ceil(len(v2)/.14));for(let i=0;i<nu;i++)for(let j=0;j<nv;j++){const at=(a,b)=>add(q[0],add(mul(u,a/nu),mul(v2,b/nv)));faces.push({v:[at(i,j),at(i+1,j),at(i+1,j+1),at(i,j+1)],color});}}}
 const unitSphere=[];
-for(let i=0;i<9;i++)for(let j=0;j<14;j++){const a=i/9*Math.PI,b=(i+1)/9*Math.PI,c=j/14*Math.PI*2,d=(j+1)/14*Math.PI*2;const p=(t,f)=>[Math.sin(t)*Math.cos(f),Math.cos(t),Math.sin(t)*Math.sin(f)];unitSphere.push([p(a,c),p(b,c),p(b,d),p(a,d)]);}
+for(let i=0;i<12;i++)for(let j=0;j<20;j++){const a=i/12*Math.PI,b=(i+1)/12*Math.PI,c=j/20*Math.PI*2,d=(j+1)/20*Math.PI*2;const p=(t,f)=>[Math.sin(t)*Math.cos(f),Math.cos(t),Math.sin(t)*Math.sin(f)];unitSphere.push([p(a,c),p(b,c),p(b,d),p(a,d)]);}
 function ellipsoid(f,c,r,color,transform){for(const v of unitSphere){const pts=v.map(p=>add(c,p.map((q,i)=>q*r[i])));f.push({v:transform?pts.map(transform):pts,color});}}
 function cylinder(f,a,b,r1,r2,color,segments=12,transform){const axis=norm(sub(b,a)),u=norm(cross(axis,Math.abs(axis[1])>.9?[1,0,0]:[0,1,0])),v=cross(axis,u);const ring=(c,r,t)=>add(c,add(mul(u,Math.cos(t)*r),mul(v,Math.sin(t)*r)));for(let i=0;i<segments;i++){const t=i/segments*Math.PI*2,t2=(i+1)/segments*Math.PI*2;let pts=[ring(a,r1,t),ring(b,r2,t),ring(b,r2,t2),ring(a,r1,t2)];f.push({v:transform?pts.map(transform):pts,color});}}
 function limb(f,a,b,c,r,color,transform){cylinder(f,a,b,r,r*.86,color,10,transform);ellipsoid(f,b,[r*.87,r*.87,r*.87],color,transform);cylinder(f,b,c,r*.86,r*.57,color,10,transform);ellipsoid(f,a,[r,r,r],color,transform);}
@@ -82,13 +82,13 @@ export class Room {
  buildBed(f,s){const y=.45+s.height*.0045;this.bedY=y;
   box(f,[0,.27,0],.6,.18,1.65,'#80979a');box(f,[0,y-.21,0],.98,.13,2.36,'#adbdba');cylinder(f,[0,.3,0],[0,y-.2,0],.13,.11,'#b5c4c1');
   for(let x of [-.42,.42])for(let z of [-.91,.91]){ellipsoid(f,[x,.12,z],[.08,.10,.045],'#344b50');if(s.brakes)box(f,[x-.07,.13,z],.12,.05,.06,'#4eaca0');}
-  box(f,[0,y-.06,0],1.08,.13,2.33,'#d3dccc');box(f,[0,y+.015,0],1.07,.045,2.31,'#f4f0e3');
+  box(f,[0,y-.06,0],1.08,.13,2.33,'#d3dccc',true);box(f,[0,y+.015,0],1.07,.045,2.31,'#f4f0e3',true);
   for(let z of [-1.28,1.28]){box(f,[0,y+.18,z],1.1,.54,.095,'#799397');box(f,[0,y+.24,z+(z<0?.06:-.06)],.88,.19,.03,'#b2c6c4');}
   const railY=s.rail?y+.38:y-.15;for(let z of [-.8,.65])cylinder(f,[.58,y-.12,z],[.58,railY,z],.022,.022,'#b7c7c5');cylinder(f,[.58,railY,-.8],[.58,railY,.65],.025,.025,'#c9d5d0');
   box(f,[-.59,y-.12,.85],.09,.24,.19,'#355b63');box(f,[-.645,y-.1,.85],.012,.09,.12,'#64baae');
   ellipsoid(f,[0,y+.09,-.98],[.35,.10,.25],'#f1ecdd');
   // Prepared slide sheet begins under manikin; inspection changes exposed handle colour.
-  box(f,[0,y+.042,-.04],1.12,.012,1.5,s.sheet?'#82bab3':'#c1d2c7');
+  box(f,[0,y+.042,-.04],1.12,.012,1.5,s.sheet?'#82bab3':'#c1d2c7',true);
   for(let z of [-.62,.27]){cylinder(f,[-.57,y+.06,z-.085],[-.57,y+.06,z+.085],.027,.027,s.grip==='sheet'?'#dab087':'#338a83');}
   if(s.bell)box(f,[-.32,y+.16,-.79],.05,.025,.09,'#3e8890');else box(f,[-1.24,.92,-1.7],.06,.025,.1,'#3e8890');
   // Contact shadows, intentionally subtle rather than floating parts.
