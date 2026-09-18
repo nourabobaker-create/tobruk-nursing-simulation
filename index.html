@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tobruk Nursing Simulation</title>
+<style>
+:root{--g:#0b6b4f;--g2:#148866;--mint:#eaf6f2;--ink:#17322a;--muted:#6b7e78;--line:#d8e6e1;--bg:#f4f7f6;--bad:#a8261d}
+*{box-sizing:border-box}body{margin:0;font-family:Segoe UI,Tahoma,Arial,sans-serif;background:var(--bg);color:var(--ink)}button,textarea{font:inherit}
+header{display:flex;align-items:center;gap:12px;padding:10px 16px;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+.logo{width:52px;height:52px;object-fit:contain}.brand{flex:1;min-width:170px}.brand h1{margin:0;font-size:18px}.brand p{margin:3px 0 0;color:var(--muted);font-size:12px}.actions{display:flex;gap:7px;flex-wrap:wrap}
+.btn{border:1px solid var(--line);background:#fff;border-radius:11px;padding:9px 12px;font-weight:700;cursor:pointer}.btn.green{background:var(--g);color:#fff;border-color:var(--g)}.btn.soft{background:var(--mint);color:var(--g)}
+main{max-width:1480px;margin:auto;padding:14px;display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:14px}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden}.bar{padding:11px 13px;display:flex;gap:8px;justify-content:space-between;align-items:center;flex-wrap:wrap;border-bottom:1px solid var(--line)}
+.pill{background:var(--mint);color:var(--g);padding:6px 9px;border-radius:999px;font-size:12px;font-weight:800}.pill.gray{background:#f1f4f3;color:#52645e}
+.room{position:relative;min-height:520px;background:linear-gradient(#edf5f2 0 62%,#cbb995 62%);overflow:hidden}.room svg{width:100%;height:100%;display:block;position:absolute;inset:0}
+.hot{position:absolute;transform:translate(-50%,-50%);border:0;border-radius:999px;min-width:48px;min-height:48px;padding:8px 10px;background:rgba(11,107,79,.94);color:#fff;font-weight:800;cursor:pointer;box-shadow:0 5px 16px rgba(0,0,0,.22)}.hot small{display:block;font-size:10px;font-weight:600}.hot:hover{background:#084f3b}
+#hPatient{left:58%;top:49%}#hNurse{left:28%;top:51%}#hMonitor{left:78%;top:31%}#hIV{left:89%;top:37%}#hChart{left:14%;top:68%}#hMed{left:84%;top:72%}
+.dock{display:grid;grid-template-columns:repeat(7,1fr);gap:7px;padding:10px;border-top:1px solid var(--line);background:#fbfdfc}.task{border:1px solid var(--line);background:#fff;border-radius:12px;padding:9px 6px;min-height:65px;cursor:pointer;font-size:12px;font-weight:800}.task span{display:block;font-size:20px;margin-bottom:3px}.task.done{background:#edf9f4;border-color:#8dceb9;color:var(--g)}
+.side{display:flex;flex-direction:column;gap:12px}.panel{padding:14px}.panel h3{margin:0 0 10px;font-size:15px}.patient{display:flex;gap:10px;align-items:center}.avatar{width:60px;height:60px;border-radius:15px;display:grid;place-items:center;background:#dceae5;font-size:34px}
+.kv{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:10px}.kv div{background:#f7faf9;border-radius:10px;padding:8px;font-size:12px}.kv b{display:block}.kv span{color:var(--muted)}
+.progress{height:9px;background:#e7efec;border-radius:20px;overflow:hidden}.progress i{display:block;height:100%;width:0;background:var(--g);transition:.25s}.prow{display:flex;justify-content:space-between;margin-top:7px;font-size:12px;color:var(--muted)}
+.finding{display:flex;justify-content:space-between;gap:8px;padding:7px 0;border-bottom:1px dashed var(--line);font-size:12px}.finding b{color:var(--g)}
+.overlay{display:none;position:fixed;inset:0;background:rgba(5,22,17,.52);z-index:80;padding:15px;place-items:center}.overlay.open{display:grid}.modal{width:min(760px,100%);max-height:90vh;overflow:auto;background:#fff;border-radius:20px}.mhead{position:sticky;top:0;background:#fff;z-index:2;padding:14px 16px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}.mhead h2{margin:0;font-size:18px}.close{width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:#fff;cursor:pointer}.mbody{padding:16px}
+.choice{display:block;width:100%;text-align:left;padding:12px;border:1px solid var(--line);border-radius:12px;background:#fff;margin:7px 0;cursor:pointer}.choice:hover{border-color:#8dcab8;background:#fbfefd}.choice.selected{border-color:#77c4ac;background:#effaf5}
+.bubble{padding:12px 13px;border-radius:13px;margin:9px 0;background:#f4f8f7;border-left:4px solid var(--g)}.note{padding:11px 12px;border-radius:12px;margin:9px 0;background:#fff7df;color:#694c00}.ok{background:#edf9f4;color:#07573f}.bad{background:#fff0ef;color:#8c2119}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:8px}.vitals{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}.vital{padding:11px;border:1px solid var(--line);border-radius:12px;text-align:center;background:#fbfdfc}.vital b{display:block;font-size:19px;color:var(--g)}.vital span{font-size:11px;color:var(--muted)}
+textarea{width:100%;min-height:150px;border:1px solid var(--line);border-radius:12px;padding:12px;resize:vertical}
+.focus main{grid-template-columns:1fr;max-width:none}.focus .side{display:none}.focus .room{min-height:calc(100vh - 170px)}.focus .brand p{display:none}
+.rtl{direction:rtl}.rtl .choice{text-align:right}.rtl .bubble{border-left:0;border-right:4px solid var(--g)}
+@media(max-width:1000px){main{grid-template-columns:1fr}.side{display:grid;grid-template-columns:1fr 1fr}.dock{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:650px){header{flex-wrap:wrap}.logo{width:44px;height:44px}.brand h1{font-size:15px}.actions{width:100%}main{padding:7px}.room{min-height:520px}.dock{grid-template-columns:repeat(2,1fr)}.side{display:block}.side .card{margin-bottom:9px}.grid2{grid-template-columns:1fr}.vitals{grid-template-columns:repeat(2,1fr)}.hot small{display:none}}
+</style>
+</head>
+<body>
+<div id="app">
+<header>
+<img class="logo" alt="Faculty of Nursing logo" src="data:image/webp;base64,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">
+<div class="brand"><h1 id="titleText">Tobruk Nursing Clinical Simulation</h1><p id="subText">Faculty of Nursing • Tobruk University • Interactive prototype</p></div>
+<div class="actions"><button class="btn soft" id="langBtn">العربية</button><button class="btn" id="focusBtn">◫ Focus Room</button><button class="btn" id="fullBtn">⛶ Fullscreen</button></div>
+</header>
+
+<main>
+<section class="card">
+<div class="bar"><div><span class="pill" id="scenarioText">Pain Assessment</span> <span class="pill gray">Khaled Salem • 58 • Bed 3</span></div><b id="missionText">Assess safely, act, document, reassess.</b></div>
+<div class="room">
+<svg viewBox="0 0 1200 650" preserveAspectRatio="xMidYMid slice">
+<defs><linearGradient id="w" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#edf5f2"/><stop offset="1" stop-color="#d5e4df"/></linearGradient><linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#eaf8f3"/><stop offset="1" stop-color="#add4c6"/></linearGradient></defs>
+<rect width="1200" height="420" fill="url(#w)"/><rect y="420" width="1200" height="230" fill="#c8b591"/>
+<rect x="35" y="55" width="280" height="205" rx="8" fill="#b9d9e7" stroke="#8bb7c9" stroke-width="7"/><line x1="175" y1="55" x2="175" y2="260" stroke="#8bb7c9" stroke-width="7"/><line x1="35" y1="155" x2="315" y2="155" stroke="#8bb7c9" stroke-width="7"/>
+<rect x="400" y="352" width="520" height="128" rx="22" fill="#f9fbfa" stroke="#798c86" stroke-width="6"/><rect x="430" y="310" width="450" height="105" rx="30" fill="#fff"/><rect x="480" y="338" width="355" height="115" rx="35" fill="url(#b)"/>
+<ellipse cx="665" cy="330" rx="42" ry="48" fill="#c98f67"/><path d="M624 314 Q665 255 706 314 Q690 282 665 280 Q640 282 624 314" fill="#33251f"/><rect x="590" y="365" width="150" height="70" rx="35" fill="#9fcfc1"/><circle cx="650" cy="325" r="4"/><circle cx="680" cy="325" r="4"/><path d="M651 348 Q665 354 679 348" fill="none" stroke="#7a4939" stroke-width="3"/>
+<circle cx="300" cy="345" r="38" fill="#c58a61"/><path d="M264 342 Q300 292 337 342 Q326 310 300 306 Q276 310 264 342" fill="#27211f"/><rect x="240" y="383" width="120" height="145" rx="25" fill="#fafcfc" stroke="#c7d6d1"/><rect x="279" y="404" width="42" height="64" rx="7" fill="#eef3f1"/>
+<rect x="900" y="165" width="185" height="125" rx="13" fill="#1c2b27" stroke="#657872" stroke-width="7"/><polyline points="920,232 950,232 967,195 985,258 1005,222 1025,232 1065,232" fill="none" stroke="#40e59a" stroke-width="5"/><text x="922" y="195" fill="#99efc9" font-size="24" font-weight="700">82</text><text x="1010" y="195" fill="#9fd4ff" font-size="20">96%</text>
+<line x1="1120" y1="120" x2="1120" y2="480" stroke="#6d7f79" stroke-width="7"/><line x1="1088" y1="120" x2="1152" y2="120" stroke="#6d7f79" stroke-width="7"/><path d="M1097 126 v72 q0 24 23 24 q23 0 23-24 v-72z" fill="#dff4fb" stroke="#78a9bb" stroke-width="3"/>
+<rect x="930" y="455" width="205" height="115" rx="12" fill="#eaf0ee" stroke="#80918c"/><rect x="952" y="478" width="50" height="30" rx="5" fill="#fff"/><rect x="1018" y="480" width="35" height="28" rx="4" fill="#efbb92"/><rect x="1068" y="480" width="45" height="28" rx="4" fill="#c6d7ff"/>
+<rect x="65" y="355" width="145" height="185" rx="10" fill="#fff" stroke="#879a94" stroke-width="5"/><rect x="98" y="330" width="80" height="45" rx="10" fill="#687b75"/><line x1="90" y1="405" x2="185" y2="405" stroke="#a8bbb5" stroke-width="5"/><line x1="90" y1="440" x2="185" y2="440" stroke="#a8bbb5" stroke-width="5"/><line x1="90" y1="475" x2="165" y2="475" stroke="#a8bbb5" stroke-width="5"/>
+<rect x="665" y="90" width="155" height="72" rx="12" fill="#f8fbfa" stroke="#a7bbb5"/><circle cx="710" cy="126" r="20" fill="#dff5ec" stroke="#4e9e82" stroke-width="5"/><circle cx="772" cy="126" r="20" fill="#eef5ff" stroke="#679bc4" stroke-width="5"/>
+</svg>
+<button class="hot" id="hPatient" data-open="pain">👨🏻<small>Patient</small></button><button class="hot" id="hNurse" data-open="intro">👨‍⚕️<small>Nurse</small></button><button class="hot" id="hMonitor" data-open="vitals">♥<small>Monitor</small></button><button class="hot" id="hIV" data-open="iv">💧<small>IV</small></button><button class="hot" id="hChart" data-open="chart">📋<small>Chart</small></button><button class="hot" id="hMed" data-open="intervene">💊<small>Meds</small></button>
+</div>
+<div class="dock">
+<button class="task" data-open="intro" data-step="intro"><span>👋</span><i>Introduce & ID</i></button><button class="task" data-open="pain" data-step="pain"><span>🗣️</span><i>Assess Pain</i></button><button class="task" data-open="vitals" data-step="vitals"><span>🩺</span><i>Vital Signs</i></button><button class="task" data-open="chart" data-step="chart"><span>📋</span><i>Review Chart</i></button><button class="task" data-open="intervene" data-step="intervene"><span>💊</span><i>Intervene</i></button><button class="task" data-open="document" data-step="document"><span>✍️</span><i>Document</i></button><button class="task" data-open="reassess" data-step="reassess"><span>🔁</span><i>Reassess</i></button>
+</div>
+</section>
+
+<aside class="side">
+<section class="card panel"><h3 id="patientHdr">Patient</h3><div class="patient"><div class="avatar">👨🏻</div><div><b>Khaled Salem</b><div style="color:var(--muted);font-size:12px;margin-top:3px" id="demoText">58 years • Male • Surgical ward</div></div></div><div class="kv"><div><b id="procedureLbl">Procedure</b><span id="procedureVal">Colon resection</span></div><div><b id="dayLbl">Day</b><span id="dayVal">Post-op Day 1</span></div><div><b id="allergyLbl">Allergy</b><span id="allergyVal">Not checked</span></div><div><b id="painLbl">Pain</b><span id="painSide">?</span></div></div></section>
+<section class="card panel"><h3 id="progressHdr">Clinical progress</h3><div class="progress"><i id="bar"></i></div><div class="prow"><span id="count">0 / 7</span><span id="score">Score 0</span></div></section>
+<section class="card panel"><h3 id="findingsHdr">Collected findings</h3><div id="findings"><div class="finding"><span id="noneText">No findings yet.</span><b>—</b></div></div></section>
+</aside>
+</main>
+</div>
+
+<div class="overlay" id="overlay"><div class="modal"><div class="mhead"><h2 id="mTitle">Simulation</h2><button class="close" id="closeBtn">✕</button></div><div class="mbody" id="mBody"></div></div></div>
+
+<script>
+var lang='en',score=0;
+var state={intro:false,pain:false,vitals:false,chart:false,intervene:false,document:false,reassess:false,id:false,painQ:{},vitalQ:{},chartQ:{},intervention:false,note:''};
+var app=document.getElementById('app'),overlay=document.getElementById('overlay'),mTitle=document.getElementById('mTitle'),mBody=document.getElementById('mBody');
+function tt(en,ar){return lang==='ar'?ar:en}
+function mark(k){if(!state[k]){state[k]=true;score+=10}update()}
+function penalize(n){score=Math.max(0,score-n);update()}
+function openBox(k){overlay.classList.add('open');render(k)}
+function closeBox(){overlay.classList.remove('open')}
+function choice(label,key,cls){return '<button class="choice '+(cls||'')+'" data-key="'+key+'">'+label+'</button>'}
+function render(k){
+ var h='';
+ if(k==='intro'){
+  mTitle.textContent=tt('Introduce yourself and verify identity','عرّف بنفسك وتحقق من الهوية');
+  h='<div class="bubble">'+tt('You approach Khaled. Choose what Ahmed should say first.','تقترب من خالد. اختر ما يجب أن يقوله أحمد أولًا.')+'</div>';
+  h+=choice(tt('“Mr Khaled, you are Khaled Salem, correct?”','«أستاذ خالد، أنت خالد سالم صحيح؟»'),'lead');
+  h+=choice(tt('“Good morning. I am Ahmed, the student nurse. Please tell me your full name and date of birth.”','«صباح الخير. أنا أحمد، طالب تمريض. من فضلك اذكر اسمك الكامل وتاريخ ميلادك.»'),'goodid');
+  h+=choice(tt('“Where is your pain?”','«أين تشعر بالألم؟»'),'skip');
+  h+='<div id="fb"></div>';
+ }else if(k==='pain'){
+  mTitle.textContent=tt('Pain assessment — talk to Khaled','تقييم الألم — تحدث مع خالد');
+  h='<div class="bubble">👨🏻 <b>Khaled:</b> '+tt('“It really hurts when I move or cough.”','«يوجعني كثيرًا عندما أتحرك أو أسعل.»')+'</div>';
+  h+='<p>'+tt('Ask questions. Khaled reveals only what you actually ask.','اسأل الأسئلة. لن يعطيك خالد معلومات إلا إذا سألت عنها.')+'</p><div class="grid2">';
+  h+=choice(tt('Where exactly is the pain?','أين مكان الألم بالتحديد؟'),'site');
+  h+=choice(tt('Rate it from 0 to 10.','قيّمه من 0 إلى 10.'),'severity');
+  h+=choice(tt('What does it feel like?','صف طبيعة الألم.'),'quality');
+  h+=choice(tt('When did it become worse?','متى ازداد الألم؟'),'onset');
+  h+=choice(tt('What makes it worse?','ما الذي يزيد الألم؟'),'aggravate');
+  h+=choice(tt('What makes it better?','ما الذي يخفف الألم؟'),'relieve');
+  h+='</div><div id="answers"></div><button class="btn green" id="finishPain">'+tt('Finish assessment','إنهاء التقييم')+'</button>';
+ }else if(k==='vitals'){
+  mTitle.textContent=tt('Measure vital signs','قياس العلامات الحيوية');
+  h='<p>'+tt('Choose a device, then perform the measurement.','اختر الجهاز ثم قم بالقياس.')+'</p><div class="grid2">';
+  h+=choice('🩺 '+tt('Blood pressure cuff','جهاز ضغط الدم'),'bp');
+  h+=choice('🫁 '+tt('Pulse oximeter','مقياس تشبع الأكسجين'),'spo2');
+  h+=choice('🌡️ '+tt('Thermometer','ميزان الحرارة'),'temp');
+  h+=choice('⏱️ '+tt('Count respirations','عدّ التنفس'),'rr');
+  h+='</div><div id="measureArea"></div><div id="measureOut"></div>';
+ }else if(k==='chart'){
+  mTitle.textContent=tt('Review Khaled’s chart','راجع ملف خالد');
+  h='<div class="grid2">'+choice(tt('Medication orders','أوامر الأدوية'),'orders')+choice(tt('Allergies','الحساسية'),'allergy')+choice(tt('Surgery note','ملاحظة العملية'),'surgery')+choice(tt('Mobility instructions','تعليمات الحركة'),'mobility')+'</div><div id="chartOut"></div>';
+ }else if(k==='intervene'){
+  mTitle.textContent=tt('Choose nursing interventions','اختر التدخلات التمريضية');
+  h='<p>'+tt('Choose what you would do. Unsafe shortcuts are possible.','اختر ما ستفعله. توجد خيارات مختصرة غير آمنة.')+'</p>';
+  h+=choice(tt('Reposition Khaled and support the incision during coughing','غيّر وضعية خالد وادعم موضع العملية أثناء السعال'),'position');
+  h+=choice(tt('Guide slow breathing and relaxation','وجّه خالد للتنفس البطيء والاسترخاء'),'breath');
+  h+=choice(tt('Check the analgesic order and safety, then give it as prescribed','راجع أمر المسكن والسلامة ثم أعطه حسب الوصفة'),'med');
+  h+=choice(tt('Give analgesic immediately without checking identity/chart','أعطِ المسكن فورًا دون التحقق من الهوية/الملف'),'unsafe');
+  h+='<div id="intOut"></div><button class="btn green" id="finishInt">'+tt('Complete intervention phase','إنهاء مرحلة التدخل')+'</button>';
+ }else if(k==='document'){
+  mTitle.textContent=tt('Nursing documentation','التوثيق التمريضي');
+  h='<p>'+tt('Write a clinical note using only findings you actually collected.','اكتب ملاحظة سريرية باستخدام البيانات التي جمعتها فعليًا فقط.')+'</p><textarea id="noteBox">'+state.note+'</textarea><div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:9px"><button class="btn soft" id="buildNote">'+tt('Build from findings','إنشاء من البيانات')+'</button><button class="btn green" id="saveNote">'+tt('Save note','حفظ الملاحظة')+'</button></div><div id="noteOut"></div>';
+ }else if(k==='reassess'){
+  mTitle.textContent=tt('Reassess after intervention','إعادة التقييم بعد التدخل');
+  if(!state.intervention){h='<div class="note bad">'+tt('Complete an intervention before reassessment.','أكمل تدخلًا قبل إعادة التقييم.')+'</div>'}
+  else{h='<div class="bubble">👨🏻 <b>Khaled:</b> '+tt('“It is better now — about 4 out of 10.”','«أفضل الآن — تقريبًا 4 من 10.»')+'</div><div class="vitals"><div class="vital"><span>Pain</span><b>4/10</b></div><div class="vital"><span>HR</span><b>80</b></div><div class="vital"><span>RR</span><b>18</b></div><div class="vital"><span>SpO₂</span><b>98%</b></div><div class="vital"><span>BP</span><b>132/80</b></div></div><button class="btn green" id="finishRe">'+tt('Record reassessment','تسجيل إعادة التقييم')+'</button>'}
+ }else if(k==='iv'){
+  mTitle.textContent='IV';h='<div class="note">'+tt('IV cannula appears patent with no visible redness or swelling. Do not manipulate it without indication.','القنية الوريدية تبدو سالكة ولا يظهر احمرار أو تورم. لا تتعامل معها دون داعٍ.')+'</div>';
+ }
+ mBody.innerHTML=h;bind(k);
+}
+function bind(k){
+ var fb=document.getElementById('fb');
+ var buttons=mBody.querySelectorAll('.choice');
+ buttons.forEach(function(b){
+  b.addEventListener('click',function(){
+   var x=b.getAttribute('data-key');
+   if(k==='intro'){
+    if(x==='goodid'){state.id=true;mark('intro');fb.innerHTML='<div class="note ok">'+tt('Good. Khaled states: “Khaled Salem, 15 March 1968.”','جيد. يذكر خالد: «خالد سالم، 15 مارس 1968.»')+'</div>'}
+    else if(x==='lead'){penalize(2);fb.innerHTML='<div class="note">'+tt('Use an open identity check rather than a leading yes/no question.','استخدم تحققًا مفتوحًا من الهوية بدل سؤال موجّه بنعم/لا.')+'</div>'}
+    else{penalize(3);fb.innerHTML='<div class="note bad">'+tt('You skipped identity verification.','تجاوزت التحقق من الهوية.')+'</div>'}
+   }
+   if(k==='pain'){
+    var a={site:tt('“Low in my abdomen, around the incision.”','«أسفل بطني حول الجرح.»'),severity:tt('“Seven out of ten.”','«سبعة من عشرة.»'),quality:tt('“A constant ache, sharper when I move.”','«وجع مستمر ويصبح حادًا عند الحركة.»'),onset:tt('“Worse since I started moving this morning.”','«ازداد منذ أن بدأت أتحرك هذا الصباح.»'),aggravate:tt('“Movement and coughing.”','«الحركة والسعال.»'),relieve:tt('“Keeping still and supporting my abdomen helps.”','«الهدوء ودعم البطن يخففانه.»')};
+    if(!state.painQ[x]){state.painQ[x]=true;b.classList.add('selected');document.getElementById('answers').innerHTML+='<div class="bubble">👨🏻 '+a[x]+'</div>'}
+   }
+   if(k==='vitals'){
+    var vals={bp:'138/84 mmHg',spo2:'97%',temp:'37.4 °C',rr:'20/min'},names={bp:tt('Blood pressure','ضغط الدم'),spo2:tt('Oxygen saturation','تشبع الأكسجين'),temp:tt('Temperature','الحرارة'),rr:tt('Respirations','التنفس')};
+    document.getElementById('measureArea').innerHTML='<div class="note ok">'+tt('Equipment selected.','تم اختيار الجهاز.')+'</div><button class="btn green" id="doMeasure">'+tt('Perform measurement','قم بالقياس')+'</button>';
+    document.getElementById('doMeasure').onclick=function(){state.vitalQ[x]=true;document.getElementById('measureOut').innerHTML+='<div class="bubble"><b>'+names[x]+':</b> '+vals[x]+'</div>';if(Object.keys(state.vitalQ).length>=4)mark('vitals')};
+   }
+   if(k==='chart'){
+    var c={orders:tt('Paracetamol scheduled; opioid analgesic PRN after safety checks.','باراسيتامول مجدول؛ ومسكن أفيوني عند الحاجة بعد فحوص السلامة.'),allergy:tt('No known drug allergies documented. Confirm verbally before medication.','لا توجد حساسية دوائية معروفة موثقة. أكد شفهيًا قبل الدواء.'),surgery:tt('Colon resection yesterday; abdominal dressing dry.','استئصال جزء من القولون أمس؛ ضماد البطن جاف.'),mobility:tt('Early assisted mobilisation; support incision when coughing.','حركة مبكرة بمساعدة؛ دعم موضع العملية أثناء السعال.')};
+    state.chartQ[x]=true;document.getElementById('chartOut').innerHTML='<div class="note ok">'+c[x]+'</div>';if(state.chartQ.orders&&state.chartQ.allergy&&state.chartQ.surgery){mark('chart');document.getElementById('allergyVal').textContent=tt('NKDA documented','لا حساسية معروفة موثقة')}
+   }
+   if(k==='intervene'){
+    if(x==='unsafe'){penalize(8);document.getElementById('intOut').innerHTML='<div class="note bad">'+tt('Unsafe: verify identity, review orders/allergy, and assess before medication.','غير آمن: تحقق من الهوية وراجع الأوامر/الحساسية وأجرِ التقييم قبل الدواء.')+'</div>';return}
+    if(x==='med'&&!(state.id&&state.chart&&state.pain)){penalize(4);document.getElementById('intOut').innerHTML='<div class="note bad">'+tt('Not yet. Complete identity, chart review, and pain assessment first.','ليس بعد. أكمل التحقق من الهوية ومراجعة الملف وتقييم الألم أولًا.')+'</div>';return}
+    b.classList.add('selected');state['int_'+x]=true;document.getElementById('intOut').innerHTML='<div class="note ok">'+tt('Appropriate action recorded.','تم تسجيل إجراء مناسب.')+'</div>';
+   }
+  })
+ });
+ var f=document.getElementById('finishPain');if(f)f.onclick=function(){if(Object.keys(state.painQ).length>=5){mark('pain');document.getElementById('painSide').textContent='7/10';closeBox()}else document.getElementById('answers').innerHTML+='<div class="note bad">'+tt('Ask at least five pain questions.','اسأل خمسة أسئلة عن الألم على الأقل.')+'</div>'};
+ var fi=document.getElementById('finishInt');if(fi)fi.onclick=function(){var n=['int_position','int_breath','int_med'].filter(function(x){return state[x]}).length;if(n>=2){state.intervention=true;mark('intervene');closeBox()}else document.getElementById('intOut').innerHTML='<div class="note">'+tt('Choose at least two appropriate interventions.','اختر تدخلين مناسبين على الأقل.')+'</div>'};
+ var bn=document.getElementById('buildNote');if(bn)bn.onclick=function(){document.getElementById('noteBox').value=tt('Khaled Salem, 58, post-op day 1 after colon resection. Lower abdominal pain around incision, aching with sharp pain on movement/coughing, 7/10. BP 138/84, HR 88, RR 20, SpO₂ 97%, T 37.4°C. Appropriate non-pharmacological measures and prescribed analgesia reviewed/administered as indicated.','خالد سالم، 58 سنة، اليوم الأول بعد استئصال جزء من القولون. ألم أسفل البطن حول الجرح، مستمر ويصبح حادًا مع الحركة/السعال، شدته 7/10. الضغط 138/84، النبض 88، التنفس 20، التشبع 97%، الحرارة 37.4°م. تم اتخاذ التدابير غير الدوائية المناسبة ومراجعة/إعطاء المسكن الموصوف حسب الملاءمة.')};
+ var sn=document.getElementById('saveNote');if(sn)sn.onclick=function(){var v=document.getElementById('noteBox').value.trim();if(v.length<40){document.getElementById('noteOut').innerHTML='<div class="note bad">'+tt('Note too brief. Include assessment, action, and response/plan.','الملاحظة قصيرة. ضمّن التقييم والإجراء والاستجابة/الخطة.')+'</div>'}else{state.note=v;mark('document');document.getElementById('noteOut').innerHTML='<div class="note ok">'+tt('Nursing note saved for this simulation.','تم حفظ الملاحظة لهذه المحاكاة.')+'</div>'}};
+ var fr=document.getElementById('finishRe');if(fr)fr.onclick=function(){mark('reassess');score+=5;document.getElementById('painSide').textContent='4/10';update();closeBox()};
+}
+function update(){
+ var steps=['intro','pain','vitals','chart','intervene','document','reassess'],done=steps.filter(function(k){return state[k]}).length;
+ document.getElementById('bar').style.width=(done/7*100)+'%';document.getElementById('count').textContent=done+' / 7';document.getElementById('score').textContent=tt('Score ','النقاط ')+score;
+ document.querySelectorAll('.task').forEach(function(b){b.classList.toggle('done',!!state[b.getAttribute('data-step')])});
+ var items=[];if(state.id)items.push([tt('Identity','الهوية'),tt('Verified','تم التحقق')]);if(state.pain)items.push([tt('Pain','الألم'),'7/10']);if(state.vitals)items.push([tt('Vitals','العلامات'),'138/84 • 88 • 20 • 97%']);if(state.chart)items.push([tt('Chart','الملف'),tt('Reviewed','تمت المراجعة')]);if(state.intervene)items.push([tt('Intervention','التدخل'),tt('Completed','مكتمل')]);if(state.reassess)items.push([tt('Reassessment','إعادة التقييم'),'4/10']);
+ document.getElementById('findings').innerHTML=items.length?items.map(function(x){return '<div class="finding"><span>'+x[0]+'</span><b>'+x[1]+'</b></div>'}).join(''):'<div class="finding"><span>'+tt('No findings yet.','لم تجمع بيانات بعد.')+'</span><b>—</b></div>';
+}
+function applyLang(){
+ var ar=lang==='ar';document.documentElement.lang=ar?'ar':'en';document.documentElement.dir=ar?'rtl':'ltr';app.classList.toggle('rtl',ar);
+ document.getElementById('langBtn').textContent=ar?'English':'العربية';document.getElementById('titleText').textContent=tt('Tobruk Nursing Clinical Simulation','محاكاة التمريض السريرية – جامعة طبرق');document.getElementById('subText').textContent=tt('Faculty of Nursing • Tobruk University • Interactive prototype','كلية التمريض • جامعة طبرق • نموذج تفاعلي');document.getElementById('scenarioText').textContent=tt('Pain Assessment','تقييم الألم');document.getElementById('missionText').textContent=tt('Assess safely, act, document, reassess.','قيّم بأمان، اتخذ الإجراء، وثّق ثم أعد التقييم.');document.getElementById('patientHdr').textContent=tt('Patient','المريض');document.getElementById('demoText').textContent=tt('58 years • Male • Surgical ward','58 سنة • ذكر • جناح الجراحة');document.getElementById('procedureLbl').textContent=tt('Procedure','العملية');document.getElementById('procedureVal').textContent=tt('Colon resection','استئصال جزء من القولون');document.getElementById('dayLbl').textContent=tt('Day','اليوم');document.getElementById('dayVal').textContent=tt('Post-op Day 1','اليوم الأول بعد العملية');document.getElementById('allergyLbl').textContent=tt('Allergy','الحساسية');document.getElementById('painLbl').textContent=tt('Pain','الألم');document.getElementById('progressHdr').textContent=tt('Clinical progress','التقدم السريري');document.getElementById('findingsHdr').textContent=tt('Collected findings','البيانات المجمعة');
+ var labelsEn=['Introduce & ID','Assess Pain','Vital Signs','Review Chart','Intervene','Document','Reassess'],labelsAr=['التعريف والتحقق','تقييم الألم','العلامات الحيوية','مراجعة الملف','التدخل','التوثيق','إعادة التقييم'];document.querySelectorAll('.task i').forEach(function(x,i){x.textContent=ar?labelsAr[i]:labelsEn[i]});update()
+}
+document.querySelectorAll('[data-open]').forEach(function(b){b.onclick=function(){openBox(b.getAttribute('data-open'))}});
+document.getElementById('closeBtn').onclick=closeBox;overlay.onclick=function(e){if(e.target===overlay)closeBox()};
+document.getElementById('langBtn').onclick=function(){lang=lang==='en'?'ar':'en';applyLang()};
+document.getElementById('focusBtn').onclick=function(){app.classList.toggle('focus');this.textContent=app.classList.contains('focus')?tt('Exit focus','إنهاء التركيز'):tt('◫ Focus Room','◫ وضع الغرفة')};
+document.getElementById('fullBtn').onclick=function(){if(document.fullscreenElement){document.exitFullscreen()}else if(document.documentElement.requestFullscreen){document.documentElement.requestFullscreen().catch(function(){app.classList.add('focus')})}else app.classList.add('focus')};
+applyLang();
+</script>
+</body></html>
