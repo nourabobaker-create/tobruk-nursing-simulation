@@ -99,7 +99,8 @@ export class Room {
   this.patientTransform=trans;
   const skin=palette.skin,scrub=palette.scrub,flash=k=>s.flash===k?'#d77961':skin;
   // Gowned adult male training manikin; individual joints and anatomical landmarks.
-  ellipsoid(f,[0,0,-.50],[.205,.12,.295],scrub,trans);ellipsoid(f,[0,-.005,-.16],[.17,.112,.16],scrub,trans);ellipsoid(f,[0,-.005,.035],[.18,.117,.15],scrub,trans);
+  const torso=[[-.77,.075,.066],[-.69,.193,.105],[-.55,.205,.122],[-.35,.178,.115],[-.14,.165,.108],[.025,.181,.116],[.15,.137,.094]];
+  for(let j=0;j<torso.length-1;j++)for(let i=0;i<24;i++){const a=i/24*Math.PI*2,b=(i+1)/24*Math.PI*2,pt=(r,t)=>trans([Math.cos(t)*r[1],Math.sin(t)*r[2],r[0]]);f.push({v:[pt(torso[j],a),pt(torso[j+1],a),pt(torso[j+1],b),pt(torso[j],b)],color:scrub});}
   cylinder(f,[0,0,-.77],[0,.008,-.93],.065,.063,skin,12,trans);
   // Head rotates independently at the neck for prone face clearance.
   let hr=-Math.min(1,s.head/70)*Math.PI/2;const headT=p=>{let x=p[0],y=p[1]-.022;const v=trans([x*Math.cos(hr)-y*Math.sin(hr),.022+x*Math.sin(hr)+y*Math.cos(hr),p[2]]);v[1]+=.075;return v;};
