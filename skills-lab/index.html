@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#183d46"><meta name="description" content="Tobruk University Faculty of Nursing. An interactive, bilingual manikin simulation for turning and moving a patient.">
+  <title>Tobruk Nursing · Clinical Skills Lab</title>
+  <link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="logo.webp"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="identity" href="../"><img src="logo.webp" alt="Tobruk University Faculty of Nursing"><span><strong data-en="FACULTY OF NURSING" data-ar="كلية التمريض">FACULTY OF NURSING</strong><small data-en="Tobruk University" data-ar="جامعة طبرق">Tobruk University</small></span></a>
+    <div class="lab-title"><span class="live-dot"></span><span data-en="Clinical Skills Lab" data-ar="مختبر المهارات السريرية">Clinical Skills Lab</span><span class="version">02</span></div>
+    <div class="header-actions"><button id="facultyBtn" class="quiet" data-en="Faculty notes" data-ar="ملاحظات التدريس">Faculty notes</button><button id="language" class="language" aria-label="Switch to Arabic">العربية <span>EN</span></button></div>
+  </header>
+  <main id="workspace">
+    <nav class="stations" aria-label="Room navigation">
+      <button data-station="room" title="Room overview"><span class="nav-icon">⌂</span><small data-en="Room" data-ar="الغرفة">Room</small></button>
+      <button data-station="bed" title="Approach the bed"><span class="nav-icon">▱</span><small data-en="Bed" data-ar="السرير">Bed</small></button>
+      <button data-station="sink" title="Approach the sink"><span class="nav-icon">◡</span><small data-en="Sink" data-ar="المغسلة">Sink</small></button>
+      <button data-station="pillows" title="Approach the trolley"><span class="nav-icon">▤</span><small data-en="Trolley" data-ar="العربة">Trolley</small></button>
+      <div class="nav-spacer"></div><button id="helpBtn"><span class="nav-icon">?</span><small data-en="Controls" data-ar="التحكم">Controls</small></button>
+      <button id="homeBtn"><span class="nav-icon">↺</span><small data-en="Scenarios" data-ar="الحالات">Scenarios</small></button>
+    </nav>
+    <section class="scene-wrap" aria-label="Interactive three-dimensional skills room">
+      <canvas id="scene" tabindex="0" aria-label="3D room. Drag to look around; W A S D to walk; arrow keys to move or turn. Use labelled objects for interactions."></canvas>
+      <div id="hotspots"></div>
+      <div class="scene-top"><div class="scenario-chip"><span class="eyebrow" id="modeLabel">PRACTICE · MODULE 05</span><strong id="scenarioTitle">Turning & moving</strong></div><div class="scene-tools"><button id="labelsBtn" title="Show or hide object labels" aria-pressed="true">◉</button><button id="motionBtn" title="Reduce camera motion" aria-pressed="false">◴</button><button id="fullBtn" title="Full screen">⛶</button></div></div>
+      <div id="goal" class="goal" aria-live="polite"></div>
+      <div class="scene-bottom"><div class="walk-pad" aria-label="Walk and turn controls"><button data-walk="turnLeft" aria-label="Look left">↶</button><button data-walk="forward" aria-label="Walk forward">↑</button><button data-walk="turnRight" aria-label="Look right">↷</button><button data-walk="left" aria-label="Step left">←</button><button data-walk="back" aria-label="Walk backward">↓</button><button data-walk="right" aria-label="Step right">→</button></div><div class="location"><span id="location">ROOM 01</span><small data-en="Drag to look · Tap an object to interact" data-ar="اسحب للنظر · المس عنصراً للتفاعل">Drag to look · Tap an object to interact</small></div></div>
+      <div id="coach" class="coach" hidden aria-live="polite"><span id="coachCategory"></span><p id="coachText"></p><button id="coachClose" aria-label="Dismiss feedback">×</button></div>
+      <div class="manikin-tag" data-en="MANIKIN PRACTICE · FACULTY REVIEW" data-ar="تدريب على دمية · قيد مراجعة التدريس">MANIKIN PRACTICE · FACULTY REVIEW</div>
+    </section>
+    <aside id="inspector" aria-label="Selected object controls"><div id="objectContent"></div><div class="inspector-footer"><button id="hintBtn" class="secondary" data-en="Guide me" data-ar="أرشدني">Guide me</button><button id="debriefBtn" class="primary" data-en="Review attempt" data-ar="مراجعة المحاولة">Review attempt</button></div></aside>
+  </main>
+  <dialog id="welcome" class="welcome">
+    <div class="intro-copy"><div class="eyebrow" data-en="YEAR ONE · FOUNDATIONS OF NURSING" data-ar="السنة الأولى · أساسيات التمريض">YEAR ONE · FOUNDATIONS OF NURSING</div><h1 data-en="Be present.\nMove with care." data-ar="تعلّم بالممارسة.\nحرّك بعناية.">Be present.<br>Move with care.</h1><p data-en="Step into the skills lab. Prepare the manikin, coordinate your movement and see why each action matters." data-ar="ادخل مختبر المهارات. جهّز الدمية ونسّق الحركة واكتشف أهمية كل إجراء.">Step into the skills lab. Prepare the manikin, coordinate your movement and see why each action matters.</p><div class="intro-note" data-en="A movable 3D room and articulated manikin. This is a faculty-review prototype, with proposed safety additions clearly identified." data-ar="غرفة ثلاثية الأبعاد قابلة للتجول ودمية مفصلية. هذا نموذج لمراجعة أعضاء هيئة التدريس، مع توضيح إضافات السلامة المقترحة.">A movable 3D room and articulated manikin. This is a faculty-review prototype, with proposed safety additions clearly identified.</div><button class="text-button" id="curriculumBtn" data-en="Explore the six-module design →" data-ar="استعرض تصميم الوحدات الست ←">Explore the six-module design →</button></div>
+    <div class="intro-options"><div class="eyebrow" data-en="01 / CHOOSE A PRACTICE" data-ar="٠١ / اختر التدريب">01 / CHOOSE A PRACTICE</div><div id="caseOptions"></div><div class="eyebrow mode-eyebrow" data-en="02 / CHOOSE YOUR MODE" data-ar="٠٢ / اختر النمط">02 / CHOOSE YOUR MODE</div><div class="mode-options"><button data-mode="learn" class="chosen"><strong data-en="Learn / Practice" data-ar="تعلم / ممارسة">Learn / Practice</strong><small data-en="Rationales and guidance" data-ar="مبررات وإرشادات">Rationales and guidance</small></button><button data-mode="challenge"><strong data-en="Challenge" data-ar="التحدي">Challenge</strong><small data-en="Decide, act, then reflect" data-ar="قرر، نفذ، ثم راجع">Decide, act, then reflect</small></button></div><button id="startBtn" class="primary enter" data-en="Enter the skills lab →" data-ar="ادخل مختبر المهارات ←">Enter the skills lab →</button><small class="intro-bottom" data-en="No account needed. Best with sound off or on. Touch, mouse and keyboard supported." data-ar="لا يتطلب حساباً. يدعم اللمس والفأرة ولوحة المفاتيح.">No account needed. Touch, mouse and keyboard supported.</small></div>
+  </dialog>
+  <dialog id="infoDialog" class="info-dialog"><button class="dialog-close" id="infoClose" aria-label="Close">×</button><div id="infoBody"></div></dialog>
+  <dialog id="debriefDialog" class="debrief-dialog"><div id="debriefBody"></div></dialog>
+  <noscript>This interactive simulation requires JavaScript. تتطلب هذه المحاكاة تفعيل JavaScript.</noscript>
+  <script type="module" src="app.js"></script>
+</body></html>
