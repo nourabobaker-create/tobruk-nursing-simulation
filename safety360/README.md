@@ -48,4 +48,4 @@ The Faculty logo was extracted unchanged from the existing user-supplied prototy
 
 ## Maintenance
 
-All scripts are local vanilla JavaScript. `scenario.js` holds bilingual educational content, `app.js` implements transitions and the practice record, and `scene.js` renders the spherical panorama with WebGL. Increment the service-worker cache name when releasing changes. Progress uses `tobruk-safety360-v1` in local storage and is separate from Pain Assessment progress. Do not add real patient identifiers to exported records.
+All scripts are local vanilla JavaScript. `scenario.js` holds bilingual educational content, `app.js` implements transitions and the practice record, and `scene.js` renders the spherical panorama using WebGL with a Canvas 2D software renderer when WebGL is unavailable. Increment the service-worker cache name and asset revision query when releasing changes. Progress uses `tobruk-safety360-v1` in local storage and is separate from Pain Assessment progress. Do not add real patient identifiers to exported records.
