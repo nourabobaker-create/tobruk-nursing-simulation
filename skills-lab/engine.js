@@ -1,5 +1,5 @@
 /* Observable state and risk-based dependencies. All clinical adaptations are faculty-review proposals. */
-export const VERSION='2.0.1';
+export const VERSION='2.0.2';
 export const CATEGORIES=['correct','sequence','incomplete','technique','safety','unnecessary','alternative'];
 export const pair=(en,ar)=>({en,ar});
 export const labels={correct:pair('Correct action','إجراء صحيح'),sequence:pair('Correct action, too early','إجراء صحيح، لكن مبكر'),incomplete:pair('Incomplete action','إجراء غير مكتمل'),technique:pair('Technique needs adjustment','تحتاج الطريقة إلى تعديل'),safety:pair('Safety stop','توقف للسلامة'),unnecessary:pair('Unnecessary action','إجراء غير ضروري'),alternative:pair('Acceptable alternative sequence','تسلسل بديل مقبول')};

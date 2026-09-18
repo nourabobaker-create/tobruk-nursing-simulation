@@ -28,3 +28,5 @@ Drag empty room space to look; W A S D or on-screen arrows to walk. Arrow left/r
 Run `node skills-lab/engine.test.mjs` from repository root. Covers all three cases in both modes, alternative preparation orders, required safety gates, contact/sequence/technique errors, missing supports, count invalidation, complete outcomes and clean retries.
 
 Serve through GitHub Pages or any same-origin static host. No build system or external dependencies. Browser visual/interaction QA is recorded in the delivery notes.
+
+Browser checks on 2026-09-18 completed a side-lying attempt with an unsafe grip correction, separate support placement, final checks, debrief and fresh retry. Arabic RTL and a 390-pixel embedded phone viewport were inspected. The automated tests also cover final prone face-clearance regression and guided finishing transitions. Clinical validation and testing on physical student devices remain faculty/pilot work.
