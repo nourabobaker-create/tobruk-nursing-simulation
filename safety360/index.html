@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#102831"><meta name="description" content="An interactive bilingual 360-degree clinical safety simulation. Faculty of Nursing, Tobruk University.">
+<title>Safety First · Tobruk Nursing 360°</title>
+<link rel="icon" href="assets/logo-0.webp"><link rel="manifest" href="manifest.json"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main id="simulation">
+  <div id="room" aria-label="Interactive 360-degree hospital room" tabindex="0">
+    <canvas id="panorama"></canvas><div class="room-shade"></div><div id="hotspots"></div>
+    <div id="loading" role="status"><span class="spinner"></span><span>Opening the patient room… / جارٍ فتح غرفة المريض…</span></div>
+    <div id="fallback" hidden></div>
+  </div>
+  <header class="topbar">
+    <a class="brand" href="../" title="Return to Pain Assessment"><img src="assets/logo-0.webp" alt="Faculty of Nursing"><span><strong data-en="TOBRUK UNIVERSITY" data-ar="جامعة طبرق"></strong><small data-en="Faculty of Nursing · Clinical simulation" data-ar="كلية التمريض · المحاكاة السريرية"></small></span></a>
+    <div class="top-actions"><span class="preview-tag" data-en="Teaching prototype" data-ar="نموذج تدريبي"></span><button id="language" title="Change language">العربية</button><button id="fullscreen" title="Full screen" aria-label="Full screen">⛶</button><button id="menu" title="Scenario menu" aria-label="Scenario menu">☰</button></div>
+  </header>
+  <div class="scene-title"><span class="eyebrow" data-en="SCENARIO 02 / SURGICAL WARD" data-ar="السيناريو 02 / جناح الجراحة"></span><h1 data-en="Safety first." data-ar="السلامة أولاً."></h1><p data-en="Look around. Notice. Decide." data-ar="انظر حولك. لاحظ. اتخذ القرار."></p></div>
+  <nav id="chapters" aria-label="Scenario progress"></nav>
+  <div class="patient-chip"><span class="patient-avatar">KS</span><span><strong data-en="Khaled Salem" data-ar="خالد سالم"></strong><small data-en="58 years · Postoperative day 1" data-ar="58 سنة · اليوم الأول بعد العملية"></small></span><span id="patient-status"></span></div>
+  <aside id="panel" class="panel" aria-label="Clinical interaction">
+    <div class="panel-top"><span id="panel-kicker"></span><button id="close-panel" aria-label="Close panel">×</button></div>
+    <div id="panel-content"></div>
+  </aside>
+  <button id="resume" class="resume" hidden></button>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <footer class="room-controls">
+    <div class="look-controls"><button id="look-left" aria-label="Look left">‹</button><button id="look-up" aria-label="Look up">⌃</button><span data-en="360° ROOM" data-ar="غرفة 360°"></span><button id="look-down" aria-label="Look down">⌄</button><button id="look-right" aria-label="Look right">›</button></div>
+    <div class="stations"><button data-view="patient" data-en="Bedside" data-ar="المريض"></button><button data-view="entry" data-en="Entrance" data-ar="المدخل"></button><button data-view="worktop" data-en="Worktop" data-ar="منضدة العمل"></button><button id="explore" data-en="All objects" data-ar="كل العناصر"></button></div>
+    <div class="view-actions"><button id="zoom-out" aria-label="Zoom out">−</button><button id="zoom-in" aria-label="Zoom in">+</button><button id="help" data-en="Call for help" data-ar="طلب المساعدة"></button></div>
+  </footer>
+  <p class="drag-hint" data-en="Drag to look · Arrows to turn · Tap an object to act" data-ar="اسحب للنظر · الأسهم للدوران · اضغط على عنصر للتفاعل"></p>
+</main>
+<div id="printout"></div>
+<script src="scene.js"></script><script src="scenario.js"></script><script src="app.js"></script>
+</body></html>
