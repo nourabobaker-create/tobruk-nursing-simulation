@@ -84,7 +84,7 @@ export class Room {
   for(let x of [-.42,.42])for(let z of [-.91,.91]){ellipsoid(f,[x,.12,z],[.08,.10,.045],'#344b50');if(s.brakes)box(f,[x-.07,.13,z],.12,.05,.06,'#4eaca0');}
   box(f,[0,y-.06,0],1.08,.13,2.33,'#d3dccc',true);box(f,[0,y+.015,0],1.07,.045,2.31,'#f4f0e3',true);
   for(let z of [-1.28,1.28]){box(f,[0,y+.18,z],1.1,.54,.095,'#799397');box(f,[0,y+.24,z+(z<0?.06:-.06)],.88,.19,.03,'#b2c6c4');}
-  const railY=s.rail?y+.38:y-.15;for(let z of [-.8,.65])cylinder(f,[.58,y-.12,z],[.58,railY,z],.022,.022,'#b7c7c5');cylinder(f,[.58,railY,-.8],[.58,railY,.65],.025,.025,'#c9d5d0');
+  const railY=s.rail&&!s.helper?y+.38:y-.15;for(let z of [-.8,.65])cylinder(f,[.58,y-.12,z],[.58,railY,z],.022,.022,'#b7c7c5');cylinder(f,[.58,railY,-.8],[.58,railY,.65],.025,.025,'#c9d5d0');
   box(f,[-.59,y-.12,.85],.09,.24,.19,'#355b63');box(f,[-.645,y-.1,.85],.012,.09,.12,'#64baae');
   ellipsoid(f,[0,y+.09,-.98],[.35,.10,.25],'#f1ecdd');
   // Prepared slide sheet begins under manikin; inspection changes exposed handle colour.
@@ -124,7 +124,8 @@ export class Room {
  }
  buildNurse(f,s){if(!s.helper)return;const x=1.02,y=0,z=-.2,skin='#bc9173',uniform='#477d79';
   ellipsoid(f,[x,1.44,z],[.085,.12,.09],skin);ellipsoid(f,[x,1.49,z+.02],[.09,.085,.08],'#3d3935');ellipsoid(f,[x,1.11,z],[.13,.21,.09],uniform);ellipsoid(f,[x,.88,z],[.14,.1,.10],uniform);
-  for(let side of [-1,1]){limb(f,[x+side*.075,.83,z],[x+side*.1,.46,z+.04],[x+side*.16,.08,z+.04],.06,'#2e5a59');ellipsoid(f,[x+side*.16,.06,z-.04],[.066,.05,.13],'#e5e8dc');limb(f,[x+side*.12,1.26,z],[x+side*.16,1.04,z-.1],[.57,this.bedY+.14,side<0?-.62:.27],.04,skin);}
+  for(let side of [-1,1]){limb(f,[x+side*.075,.83,z],[x+side*.1,.46,z+.04],[x+side*.16,.08,z+.04],.06,'#2e5a59');ellipsoid(f,[x+side*.16,.06,z-.04],[.066,.05,.13],'#e5e8dc');limb(f,[x,1.26,z+side*.13],[x-.16,1.04,z+side*.20],[.57,this.bedY+.14,side<0?-.62:.27],.04,skin);}
+  ellipsoid(f,[x-.087,1.44,z],[.023,.033,.023],skin);
  }
  makeHotspots(s){const b=this.bedY,p=this.parts;this.hotspots=[
   {id:'patient',p:[0,b+.55,-.92],label:'patient',always:true},
@@ -147,7 +148,7 @@ export class Room {
   c.strokeStyle='#679395';c.lineWidth=35;c.beginPath();c.moveTo(0,-82);c.lineTo(twist,-137);c.stroke();c.fillStyle='#c8997b';c.beginPath();c.ellipse(twist,-170,18,23,0,0,Math.PI*2);c.fill();c.strokeStyle='#c8997b';c.lineWidth=12;for(let side of [-1,1]){c.beginPath();c.moveTo(twist+side*18,-132);c.lineTo(twist+side*35,-105);c.lineTo(twist+side*29,-88);c.stroke();}
   if(bad){c.fillStyle='#e16e5e77';c.beginPath();c.arc(twist*.25,-98,25,0,Math.PI*2);c.fill();c.strokeStyle='#cb5445';c.lineWidth=2;c.stroke();}c.restore();}
  tick(t){requestAnimationFrame(x=>this.tick(x));if(document.hidden)return;const dt=Math.min((t-this.last)/1000,.05)||.016;this.last=t;
-  if(this.keys.w||this.keys.ArrowUp)this.walk(0,dt*1.4);if(this.keys.s||this.keys.ArrowDown)this.walk(0,-dt*1.4);if(this.keys.a)this.walk(-dt*1.4,0);if(this.keys.d)this.walk(dt*1.4,0);if(this.keys.ArrowLeft)this.camera.yaw+=dt;if(this.keys.ArrowRight)this.camera.yaw-=dt;
+  if(this.keys.w||this.keys.ArrowUp)this.walk(0,dt*1.4);if(this.keys.s||this.keys.ArrowDown)this.walk(0,-dt*1.4);if(this.keys.a)this.walk(-dt*1.4,0);if(this.keys.d)this.walk(dt*1.4,0);if(this.keys.ArrowLeft)this.camera.yaw-=dt;if(this.keys.ArrowRight)this.camera.yaw+=dt;
   if(this.target){let done=true;for(let k of ['x','y','z','pitch']){const d=this.target[k]-this.camera[k];this.camera[k]+=d*Math.min(1,dt*7);if(Math.abs(d)>.005)done=false;}let d=this.target.yaw-this.camera.yaw;d=Math.atan2(Math.sin(d),Math.cos(d));this.camera.yaw+=d*Math.min(1,dt*7);if(Math.abs(d)>.005)done=false;if(done)this.target=null;}
   if(t-this.frame<32)return;this.frame=t;const rect=this.canvas.getBoundingClientRect(),dpr=Math.min(devicePixelRatio||1,1.5);if(this.canvas.width!==Math.round(rect.width*dpr)||this.canvas.height!==Math.round(rect.height*dpr)){this.canvas.width=Math.round(rect.width*dpr);this.canvas.height=Math.round(rect.height*dpr);}this.w=rect.width;this.h=rect.height;this.focal=Math.min(this.w*1.1,this.h*1.18);this.ctx.setTransform(dpr,0,0,dpr,0,0);
   this.ctx.fillStyle='#d9e2dd';this.ctx.fillRect(0,0,this.w,this.h);const state={...this.getState(),...this.preview},f=[...this.static];this.buildBed(f,state);this.buildPatient(f,state);this.buildNurse(f,state);
