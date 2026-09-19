@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Body Mechanics & Turning/Moving Patient — Tobruk Nursing Simulation</title>
+<style>
+:root{
+ --g:#0b6b4f;--g2:#168b68;--mint:#eaf7f2;--ink:#17312a;--muted:#667a73;--line:#d6e4df;
+ --bg:#eef3f1;--warn:#9a650c;--danger:#a62c25;--ok:#0b6b4f;--shadow:0 18px 55px rgba(10,44,34,.17)
+}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Inter,Segoe UI,Tahoma,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+body{overflow:hidden}button{font:inherit}.hidden{display:none!important}
+.topbar{min-height:72px;padding:10px 14px;background:#fff;border-bottom:1px solid var(--line);display:flex;gap:12px;align-items:center;position:relative;z-index:30}
+.brand{flex:1;min-width:220px}.brand b{display:block;font-size:16px}.brand small{color:var(--muted)}.controls{display:flex;gap:7px;flex-wrap:wrap}
+.btn{border:1px solid var(--line);background:#fff;border-radius:12px;padding:9px 12px;font-weight:800;cursor:pointer}
+.btn.primary{background:var(--g);color:#fff;border-color:var(--g)}.btn.soft{background:var(--mint);color:var(--g)}
+.stage{height:calc(100vh - 72px);position:relative;overflow:hidden;background:#cfded8}
+.panorama{position:absolute;left:0;top:0;width:2800px;height:100%;transform:translateX(-890px);touch-action:none;cursor:grab;transition:transform .12s ease-out}
+.panorama.dragging{cursor:grabbing;transition:none}.scene-svg{width:2800px;height:100%;display:block}.vignette{position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(8,26,20,.25),transparent 12%,transparent 88%,rgba(8,26,20,.25))}
+.hot{position:absolute;z-index:12;border:0;border-radius:999px;background:rgba(11,107,79,.95);color:#fff;padding:10px 12px;font-weight:900;box-shadow:0 8px 26px rgba(0,0,0,.22);cursor:pointer}
+.hot small{display:block;font-size:10px;font-weight:600}.hot:hover{background:#084d3a}
+#liftHot{left:380px;top:67%}#shelfHot{left:600px;top:24%}#floorHot{left:800px;top:76%}#trolleyHot{left:1040px;top:61%}#deskHot{left:2390px;top:62%}#bedHot{left:1740px;top:49%}
+.roomlabel{position:absolute;left:1510px;top:12%;z-index:8;background:#f8fbfa;border:1px solid #b7cbc4;border-radius:8px;padding:8px 14px;font-weight:800;color:#365c50;box-shadow:0 7px 18px rgba(0,0,0,.12)}
+.hint{position:absolute;left:50%;top:88px;transform:translateX(-50%);z-index:15;background:rgba(19,48,39,.9);color:#fff;border-radius:999px;padding:8px 12px;font-size:12px}
+.hud{position:absolute;left:50%;bottom:16px;transform:translateX(-50%);z-index:18;width:min(930px,94vw);padding:11px 13px;border-radius:18px;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);box-shadow:var(--shadow);border:1px solid rgba(255,255,255,.7);display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}
+.hud strong{display:block}.hud small{color:var(--muted)}.hud-actions{display:flex;gap:7px;flex-wrap:wrap}
+.overlay{position:fixed;inset:0;background:rgba(6,23,18,.63);z-index:90;display:none;place-items:center;padding:14px}.overlay.open{display:grid}
+.modal{width:min(1080px,100%);max-height:94vh;background:#fff;border-radius:22px;box-shadow:0 28px 80px rgba(0,0,0,.3);overflow:hidden;display:flex;flex-direction:column}
+.mhead{padding:13px 16px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:10px}.mhead h2{margin:0;font-size:18px;flex:1}.close{width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:#fff;cursor:pointer}
+.mbody{overflow:auto;padding:16px}.card{border:1px solid var(--line);border-radius:15px;padding:14px;background:#fff}.card.soft{background:#f8fbfa}.card h3{margin:0 0 7px;font-size:15px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}.choice{display:block;width:100%;text-align:left;border:1px solid var(--line);border-radius:12px;background:#fff;padding:11px;cursor:pointer;font-weight:750}.choice:hover{background:#f8fcfa;border-color:#8ec8b6}.choice.good{background:#edf9f4;border-color:#9fd3c2}.choice.bad{background:#fff0ef;border-color:#efb1ac}
+.feedback{padding:12px;border-radius:14px;background:#f7faf9;border:1px solid var(--line);margin-top:10px}.feedback.ok{background:#edf9f4;border-color:#a5d9c7}.feedback.warn{background:#fff7e6;border-color:#ead19a}.feedback.bad{background:#fff0ef;border-color:#efb2ad}
+.progress{height:9px;background:#e3ece8;border-radius:99px;overflow:hidden}.progress i{display:block;height:100%;background:var(--g);width:0;transition:.25s}.row{display:flex;justify-content:space-between;gap:8px;align-items:center}.muted{color:var(--muted)}
+.turn-shell{display:grid;grid-template-columns:minmax(0,1fr) 310px;gap:12px}.visual{position:relative;min-height:540px;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:linear-gradient(#dce8e4 0 64%,#c5b18e 64%)}
+.bedframe{position:absolute;left:50%;top:58%;transform:translate(-50%,-50%);width:740px;height:280px}.mattress{position:absolute;left:60px;top:70px;width:620px;height:160px;border-radius:35px;background:#f8fbfa;border:6px solid #869892;box-shadow:0 15px 25px rgba(0,0,0,.14)}.rail{position:absolute;left:40px;top:40px;width:660px;height:28px;border-radius:20px;background:#8b9b96}.wheel{position:absolute;bottom:8px;width:42px;height:42px;border-radius:50%;background:#52655f}.wheel.w1{left:95px}.wheel.w2{right:95px}
+.patient{position:absolute;left:50%;top:52%;transform:translate(-50%,-50%);width:520px;height:180px;transition:.5s}.patient.side{transform:translate(-50%,-50%) rotate(-7deg)}.patient.prone .face{transform:rotate(180deg)}.patient.shift{left:40%}
+.torso{position:absolute;left:150px;top:57px;width:235px;height:82px;border-radius:38px;background:#83bdaa}.head{position:absolute;left:382px;top:55px;width:76px;height:76px;border-radius:50%;background:#c98f68}.face{position:absolute;inset:0;display:grid;place-items:center;font-size:28px;transition:.3s}.limb{position:absolute;background:#c98f68;border-radius:30px;transition:.35s}.arm-near{left:235px;top:18px;width:155px;height:34px;transform:rotate(-9deg)}.arm-far{left:230px;top:135px;width:155px;height:34px;transform:rotate(8deg)}.leg-near{left:60px;top:65px;width:210px;height:38px;transform:rotate(-2deg)}.leg-far{left:60px;top:115px;width:210px;height:38px;transform:rotate(2deg)}
+.arm-near.cross{left:245px;top:48px;transform:rotate(15deg)}.arm-far.cross{left:255px;top:72px;transform:rotate(-14deg)}.leg-far.cross{left:100px;top:96px;transform:rotate(-10deg)}
+.pillow{position:absolute;background:#fff;border:2px solid #c1d0cb;border-radius:30px;box-shadow:0 6px 14px rgba(0,0,0,.08);opacity:.35;transition:.3s}.pillow.head{right:120px;top:60px;width:115px;height:72px}.pillow.support{left:115px;top:185px;width:170px;height:62px}.pillow.active{opacity:1}
+.nurse{position:absolute;left:72px;bottom:20px;width:150px;height:250px}.nurse-head{position:absolute;left:52px;top:0;width:48px;height:48px;border-radius:50%;background:#c78d65}.nurse-body{position:absolute;left:35px;top:46px;width:82px;height:125px;border-radius:28px;background:#f8fbfb;border:3px solid #bccdca}.nurse-leg{position:absolute;bottom:0;width:35px;height:104px;background:#476d62;border-radius:20px}.nurse-leg.l{left:40px}.nurse-leg.r{left:82px}.nurse.twist .nurse-body{transform:rotate(17deg)}.nurse.wide .nurse-leg.l{transform:rotate(9deg);left:28px}.nurse.wide .nurse-leg.r{transform:rotate(-9deg);left:92px}.nurse.close{left:175px}
+.handmark{position:absolute;width:26px;height:26px;border-radius:50%;background:#0b6b4f;box-shadow:0 0 0 8px rgba(11,107,79,.16);display:none}.handmark.show{display:block}.hm1{left:420px;top:190px}.hm2{left:535px;top:175px}
+.taskpane{display:flex;flex-direction:column;gap:10px}.taskpane .actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}.action{border:1px solid var(--line);background:#fff;border-radius:12px;padding:10px;cursor:pointer;font-weight:800;min-height:48px}.action:hover{background:#fbfefd;border-color:#8dc6b4}.action.done{background:#edf9f4;border-color:#8fcdb8;color:var(--g)}.sectiontitle{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:#648178;font-weight:900;margin-top:4px}
+.debrief{display:grid;gap:10px}.result{display:grid;grid-template-columns:auto 1fr;gap:10px;padding:11px;border:1px solid var(--line);border-radius:12px}.icon{font-size:22px}
+.rtl{direction:rtl}.rtl .choice{text-align:right}
+@media(max-width:880px){.topbar{flex-wrap:wrap}.controls{width:100%}.stage{height:calc(100vh - 118px)}.turn-shell,.grid2{grid-template-columns:1fr}.taskpane{order:-1}.visual{min-height:500px}}
+@media(max-width:560px){.brand small{display:none}.topbar{padding:8px}.btn{padding:8px 9px}.hud{grid-template-columns:1fr}.visual{min-height:450px}.bedframe{transform:translate(-50%,-50%) scale(.72)}.taskpane .actions{grid-template-columns:1fr 1fr}.hint{top:78px}}
+</style>
+</head>
+<body>
+<div id="app">
+<header class="topbar">
+  <div class="brand"><b id="brandTitle">Clinical Skills Lab — Tobruk University</b><small id="brandSub">First-year nursing • Body mechanics + turning & moving a patient</small></div>
+  <div class="controls"><button class="btn soft" id="langBtn">العربية</button><button class="btn" id="modeBtn">Practice mode</button><button class="btn" id="resetBtn">Restart</button></div>
+</header>
+
+<main class="stage">
+  <div class="hint" id="lookHint">Drag / swipe to explore the lab</div>
+  <div class="panorama" id="panorama">
+    <svg class="scene-svg" viewBox="0 0 2800 900" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e7f0ed"/><stop offset="1" stop-color="#d0ded9"/></linearGradient>
+        <linearGradient id="floor" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d5c8ad"/><stop offset="1" stop-color="#b8a487"/></linearGradient>
+      </defs>
+      <rect width="2800" height="610" fill="url(#wall)"/><rect y="610" width="2800" height="290" fill="url(#floor)"/>
+      <rect x="60" y="90" width="430" height="280" rx="10" fill="#b9d9e6" stroke="#80afc0" stroke-width="9"/><line x1="275" y1="90" x2="275" y2="370" stroke="#80afc0" stroke-width="9"/>
+      <rect x="300" y="560" width="240" height="120" rx="12" fill="#c99666" stroke="#7f674f" stroke-width="6"/><text x="352" y="625" font-size="26" fill="#fff">SUPPLY BOX</text>
+      <rect x="535" y="120" width="260" height="250" rx="12" fill="#e2e8e6" stroke="#82948e" stroke-width="7"/><line x1="548" y1="205" x2="782" y2="205" stroke="#82948e" stroke-width="5"/><rect x="585" y="140" width="120" height="55" rx="6" fill="#fff"/><rect x="635" y="230" width="110" height="55" rx="6" fill="#d3e8ff"/>
+      <circle cx="805" cy="720" r="35" fill="#e8eef0" stroke="#738986" stroke-width="6"/><rect x="775" y="690" width="60" height="30" rx="8" fill="#f9fbfa"/>
+      <rect x="940" y="440" width="250" height="170" rx="16" fill="#dfe8e5" stroke="#7f918b" stroke-width="7"/><rect x="970" y="468" width="75" height="52" rx="6" fill="#fff"/><rect x="1065" y="468" width="75" height="52" rx="6" fill="#d7ebff"/><line x1="995" y1="610" x2="980" y2="695" stroke="#657873" stroke-width="10"/><line x1="1135" y1="610" x2="1150" y2="695" stroke="#657873" stroke-width="10"/><circle cx="978" cy="700" r="18" fill="#384b45"/><circle cx="1152" cy="700" r="18" fill="#384b45"/>
+      <rect x="1330" y="105" width="310" height="90" rx="8" fill="#fff" stroke="#a6bab4" stroke-width="5"/><text x="1380" y="148" font-size="24" fill="#2e6253">BODY MECHANICS</text><text x="1410" y="176" font-size="17" fill="#68857c">PIVOT • PUSH • LEG POWER</text>
+      <rect x="1480" y="355" width="760" height="210" rx="25" fill="#f9fbfa" stroke="#7f918b" stroke-width="8"/><rect x="1530" y="315" width="660" height="115" rx="38" fill="#fff"/><rect x="1610" y="350" width="480" height="145" rx="48" fill="#b7d9ca"/>
+      <ellipse cx="1870" cy="326" rx="48" ry="55" fill="#ca906b"/><path d="M1825 312 Q1870 247 1917 312 Q1902 275 1870 271 Q1840 275 1825 312" fill="#30231f"/>
+      <rect x="2160" y="385" width="170" height="210" rx="10" fill="#f4f7f6" stroke="#81938d" stroke-width="6"/><line x1="2190" y1="435" x2="2300" y2="435" stroke="#a7b6b1" stroke-width="6"/>
+      <rect x="2330" y="485" width="340" height="140" rx="12" fill="#b88e65" stroke="#7f654f" stroke-width="7"/><rect x="2380" y="400" width="100" height="90" rx="10" fill="#657d74"/><rect x="2520" y="420" width="95" height="70" rx="8" fill="#f3f5f4"/><rect x="2390" y="625" width="44" height="95" fill="#52685f"/><rect x="2570" y="625" width="44" height="95" fill="#52685f"/>
+      <rect x="2660" y="320" width="110" height="340" rx="15" fill="#a7c9bd" opacity=".7"/>
+    </svg>
+    <div class="roomlabel">Faculty of Nursing • Tobruk University</div>
+    <button class="hot" id="liftHot">📦<small>Lift station</small></button>
+    <button class="hot" id="shelfHot">🗄️<small>High shelf</small></button>
+    <button class="hot" id="floorHot">⬇️<small>Floor object</small></button>
+    <button class="hot" id="trolleyHot">🛒<small>Trolley</small></button>
+    <button class="hot" id="bedHot">🛏️<small>Khaled</small></button>
+    <button class="hot" id="deskHot">🪑<small>Desk posture</small></button>
+  </div>
+  <div class="vignette"></div>
+  <section class="hud">
+    <div><strong id="mission">Ahmed is preparing to reposition Khaled safely.</strong><small id="missionSub">Explore the room. Practice body mechanics, then approach the bed.</small></div>
+    <div class="hud-actions"><button class="btn soft" id="hintBtn">Hint</button><button class="btn primary" id="briefBtn">Briefing</button></div>
+  </section>
+</main>
+</div>
+
+<div class="overlay" id="overlay">
+  <div class="modal">
+    <div class="mhead"><h2 id="mTitle">Simulation</h2><button class="close" id="closeBtn">✕</button></div>
+    <div class="mbody" id="mBody"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+const $=id=>document.getElementById(id);
+let lang='en',mode='practice',panX=-890,dragging=false,startX=0,originX=0;
+const state={
+ mechanics:{lift:false,shelf:false,floor:false,pivot:false,push:false,sit:false,stretch:false},
+ turn:{wash:false,explain:false,farArm:false,nearArm:false,farLeg:false,hands:false,count:false,pillow:false},
+ prone:{farArm:false,nearArm:false,farLeg:false,hands:false,count:false,head:false},
+ move:{upperHands:false,upperSlide:false,lowerHands:false,lowerSlide:false},
+ errors:[],turnDone:false,proneDone:false,moveDone:false
+};
+const t=(en,ar)=>lang==='ar'?ar:en;
+function open(){ $('overlay').classList.add('open') } function close(){ $('overlay').classList.remove('open') }
+function addError(x){if(!state.errors.includes(x))state.errors.push(x)}
+function setFb(cls,title,body){const f=$('feedback');if(!f)return;f.className='feedback '+cls;f.innerHTML='<b>'+title+'</b><div style="margin-top:5px">'+body+'</div>'}
+function mechanicsDone(){return Object.values(state.mechanics).filter(Boolean).length}
+function briefing(){
+ open();$('mTitle').textContent=t('Scenario briefing','مقدمة السيناريو');
+ $('mBody').innerHTML=`
+ <div class="grid2">
+  <div class="card soft"><h3>${t('Your task','مهمتك')}</h3><p>${t('You are Ahmed, a first-year nursing student. Your instructor asks you to demonstrate safe body mechanics and then turn/move Khaled in bed using the supplied first-year checklist.','أنت أحمد، طالب تمريض في السنة الأولى. يطلب منك المدرّس إظهار ميكانيكا الجسم السليمة ثم تدوير/تحريك خالد في السرير وفق قائمة المهارات المرفقة.')}</p></div>
+  <div class="card"><h3>${t('Two learning layers','مستويان للتعلم')}</h3><p><b>${t('Body mechanics','ميكانيكا الجسم')}</b>: ${t('the professor’s rationale sheet explains why the movement protects the nurse.','ورقة الأستاذة تشرح سبب أهمية الوضع والحركة لحماية الممرض.')}</p><p><b>${t('Turning & moving','تدوير وتحريك المريض')}</b>: ${t('the supplied checklist gives the ordered steps but does not provide written rationales. This simulation therefore teaches its sequence directly from the checklist and labels sequence feedback as checklist-derived.','القائمة المرفقة تعطي ترتيب الخطوات لكنها لا تتضمن مبررات مكتوبة. لذلك يعلّم هذا النموذج الترتيب كما ورد في القائمة ويعرض ملاحظات الترتيب باعتبارها مستندة إلى ترتيب القائمة.')}</p></div>
+ </div>`;
+}
+const mech={
+ lift:{
+  title:['Lift safely','الرفع بطريقة آمنة'],
+  q:['A supply box must be lifted. Which technique matches the professor’s body-mechanics sheet?','يجب رفع صندوق مستلزمات. أي تقنية تطابق ورقة ميكانيكا الجسم؟'],
+  options:[
+   ['bad',['Stand away from the box and bend mainly from the back.','قف بعيدًا عن الصندوق واعتمد أساسًا على انحناء الظهر.']],
+   ['good',['Move close to the box, straddle the legs and use leg power.','اقترب من الصندوق، باعد بين الساقين واستخدم قوة الساقين.']]
+  ],
+  why:['The source says to position the body as close to the object as possible and use leg power rather than the back to prevent back strain.','تنص المادة على الاقتراب من الجسم قدر الإمكان واستخدام قوة الساقين بدل الظهر للوقاية من إجهاد الظهر.']
+ },
+ shelf:{
+  title:['High shelf','رف مرتفع'],
+  q:['You need to place an item on the high shelf.','تحتاج إلى وضع غرض على الرف المرتفع.'],
+  options:[
+   ['good',['Move as close to the shelf as possible to avoid reaching.','اقترب من الرف قدر الإمكان لتجنب مد الذراع بعيدًا.']],
+   ['bad',['Stay back and stretch/reach forward.','ابقَ بعيدًا ومد جسمك وذراعك إلى الأمام.']]
+  ],
+  why:['The source recommends standing close so you do not have to reach, helping prevent muscle strain.','توصي المادة بالاقتراب من الرف لتجنب التمدد الزائد والمساعدة على الوقاية من إجهاد العضلات.']
+ },
+ floor:{
+  title:['Object on the floor','غرض على الأرض'],
+  q:['A light item has fallen to the floor. Choose the technique taught in the supplied sheet.','سقط غرض خفيف على الأرض. اختر التقنية المذكورة في الورقة المرفقة.'],
+  options:[
+   ['good',['Hold something sturdy, bend forward, and lift one leg for counterbalance (Golfer Tee Lift).','تمسك بشيء ثابت، انحنِ إلى الأمام وارفع ساقًا واحدة للتوازن (Golfer Tee Lift).']],
+   ['bad',['Twist the trunk and bend straight down with both feet fixed.','لف الجذع وانحنِ مباشرة مع تثبيت القدمين.']]
+  ],
+  why:['The source describes the Golfer Tee Lift as providing counterbalance and relieving pressure on the lower back.','تصف المادة تقنية Golfer Tee Lift بأنها توفر توازنًا معاكسًا وتخفف الضغط عن أسفل الظهر.']
+ },
+ trolley:{
+  title:['Move the trolley','حرّك العربة'],
+  q:['The trolley needs to be moved.','يجب تحريك العربة.'],
+  options:[
+   ['good',['Push the trolley.','ادفع العربة.']],
+   ['bad',['Pull the trolley behind you.','اسحب العربة خلفك.']]
+  ],
+  why:['The source says pushing is easier than pulling, provides more control and better body position, and is associated with fewer injuries.','تذكر المادة أن الدفع أسهل من السحب ويوفر تحكمًا ووضعًا أفضل للجسم ويرتبط بإصابات أقل.']
+ },
+ desk:{
+  title:['Desk posture','وضع الجلوس'],
+  q:['Choose the sitting posture described in the professor’s material.','اختر وضع الجلوس المذكور في مادة الأستاذة.'],
+  options:[
+   ['good',['Feet flat/on footrest, elbows and knees about 90–100°, forearms and thighs parallel to the floor, lower-back support.','القدمان على الأرض/مسند القدم، المرفقان والركبتان نحو 90–100°، الساعدان والفخذان موازيان للأرض مع دعم أسفل الظهر.']],
+   ['bad',['Feet unsupported, no lower-back support, and knees sharply flexed.','القدمان دون دعم، ولا دعم لأسفل الظهر، والركبتان مثنيتان بشدة.']]
+  ],
+  why:['The source links this sitting setup with relaxation and prevention of back strain.','تربط المادة هذا الوضع بالراحة والوقاية من إجهاد الظهر.']
+ }
+};
+function showMech(key){
+ const m=mech[key];open();$('mTitle').textContent=t(m.title[0],m.title[1]);
+ $('mBody').innerHTML='<div class="card soft"><h3>'+t(m.q[0],m.q[1])+'</h3><div class="grid2" style="margin-top:10px">'+m.options.map((o,i)=>'<button class="choice" data-k="'+o[0]+'">'+t(o[1][0],o[1][1])+'</button>').join('')+'</div><div id="feedback" class="feedback">'+t('Choose the physical strategy.','اختر الاستراتيجية الحركية.')+'</div></div>';
+ document.querySelectorAll('[data-k]').forEach(b=>b.onclick=()=>{
+   const good=b.dataset.k==='good';
+   if(good){state.mechanics[key]=true;b.classList.add('good');setFb('ok',t('Correct','صحيح'),t(m.why[0],m.why[1]))}
+   else{addError('mechanics-'+key);b.classList.add('bad');setFb('bad',t('Unsafe body mechanics','ميكانيكا جسم غير آمنة'),t(m.why[0],m.why[1]))}
+   updateMission();
+ });
+}
+function showPivot(){
+ open();$('mTitle').textContent=t('Pivot — do not twist','الارتكاز — لا تلف الجذع');
+ $('mBody').innerHTML='<div class="card soft"><h3>'+t('You need to change direction beside the bed.','تحتاج إلى تغيير الاتجاه بجانب السرير.')+'</h3><div class="grid2" style="margin-top:10px"><button class="choice" data-v="twist">'+t('Keep feet fixed and twist hips/trunk','ثبّت القدمين ولف الوركين/الجذع')+'</button><button class="choice" data-v="pivot">'+t('Move the feet and pivot','حرّك القدمين وارتكز لتغيير الاتجاه')+'</button></div><div id="feedback" class="feedback"></div></div>';
+ document.querySelectorAll('[data-v]').forEach(b=>b.onclick=()=>{if(b.dataset.v==='pivot'){state.mechanics.pivot=true;b.classList.add('good');setFb('ok',t('Correct','صحيح'),t('The source says: “Pivot, don’t twist” — move the feet, not the hips, to keep weight centralized.','تنص المادة: «ارتكز ولا تلف» — حرّك القدمين وليس الوركين للمحافظة على تمركز الوزن.'))}else{addError('twist');b.classList.add('bad');setFb('bad',t('Twisting selected','تم اختيار اللف'),t('The supplied sheet specifically instructs moving the feet instead of twisting the hips.','تنص الورقة المرفقة تحديدًا على تحريك القدمين بدل لف الوركين.'))}updateMission()});
+}
+function showStretch(){
+ open();$('mTitle').textContent=t('Periodic stretch','تمدد دوري');
+ $('mBody').innerHTML='<div class="card soft"><h3>'+t('Which action is included in the professor’s body-mechanics sheet?','أي إجراء وارد في ورقة ميكانيكا الجسم؟')+'</h3><div class="grid2" style="margin-top:10px"><button class="choice" data-s="good">'+t('Squeeze shoulder blades, roll shoulders, and stretch the back when standing.','ضم لوحي الكتف، أدر الكتفين للأمام والخلف، ومد الظهر عند الوقوف.')+'</button><button class="choice" data-s="bad">'+t('Remain in one posture throughout the day.','ابقَ في وضع واحد طوال اليوم.')+'</button></div><div id="feedback" class="feedback"></div></div>';
+ document.querySelectorAll('[data-s]').forEach(b=>b.onclick=()=>{if(b.dataset.s==='good'){state.mechanics.stretch=true;setFb('ok',t('Correct','صحيح'),t('The source recommends stretching periodically to promote muscle relaxation.','توصي المادة بالتمدد دوريًا لتعزيز استرخاء العضلات.'))}else{addError('stretch');setFb('bad',t('Not in the supplied guidance','ليس ضمن الإرشادات المرفقة'),t('The source explicitly recommends periodic stretching.','توصي المادة صراحةً بالتمدد الدوري.'))}updateMission()});
+}
+function turnVisualHTML(kind){
+ return `
+ <div class="turn-shell">
+  <div class="visual">
+   <div class="bedframe"><div class="rail"></div><div class="mattress"></div><div class="wheel w1"></div><div class="wheel w2"></div>
+    <div class="pillow head active"></div><div class="pillow support" id="supportPillow"></div>
+    <div class="patient" id="patientFig">
+      <div class="leg-near limb" id="legNear"></div><div class="leg-far limb" id="legFar"></div>
+      <div class="torso"></div><div class="arm-near limb" id="armNear"></div><div class="arm-far limb" id="armFar"></div>
+      <div class="head"><div class="face">🙂</div></div>
+    </div>
+    <div class="handmark hm1" id="hm1"></div><div class="handmark hm2" id="hm2"></div>
+   </div>
+   <div class="nurse" id="nurseFig"><div class="nurse-head"></div><div class="nurse-body"></div><div class="nurse-leg l"></div><div class="nurse-leg r"></div></div>
+  </div>
+  <aside class="taskpane">
+    <div class="card soft"><div class="row"><b id="procTitle"></b><span class="muted" id="procCount"></span></div><div class="progress" style="margin-top:8px"><i id="procBar"></i></div></div>
+    <div class="feedback" id="feedback"><b>${t('Perform the checklist sequence.','نفّذ تسلسل القائمة.')}</b><div style="margin-top:5px">${t('Sequence feedback below is derived from the order in the professor’s checklist.','ملاحظات الترتيب مستمدة من ترتيب قائمة الأستاذة.')}</div></div>
+    <div class="actions" id="procActions"></div>
+    <button class="btn primary" id="finishProc"></button>
+  </aside>
+ </div>`;
+}
+function showTurn(){
+ open();$('mTitle').textContent=t('Turning & Moving Patient','تدوير وتحريك المريض');$('mBody').innerHTML=turnVisualHTML('side');
+ $('procTitle').textContent=t('Supine → Side-lying','الاستلقاء الظهري ← الاستلقاء الجانبي');
+ const acts=[
+  ['wash',t('Hand washing','غسل اليدين')],['explain',t('Explain procedure','اشرح الإجراء')],
+  ['farArm',t('Farther arm across chest','الذراع الأبعد عبر الصدر')],['nearArm',t('Near arm to side','الذراع الأقرب بجانب الجسم')],
+  ['farLeg',t('Farther leg across near leg','الساق الأبعد فوق الأقرب')],['hands',t('Hands at far hip & shoulder','اليدان عند الورك والكتف الأبعد')],
+  ['count',t('Turn toward nurse on 3','أدر المريض نحو الممرض عند العد 3')],['pillow',t('Support pillow under arms & legs','وسادة دعم تحت الذراعين والساقين')]
+ ];
+ bindProcedure(state.turn,acts,'side');
+ $('finishProc').textContent=t('Continue to supine → prone','تابع إلى الاستلقاء الظهري ← الانبطاح');
+ $('finishProc').onclick=()=>{const missing=acts.filter(a=>!state.turn[a[0]]);if(missing.length&&mode==='practice'){setFb('bad',t('Sequence incomplete','التسلسل غير مكتمل'),t('Complete the remaining checklist steps before continuing.','أكمل خطوات القائمة المتبقية قبل المتابعة.'));return}state.turnDone=true;showProne()};
+}
+function bindProcedure(obj,acts,kind){
+ $('procActions').innerHTML=acts.map(a=>'<button class="action" data-a="'+a[0]+'">'+a[1]+'</button>').join('');
+ function refresh(){
+  const n=acts.filter(a=>obj[a[0]]).length;$('procBar').style.width=(n/acts.length*100)+'%';$('procCount').textContent=n+' / '+acts.length;
+  if(obj.farArm)$('armFar').classList.add('cross');if(obj.nearArm)$('armNear').style.top='100px';if(obj.farLeg)$('legFar').classList.add('cross');
+  if(obj.hands){$('hm1').classList.add('show');$('hm2').classList.add('show');$('nurseFig').classList.add('close','wide')}
+  if(obj.count)$('patientFig').classList.add(kind==='prone'?'prone':'side');
+  if(obj.pillow&&$('supportPillow'))$('supportPillow').classList.add('active');
+ }
+ document.querySelectorAll('[data-a]').forEach(b=>b.onclick=()=>{
+  const id=b.dataset.a;const order=acts.map(a=>a[0]);const idx=order.indexOf(id);const prior=order.slice(0,idx).filter(x=>!obj[x]);
+  if(prior.length){
+    addError(kind+'-'+id);
+    if(mode==='practice'){setFb('warn',t('Correct step — wrong time','خطوة صحيحة — لكن في وقت غير مناسب'),t('According to the supplied checklist order, complete the preceding preparation step(s) first.','وفق ترتيب القائمة المرفقة، أكمل خطوات الاستعداد السابقة أولًا.'));return}
+  }
+  obj[id]=true;b.classList.add('done');refresh();
+  if(mode==='practice'){
+    let msg=t('Step recorded in the checklist sequence.','تم تسجيل الخطوة ضمن تسلسل القائمة.');
+    if(id==='hands')msg=t('The checklist places the nurse’s hands at the patient’s farther hip and shoulder before the turn.','تضع القائمة يدي الممرض عند ورك المريض وكتفه الأبعد قبل التدوير.');
+    if(id==='count')msg=t('The checklist specifies turning the patient toward the nurse on the count of 3.','تنص القائمة على تدوير المريض نحو الممرض عند العد إلى 3.');
+    if(id==='pillow')msg=t('The checklist finishes the side-lying turn with support pillows under the patient’s arms and legs.','تنهي القائمة وضع الاستلقاء الجانبي بوسائد دعم تحت ذراعي المريض وساقيه.');
+    setFb('ok',t('Good','جيد'),msg);
+  }
+ });
+ refresh();
+}
+function showProne(){
+ $('mTitle').textContent=t('Supine → Prone','الاستلقاء الظهري ← الانبطاح');$('mBody').innerHTML=turnVisualHTML('prone');$('procTitle').textContent=t('Supine → Prone','الاستلقاء الظهري ← الانبطاح');
+ const acts=[
+  ['farArm',t('Farther arm across chest','الذراع الأبعد عبر الصدر')],['nearArm',t('Near arm under his side','الذراع الأقرب تحت جانبه')],
+  ['farLeg',t('Farther leg across near leg','الساق الأبعد فوق الأقرب')],['hands',t('Hands at far hip & shoulder','اليدان عند الورك والكتف الأبعد')],
+  ['count',t('Turn to prone on 3','أدر إلى الانبطاح عند العد 3')],['head',t('Turn head to the side','أدر الرأس إلى الجانب')]
+ ];
+ bindProcedure(state.prone,acts,'prone');
+ $('finishProc').textContent=t('Continue to move patient to side of bed','تابع لتحريك المريض إلى جانب السرير');
+ $('finishProc').onclick=()=>{const missing=acts.filter(a=>!state.prone[a[0]]);if(missing.length&&mode==='practice'){setFb('bad',t('Sequence incomplete','التسلسل غير مكتمل'),t('Complete the remaining checklist steps first.','أكمل خطوات القائمة المتبقية أولًا.'));return}state.proneDone=true;showMove()};
+}
+function showMove(){
+ $('mTitle').textContent=t('Move Patient to Side of Bed','تحريك المريض إلى جانب السرير');$('mBody').innerHTML=turnVisualHTML('move');$('procTitle').textContent=t('Move Patient to Side of Bed','تحريك المريض إلى جانب السرير');
+ const acts=[
+  ['upperHands',t('Hands under shoulder & hips','اليدان تحت الكتف والوركين')],['upperSlide',t('Slide toward side on 3','حرّك نحو الجانب عند العد 3')],
+  ['lowerHands',t('Hands under hips & legs','اليدان تحت الوركين والساقين')],['lowerSlide',t('Slide lower body on 3','حرّك الجزء السفلي عند العد 3')]
+ ];
+ $('procActions').innerHTML=acts.map(a=>'<button class="action" data-m="'+a[0]+'">'+a[1]+'</button>').join('');
+ function refresh(){
+  const n=acts.filter(a=>state.move[a[0]]).length;$('procBar').style.width=(n/acts.length*100)+'%';$('procCount').textContent=n+' / '+acts.length;
+  if(state.move.upperHands||state.move.lowerHands){$('hm1').classList.add('show');$('hm2').classList.add('show');$('nurseFig').classList.add('close','wide')}
+  if(state.move.upperSlide)$('patientFig').classList.add('shift');if(state.move.lowerSlide)$('patientFig').classList.add('shift');
+ }
+ document.querySelectorAll('[data-m]').forEach(b=>b.onclick=()=>{
+  const order=acts.map(a=>a[0]),id=b.dataset.m,prior=order.slice(0,order.indexOf(id)).filter(x=>!state.move[x]);
+  if(prior.length){addError('move-'+id);if(mode==='practice'){setFb('warn',t('Wrong sequence','ترتيب غير صحيح'),t('The supplied checklist performs the upper-body slide first, then repositions the hands for the hips/legs and slides again on 3.','تبدأ القائمة بتحريك الجزء العلوي أولًا، ثم إعادة وضع اليدين عند الوركين/الساقين والتحريك مرة أخرى عند العد 3.'));return}}
+  state.move[id]=true;b.classList.add('done');refresh();if(mode==='practice')setFb('ok',t('Good','جيد'),t('Step completed in the checklist order.','تم تنفيذ الخطوة حسب ترتيب القائمة.'));
+ });
+ refresh();$('finishProc').textContent=t('Finish scenario','إنهاء السيناريو');$('finishProc').onclick=()=>{const missing=acts.filter(a=>!state.move[a[0]]);if(missing.length&&mode==='practice'){setFb('bad',t('Sequence incomplete','التسلسل غير مكتمل'),t('Complete the remaining steps first.','أكمل الخطوات المتبقية أولًا.'));return}state.moveDone=true;showDebrief()};
+}
+function showDebrief(){
+ $('mTitle').textContent=t('Debrief — Body Mechanics & Patient Movement','التغذية الراجعة — ميكانيكا الجسم وتحريك المريض');
+ const m=mechanicsDone();
+ $('mBody').innerHTML=`
+ <div class="debrief">
+  <div class="card soft"><h3>${t('What this module assessed','ما الذي قيّمه هذا النموذج')}</h3><p>${t('Body-mechanics rationales come from the professor’s supplied rationale sheet. Turning/moving sequence feedback follows the order of the supplied checklist; that checklist itself does not contain written rationales.','مبررات ميكانيكا الجسم مأخوذة من ورقة الأستاذة المرفقة. أما ملاحظات ترتيب تدوير/تحريك المريض فتتبع ترتيب القائمة المرفقة، وهي لا تحتوي بحد ذاتها على مبررات مكتوبة.')}</p></div>
+  <div class="result"><div class="icon">${m>=5?'✓':'⚠'}</div><div><b>${t('Body mechanics','ميكانيكا الجسم')}</b><br><small>${t(m+' of 7 source-based mechanics items completed.','تم إكمال '+m+' من 7 عناصر مبنية على المصدر.')}</small></div></div>
+  <div class="result"><div class="icon">${state.turnDone?'✓':'⚠'}</div><div><b>${t('Supine → side-lying','الاستلقاء الظهري ← الجانبي')}</b><br><small>${state.turnDone?t('Checklist sequence completed.','اكتمل تسلسل القائمة.'):t('Not completed.','غير مكتمل.')}</small></div></div>
+  <div class="result"><div class="icon">${state.proneDone?'✓':'⚠'}</div><div><b>${t('Supine → prone','الاستلقاء الظهري ← الانبطاح')}</b><br><small>${state.proneDone?t('Checklist sequence completed.','اكتمل تسلسل القائمة.'):t('Not completed.','غير مكتمل.')}</small></div></div>
+  <div class="result"><div class="icon">${state.moveDone?'✓':'⚠'}</div><div><b>${t('Move patient to side of bed','تحريك المريض إلى جانب السرير')}</b><br><small>${state.moveDone?t('Both slide phases completed in order.','اكتملت مرحلتا التحريك بالترتيب.'):t('Not completed.','غير مكتمل.')}</small></div></div>
+  <div class="result"><div class="icon">${state.errors.length?'⚠':'✓'}</div><div><b>${t('Sequence / technique issues','ملاحظات الترتيب / التقنية')}</b><br><small>${state.errors.length?t(state.errors.length+' issue(s) recorded for review.','تم تسجيل '+state.errors.length+' ملاحظة للمراجعة.'):t('No sequence issues recorded.','لم تُسجّل مشكلات في الترتيب.')}</small></div></div>
+  <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="again">${t('Practice again','تدرب مرة أخرى')}</button><button class="btn soft" id="independent">${t('Try independent mode','جرّب الوضع المستقل')}</button></div>
+ </div>`;
+ $('again').onclick=()=>{reset();mode='practice';close();applyLang()};$('independent').onclick=()=>{reset();mode='independent';close();applyLang()};
+}
+function updateMission(){
+ const m=mechanicsDone();
+ $('mission').textContent=t('Ahmed is preparing to reposition Khaled safely.','أحمد يستعد لإعادة وضع خالد بأمان.');
+ $('missionSub').textContent=m<5?t('Explore the body-mechanics stations, then approach the bed.','استكشف محطات ميكانيكا الجسم ثم اقترب من السرير.'):t('Good preparation. You can now approach Khaled and perform the turning/moving checklist.','استعداد جيد. يمكنك الآن الاقتراب من خالد وتنفيذ قائمة التدوير والتحريك.');
+}
+function reset(){
+ Object.keys(state.mechanics).forEach(k=>state.mechanics[k]=false);Object.keys(state.turn).forEach(k=>state.turn[k]=false);Object.keys(state.prone).forEach(k=>state.prone[k]=false);Object.keys(state.move).forEach(k=>state.move[k]=false);
+ state.errors=[];state.turnDone=false;state.proneDone=false;state.moveDone=false;updateMission();
+}
+function applyLang(){
+ const ar=lang==='ar';document.documentElement.lang=ar?'ar':'en';document.documentElement.dir=ar?'rtl':'ltr';$('app').classList.toggle('rtl',ar);
+ $('langBtn').textContent=ar?'English':'العربية';$('brandTitle').textContent=t('Clinical Skills Lab — Tobruk University','مختبر المهارات السريرية — جامعة طبرق');$('brandSub').textContent=t('First-year nursing • Body mechanics + turning & moving a patient','تمريض السنة الأولى • ميكانيكا الجسم + تدوير وتحريك المريض');
+ $('modeBtn').textContent=mode==='practice'?t('Practice mode','وضع التدريب'):t('Independent mode','الوضع المستقل');$('resetBtn').textContent=t('Restart','إعادة البدء');$('hintBtn').textContent=t('Hint','تلميح');$('briefBtn').textContent=t('Briefing','المقدمة');$('lookHint').textContent=t('Drag / swipe to explore the lab','اسحب بالماوس أو الإصبع لاستكشاف المختبر');updateMission();
+}
+function panTo(x){panX=Math.max(Math.min(x,0),window.innerWidth-2800);$('panorama').style.transform='translateX('+panX+'px)'}
+$('panorama').addEventListener('pointerdown',e=>{dragging=true;startX=e.clientX;originX=panX;$('panorama').setPointerCapture(e.pointerId);$('panorama').classList.add('dragging')});
+$('panorama').addEventListener('pointermove',e=>{if(dragging)panTo(originX+(e.clientX-startX))});$('panorama').addEventListener('pointerup',()=>{dragging=false;$('panorama').classList.remove('dragging')});$('panorama').addEventListener('pointercancel',()=>{dragging=false;$('panorama').classList.remove('dragging')});
+$('liftHot').onclick=()=>showMech('lift');$('shelfHot').onclick=()=>showMech('shelf');$('floorHot').onclick=()=>showMech('floor');$('trolleyHot').onclick=()=>showMech('trolley');$('deskHot').onclick=()=>showMech('desk');$('bedHot').onclick=showTurn;
+$('briefBtn').onclick=briefing;$('hintBtn').onclick=()=>{open();$('mTitle').textContent=t('Hint','تلميح');$('mBody').innerHTML='<div class="card soft"><p>'+t('Before patient movement, practise the room’s body-mechanics stations. When turning Khaled, follow the supplied checklist order rather than guessing a new sequence.','قبل تحريك المريض، تدرب على محطات ميكانيكا الجسم في الغرفة. وعند تدوير خالد اتبع ترتيب القائمة المرفقة بدل تخمين تسلسل جديد.')+'</p><div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn soft" id="pivotBtn">'+t('Practice pivot','تدرّب على الارتكاز')+'</button><button class="btn soft" id="stretchBtn">'+t('Practice stretch','تدرّب على التمدد')+'</button></div></div>';$('pivotBtn').onclick=showPivot;$('stretchBtn').onclick=showStretch};
+$('closeBtn').onclick=close;$('overlay').onclick=e=>{if(e.target===$('overlay'))close()};$('langBtn').onclick=()=>{lang=lang==='en'?'ar':'en';applyLang()};$('modeBtn').onclick=()=>{mode=mode==='practice'?'independent':'practice';applyLang()};$('resetBtn').onclick=()=>{reset();applyLang()};
+window.addEventListener('resize',()=>panTo(panX));panTo(panX);applyLang();
+})();
+</script>
+</body>
+</html>
