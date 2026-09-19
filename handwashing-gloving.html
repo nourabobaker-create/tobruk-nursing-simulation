@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Clinical Skills Lab — Handwashing & Clean Gloving</title>
+<style>
+:root{
+  --green:#0b6b4f;--green2:#178c68;--mint:#eaf7f2;--ink:#17312a;--muted:#667a73;
+  --line:#d6e4df;--paper:#ffffff;--bg:#edf3f1;--warn:#b87916;--danger:#a72922;
+  --shadow:0 18px 50px rgba(15,49,39,.15)
+}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;font-family:Inter,Segoe UI,Tahoma,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+button{font:inherit}
+body{overflow:hidden}
+.hidden{display:none!important}
+.topbar{
+  height:72px;padding:10px 14px;background:#fff;border-bottom:1px solid var(--line);
+  display:flex;align-items:center;gap:12px;position:relative;z-index:30
+}
+.brand{min-width:0;flex:1}.brand b{display:block;font-size:16px}.brand small{color:var(--muted)}
+.controls{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end}
+.btn{border:1px solid var(--line);background:#fff;border-radius:12px;padding:9px 12px;font-weight:800;cursor:pointer}
+.btn.primary{background:var(--green);border-color:var(--green);color:#fff}
+.btn.soft{background:var(--mint);color:var(--green)}
+.btn.warn{background:#fff6e5;color:#805300;border-color:#efd59d}
+.stage{height:calc(100vh - 72px);position:relative;overflow:hidden;background:#cfded8}
+.panorama{
+  position:absolute;inset:0 auto 0 0;width:2400px;height:100%;
+  transform:translateX(-760px);transition:transform .12s ease-out;touch-action:none;cursor:grab
+}
+.panorama.dragging{cursor:grabbing;transition:none}
+.scene-svg{width:2400px;height:100%;display:block}
+.vignette{position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(9,29,23,.28),transparent 15%,transparent 85%,rgba(9,29,23,.28))}
+.hud{
+  position:absolute;left:50%;bottom:16px;transform:translateX(-50%);z-index:15;width:min(880px,94vw);
+  background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.7);
+  border-radius:18px;padding:10px 12px;box-shadow:var(--shadow);display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center
+}
+.hud strong{display:block}.hud small{color:var(--muted)}
+.hud-actions{display:flex;gap:7px}
+.lookhint{
+  position:absolute;top:90px;left:50%;transform:translateX(-50%);z-index:12;
+  background:rgba(19,48,39,.88);color:#fff;padding:8px 12px;border-radius:999px;font-size:12px
+}
+.hotspot{
+  position:absolute;z-index:10;border:0;background:rgba(11,107,79,.94);color:#fff;border-radius:999px;
+  padding:10px 12px;font-weight:900;box-shadow:0 8px 25px rgba(0,0,0,.23);cursor:pointer
+}
+.hotspot:hover{background:#084f3b}.hotspot small{display:block;font-size:10px;font-weight:600;opacity:.9}
+#sinkHot{left:365px;top:54%}#gloveHot{left:1685px;top:35%}#patientHot{left:1230px;top:43%}
+.roomlabel{
+  position:absolute;z-index:8;left:1070px;top:14%;padding:8px 14px;background:#f8fbfa;border:1px solid #b8cdc6;
+  border-radius:8px;font-weight:800;color:#33574b;box-shadow:0 7px 18px rgba(0,0,0,.12)
+}
+.sheet{position:fixed;inset:0;z-index:80;background:rgba(8,26,20,.62);display:none;place-items:center;padding:14px}
+.sheet.open{display:grid}
+.modal{
+  width:min(1000px,100%);max-height:94vh;background:#fff;border-radius:22px;box-shadow:0 28px 80px rgba(0,0,0,.3);
+  overflow:hidden;display:flex;flex-direction:column
+}
+.mhead{padding:13px 16px;border-bottom:1px solid var(--line);display:flex;gap:10px;align-items:center}
+.mhead h2{font-size:18px;margin:0;flex:1}.close{width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:#fff;cursor:pointer}
+.mbody{overflow:auto;padding:16px}
+.introgrid{display:grid;grid-template-columns:1.2fr .8fr;gap:14px}
+.card{border:1px solid var(--line);background:#fff;border-radius:16px;padding:14px}
+.card.soft{background:#f8fbfa}.card h3{margin:0 0 8px;font-size:15px}
+.modes{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+.mode{padding:14px;border:1px solid var(--line);border-radius:14px;background:#fff;text-align:left;cursor:pointer}
+.mode:hover{border-color:#89c7b4;background:#f6fcf9}
+.skill-shell{display:grid;grid-template-columns:1fr 270px;gap:12px}
+.visual{
+  min-height:520px;border-radius:18px;overflow:hidden;position:relative;border:1px solid var(--line);
+  background:linear-gradient(#dce9e5 0 67%,#c7b592 67%);
+}
+.visual.sinkview{background:linear-gradient(#d8e6e1 0 67%,#c7b592 67%)}
+.visual.gloveview{background:linear-gradient(#e4ece9 0 70%,#c8b995 70%)}
+.taskpane{display:flex;flex-direction:column;gap:10px}
+.statusbox{padding:12px;border-radius:14px;background:#f7faf9;border:1px solid var(--line)}
+.statusbox b{display:block;margin-bottom:4px}.statusbox small{color:var(--muted)}
+.feedback{padding:12px;border-radius:14px;background:#f7faf9;border:1px solid var(--line);min-height:90px}
+.feedback.ok{background:#edf9f4;border-color:#a7dbc9}.feedback.warn{background:#fff7e7;border-color:#ead29a}.feedback.bad{background:#fff0ef;border-color:#efb4af}
+.actionsgrid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.action{border:1px solid var(--line);background:#fff;border-radius:12px;padding:10px;cursor:pointer;font-weight:800;min-height:48px}
+.action:hover{border-color:#8fc7b6;background:#fbfefd}
+.action.done{background:#edf9f4;border-color:#8fcdb8;color:var(--green)}
+.progress{height:9px;border-radius:99px;background:#e4ece9;overflow:hidden}.progress i{display:block;height:100%;width:0;background:var(--green);transition:.25s}
+.counter{font-size:12px;color:var(--muted);display:flex;justify-content:space-between}
+.handwash{
+  position:absolute;left:50%;bottom:30px;transform:translateX(-50%);width:510px;height:310px
+}
+.hand{position:absolute;width:170px;height:245px;background:linear-gradient(145deg,#d79d78,#c58460);border-radius:70px 70px 58px 58px;box-shadow:inset 0 -12px 20px rgba(106,55,34,.12),0 12px 35px rgba(0,0,0,.18)}
+.hand.left{left:75px;transform:rotate(12deg)}.hand.right{right:75px;transform:rotate(-12deg)}
+.finger{position:absolute;width:30px;height:105px;background:inherit;border-radius:22px;top:-65px}
+.hand .f1{left:12px;transform:rotate(-7deg)}.hand .f2{left:45px}.hand .f3{left:78px;height:112px}.hand .f4{left:111px;height:98px;transform:rotate(6deg)}
+.thumb{position:absolute;width:42px;height:105px;background:inherit;border-radius:25px;top:40px}
+.left .thumb{right:-23px;transform:rotate(-34deg)}.right .thumb{left:-23px;transform:rotate(34deg)}
+.watch{position:absolute;width:95px;height:28px;background:#222;border-radius:8px;left:38px;bottom:12px;border:5px solid #555}
+.watch.off{display:none}
+.soapfilm{position:absolute;inset:-15px;border-radius:90px;opacity:0;pointer-events:none;background:radial-gradient(circle at 30% 30%,rgba(255,255,255,.95) 0 5px,rgba(230,248,243,.8) 6px 10px,transparent 11px),radial-gradient(circle at 65% 52%,rgba(255,255,255,.95) 0 6px,rgba(230,248,243,.8) 7px 11px,transparent 12px)}
+.soapy .soapfilm{opacity:1}
+.water{position:absolute;top:96px;left:50%;transform:translateX(-50%);width:52px;height:210px;background:linear-gradient(90deg,transparent,#bce9f4 20%,#e6faff 55%,#a9dce9 80%,transparent);opacity:0;filter:blur(.5px)}
+.water.on{opacity:.82}
+.sinkbasin{position:absolute;left:50%;top:80px;transform:translateX(-50%);width:640px;height:220px;background:linear-gradient(#f6f8f8,#c9d2d0);border-radius:40px 40px 120px 120px;border:8px solid #aebbb7}
+.faucet{position:absolute;left:50%;top:24px;transform:translateX(-50%);width:120px;height:90px;border:16px solid #8e9c99;border-left-color:transparent;border-bottom-color:transparent;border-radius:0 55px 0 0}
+.sinkbg{position:absolute;inset:0}
+.gloveshands{position:absolute;left:50%;bottom:48px;transform:translateX(-50%);width:560px;height:300px}
+.glove{position:absolute;width:178px;height:255px;background:linear-gradient(145deg,#dff6f1,#9fd8ca);border:2px solid #7eb9aa;border-radius:72px 72px 60px 60px;opacity:.22}
+.glove.left{left:80px;transform:rotate(10deg)}.glove.right{right:80px;transform:rotate(-10deg)}
+.glove.worn{opacity:1}.glove.contaminated{box-shadow:0 0 0 6px rgba(178,54,45,.18),inset 0 0 45px rgba(178,54,45,.22)}
+.glovefinger{position:absolute;width:31px;height:108px;background:inherit;border-radius:22px;top:-67px}.glove .g1{left:13px}.glove .g2{left:47px}.glove .g3{left:81px;height:116px}.glove .g4{left:115px;height:102px}
+.glovethumb{position:absolute;width:43px;height:106px;background:inherit;border-radius:26px;top:42px}.glove.left .glovethumb{right:-22px;transform:rotate(-34deg)}.glove.right .glovethumb{left:-22px;transform:rotate(34deg)}
+.boxgraphic{position:absolute;top:45px;left:50%;transform:translateX(-50%);width:220px;height:105px;border-radius:12px;background:#fff;border:3px solid #77ae9e;display:grid;place-items:center;font-weight:900;color:#4a796b}
+.badcontact{position:absolute;width:34px;height:34px;border-radius:50%;background:rgba(190,46,37,.78);box-shadow:0 0 0 10px rgba(190,46,37,.18);display:none}
+.badcontact.show{display:block;animation:pulse 1s infinite}@keyframes pulse{50%{transform:scale(1.15)}}
+.debrief{display:grid;gap:10px}.result{padding:11px;border:1px solid var(--line);border-radius:12px;display:grid;grid-template-columns:auto 1fr;gap:10px}.result .icon{font-size:22px}
+.rtl{direction:rtl}.rtl .mode{text-align:right}
+@media(max-width:820px){
+  .topbar{height:auto;min-height:70px;flex-wrap:wrap}.controls{width:100%;justify-content:flex-start}
+  .stage{height:calc(100vh - 118px)}.skill-shell,.introgrid{grid-template-columns:1fr}.taskpane{order:-1}
+  .visual{min-height:470px}.handwash{transform:translateX(-50%) scale(.78);transform-origin:bottom center}.gloveshands{transform:translateX(-50%) scale(.78);transform-origin:bottom center}
+}
+@media(max-width:520px){
+  .brand small{display:none}.topbar{padding:8px}.btn{padding:8px 9px}.lookhint{top:76px}
+  .hud{grid-template-columns:1fr}.hud-actions{justify-content:flex-end}.modal{border-radius:16px}.mbody{padding:10px}
+  .actionsgrid{grid-template-columns:1fr 1fr}.visual{min-height:430px}
+  .handwash{transform:translateX(-50%) scale(.62)}.gloveshands{transform:translateX(-50%) scale(.62)}
+}
+</style>
+</head>
+<body>
+<div id="app">
+  <header class="topbar">
+    <div class="brand">
+      <b id="brandTitle">Clinical Skills Lab — Tobruk University</b>
+      <small id="brandSub">First-year nursing • Medical handwashing + clean gloving</small>
+    </div>
+    <div class="controls">
+      <button class="btn soft" id="langBtn">العربية</button>
+      <button class="btn" id="modeBtn">Practice mode</button>
+      <button class="btn" id="resetBtn">Restart</button>
+    </div>
+  </header>
+
+  <main class="stage">
+    <div class="lookhint" id="lookHint">Drag / swipe to look around the skills lab</div>
+    <div class="panorama" id="panorama">
+      <svg class="scene-svg" viewBox="0 0 2400 900" preserveAspectRatio="none" aria-label="Clinical skills laboratory">
+        <defs>
+          <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e8f0ed"/><stop offset="1" stop-color="#d1dfda"/></linearGradient>
+          <linearGradient id="floor" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d3c7ad"/><stop offset="1" stop-color="#b8a686"/></linearGradient>
+          <linearGradient id="bed" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#dbe5e2"/></linearGradient>
+        </defs>
+        <rect width="2400" height="610" fill="url(#wall)"/><rect y="610" width="2400" height="290" fill="url(#floor)"/>
+        <rect x="70" y="80" width="430" height="285" rx="8" fill="#b8d9e6" stroke="#7eaebf" stroke-width="9"/><line x1="285" y1="80" x2="285" y2="365" stroke="#7eaebf" stroke-width="9"/><line x1="70" y1="220" x2="500" y2="220" stroke="#7eaebf" stroke-width="9"/>
+        <rect x="90" y="420" width="420" height="270" rx="28" fill="#edf1f0" stroke="#9aa9a5" stroke-width="7"/><ellipse cx="300" cy="530" rx="150" ry="70" fill="#c9d3d0"/><rect x="215" y="350" width="170" height="80" rx="14" fill="#f6f8f8" stroke="#9aa9a5" stroke-width="7"/>
+        <rect x="150" y="270" width="100" height="135" rx="10" fill="#fff" stroke="#9dc3b7" stroke-width="5"/><rect x="270" y="275" width="105" height="130" rx="10" fill="#fff" stroke="#9dc3b7" stroke-width="5"/><text x="170" y="320" font-size="25" fill="#3b6c5d">SOAP</text><text x="289" y="320" font-size="22" fill="#3b6c5d">TOWELS</text>
+        <rect x="790" y="355" width="820" height="210" rx="25" fill="url(#bed)" stroke="#7e918b" stroke-width="8"/><rect x="845" y="312" width="690" height="115" rx="38" fill="#fff"/><rect x="920" y="350" width="520" height="150" rx="50" fill="#b9dacc"/>
+        <ellipse cx="1195" cy="325" rx="48" ry="56" fill="#ca906b"/><path d="M1148 312 Q1195 245 1243 312 Q1225 274 1195 270 Q1162 275 1148 312" fill="#30231f"/>
+        <circle cx="1178" cy="324" r="4"/><circle cx="1212" cy="324" r="4"/><path d="M1178 351 Q1195 359 1212 351" fill="none" stroke="#7d4939" stroke-width="4"/>
+        <rect x="1070" y="380" width="250" height="110" rx="52" fill="#7fbda9"/>
+        <rect x="1515" y="380" width="150" height="220" rx="10" fill="#f6f7f6" stroke="#879791" stroke-width="6"/><rect x="1540" y="410" width="100" height="55" rx="6" fill="#dfe9e6"/><line x1="1540" y1="500" x2="1640" y2="500" stroke="#a8b6b2" stroke-width="7"/>
+        <rect x="1695" y="160" width="195" height="120" rx="14" fill="#fff" stroke="#7bb09f" stroke-width="6"/><text x="1737" y="210" font-size="26" fill="#2d6a58">CLEAN</text><text x="1732" y="244" font-size="26" fill="#2d6a58">GLOVES</text>
+        <rect x="1905" y="380" width="260" height="190" rx="14" fill="#dde7e4" stroke="#7d918a" stroke-width="7"/><rect x="1934" y="410" width="80" height="56" rx="6" fill="#fff"/><rect x="2030" y="410" width="80" height="56" rx="6" fill="#d9ebff"/>
+        <rect x="1810" y="580" width="120" height="170" rx="8" fill="#657a73"/><rect x="1828" y="607" width="84" height="118" rx="6" fill="#243731"/><text x="1835" y="660" font-size="20" fill="#fff">WASTE</text>
+        <rect x="620" y="110" width="230" height="100" rx="8" fill="#fff" stroke="#a4b8b2" stroke-width="5"/><text x="645" y="155" font-size="23" fill="#2e6252">HAND HYGIENE</text><text x="670" y="184" font-size="17" fill="#648278">SKILLS AREA</text>
+        <line x1="2185" y1="90" x2="2185" y2="620" stroke="#889a95" stroke-width="7"/><path d="M2185 120 q-120 90 0 180 q120 90 0 180" fill="none" stroke="#a7c8bd" stroke-width="12"/>
+      </svg>
+      <div class="roomlabel">Faculty of Nursing • Tobruk University</div>
+      <button class="hotspot" id="sinkHot">🚰<small>Sink</small></button>
+      <button class="hotspot" id="patientHot">🛏️<small>Khaled</small></button>
+      <button class="hotspot" id="gloveHot">🧤<small>Glove station</small></button>
+    </div>
+    <div class="vignette"></div>
+
+    <section class="hud">
+      <div>
+        <strong id="mission">Ahmed, prepare to assist Mr Khaled with his morning care.</strong>
+        <small id="missionSub">Look around the room and decide what you should do first.</small>
+      </div>
+      <div class="hud-actions">
+        <button class="btn soft" id="hintBtn">Hint</button>
+        <button class="btn primary" id="startBtn">Start briefing</button>
+      </div>
+    </section>
+  </main>
+</div>
+
+<div class="sheet" id="sheet">
+  <div class="modal">
+    <div class="mhead"><h2 id="modalTitle">Clinical skills simulation</h2><button class="close" id="closeBtn">✕</button></div>
+    <div class="mbody" id="modalBody"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+const $=id=>document.getElementById(id);
+let lang='en', mode='practice', panX=-760, dragging=false, startX=0, originX=0;
+const state={
+  briefing:false, handwash:false, gloving:false, contaminated:false, washDone:new Set(), gloveDone:new Set(),
+  errors:[], corrected:0, patientTouched:false, careDone:false
+};
+const washSteps=[
+  {id:'distance',en:'Keep uniform away from sink',ar:'أبقِ الزي بعيدًا عن حوض الغسيل',why:'Prevents contamination of the uniform.'},
+  {id:'watch',en:'Remove watch / jewelry',ar:'انزع الساعة / الحُلي',why:'Provides access to skin surfaces for cleaning.'},
+  {id:'water',en:'Turn on and adjust warm water',ar:'افتح الماء واضبطه ليكون دافئًا',why:'Running water removes microorganisms; the source notes warm water preserves natural skin oils better.'},
+  {id:'lower',en:'Keep hands lower than elbows',ar:'أبقِ اليدين أخفض من المرفقين',why:'Supports flow from less contaminated toward more contaminated areas.'},
+  {id:'soap',en:'Apply soap and lather',ar:'ضع الصابون واصنع رغوة',why:'Lather facilitates removal of microorganisms.'},
+  {id:'surfaces',en:'Rub palms, backs, fingers, fingertips, knuckles, wrists and forearms',ar:'افرك الراحتين وظهر اليدين والأصابع والأطراف والمفاصل والرسغين والساعدين',why:'Friction mechanically removes microorganisms and loosens dirt.'},
+  {id:'nails',en:'Clean under fingernails',ar:'نظّف تحت الأظافر',why:'Cleans an area where contamination may remain.'},
+  {id:'rinse',en:'Rinse thoroughly',ar:'اشطف جيدًا',why:'Removes soap and loosened material from the skin.'},
+  {id:'dry',en:'Dry hands and wrists',ar:'جفف اليدين والرسغين',why:'Completes the washing process without re-soiling the hands.'},
+  {id:'faucet',en:'Turn off faucet without recontaminating clean hands',ar:'أغلق الصنبور دون إعادة تلويث اليدين',why:'Prevents contamination of clean hands by a less clean faucet.'}
+];
+const gloveSteps=[
+  {id:'pull1',en:'Take first glove from box',ar:'أخرج القفاز الأول من العلبة'},
+  {id:'wear1',en:'Slide glove onto the other hand',ar:'أدخل اليد الأخرى في القفاز'},
+  {id:'pull2',en:'Take second glove with gloved hand',ar:'أخرج القفاز الثاني باليد ذات القفاز'},
+  {id:'wear2',en:'Slide glove onto bare hand',ar:'أدخل اليد العارية في القفاز الثاني'},
+  {id:'interlace',en:'Interlace fingers to adjust fit',ar:'شبّك الأصابع لضبط القفازين'},
+  {id:'care',en:'Perform the short care task',ar:'نفّذ مهمة العناية القصيرة'},
+  {id:'grip',en:'Grip first glove at base of palm',ar:'أمسك القفاز الأول عند قاعدة راحة اليد'},
+  {id:'insideout',en:'Pull first glove off inside-out',ar:'اسحب القفاز الأول إلى الخارج مقلوبًا'},
+  {id:'under',en:'Slide bare fingers under second glove wrist',ar:'أدخل الأصابع العارية تحت حافة القفاز الثاني'},
+  {id:'off2',en:'Push second glove down and off',ar:'ادفع القفاز الثاني إلى أسفل وانزعه'},
+  {id:'dispose',en:'Dispose of gloves appropriately',ar:'تخلّص من القفازات بالطريقة المناسبة'},
+  {id:'postwash',en:'Perform hand hygiene after removal',ar:'نظّف اليدين بعد نزع القفازات'}
+];
+function t(en,ar){return lang==='ar'?ar:en}
+function openSheet(){ $('sheet').classList.add('open') }
+function closeSheet(){ $('sheet').classList.remove('open') }
+function setFeedback(cls,title,body){
+  const f=$('feedback'); if(!f)return;
+  f.className='feedback '+cls;
+  f.innerHTML='<b>'+title+'</b><div style="margin-top:5px">'+body+'</div>';
+}
+function recordError(code){ if(!state.errors.includes(code)) state.errors.push(code) }
+function progress(set,total){
+  const p=$('skillProgress'); if(p)p.style.width=(set.size/total*100)+'%';
+  const c=$('skillCount'); if(c)c.textContent=set.size+' / '+total;
+}
+function showBriefing(){
+  openSheet(); $('modalTitle').textContent=t('Scenario briefing','مقدمة السيناريو');
+  $('modalBody').innerHTML=`
+    <div class="introgrid">
+      <div class="card soft">
+        <h3>${t('Your role','دورك')}</h3>
+        <p>${t('You are Ahmed, a first-year nursing student. Khaled Salem is waiting in the clinical bay. Your instructor asks you to prepare to assist him with morning care.','أنت أحمد، طالب تمريض في السنة الأولى. خالد سالم ينتظر في سرير التدريب. يطلب منك المدرّس الاستعداد لمساعدته في العناية الصباحية.')}</p>
+        <p><b>${t('Do not expect a checklist on screen.','لا تتوقع ظهور قائمة خطوات على الشاشة.')}</b> ${t('Look around, choose actions, and use feedback to understand sequence and rationale.','انظر حولك واختر أفعالك واستخدم التغذية الراجعة لفهم الترتيب والسبب.')}</p>
+      </div>
+      <div class="card">
+        <h3>${t('Choose learning mode','اختر وضع التعلم')}</h3>
+        <div class="modes">
+          <button class="mode" data-mode="practice"><b>${t('Practice','تدريب')}</b><br><small>${t('Immediate rationale and recovery from mistakes.','تغذية راجعة فورية مع فرصة للتصحيح.')}</small></button>
+          <button class="mode" data-mode="independent"><b>${t('Independent','مستقل')}</b><br><small>${t('Minimal hints; detailed feedback at the end.','تلميحات أقل وتغذية راجعة مفصلة في النهاية.')}</small></button>
+        </div>
+      </div>
+    </div>`;
+  document.querySelectorAll('[data-mode]').forEach(b=>b.onclick=()=>{mode=b.dataset.mode;$('modeBtn').textContent=mode==='practice'?t('Practice mode','وضع التدريب'):t('Independent mode','الوضع المستقل');state.briefing=true;closeSheet()});
+}
+function showWash(){
+  openSheet(); $('modalTitle').textContent=t('Medical Handwashing','غسل اليدين الطبي');
+  $('modalBody').innerHTML=`
+  <div class="skill-shell">
+    <div class="visual sinkview">
+      <div class="sinkbg"><div class="sinkbasin"></div><div class="faucet"></div><div class="water" id="waterFlow"></div></div>
+      <div class="handwash" id="handwashVisual">
+        <div class="hand left" id="leftHand"><div class="finger f1"></div><div class="finger f2"></div><div class="finger f3"></div><div class="finger f4"></div><div class="thumb"></div><div class="watch" id="watchVisual"></div><div class="soapfilm"></div></div>
+        <div class="hand right" id="rightHand"><div class="finger f1"></div><div class="finger f2"></div><div class="finger f3"></div><div class="finger f4"></div><div class="thumb"></div><div class="soapfilm"></div></div>
+      </div>
+    </div>
+    <aside class="taskpane">
+      <div class="statusbox"><b>${t('Goal','الهدف')}</b><small>${t('Prepare and wash correctly without contaminating clean hands.','استعد واغسل يديك بالطريقة الصحيحة دون إعادة تلويثهما.')}</small><div class="progress" style="margin-top:9px"><i id="skillProgress"></i></div><div class="counter"><span id="skillCount">0 / ${washSteps.length}</span><span>${t('actions','إجراءات')}</span></div></div>
+      <div class="feedback" id="feedback"><b>${t('You are at the sink.','أنت الآن عند الحوض.')}</b><div style="margin-top:5px">${mode==='practice'?t('Choose what Ahmed should physically do next.','اختر ما يجب أن يفعله أحمد الآن.') : t('Proceed independently.','ابدأ بشكل مستقل.')}</div></div>
+      <div class="actionsgrid" id="washActions"></div>
+      <button class="btn primary" id="finishWash">${t('Finish handwashing','إنهاء غسل اليدين')}</button>
+    </aside>
+  </div>`;
+  const actions=[
+    ['distance',t('Step back from sink','ابتعد قليلًا عن الحوض')],
+    ['watch',t('Remove watch','انزع الساعة')],
+    ['water',t('Turn on warm water','افتح الماء الدافئ')],
+    ['soap',t('Apply soap','ضع الصابون')],
+    ['lower',t('Hands below elbows','اليدان أخفض من المرفقين')],
+    ['surfaces',t('Rub all hand surfaces','افرك جميع الأسطح')],
+    ['nails',t('Clean under nails','نظّف تحت الأظافر')],
+    ['rinse',t('Rinse','اشطف')],
+    ['dry',t('Dry hands','جفف اليدين')],
+    ['faucet',t('Turn off faucet safely','أغلق الصنبور بأمان')]
+  ];
+  $('washActions').innerHTML=actions.map(a=>'<button class="action" data-wash="'+a[0]+'">'+a[1]+'</button>').join('');
+  document.querySelectorAll('[data-wash]').forEach(b=>b.onclick=()=>handleWash(b.dataset.wash,b));
+  $('finishWash').onclick=finishWash;
+  progress(state.washDone,washSteps.length);
+  if(state.washDone.has('watch'))$('watchVisual').classList.add('off');
+  if(state.washDone.has('water')&&!state.washDone.has('faucet'))$('waterFlow').classList.add('on');
+  if(state.washDone.has('soap')){$('leftHand').classList.add('soapy');$('rightHand').classList.add('soapy')}
+}
+function why(id){return (washSteps.find(x=>x.id===id)||{}).why||''}
+function handleWash(id,button){
+  const d=state.washDone;
+  const need=(ids)=>ids.every(x=>d.has(x));
+  let problem='';
+  if(id==='soap'&&!need(['distance','watch','water'])) problem=t('Soap is useful, but preparation comes first: protect the uniform, remove the watch and establish running water.','الصابون مطلوب، لكن الاستعداد يسبق ذلك: أبعد الزي، انزع الساعة وافتح الماء.');
+  if(id==='surfaces'&&!need(['soap','lower'])) problem=t('Friction is the right action, but first establish lather and appropriate hand position.','الفرك صحيح، لكن يجب أولًا تكوين الرغوة ووضع اليدين بالشكل المناسب.');
+  if(id==='rinse'&&!need(['surfaces','nails'])) problem=t('Rinsing now would end the friction phase before all required areas were cleaned.','الشطف الآن ينهي مرحلة الفرك قبل تنظيف جميع المناطق المطلوبة.');
+  if(id==='dry'&&!d.has('rinse')) problem=t('Drying should follow thorough rinsing.','التجفيف يأتي بعد الشطف الجيد.');
+  if(id==='faucet'&&!d.has('dry')) problem=t('Finish rinsing and drying before closing the faucet without recontaminating the hands.','أكمل الشطف والتجفيف ثم أغلق الصنبور دون إعادة تلويث اليدين.');
+  if(problem){
+    recordError('wash-order-'+id);
+    if(mode==='practice')setFeedback('warn',t('Correct action — wrong time','إجراء صحيح — لكن في وقت غير مناسب'),problem);
+    else setFeedback('',t('Action recorded','تم تسجيل الإجراء'),t('Continue. Detailed sequence feedback will appear at the end.','استمر. ستظهر ملاحظات الترتيب في النهاية.'));
+    return;
+  }
+  d.add(id);button.classList.add('done');
+  if(id==='watch')$('watchVisual').classList.add('off');
+  if(id==='water')$('waterFlow').classList.add('on');
+  if(id==='soap'){$('leftHand').classList.add('soapy');$('rightHand').classList.add('soapy')}
+  if(id==='faucet')$('waterFlow').classList.remove('on');
+  if(mode==='practice')setFeedback('ok',t('Good','جيد'),t(why(id)||'Appropriate step completed.', ({distance:'تجنب ملامسة الزي للحوض يقلل تلوث الملابس.',watch:'إزالة الساعة تتيح تنظيف سطح الجلد بشكل أفضل.',water:'الماء الجاري يساعد على إزالة الكائنات الدقيقة.',lower:'يساعد هذا على اتجاه جريان الماء كما هو موضح في مادة المقرر.',soap:'الرغوة تساعد على إزالة الكائنات الدقيقة.',surfaces:'الاحتكاك يزيل الكائنات الدقيقة ميكانيكيًا ويخفف الأوساخ.',nails:'يجب تنظيف المنطقة تحت الأظافر.',rinse:'الشطف يزيل الصابون والمواد المفككة.',dry:'التجفيف يكمل الإجراء مع الحفاظ على نظافة اليدين.',faucet:'تجنب لمس الصنبور الأقل نظافة باليدين النظيفتين.'})[id]));
+  progress(d,washSteps.length);
+}
+function finishWash(){
+  const missing=washSteps.filter(s=>!state.washDone.has(s.id));
+  if(missing.length){
+    recordError('wash-missing');
+    if(mode==='practice'){setFeedback('bad',t('Not finished yet','لم تنتهِ بعد'),t('Some required actions are still missing. Look again at the sink and your hands.','ما زالت بعض الإجراءات المطلوبة ناقصة. راجع الحوض واليدين.'));return}
+  }
+  state.handwash=true;closeSheet();
+  $('mission').textContent=t('Hand hygiene complete. Return to Khaled and prepare for a task requiring clean gloves.','اكتمل غسل اليدين. عُد إلى خالد واستعد لمهمة تتطلب قفازات نظيفة.');
+  $('missionSub').textContent=t('Look around for the clean glove station.','ابحث عن مكان القفازات النظيفة.');
+}
+function showGloves(){
+  if(!state.handwash){
+    recordError('glove-before-wash');
+    if(mode==='practice'){
+      openSheet();$('modalTitle').textContent=t('Sequence matters','ترتيب الخطوات مهم');$('modalBody').innerHTML='<div class="card soft"><h3>'+t('Not yet','ليس بعد')+'</h3><p>'+t('Clean gloving should begin after appropriate hand hygiene and drying. Gloves do not replace hand hygiene.','يبدأ ارتداء القفازات النظيفة بعد تنظيف اليدين وتجفيفهما بشكل مناسب. القفازات لا تحل محل نظافة اليدين.')+'</p><button class="btn primary" id="goSink">'+t('Go to sink','اذهب إلى الحوض')+'</button></div>';$('goSink').onclick=showWash;return;
+    }
+  }
+  openSheet();$('modalTitle').textContent=t('Clean Gloving','ارتداء القفازات النظيفة');
+  $('modalBody').innerHTML=`
+  <div class="skill-shell">
+    <div class="visual gloveview">
+      <div class="boxgraphic">CLEAN GLOVES</div>
+      <div class="gloveshands">
+        <div class="glove left" id="gloveL"><div class="glovefinger g1"></div><div class="glovefinger g2"></div><div class="glovefinger g3"></div><div class="glovefinger g4"></div><div class="glovethumb"></div></div>
+        <div class="glove right" id="gloveR"><div class="glovefinger g1"></div><div class="glovefinger g2"></div><div class="glovefinger g3"></div><div class="glovefinger g4"></div><div class="glovethumb"></div></div>
+        <div class="badcontact" id="badContact" style="left:265px;top:155px"></div>
+      </div>
+    </div>
+    <aside class="taskpane">
+      <div class="statusbox"><b>${t('Goal','الهدف')}</b><small>${t('Don clean gloves, complete the short care task, then remove them without bare-skin contact with contaminated surfaces.','ارتدِ القفازات النظيفة، نفّذ مهمة العناية القصيرة، ثم انزعها دون ملامسة الجلد العاري للأسطح الملوثة.')}</small><div class="progress" style="margin-top:9px"><i id="skillProgress"></i></div><div class="counter"><span id="skillCount">0 / ${gloveSteps.length}</span><span>${t('actions','إجراءات')}</span></div></div>
+      <div class="feedback" id="feedback"><b>${t('Glove box ready.','علبة القفازات جاهزة.')}</b><div style="margin-top:5px">${t('Perform the sequence carefully.','نفّذ الخطوات بعناية.')}</div></div>
+      <div class="actionsgrid" id="gloveActions"></div>
+      <button class="btn primary" id="finishGlove">${t('Finish gloving scenario','إنهاء سيناريو القفازات')}</button>
+    </aside>
+  </div>`;
+  const actions=[
+    ['pull1',t('Take first glove','خذ القفاز الأول')],['wear1',t('Put on first glove','ارتدِ القفاز الأول')],
+    ['pull2',t('Take second glove','خذ القفاز الثاني')],['wear2',t('Put on second glove','ارتدِ القفاز الثاني')],
+    ['interlace',t('Interlace fingers','شبّك الأصابع')],['care',t('Assist with care','نفّذ العناية')],
+    ['grip',t('Grip first glove','أمسك القفاز الأول')],['insideout',t('Remove inside-out','انزع القفاز مقلوبًا')],
+    ['under',t('Bare fingers under wrist','أدخل الأصابع تحت الحافة')],['off2',t('Remove second glove','انزع القفاز الثاني')],
+    ['dispose',t('Dispose','تخلّص منهما')],['postwash',t('Hand hygiene','نظافة اليدين')]
+  ];
+  $('gloveActions').innerHTML=actions.map(a=>'<button class="action" data-glove="'+a[0]+'">'+a[1]+'</button>').join('');
+  document.querySelectorAll('[data-glove]').forEach(b=>b.onclick=()=>handleGlove(b.dataset.glove,b));
+  $('finishGlove').onclick=finishGlove;
+  gloveVisualState();progress(state.gloveDone,gloveSteps.length);
+}
+function gloveVisualState(){
+  if(!$('gloveL'))return;
+  const d=state.gloveDone;
+  $('gloveL').classList.toggle('worn',d.has('wear1')&&!d.has('insideout'));
+  $('gloveR').classList.toggle('worn',d.has('wear2')&&!d.has('off2'));
+  const used=d.has('care')&&!d.has('dispose');
+  $('gloveL').classList.toggle('contaminated',used&&!d.has('insideout'));
+  $('gloveR').classList.toggle('contaminated',used&&!d.has('off2'));
+}
+function handleGlove(id,button){
+  const d=state.gloveDone, req={
+    wear1:['pull1'],pull2:['wear1'],wear2:['pull2'],interlace:['wear1','wear2'],care:['interlace'],
+    grip:['care'],insideout:['grip'],under:['insideout'],off2:['under'],dispose:['off2'],postwash:['dispose']
+  };
+  const missing=(req[id]||[]).filter(x=>!d.has(x));
+  if(missing.length){
+    recordError('glove-order-'+id);
+    if(id==='under' && d.has('care')){
+      state.contaminated=true;$('badContact').classList.add('show');
+      setFeedback('bad',t('Contamination event','حدث تلوث'),t('Bare fingers contacted the contaminated outer glove surface. The source procedure specifically requires slipping bare fingers under the wrist without touching the outer surface.','لامست الأصابع العارية السطح الخارجي الملوث للقفاز. تنص خطوات المقرر على إدخال الأصابع تحت حافة المعصم دون لمس السطح الخارجي.'));
+    }else if(mode==='practice'){
+      setFeedback('warn',t('Correct action — wrong time','إجراء صحيح — لكن في وقت غير مناسب'),t('A prerequisite step has not yet been completed. Think about what must physically happen before this action is possible.','هناك خطوة سابقة لم تُنجز بعد. فكّر فيما يجب أن يحدث فعليًا قبل هذا الإجراء.'));
+    }else setFeedback('',t('Action recorded','تم تسجيل الإجراء'),t('Continue independently.','استمر بشكل مستقل.'));
+    return;
+  }
+  d.add(id);button.classList.add('done');
+  if(id==='care'){state.careDone=true;setFeedback('ok',t('Gloves are now considered used','تُعد القفازات الآن مستخدمة'),t('Now remove them while keeping contaminated outer surfaces away from bare skin.','انزعها الآن مع إبقاء الأسطح الخارجية الملوثة بعيدًا عن الجلد العاري.'))}
+  else if(mode==='practice'){
+    const rationale={
+      interlace:t('Interlacing helps the gloves fit smoothly and comfortably.','تشبيك الأصابع يساعد القفازات على الملاءمة بشكل مريح وسلس.'),
+      insideout:t('Removing the glove inside-out helps contain microorganisms inside.','نزع القفاز مقلوبًا يساعد على احتواء الكائنات الدقيقة داخله.'),
+      under:t('Bare fingers go under the wrist edge so they do not touch the contaminated exterior.','تدخل الأصابع العارية تحت حافة المعصم لتجنب ملامسة السطح الخارجي الملوث.'),
+      dispose:t('Containment and disposal limit spread of microorganisms.','الاحتواء والتخلص المناسب يحدان من انتشار الكائنات الدقيقة.'),
+      postwash:t('Hand hygiene after glove removal removes microorganisms from the hands.','نظافة اليدين بعد نزع القفازات تساعد على إزالة الكائنات الدقيقة.')
+    };
+    setFeedback('ok',t('Good','جيد'),rationale[id]||t('Appropriate step completed.','تم تنفيذ الخطوة بشكل مناسب.'));
+  }
+  gloveVisualState();progress(d,gloveSteps.length);
+}
+function finishGlove(){
+  const missing=gloveSteps.filter(s=>!state.gloveDone.has(s.id));
+  if(missing.length && mode==='practice'){recordError('glove-missing');setFeedback('bad',t('Not finished yet','لم تنتهِ بعد'),t('Some required actions are still missing.','ما زالت بعض الخطوات المطلوبة ناقصة.'));return}
+  state.gloving=true;showDebrief();
+}
+function showDebrief(){
+  $('modalTitle').textContent=t('Debrief — Handwashing & Clean Gloving','التغذية الراجعة — غسل اليدين والقفازات');
+  const goodWash=state.handwash, goodGlove=state.gloving, clean=!state.contaminated;
+  const issueCount=state.errors.length;
+  $('modalBody').innerHTML=`
+    <div class="debrief">
+      <div class="card soft"><h3>${t('Clinical reasoning summary','ملخص التفكير السريري')}</h3><p>${t('The goal was not to memorize buttons. The important chain is preparation → hand hygiene → clean gloving → used-glove removal → post-removal hand hygiene.','الهدف لم يكن حفظ الأزرار. التسلسل المهم هو: الاستعداد ← نظافة اليدين ← ارتداء القفازات النظيفة ← نزع القفازات المستخدمة ← نظافة اليدين بعد النزع.')}</p></div>
+      <div class="result"><div class="icon">${goodWash?'✓':'⚠'}</div><div><b>${t('Medical handwashing','غسل اليدين الطبي')}</b><br><small>${goodWash?t('Completed.','مكتمل.'):t('Some required actions were omitted.','تم إغفال بعض الإجراءات المطلوبة.')}</small></div></div>
+      <div class="result"><div class="icon">${goodGlove?'✓':'⚠'}</div><div><b>${t('Clean gloving','القفازات النظيفة')}</b><br><small>${goodGlove?t('Completed through removal and post-glove hand hygiene.','اكتمل حتى نزع القفازات ونظافة اليدين بعد ذلك.'):t('Sequence incomplete.','التسلسل غير مكتمل.')}</small></div></div>
+      <div class="result"><div class="icon">${clean?'✓':'❗'}</div><div><b>${t('Contamination control','التحكم في التلوث')}</b><br><small>${clean?t('No bare-skin contact with contaminated glove surfaces was recorded.','لم تُسجّل ملامسة بين الجلد العاري وسطح القفاز الملوث.'):t('A contamination event occurred during glove removal. Repeat that movement deliberately.','حدث تلوث أثناء نزع القفاز. أعد تلك الحركة بعناية.')}</small></div></div>
+      <div class="result"><div class="icon">${issueCount?'⚠':'✓'}</div><div><b>${t('Sequence / technique','الترتيب / التقنية')}</b><br><small>${issueCount?t(issueCount+' sequencing or technique issue(s) were recorded.','تم تسجيل '+issueCount+' ملاحظة تتعلق بالترتيب أو التقنية.'):t('No sequencing problems recorded.','لم تُسجّل مشكلات في الترتيب.')}</small></div></div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="againBtn">${t('Practice again','تدرب مرة أخرى')}</button><button class="btn soft" id="indBtn">${t('Try independent mode','جرّب الوضع المستقل')}</button></div>
+      <div class="card"><small>${t('Prototype curriculum note: this build follows the supplied Tobruk University instructor materials. Any ambiguous or potentially outdated wording should be reviewed by faculty before formal student release.','ملاحظة منهجية: يتبع هذا النموذج مواد المدرّس المرفوعة من جامعة طبرق. ينبغي مراجعة أي صياغة غامضة أو قديمة من أعضاء هيئة التدريس قبل الإطلاق الرسمي للطلاب.')}</small></div>
+    </div>`;
+  $('againBtn').onclick=()=>{resetAll();mode='practice';closeSheet();};
+  $('indBtn').onclick=()=>{resetAll();mode='independent';$('modeBtn').textContent=t('Independent mode','الوضع المستقل');closeSheet();};
+}
+function resetAll(){
+  state.briefing=false;state.handwash=false;state.gloving=false;state.contaminated=false;state.washDone.clear();state.gloveDone.clear();state.errors=[];state.corrected=0;state.careDone=false;
+  $('mission').textContent=t('Ahmed, prepare to assist Mr Khaled with his morning care.','أحمد، استعد لمساعدة السيد خالد في العناية الصباحية.');
+  $('missionSub').textContent=t('Look around the room and decide what you should do first.','انظر حولك وحدد ما يجب أن تفعله أولًا.');
+}
+function applyLang(){
+  const ar=lang==='ar';document.documentElement.lang=ar?'ar':'en';document.documentElement.dir=ar?'rtl':'ltr';$('app').classList.toggle('rtl',ar);
+  $('langBtn').textContent=ar?'English':'العربية';
+  $('brandTitle').textContent=t('Clinical Skills Lab — Tobruk University','مختبر المهارات السريرية — جامعة طبرق');
+  $('brandSub').textContent=t('First-year nursing • Medical handwashing + clean gloving','تمريض السنة الأولى • غسل اليدين الطبي + القفازات النظيفة');
+  $('modeBtn').textContent=mode==='practice'?t('Practice mode','وضع التدريب'):t('Independent mode','الوضع المستقل');
+  $('resetBtn').textContent=t('Restart','إعادة البدء');$('hintBtn').textContent=t('Hint','تلميح');$('startBtn').textContent=t('Start briefing','ابدأ المقدمة');
+  $('lookHint').textContent=t('Drag / swipe to look around the skills lab','اسحب بالماوس أو الإصبع للنظر حول مختبر المهارات');
+  if(!state.handwash){$('mission').textContent=t('Ahmed, prepare to assist Mr Khaled with his morning care.','أحمد، استعد لمساعدة السيد خالد في العناية الصباحية.');$('missionSub').textContent=t('Look around the room and decide what you should do first.','انظر حولك وحدد ما يجب أن تفعله أولًا.')}
+  else if(!state.gloving){$('mission').textContent=t('Hand hygiene complete. Return to Khaled and prepare for a task requiring clean gloves.','اكتمل غسل اليدين. عُد إلى خالد واستعد لمهمة تتطلب قفازات نظيفة.');$('missionSub').textContent=t('Look around for the clean glove station.','ابحث عن مكان القفازات النظيفة.')}
+}
+function panTo(x){panX=Math.max(Math.min(x,0),window.innerWidth-2400);$('panorama').style.transform='translateX('+panX+'px)'}
+$('panorama').addEventListener('pointerdown',e=>{dragging=true;startX=e.clientX;originX=panX;$('panorama').setPointerCapture(e.pointerId);$('panorama').classList.add('dragging')});
+$('panorama').addEventListener('pointermove',e=>{if(!dragging)return;panTo(originX+(e.clientX-startX))});
+$('panorama').addEventListener('pointerup',()=>{dragging=false;$('panorama').classList.remove('dragging')});
+$('panorama').addEventListener('pointercancel',()=>{dragging=false;$('panorama').classList.remove('dragging')});
+$('sinkHot').onclick=showWash;
+$('gloveHot').onclick=showGloves;
+$('patientHot').onclick=()=>{state.patientTouched=true;openSheet();$('modalTitle').textContent=t('Khaled Salem','خالد سالم');$('modalBody').innerHTML='<div class="card soft"><h3>'+t('Khaled is waiting for care.','خالد ينتظر العناية.')+'</h3><p>'+t('Before beginning hands-on care, think about preparation and infection prevention.','قبل بدء العناية المباشرة فكّر في الاستعداد والوقاية من العدوى.')+'</p></div>'};
+$('startBtn').onclick=showBriefing;
+$('hintBtn').onclick=()=>{openSheet();$('modalTitle').textContent=t('Hint','تلميح');$('modalBody').innerHTML='<div class="card soft"><p>'+(!state.handwash?t('Before touching the patient or using clean gloves, inspect the room for the hand-hygiene area.','قبل لمس المريض أو استخدام القفازات النظيفة، ابحث عن منطقة نظافة اليدين.'):t('Your hands are clean. Find the clean glove station for the next task.','يداك نظيفتان. ابحث عن مكان القفازات النظيفة للمهمة التالية.'))+'</p></div>'};
+$('closeBtn').onclick=closeSheet;$('sheet').onclick=e=>{if(e.target===$('sheet'))closeSheet()};
+$('langBtn').onclick=()=>{lang=lang==='en'?'ar':'en';applyLang()};
+$('modeBtn').onclick=()=>{mode=mode==='practice'?'independent':'practice';applyLang()};
+$('resetBtn').onclick=()=>{resetAll();applyLang()};
+window.addEventListener('resize',()=>panTo(panX));
+panTo(panX);applyLang();
+})();
+</script>
+</body>
+</html>
