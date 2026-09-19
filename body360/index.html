@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#102831"><meta name="description" content="Interactive 360-degree body mechanics and patient turning simulation. Faculty of Nursing, Tobruk University.">
+<title>Body Mechanics & Patient Movement · Tobruk Nursing 360°</title>
+<link rel="icon" href="../safety360/assets/logo-0.webp">
+<link rel="stylesheet" href="../safety360/style.css?v=102">
+<style>
+.phase-note{font-size:13px;line-height:1.55;padding:11px 12px;background:#eef4f5;border-inline-start:3px solid #177e87;border-radius:0 7px 7px 0;color:#49656e;margin:12px 0}
+.source-tag{display:inline-block;font-size:11px;letter-spacing:.05em;padding:5px 7px;border-radius:4px;background:#e7eff1;color:#55717a;margin:3px 5px 3px 0}
+.source-tag.review{background:#fff3dc;color:#805b25}
+.step-now{padding:14px;border:1px solid #cbdde1;border-radius:10px;background:white;margin:13px 0}
+.step-now strong{display:block;font-size:18px;margin-bottom:5px}.step-now small{color:#667a81}
+.sequence-strip{display:flex;gap:5px;flex-wrap:wrap;margin:11px 0}.sequence-dot{height:9px;flex:1;min-width:18px;border-radius:99px;background:#dbe6e9}.sequence-dot.done{background:#2b8c78}.sequence-dot.current{background:#e3ae4a}
+.action-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}.action-grid button{margin:0}
+.mode-chip{font-size:12px;padding:6px 9px;border-radius:5px;background:#123340d9;border:1px solid #fff3;color:#fff}
+.immersive-banner{position:absolute;right:31px;top:104px;z-index:11;max-width:330px;padding:10px 13px;background:#123340b8;border:1px solid #ffffff32;border-radius:8px;font-size:12px;line-height:1.5;color:#e5f1f3;backdrop-filter:blur(8px)}
+[dir="rtl"] .immersive-banner{right:auto;left:31px}
+@media(max-width:760px){.immersive-banner{display:none}.action-grid{grid-template-columns:1fr}.scene-title{top:112px}.panel{top:105px}}
+</style>
+</head>
+<body>
+<main id="simulation">
+  <div id="room" aria-label="Interactive 360-degree clinical skills room" tabindex="0">
+    <canvas id="panorama"></canvas><div class="room-shade"></div><div id="hotspots"></div>
+    <div id="loading" role="status"><span class="spinner"></span><span>Opening the skills lab… / جارٍ فتح مختبر المهارات…</span></div>
+    <div id="fallback" hidden></div>
+  </div>
+  <header class="topbar">
+    <a class="brand" href="../" title="Return home"><img src="../safety360/assets/logo-0.webp" alt="Faculty of Nursing"><span><strong data-en="TOBRUK UNIVERSITY" data-ar="جامعة طبرق"></strong><small data-en="Faculty of Nursing · Clinical Skills 360°" data-ar="كلية التمريض · المهارات السريرية 360°"></small></span></a>
+    <div class="top-actions"><span id="modeChip" class="mode-chip">Practice</span><button id="language">العربية</button><button id="mode">Independent</button><button id="fullscreen" title="Full screen">⛶</button><button id="menu" title="Scenario menu">☰</button></div>
+  </header>
+  <div class="scene-title"><span class="eyebrow" data-en="FIRST-YEAR SKILLS LAB" data-ar="مختبر مهارات السنة الأولى"></span><h1 data-en="Move safely." data-ar="تحرّك بأمان."></h1><p data-en="Protect yourself. Prepare the patient. Coordinate the move." data-ar="احمِ نفسك. حضّر المريض. نسّق الحركة."></p></div>
+  <div class="immersive-banner" id="immersiveBanner">Drag to look around. The room objects are the lesson — not a checklist beside the room.</div>
+  <nav id="chapters" aria-label="Scenario progress"></nav>
+  <div class="patient-chip"><span class="patient-avatar">KS</span><span><strong data-en="Khaled Salem" data-ar="خالد سالم"></strong><small data-en="Skills-lab patient · Bedside movement practice" data-ar="مريض مختبر المهارات · تدريب التحريك بجانب السرير"></small></span><span id="patient-status"></span></div>
+  <aside id="panel" class="panel" aria-label="Clinical interaction">
+    <div class="panel-top"><span id="panel-kicker"></span><button id="close-panel" aria-label="Close panel">×</button></div>
+    <div id="panel-content"></div>
+  </aside>
+  <button id="resume" class="resume" hidden></button>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <footer class="room-controls">
+    <div class="look-controls"><button id="look-left">‹</button><button id="look-up">⌃</button><span data-en="360° ROOM" data-ar="غرفة 360°"></span><button id="look-down">⌄</button><button id="look-right">›</button></div>
+    <div class="stations"><button data-view="patient" data-en="Bedside" data-ar="المريض"></button><button data-view="entry" data-en="Entrance" data-ar="المدخل"></button><button data-view="worktop" data-en="Worktop" data-ar="منضدة العمل"></button><button id="explore" data-en="All stations" data-ar="كل المحطات"></button></div>
+    <div class="view-actions"><button id="zoom-out">−</button><button id="zoom-in">+</button><button id="help" data-en="Teaching note" data-ar="ملاحظة تعليمية"></button></div>
+  </footer>
+  <p class="drag-hint" data-en="Drag to look · Arrows to turn · Tap a room object to act" data-ar="اسحب للنظر · الأسهم للدوران · اضغط على عنصر للتفاعل"></p>
+</main>
+<div id="printout"></div>
+<script src="../safety360/scene.js?v=102"></script>
+<script src="scenario.js?v=1"></script>
+<script src="app.js?v=1"></script>
+</body></html>
