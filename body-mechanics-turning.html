@@ -20,7 +20,7 @@ body{overflow:hidden}button{font:inherit}.hidden{display:none!important}
 .panorama.dragging{cursor:grabbing;transition:none}.scene-svg{width:2800px;height:100%;display:block}.vignette{position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(8,26,20,.25),transparent 12%,transparent 88%,rgba(8,26,20,.25))}
 .hot{position:absolute;z-index:12;border:0;border-radius:999px;background:rgba(11,107,79,.95);color:#fff;padding:10px 12px;font-weight:900;box-shadow:0 8px 26px rgba(0,0,0,.22);cursor:pointer}
 .hot small{display:block;font-size:10px;font-weight:600}.hot:hover{background:#084d3a}
-#liftHot{left:380px;top:67%}#shelfHot{left:600px;top:24%}#floorHot{left:800px;top:76%}#trolleyHot{left:1040px;top:61%}#deskHot{left:2390px;top:62%}#bedHot{left:1740px;top:49%}
+#liftHot{left:380px;top:67%}#shelfHot{left:600px;top:24%}#floorHot{left:800px;top:76%}#trolleyHot{left:1040px;top:61%}#pivotHot{left:1300px;top:36%}#bedHot{left:1740px;top:49%}#deskHot{left:2390px;top:62%}#stretchHot{left:2580px;top:28%}
 .roomlabel{position:absolute;left:1510px;top:12%;z-index:8;background:#f8fbfa;border:1px solid #b7cbc4;border-radius:8px;padding:8px 14px;font-weight:800;color:#365c50;box-shadow:0 7px 18px rgba(0,0,0,.12)}
 .hint{position:absolute;left:50%;top:88px;transform:translateX(-50%);z-index:15;background:rgba(19,48,39,.9);color:#fff;border-radius:999px;padding:8px 12px;font-size:12px}
 .hud{position:absolute;left:50%;bottom:16px;transform:translateX(-50%);z-index:18;width:min(930px,94vw);padding:11px 13px;border-radius:18px;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);box-shadow:var(--shadow);border:1px solid rgba(255,255,255,.7);display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}
@@ -80,8 +80,10 @@ body{overflow:hidden}button{font:inherit}.hidden{display:none!important}
     <button class="hot" id="shelfHot">🗄️<small>High shelf</small></button>
     <button class="hot" id="floorHot">⬇️<small>Floor object</small></button>
     <button class="hot" id="trolleyHot">🛒<small>Trolley</small></button>
+    <button class="hot" id="pivotHot">↪️<small>Pivot</small></button>
     <button class="hot" id="bedHot">🛏️<small>Khaled</small></button>
     <button class="hot" id="deskHot">🪑<small>Desk posture</small></button>
+    <button class="hot" id="stretchHot">🙆<small>Stretch</small></button>
   </div>
   <div class="vignette"></div>
   <section class="hud">
@@ -313,7 +315,7 @@ function applyLang(){
 function panTo(x){panX=Math.max(Math.min(x,0),window.innerWidth-2800);$('panorama').style.transform='translateX('+panX+'px)'}
 $('panorama').addEventListener('pointerdown',e=>{dragging=true;startX=e.clientX;originX=panX;$('panorama').setPointerCapture(e.pointerId);$('panorama').classList.add('dragging')});
 $('panorama').addEventListener('pointermove',e=>{if(dragging)panTo(originX+(e.clientX-startX))});$('panorama').addEventListener('pointerup',()=>{dragging=false;$('panorama').classList.remove('dragging')});$('panorama').addEventListener('pointercancel',()=>{dragging=false;$('panorama').classList.remove('dragging')});
-$('liftHot').onclick=()=>showMech('lift');$('shelfHot').onclick=()=>showMech('shelf');$('floorHot').onclick=()=>showMech('floor');$('trolleyHot').onclick=()=>showMech('trolley');$('deskHot').onclick=()=>showMech('desk');$('bedHot').onclick=showTurn;
+$('liftHot').onclick=()=>showMech('lift');$('shelfHot').onclick=()=>showMech('shelf');$('floorHot').onclick=()=>showMech('floor');$('trolleyHot').onclick=()=>showMech('trolley');$('pivotHot').onclick=showPivot;$('deskHot').onclick=()=>showMech('desk');$('stretchHot').onclick=showStretch;$('bedHot').onclick=showTurn;
 $('briefBtn').onclick=briefing;$('hintBtn').onclick=()=>{open();$('mTitle').textContent=t('Hint','تلميح');$('mBody').innerHTML='<div class="card soft"><p>'+t('Before patient movement, practise the room’s body-mechanics stations. When turning Khaled, follow the supplied checklist order rather than guessing a new sequence.','قبل تحريك المريض، تدرب على محطات ميكانيكا الجسم في الغرفة. وعند تدوير خالد اتبع ترتيب القائمة المرفقة بدل تخمين تسلسل جديد.')+'</p><div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn soft" id="pivotBtn">'+t('Practice pivot','تدرّب على الارتكاز')+'</button><button class="btn soft" id="stretchBtn">'+t('Practice stretch','تدرّب على التمدد')+'</button></div></div>';$('pivotBtn').onclick=showPivot;$('stretchBtn').onclick=showStretch};
 $('closeBtn').onclick=close;$('overlay').onclick=e=>{if(e.target===$('overlay'))close()};$('langBtn').onclick=()=>{lang=lang==='en'?'ar':'en';applyLang()};$('modeBtn').onclick=()=>{mode=mode==='practice'?'independent':'practice';applyLang()};$('resetBtn').onclick=()=>{reset();applyLang()};
 window.addEventListener('resize',()=>panTo(panX));panTo(panX);applyLang();
