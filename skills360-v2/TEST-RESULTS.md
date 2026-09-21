@@ -1,44 +1,41 @@
-# V2 verification
+# V2 revised verification — 22 September 2026
 
-Tested 21 September 2026 in headless Chromium 151. Desktop: 1440×1000 with mouse. Phone: 390×844 with touch enabled and actual CDP touch events. Phone tests are emulation, not a physical Android-device certification.
+This file documents the current handwashing + clean-gloving revision. The previous Astra version is preserved on branch `backup-skills360-v2-astra`.
 
-## State harness — 10/10 passed
+## State / sequence checks passed
 
-- Water → wet hands → soap regression; no circular prerequisite.
-- Normal handwash → safe faucet completion.
-- Soap-before-wetting recovery.
-- Early-drying recovery.
-- Missed area correction while retaining completed coverage.
-- Bare faucet recontamination and repeat-wash recovery.
-- Bare contact with used glove exterior, local removal retry, then completion.
-- Complete handwashing/gloving/final-handwashing cycle.
-- Independent mode observes non-dangerous sequence mistakes.
-- 300 deterministic sampled out-of-order handwashing sequences recover successfully.
+- Normal path: water → wet hands → soap.
+- Soap-before-wetting: supportive feedback is recorded; water remains available; wet → soap then succeeds.
+- Full Watch sequence executes through handwashing, clean gloving, used-glove removal, disposal and the final handwash.
+- The complete Watch state finishes with `complete=true`, all required hand surfaces covered, gloves removed and disposal complete.
+- Current demonstration simulation reaches 32 seconds of credited friction across the eight source-derived hand areas.
+- JavaScript syntax checks pass for app, content, scene, technique, engine and service-worker modules.
 
-## Browser interaction harness — 22/22 passed
+## Physical handwashing revision
 
-The following 11 checks passed in each viewport:
+Watch/Learn now use distinct visible hand-to-hand movements rather than motion lines as the main teaching device:
 
-1. Water → wet → soap through visible objects.
-2. Soap-before-wet supportive recovery.
-3. Early dry → rinse → dry → explicit towel-protected faucet closure.
-4. Missed fingertip area repaired with actual mouse/touch rubbing.
-5. Full normal wash using real gestures and elapsed friction, both hands and dorsal surfaces.
-6. Visible faucet contamination and available recovery.
-7. Glove exterior contamination, targeted retry, correct removal and disposal.
-8. Debrief and targeted faucet scene.
-9. Independent mode hides hints and friction timer.
-10. Offline reload and locally cached faculty-review/source content.
-11. No browser runtime errors.
+1. palm to palm;
+2. palm over the back of the opposite hand;
+3. fingers / between-finger movement;
+4. fingertips against the opposite palm;
+5. knuckles against the opposite palm;
+6. hand around the wrist;
+7. hand travelling along the forearm;
+8. nail-area movement.
 
-## Learning-cycle harness — 6/6 passed
+Practice mode then asks the student to copy each visible motion with deliberate swipes before crediting that surface. Independent mode keeps direct hand-surface interaction and does not expose the guided sequence.
 
-In each viewport: complete demonstration and Play/Pause/Replay/Slow/Why controls; drag/swipe panoramic navigation; continuous glove donning → care contact → safe removal → disposal.
+## Glove movement revision
 
-## Layout and scope
+The demonstration now has separate visible movement states for taking a glove, sliding it onto the hand, fitting/interlacing, peeling the first used glove inside-out, and positioning bare fingers under the second cuff.
 
-Desktop and phone screenshots inspected. Phone hand-focus mode enlarges manual interaction surfaces. All assets are local; no runtime CDN/library request. Relative URLs, scoped service worker, 192/512 PNG icons and standalone manifest included. Original repository files remain untouched.
+## Offline / portability
 
-## Practical limits
+The PWA assets remain local and use relative paths. The service-worker cache was bumped to `tobruk-skills360-v2-3` and now includes `technique.mjs`.
 
-This is a stylized first-person panoramic educational prototype, not a validated clinical competency assessment. Review items remain visible in the app. Installation was structurally checked and offline operation tested in Chromium; physical-device installation prompts and platform-specific home-screen behaviour require device testing.
+## Browser/device limit of this verification
+
+A full visual browser/device certification was **not** completed in the current execution environment: local headless Chromium failed to start reliably because its system D-Bus/zygote dependencies are unavailable. The state logic and module syntax were verified, but the revised animations should still be visually checked on an actual phone and laptop before student release.
+
+This remains a faculty-review educational prototype, not a clinical competency certification tool.
