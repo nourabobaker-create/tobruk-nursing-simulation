@@ -1,0 +1,134 @@
+{
+  "title": "Tobruk instructor source transcription — two skills only",
+  "sources": [
+    "1. Medical Asepsis--Medical handwashing(1).docx",
+    "2. Clean Gloving--(1).docx"
+  ],
+  "items": [
+    {
+      "id": "H01",
+      "original": "Stand in front of the sink; do not allow your uniform to touch the sink during the washing procedure.",
+      "rationale": "To prevent contamination of the uniform"
+    },
+    {
+      "id": "H02",
+      "original": "Remove jewelry and watch. Allow plain wedding band to remain in place",
+      "rationale": "Provides access to skin surfaces for cleaning.\nFacilitates cleaning of fingers, hands, and\nforearms."
+    },
+    {
+      "id": "H03",
+      "original": "Turn on water and adjust force. Regulate the temperature until water is warm.",
+      "rationale": "Running water removes microorganisms. Warm water removes less of the natural skin oils."
+    },
+    {
+      "id": "H04",
+      "original": "Wash hands and wrist area; keep hands lower than elbows.",
+      "rationale": "Water should flow from the least contaminated\nto the most contaminated areas of the skin. Hands are considered more contaminated\nthan arms."
+    },
+    {
+      "id": "H05",
+      "original": "Use about 1 teaspoon of liquid soap from dispenser or lather thoroughly with bar soap. Rinse bar soap before returning to the soap dish.",
+      "rationale": "Lather facilitates removal of microorganisms.\nLiquid soap harbors less bacteria than bar soap."
+    },
+    {
+      "id": "H06",
+      "original": "With firm rubbing and circular motion, wash hands, the palms and back of the hands, each finger, fingertips, knuckle wrist and forearms.",
+      "rationale": "Friction mechanically removes microorganisms\nfrom the skin surface. Friction loosens dirt\nfrom soiled areas."
+    },
+    {
+      "id": "H07",
+      "original": "Wash the forearms at least as high as contamination is likely to be present.",
+      "rationale": "Not stated in source."
+    },
+    {
+      "id": "H08",
+      "original": "Continue this friction from 10-30 seconds",
+      "rationale": "The longer you wash, the more germs are removed."
+    },
+    {
+      "id": "H09",
+      "original": "Use finger nails of the other hand or a clean wood stick",
+      "rationale": "To clean the area under fingernail."
+    },
+    {
+      "id": "H10",
+      "original": "Rinse thoroughly.",
+      "rationale": "To remove the soap from the skin."
+    },
+    {
+      "id": "H11",
+      "original": "Dry hands and wrist with paper towel/hand towel: turn off the faucet.",
+      "rationale": "Prevents contamination of clean hands by a\nless clean faucet."
+    },
+    {
+      "id": "G01",
+      "original": "Wash your hands and dry.",
+      "rationale": "To remove microorganisms from the hand, and to prevent the spread of infection."
+    },
+    {
+      "id": "G02",
+      "original": "Pull glove out of the box with one hand.",
+      "rationale": "Not stated in source."
+    },
+    {
+      "id": "G03",
+      "original": "Slide glove onto other hand.",
+      "rationale": "Not stated in source."
+    },
+    {
+      "id": "G04",
+      "original": "Pull out another  with gloved hand",
+      "rationale": "Not stated in source."
+    },
+    {
+      "id": "G05",
+      "original": "Slide glove onto bare hand.",
+      "rationale": "Not stated in source."
+    },
+    {
+      "id": "G06",
+      "original": "Interlace fingers",
+      "rationale": "To make gloves fit smoothly and comfortably"
+    },
+    {
+      "id": "G07",
+      "original": "Removing of gloves",
+      "rationale": "When removing gloves avoid touching the contaminated surfaces of the gloves with your bare hands."
+    },
+    {
+      "id": "G08",
+      "original": "Grip glove at base of palm",
+      "rationale": "Avoid touching the contaminated surfaces"
+    },
+    {
+      "id": "G09",
+      "original": "Pull glove off inside out",
+      "rationale": "To contain the microorganisms inside"
+    },
+    {
+      "id": "G10",
+      "original": "Slip bare fingers under wrist without touching the surface",
+      "rationale": "Avoid touching the contaminated surfaces of the gloves with your bare hands."
+    },
+    {
+      "id": "G11",
+      "original": "Push glove down and off",
+      "rationale": "Not stated in source."
+    },
+    {
+      "id": "G12",
+      "original": "Drop gloves in bag and seal tightly",
+      "rationale": "To contain microorganisms"
+    },
+    {
+      "id": "G13",
+      "original": "Drop the sealed bag into the trash",
+      "rationale": "Not stated in source."
+    },
+    {
+      "id": "G14",
+      "original": "Carefully wash and dry hands",
+      "rationale": "To remove microorganisms from the hand"
+    }
+  ]
+}
