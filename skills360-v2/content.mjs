@@ -1,47 +1,62 @@
+export const B=(en,ar)=>({en,ar});
+export const pick=(v,lang='en')=>typeof v==='string'?v:(v?.[lang]||v?.en||'');
+
+export const UI={
+ stages:[B('Learn','تعلّم'),B('Watch','شاهد'),B('Practice with me','تدرّب معي'),B('Do it yourself','نفّذ بنفسك'),B('Debrief','المراجعة')],
+ brand:B('TOBRUK NURSING SKILLS 360','مهارات التمريض 360 — طبرق'),
+ faculty:B('Faculty of Nursing — Tobruk University','كلية التمريض — جامعة طبرق')
+};
+
 export const reviews=[
- ['Timing · H8','Source: “Continue this friction from 10–30 seconds.” Prototype: 30 seconds of active rubbing, with coverage of both hands. Faculty must confirm the friction target and distinguish it from WHO’s 40–60 seconds for the entire handwash.'],
- ['Nails · H9','Source permits the other hand’s fingernails or a clean wood stick. The prototype represents gentle under-nail cleaning by the opposite fingertips; it does not demonstrate scraping or insertion of a sharp object. Faculty must approve the exact method/tool before student deployment.'],
- ['Jewellery · H2','Source allows a plain wedding band. Ahmed wears a watch only, which is removed. Confirm local ring policy before adding rings to assessment.'],
- ['Water, soap and drying · H3/H5/H11','Source specifies warm water, about one teaspoon of liquid soap or rinsed bar soap, and paper towel/hand towel. This prototype selects liquid soap and a disposable paper towel. Confirm dispenser dose, water rationale and local towel policy. Towel-protected faucet closure is an explicit interpretation of H11’s recontamination rationale.'],
- ['Containment · G12–G13','Source: drop gloves in a bag, seal tightly, then put the sealed bag in the trash. This sequence is retained. Faculty must approve the local clinical waste stream; the bin intentionally has no universal waste colour.'],
- ['Added care contact and visual markers','The brief used-washcloth contact is an added fictional context to explain why gloves become used; it is not a taught care procedure. Coloured speckles illustrate contamination and cannot measure real microbial load. The app evaluates interactions, not real-world competency.']
+ [B('Timing · H8','الزمن · H8'),B('Source: “Continue this friction from 10–30 seconds.” The prototype uses 30 seconds as a training target, not as the total duration of the whole handwash. Faculty should confirm the target before assessed use.','المصدر: «استمر في الاحتكاك من 10–30 ثانية». يستخدم النموذج 30 ثانية كهدف تدريبي للاحتكاك، وليس كمدة الإجراء كاملًا. تُراجع الكلية هذا الهدف قبل الاستخدام التقييمي.')],
+ [B('Nails · H9','الأظافر · H9'),B('The source permits the other hand’s fingernails or a clean wooden stick. This prototype demonstrates a gentle nail-area movement only and does not depict forceful scraping. Faculty should approve the exact method/tool.','يسمح المصدر باستخدام أظافر اليد الأخرى أو عود خشبي نظيف. يعرض النموذج حركة لطيفة لمنطقة الأظافر فقط ولا يعرض كشطًا قويًا. تعتمد الكلية الطريقة/الأداة الدقيقة.')],
+ [B('Jewellery · H2','الحُلي · H2'),B('The source allows a plain wedding band. Ahmed wears a watch only in this prototype. Confirm local ring policy before adding rings to assessment.','يسمح المصدر ببقاء خاتم زواج بسيط. يرتدي أحمد ساعة فقط في هذا النموذج. تُراجع سياسة الخواتم المحلية قبل إدخالها في التقييم.')],
+ [B('Water, soap and drying · H3/H5/H11','الماء والصابون والتجفيف · H3/H5/H11'),B('The source specifies warm running water, liquid soap or bar soap, and paper towel/hand towel. The prototype selects liquid soap and paper towel. The towel-protected faucet closure is an interpretation of H11’s recontamination rationale.','يذكر المصدر ماءً جاريًا دافئًا وصابونًا سائلاً أو قالب صابون ومنشفة ورقية/يد. يختار النموذج الصابون السائل والمنشفة الورقية. استخدام المنشفة لإغلاق الصنبور تفسير لمبرر منع إعادة التلوث في H11.')],
+ [B('Containment · G12–G13','الاحتواء · G12–G13'),B('The supplied sequence places removed gloves in a bag, seals it, then places the bag in the trash. This is retained; local clinical-waste policy still requires faculty confirmation.','يضع التسلسل المرفق القفازات المنزوعة في كيس ثم يغلقه ويضعه في سلة النفايات. تم الاحتفاظ بذلك، مع ضرورة اعتماد سياسة النفايات السريرية المحلية من الكلية.')],
+ [B('Added care contact','مهمة رعاية مضافة'),B('The brief used-washcloth contact is fictional context to make glove contamination meaningful. It is not a separate care skill being taught or assessed.','ملامسة قطعة القماش المستخدمة هي سياق افتراضي قصير لجعل تلوث القفازات مفهومًا. ليست مهارة رعاية مستقلة يتم تدريسها أو تقييمها.')]
 ];
+
 export const lessons=[
- {title:'Before Khaled’s morning care',tag:'WHAT / WHEN',body:'You are Ahmed, a first-year nursing student. Handwashing prepares your hands for care; gloves are used for the brief simulated contact with a used washcloth. Gloves do not replace hand hygiene.',interaction:'contact',why:'The gloving source begins and ends with handwashing and drying to remove microorganisms and prevent spread.'},
- {title:'Let the water travel the right way',tag:'WHY / WHAT CAN GO WRONG',body:'Drag Ahmed’s hands above and below the elbow line. See where the water would travel.',interaction:'height',why:'H4: keep hands lower than elbows. The source considers hands more contaminated than arms and directs water from less to more contaminated areas.'},
- {title:'Make every surface accessible',tag:'WHAT / WHY',body:'Touch the watch to remove it. Then turn the hands and rub the highlighted areas. Skin beneath a watch and missed fingertips are easy to overlook.',interaction:'coverage',why:'H2: removing the watch gives access to skin. H6–H9: friction loosens dirt and removes microorganisms, including on wrists, forearms and under nails.'},
- {title:'Keep clean fingers clean',tag:'WHAT CAN GO WRONG',body:'Compare touching the faucet with bare fingers and using a paper towel. Watch where the coloured marker goes.',interaction:'faucet',why:'H11: the faucet is less clean than freshly washed hands. The towel acts as the demonstrated barrier.'},
- {title:'The outside becomes the inside',tag:'CLEAN GLOVING',body:'Gloves protect the hands during the short used-cloth contact. On removal, the first glove turns inside-out. Bare fingers slide beneath the other cuff, not onto its exterior.',interaction:'glove',why:'G8–G11: avoid contaminated surfaces with bare hands and contain microorganisms inside the removed gloves.'},
- {title:'Contain, dispose, wash again',tag:'AFTER CARE',body:'The instructor places the gloves in a bag, seals it and puts it in the bin. Finish with careful handwashing and drying. Try the bag and bin in the scene.',interaction:'disposal',why:'G12–G14: containment limits spread; final handwashing removes microorganisms. Local waste policy needs faculty confirmation.'}
+ {tag:B('1 · BEFORE CARE','1 · قبل الرعاية'),title:B('Start with a clean plan','ابدأ بخطة نظيفة'),body:B('You are Ahmed, a first-year nursing student. Khaled needs morning care. Before touching him, notice what is on your hands and what in the room can contaminate them.','أنت أحمد، طالب تمريض في السنة الأولى. يحتاج خالد إلى العناية الصباحية. قبل لمسه، انتبه لما على يديك وما في الغرفة يمكن أن يلوثهما.'),why:B('The instructor’s handwashing procedure begins by keeping the uniform away from the sink and removing the watch/jewellery so the skin can be cleaned.','تبدأ خطوات الأستاذة بإبعاد الزي عن الحوض ونزع الساعة/الحُلي حتى يصبح الجلد متاحًا للتنظيف.'),visual:'prepare'},
+ {tag:B('2 · WATER BEFORE SOAP','2 · الماء قبل الصابون'),title:B('Wet first. Soap second.','بلّل أولًا. ثم الصابون.'),body:B('The supplied procedure turns on and adjusts warm running water, keeps hands lower than elbows, wets the hands and wrists, then applies soap.','يفتح الإجراء المرفق الماء الجاري الدافئ ويضبطه، ويبقي اليدين أخفض من المرفقين، ويبلل اليدين والرسغين، ثم يضع الصابون.'),why:B('This order must never become a software deadlock. Water → wet hands → soap is the normal path.','يجب ألا يتحول هذا الترتيب أبدًا إلى تعارض في البرنامج. الماء ← تبليل اليدين ← الصابون هو المسار الطبيعي.'),visual:'water'},
+ {tag:B('3 · THE CORE SKILL','3 · المهارة الأساسية'),title:B('The hands must actually rub','يجب أن تفرك اليدان فعليًا'),body:B('Friction is not a graphic effect. Watch the hand-to-hand contact: palms, backs, fingers, fingertips, knuckles, wrists, forearms and the nail area.','الاحتكاك ليس مؤثرًا بصريًا. راقب تلامس اليدين فعليًا: الراحتان، الظهر، الأصابع، الأطراف، المفاصل، الرسغان، الساعدان ومنطقة الأظافر.'),why:B('H6–H9: firm rubbing/circular movement and friction mechanically remove microorganisms and loosen dirt.','H6–H9: الفرك القوي/الدائري والاحتكاك يزيلان الكائنات الدقيقة ميكانيكيًا ويفككان الأوساخ.'),visual:'technique'},
+ {tag:B('4 · KEEP THEM CLEAN','4 · حافظ على نظافتهما'),title:B('Clean hands can become contaminated again','يمكن أن تتلوث اليدان النظيفتان من جديد'),body:B('After rinsing and drying, touching a less-clean faucet with bare fingers can undo the work you just did.','بعد الشطف والتجفيف، قد يعيد لمس صنبور أقل نظافة بالأصابع العارية تلويث اليدين.'),why:B('H11 specifically warns about contamination of clean hands by a less-clean faucet. The prototype uses a paper towel as the visible barrier.','تحذر H11 تحديدًا من تلوث اليدين النظيفتين بصنبور أقل نظافة. يستخدم النموذج منشفة ورقية كحاجز مرئي.'),visual:'faucet'},
+ {tag:B('5 · CLEAN GLOVES','5 · القفازات النظيفة'),title:B('Outside stays away from bare skin','أبعد السطح الخارجي عن الجلد العاري'),body:B('After the brief care contact, the outer glove surface is treated as used. Remove the first glove inside-out, then slide bare fingers under the second cuff without touching its exterior.','بعد مهمة الرعاية القصيرة يُعامل السطح الخارجي للقفاز كمستخدم. انزع القفاز الأول مقلوبًا، ثم أدخل الأصابع العارية تحت حافة القفاز الثاني دون لمس سطحه الخارجي.'),why:B('G7–G11: avoid touching contaminated glove surfaces with bare hands and contain the microorganisms inside the removed gloves.','G7–G11: تجنب ملامسة الأسطح الملوثة للقفازات باليدين العاريتين واحتوِ الكائنات الدقيقة داخل القفازات المنزوعة.'),visual:'glove'}
 ];
-export const demo=[
- ['sink','stance','Stand clear of the basin','H1 · Prevent contamination of the uniform.'],
- ['sink','watch','Remove the watch','H2 · Provides access to skin surfaces for cleaning.'],
- ['sink','water','Turn on running water','H3 · Running water removes microorganisms.'],
- ['sink','warm','Adjust to warm water and gentle flow','H3 · Source specifies warm water; temperature rationale is flagged for faculty review.'],
- ['sink','position','Keep hands below elbows','H4 · Water flows from the less contaminated arms toward the hands.'],
- ['sink','wet','Wet hands and wrists','H4 · Wetting comes BEFORE soap in the supplied procedure.'],
- ['sink','soap','Apply liquid soap','H5 · Lather facilitates removal of microorganisms.'],
- ...['palms','backs','fingers','fingertips','knuckles','wrists','forearms','nails'].map(a=>['sink','rub','Clean '+(a==='nails'?'under the nails':a),'H6–H9 · Friction mechanically removes microorganisms. Clean both sides; forearms extend as high as likely contamination.',a]),
- ['sink','rinse','Rinse thoroughly','H10 · Remove soap from the skin.'],
- ['sink','dry','Dry hands and wrists with a paper towel','H11 · Dry before glove application.'],
- ['sink','faucet','Use the towel to close the faucet','H11 · Avoid recontamination from a less-clean faucet.'],
- ['gloves','takeGlove','Take the first glove','G2 · Take a clean glove from the box with one hand.'],
- ['gloves','don','Slide it onto the other hand','G3 · Watch the cuff slide over the hand.'],
- ['gloves','takeGlove','Take the second glove with the gloved hand','G4 · The instructor sequence uses the gloved hand.'],
- ['gloves','don','Slide it onto the bare hand','G5 · Cover the second hand.'],
- ['gloves','fit','Interlace fingers','G6 · Make gloves fit smoothly and comfortably.'],
- ['patient','care','Brief contact with the used washcloth','Added care context · This contact makes the outer glove surfaces “used”.'],
- ['gloves','removeFirst','Grip at the base of the palm; peel inside-out','G8–G9 · Keep the contaminated surface inside.'],
- ['gloves','removeSecond','Bare fingers under the second cuff; push down and off','G10–G11 · Bare fingers avoid the contaminated exterior.'],
- ['gloves','bag','Place gloves in the bag','G12 · Contain microorganisms.'],
- ['gloves','seal','Seal the bag','G12 · Follow the instructor’s containment sequence; local policy review pending.'],
- ['gloves','dispose','Place sealed bag in the bin','G13 · Dispose according to faculty-confirmed local policy.'],
- ['sink','water','Final wash: turn on the water','G14 · Carefully wash and dry hands after glove removal.'],
- ['sink','wet','Wet hands and wrists again','H4 / G14 · Repeat the handwash after removal.'],
- ['sink','soap','Apply liquid soap again','H5 / G14 · Gloves do not replace handwashing.'],
- ...['palms','backs','fingers','fingertips','knuckles','wrists','forearms','nails'].map(a=>['sink','rub','Final wash: '+a,'H6–H9 / G14 · Repeat coverage on both hands.',a]),
- ['sink','rinse','Rinse again','H10 / G14 · Remove soap.'],
- ['sink','dry','Dry hands and wrists','H11 / G14 · Complete handwashing and drying.'],
- ['sink','faucet','Close the faucet through the paper towel','H11 / G14 · Finish without recontamination.']
+
+const W=(station,action,title,why,area=null,visual=null)=>({station,action,title:B(title[0],title[1]),why:B(why[0],why[1]),area,visual});
+export const watchSteps=[
+ W('sink','stance',['Stand clear of the basin','قف دون ملامسة الحوض'],['H1 · Prevent contamination of the uniform.','H1 · لمنع تلوث الزي.']),
+ W('sink','watch',['Remove the watch','انزع الساعة'],['H2 · Provides access to skin surfaces for cleaning.','H2 · يتيح الوصول إلى سطح الجلد لتنظيفه.']),
+ W('sink','water',['Turn on running water','افتح الماء الجاري'],['H3 · Running water removes microorganisms.','H3 · الماء الجاري يساعد على إزالة الكائنات الدقيقة.']),
+ W('sink','warm',['Adjust to warm water','اضبط الماء ليكون دافئًا'],['H3 · The source specifies warm water; its rationale remains a faculty-review item.','H3 · يحدد المصدر الماء الدافئ؛ ويبقى مبرره ضمن بنود مراجعة الكلية.']),
+ W('sink','position',['Keep hands below elbows','أبقِ اليدين أخفض من المرفقين'],['H4 · Water should flow toward the more contaminated hands.','H4 · ينبغي أن يتجه الماء نحو اليدين الأكثر تلوثًا.']),
+ W('sink','wet',['Wet hands and wrists','بلّل اليدين والرسغين'],['H4 · Wetting comes before soap in the supplied procedure.','H4 · التبليل يسبق الصابون في الإجراء المرفق.']),
+ W('sink','soap',['Apply liquid soap','ضع الصابون السائل'],['H5 · Lather facilitates removal of microorganisms.','H5 · الرغوة تسهل إزالة الكائنات الدقيقة.']),
+ ...[
+  ['palms','Palm to palm','راحة اليد مع راحة اليد'],['backs','Back of each hand','ظهر كل يد'],['fingers','Each finger / between fingers','كل إصبع وما بين الأصابع'],['fingertips','Fingertips','أطراف الأصابع'],['knuckles','Knuckles','مفاصل الأصابع'],['wrists','Wrists','الرسغان'],['forearms','Forearms','الساعدان'],['nails','Nail area','منطقة الأظافر']
+ ].map(([a,en,ar])=>W('sink','rub',[en,ar],['H6–H9 · Watch the hands make real contact. Friction mechanically removes microorganisms.','H6–H9 · راقب تلامس اليدين فعليًا. الاحتكاك يزيل الكائنات الدقيقة ميكانيكيًا.'],a,'wash')),
+ W('sink','rinse',['Rinse thoroughly','اشطف جيدًا'],['H10 · Remove soap from the skin.','H10 · لإزالة الصابون من الجلد.']),
+ W('sink','dry',['Dry hands and wrists','جفف اليدين والرسغين'],['H11 · Dry before glove application.','H11 · جفف قبل ارتداء القفازات.']),
+ W('sink','faucet',['Close the faucet through the towel','أغلق الصنبور باستخدام المنشفة'],['H11 · Avoid recontamination from the less-clean faucet.','H11 · لتجنب إعادة التلوث من الصنبور الأقل نظافة.']),
+ W('gloves','takeGlove',['Take the first clean glove','أخرج القفاز الأول'],['G2 · Take a clean glove from the box with one hand.','G2 · أخرج قفازًا نظيفًا من العلبة بيد واحدة.'],null,'take'),
+ W('gloves','don',['Slide it onto the other hand','أدخل اليد الأخرى في القفاز'],['G3 · The glove slides over the bare hand.','G3 · ينزلق القفاز فوق اليد العارية.'],null,'don1'),
+ W('gloves','takeGlove',['Take the second glove with the gloved hand','أخرج القفاز الثاني باليد ذات القفاز'],['G4 · Follow the instructor’s supplied sequence.','G4 · اتبع تسلسل الأستاذة المرفق.'],null,'take'),
+ W('gloves','don',['Slide it onto the bare hand','أدخل اليد العارية في القفاز الثاني'],['G5 · Cover the second hand.','G5 · غطِّ اليد الثانية.'],null,'don2'),
+ W('gloves','fit',['Interlace fingers','شبّك الأصابع'],['G6 · Make the gloves fit smoothly and comfortably.','G6 · لضبط القفازات بشكل مريح وسلس.'],null,'fit'),
+ W('patient','care',['Brief care contact','مهمة رعاية قصيرة'],['Added context only · This makes the glove exterior “used”.','سياق مضاف فقط · يجعل السطح الخارجي للقفازات «مستخدمًا».']),
+ W('gloves','removeFirst',['Grip the first glove at the base of the palm and peel inside-out','أمسك القفاز الأول عند قاعدة راحة اليد وانزعه مقلوبًا'],['G8–G9 · Avoid the contaminated surface and contain microorganisms inside.','G8–G9 · تجنب السطح الملوث واحتوِ الكائنات الدقيقة داخل القفاز.'],null,'remove1'),
+ W('gloves','removeSecond',['Bare fingers under the second cuff; push down and off','الأصابع العارية تحت حافة القفاز الثاني؛ ادفعه إلى أسفل وانزعه'],['G10–G11 · Bare fingers avoid the used exterior surface.','G10–G11 · تتجنب الأصابع العارية السطح الخارجي المستخدم.'],null,'remove2'),
+ W('gloves','bag',['Place removed gloves in the bag','ضع القفازات المنزوعة في الكيس'],['G12 · Contain microorganisms.','G12 · لاحتواء الكائنات الدقيقة.']),
+ W('gloves','seal',['Seal the bag','أغلق الكيس بإحكام'],['G12 · Supplied containment sequence.','G12 · وفق تسلسل الاحتواء المرفق.']),
+ W('gloves','dispose',['Place the sealed bag in the bin','ضع الكيس المغلق في السلة'],['G13 · Local waste policy still requires faculty confirmation.','G13 · سياسة النفايات المحلية تحتاج اعتماد الكلية.']),
+ W('sink','water',['Final handwash: turn on the water','غسل اليدين النهائي: افتح الماء'],['G14 · Carefully wash and dry hands after glove removal.','G14 · اغسل وجفف اليدين بعناية بعد نزع القفازات.']),
+ W('sink','wet',['Wet hands and wrists again','بلّل اليدين والرسغين مرة أخرى'],['G14 with H4 · Repeat the handwash after glove removal.','G14 مع H4 · كرر غسل اليدين بعد نزع القفازات.']),
+ W('sink','soap',['Apply soap again','ضع الصابون مرة أخرى'],['G14 with H5 · Gloves do not replace handwashing.','G14 مع H5 · القفازات لا تغني عن غسل اليدين.']),
+ ...[
+  ['palms','Final wash · Palm to palm','الغسل النهائي · راحة اليد مع راحة اليد'],['backs','Final wash · Back of each hand','الغسل النهائي · ظهر كل يد'],['fingers','Final wash · Fingers','الغسل النهائي · الأصابع'],['fingertips','Final wash · Fingertips','الغسل النهائي · أطراف الأصابع'],['knuckles','Final wash · Knuckles','الغسل النهائي · المفاصل'],['wrists','Final wash · Wrists','الغسل النهائي · الرسغان'],['forearms','Final wash · Forearms','الغسل النهائي · الساعدان'],['nails','Final wash · Nail area','الغسل النهائي · منطقة الأظافر']
+ ].map(([a,en,ar])=>W('sink','rub',[en,ar],['G14 with H6–H9 · Repeat complete friction coverage.','G14 مع H6–H9 · كرر تغطية جميع الأسطح بالفرك.'],a,'wash')),
+ W('sink','rinse',['Rinse the final lather','اشطف الرغوة النهائية'],['G14 with H10 · Remove soap from the skin.','G14 مع H10 · أزل الصابون من الجلد.']),
+ W('sink','dry',['Dry hands and wrists again','جفف اليدين والرسغين مرة أخرى'],['G14 with H11 · Complete careful washing and drying.','G14 مع H11 · أكمل الغسل والتجفيف بعناية.']),
+ W('sink','faucet',['Finish without recontaminating the hands','أنه الإجراء دون إعادة تلويث اليدين'],['G14 with H11 · Use the towel barrier for the faucet.','G14 مع H11 · استخدم المنشفة كحاجز عند الصنبور.'])
 ];
