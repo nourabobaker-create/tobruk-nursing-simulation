@@ -196,7 +196,7 @@ textarea{width:100%;min-height:100px;border:1px solid var(--line);border-radius:
     <div class="timelineItem"><div class="timelineDate">14/06/2027</div><div><b>إعلان نتائج الدور الأول</b></div></div>
     <div class="timelineItem"><div class="timelineDate">16/06 – 17/06/2027</div><div><b>مراجعة الدور الأول</b></div></div>
     <div class="timelineItem"><div class="timelineDate">19/06 – 17/07/2027</div><div><b>امتحانات الدور الثاني للفصلين</b></div></div>
-    <div class="timelineItem"><div class="timelineDate">يحتاج تأكيدًا</div><div><b>إعلان نتيجة الدور الثاني</b><small>ورد في الخطة المرفوعة تاريخ 18/07/2025 رغم أن الجدول للعام 2026/2027؛ لذلك لم يتم تصحيحه افتراضياً داخل البوابة.</small></div></div>
+    <div class="timelineItem"><div class="timelineDate">18/07/2027</div><div><b>إعلان نتيجة الدور الثاني</b></div></div>
     <div class="timelineItem"><div class="timelineDate">20/07 – 21/07/2027</div><div><b>لجنة المراجعة والطعون</b></div></div>
    </div>
 
@@ -623,7 +623,7 @@ const T={
  surveyTitle:"استبيان تجربة البوابة",surveySub:"قصير، طوعي، ولا يطلب الاسم أو البريد الإلكتروني.",surveyPrivacy:"إجاباتك تبقى في هذا المتصفح ولا تُرسل إلى خادم من هذه الصفحة. عند الانتهاء يمكنك نسخها أو مشاركتها بنفسك مع جهة الكلية التي أرسلت لك رابط التجربة. إذا شاركتها عبر حسابك الشخصي في تطبيق مراسلة، فقد يظهر اسم حسابك لذلك التطبيق."
  },
  en:{
- brandTitle:"Faculty of Nursing · Tobruk University",brandSub:"كلية التمريض · جامعة طبرق · Learning Hub Pilot",
+ brandTitle:"Faculty of Nursing · Tobruk University",brandSub:"Learning Hub Pilot · Simulation · Student Guide · Study Companion",
  heroEyebrow:"PILOT LEARNING & STUDENT-SUPPORT HUB",heroTitle:"First Pilot Version",shareLead:"We encourage our students to share this app with their peers in nursing faculties across Libyan universities, in the spirit of sharing knowledge and benefit.",hadithTop:"The Messenger of Allah ﷺ said: “Whoever guides to something good will have a reward like the one who does it.” — Sahih Muslim",
  heroText:"Interactive nursing-skills simulation, a simplified Student Guide, and a Study Companion for course learning and revision — currently piloted through English II — in one phone- and computer-friendly hub with Arabic support.",
  heroStart:"Start with Simulation",heroSurvey:"Trial Survey",
@@ -634,11 +634,134 @@ const T={
  trialTitle:"What are we testing?",trialSub:"Not perfection — access, usefulness, clarity, and what is worth developing next.",
  s1:"interactive nursing skills",s2:"courses in the reference curriculum",s3:"lessons in the current English II course-support prototype",s4:"Arabic/English support",
  simTitle:"Interactive Nursing Skills",simNote:"Use it to learn and practise, then confirm technique with instructors/supervisors and the approved practical guide.",simFull:"Open full screen",
- engTitle:"Study Companion · English II",engNote:"Course instructor: نورا مسعود حمد بوبكر · Sunday 10:00–12:00 · Room N5. Study Companion supports course learning and revision. It remains supplementary; the approved course book, instructor directions, and official course materials remain the reference.",engFull:"Open full screen",
+ engTitle:"Study Companion · English II",engNote:"Course instructor: Noura Masoud Hamad Bubakr · Sunday 10:00–12:00 · Room N5. Study Companion supports course learning and revision. It remains supplementary; the approved course book, instructor directions, and official course materials remain the reference.",engFull:"Open full screen",
  guideEyebrow:"STUDENT GUIDE · SIMPLIFIED APP VERSION",guideTitle:"Know where to start — and where to go back for authority.",guideIntro:"A practical orientation summary with repeated referral to the Faculty, Registrar, instructors, and complete official documents.",
  surveyTitle:"Learning Hub Trial Survey",surveySub:"Short, voluntary, and does not ask for your name or email.",surveyPrivacy:"Your answers remain in this browser and are not sent to a server by this page. When finished, you can copy or share them yourself with the Faculty contact who sent you the trial link. If you share through a personal messaging account, that service may show your account identity."
  }
 };
+const staticTextMap={
+"بوابة التعلّم التمريضي · كلية التمريض · جامعة طبرق":"Nursing Learning Hub · Faculty of Nursing · Tobruk University",
+"الرئيسية ·":"Home ·",
+"دعم المقررات والتعلّم والمراجعة.":"Course learning and revision support.",
+"النموذج الحالي:":"Current prototype:",
+"لغة إنجليزية 2":"English II",
+"— شرح موجّه، مفردات ونطق انتقائي، أسئلة، حالات، وتطبيقات مرتبطة بالتمريض.":"— guided explanations, selective pronunciation, questions, scenarios, and nursing-related applications.",
+"أستاذ المادة: نورا مسعود حمد بوبكر":"Course instructor: Noura Masoud Hamad Bubakr",
+"الأحد · 10:00–12:00 · القاعة N5":"Sunday · 10:00–12:00 · Room N5",
+"العام الأكاديمي 2026/2027":"Academic Year 2026/2027",
+"جداول المحاضرات، الخطة الدراسية، الأنشطة الأكاديمية والعلمية، بحوث التخرج، وأنشطة عالمية يمكن حضورها إلكترونيًا.":"Lecture timetables, the academic calendar, academic and scientific activities, graduation research, and international online activities.",
+"🗓️ جداول المحاضرات":"🗓️ Lecture Timetables",
+"تُدرج هنا الجداول المعتمدة للسنوات الدراسية. والمعلومة المتاحة حاليًا:":"Approved timetables for all study years will be listed here. Currently available:",
+"المقرر":"Course","أستاذ المادة":"Instructor","اليوم":"Day","الوقت":"Time","القاعة":"Room",
+"نورا مسعود حمد بوبكر":"Noura Masoud Hamad Bubakr","الأحد":"Sunday",
+"قالب جاهز لإضافة جداول السنة الأولى والثانية والثالثة والرابعة فور إدراج النسخة المعتمدة للعام الجامعي 2026/2027.":"Ready for the approved Year 1–4 lecture timetables for 2026/2027.",
+"📅 الخطة الدراسية للعام الجامعي 2026/2027":"📅 Academic Calendar 2026/2027",
+"التواريخ التالية من الخطة الدراسية المرفوعة لكلية التمريض للعام الجامعي 2026/2027. يُرجع إلى إعلان الكلية إذا صدر أي تعديل لاحق.":"The dates below are taken from the Faculty of Nursing academic calendar for 2026/2027. Please follow any later official Faculty amendments.",
+"فصل الخريف 2026/2027":"Fall Semester 2026/2027","تجديد القيد":"Registration Renewal","بداية الدراسة":"Teaching Begins",
+"الامتحانات الجزئية":"Midterm Examinations","الدراسة بعد الامتحانات الجزئية":"Teaching after Midterms","الامتحانات العملية":"Practical Examinations",
+"الامتحانات النهائية — الدور الأول":"Final Examinations — First Sitting","إعلان نتائج الدور الأول":"First-Sitting Results","مراجعة الدور الأول":"First-Sitting Review",
+"فصل الربيع 2027":"Spring Semester 2027","امتحانات المحمّلين":"Carry-over Course Examinations","مناقشة بحوث التخرج":"Graduation Research Discussions",
+"امتحانات الدور الثاني للفصلين":"Second-Sitting Examinations for Both Semesters","إعلان نتيجة الدور الثاني":"Second-Sitting Results","لجنة المراجعة والطعون":"Review and Appeals Committee",
+"ملاحظة:":"Note:","تم نقل التواريخ كما وردت في الخطة المرفوعة. عند صدور تعديل رسمي من الكلية يُحدّث هذا القسم مباشرة.":"Dates are reproduced from the uploaded Faculty calendar. This section will be updated if the Faculty issues an official amendment.",
+"عرض الخطة المرجعية للمقررات":"View the Reference Curriculum",
+"🎓 الأنشطة الأكاديمية والعلمية":"🎓 Academic & Scientific Activities","مساحة لأنشطة الكلية المرتبطة بالتعلم والتطوير العلمي والمهني.":"A space for Faculty activities related to learning, scientific development, and professional development.",
+"ورش العمل":"Workshops","العنوان · التاريخ · الفئة المستهدفة · الجهة المنظمة · مكان/رابط الحضور.":"Title · date · target group · organiser · venue/attendance link.",
+"الندوات والمحاضرات العلمية":"Seminars & Scientific Lectures","تضاف الأنشطة فور تحديد البرنامج.":"Activities will be added once the programme is confirmed.",
+"لقاءات ومناقشات أكاديمية":"Academic Meetings & Discussions","يمكن ربطها بالمقررات أو المهارات أو البحث العلمي.":"These may be linked to courses, skills, or research.",
+"🧪 بحوث التخرج 2026/2027":"🧪 Graduation Research 2026/2027","خانة مخصصة لطلبة السنة الرابعة لتنظيم رحلة مشروع التخرج.":"A section for final-year students to follow the graduation-research journey.",
+"عناوين البحوث":"Research Titles","تُضاف بعد اعتماد الموضوعات.":"Added after topics are approved.","المشرفون والطلبة":"Supervisors & Students","يُضاف التوزيع بعد اعتماده.":"Assignments will be added after approval.",
+"المراحل والمواعيد":"Stages & Deadlines","اختيار الموضوع · المقترح · جمع البيانات · التحليل · التسليم · المناقشة.":"Topic selection · proposal · data collection · analysis · submission · discussion.",
+"هذه الخانة الآن نموذج شكلي منظم، وجاهزة لإدراج بحوث التخرج الفعلية للعام الحالي.":"This is currently a structured placeholder ready for the current year's approved graduation research.",
+"📊 نتائج بحوث التخرج للعام 2025/2026":"📊 Graduation Research Findings 2025/2026",
+"نوقشت ستة مشروعات يومي 23 و24 مايو 2026. وتعرض هذه البطاقات خلاصة النتائج التعليمية/المجتمعية دون تعميمها خارج عينات كل بحث.":"Six projects were discussed on 23–24 May 2026. These cards summarise educational/community findings without generalising beyond each project's sample.",
+"سلامة الدم المتبرع به وسلسلة نقله":"Donated Blood Safety and the Transfusion Chain","برزت الحاجة إلى تحسين متابعة العلامات الحيوية أثناء النقل، ورفع الوعي بالتصرف عند التعرض للدم الملوث، مع فجوة بين المعرفة والممارسة.":"The project highlighted the need for better vital-sign monitoring during transfusion and better awareness of how to respond to contaminated-blood exposure, with a gap between knowledge and practice.",
+"الفحص الدوري للكلى":"Periodic Kidney Screening","أكد أهمية الفحص المبكر، خصوصًا لمرضى السكري وارتفاع الضغط؛ وفي بيانات المشروع كان نحو 67% من مرضى الغسيل المشمولين مصابين بأحدهما أو كليهما.":"The project stressed early screening, especially for people with diabetes or hypertension; about 67% of dialysis patients in the project data had one or both conditions.",
+"بكتيريا المعدة والاستخدام الصحيح للعلاج":"H. pylori and Appropriate Treatment Use","ظهر تفاوت بين معرفة احتمال الإصابة وإجراء التحاليل عند الحاجة، مع رصد ممارسات غير صحيحة في استخدام المضادات الحيوية.":"The project found a gap between awareness of possible infection and seeking testing when needed, alongside inappropriate antibiotic-use practices.",
+"الاستعداد المجتمعي للمخاطر الصحية والأوبئة":"Community Preparedness for Health Risks and Epidemics","باستخدام جائحة كورونا نموذجًا، لم يتحول الوعي بالمخاطر والإجراءات الوقائية دائمًا إلى التزام سلوكي فعلي.":"Using COVID-19 as a model, awareness of risk and preventive measures did not always translate into actual preventive behaviour.",
+"الاستخدام غير الرشيد للسيفترياكسون":"Inappropriate Ceftriaxone Use","ناقش الاعتقاد بأن الحقن أقوى من الأقراص، والحصول على الدواء من الصيدليات والضغط لوصفه رغم معرفة بعض الأفراد بمخاطر مقاومة المضادات.":"The project examined beliefs that injections are stronger than tablets, access through pharmacies, and pressure to prescribe despite some awareness of antimicrobial-resistance risks.",
+"مخاطر الإسعافات الأولية الخاطئة":"Risks of Incorrect First Aid","وثقت بيانات البحث 13 حالة بأضرار متفاوتة بسبب تدخلات إسعافية خاطئة، من إصابات جسيمة إلى حالات شلل دائم.":"The project documented 13 cases of varying harm following incorrect first-aid interventions, ranging from serious injury to permanent paralysis.",
+"الخلاصة المشتركة:":"Shared finding:","تكررت فجوة بين الوعي الصحي والسلوك الفعلي؛ لذلك تُستخدم النتائج لتوجيه التوعية والبحوث المستقبلية نحو تغيير السلوك وقياس أثر التدخلات.":"Across projects, a recurring gap appeared between health knowledge and actual behaviour. The findings therefore support future awareness and research focused on behaviour change and measurable interventions.",
+"🌍 نشاطات أكاديمية وعلمية عالمية مجانية عبر الإنترنت":"🌍 Free International Academic & Scientific Activities Online",
+"أمثلة حقيقية تم التحقق من صفحاتها الرسمية في 27 سبتمبر 2026. افتح صفحة الحدث للتسجيل والتحقق من بقاء المقاعد؛ التوقيت أدناه كما يظهر في المصدر.":"Real examples verified from official event pages on 27 September 2026. Open the event page to register and confirm availability; times are shown as listed by the organiser.",
+"الطب عن بُعد بالمغرب في 2026":"Telemedicine in Morocco in 2026","العربية":"Arabic","صحة رقمية":"Digital Health","مجاني":"Free","مباشر أونلاين":"Live Online",
+"1 أكتوبر 2026 · 19:00 بتوقيت الدار البيضاء · جلسة حول واقع الطب عن بعد والإطار القانوني وتجارب القطاع الصحي.":"1 October 2026 · 19:00 Casablanca time · A session on telemedicine practice, the legal framework, and health-sector experiences.",
+"التفاصيل والتسجيل ↗":"Details & Registration ↗","التوظيف والاختيار الذكي":"Intelligent Recruitment and Selection","مهارات مهنية":"Professional Skills",
+"18 أكتوبر 2026 · 19:00 بتوقيت السعودية · مقابلات سلوكية وموقفية والحد من التحيز في الاختيار.":"18 October 2026 · 19:00 Saudi time · Behavioural and situational interviewing and reducing bias in selection.",
+"سلامة المرضى":"Patient Safety","21 October 2026 · 12:00–13:00 · انتقال آمن للرعاية والاستعداد للطوارئ بعد الخروج من المستشفى.":"21 October 2026 · 12:00–13:00 · Safe care transitions and emergency preparedness after hospital discharge.",
+"بحث علمي":"Research","29 October 2026 · 12:30–14:00 · كيف تُحوّل نتائج البحث الصحي إلى معرفة يمكن لصنّاع السياسات استخدامها.":"29 October 2026 · 12:30–14:00 · Turning health research into knowledge that policy-makers can use.",
+"تمريض الخرف":"Dementia Nursing","18 November 2026 · 13:00–16:00 · Webinar من Dementia UK حول دور الممرض المتخصص في دعم الأسر المصابة بالخرف.":"18 November 2026 · 13:00–16:00 · Dementia UK webinar on the specialist nurse's role in supporting families affected by dementia.",
+"تمريض نفسي":"Mental Health Nursing","27 Nov & 11 Dec 2026، ثم 15 Jan و19 Feb 2027 · سلسلة من Hong Kong College of Mental Health Nursing.":"27 Nov & 11 Dec 2026, then 15 Jan & 19 Feb 2027 · Series by the Hong Kong College of Mental Health Nursing.",
+"هذه القائمة ليست اعتمادًا رسميًا من الكلية للجهات الخارجية؛ هي إحالات تعليمية اختيارية. تحقق من شروط التسجيل واللغة والفئة المستهدفة قبل الحضور.":"These links are optional educational referrals, not Faculty endorsement of external organisations. Check registration conditions, language, and target audience before attending.",
+"🚀 طوّر مهاراتك التمريضية والشخصية":"🚀 Develop Your Nursing & Personal Skills",
+"روابط مختارة للتعلّم الذاتي في التمريض والصحة واللغة والبحث والمهارات الرقمية والشخصية. استخدمها كتعلم إضافي، لا كبديل للمقرر أو التدريب السريري.":"Selected self-learning resources for nursing, health, language, research, digital skills, and personal development. Use them as additional learning, not as a replacement for courses or supervised clinical training.",
+"WHO Academy · أكاديمية منظمة الصحة العالمية":"WHO Academy","تعلم صحي عالمي في موضوعات الصحة العامة والأنظمة الصحية والسلامة وغيرها. التسجيل وبدء رحلة التعلم مجانيان.":"Global health learning in public health, health systems, safety, and related topics. Registration and starting a learning journey are free.",
+"افتح WHO Academy ↗":"Open WHO Academy ↗","دورات تمريض وصحة ورعاية ومهارات مهنية. الدراسة وإكمال المقرر مجانيان؛ الشهادة المدفوعة اختيارية في معظم الدورات.":"Nursing, health, care, and professional-skills courses. Studying and completing a course is free; paid certificates are optional for most courses.",
+"دورات التمريض في Alison ↗":"Nursing Courses on Alison ↗","مقررات من جامعات دولية، ومنها تمريض وعلامات حيوية ومهارات سريرية. تتوفر معاينات مجانية وبعض المحتوى المجاني؛ الوصول الكامل أو الشهادة قد يتطلبان رسومًا.":"Courses from international universities, including nursing, vital signs, and clinical skills. Free previews and some free content are available; full access or certificates may require payment.",
+"استكشف Nursing on Coursera ↗":"Explore Nursing on Coursera ↗","إدراك · Edraak":"Edraak","منصة عربية أُسست بمبادرة من مؤسسة الملكة رانيا. الدورات مجانية، وتشمل الصحة والتغذية وتطوير الذات والتكنولوجيا واللغات، مع شهادات إتمام مجانية عند استيفاء المتطلبات.":"An Arabic platform founded through the Queen Rania Foundation initiative. Courses are free and cover health, nutrition, self-development, technology, and languages, with free completion certificates when requirements are met.",
+"افتح إدراك ↗":"Open Edraak ↗","رواق · Rwaq":"Rwaq","تعليم عربي مفتوح، مع مواد في الطب والصحة العامة واللغات والإبداع والمهارات. استخدم مرشح «مجاني» عند التصفح.":"Open Arabic learning with materials in medicine, public health, languages, creativity, and skills. Use the Free filter when browsing.",
+"تصفح مواد رواق ↗":"Browse Rwaq Courses ↗","مئات الدورات المجانية في الصحة وعلم النفس والتواصل والدراسة والمهارات الرقمية، مع Statements of Participation في كثير منها.":"Hundreds of free courses in health, psychology, communication, study skills, and digital skills, with Statements of Participation for many courses.",
+"استكشف الدورات المجانية ↗":"Explore Free Courses ↗","تدريب مجاني في المهارات الرقمية والذكاء الاصطناعي والبيانات والتقنية؛ مفيد لبناء مهارات البحث والعروض والعمل الرقمي.":"Free training in digital skills, AI, data, and technology—useful for research, presentations, and digital work.",
+"افتح Microsoft Learn ↗":"Open Microsoft Learn ↗","أكاديمية خان · Khan Academy":"Khan Academy","تعليم مجاني لدعم العلوم والرياضيات والأساسيات الأكاديمية، مع واجهة عربية ومحتوى متعدد اللغات.":"Free learning support in science, mathematics, and academic foundations, with Arabic and multilingual content.",
+"افتح أكاديمية خان ↗":"Open Khan Academy ↗","ملاحظة مهمة:":"Important note:","لا تعني كلمة «مجاني» دائمًا أن الشهادة مجانية. راجع وصف كل منصة؛ إدراك مجاني مع شهادة إتمام مجانية، بينما Alison يتيح الدراسة مجانًا وغالبًا تكون الشهادة اختيارية مدفوعة، وCoursera يختلف حسب المقرر.":"“Free” does not always mean the certificate is free. Edraak offers free learning and completion certificates; Alison offers free learning with optional paid certificates in most cases; Coursera varies by course.",
+"الرئيسية":"Home","ابدأ هنا":"Start Here","نظام الدراسة":"Study Regulations","الخطة الدراسية":"Curriculum","الانضباط والعقوبات":"Conduct & Discipline","اسأل الدليل":"Ask the Guide","المراجع الرسمية":"Official References",
+"مرحباً بك في كلية التمريض":"Welcome to the Faculty of Nursing","ابدأ بمعرفة جدولك، مقرراتك، عضو هيئة التدريس لكل مقرر، وقنوات التواصل الرسمية في الكلية.":"Start by knowing your timetable, courses, instructor for each course, and the Faculty's official communication channels.",
+"اسأل مبكراً عن أي صعوبة في اللغة أو الفهم أو التطبيق العملي؛ الدعم المبكر أفضل من الانتظار.":"Ask early if you have difficulty with language, understanding, or practical application; early support is better than waiting.",
+"في المهارات السريرية، التعلّم الرقمي للتجهيز والمراجعة، لكن إثبات الأداء يكون بالتدريب والملاحظة تحت الإشراف.":"For clinical skills, digital learning supports preparation and review; competence is demonstrated through supervised training and observation.",
+"احتفظ بالنسخة الرسمية من الأدلة واللوائح، ولا تعتمد على لقطة شاشة أو ملخص منفرد عند اتخاذ إجراء أكاديمي.":"Keep the official versions of guides and regulations; do not rely on a screenshot or isolated summary when making an academic decision.",
+"قاعدة بسيطة:":"Simple rule:","التطبيق يشرح ويوجّه؛ الكلية والأستاذ والوثيقة الرسمية يعتمدون ويقررون.":"The app explains and guides; the Faculty, instructor, and official document are authoritative.",
+"برنامج البكالوريوس في التمريض":"Bachelor of Science in Nursing","سنوات دراسية":"years of study","أشهر امتياز بعد الدراسة":"months of internship after study","مقرراً في الخطة المرجعية":"courses in the reference curriculum","ECTS في الخطة المرجعية":"ECTS in the reference curriculum",
+"يشير دليل كليات التمريض إلى 140 وحدة معتمدة ضمن البرنامج. تفاصيل التطبيق الفعلي والجداول والمواعيد تؤخذ من الكلية.":"The Nursing Faculties Guide states 140 credit units for the programme. Actual implementation, timetables, and dates are confirmed by the Faculty.",
+"الحضور والغياب":"Attendance & Absence","حد 25% مهم:":"The 25% threshold matters:","وفق دليل كليات التمريض، يجوز لمجلس الكلية حرمان الطالب من الامتحان النهائي في المقرر إذا بلغ غيابه 25% فأكثر، ويُعد في هذه الحالة راسبًا في المقرر ما لم يُقبل عذره وفق الإجراء النظامي.":"Under the Nursing Faculties Guide, the Faculty Council may bar a student from the final examination in a course when absence reaches 25% or more; the student is then considered failed in that course unless an excuse is accepted under the applicable procedure.",
+"كما يُنذر الطالب إذا انقطع عن الدراسة أسبوعين متواصلين دون سبب مشروع، أو تجاوز غيابه 25% في أي مقرر، أو حصل على تقدير عام ضعيف في نهاية الفصل.":"A student may also receive a warning for two consecutive weeks of unjustified absence, more than 25% absence in a course, or an overall Poor grade at the end of a semester.",
+"الامتحانات والتقييم":"Examinations & Assessment","الامتحانات النهائية من دورين:":"Final examinations have two sittings:","الدور الأول يشمل العملي النهائي في الأسبوع الأخير من الفصل ثم الامتحانات النظرية؛ أما الدور الثاني فتُجرى فيه الامتحانات النظرية التحريرية وفق المواعيد التي تحددها الكلية بالتنسيق مع الجامعة.":"The first sitting includes the final practical examination in the last week of the semester followed by written finals. The second sitting consists of written theoretical examinations scheduled by the Faculty in coordination with the University.",
+"إذا تغيب الطالب دون عذر:":"If a student is absent without an accepted excuse:","يعد راسبًا وتُرصد له درجة صفر في الامتحان الذي تغيب عنه.":"The student is considered failed and receives zero for the missed examination.",
+"المراجعة:":"Result review:","يجوز للطالب الراسب طلب مراجعة نتيجته في مقررين كحد أقصى، وتُشكل لجنة من ثلاثة أعضاء هيئة تدريس على الأقل، من بينهم أستاذ المقرر.":"A failing student may request a review in no more than two courses. The review committee must include at least three faculty members, including the course instructor.",
+"توزيع الدرجات في الدليل:":"Assessment weighting in the Guide:","مقرر دون جزء عملي: 30% جزئي + 20% أعمال سنة وحضور + 50% نهائي.":"Course without a practical component: 30% midterm + 20% coursework/attendance + 50% final.",
+"مقرر به جزء عملي: 10% جزئي + 20% أعمال سنة وحضور + 20% عملي + 50% نهائي.":"Course with a practical component: 10% midterm + 20% coursework/attendance + 20% practical + 50% final.",
+"مقرر عملي/سريري: 70% تدريب عملي وسريري + 10% أعمال سنة وحضور + 20% نهائي.":"Practical/clinical course: 70% practical and clinical training + 10% coursework/attendance + 20% final.",
+"الانتقال، التعثر، والإنذار":"Progression, Failure & Warnings","الانتقال للسنة التالية:":"Progression to the next year:","ينتقل الطالب إذا نجح في جميع المقررات، أو رسب في مقررين على الأكثر، بشرط ألا يكون أحدهما من مقررات التدريب السريري أو المعملي من سنته أو سنة أدنى.":"A student progresses after passing all courses, or with no more than two failed courses, provided neither is a clinical or laboratory training course from the current or an earlier year.",
+"إعادة المقرر:":"Repeating a failed course:","يعيد الطالب المقرر الذي رسب فيه دراسةً وامتحانًا وفق المحتوى العلمي الذي يدرّس للدفعة التي تدرس المقرر وقت الإعادة.":"The student repeats both study and examination according to the course content taught to the cohort taking that course at the time of repetition.",
+"من حالات الفصل الواردة في الدليل:":"Examples of dismissal conditions in the Guide:","الانقطاع فصلين دراسيين متتاليين دون تجديد أو إيقاف قيد، أو الحصول على تقدير عام ضعيف جدًا في فصلين، أو الرسوب سنتين متتاليتين في مرحلة واحدة، أو بلوغ أربعة إنذارات، أو الإدانة بالغش للمرة الثانية، أو استنفاد الحد الأقصى لمدة الدراسة.":"These include two consecutive semesters of unjustified non-attendance without registration renewal/suspension, an overall Very Poor grade in two semesters, failing the same year twice consecutively, reaching four warnings, a second cheating conviction, or exhausting the maximum study period.",
+"التخرج والامتياز":"Graduation & Internship","مدة الدراسة الأساسية":"Standard study duration:","أربع سنوات":"four years","، ويُلزم الطالب باستكمال المقررات والبحوث والتدريبات الميدانية، ثم":"; students must complete courses, research, and field training, followed by","أربعة أشهر امتياز":"four months of internship",". ولا يُعد الطالب متخرجًا قبل اجتياز فترة الامتياز.":". A student is not considered graduated until the internship is completed.",
+"متطلبات الخطة المرجعية:":"Reference curriculum requirements:","اجتياز":"complete","50 مقررًا":"50 courses","بما يعادل":"equivalent to","140 ساعة معتمدة":"140 credit units","و":"and","240 نقطة ECTS":"240 ECTS","، بواقع 60 ECTS لكل سنة دراسية.":", with 60 ECTS per academic year.",
+"مدة الدراسة القصوى:":"Maximum study period:","يذكر الدليل أربع سنوات أساسية مع إمكانية امتداد المدة لسنتين دراسيتين إضافيتين كحد أقصى، ولا تُحتسب سنة إيقاف القيد من مدة الدراسة الفعلية.":"The Guide states four standard years with up to two additional academic years as the maximum extension; a year of approved registration suspension is not counted in the actual study period.",
+"الخطة الدراسية المرجعية · Four-year Curriculum":"Reference Curriculum · Four-Year Programme","البيانات أدناه مأخوذة من دليل كليات التمريض المرجعي. تعرض المقررات وساعات الاتصال وإجمالي عبء التعلّم وECTS. الجداول الفعلية وتوزيع المقررات على دفعتك تؤكدها الكلية.":"The data below come from the reference Nursing Faculties Guide and show courses, contact hours, total workload, and ECTS. Actual delivery and cohort scheduling are confirmed by the Faculty.",
+"كل السنوات":"All Years","السنة الأولى":"Year 1","السنة الثانية":"Year 2","السنة الثالثة":"Year 3","السنة الرابعة":"Year 4","الفصلان":"Both Semesters","الفصل الأول":"Semester 1","الفصل الثاني":"Semester 2",
+"السنة/الفصل":"Year/Semester","الكود":"Code","ساعات الاتصال":"Contact Hours","عبء التعلّم":"Workload",
+"الانضباط والسلوك المهني":"Conduct & Professional Behaviour","تتضمن الأدلة الرسمية مخالفات تستوجب التحقيق والتأديب بحسب الحالة والإجراء النظامي، ومن أمثلتها:":"Official regulations identify misconduct that may require investigation and disciplinary procedures, including:",
+"الاعتداء أو الإساءة إلى أعضاء هيئة التدريس أو العاملين أو الطلبة.":"Assaulting or abusing faculty members, staff, or students.","الاعتداء على أموال أو مرافق الجامعة.":"Damaging or attacking University property or facilities.","الإخلال بسير الدراسة أو الامتحانات.":"Disrupting teaching or examinations.","السلوك المخالف للأخلاق والنظام والآداب العامة.":"Conduct contrary to ethics, public order, or accepted standards of behaviour.","الغش أو استخدام وسائل غير مسموح بها في الامتحانات.":"Cheating or using prohibited means during examinations.",
+"العقوبات: لماذا لا نختصرها في جدول صغير؟":"Why are sanctions not reduced to a simple table?","لأن نوع العقوبة وإجراءات التحقيق والجهة المختصة تختلف حسب المخالفة واللائحة السارية وظروف الحالة. لذلك يعرض التطبيق الفكرة العامة فقط ولا يصدر حكماً أو عقوبة.":"Because the applicable sanction, investigation process, and competent authority depend on the offence, current regulations, and case circumstances. The app therefore provides general guidance only and does not determine sanctions.",
+"عند وقوع مشكلة فعلية:":"For an actual case:","ارجع مباشرة إلى الكلية ودليل الطالب/التأديب الرسمي الكامل، ولا تعتمد على تفسير التطبيق أو النقل الشفهي.":"Refer directly to the Faculty and the full official student/disciplinary guide rather than relying on the app or informal explanations.",
+"اسأل الدليل · Quick Guide Assistant":"Ask the Guide · Quick Guide Assistant","مساعد محلي بسيط يجيب من المعلومات الموجزة الموجودة هنا فقط. لا يتصل بخادم ولا يستبدل الموظف المختص.":"A simple local assistant that answers only from the summary available here. It does not connect to a server and does not replace the relevant Faculty office.",
+"اسألني عن الغياب 25%، الامتياز، عدد المقررات، الخطة، الانضباط، رفيق الدراسة، أو المحاكاة.":"Ask me about the 25% absence rule, internship, number of courses, curriculum, discipline, Study Companion, or simulation.",
+"إرسال":"Send","الغياب 25%":"25% Absence","الامتياز":"Internship","عدد المقررات":"Number of Courses","مرجع الخطة":"Curriculum Reference",
+"متى يجب أن تسأل شخصاً في الكلية؟":"When should you ask someone at the Faculty?","إذا كان السؤال يغيّر تسجيلك أو انتقالك أو تخرجك.":"If the question affects your registration, progression, or graduation.","إذا كان يتعلق بدرجة، اعتراض، إنذار، فصل، أو عقوبة.":"If it concerns a grade, appeal, warning, dismissal, or sanction.","إذا تعارضت نسخة قديمة من دليل مع تعليمات حالية.":"If an older guide conflicts with current instructions.","إذا كان السؤال سريرياً أو متعلقاً بسلامة المريض.":"If the question is clinical or concerns patient safety.",
+"المراجع التي يجب الرجوع إليها":"References to Consult","1) دليل الطالب":"1) Student Guide","النسخة الرسمية الكاملة المعتمدة لدى جامعة طبرق/الكلية.":"The complete official version approved/issued by Tobruk University or the Faculty.","2) دليل الجامعة":"2) University Guide","التعليمات والإجراءات الأكاديمية والطلابية الرسمية بجامعة طبرق.":"Official academic and student procedures at Tobruk University.","3) دليل كليات التمريض":"3) Nursing Faculties Guide","المرجع القطاعي للخطة الدراسية، المقررات، التدريب، والامتياز.":"The sector reference for curriculum, courses, training, and internship.",
+"كيف تستخدم هذا التطبيق مع الوثائق؟":"How should you use this app alongside official documents?","استخدم التطبيق للوصول السريع والفهم الأولي، ثم افتح/اطلب الوثيقة الرسمية الكاملة عندما تحتاج نصاً نظامياً أو قراراً أكاديمياً.":"Use the app for quick access and initial understanding, then consult the complete official document whenever you need an authoritative rule or academic decision.","في النسخ القادمة يمكن ربط كل بطاقة مباشرة بالنسخة الرسمية المنشورة من الوثيقة عندما يتوفر رابط الجامعة النهائي المعتمد.":"Future versions can link each card directly to the University's final published official document.",
+"1) صفتك":"1) Your role","طالب/ة · Student":"Student","معيد/ة · Teaching Assistant":"Teaching Assistant","عضو هيئة تدريس · Faculty":"Faculty Member","أخرى · Other":"Other","2) الجهاز المستخدم":"2) Device used","3) هل فتحت البوابة والأقسام بشكل سليم؟":"3) Did the hub and its sections open correctly?","نعم، دون مشكلة":"Yes, without a problem","نعم، لكن واجهت مشكلة":"Yes, but I experienced a problem","لم أتمكن من استخدام جزء منها":"I could not use part of it","4) ما الأقسام التي جرّبتها؟":"4) Which sections did you try?","التقويم والجداول":"Calendar & Timetables","بحوث التخرج":"Graduation Research","النشاطات العالمية · طوّر مهاراتك":"International Activities · Develop Your Skills","10) ما أكثر جزء وجدته مفيداً؟":"10) Which part did you find most useful?","11) ما أهم شيء يحتاج إلى تحسين؟":"11) What is the most important improvement needed?","12) هل واجهت مشكلة تقنية؟ اذكرها باختصار":"12) Did you experience a technical issue? Briefly describe it.","تجهيز الإجابة":"Prepare Response","مشاركة الإجابة":"Share Response","نسخ الإجابة":"Copy Response","المحاكاة":"Simulation","الدليل":"Guide","الاستبيان":"Survey",
+"نرحب بمشاركة الفائدة التعليمية وإعادة الاستخدام غير التجاري مع ذكر المصدر والمحافظة على الإحالات إلى المراجع الأصلية.":"We welcome educational sharing and non-commercial reuse with attribution, while preserving references to the original sources."
+};
+const staticNodes=[];
+const originalText=new WeakMap();
+const managedIds=new Set(["brandTitle","brandSub","heroEyebrow","heroTitle","shareLead","hadithTop","heroText","heroStart","heroSurvey","c1t","c1p","c1b","c2t","c2p","c2b","c3t","c3p","c3b","trialTitle","trialSub","s1","s2","s3","s4","simTitle","simNote","simFull","engTitle","engNote","engFull","guideEyebrow","guideTitle","guideIntro","surveyTitle","surveySub","surveyPrivacy","masterNotice","langBtn"]);
+function captureStaticText(){
+ const w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
+ let n;while(n=w.nextNode()){
+  const p=n.parentElement;if(!p||["SCRIPT","STYLE","TEXTAREA"].includes(p.tagName))continue;
+  const owner=p.closest("[id]");if(owner&&managedIds.has(owner.id))continue;
+  originalText.set(n,n.nodeValue);staticNodes.push(n);
+ }
+}
+function applyStaticText(){
+ staticNodes.forEach(n=>{
+  const src=originalText.get(n);if(src==null)return;
+  if(lang==="ar"){n.nodeValue=src;return}
+  const t=src.trim(),tr=staticTextMap[t];if(!tr){n.nodeValue=src;return}
+  const lead=src.match(/^\s*/)?.[0]||"",tail=src.match(/\s*$/)?.[0]||"";
+  n.nodeValue=lead+tr+tail;
+ });
+}
+
 let lang=localStorage.getItem("hub-lang")||"ar";
 function applyLang(){
  const x=T[lang]; document.documentElement.lang=lang; document.documentElement.dir=lang==="ar"?"rtl":"ltr";
@@ -646,6 +769,8 @@ function applyLang(){
  document.getElementById("masterNotice").innerHTML=x.masterNotice;
  document.getElementById("langBtn").textContent=lang==="ar"?"English":"العربية";
  localStorage.setItem("hub-lang",lang);
+ applyStaticText();
+ if(document.getElementById("courseBody"))renderCourses();
 }
 document.getElementById("langBtn").addEventListener("click",()=>{lang=lang==="ar"?"en":"ar";applyLang()});
 
@@ -661,7 +786,7 @@ async function loadLogos(){
   document.getElementById("facultyLogo").style.visibility="hidden";
  }
 }
-loadLogos();applyLang();
+loadLogos();captureStaticText();applyLang();
 
 function route(name){
  const valid=["home","simulation","guide","english","survey"]; if(!valid.includes(name))name="home";
@@ -687,7 +812,11 @@ document.querySelectorAll("[data-guide]").forEach(b=>b.addEventListener("click",
 function renderCourses(){
  const y=document.getElementById("yearFilter").value,s=document.getElementById("semFilter").value,q=document.getElementById("courseSearch").value.trim().toLowerCase();
  const rows=courses.filter(r=>(y==="all"||String(r[0])===y)&&(s==="all"||String(r[1])===s)&&(!q||r.slice(2,5).join(" ").toLowerCase().includes(q)));
- document.getElementById("courseBody").innerHTML=rows.map(r=>`<tr><td>Y${r[0]} · S${r[1]}<small>السنة ${r[0]} · الفصل ${r[1]}</small></td><td dir="ltr">${r[2]}</td><td><b>${r[4]}</b><small dir="ltr">${r[3]}</small></td><td class="num">${r[5]}</td><td class="num">${r[6]}</td><td class="num">${r[7]}</td></tr>`).join("")||'<tr><td colspan="6">لا توجد نتائج.</td></tr>';
+ document.getElementById("courseBody").innerHTML=rows.map(r=>{
+  const ys=lang==="en"?`Year ${r[0]} · Semester ${r[1]}`:`السنة ${r[0]} · الفصل ${r[1]}`;
+  const name=lang==="en"?`<b dir="ltr">${r[3]}</b><small>${r[4]}</small>`:`<b>${r[4]}</b><small dir="ltr">${r[3]}</small>`;
+  return `<tr><td>Y${r[0]} · S${r[1]}<small>${ys}</small></td><td dir="ltr">${r[2]}</td><td>${name}</td><td class="num">${r[5]}</td><td class="num">${r[6]}</td><td class="num">${r[7]}</td></tr>`;
+ }).join("")||(lang==="en"?'<tr><td colspan="6">No results found.</td></tr>':'<tr><td colspan="6">لا توجد نتائج.</td></tr>');
  const keys=[...new Set(rows.map(r=>r[0]+"-"+r[1]))];
  document.getElementById("semSummary").innerHTML=keys.map(k=>{const t=semTotals[k];return `<span class="pill">Y${k[0]} S${k[2]} · Contact ${t[0]}h · Workload ${t[1]}h · ${t[2]} ECTS</span>`}).join("");
 }
@@ -696,21 +825,21 @@ renderCourses();
 const openCurriculumBtn=document.getElementById("openCurriculumBtn");if(openCurriculumBtn)openCurriculumBtn.addEventListener("click",()=>{route("guide");document.getElementById("gCurrBtn")?.click()});
 
 const answers=[
- {k:["دور ثاني","الدور الثاني","second round"],a:"وفق دليل كليات التمريض: الامتحانات النهائية من دورين. الدور الأول يشمل العملي النهائي ثم النظري، أما الدور الثاني فتُجرى فيه الامتحانات النظرية التحريرية وتحدد مواعيده الكلية بالتنسيق مع الجامعة."},
- {k:["انتقال","ينتقل","مقررين","مقررين"],a:"وفق الدليل، ينتقل الطالب للسنة التالية إذا نجح في جميع المقررات أو رسب في مقررين على الأكثر، بشرط ألا يكون أحدهما من مقررات التدريب السريري أو المعملي من سنته أو سنة أدنى."},
- {k:["مراجعة","اعتراض","مادتين"],a:"يجوز للطالب الراسب طلب مراجعة نتيجته في مقررين كحد أقصى. وتُشكل لجنة مراجعة من ثلاثة أعضاء هيئة تدريس على الأقل، من بينهم أستاذ المقرر."},
- {k:["25","غياب","absence","attendance"],a:"بحسب الدليل المرجعي، بلوغ/تجاوز الغياب في مقرر نسبة 25% قد يترتب عليه الحرمان من الامتحان النهائي وما يرتبط بذلك من إجراءات وإنذار. راجع المسجل والكلية لتطبيق الحالة الفعلية."},
- {k:["امتياز","internship"],a:"البرنامج أربع سنوات دراسية، ثم فترة امتياز مدتها أربعة أشهر بحسب دليل كليات التمريض. تفاصيل البدء والتوزيع والتقييم تؤخذ من الكلية."},
- {k:["50","مقرر","courses"],a:"الخطة المرجعية تتضمن 50 مقرراً بإجمالي 240 ECTS، ويشير الدليل إلى 140 وحدة معتمدة. راجع تبويب الخطة الدراسية للتفاصيل."},
- {k:["انضباط","عقوب","غش","discipline","cheat"],a:"التطبيق يعرض أمثلة عامة للمخالفات فقط. أي تحقيق أو عقوبة أو اعتراض يجب الرجوع فيه إلى الكلية ودليل التأديب الرسمي الكامل."},
- {k:["english","انجليزي","english ii","لغة إنجليزية 2","دعم المقررات","رفيق الدراسة"],a:"«رفيق الدراسة» مساحة لدعم المقررات والتعلّم والمراجعة، والنموذج الحالي هو لغة إنجليزية 2. لا يمثل نطاق امتحان رسمي ولا يستبدل كتاب المقرر أو تعليمات الأستاذ."},
- {k:["محاك","simulation","مهار"],a:"المحاكاة للتعلّم والمراجعة والتدريب التفاعلي. لا تمنح إثبات كفاءة سريرية ولا تستبدل التدريب العملي تحت الإشراف."},
- {k:["مرجع","وثيق","guide","reference"],a:"المراجع الأساسية: دليل الطالب، دليل الجامعة، ودليل كليات التمريض. عند اتخاذ قرار أكاديمي استخدم النسخة الرسمية الكاملة وراجع الكلية."}
+ {k:["دور ثاني","الدور الثاني","second round"],ar:"وفق دليل كليات التمريض: الامتحانات النهائية من دورين. الدور الأول يشمل العملي النهائي ثم النظري، أما الدور الثاني فتُجرى فيه الامتحانات النظرية التحريرية وتحدد مواعيده الكلية بالتنسيق مع الجامعة.",en:"Under the Nursing Faculties Guide, final examinations have two sittings. The first includes the final practical examination followed by written finals; the second consists of written theoretical examinations scheduled by the Faculty in coordination with the University."},
+ {k:["انتقال","ينتقل","مقررين","مقررين","progress","progression"],ar:"وفق الدليل، ينتقل الطالب للسنة التالية إذا نجح في جميع المقررات أو رسب في مقررين على الأكثر، بشرط ألا يكون أحدهما من مقررات التدريب السريري أو المعملي من سنته أو سنة أدنى.",en:"Under the Guide, a student progresses after passing all courses or with no more than two failed courses, provided neither is a clinical or laboratory training course from the current or an earlier year."},
+ {k:["مراجعة","اعتراض","مادتين","review","appeal"],ar:"يجوز للطالب الراسب طلب مراجعة نتيجته في مقررين كحد أقصى. وتُشكل لجنة مراجعة من ثلاثة أعضاء هيئة تدريس على الأقل، من بينهم أستاذ المقرر.",en:"A failing student may request a result review in no more than two courses. The review committee must have at least three faculty members, including the course instructor."},
+ {k:["25","غياب","absence","attendance"],ar:"بحسب الدليل المرجعي، بلوغ/تجاوز الغياب في مقرر نسبة 25% قد يترتب عليه الحرمان من الامتحان النهائي وما يرتبط بذلك من إجراءات وإنذار. راجع المسجل والكلية لتطبيق الحالة الفعلية.",en:"Under the reference Guide, reaching 25% absence in a course may lead to being barred from the final examination and related warning procedures. Check with the Registrar/Faculty for the application to an individual case."},
+ {k:["امتياز","internship"],ar:"البرنامج أربع سنوات دراسية، ثم فترة امتياز مدتها أربعة أشهر بحسب دليل كليات التمريض. تفاصيل البدء والتوزيع والتقييم تؤخذ من الكلية.",en:"The programme consists of four academic years followed by a four-month internship under the Nursing Faculties Guide. Start dates, placement, and assessment details are confirmed by the Faculty."},
+ {k:["50","مقرر","courses"],ar:"الخطة المرجعية تتضمن 50 مقرراً بإجمالي 240 ECTS، ويشير الدليل إلى 140 وحدة معتمدة. راجع تبويب الخطة الدراسية للتفاصيل.",en:"The reference curriculum contains 50 courses totalling 240 ECTS, and the Guide states 140 credit units. See the Curriculum tab for details."},
+ {k:["انضباط","عقوب","غش","discipline","cheat"],ar:"التطبيق يعرض أمثلة عامة للمخالفات فقط. أي تحقيق أو عقوبة أو اعتراض يجب الرجوع فيه إلى الكلية ودليل التأديب الرسمي الكامل.",en:"The app gives only general examples of misconduct. Any investigation, sanction, or appeal must be handled through the Faculty and the complete official disciplinary regulations."},
+ {k:["english","انجليزي","english ii","لغة إنجليزية 2","دعم المقررات","رفيق الدراسة","study companion"],ar:"«رفيق الدراسة» مساحة لدعم المقررات والتعلّم والمراجعة، والنموذج الحالي هو لغة إنجليزية 2. لا يمثل نطاق امتحان رسمي ولا يستبدل كتاب المقرر أو تعليمات الأستاذ.",en:"Study Companion is a supplementary course-learning and revision area. English II is the current prototype. It does not define an official exam scope or replace the course book or instructor directions."},
+ {k:["محاك","simulation","مهار","skills"],ar:"المحاكاة للتعلّم والمراجعة والتدريب التفاعلي. لا تمنح إثبات كفاءة سريرية ولا تستبدل التدريب العملي تحت الإشراف.",en:"The simulation supports learning, review, and interactive practice. It does not certify clinical competence and does not replace supervised practical training."},
+ {k:["مرجع","وثيق","guide","reference"],ar:"المراجع الأساسية: دليل الطالب، دليل الجامعة، ودليل كليات التمريض. عند اتخاذ قرار أكاديمي استخدم النسخة الرسمية الكاملة وراجع الكلية.",en:"Core references are the Student Guide, University Guide, and Nursing Faculties Guide. For an academic decision, use the complete official document and consult the Faculty."}
 ];
 function addMsg(txt,type){const d=document.createElement("div");d.className="msg "+type;d.textContent=txt;document.getElementById("chatLog").appendChild(d);document.getElementById("chatLog").scrollTop=99999}
 function ask(q){
  if(!q.trim())return;addMsg(q,"user");const s=q.toLowerCase();const hit=answers.find(x=>x.k.some(k=>s.includes(k)));
- addMsg(hit?hit.a:"لم أجد إجابة دقيقة في الملخص. الأفضل الرجوع إلى الكلية/المسجل أو الوثيقة الرسمية الكاملة، خاصة إذا كان السؤال سيغيّر تسجيلك أو درجتك أو وضعك الأكاديمي.","bot");
+ addMsg(hit?(lang==="en"?hit.en:hit.ar):(lang==="en"?"I could not find a precise answer in this summary. Please consult the Faculty/Registrar or the complete official document, especially if the question affects registration, grades, or academic status.":"لم أجد إجابة دقيقة في الملخص. الأفضل الرجوع إلى الكلية/المسجل أو الوثيقة الرسمية الكاملة، خاصة إذا كان السؤال سيغيّر تسجيلك أو درجتك أو وضعك الأكاديمي."),"bot");
 }
 document.getElementById("chatSend").addEventListener("click",()=>{const i=document.getElementById("chatInput");ask(i.value);i.value=""});
 document.getElementById("chatInput").addEventListener("keydown",e=>{if(e.key==="Enter"){e.preventDefault();document.getElementById("chatSend").click()}});
@@ -750,8 +879,8 @@ document.getElementById("buildResponse").addEventListener("click",()=>{
  const out=document.getElementById("surveyResult");out.hidden=false;out.textContent=surveyText;
  document.getElementById("shareResponse").disabled=false;document.getElementById("copyResponse").disabled=false;
 });
-document.getElementById("copyResponse").addEventListener("click",async()=>{if(!surveyText)return;await navigator.clipboard.writeText(surveyText);document.getElementById("copyResponse").textContent="تم النسخ ✓"});
-document.getElementById("shareResponse").addEventListener("click",async()=>{if(!surveyText)return;if(navigator.share){try{await navigator.share({title:"Tobruk Nursing Learning Hub · Pilot Feedback",text:surveyText})}catch(e){}}else{await navigator.clipboard.writeText(surveyText);alert("تم نسخ الإجابة. يمكنك لصقها وإرسالها إلى جهة الكلية التي أرسلت لك الرابط.")}});
+document.getElementById("copyResponse").addEventListener("click",async()=>{if(!surveyText)return;await navigator.clipboard.writeText(surveyText);document.getElementById("copyResponse").textContent=lang==="en"?"Copied ✓":"تم النسخ ✓"});
+document.getElementById("shareResponse").addEventListener("click",async()=>{if(!surveyText)return;if(navigator.share){try{await navigator.share({title:"Tobruk Nursing Learning Hub · Pilot Feedback",text:surveyText})}catch(e){}}else{await navigator.clipboard.writeText(surveyText);alert(lang==="en"?"The response has been copied. You can paste and send it to the Faculty contact who shared the link.":"تم نسخ الإجابة. يمكنك لصقها وإرسالها إلى جهة الكلية التي أرسلت لك الرابط.")}});
 </script>
 </body>
 </html>
