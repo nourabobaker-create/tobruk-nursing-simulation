@@ -142,7 +142,6 @@ textarea{width:100%;min-height:100px;border:1px solid var(--line);border-radius:
   <p id="heroText">المحاكاة التفاعلية للمهارات، دليل الطالب المبسّط، و«رفيق الدراسة» لدعم المقررات والتعلّم والمراجعة — ويبدأ حاليًا بنموذج لغة إنجليزية 2 — في بوابة واحدة مصممة للهاتف والحاسوب مع دعم عربي واضح.</p>
   <div class="heroactions">
    <button class="btn primary" data-route="simulation" id="heroStart">ابدأ بالمحاكاة</button>
-   <button class="btn gold" data-route="survey" id="heroSurvey">استبيان التجربة</button>
   </div>
  </div>
  <div class="notice" id="masterNotice">
@@ -519,54 +518,11 @@ textarea{width:100%;min-height:100px;border:1px solid var(--line);border-radius:
  </div>
 </section>
 
-<section class="panel" id="panel-survey">
- <div class="sectionhead"><div><h2 id="surveyTitle">استبيان تجربة البوابة</h2><p id="surveySub">قصير، طوعي، ولا يطلب الاسم أو البريد الإلكتروني.</p></div></div>
- <div class="surveyIntro" id="surveyPrivacy">إجاباتك تبقى في هذا المتصفح ولا تُرسل إلى خادم من هذه الصفحة. عند الانتهاء يمكنك نسخها أو مشاركتها بنفسك مع جهة الكلية التي أرسلت لك رابط التجربة. إذا شاركتها عبر حسابك الشخصي في تطبيق مراسلة، فقد يظهر اسم حسابك لذلك التطبيق.</div>
- <form id="surveyForm">
-  <div class="formcard"><h3>1) صفتك</h3><div class="optiongrid">
-   <label class="choice"><input type="radio" name="role" value="طالب/ة · Student"> طالب/ة · Student</label>
-   <label class="choice"><input type="radio" name="role" value="معيد/ة · Teaching Assistant"> معيد/ة · Teaching Assistant</label>
-   <label class="choice"><input type="radio" name="role" value="عضو هيئة تدريس · Faculty"> عضو هيئة تدريس · Faculty</label>
-   <label class="choice"><input type="radio" name="role" value="أخرى · Other"> أخرى · Other</label>
-  </div></div>
-  <div class="formcard"><h3>2) الجهاز المستخدم</h3><div class="optiongrid">
-   <label class="choice"><input type="radio" name="device" value="Android"> Android</label>
-   <label class="choice"><input type="radio" name="device" value="iPhone/iPad"> iPhone / iPad</label>
-   <label class="choice"><input type="radio" name="device" value="Laptop/Desktop"> Laptop / Desktop</label>
-   <label class="choice"><input type="radio" name="device" value="Other"> Other</label>
-  </div></div>
-  <div class="formcard"><h3>3) هل فتحت البوابة والأقسام بشكل سليم؟</h3><div class="optiongrid">
-   <label class="choice"><input type="radio" name="access" value="نعم دون مشكلة"> نعم، دون مشكلة</label>
-   <label class="choice"><input type="radio" name="access" value="نعم مع مشكلة"> نعم، لكن واجهت مشكلة</label>
-   <label class="choice"><input type="radio" name="access" value="لم أتمكن"> لم أتمكن من استخدام جزء منها</label>
-  </div></div>
-  <div class="formcard"><h3>4) ما الأقسام التي جرّبتها؟</h3><div class="optiongrid">
-   <label class="choice"><input type="checkbox" name="sections" value="Simulation"> Simulation</label>
-   <label class="choice"><input type="checkbox" name="sections" value="Student Guide"> Student Guide</label>
-   <label class="choice"><input type="checkbox" name="sections" value="Study Companion - English II"> رفيق الدراسة · لغة إنجليزية 2</label>
-   <label class="choice"><input type="checkbox" name="sections" value="Academic Calendar and Timetables"> التقويم والجداول</label>
-   <label class="choice"><input type="checkbox" name="sections" value="Graduation Research"> بحوث التخرج</label>
-   <label class="choice"><input type="checkbox" name="sections" value="Global Activities and Skills"> النشاطات العالمية · طوّر مهاراتك</label>
-  </div></div>
-  <div id="ratings"></div>
-  <div class="formcard"><h3>10) ما أكثر جزء وجدته مفيداً؟</h3><textarea name="best" placeholder="اختياري"></textarea></div>
-  <div class="formcard"><h3>11) ما أهم شيء يحتاج إلى تحسين؟</h3><textarea name="improve" placeholder="اختياري"></textarea></div>
-  <div class="formcard"><h3>12) هل واجهت مشكلة تقنية؟ اذكرها باختصار</h3><textarea name="problem" placeholder="اختياري"></textarea></div>
-  <div class="actions" style="margin-top:15px">
-   <button type="button" class="btn primary" id="buildResponse">تجهيز الإجابة</button>
-   <button type="button" class="btn soft" id="shareResponse" disabled>مشاركة الإجابة</button>
-   <button type="button" class="btn" id="copyResponse" disabled>نسخ الإجابة</button>
-  </div>
-  <div class="resultbox" id="surveyResult" hidden></div>
- </form>
-</section>
-
 <div class="mobileNav">
  <button data-route="home">⌂<br>الرئيسية</button>
  <button data-route="simulation">🩺<br>المحاكاة</button>
  <button data-route="guide">📘<br>الدليل</button>
  <button data-route="english">📚<br>رفيق الدراسة</button>
- <button data-route="survey">✓<br>الاستبيان</button>
 </div>
 </main>
 
@@ -638,7 +594,7 @@ const T={
  brandTitle:"كلية التمريض · جامعة طبرق",brandSub:"Faculty of Nursing · Tobruk University · Learning Hub Pilot",
  heroEyebrow:"نموذج تجريبي للتعلّم والدعم الطلابي",heroTitle:"النسخة الأولى التجريبية",shareLead:"نشجّع أبناءنا الطلاب على مشاركة التطبيق مع أقرانهم في كليات التمريض بالجامعات الليبية، إيمانًا بأهمية نشر المعرفة وتبادل الفائدة.",hadithTop:"قال رسول الله صلى الله عليه وسلم: «مَنْ دَلَّ عَلَى خَيْرٍ فَلَهُ مِثْلُ أَجْرِ فَاعِلِهِ» رواه مسلم",
  heroText:"المحاكاة التفاعلية للمهارات، دليل الطالب المبسّط، و«رفيق الدراسة» لدعم المقررات والتعلّم والمراجعة — ويبدأ حاليًا بنموذج لغة إنجليزية 2 — في بوابة واحدة مصممة للهاتف والحاسوب مع دعم عربي واضح.",
- heroStart:"ابدأ بالمحاكاة",heroSurvey:"استبيان التجربة",
+ heroStart:"ابدأ بالمحاكاة",
  masterNotice:"<strong>مهم قبل البدء:</strong> هذه البوابة وسيلة تعليمية مساندة وتجريبية، وليست بديلاً عن المقررات المعتمدة، أو عضو هيئة التدريس، أو التدريب العملي/السريري تحت الإشراف، أو اللوائح والأدلة الرسمية الكاملة. عند وجود أي اختلاف، يُرجع إلى الكلية وأستاذ المقرر والنسخة الرسمية الكاملة من الوثيقة.",
  c1t:"محاكاة المهارات",c1p:"سبع وحدات مهارية تفاعلية تتضمن التعلم، الحركة المرئية، التدريب، المبررات، والأسئلة الكتابية.",c1b:"فتح المحاكاة",
  c2t:"دليل الطالب",c2p:"البداية، نظام الدراسة، الغياب، الامتحانات، المسار الدراسي، الخطة بأربع سنوات، الانضباط، والامتياز.",c2b:"فتح الدليل",
@@ -647,14 +603,13 @@ const T={
  s1:"مهارات تمريضية تفاعلية",s2:"مقرراً في الخطة المرجعية",s3:"دروس في النموذج الحالي لمقرر لغة إنجليزية 2",s4:"دعم عربي/إنجليزي",
  simTitle:"محاكاة المهارات التمريضية",simNote:"تعلّم وتدرّب، ثم ارجع دائماً إلى المشرف/عضو هيئة التدريس والدليل العملي المعتمد.",simFull:"فتح بملء الشاشة",
  engTitle:"رفيق الدراسة · لغة إنجليزية 2",engNote:"أستاذ المادة: نورا مسعود حمد بوبكر · الأحد 10:00–12:00 · القاعة N5. رفيق الدراسة مساحة لدعم المقررات والتعلّم والمراجعة، والمحتوى مساند فقط؛ ويظل كتاب المقرر وتعليمات الأستاذ والمواد المعتمدة هي المرجع.",engFull:"فتح بملء الشاشة",
- guideEyebrow:"دليل الطالب · نسخة مبسّطة داخل التطبيق",guideTitle:"اعرف أين تبدأ… وأين ترجع عند الحاجة.",guideIntro:"ملخص عملي للتوجيه فقط، مع إحالة مستمرة إلى الكلية والمسجل وأعضاء هيئة التدريس والوثائق الرسمية الكاملة.",
- surveyTitle:"استبيان تجربة البوابة",surveySub:"قصير، طوعي، ولا يطلب الاسم أو البريد الإلكتروني.",surveyPrivacy:"إجاباتك تبقى في هذا المتصفح ولا تُرسل إلى خادم من هذه الصفحة. عند الانتهاء يمكنك نسخها أو مشاركتها بنفسك مع جهة الكلية التي أرسلت لك رابط التجربة. إذا شاركتها عبر حسابك الشخصي في تطبيق مراسلة، فقد يظهر اسم حسابك لذلك التطبيق."
+ guideEyebrow:"دليل الطالب · نسخة مبسّطة داخل التطبيق",guideTitle:"اعرف أين تبدأ… وأين ترجع عند الحاجة.",guideIntro:"ملخص عملي للتوجيه فقط، مع إحالة مستمرة إلى الكلية والمسجل وأعضاء هيئة التدريس والوثائق الرسمية الكاملة."
  },
  en:{
  brandTitle:"Faculty of Nursing · Tobruk University",brandSub:"Learning Hub Pilot · Simulation · Student Guide · Study Companion",
  heroEyebrow:"PILOT LEARNING & STUDENT-SUPPORT HUB",heroTitle:"First Pilot Version",shareLead:"We encourage our students to share this app with their peers in nursing faculties across Libyan universities, in the spirit of sharing knowledge and benefit.",hadithTop:"The Messenger of Allah ﷺ said: “Whoever guides to something good will have a reward like the one who does it.” — Sahih Muslim",
  heroText:"Interactive nursing-skills simulation, a simplified Student Guide, and a Study Companion for course learning and revision — currently piloted through English II — in one phone- and computer-friendly hub with Arabic support.",
- heroStart:"Start with Simulation",heroSurvey:"Trial Survey",
+ heroStart:"Start with Simulation",
  masterNotice:"<strong>Before you start:</strong> This is a supplementary pilot learning resource. It does not replace the approved curriculum, instructors, supervised practical/clinical teaching, or complete official regulations and guides. If anything differs, follow the Faculty, course instructor, and the complete official document.",
  c1t:"Skills Simulation",c1p:"Seven interactive skills modules with visible movement, guided practice, rationales, and written practice.",c1b:"Open Simulation",
  c2t:"Student Guide",c2p:"Orientation, study rules, attendance, exams, four-year curriculum, conduct, and internship guidance.",c2b:"Open Guide",
@@ -663,8 +618,7 @@ const T={
  s1:"interactive nursing skills",s2:"courses in the reference curriculum",s3:"lessons in the current English II course-support prototype",s4:"Arabic/English support",
  simTitle:"Interactive Nursing Skills",simNote:"Use it to learn and practise, then confirm technique with instructors/supervisors and the approved practical guide.",simFull:"Open full screen",
  engTitle:"Study Companion · English II",engNote:"Course instructor: Noura Masoud Hamad Bubakr · Sunday 10:00–12:00 · Room N5. Study Companion supports course learning and revision. It remains supplementary; the approved course book, instructor directions, and official course materials remain the reference.",engFull:"Open full screen",
- guideEyebrow:"STUDENT GUIDE · SIMPLIFIED APP VERSION",guideTitle:"Know where to start — and where to go back for authority.",guideIntro:"A practical orientation summary with repeated referral to the Faculty, Registrar, instructors, and complete official documents.",
- surveyTitle:"Learning Hub Trial Survey",surveySub:"Short, voluntary, and does not ask for your name or email.",surveyPrivacy:"Your answers remain in this browser and are not sent to a server by this page. When finished, you can copy or share them yourself with the Faculty contact who sent you the trial link. If you share through a personal messaging account, that service may show your account identity."
+ guideEyebrow:"STUDENT GUIDE · SIMPLIFIED APP VERSION",guideTitle:"Know where to start — and where to go back for authority.",guideIntro:"A practical orientation summary with repeated referral to the Faculty, Registrar, instructors, and complete official documents."
  }
 };
 const staticTextMap={
@@ -765,12 +719,10 @@ const staticTextMap={
 "إرسال":"Send","الغياب 25%":"25% Absence","الامتياز":"Internship","عدد المقررات":"Number of Courses","مرجع الخطة":"Curriculum Reference",
 "متى يجب أن تسأل شخصاً في الكلية؟":"When should you ask someone at the Faculty?","إذا كان السؤال يغيّر تسجيلك أو انتقالك أو تخرجك.":"If the question affects your registration, progression, or graduation.","إذا كان يتعلق بدرجة، اعتراض، إنذار، فصل، أو عقوبة.":"If it concerns a grade, appeal, warning, dismissal, or sanction.","إذا تعارضت نسخة قديمة من دليل مع تعليمات حالية.":"If an older guide conflicts with current instructions.","إذا كان السؤال سريرياً أو متعلقاً بسلامة المريض.":"If the question is clinical or concerns patient safety.",
 "المراجع التي يجب الرجوع إليها":"References to Consult","1) دليل الطالب":"1) Student Guide","النسخة الرسمية الكاملة المعتمدة لدى جامعة طبرق/الكلية.":"The complete official version approved/issued by Tobruk University or the Faculty.","2) دليل الجامعة":"2) University Guide","التعليمات والإجراءات الأكاديمية والطلابية الرسمية بجامعة طبرق.":"Official academic and student procedures at Tobruk University.","3) دليل كليات التمريض":"3) Nursing Faculties Guide","المرجع القطاعي للخطة الدراسية، المقررات، التدريب، والامتياز.":"The sector reference for curriculum, courses, training, and internship.",
-"كيف تستخدم هذا التطبيق مع الوثائق؟":"How should you use this app alongside official documents?","استخدم التطبيق للوصول السريع والفهم الأولي، ثم افتح/اطلب الوثيقة الرسمية الكاملة عندما تحتاج نصاً نظامياً أو قراراً أكاديمياً.":"Use the app for quick access and initial understanding, then consult the complete official document whenever you need an authoritative rule or academic decision.","في النسخ القادمة يمكن ربط كل بطاقة مباشرة بالنسخة الرسمية المنشورة من الوثيقة عندما يتوفر رابط الجامعة النهائي المعتمد.":"Future versions can link each card directly to the University's final published official document.",
-"1) صفتك":"1) Your role","طالب/ة · Student":"Student","معيد/ة · Teaching Assistant":"Teaching Assistant","عضو هيئة تدريس · Faculty":"Faculty Member","أخرى · Other":"Other","2) الجهاز المستخدم":"2) Device used","3) هل فتحت البوابة والأقسام بشكل سليم؟":"3) Did the hub and its sections open correctly?","نعم، دون مشكلة":"Yes, without a problem","نعم، لكن واجهت مشكلة":"Yes, but I experienced a problem","لم أتمكن من استخدام جزء منها":"I could not use part of it","4) ما الأقسام التي جرّبتها؟":"4) Which sections did you try?","التقويم والجداول":"Calendar & Timetables","بحوث التخرج":"Graduation Research","النشاطات العالمية · طوّر مهاراتك":"International Activities · Develop Your Skills","10) ما أكثر جزء وجدته مفيداً؟":"10) Which part did you find most useful?","11) ما أهم شيء يحتاج إلى تحسين؟":"11) What is the most important improvement needed?","12) هل واجهت مشكلة تقنية؟ اذكرها باختصار":"12) Did you experience a technical issue? Briefly describe it.","تجهيز الإجابة":"Prepare Response","مشاركة الإجابة":"Share Response","نسخ الإجابة":"Copy Response","المحاكاة":"Simulation","الدليل":"Guide","الاستبيان":"Survey",
+"كيف تستخدم هذا التطبيق مع الوثائق؟":"How should you use this app alongside official documents?","استخدم التطبيق للوصول السريع والفهم الأولي، ثم افتح/اطلب الوثيقة الرسمية الكاملة عندما تحتاج نصاً نظامياً أو قراراً أكاديمياً.":"Use the app for quick access and initial understanding, then consult the complete official document whenever you need an authoritative rule or academic decision.","في النسخ القادمة يمكن ربط كل بطاقة مباشرة بالنسخة الرسمية المنشورة من الوثيقة عندما يتوفر رابط الجامعة النهائي المعتمد.":"Future versions can link each card directly to the University's final published official document.","المحاكاة":"Simulation","الدليل":"Guide",
 "جداول المحاضرات":"Lecture Timetables",
 "الخطة الدراسية 2026/2027":"Academic Calendar 2026/2027",
 "الأنشطة الأكاديمية والعلمية":"Academic & Scientific Activities",
-"بحوث التخرج":"Graduation Research",
 "نتائج بحوث التخرج":"Research Findings",
 "نشاطات عالمية مجانية":"Free International Activities",
 "طوّر مهاراتك":"Develop Your Skills",
@@ -779,7 +731,7 @@ const staticTextMap={
 };
 const staticNodes=[];
 const originalText=new WeakMap();
-const managedIds=new Set(["brandTitle","brandSub","heroEyebrow","heroTitle","shareLead","hadithTop","heroText","heroStart","heroSurvey","c1t","c1p","c1b","c2t","c2p","c2b","c3t","c3p","c3b","trialTitle","trialSub","s1","s2","s3","s4","simTitle","simNote","simFull","engTitle","engNote","engFull","guideEyebrow","guideTitle","guideIntro","surveyTitle","surveySub","surveyPrivacy","masterNotice","langBtn"]);
+const managedIds=new Set(["brandTitle","brandSub","heroEyebrow","heroTitle","shareLead","hadithTop","heroText","heroStart","c1t","c1p","c1b","c2t","c2p","c2b","c3t","c3p","c3b","trialTitle","trialSub","s1","s2","s3","s4","simTitle","simNote","simFull","engTitle","engNote","engFull","guideEyebrow","guideTitle","guideIntro","masterNotice","langBtn"]);
 function captureStaticText(){
  const w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
  let n;while(n=w.nextNode()){
@@ -801,7 +753,7 @@ function applyStaticText(){
 let lang=localStorage.getItem("hub-lang")||"ar";
 function applyLang(){
  const x=T[lang]; document.documentElement.lang=lang; document.documentElement.dir=lang==="ar"?"rtl":"ltr";
- ["brandTitle","brandSub","heroEyebrow","heroTitle","shareLead","hadithTop","heroText","heroStart","heroSurvey","c1t","c1p","c1b","c2t","c2p","c2b","c3t","c3p","c3b","trialTitle","trialSub","s1","s2","s3","s4","simTitle","simNote","simFull","engTitle","engNote","engFull","guideEyebrow","guideTitle","guideIntro","surveyTitle","surveySub","surveyPrivacy"].forEach(id=>{const e=document.getElementById(id);if(e&&x[id]!=null)e.textContent=x[id]});
+ ["brandTitle","brandSub","heroEyebrow","heroTitle","shareLead","hadithTop","heroText","heroStart","c1t","c1p","c1b","c2t","c2p","c2b","c3t","c3p","c3b","trialTitle","trialSub","s1","s2","s3","s4","simTitle","simNote","simFull","engTitle","engNote","engFull","guideEyebrow","guideTitle","guideIntro"].forEach(id=>{const e=document.getElementById(id);if(e&&x[id]!=null)e.textContent=x[id]});
  document.getElementById("masterNotice").innerHTML=x.masterNotice;
  document.getElementById("langBtn").textContent=lang==="ar"?"English":"العربية";
  localStorage.setItem("hub-lang",lang);
@@ -854,7 +806,7 @@ document.addEventListener("click",e=>{
 
 function route(name){
  if(name==="home")closeHubDetails();
- const valid=["home","simulation","guide","english","survey"]; if(!valid.includes(name))name="home";
+ const valid=["home","simulation","guide","english"]; if(!valid.includes(name))name="home";
  document.querySelectorAll(".panel").forEach(p=>p.classList.remove("active"));
  document.getElementById("panel-"+name).classList.add("active");
  document.querySelectorAll(".mobileNav button").forEach(b=>b.classList.toggle("active",b.dataset.route===name));
@@ -910,42 +862,6 @@ document.getElementById("chatSend").addEventListener("click",()=>{const i=docume
 document.getElementById("chatInput").addEventListener("keydown",e=>{if(e.key==="Enter"){e.preventDefault();document.getElementById("chatSend").click()}});
 document.querySelectorAll("[data-q]").forEach(b=>b.addEventListener("click",()=>ask(b.dataset.q)));
 
-const ratingItems=[
- ["ease","5) سهولة التنقل في البوابة · Ease of navigation"],
- ["visual","6) وضوح التصميم والمحتوى · Visual/content clarity"],
- ["arabic","7) فائدة الدعم العربي · Usefulness of Arabic support"],
- ["useful","8) الفائدة التعليمية العامة · Overall educational usefulness"],
- ["return","9) يساعدني على معرفة متى أرجع للكلية/الأستاذ/المرجع الرسمي · Helps me know when to return to Faculty/instructor/official sources"]
-];
-document.getElementById("ratings").innerHTML=ratingItems.map(([n,t])=>`<div class="formcard"><h3>${t}</h3><div class="rating">${[1,2,3,4,5].map(v=>`<label><input type="radio" name="${n}" value="${v}">${v}</label>`).join("")}</div><small style="color:var(--muted)">1 = منخفض / Low · 5 = ممتاز / Excellent</small></div>`).join("");
-
-let surveyText="";
-function v(name){return document.querySelector('[name="'+name+'"]:checked')?.value||"—"}
-document.getElementById("buildResponse").addEventListener("click",()=>{
- const fd=new FormData(document.getElementById("surveyForm"));
- const sections=[...document.querySelectorAll('[name="sections"]:checked')].map(x=>x.value).join(", ")||"—";
- surveyText=[
- "Tobruk Nursing Learning Hub · Pilot Feedback",
- "Faculty of Nursing · Tobruk University",
- "--------------------------------",
- "Role: "+v("role"),
- "Device: "+v("device"),
- "Access: "+v("access"),
- "Sections tried: "+sections,
- "Ease: "+v("ease")+"/5",
- "Visual/content clarity: "+v("visual")+"/5",
- "Arabic support: "+v("arabic")+"/5",
- "Educational usefulness: "+v("useful")+"/5",
- "Return-to-official-source clarity: "+v("return")+"/5",
- "Most useful: "+(fd.get("best")||"—"),
- "Main improvement: "+(fd.get("improve")||"—"),
- "Technical issue: "+(fd.get("problem")||"—")
- ].join("\n");
- const out=document.getElementById("surveyResult");out.hidden=false;out.textContent=surveyText;
- document.getElementById("shareResponse").disabled=false;document.getElementById("copyResponse").disabled=false;
-});
-document.getElementById("copyResponse").addEventListener("click",async()=>{if(!surveyText)return;await navigator.clipboard.writeText(surveyText);document.getElementById("copyResponse").textContent=lang==="en"?"Copied ✓":"تم النسخ ✓"});
-document.getElementById("shareResponse").addEventListener("click",async()=>{if(!surveyText)return;if(navigator.share){try{await navigator.share({title:"Tobruk Nursing Learning Hub · Pilot Feedback",text:surveyText})}catch(e){}}else{await navigator.clipboard.writeText(surveyText);alert(lang==="en"?"The response has been copied. You can paste and send it to the Faculty contact who shared the link.":"تم نسخ الإجابة. يمكنك لصقها وإرسالها إلى جهة الكلية التي أرسلت لك الرابط.")}});
 </script>
 </body>
 </html>
