@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0d5b43">
+<title>بوابة التعلّم التمريضي · كلية التمريض · جامعة طبرق</title>
+<meta name="description" content="بوابة تجريبية موحدة لكلية التمريض بجامعة طبرق: محاكاة المهارات، دليل الطالب، وEnglish II.">
+<style>
+:root{
+ --green:#0d5b43;--green2:#16785b;--green3:#eaf4ef;--gold:#b38a35;--gold2:#f6efd9;
+ --ink:#17342b;--muted:#63756f;--line:#d6e2dc;--paper:#fff;--bg:#f5f7f4;--danger:#9e3a31;
+ --shadow:0 14px 40px rgba(24,55,44,.10);--radius:22px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Segoe UI",Tahoma,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+button,input,select,textarea{font:inherit}
+button,a{touch-action:manipulation}
+a{color:inherit}
+.topbar{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.topin{max-width:1500px;margin:auto;padding:10px 16px;display:flex;align-items:center;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;min-width:0;flex:1}
+.logo{width:58px;height:58px;object-fit:contain;background:#fff;border-radius:14px;padding:3px;border:1px solid #edf1ee}
+.brandtext{min-width:0}.brandtext strong{display:block;font-size:16px;line-height:1.3}.brandtext small{display:block;color:var(--muted);font-size:12px}
+.tools{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.btn{border:1px solid var(--line);background:#fff;color:var(--ink);padding:10px 13px;border-radius:13px;font-weight:800;cursor:pointer}
+.btn:hover{border-color:#b9cec4}
+.btn.primary{background:var(--green);color:#fff;border-color:var(--green)}
+.btn.gold{background:var(--gold2);border-color:#e2c980;color:#6b5016}
+.btn.soft{background:var(--green3);color:var(--green);border-color:#cfe2d9}
+main{max-width:1500px;margin:auto;padding:18px}
+.panel{display:none}.panel.active{display:block}
+.hero{background:linear-gradient(135deg,#0d5b43,#174f3e 58%,#8b702f);color:#fff;border-radius:30px;padding:30px;box-shadow:var(--shadow);overflow:hidden;position:relative}
+.hero:after{content:"";position:absolute;inset:auto -60px -80px auto;width:250px;height:250px;border:32px solid rgba(255,255,255,.06);border-radius:50%}
+.eyebrow{font-size:12px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;opacity:.84}
+.hero h1{font-size:clamp(31px,4vw,58px);line-height:1.05;margin:10px 0 13px;max-width:900px}
+.hero p{font-size:17px;max-width:860px;margin:0;color:#eef9f4}
+.heroactions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.hero .btn{border-color:rgba(255,255,255,.25)}
+.hero .btn.primary{background:#fff;color:var(--green)}
+.hero .btn.gold{background:#eedba8;color:#523e12}
+.notice{margin:18px 0;background:#fff8e4;border:1px solid #ecd99f;border-radius:18px;padding:15px 17px;color:#584511}
+.notice strong{color:#49390d}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:20px;box-shadow:0 8px 24px rgba(24,55,44,.055)}
+.card .icon{width:50px;height:50px;border-radius:16px;display:grid;place-items:center;background:var(--green3);color:var(--green);font-size:25px;margin-bottom:14px}
+.card h2,.card h3{margin:0 0 8px}.card p{margin:0;color:var(--muted)}
+.card .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+.sectionhead{display:flex;align-items:flex-end;justify-content:space-between;gap:15px;margin:24px 0 12px}
+.sectionhead h2{margin:0;font-size:27px}.sectionhead p{margin:2px 0 0;color:var(--muted)}
+.statrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:15px 0}
+.stat{background:#fff;border:1px solid var(--line);border-radius:17px;padding:14px}.stat b{font-size:26px;color:var(--green);display:block}.stat span{color:var(--muted);font-size:13px}
+.frameShell{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:var(--shadow)}
+.framebar{padding:10px 12px;background:#fff;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}
+.framebar strong{font-size:15px}
+iframe.appframe{width:100%;height:calc(100dvh - 155px);min-height:640px;border:0;display:block;background:#fff}
+.guideHero{background:#fff;border:1px solid var(--line);border-radius:26px;padding:22px;box-shadow:var(--shadow)}
+.guideNav{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.guideNav button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 13px;font-weight:800;cursor:pointer}
+.guideNav button.active{background:var(--green);color:#fff;border-color:var(--green)}
+.guideSection{display:none;margin-top:16px}.guideSection.active{display:block}
+.twocol{display:grid;grid-template-columns:1.05fr .95fr;gap:15px}
+.bullets{margin:9px 0;padding-inline-start:22px}.bullets li{margin:8px 0}
+.callout{background:var(--green3);border:1px solid #cfe3da;border-radius:16px;padding:14px 15px;margin:12px 0}
+.callout.warn{background:#fff7e2;border-color:#ead395}
+.refbox{background:#f9fbfa;border:1px dashed #b9cdc4;border-radius:16px;padding:14px}
+.refbox b{color:var(--green)}
+.courseTools{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.courseTools input,.courseTools select{border:1px solid var(--line);border-radius:12px;padding:10px 12px;background:#fff;color:var(--ink)}
+.courseTools input{flex:1;min-width:220px}
+.tablewrap{overflow:auto;border:1px solid var(--line);border-radius:17px;background:#fff}
+table{width:100%;border-collapse:collapse;min-width:790px}th,td{padding:11px 12px;border-bottom:1px solid #e8efeb;text-align:start;vertical-align:top}th{background:#f1f6f3;color:#315248;font-size:12px;position:sticky;top:0}td small{display:block;color:var(--muted);margin-top:2px}.num{text-align:center;white-space:nowrap}
+.semSummary{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}.pill{display:inline-flex;align-items:center;gap:5px;padding:6px 9px;border-radius:999px;background:#eef5f1;border:1px solid #d6e5de;font-size:12px;color:#38564d}
+.chatbox{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden}.chatlog{padding:14px;min-height:180px;max-height:360px;overflow:auto;background:#fbfdfc}.msg{max-width:86%;padding:10px 12px;border-radius:15px;margin:8px 0}.msg.bot{background:#eaf4ef}.msg.user{background:#f4ead0;margin-inline-start:auto}.chatentry{display:flex;gap:8px;padding:12px;border-top:1px solid var(--line)}.chatentry input{flex:1;border:1px solid var(--line);border-radius:12px;padding:10px}
+.quickchips{display:flex;gap:7px;flex-wrap:wrap;padding:0 12px 12px}.quickchips button{font-size:12px;border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 10px;cursor:pointer}
+.surveyIntro{background:#edf6f1;border:1px solid #cfe3d9;border-radius:17px;padding:15px;margin-bottom:14px}
+.formcard{background:#fff;border:1px solid var(--line);border-radius:20px;padding:18px;margin:12px 0}
+.formcard h3{margin:0 0 10px}
+.optiongrid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.choice{border:1px solid var(--line);border-radius:13px;padding:9px 10px;display:flex;align-items:center;gap:8px;background:#fbfdfc}
+.rating{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;max-width:460px}
+.rating label{border:1px solid var(--line);border-radius:12px;padding:9px;text-align:center;cursor:pointer}.rating input{display:block;margin:0 auto 3px}
+textarea{width:100%;min-height:100px;border:1px solid var(--line);border-radius:13px;padding:11px;resize:vertical}
+.resultbox{white-space:pre-wrap;background:#f8faf9;border:1px dashed #afc5ba;border-radius:15px;padding:14px;margin-top:12px}
+.footer{max-width:1500px;margin:10px auto 28px;padding:0 18px}
+.footerin{background:#173e32;color:#eaf5f0;border-radius:24px;padding:20px;text-align:center}
+.footerin .hadith{font-size:18px;font-weight:800;color:#f3d98c;margin:7px 0}.footerin small{display:block;color:#bed2c9}
+.mobileNav{display:none}
+[dir="ltr"] th,[dir="ltr"] td{text-align:left}
+@media(max-width:950px){
+ .grid3,.twocol{grid-template-columns:1fr}.statrow{grid-template-columns:repeat(2,1fr)}.optiongrid{grid-template-columns:1fr 1fr}
+ .brandtext small{display:none}.logo{width:48px;height:48px}.topin{padding:8px 10px}.tools .homeText{display:none}
+ main{padding:12px}.hero{padding:23px;border-radius:24px}.hero h1{font-size:38px}
+ iframe.appframe{height:calc(100dvh - 138px);min-height:560px}
+}
+@media(max-width:590px){
+ .brandtext strong{font-size:13px}.logo{width:42px;height:42px}.tools .btn{padding:8px 9px;font-size:12px}
+ .hero h1{font-size:32px}.hero p{font-size:15px}.statrow{grid-template-columns:1fr 1fr}.optiongrid{grid-template-columns:1fr}
+ .rating{grid-template-columns:repeat(5,1fr)}.rating label{padding:7px 3px}
+ .mobileNav{position:sticky;bottom:8px;z-index:40;margin:12px auto;display:flex;gap:5px;background:rgba(255,255,255,.96);border:1px solid var(--line);box-shadow:var(--shadow);border-radius:17px;padding:6px;max-width:520px}
+ .mobileNav button{flex:1;border:0;background:transparent;border-radius:12px;padding:8px 4px;font-size:11px;font-weight:800;color:#557068}
+ .mobileNav button.active{background:var(--green);color:white}
+}
+@media print{.topbar,.mobileNav,.heroactions,.guideNav,.courseTools,.framebar{display:none!important}.panel{display:block!important}iframe{display:none!important}body{background:#fff}.card,.guideHero,.formcard{box-shadow:none}}
+</style>
+</head>
+<body>
+<header class="topbar">
+ <div class="topin">
+  <div class="brand">
+   <img class="logo" id="uniLogo" alt="شعار جامعة طبرق · Tobruk University logo">
+   <div class="brandtext">
+    <strong id="brandTitle">كلية التمريض · جامعة طبرق</strong>
+    <small id="brandSub">Faculty of Nursing · Tobruk University · Learning Hub Pilot</small>
+   </div>
+   <img class="logo" id="facultyLogo" alt="شعار كلية التمريض · Faculty of Nursing logo">
+  </div>
+  <div class="tools">
+   <button class="btn soft" id="homeBtn"><span class="homeText">الرئيسية · </span>⌂</button>
+   <button class="btn gold" id="langBtn">English</button>
+  </div>
+ </div>
+</header>
+
+<main>
+<section class="panel active" id="panel-home">
+ <div class="hero">
+  <div class="eyebrow" id="heroEyebrow">نموذج تجريبي للتعلّم والدعم الطلابي</div>
+  <h1 id="heroTitle">كل ما نختبره الآن… في رابط واحد.</h1>
+  <p id="heroText">المحاكاة التفاعلية للمهارات، دليل الطالب المبسّط، ونموذج English II — في بوابة واحدة مصممة للهاتف والحاسوب مع دعم عربي واضح.</p>
+  <div class="heroactions">
+   <button class="btn primary" data-route="simulation" id="heroStart">ابدأ بالمحاكاة</button>
+   <button class="btn gold" data-route="survey" id="heroSurvey">استبيان التجربة</button>
+  </div>
+ </div>
+ <div class="notice" id="masterNotice">
+  <strong>مهم قبل البدء:</strong> هذه البوابة وسيلة تعليمية مساندة وتجريبية، وليست بديلاً عن المقررات المعتمدة، أو عضو هيئة التدريس، أو التدريب العملي/السريري تحت الإشراف، أو اللوائح والأدلة الرسمية الكاملة. عند وجود أي اختلاف، يُرجع إلى الكلية وأستاذ المقرر والنسخة الرسمية الكاملة من الوثيقة.
+ </div>
+ <div class="grid3">
+  <article class="card">
+   <div class="icon">🩺</div><h2 id="c1t">محاكاة المهارات</h2>
+   <p id="c1p">سبع وحدات مهارية تفاعلية تتضمن التعلم، الحركة المرئية، التدريب، المبررات، والأسئلة الكتابية.</p>
+   <div class="actions"><button class="btn primary" data-route="simulation" id="c1b">فتح المحاكاة</button></div>
+  </article>
+  <article class="card">
+   <div class="icon">📘</div><h2 id="c2t">دليل الطالب</h2>
+   <p id="c2p">البداية، نظام الدراسة، الغياب، الامتحانات، المسار الدراسي، الخطة بأربع سنوات، الانضباط، والامتياز.</p>
+   <div class="actions"><button class="btn primary" data-route="guide" id="c2b">فتح الدليل</button></div>
+  </article>
+  <article class="card">
+   <div class="icon">🗣️</div><h2 id="c3t">English II</h2>
+   <p id="c3p">نموذج دراسي قائم على الدروس: شرح موجّه، مفردات ونطق انتقائي، أسئلة، حالات، وتطبيق سريري.</p>
+   <div class="actions"><button class="btn primary" data-route="english" id="c3b">فتح English II</button></div>
+  </article>
+ </div>
+ <div class="sectionhead">
+  <div><h2 id="trialTitle">ما الذي نريد اختباره؟</h2><p id="trialSub">ليس الكمال؛ بل سهولة الوصول، الفائدة، الوضوح، وما يستحق التطوير.</p></div>
+ </div>
+ <div class="statrow">
+  <div class="stat"><b>07</b><span id="s1">مهارات تمريضية تفاعلية</span></div>
+  <div class="stat"><b>50</b><span id="s2">مقرراً في الخطة المرجعية</span></div>
+  <div class="stat"><b>05</b><span id="s3">دروس في نموذج English II الحالي</span></div>
+  <div class="stat"><b>AR + EN</b><span id="s4">دعم عربي/إنجليزي</span></div>
+ </div>
+</section>
+
+<section class="panel" id="panel-simulation">
+ <div class="frameShell">
+  <div class="framebar">
+   <div><strong id="simTitle">محاكاة المهارات التمريضية</strong><div style="font-size:12px;color:var(--muted)" id="simNote">تعلّم وتدرّب، ثم ارجع دائماً إلى المشرف/عضو هيئة التدريس والدليل العملي المعتمد.</div></div>
+   <div class="actions"><a class="btn soft" href="../nursing-skills/" target="_blank" rel="noopener" id="simFull">فتح بملء الشاشة</a><button class="btn" data-route="home">الرئيسية</button></div>
+  </div>
+  <iframe class="appframe" src="../nursing-skills/" title="Tobruk Nursing Skills"></iframe>
+ </div>
+</section>
+
+<section class="panel" id="panel-english">
+ <div class="frameShell">
+  <div class="framebar">
+   <div><strong id="engTitle">English II · النموذج الدراسي</strong><div style="font-size:12px;color:var(--muted)" id="engNote">مساند للتعلّم والمراجعة فقط؛ يظل كتاب المقرر، تعليمات الأستاذ، والمواد المعتمدة هي المرجع.</div></div>
+   <div class="actions"><a class="btn soft" href="../english-ii/" target="_blank" rel="noopener" id="engFull">فتح بملء الشاشة</a><button class="btn" data-route="home">الرئيسية</button></div>
+  </div>
+  <iframe class="appframe" src="../english-ii/" title="English II Nursing Course"></iframe>
+ </div>
+</section>
+
+<section class="panel" id="panel-guide">
+ <div class="guideHero">
+  <div class="eyebrow" style="color:var(--green)" id="guideEyebrow">دليل الطالب · نسخة مبسّطة داخل التطبيق</div>
+  <div class="sectionhead" style="margin:6px 0 0">
+   <div><h2 id="guideTitle">اعرف أين تبدأ… وأين ترجع عند الحاجة.</h2><p id="guideIntro">ملخص عملي للتوجيه فقط، مع إحالة مستمرة إلى الكلية والمسجل وأعضاء هيئة التدريس والوثائق الرسمية الكاملة.</p></div>
+  </div>
+  <div class="guideNav">
+   <button class="active" data-guide="start" id="gStartBtn">ابدأ هنا</button>
+   <button data-guide="study" id="gStudyBtn">نظام الدراسة</button>
+   <button data-guide="curriculum" id="gCurrBtn">الخطة الدراسية</button>
+   <button data-guide="conduct" id="gCondBtn">الانضباط والعقوبات</button>
+   <button data-guide="ask" id="gAskBtn">اسأل الدليل</button>
+   <button data-guide="refs" id="gRefsBtn">المراجع الرسمية</button>
+  </div>
+ </div>
+
+ <div class="guideSection active" id="guide-start">
+  <div class="twocol">
+   <article class="card">
+    <h3>مرحباً بك في كلية التمريض</h3>
+    <ul class="bullets">
+     <li>ابدأ بمعرفة جدولك، مقرراتك، عضو هيئة التدريس لكل مقرر، وقنوات التواصل الرسمية في الكلية.</li>
+     <li>اسأل مبكراً عن أي صعوبة في اللغة أو الفهم أو التطبيق العملي؛ الدعم المبكر أفضل من الانتظار.</li>
+     <li>في المهارات السريرية، التعلّم الرقمي للتجهيز والمراجعة، لكن إثبات الأداء يكون بالتدريب والملاحظة تحت الإشراف.</li>
+     <li>احتفظ بالنسخة الرسمية من الأدلة واللوائح، ولا تعتمد على لقطة شاشة أو ملخص منفرد عند اتخاذ إجراء أكاديمي.</li>
+    </ul>
+    <div class="callout"><b>قاعدة بسيطة:</b> التطبيق يشرح ويوجّه؛ الكلية والأستاذ والوثيقة الرسمية يعتمدون ويقررون.</div>
+   </article>
+   <article class="card">
+    <h3>برنامج البكالوريوس في التمريض</h3>
+    <div class="statrow" style="grid-template-columns:1fr 1fr">
+     <div class="stat"><b>4</b><span>سنوات دراسية</span></div>
+     <div class="stat"><b>4</b><span>أشهر امتياز بعد الدراسة</span></div>
+     <div class="stat"><b>50</b><span>مقرراً في الخطة المرجعية</span></div>
+     <div class="stat"><b>240</b><span>ECTS في الخطة المرجعية</span></div>
+    </div>
+    <p style="color:var(--muted)">يشير دليل كليات التمريض إلى 140 وحدة معتمدة ضمن البرنامج. تفاصيل التطبيق الفعلي والجداول والمواعيد تؤخذ من الكلية.</p>
+   </article>
+  </div>
+ </div>
+
+ <div class="guideSection" id="guide-study">
+  <div class="twocol">
+   <article class="card">
+    <h3>الحضور والغياب</h3>
+    <div class="callout warn"><b>حد 25% مهم:</b> بحسب الدليل القطاعي، بلوغ/تجاوز الغياب في مقرر نسبة 25% قد يترتب عليه الحرمان من الامتحان النهائي في المقرر وما يترتب على ذلك وفق اللوائح، كما يرتبط بالإنذار الأكاديمي.</div>
+    <p>تابع غيابك أولاً بأول، ولا تنتظر نهاية الفصل. إذا كان لديك عذر، اتبع الإجراء الرسمي للكلية في الوقت المحدد.</p>
+    <h3 style="margin-top:20px">الامتحانات والتقييم</h3>
+    <ul class="bullets">
+     <li>اتبع تعليمات لجنة الامتحانات وأستاذ المقرر والجدول الرسمي.</li>
+     <li>الغش أو استخدام وسائل غير مسموح بها يعالج وفق اللوائح التأديبية الرسمية.</li>
+     <li>في أي اعتراض أو مراجعة، استخدم المسار الرسمي للكلية ولا تعتمد على مناقشات غير موثقة.</li>
+    </ul>
+   </article>
+   <article class="card">
+    <h3>الانتقال، التعثر، والإنذار</h3>
+    <p>يتضمن دليل كليات التمريض أحكاماً للانتقال مع عدد محدود من المقررات المتعثرة وبشروط، مع تشدد أكبر فيما يتعلق بالمقررات العملية/المعملية/السريرية.</p>
+    <div class="callout"><b>لا تعتمد على الملخص في قرار تسجيل:</b> لأن التطبيق العملي قد يتأثر بالخطة المعتمدة للدفعة، المتطلبات السابقة، ونوع المقرر. راجع المسجل وقسم الدراسة والامتحانات قبل التسجيل أو الإعادة.</div>
+    <h3 style="margin-top:20px">التخرج والامتياز</h3>
+    <p>لا يكتمل التخرج بمجرد إنهاء المقررات؛ يتطلب البرنامج استيفاء متطلبات الدراسة والتدريب ثم اجتياز فترة الامتياز وفق النظام المعتمد.</p>
+   </article>
+  </div>
+ </div>
+
+ <div class="guideSection" id="guide-curriculum">
+  <article class="card">
+   <h3>الخطة الدراسية المرجعية · Four-year Curriculum</h3>
+   <p>البيانات أدناه مأخوذة من دليل كليات التمريض المرجعي. تعرض المقررات وساعات الاتصال وإجمالي عبء التعلّم وECTS. الجداول الفعلية وتوزيع المقررات على دفعتك تؤكدها الكلية.</p>
+   <div class="courseTools">
+    <select id="yearFilter"><option value="all">كل السنوات</option><option value="1">السنة الأولى</option><option value="2">السنة الثانية</option><option value="3">السنة الثالثة</option><option value="4">السنة الرابعة</option></select>
+    <select id="semFilter"><option value="all">الفصلان</option><option value="1">الفصل الأول</option><option value="2">الفصل الثاني</option></select>
+    <input id="courseSearch" placeholder="ابحث باسم المقرر أو الكود…">
+   </div>
+   <div class="semSummary" id="semSummary"></div>
+   <div class="tablewrap">
+    <table>
+     <thead><tr><th>السنة/الفصل</th><th>الكود</th><th>المقرر</th><th class="num">ساعات الاتصال</th><th class="num">عبء التعلّم</th><th class="num">ECTS</th></tr></thead>
+     <tbody id="courseBody"></tbody>
+    </table>
+   </div>
+  </article>
+ </div>
+
+ <div class="guideSection" id="guide-conduct">
+  <div class="twocol">
+   <article class="card">
+    <h3>الانضباط والسلوك المهني</h3>
+    <p>تتضمن الأدلة الرسمية مخالفات تستوجب التحقيق والتأديب بحسب الحالة والإجراء النظامي، ومن أمثلتها:</p>
+    <ul class="bullets">
+     <li>الاعتداء أو الإساءة إلى أعضاء هيئة التدريس أو العاملين أو الطلبة.</li>
+     <li>الاعتداء على أموال أو مرافق الجامعة.</li>
+     <li>الإخلال بسير الدراسة أو الامتحانات.</li>
+     <li>السلوك المخالف للأخلاق والنظام والآداب العامة.</li>
+     <li>الغش أو استخدام وسائل غير مسموح بها في الامتحانات.</li>
+    </ul>
+   </article>
+   <article class="card">
+    <h3>العقوبات: لماذا لا نختصرها في جدول صغير؟</h3>
+    <p>لأن نوع العقوبة وإجراءات التحقيق والجهة المختصة تختلف حسب المخالفة واللائحة السارية وظروف الحالة. لذلك يعرض التطبيق الفكرة العامة فقط ولا يصدر حكماً أو عقوبة.</p>
+    <div class="callout warn"><b>عند وقوع مشكلة فعلية:</b> ارجع مباشرة إلى الكلية ودليل الطالب/التأديب الرسمي الكامل، ولا تعتمد على تفسير التطبيق أو النقل الشفهي.</div>
+   </article>
+  </div>
+ </div>
+
+ <div class="guideSection" id="guide-ask">
+  <div class="twocol">
+   <article class="card">
+    <h3>اسأل الدليل · Quick Guide Assistant</h3>
+    <p>مساعد محلي بسيط يجيب من المعلومات الموجزة الموجودة هنا فقط. لا يتصل بخادم ولا يستبدل الموظف المختص.</p>
+    <div class="chatbox">
+     <div class="chatlog" id="chatLog"><div class="msg bot">اسألني عن الغياب 25%، الامتياز، عدد المقررات، الخطة، الانضباط، أو English II والمحاكاة.</div></div>
+     <div class="chatentry"><input id="chatInput" placeholder="اكتب سؤالك…"><button class="btn primary" id="chatSend">إرسال</button></div>
+     <div class="quickchips">
+      <button data-q="ماذا يحدث عند غياب 25%؟">الغياب 25%</button>
+      <button data-q="كم مدة الامتياز؟">الامتياز</button>
+      <button data-q="كم عدد المقررات؟">عدد المقررات</button>
+      <button data-q="ما مرجع الخطة؟">مرجع الخطة</button>
+     </div>
+    </div>
+   </article>
+   <article class="card">
+    <h3>متى يجب أن تسأل شخصاً في الكلية؟</h3>
+    <ul class="bullets">
+     <li>إذا كان السؤال يغيّر تسجيلك أو انتقالك أو تخرجك.</li>
+     <li>إذا كان يتعلق بدرجة، اعتراض، إنذار، فصل، أو عقوبة.</li>
+     <li>إذا تعارضت نسخة قديمة من دليل مع تعليمات حالية.</li>
+     <li>إذا كان السؤال سريرياً أو متعلقاً بسلامة المريض.</li>
+    </ul>
+   </article>
+  </div>
+ </div>
+
+ <div class="guideSection" id="guide-refs">
+  <div class="twocol">
+   <article class="card">
+    <h3>المراجع التي يجب الرجوع إليها</h3>
+    <div class="refbox"><b>1) دليل الطالب</b><br>النسخة الرسمية الكاملة المعتمدة لدى جامعة طبرق/الكلية.</div><br>
+    <div class="refbox"><b>2) دليل الجامعة</b><br>التعليمات والإجراءات الأكاديمية والطلابية الرسمية بجامعة طبرق.</div><br>
+    <div class="refbox"><b>3) دليل كليات التمريض</b><br>المرجع القطاعي للخطة الدراسية، المقررات، التدريب، والامتياز.</div>
+   </article>
+   <article class="card">
+    <h3>كيف تستخدم هذا التطبيق مع الوثائق؟</h3>
+    <p>استخدم التطبيق للوصول السريع والفهم الأولي، ثم افتح/اطلب الوثيقة الرسمية الكاملة عندما تحتاج نصاً نظامياً أو قراراً أكاديمياً.</p>
+    <div class="callout">في النسخ القادمة يمكن ربط كل بطاقة مباشرة بالنسخة الرسمية المنشورة من الوثيقة عندما يتوفر رابط الجامعة النهائي المعتمد.</div>
+   </article>
+  </div>
+ </div>
+</section>
+
+<section class="panel" id="panel-survey">
+ <div class="sectionhead"><div><h2 id="surveyTitle">استبيان تجربة البوابة</h2><p id="surveySub">قصير، طوعي، ولا يطلب الاسم أو البريد الإلكتروني.</p></div></div>
+ <div class="surveyIntro" id="surveyPrivacy">إجاباتك تبقى في هذا المتصفح ولا تُرسل إلى خادم من هذه الصفحة. عند الانتهاء يمكنك نسخها أو مشاركتها بنفسك مع جهة الكلية التي أرسلت لك رابط التجربة. إذا شاركتها عبر حسابك الشخصي في تطبيق مراسلة، فقد يظهر اسم حسابك لذلك التطبيق.</div>
+ <form id="surveyForm">
+  <div class="formcard"><h3>1) صفتك</h3><div class="optiongrid">
+   <label class="choice"><input type="radio" name="role" value="طالب/ة · Student"> طالب/ة · Student</label>
+   <label class="choice"><input type="radio" name="role" value="معيد/ة · Teaching Assistant"> معيد/ة · Teaching Assistant</label>
+   <label class="choice"><input type="radio" name="role" value="عضو هيئة تدريس · Faculty"> عضو هيئة تدريس · Faculty</label>
+   <label class="choice"><input type="radio" name="role" value="أخرى · Other"> أخرى · Other</label>
+  </div></div>
+  <div class="formcard"><h3>2) الجهاز المستخدم</h3><div class="optiongrid">
+   <label class="choice"><input type="radio" name="device" value="Android"> Android</label>
+   <label class="choice"><input type="radio" name="device" value="iPhone/iPad"> iPhone / iPad</label>
+   <label class="choice"><input type="radio" name="device" value="Laptop/Desktop"> Laptop / Desktop</label>
+   <label class="choice"><input type="radio" name="device" value="Other"> Other</label>
+  </div></div>
+  <div class="formcard"><h3>3) هل فتحت البوابة والأقسام بشكل سليم؟</h3><div class="optiongrid">
+   <label class="choice"><input type="radio" name="access" value="نعم دون مشكلة"> نعم، دون مشكلة</label>
+   <label class="choice"><input type="radio" name="access" value="نعم مع مشكلة"> نعم، لكن واجهت مشكلة</label>
+   <label class="choice"><input type="radio" name="access" value="لم أتمكن"> لم أتمكن من استخدام جزء منها</label>
+  </div></div>
+  <div class="formcard"><h3>4) ما الأقسام التي جرّبتها؟</h3><div class="optiongrid">
+   <label class="choice"><input type="checkbox" name="sections" value="Simulation"> Simulation</label>
+   <label class="choice"><input type="checkbox" name="sections" value="Student Guide"> Student Guide</label>
+   <label class="choice"><input type="checkbox" name="sections" value="English II"> English II</label>
+  </div></div>
+  <div id="ratings"></div>
+  <div class="formcard"><h3>10) ما أكثر جزء وجدته مفيداً؟</h3><textarea name="best" placeholder="اختياري"></textarea></div>
+  <div class="formcard"><h3>11) ما أهم شيء يحتاج إلى تحسين؟</h3><textarea name="improve" placeholder="اختياري"></textarea></div>
+  <div class="formcard"><h3>12) هل واجهت مشكلة تقنية؟ اذكرها باختصار</h3><textarea name="problem" placeholder="اختياري"></textarea></div>
+  <div class="actions" style="margin-top:15px">
+   <button type="button" class="btn primary" id="buildResponse">تجهيز الإجابة</button>
+   <button type="button" class="btn soft" id="shareResponse" disabled>مشاركة الإجابة</button>
+   <button type="button" class="btn" id="copyResponse" disabled>نسخ الإجابة</button>
+  </div>
+  <div class="resultbox" id="surveyResult" hidden></div>
+ </form>
+</section>
+
+<div class="mobileNav">
+ <button data-route="home">⌂<br>الرئيسية</button>
+ <button data-route="simulation">🩺<br>المحاكاة</button>
+ <button data-route="guide">📘<br>الدليل</button>
+ <button data-route="english">EN<br>English II</button>
+ <button data-route="survey">✓<br>الاستبيان</button>
+</div>
+</main>
+
+<footer class="footer">
+ <div class="footerin">
+  <div>© 2026 كلية التمريض · جامعة طبرق | Faculty of Nursing · Tobruk University</div>
+  <div style="margin-top:5px">نرحب بمشاركة الفائدة التعليمية وإعادة الاستخدام غير التجاري مع ذكر المصدر والمحافظة على الإحالات إلى المراجع الأصلية.</div>
+  <div class="hadith">«مَنْ دَلَّ عَلَى خَيْرٍ فَلَهُ مِثْلُ أَجْرِ فَاعِلِهِ» — رواه مسلم</div>
+  <small>We welcome educational sharing with attribution. Please preserve source acknowledgements and always refer learners back to the Faculty, instructors, and complete official documents.</small>
+ </div>
+</footer>
+
+<script>
+const courses=[
+[1,1,"LANG 100ly","Arabic Language","اللغة العربية",32,72,3],
+[1,1,"ENGL 101ly","English Language 1","اللغة الإنجليزية 1",32,72,3],
+[1,1,"BIOL 101aly","Human Anatomy & Physiology 1","التشريح ووظائف الأعضاء 1",96,146,6],
+[1,1,"SOCSCI 100ly","Medical Sociology","علم الاجتماع الطبي",32,72,3],
+[1,1,"NURS 101ly","Theoretical Foundation in Nursing","الأسس النظرية في التمريض",64,96,4],
+[1,1,"CHEM 101ly","Biochemistry","الكيمياء الحيوية",80,110,5],
+[1,1,"NURS 102ly","Related Learning Experience 1","الخبرة التعليمية المرتبطة 1",64,100,4],
+[1,1,"LANG 102ly","Islamic Studies","الدراسات الإسلامية",32,56,2],
+[1,2,"NURS 103LY","Health Assessment","التقييم الصحي",48,96,4],
+[1,2,"MED 103ly","Human Anatomy & Physiology 2","التشريح ووظائف الأعضاء 2",96,146,7],
+[1,2,"NURS 104ly","Fundamentals of Nursing","أساسيات التمريض",64,96,4],
+[1,2,"NURS 105ly","Related Learning Experience 2","الخبرة التعليمية المرتبطة 2",64,100,4],
+[1,2,"MED 104ly","Microbiology for Nursing","الأحياء الدقيقة للتمريض",80,112,5],
+[1,2,"PSYCH 100ly","General Psychology","علم النفس العام",32,64,3],
+[1,2,"LANG 102ly","Communication Skills 1","مهارات التواصل 1",32,56,3],
+[2,1,"MED 201ly","Pathophysiology","الفيزيولوجيا المرضية",32,96,4],
+[2,1,"MED 202ly","Pharmacology","علم الأدوية",32,114,5],
+[2,1,"MED 203ly","Nutrition","التغذية",32,114,5],
+[2,1,"LANG 201ly","English Language 2","اللغة الإنجليزية 2",32,114,5],
+[2,1,"NURS 201ly","Maternity Nursing","تمريض الأمومة",64,126,5],
+[2,1,"NURS 202ly","Related Learning Experience 3","الخبرة التعليمية المرتبطة 3",64,134,6],
+[2,2,"MED 204ly","Therapeutics Dietetics","التغذية العلاجية",32,114,5],
+[2,2,"NURS 203ly","Growth and Development","النمو والتطور",32,114,5],
+[2,2,"NURS 204y","Related Learning Experience 4","الخبرة التعليمية المرتبطة 4",64,134,6],
+[2,2,"NURS 205ly","Community Health Nursing","تمريض صحة المجتمع",48,96,4],
+[2,2,"LANG 202y","Communication Skills 2","مهارات التواصل 2",32,56,2],
+[2,2,"EDUC 201ly","Strategies in Health Education","استراتيجيات التثقيف الصحي",32,96,4],
+[2,2,"NURS 206ly","Nursing Ethics and Jurisprudence","أخلاقيات وتشريعات التمريض",48,96,4],
+[3,1,"NURS 301ly","Adult Nursing 1","تمريض البالغين 1",64,146,7],
+[3,1,"NURS 302ly","Pediatric Nursing","تمريض الأطفال",48,96,4],
+[3,1,"NURS 303ly","Introduction to Computer with Nursing Informatics","مقدمة في الحاسوب ومعلوماتية التمريض",64,84,4],
+[3,1,"NURS 304ly","Intensive Nursing Practicum 1","تدريب تمريضي مكثف 1",192,240,10],
+[3,1,"LANG 301ly","Medical Terminology 1","مصطلحات طبية 1",32,114,5],
+[3,2,"MED 301ly","Epidemiology","علم الوبائيات",32,96,4],
+[3,2,"MATH 301ly","Biostatistics","الإحصاء الحيوي",32,72,3],
+[3,2,"NURS 305y","Mental Health and Psychiatric Nursing","تمريض الصحة النفسية والعقلية",32,64,3],
+[3,2,"NURS 306ly","Adult Nursing 2","تمريض البالغين 2",64,156,7],
+[3,2,"NURS 307ly","Intensive Nursing Practicum 2","تدريب تمريضي مكثف 2",192,240,10],
+[3,2,"LANG 302ly","Communication Skills 3","مهارات التواصل 3",32,64,3],
+[4,1,"NURS 401ly","Oncology and Emergency with Disaster Nursing","تمريض الأورام والطوارئ والكوارث",48,96,4],
+[4,1,"NURS 402y","Adult Nursing 3","تمريض البالغين 3",64,156,7],
+[4,1,"NURS 403ly","Intensive Nursing Practicum 3","تدريب تمريضي مكثف 3",192,240,10],
+[4,1,"NURS 404ly","Nursing Research 1","البحث التمريضي 1",64,104,5],
+[4,1,"LANG 401ly","Medical Terminology 2","مصطلحات طبية 2",48,96,4],
+[4,2,"NURS 405ly","Nursing Leadership and Management","القيادة والإدارة في التمريض",64,104,5],
+[4,2,"NURS 406ly","Intensive Nursing Practicum 4","تدريب تمريضي مكثف 4",192,240,10],
+[4,2,"NURS407ly","Care of the Elderly","رعاية المسنين",32,64,3],
+[4,2,"NURS408ly","Critical Care Nursing","تمريض العناية الحرجة",32,96,4],
+[4,2,"NURS 409ly","Nursing Research 2","البحث التمريضي 2",64,104,5],
+[4,2,"LANG 402ly","Communication Skills 4","مهارات التواصل 4",32,64,3]
+];
+const semTotals={"1-1":[432,724,30],"1-2":[416,670,30],"2-1":[256,698,30],"2-2":[288,706,30],"3-1":[400,680,30],"3-2":[384,692,30],"4-1":[416,692,30],"4-2":[416,672,30]};
+
+const T={
+ ar:{
+ brandTitle:"كلية التمريض · جامعة طبرق",brandSub:"Faculty of Nursing · Tobruk University · Learning Hub Pilot",
+ heroEyebrow:"نموذج تجريبي للتعلّم والدعم الطلابي",heroTitle:"كل ما نختبره الآن… في رابط واحد.",
+ heroText:"المحاكاة التفاعلية للمهارات، دليل الطالب المبسّط، ونموذج English II — في بوابة واحدة مصممة للهاتف والحاسوب مع دعم عربي واضح.",
+ heroStart:"ابدأ بالمحاكاة",heroSurvey:"استبيان التجربة",
+ masterNotice:"<strong>مهم قبل البدء:</strong> هذه البوابة وسيلة تعليمية مساندة وتجريبية، وليست بديلاً عن المقررات المعتمدة، أو عضو هيئة التدريس، أو التدريب العملي/السريري تحت الإشراف، أو اللوائح والأدلة الرسمية الكاملة. عند وجود أي اختلاف، يُرجع إلى الكلية وأستاذ المقرر والنسخة الرسمية الكاملة من الوثيقة.",
+ c1t:"محاكاة المهارات",c1p:"سبع وحدات مهارية تفاعلية تتضمن التعلم، الحركة المرئية، التدريب، المبررات، والأسئلة الكتابية.",c1b:"فتح المحاكاة",
+ c2t:"دليل الطالب",c2p:"البداية، نظام الدراسة، الغياب، الامتحانات، المسار الدراسي، الخطة بأربع سنوات، الانضباط، والامتياز.",c2b:"فتح الدليل",
+ c3t:"English II",c3p:"نموذج دراسي قائم على الدروس: شرح موجّه، مفردات ونطق انتقائي، أسئلة، حالات، وتطبيق سريري.",c3b:"فتح English II",
+ trialTitle:"ما الذي نريد اختباره؟",trialSub:"ليس الكمال؛ بل سهولة الوصول، الفائدة، الوضوح، وما يستحق التطوير.",
+ s1:"مهارات تمريضية تفاعلية",s2:"مقرراً في الخطة المرجعية",s3:"دروس في نموذج English II الحالي",s4:"دعم عربي/إنجليزي",
+ simTitle:"محاكاة المهارات التمريضية",simNote:"تعلّم وتدرّب، ثم ارجع دائماً إلى المشرف/عضو هيئة التدريس والدليل العملي المعتمد.",simFull:"فتح بملء الشاشة",
+ engTitle:"English II · النموذج الدراسي",engNote:"مساند للتعلّم والمراجعة فقط؛ يظل كتاب المقرر، تعليمات الأستاذ، والمواد المعتمدة هي المرجع.",engFull:"فتح بملء الشاشة",
+ guideEyebrow:"دليل الطالب · نسخة مبسّطة داخل التطبيق",guideTitle:"اعرف أين تبدأ… وأين ترجع عند الحاجة.",guideIntro:"ملخص عملي للتوجيه فقط، مع إحالة مستمرة إلى الكلية والمسجل وأعضاء هيئة التدريس والوثائق الرسمية الكاملة.",
+ surveyTitle:"استبيان تجربة البوابة",surveySub:"قصير، طوعي، ولا يطلب الاسم أو البريد الإلكتروني.",surveyPrivacy:"إجاباتك تبقى في هذا المتصفح ولا تُرسل إلى خادم من هذه الصفحة. عند الانتهاء يمكنك نسخها أو مشاركتها بنفسك مع جهة الكلية التي أرسلت لك رابط التجربة. إذا شاركتها عبر حسابك الشخصي في تطبيق مراسلة، فقد يظهر اسم حسابك لذلك التطبيق."
+ },
+ en:{
+ brandTitle:"Faculty of Nursing · Tobruk University",brandSub:"كلية التمريض · جامعة طبرق · Learning Hub Pilot",
+ heroEyebrow:"PILOT LEARNING & STUDENT-SUPPORT HUB",heroTitle:"Everything we are trialling now — in one link.",
+ heroText:"Interactive nursing-skills simulation, a simplified Student Guide, and the English II prototype in one phone- and computer-friendly hub with Arabic support.",
+ heroStart:"Start with Simulation",heroSurvey:"Trial Survey",
+ masterNotice:"<strong>Before you start:</strong> This is a supplementary pilot learning resource. It does not replace the approved curriculum, instructors, supervised practical/clinical teaching, or complete official regulations and guides. If anything differs, follow the Faculty, course instructor, and the complete official document.",
+ c1t:"Skills Simulation",c1p:"Seven interactive skills modules with visible movement, guided practice, rationales, and written practice.",c1b:"Open Simulation",
+ c2t:"Student Guide",c2p:"Orientation, study rules, attendance, exams, four-year curriculum, conduct, and internship guidance.",c2b:"Open Guide",
+ c3t:"English II",c3p:"A lecture-first study prototype with guided explanation, selective pronunciation, questions, scenarios, and application.",c3b:"Open English II",
+ trialTitle:"What are we testing?",trialSub:"Not perfection — access, usefulness, clarity, and what is worth developing next.",
+ s1:"interactive nursing skills",s2:"courses in the reference curriculum",s3:"lessons in the current English II prototype",s4:"Arabic/English support",
+ simTitle:"Interactive Nursing Skills",simNote:"Use it to learn and practise, then confirm technique with instructors/supervisors and the approved practical guide.",simFull:"Open full screen",
+ engTitle:"English II · Study Prototype",engNote:"Supplementary learning and revision only. The approved course book, instructor directions, and official course materials remain the reference.",engFull:"Open full screen",
+ guideEyebrow:"STUDENT GUIDE · SIMPLIFIED APP VERSION",guideTitle:"Know where to start — and where to go back for authority.",guideIntro:"A practical orientation summary with repeated referral to the Faculty, Registrar, instructors, and complete official documents.",
+ surveyTitle:"Learning Hub Trial Survey",surveySub:"Short, voluntary, and does not ask for your name or email.",surveyPrivacy:"Your answers remain in this browser and are not sent to a server by this page. When finished, you can copy or share them yourself with the Faculty contact who sent you the trial link. If you share through a personal messaging account, that service may show your account identity."
+ }
+};
+let lang=localStorage.getItem("hub-lang")||"ar";
+function applyLang(){
+ const x=T[lang]; document.documentElement.lang=lang; document.documentElement.dir=lang==="ar"?"rtl":"ltr";
+ ["brandTitle","brandSub","heroEyebrow","heroTitle","heroText","heroStart","heroSurvey","c1t","c1p","c1b","c2t","c2p","c2b","c3t","c3p","c3b","trialTitle","trialSub","s1","s2","s3","s4","simTitle","simNote","simFull","engTitle","engNote","engFull","guideEyebrow","guideTitle","guideIntro","surveyTitle","surveySub","surveyPrivacy"].forEach(id=>{const e=document.getElementById(id);if(e&&x[id]!=null)e.textContent=x[id]});
+ document.getElementById("masterNotice").innerHTML=x.masterNotice;
+ document.getElementById("langBtn").textContent=lang==="ar"?"English":"العربية";
+ localStorage.setItem("hub-lang",lang);
+}
+document.getElementById("langBtn").addEventListener("click",()=>{lang=lang==="ar"?"en":"ar";applyLang()});
+
+async function loadLogos(){
+ try{
+  const txt=await fetch("../english-ii/index.html",{cache:"force-cache"}).then(r=>r.text());
+  const doc=new DOMParser().parseFromString(txt,"text/html");
+  const imgs=[...doc.querySelectorAll(".brand img")];
+  if(imgs[0])document.getElementById("uniLogo").src=imgs[0].getAttribute("src");
+  if(imgs[1])document.getElementById("facultyLogo").src=imgs[1].getAttribute("src");
+ }catch(e){
+  document.getElementById("uniLogo").style.visibility="hidden";
+  document.getElementById("facultyLogo").style.visibility="hidden";
+ }
+}
+loadLogos();applyLang();
+
+function route(name){
+ const valid=["home","simulation","guide","english","survey"]; if(!valid.includes(name))name="home";
+ document.querySelectorAll(".panel").forEach(p=>p.classList.remove("active"));
+ document.getElementById("panel-"+name).classList.add("active");
+ document.querySelectorAll(".mobileNav button").forEach(b=>b.classList.toggle("active",b.dataset.route===name));
+ history.replaceState(null,"","#"+name);
+ window.scrollTo({top:0,behavior:"smooth"});
+}
+document.addEventListener("click",e=>{
+ const b=e.target.closest("[data-route]");if(b){e.preventDefault();route(b.dataset.route)}
+});
+document.getElementById("homeBtn").addEventListener("click",()=>route("home"));
+route(location.hash.replace("#","")||"home");
+
+document.querySelectorAll("[data-guide]").forEach(b=>b.addEventListener("click",()=>{
+ document.querySelectorAll("[data-guide]").forEach(x=>x.classList.remove("active"));b.classList.add("active");
+ document.querySelectorAll(".guideSection").forEach(x=>x.classList.remove("active"));
+ document.getElementById("guide-"+b.dataset.guide).classList.add("active");
+ if(b.dataset.guide==="curriculum")renderCourses();
+}));
+
+function renderCourses(){
+ const y=document.getElementById("yearFilter").value,s=document.getElementById("semFilter").value,q=document.getElementById("courseSearch").value.trim().toLowerCase();
+ const rows=courses.filter(r=>(y==="all"||String(r[0])===y)&&(s==="all"||String(r[1])===s)&&(!q||r.slice(2,5).join(" ").toLowerCase().includes(q)));
+ document.getElementById("courseBody").innerHTML=rows.map(r=>`<tr><td>Y${r[0]} · S${r[1]}<small>السنة ${r[0]} · الفصل ${r[1]}</small></td><td dir="ltr">${r[2]}</td><td><b>${r[4]}</b><small dir="ltr">${r[3]}</small></td><td class="num">${r[5]}</td><td class="num">${r[6]}</td><td class="num">${r[7]}</td></tr>`).join("")||'<tr><td colspan="6">لا توجد نتائج.</td></tr>';
+ const keys=[...new Set(rows.map(r=>r[0]+"-"+r[1]))];
+ document.getElementById("semSummary").innerHTML=keys.map(k=>{const t=semTotals[k];return `<span class="pill">Y${k[0]} S${k[2]} · Contact ${t[0]}h · Workload ${t[1]}h · ${t[2]} ECTS</span>`}).join("");
+}
+["yearFilter","semFilter","courseSearch"].forEach(id=>document.getElementById(id).addEventListener(id==="courseSearch"?"input":"change",renderCourses));
+renderCourses();
+
+const answers=[
+ {k:["25","غياب","absence","attendance"],a:"بحسب الدليل المرجعي، بلوغ/تجاوز الغياب في مقرر نسبة 25% قد يترتب عليه الحرمان من الامتحان النهائي وما يرتبط بذلك من إجراءات وإنذار. راجع المسجل والكلية لتطبيق الحالة الفعلية."},
+ {k:["امتياز","internship"],a:"البرنامج أربع سنوات دراسية، ثم فترة امتياز مدتها أربعة أشهر بحسب دليل كليات التمريض. تفاصيل البدء والتوزيع والتقييم تؤخذ من الكلية."},
+ {k:["50","مقرر","courses"],a:"الخطة المرجعية تتضمن 50 مقرراً بإجمالي 240 ECTS، ويشير الدليل إلى 140 وحدة معتمدة. راجع تبويب الخطة الدراسية للتفاصيل."},
+ {k:["انضباط","عقوب","غش","discipline","cheat"],a:"التطبيق يعرض أمثلة عامة للمخالفات فقط. أي تحقيق أو عقوبة أو اعتراض يجب الرجوع فيه إلى الكلية ودليل التأديب الرسمي الكامل."},
+ {k:["english","انجليزي","english ii"],a:"English II داخل البوابة نموذج مساند قائم على الدروس. لا يمثل نطاق امتحان رسمي ولا يستبدل كتاب المقرر أو تعليمات الأستاذ."},
+ {k:["محاك","simulation","مهار"],a:"المحاكاة للتعلّم والمراجعة والتدريب التفاعلي. لا تمنح إثبات كفاءة سريرية ولا تستبدل التدريب العملي تحت الإشراف."},
+ {k:["مرجع","وثيق","guide","reference"],a:"المراجع الأساسية: دليل الطالب، دليل الجامعة، ودليل كليات التمريض. عند اتخاذ قرار أكاديمي استخدم النسخة الرسمية الكاملة وراجع الكلية."}
+];
+function addMsg(txt,type){const d=document.createElement("div");d.className="msg "+type;d.textContent=txt;document.getElementById("chatLog").appendChild(d);document.getElementById("chatLog").scrollTop=99999}
+function ask(q){
+ if(!q.trim())return;addMsg(q,"user");const s=q.toLowerCase();const hit=answers.find(x=>x.k.some(k=>s.includes(k)));
+ addMsg(hit?hit.a:"لم أجد إجابة دقيقة في الملخص. الأفضل الرجوع إلى الكلية/المسجل أو الوثيقة الرسمية الكاملة، خاصة إذا كان السؤال سيغيّر تسجيلك أو درجتك أو وضعك الأكاديمي.","bot");
+}
+document.getElementById("chatSend").addEventListener("click",()=>{const i=document.getElementById("chatInput");ask(i.value);i.value=""});
+document.getElementById("chatInput").addEventListener("keydown",e=>{if(e.key==="Enter"){e.preventDefault();document.getElementById("chatSend").click()}});
+document.querySelectorAll("[data-q]").forEach(b=>b.addEventListener("click",()=>ask(b.dataset.q)));
+
+const ratingItems=[
+ ["ease","5) سهولة التنقل في البوابة · Ease of navigation"],
+ ["visual","6) وضوح التصميم والمحتوى · Visual/content clarity"],
+ ["arabic","7) فائدة الدعم العربي · Usefulness of Arabic support"],
+ ["useful","8) الفائدة التعليمية العامة · Overall educational usefulness"],
+ ["return","9) يساعدني على معرفة متى أرجع للكلية/الأستاذ/المرجع الرسمي · Helps me know when to return to Faculty/instructor/official sources"]
+];
+document.getElementById("ratings").innerHTML=ratingItems.map(([n,t])=>`<div class="formcard"><h3>${t}</h3><div class="rating">${[1,2,3,4,5].map(v=>`<label><input type="radio" name="${n}" value="${v}">${v}</label>`).join("")}</div><small style="color:var(--muted)">1 = منخفض / Low · 5 = ممتاز / Excellent</small></div>`).join("");
+
+let surveyText="";
+function v(name){return document.querySelector('[name="'+name+'"]:checked')?.value||"—"}
+document.getElementById("buildResponse").addEventListener("click",()=>{
+ const fd=new FormData(document.getElementById("surveyForm"));
+ const sections=[...document.querySelectorAll('[name="sections"]:checked')].map(x=>x.value).join(", ")||"—";
+ surveyText=[
+ "Tobruk Nursing Learning Hub · Pilot Feedback",
+ "Faculty of Nursing · Tobruk University",
+ "--------------------------------",
+ "Role: "+v("role"),
+ "Device: "+v("device"),
+ "Access: "+v("access"),
+ "Sections tried: "+sections,
+ "Ease: "+v("ease")+"/5",
+ "Visual/content clarity: "+v("visual")+"/5",
+ "Arabic support: "+v("arabic")+"/5",
+ "Educational usefulness: "+v("useful")+"/5",
+ "Return-to-official-source clarity: "+v("return")+"/5",
+ "Most useful: "+(fd.get("best")||"—"),
+ "Main improvement: "+(fd.get("improve")||"—"),
+ "Technical issue: "+(fd.get("problem")||"—")
+ ].join("\n");
+ const out=document.getElementById("surveyResult");out.hidden=false;out.textContent=surveyText;
+ document.getElementById("shareResponse").disabled=false;document.getElementById("copyResponse").disabled=false;
+});
+document.getElementById("copyResponse").addEventListener("click",async()=>{if(!surveyText)return;await navigator.clipboard.writeText(surveyText);document.getElementById("copyResponse").textContent="تم النسخ ✓"});
+document.getElementById("shareResponse").addEventListener("click",async()=>{if(!surveyText)return;if(navigator.share){try{await navigator.share({title:"Tobruk Nursing Learning Hub · Pilot Feedback",text:surveyText})}catch(e){}}else{await navigator.clipboard.writeText(surveyText);alert("تم نسخ الإجابة. يمكنك لصقها وإرسالها إلى جهة الكلية التي أرسلت لك الرابط.")}});
+</script>
+</body>
+</html>
