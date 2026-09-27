@@ -1,9 +1,11 @@
 {
-  "name":"Tobruk English II · Wound Assessment",
+  "name":"Tobruk English II · Clinical English for Nursing",
   "short_name":"English II",
   "start_url":"./",
+  "scope":"./",
   "display":"standalone",
-  "background_color":"#f5f8fb",
+  "background_color":"#f4f8fb",
   "theme_color":"#0f5f8f",
+  "description":"Five interactive clinical English lessons from the Faculty of Nursing, Tobruk University.",
   "icons":[{"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
 }
