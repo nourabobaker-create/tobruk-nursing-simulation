@@ -49,7 +49,7 @@ main{max-width:1500px;margin:auto;padding:18px}
 .card .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
 .sectionhead{display:flex;align-items:flex-end;justify-content:space-between;gap:15px;margin:24px 0 12px}
 .sectionhead h2{margin:0;font-size:27px}.sectionhead p{margin:2px 0 0;color:var(--muted)}
-.statrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:15px 0}
+.statrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:15px 0}.academicGrid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px;margin-top:15px}.academicCard{background:#fff;border:1px solid var(--line);border-radius:20px;padding:18px;box-shadow:0 8px 24px rgba(24,55,44,.045)}.academicCard h3{margin:0 0 7px}.academicCard p{margin:0;color:var(--muted)}.miniTable{width:100%;border-collapse:collapse;margin-top:11px}.miniTable th,.miniTable td{padding:9px 8px;border-bottom:1px solid #e8efeb;font-size:13px}.miniTable th{background:#f3f7f5;color:#315248}.placeholder{border:1px dashed #b8cbc2;border-radius:14px;padding:13px;background:#fafcfb;color:var(--muted);margin-top:10px}.tag{display:inline-block;padding:5px 8px;border-radius:999px;background:var(--green3);color:var(--green);font-size:12px;font-weight:800;margin:6px 3px 0 0}.activityList{display:grid;gap:9px;margin-top:10px}.activityItem{border:1px solid var(--line);border-radius:14px;padding:12px;background:#fbfdfc}.activityItem b{display:block;margin-bottom:2px}.activityItem small{color:var(--muted)}.courseMeta{margin-top:10px;padding:10px 12px;border-radius:13px;background:#f6f0df;border:1px solid #e7d8aa;color:#5c4818;font-size:13px;line-height:1.55}
 .stat{background:#fff;border:1px solid var(--line);border-radius:17px;padding:14px}.stat b{font-size:26px;color:var(--green);display:block}.stat span{color:var(--muted);font-size:13px}
 .frameShell{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:var(--shadow)}
 .framebar{padding:10px 12px;background:#fff;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}
@@ -88,7 +88,7 @@ textarea{width:100%;min-height:100px;border:1px solid var(--line);border-radius:
 .mobileNav{display:none}
 [dir="ltr"] th,[dir="ltr"] td{text-align:left}
 @media(max-width:950px){
- .grid3,.twocol{grid-template-columns:1fr}.statrow{grid-template-columns:repeat(2,1fr)}.optiongrid{grid-template-columns:1fr 1fr}
+ .grid3,.twocol,.academicGrid{grid-template-columns:1fr}.statrow{grid-template-columns:repeat(2,1fr)}.optiongrid{grid-template-columns:1fr 1fr}
  .brandtext small{display:none}.logo{width:48px;height:48px}.topin{padding:8px 10px}.tools .homeText{display:none}
  main{padding:12px}.hero{padding:23px;border-radius:24px}.hero h1{font-size:38px}
  iframe.appframe{height:calc(100dvh - 138px);min-height:560px}
@@ -150,10 +150,65 @@ textarea{width:100%;min-height:100px;border:1px solid var(--line);border-radius:
   </article>
   <article class="card">
    <div class="icon">📚</div><h2 id="c3t">رفيق الدراسة</h2>
-   <p id="c3p"><b>دعم المقررات والتعلّم والمراجعة.</b> النموذج الحالي: <b>لغة إنجليزية 2</b> — شرح موجّه، مفردات ونطق انتقائي، أسئلة، حالات، وتطبيقات مرتبطة بالتمريض.</p>
+   <p id="c3p"><b>دعم المقررات والتعلّم والمراجعة.</b> النموذج الحالي: <b>لغة إنجليزية 2</b> — شرح موجّه، مفردات ونطق انتقائي، أسئلة، حالات، وتطبيقات مرتبطة بالتمريض.</p><div class="courseMeta" id="c3meta"><b>لغة إنجليزية 2</b><br>أستاذ المادة: نورا مسعود حمد بوبكر<br>الأحد · 10:00–12:00 · القاعة N5</div>
    <div class="actions"><button class="btn primary" data-route="english" id="c3b">فتح لغة إنجليزية 2</button></div>
   </article>
  </div>
+
+ <div class="sectionhead">
+  <div><h2 id="yearHubTitle">العام الأكاديمي 2026/2027</h2><p id="yearHubSub">جداول المحاضرات، الخطة الدراسية، الأنشطة الأكاديمية والعلمية، بحوث التخرج، وأنشطة عالمية يمكن حضورها إلكترونيًا.</p></div>
+ </div>
+ <div class="academicGrid">
+  <article class="academicCard">
+   <h3>🗓️ جداول المحاضرات <small dir="ltr">· Lecture Timetables</small></h3>
+   <p>تُدرج هنا الجداول المعتمدة للسنوات الدراسية. والمعلومة المتاحة حاليًا:</p>
+   <table class="miniTable"><thead><tr><th>المقرر</th><th>أستاذ المادة</th><th>اليوم</th><th>الوقت</th><th>القاعة</th></tr></thead><tbody>
+    <tr><td><b>لغة إنجليزية 2</b><small dir="ltr">LANG 201ly</small></td><td>نورا مسعود حمد بوبكر</td><td>الأحد</td><td dir="ltr">10:00–12:00</td><td dir="ltr">N5</td></tr>
+   </tbody></table>
+   <div class="placeholder">قالب جاهز لإضافة جداول السنة الأولى والثانية والثالثة والرابعة فور إدراج النسخة المعتمدة للعام الجامعي 2026/2027.</div>
+  </article>
+
+  <article class="academicCard">
+   <h3>📋 الخطة الدراسية للعام 2026/2027 <small dir="ltr">· Current Academic Plan</small></h3>
+   <p>ستعرض هذه الخانة التوزيع الفعلي للمقررات خلال العام الحالي حسب كل سنة دراسية.</p>
+   <div class="activityList">
+    <div class="activityItem"><b>السنة الأولى</b><small>المقررات والفصل والتوزيع الفعلي — جاهز للإضافة.</small></div>
+    <div class="activityItem"><b>السنة الثانية</b><small>المقررات والفصل والتوزيع الفعلي — جاهز للإضافة.</small></div>
+    <div class="activityItem"><b>السنة الثالثة</b><small>المقررات والفصل والتوزيع الفعلي — جاهز للإضافة.</small></div>
+    <div class="activityItem"><b>السنة الرابعة</b><small>المقررات والفصل والتوزيع الفعلي — جاهز للإضافة.</small></div>
+   </div>
+   <div class="actions"><button class="btn soft" id="openCurriculumBtn">عرض الخطة المرجعية الكاملة</button></div>
+  </article>
+
+  <article class="academicCard">
+   <h3>🎓 الأنشطة الأكاديمية والعلمية <small dir="ltr">· Academic & Scientific Activities</small></h3>
+   <p>مساحة لأنشطة الكلية المرتبطة بالتعلم والتطوير العلمي والمهني.</p>
+   <div class="activityList">
+    <div class="activityItem"><b>ورش العمل</b><small>العنوان · التاريخ · الفئة المستهدفة · الجهة المنظمة · مكان/رابط الحضور.</small></div>
+    <div class="activityItem"><b>الندوات والمحاضرات العلمية</b><small>تضاف الأنشطة فور تحديد البرنامج.</small></div>
+    <div class="activityItem"><b>لقاءات ومناقشات أكاديمية</b><small>يمكن ربطها بالمقررات أو المهارات أو البحث العلمي.</small></div>
+   </div>
+  </article>
+
+  <article class="academicCard">
+   <h3>🧪 بحوث التخرج <small dir="ltr">· Graduation Research</small></h3>
+   <p>خانة مخصصة لطلبة السنة الرابعة لتنظيم رحلة مشروع التخرج.</p>
+   <div class="activityList">
+    <div class="activityItem"><b>عناوين البحوث</b><small>تُضاف بعد اعتماد الموضوعات.</small></div>
+    <div class="activityItem"><b>المشرفون والطلبة</b><small>يُضاف التوزيع بعد اعتماده.</small></div>
+    <div class="activityItem"><b>المراحل والمواعيد</b><small>اختيار الموضوع · المقترح · جمع البيانات · التحليل · التسليم · المناقشة.</small></div>
+   </div>
+   <div class="placeholder">هذه الخانة الآن نموذج شكلي منظم، وجاهزة لإدراج بحوث التخرج الفعلية لاحقًا.</div>
+  </article>
+
+  <article class="academicCard" style="grid-column:1/-1">
+   <h3>🌍 نشاطات أكاديمية وعلمية عالمية مجانية عبر الإنترنت</h3>
+   <p>ندوات ومحاضرات وورش عمل ومؤتمرات افتراضية ودورات قصيرة مجانية تقدمها جامعات ومؤسسات علمية وصحية دولية، ويمكن لطلبة الكلية حضورها إلكترونيًا والاستفادة منها.</p>
+   <span class="tag">تمريض وصحة</span><span class="tag">بحث علمي</span><span class="tag">لغة إنجليزية</span><span class="tag">مهارات أكاديمية</span><span class="tag">ندوات عالمية</span><span class="tag">مؤتمرات افتراضية</span>
+   <div class="placeholder">سنضيف هنا الأنشطة الحالية بعد التحقق من أنها مجانية، متاحة عن بُعد، ما زال التسجيل فيها مفتوحًا، وملائمة لطلبة التمريض. لا تُدرج روابط غير مؤكدة أو فعاليات منتهية.</div>
+  </article>
+ </div>
+
  <div class="sectionhead">
   <div><h2 id="trialTitle">ما الذي نريد اختباره؟</h2><p id="trialSub">ليس الكمال؛ بل سهولة الوصول، الفائدة، الوضوح، وما يستحق التطوير.</p></div>
  </div>
@@ -178,7 +233,7 @@ textarea{width:100%;min-height:100px;border:1px solid var(--line);border-radius:
 <section class="panel" id="panel-english">
  <div class="frameShell">
   <div class="framebar">
-   <div><strong id="engTitle">رفيق الدراسة · لغة إنجليزية 2</strong><div style="font-size:12px;color:var(--muted)" id="engNote">رفيق الدراسة مساحة لدعم المقررات والتعلّم والمراجعة، ويُختبر حاليًا نموذج لغة إنجليزية 2. المحتوى مساند فقط؛ ويظل كتاب المقرر، وتعليمات الأستاذ، والمواد المعتمدة هي المرجع.</div></div>
+   <div><strong id="engTitle">رفيق الدراسة · لغة إنجليزية 2</strong><div style="font-size:12px;color:var(--muted)" id="engNote">أستاذ المادة: نورا مسعود حمد بوبكر · الأحد 10:00–12:00 · القاعة N5. رفيق الدراسة مساحة لدعم المقررات والتعلّم والمراجعة، والمحتوى مساند فقط؛ ويظل كتاب المقرر وتعليمات الأستاذ والمواد المعتمدة هي المرجع.</div></div>
    <div class="actions"><a class="btn soft" href="../english-ii/" target="_blank" rel="noopener" id="engFull">فتح بملء الشاشة</a><button class="btn" data-route="home">الرئيسية</button></div>
   </div>
   <iframe class="appframe" src="../english-ii/" title="English II Nursing Course"></iframe>
@@ -449,7 +504,7 @@ const T={
  ar:{
  brandTitle:"كلية التمريض · جامعة طبرق",brandSub:"Faculty of Nursing · Tobruk University · Learning Hub Pilot",
  heroEyebrow:"نموذج تجريبي للتعلّم والدعم الطلابي",heroTitle:"النسخة الأولى التجريبية",shareLead:"نشجّع أبناءنا الطلاب على مشاركة التطبيق مع أقرانهم في كليات التمريض بالجامعات الليبية، إيمانًا بأهمية نشر المعرفة وتبادل الفائدة.",hadithTop:"قال رسول الله صلى الله عليه وسلم: «مَنْ دَلَّ عَلَى خَيْرٍ فَلَهُ مِثْلُ أَجْرِ فَاعِلِهِ» رواه مسلم",
- heroText:"المحاكاة التفاعلية للمهارات، دليل الطالب المبسّط، ونموذج English II — في بوابة واحدة مصممة للهاتف والحاسوب مع دعم عربي واضح.",
+ heroText:"المحاكاة التفاعلية للمهارات، دليل الطالب المبسّط، و«رفيق الدراسة» لدعم المقررات والتعلّم والمراجعة — ويبدأ حاليًا بنموذج لغة إنجليزية 2 — في بوابة واحدة مصممة للهاتف والحاسوب مع دعم عربي واضح.",
  heroStart:"ابدأ بالمحاكاة",heroSurvey:"استبيان التجربة",
  masterNotice:"<strong>مهم قبل البدء:</strong> هذه البوابة وسيلة تعليمية مساندة وتجريبية، وليست بديلاً عن المقررات المعتمدة، أو عضو هيئة التدريس، أو التدريب العملي/السريري تحت الإشراف، أو اللوائح والأدلة الرسمية الكاملة. عند وجود أي اختلاف، يُرجع إلى الكلية وأستاذ المقرر والنسخة الرسمية الكاملة من الوثيقة.",
  c1t:"محاكاة المهارات",c1p:"سبع وحدات مهارية تفاعلية تتضمن التعلم، الحركة المرئية، التدريب، المبررات، والأسئلة الكتابية.",c1b:"فتح المحاكاة",
@@ -458,7 +513,7 @@ const T={
  trialTitle:"ما الذي نريد اختباره؟",trialSub:"ليس الكمال؛ بل سهولة الوصول، الفائدة، الوضوح، وما يستحق التطوير.",
  s1:"مهارات تمريضية تفاعلية",s2:"مقرراً في الخطة المرجعية",s3:"دروس في النموذج الحالي لمقرر لغة إنجليزية 2",s4:"دعم عربي/إنجليزي",
  simTitle:"محاكاة المهارات التمريضية",simNote:"تعلّم وتدرّب، ثم ارجع دائماً إلى المشرف/عضو هيئة التدريس والدليل العملي المعتمد.",simFull:"فتح بملء الشاشة",
- engTitle:"رفيق الدراسة · لغة إنجليزية 2",engNote:"رفيق الدراسة مساحة لدعم المقررات والتعلّم والمراجعة، ويُختبر حاليًا نموذج لغة إنجليزية 2. المحتوى مساند فقط؛ ويظل كتاب المقرر، وتعليمات الأستاذ، والمواد المعتمدة هي المرجع.",engFull:"فتح بملء الشاشة",
+ engTitle:"رفيق الدراسة · لغة إنجليزية 2",engNote:"أستاذ المادة: نورا مسعود حمد بوبكر · الأحد 10:00–12:00 · القاعة N5. رفيق الدراسة مساحة لدعم المقررات والتعلّم والمراجعة، والمحتوى مساند فقط؛ ويظل كتاب المقرر وتعليمات الأستاذ والمواد المعتمدة هي المرجع.",engFull:"فتح بملء الشاشة",
  guideEyebrow:"دليل الطالب · نسخة مبسّطة داخل التطبيق",guideTitle:"اعرف أين تبدأ… وأين ترجع عند الحاجة.",guideIntro:"ملخص عملي للتوجيه فقط، مع إحالة مستمرة إلى الكلية والمسجل وأعضاء هيئة التدريس والوثائق الرسمية الكاملة.",
  surveyTitle:"استبيان تجربة البوابة",surveySub:"قصير، طوعي، ولا يطلب الاسم أو البريد الإلكتروني.",surveyPrivacy:"إجاباتك تبقى في هذا المتصفح ولا تُرسل إلى خادم من هذه الصفحة. عند الانتهاء يمكنك نسخها أو مشاركتها بنفسك مع جهة الكلية التي أرسلت لك رابط التجربة. إذا شاركتها عبر حسابك الشخصي في تطبيق مراسلة، فقد يظهر اسم حسابك لذلك التطبيق."
  },
@@ -474,7 +529,7 @@ const T={
  trialTitle:"What are we testing?",trialSub:"Not perfection — access, usefulness, clarity, and what is worth developing next.",
  s1:"interactive nursing skills",s2:"courses in the reference curriculum",s3:"lessons in the current English II course-support prototype",s4:"Arabic/English support",
  simTitle:"Interactive Nursing Skills",simNote:"Use it to learn and practise, then confirm technique with instructors/supervisors and the approved practical guide.",simFull:"Open full screen",
- engTitle:"Study Companion · English II",engNote:"Study Companion supports course learning and revision. English II is the current pilot. It remains supplementary; the approved course book, instructor directions, and official course materials remain the reference.",engFull:"Open full screen",
+ engTitle:"Study Companion · English II",engNote:"Course instructor: نورا مسعود حمد بوبكر · Sunday 10:00–12:00 · Room N5. Study Companion supports course learning and revision. It remains supplementary; the approved course book, instructor directions, and official course materials remain the reference.",engFull:"Open full screen",
  guideEyebrow:"STUDENT GUIDE · SIMPLIFIED APP VERSION",guideTitle:"Know where to start — and where to go back for authority.",guideIntro:"A practical orientation summary with repeated referral to the Faculty, Registrar, instructors, and complete official documents.",
  surveyTitle:"Learning Hub Trial Survey",surveySub:"Short, voluntary, and does not ask for your name or email.",surveyPrivacy:"Your answers remain in this browser and are not sent to a server by this page. When finished, you can copy or share them yourself with the Faculty contact who sent you the trial link. If you share through a personal messaging account, that service may show your account identity."
  }
@@ -533,6 +588,7 @@ function renderCourses(){
 }
 ["yearFilter","semFilter","courseSearch"].forEach(id=>document.getElementById(id).addEventListener(id==="courseSearch"?"input":"change",renderCourses));
 renderCourses();
+const openCurriculumBtn=document.getElementById("openCurriculumBtn");if(openCurriculumBtn)openCurriculumBtn.addEventListener("click",()=>{route("guide");document.getElementById("gCurrBtn")?.click()});
 
 const answers=[
  {k:["25","غياب","absence","attendance"],a:"بحسب الدليل المرجعي، بلوغ/تجاوز الغياب في مقرر نسبة 25% قد يترتب عليه الحرمان من الامتحان النهائي وما يرتبط بذلك من إجراءات وإنذار. راجع المسجل والكلية لتطبيق الحالة الفعلية."},
