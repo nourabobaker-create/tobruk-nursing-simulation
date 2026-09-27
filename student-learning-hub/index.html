@@ -49,7 +49,7 @@ main{max-width:1500px;margin:auto;padding:18px}
 .card .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
 .sectionhead{display:flex;align-items:flex-end;justify-content:space-between;gap:15px;margin:24px 0 12px}
 .sectionhead h2{margin:0;font-size:27px}.sectionhead p{margin:2px 0 0;color:var(--muted)}
-.statrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:15px 0}.academicGrid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px;margin-top:15px}.academicCard{background:#fff;border:1px solid var(--line);border-radius:20px;padding:18px;box-shadow:0 8px 24px rgba(24,55,44,.045)}.academicCard h3{margin:0 0 7px}.academicCard p{margin:0;color:var(--muted)}.miniTable{width:100%;border-collapse:collapse;margin-top:11px}.miniTable th,.miniTable td{padding:9px 8px;border-bottom:1px solid #e8efeb;font-size:13px}.miniTable th{background:#f3f7f5;color:#315248}.placeholder{border:1px dashed #b8cbc2;border-radius:14px;padding:13px;background:#fafcfb;color:var(--muted);margin-top:10px}.tag{display:inline-block;padding:5px 8px;border-radius:999px;background:var(--green3);color:var(--green);font-size:12px;font-weight:800;margin:6px 3px 0 0}.activityList{display:grid;gap:9px;margin-top:10px}.activityItem{border:1px solid var(--line);border-radius:14px;padding:12px;background:#fbfdfc}.activityItem b{display:block;margin-bottom:2px}.activityItem small{color:var(--muted)}.courseMeta{margin-top:10px;padding:10px 12px;border-radius:13px;background:#f6f0df;border:1px solid #e7d8aa;color:#5c4818;font-size:13px;line-height:1.55}
+.statrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:15px 0}.academicGrid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px;margin-top:15px}.academicCard{background:#fff;border:1px solid var(--line);border-radius:20px;padding:18px;box-shadow:0 8px 24px rgba(24,55,44,.045)}.academicCard h3{margin:0 0 7px}.academicCard p{margin:0;color:var(--muted)}.miniTable{width:100%;border-collapse:collapse;margin-top:11px}.miniTable th,.miniTable td{padding:9px 8px;border-bottom:1px solid #e8efeb;font-size:13px}.miniTable th{background:#f3f7f5;color:#315248}.placeholder{border:1px dashed #b8cbc2;border-radius:14px;padding:13px;background:#fafcfb;color:var(--muted);margin-top:10px}.tag{display:inline-block;padding:5px 8px;border-radius:999px;background:var(--green3);color:var(--green);font-size:12px;font-weight:800;margin:6px 3px 0 0}.activityList{display:grid;gap:9px;margin-top:10px}.activityItem{border:1px solid var(--line);border-radius:14px;padding:12px;background:#fbfdfc}.activityItem b{display:block;margin-bottom:2px}.activityItem small{color:var(--muted)}.eventGrid,.platformGrid,.researchGrid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:12px}.eventItem,.platformItem,.researchItem{border:1px solid var(--line);border-radius:15px;padding:13px;background:#fbfdfc}.eventItem h4,.platformItem h4,.researchItem h4{margin:0 0 5px;font-size:15px}.eventItem p,.platformItem p,.researchItem p{margin:0;color:var(--muted);font-size:13px}.eventMeta{display:flex;gap:6px;flex-wrap:wrap;margin:7px 0}.eventMeta span{font-size:11px;padding:4px 7px;border-radius:999px;background:#edf4f0;color:#35594c}.eventItem a,.platformItem a{display:inline-block;margin-top:9px;color:var(--green);font-weight:900;text-decoration:none}.eventItem a:hover,.platformItem a:hover{text-decoration:underline}.timeline{display:grid;gap:8px;margin-top:12px}.timelineItem{display:grid;grid-template-columns:150px 1fr;gap:10px;align-items:start;border-bottom:1px solid #e8efeb;padding:8px 0}.timelineItem:last-child{border-bottom:0}.timelineDate{font-weight:900;color:var(--green)}.timelineItem small{display:block;color:var(--muted)}.verifiedNote{margin-top:12px;padding:10px 12px;border-radius:13px;background:#eef5f1;border:1px solid #d5e4dc;color:#45665b;font-size:12px}.courseMeta{margin-top:10px;padding:10px 12px;border-radius:13px;background:#f6f0df;border:1px solid #e7d8aa;color:#5c4818;font-size:13px;line-height:1.55}
 .stat{background:#fff;border:1px solid var(--line);border-radius:17px;padding:14px}.stat b{font-size:26px;color:var(--green);display:block}.stat span{color:var(--muted);font-size:13px}
 .frameShell{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:var(--shadow)}
 .framebar{padding:10px 12px;background:#fff;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}
@@ -88,12 +88,12 @@ textarea{width:100%;min-height:100px;border:1px solid var(--line);border-radius:
 .mobileNav{display:none}
 [dir="ltr"] th,[dir="ltr"] td{text-align:left}
 @media(max-width:950px){
- .grid3,.twocol,.academicGrid{grid-template-columns:1fr}.statrow{grid-template-columns:repeat(2,1fr)}.optiongrid{grid-template-columns:1fr 1fr}
+ .grid3,.twocol,.academicGrid,.eventGrid,.platformGrid,.researchGrid{grid-template-columns:1fr}.statrow{grid-template-columns:repeat(2,1fr)}.optiongrid{grid-template-columns:1fr 1fr}
  .brandtext small{display:none}.logo{width:48px;height:48px}.topin{padding:8px 10px}.tools .homeText{display:none}
  main{padding:12px}.hero{padding:23px;border-radius:24px}.hero h1{font-size:38px}
  iframe.appframe{height:calc(100dvh - 138px);min-height:560px}
 }
-@media(max-width:590px){
+@media(max-width:590px){.timelineItem{grid-template-columns:1fr;gap:2px}
  .brandtext strong{font-size:13px}.logo{width:42px;height:42px}.tools .btn{padding:8px 9px;font-size:12px}
  .hero h1{font-size:32px}.hero p{font-size:15px}.statrow{grid-template-columns:1fr 1fr}.optiongrid{grid-template-columns:1fr}
  .rating{grid-template-columns:repeat(5,1fr)}.rating label{padding:7px 3px}
@@ -169,15 +169,20 @@ textarea{width:100%;min-height:100px;border:1px solid var(--line);border-radius:
   </article>
 
   <article class="academicCard">
-   <h3>📋 الخطة الدراسية للعام 2026/2027 <small dir="ltr">· Current Academic Plan</small></h3>
-   <p>ستعرض هذه الخانة التوزيع الفعلي للمقررات خلال العام الحالي حسب كل سنة دراسية.</p>
-   <div class="activityList">
-    <div class="activityItem"><b>السنة الأولى</b><small>المقررات والفصل والتوزيع الفعلي — جاهز للإضافة.</small></div>
-    <div class="activityItem"><b>السنة الثانية</b><small>المقررات والفصل والتوزيع الفعلي — جاهز للإضافة.</small></div>
-    <div class="activityItem"><b>السنة الثالثة</b><small>المقررات والفصل والتوزيع الفعلي — جاهز للإضافة.</small></div>
-    <div class="activityItem"><b>السنة الرابعة</b><small>المقررات والفصل والتوزيع الفعلي — جاهز للإضافة.</small></div>
+   <h3>📅 التقويم الأكاديمي للعام 2026/2027 <small dir="ltr">· Academic Calendar</small></h3>
+   <p>هذه هي الفترات المؤكدة في خطة تشغيل الكلية. التواريخ اليومية الدقيقة تُستبدل فور صدور التقويم الرسمي للجامعة/إعلان المسجل وقسم الدراسة والامتحانات.</p>
+   <div class="timeline">
+    <div class="timelineItem"><div class="timelineDate">سبتمبر 2026</div><div><b>بداية العام وبدء الدراسة</b><small>بدء التنفيذ الأكاديمي للعام 2026/2027.</small></div></div>
+    <div class="timelineItem"><div class="timelineDate">بداية العام</div><div><b>تجديد القيد</b><small>يُحدد الموعد التفصيلي بإعلان المسجل؛ لا يعتمد الطالب على التطبيق وحده لإجراء القيد.</small></div></div>
+    <div class="timelineItem"><div class="timelineDate">سبتمبر 2026 – يناير 2027</div><div><b>الفصل الدراسي الأول</b><small>متابعة المقررات والأنشطة الأكاديمية للفصل الأول.</small></div></div>
+    <div class="timelineItem"><div class="timelineDate">نوفمبر 2026</div><div><b>الامتحانات الجزئية للفصل الأول</b><small>وفق الجداول التي يصدرها قسم الدراسة والامتحانات.</small></div></div>
+    <div class="timelineItem"><div class="timelineDate">يناير 2027</div><div><b>الامتحانات النهائية للفصل الأول</b><small>ثم تحليل النتائج واستكمال تقارير الفصل.</small></div></div>
+    <div class="timelineItem"><div class="timelineDate">فبراير – مايو 2027</div><div><b>الفصل الدراسي الثاني</b><small>بدء مقررات الفصل الثاني واستكمال التدريب والأنشطة السنوية.</small></div></div>
+    <div class="timelineItem"><div class="timelineDate">نهاية الفصل الثاني</div><div><b>الدور الأول / الامتحانات النهائية</b><small>الموعد اليومي التفصيلي ينتظر الجدول الرسمي المعتمد من الدراسة والامتحانات.</small></div></div>
+    <div class="timelineItem"><div class="timelineDate">يونيو 2027</div><div><b>الدور الثاني واستكمال النتائج</b><small>استكمال ملفات الامتحانات والنتائج والمؤشرات الختامية.</small></div></div>
+    <div class="timelineItem"><div class="timelineDate">حتى 31 يوليو 2027</div><div><b>إقفال العام والتحضير للعام التالي</b><small>إغلاق التقارير والشواهد وخطة التحسين.</small></div></div>
    </div>
-   <div class="actions"><button class="btn soft" id="openCurriculumBtn">عرض الخطة المرجعية الكاملة</button></div>
+   <div class="actions"><button class="btn soft" id="openCurriculumBtn">عرض الخطة المرجعية للمقررات</button></div>
   </article>
 
   <article class="academicCard">
@@ -191,21 +196,88 @@ textarea{width:100%;min-height:100px;border:1px solid var(--line);border-radius:
   </article>
 
   <article class="academicCard">
-   <h3>🧪 بحوث التخرج <small dir="ltr">· Graduation Research</small></h3>
+   <h3>🧪 بحوث التخرج 2026/2027 <small dir="ltr">· Graduation Research</small></h3>
    <p>خانة مخصصة لطلبة السنة الرابعة لتنظيم رحلة مشروع التخرج.</p>
    <div class="activityList">
     <div class="activityItem"><b>عناوين البحوث</b><small>تُضاف بعد اعتماد الموضوعات.</small></div>
     <div class="activityItem"><b>المشرفون والطلبة</b><small>يُضاف التوزيع بعد اعتماده.</small></div>
     <div class="activityItem"><b>المراحل والمواعيد</b><small>اختيار الموضوع · المقترح · جمع البيانات · التحليل · التسليم · المناقشة.</small></div>
    </div>
-   <div class="placeholder">هذه الخانة الآن نموذج شكلي منظم، وجاهزة لإدراج بحوث التخرج الفعلية لاحقًا.</div>
+   <div class="placeholder">هذه الخانة الآن نموذج شكلي منظم، وجاهزة لإدراج بحوث التخرج الفعلية للعام الحالي.</div>
+  </article>
+
+  <article class="academicCard" style="grid-column:1/-1">
+   <h3>📊 نتائج بحوث التخرج للعام 2025/2026</h3>
+   <p>نوقشت ستة مشروعات يومي 23 و24 مايو 2026. وتعرض هذه البطاقات خلاصة النتائج التعليمية/المجتمعية دون تعميمها خارج عينات كل بحث.</p>
+   <div class="researchGrid">
+    <div class="researchItem"><h4>سلامة الدم المتبرع به وسلسلة نقله</h4><p>برزت الحاجة إلى تحسين متابعة العلامات الحيوية أثناء النقل، ورفع الوعي بالتصرف عند التعرض للدم الملوث، مع فجوة بين المعرفة والممارسة.</p></div>
+    <div class="researchItem"><h4>الفحص الدوري للكلى</h4><p>أكد أهمية الفحص المبكر، خصوصًا لمرضى السكري وارتفاع الضغط؛ وفي بيانات المشروع كان نحو 67% من مرضى الغسيل المشمولين مصابين بأحدهما أو كليهما.</p></div>
+    <div class="researchItem"><h4>بكتيريا المعدة والاستخدام الصحيح للعلاج</h4><p>ظهر تفاوت بين معرفة احتمال الإصابة وإجراء التحاليل عند الحاجة، مع رصد ممارسات غير صحيحة في استخدام المضادات الحيوية.</p></div>
+    <div class="researchItem"><h4>الاستعداد المجتمعي للمخاطر الصحية والأوبئة</h4><p>باستخدام جائحة كورونا نموذجًا، لم يتحول الوعي بالمخاطر والإجراءات الوقائية دائمًا إلى التزام سلوكي فعلي.</p></div>
+    <div class="researchItem"><h4>الاستخدام غير الرشيد للسيفترياكسون</h4><p>ناقش الاعتقاد بأن الحقن أقوى من الأقراص، والحصول على الدواء من الصيدليات والضغط لوصفه رغم معرفة بعض الأفراد بمخاطر مقاومة المضادات.</p></div>
+    <div class="researchItem"><h4>مخاطر الإسعافات الأولية الخاطئة</h4><p>وثقت بيانات البحث 13 حالة بأضرار متفاوتة بسبب تدخلات إسعافية خاطئة، من إصابات جسيمة إلى حالات شلل دائم.</p></div>
+   </div>
+   <div class="verifiedNote"><b>الخلاصة المشتركة:</b> تكررت فجوة بين الوعي الصحي والسلوك الفعلي؛ لذلك تُستخدم النتائج لتوجيه التوعية والبحوث المستقبلية نحو تغيير السلوك وقياس أثر التدخلات.</div>
   </article>
 
   <article class="academicCard" style="grid-column:1/-1">
    <h3>🌍 نشاطات أكاديمية وعلمية عالمية مجانية عبر الإنترنت</h3>
-   <p>ندوات ومحاضرات وورش عمل ومؤتمرات افتراضية ودورات قصيرة مجانية تقدمها جامعات ومؤسسات علمية وصحية دولية، ويمكن لطلبة الكلية حضورها إلكترونيًا والاستفادة منها.</p>
-   <span class="tag">تمريض وصحة</span><span class="tag">بحث علمي</span><span class="tag">لغة إنجليزية</span><span class="tag">مهارات أكاديمية</span><span class="tag">ندوات عالمية</span><span class="tag">مؤتمرات افتراضية</span>
-   <div class="placeholder">سنضيف هنا الأنشطة الحالية بعد التحقق من أنها مجانية، متاحة عن بُعد، ما زال التسجيل فيها مفتوحًا، وملائمة لطلبة التمريض. لا تُدرج روابط غير مؤكدة أو فعاليات منتهية.</div>
+   <p>أمثلة حقيقية تم التحقق من صفحاتها الرسمية في 27 سبتمبر 2026. افتح صفحة الحدث للتسجيل والتحقق من بقاء المقاعد؛ التوقيت أدناه كما يظهر في المصدر.</p>
+   <div class="eventGrid">
+    <div class="eventItem">
+     <h4>الطب عن بُعد بالمغرب في 2026</h4>
+     <div class="eventMeta"><span>العربية</span><span>صحة رقمية</span><span>مجاني</span><span>مباشر أونلاين</span></div>
+     <p>1 أكتوبر 2026 · 19:00 بتوقيت الدار البيضاء · جلسة حول واقع الطب عن بعد والإطار القانوني وتجارب القطاع الصحي.</p>
+     <a href="https://jivox.ma/ar/webinaire" target="_blank" rel="noopener">التفاصيل والتسجيل ↗</a>
+    </div>
+    <div class="eventItem">
+     <h4>التوظيف والاختيار الذكي</h4>
+     <div class="eventMeta"><span>العربية</span><span>مهارات مهنية</span><span>مجاني</span><span>مباشر أونلاين</span></div>
+     <p>18 أكتوبر 2026 · 19:00 بتوقيت السعودية · مقابلات سلوكية وموقفية والحد من التحيز في الاختيار.</p>
+     <a href="https://blueoceancorporation.com/training/webinar-seminar-register/intelligent-recruitment-and-selection" target="_blank" rel="noopener">التفاصيل والتسجيل ↗</a>
+    </div>
+    <div class="eventItem">
+     <h4>Beyond the Hospital Walls: Patient Safety & Care Transitions</h4>
+     <div class="eventMeta"><span>English</span><span>سلامة المرضى</span><span>Free</span><span>Zoom</span></div>
+     <p>21 October 2026 · 12:00–13:00 · انتقال آمن للرعاية والاستعداد للطوارئ بعد الخروج من المستشفى.</p>
+     <a href="https://www.bgs.org.uk/external-event/beyond-the-hospital-walls-elevating-patient-safety-care-transitions-and-emergency" target="_blank" rel="noopener">Event page ↗</a>
+    </div>
+    <div class="eventItem">
+     <h4>Research & Policy in Health Humanities and Creative Health</h4>
+     <div class="eventMeta"><span>English</span><span>بحث علمي</span><span>Free</span><span>Online</span></div>
+     <p>29 October 2026 · 12:30–14:00 · كيف تُحوّل نتائج البحث الصحي إلى معرفة يمكن لصنّاع السياسات استخدامها.</p>
+     <a href="https://ncch.org.uk/news/research-and-policy-in-health-humanities-creative-health" target="_blank" rel="noopener">Event page ↗</a>
+    </div>
+    <div class="eventItem">
+     <h4>Understanding the Role of Admiral Nurses</h4>
+     <div class="eventMeta"><span>English</span><span>تمريض الخرف</span><span>Free</span><span>Zoom</span></div>
+     <p>18 November 2026 · 13:00–16:00 · Webinar من Dementia UK حول دور الممرض المتخصص في دعم الأسر المصابة بالخرف.</p>
+     <a href="https://www.dementiauk.org/for-professionals/how-to-become-an-admiral-nurse/role-of-admiral-nurses-webinar/" target="_blank" rel="noopener">Event page ↗</a>
+    </div>
+    <div class="eventItem">
+     <h4>Contemporary Mental Health & Holistic Nursing Care</h4>
+     <div class="eventMeta"><span>English</span><span>تمريض نفسي</span><span>Free</span><span>Online series</span></div>
+     <p>27 Nov & 11 Dec 2026، ثم 15 Jan و19 Feb 2027 · سلسلة من Hong Kong College of Mental Health Nursing.</p>
+     <a href="https://www.hkcmhn.org.hk/2026/09/11/contemporary-mental-health-and-holistic-nursing-care-webinar-series/" target="_blank" rel="noopener">Event page ↗</a>
+    </div>
+   </div>
+   <div class="verifiedNote">هذه القائمة ليست اعتمادًا رسميًا من الكلية للجهات الخارجية؛ هي إحالات تعليمية اختيارية. تحقق من شروط التسجيل واللغة والفئة المستهدفة قبل الحضور.</div>
+  </article>
+
+  <article class="academicCard" style="grid-column:1/-1">
+   <h3>🚀 طوّر مهاراتك التمريضية والشخصية</h3>
+   <p>روابط مختارة للتعلّم الذاتي في التمريض والصحة واللغة والبحث والمهارات الرقمية والشخصية. استخدمها كتعلم إضافي، لا كبديل للمقرر أو التدريب السريري.</p>
+   <div class="platformGrid">
+    <div class="platformItem"><h4>WHO Academy · أكاديمية منظمة الصحة العالمية</h4><p>تعلم صحي عالمي في موضوعات الصحة العامة والأنظمة الصحية والسلامة وغيرها. التسجيل وبدء رحلة التعلم مجانيان.</p><a href="https://whoacademy.org/" target="_blank" rel="noopener">افتح WHO Academy ↗</a></div>
+    <div class="platformItem"><h4>Alison</h4><p>دورات تمريض وصحة ورعاية ومهارات مهنية. الدراسة وإكمال المقرر مجانيان؛ الشهادة المدفوعة اختيارية في معظم الدورات.</p><a href="https://alison.com/certificate-courses/nursing" target="_blank" rel="noopener">دورات التمريض في Alison ↗</a></div>
+    <div class="platformItem"><h4>Coursera</h4><p>مقررات من جامعات دولية، ومنها تمريض وعلامات حيوية ومهارات سريرية. تتوفر معاينات مجانية وبعض المحتوى المجاني؛ الوصول الكامل أو الشهادة قد يتطلبان رسومًا.</p><a href="https://www.coursera.org/courses?query=nursing" target="_blank" rel="noopener">استكشف Nursing on Coursera ↗</a></div>
+    <div class="platformItem"><h4>إدراك · Edraak</h4><p>منصة عربية أُسست بمبادرة من مؤسسة الملكة رانيا. الدورات مجانية، وتشمل الصحة والتغذية وتطوير الذات والتكنولوجيا واللغات، مع شهادات إتمام مجانية عند استيفاء المتطلبات.</p><a href="https://www.edraak.org/" target="_blank" rel="noopener">افتح إدراك ↗</a></div>
+    <div class="platformItem"><h4>رواق · Rwaq</h4><p>تعليم عربي مفتوح، مع مواد في الطب والصحة العامة واللغات والإبداع والمهارات. استخدم مرشح «مجاني» عند التصفح.</p><a href="https://www.rwaq.org/courses/t" target="_blank" rel="noopener">تصفح مواد رواق ↗</a></div>
+    <div class="platformItem"><h4>OpenLearn · The Open University</h4><p>مئات الدورات المجانية في الصحة وعلم النفس والتواصل والدراسة والمهارات الرقمية، مع Statements of Participation في كثير منها.</p><a href="https://www.open.edu/openlearn/free-courses/full-catalogue" target="_blank" rel="noopener">استكشف الدورات المجانية ↗</a></div>
+    <div class="platformItem"><h4>Microsoft Learn</h4><p>تدريب مجاني في المهارات الرقمية والذكاء الاصطناعي والبيانات والتقنية؛ مفيد لبناء مهارات البحث والعروض والعمل الرقمي.</p><a href="https://learn.microsoft.com/training/" target="_blank" rel="noopener">افتح Microsoft Learn ↗</a></div>
+    <div class="platformItem"><h4>أكاديمية خان · Khan Academy</h4><p>تعليم مجاني لدعم العلوم والرياضيات والأساسيات الأكاديمية، مع واجهة عربية ومحتوى متعدد اللغات.</p><a href="https://ar.khanacademy.org/" target="_blank" rel="noopener">افتح أكاديمية خان ↗</a></div>
+   </div>
+   <div class="verifiedNote"><b>ملاحظة مهمة:</b> لا تعني كلمة «مجاني» دائمًا أن الشهادة مجانية. راجع وصف كل منصة؛ إدراك مجاني مع شهادة إتمام مجانية، بينما Alison يتيح الدراسة مجانًا وغالبًا تكون الشهادة اختيارية مدفوعة، وCoursera يختلف حسب المقرر.</div>
   </article>
  </div>
 
@@ -413,7 +485,10 @@ textarea{width:100%;min-height:100px;border:1px solid var(--line);border-radius:
   <div class="formcard"><h3>4) ما الأقسام التي جرّبتها؟</h3><div class="optiongrid">
    <label class="choice"><input type="checkbox" name="sections" value="Simulation"> Simulation</label>
    <label class="choice"><input type="checkbox" name="sections" value="Student Guide"> Student Guide</label>
-   <label class="choice"><input type="checkbox" name="sections" value="English II"> English II</label>
+   <label class="choice"><input type="checkbox" name="sections" value="Study Companion - English II"> رفيق الدراسة · لغة إنجليزية 2</label>
+   <label class="choice"><input type="checkbox" name="sections" value="Academic Calendar and Timetables"> التقويم والجداول</label>
+   <label class="choice"><input type="checkbox" name="sections" value="Graduation Research"> بحوث التخرج</label>
+   <label class="choice"><input type="checkbox" name="sections" value="Global Activities and Skills"> النشاطات العالمية · طوّر مهاراتك</label>
   </div></div>
   <div id="ratings"></div>
   <div class="formcard"><h3>10) ما أكثر جزء وجدته مفيداً؟</h3><textarea name="best" placeholder="اختياري"></textarea></div>
