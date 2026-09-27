@@ -769,6 +769,17 @@ function applyLang(){
  document.getElementById("masterNotice").innerHTML=x.masterNotice;
  document.getElementById("langBtn").textContent=lang==="ar"?"English":"العربية";
  localStorage.setItem("hub-lang",lang);
+ document.title=lang==="en"?"Nursing Learning Hub · Faculty of Nursing · Tobruk University":"بوابة التعلّم التمريضي · كلية التمريض · جامعة طبرق";
+ const search=document.getElementById("courseSearch");if(search)search.placeholder=lang==="en"?"Search by course name or code…":"ابحث باسم المقرر أو الكود…";
+ const chat=document.getElementById("chatInput");if(chat)chat.placeholder=lang==="en"?"Type your question…":"اكتب سؤالك…";
+ document.querySelectorAll('textarea[placeholder="اختياري"],textarea[placeholder="Optional"]').forEach(x=>x.placeholder=lang==="en"?"Optional":"اختياري");
+ const quick=[...document.querySelectorAll("[data-q]")];
+ if(quick.length>=4){
+  quick[0].dataset.q=lang==="en"?"What happens at 25% absence?":"ماذا يحدث عند غياب 25%؟";
+  quick[1].dataset.q=lang==="en"?"How long is the internship?":"كم مدة الامتياز؟";
+  quick[2].dataset.q=lang==="en"?"How many courses are in the curriculum?":"كم عدد المقررات؟";
+  quick[3].dataset.q=lang==="en"?"What is the curriculum reference?":"ما مرجع الخطة؟";
+ }
  applyStaticText();
  if(document.getElementById("courseBody"))renderCourses();
 }
