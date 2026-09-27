@@ -34,7 +34,7 @@ main{max-width:1500px;margin:auto;padding:18px}
 .hero{background:linear-gradient(135deg,#0d5b43,#174f3e 58%,#8b702f);color:#fff;border-radius:30px;padding:30px;box-shadow:var(--shadow);overflow:hidden;position:relative}
 .hero:after{content:"";position:absolute;inset:auto -60px -80px auto;width:250px;height:250px;border:32px solid rgba(255,255,255,.06);border-radius:50%}
 .eyebrow{font-size:12px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;opacity:.84}
-.hero h1{font-size:clamp(31px,4vw,58px);line-height:1.05;margin:10px 0 13px;max-width:900px}
+.shareTop{max-width:980px;margin:12px 0 14px;padding:12px 15px;border-radius:17px;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.18)}.shareTop .shareLead{font-size:15px;font-weight:700;color:#f7fbf9}.shareTop .hadithTop{margin-top:5px;font-size:17px;font-weight:900;color:#f3d98c}.shareTop .hadithSource{font-size:12px;color:#d8e8e1;margin-inline-start:5px}.hero h1{font-size:clamp(31px,4vw,58px);line-height:1.05;margin:10px 0 13px;max-width:900px}
 .hero p{font-size:17px;max-width:860px;margin:0;color:#eef9f4}
 .heroactions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
 .hero .btn{border-color:rgba(255,255,255,.25)}
@@ -126,7 +126,8 @@ textarea{width:100%;min-height:100px;border:1px solid var(--line);border-radius:
 <section class="panel active" id="panel-home">
  <div class="hero">
   <div class="eyebrow" id="heroEyebrow">نموذج تجريبي للتعلّم والدعم الطلابي</div>
-  <h1 id="heroTitle">كل ما نختبره الآن… في رابط واحد.</h1>
+  <div class="shareTop" id="shareTop"><div class="shareLead" id="shareLead">نشجّع أبناءنا الطلاب على مشاركة التطبيق مع أقرانهم في كليات التمريض بالجامعات الليبية، إيمانًا بأهمية نشر المعرفة وتبادل الفائدة.</div><div class="hadithTop" id="hadithTop">قال رسول الله صلى الله عليه وسلم: «مَنْ دَلَّ عَلَى خَيْرٍ فَلَهُ مِثْلُ أَجْرِ فَاعِلِهِ» <span class="hadithSource">رواه مسلم</span></div></div>
+  <h1 id="heroTitle">النسخة الأولى التجريبية</h1>
   <p id="heroText">المحاكاة التفاعلية للمهارات، دليل الطالب المبسّط، ونموذج English II — في بوابة واحدة مصممة للهاتف والحاسوب مع دعم عربي واضح.</p>
   <div class="heroactions">
    <button class="btn primary" data-route="simulation" id="heroStart">ابدأ بالمحاكاة</button>
@@ -385,7 +386,6 @@ textarea{width:100%;min-height:100px;border:1px solid var(--line);border-radius:
  <div class="footerin">
   <div>© 2026 كلية التمريض · جامعة طبرق | Faculty of Nursing · Tobruk University</div>
   <div style="margin-top:5px">نرحب بمشاركة الفائدة التعليمية وإعادة الاستخدام غير التجاري مع ذكر المصدر والمحافظة على الإحالات إلى المراجع الأصلية.</div>
-  <div class="hadith">«مَنْ دَلَّ عَلَى خَيْرٍ فَلَهُ مِثْلُ أَجْرِ فَاعِلِهِ» — رواه مسلم</div>
   <small>We welcome educational sharing with attribution. Please preserve source acknowledgements and always refer learners back to the Faculty, instructors, and complete official documents.</small>
  </div>
 </footer>
@@ -448,7 +448,7 @@ const semTotals={"1-1":[432,724,30],"1-2":[416,670,30],"2-1":[256,698,30],"2-2":
 const T={
  ar:{
  brandTitle:"كلية التمريض · جامعة طبرق",brandSub:"Faculty of Nursing · Tobruk University · Learning Hub Pilot",
- heroEyebrow:"نموذج تجريبي للتعلّم والدعم الطلابي",heroTitle:"كل ما نختبره الآن… في رابط واحد.",
+ heroEyebrow:"نموذج تجريبي للتعلّم والدعم الطلابي",heroTitle:"النسخة الأولى التجريبية",shareLead:"نشجّع أبناءنا الطلاب على مشاركة التطبيق مع أقرانهم في كليات التمريض بالجامعات الليبية، إيمانًا بأهمية نشر المعرفة وتبادل الفائدة.",hadithTop:"قال رسول الله صلى الله عليه وسلم: «مَنْ دَلَّ عَلَى خَيْرٍ فَلَهُ مِثْلُ أَجْرِ فَاعِلِهِ» رواه مسلم",
  heroText:"المحاكاة التفاعلية للمهارات، دليل الطالب المبسّط، ونموذج English II — في بوابة واحدة مصممة للهاتف والحاسوب مع دعم عربي واضح.",
  heroStart:"ابدأ بالمحاكاة",heroSurvey:"استبيان التجربة",
  masterNotice:"<strong>مهم قبل البدء:</strong> هذه البوابة وسيلة تعليمية مساندة وتجريبية، وليست بديلاً عن المقررات المعتمدة، أو عضو هيئة التدريس، أو التدريب العملي/السريري تحت الإشراف، أو اللوائح والأدلة الرسمية الكاملة. عند وجود أي اختلاف، يُرجع إلى الكلية وأستاذ المقرر والنسخة الرسمية الكاملة من الوثيقة.",
@@ -464,7 +464,7 @@ const T={
  },
  en:{
  brandTitle:"Faculty of Nursing · Tobruk University",brandSub:"كلية التمريض · جامعة طبرق · Learning Hub Pilot",
- heroEyebrow:"PILOT LEARNING & STUDENT-SUPPORT HUB",heroTitle:"Everything we are trialling now — in one link.",
+ heroEyebrow:"PILOT LEARNING & STUDENT-SUPPORT HUB",heroTitle:"First Pilot Version",shareLead:"We encourage our students to share this app with their peers in nursing faculties across Libyan universities, in the spirit of sharing knowledge and benefit.",hadithTop:"The Messenger of Allah ﷺ said: “Whoever guides to something good will have a reward like the one who does it.” — Sahih Muslim",
  heroText:"Interactive nursing-skills simulation, a simplified Student Guide, and the English II prototype in one phone- and computer-friendly hub with Arabic support.",
  heroStart:"Start with Simulation",heroSurvey:"Trial Survey",
  masterNotice:"<strong>Before you start:</strong> This is a supplementary pilot learning resource. It does not replace the approved curriculum, instructors, supervised practical/clinical teaching, or complete official regulations and guides. If anything differs, follow the Faculty, course instructor, and the complete official document.",
@@ -482,7 +482,7 @@ const T={
 let lang=localStorage.getItem("hub-lang")||"ar";
 function applyLang(){
  const x=T[lang]; document.documentElement.lang=lang; document.documentElement.dir=lang==="ar"?"rtl":"ltr";
- ["brandTitle","brandSub","heroEyebrow","heroTitle","heroText","heroStart","heroSurvey","c1t","c1p","c1b","c2t","c2p","c2b","c3t","c3p","c3b","trialTitle","trialSub","s1","s2","s3","s4","simTitle","simNote","simFull","engTitle","engNote","engFull","guideEyebrow","guideTitle","guideIntro","surveyTitle","surveySub","surveyPrivacy"].forEach(id=>{const e=document.getElementById(id);if(e&&x[id]!=null)e.textContent=x[id]});
+ ["brandTitle","brandSub","heroEyebrow","heroTitle","shareLead","hadithTop","heroText","heroStart","heroSurvey","c1t","c1p","c1b","c2t","c2p","c2b","c3t","c3p","c3b","trialTitle","trialSub","s1","s2","s3","s4","simTitle","simNote","simFull","engTitle","engNote","engFull","guideEyebrow","guideTitle","guideIntro","surveyTitle","surveySub","surveyPrivacy"].forEach(id=>{const e=document.getElementById(id);if(e&&x[id]!=null)e.textContent=x[id]});
  document.getElementById("masterNotice").innerHTML=x.masterNotice;
  document.getElementById("langBtn").textContent=lang==="ar"?"English":"العربية";
  localStorage.setItem("hub-lang",lang);
