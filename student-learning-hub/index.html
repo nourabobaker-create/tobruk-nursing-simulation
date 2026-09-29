@@ -217,6 +217,9 @@ textarea{width:100%;min-height:100px;border:1px solid var(--line);border-radius:
   <button class="hubTile" type="button" data-hub-detail="alumni">
    <span class="hubTileIcon">🎓</span><span class="hubTileTitle">الخريجون</span>
   </button>
+  <button class="hubTile" type="button" data-route="spss">
+   <span class="hubTileIcon">📊</span><span class="hubTileTitle">دورة SPSS للبحث</span>
+  </button>
  </div>
 
  <div class="hubDetail" id="hubDetail-lecture"><div class="hubDetailTop"><button class="hubBack" type="button">← رجوع</button></div><article class="academicCard">
@@ -416,6 +419,16 @@ textarea{width:100%;min-height:100px;border:1px solid var(--line);border-radius:
    <div class="actions"><a class="btn soft" href="../e-library-v3/" target="_blank" rel="noopener" id="libFull">فتح بملء الشاشة</a><button class="btn" data-route="home">الرئيسية</button></div>
   </div>
   <iframe class="appframe" src="../e-library-v3/" title="Digital Learning Library and Research Hub"></iframe>
+ </div>
+</section>
+
+<section class="panel" id="panel-spss">
+ <div class="frameShell">
+  <div class="framebar">
+   <div><strong id="spssTitle">دورة SPSS للبحث التمريضي</strong><div style="font-size:12px;color:var(--muted)" id="spssNote">دورة ثنائية اللغة للمعيدين وطلبة السنة الرابعة وأعضاء هيئة التدريس: من تنظيم البيانات وتنظيفها إلى اختيار الاختبار، تفسير المخرجات، وكتابة النتائج.</div></div>
+   <div class="actions"><a class="btn soft" href="../spss-course/" target="_blank" rel="noopener" id="spssFull">فتح بملء الشاشة</a><button class="btn" data-route="home">الرئيسية</button></div>
+  </div>
+  <iframe class="appframe" src="../spss-course/" title="SPSS for Nursing and Health Research"></iframe>
  </div>
 </section>
 
@@ -667,6 +680,7 @@ const T={
  simTitle:"محاكاة المهارات التمريضية",simNote:"تعلّم وتدرّب، ثم ارجع دائماً إلى المشرف/عضو هيئة التدريس والدليل العملي المعتمد.",simFull:"فتح بملء الشاشة",
  engTitle:"رفيق الدراسة · لغة إنجليزية 2",engNote:"أستاذ المادة: نورا مسعود حمد بوبكر · الأحد 10:00–12:00 · القاعة N5. رفيق الدراسة مساحة لدعم المقررات والتعلّم والمراجعة، والمحتوى مساند فقط؛ ويظل كتاب المقرر وتعليمات الأستاذ والمواد المعتمدة هي المرجع.",engFull:"فتح بملء الشاشة",
  libTitle:"المكتبة الرقمية ومركز التعلّم والبحث",libNote:"مساحة موحّدة للكتب والمقالات والأدلة البحثية وقوائم القراءة ودعم الدراسة وبحوث التخرج وأعضاء هيئة التدريس. المحتوى مساند، وتظل المقررات المعتمدة والإشراف الأكاديمي والسريري هي المرجع.",libFull:"فتح بملء الشاشة",
+ spssTitle:"دورة SPSS للبحث التمريضي",spssNote:"دورة ثنائية اللغة للمعيدين وطلبة السنة الرابعة وأعضاء هيئة التدريس: من تنظيم البيانات وتنظيفها إلى اختيار الاختبار، تفسير المخرجات، وكتابة النتائج.",spssFull:"فتح بملء الشاشة",
  guideEyebrow:"دليل الطالب · نسخة مبسّطة داخل التطبيق",guideTitle:"اعرف أين تبدأ… وأين ترجع عند الحاجة.",guideIntro:"ملخص عملي للتوجيه فقط، مع إحالة مستمرة إلى الكلية والمسجل وأعضاء هيئة التدريس والوثائق الرسمية الكاملة."
  },
  en:{
@@ -684,13 +698,14 @@ const T={
  simTitle:"Interactive Nursing Skills",simNote:"Use it to learn and practise, then confirm technique with instructors/supervisors and the approved practical guide.",simFull:"Open full screen",
  engTitle:"Study Companion · English II",engNote:"Course instructor: Noura Masoud Hamad Bubakr · Sunday 10:00–12:00 · Room N5. Study Companion supports course learning and revision. It remains supplementary; the approved course book, instructor directions, and official course materials remain the reference.",engFull:"Open full screen",
  libTitle:"Digital Learning Library & Research Hub",libNote:"A unified space for books, scholarly articles, research guidance, reading lists, study support, graduation research, and faculty resources. It is supplementary; approved curricula and academic/clinical supervision remain authoritative.",libFull:"Open full screen",
+ spssTitle:"SPSS for Nursing & Health Research",spssNote:"A bilingual course for teaching assistants, fourth-year students and faculty: from data setup and cleaning to test selection, output interpretation and writing results.",spssFull:"Open full screen",
  guideEyebrow:"STUDENT GUIDE · SIMPLIFIED APP VERSION",guideTitle:"Know where to start — and where to go back for authority.",guideIntro:"A practical orientation summary with repeated referral to the Faculty, Registrar, instructors, and complete official documents."
  }
 };
 const staticTextMap={
 "بوابة التعلّم التمريضي · كلية التمريض · جامعة طبرق":"Nursing Learning Hub · Faculty of Nursing · Tobruk University",
 "الرئيسية ·":"Home ·","المكتبة":"Library","للطلبة وأعضاء هيئة التدريس":"For students and faculty","قراءة · تعلّم · بحث · أدلة · نجاح أكاديمي":"Read · Learn · Research · Evidence · Academic success",
-"سجل الشكاوى والملاحظات":"Complaints & Feedback","الخريجون":"Alumni",
+"سجل الشكاوى والملاحظات":"Complaints & Feedback","الخريجون":"Alumni","دورة SPSS للبحث":"SPSS Research Course",
 "📝 سجل الشكاوى والملاحظات":"📝 Complaints & Feedback",
 "مساحة مخصصة لإحالة الطالب إلى نموذج إلكتروني لتسجيل الشكوى أو الملاحظة بصورة منظمة، حتى يمكن متابعتها من الجهة المختصة بدل ضياعها في الرسائل غير الرسمية.":"A dedicated route to an electronic form for recording complaints or feedback in a structured way so the responsible unit can follow them up.",
 "قيد التفعيل:":"Pending activation:",
@@ -823,7 +838,7 @@ const staticTextMap={
 };
 const staticNodes=[];
 const originalText=new WeakMap();
-const managedIds=new Set(["brandTitle","brandSub","heroEyebrow","heroTitle","shareLead","hadithTop","heroText","heroStart","c1t","c1p","c1b","c2t","c2p","c2b","c3t","c3p","c3b","c4t","c4p","c4b","trialTitle","trialSub","s1","s2","s3","s4","simTitle","simNote","simFull","engTitle","engNote","engFull","libTitle","libNote","libFull","guideEyebrow","guideTitle","guideIntro","masterNotice","langBtn"]);
+const managedIds=new Set(["brandTitle","brandSub","heroEyebrow","heroTitle","shareLead","hadithTop","heroText","heroStart","c1t","c1p","c1b","c2t","c2p","c2b","c3t","c3p","c3b","c4t","c4p","c4b","trialTitle","trialSub","s1","s2","s3","s4","simTitle","simNote","simFull","engTitle","engNote","engFull","libTitle","libNote","libFull","spssTitle","spssNote","spssFull","guideEyebrow","guideTitle","guideIntro","masterNotice","langBtn"]);
 function captureStaticText(){
  const w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
  let n;while(n=w.nextNode()){
@@ -845,7 +860,7 @@ function applyStaticText(){
 let lang=localStorage.getItem("hub-lang")||"ar";
 function applyLang(){
  const x=T[lang]; document.documentElement.lang=lang; document.documentElement.dir=lang==="ar"?"rtl":"ltr";
- ["brandTitle","brandSub","heroEyebrow","heroTitle","shareLead","hadithTop","heroText","heroStart","c1t","c1p","c1b","c2t","c2p","c2b","c3t","c3p","c3b","c4t","c4p","c4b","trialTitle","trialSub","s1","s2","s3","s4","simTitle","simNote","simFull","engTitle","engNote","engFull","libTitle","libNote","libFull","guideEyebrow","guideTitle","guideIntro"].forEach(id=>{const e=document.getElementById(id);if(e&&x[id]!=null)e.textContent=x[id]});
+ ["brandTitle","brandSub","heroEyebrow","heroTitle","shareLead","hadithTop","heroText","heroStart","c1t","c1p","c1b","c2t","c2p","c2b","c3t","c3p","c3b","c4t","c4p","c4b","trialTitle","trialSub","s1","s2","s3","s4","simTitle","simNote","simFull","engTitle","engNote","engFull","libTitle","libNote","libFull","spssTitle","spssNote","spssFull","guideEyebrow","guideTitle","guideIntro"].forEach(id=>{const e=document.getElementById(id);if(e&&x[id]!=null)e.textContent=x[id]});
  document.getElementById("masterNotice").innerHTML=x.masterNotice;
  document.getElementById("langBtn").textContent=lang==="ar"?"English":"العربية";
  localStorage.setItem("hub-lang",lang);
@@ -905,7 +920,7 @@ document.addEventListener("click",e=>{
 
 function route(name){
  if(name==="home")closeHubDetails();
- const valid=["home","simulation","guide","english","library"]; if(!valid.includes(name))name="home";
+ const valid=["home","simulation","guide","english","library","spss"]; if(!valid.includes(name))name="home";
  document.querySelectorAll(".panel").forEach(p=>p.classList.remove("active"));
  document.getElementById("panel-"+name).classList.add("active");
  document.querySelectorAll(".mobileNav button").forEach(b=>b.classList.toggle("active",b.dataset.route===name));
