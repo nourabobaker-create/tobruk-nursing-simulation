@@ -211,6 +211,12 @@ textarea{width:100%;min-height:100px;border:1px solid var(--line);border-radius:
   <button class="hubTile" type="button" data-hub-detail="skills">
    <span class="hubTileIcon">🚀</span><span class="hubTileTitle">طوّر مهاراتك</span>
   </button>
+  <button class="hubTile" type="button" data-hub-detail="complaints">
+   <span class="hubTileIcon">📝</span><span class="hubTileTitle">سجل الشكاوى والملاحظات</span>
+  </button>
+  <button class="hubTile" type="button" data-hub-detail="alumni">
+   <span class="hubTileIcon">🎓</span><span class="hubTileTitle">الخريجون</span>
+  </button>
  </div>
 
  <div class="hubDetail" id="hubDetail-lecture"><div class="hubDetailTop"><button class="hubBack" type="button">← رجوع</button></div><article class="academicCard">
@@ -351,6 +357,26 @@ textarea{width:100%;min-height:100px;border:1px solid var(--line);border-radius:
    <div class="verifiedNote"><b>ملاحظة مهمة:</b> لا تعني كلمة «مجاني» دائمًا أن الشهادة مجانية. راجع وصف كل منصة؛ إدراك مجاني مع شهادة إتمام مجانية، بينما Alison يتيح الدراسة مجانًا وغالبًا تكون الشهادة اختيارية مدفوعة، وCoursera يختلف حسب المقرر.</div>
   </article>
  </div></div>
+
+ <div class="hubDetail" id="hubDetail-complaints"><div class="hubDetailTop"><button class="hubBack" type="button">← رجوع</button></div><article class="academicCard">
+   <h3>📝 سجل الشكاوى والملاحظات</h3>
+   <p>مساحة مخصصة لإحالة الطالب إلى نموذج إلكتروني لتسجيل الشكوى أو الملاحظة بصورة منظمة، حتى يمكن متابعتها من الجهة المختصة بدل ضياعها في الرسائل غير الرسمية.</p>
+   <div class="callout"><b>قيد التفعيل:</b> مكان رابط Google Form جاهز داخل البوابة. سيُفعّل الزر بمجرد اعتماد رابط النموذج النهائي.</div>
+   <div class="actions"><button class="btn gold" type="button" disabled>رابط نموذج الشكاوى سيُضاف هنا</button></div>
+   <div class="verifiedNote">يفضّل أن يوضح النموذج للطالب نوع البيانات المطلوبة، الجهة التي تستقبل الشكوى، وكيفية التعامل مع الخصوصية، مع تجنب طلب بيانات شخصية لا حاجة لها.</div>
+  </article></div>
+
+ <div class="hubDetail" id="hubDetail-alumni"><div class="hubDetailTop"><button class="hubBack" type="button">← رجوع</button></div><article class="academicCard">
+   <h3>🎓 مساحة الخريجين</h3>
+   <p>قسم يتطور ليبقى الخريج مرتبطًا بالكلية بعد التخرج، ويجمع ما يفيده في الانتقال إلى الممارسة والتطوير المهني والبحث.</p>
+   <div class="platformGrid">
+    <div class="platformItem"><h4>📌 تحديث بيانات الخريجين</h4><p>مكان مخصص مستقبلًا لتحديث بيانات التواصل، جهة العمل، والدراسات العليا بما يدعم متابعة الخريجين.</p></div>
+    <div class="platformItem"><h4>📚 التعلم بعد التخرج</h4><p>الوصول إلى المكتبة الرقمية، الأدلة، المقالات، ومصادر التطوير المهني المستمر.</p><button class="btn soft" type="button" data-route="library">فتح المكتبة الرقمية</button></div>
+    <div class="platformItem"><h4>🔬 البحث والدراسات العليا</h4><p>مصادر البحث العلمي، PubMed، MeSH، الكتابة الأكاديمية، ومهارات إعداد الدراسات والأوراق العلمية.</p></div>
+    <div class="platformItem"><h4>🤝 التواصل والمشاركة</h4><p>يمكن لاحقًا إضافة استبيانات الخريجين، فرص المشاركة في أنشطة الكلية، وخبرات الخريجين التي تفيد الطلبة الحاليين.</p></div>
+   </div>
+   <div class="verifiedNote">هذا القسم في مرحلة البناء وسيُوسّع تدريجيًا وفق بيانات واحتياجات الخريجين.</div>
+  </article></div>
 
  <div class="sectionhead">
   <div><h2 id="trialTitle">ما الذي نريد اختباره؟</h2><p id="trialSub">ليس الكمال؛ بل سهولة الوصول، الفائدة، الوضوح، وما يستحق التطوير.</p></div>
@@ -664,6 +690,25 @@ const T={
 const staticTextMap={
 "بوابة التعلّم التمريضي · كلية التمريض · جامعة طبرق":"Nursing Learning Hub · Faculty of Nursing · Tobruk University",
 "الرئيسية ·":"Home ·","المكتبة":"Library","للطلبة وأعضاء هيئة التدريس":"For students and faculty","قراءة · تعلّم · بحث · أدلة · نجاح أكاديمي":"Read · Learn · Research · Evidence · Academic success",
+"سجل الشكاوى والملاحظات":"Complaints & Feedback","الخريجون":"Alumni",
+"📝 سجل الشكاوى والملاحظات":"📝 Complaints & Feedback",
+"مساحة مخصصة لإحالة الطالب إلى نموذج إلكتروني لتسجيل الشكوى أو الملاحظة بصورة منظمة، حتى يمكن متابعتها من الجهة المختصة بدل ضياعها في الرسائل غير الرسمية.":"A dedicated route to an electronic form for recording complaints or feedback in a structured way so the responsible unit can follow them up.",
+"قيد التفعيل:":"Pending activation:",
+"مكان رابط Google Form جاهز داخل البوابة. سيُفعّل الزر بمجرد اعتماد رابط النموذج النهائي.":"The Google Form link location is ready in the hub and will be activated once the final form URL is approved.",
+"رابط نموذج الشكاوى سيُضاف هنا":"The complaints form link will be added here",
+"يفضّل أن يوضح النموذج للطالب نوع البيانات المطلوبة، الجهة التي تستقبل الشكوى، وكيفية التعامل مع الخصوصية، مع تجنب طلب بيانات شخصية لا حاجة لها.":"The form should clearly explain the information requested, who receives the complaint, and how privacy is handled, while avoiding unnecessary personal data.",
+"🎓 مساحة الخريجين":"🎓 Alumni Space",
+"قسم يتطور ليبقى الخريج مرتبطًا بالكلية بعد التخرج، ويجمع ما يفيده في الانتقال إلى الممارسة والتطوير المهني والبحث.":"A developing space to keep graduates connected with the Faculty and support transition to practice, professional development, and research.",
+"📌 تحديث بيانات الخريجين":"📌 Alumni Data Updates",
+"مكان مخصص مستقبلًا لتحديث بيانات التواصل، جهة العمل، والدراسات العليا بما يدعم متابعة الخريجين.":"A future space for updating contact details, employment, and postgraduate-study information to support alumni follow-up.",
+"📚 التعلم بعد التخرج":"📚 Learning After Graduation",
+"الوصول إلى المكتبة الرقمية، الأدلة، المقالات، ومصادر التطوير المهني المستمر.":"Access to the digital library, guides, articles, and continuing professional-development resources.",
+"فتح المكتبة الرقمية":"Open Digital Library",
+"🔬 البحث والدراسات العليا":"🔬 Research & Postgraduate Study",
+"مصادر البحث العلمي، PubMed، MeSH، الكتابة الأكاديمية، ومهارات إعداد الدراسات والأوراق العلمية.":"Research resources, PubMed, MeSH, academic writing, and skills for developing studies and scholarly papers.",
+"🤝 التواصل والمشاركة":"🤝 Connection & Participation",
+"يمكن لاحقًا إضافة استبيانات الخريجين، فرص المشاركة في أنشطة الكلية، وخبرات الخريجين التي تفيد الطلبة الحاليين.":"Future additions can include alumni surveys, opportunities to participate in Faculty activities, and graduate experiences that benefit current students.",
+"هذا القسم في مرحلة البناء وسيُوسّع تدريجيًا وفق بيانات واحتياجات الخريجين.":"This section is under development and will expand gradually according to alumni data and needs.",
 "دعم المقررات والتعلّم والمراجعة.":"Course learning and revision support.",
 "النموذج الحالي:":"Current prototype:",
 "لغة إنجليزية 2":"English II",
