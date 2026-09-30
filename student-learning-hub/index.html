@@ -191,6 +191,7 @@ textarea{width:100%;min-height:100px;border:1px solid var(--line);border-radius:
   <button type="button" data-route="simulation">🩺 محاكاة المهارات</button>
   <button type="button" data-route="library">🌐 المكتبة الرقمية</button>
   <button type="button" onclick="document.getElementById('yearHubTitle')?.scrollIntoView({behavior:'smooth',block:'start'})">🗓️ العام الأكاديمي</button>
+  <button type="button" data-hub-detail="quality">✅ الجودة والتحسين</button>
   <a href="https://forms.gle/1SRA82yXSH1QpRkz5" target="_blank" rel="noopener">📝 الشكاوى والملاحظات</a>
  </div>
  <div class="notice" id="masterNotice">
@@ -247,6 +248,9 @@ textarea{width:100%;min-height:100px;border:1px solid var(--line);border-radius:
   </button>
   <button class="hubTile" type="button" data-hub-detail="skills">
    <span class="hubTileIcon">🚀</span><span class="hubTileTitle">طوّر مهاراتك</span>
+  </button>
+  <button class="hubTile" type="button" data-hub-detail="quality">
+   <span class="hubTileIcon">✅</span><span class="hubTileTitle">شارك في تحسين الجودة</span>
   </button>
   <button class="hubTile" type="button" data-hub-detail="complaints">
    <span class="hubTileIcon">📝</span><span class="hubTileTitle">سجل الشكاوى والملاحظات</span>
@@ -417,6 +421,46 @@ textarea{width:100%;min-height:100px;border:1px solid var(--line);border-radius:
    <div class="verifiedNote"><b>ملاحظة مهمة:</b> لا تعني كلمة «مجاني» دائمًا أن الشهادة مجانية. راجع وصف كل منصة؛ إدراك مجاني مع شهادة إتمام مجانية، بينما Alison يتيح الدراسة مجانًا وغالبًا تكون الشهادة اختيارية مدفوعة، وCoursera يختلف حسب المقرر.</div>
   </article>
  </div></div>
+
+ <div class="hubDetail" id="hubDetail-quality"><div class="hubDetailTop"><button class="hubBack" type="button">← رجوع</button></div><article class="academicCard">
+   <h3>✅ شارك في تحسين الجودة</h3>
+   <p>رأيك جزء من تحسين التعليم والخدمات والتدريب في كلية التمريض. تُستخدم نتائج الاستبانات في تحديد نقاط القوة وجوانب التحسين ودعم خطط المتابعة والتطوير.</p>
+   <div class="verifiedNote"><b>طريقة الاستخدام:</b> لا تُفتح جميع الاستبانات في وقت واحد. يفعّل قسم ضمان الجودة كل أداة عند الحاجة ووفق توقيتها، حتى تكون المشاركة قصيرة وذات معنى ولا تتكرر الأسئلة على الطلبة.</div>
+   <div class="platformGrid">
+    <div class="platformItem">
+     <h4>📝 الشكاوى والملاحظات</h4>
+     <p>لتسجيل شكوى أو ملاحظة بصورة منظمة حتى يمكن إحالتها ومتابعتها من الجهة المختصة.</p>
+     <span class="tag">متاح الآن</span>
+     <div class="actions"><a class="btn gold" href="https://forms.gle/1SRA82yXSH1QpRkz5" target="_blank" rel="noopener">فتح النموذج ↗</a></div>
+    </div>
+    <div class="platformItem">
+     <h4>🎓 تجربة الطالب التعليمية والخدمات المساندة</h4>
+     <p>لقياس تجربة الطالب في التعليم والدعم الطلابي وبيئة التعلم والخدمات ومصادر التعلم والمرافق.</p>
+     <span class="tag">يُفتح وفق خطة الجودة</span>
+    </div>
+    <div class="platformItem">
+     <h4>📚 تجربة المقرر والتعلّم وأساليب التدريس</h4>
+     <p>لقياس وضوح المقرر وتنظيمه والتقويم وصعوبات التعلم وربط الجانب النظري بالتطبيق، مع أسئلة مهنية عن تجربة التدريس.</p>
+     <span class="tag">يُفتح في التوقيت المناسب للمقرر</span>
+    </div>
+    <div class="platformItem">
+     <h4>🩺 تجربة التدريب السريري</h4>
+     <p>لقياس جودة التدريب السريري وبيئة التدريب والإشراف والسلامة ومدى الاستفادة من الخبرة العملية.</p>
+     <span class="tag">يُفتح بعد فترات التدريب</span>
+    </div>
+    <div class="platformItem">
+     <h4>🧭 الدعم الأكاديمي المبكر</h4>
+     <p>يساعد على تشخيص أسباب التعثر والصعوبات الدراسية وتحديد نوع الدعم الذي يحتاجه الطالب مبكرًا، ويُستخدم خصوصًا عند ظهور مؤشرات تعثر.</p>
+     <span class="tag">يُفتح عند الحاجة</span>
+    </div>
+    <div class="platformItem">
+     <h4>💡 استطلاعات التطوير والمشاركة</h4>
+     <p>تظهر هنا الاستطلاعات الخاصة بالخطة الاستراتيجية أو أولويات التطوير وخدمة المجتمع عندما تكون مشاركة الطلبة مطلوبة.</p>
+     <span class="tag">حسب موضوع الاستطلاع</span>
+    </div>
+   </div>
+   <div class="callout"><b>الخصوصية والمشاركة:</b> تُطلب البيانات الشخصية فقط عندما تكون ضرورية لطبيعة النموذج. في استبانات الرأي يُفضّل عدم طلب الاسم، وتُستخدم النتائج لأغراض القياس والتحسين المؤسسي.</div>
+  </article></div>
 
  <div class="hubDetail" id="hubDetail-complaints"><div class="hubDetailTop"><button class="hubBack" type="button">← رجوع</button></div><article class="academicCard">
    <h3>📝 سجل الشكاوى والملاحظات</h3>
@@ -800,6 +844,33 @@ const staticTextMap={
 "🌐 المكتبة الرقمية":"🌐 Digital Library",
 "🗓️ العام الأكاديمي":"🗓️ Academic Year",
 "📝 الشكاوى والملاحظات":"📝 Complaints & Feedback",
+"✅ الجودة والتحسين":"✅ Quality & Improvement",
+"شارك في تحسين الجودة":"Take Part in Quality Improvement",
+"✅ شارك في تحسين الجودة":"✅ Take Part in Quality Improvement",
+"رأيك جزء من تحسين التعليم والخدمات والتدريب في كلية التمريض. تُستخدم نتائج الاستبانات في تحديد نقاط القوة وجوانب التحسين ودعم خطط المتابعة والتطوير.":"Your feedback helps improve teaching, services, and clinical training at the Faculty of Nursing. Survey results are used to identify strengths, improvement needs, and follow-up actions.",
+"طريقة الاستخدام:":"How it works:",
+"لا تُفتح جميع الاستبانات في وقت واحد. يفعّل قسم ضمان الجودة كل أداة عند الحاجة ووفق توقيتها، حتى تكون المشاركة قصيرة وذات معنى ولا تتكرر الأسئلة على الطلبة.":"Not all surveys are opened at the same time. The Quality Assurance Unit activates each tool when needed and at the appropriate point, keeping participation focused and avoiding repeated questions.",
+"📝 الشكاوى والملاحظات":"📝 Complaints & Feedback",
+"لتسجيل شكوى أو ملاحظة بصورة منظمة حتى يمكن إحالتها ومتابعتها من الجهة المختصة.":"Submit a complaint or feedback in a structured way so it can be referred and followed up by the responsible unit.",
+"متاح الآن":"Available now",
+"فتح النموذج ↗":"Open form ↗",
+"🎓 تجربة الطالب التعليمية والخدمات المساندة":"🎓 Student Learning Experience & Support Services",
+"لقياس تجربة الطالب في التعليم والدعم الطلابي وبيئة التعلم والخدمات ومصادر التعلم والمرافق.":"Measures the student experience across teaching, student support, the learning environment, services, learning resources, and facilities.",
+"يُفتح وفق خطة الجودة":"Opened according to the quality plan",
+"📚 تجربة المقرر والتعلّم وأساليب التدريس":"📚 Course, Learning & Teaching Experience",
+"لقياس وضوح المقرر وتنظيمه والتقويم وصعوبات التعلم وربط الجانب النظري بالتطبيق، مع أسئلة مهنية عن تجربة التدريس.":"Measures course clarity and organisation, assessment, learning difficulties, theory-practice links, and professional aspects of the teaching experience.",
+"يُفتح في التوقيت المناسب للمقرر":"Opened at the appropriate point in the course",
+"🩺 تجربة التدريب السريري":"🩺 Clinical Training Experience",
+"لقياس جودة التدريب السريري وبيئة التدريب والإشراف والسلامة ومدى الاستفادة من الخبرة العملية.":"Measures clinical training quality, the practice environment, supervision, safety, and the value of the practical experience.",
+"يُفتح بعد فترات التدريب":"Opened after clinical training periods",
+"🧭 الدعم الأكاديمي المبكر":"🧭 Early Academic Support",
+"يساعد على تشخيص أسباب التعثر والصعوبات الدراسية وتحديد نوع الدعم الذي يحتاجه الطالب مبكرًا، ويُستخدم خصوصًا عند ظهور مؤشرات تعثر.":"Helps identify causes of academic difficulty and the support a student may need early, especially when signs of difficulty appear.",
+"يُفتح عند الحاجة":"Opened when needed",
+"💡 استطلاعات التطوير والمشاركة":"💡 Development & Participation Surveys",
+"تظهر هنا الاستطلاعات الخاصة بالخطة الاستراتيجية أو أولويات التطوير وخدمة المجتمع عندما تكون مشاركة الطلبة مطلوبة.":"Surveys related to strategic planning, development priorities, or community service will appear here when student participation is requested.",
+"حسب موضوع الاستطلاع":"According to the survey topic",
+"الخصوصية والمشاركة:":"Privacy & participation:",
+"تُطلب البيانات الشخصية فقط عندما تكون ضرورية لطبيعة النموذج. في استبانات الرأي يُفضّل عدم طلب الاسم، وتُستخدم النتائج لأغراض القياس والتحسين المؤسسي.":"Personal information is requested only when necessary for the form. Opinion surveys should normally avoid asking for names, and results are used for measurement and institutional improvement.",
 "50 مقررًا":"50 courses",
 "4 سنوات دراسية":"4 study years",
 "محاكاة ومهارات":"Simulation & skills",
