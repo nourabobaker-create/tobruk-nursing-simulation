@@ -507,11 +507,16 @@ textarea{width:100%;min-height:100px;border:1px solid var(--line);border-radius:
      <li><b>إذا تغيب الطالب دون عذر:</b> يعد راسبًا وتُرصد له درجة صفر في الامتحان الذي تغيب عنه.</li>
      <li><b>المراجعة:</b> يجوز للطالب الراسب طلب مراجعة نتيجته في مقررين كحد أقصى، وتُشكل لجنة من ثلاثة أعضاء هيئة تدريس على الأقل، من بينهم أستاذ المقرر.</li>
     </ul>
-    <div class="callout"><b>توزيع الدرجات في الدليل:</b><br>
-      مقرر دون جزء عملي: 30% جزئي + 20% أعمال سنة وحضور + 50% نهائي.<br>
-      مقرر به جزء عملي: 10% جزئي + 20% أعمال سنة وحضور + 20% عملي + 50% نهائي.<br>
-      مقرر عملي/سريري: 70% تدريب عملي وسريري + 10% أعمال سنة وحضور + 20% نهائي.
+    <div class="callout"><b>درجة النجاح:</b><br>
+      الدرجة النهائية لكل مقرر من 100. الحد الأدنى للنجاح هو <b>60%</b> في المقررات التمريضية الأساسية والطبية المساندة، و<b>50%</b> في المقررات العامة فقط.<br>
+      ممتاز: 85–100 · جيد جدًا: 75–أقل من 85 · جيد: 65–أقل من 75 · مقبول: من حد النجاح إلى أقل من 65.
     </div>
+    <div class="callout"><b>التوزيع العام للدرجات وفق المادة (20):</b><br>
+      مقرر دون جزء عملي: 30% امتحان جزئي + 20% أعمال سنة وحضور وغياب + 50% امتحان نهائي.<br>
+      مقرر يحتوي على جزء عملي: 10% امتحان جزئي + 20% أعمال سنة وحضور وغياب + 20% امتحان عملي + 50% امتحان نهائي.<br>
+      مقرر عملي/سريري: 70% تدريبات عملية وسريرية + 10% أعمال سنة وحضور وغياب + 20% امتحان نهائي.
+    </div>
+    <div class="callout warn"><b>مهم:</b> بعض توصيفات المقررات داخل الدليل تسرد توزيعًا تفصيليًا مختلفًا قليلًا عن القاعدة العامة في المادة (20). لذلك يعرض «رفيق الدراسة» توزيع توصيف كل مقرر للتعريف، ويظل التوزيع الذي تعلنه الكلية/أستاذ المقرر في بداية الفصل هو المعتمد للتطبيق.</div>
    </article>
 
    <article class="card">
@@ -759,6 +764,19 @@ const T={
  }
 };
 const staticTextMap={
+
+"درجة النجاح:":"Pass mark:",
+"الدرجة النهائية لكل مقرر من 100. الحد الأدنى للنجاح هو":"Each course is graded out of 100. The minimum pass mark is",
+"في المقررات التمريضية الأساسية والطبية المساندة، و":"for core nursing and supporting medical courses, and",
+"في المقررات العامة فقط.":"for general courses only.",
+"ممتاز: 85–100 · جيد جدًا: 75–أقل من 85 · جيد: 65–أقل من 75 · مقبول: من حد النجاح إلى أقل من 65.":"Excellent: 85–100 · Very Good: 75–<85 · Good: 65–<75 · Pass: from the applicable pass mark to <65.",
+"التوزيع العام للدرجات وفق المادة (20):":"General assessment distribution under Article 20:",
+"مقرر دون جزء عملي: 30% امتحان جزئي + 20% أعمال سنة وحضور وغياب + 50% امتحان نهائي.":"Course without a practical component: 30% midterm + 20% coursework/attendance + 50% final examination.",
+"مقرر يحتوي على جزء عملي: 10% امتحان جزئي + 20% أعمال سنة وحضور وغياب + 20% امتحان عملي + 50% امتحان نهائي.":"Course with a practical component: 10% midterm + 20% coursework/attendance + 20% practical examination + 50% final examination.",
+"مقرر عملي/سريري: 70% تدريبات عملية وسريرية + 10% أعمال سنة وحضور وغياب + 20% امتحان نهائي.":"Practical/clinical course: 70% practical and clinical training + 10% coursework/attendance + 20% final examination.",
+"مهم:":"Important:",
+"بعض توصيفات المقررات داخل الدليل تسرد توزيعًا تفصيليًا مختلفًا قليلًا عن القاعدة العامة في المادة (20). لذلك يعرض «رفيق الدراسة» توزيع توصيف كل مقرر للتعريف، ويظل التوزيع الذي تعلنه الكلية/أستاذ المقرر في بداية الفصل هو المعتمد للتطبيق.":"Some course descriptions in the Guide list a detailed assessment split that differs slightly from the general Article 20 rule. Study Companion therefore shows the distribution stated in each course description for orientation, while the Faculty/instructor's officially announced distribution for the current semester is the one to follow."
+,
 
 "كلية التمريض · جامعة طبرق":"Faculty of Nursing · Tobruk University",
 "رواه مسلم":"Sahih Muslim",
