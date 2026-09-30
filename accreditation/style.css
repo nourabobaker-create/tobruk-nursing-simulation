@@ -7,3 +7,5 @@
 .criterion-practices{background:#f0f4e9;padding:9px;border-radius:6px;margin-top:13px}.criterion-practices small{font-size:9px;line-height:1.9;color:#5a745b}
 
 .status.documented_pending_review{background:#e7efe0;color:#526e43}
+
+.status.central_evidence_needed,.status.central_verification_needed{background:#e8eef7;color:#536b8a}.status.field_evidence_needed{background:#f7efd6;color:#89713b}.status.development_gap{background:#fae8de;color:#9f623d}.status.competency_evidence_needed{background:#efe8f7;color:#72578a}
