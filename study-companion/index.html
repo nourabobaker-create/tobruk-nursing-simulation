@@ -110,6 +110,15 @@ details.q{border:1px solid var(--line);border-radius:15px;padding:11px 13px;marg
 @media(max-width:980px){.courseDashboard{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:560px){.courseDashboard{grid-template-columns:1fr}.studyDock{left:10px;bottom:10px}.chatLauncher{right:10px;bottom:10px}.fab{padding:10px 12px}.chatbox{right:10px;bottom:65px}.courseReturn{align-items:flex-start;flex-direction:column}}
 
+
+.assessmentCard{margin:12px 0 16px;border:1px solid #d7e5de;border-radius:17px;padding:14px;background:#f8fbfa}
+.assessmentCard h3{margin:0 0 7px;color:var(--green);font-size:15px}
+.assessmentGrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px;margin-top:9px}
+.assess{border:1px solid var(--line);border-radius:12px;padding:9px;background:#fff;text-align:center}
+.assess b{display:block;color:var(--green);font-size:16px}.assess small{color:var(--muted)}
+.passTag{display:inline-block;background:var(--gold2);color:#6b5016;border-radius:999px;padding:6px 10px;font-weight:900;font-size:12px}
+.ruleNote{margin-top:9px;color:var(--muted);font-size:12px}
+@media(max-width:650px){.assessmentGrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 </style>
 </head>
 <body>
@@ -126,6 +135,7 @@ details.q{border:1px solid var(--line);border-radius:15px;padding:11px 13px;marg
 </section>
 
 <div class="notice"><b>استخدم رفيق الدراسة لبناء الفهم أولًا.</b> ثم ارجع إلى المحاضرات وأستاذ المقرر والمواد المعتمدة للتفاصيل المطلوبة في الدراسة والتقييم.</div>
+<div class="notice"><b>النجاح والتقييم حسب دليل كليات التمريض:</b> الدرجة النهائية لكل مقرر من 100. الحد الأدنى للنجاح هو <b>60%</b> في المقررات التمريضية الأساسية والطبية المساندة، و<b>50%</b> في المقررات العامة. التقديرات: ممتاز 85–100، جيد جدًا 75–أقل من 85، جيد 65–أقل من 75، ثم مقبول حسب حد النجاح الخاص بنوع المقرر. ستجد داخل كل مقرر توزيع الدرجات الوارد في توصيفه.</div>
 
 
 <section id="course-home">
@@ -147,7 +157,8 @@ details.q{border:1px solid var(--line);border-radius:15px;padding:11px 13px;marg
   <div class="meta"><span><b>الرمز:</b> LANG 100ly</span><span><b>النوع:</b> عام</span><span><b>الوحدات:</b> 2</span><span><b>ساعات الاتصال:</b> 32</span><span><b>عبء التعلّم:</b> 72</span><span><b>ECTS:</b> 3</span><span><b>المتطلب السابق:</b> لا يوجد</span></div>
  </div>
  <div class="courseBody">
-  <div class="courseReturn"><button class="btn" type="button" data-course-home>← كل المقررات</button><div class="courseToolsInline"><button class="btn" type="button" data-open-notes="arabic">📝 ملاحظاتي في هذا المقرر</button></div></div>
+  <div class="courseReturn"><button class="btn" type="button" data-course-home>← كل المقررات</button><div class="courseToolsInline"><button class="btn" type="button" data-open-notes="arabic">📝 ملاحظاتي في هذا المقرر</button></div>
+<div class="assessmentCard"><h3>📊 التقييم والنجاح</h3><span class="passTag">درجة النجاح: 50% · مقرر عام</span><div class="assessmentGrid"><div class="assess"><b>20%</b><small>حضور ومشاركة</small></div><div class="assess"><b>30%</b><small>اختبارات / جزئي</small></div><div class="assess"><b>50%</b><small>نهائي</small></div></div><div class="ruleNote">التوزيع أعلاه هو الوارد في توصيف المقرر بالدليل.</div></div></div>
   <div class="compactGrid">
    <div class="box"><h3>ما الذي يفيدك فيه هذا المقرر؟</h3><p>اللغة أداة للفهم والتواصل. يحتاج طالب التمريض إلى قراءة السؤال والتعليمات بدقة، ترتيب أفكاره، والتعبير عنها بصورة واضحة في الحديث والكتابة.</p></div>
    <div class="scenario"><h3>🩺 موقف قد تواجهه</h3><p>عند سؤال مريض عن علاجه، قد يعطي السؤال العام إجابة عامة. صياغة سؤال محدد وواضح تساعدك على الحصول على معلومة أدق.</p></div>
@@ -171,7 +182,8 @@ details.q{border:1px solid var(--line);border-radius:15px;padding:11px 13px;marg
   <div class="meta"><span><b>الرمز:</b> ENGL 101ly</span><span><b>النوع:</b> عام</span><span><b>الوحدات:</b> 2</span><span><b>ساعات الاتصال:</b> 32</span><span><b>عبء التعلّم:</b> 72</span><span><b>ECTS:</b> 3</span><span><b>المتطلب السابق:</b> لا يوجد</span></div>
  </div>
  <div class="courseBody">
-  <div class="courseReturn"><button class="btn" type="button" data-course-home>← كل المقررات</button><div class="courseToolsInline"><button class="btn" type="button" data-open-notes="english">📝 ملاحظاتي في هذا المقرر</button></div></div>
+  <div class="courseReturn"><button class="btn" type="button" data-course-home>← كل المقررات</button><div class="courseToolsInline"><button class="btn" type="button" data-open-notes="english">📝 ملاحظاتي في هذا المقرر</button></div>
+<div class="assessmentCard"><h3>📊 التقييم والنجاح</h3><span class="passTag">درجة النجاح: 50% · مقرر عام</span><div class="assessmentGrid"><div class="assess"><b>15%</b><small>حضور ومشاركة</small></div><div class="assess"><b>20%</b><small>اختبار / جزئي</small></div><div class="assess"><b>15%</b><small>نشاط كتابي</small></div><div class="assess"><b>50%</b><small>نهائي</small></div></div><div class="ruleNote">التوزيع أعلاه هو الوارد في توصيف English Language 1 بالدليل.</div></div></div>
   <div class="compactGrid">
    <div class="box"><h3>لماذا تهم طالب التمريض؟</h3><p>الإنجليزية في التمريض ليست حفظ كلمات فقط. هي أداة لفهم المصطلح والتعليمات، طرح سؤال واضح، التأكد من أنك فهمت المريض أو الزميل بصورة صحيحة، ونقل معلومة دون لبس.</p></div>
    <div class="scenario"><h3>🩺 موقف قد تواجهه</h3><p>المريض يقول لك كلمة أو وصفًا لم تفهمه جيدًا. بدل التخمين، تحتاج إلى جملة بسيطة تطلب بها التوضيح ثم تعيد المعنى للتأكد من أنكما تقصدان الشيء نفسه.</p></div>
@@ -241,7 +253,8 @@ details.q{border:1px solid var(--line);border-radius:15px;padding:11px 13px;marg
   <div class="meta"><span><b>الرمز:</b> BIOL 101aly</span><span><b>النوع:</b> طبي مساند</span><span><b>الوحدات:</b> 5 (4 نظري + 1 معمل)</span><span><b>ساعات الاتصال:</b> 96</span><span><b>عبء التعلّم:</b> 146</span><span><b>ECTS:</b> 6</span><span><b>المتطلب السابق:</b> لا يوجد</span></div>
  </div>
  <div class="courseBody">
-  <div class="courseReturn"><button class="btn" type="button" data-course-home>← كل المقررات</button><div class="courseToolsInline"><button class="btn" type="button" data-open-notes="anatomy">📝 ملاحظاتي في هذا المقرر</button></div></div>
+  <div class="courseReturn"><button class="btn" type="button" data-course-home>← كل المقررات</button><div class="courseToolsInline"><button class="btn" type="button" data-open-notes="anatomy">📝 ملاحظاتي في هذا المقرر</button></div>
+<div class="assessmentCard"><h3>📊 التقييم والنجاح</h3><span class="passTag">درجة النجاح: 60% · مقرر طبي مساند</span><div class="assessmentGrid"><div class="assess"><b>20%</b><small>حضور ومشاركة</small></div><div class="assess"><b>10%</b><small>أعمال المعمل</small></div><div class="assess"><b>30%</b><small>اختبارات / جزئي</small></div><div class="assess"><b>40%</b><small>نهائي</small></div></div><div class="ruleNote">هذا توزيع توصيف المقرر. توجد في المادة (20) من الدليل قاعدة عامة مختلفة للمقررات ذات الجزء العملي؛ لذلك عند بدء الفصل يُعتمد توزيع الدرجات الذي تعلنه الكلية/أستاذ المقرر رسميًا.</div></div></div>
   <div class="bigIdea">الفكرة الكبرى: <span dir="ltr">Anatomy</span> يشرح <b>بناء الجسم ومواقع أجزائه</b>، و<span dir="ltr">Physiology</span> يشرح <b>كيف تعمل هذه الأجزاء</b>. عندما تجمع الاثنين تبدأ في فهم ما هو طبيعي، ولماذا تظهر علامة أو مشكلة عندما يتغير هذا الطبيعي.</div>
 
   <h3 class="sectionTitle">الصورة العامة للجسم</h3>
@@ -304,7 +317,8 @@ details.q{border:1px solid var(--line);border-radius:15px;padding:11px 13px;marg
   <div class="meta"><span><b>الرمز:</b> SOCSCI 100ly</span><span><b>النوع:</b> عام</span><span><b>الوحدات:</b> 2</span><span><b>ساعات الاتصال:</b> 32</span><span><b>عبء التعلّم:</b> 72</span><span><b>ECTS:</b> 3</span><span><b>لغة التدريس:</b> العربية</span><span><b>المتطلب السابق:</b> لا يوجد</span></div>
  </div>
  <div class="courseBody">
-  <div class="courseReturn"><button class="btn" type="button" data-course-home>← كل المقررات</button><div class="courseToolsInline"><button class="btn" type="button" data-open-notes="sociology">📝 ملاحظاتي في هذا المقرر</button></div></div>
+  <div class="courseReturn"><button class="btn" type="button" data-course-home>← كل المقررات</button><div class="courseToolsInline"><button class="btn" type="button" data-open-notes="sociology">📝 ملاحظاتي في هذا المقرر</button></div>
+<div class="assessmentCard"><h3>📊 التقييم والنجاح</h3><span class="passTag">درجة النجاح: 50% · مقرر عام</span><div class="assessmentGrid"><div class="assess"><b>20%</b><small>حضور ومشاركة</small></div><div class="assess"><b>30%</b><small>اختبار / جزئي</small></div><div class="assess"><b>50%</b><small>نهائي</small></div></div></div></div>
   <div class="bigIdea">الصحة والمرض لا يحدثان داخل الجسم فقط. ظروف الأسرة، التعليم، الدخل، العمل، السكن، العلاقات الاجتماعية، الثقافة والوصول إلى الخدمات قد تؤثر في السلوك الصحي وفي تجربة المريض مع المرض والعلاج.</div>
 
   <h3 class="sectionTitle">ما الذي يفتح عينيك عليه هذا المقرر؟</h3>
@@ -340,7 +354,8 @@ details.q{border:1px solid var(--line);border-radius:15px;padding:11px 13px;marg
   <div class="meta"><span><b>الرمز:</b> NURS 101ly</span><span><b>النوع:</b> تخصصي</span><span><b>الوحدات:</b> 4</span><span><b>ساعات الاتصال:</b> 64</span><span><b>عبء التعلّم:</b> 96</span><span><b>ECTS:</b> 4</span><span><b>لغة التدريس:</b> الإنجليزية</span><span><b>المتطلب السابق:</b> لا يوجد</span></div>
  </div>
  <div class="courseBody">
-  <div class="courseReturn"><button class="btn" type="button" data-course-home>← كل المقررات</button><div class="courseToolsInline"><button class="btn" type="button" data-open-notes="theory">📝 ملاحظاتي في هذا المقرر</button></div></div>
+  <div class="courseReturn"><button class="btn" type="button" data-course-home>← كل المقررات</button><div class="courseToolsInline"><button class="btn" type="button" data-open-notes="theory">📝 ملاحظاتي في هذا المقرر</button></div>
+<div class="assessmentCard"><h3>📊 التقييم والنجاح</h3><span class="passTag">درجة النجاح: 60% · مقرر تمريضي تخصصي</span><div class="assessmentGrid"><div class="assess"><b>20%</b><small>حضور ومشاركة</small></div><div class="assess"><b>30%</b><small>اختبارات / جزئي</small></div><div class="assess"><b>50%</b><small>نهائي</small></div></div></div></div>
   <div class="bigIdea">التمريض ليس قائمة إجراءات. النظرية تساعدك على الإجابة عن أسئلة أعمق: من هو الإنسان الذي أرعاه؟ ماذا تعني الصحة؟ كيف تؤثر البيئة؟ وما دور الممرض؟</div>
 
   <h3 class="sectionTitle">أربع أفكار مركزية</h3>
@@ -383,7 +398,8 @@ details.q{border:1px solid var(--line);border-radius:15px;padding:11px 13px;marg
   <div class="meta"><span><b>الرمز:</b> CHEM 101ly</span><span><b>النوع:</b> طبي مساند</span><span><b>الوحدات:</b> 4 (3 نظري + 1 معمل)</span><span><b>ساعات الاتصال:</b> 80</span><span><b>عبء التعلّم:</b> 110</span><span><b>ECTS:</b> 5</span><span><b>لغة التدريس:</b> الإنجليزية</span><span><b>المتطلب السابق:</b> لا يوجد</span></div>
  </div>
  <div class="courseBody">
-  <div class="courseReturn"><button class="btn" type="button" data-course-home>← كل المقررات</button><div class="courseToolsInline"><button class="btn" type="button" data-open-notes="biochem">📝 ملاحظاتي في هذا المقرر</button></div></div>
+  <div class="courseReturn"><button class="btn" type="button" data-course-home>← كل المقررات</button><div class="courseToolsInline"><button class="btn" type="button" data-open-notes="biochem">📝 ملاحظاتي في هذا المقرر</button></div>
+<div class="assessmentCard"><h3>📊 التقييم والنجاح</h3><span class="passTag">درجة النجاح: 60% · مقرر طبي مساند</span><div class="assessmentGrid"><div class="assess"><b>20%</b><small>حضور ومشاركة</small></div><div class="assess"><b>10%</b><small>أعمال المعمل</small></div><div class="assess"><b>30%</b><small>اختبارات / جزئي</small></div><div class="assess"><b>40%</b><small>نهائي</small></div></div><div class="ruleNote">هذا توزيع توصيف المقرر. توجد في المادة (20) قاعدة عامة للمقررات ذات الجزء العملي؛ يعتمد الطالب التوزيع الرسمي المعلن للمقرر في الفصل الحالي.</div></div></div>
   <div class="bigIdea">الكيمياء الحيوية تشرح ما يحدث داخل الجسم على مستوى الجزيئات: كيف نحصل على الطاقة، لماذا يحتاج الجسم الماء والأملاح، كيف تعمل الإنزيمات، وكيف ترتبط الجلوكوز والدهون والبروتينات والفيتامينات بالصحة والمرض.</div>
 
   <h3 class="sectionTitle">ابدأ بهذه الخريطة</h3>
@@ -423,7 +439,8 @@ details.q{border:1px solid var(--line);border-radius:15px;padding:11px 13px;marg
   <div class="meta"><span><b>الرمز:</b> NURS 102ly</span><span><b>النوع:</b> تخصصي عملي</span><span><b>الوحدات:</b> 2</span><span><b>ساعات الاتصال:</b> 64 معمل</span><span><b>عبء التعلّم:</b> 100</span><span><b>ECTS:</b> 4</span><span><b>لغة التدريس:</b> الإنجليزية</span><span><b>المتطلب السابق:</b> لا يوجد</span></div>
  </div>
  <div class="courseBody">
-  <div class="courseReturn"><button class="btn" type="button" data-course-home>← كل المقررات</button><div class="courseToolsInline"><button class="btn" type="button" data-open-notes="rle1">📝 ملاحظاتي في هذا المقرر</button></div></div>
+  <div class="courseReturn"><button class="btn" type="button" data-course-home>← كل المقررات</button><div class="courseToolsInline"><button class="btn" type="button" data-open-notes="rle1">📝 ملاحظاتي في هذا المقرر</button></div>
+<div class="assessmentCard"><h3>📊 التقييم والنجاح</h3><span class="passTag">درجة النجاح: 60% · مقرر تمريضي عملي</span><div class="assessmentGrid"><div class="assess"><b>70%</b><small>Return Demonstrations / أداء عملي</small></div><div class="assess"><b>10%</b><small>حضور</small></div><div class="assess"><b>20%</b><small>نهائي</small></div></div><div class="ruleNote">يتطابق هذا التوزيع مع توصيف المقرر ونظام المقررات العملية/السريرية الوارد بالدليل.</div></div></div>
   <div class="bigIdea">هنا تبدأ المعرفة بالتحول إلى أداء. الهدف ليس أن «تقلد خطوات» فقط، بل أن تعرف لماذا تفعل الخطوة، كيف تحمي المريض ونفسك، وكيف تلاحظ الخطأ وتصححه.</div>
 
   <h3 class="sectionTitle">المحاور الأساسية</h3>
@@ -473,7 +490,8 @@ details.q{border:1px solid var(--line);border-radius:15px;padding:11px 13px;marg
   <div class="meta"><span><b>الرمز:</b> LANG 102ly</span><span><b>النوع:</b> عام</span><span><b>الوحدات:</b> 2</span><span><b>ساعات الاتصال:</b> 32</span><span><b>عبء التعلّم:</b> 56</span><span><b>ECTS:</b> 2</span><span><b>المتطلب السابق:</b> لا يوجد</span></div>
  </div>
  <div class="courseBody">
-  <div class="courseReturn"><button class="btn" type="button" data-course-home>← كل المقررات</button><div class="courseToolsInline"><button class="btn" type="button" data-open-notes="islamic">📝 ملاحظاتي في هذا المقرر</button></div></div>
+  <div class="courseReturn"><button class="btn" type="button" data-course-home>← كل المقررات</button><div class="courseToolsInline"><button class="btn" type="button" data-open-notes="islamic">📝 ملاحظاتي في هذا المقرر</button></div>
+<div class="assessmentCard"><h3>📊 التقييم والنجاح</h3><span class="passTag">درجة النجاح: 50% · مقرر عام</span><div class="assessmentGrid"><div class="assess"><b>10%</b><small>حضور</small></div><div class="assess"><b>20%</b><small>أنشطة وتكليفات</small></div><div class="assess"><b>20%</b><small>اختبار / جزئي</small></div><div class="assess"><b>50%</b><small>نهائي</small></div></div><div class="ruleNote">التوزيع أعلاه هو الوارد في توصيف المقرر بالدليل.</div></div></div>
   <div class="compactGrid">
    <div class="box"><h3>ما الذي يتناوله المقرر؟</h3><p>مدخل إلى القرآن والسنة والسيرة، وأسس الفقه، والثقافة والحضارة الإسلامية، وعلاقة الإسلام بالحياة الاجتماعية والعلم وغيرها من القضايا العامة.</p></div>
    <div class="scenario"><h3>🩺 صلة مفيدة بالممارسة</h3><p>العمل مع الناس يتطلب احترام معتقداتهم وقيمهم وخصوصيتهم. فهم الخلفية الدينية والثقافية يساعد على التواصل باحترام، مع الرجوع إلى المختصين عند وجود مسألة شرعية أو سريرية تحتاج حكمًا دقيقًا.</p></div>
