@@ -108,6 +108,8 @@ iframe.appframe{width:100%;height:calc(100dvh - 155px);min-height:640px;border:0
 .bullets{margin:9px 0;padding-inline-start:22px}.bullets li{margin:8px 0}
 .callout{background:var(--green3);border:1px solid #cfe3da;border-radius:16px;padding:14px 15px;margin:12px 0}
 .callout.warn{background:#fff7e2;border-color:#ead395}
+.guideDocLink{color:var(--green);font-weight:900;text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:4px;cursor:pointer}
+.guideDocLink:hover{color:var(--green2)}
 .refbox{background:#f9fbfa;border:1px dashed #b9cdc4;border-radius:16px;padding:14px}
 .refbox b{color:var(--green)}
 .courseTools{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.courseTools input,.courseTools select{border:1px solid var(--line);border-radius:12px;padding:10px 12px;background:#fff;color:var(--ink)}
@@ -631,9 +633,9 @@ textarea{width:100%;min-height:100px;border:1px solid var(--line);border-radius:
   <div class="twocol">
    <article class="card">
     <h3>المراجع التي يجب الرجوع إليها</h3>
-    <div class="refbox"><b>1) دليل الطالب</b><br>النسخة الرسمية الكاملة المعتمدة لدى جامعة طبرق/الكلية.</div><br>
-    <div class="refbox"><b>2) دليل الجامعة</b><br>التعليمات والإجراءات الأكاديمية والطلابية الرسمية بجامعة طبرق.</div><br>
-    <div class="refbox"><b>3) دليل كليات التمريض</b><br>المرجع القطاعي للخطة الدراسية، المقررات، التدريب، والامتياز.</div>
+    <div class="refbox"><b>1) <a class="guideDocLink" href="https://tu.edu.ly/wp-content/uploads/2025/11/sg.pdf" target="_blank" rel="noopener">دليل الطالب</a></b><br>النسخة الرسمية الكاملة المعتمدة لدى جامعة طبرق/الكلية.</div><br>
+    <div class="refbox"><b>2) <a class="guideDocLink" href="https://tu.edu.ly/wp-content/uploads/2025/11/tug.pdf" target="_blank" rel="noopener">دليل الجامعة</a></b><br>التعليمات والإجراءات الأكاديمية والطلابية الرسمية بجامعة طبرق.</div><br>
+    <div class="refbox"><b>3) <a class="guideDocLink" href="https://su.edu.ly/arabic/index.php/files/28-ministry-of-education-and-scientific-research/31-medical-and-paramedical-colleges-directory?download=164%3Anursing-colleges-directory" target="_blank" rel="noopener">دليل الوزارة · دليل كليات التمريض</a></b><br>المرجع القطاعي للخطة الدراسية، المقررات، التدريب، والامتياز.</div>
    </article>
    <article class="card">
     <h3>كيف تستخدم هذا التطبيق مع الوثائق؟</h3>
@@ -789,6 +791,9 @@ const T={
  }
 };
 const staticTextMap={
+"دليل الطالب":"Student Guide",
+"دليل الجامعة":"University Guide",
+"دليل الوزارة · دليل كليات التمريض":"Ministry Guide · Nursing Faculties Guide",
 "📘 دليل الطالب":"📘 Student Guide",
 "📚 رفيق الدراسة":"📚 Study Companion",
 "🩺 محاكاة المهارات":"🩺 Skills Simulation",
