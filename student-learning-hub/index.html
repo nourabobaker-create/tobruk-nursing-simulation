@@ -51,6 +51,9 @@ main{max-width:1500px;margin:auto;padding:18px}
 .hero p{font-size:17px;max-width:940px;margin:0;color:#eef9f4}
 .heroSummary{display:flex;gap:8px;flex-wrap:wrap;margin-top:17px;position:relative;z-index:1}
 .heroSummary span{display:inline-flex;align-items:center;gap:5px;padding:7px 10px;border-radius:999px;background:rgba(255,255,255,.11);border:1px solid rgba(255,255,255,.18);font-size:12px;font-weight:900;color:#fff}
+.quickPortalLinks{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 4px}
+.quickPortalLinks a,.quickPortalLinks button{border:1px solid var(--line);background:#fff;color:var(--green);border-radius:999px;padding:9px 13px;font-weight:900;text-decoration:none;cursor:pointer;box-shadow:0 5px 14px rgba(24,55,44,.05)}
+.quickPortalLinks a:hover,.quickPortalLinks button:hover{border-color:#b9cec4;background:var(--green3)}
 .heroactions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
 .hero .btn{border-color:rgba(255,255,255,.25)}
 .hero .btn.primary{background:#fff;color:var(--green)}
@@ -179,6 +182,14 @@ textarea{width:100%;min-height:100px;border:1px solid var(--line);border-radius:
    <span>🌐 عربي + English</span>
   </div>
   <div class="shareTop" id="shareTop"><div class="shareLead" id="shareLead">نشجّع أبناءنا الطلاب على مشاركة التطبيق مع أقرانهم في كليات التمريض بالجامعات الليبية، إيمانًا بأهمية نشر المعرفة وتبادل الفائدة.</div><div class="hadithTop" id="hadithTop">قال رسول الله صلى الله عليه وسلم: «مَنْ دَلَّ عَلَى خَيْرٍ فَلَهُ مِثْلُ أَجْرِ فَاعِلِهِ» <span class="hadithSource">رواه مسلم</span></div></div>
+ </div>
+ <div class="quickPortalLinks" id="quickPortalLinks">
+  <button type="button" data-route="guide">📘 دليل الطالب</button>
+  <button type="button" onclick="openStudyCompanion()">📚 رفيق الدراسة</button>
+  <button type="button" data-route="simulation">🩺 محاكاة المهارات</button>
+  <button type="button" data-route="library">🌐 المكتبة الرقمية</button>
+  <button type="button" onclick="document.getElementById('yearHubTitle')?.scrollIntoView({behavior:'smooth',block:'start'})">🗓️ العام الأكاديمي</button>
+  <a href="https://forms.gle/1SRA82yXSH1QpRkz5" target="_blank" rel="noopener">📝 الشكاوى والملاحظات</a>
  </div>
  <div class="notice" id="masterNotice">
   <strong>مهم قبل البدء:</strong> هذه البوابة وسيلة تعليمية مساندة وتجريبية، وليست بديلاً عن المقررات المعتمدة، أو عضو هيئة التدريس، أو التدريب العملي/السريري تحت الإشراف، أو اللوائح والأدلة الرسمية الكاملة. عند وجود أي اختلاف، يُرجع إلى الكلية وأستاذ المقرر والنسخة الرسمية الكاملة من الوثيقة.
@@ -778,6 +789,12 @@ const T={
  }
 };
 const staticTextMap={
+"📘 دليل الطالب":"📘 Student Guide",
+"📚 رفيق الدراسة":"📚 Study Companion",
+"🩺 محاكاة المهارات":"🩺 Skills Simulation",
+"🌐 المكتبة الرقمية":"🌐 Digital Library",
+"🗓️ العام الأكاديمي":"🗓️ Academic Year",
+"📝 الشكاوى والملاحظات":"📝 Complaints & Feedback",
 "50 مقررًا":"50 courses",
 "4 سنوات دراسية":"4 study years",
 "محاكاة ومهارات":"Simulation & skills",
