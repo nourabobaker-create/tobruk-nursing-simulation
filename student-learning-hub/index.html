@@ -175,8 +175,8 @@ textarea{width:100%;min-height:100px;border:1px solid var(--line);border-radius:
   </article>
   <article class="card">
    <div class="icon">📚</div><h2 id="c3t">رفيق الدراسة</h2>
-   <p id="c3p"><b>دعم المقررات والتعلّم والمراجعة.</b> جميع مقررات البرنامج مدرجة الآن كفهرس تعريفي من الدليل الموحد، بينما يظل المحتوى التعليمي التفصيلي الحالي نموذجًا محدودًا إلى حين الموافقة على التوسع.</p><div class="courseMeta" id="c3meta"><b>لغة إنجليزية 2</b><br>أستاذ المادة: نورا مسعود حمد بوبكر<br>الأحد · 10:00–12:00 · القاعة N5</div>
-   <div class="actions"><button class="btn primary" data-route="english" id="c3b">فتح لغة إنجليزية 2</button></div>
+   <p id="c3p"><b>دعم المقررات والتعلّم والمراجعة.</b> بدأ تطوير المحتوى من السنة الأولى – الفصل الأول، لشرح المقرر من الصفر وربطه بمواقف محتملة في التمريض قبل الانتقال إلى الحفظ والتفاصيل.</p><div class="courseMeta" id="c3meta"><b>السنة الأولى · الفصل الأول</b><br>اللغة العربية · English 1 · Anatomy &amp; Physiology 1<br>ويُستكمل باقي الفصل تدريجيًا</div>
+   <div class="actions"><button class="btn primary" type="button" onclick="location.href='../study-companion/'" id="c3b">فتح رفيق الدراسة</button></div>
   </article>
   <article class="card">
    <div class="icon">🌐</div><h2 id="c4t">المكتبة الرقمية والبحث</h2>
@@ -619,7 +619,7 @@ textarea{width:100%;min-height:100px;border:1px solid var(--line);border-radius:
  <button data-route="home">⌂<br>الرئيسية</button>
  <button data-route="simulation">🩺<br>المحاكاة</button>
  <button data-route="guide">📘<br>الدليل</button>
- <button data-route="english">📚<br>رفيق الدراسة</button>
+ <button type="button" onclick="location.href='../study-companion/'">📚<br>رفيق الدراسة</button>
  <button data-route="library">🌐<br>المكتبة</button>
 </div>
 </main>
@@ -731,7 +731,7 @@ const T={
  masterNotice:"<strong>مهم قبل البدء:</strong> هذه البوابة وسيلة تعليمية مساندة وتجريبية، وليست بديلاً عن المقررات المعتمدة، أو عضو هيئة التدريس، أو التدريب العملي/السريري تحت الإشراف، أو اللوائح والأدلة الرسمية الكاملة. عند وجود أي اختلاف، يُرجع إلى الكلية وأستاذ المقرر والنسخة الرسمية الكاملة من الوثيقة.",
  c1t:"محاكاة المهارات",c1p:"سبع وحدات مهارية تفاعلية تتضمن التعلم، الحركة المرئية، التدريب، المبررات، والأسئلة الكتابية.",c1b:"فتح المحاكاة",
  c2t:"دليل الطالب",c2p:"البداية، نظام الدراسة، الغياب، الامتحانات، المسار الدراسي، الخطة بأربع سنوات، الانضباط، والامتياز.",c2b:"فتح الدليل",
- c3t:"رفيق الدراسة",c3p:"دعم المقررات والتعلّم والمراجعة. جميع مقررات البرنامج مدرجة الآن كفهرس تعريفي من الدليل الموحد، بينما يظل المحتوى التعليمي التفصيلي الحالي نموذجًا محدودًا إلى حين الموافقة على التوسع.",c3b:"فتح لغة إنجليزية 2",
+ c3t:"رفيق الدراسة",c3p:"دعم المقررات والتعلّم والمراجعة. بدأ تطوير المحتوى من السنة الأولى – الفصل الأول، لشرح المقرر من الصفر وربطه بمواقف محتملة في التمريض قبل الانتقال إلى الحفظ والتفاصيل.",c3b:"فتح رفيق الدراسة",
  c4t:"المكتبة الرقمية والبحث",c4p:"كتب ومراجع مفتوحة، مقالات علمية، قوائم قراءة، دعم بحوث التخرج من الفكرة إلى المناقشة، رفيق دراسة، ومساحة قصيرة لاستعادة التركيز.",c4b:"فتح المكتبة ومركز البحث",
  trialTitle:"ما الذي نريد اختباره؟",trialSub:"ليس الكمال؛ بل سهولة الوصول، الفائدة، الوضوح، وما يستحق التطوير.",
  s1:"مهارات تمريضية تفاعلية",s2:"مقرراً في الخطة المرجعية",s3:"دروس في النموذج الحالي لمقرر لغة إنجليزية 2",s4:"دعم عربي/إنجليزي",
@@ -749,7 +749,7 @@ const T={
  masterNotice:"<strong>Before you start:</strong> This is a supplementary pilot learning resource. It does not replace the approved curriculum, instructors, supervised practical/clinical teaching, or complete official regulations and guides. If anything differs, follow the Faculty, course instructor, and the complete official document.",
  c1t:"Skills Simulation",c1p:"Seven interactive skills modules with visible movement, guided practice, rationales, and written practice.",c1b:"Open Simulation",
  c2t:"Student Guide",c2p:"Orientation, study rules, attendance, exams, four-year curriculum, conduct, and internship guidance.",c2b:"Open Guide",
- c3t:"Study Companion",c3p:"Course learning and revision support. All programme courses are now listed as an official-guide-based catalogue; detailed learning content remains limited until approval is given to expand.",c3b:"Open English II prototype",
+ c3t:"Study Companion",c3p:"Course learning and revision support. Development now begins with Year 1, Semester 1, building understanding from the ground up and linking concepts to plausible nursing situations before memorisation.",c3b:"Open Study Companion",
  c4t:"Digital Library & Research",c4p:"Open books and references, scholarly articles, reading lists, graduation-research support from idea to defense, study support, and a short reset room.",c4b:"Open Library & Research Hub",
  trialTitle:"What are we testing?",trialSub:"Not perfection — access, usefulness, clarity, and what is worth developing next.",
  s1:"interactive nursing skills",s2:"courses in the reference curriculum",s3:"lessons in the current English II course-support prototype",s4:"Arabic/English support",
