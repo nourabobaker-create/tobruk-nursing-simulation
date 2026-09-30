@@ -16,21 +16,24 @@
 body{margin:0;background:var(--bg);color:var(--ink);font-family:"Segoe UI",Tahoma,Arial,sans-serif;line-height:1.72}
 a{color:inherit}button{font:inherit}
 .top{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.topin{max-width:1180px;margin:auto;padding:10px 16px;display:flex;gap:10px;align-items:center}
+.topin{max-width:1220px;margin:auto;padding:10px 16px;display:flex;gap:10px;align-items:center}
 .brand{flex:1}.brand b{display:block}.brand small{color:var(--muted)}
 .btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;border:1px solid var(--line);border-radius:13px;padding:9px 13px;background:#fff;font-weight:800;cursor:pointer}
-main{max-width:1180px;margin:auto;padding:18px}
+main{max-width:1220px;margin:auto;padding:18px}
 .hero{background:linear-gradient(135deg,#0d5b43,#174f3e 63%,#8b702f);color:white;border-radius:28px;padding:28px;box-shadow:var(--shadow)}
 .hero .eyebrow{font-size:12px;font-weight:900;letter-spacing:.06em;opacity:.86}
-.hero h1{margin:7px 0 10px;font-size:clamp(28px,5vw,48px);line-height:1.15}.hero p{max-width:900px;margin:0;color:#eef8f4;font-size:16px}
+.hero h1{margin:7px 0 10px;font-size:clamp(28px,5vw,48px);line-height:1.15}.hero p{max-width:930px;margin:0;color:#eef8f4;font-size:16px}
 .notice{margin:15px 0;background:#fff;border:1px solid var(--line);border-radius:18px;padding:15px 17px}
 .notice b{color:var(--green)}
-.courseNav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin:18px 0}
+.courseNav{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin:18px 0}
 .courseNav a{border:1px solid var(--line);border-radius:15px;padding:12px;background:#fff;text-decoration:none;min-height:76px}
 .courseNav b{display:block;color:var(--green);font-size:13px}.courseNav small{display:block;color:var(--muted);margin-top:3px}
 .course{margin:17px 0;background:#fff;border:1px solid var(--line);border-radius:24px;box-shadow:0 8px 24px rgba(22,70,52,.05);overflow:hidden}
 .courseHead{padding:18px 20px;background:linear-gradient(180deg,#fff,#f9fbfa);border-bottom:1px solid var(--line)}
 .courseHead .num{font-size:12px;font-weight:900;color:var(--gold)}.courseHead h2{margin:2px 0 3px;font-size:24px}.courseHead .en{direction:ltr;text-align:right;color:var(--muted);font-weight:700}
+.meta{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}
+.meta span{background:#edf4f0;border:1px solid #d8e7df;border-radius:999px;padding:5px 9px;font-size:11px;color:#315248}
+.meta b{color:var(--green)}
 .courseBody{padding:20px}
 .compactGrid{display:grid;grid-template-columns:1.15fr .85fr;gap:12px}
 .box{border:1px solid var(--line);border-radius:17px;padding:14px;background:#fbfdfc}
@@ -50,10 +53,13 @@ main{max-width:1180px;margin:auto;padding:18px}
 .lab{background:var(--purplebg);border:1px solid #ded3ee;border-radius:18px;padding:15px}.lab h3{color:var(--purple);margin:0 0 6px}.lab p{margin:0}.labGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:11px}.labGrid div{background:#fff;border:1px solid #e1d8ef;border-radius:13px;padding:11px;font-size:13px}
 .studySteps{counter-reset:s;display:grid;gap:8px}.studySteps div{border:1px solid var(--line);border-radius:15px;padding:12px 12px 12px 48px;position:relative}.studySteps div:before{counter-increment:s;content:counter(s);position:absolute;left:12px;top:11px;width:27px;height:27px;border-radius:50%;display:grid;place-items:center;background:var(--green);color:white;font-weight:900}
 .linked{display:flex;gap:7px;flex-wrap:wrap}.linked span{background:var(--gold2);color:#6b5016;border-radius:999px;padding:6px 9px;font-size:12px;font-weight:800}
+.vocabGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.vocab{border:1px solid var(--line);border-radius:14px;padding:10px;background:#fbfdfc}.vocab b{display:block;direction:ltr;text-align:left;color:var(--green)}.vocab small{display:block;color:var(--muted);margin-top:2px}
+.phrase{border-right:4px solid var(--green);background:#f8fbfa;padding:10px 12px;border-radius:10px;margin:7px 0}.phrase b{display:block;direction:ltr;text-align:left}
 details.q{border:1px solid var(--line);border-radius:15px;padding:11px 13px;margin:7px 0;background:#fbfdfc}details.q summary{cursor:pointer;font-weight:800;color:var(--green)}details.q p{margin:8px 0 0}
 .footer{padding:28px 18px 38px;text-align:center;color:var(--muted);font-size:12px}
-@media(max-width:800px){.courseNav{grid-template-columns:1fr}.compactGrid,.grid2,.grid3,.scenarios,.lessonGrid{grid-template-columns:1fr}.flow{grid-template-columns:repeat(3,1fr)}.labGrid{grid-template-columns:1fr}}
-@media(max-width:480px){main{padding:10px}.hero{padding:21px 17px;border-radius:22px}.courseBody{padding:15px}.courseHead{padding:15px}.flow{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:900px){.courseNav{grid-template-columns:repeat(2,1fr)}.vocabGrid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:800px){.compactGrid,.grid2,.grid3,.scenarios,.lessonGrid{grid-template-columns:1fr}.flow{grid-template-columns:repeat(3,1fr)}.labGrid{grid-template-columns:1fr}}
+@media(max-width:480px){main{padding:10px}.hero{padding:21px 17px;border-radius:22px}.courseBody{padding:15px}.courseHead{padding:15px}.flow{grid-template-columns:repeat(2,1fr)}.courseNav{grid-template-columns:1fr}.vocabGrid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -69,26 +75,36 @@ details.q{border:1px solid var(--line);border-radius:15px;padding:11px 13px;marg
  <p>مساعدة تعليمية عامة لطلبة التمريض وأعضاء هيئة التدريس، مبنية على دليل كليات التمريض والمقررات الواردة فيه. هدفها تكوين قاعدة فهمية تساعد الطالب على الدراسة والنجاح، وتدعم قدرته لاحقًا على التعلم والعمل وخدمة الناس بصورة أفضل.</p>
 </section>
 
-<div class="notice"><b>كيف تستخدم هذا القسم؟</b> ابدأ بفهم الفكرة العامة للمقرر والمفاهيم الأساسية، ثم ارجع إلى المحاضرات وأستاذ المقرر والمواد المعتمدة للتفاصيل المطلوبة في الدراسة والتقييم.</div>
+<div class="notice"><b>استخدم رفيق الدراسة لبناء الفهم أولًا.</b> ثم ارجع إلى المحاضرات وأستاذ المقرر والمواد المعتمدة للتفاصيل المطلوبة في الدراسة والتقييم.</div>
 
 <nav class="courseNav" aria-label="المقررات">
  <a href="#arabic"><b>01 · اللغة العربية</b><small>Arabic Language</small></a>
  <a href="#english"><b>02 · اللغة الإنجليزية 1</b><small>English Language 1</small></a>
  <a href="#anatomy"><b>03 · التشريح ووظائف الأعضاء 1</b><small>Human Anatomy &amp; Physiology 1</small></a>
+ <a href="#sociology"><b>04 · علم الاجتماع الطبي</b><small>Medical Sociology</small></a>
+ <a href="#theory"><b>05 · الأسس النظرية في التمريض</b><small>Theoretical Foundations of Nursing</small></a>
+ <a href="#biochem"><b>06 · الكيمياء الحيوية</b><small>Biochemistry</small></a>
+ <a href="#rle1"><b>07 · الخبرة التعليمية المرتبطة 1</b><small>Related Learning Experience 1</small></a>
+ <a href="#islamic"><b>08 · الدراسات الإسلامية</b><small>Islamic Studies</small></a>
 </nav>
 
 <section class="course" id="arabic">
- <div class="courseHead"><div class="num">01</div><h2>اللغة العربية</h2><div class="en">Arabic Language</div></div>
+ <div class="courseHead"><div class="num">01</div><h2>اللغة العربية</h2><div class="en">Arabic Language</div>
+  <div class="meta"><span><b>الرمز:</b> LANG 100ly</span><span><b>النوع:</b> عام</span><span><b>الوحدات:</b> 2</span><span><b>ساعات الاتصال:</b> 32</span><span><b>عبء التعلّم:</b> 72</span><span><b>ECTS:</b> 3</span><span><b>المتطلب السابق:</b> لا يوجد</span></div>
+ </div>
  <div class="courseBody">
   <div class="compactGrid">
-   <div class="box"><h3>ما الذي يفيدك فيه هذا المقرر؟</h3><p>اللغة أداة للفهم والتواصل، وليست مجرد قواعد. يحتاج طالب التمريض إلى قراءة السؤال والتعليمات بدقة، التعبير عن الفكرة بوضوح، وترتيب ما يريد قوله أو كتابته بصورة يفهمها الآخر.</p></div>
-   <div class="scenario"><h3>🩺 موقف قد تواجهه</h3><p>تريد معرفة هل المريض يأخذ الدواء بانتظام. السؤال الواضح والمحدد قد يعطيك معلومات أفضل من سؤال عام يحتمل أكثر من معنى.</p></div>
+   <div class="box"><h3>ما الذي يفيدك فيه هذا المقرر؟</h3><p>اللغة أداة للفهم والتواصل. يحتاج طالب التمريض إلى قراءة السؤال والتعليمات بدقة، ترتيب أفكاره، والتعبير عنها بصورة واضحة في الحديث والكتابة.</p></div>
+   <div class="scenario"><h3>🩺 موقف قد تواجهه</h3><p>عند سؤال مريض عن علاجه، قد يعطي السؤال العام إجابة عامة. صياغة سؤال محدد وواضح تساعدك على الحصول على معلومة أدق.</p></div>
   </div>
-  <h3 class="sectionTitle">ركز على هذه المهارات</h3>
+  <h3 class="sectionTitle">أساسيات المقرر</h3>
   <div class="grid3">
-   <div class="concept"><h4>فهم الجملة</h4><p>تمييز الفعل والفاعل والصفة يساعدك على فهم المقصود وبناء جملة سليمة.</p></div>
-   <div class="concept"><h4>القراءة بفهم</h4><p>اقرأ لتستخرج الفكرة الأساسية والتفاصيل المهمة، لا لمجرد إنهاء النص.</p></div>
-   <div class="concept"><h4>التعبير الواضح</h4><p>رتب الفكرة ثم اكتبها أو قلها بأقل قدر من الغموض والتكرار.</p></div>
+   <div class="concept"><h4>بناء الجملة</h4><p>فهم الفعل والفاعل والصفة وبناء الجملة البسيطة يساعدك على القراءة والكتابة بوضوح.</p></div>
+   <div class="concept"><h4>القراءة بفهم</h4><p>تعلم استخراج الفكرة الأساسية والتفاصيل، والتمييز بين ما هو رئيسي وما هو توضيح أو مثال.</p></div>
+   <div class="concept"><h4>التعبير الشفهي</h4><p>رتب ما تريد قوله، واختر كلمات تناسب الشخص والموقف دون غموض أو تعقيد غير ضروري.</p></div>
+   <div class="concept"><h4>الكتابة المنظمة</h4><p>ابدأ بفكرة واضحة ثم اشرحها بجمل مترابطة؛ هذه المهارة تفيد في الإجابات والتقارير والبحوث.</p></div>
+   <div class="concept"><h4>الاستماع</h4><p>الاستماع الجيد لا يعني سماع الكلمات فقط، بل الانتباه للمعنى والسياق وما يحتاج إلى توضيح.</p></div>
+   <div class="concept"><h4>اللغة حسب الموقف</h4><p>طريقة الحديث مع طفل أو مريض أو أستاذ أو زميل ليست واحدة؛ الوضوح والاحترام أهم من التعقيد.</p></div>
   </div>
   <h3 class="sectionTitle">أين ستفيدك لاحقًا؟</h3>
   <div class="linked"><span>الإجابة في الامتحانات</span><span>التثقيف الصحي</span><span>التواصل مع المرضى</span><span>كتابة التقارير</span><span>بحوث التخرج</span></div>
@@ -96,32 +112,78 @@ details.q{border:1px solid var(--line);border-radius:15px;padding:11px 13px;marg
 </section>
 
 <section class="course" id="english">
- <div class="courseHead"><div class="num">02</div><h2>اللغة الإنجليزية 1</h2><div class="en">English Language 1</div></div>
+ <div class="courseHead"><div class="num">02</div><h2>اللغة الإنجليزية 1</h2><div class="en">English Language 1</div>
+  <div class="meta"><span><b>الرمز:</b> ENGL 101ly</span><span><b>النوع:</b> عام</span><span><b>الوحدات:</b> 2</span><span><b>ساعات الاتصال:</b> 32</span><span><b>عبء التعلّم:</b> 72</span><span><b>ECTS:</b> 3</span><span><b>المتطلب السابق:</b> لا يوجد</span></div>
+ </div>
  <div class="courseBody">
   <div class="compactGrid">
-   <div class="box"><h3>لماذا تهم طالب التمريض؟</h3><p>ستقابل الإنجليزية في أسماء الأعضاء والأجهزة والأدوية والمصطلحات والكتب والتعليمات. المطلوب في البداية ليس أن تكون مترجمًا، بل أن تبني لغة تساعدك على فهم الجملة الطبية البسيطة والتواصل الأساسي.</p></div>
-   <div class="scenario"><h3>🩺 موقف قد تواجهه</h3><p>في المعمل ترى كلمات مثل <span dir="ltr"><b>pain, pulse, wound, sterile, dose</b></span>. عندما تفهم الكلمة داخل جملة أو تعليمات، يصبح تعلم المهارة نفسها أسهل.</p></div>
+   <div class="box"><h3>لماذا تهم طالب التمريض؟</h3><p>الإنجليزية في التمريض ليست حفظ كلمات فقط. هي أداة لفهم المصطلح والتعليمات، طرح سؤال واضح، التأكد من أنك فهمت المريض أو الزميل بصورة صحيحة، ونقل معلومة دون لبس.</p></div>
+   <div class="scenario"><h3>🩺 موقف قد تواجهه</h3><p>المريض يقول لك كلمة أو وصفًا لم تفهمه جيدًا. بدل التخمين، تحتاج إلى جملة بسيطة تطلب بها التوضيح ثم تعيد المعنى للتأكد من أنكما تقصدان الشيء نفسه.</p></div>
   </div>
-  <h3 class="sectionTitle">قاعدة اللغة التي تحتاجها</h3>
+
+  <h3 class="sectionTitle">قاعدة اللغة</h3>
   <div class="grid3">
-   <div class="concept"><h4>Nouns &amp; Pronouns</h4><p>الأسماء والضمائر تساعدك على تحديد الشخص أو الشيء الذي تتحدث عنه: patient, nurse, medication, it, he, she.</p></div>
-   <div class="concept"><h4>Verbs</h4><p>الأفعال تخبرك ماذا يحدث أو ماذا يجب أن تفعل: breathe, take, sit, measure, report.</p></div>
-   <div class="concept"><h4>Prepositions &amp; Articles</h4><p>كلمات صغيرة لكنها تغير المعنى وتساعدك على وصف المكان والعلاقة: in, on, under, at, a, an, the.</p></div>
+   <div class="concept"><h4>Nouns &amp; Pronouns</h4><p>الأسماء والضمائر تحدد الأشخاص والأشياء: patient, nurse, medication, wound, he, she, it.</p></div>
+   <div class="concept"><h4>Verbs</h4><p>الأفعال تصف ما يحدث أو ما يجب فعله: breathe, take, check, measure, turn, report, record.</p></div>
+   <div class="concept"><h4>Adjectives</h4><p>الصفات تجعل الوصف أدق: severe, mild, swollen, clean, painful, warm.</p></div>
+   <div class="concept"><h4>Questions</h4><p>تعلم بناء سؤال قصير وواضح للحصول على معلومة محددة بدل سؤال واسع أو غامض.</p></div>
+   <div class="concept"><h4>Prepositions</h4><p>تفيد في وصف المكان والعلاقة: in, on, under, above, below, between.</p></div>
+   <div class="concept"><h4>Numbers &amp; time</h4><p>الأرقام والوقت مهمان في الحرارة والنبض والضغط والجرعات والمواعيد وتسجيل البيانات.</p></div>
   </div>
-  <h3 class="sectionTitle">لغة ستقابلها في التمريض</h3>
-  <div class="lessonGrid">
-   <div class="lesson"><div class="n">مفهوم 1</div><h4>وصف الجسم</h4><p>أسماء أجزاء الجسم، الاتجاهات البسيطة، ووصف مكان الألم أو المشكلة.</p><div class="think">مثال: <span dir="ltr">Pain in the left arm.</span></div></div>
-   <div class="lesson"><div class="n">مفهوم 2</div><h4>الأعراض والعلامات</h4><p>تعلم كلمات تصف ما يشعر به المريض وما يمكن ملاحظته أو قياسه.</p><div class="think">مثل: pain, fever, cough, dizziness, swelling.</div></div>
-   <div class="lesson"><div class="n">مفهوم 3</div><h4>التعليمات البسيطة</h4><p>فهم وإعطاء تعليمات قصيرة وواضحة للمريض أو أثناء المهارة.</p><div class="think">مثل: <span dir="ltr">Sit down. Take a deep breath. Raise your arm.</span></div></div>
-   <div class="lesson"><div class="n">مفهوم 4</div><h4>الاستماع والسؤال</h4><p>أن تسمع المعنى العام وتسأل سؤالًا مباشرًا للحصول على معلومة محددة.</p><div class="think">مثل: <span dir="ltr">Where is the pain? When did it start?</span></div></div>
+
+  <h3 class="sectionTitle">مفردات تمريضية مبكرة</h3>
+  <p>هذه الكلمات تساعدك على التواصل، وسنضيف إليها تدريجيًا من مصطلحات التشريح والكيمياء الحيوية والمهارات التمريضية بدل دراسة اللغة بمعزل عن بقية مقرراتك.</p>
+  <div class="vocabGrid">
+   <div class="vocab"><b>patient</b><small>مريض / متلقي الرعاية</small></div>
+   <div class="vocab"><b>ward</b><small>جناح / قسم بالمستشفى</small></div>
+   <div class="vocab"><b>symptom</b><small>عرض يشعر به المريض</small></div>
+   <div class="vocab"><b>pain</b><small>ألم</small></div>
+   <div class="vocab"><b>fever</b><small>حمّى</small></div>
+   <div class="vocab"><b>dizziness</b><small>دوار</small></div>
+   <div class="vocab"><b>swelling</b><small>تورم</small></div>
+   <div class="vocab"><b>wound</b><small>جرح</small></div>
+   <div class="vocab"><b>specimen</b><small>عينة للفحص</small></div>
+   <div class="vocab"><b>urine</b><small>بول</small></div>
+   <div class="vocab"><b>blood</b><small>دم</small></div>
+   <div class="vocab"><b>temperature</b><small>درجة الحرارة</small></div>
+   <div class="vocab"><b>pulse</b><small>النبض</small></div>
+   <div class="vocab"><b>respiration</b><small>التنفس</small></div>
+   <div class="vocab"><b>blood pressure</b><small>ضغط الدم</small></div>
+   <div class="vocab"><b>gloves</b><small>قفازات</small></div>
+   <div class="vocab"><b>sterile</b><small>معقم / خالٍ من الميكروبات في السياق السريري</small></div>
+   <div class="vocab"><b>contamination</b><small>تلوث</small></div>
+   <div class="vocab"><b>check</b><small>يفحص / يتحقق</small></div>
+   <div class="vocab"><b>record</b><small>يسجل</small></div>
+   <div class="vocab"><b>cell</b><small>خلية</small></div>
+   <div class="vocab"><b>tissue</b><small>نسيج</small></div>
+   <div class="vocab"><b>glucose</b><small>جلوكوز</small></div>
+   <div class="vocab"><b>enzyme</b><small>إنزيم</small></div>
   </div>
+
+  <h3 class="sectionTitle">التواصل الفعّال والدقيق</h3>
+  <div class="phrase"><b>Could you describe the pain?</b><span>اطلب وصفًا بدل الاكتفاء بسؤال نعم/لا.</span></div>
+  <div class="phrase"><b>Where exactly do you feel it?</b><span>حدد المكان بدقة.</span></div>
+  <div class="phrase"><b>When did it start?</b><span>اسأل عن الزمن ببساطة.</span></div>
+  <div class="phrase"><b>Do you mean that ...?</b><span>استخدم إعادة الصياغة للتأكد من أنك فهمت المقصود.</span></div>
+  <div class="phrase"><b>Can you show me what you understood?</b><span>التأكد من الفهم مهم عند إعطاء تعليمات.</span></div>
+
+  <h3 class="sectionTitle">لماذا هذه المهارات مهمة؟</h3>
+  <div class="grid2">
+   <div class="concept"><h4>Clarification</h4><p>لا تخمن معنى كلمة أو تعليمات غير واضحة. اطلب توضيحًا.</p></div>
+   <div class="concept"><h4>Checking understanding</h4><p>لا يكفي أن تقول المعلومة؛ تأكد من أن الشخص الآخر فهمها كما قصدت.</p></div>
+   <div class="concept"><h4>Accurate handover</h4><p>المعلومة السريرية تحتاج كلمات محددة وأرقامًا واضحة، لا أوصافًا مبهمة.</p></div>
+   <div class="concept"><h4>Patient-friendly language</h4><p>استخدم المصطلح المهني عندما تحتاجه، ثم اشرحه بلغة يستطيع المريض فهمها.</p></div>
+  </div>
+
   <h3 class="sectionTitle">أين ستفيدك لاحقًا؟</h3>
-  <div class="linked"><span>Medical Terminology</span><span>Clinical Skills</span><span>قراءة الكتب</span><span>الأجهزة والتعليمات</span><span>البحث العلمي</span></div>
+  <div class="linked"><span>Medical Terminology</span><span>Clinical Skills</span><span>Anatomy</span><span>Biochemistry</span><span>قراءة الكتب</span><span>التواصل السريري</span><span>البحث العلمي</span></div>
  </div>
 </section>
 
 <section class="course" id="anatomy">
- <div class="courseHead"><div class="num">03</div><h2>التشريح ووظائف الأعضاء 1</h2><div class="en">Human Anatomy &amp; Physiology 1</div></div>
+ <div class="courseHead"><div class="num">03</div><h2>التشريح ووظائف الأعضاء 1</h2><div class="en">Human Anatomy &amp; Physiology 1</div>
+  <div class="meta"><span><b>الرمز:</b> BIOL 101aly</span><span><b>النوع:</b> طبي مساند</span><span><b>الوحدات:</b> 5 (4 نظري + 1 معمل)</span><span><b>ساعات الاتصال:</b> 96</span><span><b>عبء التعلّم:</b> 146</span><span><b>ECTS:</b> 6</span><span><b>المتطلب السابق:</b> لا يوجد</span></div>
+ </div>
  <div class="courseBody">
   <div class="bigIdea">الفكرة الكبرى: <span dir="ltr">Anatomy</span> يشرح <b>بناء الجسم ومواقع أجزائه</b>، و<span dir="ltr">Physiology</span> يشرح <b>كيف تعمل هذه الأجزاء</b>. عندما تجمع الاثنين تبدأ في فهم ما هو طبيعي، ولماذا تظهر علامة أو مشكلة عندما يتغير هذا الطبيعي.</div>
 
@@ -133,88 +195,240 @@ details.q{border:1px solid var(--line);border-radius:15px;padding:11px 13px;marg
 
   <h3 class="sectionTitle">أفكار يجب أن تثبت في ذهنك مبكرًا</h3>
   <div class="grid3">
-   <div class="concept"><h4>Structure ↔ Function</h4><p>التركيب والوظيفة مرتبطان. شكل الخلية أو العضو وترتيبه ليس عشوائيًا؛ غالبًا يساعده على أداء وظيفته.</p></div>
+   <div class="concept"><h4>Structure ↔ Function</h4><p>التركيب والوظيفة مرتبطان. شكل الخلية أو العضو وترتيبه غالبًا يساعده على أداء وظيفته.</p></div>
    <div class="concept"><h4>Homeostasis</h4><p>الجسم يحاول إبقاء الحرارة والسوائل والضغط والجلوكوز وغيرها ضمن حدود تسمح للخلايا بالعمل.</p></div>
-   <div class="concept"><h4>Feedback</h4><p>التغذية الراجعة هي طريقة من طرق التنظيم. يكتشف الجسم تغيرًا ثم يستجيب للمساعدة في الوصول إلى حالة مناسبة.</p></div>
+   <div class="concept"><h4>Feedback</h4><p>التغذية الراجعة إحدى طرق التنظيم: تغير يحدث، الجسم يلاحظه، ثم يستجيب للمساعدة في الوصول إلى حالة مناسبة.</p></div>
    <div class="concept"><h4>Anatomical language</h4><p>مصطلحات الاتجاهات والمستويات والمناطق تمنع الغموض عندما نصف مكان عضو أو إصابة.</p></div>
    <div class="concept"><h4>Cells make tissues</h4><p>الخلايا المتخصصة تتجمع لتكوين أنسجة، والأنسجة المختلفة تتعاون داخل العضو الواحد.</p></div>
    <div class="concept"><h4>Systems interact</h4><p>أي جهاز يعتمد على أجهزة أخرى؛ لذلك لا تفكر في القلب أو الأعصاب أو الغدد كجزر منفصلة.</p></div>
   </div>
 
-  <h3 class="sectionTitle">دروس تأسيسية تساعدك على رؤية المقرر كقصة واحدة</h3>
+  <h3 class="sectionTitle">دروس تأسيسية</h3>
   <div class="lessonGrid">
-   <div class="lesson"><div class="n">درس 1</div><h4>لغة التشريح: أين يوجد الشيء؟</h4><p>تعلم الوضع التشريحي، الاتجاهات، مستويات القطع، مناطق الجسم والتجاويف. هذه هي اللغة المشتركة التي تسمح للجميع بوصف الموقع نفسه بدقة.</p><div class="think"><b>فكر:</b> لماذا قول «الألم في الجهة الداخلية من الساعد» أدق من «الألم هنا»؟</div></div>
-
-   <div class="lesson"><div class="n">درس 2</div><h4>الاتزان الداخلي: كيف يحافظ الجسم على الاستقرار؟</h4><p>الحياة تحتاج بيئة داخلية مستقرة نسبيًا. المستقبلات تلاحظ التغير، مركز التنظيم يقارن، ثم يحدث رد فعل يساعد على التصحيح.</p><div class="think"><b>فكر:</b> ماذا يفعل الجسم عندما ترتفع الحرارة أو ينخفض الضغط؟</div></div>
-
-   <div class="lesson"><div class="n">درس 3</div><h4>الكيمياء التي تسمح للحياة أن تحدث</h4><p>الماء، الأيونات، الأحماض والقواعد والجزيئات العضوية ليست موضوعات منفصلة عن التمريض؛ هي البيئة التي تجري فيها التفاعلات داخل الخلايا.</p><div class="think"><b>فكر:</b> لماذا قد يؤثر تغير شديد في الحموضة على عمل الخلايا والأعضاء؟</div></div>
-
-   <div class="lesson"><div class="n">درس 4</div><h4>الخلية: أصغر وحدة حية تعمل</h4><p>الغشاء يفصل وينظم، النواة تحمل التعليمات الوراثية، والعضيات تؤدي وظائف متخصصة. الخلية تحتاج تبادل مواد وطاقة مستمرًا مع محيطها.</p><div class="think"><b>فكر:</b> لماذا يصبح انتقال الأكسجين والماء والأيونات عبر الأغشية مهمًا في فهم المرض؟</div></div>
-
-   <div class="lesson"><div class="n">درس 5</div><h4>النقل عبر الغشاء</h4><p>بعض المواد تتحرك حسب تدرج التركيز، وبعضها يحتاج بروتينات أو طاقة. الماء يتحرك تبعًا لفروق التركيز، وهذا يساعدك لاحقًا في فهم السوائل والتورم والجفاف.</p><div class="think"><b>فكر:</b> ماذا قد يحدث للخلية إذا تغير تركيز المواد حولها بشدة؟</div></div>
-
-   <div class="lesson"><div class="n">درس 6</div><h4>الأنسجة: أربع عائلات أساسية</h4><p>النسيج الطلائي يغطي ويبطن، الضام يدعم ويربط، العضلي ينتج الحركة، والعصبي ينقل الإشارات. الأعضاء غالبًا تحتوي أكثر من نوع واحد يعمل معًا.</p><div class="think"><b>فكر:</b> لماذا يحتاج جدار الأمعاء إلى نسيج يبطّن ونسيج عضلي ونسيج عصبي معًا؟</div></div>
-
-   <div class="lesson"><div class="n">درس 7</div><h4>الالتهاب وإصلاح الأنسجة</h4><p>عندما يحدث ضرر يبدأ الجسم باستجابة تساعد على الحماية والتنظيف وبداية الإصلاح. الاحمرار والحرارة والتورم قد تكون أجزاء من هذه الاستجابة.</p><div class="think"><b>فكر:</b> ما الفرق بين رؤية التورم كعلامة فقط وفهم ما يحدث في الأنسجة تحته؟</div></div>
-
-   <div class="lesson"><div class="n">درس 8</div><h4>الجهاز العصبي: استقبال، معالجة، استجابة</h4><p>الخلايا العصبية تنقل المعلومات، والجهاز العصبي المركزي يعالجها، والأعصاب الطرفية تربط الجسم بالمراكز العصبية. هناك وظائف إرادية وأخرى ذاتية.</p><div class="think"><b>فكر:</b> كيف يرتبط الإحساس والحركة وردود الفعل بوظيفة الأعصاب؟</div></div>
-
-   <div class="lesson"><div class="n">درس 9</div><h4>القلب والأوعية: شبكة نقل مستمرة</h4><p>القلب يولّد قوة تدفع الدم، والأوعية توصل الدم إلى الأنسجة وتعيده. ضغط الدم وتدفقه يتأثران بقوة الضخ وحالة الأوعية والتنظيم العصبي.</p><div class="think"><b>فكر:</b> لماذا قد يؤثر الوقوف المفاجئ في وصول الدم إلى الدماغ؟</div></div>
-
-   <div class="lesson"><div class="n">درس 10</div><h4>الدم: أكثر من سائل أحمر</h4><p>البلازما تحمل المواد، كريات الدم الحمراء تنقل الغازات، الكريات البيضاء تشارك في الدفاع، والصفائح تسهم في الحد من فقدان الدم.</p><div class="think"><b>فكر:</b> لماذا يعطي تعداد الدم معلومات مختلفة عن الأكسجة والدفاع والنزف؟</div></div>
-
-   <div class="lesson"><div class="n">درس 11</div><h4>الغدد الصماء: رسائل كيميائية</h4><p>الهرمونات تنتقل عبر الدم وتؤثر في خلايا مستهدفة. بهذه الطريقة يشارك الجسم في تنظيم النمو والاستقلاب والجلوكوز والاستجابة للضغط وغيرها.</p><div class="think"><b>فكر:</b> لماذا يمكن لخلل في هرمون واحد أن يظهر بأعراض في أكثر من عضو؟</div></div>
-
-   <div class="lesson"><div class="n">درس 12</div><h4>الجهاز اللمفاوي: إعادة السوائل والدفاع</h4><p>يساعد على إعادة جزء من السائل الموجود بين الخلايا إلى الدورة الدموية، كما ترتبط أعضاؤه وخلاياه بالدفاع المناعي.</p><div class="think"><b>فكر:</b> ما العلاقة بين حركة السوائل وتورم الأنسجة ووظيفة الجهاز اللمفاوي؟</div></div>
+   <div class="lesson"><div class="n">درس 1</div><h4>لغة التشريح: أين يوجد الشيء؟</h4><p>الوضع التشريحي، الاتجاهات، مستويات القطع، مناطق الجسم والتجاويف هي اللغة التي تجعل وصف المكان دقيقًا ومفهومًا للجميع.</p><div class="think"><b>فكر:</b> لماذا قول «الألم في الجهة الداخلية من الساعد» أدق من «الألم هنا»؟</div></div>
+   <div class="lesson"><div class="n">درس 2</div><h4>الاتزان الداخلي</h4><p>الحياة تحتاج بيئة داخلية مستقرة نسبيًا. المستقبلات تلاحظ التغير، مركز التنظيم يقارن، ثم يحدث رد فعل يساعد على التصحيح.</p><div class="think"><b>فكر:</b> ماذا يفعل الجسم عندما ترتفع الحرارة أو ينخفض الضغط؟</div></div>
+   <div class="lesson"><div class="n">درس 3</div><h4>الكيمياء التي تسمح للحياة أن تحدث</h4><p>الماء، الأيونات، الأحماض والقواعد والجزيئات العضوية هي البيئة التي تجري فيها التفاعلات داخل الخلايا.</p><div class="think"><b>فكر:</b> لماذا قد يؤثر تغير شديد في الحموضة على عمل الخلايا؟</div></div>
+   <div class="lesson"><div class="n">درس 4</div><h4>الخلية: وحدة حية تعمل</h4><p>الغشاء ينظم ما يدخل ويخرج، النواة تحمل التعليمات الوراثية، والعضيات تؤدي وظائف متخصصة تحتاج إلى طاقة ومواد خام.</p><div class="think"><b>فكر:</b> لماذا يصبح انتقال الأكسجين والماء والأيونات عبر الأغشية مهمًا؟</div></div>
+   <div class="lesson"><div class="n">درس 5</div><h4>النقل عبر الغشاء</h4><p>بعض المواد تتحرك حسب تدرج التركيز، وبعضها يحتاج بروتينات أو طاقة. حركة الماء مهمة لفهم السوائل والتورم والجفاف.</p><div class="think"><b>فكر:</b> ماذا قد يحدث للخلية إذا تغير تركيز المواد حولها بشدة؟</div></div>
+   <div class="lesson"><div class="n">درس 6</div><h4>الأنسجة: أربع عائلات أساسية</h4><p>الطلائي يغطي ويبطن، الضام يدعم ويربط، العضلي ينتج الحركة، والعصبي ينقل الإشارات. الأعضاء تجمع أكثر من نوع لتحقيق وظيفة واحدة.</p><div class="think"><b>فكر:</b> لماذا يحتاج جدار الأمعاء إلى أكثر من نوع نسيج؟</div></div>
+   <div class="lesson"><div class="n">درس 7</div><h4>الالتهاب وإصلاح الأنسجة</h4><p>عندما يحدث ضرر تبدأ استجابة للحماية والتنظيف والإصلاح. الاحمرار والحرارة والتورم قد تكون أجزاء من هذه الاستجابة.</p><div class="think"><b>فكر:</b> ما الفرق بين رؤية التورم كعلامة وفهم ما يجري في النسيج؟</div></div>
+   <div class="lesson"><div class="n">درس 8</div><h4>الجهاز العصبي</h4><p>الخلايا العصبية تنقل المعلومات، والجهاز العصبي المركزي يعالجها، والأعصاب الطرفية تربط الجسم بالمراكز العصبية. توجد وظائف إرادية وأخرى ذاتية.</p><div class="think"><b>فكر:</b> كيف يرتبط الإحساس والحركة ورد الفعل بالأعصاب؟</div></div>
+   <div class="lesson"><div class="n">درس 9</div><h4>القلب والأوعية</h4><p>القلب يولد قوة تدفع الدم، والأوعية توصل الدم إلى الأنسجة وتعيده. ضغط الدم وتدفقه يتأثران بقوة الضخ وحالة الأوعية والتنظيم العصبي.</p><div class="think"><b>فكر:</b> لماذا قد يؤثر الوقوف المفاجئ في وصول الدم إلى الدماغ؟</div></div>
+   <div class="lesson"><div class="n">درس 10</div><h4>الدم</h4><p>البلازما تحمل المواد، كريات الدم الحمراء تنقل الغازات، الكريات البيضاء تشارك في الدفاع، والصفائح تسهم في الحد من فقدان الدم.</p><div class="think"><b>فكر:</b> لماذا يعطي تعداد الدم معلومات مختلفة عن الأكسجة والدفاع والنزف؟</div></div>
+   <div class="lesson"><div class="n">درس 11</div><h4>الغدد الصماء</h4><p>الهرمونات رسائل كيميائية تنتقل في الدم وتؤثر في خلايا مستهدفة، فتشارك في تنظيم النمو والاستقلاب والجلوكوز وغيرها.</p><div class="think"><b>فكر:</b> لماذا يمكن لخلل هرموني أن يظهر في أكثر من عضو؟</div></div>
+   <div class="lesson"><div class="n">درس 12</div><h4>الجهاز اللمفاوي</h4><p>يساعد على إعادة جزء من السائل بين الخلايا إلى الدورة الدموية، كما ترتبط مكوناته بالدفاع المناعي.</p><div class="think"><b>فكر:</b> ما العلاقة بين حركة السوائل والتورم؟</div></div>
   </div>
 
   <h3 class="sectionTitle">نظرة عملية للمعمل</h3>
-  <div class="lab">
-   <h3>🔬 ماذا تحاول أن تتعلم عندما تنظر إلى نموذج أو شريحة أو صورة؟</h3>
-   <p>المعمل لا يضيف أسماء للحفظ فقط؛ هدفه أن تدرب عينك على التعرف إلى الشكل والموقع والفرق بين الأنسجة والبنى، ثم تربط ما تراه بالوظيفة.</p>
-   <div class="labGrid">
-    <div><b>الموقع:</b><br>أين توجد البنية وما الذي يجاورها؟</div>
-    <div><b>التمييز:</b><br>ما العلامات التي تجعلني أعرف هذا النسيج أو الجزء؟</div>
-    <div><b>الوظيفة:</b><br>كيف يساعد الشكل الذي أراه على أداء الوظيفة؟</div>
-   </div>
+  <div class="lab"><h3>🔬 عندما ترى نموذجًا أو شريحة أو صورة</h3><p>لا تسأل فقط «ما اسم هذا؟». اسأل ثلاث أسئلة تجعل الصورة تثبت في ذهنك:</p>
+   <div class="labGrid"><div><b>أين؟</b><br>ما موقع البنية وما الذي يجاورها؟</div><div><b>كيف أميزها؟</b><br>ما شكلها أو العلامة التي تعرفني بها؟</div><div><b>لماذا بهذا الشكل؟</b><br>كيف يساعد تركيبها على وظيفتها؟</div></div>
   </div>
 
   <h3 class="sectionTitle">إذا كانت قاعدتي ضعيفة، أين سأشعر بذلك؟</h3>
-  <div class="whyweak"><b>في المقررات التي تعتمد على الطبيعي لفهم غير الطبيعي.</b> في التقييم الصحي تحتاج معرفة ما تفحص ولماذا. في الفيزيولوجيا المرضية تحتاج صورة طبيعية واضحة لتفهم الخلل. في الأدوية تحتاج معرفة العضو والعملية التي يؤثر فيها الدواء. وفي التمريض السريري تحتاج أن تربط العلامة التي تراها بما يحدث داخل الجسم.</div>
+  <div class="whyweak"><b>في المقررات التي تعتمد على الطبيعي لفهم غير الطبيعي.</b> في التقييم الصحي تحتاج معرفة ما تفحص ولماذا. في الفيزيولوجيا المرضية تحتاج صورة طبيعية واضحة لتفهم الخلل. وفي الأدوية تحتاج معرفة العضو أو العملية التي يؤثر فيها الدواء.</div>
 
   <h3 class="sectionTitle">🩺 مواقف قد تواجهها</h3>
   <div class="scenarios">
-   <div class="real"><div class="tag">موقف تعليمي</div><h4>مريض يشعر بدوار عندما يقف</h4><p>تلاحظ تغيرًا في النبض أو الضغط عند الانتقال من الاستلقاء إلى الوقوف.</p><div class="use"><b>ما الذي يساعدك على الفهم؟</b> الدورة الدموية، تنظيم الضغط والجهاز العصبي الذاتي.</div></div>
-   <div class="real"><div class="tag">موقف تعليمي</div><h4>جرح حوله احمرار وتورم</h4><p>بدل أن تحفظ أن الاحمرار علامة، تستطيع ربطه باستجابة الأنسجة للضرر والالتهاب وبداية الإصلاح.</p><div class="use"><b>ما الذي يساعدك على الفهم؟</b> الأنسجة والالتهاب وإصلاح الأنسجة.</div></div>
-   <div class="real"><div class="tag">موقف تعليمي</div><h4>مريض لا يستطيع تحريك ذراع واحدة جيدًا</h4><p>أنت لا تشخّص السبب، لكنك تدرك أن الحركة والإحساس مرتبطان بمسارات عصبية وأن الملاحظة المنظمة مهمة.</p><div class="use"><b>ما الذي يساعدك على الفهم؟</b> الجهاز العصبي المركزي والطرفي.</div></div>
-   <div class="real"><div class="tag">موقف تعليمي</div><h4>نتيجة تعداد دم أمامك</h4><p>تظهر قيم لكريات الدم الحمراء والبيضاء والصفائح. عندما تعرف وظيفة كل مكوّن تبدأ الأرقام في اكتساب معنى.</p><div class="use"><b>ما الذي يساعدك على الفهم؟</b> مكونات الدم والنقل والدفاع ومنع فقدان الدم.</div></div>
-   <div class="real"><div class="tag">موقف تعليمي</div><h4>ساق متورمة أكثر من الأخرى</h4><p>التورم يعني أن حركة السوائل بين الأوعية والأنسجة ليست في وضعها المعتاد. معرفتك بالسوائل والدورة والجهاز اللمفاوي تجعلك تفهم لماذا الملاحظة مهمة.</p><div class="use"><b>ما الذي يساعدك على الفهم؟</b> حركة السوائل والشعيرات والجهاز اللمفاوي.</div></div>
-   <div class="real"><div class="tag">موقف تعليمي</div><h4>مريض متعرق وسريع النبض أثناء الخوف</h4><p>يمكنك أن ترى كيف تظهر استجابة الجهاز العصبي الذاتي على القلب والجلد وأعضاء أخرى في وقت واحد.</p><div class="use"><b>ما الذي يساعدك على الفهم؟</b> الجهاز العصبي الذاتي وربط الأجهزة ببعضها.</div></div>
+   <div class="real"><div class="tag">موقف تعليمي</div><h4>دوار عند الوقوف</h4><p>تلاحظ تغيرًا في النبض أو الضغط بعد الانتقال من الاستلقاء إلى الوقوف.</p><div class="use"><b>ما الذي يساعدك؟</b> الدورة الدموية، تنظيم الضغط والجهاز العصبي الذاتي.</div></div>
+   <div class="real"><div class="tag">موقف تعليمي</div><h4>جرح حوله احمرار وتورم</h4><p>تربط العلامة باستجابة الأنسجة للضرر والالتهاب وبداية الإصلاح.</p><div class="use"><b>ما الذي يساعدك؟</b> الأنسجة والالتهاب وإصلاح الأنسجة.</div></div>
+   <div class="real"><div class="tag">موقف تعليمي</div><h4>ضعف حركة طرف</h4><p>تدرك أن الحركة والإحساس مرتبطان بمسارات عصبية وأن الملاحظة المنظمة مهمة.</p><div class="use"><b>ما الذي يساعدك؟</b> الجهاز العصبي المركزي والطرفي.</div></div>
+   <div class="real"><div class="tag">موقف تعليمي</div><h4>نتيجة تعداد دم</h4><p>عندما تعرف وظائف مكونات الدم تبدأ الأرقام في اكتساب معنى بدل أن تكون اختصارات فقط.</p><div class="use"><b>ما الذي يساعدك؟</b> كريات الدم والصفائح والبلازما ووظائفها.</div></div>
+   <div class="real"><div class="tag">موقف تعليمي</div><h4>تورم في الساق</h4><p>تعرف أن التورم يتعلق بحركة السوائل بين الأوعية والأنسجة، وأن الجهاز اللمفاوي جزء من الصورة.</p><div class="use"><b>ما الذي يساعدك؟</b> السوائل والشعيرات والجهاز اللمفاوي.</div></div>
+   <div class="real"><div class="tag">موقف تعليمي</div><h4>تعرق وتسارع نبض أثناء الخوف</h4><p>ترى كيف تظهر استجابة الجهاز العصبي الذاتي على أكثر من عضو في وقت واحد.</p><div class="use"><b>ما الذي يساعدك؟</b> تنظيم القلب والجلد والجهاز العصبي الذاتي.</div></div>
   </div>
 
   <h3 class="sectionTitle">كيف تدرس هذا المقرر؟</h3>
-  <div class="studySteps">
-   <div><b>حدد المكان.</b> أين توجد البنية؟ وما الذي يجاورها؟ استخدم صورة أو مخططًا.</div>
-   <div><b>اسأل عن الوظيفة.</b> ماذا يفعل هذا الجزء؟ ولماذا يحتاج الجسم إليه؟</div>
-   <div><b>اربط الشكل بالوظيفة.</b> ما الذي في تركيبه يساعده على أداء مهمته؟</div>
-   <div><b>اسأل ماذا يحدث إذا اختل.</b> ليس للتشخيص، بل لتثبيت فهمك للوظيفة الطبيعية.</div>
-   <div><b>استخدم المصطلح في سياق.</b> الاتجاهات والأسماء تصبح أسهل عندما تصف بها صورة أو حالة بدل حفظها وحدها.</div>
-   <div><b>اربط الأجهزة.</b> عند دراسة عضو، اسأل دائمًا: من يمده بالدم؟ من ينظمه؟ وكيف يؤثر في بقية الجسم؟</div>
-  </div>
-
-  <h3 class="sectionTitle">ستقابل هذه المعرفة مرة أخرى في…</h3>
-  <div class="linked"><span>Health Assessment</span><span>Pathophysiology</span><span>Pharmacology</span><span>Adult Nursing</span><span>Critical Care</span><span>Clinical Training</span></div>
-
-  <h3 class="sectionTitle">اختبر فهمك</h3>
-  <details class="q"><summary>لماذا لا يكفي أن أعرف اسم العضو ومكانه؟</summary><p>لأن القيمة الحقيقية تبدأ عندما تربط مكانه وتركيبه بوظيفته وعلاقته بالأجهزة الأخرى.</p></details>
-  <details class="q"><summary>لماذا يعتبر Homeostasis فكرة مركزية في الفسيولوجيا؟</summary><p>لأن كثيرًا من وظائف الجسم تهدف إلى إبقاء الظروف الداخلية في مدى يسمح للخلايا والأعضاء بالعمل بصورة مناسبة.</p></details>
-  <details class="q"><summary>ما فائدة تعلم النقل عبر غشاء الخلية لطالب تمريض؟</summary><p>لأنه يساعد لاحقًا في فهم حركة الماء والأيونات والمواد بين داخل الخلية وخارجها، وهي أساس لفهم السوائل والتوازن والعديد من التغيرات المرضية.</p></details>
-  <details class="q"><summary>كيف ترتبط الأنسجة بالعلامات التي نراها على المريض؟</summary><p>لأن الضرر والالتهاب والإصلاح تحدث في الأنسجة، وقد تظهر آثارها في صورة ألم أو تورم أو احمرار أو تغير في الوظيفة.</p></details>
-  <details class="q"><summary>لماذا لا يعمل الجهاز العصبي والقلب كل منهما منفصلًا عن الآخر؟</summary><p>لأن الجهاز العصبي يساعد على تنظيم سرعة القلب والأوعية والضغط، بينما تعتمد الخلايا العصبية نفسها على وصول الدم والأكسجين بصورة مستمرة.</p></details>
+  <div class="studySteps"><div><b>حدد المكان.</b> أين توجد البنية؟ وما الذي يجاورها؟</div><div><b>اسأل عن الوظيفة.</b> ماذا يفعل هذا الجزء؟</div><div><b>اربط الشكل بالوظيفة.</b> لماذا يبدو بهذه الطريقة؟</div><div><b>اسأل ماذا يحدث إذا اختل.</b> لتثبيت الوظيفة الطبيعية.</div><div><b>استخدم المصطلح في سياق.</b> لا تحفظ الاتجاهات كقائمة منفصلة.</div><div><b>اربط الأجهزة.</b> من يمد العضو بالدم؟ من ينظمه؟ وماذا يؤثر فيه؟</div></div>
  </div>
 </section>
-</main>
 
+<section class="course" id="sociology">
+ <div class="courseHead"><div class="num">04</div><h2>علم الاجتماع الطبي</h2><div class="en">Medical Sociology</div>
+  <div class="meta"><span><b>الرمز:</b> SOCSCI 100ly</span><span><b>النوع:</b> عام</span><span><b>الوحدات:</b> 2</span><span><b>ساعات الاتصال:</b> 32</span><span><b>عبء التعلّم:</b> 72</span><span><b>ECTS:</b> 3</span><span><b>لغة التدريس:</b> العربية</span><span><b>المتطلب السابق:</b> لا يوجد</span></div>
+ </div>
+ <div class="courseBody">
+  <div class="bigIdea">الصحة والمرض لا يحدثان داخل الجسم فقط. ظروف الأسرة، التعليم، الدخل، العمل، السكن، العلاقات الاجتماعية، الثقافة والوصول إلى الخدمات قد تؤثر في السلوك الصحي وفي تجربة المريض مع المرض والعلاج.</div>
+
+  <h3 class="sectionTitle">ما الذي يفتح عينيك عليه هذا المقرر؟</h3>
+  <div class="grid3">
+   <div class="concept"><h4>Health is social too</h4><p>نفس المرض قد تكون له تجربة مختلفة عند شخصين لأن ظروفهما الاجتماعية مختلفة.</p></div>
+   <div class="concept"><h4>Patterns of disease</h4><p>بعض الأمراض أو المخاطر لا تتوزع بالتساوي بين الناس، وقد ترتبط بظروف المجتمع والبيئة ونمط الحياة.</p></div>
+   <div class="concept"><h4>Social inequalities</h4><p>القدرة على الوصول للفحص أو الدواء أو الغذاء أو النقل قد تغير النتائج الصحية حتى عند وجود الخدمة نفسها.</p></div>
+   <div class="concept"><h4>Illness experience</h4><p>ما يشعر به الإنسان وما يعنيه المرض له قد يختلف عن التعريف الطبي للمرض.</p></div>
+   <div class="concept"><h4>Sick role</h4><p>المجتمع لديه توقعات عن المريض: متى يطلب مساعدة، وما الذي يُعفى منه، وما الذي يتوقع منه فعله للتعافي.</p></div>
+   <div class="concept"><h4>Health system</h4><p>المهن الصحية والتنظيم والتأمين وطريقة تقديم الخدمات كلها تؤثر في رحلة المريض.</p></div>
+  </div>
+
+  <h3 class="sectionTitle">مفاهيم مهمة</h3>
+  <div class="lessonGrid">
+   <div class="lesson"><div class="n">مفهوم</div><h4>المحددات الاجتماعية للصحة</h4><p>اسأل: أين يعيش المريض؟ ماذا يستطيع أن يشتري؟ هل لديه نقل؟ هل يستطيع قراءة التعليمات؟ هل لديه دعم أسري؟</p></div>
+   <div class="lesson"><div class="n">مفهوم</div><h4>الثقافة والمعتقدات</h4><p>الثقافة قد تؤثر في تفسير المرض، طلب المساعدة، الطعام، الخصوصية، قبول بعض الإجراءات وطريقة التواصل.</p></div>
+   <div class="lesson"><div class="n">مفهوم</div><h4>Medicalization</h4><p>بعض جوانب الحياة قد تُعامل مع الوقت على أنها قضايا طبية؛ فهم هذا المفهوم يساعدك على التفكير النقدي في حدود الطب والرعاية.</p></div>
+   <div class="lesson"><div class="n">مفهوم</div><h4>العلاقة مع النظام الصحي</h4><p>تجربة المريض لا تعتمد على الطبيب أو الممرض وحده؛ التنظيم والمواعيد والتكلفة والمعلومات كلها أجزاء من الرعاية.</p></div>
+  </div>
+
+  <h3 class="sectionTitle">🩺 مواقف قد تواجهها</h3>
+  <div class="scenarios">
+   <div class="real"><div class="tag">موقف تعليمي</div><h4>مريض لا يعود للمتابعة</h4><p>قد يبدو لأول وهلة «غير ملتزم»، لكن السبب قد يكون بعد المسافة أو المواصلات أو تكلفة الدواء أو عدم فهم التعليمات.</p><div class="use"><b>الفائدة:</b> تسأل قبل أن تحكم، وتبحث عن العائق الحقيقي.</div></div>
+   <div class="real"><div class="tag">موقف تعليمي</div><h4>أسرة تفسر المرض بطريقة مختلفة</h4><p>قد تكون لديهم معتقدات حول السبب أو العلاج. فهم الخلفية لا يعني الموافقة على كل شيء، لكنه يساعدك على التواصل باحترام وبناء الثقة.</p><div class="use"><b>الفائدة:</b> رعاية أكثر إنسانية وأقل صدامًا.</div></div>
+   <div class="real"><div class="tag">موقف تعليمي</div><h4>تعليمات ممتازة لكنها غير قابلة للتطبيق</h4><p>تنصح المريض بنظام غذائي أو متابعة لا يستطيع تنفيذها بسبب ظروفه.</p><div class="use"><b>الفائدة:</b> تربط الخطة بواقع المريض بدل إعطاء نصيحة مثالية فقط.</div></div>
+   <div class="real"><div class="tag">موقف تعليمي</div><h4>مريضان بنفس التشخيص</h4><p>أحدهما لديه أسرة داعمة وموارد جيدة، والآخر يعيش وحده وموارده محدودة.</p><div class="use"><b>الفائدة:</b> تفهم لماذا لا تؤدي الخطة نفسها دائمًا إلى النتيجة نفسها.</div></div>
+  </div>
+ </div>
+</section>
+
+<section class="course" id="theory">
+ <div class="courseHead"><div class="num">05</div><h2>الأسس النظرية في التمريض</h2><div class="en">Theoretical Foundations of Nursing</div>
+  <div class="meta"><span><b>الرمز:</b> NURS 101ly</span><span><b>النوع:</b> تخصصي</span><span><b>الوحدات:</b> 4</span><span><b>ساعات الاتصال:</b> 64</span><span><b>عبء التعلّم:</b> 96</span><span><b>ECTS:</b> 4</span><span><b>لغة التدريس:</b> الإنجليزية</span><span><b>المتطلب السابق:</b> لا يوجد</span></div>
+ </div>
+ <div class="courseBody">
+  <div class="bigIdea">التمريض ليس قائمة إجراءات. النظرية تساعدك على الإجابة عن أسئلة أعمق: من هو الإنسان الذي أرعاه؟ ماذا تعني الصحة؟ كيف تؤثر البيئة؟ وما دور الممرض؟</div>
+
+  <h3 class="sectionTitle">أربع أفكار مركزية</h3>
+  <div class="grid2">
+   <div class="concept"><h4>Person · الإنسان</h4><p>ليس «حالة مرضية» فقط؛ له احتياجات وقيم وعلاقات وقدرات ومخاوف وخلفية ثقافية.</p></div>
+   <div class="concept"><h4>Health · الصحة</h4><p>ليست فقط غياب المرض؛ قد تشمل القدرة على التكيف والعمل والاستقلال وتحقيق أفضل حالة ممكنة.</p></div>
+   <div class="concept"><h4>Environment · البيئة</h4><p>كل ما يحيط بالشخص وقد يؤثر في صحته: البيئة المادية والاجتماعية والثقافية.</p></div>
+   <div class="concept"><h4>Nursing · التمريض</h4><p>ماذا يفعل الممرض ولماذا؟ مساعدة، حماية، تعليم، ملاحظة، دعم الاستقلال، بناء علاقة علاجية وتنسيق الرعاية.</p></div>
+  </div>
+
+  <h3 class="sectionTitle">ما الفرق بين Concept وTheory وPrinciple؟</h3>
+  <div class="grid3">
+   <div class="concept"><h4>Concept</h4><p>فكرة أساسية تساعدنا على تسمية شيء وفهمه، مثل الصحة أو الاستقلال أو التكيف.</p></div>
+   <div class="concept"><h4>Theory</h4><p>ترتيب منظم لأفكار وعلاقات يساعدنا على تفسير ظاهرة أو توجيه طريقة التفكير والممارسة.</p></div>
+   <div class="concept"><h4>Principle</h4><p>قاعدة عامة توجه الفعل أو الحكم، مثل احترام الخصوصية أو المحافظة على السلامة.</p></div>
+  </div>
+
+  <h3 class="sectionTitle">كيف تنظر بعض النظريات إلى الرعاية؟</h3>
+  <div class="lessonGrid">
+   <div class="lesson"><div class="n">Nightingale</div><h4>البيئة تؤثر في الشفاء</h4><p>النظافة والتهوية والضوء والهدوء والبيئة المناسبة ليست تفاصيل جانبية؛ قد تؤثر في راحة المريض وتعافيه.</p></div>
+   <div class="lesson"><div class="n">Henderson</div><h4>مساعدة الشخص على الاستقلال</h4><p>الممرض يساعد الشخص على أداء ما كان سيقوم به بنفسه لو كانت لديه القوة أو المعرفة أو القدرة.</p></div>
+   <div class="lesson"><div class="n">Orem</div><h4>الرعاية الذاتية</h4><p>فكر في ما يستطيع المريض فعله بنفسه، وما لا يستطيع، وكيف تساعده على استعادة القدرة أو تعويضها.</p></div>
+   <div class="lesson"><div class="n">Peplau</div><h4>العلاقة العلاجية</h4><p>العلاقة بين الممرض والمريض نفسها أداة علاجية عندما تقوم على التواصل والثقة والأدوار الواضحة.</p></div>
+   <div class="lesson"><div class="n">Roy</div><h4>التكيف</h4><p>انظر كيف يتكيف الشخص جسديًا ونفسيًا واجتماعيًا مع التغير أو المرض.</p></div>
+   <div class="lesson"><div class="n">Leininger</div><h4>الرعاية والثقافة</h4><p>الرعاية الجيدة تراعي قيم الشخص ومعتقداته وممارساته الثقافية ما دام ذلك ممكنًا وآمنًا.</p></div>
+  </div>
+
+  <h3 class="sectionTitle">🩺 مواقف قد تواجهها</h3>
+  <div class="scenarios">
+   <div class="real"><div class="tag">موقف تعليمي</div><h4>مريض يستطيع الأكل بنفسه لكنه بطيء</h4><p>القيام بكل شيء عنه قد يكون أسرع، لكن تشجيعه على الاستقلال قد يكون جزءًا من الرعاية.</p><div class="use"><b>الفائدة:</b> تفكر في الهدف من المساعدة، لا في إكمال المهمة فقط.</div></div>
+   <div class="real"><div class="tag">موقف تعليمي</div><h4>مريض قلق ولا يتعاون</h4><p>قد لا تكون المشكلة «رفضًا» فقط؛ العلاقة، الخوف وطريقة التواصل قد تغير الموقف.</p><div class="use"><b>الفائدة:</b> ترى العلاقة العلاجية كجزء من التدخل.</div></div>
+   <div class="real"><div class="tag">موقف تعليمي</div><h4>ممارسة ثقافية مهمة للمريض</h4><p>بدل تجاهلها، تسأل كيف يمكن احترامها دون تعريض سلامة المريض للخطر.</p><div class="use"><b>الفائدة:</b> رعاية تراعي الإنسان لا التشخيص فقط.</div></div>
+   <div class="real"><div class="tag">موقف تعليمي</div><h4>غرفة مزعجة ومزدحمة</h4><p>قد تكون البيئة جزءًا من المشكلة: النوم والراحة والخصوصية والسلامة كلها تتأثر.</p><div class="use"><b>الفائدة:</b> توسع نظرتك لما يدخل ضمن الرعاية.</div></div>
+  </div>
+ </div>
+</section>
+
+<section class="course" id="biochem">
+ <div class="courseHead"><div class="num">06</div><h2>الكيمياء الحيوية</h2><div class="en">Biochemistry</div>
+  <div class="meta"><span><b>الرمز:</b> CHEM 101ly</span><span><b>النوع:</b> طبي مساند</span><span><b>الوحدات:</b> 4 (3 نظري + 1 معمل)</span><span><b>ساعات الاتصال:</b> 80</span><span><b>عبء التعلّم:</b> 110</span><span><b>ECTS:</b> 5</span><span><b>لغة التدريس:</b> الإنجليزية</span><span><b>المتطلب السابق:</b> لا يوجد</span></div>
+ </div>
+ <div class="courseBody">
+  <div class="bigIdea">الكيمياء الحيوية تشرح ما يحدث داخل الجسم على مستوى الجزيئات: كيف نحصل على الطاقة، لماذا يحتاج الجسم الماء والأملاح، كيف تعمل الإنزيمات، وكيف ترتبط الجلوكوز والدهون والبروتينات والفيتامينات بالصحة والمرض.</div>
+
+  <h3 class="sectionTitle">ابدأ بهذه الخريطة</h3>
+  <div class="grid3">
+   <div class="concept"><h4>Water &amp; pH</h4><p>الماء وسط التفاعلات، والحموضة يجب أن تبقى ضمن نطاق مناسب لعمل البروتينات والخلايا.</p></div>
+   <div class="concept"><h4>Carbohydrates</h4><p>مصدر مهم للطاقة، والجلوكوز نقطة مركزية في الاستقلاب وتنظيم سكر الدم.</p></div>
+   <div class="concept"><h4>Lipids</h4><p>تخزن الطاقة، تدخل في الأغشية والهرمونات، وتنقل في الدم ضمن جزيئات مثل LDL وHDL.</p></div>
+   <div class="concept"><h4>Proteins</h4><p>تبني الأنسجة وتعمل كإنزيمات وناقلات ومستقبلات وأجسام مضادة وغيرها.</p></div>
+   <div class="concept"><h4>Enzymes</h4><p>تسرّع التفاعلات الحيوية. تغير نشاطها أو مستويات بعضها قد يفيد في فهم أو متابعة حالات مرضية.</p></div>
+   <div class="concept"><h4>DNA &amp; RNA</h4><p>يحملان المعلومات الوراثية ويشاركان في توجيه تصنيع البروتينات.</p></div>
+  </div>
+
+  <h3 class="sectionTitle">مفاهيم ودروس مهمة</h3>
+  <div class="lessonGrid">
+   <div class="lesson"><div class="n">درس</div><h4>الماء والحموضة والـBuffers</h4><p>الجسم يحتاج المحافظة على pH مناسب. أنظمة التنظيم تساعد على مقاومة التغيرات الكبيرة في الحموضة والقلوية.</p><div class="think"><b>فكر:</b> لماذا قد يؤثر تغير pH في نشاط الإنزيمات ووظيفة الخلايا؟</div></div>
+   <div class="lesson"><div class="n">درس</div><h4>الكربوهيدرات والطاقة</h4><p>الجلوكوز يدخل مسارات لإنتاج الطاقة، ويمكن تخزينه في صورة جليكوجين أو صنعه عند الحاجة في ظروف معينة.</p><div class="think"><b>فكر:</b> لماذا تحتاج خلايا الجسم إلى تنظيم سكر الدم بدل تركه يتغير بلا حدود؟</div></div>
+   <div class="lesson"><div class="n">درس</div><h4>الدهون والليبوبروتينات</h4><p>الدهون لا تذوب بسهولة في الماء، لذلك تنقل في الدم ضمن جزيئات متخصصة. تختلف وظائف LDL وHDL وغيرها.</p><div class="think"><b>فكر:</b> لماذا لا تعني كلمة «دهون» شيئًا واحدًا فقط؟</div></div>
+   <div class="lesson"><div class="n">درس</div><h4>البروتين والأحماض الأمينية</h4><p>البروتينات تعتمد في وظيفتها على بنيتها. تغير شكل البروتين قد يغير قدرته على العمل.</p><div class="think"><b>فكر:</b> كيف يمكن لدرجة الحرارة أو pH أن تغير بروتينًا أو إنزيمًا؟</div></div>
+   <div class="lesson"><div class="n">درس</div><h4>الإنزيمات</h4><p>لها مواقع فعالة وتتأثر بالحرارة وpH والتركيز والمثبطات. كثير من العمليات الحيوية تعتمد عليها.</p><div class="think"><b>فكر:</b> لماذا قد ترتفع بعض الإنزيمات في الدم عند تضرر نسيج معين؟</div></div>
+   <div class="lesson"><div class="n">درس</div><h4>الفيتامينات والمعادن</h4><p>بعضها يعمل كعامل مساعد في التفاعلات، والنقص أو الزيادة قد يؤثران في وظائف متعددة.</p><div class="think"><b>فكر:</b> لماذا قد يسبب نقص عنصر صغير أثرًا كبيرًا في الجسم؟</div></div>
+   <div class="lesson"><div class="n">درس</div><h4>الاستقلاب: بناء وهدم</h4><p>الجسم يهدم جزيئات للحصول على الطاقة ويبني جزيئات للنمو والإصلاح والتخزين. المساران يعملان باستمرار.</p><div class="think"><b>فكر:</b> ماذا يعني أن الجسم قد يبني الجليكوجين بعد الطعام ثم يهدمه بين الوجبات؟</div></div>
+   <div class="lesson"><div class="n">درس</div><h4>تنظيم جلوكوز الدم والسكري</h4><p>توازن الجلوكوز يعتمد على الهرمونات والكبد والأنسجة ومسارات الاستقلاب. السكري مثال مهم لفهم أثر اضطراب هذا التنظيم.</p><div class="think"><b>فكر:</b> لماذا قد تؤثر مشكلة في تنظيم الجلوكوز في أعضاء متعددة مع الوقت؟</div></div>
+  </div>
+
+  <h3 class="sectionTitle">🩺 مواقف قد تواجهها</h3>
+  <div class="scenarios">
+   <div class="real"><div class="tag">موقف تعليمي</div><h4>قراءة نتيجة Glucose</h4><p>الرقم وحده لا يكفي؛ فهم دور الجلوكوز والهرمونات والاستقلاب يعطيه معنى.</p><div class="use"><b>المعرفة المفيدة:</b> تنظيم سكر الدم والطاقة.</div></div>
+   <div class="real"><div class="tag">موقف تعليمي</div><h4>مريض يعاني جفافًا</h4><p>فقد الماء لا يعني فقط العطش؛ يؤثر في حجم السوائل وتركيز المواد والتوازن داخل الجسم.</p><div class="use"><b>المعرفة المفيدة:</b> الماء والأيونات والاتزان.</div></div>
+   <div class="real"><div class="tag">موقف تعليمي</div><h4>نتيجة دهون الدم</h4><p>تظهر LDL وHDL وTriglycerides. فهم طريقة نقل الدهون يساعدك على عدم التعامل معها كأرقام منفصلة.</p><div class="use"><b>المعرفة المفيدة:</b> الدهون والليبوبروتينات.</div></div>
+   <div class="real"><div class="tag">موقف تعليمي</div><h4>تحليل يظهر ارتفاع إنزيم معين</h4><p>لا تشخّص من الرقم، لكن تفهم لماذا قد تُستخدم الإنزيمات كمؤشرات في المختبر.</p><div class="use"><b>المعرفة المفيدة:</b> الإنزيمات وتطبيقاتها التشخيصية.</div></div>
+  </div>
+ </div>
+</section>
+
+<section class="course" id="rle1">
+ <div class="courseHead"><div class="num">07</div><h2>الخبرة التعليمية المرتبطة 1</h2><div class="en">Related Learning Experience 1</div>
+  <div class="meta"><span><b>الرمز:</b> NURS 102ly</span><span><b>النوع:</b> تخصصي عملي</span><span><b>الوحدات:</b> 2</span><span><b>ساعات الاتصال:</b> 64 معمل</span><span><b>عبء التعلّم:</b> 100</span><span><b>ECTS:</b> 4</span><span><b>لغة التدريس:</b> الإنجليزية</span><span><b>المتطلب السابق:</b> لا يوجد</span></div>
+ </div>
+ <div class="courseBody">
+  <div class="bigIdea">هنا تبدأ المعرفة بالتحول إلى أداء. الهدف ليس أن «تقلد خطوات» فقط، بل أن تعرف لماذا تفعل الخطوة، كيف تحمي المريض ونفسك، وكيف تلاحظ الخطأ وتصححه.</div>
+
+  <h3 class="sectionTitle">المحاور الأساسية</h3>
+  <div class="grid3">
+   <div class="concept"><h4>Universal precautions</h4><p>افترض أن التعرض للدم أو سوائل الجسم قد يحمل خطرًا، واتبع الاحتياطات المناسبة بدل الاعتماد على معرفة تشخيص المريض.</p></div>
+   <div class="concept"><h4>Hand hygiene</h4><p>غسل اليدين ليس إجراءً شكليًا؛ هو كسر لسلسلة انتقال الميكروبات في اللحظة المناسبة وبالطريقة المناسبة.</p></div>
+   <div class="concept"><h4>PPE &amp; gloves</h4><p>اختيار معدات الوقاية وترتيب لبسها وخلعها يرتبط بنوع التعرض المتوقع ومنع تلويث النفس أو البيئة.</p></div>
+   <div class="concept"><h4>Documentation</h4><p>ما لم يُوثق بدقة قد يصبح غير واضح للفريق التالي. التسجيل جزء من استمرارية الرعاية.</p></div>
+   <div class="concept"><h4>Body mechanics &amp; positioning</h4><p>الوضعية قد تحقق الراحة، تسهل إجراءً، تحمي الجلد أو التنفس، كما تحمي الممرض من إصابة الظهر.</p></div>
+   <div class="concept"><h4>Vital signs</h4><p>الحرارة والنبض والتنفس والضغط ليست أرقامًا تحفظ؛ هي إشارات عن عمل أجهزة الجسم يجب قياسها بصورة صحيحة ومقارنتها بالسياق.</p></div>
+  </div>
+
+  <h3 class="sectionTitle">منهج التفكير قبل أي مهارة</h3>
+  <div class="studySteps">
+   <div><b>اعرف الهدف.</b> لماذا أقوم بهذا الإجراء؟</div>
+   <div><b>قيّم المريض والمخاطر.</b> هل هناك ما يغير الطريقة أو يحتاج مساعدة إضافية؟</div>
+   <div><b>جهز الأدوات والبيئة.</b> قبل أن تبدأ، تأكد أن كل ما تحتاجه متاح وأن الخصوصية والسلامة محفوظتان.</div>
+   <div><b>نفذ بترتيب منطقي.</b> لا تحفظ الحركة وحدها؛ اربط كل خطوة بسببها.</div>
+   <div><b>راقب استجابة المريض.</b> المريض ليس دمية تدريب؛ راحته وألمه وتنفسه وتواصله جزء من المهارة.</div>
+   <div><b>وثق وقيّم.</b> ماذا فعلت؟ ماذا لاحظت؟ وهل تحقق الهدف؟</div>
+  </div>
+
+  <h3 class="sectionTitle">مهارات هذا المقرر</h3>
+  <div class="lessonGrid">
+   <div class="lesson"><div class="n">مهارة</div><h4>غسل اليدين</h4><p>متى تغسل؟ كيف تمنع إعادة تلوث اليدين؟ ولماذا تحتاج تغطية كل الأسطح بدل الاكتفاء ببلل اليدين؟</p></div>
+   <div class="lesson"><div class="n">مهارة</div><h4>القفازات والـPPE</h4><p>التمييز بين القفاز النظيف والمعقم، وكيفية ارتداء معدات الوقاية وخلعها دون نقل التلوث.</p></div>
+   <div class="lesson"><div class="n">مهارة</div><h4>الوضعيات</h4><p>Supine, prone, lateral, Fowler’s وغيرها؛ كل وضعية لها هدف واحتياطات.</p></div>
+   <div class="lesson"><div class="n">مهارة</div><h4>Range of Motion</h4><p>حركة المفاصل ضمن المدى المناسب للمساعدة على المحافظة على الحركة والمرونة حسب حالة المريض.</p></div>
+   <div class="lesson"><div class="n">مهارة</div><h4>النظافة والراحة</h4><p>تغيير الرداء أو الحفاض أو العناية بالنظافة يجب أن يحافظ على الكرامة والخصوصية والجلد وسلامة الحركة.</p></div>
+   <div class="lesson"><div class="n">مهارة</div><h4>ترتيب السرير</h4><p>السرير المفتوح والمغلق والمشغول ليست أشكالًا؛ الهدف هو راحة المريض وسلامته وكفاءة الرعاية.</p></div>
+   <div class="lesson"><div class="n">مهارة</div><h4>درجة الحرارة والنبض والتنفس</h4><p>تعلم القياس، العوامل التي تغير القراءة، ومتى تبدو النتيجة مختلفة عما تتوقع.</p></div>
+   <div class="lesson"><div class="n">مهارة</div><h4>ضغط الدم</h4><p>اختيار الكفة المناسبة، وضع الذراع، التقنية الصحيحة، وفهم أن القياس الخاطئ قد يعطي رقمًا مضللًا.</p></div>
+  </div>
+
+  <h3 class="sectionTitle">🩺 مواقف قد تواجهها</h3>
+  <div class="scenarios">
+   <div class="real"><div class="tag">موقف تعليمي</div><h4>أنت على وشك لمس المريض بعد لمس سطح قريب</h4><p>تتذكر أن اليد قد تنقل الميكروبات حتى لو لم تبدُ متسخة.</p><div class="use"><b>الفائدة:</b> تتحول مكافحة العدوى من «خطوات امتحان» إلى عادة سلامة.</div></div>
+   <div class="real"><div class="tag">موقف تعليمي</div><h4>مريض ضعيف يحتاج تغيير الوضعية</h4><p>التحريك غير المنظم قد يؤذي المريض أو ظهرك.</p><div class="use"><b>الفائدة:</b> تفكر في المساعدة المطلوبة والجسم والرافعة وقاعدة الارتكاز قبل الحركة.</div></div>
+   <div class="real"><div class="tag">موقف تعليمي</div><h4>ضغط الدم أعلى بكثير من المتوقع</h4><p>قبل أن تقلق من الرقم، تتأكد من الكفة والوضعية والراحة والتقنية ثم تعيد القياس أو تبلغ حسب الإجراء.</p><div class="use"><b>الفائدة:</b> تعرف أن جودة القياس جزء من معنى النتيجة.</div></div>
+   <div class="real"><div class="tag">موقف تعليمي</div><h4>إبرة مستعملة بعد الإجراء</h4><p>لحظة التخلص منها قد تكون أخطر من الإجراء نفسه إذا لم تتبع احتياطات الأدوات الحادة.</p><div class="use"><b>الفائدة:</b> السلامة تستمر حتى بعد انتهاء المهارة.</div></div>
+  </div>
+ </div>
+</section>
+
+<section class="course" id="islamic">
+ <div class="courseHead"><div class="num">08</div><h2>الدراسات الإسلامية</h2><div class="en">Islamic Studies</div>
+  <div class="meta"><span><b>الرمز:</b> LANG 102ly</span><span><b>النوع:</b> عام</span><span><b>الوحدات:</b> 2</span><span><b>ساعات الاتصال:</b> 32</span><span><b>عبء التعلّم:</b> 56</span><span><b>ECTS:</b> 2</span><span><b>المتطلب السابق:</b> لا يوجد</span></div>
+ </div>
+ <div class="courseBody">
+  <div class="compactGrid">
+   <div class="box"><h3>ما الذي يتناوله المقرر؟</h3><p>مدخل إلى القرآن والسنة والسيرة، وأسس الفقه، والثقافة والحضارة الإسلامية، وعلاقة الإسلام بالحياة الاجتماعية والعلم وغيرها من القضايا العامة.</p></div>
+   <div class="scenario"><h3>🩺 صلة مفيدة بالممارسة</h3><p>العمل مع الناس يتطلب احترام معتقداتهم وقيمهم وخصوصيتهم. فهم الخلفية الدينية والثقافية يساعد على التواصل باحترام، مع الرجوع إلى المختصين عند وجود مسألة شرعية أو سريرية تحتاج حكمًا دقيقًا.</p></div>
+  </div>
+  <h3 class="sectionTitle">محاور رئيسية</h3>
+  <div class="grid3">
+   <div class="concept"><h4>القرآن</h4><p>مفاهيم أساسية، تاريخ القرآن، ومكانته في الحياة الإسلامية.</p></div>
+   <div class="concept"><h4>السنة والسيرة</h4><p>مدخل إلى السنة ودراسة جوانب من سيرة النبي ﷺ.</p></div>
+   <div class="concept"><h4>الفقه</h4><p>تعرف عام على مفهوم الشريعة والفقه ومجالاتهما.</p></div>
+   <div class="concept"><h4>الثقافة والحضارة</h4><p>كيف تطورت الحضارة الإسلامية وإسهاماتها وتنوع مجتمعاتها.</p></div>
+   <div class="concept"><h4>الإسلام والعلم</h4><p>التفكير في العلاقة بين طلب العلم والمسؤولية والمعرفة النافعة.</p></div>
+   <div class="concept"><h4>النظام الاجتماعي</h4><p>قيم وعلاقات ومسؤوليات تنظم حياة الفرد داخل المجتمع.</p></div>
+  </div>
+ </div>
+</section>
+
+</main>
 <footer class="footer">© 2026 كلية التمريض · جامعة طبرق | Faculty of Nursing · Tobruk University</footer>
 </body>
 </html>
