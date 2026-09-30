@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-30T22:42:00Z",
+  "updatedAt": "2026-09-30T23:06:00Z",
   "source": "دليل معايير الاعتماد المؤسسي، الإصدار الرابع ٢٠٢٣",
   "mode": "evidence_mapped",
   "criteria": [
@@ -762,15 +762,23 @@
           "code": "5.1",
           "text": "للمؤسسة آلية لقبول الطلاب تنسجم مع رسالتها، وأهدافها، وخططها، (واضحة، ومعلنة، ومنشورة).",
           "status": "unassessed",
-          "evidenceIds": [],
-          "evidenceAvailable": false
+          "evidenceIds": [
+            "EVI-040",
+            "EVI-041",
+            "EVI-043"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "5.2",
           "text": "للمؤسسة آلية لتنسيب الطلاب المقبولين في التخصصات المختلفة، مناسبة لقدرتها الاستيعابية، وملتزمة بها.",
           "status": "unassessed",
-          "evidenceIds": [],
-          "evidenceAvailable": false
+          "evidenceIds": [
+            "EVI-040",
+            "EVI-041",
+            "EVI-043"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "5.3",
@@ -785,22 +793,31 @@
           "code": "5.4",
           "text": "للمؤسسة عناصر بشرية مؤهلة لمساعدة الطلاب على إتمام إجراءاتهم.",
           "status": "unassessed",
-          "evidenceIds": [],
-          "evidenceAvailable": false
+          "evidenceIds": [
+            "EVI-041",
+            "EVI-002"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "5.5",
           "text": "للمؤسسة آلية لتوفير الدعم المناسب للطلاب ذوي الإعاقة.",
           "status": "unassessed",
-          "evidenceIds": [],
-          "evidenceAvailable": false
+          "evidenceIds": [
+            "EVI-046",
+            "EVI-052"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "5.6",
           "text": "للمؤسسة آلية لتوثيق معاملات الطلاب المتفوقين، والمتعثرين.",
           "status": "unassessed",
-          "evidenceIds": [],
-          "evidenceAvailable": false
+          "evidenceIds": [
+            "EVI-010",
+            "EVI-041"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "5.7",
@@ -824,29 +841,40 @@
           "code": "5.9",
           "text": "للمؤسسة آلية تبيِّن أماكن حفظ النسخ الاحتياطية لسجلات الطلاب، وتكفل سرية المعلومات.",
           "status": "unassessed",
-          "evidenceIds": [],
-          "evidenceAvailable": false
+          "evidenceIds": [
+            "EVI-045",
+            "EVI-041"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "5.10",
           "text": "للمؤسسة آلية تُنظِّم عملية اطلاع الطلاب على سجلاتهم.",
           "status": "unassessed",
-          "evidenceIds": [],
-          "evidenceAvailable": false
+          "evidenceIds": [
+            "EVI-045"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "5.11",
           "text": "للمؤسسة آلية لاختيار، وتسمية المرشد الأكاديمي، أو الرائد العلمي.",
           "status": "unassessed",
-          "evidenceIds": [],
-          "evidenceAvailable": false
+          "evidenceIds": [
+            "EVI-041",
+            "EVI-044"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "5.12",
           "text": "للمؤسسة آلية تمكِّن الطلاب من التواصل مع أعضاء هيئة التدريس، والكوادر المساندة.",
           "status": "unassessed",
-          "evidenceIds": [],
-          "evidenceAvailable": false
+          "evidenceIds": [
+            "EVI-041",
+            "EVI-020"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "5.13",
@@ -861,15 +889,22 @@
           "code": "5.14",
           "text": "للمؤسسة آلية للاستفادة من معالجة الطعون، وشكاوى الطلاب.",
           "status": "unassessed",
-          "evidenceIds": [],
-          "evidenceAvailable": false
+          "evidenceIds": [
+            "EVI-041",
+            "EVI-015",
+            "EVI-020"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "5.15",
           "text": "تلتزم المؤسسة بتقديم الدعم اللازم للأنشطة الطلابية، وتحدِّد مخصصات لها من الميزانية.",
           "status": "unassessed",
-          "evidenceIds": [],
-          "evidenceAvailable": false
+          "evidenceIds": [
+            "EVI-047",
+            "EVI-052"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "5.16",
@@ -889,8 +924,11 @@
           "code": "5.18",
           "text": "للمؤسسة أنظمة، وطرق فعّالة؛ للتواصل مع الطلاب خارج أوقات الدوام الرسمي.",
           "status": "unassessed",
-          "evidenceIds": [],
-          "evidenceAvailable": false
+          "evidenceIds": [
+            "EVI-041",
+            "EVI-020"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "5.19",
@@ -914,38 +952,52 @@
           "code": "5.21",
           "text": "للمؤسسة آلية تمكِّن الطلاب من المشاركة في صناعة القرارات، وحلِّ المشكلات التي تتعلَّق مباشرة بحقوقهم، وواجباتهم.",
           "status": "unassessed",
-          "evidenceIds": [],
-          "evidenceAvailable": false
+          "evidenceIds": [
+            "EVI-041",
+            "EVI-026"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "5.22",
           "text": "للمؤسسة آلية لمعرفة مدى ملاءمة برامجها لمتطلبات سوق العمل من وجهة نظر خريجيها.",
           "status": "unassessed",
-          "evidenceIds": [],
-          "evidenceAvailable": false
+          "evidenceIds": [
+            "EVI-048",
+            "EVI-049",
+            "EVI-050",
+            "EVI-051"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "5.23",
           "text": "للمؤسسة وحدة لمتابعة الخريجين، وآلية لمتابعتهم، والاستفادة من آرائهم.",
           "status": "unassessed",
-          "evidenceIds": [],
-          "evidenceAvailable": false
+          "evidenceIds": [
+            "EVI-048",
+            "EVI-049",
+            "EVI-051"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "5.24",
           "text": "تلتزم المؤسسة بتسليم قوائم الخريجين للمركز، ونشرها على موقعها الإلكتروني دوريّاً، وسنويّاً",
           "status": "unassessed",
-          "evidenceIds": [],
-          "evidenceAvailable": false
+          "evidenceIds": [
+            "EVI-051"
+          ],
+          "evidenceAvailable": true
         }
       ],
-      "documented": 6,
-      "availableEvidence": 4,
+      "documented": 22,
+      "availableEvidence": 19,
       "practiceTitles": [
-        "الاستبانات منفذة وتقارير التحليل منجزة",
-        "ربط صوت الطلبة والتحليل باستجابات تعليمية ودعم مقصود",
-        "تصنيف حركة الطلبة وأسبابها مع المسجل",
-        "اللائحة الداخلية المحدثة لدى الشؤون القانونية"
+        "دليل الشؤون الطلابية ينظم القبول المركزي والسجلات والإرشاد والشكاوى والتواصل",
+        "أُعد إجراء مستقل لسرية السجلات والاطلاع والنسخ الاحتياطية",
+        "استجابات خريجين فعلية ووحدة خريجين وسياسة تتبع موجودة",
+        "انتخاب اتحاد الطلبة والخدمات الصحية الطلابية ما زالا يحتاجان شاهدًا فعليًا/جامعيًا"
       ]
     },
     {
@@ -2882,6 +2934,117 @@
       "taskId": "ACT-21",
       "accessNote": "وجود السجل لا يثبت تعيين المرشدين أو انعقاد جلسات فعلية ما لم تُعبأ السجلات ويصدر التكليف التنظيمي.",
       "documentDate": null
+    },
+    {
+      "id": "EVI-045",
+      "name": "NUR-PRO-STU-003 إجراء سرية سجلات الطلاب والاطلاع والنسخ الاحتياطية v1.0 Draft",
+      "url": "https://docs.google.com/document/d/1PBenw_N4F2Q9f3lbSKQuV4_E0qDSb13fSYkh7ebaV1U/edit",
+      "statusLabel": "مسودة أُعدت لسد فجوة تنظيمية وتحتاج الاعتماد",
+      "description": "ينظم ملكية السجل، سرية البيانات وصلاحيات الوصول، حق الطالب في الاطلاع والتصحيح، مواقع النسخ الاحتياطية، الاسترجاع والتعامل مع فقد البيانات.",
+      "indicatorIds": [
+        "5.9",
+        "5.10"
+      ],
+      "taskId": "ACT-19",
+      "accessNote": "لا يثبت تنفيذ النسخ الاحتياطية أو اختبار الاسترجاع أو وجود سجلات طلبات اطلاع فعلية؛ بعد الاعتماد يلزم شواهد تشغيل من المسجل والجهة التقنية.",
+      "documentDate": "2026-09-30"
+    },
+    {
+      "id": "EVI-046",
+      "name": "NUR-PRO-STU-004 إجراء الدعم والإحالة للحالات الصحية والطلاب ذوي الإعاقة v1.0 Draft",
+      "url": "https://docs.google.com/document/d/1ZCLa7a0jbCiMNh4wtoTFPDdBKJ6OwyBCvoMte3rzdmI/edit",
+      "statusLabel": "مسودة مسار دعم وإحالة تحتاج الاعتماد",
+      "description": "ينظم استقبال احتياجات الطلبة ذوي الإعاقة والتيسيرات التعليمية الممكنة والإحالة إلى مكتب الفئات الخاصة أو الجهة الصحية المختصة، مع مراعاة السلامة السريرية والسرية.",
+      "indicatorIds": [
+        "5.5"
+      ],
+      "taskId": "ACT-24",
+      "accessNote": "يوفر مسار دعم وإحالة فقط؛ لا يثبت أن الكلية أو الجامعة توفر خدمة صحية طلابية مستقلة، ولا يُستخدم لإغلاق المؤشر 5.17.",
+      "documentDate": "2026-09-30"
+    },
+    {
+      "id": "EVI-047",
+      "name": "NUR-PRO-STU-002 إجراء تنظيم الأنشطة الطلابية v1.0 Draft",
+      "url": "https://docs.google.com/document/d/13yBNWHlCWAgCC4a5tXr-FNwhQjFjsW71/edit",
+      "statusLabel": "مسودة إجراء لتنظيم الأنشطة الطلابية",
+      "description": "ينظم اقتراح النشاط واعتماده وتنفيذه وتوثيقه وتقييمه واستخلاص الدروس المستفادة.",
+      "indicatorIds": [
+        "5.15",
+        "4.21"
+      ],
+      "taskId": "ACT-35",
+      "accessNote": "يثبت وجود إطار تنظيمي للأنشطة، ولا يثبت وجود مخصص مالي من ميزانية الجامعة أو تنفيذ نشاط بعينه؛ الجزء المالي من 5.15 يحتاج شاهدًا مركزيًا أو مراسلات دعم.",
+      "documentDate": null
+    },
+    {
+      "id": "EVI-048",
+      "name": "NUR-POL-STD-020 سياسة شؤون الخريجين وتتبع المسار المهني v1.0 Draft",
+      "url": "https://docs.google.com/document/d/1e2nUbbOQD5lAEPLNU3srpqwU7ArG2pmc/edit",
+      "statusLabel": "مسودة سياسة متابعة خريجين",
+      "description": "تنظم قاعدة بيانات الخريجين والدراسات التتبعية السنوية واستطلاع الخريجين وأرباب العمل وتحويل النتائج إلى فرص تحسين للبرنامج.",
+      "indicatorIds": [
+        "5.22",
+        "5.23"
+      ],
+      "taskId": "ACT-09",
+      "accessNote": "تثبت آلية مصاغة لا اكتمال قاعدة بيانات جميع الخريجين أو تنفيذ كل دورة تتبع.",
+      "documentDate": null
+    },
+    {
+      "id": "EVI-049",
+      "name": "NUR-PRO-STD-020-01 إجراء الدراسة التتبعية للخريجين v1.0 Draft",
+      "url": "https://docs.google.com/document/d/1XzR4OT17xV4Psy8tjpmFty0Qf6PVHVWY/edit",
+      "statusLabel": "مسودة إجراء تتبع خريجين",
+      "description": "يحدد خطوات التخطيط وجمع بيانات الخريجين وتحليلها ورفع التقرير وتحويل فرص التحسين إلى خطة عمل ومتابعة التنفيذ.",
+      "indicatorIds": [
+        "5.22",
+        "5.23"
+      ],
+      "taskId": "ACT-09",
+      "accessNote": "لا يثبت التنفيذ وحده؛ يحتاج إلى الردود والتقرير ومحضر العرض وخطة العمل.",
+      "documentDate": null
+    },
+    {
+      "id": "EVI-050",
+      "name": "استبيان آراء خريجي كلية التمريض – جامعة طبرق (Responses)",
+      "url": "https://docs.google.com/spreadsheets/d/11fHjO61J342ZZs2vAgQz9M37oIHDxuNFpX1MTF2TPPM/edit",
+      "statusLabel": "استجابات فعلية متاحة",
+      "description": "ردود فعلية من خريجين حول ملاءمة البرنامج لسوق العمل، التدريب السريري، المهارات المكتسبة والفجوات والمقترحات التطويرية.",
+      "indicatorIds": [
+        "5.22"
+      ],
+      "taskId": "ACT-09",
+      "accessNote": "يثبت وجود صوت فعلي للخريجين؛ لا يثبت تمثيل جميع دفعات الخريجين أو إغلاق حلقة التحسين ما لم يصدر تقرير تحليل وتوصيات ومتابعة.",
+      "documentDate": "2026-07"
+    },
+    {
+      "id": "EVI-051",
+      "name": "التقرير السنوي لوحدة شؤون الخريجين 2025/2026",
+      "url": "https://docs.google.com/document/d/1W75tIbm3YpAjh2S_bJ9yt7b9x7R-7CIS/edit",
+      "statusLabel": "مسودة تقرير وحدة خريجين للمراجعة واستكمال الشواهد",
+      "description": "يوثق وجود وحدة شؤون الخريجين ومتابعة القوائم والتواصل والاستبيان وربط الخريجين وسوق العمل بالبرنامج، ويبين أن القائمة الرسمية محفوظة لدى المسجل.",
+      "indicatorIds": [
+        "5.22",
+        "5.23",
+        "5.24"
+      ],
+      "taskId": "ACT-09",
+      "accessNote": "يدعم 5.24 جزئيًا فقط: يثبت وجود قائمة رسمية ومسار متابعة، لكنه لا يثبت تسليم قوائم الخريجين للمركز أو نشرها سنويًا على الموقع؛ هذان شاهدان فعليان ما زالا مطلوبين.",
+      "documentDate": "2025/2026"
+    },
+    {
+      "id": "EVI-052",
+      "name": "الهيكل التنظيمي الرسمي المنشور لجامعة طبرق",
+      "url": "https://tu.edu.ly/wp-content/uploads/2025/11/mg.pdf",
+      "statusLabel": "مصدر رسمي منشور على موقع جامعة طبرق",
+      "description": "يُظهر على مستوى الجامعة إدارة النشاط الطلابي ومكتب الفئات الخاصة إلى جانب الوحدات المركزية الأخرى، ما يدعم مسارات الإحالة والتنسيق مع الخدمات الجامعية المركزية.",
+      "indicatorIds": [
+        "5.5",
+        "5.15"
+      ],
+      "taskId": "ACT-24",
+      "accessNote": "يثبت وجود الوحدات المركزية في الهيكل، لا حجم الخدمة المقدمة أو نتائجها، ولا يثبت آلية انتخاب اتحاد الطلبة.",
+      "documentDate": "2025"
     }
   ],
   "team": [],
@@ -3147,5 +3310,5 @@
       ]
     }
   ],
-  "mappingNote": "مصادر موجودة ومقروءة؛ روابط المؤشرات تحليلية مبدئية ولا تعادل قبول الشواهد أو استيفاء الاعتماد. تم استكمال ربط معيار البرامج التعليمية بمصادر Drive والمرجعيات التنظيمية، مع الفصل بين السياسة والمسودة والتطبيق الفعلي."
+  "mappingNote": "مصادر موجودة ومقروءة؛ روابط المؤشرات تحليلية مبدئية ولا تعادل قبول الشواهد أو استيفاء الاعتماد. في معيار الشؤون الطلابية فُصلت الأدلة التشغيلية للكلية عن الخدمات والاختصاصات الجامعية المركزية، ولم تُربط مؤشرات انتخاب اتحاد الطلبة والخدمات الصحية دون شاهد فعلي."
 }
