@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-01T00:58:00Z",
+  "updatedAt": "2026-10-01T01:12:00Z",
   "source": "دليل معايير الاعتماد المؤسسي، الإصدار الرابع ٢٠٢٣",
   "mode": "evidence_mapped",
   "criteria": [
@@ -213,9 +213,10 @@
         {
           "code": "2.8",
           "text": "للمؤسسة آليَّةٌ للإفصاح عن مكافآت أعضاء مجلس المؤسسة، وقياداتها الإدارية.",
-          "status": "unassessed",
+          "status": "central_evidence_needed",
           "evidenceIds": [],
-          "evidenceAvailable": false
+          "evidenceAvailable": false,
+          "evidenceNote": "المكافآت والإفصاح المالي تعالج مركزيًا؛ نحتاج من الجامعة/الشؤون المالية أو الموارد البشرية اللائحة أو الإجراء أو الإفادة المعتمدة."
         },
         {
           "code": "2.9",
@@ -257,30 +258,34 @@
         {
           "code": "2.13",
           "text": "المؤسسة تخطِّط موازناتها على أساس رؤيتها وأهدافها.",
-          "status": "unassessed",
+          "status": "central_evidence_needed",
           "evidenceIds": [],
-          "evidenceAvailable": false
+          "evidenceAvailable": false,
+          "evidenceNote": "الموازنة هي موازنة الجامعة؛ دور الكلية تحديد الاحتياجات ورفعها. المطلوب إجراء الجامعة للتخطيط المالي وشاهد ربط احتياجات الكلية بالأهداف."
         },
         {
           "code": "2.14",
           "text": "للمؤسسة آليَّةٌ لإعداد الميزانية التقديريّة، تضمن مشاركة جميع مستوياتها التنظيميّة.",
-          "status": "unassessed",
+          "status": "central_evidence_needed",
           "evidenceIds": [],
-          "evidenceAvailable": false
+          "evidenceAvailable": false,
+          "evidenceNote": "إعداد الميزانية التقديرية من اختصاص الجامعة؛ المطلوب إجراء الجامعة وطلباتها الموجهة للكليات/محاضر المشاركة في تحديد الاحتياجات."
         },
         {
           "code": "2.15",
           "text": "للمؤسسة آليَّةٌ لإعداد ميزانيتها، تبيِّن مصادر أموالها، واستخداماتها.",
-          "status": "unassessed",
+          "status": "central_evidence_needed",
           "evidenceIds": [],
-          "evidenceAvailable": false
+          "evidenceAvailable": false,
+          "evidenceNote": "مصادر الأموال واستخداماتها تُدار على مستوى الجامعة؛ المطلوب شاهد مالي مركزي مناسب وليس ميزانية مستقلة للكلية."
         },
         {
           "code": "2.16",
           "text": "المؤسسة تلتزم بنشر تقريرٍ سنويٍّ مفصَّلٍ عن دخلها، ومركزها الماليّ.",
-          "status": "unassessed",
+          "status": "central_evidence_needed",
           "evidenceIds": [],
-          "evidenceAvailable": false
+          "evidenceAvailable": false,
+          "evidenceNote": "التقرير المالي السنوي والمركز المالي من مسؤوليات الجامعة؛ المطلوب نسخة/إفادة من الجامعة أو الجهة المالية المختصة."
         },
         {
           "code": "2.17",
@@ -334,9 +339,10 @@
         {
           "code": "2.22",
           "text": "للمؤسسة آليَّةٌ تضمن الحقوق الماليّة لمنسقي الجودة في الإدارات، والبرامج التعليمية.",
-          "status": "unassessed",
+          "status": "central_verification_needed",
           "evidenceIds": [],
-          "evidenceAvailable": false
+          "evidenceAvailable": false,
+          "evidenceNote": "يوجد أساس نظامي لعلاوة عضو هيئة التدريس المكلف بمهام إدارية في قرار 430/2025، لكن يلزم تأكيد الجامعة أن تكليف منسق الجودة مشمول وطريقة تطبيقه."
         },
         {
           "code": "2.23",
@@ -909,16 +915,18 @@
         {
           "code": "5.16",
           "text": "للمؤسسة آلية تمكِّن الطلاب من انتخاب اتحاد الطلاب.",
-          "status": "unassessed",
+          "status": "central_evidence_needed",
           "evidenceIds": [],
-          "evidenceAvailable": false
+          "evidenceAvailable": false,
+          "evidenceNote": "يحتاج لائحة/آلية انتخاب اتحاد الطلبة وشاهدًا فعليًا من الجهة الجامعية المختصة أو انتخابات موثقة؛ مجرد وجود اتحاد أو مشاركته لا يكفي."
         },
         {
           "code": "5.17",
           "text": "توفِّر المؤسسة الخدمات الصحية الأساسية للطلاب.",
-          "status": "unassessed",
+          "status": "central_evidence_needed",
           "evidenceIds": [],
-          "evidenceAvailable": false
+          "evidenceAvailable": false,
+          "evidenceNote": "لم يثبت وجود خدمة صحية أساسية للطلبة حتى الآن. يلزم تحديد الجهة الجامعية/الصحية المقدمة للخدمة وشاهد الإتاحة والإحالة الفعلية."
         },
         {
           "code": "5.18",
@@ -1020,9 +1028,10 @@
         {
           "code": "6.2",
           "text": "للمؤسسة ما يثبت ملكيتها لأصولها الثابتة، والمنقولة، أو امتلاكها الحقّ القانوني في استخدام المباني، والمرافق لتقديم خدماتها.",
-          "status": "unassessed",
+          "status": "central_evidence_needed",
           "evidenceIds": [],
-          "evidenceAvailable": false
+          "evidenceAvailable": false,
+          "evidenceNote": "يحتاج سند ملكية أو تخصيص أو حق قانوني في استخدام مباني ومرافق الكلية من الجامعة/الجهة المالكة؛ التقرير الوصفي لا يكفي."
         },
         {
           "code": "6.3",
@@ -1073,79 +1082,90 @@
         {
           "code": "6.8",
           "text": "للمؤسسة مخازن تتوافر فيها الخصائص، والشروط المطلوبة، تفي بمتطلبات العملية التعليمية.",
-          "status": "unassessed",
+          "status": "field_evidence_needed",
           "evidenceIds": [],
-          "evidenceAvailable": false
+          "evidenceAvailable": false,
+          "evidenceNote": "يحتاج معاينة وحصرًا موثقًا للمخازن وشروط السلامة والتنظيم والتهوية والحفظ ومدى ملاءمتها لمتطلبات العملية التعليمية."
         },
         {
           "code": "6.9",
           "text": "للمؤسسة آلية لمراقبة ومتابعة المقاهي، والمطاعم، والعاملين بها، وفقاً للشروط الصحية.",
-          "status": "unassessed",
+          "status": "central_evidence_needed",
           "evidenceIds": [],
-          "evidenceAvailable": false
+          "evidenceAvailable": false,
+          "evidenceNote": "متابعة المقاهي والمطاعم والخدمات الصحية في الحرم غالبًا مركزية؛ يلزم تحديد الجهة المسؤولة بالجامعة وسجلات التفتيش/المتابعة إن وجدت."
         },
         {
           "code": "6.10",
           "text": "للمؤسسة آلية لمتابعة مكاتب الخدمات في الحرم الجامعي، كخدمات التصوير، والقرطاسية، ولوازم الحاسوب، وخدمات الإنترنت، وغيرها من الخدمات… إلخ.",
-          "status": "unassessed",
+          "status": "central_evidence_needed",
           "evidenceIds": [],
-          "evidenceAvailable": false
+          "evidenceAvailable": false,
+          "evidenceNote": "خدمات التصوير والقرطاسية والإنترنت وغيرها مرتبطة بإدارة الحرم/الجامعة؛ يلزم تحديد الجهة المسؤولة وآلية المتابعة وشواهدها."
         },
         {
           "code": "6.11",
           "text": "للمؤسسة قاعات دراسية تتوفر فيها الشروط الصحية من تكييف، وتدفئة، وتهوية، وإنارة.",
-          "status": "unassessed",
+          "status": "field_evidence_needed",
           "evidenceIds": [],
-          "evidenceAvailable": false
+          "evidenceAvailable": false,
+          "evidenceNote": "يحتاج فحصًا ميدانيًا موثقًا للقاعات: التهوية والإنارة والتكييف/التدفئة والحالة التشغيلية، لا مجرد عدد القاعات."
         },
         {
           "code": "6.12",
           "text": "المؤسسة تيسّر لمنتسبيها، بمن فيهم ذوو الإعاقة، إمكان الوصول، واستعمال أماكن الدراسة، والمكتبة، والمعامل، والورش، وكل مرافق المؤسسة.",
-          "status": "unassessed",
+          "status": "field_evidence_needed",
           "evidenceIds": [],
-          "evidenceAvailable": false
+          "evidenceAvailable": false,
+          "evidenceNote": "يحتاج فحص إمكانية الوصول الفعلية إلى القاعات والمكتبة والمعامل والمرافق، بما في ذلك احتياجات ذوي الإعاقة."
         },
         {
           "code": "6.13",
           "text": "المؤسسة تعمل على توفير المساحة الشخصية الكافية لأعضاء هيئة التدريس من أجل تحضير الدروس، والعمل مع الطلبة.",
-          "status": "unassessed",
+          "status": "field_evidence_needed",
           "evidenceIds": [],
-          "evidenceAvailable": false
+          "evidenceAvailable": false,
+          "evidenceNote": "يحتاج حصرًا ومعاينة للمساحات المتاحة لأعضاء هيئة التدريس للتحضير والعمل مع الطلبة."
         },
         {
           "code": "6.14",
           "text": "المؤسسة توفّر المساحات الشخصية الكافية، والأماكن اللازمة للكوادر المساندة.",
-          "status": "unassessed",
+          "status": "field_evidence_needed",
           "evidenceIds": [],
-          "evidenceAvailable": false
+          "evidenceAvailable": false,
+          "evidenceNote": "يحتاج حصرًا ومعاينة للأماكن والمساحات المخصصة للكوادر المساندة."
         },
         {
           "code": "6.15",
           "text": "المؤسسة تعمل على توفير أماكن للطلبة، وأعضاء هيئة التدريس، والعاملين؛ لتأمين ممتلكاتهم الشخصية، بما فيها مواقف للسيارات.",
-          "status": "unassessed",
+          "status": "field_evidence_needed",
           "evidenceIds": [],
-          "evidenceAvailable": false
+          "evidenceAvailable": false,
+          "evidenceNote": "يحتاج توثيقًا ميدانيًا لأماكن حفظ الممتلكات الشخصية ومواقف السيارات ومدى الإتاحة."
         },
         {
           "code": "6.16",
           "text": "المؤسسة توفّر مساحات وأماكن كافية لراحة منتسبيها، من مرافق خدمية، وأماكن للصلاة.",
-          "status": "unassessed",
+          "status": "field_evidence_needed",
           "evidenceIds": [],
-          "evidenceAvailable": false
+          "evidenceAvailable": false,
+          "evidenceNote": "يحتاج معاينة وتوثيق أماكن الراحة والمرافق الخدمية وأماكن الصلاة المتاحة فعليًا."
         },
         {
           "code": "6.17",
           "text": "المؤسسة توفّر العدد الكافي من دورات المياه، والمشارب الصالحة للاستعمال بشكل مستمر.",
-          "status": "unassessed",
+          "status": "field_evidence_needed",
           "evidenceIds": [],
-          "evidenceAvailable": false
+          "evidenceAvailable": false,
+          "evidenceNote": "يحتاج حصرًا ميدانيًا لدورات المياه والمشارب، حالتها التشغيلية والنظافة والكفاية."
         },
         {
           "code": "6.18",
           "text": "المؤسسة توفّر المرافق الخاصة بالأنشطة الترفيهية، والرياضية، والأعمال الإبداعية.",
-          "status": "unassessed",
+          "status": "field_evidence_needed",
           "evidenceIds": [],
-          "evidenceAvailable": false
+          "evidenceAvailable": false,
+          "evidenceNote": "يحتاج توثيقًا للمرافق المتاحة للأنشطة الترفيهية والرياضية والإبداعية أو توضيح ما يقدم مركزيًا عبر الجامعة."
         },
         {
           "code": "6.19",
@@ -1170,16 +1190,18 @@
         {
           "code": "6.21",
           "text": "السكن الجامعي الطلابي نظيف، وآمن، وذو مستوى كافٍ لتلبية احتياجات الطلبة.",
-          "status": "unassessed",
+          "status": "central_evidence_needed",
           "evidenceIds": [],
-          "evidenceAvailable": false
+          "evidenceAvailable": false,
+          "evidenceNote": "السكن الجامعي خدمة مركزية؛ يلزم شاهد من إدارة السكن/الجامعة عن النظافة والسلامة والكفاية، وليس من كلية التمريض."
         },
         {
           "code": "6.22",
           "text": "للمؤسسة آلية واضحة للعناية بالسكن الجامعي من نظافة، وصيانة لمرافقه المختلفة.",
-          "status": "unassessed",
+          "status": "central_evidence_needed",
           "evidenceIds": [],
-          "evidenceAvailable": false
+          "evidenceAvailable": false,
+          "evidenceNote": "صيانة ونظافة السكن الجامعي من اختصاص الجهة المركزية المسؤولة؛ يلزم الإجراء وسجلات المتابعة منها."
         },
         {
           "code": "6.23",
@@ -1313,9 +1335,10 @@
         {
           "code": "7.8",
           "text": "الخطة الاستراتيجية للمؤسسة تظهر التزامها بتشجيع ريادة الاعمال.",
-          "status": "unassessed",
+          "status": "development_gap",
           "evidenceIds": [],
-          "evidenceAvailable": false
+          "evidenceAvailable": false,
+          "evidenceNote": "الخطة الاستراتيجية الحالية لا تُظهر التزامًا واضحًا بريادة الأعمال. يحتاج قرارًا واقعيًا: إضافة توجه/مبادرة مناسبة للتمريض أو توثيق كيفية استيفاء المتطلب دون مبالغة."
         },
         {
           "code": "7.9",
@@ -1351,9 +1374,10 @@
         {
           "code": "7.12",
           "text": "للمؤسسة الية تحدد نسبة، وكيفية الانفاق على الابحاث من موازنتها.",
-          "status": "unassessed",
+          "status": "central_evidence_needed",
           "evidenceIds": [],
-          "evidenceAvailable": false
+          "evidenceAvailable": false,
+          "evidenceNote": "الإنفاق البحثي جزء من موازنة الجامعة؛ يلزم آلية الجامعة لتخصيص/تمويل البحث وشاهد يوضح كيفية استفادة الكلية أو رفع احتياجاتها."
         },
         {
           "code": "7.13",
@@ -1397,9 +1421,10 @@
         {
           "code": "7.17",
           "text": "للمؤسسة مجلة علمية دورية محكمة، ومسجلة في قواعد البيانات.",
-          "status": "unassessed",
+          "status": "central_verification_needed",
           "evidenceIds": [],
-          "evidenceAvailable": false
+          "evidenceAvailable": false,
+          "evidenceNote": "يحتاج التحقق هل المقصود مجلة علمية للمؤسسة الأم ويمكن الاستناد إلى مجلة جامعة طبرق، أم يشترط مجلة تخص الكلية؛ ثم توثيق التحكيم والفهرسة وقواعد البيانات."
         },
         {
           "code": "7.18",
@@ -1414,9 +1439,10 @@
         {
           "code": "7.19",
           "text": "للمؤسسة اشتراكات بمكتبات علمية محلية، واقليمية، ودولية، تمكن الباحثين من الاطلاع على مستجدات البحث العلمي.",
-          "status": "unassessed",
+          "status": "central_evidence_needed",
           "evidenceIds": [],
-          "evidenceAvailable": false
+          "evidenceAvailable": false,
+          "evidenceNote": "الاشتراكات وقواعد البيانات العلمية تُدار عادة مركزيًا عبر مكتبات الجامعة؛ يلزم قائمة الاشتراكات/قواعد البيانات وصلاحية وصول الباحثين."
         },
         {
           "code": "7.20",
@@ -1496,9 +1522,10 @@
         {
           "code": "8.6",
           "text": "تحدِّد المؤسسة المخصّصات المالية من ميزانيتها لخدمة المجتمع المحلي، والبيئة.",
-          "status": "unassessed",
+          "status": "central_evidence_needed",
           "evidenceIds": [],
-          "evidenceAvailable": false
+          "evidenceAvailable": false,
+          "evidenceNote": "المخصص المالي لخدمة المجتمع مرتبط بموازنة الجامعة؛ المطلوب شاهد مركزي أو آلية رفع الاحتياجات وتمويل الأنشطة، لا إنشاء بند مالي مستقل للكلية."
         },
         {
           "code": "8.7",
@@ -1614,9 +1641,10 @@
         {
           "code": "9.2",
           "text": "للمؤسسة كوادر بشرية تتمتع بالكفاية، والمعرفة، والخبرة في مجال ضمان الجودة والاعتماد.",
-          "status": "unassessed",
+          "status": "competency_evidence_needed",
           "evidenceIds": [],
-          "evidenceAvailable": false
+          "evidenceAvailable": false,
+          "evidenceNote": "يحتاج ملفًا مباشرًا لكفاية فريق الجودة: قرارات التكليف، المؤهلات والخبرات ذات الصلة، الدورات/الشهادات، وأي سجل تطوير مهني في الجودة والاعتماد."
         },
         {
           "code": "9.3",
@@ -3791,5 +3819,5 @@
       ]
     }
   ],
-  "mappingNote": "مصادر موجودة ومقروءة؛ روابط المؤشرات تحليلية مبدئية ولا تعادل قبول الشواهد أو استيفاء الاعتماد. معيار التعليم الإلكتروني فُسر وفق الواقع: موارد إلكترونية وتعلم مدمج داعم، دون ادعاء وجود برنامج تعلم عن بعد مستقل. بعض الأدلة المركزية والجزئية تحتاج لاحقًا تحقق تطبيق واعتماد."
+  "mappingNote": "مصادر موجودة ومقروءة؛ الربط لا يعادل قبول الشاهد أو استيفاء الاعتماد. المؤشرات غير المرتبطة صُنفت بحسب نوع المطلوب: شاهد مركزي من الجامعة، تحقق مركزي، شاهد ميداني، فجوة تطوير حقيقية، أو إثبات كفاية الكادر؛ حتى لا تُعرض جميعها كفجوات كلية متشابهة."
 }
