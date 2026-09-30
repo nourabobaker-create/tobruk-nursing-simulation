@@ -385,9 +385,9 @@ textarea{width:100%;min-height:100px;border:1px solid var(--line);border-radius:
  <div class="hubDetail" id="hubDetail-complaints"><div class="hubDetailTop"><button class="hubBack" type="button">← رجوع</button></div><article class="academicCard">
    <h3>📝 سجل الشكاوى والملاحظات</h3>
    <p>مساحة مخصصة لإحالة الطالب إلى نموذج إلكتروني لتسجيل الشكوى أو الملاحظة بصورة منظمة، حتى يمكن متابعتها من الجهة المختصة بدل ضياعها في الرسائل غير الرسمية.</p>
-   <div class="callout"><b>قيد التفعيل:</b> مكان رابط Google Form جاهز داخل البوابة. سيُفعّل الزر بمجرد اعتماد رابط النموذج النهائي.</div>
-   <div class="actions"><button class="btn gold" type="button" disabled>رابط نموذج الشكاوى سيُضاف هنا</button></div>
-   <div class="verifiedNote">يفضّل أن يوضح النموذج للطالب نوع البيانات المطلوبة، الجهة التي تستقبل الشكوى، وكيفية التعامل مع الخصوصية، مع تجنب طلب بيانات شخصية لا حاجة لها.</div>
+   <div class="callout"><b>إرسال شكوى أو ملاحظة:</b> استخدم النموذج الإلكتروني المخصص للكلية لتسجيل الشكوى أو الملاحظة بصورة منظمة حتى يمكن إحالتها ومتابعتها.</div>
+   <div class="actions"><a class="btn gold" href="https://forms.gle/1SRA82yXSH1QpRkz5" target="_blank" rel="noopener" id="complaintFormLink">فتح نموذج الشكاوى والملاحظات ↗</a></div>
+   <div class="verifiedNote">إذا رغبت في أن تتواصل الكلية معك بخصوص المشاركة، يمكنك إدخال بيانات التواصل في الخانة المخصصة لذلك داخل النموذج.</div>
   </article></div>
 
  <div class="hubDetail" id="hubDetail-alumni"><div class="hubDetailTop"><button class="hubBack" type="button">← رجوع</button></div><article class="academicCard">
@@ -763,6 +763,12 @@ const T={
  }
 };
 const staticTextMap={
+
+"إرسال شكوى أو ملاحظة:":"Submit a complaint or feedback:",
+"استخدم النموذج الإلكتروني المخصص للكلية لتسجيل الشكوى أو الملاحظة بصورة منظمة حتى يمكن إحالتها ومتابعتها.":"Use the Faculty's electronic form to submit a complaint or feedback in an organised way so it can be referred and followed up.",
+"فتح نموذج الشكاوى والملاحظات ↗":"Open Complaints & Feedback Form ↗",
+"إذا رغبت في أن تتواصل الكلية معك بخصوص المشاركة، يمكنك إدخال بيانات التواصل في الخانة المخصصة لذلك داخل النموذج.":"If you would like the Faculty to contact you about your submission, you can provide contact details in the designated field in the form."
+,
 
 "درجة النجاح:":"Pass mark:",
 "الدرجة النهائية لكل مقرر من 100. الحد الأدنى للنجاح هو":"Each course is graded out of 100. The minimum pass mark is",
