@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-30",
+  "updatedAt": "2026-09-30T20:35:00Z",
   "source": "دليل معايير الاعتماد المؤسسي، الإصدار الرابع ٢٠٢٣",
-  "mode": "baseline_unassessed",
+  "mode": "evidence_mapped",
   "criteria": [
     {
       "number": 1,
@@ -15,63 +15,108 @@
         {
           "code": "1.1",
           "text": "للمؤسسة خطة استراتيجية معتمدة، تتماشى واستراتيجية الجهة التابعة لها، وتشمل أهدافًا تواكب التطورات الحديثة للتعليم، والتعلم، والبحث العلمي، وخدمة المجتمع.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-001"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "1.2",
           "text": "للمؤسسة آلية واضحة لعملية التخطيط، تُحدِّد مسؤولية التخطيط بجميع مراحله، ومستوياته الاستراتيجية، والتكتيكية، والتنفيذية.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-001"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "1.3",
           "text": "رؤية المؤسسة ورسالتها وقيمها وأهدافها واضحة، ومعلنة، ومنشورة.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "1.4",
           "text": "للمؤسسة آلية واضحة لوضع الخطط التكتيكية والتنفيذية التي تحقق أهدافها.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-001",
+            "EVI-015"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "1.5",
           "text": "للمؤسسة آلية تلتزم فيها برؤيتها، وتنفيذ أهدافها، وتطويرها، وتحسينها المستمر.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "1.6",
           "text": "للمؤسسة آلية دقيقة لجمع وترتيب البيانات، واستخلاص المعلومات بشكل منتظم.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-010"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "1.7",
           "text": "للمؤسسة غايات واضحة، وأهداف محددة، وجميع مستوياتها قابلة للقياس.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-001"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "1.8",
           "text": "للمؤسسة آلية تُشرك من خلالها أصحاب المصلحة في إعداد الخطة الاستراتيجية.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "1.9",
           "text": "للمؤسسة آلية لنشر خطتها الاستراتيجية، وتوضيحها لأصحاب المصلحة.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "1.10",
           "text": "تستخدم المؤسسة رسالتها وأهدافها في التخطيط لأنشطتها وعملياتها.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "1.11",
           "text": "توظِّف المؤسسة نتائج عمليات التقييم في التطوير والتحسين المستمر.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-001",
+            "EVI-010"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "1.12",
           "text": "للمؤسسة خطط بديلة للاستجابة السريعة للمتغيرات الداخلية والخارجية، وإدارة الأزمات.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         }
+      ],
+      "documented": 6,
+      "availableEvidence": 3,
+      "practiceTitles": [
+        "المسجل صحح مشكلات في البيانات السابقة",
+        "خطة تفعيل ضمان الجودة 2026/2027 إطار تنفيذي قائم",
+        "الخطة الاستراتيجية 2026–2030 في مرحلة إعداد متقدمة"
       ]
     },
     {
@@ -85,118 +130,184 @@
         {
           "code": "2.1",
           "text": "للمؤسسة شروطٌ، ومتطلّباتٌ ملتزمةٌ بها في اختيار القيادات الأكاديمية، والإدارية.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "2.2",
           "text": "للمؤسسة دليلٌ للقوانين والأنظمة، والتعليمات لإدارتها العليا، المتضمِّنة أفضل أساليب ممارسة سلطة الإدارة العليا، وقياداتها.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-004",
+            "EVI-007"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "2.3",
           "text": "للمؤسسة وثيقةٌ تحدِّد العلاقة بين المالِكين، والمديرين للعملية التعليمية.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "2.4",
           "text": "للمؤسسة آليَّةٌ شفافةٌ للتعيين، والتعاقد، والتوظيف.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "2.5",
           "text": "للمؤسسة آليَّةٌ تمكِّن غيرَ أعضاء الإدارة العليا المشاركة في صنع القرارات، وتوجيه العمل.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-004"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "2.6",
           "text": "للمؤسسة آليَّةٌ لقياس مدى رضا منسوبيها عن أداء قيادة المؤسسة.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "2.7",
           "text": "المؤسسة تعتمد في قراراتها على بياناتٍ، ومعلوماتٍ دقيقةٍ، بما فيها نتائج تقارير فِرَق العمل، واللجان المختصَّة.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-006",
+            "EVI-010"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "2.8",
           "text": "للمؤسسة آليَّةٌ للإفصاح عن مكافآت أعضاء مجلس المؤسسة، وقياداتها الإدارية.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "2.9",
           "text": "للمؤسسة آليَّةٌ محدَّدةٌ لتشكيل اللجان، وفِرَق العمل، وتقييم أدائها.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-004"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "2.10",
           "text": "للمؤسسة آليَّةٌ لضبط وتدقيق منشوراتها، وإعلاناتها.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "2.11",
           "text": "للمؤسسة آليَّةٌ شفافةٌ، وعادلةٌ، ومنشورةٌ للعاملين المتميِّزين، ومكافأتهم.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "2.12",
           "text": "للمؤسسة آليَّةٌ تضمن شفافيّة الإجراءات الماليّة.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "2.13",
           "text": "المؤسسة تخطِّط موازناتها على أساس رؤيتها وأهدافها.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "2.14",
           "text": "للمؤسسة آليَّةٌ لإعداد الميزانية التقديريّة، تضمن مشاركة جميع مستوياتها التنظيميّة.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "2.15",
           "text": "للمؤسسة آليَّةٌ لإعداد ميزانيتها، تبيِّن مصادر أموالها، واستخداماتها.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "2.16",
           "text": "المؤسسة تلتزم بنشر تقريرٍ سنويٍّ مفصَّلٍ عن دخلها، ومركزها الماليّ.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "2.17",
           "text": "للمؤسسة ميثاقُ أخلاقٍ معتمدٌ، ومفعَّلٌ لجميع الشرائح العاملة بها.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "2.18",
           "text": "للمؤسسة نظامٌ واضحٌ، وفعّالٌ للثواب، والعقاب.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "2.19",
           "text": "للمؤسسة آليَّةٌ لضمان وتعزيز الحرية الأكاديمية لأعضاء هيئة التدريس، والطلبة.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "2.20",
           "text": "للمؤسسة آليَّةٌ تلتزم من خلالها بتقديم الدعم المادي، واللوجستي اللازم للإدارة، ومكاتب الجودة التابعة لها بشكلٍ دوريٍّ منتظم.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "2.21",
           "text": "للمؤسسة آليَّةٌ واضحةٌ لتحديد الاحتياجات التدريبية، والتطوير المهني للعاملين.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-003",
+            "EVI-008"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "2.22",
           "text": "للمؤسسة آليَّةٌ تضمن الحقوق الماليّة لمنسقي الجودة في الإدارات، والبرامج التعليمية.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "2.23",
           "text": "للمؤسسة آليَّةٌ لتقييم وتقويم كفاية الأداء، لمكوِّناتها الإدارية، والمالية، والأكاديمية كافة.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         }
+      ],
+      "documented": 5,
+      "availableEvidence": 6,
+      "practiceTitles": [
+        "استكمال نسخ ملفات الموظفين من أصول الجامعة",
+        "اللائحة الداخلية المحدثة لدى الشؤون القانونية",
+        "الهيكل قيد المراجعة وقرار اللجنة العلمية سيعاد إصداره"
       ]
     },
     {
@@ -210,83 +321,131 @@
         {
           "code": "3.1",
           "text": "للمؤسسة آليَّةٌ واضحةٌ، ومحدَّدةٌ، ومعلنةٌ لاختيار أعضاء هيئة التدريس، والكوادر المساندة.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "3.2",
           "text": "للمؤسسة دليلٌ واضحٌ، ومعلنٌ، خاصٌّ بأعضاء هيئة التدريس، والكوادر المساندة، موضَّحٌ فيه الحقوق، والواجبات، والمسؤوليات، والصلاحيات.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "3.3",
           "text": "للمؤسسة خطةٌ لتوفير العدد الكافي من أعضاء هيئة التدريس، والكوادر المساندة المؤهَّلين لتنفيذ برامجها التعليمية.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-008"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "3.4",
           "text": "للمؤسسة آليَّةٌ واضحةٌ، ومنشورةٌ للتعاقد مع أعضاء هيئة التدريس، والكوادر المساندة.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "3.5",
           "text": "للمؤسسة آلياتٌ مختلفةٌ، ومعلنةٌ، لتقييم أداء أعضاء هيئة التدريس، والكوادر المساندة.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "3.6",
           "text": "للمؤسسة آليَّةٌ تلتزم من خلالها بتوفير الأدوات، والمعدات، والمواد اللازمة لتنفيذ العملية التعليمية، وتقديم الخدمات التقنية المناسبة لأعضاء هيئة التدريس، والكوادر المساندة بشكلٍ مستمرٍّ.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "3.7",
           "text": "للمؤسسة خططٌ لتنمية القدرات المهنية لأعضاء هيئة التدريس، والكوادر المساندة.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-003",
+            "EVI-008",
+            "EVI-011"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "3.8",
           "text": "للمؤسسة آليَّةٌ للتواصل بين أعضاء هيئة التدريس.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "3.9",
           "text": "للمؤسسة آليَّةٌ لدعم أعضاء هيئة التدريس في نشر أبحاثهم، وحضور المؤتمرات العلمية.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "3.10",
           "text": "المؤسسة تحتفظ بملفٍّ أكاديميٍّ لكلِّ عضوٍ هيئة تدريس، يتضمَّن السيرة الذاتية، والمؤهَّل العلمي، معترفاً به، ومعادلاً من المركز؛ إذا تطلَّب الأمر، والأنشطة العلمية، والتدريسية.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-003",
+            "EVI-008"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "3.11",
           "text": "للمؤسسة آليَّةٌ تتيح الفرص بشكلٍ عادلٍ لمشاركة أعضاء هيئة التدريس في اللجان العلمية المؤقتة، والدائمة.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "3.12",
           "text": "للمؤسسة آليَّةٌ واضحةٌ، وشفَّافةٌ لتقييم أداء اللجان المؤقتة، والدائمة.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "3.13",
           "text": "للمؤسسة آليَّةٌ شفافةٌ للتعامل مع شكاوى أعضاء هيئة التدريس.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "3.14",
           "text": "للمؤسسة آليَّةٌ للتعامل مع السرقات العلمية، والمخالفات الأخرى المتعلقة بأعضاء هيئة التدريس، والكوادر المساندة، والباحثين.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "3.15",
           "text": "للمؤسسة آليَّةٌ لاستطلاع آراء أعضاء هيئة التدريس، والكوادر المساندة في سير العملية التعليمية.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "3.16",
           "text": "للمؤسسة آليَّةٌ للاستفادة من تقييم أعضاء هيئة التدريس، والكوادر المساندة في تطوير وتحسين العملية التعليمية.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         }
+      ],
+      "documented": 3,
+      "availableEvidence": 3,
+      "practiceTitles": [
+        "تحديث ملفات أعضاء هيئة التدريس والمعيدين والمكلفين",
+        "كشف قدرات المعيدين معد ومعبأ في 12 سجلًا",
+        "الهيكل قيد المراجعة وقرار اللجنة العلمية سيعاد إصداره"
       ]
     },
     {
@@ -300,108 +459,186 @@
         {
           "code": "4.1",
           "text": "البرامج التعليمية للمؤسسة تتوافق مع رسالتها، وأهدافها المعلنة، وتلبي احتياجات المجتمع.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-012"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "4.2",
           "text": "للمؤسسة آلية تُمكِّن الطلاب الجدد من الاطلاع على طبيعة، ومتطلبات البرامج التعليمية.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-020"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "4.3",
           "text": "للمؤسسة آلية لتزويد الطلاب بنشرة تعريفية عن البرامج التعليمية، تتضمن معلومات كافية حول خدمات الدعم الطلابي، والرعاية المتوفرة لهم.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "4.4",
           "text": "للمؤسسة آلية تعتمد على أعضاء هيئة التدريس، والخبراء الذين ترى الاستعانة بهم في تصميم برامجها التعليمية وتطويرها.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-012"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "4.5",
           "text": "للمؤسسة آلية لتقييم برامجها التعليمية بشكل دوري، وتوظيف نتائج التقييم في عمليات التطوير والتحسين.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "4.6",
           "text": "للمؤسسة آلية تُلزم إدارات البرامج التعليمية بضرورة وجود ملف أكاديمي لكل مقرر دراسي، ومتابعة ما يحدث فيه من تطوير وتحسين.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-018"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "4.7",
           "text": "للمؤسسة آلية واضحة تضمن تنوّع مصادر التعليم والتعلّم، بما يلبي احتياجات المجتمع وسوق العمل.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-018",
+            "EVI-020"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "4.8",
           "text": "للمؤسسة آلية تُمكِّن الطلاب من الانتقال من وإلى البرامج التعليمية المختلفة داخلها وخارجها.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "4.9",
           "text": "للمؤسسة آلية لمراجعة سياسة القبول بالبرامج التعليمية بشكل دوري، مع المعنيين وأصحاب المصلحة، بما في ذلك أرباب العمل.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "4.10",
           "text": "للمؤسسة آلية تُلزم إدارات البرامج باتباع نظام الإشراف الأكاديمي، والريادة العلمية، بما يتناسب مع طبيعة كل برنامج.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "4.11",
           "text": "المؤسسة تستند إلى معايير أكاديمية، أو مقارنة مرجعية (معايير قياسية) في وصف وتوصيف برامجها التعليمية، ومقرراتها الدراسية.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-012"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "4.12",
           "text": "للمؤسسة آلية للتعامل مع الطلاب المتعثّرين، والمتفوّقين، وذوي الاحتياجات الخاصة في البرامج التعليمية.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-010"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "4.13",
           "text": "لمؤسسة آلية تُلزم من خلالها إدارات البرامج بتوازن مقرراتها الدراسية في خططها الدراسية.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-012"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "4.14",
           "text": "للمؤسسة آلية للاستفادة من نتائج تقييم برامجها التعليمية.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "4.15",
           "text": "للمؤسسة آلية لمعرفة مدى ملاءمة برامجها لمتطلبات سوق العمل.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "4.16",
           "text": "للمؤسسة آلية لتقييم وتقويم مخرجات التعلّم المستهدفة لكل البرامج التعليمية.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "4.17",
           "text": "للمؤسسة آلية تُلزم إدارات البرامج التعليمية بوضع مواصفات للخريج.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-012"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "4.18",
           "text": "للمؤسسة آلية لتنظيم وتنسيق التدريب الميداني في البرامج التعليمية.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-011",
+            "EVI-019"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "4.19",
           "text": "للمؤسسة آلية تُلزم أعضاء هيئة التدريس بتقديم تقرير عن المقرر الدراسي.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "4.20",
           "text": "للمؤسسة آلية للاستفادة من تقارير المقررات الدراسية.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "4.21",
           "text": "الأنشطة العلمية، والاجتماعية، والرياضية التي تنظّمها المؤسسة، يشرف عليها مسؤولون يتمتعون بالكفاية.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         }
+      ],
+      "documented": 10,
+      "availableEvidence": 6,
+      "practiceTitles": [
+        "تقارير المقررات ممارسة فصلية روتينية قائمة",
+        "توزيع نماذج متابعة التنفيذ وإلحاقها بكشوف الحضور",
+        "ربط صوت الطلبة والتحليل باستجابات تعليمية ودعم مقصود",
+        "التدريب السريري قائم منتظم وموثق لدى الجهة المختصة",
+        "إضافة خبرات المنارة وإعادة تفعيل التدريب بالكلى",
+        "إعداد كتيب السلامة السريرية",
+        "إعداد تهيئة الطلبة الجدد مكتمل",
+        "كشف قدرات المعيدين معد ومعبأ في 12 سجلًا",
+        "تصنيف حركة الطلبة وأسبابها مع المسجل",
+        "نموذج محاكاة غسل اليدين والقفازات عامل"
       ]
     },
     {
@@ -415,123 +652,191 @@
         {
           "code": "5.1",
           "text": "للمؤسسة آلية لقبول الطلاب تنسجم مع رسالتها، وأهدافها، وخططها، (واضحة، ومعلنة، ومنشورة).",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "5.2",
           "text": "للمؤسسة آلية لتنسيب الطلاب المقبولين في التخصصات المختلفة، مناسبة لقدرتها الاستيعابية، وملتزمة بها.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "5.3",
           "text": "للمؤسسة لائحة داخلية خاصة بالدراسة والامتحانات والتأديب، وملتزمة بتطبيقها.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-007"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "5.4",
           "text": "للمؤسسة عناصر بشرية مؤهلة لمساعدة الطلاب على إتمام إجراءاتهم.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "5.5",
           "text": "للمؤسسة آلية لتوفير الدعم المناسب للطلاب ذوي الإعاقة.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "5.6",
           "text": "للمؤسسة آلية لتوثيق معاملات الطلاب المتفوقين، والمتعثرين.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "5.7",
           "text": "تحتفظ المؤسسة بملف إداري، وآخر أكاديمي للطالب، يبيِّن نتائج تحصيله المعرفي.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-002"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "5.8",
           "text": "تحتفظ المؤسسة بالسجلات الأصلية للطلاب.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-002"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "5.9",
           "text": "للمؤسسة آلية تبيِّن أماكن حفظ النسخ الاحتياطية لسجلات الطلاب، وتكفل سرية المعلومات.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "5.10",
           "text": "للمؤسسة آلية تُنظِّم عملية اطلاع الطلاب على سجلاتهم.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "5.11",
           "text": "للمؤسسة آلية لاختيار، وتسمية المرشد الأكاديمي، أو الرائد العلمي.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "5.12",
           "text": "للمؤسسة آلية تمكِّن الطلاب من التواصل مع أعضاء هيئة التدريس، والكوادر المساندة.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "5.13",
           "text": "للمؤسسة آلية واضحة للطعن، والتظلُّم، والشكاوى، وكيفية التعامل معها.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-020"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "5.14",
           "text": "للمؤسسة آلية للاستفادة من معالجة الطعون، وشكاوى الطلاب.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "5.15",
           "text": "تلتزم المؤسسة بتقديم الدعم اللازم للأنشطة الطلابية، وتحدِّد مخصصات لها من الميزانية.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "5.16",
           "text": "للمؤسسة آلية تمكِّن الطلاب من انتخاب اتحاد الطلاب.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "5.17",
           "text": "توفِّر المؤسسة الخدمات الصحية الأساسية للطلاب.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "5.18",
           "text": "للمؤسسة أنظمة، وطرق فعّالة؛ للتواصل مع الطلاب خارج أوقات الدوام الرسمي.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "5.19",
           "text": "للمؤسسة آلية لاستطلاع آراء الطلاب في جوانب محددة من العملية التعليمية.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-017"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "5.20",
           "text": "للمؤسسة آلية للاستفادة من استطلاع آراء الطلاب.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-017"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "5.21",
           "text": "للمؤسسة آلية تمكِّن الطلاب من المشاركة في صناعة القرارات، وحلِّ المشكلات التي تتعلَّق مباشرة بحقوقهم، وواجباتهم.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "5.22",
           "text": "للمؤسسة آلية لمعرفة مدى ملاءمة برامجها لمتطلبات سوق العمل من وجهة نظر خريجيها.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "5.23",
           "text": "للمؤسسة وحدة لمتابعة الخريجين، وآلية لمتابعتهم، والاستفادة من آرائهم.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "5.24",
           "text": "تلتزم المؤسسة بتسليم قوائم الخريجين للمركز، ونشرها على موقعها الإلكتروني دوريّاً، وسنويّاً",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         }
+      ],
+      "documented": 6,
+      "availableEvidence": 4,
+      "practiceTitles": [
+        "الاستبانات منفذة وتقارير التحليل منجزة",
+        "ربط صوت الطلبة والتحليل باستجابات تعليمية ودعم مقصود",
+        "تصنيف حركة الطلبة وأسبابها مع المسجل",
+        "اللائحة الداخلية المحدثة لدى الشؤون القانونية"
       ]
     },
     {
@@ -545,133 +850,204 @@
         {
           "code": "6.1",
           "text": "للمؤسسة مساحات، ومبانٍ تفي بتحقيق أهدافها التعليمية، والتدريبية، والبحثية.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-009"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "6.2",
           "text": "للمؤسسة ما يثبت ملكيتها لأصولها الثابتة، والمنقولة، أو امتلاكها الحقّ القانوني في استخدام المباني، والمرافق لتقديم خدماتها.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "6.3",
           "text": "للمؤسسة قاعات، ومعامل، وورش، ومختبرات تفي بمتطلبات تنفيذ العملية التعليمية.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-009"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "6.4",
           "text": "للمؤسسة خطط مفعّلة لصيانة المباني، والمعامل، والورش، والمختبرات، ومرافقها كافة.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-009"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "6.5",
           "text": "للمؤسسة آلية تضمن الالتزام المستمر بمتطلبات المباني والمرافق الصادرة عن المركز.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "6.6",
           "text": "للمؤسسة قواعد للأمن والسلامة في المعامل، والورش، والمختبرات.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-011",
+            "EVI-019"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "6.7",
           "text": "المؤسسة توفّر الإرشادات العامة حول الأمن والسلامة للطلبة، والعاملين، والزوار.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-019"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "6.8",
           "text": "للمؤسسة مخازن تتوافر فيها الخصائص، والشروط المطلوبة، تفي بمتطلبات العملية التعليمية.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "6.9",
           "text": "للمؤسسة آلية لمراقبة ومتابعة المقاهي، والمطاعم، والعاملين بها، وفقاً للشروط الصحية.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "6.10",
           "text": "للمؤسسة آلية لمتابعة مكاتب الخدمات في الحرم الجامعي، كخدمات التصوير، والقرطاسية، ولوازم الحاسوب، وخدمات الإنترنت، وغيرها من الخدمات… إلخ.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "6.11",
           "text": "للمؤسسة قاعات دراسية تتوفر فيها الشروط الصحية من تكييف، وتدفئة، وتهوية، وإنارة.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "6.12",
           "text": "المؤسسة تيسّر لمنتسبيها، بمن فيهم ذوو الإعاقة، إمكان الوصول، واستعمال أماكن الدراسة، والمكتبة، والمعامل، والورش، وكل مرافق المؤسسة.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "6.13",
           "text": "المؤسسة تعمل على توفير المساحة الشخصية الكافية لأعضاء هيئة التدريس من أجل تحضير الدروس، والعمل مع الطلبة.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "6.14",
           "text": "المؤسسة توفّر المساحات الشخصية الكافية، والأماكن اللازمة للكوادر المساندة.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "6.15",
           "text": "المؤسسة تعمل على توفير أماكن للطلبة، وأعضاء هيئة التدريس، والعاملين؛ لتأمين ممتلكاتهم الشخصية، بما فيها مواقف للسيارات.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "6.16",
           "text": "المؤسسة توفّر مساحات وأماكن كافية لراحة منتسبيها، من مرافق خدمية، وأماكن للصلاة.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "6.17",
           "text": "المؤسسة توفّر العدد الكافي من دورات المياه، والمشارب الصالحة للاستعمال بشكل مستمر.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "6.18",
           "text": "المؤسسة توفّر المرافق الخاصة بالأنشطة الترفيهية، والرياضية، والأعمال الإبداعية.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "6.19",
           "text": "الموقع الإلكتروني، والمواد المطبوعة للمؤسسة توفّر وصفاً دقيقاً لموقعها، ومرافقها، ومبانيها، والتسهيلات المتوفرة، وطبيعة مواردها، والخدمات التي تقدّمها.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "6.20",
           "text": "للمؤسسة آلية فعّالة لتحديث المعلومات على الموقع الإلكتروني بشكل دوري ومنتظم.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "6.21",
           "text": "السكن الجامعي الطلابي نظيف، وآمن، وذو مستوى كافٍ لتلبية احتياجات الطلبة.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "6.22",
           "text": "للمؤسسة آلية واضحة للعناية بالسكن الجامعي من نظافة، وصيانة لمرافقه المختلفة.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "6.23",
           "text": "للمؤسسة مكتبة تُدار بكوادر كافية، يتمتعون بالمعرفة، والخبرة المناسبة.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "6.24",
           "text": "للمؤسسة آلية لفهرسة، وتبويب المصادر، والمراجع التعليمية المناسبة لبرامجها (ورقية وإلكترونية).",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "6.25",
           "text": "للمؤسسة آلية لتطوير، وتحسين خدمات المكتبة كنظام الإعارة، وأوقات العمل المناسبة حسب المتطلبات، وظروف سير العملية التعليمية.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "6.26",
           "text": "للمؤسسة العدد الكافي من الحواسيب، والبرمجيات الحديثة ذات المواصفات المناسبة لتسيير العملية التعليمية.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-009"
+          ],
+          "evidenceAvailable": true
         }
+      ],
+      "documented": 6,
+      "availableEvidence": 3,
+      "practiceTitles": [
+        "إعداد كتيب السلامة السريرية",
+        "المرافق مستخدمة فعليًا والحصر الوظيفي يستكمل"
       ]
     },
     {
@@ -685,104 +1061,153 @@
         {
           "code": "7.1",
           "text": "للمؤسسة مكتب خاص يتولى ادارة العمليات، والاجراءات المتعلقة بالبحث العلمي.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "7.2",
           "text": "للمؤسسة الية تحدد الاولويات، وجميع التسهيلات لدعم البحث العلمي، واعمال التأليف، والترجمة.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "7.3",
           "text": "للمؤسسة ميثاق اخلاق، يتضمن التقيد باداب، واخلاقيات البحث العلمي.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "7.4",
           "text": "للمؤسسة الية تحفز الباحثين من منسوبيها لاجراء البحوث العلمية في مجال تخصصهم، ونشر نتائجها بالدوريات العلمية محليا، واقليميا، ودوليا.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "7.5",
           "text": "للمؤسسة الية تعكس مدى الاتساق بين البحث العلمي، والعملية التعليمية.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-014"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "7.6",
           "text": "خطط البحث العلمي في المؤسسة تتوافق مع الاولويات التي تعتمدها المؤسسة، والاولويات الوطنية في الدولة.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "7.7",
           "text": "للمؤسسة ضوابط لتقييم اداء، وانتاج اعضاء هيئة التدريس البحثي، بما يحقق تطلعات وتوقعات المؤسسة في مجال البحث العلمي.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "7.8",
           "text": "الخطة الاستراتيجية للمؤسسة تظهر التزامها بتشجيع ريادة الاعمال.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "7.9",
           "text": "للمؤسسة آليةٌ منتظمة للتواصل مع أرباب العمل، والقطاعات، والمؤسسات ذات العلاقة؛ للحصول على التغذية الراجعة؛ لتطوير مناهجها، وتعزيز البحوث العلمية المشتركة.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "7.10",
           "text": "للمؤسسة الية واضحة لعقد الاتفاقيات العلمية، والبحثية، وتبادل الزيارات مع مؤسسات مماثلة محليا، واقليميا، ودوليا.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "7.11",
           "text": "للمؤسسة الية لتقييم، وتطوير سياسة البحث العلمي.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "7.12",
           "text": "للمؤسسة الية تحدد نسبة، وكيفية الانفاق على الابحاث من موازنتها.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "7.13",
           "text": "للمؤسسة الية للاستفادة من التقييم، والتغذية الراجعة في تطوير سياسة البحث العلمي.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "7.14",
           "text": "للمؤسسة الية لتوثيق المرات التي استشهد بها في الابحاث العلمية، التي انتجها منسوبوها. يتضمن نسبة الاستشهادات الى عدد الباحثين.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "7.15",
           "text": "للمؤسسة الية لدعم المشاركة في المحافل، والمؤتمرات العلمية.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "7.16",
           "text": "للمؤسسة الية للاهتمام ببحوث الطلاب، وكيفية الاستفادة من البحوث المتميزة، وتوظيفها للاستفادة، ونشرها.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-014"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "7.17",
           "text": "للمؤسسة مجلة علمية دورية محكمة، ومسجلة في قواعد البيانات.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "7.18",
           "text": "للمؤسسة الية لتحكيم البحوث العلمية.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "7.19",
           "text": "للمؤسسة اشتراكات بمكتبات علمية محلية، واقليمية، ودولية، تمكن الباحثين من الاطلاع على مستجدات البحث العلمي.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "7.20",
           "text": "للمؤسسة الية لتنمية مهارات الطلاب البحثية.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-014"
+          ],
+          "evidenceAvailable": true
         }
-      ]
+      ],
+      "documented": 3,
+      "availableEvidence": 1,
+      "practiceTitles": []
     },
     {
       "number": 8,
@@ -795,73 +1220,117 @@
         {
           "code": "8.1",
           "text": "للمؤسسة مكتبٌ خاصٌّ يتولّى تنسيق برامجها لخدمة المجتمع، والبيئة.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "8.2",
           "text": "للمؤسسة خطةٌ لخدمة المجتمع المحلي، والبيئة المحيطة.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-013"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "8.3",
           "text": "للمؤسسة آليّةٌ للتعرّف على مشكلات المجتمع المحلي، والبيئة المحيطة.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-014"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "8.4",
           "text": "للمؤسسة آليّةٌ لنشر وتعزيز القيم الأخلاقية، والإنسانية، والوطنية، والدينية.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "8.5",
           "text": "تعدّ المؤسسة تقريرًا سنويًا يتضمّن تفاصيل الخدمات المجتمعية، وأشكال المشاركة فيها.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-013"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "8.6",
           "text": "تحدِّد المؤسسة المخصّصات المالية من ميزانيتها لخدمة المجتمع المحلي، والبيئة.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "8.7",
           "text": "للمؤسسة آليّةٌ لاستطلاع رأي المجتمع فيما تقدّمه من خدمات مجتمعية، وبيئية.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "8.8",
           "text": "للمؤسسة آليّةٌ للاستفادة من نتائج استطلاع الآراء فيما تساهم به من خدمات للمجتمع.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "8.9",
           "text": "للمؤسسة آليّةٌ للمساهمة في نشر المعرفة، وثقافة الاهتمام بالبيئة داخل المجتمع.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-013"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "8.10",
           "text": "للمؤسسة آليّةٌ لبناء شراكات مع مؤسّسات المجتمع المحلي، ومؤسّسات المجتمع المدني، في مجالات الخدمة الاقتصاديّة، والاجتماعيّة التي يحتاجها المجتمع المحلي.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "8.11",
           "text": "للمؤسسة آليّةٌ للتعاون مع المنظمات، ومؤسّسات المجتمع المدني، والشبكات، والاتحادات العلميّة التي تسهم في خدمة المجتمع المحلي، والبيئة.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "8.12",
           "text": "تشجِّع المؤسسة أعضاء هيئة التدريس على المشاركة في الندوات، والمؤتمرات التي تهتم بمشكلات المجتمع المحلي، والبيئة.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "8.13",
           "text": "تحفّز المؤسسة الطلبة على المشاركة في ممارسة الأنشطة غير الصفّية في مجال خدمة المجتمع، والبيئة.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-013"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "8.14",
           "text": "للمؤسسة آليّةٌ واضحة للتعاون مع النقابات، ومختلف الجهات ذات العلاقة بخدمة المجتمع المحلي، والبيئة.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         }
+      ],
+      "documented": 5,
+      "availableEvidence": 2,
+      "practiceTitles": [
+        "تقرير خدمة المجتمع متاح وتنظيم أنشطته جار",
+        "توجه السلوك الصحي ومشاركة اتحاد الطلبة"
       ]
     },
     {
@@ -875,83 +1344,152 @@
         {
           "code": "9.1",
           "text": "للمؤسسة مكتبٌ خاص يتولى إدارة عمليات ضمان الجودة.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "9.2",
           "text": "للمؤسسة كوادر بشرية تتمتع بالكفاية، والمعرفة، والخبرة في مجال ضمان الجودة والاعتماد.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "9.3",
           "text": "للمؤسسة آلية تمكِّن إدارة الجودة من المشاركة في صنع القرار.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "9.4",
           "text": "المؤسسة تلتزم بتقديم الدعم، وتوفير الإمكانات اللازمة لبرامج، ومشاريع إدارة الجودة.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "9.5",
           "text": "للمؤسسة آلية لنشر ثقافة الجودة، وتعزيزها.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "9.6",
           "text": "للمؤسسة آلية مستمرة للتقييم الذاتي، وفق معايير الاعتماد الصادرة عن المركز.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-005",
+            "EVI-016"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "9.7",
           "text": "للمؤسسة آلية تدعم التعاون، والتنسيق بين مكاتب ووحدات الجودة بالمؤسسة.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-015"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "9.8",
           "text": "للمؤسسة آلية واضحة لقياس مستوى رضا الطلاب، والعاملين، وأعضاء هيئة التدريس.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-017"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "9.9",
           "text": "للمؤسسة آلية واضحة، ونماذج معتمدة، ومنشورة لعملية تقييم أداء العاملين.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "9.10",
           "text": "للمؤسسة آلية تدعو من خلالها أصحاب المصلحة لإبداء آرائهم، ومقترحاتهم لغرض التطوير، والتحسين المستمر.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "9.11",
           "text": "للمؤسسة آلية للاستفادة من نتائج عملية تقييم أداء منتسبيها، وآراء أصحاب المصلحة.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-017"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "9.12",
           "text": "للمؤسسة خطط للتطوير، والتحسين المستمر في ضوء نتائج التقييم الذاتي.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-005",
+            "EVI-006",
+            "EVI-015",
+            "EVI-016"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "9.13",
           "text": "المؤسسة تعمل على تطبيق خططها التنفيذية، ومراجعتها دورياً.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-005",
+            "EVI-015"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "9.14",
           "text": "للمؤسسة آلية لتوثيق، وضمان سلامة البيانات التي يتم جمعها من أجل إدخال أي تحسينات ضرورية، وقياس أثرها.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-002",
+            "EVI-005",
+            "EVI-006",
+            "EVI-010",
+            "EVI-015"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "9.15",
           "text": "للمؤسسة آلية تُلزم إدارات البرامج باستطلاع آراء الطلاب في جودة العملية التعليمية، وتوظيف نتائجها في التحسين والتطوير.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-017"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "9.16",
           "text": "للمؤسسة آلية تضمن توفر المتطلبات اللوجستية التي تسهم في تنفيذ ورش العمل، والندوات، والمؤتمرات ذات العلاقة بنشر، وترسيخ متطلبات تجويد العملية التعليمية.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         }
+      ],
+      "documented": 8,
+      "availableEvidence": 7,
+      "practiceTitles": [
+        "توزيع نماذج متابعة التنفيذ وإلحاقها بكشوف الحضور",
+        "الاستبانات منفذة وتقارير التحليل منجزة",
+        "ربط صوت الطلبة والتحليل باستجابات تعليمية ودعم مقصود",
+        "استكمال نسخ ملفات الموظفين من أصول الجامعة",
+        "المسجل صحح مشكلات في البيانات السابقة",
+        "تصنيف حركة الطلبة وأسبابها مع المسجل",
+        "خطة تفعيل ضمان الجودة 2026/2027 إطار تنفيذي قائم",
+        "الدراسة الذاتية المحدثة والتدقيق المؤسسي أُعدّا"
       ]
     },
     {
@@ -965,63 +1503,100 @@
         {
           "code": "10.1",
           "text": "للمؤسسة موقع إلكتروني على شبكة المعلومات الدولية (الإنترنت).",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-020"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "10.2",
           "text": "للمؤسسة آلية لدعم عملية إنتاج المقررات التعليمية إلكترونياً.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "10.3",
           "text": "للمؤسسة وحدة فنية تدعم التعليم الإلكتروني والتعلم عن بعد إنتاجاً وتقديماً.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "10.4",
           "text": "للمؤسسة أنظمة تلبي متطلبات التعليم الإلكتروني والتعلم عن بعد، وتحدد مهام الطالب وحقوقه.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "10.5",
           "text": "المؤسسة تستخدم تقنية حديثة ومناسبة لبرامج التعليم الإلكتروني والتعلم عن بعد، بحيث تشمل خدمات الطالب، وإدارة العملية التعليمية، وتسهيلات وسائل الاتصال المتنوعة بين الأستاذ والطالب.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-020"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "10.6",
           "text": "للمؤسسة آلية تؤكد من خلالها التعرف على رضا المستفيدين من طلاب وأساتذة عن التعليم الإلكتروني والتعلم عن بعد.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "10.7",
           "text": "للمؤسسة آلية للاستفادة من استطلاعات الرأي من قبل الأساتذة والطلبة وأصحاب المصلحة في التعليم الإلكتروني والتعلم عن بعد.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "10.8",
           "text": "للمؤسسة آلية مرنة في عمليات تطوير وتحسين المحتوى التعليمي للتعليم الإلكتروني والتعلم عن بعد، بما يضمن نتائج التعلم المستهدفة.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "10.9",
           "text": "للمؤسسة آلية تمكن الطلاب من الوصول إلى المحتوى المناسب في الوقت المناسب وبالتقنية المناسبة.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-020"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "10.10",
           "text": "للمؤسسة آلية لتطوير مخازن المحتوى التعليمي الإلكتروني وإتاحتها لمختلف المستويات.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [
+            "EVI-020"
+          ],
+          "evidenceAvailable": true
         },
         {
           "code": "10.11",
           "text": "للمؤسسة آلية واضحة لدعم ومساعدة الطلاب على التعليم الإلكتروني والتعلم عن بعد من حيث المهارات اللازمة وخدمات القبول والدعم المالي بصورة منتظمة.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         },
         {
           "code": "10.12",
           "text": "للمؤسسة آلية لمراعاة حقوق النسخ وحقوق الملكية الفكرية في المواد المنتجة إلكترونياً.",
-          "status": "unassessed"
+          "status": "unassessed",
+          "evidenceIds": [],
+          "evidenceAvailable": false
         }
+      ],
+      "documented": 4,
+      "availableEvidence": 1,
+      "practiceTitles": [
+        "نموذج محاكاة غسل اليدين والقفازات عامل"
       ]
     }
   ],
@@ -1036,7 +1611,9 @@
       "assigneeName": "",
       "status": "needs_review",
       "requiredEvidence": "فهرس شواهد ومنظومة متابعة",
-      "description": "الجهات المتعاونة: جميع الجهات"
+      "description": "الجهات المتعاونة: جميع الجهات",
+      "sourceStatus": "قيد التنفيذ",
+      "sourceUpdate": ""
     },
     {
       "id": "ACT-02",
@@ -1048,7 +1625,9 @@
       "assigneeName": "",
       "status": "needs_review",
       "requiredEvidence": "مسودة مراجعة ومحضر توصية",
-      "description": "الجهات المتعاونة: أعضاء هيئة التدريس والجودة"
+      "description": "الجهات المتعاونة: أعضاء هيئة التدريس والجودة",
+      "sourceStatus": "منجز فنيًا / قيد المراجعة",
+      "sourceUpdate": ""
     },
     {
       "id": "ACT-03",
@@ -1060,7 +1639,9 @@
       "assigneeName": "",
       "status": "needs_review",
       "requiredEvidence": "ملفات مراجعة وسجل إصدارات",
-      "description": "الجهات المتعاونة: أعضاء هيئة التدريس والجودة"
+      "description": "الجهات المتعاونة: أعضاء هيئة التدريس والجودة",
+      "sourceStatus": "منجز فنيًا / قيد المراجعة",
+      "sourceUpdate": ""
     },
     {
       "id": "ACT-04",
@@ -1072,7 +1653,9 @@
       "assigneeName": "",
       "status": "needs_review",
       "requiredEvidence": "ملف امتحانات وفهرس حفظ",
-      "description": "الجهات المتعاونة: أعضاء هيئة التدريس والجودة"
+      "description": "الجهات المتعاونة: أعضاء هيئة التدريس والجودة",
+      "sourceStatus": "قيد التنظيم",
+      "sourceUpdate": ""
     },
     {
       "id": "ACT-05",
@@ -1084,7 +1667,9 @@
       "assigneeName": "",
       "status": "needs_review",
       "requiredEvidence": "سجل مؤشرات وتحليل مصحح",
-      "description": "الجهات المتعاونة: المسجل والدراسة والامتحانات"
+      "description": "الجهات المتعاونة: المسجل والدراسة والامتحانات",
+      "sourceStatus": "منجز للعام الحالي",
+      "sourceUpdate": "تحليل نتائج 2025/2026 وتصحيح البيانات منجز؛ لا تخلط بيانات القيد بنتائج الامتحان أو الاستبقاء"
     },
     {
       "id": "ACT-06",
@@ -1096,7 +1681,9 @@
       "assigneeName": "",
       "status": "needs_review",
       "requiredEvidence": "تقارير استبانات وإجراءات تحسين",
-      "description": "الجهات المتعاونة: الجهات المعنية"
+      "description": "الجهات المتعاونة: الجهات المعنية",
+      "sourceStatus": "توجد استبانة محللة فعلًا؛ تجديد أدوات الدورة التالية منفصل عن الإنجاز السابق",
+      "sourceUpdate": "شاهد متاح في فهرس المصادر: EVI-017"
     },
     {
       "id": "ACT-07",
@@ -1108,7 +1695,9 @@
       "assigneeName": "",
       "status": "needs_review",
       "requiredEvidence": "دليل وحزمة سلامة وملفات مواقع",
-      "description": "الجهات المتعاونة: الشؤون العلمية والجودة"
+      "description": "الجهات المتعاونة: الشؤون العلمية والجودة",
+      "sourceStatus": "الأصول متوفرة / السلامة قيد الاستحداث",
+      "sourceUpdate": "التدريب السريري ممارسة قائمة ومستقرة؛ كتيب السلامة معد، وتحتاج أدلة تطبيقه وتحديث تشغيله للمتابعة"
     },
     {
       "id": "ACT-08",
@@ -1120,7 +1709,9 @@
       "assigneeName": "",
       "status": "needs_review",
       "requiredEvidence": "سجل خدمات وإحالات",
-      "description": "الجهات المتعاونة: المسجل والجودة"
+      "description": "الجهات المتعاونة: المسجل والجودة",
+      "sourceStatus": "الخدمات قائمة / السجل يستكمل",
+      "sourceUpdate": ""
     },
     {
       "id": "ACT-09",
@@ -1132,7 +1723,9 @@
       "assigneeName": "",
       "status": "needs_review",
       "requiredEvidence": "قاعدة اتصال طوعية وتقرير تغطية",
-      "description": "الجهات المتعاونة: المسجل والجودة"
+      "description": "الجهات المتعاونة: المسجل والجودة",
+      "sourceStatus": "التواصل قائم / القاعدة غير مكتملة",
+      "sourceUpdate": ""
     },
     {
       "id": "ACT-10",
@@ -1144,7 +1737,9 @@
       "assigneeName": "",
       "status": "needs_review",
       "requiredEvidence": "سجل كادر وعبء وخطة تطوير",
-      "description": "الجهات المتعاونة: الشؤون العلمية والجودة"
+      "description": "الجهات المتعاونة: الشؤون العلمية والجودة",
+      "sourceStatus": "بيانات متوفرة جزئيًا",
+      "sourceUpdate": ""
     },
     {
       "id": "ACT-11",
@@ -1156,7 +1751,9 @@
       "assigneeName": "",
       "status": "needs_review",
       "requiredEvidence": "سجل بحوث وملفات نهائية",
-      "description": "الجهات المتعاونة: أعضاء هيئة التدريس والجودة"
+      "description": "الجهات المتعاونة: أعضاء هيئة التدريس والجودة",
+      "sourceStatus": "منجز للبحوث / التنظيم يستكمل",
+      "sourceUpdate": ""
     },
     {
       "id": "ACT-12",
@@ -1168,7 +1765,9 @@
       "assigneeName": "",
       "status": "needs_review",
       "requiredEvidence": "خطة وتقارير أنشطة",
-      "description": "الجهات المتعاونة: الجودة والشؤون العلمية"
+      "description": "الجهات المتعاونة: الجودة والشؤون العلمية",
+      "sourceStatus": "أنشطة ودليل ونماذج أُعدت",
+      "sourceUpdate": ""
     },
     {
       "id": "ACT-13",
@@ -1180,7 +1779,9 @@
       "assigneeName": "",
       "status": "needs_review",
       "requiredEvidence": "جرد وتقارير حالة",
-      "description": "الجهات المتعاونة: الشؤون العلمية والتدريب والجودة"
+      "description": "الجهات المتعاونة: الشؤون العلمية والتدريب والجودة",
+      "sourceStatus": "الجرد الأساسي متوفر",
+      "sourceUpdate": ""
     },
     {
       "id": "ACT-14",
@@ -1192,11 +1793,13 @@
       "assigneeName": "",
       "status": "needs_review",
       "requiredEvidence": "حزمة تقارير معتمدة",
-      "description": "الجهات المتعاونة: جميع الجهات"
+      "description": "الجهات المتعاونة: جميع الجهات",
+      "sourceStatus": "المراجعة الأفقية موجودة بتاريخ20يوليو2026؛ الاعتمادات النهائية مستقلة",
+      "sourceUpdate": "شاهد متاح في فهرس المصادر: EVI-006"
     },
     {
       "id": "ACT-15",
-      "title": "إعداد التقرير السنوي للجودة على مستوى الكلية بعد إغلاق مراجعة التقارير والخطة",
+      "title": "مراجعة التقرير السنوي للجودة الموجود واستكمال المصادقة عليه",
       "requirement": "9.13",
       "unit": "قسم ضمان الجودة",
       "period": "سبتمبر – أكتوبر 2026",
@@ -1204,7 +1807,9 @@
       "assigneeName": "",
       "status": "needs_review",
       "requiredEvidence": "تقرير الجودة السنوي",
-      "description": "الجهات المتعاونة: جميع الجهات وعمادة الكلية"
+      "description": "الجهات المتعاونة: جميع الجهات وعمادة الكلية",
+      "sourceStatus": "التقرير السنوي للجودة موجود فعلًا ومقروء؛ حالته إعداد منجز وقيد المراجعة/الاعتماد، فلا يبقى لم يبدأ",
+      "sourceUpdate": "شاهد متاح في فهرس المصادر: EVI-005"
     },
     {
       "id": "ACT-16",
@@ -1216,7 +1821,9 @@
       "assigneeName": "",
       "status": "needs_review",
       "requiredEvidence": "قرار بالمسار الرسمي وملف إجراءات",
-      "description": "الجهات المتعاونة: قسم ضمان الجودة / الشؤون الإدارية / الجامعة"
+      "description": "الجهات المتعاونة: قسم ضمان الجودة / الشؤون الإدارية / الجامعة",
+      "sourceStatus": "مرحّل عمدًا",
+      "sourceUpdate": ""
     },
     {
       "id": "ACT-17",
@@ -1228,7 +1835,9 @@
       "assigneeName": "",
       "status": "needs_review",
       "requiredEvidence": "كتيب ونشرة",
-      "description": "الجهات المتعاونة: قسم ضمان الجودة / المسجل / الإعلام والتوثيق"
+      "description": "الجهات المتعاونة: قسم ضمان الجودة / المسجل / الإعلام والتوثيق",
+      "sourceStatus": "لم يبدأ",
+      "sourceUpdate": ""
     },
     {
       "id": "ACT-18",
@@ -1240,7 +1849,9 @@
       "assigneeName": "",
       "status": "needs_review",
       "requiredEvidence": "تقرير خبير خارجي",
-      "description": "الجهات المتعاونة: قسم ضمان الجودة / لجنة البرنامج"
+      "description": "الجهات المتعاونة: قسم ضمان الجودة / لجنة البرنامج",
+      "sourceStatus": "مخطط",
+      "sourceUpdate": ""
     },
     {
       "id": "ACT-19",
@@ -1252,7 +1863,9 @@
       "assigneeName": "",
       "status": "needs_review",
       "requiredEvidence": "إجراء وسجل نسخ احتياطية",
-      "description": "الجهات المتعاونة: شؤون الطلبة / الأرشفة الإلكترونية / الجودة"
+      "description": "الجهات المتعاونة: شؤون الطلبة / الأرشفة الإلكترونية / الجودة",
+      "sourceStatus": "يحتاج استكمال",
+      "sourceUpdate": ""
     },
     {
       "id": "ACT-20",
@@ -1264,7 +1877,9 @@
       "assigneeName": "",
       "status": "needs_review",
       "requiredEvidence": "سجل حركة وإفادة مطابقة",
-      "description": "الجهات المتعاونة: الدراسة والامتحانات / ضمان الجودة"
+      "description": "الجهات المتعاونة: الدراسة والامتحانات / ضمان الجودة",
+      "sourceStatus": "منجز جزئيًا",
+      "sourceUpdate": "صحح المسجل بيانات سابقة؛ تبقى أربع حالات خارج مقام 268 حتى استكمال المطابقة، وليست حالات تسرب مثبتة"
     },
     {
       "id": "ACT-21",
@@ -1276,7 +1891,9 @@
       "assigneeName": "",
       "status": "needs_review",
       "requiredEvidence": "آلية وسجلات ثم تقرير تقييم",
-      "description": "الجهات المتعاونة: قسم ضمان الجودة / أعضاء هيئة التدريس"
+      "description": "الجهات المتعاونة: قسم ضمان الجودة / أعضاء هيئة التدريس",
+      "sourceStatus": "مقترح قيد التنظيم",
+      "sourceUpdate": "استجابة الدعم مصممة ومربوطة بالقدرات والاحتياجات؛ قياس أثرها لم يثبت بعد"
     },
     {
       "id": "ACT-22",
@@ -1288,7 +1905,9 @@
       "assigneeName": "",
       "status": "needs_review",
       "requiredEvidence": "منشور أو مراسلة نشر",
-      "description": "الجهات المتعاونة: الإعلام والتوثيق / تقنية المعلومات / ضمان الجودة"
+      "description": "الجهات المتعاونة: الإعلام والتوثيق / تقنية المعلومات / ضمان الجودة",
+      "sourceStatus": "مخطط",
+      "sourceUpdate": ""
     },
     {
       "id": "ACT-23",
@@ -1300,7 +1919,9 @@
       "assigneeName": "",
       "status": "needs_review",
       "requiredEvidence": "سجل حفظ وعينات",
-      "description": "الجهات المتعاونة: الشؤون الإدارية / ضمان الجودة"
+      "description": "الجهات المتعاونة: الشؤون الإدارية / ضمان الجودة",
+      "sourceStatus": "يحتاج تنظيم",
+      "sourceUpdate": ""
     },
     {
       "id": "ACT-24",
@@ -1312,7 +1933,9 @@
       "assigneeName": "",
       "status": "needs_review",
       "requiredEvidence": "إجراء أو مراسلات",
-      "description": "الجهات المتعاونة: عميد الكلية / ضمان الجودة"
+      "description": "الجهات المتعاونة: عميد الكلية / ضمان الجودة",
+      "sourceStatus": "لم يبدأ",
+      "sourceUpdate": ""
     },
     {
       "id": "ACT-25",
@@ -1324,7 +1947,9 @@
       "assigneeName": "",
       "status": "needs_review",
       "requiredEvidence": "رابط أو مراسلة نشر",
-      "description": "الجهات المتعاونة: الشؤون العلمية / المسجل / ضمان الجودة"
+      "description": "الجهات المتعاونة: الشؤون العلمية / المسجل / ضمان الجودة",
+      "sourceStatus": "لم يبدأ",
+      "sourceUpdate": "تحديث صفحة البرنامج ضمن الإجراء25؛ القناة الإعلامية وحدها لا تثبت موقعًا أكاديميًا محدثًا"
     },
     {
       "id": "ACT-26",
@@ -1336,7 +1961,9 @@
       "assigneeName": "",
       "status": "needs_review",
       "requiredEvidence": "تقرير مطابقة",
-      "description": "الجهات المتعاونة: الشؤون الإدارية / شؤون أعضاء هيئة التدريس / المسجل"
+      "description": "الجهات المتعاونة: الشؤون الإدارية / شؤون أعضاء هيئة التدريس / المسجل",
+      "sourceStatus": "بيانات أولية متوفرة",
+      "sourceUpdate": ""
     },
     {
       "id": "ACT-27",
@@ -1348,7 +1975,9 @@
       "assigneeName": "",
       "status": "needs_review",
       "requiredEvidence": "ملف سلامة ومخاطر",
-      "description": "الجهات المتعاونة: الشؤون العلمية / ضمان الجودة"
+      "description": "الجهات المتعاونة: الشؤون العلمية / ضمان الجودة",
+      "sourceStatus": "لم يبدأ",
+      "sourceUpdate": "كتيب سلامة معد؛ لا تُستنتج منه تغطية كل متطلبات سلامة المعامل أو اكتمال التطبيق"
     },
     {
       "id": "ACT-28",
@@ -1360,7 +1989,9 @@
       "assigneeName": "",
       "status": "needs_review",
       "requiredEvidence": "سجل وآلية دعم",
-      "description": "الجهات المتعاونة: أعضاء هيئة التدريس / ضمان الجودة"
+      "description": "الجهات المتعاونة: أعضاء هيئة التدريس / ضمان الجودة",
+      "sourceStatus": "لم يبدأ",
+      "sourceUpdate": ""
     },
     {
       "id": "ACT-29",
@@ -1372,7 +2003,9 @@
       "assigneeName": "",
       "status": "needs_review",
       "requiredEvidence": "استطلاع وشواهد شراكات",
-      "description": "الجهات المتعاونة: ضمان الجودة / الشؤون الإدارية / جهات المجتمع"
+      "description": "الجهات المتعاونة: ضمان الجودة / الشؤون الإدارية / جهات المجتمع",
+      "sourceStatus": "أنشطة قائمة / القياس يستكمل",
+      "sourceUpdate": ""
     },
     {
       "id": "ACT-30",
@@ -1384,7 +2017,9 @@
       "assigneeName": "",
       "status": "needs_review",
       "requiredEvidence": "ملف مبررات",
-      "description": "الجهات المتعاونة: عميد الكلية / الشؤون الإدارية أو القانونية عند الحاجة"
+      "description": "الجهات المتعاونة: عميد الكلية / الشؤون الإدارية أو القانونية عند الحاجة",
+      "sourceStatus": "لم يبدأ",
+      "sourceUpdate": ""
     },
     {
       "id": "ACT-31",
@@ -1396,7 +2031,9 @@
       "assigneeName": "",
       "status": "needs_review",
       "requiredEvidence": "مراسلات وملاحظات ومصفوفة استجابة",
-      "description": "الجهات المتعاونة: الشؤون العلمية والقانونية والجودة"
+      "description": "الجهات المتعاونة: الشؤون العلمية والقانونية والجودة",
+      "sourceStatus": "التقرير والمراجعة منجزان كمسودات",
+      "sourceUpdate": "اللائحة الداخلية المحدثة قيد مراجعة الشؤون القانونية"
     },
     {
       "id": "ACT-32",
@@ -1408,7 +2045,9 @@
       "assigneeName": "",
       "status": "needs_review",
       "requiredEvidence": "نماذج مراجعة ومصفوفة استجابة ونسخة معدلة",
-      "description": "الجهات المتعاونة: قسم ضمان الجودة والمراجعون"
+      "description": "الجهات المتعاونة: قسم ضمان الجودة والمراجعون",
+      "sourceStatus": "مسودة متكاملة",
+      "sourceUpdate": "الخطة الاستراتيجية في إعداد متقدم؛ تليها مشاركة متجددة لأصحاب المصلحة ومراجعة خبير واستكمال الاعتماد"
     },
     {
       "id": "ACT-33",
@@ -1420,7 +2059,9 @@
       "assigneeName": "",
       "status": "needs_review",
       "requiredEvidence": "إفادة نتيجة البحث وقرار أو محاضر",
-      "description": "الجهات المتعاونة: المسجل والأرشيف والجودة"
+      "description": "الجهات المتعاونة: المسجل والأرشيف والجودة",
+      "sourceStatus": "مذكرة ودليل متابعة جاهزان",
+      "sourceUpdate": "اتُّفق على إصدار قرار جديد للجنة العلمية بعد تعذر استرجاع القرار السابق؛ يلزم إرفاق القرار الجديد عند صدوره"
     },
     {
       "id": "ACT-34",
@@ -1432,7 +2073,9 @@
       "assigneeName": "",
       "status": "needs_review",
       "requiredEvidence": "مقترح معدل وقرار أو إحالة",
-      "description": "الجهات المتعاونة: الشؤون الإدارية والشؤون العلمية والجودة"
+      "description": "الجهات المتعاونة: الشؤون الإدارية والشؤون العلمية والجودة",
+      "sourceStatus": "المقترح مكتمل كمسودة",
+      "sourceUpdate": "الهيكل التنظيمي في مسار المراجعة والإنهاء"
     },
     {
       "id": "ACT-35",
@@ -1444,9 +2087,611 @@
       "assigneeName": "",
       "status": "needs_review",
       "requiredEvidence": "منظومة محدثة وسجلات تسليم وضبط وثائق",
-      "description": "الجهات المتعاونة: جميع الجهات"
+      "description": "الجهات المتعاونة: جميع الجهات",
+      "sourceStatus": "الأداة والتقويمات والنماذج جاهزة",
+      "sourceUpdate": "خطة الجودة مطبقة والفهرسة والمتابعة مستمرتان؛ تطبيق الخطة مستقل عن حالة اعتماد نسخة الوثيقة"
     }
   ],
-  "evidence": [],
-  "team": []
+  "evidence": [
+    {
+      "id": "EVI-001",
+      "name": "مسودة الخطة الاستراتيجية كلية التمريض 2026 2030 محدثة سبتمبر 2026 RTL",
+      "url": "",
+      "statusLabel": "مسودة متقدمة قيد المراجعة",
+      "description": "يحدد ستة محاور، خط أساس 2025/2026، مبادرات ومسؤوليات ومؤشرات، ويربط التنفيذ بخطة الجودة. ينص صراحة على أن مستهدفاته مقترحات وأنه لا يمثل اعتمادًا نهائيًا.",
+      "indicatorIds": [
+        "1.1",
+        "1.2",
+        "1.4",
+        "1.7",
+        "1.11"
+      ],
+      "taskId": "ACT-32",
+      "accessNote": "الربط بالمؤشرات مبدئي ويغطي جوانب محددة؛ لا يثبت استيفاءها بالكامل.",
+      "documentDate": "2026-09",
+      "limitations": "لا يثبت اعتماد الخطة أو تحقق مستهدفاتها."
+    },
+    {
+      "id": "EVI-002",
+      "name": "التقرير السنوي النهائي لمسجل الكلية 2025-2026",
+      "url": "",
+      "statusLabel": "نسخة نهائية للمراجعة والتوقيع",
+      "description": "تقرير مكتمل من أربع صفحات يميز 272 حالة بكشوف النتائج و268 مصنفة و4 للمطابقة؛ يصف أعمال القيد وحفظ النتائج وحركة الطلبة، ويحتوي جدول النتائج وأولويات المطابقة.",
+      "indicatorIds": [
+        "5.7",
+        "5.8",
+        "9.14"
+      ],
+      "taskId": "ACT-20",
+      "accessNote": "الربط بالمؤشرات مبدئي ويغطي جوانب محددة؛ لا يثبت استيفاءها بالكامل.",
+      "documentDate": "2025/2026",
+      "limitations": "التوقيعات فارغة؛ الوصف التشغيلي تقرير ثانوي عن السجلات الأصلية، والمجاميع لا تثبت الاستبقاء أو التسرب."
+    },
+    {
+      "id": "EVI-003",
+      "name": "سجل قدرات المعيدين — ملخص وجود ١٢ سجلًا معبأً",
+      "url": "",
+      "statusLabel": "كشف معبأ متاح",
+      "description": "كشف فعلي من 12 صفًا معبأ عن تخصصات المعيدين والدراسات العليا واحتياجات التدريب والاستعداد والمقررات الممكن دعمها.",
+      "indicatorIds": [
+        "2.21",
+        "3.7",
+        "3.10"
+      ],
+      "taskId": "ACT-10",
+      "accessNote": "الربط بالمؤشرات مبدئي ويغطي جوانب محددة؛ لا يثبت استيفاءها بالكامل. يعرض السجل العام الملخص فقط، دون البيانات الفردية.",
+      "documentDate": null,
+      "limitations": "12 صفًا لا تساوي إجمالي الكادر. لا يثبت صدور تكليف أو تنفيذ الدعم. تاريخ الجمع غير مثبت وإعادة الإيداع في سبتمبر ليست تحديثًا موثقًا للمحتوى."
+    },
+    {
+      "id": "EVI-004",
+      "name": "مقترح اعتماد الهيكل التنظيمي لكلية التمريض",
+      "url": "",
+      "statusLabel": "مقترح للمناقشة والاعتماد",
+      "description": "مقترح قائم من 12 صفحة يوضح ثلاثة مسارات وظيفية، مجلس الكلية والحضور الاستشاري، خطوط المسؤولية والإشراف والتنسيق.",
+      "indicatorIds": [
+        "2.2",
+        "2.5",
+        "2.9"
+      ],
+      "taskId": "ACT-34",
+      "accessNote": "الربط بالمؤشرات مبدئي ويغطي جوانب محددة؛ لا يثبت استيفاءها بالكامل.",
+      "documentDate": "2026-07",
+      "limitations": "لا يثبت اعتماد الهيكل أو إنشاء الوحدات المقترحة أو صدور تكليفات."
+    },
+    {
+      "id": "EVI-005",
+      "name": "التقرير السنوي النهائي لضمان الجودة والتحسين المستمر بالكلية 2025-2026 مصحح اتجاه RTL",
+      "url": "",
+      "statusLabel": "للمراجعة الداخلية والاعتماد",
+      "description": "تقرير سنوي جامع فعلي يلخص 15 تقويمًا وتشخيص الدراسة الذاتية والتقارير والتحليل المصحح والتدريب والبحوث وحالات العمل وملكية الأصول.",
+      "indicatorIds": [
+        "9.6",
+        "9.12",
+        "9.13",
+        "9.14"
+      ],
+      "taskId": "ACT-15",
+      "accessNote": "الربط بالمؤشرات مبدئي ويغطي جوانب محددة؛ لا يثبت استيفاءها بالكامل.",
+      "documentDate": "2025/2026",
+      "limitations": "يثبت وجود التقرير والتحليل؛ الأحداث التشغيلية المروية تحتاج أصولها. نهاية فترة التقرير 31 يوليو لا تثبت إنجازًا لاحقًا لتاريخ إيداعه19 يوليو."
+    },
+    {
+      "id": "EVI-006",
+      "name": "نتائج المراجعة الأفقية لحزمة التقارير والوثائق 2025-2026 محدثة 20-07-2026",
+      "url": "",
+      "statusLabel": "وثيقة ضبط داخلية معدة",
+      "description": "مراجعة أفقية فعلية لحزمة التقارير والوثائق، تضبط الأرقام والاختصاصات وحالة الإنجاز والأصل والنسخة ومسار اعتماد كل وثيقة.",
+      "indicatorIds": [
+        "2.7",
+        "9.12",
+        "9.14"
+      ],
+      "taskId": "ACT-14",
+      "accessNote": "الربط بالمؤشرات مبدئي ويغطي جوانب محددة؛ لا يثبت استيفاءها بالكامل.",
+      "documentDate": "2026-07-20",
+      "limitations": "لا تعني أن كل تقرير اعتمد أو أن جميع الأصول جُمعت؛ التوقيعات غير مثبتة."
+    },
+    {
+      "id": "EVI-007",
+      "name": "01 مسودة اللائحة الداخلية المحدثة كلية التمريض جامعة طبرق RTL",
+      "url": "",
+      "statusLabel": "مسودة للمراجعة القانونية والعلمية",
+      "description": "مشروع لائحة فعلي يضم 134 مادة في12 بابًا، ومنها القبول والامتحانات والتدريب والامتياز وحقوق الطلبة والتخرج والسجلات؛ ينص على عدم نفاذه قبل المراجعة والاعتماد.",
+      "indicatorIds": [
+        "2.2",
+        "5.3"
+      ],
+      "taskId": "ACT-31",
+      "accessNote": "الربط بالمؤشرات مبدئي ويغطي جوانب محددة؛ لا يثبت استيفاءها بالكامل.",
+      "documentDate": "2026-07",
+      "limitations": "موافقة الاتجاهات العامة لا تعني اعتماد النص الكامل؛ تحديث سبتمبر يذكر وصوله إلى القانونية وليس صدور اعتماد."
+    },
+    {
+      "id": "EVI-008",
+      "name": "التقرير السنوي النهائي لشؤون أعضاء هيئة التدريس والكوادر المساندة 2025-2026",
+      "url": "",
+      "statusLabel": "تقرير معد للمراجعة والتوقيع",
+      "description": "تقرير قائم يصف حفظ ملفات الكادر والتكليفات وتحديد الاحتياجات التدريبية، ويميز الأصول الموجودة عن الجرد والمطابقة والفهرسة غير المكتملة.",
+      "indicatorIds": [
+        "3.3",
+        "3.7",
+        "3.10",
+        "2.21"
+      ],
+      "taskId": "ACT-10",
+      "accessNote": "الربط بالمؤشرات مبدئي ويغطي جوانب محددة؛ لا يثبت استيفاءها بالكامل.",
+      "documentDate": "2025/2026",
+      "limitations": "الممارسة موصوفة في التقرير؛ لم تُفحص ملفات كل عضو، ولم يُعتمد تعداد شامل من هذا التقرير."
+    },
+    {
+      "id": "EVI-009",
+      "name": "التقرير السنوي النهائي لقسم الشؤون الإدارية والمالية 2025-2026",
+      "url": "",
+      "statusLabel": "تقرير للمراجعة والتوقيع",
+      "description": "تقرير فعلي يتضمن خط أساس الموارد: أربع قاعات وخمسة معامل ومكتبة مشتركة وإنترنت في ثلاثة مكاتب، ويصف الصيانة والطلبات والجرد المرحلي.",
+      "indicatorIds": [
+        "6.1",
+        "6.3",
+        "6.4",
+        "6.26"
+      ],
+      "taskId": "ACT-13",
+      "accessNote": "الربط بالمؤشرات مبدئي ويغطي جوانب محددة؛ لا يثبت استيفاءها بالكامل.",
+      "documentDate": "2025/2026",
+      "limitations": "أعداد وصفية من تقرير يوليو وليست جردًا موقعًا أو دليل كفاية المساحة والصيانة؛ لا يعتمد كنسبة امتثال."
+    },
+    {
+      "id": "EVI-010",
+      "name": "تقرير تحليل مؤشرات الأداء الأكاديمي ومقررات أولوية التحسين 2022 2026 مصحح حدود النجاح",
+      "url": "",
+      "statusLabel": "تحليل مصحح متاح؛ الاعتماد غير مثبت",
+      "description": "تحليل فعلي للأعوام2022/2023–2025/2026 يميز تصنيف الطالب السنوي عن رسوب المقرر، ويصحح حدود60/50 ويحدد مقررات السنة الأولى ذات الأولوية وحالات المطابقة.",
+      "indicatorIds": [
+        "1.6",
+        "1.11",
+        "2.7",
+        "4.12",
+        "9.14"
+      ],
+      "taskId": "ACT-05",
+      "accessNote": "الربط بالمؤشرات مبدئي ويغطي جوانب محددة؛ لا يثبت استيفاءها بالكامل.",
+      "documentDate": "2026-07",
+      "limitations": "لا تُنشر ملاحق أسماء الطلاب والحالات؛ التحليل لا يثبت تنفيذ تدخلات الدعم أو إغلاق الحالات؛ ليس إعادة حساب مستقل لكل سجل."
+    },
+    {
+      "id": "EVI-011",
+      "name": "28 التقرير السنوي للتدريب السريري",
+      "url": "",
+      "statusLabel": "مسودة محدثة للمراجعة والمطابقة والاعتماد",
+      "description": "تقرير قائم يصف التدريب والروتيشن والحضور والتقييم، وإضافة عيادة المنارة وتفعيل الكلى ومشروع الدليل وتنظيم الامتياز.",
+      "indicatorIds": [
+        "4.18",
+        "6.6",
+        "3.7"
+      ],
+      "taskId": "ACT-07",
+      "accessNote": "الربط بالمؤشرات مبدئي ويغطي جوانب محددة؛ لا يثبت استيفاءها بالكامل.",
+      "documentDate": "2025/2026",
+      "limitations": "إثبات وجود التقرير مباشر؛ تنفيذ التدريب والأحداث مروي وتبقى أصوله لدى القسم.480 هدف للدورة لا عدد مشاركين متحقق. حالة السلامة الواردة في يوليو تُقرأ مع تحديث سبتمبر."
+    },
+    {
+      "id": "EVI-012",
+      "name": "نموذج وصف برنامج أكاديمي بكالوريوس التمريض مراجع ومحدث RTL",
+      "url": "",
+      "statusLabel": "توصيف برنامج معد قيد المراجعة العلمية والقانونية",
+      "description": "نموذج برنامج معبأ يحدد بكالوريوس التمريض وأهدافه ومخرجاته و140 وحدة وثمانية فصول والقبول والمرجعيات، ويفصل المراجعة الخارجية غير المكتملة عن إعداد التوصيف.",
+      "indicatorIds": [
+        "4.1",
+        "4.4",
+        "4.11",
+        "4.13",
+        "4.17"
+      ],
+      "taskId": "ACT-02",
+      "accessNote": "الربط بالمؤشرات مبدئي ويغطي جوانب محددة؛ لا يثبت استيفاءها بالكامل.",
+      "documentDate": "2026-07-20",
+      "limitations": "لا يثبت اعتماد التوصيف أو إتمام المراجعة الخارجية. لا يعني غياب قرار مستقل ضمن النسخة توقف البرنامج القائم."
+    },
+    {
+      "id": "EVI-013",
+      "name": "التقرير السنوي المحدث لقسم خدمة المجتمع والبيئة 2025-2026 مصحح اتجاه RTL",
+      "url": "",
+      "statusLabel": "تقرير مجتمعي متاح للمراجعة والاعتماد",
+      "description": "تقرير سنوي فعلي يعرض ورشة بحوث وزيارة مدرسة الضياء وندوة التبرع بالدم والإدمان، وإعداد دليل ونماذج وتوجه عام السلوك الصحي.",
+      "indicatorIds": [
+        "8.2",
+        "8.5",
+        "8.9",
+        "8.13"
+      ],
+      "taskId": "ACT-12",
+      "accessNote": "الربط بالمؤشرات مبدئي ويغطي جوانب محددة؛ لا يثبت استيفاءها بالكامل.",
+      "documentDate": "2025/2026",
+      "limitations": "الأنشطة مروية في التقرير ولم تفحص أصول صورها وحضورها؛ لا تُعمم الأرقام البحثية ولا تُنشر تفاصيل المشاركين؛ أثر الأنشطة غير مقاس."
+    },
+    {
+      "id": "EVI-014",
+      "name": "التقرير السنوي المحدث لأعمال البحث العلمي وبحوث التخرج 2025-2026 مصحح اتجاه RTL",
+      "url": "",
+      "statusLabel": "تقرير بحثي معد قيد المراجعة والمطابقة",
+      "description": "تقرير بحثي فعلي يتضمن ستة مشروعات ومجالاتها وورشة إعداد ومناقشات23–24مايو وتوظيف النتائج في التخطيط وخدمة المجتمع.",
+      "indicatorIds": [
+        "7.5",
+        "7.16",
+        "7.20",
+        "8.3"
+      ],
+      "taskId": "ACT-11",
+      "accessNote": "الربط بالمؤشرات مبدئي ويغطي جوانب محددة؛ لا يثبت استيفاءها بالكامل.",
+      "documentDate": "2025/2026",
+      "limitations": "لا يثبت اعتماد جميع المشروعات أو الموافقات الأخلاقية؛ بعض استنتاجات الأعداد والسببية تحتاج تصحيحًا وفق تدقيق المرحلة الأولى؛ لا تعتمد كنواتج صحية مثبتة."
+    },
+    {
+      "id": "EVI-015",
+      "name": "07 خطة تفعيل ضمان الجودة والتحسين المستمر كلية التمريض 2026 2027 تم المراجعة",
+      "url": "",
+      "statusLabel": "خطة1.4 متاحة؛ اعتماد النسخة غير مثبت",
+      "description": "خطة87صفحة ذات ضبط إصدار ومسؤوليات ومواعيد وتقويمات ومؤشرات وخطة تحسين35إجراء. ذكرت الدراسة الذاتية الأحدث أنها إطار التنفيذ الجاري.",
+      "indicatorIds": [
+        "1.4",
+        "9.7",
+        "9.12",
+        "9.13",
+        "9.14"
+      ],
+      "taskId": "ACT-35",
+      "accessNote": "الربط بالمؤشرات مبدئي ويغطي جوانب محددة؛ لا يثبت استيفاءها بالكامل.",
+      "documentDate": "2026-07-19",
+      "limitations": "حقول الاعتماد فارغة. يُفصل إعداد الخطة عن تشغيلها المروي في سبتمبر وعن قبول كل شاهد أو إغلاق إجراء."
+    },
+    {
+      "id": "EVI-016",
+      "name": "مسودة الدراسة الذاتية المحدثة سبتمبر 2026",
+      "url": "",
+      "statusLabel": "الدراسة الذاتية2.1 مسودة للمراجعة",
+      "description": "دراسة ذاتية75صفحة بضبط إصدار28سبتمبر وقطع معلومات22سبتمبر. تقر بأعمال قائمة واستبانات مطبقة وتحليلات منجزة وتضم سجل الشواهد ومالكي الأصول.",
+      "indicatorIds": [
+        "9.6",
+        "9.12"
+      ],
+      "taskId": "ACT-16",
+      "accessNote": "الربط بالمؤشرات مبدئي ويغطي جوانب محددة؛ لا يثبت استيفاءها بالكامل.",
+      "documentDate": "2026-09-28",
+      "limitations": "مصدر تحليلي جامع؛ لا يحول كل أصل مشار إليه إلى ملف فُحص، ولا تُحسب تغطيته لجميع المعايير كإثبات مباشر لتطبيق جميع المؤشرات."
+    },
+    {
+      "id": "EVI-017",
+      "name": "تقرير تحليل مؤشرات الأداء الأكاديمي",
+      "url": "",
+      "statusLabel": "ملخص تحليل استبانة متاح داخل تقرير سابق",
+      "description": "صفحتا4–5 تتضمنان تحليلًا فعليًا لـ56مشاركة باستبيان صعوبات المقررات والدعم؛ يربطان صعوبات السنة الأولى بالحاجة إلى الإرشاد ودعم المصطلحات.",
+      "indicatorIds": [
+        "5.19",
+        "5.20",
+        "9.8",
+        "9.11",
+        "9.15"
+      ],
+      "taskId": "ACT-06",
+      "accessNote": "الربط بالمؤشرات مبدئي ويغطي جوانب محددة؛ لا يثبت استيفاءها بالكامل.",
+      "documentDate": "2026-07-01",
+      "limitations": "التقرير العددي الأقدم استبدل بالتحليل المصحح؛ يُستعمل هذا الجزء وحده كدليل وجود ملخص استبانة، دون اعتباره أصل الاستجابات أو نتيجة أحدث دورة أو تعميمه على جميع الطلبة."
+    },
+    {
+      "id": "EVI-018",
+      "name": "1. Medical Asepsis--Medical handwashing",
+      "url": "",
+      "statusLabel": "مادة تدريسية موجودة",
+      "description": "ورقة مهارة غسل اليدين بمعدات وإحدى عشرة خطوة ومبررات تعليمية، تحمل اسم كلية التمريض بجامعة طبرق.",
+      "indicatorIds": [
+        "4.7",
+        "4.6"
+      ],
+      "taskId": "ACT-03",
+      "accessNote": "الربط بالمؤشرات مبدئي ويغطي جوانب محددة؛ لا يثبت استيفاءها بالكامل.",
+      "documentDate": null,
+      "limitations": "مادة تعليمية فعلية؛ لا تثبت اعتمادًا سريريًا حديثًا أو كفاية طالب، وتحتاج مطابقة المعايير السريرية الحالية قبل استخدامها كإجراء معتمد."
+    },
+    {
+      "id": "EVI-019",
+      "name": "NUR-MAN-CLN-001 دليل التدريب السريري v1.0 Draft",
+      "url": "https://drive.google.com/file/d/1V51I7EAuwEPX4raGv1gh3jr8SV6Wn7n2",
+      "statusLabel": "مسودة تنظيمية1.0؛ تاريخ الإصدار غير مكتمل",
+      "description": "دليل فعلي يحدد أدوار الإشراف والدوران وتقييم الطلبة والسجلات وإدارة المخاطر والحوادث والتعرضات والامتياز والتحسين.",
+      "indicatorIds": [
+        "4.18",
+        "6.6",
+        "6.7"
+      ],
+      "taskId": "ACT-07",
+      "accessNote": "الربط بالمؤشرات مبدئي ويغطي جوانب محددة؛ لا يثبت استيفاءها بالكامل. فتح الملف يعتمد على صلاحيات المصدر الأصلية.",
+      "documentDate": null,
+      "limitations": "نسخة قديمة معدلة في يناير 2026، ليست إثباتًا أنها كتيب السلامة الأحدث المذكور في سبتمبر، ولا تثبت نفاذ الإجراءات أو تنفيذها. المحتوى السريري يحتاج مراجعة المختص قبل الاعتماد."
+    },
+    {
+      "id": "EVI-020",
+      "name": "بوابة التعلم والدعم الطلابي: دليل الطالب ورفيق الدراسة والمحاكاة والشكاوى",
+      "url": "https://nourabobaker-create.github.io/tobruk-nursing-simulation/student-learning-hub/",
+      "statusLabel": "منتج تقني قائم؛ مورد تعليمي تجريبي مساند",
+      "description": "مصدر HTML مقروء في المستودع الحالي يضم دليل طالب ومراجع رسمية ومحاكاة ورفيق دراسة متعدد السنوات ورابط نموذج شكاوى. ينص على كونه موردًا تجريبيًا مساندًا وعلى الرجوع للكلية والمدرسين والوثائق الكاملة.",
+      "indicatorIds": [
+        "4.2",
+        "4.7",
+        "5.13",
+        "10.1",
+        "10.5",
+        "10.9",
+        "10.10"
+      ],
+      "taskId": "ACT-08",
+      "accessNote": "الربط بالمؤشرات مبدئي ويغطي جوانب محددة؛ لا يثبت استيفاءها بالكامل.",
+      "documentDate": "2026-09-30",
+      "limitations": "تحقق محتوى المصدر وليس اختبار واجهة شاملًا أو قياس أثر تعليمي أو رضا مستفيدين أو اعتماد سريري. تعذر فتح Pages بأداة الويب في هذا الفحص؛ تأكيد النشر السابق مصدره عمل الفريق. لا تثبت وصلة الشكاوى وصول شكوى أو إغلاقها."
+    }
+  ],
+  "team": [],
+  "workProgress": [
+    {
+      "id": "P01",
+      "title": "تقارير المقررات ممارسة فصلية روتينية قائمة",
+      "statusLabel": "ممارسة روتينية قائمة",
+      "qualification": "لا تُصنف لم يبدأ ولا غائبة لأن نسخها لم تجمع مركزيًا. تقارير الفصل الحالي تنتج طبيعيًا عند نهايته؛ لا يدعي هذا اكتمال تقارير فصل لم ينته.",
+      "sourceLabel": "وفق الدراسة الذاتية المحدثة، سبتمبر ٢٠٢٦، وسياق عمل المشروع؛ صفحات 24",
+      "indicatorIds": [
+        "4.6",
+        "4.19"
+      ]
+    },
+    {
+      "id": "P02",
+      "title": "توزيع نماذج متابعة التنفيذ وإلحاقها بكشوف الحضور",
+      "statusLabel": "منفذ وقيد الاستخدام",
+      "qualification": "توزيع النماذج منجز والتعبئة مستمرة. استكمال شمول النظري والعملي والمعملي والسريري ونتائج الدورة الحالية جار؛ لا يساوي توزيع النماذج اكتمال الأثر.",
+      "sourceLabel": "وفق الدراسة الذاتية المحدثة، سبتمبر ٢٠٢٦، وسياق عمل المشروع؛ صفحات 24",
+      "indicatorIds": [
+        "4.6",
+        "4.19",
+        "9.5",
+        "9.13"
+      ]
+    },
+    {
+      "id": "P03",
+      "title": "الاستبانات منفذة وتقارير التحليل منجزة",
+      "statusLabel": "منفذ ومحلل",
+      "qualification": "بعض الأدوات يجدد في 2026/2027؛ تجديد الأداة لا يلغي الاستبانات المنفذة. لم تفحص هنا كل الاستجابات الأصلية أو تغطية كل فئة.",
+      "sourceLabel": "وفق الدراسة الذاتية المحدثة، سبتمبر ٢٠٢٦، وسياق عمل المشروع؛ صفحات 4, 5",
+      "indicatorIds": [
+        "5.19",
+        "9.8",
+        "9.15"
+      ]
+    },
+    {
+      "id": "P04",
+      "title": "ربط صوت الطلبة والتحليل باستجابات تعليمية ودعم مقصود",
+      "statusLabel": "استجابة مصممة ومنفذة جزئياً",
+      "qualification": "الإرشاد والدعم المتمايز ومجموعات الدعم وقدرات المعيدين والمحاكاة استجابات حقيقية متعددة المصادر، لكن مراحلها متفاوتة. لا تعني تنفيذ جميع الجلسات أو إثبات تحسن التعلم أو انخفاض التعثر.",
+      "sourceLabel": "وفق الدراسة الذاتية المحدثة، سبتمبر ٢٠٢٦، وسياق عمل المشروع؛ صفحات 23, 25",
+      "indicatorIds": [
+        "4.5",
+        "4.12",
+        "4.14",
+        "5.20",
+        "9.11",
+        "9.12"
+      ]
+    },
+    {
+      "id": "P05",
+      "title": "التدريب السريري قائم منتظم وموثق لدى الجهة المختصة",
+      "statusLabel": "ممارسة قائمة وسجلاتها لدى الجهة المختصة",
+      "qualification": "أصول المواقع والمجموعات والدوران والحضور والإشراف والتقييم والامتياز لدى قسم التدريب السريري. عدم نقلها للجودة لا يعني غياب التدريب. الإشراف وتغطية النساء والولادة والحوافز مسائل متابعة مستقلة.",
+      "sourceLabel": "وفق الدراسة الذاتية المحدثة، سبتمبر ٢٠٢٦، وسياق عمل المشروع؛ صفحات 27",
+      "indicatorIds": [
+        "4.18"
+      ]
+    },
+    {
+      "id": "P06",
+      "title": "إضافة خبرات المنارة وإعادة تفعيل التدريب بالكلى",
+      "statusLabel": "تنفيذ موثق بالإفادة",
+      "qualification": "مذكورة في الدراسة الحالية وتقرير التدريب الذي يحيل إليه التدقيق. لم تفحص أذونات المواقع وجداول الحضور الأصلية في هذه المهمة؛ لا تحل إضافة موقع وحدها جميع فجوات التعرض السريري.",
+      "sourceLabel": "وفق الدراسة الذاتية المحدثة، سبتمبر ٢٠٢٦، وسياق عمل المشروع؛ صفحات 27",
+      "indicatorIds": [
+        "4.18"
+      ]
+    },
+    {
+      "id": "P07",
+      "title": "إعداد كتيب السلامة السريرية",
+      "statusLabel": "الإعداد منجز",
+      "qualification": "الكتيب معد، ومتابعة إتاحته وتهيئة الطلبة وتطبيقه والحوادث وإغلاق الملاحظات خطوة تالية. لا يثبت الكتيب وحده امتثال جميع مرافق السلامة أو تنفيذه على كل المجموعات.",
+      "sourceLabel": "وفق الدراسة الذاتية المحدثة، سبتمبر ٢٠٢٦، وسياق عمل المشروع؛ صفحات 27",
+      "indicatorIds": [
+        "6.6",
+        "6.7",
+        "4.18"
+      ]
+    },
+    {
+      "id": "P08",
+      "title": "إعداد تهيئة الطلبة الجدد مكتمل",
+      "statusLabel": "جاهز بانتظار التوقيت الخارجي",
+      "qualification": "التنفيذ ينتظر فتح تسجيل السنة الأولى بعد نتائج الدور الثاني للشهادة الثانوية؛ لا دليل هنا على انعقاد اللقاء. يجب فصل إعداد المحتوى عن تاريخ تقديمه والحضور.",
+      "sourceLabel": "وفق الدراسة الذاتية المحدثة، سبتمبر ٢٠٢٦، وسياق عمل المشروع؛ صفحات 5",
+      "indicatorIds": [
+        "4.2",
+        "4.3"
+      ]
+    },
+    {
+      "id": "P09",
+      "title": "تحديث ملفات أعضاء هيئة التدريس والمعيدين والمكلفين",
+      "statusLabel": "تحديث منجز وفق الإفادة والدراسة الذاتية",
+      "qualification": "التحديث منجز بحسب إفادة المستخدم والدراسة الحالية. لم تفحص عينات الملفات الشخصية هنا؛ فهرس الاكتمال والتعداد الحالي ومؤهلات وتكليفات الأفراد تحتاج إسنادًا من مالك الأصل، لا إعادة المهمة من الصفر.",
+      "sourceLabel": "وفق الدراسة الذاتية المحدثة، سبتمبر ٢٠٢٦، وسياق عمل المشروع؛ صفحات 19, 20",
+      "indicatorIds": [
+        "3.10"
+      ]
+    },
+    {
+      "id": "P10",
+      "title": "استكمال نسخ ملفات الموظفين من أصول الجامعة",
+      "statusLabel": "استكمال إداري جارٍ",
+      "qualification": "استكمال روتيني بإحضار أو نسخ الأصول الموجودة لدى الإدارة العامة بالجامعة. لا يعني غياب ملف الموظف أو غياب الموظف عن عمله، ولا يثبت اكتمال تقييم الأداء الوظيفي.",
+      "sourceLabel": "وفق الدراسة الذاتية المحدثة، سبتمبر ٢٠٢٦، وسياق عمل المشروع؛ صفحات 19, 20",
+      "indicatorIds": [
+        "2.23",
+        "9.9"
+      ]
+    },
+    {
+      "id": "P11",
+      "title": "كشف قدرات المعيدين معد ومعبأ في 12 سجلًا",
+      "statusLabel": "سجل معبأ مع مطابقة جزئية",
+      "qualification": "الكشف يشمل تخصصًا ودراسات عليا واحتياجات تدريب ومقررات يمكن مساندتها واستعداد دعم التعثر. العدد نطاق الكشف المفحوص وليس تعداد كل الكوادر. المطابقة والتكليفات والإشراف الفعلي لا تثبت لكل المعيدين.",
+      "sourceLabel": "وفق الدراسة الذاتية المحدثة، سبتمبر ٢٠٢٦، وسياق عمل المشروع؛ صفحات 20",
+      "indicatorIds": [
+        "3.3",
+        "3.7",
+        "3.10",
+        "4.12"
+      ]
+    },
+    {
+      "id": "P12",
+      "title": "المسجل صحح مشكلات في البيانات السابقة",
+      "statusLabel": "تصحيح منجز وفق المصدر",
+      "qualification": "يجب إبقاء التصحيح منفصلًا عن المطابقة الوثائقية لأربع حالات نتائج وعن مشروع تصنيف الحركة الجاري. لا يُعد اختلاف قوائم الامتحان تسربًا ولا تعمم مشكلة سابقة على جميع بيانات الكلية.",
+      "sourceLabel": "وفق الدراسة الذاتية المحدثة، سبتمبر ٢٠٢٦، وسياق عمل المشروع؛ صفحات 46",
+      "indicatorIds": [
+        "1.6",
+        "9.14"
+      ]
+    },
+    {
+      "id": "P13",
+      "title": "تصنيف حركة الطلبة وأسبابها مع المسجل",
+      "statusLabel": "قيد التنفيذ",
+      "qualification": "المسجل يستكمل تصنيف استمرار/انقطاع/عدم تجديد/تحويل/سحب/عودة/فصل/تخرج وأسبابها. ليس سجلًا مكتملًا مثبتًا؛ لا تستنتج نسب استبقاء من كشوف الامتحان.",
+      "sourceLabel": "وفق الدراسة الذاتية المحدثة، سبتمبر ٢٠٢٦، وسياق عمل المشروع؛ صفحات 4",
+      "indicatorIds": [
+        "5.7",
+        "5.8",
+        "4.8",
+        "9.14"
+      ]
+    },
+    {
+      "id": "P14",
+      "title": "نموذج محاكاة غسل اليدين والقفازات عامل",
+      "statusLabel": "نموذج عامل قيد التطوير",
+      "qualification": "منتج تقني تعليمي حقيقي؛ لا يساوي تعليمًا عن بعد متكاملًا أو كفاءة سريرية مثبتة. توزيع وتجريب وتغذية راجعة ومراجعة سلامة وقياس تعلم مراحل منفصلة. تحديثات لاحقة بالبوابة تحتاج التحقق من نسختها الحية.",
+      "sourceLabel": "وفق الدراسة الذاتية المحدثة، سبتمبر ٢٠٢٦، وسياق عمل المشروع؛ صفحات 47, 50",
+      "indicatorIds": [
+        "10.2",
+        "10.5",
+        "10.8",
+        "4.7"
+      ]
+    },
+    {
+      "id": "P15",
+      "title": "خطة تفعيل ضمان الجودة 2026/2027 إطار تنفيذي قائم",
+      "statusLabel": "معد وقيد التطبيق",
+      "qualification": "أصبحت إطار العمل الجاري لا مشروعًا مستقبليًا منفصلًا. لا تُستنتج مصادقة رسمية من كونها مطبقة؛ خانة قرار اعتماد الخطة أو نسخه الموقعة تتطلب تحققًا مستقلًا.",
+      "sourceLabel": "وفق الدراسة الذاتية المحدثة، سبتمبر ٢٠٢٦، وسياق عمل المشروع؛ صفحات 43, 46",
+      "indicatorIds": [
+        "1.4",
+        "9.12",
+        "9.13"
+      ]
+    },
+    {
+      "id": "P16",
+      "title": "الدراسة الذاتية المحدثة والتدقيق المؤسسي أُعدّا",
+      "statusLabel": "مسودات وتقارير معدة",
+      "qualification": "وجود الدراسة والتدقيق مثبت في Library، مع 75 صفحة في النسخة الحالية للدراسة. كلاهما عمل مراجعة، لا قرار اعتماد أو إثبات اكتمال كل مؤشر. لا تستخدم عدد صفحات المسودة أو شواهدها كنسبة جاهزية.",
+      "sourceLabel": "وفق الدراسة الذاتية المحدثة، سبتمبر ٢٠٢٦، وسياق عمل المشروع",
+      "indicatorIds": [
+        "9.6",
+        "9.12",
+        "9.14"
+      ]
+    },
+    {
+      "id": "P17",
+      "title": "الخطة الاستراتيجية 2026–2030 في مرحلة إعداد متقدمة",
+      "statusLabel": "مسودة متقدمة تنتظر المراجعة والمصادقة",
+      "qualification": "تليها مشاركة أصحاب المصلحة ومراجعة خبير واستكمال الاعتماد؛ لا تسجل معتمدة أو نافذة بلا القرار. الاعتراف بإنجاز المسودة لا يعني منح تحقق كامل للمؤشر 1.1.",
+      "sourceLabel": "وفق الدراسة الذاتية المحدثة، سبتمبر ٢٠٢٦، وسياق عمل المشروع؛ صفحات 5",
+      "indicatorIds": [
+        "1.1",
+        "1.8",
+        "1.9"
+      ]
+    },
+    {
+      "id": "P18",
+      "title": "اللائحة الداخلية المحدثة لدى الشؤون القانونية",
+      "statusLabel": "قيد المراجعة القانونية",
+      "qualification": "مسار مراجعة قائم، لا اعتماد نهائي مثبت للنسخة المحدثة؛ لا يعني عدم وجود لوائح جامعية نافذة سابقًا.",
+      "sourceLabel": "وفق الدراسة الذاتية المحدثة، سبتمبر ٢٠٢٦، وسياق عمل المشروع؛ صفحات 5",
+      "indicatorIds": [
+        "2.2",
+        "5.3"
+      ]
+    },
+    {
+      "id": "P19",
+      "title": "الهيكل قيد المراجعة وقرار اللجنة العلمية سيعاد إصداره",
+      "statusLabel": "قيد المراجعة وإعادة الإصدار",
+      "qualification": "الإعداد والمراجعة موجودان؛ لم يثبت إصدار القرار الجديد. سبب إعادة الإصدار تعذر استرجاع القرار السابق، وليس إثبات عدم وجود اللجنة أو عملها.",
+      "sourceLabel": "وفق الدراسة الذاتية المحدثة، سبتمبر ٢٠٢٦، وسياق عمل المشروع؛ صفحات 5",
+      "indicatorIds": [
+        "2.9",
+        "3.11",
+        "3.12"
+      ]
+    },
+    {
+      "id": "P20",
+      "title": "المرافق مستخدمة فعليًا والحصر الوظيفي يستكمل",
+      "statusLabel": "مرافق مستخدمة وحصر جارٍ",
+      "qualification": "توجد مرافق ومعامل مستخدمة وموارد مشتركة، لكن لا يعلن التطابق الكمي من أعداد تاريخية. طلب 26 سبتمبر للجرد وإثبات الوضع القانوني ليس دليل إتمامه.",
+      "sourceLabel": "وفق الدراسة الذاتية المحدثة، سبتمبر ٢٠٢٦، وسياق عمل المشروع؛ صفحات 34, 35",
+      "indicatorIds": [
+        "6.1",
+        "6.2",
+        "6.3"
+      ]
+    },
+    {
+      "id": "P21",
+      "title": "تقرير خدمة المجتمع متاح وتنظيم أنشطته جار",
+      "statusLabel": "تقرير معد وتواريخ الأنشطة تحتاج مطابقة",
+      "qualification": "يوجد تقرير سنوي محدث يجمع الأنشطة؛ الأنشطة المدرسية والدم والإدمان المشار إليها سابقة لديسمبر 2025 فلا تعد إنجازات جديدة في 2026. يلزم ربط كل نشاط بتاريخه ومخرجه؛ لا دليل أثر مجتمعي ممتد هنا.",
+      "sourceLabel": "وفق الدراسة الذاتية المحدثة، سبتمبر ٢٠٢٦، وسياق عمل المشروع؛ صفحات 40, 41",
+      "indicatorIds": [
+        "8.1",
+        "8.2",
+        "8.5"
+      ]
+    },
+    {
+      "id": "P22",
+      "title": "توجه السلوك الصحي ومشاركة اتحاد الطلبة",
+      "statusLabel": "تشاور وتخطيط",
+      "qualification": "التشاور وطلب المقترحات استجابة قائمة بحسب المستخدم؛ لا تفترض تنفيذ جميع الأنشطة أو اسمًا رسميًا معتمدًا للسنة أو سلطة أكاديمية للاتحاد.",
+      "sourceLabel": "وفق الدراسة الذاتية المحدثة، سبتمبر ٢٠٢٦، وسياق عمل المشروع؛ صفحات 42",
+      "indicatorIds": [
+        "8.4",
+        "8.9",
+        "8.13"
+      ]
+    }
+  ],
+  "mappingNote": "مصادر موجودة ومقروءة؛ روابط المؤشرات تحليلية مبدئية ولا تعادل قبول الشواهد أو استيفاء الاعتماد."
 }
