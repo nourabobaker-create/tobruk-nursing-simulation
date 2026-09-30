@@ -35,7 +35,7 @@ a{color:inherit}
 .topin{max-width:1500px;margin:auto;padding:12px 18px;display:flex;align-items:center;gap:15px}
 .brand{display:flex;align-items:center;gap:18px;min-width:0;flex:1;width:100%}
 .logo{width:82px;height:82px;object-fit:contain;background:#fff;border-radius:18px;padding:4px;border:1px solid #edf1ee}
-.brandtext{min-width:0;flex:1;text-align:center;padding:0 18px}.brandtext strong{display:block;font-size:clamp(30px,3.1vw,44px);line-height:1.08;white-space:pre-line;font-weight:900;color:var(--green)}.brandtext small{display:block;color:var(--muted);font-size:12px;font-weight:800;margin-top:6px}
+.brandtext{min-width:0;flex:1;text-align:center;padding:0 18px}.brandtext strong{display:block;font-size:clamp(30px,3.1vw,44px);line-height:1.08;white-space:nowrap;font-weight:900;color:var(--green)}.brandtext small{display:block;color:var(--muted);font-size:12px;font-weight:800;margin-top:6px}
 .tools{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
 .btn{border:1px solid var(--line);background:#fff;color:var(--ink);padding:10px 13px;border-radius:13px;font-weight:800;cursor:pointer}
 .btn:hover{border-color:#b9cec4}
@@ -154,8 +154,7 @@ textarea{width:100%;min-height:100px;border:1px solid var(--line);border-radius:
   <div class="brand">
    <img class="logo" id="uniLogo" alt="شعار جامعة طبرق · Tobruk University logo">
    <div class="brandtext">
-    <strong id="brandTitle">جامعة طبرق
-كلية التمريض</strong>
+    <strong id="brandTitle">كلية التمريض، جامعة طبرق</strong>
     <small id="brandSub">بوابة الطالب للتعلّم والدعم</small>
    </div>
    <img class="logo" id="facultyLogo" alt="شعار كلية التمريض · Faculty of Nursing logo">
@@ -742,7 +741,7 @@ const semTotals={"1-1":[432,724,30],"1-2":[416,670,30],"2-1":[256,698,30],"2-2":
 
 const T={
  ar:{
- brandTitle:"جامعة طبرق\nكلية التمريض",brandSub:"بوابة الطالب للتعلّم والدعم",
+ brandTitle:"كلية التمريض، جامعة طبرق",brandSub:"بوابة الطالب للتعلّم والدعم",
  heroEyebrow:"النسخة التجريبية الأولى",heroTitle:"بوابة الطالب للتعلّم والدعم",shareLead:"نشجّع أبناءنا الطلاب على مشاركة التطبيق مع أقرانهم في كليات التمريض بالجامعات الليبية، إيمانًا بأهمية نشر المعرفة وتبادل الفائدة.",hadithTop:"قال رسول الله صلى الله عليه وسلم: «مَنْ دَلَّ عَلَى خَيْرٍ فَلَهُ مِثْلُ أَجْرِ فَاعِلِهِ» رواه مسلم",
  heroText:"مساحة واحدة تجمع ما يساعد طالب التمريض على الفهم والتعلّم والمراجعة والوصول إلى الأدلة والخدمات المساندة خلال سنوات الدراسة.",
  heroStart:"ابدأ بالمحاكاة",
@@ -760,7 +759,7 @@ const T={
  guideEyebrow:"دليل الطالب · نسخة مبسّطة داخل التطبيق",guideTitle:"اعرف أين تبدأ… وأين ترجع عند الحاجة.",guideIntro:"ملخص عملي للتوجيه فقط، مع إحالة مستمرة إلى الكلية والمسجل وأعضاء هيئة التدريس والوثائق الرسمية الكاملة."
  },
  en:{
- brandTitle:"Tobruk University\nFaculty of Nursing",brandSub:"Student Learning & Support Hub",
+ brandTitle:"Faculty of Nursing, Tobruk University",brandSub:"Student Learning & Support Hub",
  heroEyebrow:"FIRST PILOT VERSION",heroTitle:"Student Learning & Support Hub",shareLead:"We encourage our students to share this app with their peers in nursing faculties across Libyan universities, in the spirit of sharing knowledge and benefit.",hadithTop:"The Messenger of Allah ﷺ said: “Whoever guides to something good will have a reward like the one who does it.” — Sahih Muslim",
  heroText:"One space that helps nursing students understand, learn, revise, access guidance, and use supporting services throughout the programme.",
  heroStart:"Start with Simulation",
