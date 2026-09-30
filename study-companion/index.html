@@ -60,6 +60,56 @@ details.q{border:1px solid var(--line);border-radius:15px;padding:11px 13px;marg
 @media(max-width:900px){.courseNav{grid-template-columns:repeat(2,1fr)}.vocabGrid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:800px){.compactGrid,.grid2,.grid3,.scenarios,.lessonGrid{grid-template-columns:1fr}.flow{grid-template-columns:repeat(3,1fr)}.labGrid{grid-template-columns:1fr}}
 @media(max-width:480px){main{padding:10px}.hero{padding:21px 17px;border-radius:22px}.courseBody{padding:15px}.courseHead{padding:15px}.flow{grid-template-columns:repeat(2,1fr)}.courseNav{grid-template-columns:1fr}.vocabGrid{grid-template-columns:1fr}}
+
+/* --- Course dashboard, notebook and local study assistant --- */
+.courseNav{display:none!important}
+.courseDashboard{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:20px 0}
+.courseCard{border:1px solid var(--line);border-radius:20px;background:#fff;padding:17px;text-align:right;cursor:pointer;box-shadow:0 7px 22px rgba(20,61,46,.06);transition:.18s}
+.courseCard:hover{transform:translateY(-2px);border-color:#b9cec4;box-shadow:0 12px 28px rgba(20,61,46,.10)}
+.courseCard .ccNum{font-size:11px;font-weight:900;color:var(--gold)}
+.courseCard h3{margin:4px 0 3px;color:var(--green);font-size:17px}
+.courseCard .ccEn{direction:ltr;text-align:right;font-size:12px;color:var(--muted);font-weight:700}
+.courseCard .ccMeta{margin-top:9px;display:flex;gap:5px;flex-wrap:wrap}
+.courseCard .ccMeta span{font-size:10px;background:#edf4f0;color:#36584d;border-radius:999px;padding:4px 7px}
+.course{display:none}
+.course.active{display:block;animation:courseIn .18s ease}
+@keyframes courseIn{from{opacity:.35;transform:translateY(5px)}to{opacity:1;transform:none}}
+.courseReturn{display:flex;justify-content:space-between;gap:8px;align-items:center;margin:0 0 10px}
+.courseReturn .btn{background:#fff}
+.courseToolsInline{display:flex;gap:7px;flex-wrap:wrap}
+.studyDock{position:fixed;left:16px;bottom:16px;z-index:55;display:flex;gap:8px;flex-direction:column;align-items:flex-start}
+.fab{border:0;border-radius:999px;padding:11px 15px;background:var(--green);color:#fff;font-weight:900;box-shadow:0 12px 26px rgba(20,61,46,.22);cursor:pointer}
+.fab.gold{background:#7a6022}
+.drawerShade{display:none;position:fixed;inset:0;background:rgba(9,31,23,.42);z-index:70}
+.drawerShade.open{display:block}
+.drawer{position:fixed;z-index:71;top:0;bottom:0;left:0;width:min(520px,94vw);background:#fff;transform:translateX(-103%);transition:.2s;box-shadow:18px 0 50px rgba(0,0,0,.18);display:flex;flex-direction:column}
+.drawer.open{transform:translateX(0)}
+.drawerHead{padding:14px 16px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:8px;align-items:center}
+.drawerHead h2{margin:0;font-size:18px}
+.drawerBody{padding:15px;overflow:auto;flex:1}
+.closeX{width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:#fff;cursor:pointer;font-weight:900}
+.noteSelect{width:100%;padding:10px;border:1px solid var(--line);border-radius:12px;background:#fff;margin-bottom:9px}
+.noteArea{width:100%;min-height:52vh;border:1px solid var(--line);border-radius:15px;padding:13px;resize:vertical;font:inherit;line-height:1.7;background:#fbfdfc}
+.noteStatus{font-size:12px;color:var(--muted);margin:6px 2px 10px}
+.noteActions{display:flex;gap:7px;flex-wrap:wrap}
+.noteActions button{border:1px solid var(--line);background:#fff;border-radius:11px;padding:8px 10px;font-weight:800;cursor:pointer}
+.chatLauncher{position:fixed;right:16px;bottom:16px;z-index:56;border:0;border-radius:999px;background:var(--green);color:#fff;padding:13px 16px;font-weight:900;box-shadow:0 12px 28px rgba(20,61,46,.25);cursor:pointer}
+.chatbox{position:fixed;right:16px;bottom:72px;z-index:75;width:min(390px,calc(100vw - 24px));height:min(560px,72vh);background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:0 18px 48px rgba(0,0,0,.20);display:none;overflow:hidden}
+.chatbox.open{display:flex;flex-direction:column}
+.chatHead{padding:12px 14px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;background:#f8fbfa}
+.chatHead b{color:var(--green)}
+.chatMsgs{flex:1;overflow:auto;padding:12px;background:#fafcfb}
+.msg{max-width:88%;padding:9px 11px;border-radius:13px;margin:7px 0;font-size:13px;white-space:pre-wrap}
+.msg.bot{background:#edf4f0;margin-left:auto}
+.msg.user{background:#eaf2fb;margin-right:auto}
+.chatForm{display:flex;gap:7px;padding:10px;border-top:1px solid var(--line);background:#fff}
+.chatForm input{flex:1;border:1px solid var(--line);border-radius:12px;padding:10px;min-width:0}
+.chatForm button{border:0;border-radius:12px;background:var(--green);color:#fff;padding:9px 12px;font-weight:900;cursor:pointer}
+.quickQs{display:flex;gap:5px;flex-wrap:wrap;padding:7px 10px;border-top:1px solid #edf1ef;background:#fff}
+.quickQs button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:5px 8px;font-size:11px;cursor:pointer}
+@media(max-width:980px){.courseDashboard{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.courseDashboard{grid-template-columns:1fr}.studyDock{left:10px;bottom:10px}.chatLauncher{right:10px;bottom:10px}.fab{padding:10px 12px}.chatbox{right:10px;bottom:65px}.courseReturn{align-items:flex-start;flex-direction:column}}
+
 </style>
 </head>
 <body>
@@ -77,22 +127,27 @@ details.q{border:1px solid var(--line);border-radius:15px;padding:11px 13px;marg
 
 <div class="notice"><b>استخدم رفيق الدراسة لبناء الفهم أولًا.</b> ثم ارجع إلى المحاضرات وأستاذ المقرر والمواد المعتمدة للتفاصيل المطلوبة في الدراسة والتقييم.</div>
 
-<nav class="courseNav" aria-label="المقررات">
- <a href="#arabic"><b>01 · اللغة العربية</b><small>Arabic Language</small></a>
- <a href="#english"><b>02 · اللغة الإنجليزية 1</b><small>English Language 1</small></a>
- <a href="#anatomy"><b>03 · التشريح ووظائف الأعضاء 1</b><small>Human Anatomy &amp; Physiology 1</small></a>
- <a href="#sociology"><b>04 · علم الاجتماع الطبي</b><small>Medical Sociology</small></a>
- <a href="#theory"><b>05 · الأسس النظرية في التمريض</b><small>Theoretical Foundations of Nursing</small></a>
- <a href="#biochem"><b>06 · الكيمياء الحيوية</b><small>Biochemistry</small></a>
- <a href="#rle1"><b>07 · الخبرة التعليمية المرتبطة 1</b><small>Related Learning Experience 1</small></a>
- <a href="#islamic"><b>08 · الدراسات الإسلامية</b><small>Islamic Studies</small></a>
-</nav>
+
+<section id="course-home">
+ <div class="sectionTitle">مقررات السنة الأولى · الفصل الأول</div>
+ <div class="courseDashboard">
+  <button class="courseCard" data-open-course="arabic"><div class="ccNum">01</div><h3>اللغة العربية</h3><div class="ccEn">Arabic Language</div><div class="ccMeta"><span>LANG 100ly</span><span>3 ECTS</span></div></button>
+  <button class="courseCard" data-open-course="english"><div class="ccNum">02</div><h3>اللغة الإنجليزية 1</h3><div class="ccEn">English Language 1</div><div class="ccMeta"><span>ENGL 101ly</span><span>3 ECTS</span></div></button>
+  <button class="courseCard" data-open-course="anatomy"><div class="ccNum">03</div><h3>التشريح ووظائف الأعضاء 1</h3><div class="ccEn">Human Anatomy &amp; Physiology 1</div><div class="ccMeta"><span>BIOL 101aly</span><span>6 ECTS</span></div></button>
+  <button class="courseCard" data-open-course="sociology"><div class="ccNum">04</div><h3>علم الاجتماع الطبي</h3><div class="ccEn">Medical Sociology</div><div class="ccMeta"><span>SOCSCI 100ly</span><span>3 ECTS</span></div></button>
+  <button class="courseCard" data-open-course="theory"><div class="ccNum">05</div><h3>الأسس النظرية في التمريض</h3><div class="ccEn">Theoretical Foundations of Nursing</div><div class="ccMeta"><span>NURS 101ly</span><span>4 ECTS</span></div></button>
+  <button class="courseCard" data-open-course="biochem"><div class="ccNum">06</div><h3>الكيمياء الحيوية</h3><div class="ccEn">Biochemistry</div><div class="ccMeta"><span>CHEM 101ly</span><span>5 ECTS</span></div></button>
+  <button class="courseCard" data-open-course="rle1"><div class="ccNum">07</div><h3>الخبرة التعليمية المرتبطة 1</h3><div class="ccEn">Related Learning Experience 1</div><div class="ccMeta"><span>NURS 102ly</span><span>4 ECTS</span></div></button>
+  <button class="courseCard" data-open-course="islamic"><div class="ccNum">08</div><h3>الدراسات الإسلامية</h3><div class="ccEn">Islamic Studies</div><div class="ccMeta"><span>LANG 102ly</span><span>2 ECTS</span></div></button>
+ </div>
+</section>
 
 <section class="course" id="arabic">
  <div class="courseHead"><div class="num">01</div><h2>اللغة العربية</h2><div class="en">Arabic Language</div>
   <div class="meta"><span><b>الرمز:</b> LANG 100ly</span><span><b>النوع:</b> عام</span><span><b>الوحدات:</b> 2</span><span><b>ساعات الاتصال:</b> 32</span><span><b>عبء التعلّم:</b> 72</span><span><b>ECTS:</b> 3</span><span><b>المتطلب السابق:</b> لا يوجد</span></div>
  </div>
  <div class="courseBody">
+  <div class="courseReturn"><button class="btn" type="button" data-course-home>← كل المقررات</button><div class="courseToolsInline"><button class="btn" type="button" data-open-notes="arabic">📝 ملاحظاتي في هذا المقرر</button></div></div>
   <div class="compactGrid">
    <div class="box"><h3>ما الذي يفيدك فيه هذا المقرر؟</h3><p>اللغة أداة للفهم والتواصل. يحتاج طالب التمريض إلى قراءة السؤال والتعليمات بدقة، ترتيب أفكاره، والتعبير عنها بصورة واضحة في الحديث والكتابة.</p></div>
    <div class="scenario"><h3>🩺 موقف قد تواجهه</h3><p>عند سؤال مريض عن علاجه، قد يعطي السؤال العام إجابة عامة. صياغة سؤال محدد وواضح تساعدك على الحصول على معلومة أدق.</p></div>
@@ -116,6 +171,7 @@ details.q{border:1px solid var(--line);border-radius:15px;padding:11px 13px;marg
   <div class="meta"><span><b>الرمز:</b> ENGL 101ly</span><span><b>النوع:</b> عام</span><span><b>الوحدات:</b> 2</span><span><b>ساعات الاتصال:</b> 32</span><span><b>عبء التعلّم:</b> 72</span><span><b>ECTS:</b> 3</span><span><b>المتطلب السابق:</b> لا يوجد</span></div>
  </div>
  <div class="courseBody">
+  <div class="courseReturn"><button class="btn" type="button" data-course-home>← كل المقررات</button><div class="courseToolsInline"><button class="btn" type="button" data-open-notes="english">📝 ملاحظاتي في هذا المقرر</button></div></div>
   <div class="compactGrid">
    <div class="box"><h3>لماذا تهم طالب التمريض؟</h3><p>الإنجليزية في التمريض ليست حفظ كلمات فقط. هي أداة لفهم المصطلح والتعليمات، طرح سؤال واضح، التأكد من أنك فهمت المريض أو الزميل بصورة صحيحة، ونقل معلومة دون لبس.</p></div>
    <div class="scenario"><h3>🩺 موقف قد تواجهه</h3><p>المريض يقول لك كلمة أو وصفًا لم تفهمه جيدًا. بدل التخمين، تحتاج إلى جملة بسيطة تطلب بها التوضيح ثم تعيد المعنى للتأكد من أنكما تقصدان الشيء نفسه.</p></div>
@@ -185,6 +241,7 @@ details.q{border:1px solid var(--line);border-radius:15px;padding:11px 13px;marg
   <div class="meta"><span><b>الرمز:</b> BIOL 101aly</span><span><b>النوع:</b> طبي مساند</span><span><b>الوحدات:</b> 5 (4 نظري + 1 معمل)</span><span><b>ساعات الاتصال:</b> 96</span><span><b>عبء التعلّم:</b> 146</span><span><b>ECTS:</b> 6</span><span><b>المتطلب السابق:</b> لا يوجد</span></div>
  </div>
  <div class="courseBody">
+  <div class="courseReturn"><button class="btn" type="button" data-course-home>← كل المقررات</button><div class="courseToolsInline"><button class="btn" type="button" data-open-notes="anatomy">📝 ملاحظاتي في هذا المقرر</button></div></div>
   <div class="bigIdea">الفكرة الكبرى: <span dir="ltr">Anatomy</span> يشرح <b>بناء الجسم ومواقع أجزائه</b>، و<span dir="ltr">Physiology</span> يشرح <b>كيف تعمل هذه الأجزاء</b>. عندما تجمع الاثنين تبدأ في فهم ما هو طبيعي، ولماذا تظهر علامة أو مشكلة عندما يتغير هذا الطبيعي.</div>
 
   <h3 class="sectionTitle">الصورة العامة للجسم</h3>
@@ -247,6 +304,7 @@ details.q{border:1px solid var(--line);border-radius:15px;padding:11px 13px;marg
   <div class="meta"><span><b>الرمز:</b> SOCSCI 100ly</span><span><b>النوع:</b> عام</span><span><b>الوحدات:</b> 2</span><span><b>ساعات الاتصال:</b> 32</span><span><b>عبء التعلّم:</b> 72</span><span><b>ECTS:</b> 3</span><span><b>لغة التدريس:</b> العربية</span><span><b>المتطلب السابق:</b> لا يوجد</span></div>
  </div>
  <div class="courseBody">
+  <div class="courseReturn"><button class="btn" type="button" data-course-home>← كل المقررات</button><div class="courseToolsInline"><button class="btn" type="button" data-open-notes="sociology">📝 ملاحظاتي في هذا المقرر</button></div></div>
   <div class="bigIdea">الصحة والمرض لا يحدثان داخل الجسم فقط. ظروف الأسرة، التعليم، الدخل، العمل، السكن، العلاقات الاجتماعية، الثقافة والوصول إلى الخدمات قد تؤثر في السلوك الصحي وفي تجربة المريض مع المرض والعلاج.</div>
 
   <h3 class="sectionTitle">ما الذي يفتح عينيك عليه هذا المقرر؟</h3>
@@ -282,6 +340,7 @@ details.q{border:1px solid var(--line);border-radius:15px;padding:11px 13px;marg
   <div class="meta"><span><b>الرمز:</b> NURS 101ly</span><span><b>النوع:</b> تخصصي</span><span><b>الوحدات:</b> 4</span><span><b>ساعات الاتصال:</b> 64</span><span><b>عبء التعلّم:</b> 96</span><span><b>ECTS:</b> 4</span><span><b>لغة التدريس:</b> الإنجليزية</span><span><b>المتطلب السابق:</b> لا يوجد</span></div>
  </div>
  <div class="courseBody">
+  <div class="courseReturn"><button class="btn" type="button" data-course-home>← كل المقررات</button><div class="courseToolsInline"><button class="btn" type="button" data-open-notes="theory">📝 ملاحظاتي في هذا المقرر</button></div></div>
   <div class="bigIdea">التمريض ليس قائمة إجراءات. النظرية تساعدك على الإجابة عن أسئلة أعمق: من هو الإنسان الذي أرعاه؟ ماذا تعني الصحة؟ كيف تؤثر البيئة؟ وما دور الممرض؟</div>
 
   <h3 class="sectionTitle">أربع أفكار مركزية</h3>
@@ -324,6 +383,7 @@ details.q{border:1px solid var(--line);border-radius:15px;padding:11px 13px;marg
   <div class="meta"><span><b>الرمز:</b> CHEM 101ly</span><span><b>النوع:</b> طبي مساند</span><span><b>الوحدات:</b> 4 (3 نظري + 1 معمل)</span><span><b>ساعات الاتصال:</b> 80</span><span><b>عبء التعلّم:</b> 110</span><span><b>ECTS:</b> 5</span><span><b>لغة التدريس:</b> الإنجليزية</span><span><b>المتطلب السابق:</b> لا يوجد</span></div>
  </div>
  <div class="courseBody">
+  <div class="courseReturn"><button class="btn" type="button" data-course-home>← كل المقررات</button><div class="courseToolsInline"><button class="btn" type="button" data-open-notes="biochem">📝 ملاحظاتي في هذا المقرر</button></div></div>
   <div class="bigIdea">الكيمياء الحيوية تشرح ما يحدث داخل الجسم على مستوى الجزيئات: كيف نحصل على الطاقة، لماذا يحتاج الجسم الماء والأملاح، كيف تعمل الإنزيمات، وكيف ترتبط الجلوكوز والدهون والبروتينات والفيتامينات بالصحة والمرض.</div>
 
   <h3 class="sectionTitle">ابدأ بهذه الخريطة</h3>
@@ -363,6 +423,7 @@ details.q{border:1px solid var(--line);border-radius:15px;padding:11px 13px;marg
   <div class="meta"><span><b>الرمز:</b> NURS 102ly</span><span><b>النوع:</b> تخصصي عملي</span><span><b>الوحدات:</b> 2</span><span><b>ساعات الاتصال:</b> 64 معمل</span><span><b>عبء التعلّم:</b> 100</span><span><b>ECTS:</b> 4</span><span><b>لغة التدريس:</b> الإنجليزية</span><span><b>المتطلب السابق:</b> لا يوجد</span></div>
  </div>
  <div class="courseBody">
+  <div class="courseReturn"><button class="btn" type="button" data-course-home>← كل المقررات</button><div class="courseToolsInline"><button class="btn" type="button" data-open-notes="rle1">📝 ملاحظاتي في هذا المقرر</button></div></div>
   <div class="bigIdea">هنا تبدأ المعرفة بالتحول إلى أداء. الهدف ليس أن «تقلد خطوات» فقط، بل أن تعرف لماذا تفعل الخطوة، كيف تحمي المريض ونفسك، وكيف تلاحظ الخطأ وتصححه.</div>
 
   <h3 class="sectionTitle">المحاور الأساسية</h3>
@@ -412,6 +473,7 @@ details.q{border:1px solid var(--line);border-radius:15px;padding:11px 13px;marg
   <div class="meta"><span><b>الرمز:</b> LANG 102ly</span><span><b>النوع:</b> عام</span><span><b>الوحدات:</b> 2</span><span><b>ساعات الاتصال:</b> 32</span><span><b>عبء التعلّم:</b> 56</span><span><b>ECTS:</b> 2</span><span><b>المتطلب السابق:</b> لا يوجد</span></div>
  </div>
  <div class="courseBody">
+  <div class="courseReturn"><button class="btn" type="button" data-course-home>← كل المقررات</button><div class="courseToolsInline"><button class="btn" type="button" data-open-notes="islamic">📝 ملاحظاتي في هذا المقرر</button></div></div>
   <div class="compactGrid">
    <div class="box"><h3>ما الذي يتناوله المقرر؟</h3><p>مدخل إلى القرآن والسنة والسيرة، وأسس الفقه، والثقافة والحضارة الإسلامية، وعلاقة الإسلام بالحياة الاجتماعية والعلم وغيرها من القضايا العامة.</p></div>
    <div class="scenario"><h3>🩺 صلة مفيدة بالممارسة</h3><p>العمل مع الناس يتطلب احترام معتقداتهم وقيمهم وخصوصيتهم. فهم الخلفية الدينية والثقافية يساعد على التواصل باحترام، مع الرجوع إلى المختصين عند وجود مسألة شرعية أو سريرية تحتاج حكمًا دقيقًا.</p></div>
@@ -428,7 +490,129 @@ details.q{border:1px solid var(--line);border-radius:15px;padding:11px 13px;marg
  </div>
 </section>
 
+
+<div class="studyDock">
+ <button class="fab gold" id="notebookBtn" type="button">📒 كشكولي</button>
+</div>
+<button class="chatLauncher" id="chatLauncher" type="button">💬 اسأل رفيق الدراسة</button>
+
+<div class="drawerShade" id="drawerShade"></div>
+<aside class="drawer" id="notebookDrawer" aria-label="كشكول الطالب">
+ <div class="drawerHead"><h2>📒 كشكولي</h2><button class="closeX" id="closeNotebook" type="button">×</button></div>
+ <div class="drawerBody">
+  <p style="margin-top:0;color:var(--muted)">اكتب ملاحظاتك الخاصة. تُحفظ تلقائيًا على هذا الجهاز وفي هذا المتصفح ولا تُرسل إلى البوابة.</p>
+  <select class="noteSelect" id="noteCourse">
+   <option value="general">ملاحظات عامة</option>
+   <option value="arabic">اللغة العربية</option>
+   <option value="english">اللغة الإنجليزية 1</option>
+   <option value="anatomy">التشريح ووظائف الأعضاء 1</option>
+   <option value="sociology">علم الاجتماع الطبي</option>
+   <option value="theory">الأسس النظرية في التمريض</option>
+   <option value="biochem">الكيمياء الحيوية</option>
+   <option value="rle1">الخبرة التعليمية المرتبطة 1</option>
+   <option value="islamic">الدراسات الإسلامية</option>
+  </select>
+  <textarea class="noteArea" id="noteArea" placeholder="اكتب ملاحظاتك هنا..."></textarea>
+  <div class="noteStatus" id="noteStatus">محفوظ تلقائيًا</div>
+  <div class="noteActions">
+   <button id="exportNotes" type="button">تصدير الكشكول</button>
+   <button id="clearCurrentNote" type="button">مسح ملاحظات هذا المقرر</button>
+  </div>
+ </div>
+</aside>
+
+<section class="chatbox" id="chatbox" aria-label="اسأل رفيق الدراسة">
+ <div class="chatHead"><b>💬 اسأل رفيق الدراسة</b><button class="closeX" id="closeChat" type="button">×</button></div>
+ <div class="chatMsgs" id="chatMsgs"><div class="msg bot">مرحبًا 👋 اسألني عن أي مقرر في هذا الفصل، أو اطلب شرح مفهوم بطريقة أبسط. أجيب من محتوى رفيق الدراسة الموجود في هذه الصفحة.</div></div>
+ <div class="quickQs">
+  <button type="button" data-quick-q="ما الفرق بين التشريح والفسيولوجيا؟">Anatomy vs Physiology</button>
+  <button type="button" data-quick-q="اشرح الاتزان الداخلي ببساطة">Homeostasis</button>
+  <button type="button" data-quick-q="لماذا أدرس الكيمياء الحيوية؟">Biochemistry</button>
+  <button type="button" data-quick-q="ما أهم مهارات RLE 1؟">RLE 1</button>
+ </div>
+ <form class="chatForm" id="chatForm"><input id="chatInput" autocomplete="off" placeholder="اكتب سؤالك..."><button>إرسال</button></form>
+</section>
+
 </main>
 <footer class="footer">© 2026 كلية التمريض · جامعة طبرق | Faculty of Nursing · Tobruk University</footer>
+
+<script>
+const courseNames={
+ arabic:"اللغة العربية",english:"اللغة الإنجليزية 1",anatomy:"التشريح ووظائف الأعضاء 1",
+ sociology:"علم الاجتماع الطبي",theory:"الأسس النظرية في التمريض",biochem:"الكيمياء الحيوية",
+ rle1:"الخبرة التعليمية المرتبطة 1",islamic:"الدراسات الإسلامية"
+};
+
+function showCourse(id,push=true){
+ document.getElementById("course-home").style.display="none";
+ document.querySelectorAll(".course").forEach(x=>x.classList.toggle("active",x.id===id));
+ const el=document.getElementById(id);
+ if(el){ if(push) history.replaceState(null,"","#"+id); window.scrollTo({top:0,behavior:"smooth"}); }
+}
+function showCourseHome(){
+ document.querySelectorAll(".course").forEach(x=>x.classList.remove("active"));
+ document.getElementById("course-home").style.display="";
+ history.replaceState(null,"",location.pathname);
+ window.scrollTo({top:0,behavior:"smooth"});
+}
+document.addEventListener("click",e=>{
+ const c=e.target.closest("[data-open-course]"); if(c){showCourse(c.dataset.openCourse);return}
+ if(e.target.closest("[data-course-home]")){showCourseHome();return}
+ const n=e.target.closest("[data-open-notes]"); if(n){openNotebook(n.dataset.openNotes);return}
+});
+const initial=location.hash.slice(1); if(courseNames[initial]) showCourse(initial,false);
+
+// Notebook
+const nb=document.getElementById("notebookDrawer"),shade=document.getElementById("drawerShade"),noteCourse=document.getElementById("noteCourse"),noteArea=document.getElementById("noteArea"),noteStatus=document.getElementById("noteStatus");
+const noteKey=id=>"rafeeq-note-v1-"+id;
+function loadNote(){noteArea.value=localStorage.getItem(noteKey(noteCourse.value))||"";noteStatus.textContent="محفوظ تلقائيًا"}
+function openNotebook(course){if(course&&courseNames[course])noteCourse.value=course;loadNote();nb.classList.add("open");shade.classList.add("open")}
+function closeNotebook(){nb.classList.remove("open");shade.classList.remove("open")}
+document.getElementById("notebookBtn").onclick=()=>openNotebook();
+document.getElementById("closeNotebook").onclick=closeNotebook; shade.onclick=closeNotebook; noteCourse.onchange=loadNote;
+let saveTimer; noteArea.addEventListener("input",()=>{noteStatus.textContent="جارٍ الحفظ…";clearTimeout(saveTimer);saveTimer=setTimeout(()=>{localStorage.setItem(noteKey(noteCourse.value),noteArea.value);noteStatus.textContent="تم الحفظ على هذا الجهاز ✓"},220)});
+document.getElementById("clearCurrentNote").onclick=()=>{if(confirm("مسح ملاحظات هذا المقرر؟")){localStorage.removeItem(noteKey(noteCourse.value));loadNote()}};
+document.getElementById("exportNotes").onclick=()=>{
+ let txt="كشكول رفيق الدراسة\n\n";
+ ["general",...Object.keys(courseNames)].forEach(id=>{const v=localStorage.getItem(noteKey(id));if(v&&v.trim())txt+=(id==="general"?"ملاحظات عامة":courseNames[id])+"\n"+"=".repeat(24)+"\n"+v.trim()+"\n\n"});
+ const blob=new Blob([txt],{type:"text/plain;charset=utf-8"}),a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="كشكول-رفيق-الدراسة.txt";a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);
+};
+
+// Local assistant: searches visible course content + curated answers.
+const chatbox=document.getElementById("chatbox"),msgs=document.getElementById("chatMsgs");
+document.getElementById("chatLauncher").onclick=()=>chatbox.classList.toggle("open");
+document.getElementById("closeChat").onclick=()=>chatbox.classList.remove("open");
+function addMsg(text,who){const d=document.createElement("div");d.className="msg "+who;d.textContent=text;msgs.appendChild(d);msgs.scrollTop=msgs.scrollHeight}
+const canned=[
+ {k:["تشريح","فسيولوج","anatomy","physiology"],a:"التشريح Anatomy يركز على بناء الجسم وموقع أجزائه، أما الفسيولوجيا Physiology فتركز على كيفية عمل هذه الأجزاء. أفضل طريقة للدراسة هي ربط المكان والتركيب بالوظيفة ثم سؤال نفسك: ماذا قد يحدث إذا اختلت الوظيفة؟"},
+ {k:["اتزان","homeostasis"],a:"الاتزان الداخلي Homeostasis هو محاولة الجسم إبقاء ظروفه الداخلية ضمن مدى مناسب مثل الحرارة والضغط والسوائل والجلوكوز، رغم التغيرات التي تحدث حوله أو داخله."},
+ {k:["كيمياء","biochem","biochemistry"],a:"الكيمياء الحيوية تشرح ما يحدث داخل الجسم على مستوى الجزيئات: الماء وpH، الجلوكوز، الدهون، البروتينات، الإنزيمات، الفيتامينات والاستقلاب. أهميتها أنها تساعدك لاحقًا على فهم التحاليل والسكري والطاقة والسوائل والأدوية."},
+ {k:["rle","خبرة","غسل","قفاز","علامات حيوية"],a:"في RLE 1 تتعلم مبادئ السلامة ومكافحة العدوى وغسل اليدين وPPE والوضعيات وRange of Motion والنظافة والراحة وترتيب السرير والعلامات الحيوية. الفكرة ليست حفظ الخطوات فقط، بل فهم لماذا تُفعل كل خطوة وكيف تحمي المريض ونفسك."},
+ {k:["اجتماع","sociology"],a:"علم الاجتماع الطبي يذكرك أن المرض لا يحدث في فراغ. الأسرة والدخل والتعليم والثقافة والسكن والمواصلات والوصول للخدمة قد تؤثر في صحة الشخص وقدرته على اتباع العلاج."},
+ {k:["نظرية","theory","نظريات"],a:"الأسس النظرية في التمريض تساعدك على فهم التمريض كطريقة تفكير وليس مجرد إجراءات. تركز على الإنسان والصحة والبيئة ودور الممرض، وتعرض نماذج مثل Nightingale وHenderson وOrem وPeplau وRoy وLeininger."},
+ {k:["انجليزي","english"],a:"English 1 يبني اللغة الأساسية التي تحتاجها لفهم المصطلحات والتعليمات وطرح الأسئلة والتأكد من الفهم. حاول أن تتعلم الكلمات داخل جمل ومواقف تمريضية، لا كقائمة منفصلة."}
+];
+function answerQuestion(q){
+ const x=q.toLowerCase().trim();
+ for(const c of canned) if(c.k.some(k=>x.includes(k.toLowerCase()))) return c.a;
+ let best=null,bestScore=0;
+ document.querySelectorAll(".course").forEach(sec=>{
+  const title=sec.querySelector("h2")?.textContent||"", text=sec.innerText.replace(/\s+/g," ");
+  const words=x.split(/\s+/).filter(w=>w.length>2);
+  const score=words.reduce((s,w)=>s+(text.toLowerCase().includes(w)?1:0),0);
+  if(score>bestScore){bestScore=score;best={title,text}}
+ });
+ if(best&&bestScore>0){
+  const words=x.split(/\s+/).filter(w=>w.length>2);
+  let pos=-1;for(const w of words){pos=best.text.toLowerCase().indexOf(w);if(pos>=0)break}
+  const start=Math.max(0,pos-120), snippet=best.text.slice(start,start+560);
+  return "وجدت هذا في مقرر «"+best.title+"»:\n\n"+snippet+(snippet.length>=560?"…":"")+"\n\nيمكنك فتح المقرر من بطاقته للمزيد.";
+ }
+ return "لم أجد إجابة مباشرة في محتوى هذا الفصل بعد. جرّب ذكر اسم المقرر أو المفهوم، مثل: Homeostasis، الإنزيمات، غسل اليدين، أو علم الاجتماع الطبي.";
+}
+document.getElementById("chatForm").addEventListener("submit",e=>{e.preventDefault();const inp=document.getElementById("chatInput"),q=inp.value.trim();if(!q)return;addMsg(q,"user");inp.value="";setTimeout(()=>addMsg(answerQuestion(q),"bot"),80)});
+document.querySelectorAll("[data-quick-q]").forEach(b=>b.onclick=()=>{const q=b.dataset.quickQ;addMsg(q,"user");setTimeout(()=>addMsg(answerQuestion(q),"bot"),80)});
+</script>
+
 </body>
 </html>
