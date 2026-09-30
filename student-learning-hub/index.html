@@ -174,7 +174,7 @@ textarea{width:100%;min-height:100px;border:1px solid var(--line);border-radius:
   <article class="card">
    <div class="icon">📚</div><h2 id="c3t">رفيق الدراسة</h2>
    <p id="c3p"><b>دعم عام للمقررات مبني على دليل كليات التمريض.</b> يساعد على تكوين قاعدة فهمية تسهّل الدراسة والنجاح، وتربط المعرفة بما يحتاجه الطالب لاحقًا في العمل وخدمة الناس.</p><div class="courseMeta" id="c3meta"><b>السنة الأولى · الفصل الأول</b><br>شرح مبسّط للمفاهيم الأساسية وربطها بالدراسة والممارسة التمريضية.</div>
-   <div class="actions"><button class="btn primary" type="button" onclick="location.href='../study-companion/'" id="c3b">فتح رفيق الدراسة</button></div>
+   <div class="actions"><button class="btn primary" type="button" onclick="openStudyCompanion()" id="c3b">فتح رفيق الدراسة</button></div>
   </article>
   <article class="card">
    <div class="icon">🌐</div><h2 id="c4t">المكتبة الرقمية والبحث</h2>
@@ -617,7 +617,7 @@ textarea{width:100%;min-height:100px;border:1px solid var(--line);border-radius:
  <button data-route="home">⌂<br>الرئيسية</button>
  <button data-route="simulation">🩺<br>المحاكاة</button>
  <button data-route="guide">📘<br>الدليل</button>
- <button type="button" onclick="location.href='../study-companion/'">📚<br>رفيق الدراسة</button>
+ <button type="button" onclick="openStudyCompanion()">📚<br>رفيق الدراسة</button>
  <button data-route="library">🌐<br>المكتبة</button>
 </div>
 </main>
@@ -759,6 +759,55 @@ const T={
  }
 };
 const staticTextMap={
+
+"كلية التمريض · جامعة طبرق":"Faculty of Nursing · Tobruk University",
+"رواه مسلم":"Sahih Muslim",
+"السنة الأولى · الفصل الأول":"Year 1 · Semester 1",
+"شرح مبسّط للمفاهيم الأساسية وربطها بالدراسة والممارسة التمريضية.":"A simplified introduction to core concepts linked to study and nursing practice.",
+"بحوث التخرج":"Graduation Research",
+"الجداول المعتمدة للفصل الدراسي الأول من العام الجامعي 2026/2027. اختر السنة لعرض الجدول بصورة مناسبة للهاتف.":"Approved lecture timetables for Semester 1 of Academic Year 2026/2027. Select a year to view the schedule in a phone-friendly layout.",
+"السنة الأولى – المجموعة أ · First Year – Group A":"First Year – Group A",
+"الفصل الأول · First Semester 2026/2027":"Semester 1 · 2026/2027",
+"السبت · Saturday":"Saturday",
+"الأحد · Sunday":"Sunday",
+"الاثنين · Monday":"Monday",
+"الثلاثاء · Tuesday":"Tuesday",
+"الأربعاء · Wednesday":"Wednesday",
+"الخميس · Thursday":"Thursday",
+"السنة الأولى – المجموعة ب · First Year – Group B":"First Year – Group B",
+"السنة الثانية · Second Year":"Second Year",
+"السنة الثالثة · Third Year":"Third Year",
+"السنة الرابعة · Fourth Year":"Fourth Year",
+"المصدر:":"Source:",
+"الجداول المعتمدة المرفوعة لكلية التمريض – جامعة طبرق للفصل الدراسي الأول 2026/2027. نُقلت البيانات كما تظهر في الجداول؛ عند صدور أي تعديل رسمي يُعتمد إعلان الكلية الأحدث.":"Approved timetables uploaded for the Faculty of Nursing, Tobruk University, for Semester 1 of 2026/2027. Data are shown as listed in the schedules; any later official Faculty announcement takes precedence.",
+"تم نقل التواريخ من الخطة المرفوعة مع إدراج التعديلات الأحدث المعتمدة، ومنها تعديل فترة تجديد القيد إلى 20/09–01/10/2026. عند صدور أي تعديل رسمي لاحق يُحدّث هذا القسم مباشرة.":"Dates are based on the uploaded academic calendar and later approved amendments, including the registration-renewal period updated to 20/09–01/10/2026. This section will be updated when further official amendments are issued.",
+"فهرس تعريفي للمقررات حسب":"An introductory course catalogue based on",
+"دليل الدراسة الموحد لكليات التمريض بالجامعات الليبية":"the Unified Study Guide for Nursing Faculties at Libyan Universities",
+". في هذه المرحلة نعرض فقط بيانات المقرر الأساسية، دون إضافة شرح أو محاضرات أو أسئلة أو محتوى تعليمي تفصيلي إلى حين الحصول على الموافقة على التوسع.":". This section presents the essential course data.",
+"الرموز والعناوين الإنجليزية وساعات الاتصال وإجمالي عبء العمل وECTS مأخوذة من الخطة الواردة بالدليل الموحد. العنوان العربي في البوابة ترجمة تعريفية مساندة.":"Course codes, official English titles, contact hours, total workload and ECTS are taken from the curriculum in the Unified Guide.",
+"ما الذي نريد اختباره؟":"What are we testing?",
+"ليس الكمال؛ بل سهولة الوصول، الفائدة، الوضوح، وما يستحق التطوير.":"Not perfection, but access, usefulness, clarity, and what is worth developing.",
+"مهارات تمريضية تفاعلية":"interactive nursing skills",
+"دروس في نموذج English II الحالي":"lessons in the current English II learning support",
+"دعم عربي/إنجليزي":"Arabic / English support",
+"محاكاة المهارات التمريضية":"Interactive Nursing Skills",
+"تعلّم وتدرّب، ثم ارجع دائماً إلى المشرف/عضو هيئة التدريس والدليل العملي المعتمد.":"Learn and practise, then always confirm the technique with your instructor/supervisor and the approved practical guide.",
+"فتح بملء الشاشة":"Open full screen",
+"رفيق الدراسة · لغة إنجليزية 2":"Study Companion · English II",
+"أستاذ المادة: نورا مسعود حمد بوبكر · الأحد 10:00–12:00 · القاعة N5. رفيق الدراسة مساحة لدعم المقررات والتعلّم والمراجعة، والمحتوى مساند فقط؛ ويظل كتاب المقرر وتعليمات الأستاذ والمواد المعتمدة هي المرجع.":"Course instructor: Noura Masoud Hamad Bubakr · Sunday 10:00–12:00 · Room N5. This is supplementary learning and revision support; the approved course book, instructor directions, and official course materials remain the reference.",
+"المكتبة الرقمية ومركز التعلّم والبحث":"Digital Learning Library & Research Hub",
+"مساحة موحّدة للكتب والمقالات والأدلة البحثية وقوائم القراءة ودعم الدراسة وبحوث التخرج وأعضاء هيئة التدريس. المحتوى مساند، وتظل المقررات المعتمدة والإشراف الأكاديمي والسريري هي المرجع.":"A unified space for books, scholarly articles, research guidance, reading lists, study support, graduation research, and faculty resources. Content is supplementary; approved curricula and academic/clinical supervision remain authoritative.",
+"دورة SPSS للبحث التمريضي":"SPSS for Nursing & Health Research",
+"دورة ثنائية اللغة للمعيدين وطلبة السنة الرابعة وأعضاء هيئة التدريس: من تنظيم البيانات وتنظيفها إلى اختيار الاختبار، تفسير المخرجات، وكتابة النتائج.":"A bilingual course for teaching assistants, fourth-year students and faculty, from data setup and cleaning to test selection, output interpretation and writing results.",
+"دليل الطالب · نسخة مبسّطة داخل التطبيق":"Student Guide · Simplified Hub Version",
+"اعرف أين تبدأ… وأين ترجع عند الحاجة.":"Know where to start and where to return when you need authoritative information.",
+"ملخص عملي للتوجيه فقط، مع إحالة مستمرة إلى الكلية والمسجل وأعضاء هيئة التدريس والوثائق الرسمية الكاملة.":"A practical orientation summary with continued referral to the Faculty, Registrar, instructors, and complete official documents.",
+"© 2026 كلية التمريض · جامعة طبرق | Faculty of Nursing · Tobruk University":"© 2026 Faculty of Nursing · Tobruk University",
+"مهم قبل البدء:":"Before you start:",
+"دعم عام للمقررات مبني على دليل كليات التمريض.":"General course support based on the Nursing Faculties Guide.",
+"يساعد على تكوين قاعدة فهمية تسهّل الدراسة والنجاح، وتربط المعرفة بما يحتاجه الطالب لاحقًا في العمل وخدمة الناس.":"It builds a foundation for understanding, study success, future professional practice, and helping people through better-informed nursing care.",
+"فتح رفيق الدراسة":"Open Study Companion"
+,
 "بوابة التعلّم التمريضي · كلية التمريض · جامعة طبرق":"Nursing Learning Hub · Faculty of Nursing · Tobruk University",
 "الرئيسية ·":"Home ·","المكتبة":"Library","للطلبة وأعضاء هيئة التدريس":"For students and faculty","قراءة · تعلّم · بحث · أدلة · نجاح أكاديمي":"Read · Learn · Research · Evidence · Academic success",
 "سجل الشكاوى والملاحظات":"Complaints & Feedback","الخريجون":"Alumni","مقررات البرنامج":"Programme Courses",
@@ -956,6 +1005,8 @@ async function loadLogos(){
 }
 loadLogos();captureStaticText();applyLang();
 
+
+function openStudyCompanion(){location.href=lang==="en"?"../study-companion/english.html":"../study-companion/";}
 
 function openHubDetail(name){
  const grid=document.getElementById("academicTileGrid");if(!grid)return;
