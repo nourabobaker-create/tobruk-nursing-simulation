@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-01T03:02:00Z",
+  "updatedAt": "2026-10-01T03:34:00Z",
   "source": "دليل معايير الاعتماد المؤسسي، الإصدار الرابع ٢٠٢٣",
   "mode": "evidence_mapped",
   "criteria": [
@@ -5615,6 +5615,24 @@
       "IT": "ICT",
       "ELN": "ICT",
       "WEB": "MED"
+    },
+    "rootFolderUrl": "https://drive.google.com/drive/folders/1yZAE-H41RvFaPpaY3VlM_gcCp7L5wnVu",
+    "rootFolderName": "NUR_Document_Management_System_v2",
+    "folders": {
+      "00_Document_Control": "https://drive.google.com/drive/folders/1kZlXz0bCFfkjiYavQIPjLxpBZzYkKQVJ",
+      "01_External_References": "https://drive.google.com/drive/folders/1Votvee0AZlmvdmmMXXS0_0J5wRx1lFdA",
+      "02_Governance_Council": "https://drive.google.com/drive/folders/1Gpk7qfXcvGAyooXurOwPk426ffgc0YOv",
+      "03_Strategy_Performance": "https://drive.google.com/drive/folders/1lCbdHJaKAFzMgs0ICa3kxMzh3sj1dcwm",
+      "04_Quality_Accreditation": "https://drive.google.com/drive/folders/1sMTqT-3FiNeUCFRbdfEL2NiDiuFNT1E6",
+      "05_Academic_Programme_Courses": "https://drive.google.com/drive/folders/1D4KiJk2qh1cgiRY2m2g_ElEZdyLQ3Wl1",
+      "06_Study_Exams_Results": "https://drive.google.com/drive/folders/1rIk9xygOD4qWW0cGl3oKMKDpviM4DglR",
+      "07_Students_Alumni": "https://drive.google.com/drive/folders/1rH_CejWsfkqq1pC9siNqG1IZt-dm6wd1",
+      "08_HR_Faculty_SupportStaff": "https://drive.google.com/drive/folders/1jaSB64zx6YqtxVCbWi0zG2MWsSWkbyQL",
+      "09_Clinical_Training_Facilities": "https://drive.google.com/drive/folders/1p7bYKsqdEM_XLOUpKZ7REIWE_yj6CHnR",
+      "10_Research_GraduationProjects": "https://drive.google.com/drive/folders/1p-8yuP_hXPg6fNq4buMpf496W_uZlG1D",
+      "11_Community_Partnerships": "https://drive.google.com/drive/folders/1Pu405C4UVlU6bI8ZIEViCqEXIKK1ZNRs",
+      "12_Admin_Finance_Media_ICT": "https://drive.google.com/drive/folders/1O_vAqNTGjwfwwAp7sU3mFEoJqZEE74eX",
+      "99_Archive_Superseded_Unsorted": "https://drive.google.com/drive/folders/1rRKps3B53UvQbKU6DH4hbxXPwMXb2eT7"
     }
   }
 }
