@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-01T04:16:00Z",
+  "updatedAt": "2026-10-01T04:23:00Z",
   "source": "دليل معايير الاعتماد المؤسسي، الإصدار الرابع ٢٠٢٣",
   "mode": "evidence_mapped",
   "criteria": [
@@ -1909,7 +1909,7 @@
           "status": "unassessed",
           "evidenceIds": [
             "EVI-061",
-            "EVI-063"
+            "EVI-001"
           ],
           "evidenceAvailable": true
         },
@@ -1929,7 +1929,7 @@
           "evidenceIds": [
             "EVI-061",
             "EVI-062",
-            "EVI-063"
+            "EVI-001"
           ],
           "evidenceAvailable": true
         },
@@ -1940,7 +1940,7 @@
           "evidenceIds": [
             "EVI-061",
             "EVI-062",
-            "EVI-063"
+            "EVI-001"
           ],
           "evidenceAvailable": true
         },
@@ -1971,7 +1971,7 @@
           "evidenceIds": [
             "EVI-061",
             "EVI-062",
-            "EVI-063"
+            "EVI-001"
           ],
           "evidenceAvailable": true
         }
@@ -2007,7 +2007,7 @@
         },
         {
           "ref": "C08-E06",
-          "evidenceId": "EVI-063"
+          "evidenceId": "EVI-001"
         },
         {
           "ref": "C08-E07",
@@ -2944,17 +2944,22 @@
       "id": "EVI-001",
       "name": "مسودة الخطة الاستراتيجية كلية التمريض 2026 2030 محدثة سبتمبر 2026 RTL",
       "url": "https://docs.google.com/document/d/1ewhY3B-JQObl_oDAfDe9ACPI_8CKu0Lv/edit?usp=drivesdk&ouid=110567569525743042320&rtpof=true&sd=true",
-      "statusLabel": "مسودة متقدمة قيد المراجعة",
+      "statusLabel": "النسخة المرجعية الحالية للعمل – إصدار سبتمبر 2026؛ قيد المراجعة والاعتماد",
       "description": "يحدد ستة محاور، خط أساس 2025/2026، مبادرات ومسؤوليات ومؤشرات، ويربط التنفيذ بخطة الجودة. ينص صراحة على أن مستهدفاته مقترحات وأنه لا يمثل اعتمادًا نهائيًا.",
       "indicatorIds": [
         "1.1",
         "1.2",
         "1.4",
         "1.7",
-        "1.11"
+        "1.11",
+        "8.8",
+        "8.9",
+        "8.10",
+        "8.11",
+        "8.14"
       ],
       "taskId": "ACT-32",
-      "accessNote": "الربط بالمؤشرات مبدئي ويغطي جوانب محددة؛ لا يثبت استيفاءها بالكامل.",
+      "accessNote": "النسخة المرجعية الحالية للعمل وفق قرار صاحبة المشروع بتاريخ 1 أكتوبر 2026. لا يعني ذلك اعتماد الخطة نهائيًا؛ ما تزال في مسار المراجعة والاعتماد.",
       "documentDate": "2026-09",
       "limitations": "لا يثبت اعتماد الخطة أو تحقق مستهدفاتها.",
       "legacyEvidenceId": "EVI-001",
@@ -2965,14 +2970,16 @@
       "documentOwner": "لجنة الخطة الاستراتيجية / عمادة الكلية",
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
-      "version": null,
+      "version": "Sep-2026",
       "confidentiality": "داخلي",
       "criterionEvidenceRefs": {
         "1": "C01-E01",
-        "7": "C07-E01"
+        "7": "C07-E01",
+        "8": "C08-E06"
       },
       "versionLabel": "إصدار سبتمبر 2026 – تاريخ قطع التحديثات 22 سبتمبر 2026",
-      "documentControlIssue": "يوجد ملف آخر تحت NUR-PLN-STR-001؛ يلزم تحديد النسخة المرجعية والنسخة المستبدلة قبل الاعتماد."
+      "documentControlStatus": "Current Working Reference",
+      "currentReference": true
     },
     {
       "id": "EVI-002",
@@ -4772,17 +4779,11 @@
       "id": "EVI-063",
       "name": "الخطة الاستراتيجية الموحدة لكلية التمريض 2026–2030 – نسخة العمل المحدثة",
       "url": "https://docs.google.com/document/d/1nsGp3AaAMOCNCNMQs1SLCvJVyZcQ5nYw/edit",
-      "statusLabel": "مسودة استراتيجية تستخدم بيانات المجتمع في التشخيص",
+      "statusLabel": "نسخة عمل مستبدلة – للاحتفاظ بالتتبع التاريخي فقط",
       "description": "تدرج استبيانات المجتمع المحلي ضمن مصادر التشخيص، وتوظف قضايا الإصحاح البيئي وسلامة الغذاء والمياه والنفايات ومكافحة العدوى في PESTEL والمحاور والأهداف والشراكات المقترحة.",
-      "indicatorIds": [
-        "8.8",
-        "8.9",
-        "8.10",
-        "8.11",
-        "8.14"
-      ],
+      "indicatorIds": [],
       "taskId": "ACT-32",
-      "accessNote": "يثبت الاستفادة من التغذية الراجعة في التخطيط الاستراتيجي، لكن الخطة نفسها لا تزال في مسار المراجعة والاعتماد.",
+      "accessNote": "لا تستخدم هذه النسخة للتعديل الجاري أو كشاهد حالي. النسخة المرجعية الحالية هي إصدار سبتمبر 2026 بتاريخ قطع 22 سبتمبر 2026.",
       "documentDate": "2026",
       "legacyEvidenceId": "EVI-063",
       "currentDocumentCode": null,
@@ -4794,11 +4795,20 @@
       "copyAvailability": "نسخة/رابط متاح",
       "version": null,
       "confidentiality": "داخلي",
-      "criterionEvidenceRefs": {
-        "8": "C08-E06"
-      },
+      "criterionEvidenceRefs": {},
       "versionLabel": "نسخة العمل المحدثة – علاقة الإصدار بإصدار سبتمبر تحتاج حسم",
-      "documentControlIssue": "يوجد ملف آخر تحت NUR-PLN-STR-001؛ يلزم تحديد النسخة المرجعية والنسخة المستبدلة قبل الاعتماد."
+      "historicalIndicatorIds": [
+        "8.8",
+        "8.9",
+        "8.10",
+        "8.11",
+        "8.14"
+      ],
+      "documentControlStatus": "Superseded Working Copy",
+      "currentReference": false,
+      "supersededBy": "EVI-001",
+      "supersededByCode": "NUR-PLN-STR-001",
+      "supersessionDate": "2026-10-01"
     },
     {
       "id": "EVI-064",
@@ -5713,16 +5723,7 @@
         "note": "أداة جمع شاهد وليست شاهد استيفاء قبل تعبئتها وتوقيعها"
       }
     ],
-    "openControlIssues": [
-      {
-        "code": "NUR-PLN-STR-001",
-        "issue": "نسختان مختلفتان مفهرستان تحت الرمز نفسه؛ تحديد النسخة المرجعية والنسخة التي تصبح Superseded قبل الاعتماد.",
-        "evidenceIds": [
-          "EVI-001",
-          "EVI-063"
-        ]
-      }
-    ],
+    "openControlIssues": [],
     "userRequests": [
       {
         "priority": 1,
@@ -5784,6 +5785,15 @@
         "request": "أي محاضر فعلية لاجتماعات قسم الجودة أو لجان الجودة لم تُرفع بعد.",
         "privacy": "مقيد حسب المحتوى"
       }
-    ]
+    ],
+    "currentReferences": {
+      "NUR-PLN-STR-001": {
+        "evidenceId": "EVI-001",
+        "title": "مسودة الخطة الاستراتيجية كلية التمريض 2026 2030 محدثة سبتمبر 2026 RTL",
+        "versionLabel": "إصدار سبتمبر 2026 – تاريخ قطع التحديثات 22 سبتمبر 2026",
+        "status": "Current Working Reference – Under Review",
+        "note": "مرجعية العمل الحالية فقط؛ ليست نسخة معتمدة نهائيًا."
+      }
+    }
   }
 }
