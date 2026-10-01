@@ -91,7 +91,7 @@ function shell(role){
     <div class="demo-badge">نسخة تجريبية تفاعلية · البيانات محاكاة فقط · لا توجد مصادقة أو قاعدة بيانات إنتاجية</div>
     <nav class="nav">${nav.map(n=>`<button data-nav="${n[0]}" class="${currentView===n[0]?"active":""}"><span class="ico">${n[2]}</span><span>${n[1]}</span></button>`).join("")}</nav>
     <div class="side-footer">
-      <div class="role-chip"><b>${esc(role.label)}</b><span>${esc(role.unit||role.kind==="admin"?"صلاحية إدارية تجريبية":"صلاحية دعم فني")}</span></div>
+      <div class="role-chip"><b>${esc(role.label)}</b><span>${esc(role.unit||(role.kind==="admin"?"صلاحية إدارية تجريبية":"صلاحية دعم فني"))}</span></div>
       <button data-switch-role>تبديل الدور التجريبي</button>
     </div>
   </aside>
@@ -368,12 +368,12 @@ function bindActions(role){
  $$("[data-start-task]").forEach(b=>b.onclick=()=>{
   const t=state.tasks.find(x=>x.id===b.dataset.startTask);if(!t)return;t.status="in_progress";audit(role.label,"بدأ المهمة",t.id+" · "+t.title);save();toast("بدأت المهمة");renderApp()
  });
- $$("[data-open-submit]").forEach(b=>b.onclick=()=>submitModal(b.dataset.openSubmit));
+ $("[data-open-submit]").forEach(b=>b.onclick=()=>{const id=b.dataset.openSubmit,t=state.tasks.find(x=>x.id===id);if(!t)return;t.status="submitted";const existing=state.inbox.find(x=>x.taskId===id);if(existing){existing.status="submitted";existing.submitted="الآن"}else state.inbox.unshift({id:"SUB-"+String(Date.now()).slice(-4),taskId:id,fromRole:role.id,title:t.title,submitted:"الآن",status:"submitted",fileName:"مخرج تجريبي"});audit(role.label,"أرسل مخرجًا للمراجعة",id+" · "+t.title);save();toast("أُرسل للجودة تجريبيًا");renderApp()});
  $$("[data-accept-task]").forEach(b=>b.onclick=()=>{
   const id=b.dataset.acceptTask,t=state.tasks.find(x=>x.id===id);if(!t)return;t.status="accepted";
   state.inbox=state.inbox.filter(x=>x.taskId!==id);audit("قسم الجودة","قبل المخرج",id+" · "+t.title);save();toast("تم قبول المخرج تجريبيًا");renderApp()
  });
- $$("[data-return-task]").forEach(b=>b.onclick=()=>returnModal(b.dataset.returnTask));
+ $("[data-return-task]").forEach(b=>b.onclick=()=>{const id=b.dataset.returnTask,t=state.tasks.find(x=>x.id===id);if(!t)return;const note=prompt("ملاحظة الاستكمال:","يرجى استكمال الملاحظات.")||"يرجى استكمال الملاحظات.";t.status="returned";t.note=note;const sub=state.inbox.find(x=>x.taskId===id);if(sub)sub.status="returned";audit("قسم الجودة","أعاد المهمة للاستكمال",id+" · "+note);save();toast("أعيدت للموظف");renderApp()});
  $$("[data-approve-doc]").forEach(b=>b.onclick=()=>{
   const id=b.dataset.approveDoc,d=state.documents.find(x=>x.id===id);if(!d)return;d.status="approved";
   state.approvals=state.approvals.filter(a=>a.documentId!==id);audit("العميد","اعتمد الوثيقة تجريبيًا",d.code+" · "+d.title);save();toast("تم الاعتماد داخل النموذج فقط");renderApp()
@@ -389,8 +389,8 @@ function bindActions(role){
   const seq={preparing:"ready_review",ready_review:"accepted_successor",accepted_successor:"closed"};h.status=seq[h.status]||h.status;
   audit(role.label,"غيّر حالة التسليم",h.id+" · "+(labels[h.status]||h.status));save();toast("تم تحديث حالة التسليم");renderApp()
  });
- $("[data-new-university]")?.addEventListener("click",newUniversityModal);
- $("[data-new-handover]")?.addEventListener("click",newHandoverModal);
+ $("[data-new-university]")?.addEventListener("click",()=>{const title=prompt("عنوان الطلب المركزي:");if(!title)return;const to=prompt("الجهة في الجامعة:","الإدارة المختصة")||"الإدارة المختصة";const id="UR-"+String(Date.now()).slice(-3);state.universityRequests.unshift({id,title,to,related:"—",status:"draft",age:0});audit("قسم الجودة","أنشأ طلبًا مركزيًا",id+" · "+title);save();toast("حُفظ الطلب كمسودة");renderApp()});
+ $("[data-new-handover]")?.addEventListener("click",()=>{const rid=prompt("اكتب رمز الدور لبدء جلسة تسليم، مثال registrar أو dean:","registrar");const r=roleBy(rid);if(!r){toast("رمز الدور غير معروف");return}const id="HO-"+String(Date.now()).slice(-3);state.handovers.unshift({id,role:rid,roleLabel:r.label,status:"preparing",target:"خلال 14 يومًا",items:[{id:"a",label:"المهام المفتوحة المرتبطة بالمنصب",done:false},{id:"b",label:"الوثائق والأصول التي يملكها الدور",done:false},{id:"c",label:"التقارير والمواعيد القادمة",done:false},{id:"d",label:"الطلبات والمراسلات المعلقة",done:false},{id:"e",label:"تأكيد صلاحية حساب المستلم",done:false}]});audit("قسم الجودة","فتح جلسة استلام وتسليم",id+" · "+r.label);save();toast("تم إنشاء جلسة تسليم");renderApp()});
  $$("[data-test-restore]").forEach(b=>b.onclick=()=>{
   const x=state.backups.find(x=>x.type==="اختبار الاستعادة");if(x){x.last="الآن";x.status="ok"}
   audit("تقنية المعلومات","اختبار استعادة تجريبي","نجح – لا توجد استعادة حقيقية في GitHub Pages");save();toast("نجح اختبار المحاكاة");renderApp()
