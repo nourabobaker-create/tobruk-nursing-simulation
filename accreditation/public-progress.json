@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-01T03:58:00Z",
+  "updatedAt": "2026-10-01T04:05:00Z",
   "source": "دليل معايير الاعتماد المؤسسي، الإصدار الرابع ٢٠٢٣",
   "mode": "evidence_mapped",
   "criteria": [
@@ -2970,7 +2970,9 @@
       "criterionEvidenceRefs": {
         "1": "C01-E01",
         "7": "C07-E01"
-      }
+      },
+      "versionLabel": "إصدار سبتمبر 2026 – تاريخ قطع التحديثات 22 سبتمبر 2026",
+      "documentControlIssue": "يوجد ملف آخر تحت NUR-PLN-STR-001؛ يلزم تحديد النسخة المرجعية والنسخة المستبدلة قبل الاعتماد."
     },
     {
       "id": "EVI-002",
@@ -4794,7 +4796,9 @@
       "confidentiality": "داخلي",
       "criterionEvidenceRefs": {
         "8": "C08-E06"
-      }
+      },
+      "versionLabel": "نسخة العمل المحدثة – علاقة الإصدار بإصدار سبتمبر تحتاج حسم",
+      "documentControlIssue": "يوجد ملف آخر تحت NUR-PLN-STR-001؛ يلزم تحديد النسخة المرجعية والنسخة المستبدلة قبل الاعتماد."
     },
     {
       "id": "EVI-064",
@@ -5707,6 +5711,16 @@
         "url": "https://docs.google.com/document/d/1-nnypzytOqEUZTjtzEywmmWoyLkvZLPtZt7NkIo6hsQ/edit",
         "location": "Google Drive – نموذج جاهز للتطبيق",
         "note": "أداة جمع شاهد وليست شاهد استيفاء قبل تعبئتها وتوقيعها"
+      }
+    ],
+    "openControlIssues": [
+      {
+        "code": "NUR-PLN-STR-001",
+        "issue": "نسختان مختلفتان مفهرستان تحت الرمز نفسه؛ تحديد النسخة المرجعية والنسخة التي تصبح Superseded قبل الاعتماد.",
+        "evidenceIds": [
+          "EVI-001",
+          "EVI-063"
+        ]
       }
     ]
   }
