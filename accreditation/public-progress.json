@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-01T04:28:00Z",
+  "updatedAt": "2026-10-01T05:27:00Z",
   "source": "دليل معايير الاعتماد المؤسسي، الإصدار الرابع ٢٠٢٣",
   "mode": "evidence_mapped",
   "criteria": [
@@ -5720,6 +5720,17 @@
         "url": "https://docs.google.com/document/d/1-nnypzytOqEUZTjtzEywmmWoyLkvZLPtZt7NkIo6hsQ/edit",
         "location": "Google Drive – نموذج جاهز للتطبيق",
         "note": "أداة جمع شاهد وليست شاهد استيفاء قبل تعبئتها وتوقيعها"
+      },
+      {
+        "code": "NUR-MAT-ICT-001",
+        "title": "المخطط المعماري لمنظومة الإدارة المؤسسية والجودة – كلية التمريض",
+        "type": "MAT",
+        "version": "1.0",
+        "status": "Draft",
+        "owner": "قسم ضمان الجودة وقياس وتقييم الأداء",
+        "url": "https://docs.google.com/document/d/1b_Jde8vws9xWgGlSewarWKI-VU7m2evuANegsHot-4I/edit",
+        "location": "Google Drive – نظام إدارة الوثائق",
+        "note": "مرجع التصميم قبل التنفيذ."
       }
     ],
     "openControlIssues": [],
