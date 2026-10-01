@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-01T05:27:00Z",
+  "updatedAt": "2026-10-01T05:44:00Z",
   "source": "دليل معايير الاعتماد المؤسسي، الإصدار الرابع ٢٠٢٣",
   "mode": "evidence_mapped",
   "criteria": [
@@ -5731,6 +5731,17 @@
         "url": "https://docs.google.com/document/d/1b_Jde8vws9xWgGlSewarWKI-VU7m2evuANegsHot-4I/edit",
         "location": "Google Drive – نظام إدارة الوثائق",
         "note": "مرجع التصميم قبل التنفيذ."
+      },
+      {
+        "code": "NUR-SYS-ICT-002",
+        "title": "منظومة الإدارة المؤسسية والجودة – نموذج GitHub التجريبي",
+        "type": "SYS",
+        "version": "0.1",
+        "status": "Prototype",
+        "owner": "قسم ضمان الجودة وقياس وتقييم الأداء",
+        "url": "https://nourabobaker-create.github.io/tobruk-nursing-simulation/quality-system-prototype/",
+        "location": "GitHub Pages – نموذج تجريبي",
+        "note": "بيانات محاكاة فقط؛ لا توجد مصادقة حقيقية ولا قاعدة بيانات إنتاجية."
       }
     ],
     "openControlIssues": [],
