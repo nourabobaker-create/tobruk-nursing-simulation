@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-01T01:12:00Z",
+  "updatedAt": "2026-10-01T03:02:00Z",
   "source": "دليل معايير الاعتماد المؤسسي، الإصدار الرابع ٢٠٢٣",
   "mode": "evidence_mapped",
   "criteria": [
@@ -132,6 +132,40 @@
         "مشاركة أصحاب العلاقة موثقة باستجابات فعلية ومحاضر إعداد",
         "التخطيط التشغيلي مرتبط بالأهداف وبخطة الجودة والتحسين",
         "إجراء إدارة المخاطر موجود كمسودة ويحتاج اعتمادًا وتطبيقًا"
+      ],
+      "evidenceRegister": [
+        {
+          "ref": "C01-E01",
+          "evidenceId": "EVI-001"
+        },
+        {
+          "ref": "C01-E02",
+          "evidenceId": "EVI-010"
+        },
+        {
+          "ref": "C01-E03",
+          "evidenceId": "EVI-015"
+        },
+        {
+          "ref": "C01-E04",
+          "evidenceId": "EVI-021"
+        },
+        {
+          "ref": "C01-E05",
+          "evidenceId": "EVI-022"
+        },
+        {
+          "ref": "C01-E06",
+          "evidenceId": "EVI-023"
+        },
+        {
+          "ref": "C01-E07",
+          "evidenceId": "EVI-024"
+        },
+        {
+          "ref": "C01-E08",
+          "evidenceId": "EVI-025"
+        }
       ]
     },
     {
@@ -361,6 +395,68 @@
         "أضيفت أربع مسودات لسد فجوات تنظيمية قابلة للمعالجة داخل الكلية",
         "دليل الحوكمة وسياسات الموارد البشرية يوفران قاعدة تنظيمية واسعة",
         "الفجوات المالية المتبقية تحتاج شواهد أو قرارات من الجامعة لا وثائق مصطنعة داخل الكلية"
+      ],
+      "evidenceRegister": [
+        {
+          "ref": "C02-E01",
+          "evidenceId": "EVI-003"
+        },
+        {
+          "ref": "C02-E02",
+          "evidenceId": "EVI-004"
+        },
+        {
+          "ref": "C02-E03",
+          "evidenceId": "EVI-006"
+        },
+        {
+          "ref": "C02-E04",
+          "evidenceId": "EVI-007"
+        },
+        {
+          "ref": "C02-E05",
+          "evidenceId": "EVI-008"
+        },
+        {
+          "ref": "C02-E06",
+          "evidenceId": "EVI-010"
+        },
+        {
+          "ref": "C02-E07",
+          "evidenceId": "EVI-026"
+        },
+        {
+          "ref": "C02-E08",
+          "evidenceId": "EVI-027"
+        },
+        {
+          "ref": "C02-E09",
+          "evidenceId": "EVI-028"
+        },
+        {
+          "ref": "C02-E10",
+          "evidenceId": "EVI-029"
+        },
+        {
+          "ref": "C02-E11",
+          "evidenceId": "EVI-030"
+        },
+        {
+          "ref": "C02-E12",
+          "evidenceId": "EVI-031"
+        },
+        {
+          "ref": "C02-E13",
+          "evidenceId": "EVI-032"
+        },
+        {
+          "ref": "C02-E14",
+          "evidenceId": "EVI-033"
+        },
+        {
+          "ref": "C02-E15",
+          "evidenceId": "EVI-034"
+        }
       ]
     },
     {
@@ -537,6 +633,52 @@
         "دليل هيئة التدريس والكوادر المساندة يغطي دورة الموارد البشرية كاملة كمسودة تشغيلية",
         "سياسة البحث العلمي تغطي دعم النشر والنزاهة ومسار المؤتمرات مع إحالة التمويل للجامعة",
         "استبيان أعضاء هيئة التدريس جاهز؛ نتائج دورة 2026/2027 لم تُثبت بعد"
+      ],
+      "evidenceRegister": [
+        {
+          "ref": "C03-E01",
+          "evidenceId": "EVI-003"
+        },
+        {
+          "ref": "C03-E02",
+          "evidenceId": "EVI-008"
+        },
+        {
+          "ref": "C03-E03",
+          "evidenceId": "EVI-011"
+        },
+        {
+          "ref": "C03-E04",
+          "evidenceId": "EVI-015"
+        },
+        {
+          "ref": "C03-E05",
+          "evidenceId": "EVI-026"
+        },
+        {
+          "ref": "C03-E06",
+          "evidenceId": "EVI-028"
+        },
+        {
+          "ref": "C03-E07",
+          "evidenceId": "EVI-029"
+        },
+        {
+          "ref": "C03-E08",
+          "evidenceId": "EVI-035"
+        },
+        {
+          "ref": "C03-E09",
+          "evidenceId": "EVI-036"
+        },
+        {
+          "ref": "C03-E10",
+          "evidenceId": "EVI-037"
+        },
+        {
+          "ref": "C03-E11",
+          "evidenceId": "EVI-038"
+        }
       ]
     },
     {
@@ -754,6 +896,64 @@
         "تقارير المقررات ممارسة روتينية قائمة ونموذج المتابعة السنوي جاهز",
         "الإرشاد الأكاديمي منظم بدليل وسجل لكنه يحتاج تكليفًا وسجلات تطبيق",
         "آلية مراجعة القبول والقدرة الاستيعابية أُعدت مع إبقاء القرار النهائي للجامعة"
+      ],
+      "evidenceRegister": [
+        {
+          "ref": "C04-E01",
+          "evidenceId": "EVI-010"
+        },
+        {
+          "ref": "C04-E02",
+          "evidenceId": "EVI-011"
+        },
+        {
+          "ref": "C04-E03",
+          "evidenceId": "EVI-012"
+        },
+        {
+          "ref": "C04-E04",
+          "evidenceId": "EVI-015"
+        },
+        {
+          "ref": "C04-E05",
+          "evidenceId": "EVI-018"
+        },
+        {
+          "ref": "C04-E06",
+          "evidenceId": "EVI-019"
+        },
+        {
+          "ref": "C04-E07",
+          "evidenceId": "EVI-020"
+        },
+        {
+          "ref": "C04-E08",
+          "evidenceId": "EVI-029"
+        },
+        {
+          "ref": "C04-E09",
+          "evidenceId": "EVI-039"
+        },
+        {
+          "ref": "C04-E10",
+          "evidenceId": "EVI-040"
+        },
+        {
+          "ref": "C04-E11",
+          "evidenceId": "EVI-041"
+        },
+        {
+          "ref": "C04-E12",
+          "evidenceId": "EVI-042"
+        },
+        {
+          "ref": "C04-E13",
+          "evidenceId": "EVI-043"
+        },
+        {
+          "ref": "C04-E14",
+          "evidenceId": "EVI-044"
+        }
       ]
     },
     {
@@ -1006,6 +1206,84 @@
         "أُعد إجراء مستقل لسرية السجلات والاطلاع والنسخ الاحتياطية",
         "استجابات خريجين فعلية ووحدة خريجين وسياسة تتبع موجودة",
         "انتخاب اتحاد الطلبة والخدمات الصحية الطلابية ما زالا يحتاجان شاهدًا فعليًا/جامعيًا"
+      ],
+      "evidenceRegister": [
+        {
+          "ref": "C05-E01",
+          "evidenceId": "EVI-002"
+        },
+        {
+          "ref": "C05-E02",
+          "evidenceId": "EVI-007"
+        },
+        {
+          "ref": "C05-E03",
+          "evidenceId": "EVI-010"
+        },
+        {
+          "ref": "C05-E04",
+          "evidenceId": "EVI-015"
+        },
+        {
+          "ref": "C05-E05",
+          "evidenceId": "EVI-017"
+        },
+        {
+          "ref": "C05-E06",
+          "evidenceId": "EVI-020"
+        },
+        {
+          "ref": "C05-E07",
+          "evidenceId": "EVI-026"
+        },
+        {
+          "ref": "C05-E08",
+          "evidenceId": "EVI-040"
+        },
+        {
+          "ref": "C05-E09",
+          "evidenceId": "EVI-041"
+        },
+        {
+          "ref": "C05-E10",
+          "evidenceId": "EVI-043"
+        },
+        {
+          "ref": "C05-E11",
+          "evidenceId": "EVI-044"
+        },
+        {
+          "ref": "C05-E12",
+          "evidenceId": "EVI-045"
+        },
+        {
+          "ref": "C05-E13",
+          "evidenceId": "EVI-046"
+        },
+        {
+          "ref": "C05-E14",
+          "evidenceId": "EVI-047"
+        },
+        {
+          "ref": "C05-E15",
+          "evidenceId": "EVI-048"
+        },
+        {
+          "ref": "C05-E16",
+          "evidenceId": "EVI-049"
+        },
+        {
+          "ref": "C05-E17",
+          "evidenceId": "EVI-050"
+        },
+        {
+          "ref": "C05-E18",
+          "evidenceId": "EVI-051"
+        },
+        {
+          "ref": "C05-E19",
+          "evidenceId": "EVI-052"
+        }
       ]
     },
     {
@@ -1251,6 +1529,48 @@
         "دليل المرافق ينظم الصيانة والسلامة والدعم لكنه لا يثبت الحالة الميدانية",
         "المكتبة المشتركة مدعومة بهيكل مكتبات جامعة طبرق",
         "تدقيق الموقع كشف بيانات غير متسقة ومحتوى غير أكاديمي؛ إجراء التصحيح مفتوح"
+      ],
+      "evidenceRegister": [
+        {
+          "ref": "C06-E01",
+          "evidenceId": "EVI-009"
+        },
+        {
+          "ref": "C06-E02",
+          "evidenceId": "EVI-011"
+        },
+        {
+          "ref": "C06-E03",
+          "evidenceId": "EVI-015"
+        },
+        {
+          "ref": "C06-E04",
+          "evidenceId": "EVI-019"
+        },
+        {
+          "ref": "C06-E05",
+          "evidenceId": "EVI-020"
+        },
+        {
+          "ref": "C06-E06",
+          "evidenceId": "EVI-037"
+        },
+        {
+          "ref": "C06-E07",
+          "evidenceId": "EVI-053"
+        },
+        {
+          "ref": "C06-E08",
+          "evidenceId": "EVI-054"
+        },
+        {
+          "ref": "C06-E09",
+          "evidenceId": "EVI-055"
+        },
+        {
+          "ref": "C06-E10",
+          "evidenceId": "EVI-056"
+        }
       ]
     },
     {
@@ -1461,6 +1781,52 @@
         "تقرير بحوث التخرج يوثق ستة مشروعات وورشًا ومناقشات فعلية",
         "أُعد إجراء لرصد الإنتاج العلمي والاستشهادات؛ السجل الفعلي ما زال مطلوبًا",
         "ريادة الأعمال والإنفاق البحثي والمجلة والاشتراكات العلمية ما زالت فجوات مستقلة"
+      ],
+      "evidenceRegister": [
+        {
+          "ref": "C07-E01",
+          "evidenceId": "EVI-001"
+        },
+        {
+          "ref": "C07-E02",
+          "evidenceId": "EVI-014"
+        },
+        {
+          "ref": "C07-E03",
+          "evidenceId": "EVI-015"
+        },
+        {
+          "ref": "C07-E04",
+          "evidenceId": "EVI-029"
+        },
+        {
+          "ref": "C07-E05",
+          "evidenceId": "EVI-035"
+        },
+        {
+          "ref": "C07-E06",
+          "evidenceId": "EVI-036"
+        },
+        {
+          "ref": "C07-E07",
+          "evidenceId": "EVI-050"
+        },
+        {
+          "ref": "C07-E08",
+          "evidenceId": "EVI-057"
+        },
+        {
+          "ref": "C07-E09",
+          "evidenceId": "EVI-058"
+        },
+        {
+          "ref": "C07-E10",
+          "evidenceId": "EVI-059"
+        },
+        {
+          "ref": "C07-E11",
+          "evidenceId": "EVI-060"
+        }
       ]
     },
     {
@@ -1617,6 +1983,36 @@
         "استجابات فعلية من جهات الإصحاح البيئي استُخدمت في التشخيص الاستراتيجي",
         "الشراكات والمشاركة المجتمعية منظمة في الدليل ومسارها عبر الجامعة عند الحاجة",
         "المخصص المالي لخدمة المجتمع يظل بندًا مركزيًا مرتبطًا بميزانية الجامعة"
+      ],
+      "evidenceRegister": [
+        {
+          "ref": "C08-E01",
+          "evidenceId": "EVI-013"
+        },
+        {
+          "ref": "C08-E02",
+          "evidenceId": "EVI-014"
+        },
+        {
+          "ref": "C08-E03",
+          "evidenceId": "EVI-036"
+        },
+        {
+          "ref": "C08-E04",
+          "evidenceId": "EVI-061"
+        },
+        {
+          "ref": "C08-E05",
+          "evidenceId": "EVI-062"
+        },
+        {
+          "ref": "C08-E06",
+          "evidenceId": "EVI-063"
+        },
+        {
+          "ref": "C08-E07",
+          "evidenceId": "EVI-064"
+        }
       ]
     },
     {
@@ -1802,6 +2198,76 @@
         "ثقافة الجودة والاستبانات والمراجعات والتحسين مرتبطة بمسارات واضحة",
         "دعم الجودة منظم بمسودة مستقلة لكنه يحتاج شواهد توفير فعلية",
         "كفاية كوادر الجودة ما زالت تحتاج سجل مؤهلات وخبرات وتدريب مباشر"
+      ],
+      "evidenceRegister": [
+        {
+          "ref": "C09-E01",
+          "evidenceId": "EVI-002"
+        },
+        {
+          "ref": "C09-E02",
+          "evidenceId": "EVI-005"
+        },
+        {
+          "ref": "C09-E03",
+          "evidenceId": "EVI-006"
+        },
+        {
+          "ref": "C09-E04",
+          "evidenceId": "EVI-010"
+        },
+        {
+          "ref": "C09-E05",
+          "evidenceId": "EVI-015"
+        },
+        {
+          "ref": "C09-E06",
+          "evidenceId": "EVI-016"
+        },
+        {
+          "ref": "C09-E07",
+          "evidenceId": "EVI-017"
+        },
+        {
+          "ref": "C09-E08",
+          "evidenceId": "EVI-021"
+        },
+        {
+          "ref": "C09-E09",
+          "evidenceId": "EVI-026"
+        },
+        {
+          "ref": "C09-E10",
+          "evidenceId": "EVI-028"
+        },
+        {
+          "ref": "C09-E11",
+          "evidenceId": "EVI-029"
+        },
+        {
+          "ref": "C09-E12",
+          "evidenceId": "EVI-034"
+        },
+        {
+          "ref": "C09-E13",
+          "evidenceId": "EVI-035"
+        },
+        {
+          "ref": "C09-E14",
+          "evidenceId": "EVI-050"
+        },
+        {
+          "ref": "C09-E15",
+          "evidenceId": "EVI-062"
+        },
+        {
+          "ref": "C09-E16",
+          "evidenceId": "EVI-065"
+        },
+        {
+          "ref": "C09-E17",
+          "evidenceId": "EVI-066"
+        }
       ]
     },
     {
@@ -1940,6 +2406,44 @@
         "مركز المعلومات والتوثيق بالجامعة يوفر دعمًا تقنيًا مركزيًا للعمليات التعليمية",
         "سياسة ملكية فكرية للمحتوى الرقمي أُعدت وتحتاج الاعتماد والتطبيق",
         "الدعم المالي للمتعلمين عن بعد غير مثبت ولا ينبغي ادعاؤه في الوضع الحالي"
+      ],
+      "evidenceRegister": [
+        {
+          "ref": "C10-E01",
+          "evidenceId": "EVI-015"
+        },
+        {
+          "ref": "C10-E02",
+          "evidenceId": "EVI-020"
+        },
+        {
+          "ref": "C10-E03",
+          "evidenceId": "EVI-038"
+        },
+        {
+          "ref": "C10-E04",
+          "evidenceId": "EVI-041"
+        },
+        {
+          "ref": "C10-E05",
+          "evidenceId": "EVI-067"
+        },
+        {
+          "ref": "C10-E06",
+          "evidenceId": "EVI-068"
+        },
+        {
+          "ref": "C10-E07",
+          "evidenceId": "EVI-069"
+        },
+        {
+          "ref": "C10-E08",
+          "evidenceId": "EVI-070"
+        },
+        {
+          "ref": "C10-E09",
+          "evidenceId": "EVI-071"
+        }
       ]
     }
   ],
@@ -2462,7 +2966,11 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": null,
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "1": "C01-E01",
+        "7": "C07-E01"
+      }
     },
     {
       "id": "EVI-002",
@@ -2488,7 +2996,11 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": null,
-      "confidentiality": "مقيد"
+      "confidentiality": "مقيد",
+      "criterionEvidenceRefs": {
+        "5": "C05-E01",
+        "9": "C09-E01"
+      }
     },
     {
       "id": "EVI-003",
@@ -2514,7 +3026,11 @@
       "sourceLocation": "ChatGPT Library – نموذج بيانات المعيدين (نسخة مرفوعة سابقًا؛ لم تُنقل إلى Drive بعد)",
       "copyAvailability": "موجود في Library – يحتاج نقلًا للمستودع الرسمي",
       "version": null,
-      "confidentiality": "مقيد"
+      "confidentiality": "مقيد",
+      "criterionEvidenceRefs": {
+        "2": "C02-E01",
+        "3": "C03-E01"
+      }
     },
     {
       "id": "EVI-004",
@@ -2540,7 +3056,10 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": null,
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "2": "C02-E02"
+      }
     },
     {
       "id": "EVI-005",
@@ -2567,7 +3086,10 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": null,
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "9": "C09-E02"
+      }
     },
     {
       "id": "EVI-006",
@@ -2593,7 +3115,11 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": null,
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "2": "C02-E03",
+        "9": "C09-E03"
+      }
     },
     {
       "id": "EVI-007",
@@ -2618,7 +3144,11 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": null,
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "2": "C02-E04",
+        "5": "C05-E02"
+      }
     },
     {
       "id": "EVI-008",
@@ -2645,7 +3175,11 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": null,
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "2": "C02-E05",
+        "3": "C03-E02"
+      }
     },
     {
       "id": "EVI-009",
@@ -2672,7 +3206,10 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": null,
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "6": "C06-E01"
+      }
     },
     {
       "id": "EVI-010",
@@ -2700,7 +3237,14 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": null,
-      "confidentiality": "مقيد"
+      "confidentiality": "مقيد",
+      "criterionEvidenceRefs": {
+        "1": "C01-E02",
+        "2": "C02-E06",
+        "4": "C04-E01",
+        "5": "C05-E03",
+        "9": "C09-E04"
+      }
     },
     {
       "id": "EVI-011",
@@ -2726,7 +3270,12 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": null,
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "3": "C03-E03",
+        "4": "C04-E02",
+        "6": "C06-E02"
+      }
     },
     {
       "id": "EVI-012",
@@ -2754,7 +3303,10 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": null,
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "4": "C04-E03"
+      }
     },
     {
       "id": "EVI-013",
@@ -2781,7 +3333,10 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": null,
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "8": "C08-E01"
+      }
     },
     {
       "id": "EVI-014",
@@ -2808,7 +3363,11 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": null,
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "7": "C07-E02",
+        "8": "C08-E02"
+      }
     },
     {
       "id": "EVI-015",
@@ -2836,7 +3395,17 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": null,
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "1": "C01-E03",
+        "3": "C03-E04",
+        "4": "C04-E04",
+        "5": "C05-E04",
+        "6": "C06-E03",
+        "7": "C07-E03",
+        "9": "C09-E05",
+        "10": "C10-E01"
+      }
     },
     {
       "id": "EVI-016",
@@ -2861,7 +3430,10 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": null,
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "9": "C09-E06"
+      }
     },
     {
       "id": "EVI-017",
@@ -2889,7 +3461,11 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": null,
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "5": "C05-E05",
+        "9": "C09-E07"
+      }
     },
     {
       "id": "EVI-018",
@@ -2914,7 +3490,10 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": null,
-      "confidentiality": "عام"
+      "confidentiality": "عام",
+      "criterionEvidenceRefs": {
+        "4": "C04-E05"
+      }
     },
     {
       "id": "EVI-019",
@@ -2940,7 +3519,11 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": "1.0",
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "4": "C04-E06",
+        "6": "C06-E04"
+      }
     },
     {
       "id": "EVI-020",
@@ -2970,7 +3553,13 @@
       "sourceLocation": "GitHub Pages / مستودع البوابة الرقمية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": null,
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "4": "C04-E07",
+        "5": "C05-E06",
+        "6": "C06-E05",
+        "10": "C10-E02"
+      }
     },
     {
       "id": "EVI-021",
@@ -2993,7 +3582,11 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": null,
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "1": "C01-E04",
+        "9": "C09-E08"
+      }
     },
     {
       "id": "EVI-022",
@@ -3018,7 +3611,10 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": "1.0",
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "1": "C01-E05"
+      }
     },
     {
       "id": "EVI-023",
@@ -3041,7 +3637,10 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": null,
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "1": "C01-E06"
+      }
     },
     {
       "id": "EVI-024",
@@ -3065,7 +3664,10 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": null,
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "1": "C01-E07"
+      }
     },
     {
       "id": "EVI-025",
@@ -3088,7 +3690,10 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": "1.0",
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "1": "C01-E08"
+      }
     },
     {
       "id": "EVI-026",
@@ -3117,7 +3722,13 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": "1.0",
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "2": "C02-E07",
+        "3": "C03-E05",
+        "5": "C05-E07",
+        "9": "C09-E09"
+      }
     },
     {
       "id": "EVI-027",
@@ -3142,7 +3753,10 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": "1.0",
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "2": "C02-E08"
+      }
     },
     {
       "id": "EVI-028",
@@ -3168,7 +3782,12 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": "1.0",
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "2": "C02-E09",
+        "3": "C03-E06",
+        "9": "C09-E10"
+      }
     },
     {
       "id": "EVI-029",
@@ -3192,7 +3811,14 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": null,
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "2": "C02-E10",
+        "3": "C03-E07",
+        "4": "C04-E08",
+        "7": "C07-E04",
+        "9": "C09-E11"
+      }
     },
     {
       "id": "EVI-030",
@@ -3215,7 +3841,10 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": null,
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "2": "C02-E11"
+      }
     },
     {
       "id": "EVI-031",
@@ -3238,7 +3867,10 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": "1.0",
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "2": "C02-E12"
+      }
     },
     {
       "id": "EVI-032",
@@ -3261,7 +3893,10 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": "1.0",
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "2": "C02-E13"
+      }
     },
     {
       "id": "EVI-033",
@@ -3284,7 +3919,10 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": "1.0",
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "2": "C02-E14"
+      }
     },
     {
       "id": "EVI-034",
@@ -3307,7 +3945,11 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": "1.0",
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "2": "C02-E15",
+        "9": "C09-E12"
+      }
     },
     {
       "id": "EVI-035",
@@ -3340,7 +3982,12 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": "1.0",
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "3": "C03-E08",
+        "7": "C07-E05",
+        "9": "C09-E13"
+      }
     },
     {
       "id": "EVI-036",
@@ -3371,7 +4018,12 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": "1.0",
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "3": "C03-E09",
+        "7": "C07-E06",
+        "8": "C08-E03"
+      }
     },
     {
       "id": "EVI-037",
@@ -3396,7 +4048,11 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": "1.0",
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "3": "C03-E10",
+        "6": "C06-E06"
+      }
     },
     {
       "id": "EVI-038",
@@ -3419,7 +4075,11 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": null,
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "3": "C03-E11",
+        "10": "C10-E03"
+      }
     },
     {
       "id": "EVI-039",
@@ -3446,7 +4106,10 @@
       "copyAvailability": "نسخة/رابط متاح",
       "version": "1.0",
       "confidentiality": "داخلي",
-      "codeMigrationNote": "NUR-POL-EDU-001 → NUR-POL-ACA-001"
+      "codeMigrationNote": "NUR-POL-EDU-001 → NUR-POL-ACA-001",
+      "criterionEvidenceRefs": {
+        "4": "C04-E09"
+      }
     },
     {
       "id": "EVI-040",
@@ -3469,7 +4132,11 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": null,
-      "confidentiality": "عام"
+      "confidentiality": "عام",
+      "criterionEvidenceRefs": {
+        "4": "C04-E10",
+        "5": "C05-E08"
+      }
     },
     {
       "id": "EVI-041",
@@ -3494,7 +4161,12 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": "1.0",
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "4": "C04-E11",
+        "5": "C05-E09",
+        "10": "C10-E04"
+      }
     },
     {
       "id": "EVI-042",
@@ -3519,7 +4191,10 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": null,
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "4": "C04-E12"
+      }
     },
     {
       "id": "EVI-043",
@@ -3543,7 +4218,11 @@
       "copyAvailability": "نسخة/رابط متاح",
       "version": "1.0",
       "confidentiality": "داخلي",
-      "codeMigrationNote": "NUR-POL-EDU-002 → NUR-PRO-STU-005"
+      "codeMigrationNote": "NUR-POL-EDU-002 → NUR-PRO-STU-005",
+      "criterionEvidenceRefs": {
+        "4": "C04-E13",
+        "5": "C05-E10"
+      }
     },
     {
       "id": "EVI-044",
@@ -3566,7 +4245,11 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": "1.1",
-      "confidentiality": "مقيد"
+      "confidentiality": "مقيد",
+      "criterionEvidenceRefs": {
+        "4": "C04-E14",
+        "5": "C05-E11"
+      }
     },
     {
       "id": "EVI-045",
@@ -3590,7 +4273,10 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": "1.0",
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "5": "C05-E12"
+      }
     },
     {
       "id": "EVI-046",
@@ -3613,7 +4299,10 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": "1.0",
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "5": "C05-E13"
+      }
     },
     {
       "id": "EVI-047",
@@ -3637,7 +4326,10 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": "1.0",
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "5": "C05-E14"
+      }
     },
     {
       "id": "EVI-048",
@@ -3662,7 +4354,10 @@
       "copyAvailability": "نسخة/رابط متاح",
       "version": "1.0",
       "confidentiality": "داخلي",
-      "codeMigrationNote": "NUR-POL-STD-020 → NUR-POL-ALU-001"
+      "codeMigrationNote": "NUR-POL-STD-020 → NUR-POL-ALU-001",
+      "criterionEvidenceRefs": {
+        "5": "C05-E15"
+      }
     },
     {
       "id": "EVI-049",
@@ -3687,7 +4382,10 @@
       "copyAvailability": "نسخة/رابط متاح",
       "version": "1.0",
       "confidentiality": "داخلي",
-      "codeMigrationNote": "NUR-PRO-STD-020-01 → NUR-PRO-ALU-001"
+      "codeMigrationNote": "NUR-PRO-STD-020-01 → NUR-PRO-ALU-001",
+      "criterionEvidenceRefs": {
+        "5": "C05-E16"
+      }
     },
     {
       "id": "EVI-050",
@@ -3710,7 +4408,12 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": null,
-      "confidentiality": "مقيد"
+      "confidentiality": "مقيد",
+      "criterionEvidenceRefs": {
+        "5": "C05-E17",
+        "7": "C07-E07",
+        "9": "C09-E14"
+      }
     },
     {
       "id": "EVI-051",
@@ -3735,7 +4438,10 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": null,
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "5": "C05-E18"
+      }
     },
     {
       "id": "EVI-052",
@@ -3759,7 +4465,10 @@
       "sourceLocation": "الموقع الرسمي لجامعة طبرق",
       "copyAvailability": "نسخة/رابط متاح",
       "version": null,
-      "confidentiality": "عام"
+      "confidentiality": "عام",
+      "criterionEvidenceRefs": {
+        "5": "C05-E19"
+      }
     },
     {
       "id": "EVI-053",
@@ -3784,7 +4493,10 @@
       "sourceLocation": "الموقع الرسمي لجامعة طبرق",
       "copyAvailability": "نسخة/رابط متاح",
       "version": null,
-      "confidentiality": "عام"
+      "confidentiality": "عام",
+      "criterionEvidenceRefs": {
+        "6": "C06-E07"
+      }
     },
     {
       "id": "EVI-054",
@@ -3810,7 +4522,10 @@
       "copyAvailability": "نسخة/رابط متاح",
       "version": null,
       "confidentiality": "داخلي",
-      "codeMigrationNote": "NUR-REP-WEB-001 → NUR-REP-MED-002"
+      "codeMigrationNote": "NUR-REP-WEB-001 → NUR-REP-MED-002",
+      "criterionEvidenceRefs": {
+        "6": "C06-E08"
+      }
     },
     {
       "id": "EVI-055",
@@ -3834,7 +4549,10 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": "1.0",
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "6": "C06-E09"
+      }
     },
     {
       "id": "EVI-056",
@@ -3857,7 +4575,10 @@
       "sourceLocation": "الموقع الرسمي لجامعة طبرق",
       "copyAvailability": "نسخة/رابط متاح",
       "version": null,
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "6": "C06-E10"
+      }
     },
     {
       "id": "EVI-057",
@@ -3894,7 +4615,10 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": "1.0",
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "7": "C07-E08"
+      }
     },
     {
       "id": "EVI-058",
@@ -3918,7 +4642,10 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": "1.0",
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "7": "C07-E09"
+      }
     },
     {
       "id": "EVI-059",
@@ -3941,7 +4668,10 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": "1.0",
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "7": "C07-E10"
+      }
     },
     {
       "id": "EVI-060",
@@ -3964,7 +4694,10 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": null,
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "7": "C07-E11"
+      }
     },
     {
       "id": "EVI-061",
@@ -3997,7 +4730,10 @@
       "copyAvailability": "نسخة/رابط متاح",
       "version": "1.0",
       "confidentiality": "داخلي",
-      "codeMigrationNote": "NUR-MAN-CSR-001 → NUR-MAN-COM-001"
+      "codeMigrationNote": "NUR-MAN-CSR-001 → NUR-MAN-COM-001",
+      "criterionEvidenceRefs": {
+        "8": "C08-E04"
+      }
     },
     {
       "id": "EVI-062",
@@ -4024,7 +4760,11 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": null,
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "8": "C08-E05",
+        "9": "C09-E15"
+      }
     },
     {
       "id": "EVI-063",
@@ -4051,7 +4791,10 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": null,
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "8": "C08-E06"
+      }
     },
     {
       "id": "EVI-064",
@@ -4075,7 +4818,10 @@
       "copyAvailability": "نسخة/رابط متاح",
       "version": "1.0",
       "confidentiality": "داخلي",
-      "codeMigrationNote": "NUR-PRO-CSR-002 → NUR-PRO-COM-002"
+      "codeMigrationNote": "NUR-PRO-CSR-002 → NUR-PRO-COM-002",
+      "criterionEvidenceRefs": {
+        "8": "C08-E07"
+      }
     },
     {
       "id": "EVI-065",
@@ -4108,7 +4854,10 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": "1.0",
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "9": "C09-E16"
+      }
     },
     {
       "id": "EVI-066",
@@ -4144,7 +4893,10 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": "1.0",
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "9": "C09-E17"
+      }
     },
     {
       "id": "EVI-067",
@@ -4176,7 +4928,10 @@
       "copyAvailability": "نسخة/رابط متاح",
       "version": "1.0",
       "confidentiality": "داخلي",
-      "codeMigrationNote": "NUR-MAN-ELN-001 → NUR-MAN-ICT-001"
+      "codeMigrationNote": "NUR-MAN-ELN-001 → NUR-MAN-ICT-001",
+      "criterionEvidenceRefs": {
+        "10": "C10-E05"
+      }
     },
     {
       "id": "EVI-068",
@@ -4202,7 +4957,10 @@
       "copyAvailability": "نسخة/رابط متاح",
       "version": "1.0",
       "confidentiality": "داخلي",
-      "codeMigrationNote": "NUR-PRO-ELN-001 → NUR-PRO-ICT-001"
+      "codeMigrationNote": "NUR-PRO-ELN-001 → NUR-PRO-ICT-001",
+      "criterionEvidenceRefs": {
+        "10": "C10-E06"
+      }
     },
     {
       "id": "EVI-069",
@@ -4225,7 +4983,10 @@
       "sourceLocation": "الموقع الرسمي لجامعة طبرق",
       "copyAvailability": "نسخة/رابط متاح",
       "version": null,
-      "confidentiality": "عام"
+      "confidentiality": "عام",
+      "criterionEvidenceRefs": {
+        "10": "C10-E07"
+      }
     },
     {
       "id": "EVI-070",
@@ -4249,7 +5010,10 @@
       "sourceLocation": "Google Drive – مستودع ملفات الكلية",
       "copyAvailability": "نسخة/رابط متاح",
       "version": null,
-      "confidentiality": "داخلي"
+      "confidentiality": "داخلي",
+      "criterionEvidenceRefs": {
+        "10": "C10-E08"
+      }
     },
     {
       "id": "EVI-071",
@@ -4273,7 +5037,10 @@
       "copyAvailability": "نسخة/رابط متاح",
       "version": "1.0",
       "confidentiality": "داخلي",
-      "codeMigrationNote": "NUR-POL-ELN-011 → NUR-POL-ICT-001"
+      "codeMigrationNote": "NUR-POL-ELN-011 → NUR-POL-ICT-001",
+      "criterionEvidenceRefs": {
+        "10": "C10-E09"
+      }
     }
   ],
   "team": [],
@@ -4539,5 +5306,315 @@
       ]
     }
   ],
-  "mappingNote": "مصادر موجودة ومقروءة؛ الربط لا يعادل قبول الشاهد أو استيفاء الاعتماد. المؤشرات غير المرتبطة صُنفت بحسب نوع المطلوب: شاهد مركزي من الجامعة، تحقق مركزي، شاهد ميداني، فجوة تطوير حقيقية، أو إثبات كفاية الكادر؛ حتى لا تُعرض جميعها كفجوات كلية متشابهة."
+  "mappingNote": "أعيد تنظيم سجل الشواهد وفق نظام إدارة الوثائق v2.0: لكل وثيقة رمز قياسي، ولكل استخدام داخل معيار رقم شاهد Cxx-Exx، مع تسجيل مكان الأصل وحالة النسخة والمالك وحدود الشاهد. لا يعني الربط قبول الشاهد أو استيفاء المؤشر.",
+  "missingEvidence": [
+    {
+      "criterion": 2,
+      "criterionTitle": "القيادة والحوكمة",
+      "indicatorCode": "2.8",
+      "indicatorText": "للمؤسسة آليَّةٌ للإفصاح عن مكافآت أعضاء مجلس المؤسسة، وقياداتها الإدارية.",
+      "category": "central_evidence_needed",
+      "categoryLabel": "شاهد مركزي مطلوب من الجامعة",
+      "request": "المكافآت والإفصاح المالي تعالج مركزيًا؛ نحتاج من الجامعة/الشؤون المالية أو الموارد البشرية اللائحة أو الإجراء أو الإفادة المعتمدة."
+    },
+    {
+      "criterion": 2,
+      "criterionTitle": "القيادة والحوكمة",
+      "indicatorCode": "2.13",
+      "indicatorText": "المؤسسة تخطِّط موازناتها على أساس رؤيتها وأهدافها.",
+      "category": "central_evidence_needed",
+      "categoryLabel": "شاهد مركزي مطلوب من الجامعة",
+      "request": "الموازنة هي موازنة الجامعة؛ دور الكلية تحديد الاحتياجات ورفعها. المطلوب إجراء الجامعة للتخطيط المالي وشاهد ربط احتياجات الكلية بالأهداف."
+    },
+    {
+      "criterion": 2,
+      "criterionTitle": "القيادة والحوكمة",
+      "indicatorCode": "2.14",
+      "indicatorText": "للمؤسسة آليَّةٌ لإعداد الميزانية التقديريّة، تضمن مشاركة جميع مستوياتها التنظيميّة.",
+      "category": "central_evidence_needed",
+      "categoryLabel": "شاهد مركزي مطلوب من الجامعة",
+      "request": "إعداد الميزانية التقديرية من اختصاص الجامعة؛ المطلوب إجراء الجامعة وطلباتها الموجهة للكليات/محاضر المشاركة في تحديد الاحتياجات."
+    },
+    {
+      "criterion": 2,
+      "criterionTitle": "القيادة والحوكمة",
+      "indicatorCode": "2.15",
+      "indicatorText": "للمؤسسة آليَّةٌ لإعداد ميزانيتها، تبيِّن مصادر أموالها، واستخداماتها.",
+      "category": "central_evidence_needed",
+      "categoryLabel": "شاهد مركزي مطلوب من الجامعة",
+      "request": "مصادر الأموال واستخداماتها تُدار على مستوى الجامعة؛ المطلوب شاهد مالي مركزي مناسب وليس ميزانية مستقلة للكلية."
+    },
+    {
+      "criterion": 2,
+      "criterionTitle": "القيادة والحوكمة",
+      "indicatorCode": "2.16",
+      "indicatorText": "المؤسسة تلتزم بنشر تقريرٍ سنويٍّ مفصَّلٍ عن دخلها، ومركزها الماليّ.",
+      "category": "central_evidence_needed",
+      "categoryLabel": "شاهد مركزي مطلوب من الجامعة",
+      "request": "التقرير المالي السنوي والمركز المالي من مسؤوليات الجامعة؛ المطلوب نسخة/إفادة من الجامعة أو الجهة المالية المختصة."
+    },
+    {
+      "criterion": 2,
+      "criterionTitle": "القيادة والحوكمة",
+      "indicatorCode": "2.22",
+      "indicatorText": "للمؤسسة آليَّةٌ تضمن الحقوق الماليّة لمنسقي الجودة في الإدارات، والبرامج التعليمية.",
+      "category": "central_verification_needed",
+      "categoryLabel": "تحقق مركزي من الجامعة",
+      "request": "يوجد أساس نظامي لعلاوة عضو هيئة التدريس المكلف بمهام إدارية في قرار 430/2025، لكن يلزم تأكيد الجامعة أن تكليف منسق الجودة مشمول وطريقة تطبيقه."
+    },
+    {
+      "criterion": 5,
+      "criterionTitle": "الشؤون الطلابية",
+      "indicatorCode": "5.16",
+      "indicatorText": "للمؤسسة آلية تمكِّن الطلاب من انتخاب اتحاد الطلاب.",
+      "category": "central_evidence_needed",
+      "categoryLabel": "شاهد مركزي مطلوب من الجامعة",
+      "request": "يحتاج لائحة/آلية انتخاب اتحاد الطلبة وشاهدًا فعليًا من الجهة الجامعية المختصة أو انتخابات موثقة؛ مجرد وجود اتحاد أو مشاركته لا يكفي."
+    },
+    {
+      "criterion": 5,
+      "criterionTitle": "الشؤون الطلابية",
+      "indicatorCode": "5.17",
+      "indicatorText": "توفِّر المؤسسة الخدمات الصحية الأساسية للطلاب.",
+      "category": "central_evidence_needed",
+      "categoryLabel": "شاهد مركزي مطلوب من الجامعة",
+      "request": "لم يثبت وجود خدمة صحية أساسية للطلبة حتى الآن. يلزم تحديد الجهة الجامعية/الصحية المقدمة للخدمة وشاهد الإتاحة والإحالة الفعلية."
+    },
+    {
+      "criterion": 6,
+      "criterionTitle": "المرافق وخدمات الدعم التعليمية",
+      "indicatorCode": "6.2",
+      "indicatorText": "للمؤسسة ما يثبت ملكيتها لأصولها الثابتة، والمنقولة، أو امتلاكها الحقّ القانوني في استخدام المباني، والمرافق لتقديم خدماتها.",
+      "category": "central_evidence_needed",
+      "categoryLabel": "شاهد مركزي مطلوب من الجامعة",
+      "request": "يحتاج سند ملكية أو تخصيص أو حق قانوني في استخدام مباني ومرافق الكلية من الجامعة/الجهة المالكة؛ التقرير الوصفي لا يكفي."
+    },
+    {
+      "criterion": 6,
+      "criterionTitle": "المرافق وخدمات الدعم التعليمية",
+      "indicatorCode": "6.8",
+      "indicatorText": "للمؤسسة مخازن تتوافر فيها الخصائص، والشروط المطلوبة، تفي بمتطلبات العملية التعليمية.",
+      "category": "field_evidence_needed",
+      "categoryLabel": "شاهد ميداني مطلوب",
+      "request": "يحتاج معاينة وحصرًا موثقًا للمخازن وشروط السلامة والتنظيم والتهوية والحفظ ومدى ملاءمتها لمتطلبات العملية التعليمية."
+    },
+    {
+      "criterion": 6,
+      "criterionTitle": "المرافق وخدمات الدعم التعليمية",
+      "indicatorCode": "6.9",
+      "indicatorText": "للمؤسسة آلية لمراقبة ومتابعة المقاهي، والمطاعم، والعاملين بها، وفقاً للشروط الصحية.",
+      "category": "central_evidence_needed",
+      "categoryLabel": "شاهد مركزي مطلوب من الجامعة",
+      "request": "متابعة المقاهي والمطاعم والخدمات الصحية في الحرم غالبًا مركزية؛ يلزم تحديد الجهة المسؤولة بالجامعة وسجلات التفتيش/المتابعة إن وجدت."
+    },
+    {
+      "criterion": 6,
+      "criterionTitle": "المرافق وخدمات الدعم التعليمية",
+      "indicatorCode": "6.10",
+      "indicatorText": "للمؤسسة آلية لمتابعة مكاتب الخدمات في الحرم الجامعي، كخدمات التصوير، والقرطاسية، ولوازم الحاسوب، وخدمات الإنترنت، وغيرها من الخدمات… إلخ.",
+      "category": "central_evidence_needed",
+      "categoryLabel": "شاهد مركزي مطلوب من الجامعة",
+      "request": "خدمات التصوير والقرطاسية والإنترنت وغيرها مرتبطة بإدارة الحرم/الجامعة؛ يلزم تحديد الجهة المسؤولة وآلية المتابعة وشواهدها."
+    },
+    {
+      "criterion": 6,
+      "criterionTitle": "المرافق وخدمات الدعم التعليمية",
+      "indicatorCode": "6.11",
+      "indicatorText": "للمؤسسة قاعات دراسية تتوفر فيها الشروط الصحية من تكييف، وتدفئة، وتهوية، وإنارة.",
+      "category": "field_evidence_needed",
+      "categoryLabel": "شاهد ميداني مطلوب",
+      "request": "يحتاج فحصًا ميدانيًا موثقًا للقاعات: التهوية والإنارة والتكييف/التدفئة والحالة التشغيلية، لا مجرد عدد القاعات."
+    },
+    {
+      "criterion": 6,
+      "criterionTitle": "المرافق وخدمات الدعم التعليمية",
+      "indicatorCode": "6.12",
+      "indicatorText": "المؤسسة تيسّر لمنتسبيها، بمن فيهم ذوو الإعاقة، إمكان الوصول، واستعمال أماكن الدراسة، والمكتبة، والمعامل، والورش، وكل مرافق المؤسسة.",
+      "category": "field_evidence_needed",
+      "categoryLabel": "شاهد ميداني مطلوب",
+      "request": "يحتاج فحص إمكانية الوصول الفعلية إلى القاعات والمكتبة والمعامل والمرافق، بما في ذلك احتياجات ذوي الإعاقة."
+    },
+    {
+      "criterion": 6,
+      "criterionTitle": "المرافق وخدمات الدعم التعليمية",
+      "indicatorCode": "6.13",
+      "indicatorText": "المؤسسة تعمل على توفير المساحة الشخصية الكافية لأعضاء هيئة التدريس من أجل تحضير الدروس، والعمل مع الطلبة.",
+      "category": "field_evidence_needed",
+      "categoryLabel": "شاهد ميداني مطلوب",
+      "request": "يحتاج حصرًا ومعاينة للمساحات المتاحة لأعضاء هيئة التدريس للتحضير والعمل مع الطلبة."
+    },
+    {
+      "criterion": 6,
+      "criterionTitle": "المرافق وخدمات الدعم التعليمية",
+      "indicatorCode": "6.14",
+      "indicatorText": "المؤسسة توفّر المساحات الشخصية الكافية، والأماكن اللازمة للكوادر المساندة.",
+      "category": "field_evidence_needed",
+      "categoryLabel": "شاهد ميداني مطلوب",
+      "request": "يحتاج حصرًا ومعاينة للأماكن والمساحات المخصصة للكوادر المساندة."
+    },
+    {
+      "criterion": 6,
+      "criterionTitle": "المرافق وخدمات الدعم التعليمية",
+      "indicatorCode": "6.15",
+      "indicatorText": "المؤسسة تعمل على توفير أماكن للطلبة، وأعضاء هيئة التدريس، والعاملين؛ لتأمين ممتلكاتهم الشخصية، بما فيها مواقف للسيارات.",
+      "category": "field_evidence_needed",
+      "categoryLabel": "شاهد ميداني مطلوب",
+      "request": "يحتاج توثيقًا ميدانيًا لأماكن حفظ الممتلكات الشخصية ومواقف السيارات ومدى الإتاحة."
+    },
+    {
+      "criterion": 6,
+      "criterionTitle": "المرافق وخدمات الدعم التعليمية",
+      "indicatorCode": "6.16",
+      "indicatorText": "المؤسسة توفّر مساحات وأماكن كافية لراحة منتسبيها، من مرافق خدمية، وأماكن للصلاة.",
+      "category": "field_evidence_needed",
+      "categoryLabel": "شاهد ميداني مطلوب",
+      "request": "يحتاج معاينة وتوثيق أماكن الراحة والمرافق الخدمية وأماكن الصلاة المتاحة فعليًا."
+    },
+    {
+      "criterion": 6,
+      "criterionTitle": "المرافق وخدمات الدعم التعليمية",
+      "indicatorCode": "6.17",
+      "indicatorText": "المؤسسة توفّر العدد الكافي من دورات المياه، والمشارب الصالحة للاستعمال بشكل مستمر.",
+      "category": "field_evidence_needed",
+      "categoryLabel": "شاهد ميداني مطلوب",
+      "request": "يحتاج حصرًا ميدانيًا لدورات المياه والمشارب، حالتها التشغيلية والنظافة والكفاية."
+    },
+    {
+      "criterion": 6,
+      "criterionTitle": "المرافق وخدمات الدعم التعليمية",
+      "indicatorCode": "6.18",
+      "indicatorText": "المؤسسة توفّر المرافق الخاصة بالأنشطة الترفيهية، والرياضية، والأعمال الإبداعية.",
+      "category": "field_evidence_needed",
+      "categoryLabel": "شاهد ميداني مطلوب",
+      "request": "يحتاج توثيقًا للمرافق المتاحة للأنشطة الترفيهية والرياضية والإبداعية أو توضيح ما يقدم مركزيًا عبر الجامعة."
+    },
+    {
+      "criterion": 6,
+      "criterionTitle": "المرافق وخدمات الدعم التعليمية",
+      "indicatorCode": "6.21",
+      "indicatorText": "السكن الجامعي الطلابي نظيف، وآمن، وذو مستوى كافٍ لتلبية احتياجات الطلبة.",
+      "category": "central_evidence_needed",
+      "categoryLabel": "شاهد مركزي مطلوب من الجامعة",
+      "request": "السكن الجامعي خدمة مركزية؛ يلزم شاهد من إدارة السكن/الجامعة عن النظافة والسلامة والكفاية، وليس من كلية التمريض."
+    },
+    {
+      "criterion": 6,
+      "criterionTitle": "المرافق وخدمات الدعم التعليمية",
+      "indicatorCode": "6.22",
+      "indicatorText": "للمؤسسة آلية واضحة للعناية بالسكن الجامعي من نظافة، وصيانة لمرافقه المختلفة.",
+      "category": "central_evidence_needed",
+      "categoryLabel": "شاهد مركزي مطلوب من الجامعة",
+      "request": "صيانة ونظافة السكن الجامعي من اختصاص الجهة المركزية المسؤولة؛ يلزم الإجراء وسجلات المتابعة منها."
+    },
+    {
+      "criterion": 7,
+      "criterionTitle": "البحث العلمي",
+      "indicatorCode": "7.8",
+      "indicatorText": "الخطة الاستراتيجية للمؤسسة تظهر التزامها بتشجيع ريادة الاعمال.",
+      "category": "development_gap",
+      "categoryLabel": "فجوة تطوير حقيقية",
+      "request": "الخطة الاستراتيجية الحالية لا تُظهر التزامًا واضحًا بريادة الأعمال. يحتاج قرارًا واقعيًا: إضافة توجه/مبادرة مناسبة للتمريض أو توثيق كيفية استيفاء المتطلب دون مبالغة."
+    },
+    {
+      "criterion": 7,
+      "criterionTitle": "البحث العلمي",
+      "indicatorCode": "7.12",
+      "indicatorText": "للمؤسسة الية تحدد نسبة، وكيفية الانفاق على الابحاث من موازنتها.",
+      "category": "central_evidence_needed",
+      "categoryLabel": "شاهد مركزي مطلوب من الجامعة",
+      "request": "الإنفاق البحثي جزء من موازنة الجامعة؛ يلزم آلية الجامعة لتخصيص/تمويل البحث وشاهد يوضح كيفية استفادة الكلية أو رفع احتياجاتها."
+    },
+    {
+      "criterion": 7,
+      "criterionTitle": "البحث العلمي",
+      "indicatorCode": "7.17",
+      "indicatorText": "للمؤسسة مجلة علمية دورية محكمة، ومسجلة في قواعد البيانات.",
+      "category": "central_verification_needed",
+      "categoryLabel": "تحقق مركزي من الجامعة",
+      "request": "يحتاج التحقق هل المقصود مجلة علمية للمؤسسة الأم ويمكن الاستناد إلى مجلة جامعة طبرق، أم يشترط مجلة تخص الكلية؛ ثم توثيق التحكيم والفهرسة وقواعد البيانات."
+    },
+    {
+      "criterion": 7,
+      "criterionTitle": "البحث العلمي",
+      "indicatorCode": "7.19",
+      "indicatorText": "للمؤسسة اشتراكات بمكتبات علمية محلية، واقليمية، ودولية، تمكن الباحثين من الاطلاع على مستجدات البحث العلمي.",
+      "category": "central_evidence_needed",
+      "categoryLabel": "شاهد مركزي مطلوب من الجامعة",
+      "request": "الاشتراكات وقواعد البيانات العلمية تُدار عادة مركزيًا عبر مكتبات الجامعة؛ يلزم قائمة الاشتراكات/قواعد البيانات وصلاحية وصول الباحثين."
+    },
+    {
+      "criterion": 8,
+      "criterionTitle": "خدمة المجتمع والبيئة",
+      "indicatorCode": "8.6",
+      "indicatorText": "تحدِّد المؤسسة المخصّصات المالية من ميزانيتها لخدمة المجتمع المحلي، والبيئة.",
+      "category": "central_evidence_needed",
+      "categoryLabel": "شاهد مركزي مطلوب من الجامعة",
+      "request": "المخصص المالي لخدمة المجتمع مرتبط بموازنة الجامعة؛ المطلوب شاهد مركزي أو آلية رفع الاحتياجات وتمويل الأنشطة، لا إنشاء بند مالي مستقل للكلية."
+    },
+    {
+      "criterion": 9,
+      "criterionTitle": "ضمان الجودة والتحسين المستمر",
+      "indicatorCode": "9.2",
+      "indicatorText": "للمؤسسة كوادر بشرية تتمتع بالكفاية، والمعرفة، والخبرة في مجال ضمان الجودة والاعتماد.",
+      "category": "competency_evidence_needed",
+      "categoryLabel": "إثبات كفاية الكادر مطلوب",
+      "request": "يحتاج ملفًا مباشرًا لكفاية فريق الجودة: قرارات التكليف، المؤهلات والخبرات ذات الصلة، الدورات/الشهادات، وأي سجل تطوير مهني في الجودة والاعتماد."
+    }
+  ],
+  "documentSystem": {
+    "version": "2.0",
+    "manualCode": "NUR-MAN-DOC-001",
+    "manualUrl": "https://docs.google.com/document/d/1HcV3yj3xUKR1CoQ12xGHcsqXwGtc_gEJLW_E4kG9LNM/edit",
+    "masterRegisterCode": "NUR-REG-DOC-001",
+    "masterRegisterUrl": "https://docs.google.com/spreadsheets/d/1ZKgRw9oS3enWn1fdLJT1N1z42N4GlJ0v8Hu928ewV-w/edit",
+    "evidenceRegisterCode": "NUR-REG-ACC-001",
+    "evidenceNumberPattern": "Cxx-Exx",
+    "rule": "رمز الوثيقة ثابت؛ رقم الشاهد خاص بالمعيار. الأصل يحفظ مرة واحدة ويشار إليه من المعايير دون تكرار النسخ.",
+    "types": [
+      "MAN",
+      "POL",
+      "PRO",
+      "PLN",
+      "FRM",
+      "REG",
+      "REP",
+      "MIN",
+      "DEC",
+      "MAT",
+      "REC",
+      "RGL",
+      "REF",
+      "SYS"
+    ],
+    "domains": [
+      "DOC",
+      "QA",
+      "GOV",
+      "STR",
+      "ACA",
+      "EXM",
+      "STU",
+      "ALU",
+      "HR",
+      "CLN",
+      "RES",
+      "COM",
+      "FAC",
+      "ICT",
+      "MED",
+      "FIN",
+      "ACC"
+    ],
+    "aliases": {
+      "PLN": "STR",
+      "EDU": "ACA",
+      "TRN": "CLN",
+      "CS": "COM",
+      "CSR": "COM",
+      "STD": "ALU",
+      "IT": "ICT",
+      "ELN": "ICT",
+      "WEB": "MED"
+    }
+  }
 }
