@@ -2452,12 +2452,22 @@
       "taskId": "ACT-32",
       "accessNote": "الربط بالمؤشرات مبدئي ويغطي جوانب محددة؛ لا يثبت استيفاءها بالكامل.",
       "documentDate": "2026-09",
-      "limitations": "لا يثبت اعتماد الخطة أو تحقق مستهدفاتها."
+      "limitations": "لا يثبت اعتماد الخطة أو تحقق مستهدفاتها.",
+      "legacyEvidenceId": "EVI-001",
+      "currentDocumentCode": null,
+      "canonicalDocumentCode": "NUR-PLN-STR-001",
+      "documentType": "PLN",
+      "documentDomain": "STR",
+      "documentOwner": "لجنة الخطة الاستراتيجية / عمادة الكلية",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": null,
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-002",
       "name": "التقرير السنوي النهائي لمسجل الكلية 2025-2026",
-      "url": "",
+      "url": "https://docs.google.com/document/d/1TJHPFPpTjWcuonIL0MwqM5MyRpx8CoJZ/edit",
       "statusLabel": "نسخة نهائية للمراجعة والتوقيع",
       "description": "تقرير مكتمل من أربع صفحات يميز 272 حالة بكشوف النتائج و268 مصنفة و4 للمطابقة؛ يصف أعمال القيد وحفظ النتائج وحركة الطلبة، ويحتوي جدول النتائج وأولويات المطابقة.",
       "indicatorIds": [
@@ -2468,7 +2478,17 @@
       "taskId": "ACT-20",
       "accessNote": "الربط بالمؤشرات مبدئي ويغطي جوانب محددة؛ لا يثبت استيفاءها بالكامل.",
       "documentDate": "2025/2026",
-      "limitations": "التوقيعات فارغة؛ الوصف التشغيلي تقرير ثانوي عن السجلات الأصلية، والمجاميع لا تثبت الاستبقاء أو التسرب."
+      "limitations": "التوقيعات فارغة؛ الوصف التشغيلي تقرير ثانوي عن السجلات الأصلية، والمجاميع لا تثبت الاستبقاء أو التسرب.",
+      "legacyEvidenceId": "EVI-002",
+      "currentDocumentCode": null,
+      "canonicalDocumentCode": "NUR-REP-STU-001",
+      "documentType": "REP",
+      "documentDomain": "STU",
+      "documentOwner": "مسجل الكلية / شؤون الطلبة",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": null,
+      "confidentiality": "مقيد"
     },
     {
       "id": "EVI-003",
@@ -2484,12 +2504,22 @@
       "taskId": "ACT-10",
       "accessNote": "الربط بالمؤشرات مبدئي ويغطي جوانب محددة؛ لا يثبت استيفاءها بالكامل. يعرض السجل العام الملخص فقط، دون البيانات الفردية.",
       "documentDate": null,
-      "limitations": "12 صفًا لا تساوي إجمالي الكادر. لا يثبت صدور تكليف أو تنفيذ الدعم. تاريخ الجمع غير مثبت وإعادة الإيداع في سبتمبر ليست تحديثًا موثقًا للمحتوى."
+      "limitations": "12 صفًا لا تساوي إجمالي الكادر. لا يثبت صدور تكليف أو تنفيذ الدعم. تاريخ الجمع غير مثبت وإعادة الإيداع في سبتمبر ليست تحديثًا موثقًا للمحتوى.",
+      "legacyEvidenceId": "EVI-003",
+      "currentDocumentCode": null,
+      "canonicalDocumentCode": "NUR-REC-HR-001",
+      "documentType": "REC",
+      "documentDomain": "HR",
+      "documentOwner": "شؤون أعضاء هيئة التدريس / الشؤون الإدارية",
+      "sourceLocation": "ChatGPT Library – نموذج بيانات المعيدين (نسخة مرفوعة سابقًا؛ لم تُنقل إلى Drive بعد)",
+      "copyAvailability": "موجود في Library – يحتاج نقلًا للمستودع الرسمي",
+      "version": null,
+      "confidentiality": "مقيد"
     },
     {
       "id": "EVI-004",
       "name": "مقترح اعتماد الهيكل التنظيمي لكلية التمريض",
-      "url": "",
+      "url": "https://docs.google.com/document/d/1hQnfEwHFAewOimBpxnvoOjfjnqj_VL_p/edit",
       "statusLabel": "مقترح للمناقشة والاعتماد",
       "description": "مقترح قائم من 12 صفحة يوضح ثلاثة مسارات وظيفية، مجلس الكلية والحضور الاستشاري، خطوط المسؤولية والإشراف والتنسيق.",
       "indicatorIds": [
@@ -2500,7 +2530,17 @@
       "taskId": "ACT-34",
       "accessNote": "الربط بالمؤشرات مبدئي ويغطي جوانب محددة؛ لا يثبت استيفاءها بالكامل.",
       "documentDate": "2026-07",
-      "limitations": "لا يثبت اعتماد الهيكل أو إنشاء الوحدات المقترحة أو صدور تكليفات."
+      "limitations": "لا يثبت اعتماد الهيكل أو إنشاء الوحدات المقترحة أو صدور تكليفات.",
+      "legacyEvidenceId": "EVI-004",
+      "currentDocumentCode": null,
+      "canonicalDocumentCode": "NUR-MAT-GOV-001",
+      "documentType": "MAT",
+      "documentDomain": "GOV",
+      "documentOwner": "عمادة الكلية / مجلس الكلية",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": null,
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-005",
@@ -2517,12 +2557,22 @@
       "taskId": "ACT-15",
       "accessNote": "الربط بالمؤشرات مبدئي ويغطي جوانب محددة؛ لا يثبت استيفاءها بالكامل.",
       "documentDate": "2025/2026",
-      "limitations": "يثبت وجود التقرير والتحليل؛ الأحداث التشغيلية المروية تحتاج أصولها. نهاية فترة التقرير 31 يوليو لا تثبت إنجازًا لاحقًا لتاريخ إيداعه19 يوليو."
+      "limitations": "يثبت وجود التقرير والتحليل؛ الأحداث التشغيلية المروية تحتاج أصولها. نهاية فترة التقرير 31 يوليو لا تثبت إنجازًا لاحقًا لتاريخ إيداعه19 يوليو.",
+      "legacyEvidenceId": "EVI-005",
+      "currentDocumentCode": null,
+      "canonicalDocumentCode": "NUR-REP-QA-001",
+      "documentType": "REP",
+      "documentDomain": "QA",
+      "documentOwner": "قسم ضمان الجودة وقياس وتقييم الأداء",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": null,
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-006",
       "name": "نتائج المراجعة الأفقية لحزمة التقارير والوثائق 2025-2026 محدثة 20-07-2026",
-      "url": "",
+      "url": "https://docs.google.com/document/d/1WRbnohokGgN19Ocb_3xht_dX4PCSfcIy/edit",
       "statusLabel": "وثيقة ضبط داخلية معدة",
       "description": "مراجعة أفقية فعلية لحزمة التقارير والوثائق، تضبط الأرقام والاختصاصات وحالة الإنجاز والأصل والنسخة ومسار اعتماد كل وثيقة.",
       "indicatorIds": [
@@ -2533,12 +2583,22 @@
       "taskId": "ACT-14",
       "accessNote": "الربط بالمؤشرات مبدئي ويغطي جوانب محددة؛ لا يثبت استيفاءها بالكامل.",
       "documentDate": "2026-07-20",
-      "limitations": "لا تعني أن كل تقرير اعتمد أو أن جميع الأصول جُمعت؛ التوقيعات غير مثبتة."
+      "limitations": "لا تعني أن كل تقرير اعتمد أو أن جميع الأصول جُمعت؛ التوقيعات غير مثبتة.",
+      "legacyEvidenceId": "EVI-006",
+      "currentDocumentCode": null,
+      "canonicalDocumentCode": "NUR-REP-QA-002",
+      "documentType": "REP",
+      "documentDomain": "QA",
+      "documentOwner": "قسم ضمان الجودة وقياس وتقييم الأداء",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": null,
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-007",
       "name": "01 مسودة اللائحة الداخلية المحدثة كلية التمريض جامعة طبرق RTL",
-      "url": "",
+      "url": "https://docs.google.com/document/d/1nGFMid-k4AixKH53gVNaIfCT8ct6bMfd/edit",
       "statusLabel": "مسودة للمراجعة القانونية والعلمية",
       "description": "مشروع لائحة فعلي يضم 134 مادة في12 بابًا، ومنها القبول والامتحانات والتدريب والامتياز وحقوق الطلبة والتخرج والسجلات؛ ينص على عدم نفاذه قبل المراجعة والاعتماد.",
       "indicatorIds": [
@@ -2548,7 +2608,17 @@
       "taskId": "ACT-31",
       "accessNote": "الربط بالمؤشرات مبدئي ويغطي جوانب محددة؛ لا يثبت استيفاءها بالكامل.",
       "documentDate": "2026-07",
-      "limitations": "موافقة الاتجاهات العامة لا تعني اعتماد النص الكامل؛ تحديث سبتمبر يذكر وصوله إلى القانونية وليس صدور اعتماد."
+      "limitations": "موافقة الاتجاهات العامة لا تعني اعتماد النص الكامل؛ تحديث سبتمبر يذكر وصوله إلى القانونية وليس صدور اعتماد.",
+      "legacyEvidenceId": "EVI-007",
+      "currentDocumentCode": null,
+      "canonicalDocumentCode": "NUR-RGL-GOV-001",
+      "documentType": "RGL",
+      "documentDomain": "GOV",
+      "documentOwner": "عمادة الكلية / مجلس الكلية",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": null,
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-008",
@@ -2565,7 +2635,17 @@
       "taskId": "ACT-10",
       "accessNote": "الربط بالمؤشرات مبدئي ويغطي جوانب محددة؛ لا يثبت استيفاءها بالكامل.",
       "documentDate": "2025/2026",
-      "limitations": "الممارسة موصوفة في التقرير؛ لم تُفحص ملفات كل عضو، ولم يُعتمد تعداد شامل من هذا التقرير."
+      "limitations": "الممارسة موصوفة في التقرير؛ لم تُفحص ملفات كل عضو، ولم يُعتمد تعداد شامل من هذا التقرير.",
+      "legacyEvidenceId": "EVI-008",
+      "currentDocumentCode": null,
+      "canonicalDocumentCode": "NUR-REP-HR-001",
+      "documentType": "REP",
+      "documentDomain": "HR",
+      "documentOwner": "شؤون أعضاء هيئة التدريس / الشؤون الإدارية",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": null,
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-009",
@@ -2582,12 +2662,22 @@
       "taskId": "ACT-13",
       "accessNote": "الربط بالمؤشرات مبدئي ويغطي جوانب محددة؛ لا يثبت استيفاءها بالكامل.",
       "documentDate": "2025/2026",
-      "limitations": "أعداد وصفية من تقرير يوليو وليست جردًا موقعًا أو دليل كفاية المساحة والصيانة؛ لا يعتمد كنسبة امتثال."
+      "limitations": "أعداد وصفية من تقرير يوليو وليست جردًا موقعًا أو دليل كفاية المساحة والصيانة؛ لا يعتمد كنسبة امتثال.",
+      "legacyEvidenceId": "EVI-009",
+      "currentDocumentCode": null,
+      "canonicalDocumentCode": "NUR-REP-FIN-001",
+      "documentType": "REP",
+      "documentDomain": "FIN",
+      "documentOwner": "قسم الشؤون الإدارية والمالية",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": null,
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-010",
       "name": "تقرير تحليل مؤشرات الأداء الأكاديمي ومقررات أولوية التحسين 2022 2026 مصحح حدود النجاح",
-      "url": "",
+      "url": "https://docs.google.com/document/d/1m52Uu1r333c0PIrLCiuVqwREJoB8zLFb/edit",
       "statusLabel": "تحليل مصحح متاح؛ الاعتماد غير مثبت",
       "description": "تحليل فعلي للأعوام2022/2023–2025/2026 يميز تصنيف الطالب السنوي عن رسوب المقرر، ويصحح حدود60/50 ويحدد مقررات السنة الأولى ذات الأولوية وحالات المطابقة.",
       "indicatorIds": [
@@ -2600,12 +2690,22 @@
       "taskId": "ACT-05",
       "accessNote": "الربط بالمؤشرات مبدئي ويغطي جوانب محددة؛ لا يثبت استيفاءها بالكامل.",
       "documentDate": "2026-07",
-      "limitations": "لا تُنشر ملاحق أسماء الطلاب والحالات؛ التحليل لا يثبت تنفيذ تدخلات الدعم أو إغلاق الحالات؛ ليس إعادة حساب مستقل لكل سجل."
+      "limitations": "لا تُنشر ملاحق أسماء الطلاب والحالات؛ التحليل لا يثبت تنفيذ تدخلات الدعم أو إغلاق الحالات؛ ليس إعادة حساب مستقل لكل سجل.",
+      "legacyEvidenceId": "EVI-010",
+      "currentDocumentCode": null,
+      "canonicalDocumentCode": "NUR-REP-ACA-001",
+      "documentType": "REP",
+      "documentDomain": "ACA",
+      "documentOwner": "وكيل الكلية للشؤون العلمية / البرنامج الأكاديمي",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": null,
+      "confidentiality": "مقيد"
     },
     {
       "id": "EVI-011",
       "name": "28 التقرير السنوي للتدريب السريري",
-      "url": "",
+      "url": "https://docs.google.com/document/d/1xwMNZEVMZo6QllTO__PJR8H3bW4pKX4D/edit",
       "statusLabel": "مسودة محدثة للمراجعة والمطابقة والاعتماد",
       "description": "تقرير قائم يصف التدريب والروتيشن والحضور والتقييم، وإضافة عيادة المنارة وتفعيل الكلى ومشروع الدليل وتنظيم الامتياز.",
       "indicatorIds": [
@@ -2616,12 +2716,22 @@
       "taskId": "ACT-07",
       "accessNote": "الربط بالمؤشرات مبدئي ويغطي جوانب محددة؛ لا يثبت استيفاءها بالكامل.",
       "documentDate": "2025/2026",
-      "limitations": "إثبات وجود التقرير مباشر؛ تنفيذ التدريب والأحداث مروي وتبقى أصوله لدى القسم.480 هدف للدورة لا عدد مشاركين متحقق. حالة السلامة الواردة في يوليو تُقرأ مع تحديث سبتمبر."
+      "limitations": "إثبات وجود التقرير مباشر؛ تنفيذ التدريب والأحداث مروي وتبقى أصوله لدى القسم.480 هدف للدورة لا عدد مشاركين متحقق. حالة السلامة الواردة في يوليو تُقرأ مع تحديث سبتمبر.",
+      "legacyEvidenceId": "EVI-011",
+      "currentDocumentCode": null,
+      "canonicalDocumentCode": "NUR-REP-CLN-001",
+      "documentType": "REP",
+      "documentDomain": "CLN",
+      "documentOwner": "قسم التدريب السريري والامتياز",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": null,
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-012",
       "name": "نموذج وصف برنامج أكاديمي بكالوريوس التمريض مراجع ومحدث RTL",
-      "url": "",
+      "url": "https://docs.google.com/document/d/1dfzB5p9RecsA4dYPMDtXAMhLmvUaS0Rz/edit",
       "statusLabel": "توصيف برنامج معد قيد المراجعة العلمية والقانونية",
       "description": "نموذج برنامج معبأ يحدد بكالوريوس التمريض وأهدافه ومخرجاته و140 وحدة وثمانية فصول والقبول والمرجعيات، ويفصل المراجعة الخارجية غير المكتملة عن إعداد التوصيف.",
       "indicatorIds": [
@@ -2634,7 +2744,17 @@
       "taskId": "ACT-02",
       "accessNote": "الربط بالمؤشرات مبدئي ويغطي جوانب محددة؛ لا يثبت استيفاءها بالكامل.",
       "documentDate": "2026-07-20",
-      "limitations": "لا يثبت اعتماد التوصيف أو إتمام المراجعة الخارجية. لا يعني غياب قرار مستقل ضمن النسخة توقف البرنامج القائم."
+      "limitations": "لا يثبت اعتماد التوصيف أو إتمام المراجعة الخارجية. لا يعني غياب قرار مستقل ضمن النسخة توقف البرنامج القائم.",
+      "legacyEvidenceId": "EVI-012",
+      "currentDocumentCode": null,
+      "canonicalDocumentCode": "NUR-REC-ACA-001",
+      "documentType": "REC",
+      "documentDomain": "ACA",
+      "documentOwner": "وكيل الكلية للشؤون العلمية / البرنامج الأكاديمي",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": null,
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-013",
@@ -2651,7 +2771,17 @@
       "taskId": "ACT-12",
       "accessNote": "الربط بالمؤشرات مبدئي ويغطي جوانب محددة؛ لا يثبت استيفاءها بالكامل.",
       "documentDate": "2025/2026",
-      "limitations": "الأنشطة مروية في التقرير ولم تفحص أصول صورها وحضورها؛ لا تُعمم الأرقام البحثية ولا تُنشر تفاصيل المشاركين؛ أثر الأنشطة غير مقاس."
+      "limitations": "الأنشطة مروية في التقرير ولم تفحص أصول صورها وحضورها؛ لا تُعمم الأرقام البحثية ولا تُنشر تفاصيل المشاركين؛ أثر الأنشطة غير مقاس.",
+      "legacyEvidenceId": "EVI-013",
+      "currentDocumentCode": null,
+      "canonicalDocumentCode": "NUR-REP-COM-001",
+      "documentType": "REP",
+      "documentDomain": "COM",
+      "documentOwner": "قسم خدمة المجتمع والبيئة",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": null,
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-014",
@@ -2668,12 +2798,22 @@
       "taskId": "ACT-11",
       "accessNote": "الربط بالمؤشرات مبدئي ويغطي جوانب محددة؛ لا يثبت استيفاءها بالكامل.",
       "documentDate": "2025/2026",
-      "limitations": "لا يثبت اعتماد جميع المشروعات أو الموافقات الأخلاقية؛ بعض استنتاجات الأعداد والسببية تحتاج تصحيحًا وفق تدقيق المرحلة الأولى؛ لا تعتمد كنواتج صحية مثبتة."
+      "limitations": "لا يثبت اعتماد جميع المشروعات أو الموافقات الأخلاقية؛ بعض استنتاجات الأعداد والسببية تحتاج تصحيحًا وفق تدقيق المرحلة الأولى؛ لا تعتمد كنواتج صحية مثبتة.",
+      "legacyEvidenceId": "EVI-014",
+      "currentDocumentCode": null,
+      "canonicalDocumentCode": "NUR-REP-RES-001",
+      "documentType": "REP",
+      "documentDomain": "RES",
+      "documentOwner": "قسم البحوث والاستشارات والتدريب",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": null,
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-015",
       "name": "07 خطة تفعيل ضمان الجودة والتحسين المستمر كلية التمريض 2026 2027 تم المراجعة",
-      "url": "",
+      "url": "https://docs.google.com/document/d/1nqid30cHyJ8ckpcuowzQ1uK5DAWzwhl-/edit",
       "statusLabel": "خطة1.4 متاحة؛ اعتماد النسخة غير مثبت",
       "description": "خطة87صفحة ذات ضبط إصدار ومسؤوليات ومواعيد وتقويمات ومؤشرات وخطة تحسين35إجراء. ذكرت الدراسة الذاتية الأحدث أنها إطار التنفيذ الجاري.",
       "indicatorIds": [
@@ -2686,12 +2826,22 @@
       "taskId": "ACT-35",
       "accessNote": "الربط بالمؤشرات مبدئي ويغطي جوانب محددة؛ لا يثبت استيفاءها بالكامل.",
       "documentDate": "2026-07-19",
-      "limitations": "حقول الاعتماد فارغة. يُفصل إعداد الخطة عن تشغيلها المروي في سبتمبر وعن قبول كل شاهد أو إغلاق إجراء."
+      "limitations": "حقول الاعتماد فارغة. يُفصل إعداد الخطة عن تشغيلها المروي في سبتمبر وعن قبول كل شاهد أو إغلاق إجراء.",
+      "legacyEvidenceId": "EVI-015",
+      "currentDocumentCode": null,
+      "canonicalDocumentCode": "NUR-PLN-QA-001",
+      "documentType": "PLN",
+      "documentDomain": "QA",
+      "documentOwner": "قسم ضمان الجودة وقياس وتقييم الأداء",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": null,
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-016",
       "name": "مسودة الدراسة الذاتية المحدثة سبتمبر 2026",
-      "url": "",
+      "url": "https://docs.google.com/document/d/1H6v7lAgtTy_IqyY-jT8VqG1jBvCv9HYv/edit",
       "statusLabel": "الدراسة الذاتية2.1 مسودة للمراجعة",
       "description": "دراسة ذاتية75صفحة بضبط إصدار28سبتمبر وقطع معلومات22سبتمبر. تقر بأعمال قائمة واستبانات مطبقة وتحليلات منجزة وتضم سجل الشواهد ومالكي الأصول.",
       "indicatorIds": [
@@ -2701,12 +2851,22 @@
       "taskId": "ACT-16",
       "accessNote": "الربط بالمؤشرات مبدئي ويغطي جوانب محددة؛ لا يثبت استيفاءها بالكامل.",
       "documentDate": "2026-09-28",
-      "limitations": "مصدر تحليلي جامع؛ لا يحول كل أصل مشار إليه إلى ملف فُحص، ولا تُحسب تغطيته لجميع المعايير كإثبات مباشر لتطبيق جميع المؤشرات."
+      "limitations": "مصدر تحليلي جامع؛ لا يحول كل أصل مشار إليه إلى ملف فُحص، ولا تُحسب تغطيته لجميع المعايير كإثبات مباشر لتطبيق جميع المؤشرات.",
+      "legacyEvidenceId": "EVI-016",
+      "currentDocumentCode": null,
+      "canonicalDocumentCode": "NUR-REP-ACC-001",
+      "documentType": "REP",
+      "documentDomain": "ACC",
+      "documentOwner": "قسم ضمان الجودة / لجنة الدراسة الذاتية",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": null,
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-017",
       "name": "تقرير تحليل مؤشرات الأداء الأكاديمي",
-      "url": "",
+      "url": "https://docs.google.com/document/d/1oUAGuFtDN8L2K7aCM-4oXXleyO2Zb72P/edit",
       "statusLabel": "ملخص تحليل استبانة متاح داخل تقرير سابق",
       "description": "صفحتا4–5 تتضمنان تحليلًا فعليًا لـ56مشاركة باستبيان صعوبات المقررات والدعم؛ يربطان صعوبات السنة الأولى بالحاجة إلى الإرشاد ودعم المصطلحات.",
       "indicatorIds": [
@@ -2719,12 +2879,22 @@
       "taskId": "ACT-06",
       "accessNote": "الربط بالمؤشرات مبدئي ويغطي جوانب محددة؛ لا يثبت استيفاءها بالكامل.",
       "documentDate": "2026-07-01",
-      "limitations": "التقرير العددي الأقدم استبدل بالتحليل المصحح؛ يُستعمل هذا الجزء وحده كدليل وجود ملخص استبانة، دون اعتباره أصل الاستجابات أو نتيجة أحدث دورة أو تعميمه على جميع الطلبة."
+      "limitations": "التقرير العددي الأقدم استبدل بالتحليل المصحح؛ يُستعمل هذا الجزء وحده كدليل وجود ملخص استبانة، دون اعتباره أصل الاستجابات أو نتيجة أحدث دورة أو تعميمه على جميع الطلبة.",
+      "legacyEvidenceId": "EVI-017",
+      "currentDocumentCode": null,
+      "canonicalDocumentCode": "NUR-REP-QA-003",
+      "documentType": "REP",
+      "documentDomain": "QA",
+      "documentOwner": "قسم ضمان الجودة وقياس وتقييم الأداء",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": null,
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-018",
       "name": "1. Medical Asepsis--Medical handwashing",
-      "url": "",
+      "url": "https://docs.google.com/document/d/1aBvA8lGPH32Panu6zPWC9f5RYHsFFqP5/edit",
       "statusLabel": "مادة تدريسية موجودة",
       "description": "ورقة مهارة غسل اليدين بمعدات وإحدى عشرة خطوة ومبررات تعليمية، تحمل اسم كلية التمريض بجامعة طبرق.",
       "indicatorIds": [
@@ -2734,7 +2904,17 @@
       "taskId": "ACT-03",
       "accessNote": "الربط بالمؤشرات مبدئي ويغطي جوانب محددة؛ لا يثبت استيفاءها بالكامل.",
       "documentDate": null,
-      "limitations": "مادة تعليمية فعلية؛ لا تثبت اعتمادًا سريريًا حديثًا أو كفاية طالب، وتحتاج مطابقة المعايير السريرية الحالية قبل استخدامها كإجراء معتمد."
+      "limitations": "مادة تعليمية فعلية؛ لا تثبت اعتمادًا سريريًا حديثًا أو كفاية طالب، وتحتاج مطابقة المعايير السريرية الحالية قبل استخدامها كإجراء معتمد.",
+      "legacyEvidenceId": "EVI-018",
+      "currentDocumentCode": null,
+      "canonicalDocumentCode": "NUR-REF-CLN-001",
+      "documentType": "REF",
+      "documentDomain": "CLN",
+      "documentOwner": "قسم التدريب السريري والامتياز",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": null,
+      "confidentiality": "عام"
     },
     {
       "id": "EVI-019",
@@ -2750,7 +2930,17 @@
       "taskId": "ACT-07",
       "accessNote": "الربط بالمؤشرات مبدئي ويغطي جوانب محددة؛ لا يثبت استيفاءها بالكامل. فتح الملف يعتمد على صلاحيات المصدر الأصلية.",
       "documentDate": null,
-      "limitations": "نسخة قديمة معدلة في يناير 2026، ليست إثباتًا أنها كتيب السلامة الأحدث المذكور في سبتمبر، ولا تثبت نفاذ الإجراءات أو تنفيذها. المحتوى السريري يحتاج مراجعة المختص قبل الاعتماد."
+      "limitations": "نسخة قديمة معدلة في يناير 2026، ليست إثباتًا أنها كتيب السلامة الأحدث المذكور في سبتمبر، ولا تثبت نفاذ الإجراءات أو تنفيذها. المحتوى السريري يحتاج مراجعة المختص قبل الاعتماد.",
+      "legacyEvidenceId": "EVI-019",
+      "currentDocumentCode": "NUR-MAN-CLN-001",
+      "canonicalDocumentCode": "NUR-MAN-CLN-001",
+      "documentType": "MAN",
+      "documentDomain": "CLN",
+      "documentOwner": "قسم التدريب السريري والامتياز",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": "1.0",
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-020",
@@ -2770,7 +2960,17 @@
       "taskId": "ACT-08",
       "accessNote": "الربط بالمؤشرات مبدئي ويغطي جوانب محددة؛ لا يثبت استيفاءها بالكامل.",
       "documentDate": "2026-09-30",
-      "limitations": "تحقق محتوى المصدر وليس اختبار واجهة شاملًا أو قياس أثر تعليمي أو رضا مستفيدين أو اعتماد سريري. تعذر فتح Pages بأداة الويب في هذا الفحص؛ تأكيد النشر السابق مصدره عمل الفريق. لا تثبت وصلة الشكاوى وصول شكوى أو إغلاقها."
+      "limitations": "تحقق محتوى المصدر وليس اختبار واجهة شاملًا أو قياس أثر تعليمي أو رضا مستفيدين أو اعتماد سريري. تعذر فتح Pages بأداة الويب في هذا الفحص؛ تأكيد النشر السابق مصدره عمل الفريق. لا تثبت وصلة الشكاوى وصول شكوى أو إغلاقها.",
+      "legacyEvidenceId": "EVI-020",
+      "currentDocumentCode": null,
+      "canonicalDocumentCode": "NUR-SYS-ICT-001",
+      "documentType": "SYS",
+      "documentDomain": "ICT",
+      "documentOwner": "تقنية المعلومات / الشؤون العلمية",
+      "sourceLocation": "GitHub Pages / مستودع البوابة الرقمية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": null,
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-021",
@@ -2783,7 +2983,17 @@
       ],
       "taskId": "ACT-32",
       "accessNote": "يثبت وجود مشاركة فعلية عبر الاستطلاع؛ لا يثبت وحده كيفية إغلاق جميع الملاحظات أو اعتماد النسخة النهائية من الخطة.",
-      "documentDate": "2026-07"
+      "documentDate": "2026-07",
+      "legacyEvidenceId": "EVI-021",
+      "currentDocumentCode": null,
+      "canonicalDocumentCode": "NUR-REC-STR-001",
+      "documentType": "REC",
+      "documentDomain": "STR",
+      "documentOwner": "لجنة الخطة الاستراتيجية / عمادة الكلية",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": null,
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-022",
@@ -2798,7 +3008,17 @@
       ],
       "taskId": "ACT-32",
       "accessNote": "مصدر تنظيمي قوي لكنه ما يزال Draft وحقول الاعتماد فارغة؛ يثبت وجود آلية مصاغة لا نفاذها الرسمي أو اكتمال تطبيقها.",
-      "documentDate": null
+      "documentDate": null,
+      "legacyEvidenceId": "EVI-022",
+      "currentDocumentCode": "NUR-POL-STR-001",
+      "canonicalDocumentCode": "NUR-POL-STR-001",
+      "documentType": "POL",
+      "documentDomain": "STR",
+      "documentOwner": "لجنة الخطة الاستراتيجية / عمادة الكلية",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": "1.0",
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-023",
@@ -2811,7 +3031,17 @@
       ],
       "taskId": "ACT-32",
       "accessNote": "يُستخدم فقط بحدود ما وقع فعليًا. الملف نفسه يميز المحاضر التوثيقية عن المحضر الختامي المعد مسبقًا للاستخدام لاحقًا؛ أي جزء غير مكتمل الحضور أو التوقيع لا يعامل كمحضر نافذ.",
-      "documentDate": "2026"
+      "documentDate": "2026",
+      "legacyEvidenceId": "EVI-023",
+      "currentDocumentCode": null,
+      "canonicalDocumentCode": "NUR-MIN-STR-001",
+      "documentType": "MIN",
+      "documentDomain": "STR",
+      "documentOwner": "لجنة الخطة الاستراتيجية / عمادة الكلية",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": null,
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-024",
@@ -2825,7 +3055,17 @@
       ],
       "taskId": "ACT-32",
       "accessNote": "شاهد على استخدام التوجهات والأهداف في التخطيط التشغيلي خلال الفترة الموثقة؛ لا يثبت اعتماد الخطة الاستراتيجية 2026–2030 أو تحقق جميع مستهدفاتها.",
-      "documentDate": "2026-01/06"
+      "documentDate": "2026-01/06",
+      "legacyEvidenceId": "EVI-024",
+      "currentDocumentCode": null,
+      "canonicalDocumentCode": "NUR-REP-STR-001",
+      "documentType": "REP",
+      "documentDomain": "STR",
+      "documentOwner": "لجنة الخطة الاستراتيجية / عمادة الكلية",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": null,
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-025",
@@ -2838,7 +3078,17 @@
       ],
       "taskId": "ACT-35",
       "accessNote": "مسودة تنظيمية وليست خطة طوارئ معتمدة أو دليلًا على اختبار سيناريوهات الاستجابة؛ يلزم لاحقًا سجل مخاطر وخطط بديلة/استجابة واعتماد وتطبيق.",
-      "documentDate": null
+      "documentDate": null,
+      "legacyEvidenceId": "EVI-025",
+      "currentDocumentCode": "NUR-PRO-GOV-002",
+      "canonicalDocumentCode": "NUR-PRO-GOV-002",
+      "documentType": "PRO",
+      "documentDomain": "GOV",
+      "documentOwner": "عمادة الكلية / مجلس الكلية",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": "1.0",
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-026",
@@ -2857,7 +3107,17 @@
       "taskId": "ACT-34",
       "accessNote": "مصدر تنظيمي مهم لكنه ما يزال Draft؛ لا يثبت اعتماد الدليل أو تطبيق جميع آلياته. بالنسبة للمالية يثبت حدود اختصاص الكلية ومسار التنسيق مع الجامعة ولا يحل محل سجلات أو تقارير الجامعة المالية.",
       "documentDate": null,
-      "limitations": "لا يُستخدم لإثبات ميزانية مستقلة أو صرف أو تقرير مالي للكلية؛ الدليل نفسه ينص على أن الكلية لا تملك ذمة مالية مستقلة."
+      "limitations": "لا يُستخدم لإثبات ميزانية مستقلة أو صرف أو تقرير مالي للكلية؛ الدليل نفسه ينص على أن الكلية لا تملك ذمة مالية مستقلة.",
+      "legacyEvidenceId": "EVI-026",
+      "currentDocumentCode": "NUR-MAN-GOV-001",
+      "canonicalDocumentCode": "NUR-MAN-GOV-001",
+      "documentType": "MAN",
+      "documentDomain": "GOV",
+      "documentOwner": "عمادة الكلية / مجلس الكلية",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": "1.0",
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-027",
@@ -2872,7 +3132,17 @@
       ],
       "taskId": "ACT-34",
       "accessNote": "تثبت وجود سياسات مصاغة، لا اعتمادها أو تفعيلها. يلزم لاحقًا قرارات اعتماد وشواهد تطبيق.",
-      "documentDate": null
+      "documentDate": null,
+      "legacyEvidenceId": "EVI-027",
+      "currentDocumentCode": "NUR-POL-GOV-002",
+      "canonicalDocumentCode": "NUR-POL-GOV-002",
+      "documentType": "POL",
+      "documentDomain": "GOV",
+      "documentOwner": "عمادة الكلية / مجلس الكلية",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": "1.0",
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-028",
@@ -2888,7 +3158,17 @@
       ],
       "taskId": "ACT-10",
       "accessNote": "توفر إطارًا تنظيميًا واضحًا لكنها ما تزال مسودة. لا تثبت أن كل تعيين أو تقييم جرى وفقها، ولا تغني عن القرارات والملفات والنماذج المعتمدة.",
-      "documentDate": null
+      "documentDate": null,
+      "legacyEvidenceId": "EVI-028",
+      "currentDocumentCode": "NUR-POL-HR-001",
+      "canonicalDocumentCode": "NUR-POL-HR-001",
+      "documentType": "POL",
+      "documentDomain": "HR",
+      "documentOwner": "شؤون أعضاء هيئة التدريس / الشؤون الإدارية",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": "1.0",
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-029",
@@ -2902,7 +3182,17 @@
       ],
       "taskId": "ACT-06",
       "accessNote": "يثبت وجود آلية وأداة معدة للقياس، لكنه لا يثبت وجود نتائج رضا العاملين عن القيادة في 2026/2027؛ لم يظهر ملف Responses لهذا الاستبيان في البحث الحالي.",
-      "documentDate": "2026/2027"
+      "documentDate": "2026/2027",
+      "legacyEvidenceId": "EVI-029",
+      "currentDocumentCode": null,
+      "canonicalDocumentCode": "NUR-REG-QA-002",
+      "documentType": "REG",
+      "documentDomain": "QA",
+      "documentOwner": "قسم ضمان الجودة وقياس وتقييم الأداء",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": null,
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-030",
@@ -2915,7 +3205,17 @@
       ],
       "taskId": "ACT-35",
       "accessNote": "شاهد جزئي على مسار الإحالة والنشر والتوثيق، وليس آلية معتمدة مكتملة لضبط وتدقيق كل منشور أو إعلان.",
-      "documentDate": "2025/2026"
+      "documentDate": "2025/2026",
+      "legacyEvidenceId": "EVI-030",
+      "currentDocumentCode": null,
+      "canonicalDocumentCode": "NUR-REP-MED-001",
+      "documentType": "REP",
+      "documentDomain": "MED",
+      "documentOwner": "قسم الإعلام والتوثيق",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": null,
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-031",
@@ -2928,7 +3228,17 @@
       ],
       "taskId": "ACT-34",
       "accessNote": "لا تثبت وجود قرار اعتماد أو تطبيق سابق؛ تصبح شاهدًا تنظيميًا أقوى بعد المراجعة والاعتماد وإرفاق قرارات تكليف فعلية.",
-      "documentDate": "2026-09-30"
+      "documentDate": "2026-09-30",
+      "legacyEvidenceId": "EVI-031",
+      "currentDocumentCode": "NUR-POL-GOV-003",
+      "canonicalDocumentCode": "NUR-POL-GOV-003",
+      "documentType": "POL",
+      "documentDomain": "GOV",
+      "documentOwner": "عمادة الكلية / مجلس الكلية",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": "1.0",
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-032",
@@ -2941,7 +3251,17 @@
       ],
       "taskId": "ACT-35",
       "accessNote": "لا تثبت أن نظام التكريم طُبق أو نُشر. يلزم بعد الاعتماد إعلان المعايير وسجل ترشيحات وقرار تكريم فعلي.",
-      "documentDate": "2026-09-30"
+      "documentDate": "2026-09-30",
+      "legacyEvidenceId": "EVI-032",
+      "currentDocumentCode": "NUR-POL-GOV-004",
+      "canonicalDocumentCode": "NUR-POL-GOV-004",
+      "documentType": "POL",
+      "documentDomain": "GOV",
+      "documentOwner": "عمادة الكلية / مجلس الكلية",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": "1.0",
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-033",
@@ -2954,7 +3274,17 @@
       ],
       "taskId": "ACT-34",
       "accessNote": "وجود المسودة لا يثبت التفعيل. يلزم الاعتماد والنشر والتوعية وأي سجلات تطبيق ذات صلة.",
-      "documentDate": "2026-09-30"
+      "documentDate": "2026-09-30",
+      "legacyEvidenceId": "EVI-033",
+      "currentDocumentCode": "NUR-POL-GOV-005",
+      "canonicalDocumentCode": "NUR-POL-GOV-005",
+      "documentType": "POL",
+      "documentDomain": "GOV",
+      "documentOwner": "عمادة الكلية / مجلس الكلية",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": "1.0",
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-034",
@@ -2967,7 +3297,17 @@
       ],
       "taskId": "ACT-35",
       "accessNote": "لا تثبت توفير دعم فعلي أو ميزانية. يلزم بعد الاعتماد سجل احتياجات وطلبات وردود أو شواهد توفير فعلية.",
-      "documentDate": "2026-09-30"
+      "documentDate": "2026-09-30",
+      "legacyEvidenceId": "EVI-034",
+      "currentDocumentCode": "NUR-POL-QA-002",
+      "canonicalDocumentCode": "NUR-POL-QA-002",
+      "documentType": "POL",
+      "documentDomain": "QA",
+      "documentOwner": "قسم ضمان الجودة وقياس وتقييم الأداء",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": "1.0",
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-035",
@@ -2990,7 +3330,17 @@
       ],
       "taskId": "ACT-10",
       "accessNote": "يوفر إطارًا تنظيميًا واسعًا لكنه Draft؛ لا يثبت اعتماد الدليل أو أن جميع النماذج والتقييمات والتظلمات طُبقت فعليًا. بعض الإجراءات النهائية تبقى خاضعة للوائح الجامعة.",
-      "documentDate": null
+      "documentDate": null,
+      "legacyEvidenceId": "EVI-035",
+      "currentDocumentCode": "NUR-MAN-HR-001",
+      "canonicalDocumentCode": "NUR-MAN-HR-001",
+      "documentType": "MAN",
+      "documentDomain": "HR",
+      "documentOwner": "شؤون أعضاء هيئة التدريس / الشؤون الإدارية",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": "1.0",
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-036",
@@ -3011,7 +3361,17 @@
       ],
       "taskId": "ACT-28",
       "accessNote": "تثبت وجود آلية مصاغة لدعم البحث والنزاهة، لا تنفيذ دعم مالي أو حضور مؤتمرات أو معالجة مخالفات فعلية. يلزم لاحقًا سجل إنتاج ومشاركات ومراسلات أو حالات تطبيق.",
-      "documentDate": null
+      "documentDate": null,
+      "legacyEvidenceId": "EVI-036",
+      "currentDocumentCode": "NUR-POL-RES-001",
+      "canonicalDocumentCode": "NUR-POL-RES-001",
+      "documentType": "POL",
+      "documentDomain": "RES",
+      "documentOwner": "قسم البحوث والاستشارات والتدريب",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": "1.0",
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-037",
@@ -3026,7 +3386,17 @@
       ],
       "taskId": "ACT-13",
       "accessNote": "يوفر آلية واضحة لكنه لا يثبت كفاية الموارد أو تنفيذ كل طلب أو استمرار توافر الخدمات التقنية؛ يلزم سجلات الجرد والصيانة والطلبات والإغلاق.",
-      "documentDate": null
+      "documentDate": null,
+      "legacyEvidenceId": "EVI-037",
+      "currentDocumentCode": "NUR-MAN-FAC-001",
+      "canonicalDocumentCode": "NUR-MAN-FAC-001",
+      "documentType": "MAN",
+      "documentDomain": "FAC",
+      "documentOwner": "الشؤون الإدارية / المرافق والمعامل والمكتبة",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": "1.0",
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-038",
@@ -3039,7 +3409,17 @@
       ],
       "taskId": "ACT-06",
       "accessNote": "يثبت وجود أداة وآلية استطلاع. لم يظهر في البحث الحالي ملف Responses خاص بهذه الأداة، لذلك لا يعامل كدليل على تنفيذ دورة 2026/2027 أو تحليل نتائجها.",
-      "documentDate": "2026/2027"
+      "documentDate": "2026/2027",
+      "legacyEvidenceId": "EVI-038",
+      "currentDocumentCode": null,
+      "canonicalDocumentCode": "NUR-FRM-QA-004",
+      "documentType": "FRM",
+      "documentDomain": "QA",
+      "documentOwner": "قسم ضمان الجودة وقياس وتقييم الأداء",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": null,
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-039",
@@ -3055,7 +3435,18 @@
       ],
       "taskId": "ACT-02",
       "accessNote": "توفر آليات مصاغة لكنها Draft؛ لا تثبت تنفيذ دورة تقويم برنامج مكتملة أو اعتماد التغييرات الناتجة عنها.",
-      "documentDate": null
+      "documentDate": null,
+      "legacyEvidenceId": "EVI-039",
+      "currentDocumentCode": "NUR-POL-EDU-001",
+      "canonicalDocumentCode": "NUR-POL-ACA-001",
+      "documentType": "POL",
+      "documentDomain": "ACA",
+      "documentOwner": "وكيل الكلية للشؤون العلمية / البرنامج الأكاديمي",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": "1.0",
+      "confidentiality": "داخلي",
+      "codeMigrationNote": "NUR-POL-EDU-001 → NUR-POL-ACA-001"
     },
     {
       "id": "EVI-040",
@@ -3068,7 +3459,17 @@
       ],
       "taskId": "ACT-31",
       "accessNote": "يُستخدم كمرجعية تنظيمية للانتقال؛ التفريغ ليس بديلًا عن الصورة الرسمية الأصلية للقرار عند الاعتماد القانوني النهائي.",
-      "documentDate": "2025-11-17"
+      "documentDate": "2025-11-17",
+      "legacyEvidenceId": "EVI-040",
+      "currentDocumentCode": null,
+      "canonicalDocumentCode": "NUR-REF-GOV-001",
+      "documentType": "REF",
+      "documentDomain": "GOV",
+      "documentOwner": "عمادة الكلية / مجلس الكلية",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": null,
+      "confidentiality": "عام"
     },
     {
       "id": "EVI-041",
@@ -3083,7 +3484,17 @@
       ],
       "taskId": "ACT-21",
       "accessNote": "مسودة تنظيمية. بعض عناصر الإرشاد موصوفة بأنها تُفعّل تدريجيًا، لذلك لا يثبت الدليل وحده أن التوزيع الكامل للمرشدين والمقابلات تم.",
-      "documentDate": null
+      "documentDate": null,
+      "legacyEvidenceId": "EVI-041",
+      "currentDocumentCode": "NUR-MAN-STU-001",
+      "canonicalDocumentCode": "NUR-MAN-STU-001",
+      "documentType": "MAN",
+      "documentDomain": "STU",
+      "documentOwner": "مسجل الكلية / شؤون الطلبة",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": "1.0",
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-042",
@@ -3098,7 +3509,17 @@
       ],
       "taskId": "ACT-03",
       "accessNote": "يثبت وجود آلية ونموذج متابعة للعام 2026/2027، ولا يثبت اكتمال تقارير المقررات للسنة الحالية قبل انتهاء الفصول أو اعتماد التقرير السنوي.",
-      "documentDate": "2026/2027"
+      "documentDate": "2026/2027",
+      "legacyEvidenceId": "EVI-042",
+      "currentDocumentCode": null,
+      "canonicalDocumentCode": "NUR-FRM-ACA-002",
+      "documentType": "FRM",
+      "documentDomain": "ACA",
+      "documentOwner": "وكيل الكلية للشؤون العلمية / البرنامج الأكاديمي",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": null,
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-043",
@@ -3111,7 +3532,18 @@
       ],
       "taskId": "ACT-35",
       "accessNote": "لا تثبت تنفيذ مراجعة فعلية بعد؛ بعد الاعتماد يلزم تقرير مراجعة ومحضر مناقشة ومراسلة توصية للجامعة وردها إن وجد.",
-      "documentDate": "2026-09-30"
+      "documentDate": "2026-09-30",
+      "legacyEvidenceId": "EVI-043",
+      "currentDocumentCode": "NUR-POL-EDU-002",
+      "canonicalDocumentCode": "NUR-PRO-STU-005",
+      "documentType": "PRO",
+      "documentDomain": "STU",
+      "documentOwner": "مسجل الكلية / شؤون الطلبة",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": "1.0",
+      "confidentiality": "داخلي",
+      "codeMigrationNote": "NUR-POL-EDU-002 → NUR-PRO-STU-005"
     },
     {
       "id": "EVI-044",
@@ -3124,7 +3556,17 @@
       ],
       "taskId": "ACT-21",
       "accessNote": "وجود السجل لا يثبت تعيين المرشدين أو انعقاد جلسات فعلية ما لم تُعبأ السجلات ويصدر التكليف التنظيمي.",
-      "documentDate": null
+      "documentDate": null,
+      "legacyEvidenceId": "EVI-044",
+      "currentDocumentCode": "NUR-REC-STU-001",
+      "canonicalDocumentCode": "NUR-REC-STU-001",
+      "documentType": "REC",
+      "documentDomain": "STU",
+      "documentOwner": "مسجل الكلية / شؤون الطلبة",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": "1.1",
+      "confidentiality": "مقيد"
     },
     {
       "id": "EVI-045",
@@ -3138,7 +3580,17 @@
       ],
       "taskId": "ACT-19",
       "accessNote": "لا يثبت تنفيذ النسخ الاحتياطية أو اختبار الاسترجاع أو وجود سجلات طلبات اطلاع فعلية؛ بعد الاعتماد يلزم شواهد تشغيل من المسجل والجهة التقنية.",
-      "documentDate": "2026-09-30"
+      "documentDate": "2026-09-30",
+      "legacyEvidenceId": "EVI-045",
+      "currentDocumentCode": "NUR-PRO-STU-003",
+      "canonicalDocumentCode": "NUR-PRO-STU-003",
+      "documentType": "PRO",
+      "documentDomain": "STU",
+      "documentOwner": "مسجل الكلية / شؤون الطلبة",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": "1.0",
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-046",
@@ -3151,7 +3603,17 @@
       ],
       "taskId": "ACT-24",
       "accessNote": "يوفر مسار دعم وإحالة فقط؛ لا يثبت أن الكلية أو الجامعة توفر خدمة صحية طلابية مستقلة، ولا يُستخدم لإغلاق المؤشر 5.17.",
-      "documentDate": "2026-09-30"
+      "documentDate": "2026-09-30",
+      "legacyEvidenceId": "EVI-046",
+      "currentDocumentCode": "NUR-PRO-STU-004",
+      "canonicalDocumentCode": "NUR-PRO-STU-004",
+      "documentType": "PRO",
+      "documentDomain": "STU",
+      "documentOwner": "مسجل الكلية / شؤون الطلبة",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": "1.0",
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-047",
@@ -3165,7 +3627,17 @@
       ],
       "taskId": "ACT-35",
       "accessNote": "يثبت وجود إطار تنظيمي للأنشطة، ولا يثبت وجود مخصص مالي من ميزانية الجامعة أو تنفيذ نشاط بعينه؛ الجزء المالي من 5.15 يحتاج شاهدًا مركزيًا أو مراسلات دعم.",
-      "documentDate": null
+      "documentDate": null,
+      "legacyEvidenceId": "EVI-047",
+      "currentDocumentCode": "NUR-PRO-STU-002",
+      "canonicalDocumentCode": "NUR-PRO-STU-002",
+      "documentType": "PRO",
+      "documentDomain": "STU",
+      "documentOwner": "مسجل الكلية / شؤون الطلبة",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": "1.0",
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-048",
@@ -3179,7 +3651,18 @@
       ],
       "taskId": "ACT-09",
       "accessNote": "تثبت آلية مصاغة لا اكتمال قاعدة بيانات جميع الخريجين أو تنفيذ كل دورة تتبع.",
-      "documentDate": null
+      "documentDate": null,
+      "legacyEvidenceId": "EVI-048",
+      "currentDocumentCode": "NUR-POL-STD-020",
+      "canonicalDocumentCode": "NUR-POL-ALU-001",
+      "documentType": "POL",
+      "documentDomain": "ALU",
+      "documentOwner": "وحدة شؤون الخريجين / مسجل الكلية",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": "1.0",
+      "confidentiality": "داخلي",
+      "codeMigrationNote": "NUR-POL-STD-020 → NUR-POL-ALU-001"
     },
     {
       "id": "EVI-049",
@@ -3193,7 +3676,18 @@
       ],
       "taskId": "ACT-09",
       "accessNote": "لا يثبت التنفيذ وحده؛ يحتاج إلى الردود والتقرير ومحضر العرض وخطة العمل.",
-      "documentDate": null
+      "documentDate": null,
+      "legacyEvidenceId": "EVI-049",
+      "currentDocumentCode": "NUR-PRO-STD-020-01",
+      "canonicalDocumentCode": "NUR-PRO-ALU-001",
+      "documentType": "PRO",
+      "documentDomain": "ALU",
+      "documentOwner": "وحدة شؤون الخريجين / مسجل الكلية",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": "1.0",
+      "confidentiality": "داخلي",
+      "codeMigrationNote": "NUR-PRO-STD-020-01 → NUR-PRO-ALU-001"
     },
     {
       "id": "EVI-050",
@@ -3206,7 +3700,17 @@
       ],
       "taskId": "ACT-09",
       "accessNote": "يثبت وجود صوت فعلي للخريجين؛ لا يثبت تمثيل جميع دفعات الخريجين أو إغلاق حلقة التحسين ما لم يصدر تقرير تحليل وتوصيات ومتابعة.",
-      "documentDate": "2026-07"
+      "documentDate": "2026-07",
+      "legacyEvidenceId": "EVI-050",
+      "currentDocumentCode": null,
+      "canonicalDocumentCode": "NUR-REC-ALU-001",
+      "documentType": "REC",
+      "documentDomain": "ALU",
+      "documentOwner": "وحدة شؤون الخريجين / مسجل الكلية",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": null,
+      "confidentiality": "مقيد"
     },
     {
       "id": "EVI-051",
@@ -3221,7 +3725,17 @@
       ],
       "taskId": "ACT-09",
       "accessNote": "يدعم 5.24 جزئيًا فقط: يثبت وجود قائمة رسمية ومسار متابعة، لكنه لا يثبت تسليم قوائم الخريجين للمركز أو نشرها سنويًا على الموقع؛ هذان شاهدان فعليان ما زالا مطلوبين.",
-      "documentDate": "2025/2026"
+      "documentDate": "2025/2026",
+      "legacyEvidenceId": "EVI-051",
+      "currentDocumentCode": null,
+      "canonicalDocumentCode": "NUR-REP-ALU-001",
+      "documentType": "REP",
+      "documentDomain": "ALU",
+      "documentOwner": "وحدة شؤون الخريجين / مسجل الكلية",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": null,
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-052",
@@ -3235,7 +3749,17 @@
       ],
       "taskId": "ACT-24",
       "accessNote": "يثبت وجود الوحدات المركزية في الهيكل، لا حجم الخدمة المقدمة أو نتائجها، ولا يثبت آلية انتخاب اتحاد الطلبة.",
-      "documentDate": "2025"
+      "documentDate": "2025",
+      "legacyEvidenceId": "EVI-052",
+      "currentDocumentCode": null,
+      "canonicalDocumentCode": "NUR-REF-GOV-002",
+      "documentType": "REF",
+      "documentDomain": "GOV",
+      "documentOwner": "عمادة الكلية / مجلس الكلية",
+      "sourceLocation": "الموقع الرسمي لجامعة طبرق",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": null,
+      "confidentiality": "عام"
     },
     {
       "id": "EVI-053",
@@ -3250,7 +3774,17 @@
       ],
       "taskId": "ACT-13",
       "accessNote": "يثبت وجود هيكل مكتبي مركزي وفرعي وخدمات تنظيمية على مستوى الجامعة، لكنه لا يثبت وحده كفاية عدد العاملين أو ساعات العمل أو رضا المستفيدين أو اكتمال الفهرسة لمراجع التمريض.",
-      "documentDate": "2025"
+      "documentDate": "2025",
+      "legacyEvidenceId": "EVI-053",
+      "currentDocumentCode": null,
+      "canonicalDocumentCode": "NUR-REF-FAC-001",
+      "documentType": "REF",
+      "documentDomain": "FAC",
+      "documentOwner": "الشؤون الإدارية / المرافق والمعامل والمكتبة",
+      "sourceLocation": "الموقع الرسمي لجامعة طبرق",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": null,
+      "confidentiality": "عام"
     },
     {
       "id": "EVI-054",
@@ -3265,7 +3799,18 @@
       ],
       "taskId": "ACT-25",
       "accessNote": "هذا شاهد على اكتشاف الفجوة والإجراء التصحيحي، وليس دليل إغلاقها. يلزم لقطات بعد التصحيح وسجل تحديثات وتأكيد معالجة المحتوى.",
-      "documentDate": "2026-09-30"
+      "documentDate": "2026-09-30",
+      "legacyEvidenceId": "EVI-054",
+      "currentDocumentCode": "NUR-REP-WEB-001",
+      "canonicalDocumentCode": "NUR-REP-MED-002",
+      "documentType": "REP",
+      "documentDomain": "MED",
+      "documentOwner": "قسم الإعلام والتوثيق",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": null,
+      "confidentiality": "داخلي",
+      "codeMigrationNote": "NUR-REP-WEB-001 → NUR-REP-MED-002"
     },
     {
       "id": "EVI-055",
@@ -3279,7 +3824,17 @@
       ],
       "taskId": "ACT-25",
       "accessNote": "يوفر آلية مصاغة لكنها تحتاج اعتمادًا وتطبيقًا فعليًا؛ إصلاح الموقع الحالي يبقى إجراءً مفتوحًا.",
-      "documentDate": "2026-09-30"
+      "documentDate": "2026-09-30",
+      "legacyEvidenceId": "EVI-055",
+      "currentDocumentCode": "NUR-PRO-MED-001",
+      "canonicalDocumentCode": "NUR-PRO-MED-001",
+      "documentType": "PRO",
+      "documentDomain": "MED",
+      "documentOwner": "قسم الإعلام والتوثيق",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": "1.0",
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-056",
@@ -3292,7 +3847,17 @@
       ],
       "taskId": "ACT-25",
       "accessNote": "وجود الموقع لا يساوي تحقق 6.19؛ دقة وصف المرافق والخدمات والمعلومات المنشورة تحتاج تصحيحًا وتحققًا قبل اعتماد الموقع كشاهد مكتمل.",
-      "documentDate": "2026-09-30"
+      "documentDate": "2026-09-30",
+      "legacyEvidenceId": "EVI-056",
+      "currentDocumentCode": null,
+      "canonicalDocumentCode": "NUR-SYS-MED-001",
+      "documentType": "SYS",
+      "documentDomain": "MED",
+      "documentOwner": "قسم الإعلام والتوثيق",
+      "sourceLocation": "الموقع الرسمي لجامعة طبرق",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": null,
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-057",
@@ -3319,7 +3884,17 @@
       ],
       "taskId": "ACT-28",
       "accessNote": "دليل قوي تنظيميًا لكنه Draft؛ بعض البنود مثل لجنة البحث أو التحكيم الداخلي وردت بصيغة «إن شُكلت/عند تفعيلها»، فلا يُفهم منها أن كل الهياكل أو المراجعات نُفذت فعليًا.",
-      "documentDate": null
+      "documentDate": null,
+      "legacyEvidenceId": "EVI-057",
+      "currentDocumentCode": "NUR-MAN-RES-001",
+      "canonicalDocumentCode": "NUR-MAN-RES-001",
+      "documentType": "MAN",
+      "documentDomain": "RES",
+      "documentOwner": "قسم البحوث والاستشارات والتدريب",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": "1.0",
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-058",
@@ -3333,7 +3908,17 @@
       ],
       "taskId": "ACT-11",
       "accessNote": "إجراء مختصر يحتاج اعتمادًا وربطًا بجهة أخلاقيات مختصة؛ لا يثبت موافقات أخلاقية فعلية لكل بحوث 2025/2026.",
-      "documentDate": null
+      "documentDate": null,
+      "legacyEvidenceId": "EVI-058",
+      "currentDocumentCode": "NUR-PRO-RES-001",
+      "canonicalDocumentCode": "NUR-PRO-RES-001",
+      "documentType": "PRO",
+      "documentDomain": "RES",
+      "documentOwner": "قسم البحوث والاستشارات والتدريب",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": "1.0",
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-059",
@@ -3346,7 +3931,17 @@
       ],
       "taskId": "ACT-28",
       "accessNote": "يوفر الآلية فقط؛ بعد الاعتماد يلزم إنشاء سجل فعلي وتعبئته ببيانات الباحثين والمنشورات والاستشهادات المتحققة.",
-      "documentDate": "2026-09-30"
+      "documentDate": "2026-09-30",
+      "legacyEvidenceId": "EVI-059",
+      "currentDocumentCode": "NUR-PRO-RES-002",
+      "canonicalDocumentCode": "NUR-PRO-RES-002",
+      "documentType": "PRO",
+      "documentDomain": "RES",
+      "documentOwner": "قسم البحوث والاستشارات والتدريب",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": "1.0",
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-060",
@@ -3359,7 +3954,17 @@
       ],
       "taskId": "ACT-28",
       "accessNote": "دليل على مسار تطوير الشراكة لا على وجود اتفاقية موقعة أو تبادل زيارات منفذ.",
-      "documentDate": "2026"
+      "documentDate": "2026",
+      "legacyEvidenceId": "EVI-060",
+      "currentDocumentCode": null,
+      "canonicalDocumentCode": "NUR-PLN-GOV-002",
+      "documentType": "PLN",
+      "documentDomain": "GOV",
+      "documentOwner": "عمادة الكلية / مجلس الكلية",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": null,
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-061",
@@ -3381,7 +3986,18 @@
       ],
       "taskId": "ACT-12",
       "accessNote": "يوفر إطارًا تنظيميًا قويًا لكنه Draft؛ وجود القسم موصوف أيضًا في التقرير السنوي، بينما قرار الإنشاء/التكليف الرسمي يبقى شاهدًا أقوى مطلوبًا عند توفره. التمويل لا يغلق 8.6 لأن الكلية بلا موازنة مستقلة.",
-      "documentDate": null
+      "documentDate": null,
+      "legacyEvidenceId": "EVI-061",
+      "currentDocumentCode": "NUR-MAN-CSR-001",
+      "canonicalDocumentCode": "NUR-MAN-COM-001",
+      "documentType": "MAN",
+      "documentDomain": "COM",
+      "documentOwner": "قسم خدمة المجتمع والبيئة",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": "1.0",
+      "confidentiality": "داخلي",
+      "codeMigrationNote": "NUR-MAN-CSR-001 → NUR-MAN-COM-001"
     },
     {
       "id": "EVI-062",
@@ -3398,7 +4014,17 @@
       ],
       "taskId": "ACT-29",
       "accessNote": "يثبت جمع رأي جهات مجتمعية فعلية وتحديد أولويات؛ لا يثبت تنفيذ جميع الأنشطة أو توقيع اتفاقيات جديدة.",
-      "documentDate": "2026-07"
+      "documentDate": "2026-07",
+      "legacyEvidenceId": "EVI-062",
+      "currentDocumentCode": null,
+      "canonicalDocumentCode": "NUR-REC-COM-001",
+      "documentType": "REC",
+      "documentDomain": "COM",
+      "documentOwner": "قسم خدمة المجتمع والبيئة",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": null,
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-063",
@@ -3415,7 +4041,17 @@
       ],
       "taskId": "ACT-32",
       "accessNote": "يثبت الاستفادة من التغذية الراجعة في التخطيط الاستراتيجي، لكن الخطة نفسها لا تزال في مسار المراجعة والاعتماد.",
-      "documentDate": "2026"
+      "documentDate": "2026",
+      "legacyEvidenceId": "EVI-063",
+      "currentDocumentCode": null,
+      "canonicalDocumentCode": "NUR-PLN-STR-001",
+      "documentType": "PLN",
+      "documentDomain": "STR",
+      "documentOwner": "لجنة الخطة الاستراتيجية / عمادة الكلية",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": null,
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-064",
@@ -3428,7 +4064,18 @@
       ],
       "taskId": "ACT-12",
       "accessNote": "تثبت وجود آلية مصاغة فقط؛ يلزم بعد اعتمادها مواد وأنشطة وتقييمات فعلية لإثبات التفعيل.",
-      "documentDate": "2026-09-30"
+      "documentDate": "2026-09-30",
+      "legacyEvidenceId": "EVI-064",
+      "currentDocumentCode": "NUR-PRO-CSR-002",
+      "canonicalDocumentCode": "NUR-PRO-COM-002",
+      "documentType": "PRO",
+      "documentDomain": "COM",
+      "documentOwner": "قسم خدمة المجتمع والبيئة",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": "1.0",
+      "confidentiality": "داخلي",
+      "codeMigrationNote": "NUR-PRO-CSR-002 → NUR-PRO-COM-002"
     },
     {
       "id": "EVI-065",
@@ -3451,7 +4098,17 @@
       ],
       "taskId": "ACT-35",
       "accessNote": "توفر إطارًا منهجيًا واسعًا لكنها Draft؛ لا تعني اعتماد كل سياسة أو اكتمال جميع دورات التطبيق.",
-      "documentDate": null
+      "documentDate": null,
+      "legacyEvidenceId": "EVI-065",
+      "currentDocumentCode": "NUR-POL-QA-001",
+      "canonicalDocumentCode": "NUR-POL-QA-001",
+      "documentType": "POL",
+      "documentDomain": "QA",
+      "documentOwner": "قسم ضمان الجودة وقياس وتقييم الأداء",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": "1.0",
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-066",
@@ -3477,7 +4134,17 @@
       ],
       "taskId": "ACT-35",
       "accessNote": "دليل تنظيمي لا يثبت وحده توافر الكفايات البشرية أو الدعم اللوجستي الفعلي أو تنفيذ كل ورشة ومراجعة؛ يحتاج سجلات تطبيق وقرارات اعتماد.",
-      "documentDate": null
+      "documentDate": null,
+      "legacyEvidenceId": "EVI-066",
+      "currentDocumentCode": "NUR-MAN-QA-001",
+      "canonicalDocumentCode": "NUR-MAN-QA-001",
+      "documentType": "MAN",
+      "documentDomain": "QA",
+      "documentOwner": "قسم ضمان الجودة وقياس وتقييم الأداء",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": "1.0",
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-067",
@@ -3498,7 +4165,18 @@
       ],
       "taskId": "ACT-08",
       "accessNote": "الدليل يصرح أن الاستخدام الأساسي تعلم مدمج داعم وليس برنامج تعلم عن بعد مستقلًا؛ التعلم عن بعد الكامل أو الامتحانات النهائية الإلكترونية يحتاج قرارات خاصة من الجامعة/الكلية. الدعم المالي الوارد في 10.11 غير مثبت بهذه الوثيقة.",
-      "documentDate": null
+      "documentDate": null,
+      "legacyEvidenceId": "EVI-067",
+      "currentDocumentCode": "NUR-MAN-ELN-001",
+      "canonicalDocumentCode": "NUR-MAN-ICT-001",
+      "documentType": "MAN",
+      "documentDomain": "ICT",
+      "documentOwner": "تقنية المعلومات / الشؤون العلمية",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": "1.0",
+      "confidentiality": "داخلي",
+      "codeMigrationNote": "NUR-MAN-ELN-001 → NUR-MAN-ICT-001"
     },
     {
       "id": "EVI-068",
@@ -3513,7 +4191,18 @@
       ],
       "taskId": "ACT-08",
       "accessNote": "مسودة مختصرة تحتاج اعتمادًا وتفصيلًا تشغيليًا عند التوسع؛ لا تثبت أن جميع المقررات تحولت إلى مقررات إلكترونية.",
-      "documentDate": null
+      "documentDate": null,
+      "legacyEvidenceId": "EVI-068",
+      "currentDocumentCode": "NUR-PRO-ELN-001",
+      "canonicalDocumentCode": "NUR-PRO-ICT-001",
+      "documentType": "PRO",
+      "documentDomain": "ICT",
+      "documentOwner": "تقنية المعلومات / الشؤون العلمية",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": "1.0",
+      "confidentiality": "داخلي",
+      "codeMigrationNote": "NUR-PRO-ELN-001 → NUR-PRO-ICT-001"
     },
     {
       "id": "EVI-069",
@@ -3526,7 +4215,17 @@
       ],
       "taskId": "ACT-08",
       "accessNote": "دليل على دعم فني مركزي للعمليات التعليمية والتقنية؛ لا يثبت وجود وحدة مستقلة متخصصة حصريًا في إنتاج وتقديم التعليم الإلكتروني بكلية التمريض.",
-      "documentDate": "2026"
+      "documentDate": "2026",
+      "legacyEvidenceId": "EVI-069",
+      "currentDocumentCode": null,
+      "canonicalDocumentCode": "NUR-REF-ICT-001",
+      "documentType": "REF",
+      "documentDomain": "ICT",
+      "documentOwner": "تقنية المعلومات / الشؤون العلمية",
+      "sourceLocation": "الموقع الرسمي لجامعة طبرق",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": null,
+      "confidentiality": "عام"
     },
     {
       "id": "EVI-070",
@@ -3540,7 +4239,17 @@
       ],
       "taskId": "ACT-06",
       "accessNote": "أداة عامة تشمل جوانب تقنية وليست استبانة متخصصة بالكامل بالتعلم الإلكتروني؛ كما لا تثبت نتائج دورة 2026/2027 قبل التطبيق والتحليل.",
-      "documentDate": "2026/2027"
+      "documentDate": "2026/2027",
+      "legacyEvidenceId": "EVI-070",
+      "currentDocumentCode": null,
+      "canonicalDocumentCode": "NUR-FRM-QA-001",
+      "documentType": "FRM",
+      "documentDomain": "QA",
+      "documentOwner": "قسم ضمان الجودة وقياس وتقييم الأداء",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": null,
+      "confidentiality": "داخلي"
     },
     {
       "id": "EVI-071",
@@ -3553,7 +4262,18 @@
       ],
       "taskId": "ACT-08",
       "accessNote": "وجود السياسة لا يثبت تطبيق سجل تراخيص أو معالجة بلاغات فعلية؛ بعد الاعتماد يلزم قوائم مراجعة وسجل مصادر/تراخيص عند الحاجة.",
-      "documentDate": "2026-10-01"
+      "documentDate": "2026-10-01",
+      "legacyEvidenceId": "EVI-071",
+      "currentDocumentCode": "NUR-POL-ELN-011",
+      "canonicalDocumentCode": "NUR-POL-ICT-001",
+      "documentType": "POL",
+      "documentDomain": "ICT",
+      "documentOwner": "تقنية المعلومات / الشؤون العلمية",
+      "sourceLocation": "Google Drive – مستودع ملفات الكلية",
+      "copyAvailability": "نسخة/رابط متاح",
+      "version": "1.0",
+      "confidentiality": "داخلي",
+      "codeMigrationNote": "NUR-POL-ELN-011 → NUR-POL-ICT-001"
     }
   ],
   "team": [],
