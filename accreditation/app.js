@@ -72,6 +72,7 @@ function renderDocuments(){
     <div class="public-controls">
       ${url(ds.manualUrl)?'<a class="plain-button" href="'+esc(url(ds.manualUrl))+'" target="_blank" rel="noopener">فتح دليل النظام NUR-MAN-DOC-001 ↗</a>':''}
       ${url(ds.masterRegisterUrl)?'<a class="plain-button" href="'+esc(url(ds.masterRegisterUrl))+'" target="_blank" rel="noopener">فتح السجل المركزي NUR-REG-DOC-001 ↗</a>':''}
+      ${url(ds.rootFolderUrl)?'<a class="plain-button" href="'+esc(url(ds.rootFolderUrl))+'" target="_blank" rel="noopener">فتح مستودع الوثائق الرئيسي ↗</a>':''}
     </div>
     <div class="doc-system-stats"><span><b>${n(data.evidence.length)}</b> أصلًا مفهرسًا</span><span><b>${n(totalRefs)}</b> مرجع شاهد</span><span><b>${n((data.missingEvidence||[]).length)}</b> مطلوبًا مفتوحًا</span><span><b>${n(migrations)}</b> تحويل رمز موثق</span></div>
   </div>
