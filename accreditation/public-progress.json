@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-01T03:34:00Z",
+  "updatedAt": "2026-10-01T03:58:00Z",
   "source": "دليل معايير الاعتماد المؤسسي، الإصدار الرابع ٢٠٢٣",
   "mode": "evidence_mapped",
   "criteria": [
@@ -5633,6 +5633,81 @@
       "11_Community_Partnerships": "https://drive.google.com/drive/folders/1Pu405C4UVlU6bI8ZIEViCqEXIKK1ZNRs",
       "12_Admin_Finance_Media_ICT": "https://drive.google.com/drive/folders/1O_vAqNTGjwfwwAp7sU3mFEoJqZEE74eX",
       "99_Archive_Superseded_Unsorted": "https://drive.google.com/drive/folders/1rRKps3B53UvQbKU6DH4hbxXPwMXb2eT7"
-    }
+    },
+    "controlledDocuments": [
+      {
+        "code": "NUR-MAN-DOC-001",
+        "title": "دليل نظام إدارة الوثائق والسجلات والشواهد",
+        "type": "MAN",
+        "version": "2.0",
+        "status": "Operational Draft",
+        "owner": "قسم ضمان الجودة وقياس وتقييم الأداء",
+        "url": "https://docs.google.com/document/d/1HcV3yj3xUKR1CoQ12xGHcsqXwGtc_gEJLW_E4kG9LNM/edit",
+        "location": "Google Drive – نظام إدارة الوثائق"
+      },
+      {
+        "code": "NUR-REG-DOC-001",
+        "title": "السجل المركزي لإدارة الوثائق والشواهد",
+        "type": "REG",
+        "version": "2.0",
+        "status": "Operational Register",
+        "owner": "قسم ضمان الجودة وقياس وتقييم الأداء",
+        "url": "https://docs.google.com/spreadsheets/d/1ZKgRw9oS3enWn1fdLJT1N1z42N4GlJ0v8Hu928ewV-w/edit",
+        "location": "Google Drive – نظام إدارة الوثائق"
+      },
+      {
+        "code": "NUR-MAN-DOC-002",
+        "title": "دليل تتبع هيكل الأرشفة الإلكترونية والورقية",
+        "type": "MAN",
+        "version": "1.0",
+        "status": "Draft / Transition Source",
+        "owner": "قسم الأرشفة / ضمان الجودة",
+        "url": "https://docs.google.com/document/d/1rtMvdeIwOuTBs8lz8QyrBXl-uvIl4hlv/edit",
+        "location": "Google Drive"
+      },
+      {
+        "code": "NUR-MAT-ACC-002",
+        "legacyCode": "NUR-MAT-APP-002",
+        "title": "مصفوفة ربط السياسات بمعايير الاعتماد",
+        "type": "MAT",
+        "version": "1.0",
+        "status": "Draft",
+        "owner": "قسم ضمان الجودة",
+        "url": "https://docs.google.com/document/d/1ElTyEz4eYchIoHdjNJiNYjLWwmVuj8Tr/edit",
+        "location": "Google Drive"
+      },
+      {
+        "code": "NUR-MAT-ACC-003",
+        "legacyCode": "NUR-MAT-APP-003",
+        "title": "مصفوفة ربط الإجراءات بمعايير الاعتماد",
+        "type": "MAT",
+        "version": "1.0",
+        "status": "Draft",
+        "owner": "قسم ضمان الجودة",
+        "url": "https://docs.google.com/document/d/1JScVySxbXW46TL6RnTzHqro1vxVQlshT/edit",
+        "location": "Google Drive"
+      },
+      {
+        "code": "NUR-REG-ACC-001",
+        "title": "فهرس الشواهد السابق وربطها بمعايير الاعتماد 2026/2027",
+        "type": "REG",
+        "version": "1.0",
+        "status": "Transition Source",
+        "owner": "قسم ضمان الجودة",
+        "url": "https://docs.google.com/document/d/1VEMfsEpkd6zUwiJb46_YmZGwCfYYxfX7/edit",
+        "location": "Google Drive"
+      },
+      {
+        "code": "NUR-FRM-FAC-001",
+        "title": "استمارة المعاينة الميدانية للمرافق والبيئة التعليمية",
+        "type": "FRM",
+        "version": "1.0",
+        "status": "Draft",
+        "owner": "الشؤون الإدارية / المرافق + ضمان الجودة",
+        "url": "https://docs.google.com/document/d/1-nnypzytOqEUZTjtzEywmmWoyLkvZLPtZt7NkIo6hsQ/edit",
+        "location": "Google Drive – نموذج جاهز للتطبيق",
+        "note": "أداة جمع شاهد وليست شاهد استيفاء قبل تعبئتها وتوقيعها"
+      }
+    ]
   }
 }
