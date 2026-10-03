@@ -58,3 +58,13 @@ function qiSyncCalendar_(){
  const s=qiIms_().getSheetByName('42_التقويم_والتنبيهات'),v=s.getDataRange().getValues(),h=v[0].map(String),i=n=>h.indexOf(n),cal=CalendarApp.getDefaultCalendar();
  for(let r=1;r<v.length;r++){const row=v[r],key=String(row[i('معرف')]||'');if(!/^CAL-\d+$/.test(key))continue;const st=qiDate_(row[i('تاريخ البداية')]),du=qiDate_(row[i('تاريخ الاستحقاق')]);if(!st||!du)continue;let id=String(row[i('Calendar Event ID')]||''),ev=null;if(id){try{ev=cal.getEventById(id)}catch(e){}}const title='[الجودة] '+String(row[i('المهمة/الموعد')]||key),desc='المرجع: '+key+'\nالمصدر: '+String(row[i('المصدر')]||'')+'\nالمالك: '+String(row[i('المالك')]||'');if(!ev){ev=cal.createAllDayEvent(title,st,new Date(du.getTime()+86400000),{description:desc});s.getRange(r+1,i('Calendar Event ID')+1).setValue(ev.getId());s.getRange(r+1,i('حالة الربط')+1).setValue('مرتبط')}else{ev.setTitle(title);ev.setDescription(desc)}}
 }
+
+/** Bootstrap: after setting IMS_SPREADSHEET_ID once, read the restricted config sheet and load the remaining Script Properties. */
+function bootstrapIntegrationFromIms(){
+ const ims=qiIms_(),s=ims.getSheetByName('46_إعدادات_التكامل_المقيدة');if(!s)throw Error('Missing sheet: 46_إعدادات_التكامل_المقيدة');
+ const v=s.getDataRange().getDisplayValues(),h=v[0],pk=h.indexOf('Script Property'),pv=h.indexOf('القيمة/الحالة'),ps=h.indexOf('حالة الإعداد');
+ if(pk<0||pv<0)throw Error('Invalid integration settings sheet');
+ const out={};for(let r=1;r<v.length;r++){const k=String(v[r][pk]||'').trim(),val=String(v[r][pv]||'').trim(),state=ps>=0?String(v[r][ps]||''):'';if(!k||!val||/^بانتظار/.test(val)||/غير جاهز/.test(state))continue;out[k]=val}
+ PropertiesService.getScriptProperties().setProperties(out,false);
+ return {ok:true,loaded:Object.keys(out)};
+}
