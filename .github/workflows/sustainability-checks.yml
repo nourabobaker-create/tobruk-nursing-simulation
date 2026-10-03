@@ -5,10 +5,12 @@ on:
       - 'quality-system-prototype/sustainability/**'
       - 'quality-system-prototype/sustainability-link.js'
       - '.github/workflows/sustainability-checks.yml'
+      - '.github/sustainability-browser.cjs'
   pull_request:
     paths:
       - 'quality-system-prototype/sustainability/**'
       - 'quality-system-prototype/sustainability-link.js'
+      - '.github/sustainability-browser.cjs'
 permissions:
   contents: read
 jobs:
@@ -22,5 +24,8 @@ jobs:
           node --check quality-system-prototype/sustainability/core.js
           node --check quality-system-prototype/sustainability/ui.js
           node --check quality-system-prototype/sustainability-link.js
+          node --check .github/sustainability-browser.cjs
       - name: Verify evidence gates and continuity rules
         run: node --test quality-system-prototype/sustainability/core.test.cjs
+      - name: Verify local browser workflow with synthetic files
+        run: node .github/sustainability-browser.cjs
