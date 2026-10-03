@@ -1,0 +1,26 @@
+name: Sustainability module checks
+on:
+  push:
+    paths:
+      - 'quality-system-prototype/sustainability/**'
+      - 'quality-system-prototype/sustainability-link.js'
+      - '.github/workflows/sustainability-checks.yml'
+  pull_request:
+    paths:
+      - 'quality-system-prototype/sustainability/**'
+      - 'quality-system-prototype/sustainability-link.js'
+permissions:
+  contents: read
+jobs:
+  rule-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate JavaScript syntax
+        run: |
+          node --check quality-system-prototype/sustainability/core.js
+          node --check quality-system-prototype/sustainability/ui.js
+          node --check quality-system-prototype/sustainability-link.js
+      - name: Verify evidence gates and continuity rules
+        run: node --test quality-system-prototype/sustainability/core.test.cjs
