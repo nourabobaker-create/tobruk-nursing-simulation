@@ -7,7 +7,7 @@ const harness=String.raw`
  const results=[];const assert=(ok,name)=>{if(!ok)throw Error(name);results.push({name,passed:true});};
  const pause=ms=>new Promise(r=>setTimeout(r,ms));
  const until=async fn=>{for(let i=0;i<200;i++){if(fn())return;await pause(25);}throw Error('Timed out waiting for local operation');};
- const frame=document.createElement('iframe');frame.style.cssText='width:100%;height:900px;border:0';document.body.append(frame);
+ const frame=document.createElement('iframe');frame.style.cssText='width:100%;max-width:390px;height:900px;border:0';document.body.append(frame);
  let w;const doc=()=>frame.contentDocument;
  const navigate=()=>new Promise(resolve=>{frame.onload=()=>{w=frame.contentWindow;resolve();};frame.src='/quality-system-prototype/sustainability/?ci=1&t='+Date.now();});
  const click=s=>{const e=doc().querySelector(s);if(!e)throw Error('Missing control '+s);e.click();};
@@ -45,7 +45,7 @@ const harness=String.raw`
   assert(active().id!==exportedId,'Import adds a new record without overwriting original');assert(active().evidence[0].review.status==='pending','Import resets claimed review to require verification');
   click('[data-step="2"]');captures=[];click('[data-download]');await until(()=>captures.length===1);assert(await (await fetch(captures[0].url)).text()===payload,'Imported attachment round-trip preserves exact bytes');
   const importedId=active().id;click('[data-step="4"]');click('[data-cmd="retest"]');await until(()=>store().records.length===3);assert(active().previousId===importedId&&Object.keys(active().answers).length===0,'Linked retest preserves old record and starts with blank answers');
-  assert(doc().documentElement.scrollWidth<=w.innerWidth+1,'Narrow viewport has no horizontal overflow');
+  assert(doc().documentElement.scrollWidth<=w.innerWidth+1,'390px frame has no horizontal overflow');
   assert(errors.length===0,'No captured runtime exceptions during tested workflow');
  }catch(e){results.push({name:e.message,passed:false});}
  const out=document.getElementById('qa-result');out.textContent=JSON.stringify({passed:results.every(x=>x.passed),tests:results},null,2);document.body.dataset.qa=results.every(x=>x.passed)?'passed':'failed';
@@ -53,10 +53,10 @@ const harness=String.raw`
 const mime={'.html':'text/html','.js':'text/javascript','.css':'text/css','.json':'application/json'};
 const server=http.createServer((req,res)=>{
  const pathname=new URL(req.url,'http://localhost').pathname;
- if(pathname==='/__qa__'){res.writeHead(200,{'content-type':'text/html'});res.end('<!doctype html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"><style>body{margin:0}pre{white-space:pre-wrap}</style></head><body><pre id="qa-result">pending</pre><script src="/__qa__.js"></script></body></html>');return;}
- if(pathname==='/__qa__.js'){res.writeHead(200,{'content-type':'text/javascript'});res.end(harness);return;}
+ if(pathname==='/__qa__'){res.writeHead(200,{'content-type':'text/html; charset=utf-8'});res.end('<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style>body{margin:0}pre{white-space:pre-wrap}</style></head><body><pre id="qa-result">pending</pre><script src="/__qa__.js"></script></body></html>');return;}
+ if(pathname==='/__qa__.js'){res.writeHead(200,{'content-type':'text/javascript; charset=utf-8'});res.end(harness);return;}
  let target=path.resolve(root,'.'+decodeURIComponent(pathname));if(!target.startsWith(root+path.sep)){res.writeHead(403);res.end();return;}
- try{if(fs.statSync(target).isDirectory())target=path.join(target,'index.html');res.writeHead(200,{'content-type':mime[path.extname(target)]||'text/plain'});fs.createReadStream(target).pipe(res);}catch{res.writeHead(404);res.end('not found');}
+ try{if(fs.statSync(target).isDirectory())target=path.join(target,'index.html');res.writeHead(200,{'content-type':(mime[path.extname(target)]||'text/plain')+'; charset=utf-8'});fs.createReadStream(target).pipe(res);}catch{res.writeHead(404);res.end('not found');}
 });
 server.listen(0,'127.0.0.1',()=>{
  const dir=fs.mkdtempSync(path.join(os.tmpdir(),'sus-qa-'));
@@ -64,5 +64,5 @@ server.listen(0,'127.0.0.1',()=>{
  let stdout='',stderr='';proc.stdout.on('data',b=>stdout+=b);proc.stderr.on('data',b=>stderr+=b);
  const timer=setTimeout(()=>proc.kill('SIGKILL'),110000);
  proc.on('error',e=>{console.error(e);server.close();process.exitCode=1;});
- proc.on('close',()=>{clearTimeout(timer);server.close();const m=stdout.match(/<pre id="qa-result">([\s\S]*?)<\/pre>/);if(m)console.log(m[1].replace(/&quot;/g,'"').replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&amp;/g,'&'));else console.error('No browser report. '+stderr.slice(-2500));if(!stdout.includes('data-qa="passed"'))process.exitCode=1;fs.rmSync(dir,{recursive:true,force:true});});
+ proc.on('close',()=>{clearTimeout(timer);server.close();const m=stdout.match(/<pre id="qa-result">([\s\S]*?)<\/pre>/);if(m)console.log(m[1].replace(/&quot;/g,'"').replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&amp;/g,'&'));else console.error('No browser report. '+stderr.slice(-2500));if(!stdout.includes('data-qa="passed"'))process.exitCode=1;try{fs.rmSync(dir,{recursive:true,force:true,maxRetries:2});}catch{}});
 });
