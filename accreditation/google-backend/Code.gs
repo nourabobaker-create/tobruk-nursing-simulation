@@ -1,6 +1,6 @@
 /** بوابة الفريق الخاصة. يُنشر هذا المشروع وحده داخل نطاق الجامعة، ولا يُنشر للعامة. */
 const APP_ = Object.freeze({
-  owner: 'OWNER_EMAIL_REPLACE_ME', domain: 'tu.edu.ly', maxBytes: 10 * 1024 * 1024,
+  owner: String(PropertiesService.getScriptProperties().getProperty('OWNER_EMAIL') || '').trim().toLowerCase(), domain: 'tu.edu.ly', maxBytes: 10 * 1024 * 1024,
   roles: { admin: 'مدير النظام', reviewer: 'مراجع', member: 'عضو فريق' },
   taskStates: ['بانتظار مراجعة الحالة', 'لم يبدأ', 'قيد التنفيذ', 'بانتظار الدليل', 'مقدمة للمراجعة', 'إعداد منجز بانتظار المراجعة', 'معلقة'],
   indicatorStates: { unassessed: 'لم يُقيَّم', in_progress: 'قيد التقييم', submitted: 'مقدمة للمراجعة', returned: 'يحتاج استكمال', accepted: 'مقبول', na: 'غير منطبق معتمد' }
