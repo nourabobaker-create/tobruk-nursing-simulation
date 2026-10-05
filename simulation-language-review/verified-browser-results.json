@@ -1,0 +1,371 @@
+{
+  "results": [
+    {
+      "route": "handwash-learning-03/",
+      "checks": {
+        "ArabicDefault": true,
+        "LanguageSwitchKeepsSelections": true,
+        "PreferenceSurvivesReload": true,
+        "NativeModes": [
+          "learn",
+          "guide",
+          "written",
+          "train",
+          "test"
+        ],
+        "NoPageOverflow390": true,
+        "NoPageErrors": true
+      },
+      "pageErrors": [],
+      "untranslatedInExercisedNewPanels": []
+    },
+    {
+      "route": "nursing-skills/gloving.html",
+      "checks": {
+        "ArabicDefault": true,
+        "LanguageSwitchKeepsSelections": true,
+        "PreferenceSurvivesReload": true,
+        "NativeModes": [
+          "learn",
+          "guide",
+          "written",
+          "train",
+          "test"
+        ],
+        "NoPageOverflow390": true,
+        "NoPageErrors": true
+      },
+      "pageErrors": [],
+      "untranslatedInExercisedNewPanels": []
+    },
+    {
+      "route": "range-of-motion-learning-01/",
+      "checks": {
+        "ArabicDefault": true,
+        "LanguageSwitchKeepsSelections": true,
+        "PreferenceSurvivesReload": true,
+        "NativeModes": [
+          "learn",
+          "guide",
+          "written",
+          "train",
+          "visual"
+        ],
+        "NoPageOverflow390": true,
+        "NoPageErrors": true
+      },
+      "pageErrors": [],
+      "untranslatedInExercisedNewPanels": []
+    },
+    {
+      "route": "body-mechanics-learning-01/",
+      "checks": {
+        "ArabicDefault": true,
+        "LanguageSwitchKeepsSelections": true,
+        "PreferenceSurvivesReload": true,
+        "NativeModes": [
+          "learn",
+          "guide",
+          "quiz",
+          "train",
+          "test"
+        ],
+        "NoPageOverflow390": true,
+        "NoPageErrors": true
+      },
+      "pageErrors": [],
+      "untranslatedInExercisedNewPanels": []
+    },
+    {
+      "route": "turning-moving-learning-01/",
+      "checks": {
+        "ArabicDefault": true,
+        "LanguageSwitchKeepsSelections": true,
+        "PreferenceSurvivesReload": true,
+        "NativeModes": [
+          "learn",
+          "guide",
+          "quiz",
+          "train",
+          "test"
+        ],
+        "NoPageOverflow390": true,
+        "NoPageErrors": true
+      },
+      "pageErrors": [],
+      "untranslatedInExercisedNewPanels": []
+    },
+    {
+      "route": "patient-positioning-learning-01/",
+      "checks": {
+        "ArabicDefault": true,
+        "LanguageSwitchKeepsSelections": true,
+        "PreferenceSurvivesReload": true,
+        "NativeModes": [
+          "learn",
+          "guide",
+          "quiz",
+          "train",
+          "test"
+        ],
+        "NoPageOverflow390": true,
+        "NoPageErrors": true
+      },
+      "pageErrors": [],
+      "untranslatedInExercisedNewPanels": []
+    },
+    {
+      "route": "wound-dressing-learning-01/",
+      "checks": {
+        "ArabicDefault": true,
+        "LanguageSwitchKeepsSelections": true,
+        "PreferenceSurvivesReload": true,
+        "NativeModes": [
+          "learn",
+          "guide",
+          "written",
+          "train",
+          "test"
+        ],
+        "NoPageOverflow390": true,
+        "NoPageErrors": true
+      },
+      "pageErrors": [],
+      "untranslatedInExercisedNewPanels": []
+    },
+    {
+      "route": "clinical-simulations/modules/01-cpr.html",
+      "checks": {
+        "ArabicDefault": true,
+        "LanguageSwitchKeepsSelections": true,
+        "PreferenceSurvivesReload": true,
+        "ReviewedPanels": [
+          "#sourceBtn",
+          "#termsBtn"
+        ],
+        "EnglishSpeechAttributesUnchanged": true,
+        "ExportPreservesMachineValues": true,
+        "DemoStarts": true,
+        "SwitchDuringDemo": true,
+        "NoPageOverflow390": true,
+        "NoPageErrors": true
+      },
+      "pageErrors": [],
+      "untranslatedInExercisedNewPanels": []
+    },
+    {
+      "route": "clinical-simulations/modules/02-choking.html",
+      "checks": {
+        "ArabicDefault": true,
+        "LanguageSwitchKeepsSelections": true,
+        "PreferenceSurvivesReload": true,
+        "ReviewedPanels": [
+          "#sources",
+          "#terms"
+        ],
+        "EnglishSpeechAttributesUnchanged": true,
+        "ExportPreservesMachineValues": true,
+        "DemoStarts": true,
+        "SwitchDuringDemo": true,
+        "NoPageOverflow390": true,
+        "NoPageErrors": true
+      },
+      "pageErrors": [],
+      "untranslatedInExercisedNewPanels": []
+    },
+    {
+      "route": "clinical-simulations/modules/03-ecg.html",
+      "checks": {
+        "ArabicDefault": true,
+        "ECGIdentifiersPreserved": true,
+        "LanguageSwitchKeepsSelections": true,
+        "PreferenceSurvivesReload": true,
+        "ReviewedPanels": [
+          "#sourceBtn",
+          "#termsBtn",
+          "#quizBtn",
+          "#checklistBtn",
+          "#helpBtn"
+        ],
+        "EnglishSpeechAttributesUnchanged": true,
+        "ExportPreservesMachineValues": true,
+        "DemoStarts": true,
+        "SwitchDuringDemo": true,
+        "NoPageOverflow390": true,
+        "NoPageErrors": true
+      },
+      "pageErrors": [],
+      "untranslatedInExercisedNewPanels": []
+    },
+    {
+      "route": "clinical-simulations/modules/04-ngt-insertion.html",
+      "checks": {
+        "ArabicDefault": true,
+        "LanguageSwitchKeepsSelections": true,
+        "PreferenceSurvivesReload": true,
+        "ReviewedPanels": [
+          "#sourceBtn",
+          "#termsBtn",
+          "#quizBtn",
+          "#checklistBtn"
+        ],
+        "EnglishSpeechAttributesUnchanged": true,
+        "ExportPreservesMachineValues": true,
+        "DemoStarts": true,
+        "SwitchDuringDemo": true,
+        "NoPageOverflow390": true,
+        "NoPageErrors": true
+      },
+      "pageErrors": [],
+      "untranslatedInExercisedNewPanels": []
+    },
+    {
+      "route": "clinical-simulations/modules/05-ngt-removal.html",
+      "checks": {
+        "ArabicDefault": true,
+        "LanguageSwitchKeepsSelections": true,
+        "PreferenceSurvivesReload": true,
+        "ReviewedPanels": [
+          "#sourceBtn",
+          "#termsBtn",
+          "#quizBtn",
+          "#checklistBtn"
+        ],
+        "EnglishSpeechAttributesUnchanged": true,
+        "ExportPreservesMachineValues": true,
+        "DemoStarts": true,
+        "SwitchDuringDemo": true,
+        "NoPageOverflow390": true,
+        "NoPageErrors": true
+      },
+      "pageErrors": [],
+      "untranslatedInExercisedNewPanels": []
+    },
+    {
+      "route": "clinical-simulations/modules/06-blood-extraction.html",
+      "checks": {
+        "ArabicDefault": true,
+        "LanguageSwitchKeepsSelections": true,
+        "PreferenceSurvivesReload": true,
+        "ReviewedPanels": [
+          "#sourcesBtn",
+          "#termsBtn",
+          "#quizBtn",
+          "#checklistBtn",
+          "#recordBtn",
+          "#helpBtn"
+        ],
+        "EnglishSpeechAttributesUnchanged": true,
+        "ExportPreservesMachineValues": true,
+        "DemoStarts": true,
+        "SwitchDuringDemo": true,
+        "NoPageOverflow390": true,
+        "NoPageErrors": true
+      },
+      "pageErrors": [],
+      "untranslatedInExercisedNewPanels": []
+    },
+    {
+      "route": "clinical-simulations/modules/07-catheterization.html",
+      "checks": {
+        "ArabicDefault": true,
+        "LanguageSwitchKeepsSelections": true,
+        "PreferenceSurvivesReload": true,
+        "ReviewedPanels": [
+          "#sourcesBtn",
+          "#termsBtn",
+          "#quizBtn",
+          "#checklistBtn",
+          "#recordBtn",
+          "#helpBtn"
+        ],
+        "EnglishSpeechAttributesUnchanged": true,
+        "ExportPreservesMachineValues": true,
+        "DemoStarts": true,
+        "SwitchDuringDemo": true,
+        "NoPageOverflow390": true,
+        "NoPageErrors": true
+      },
+      "pageErrors": [],
+      "untranslatedInExercisedNewPanels": []
+    },
+    {
+      "route": "clinical-simulations/modules/08-bandaging.html",
+      "checks": {
+        "ArabicDefault": true,
+        "LanguageSwitchKeepsSelections": true,
+        "PreferenceSurvivesReload": true,
+        "ReviewedPanels": [
+          "#sourceOpen",
+          "#quizOpen",
+          "#recordsOpen"
+        ],
+        "EnglishSpeechAttributesUnchanged": true,
+        "ExportPreservesMachineValues": true,
+        "DemoStarts": true,
+        "SwitchDuringDemo": true,
+        "NoPageOverflow390": true,
+        "NoPageErrors": true
+      },
+      "pageErrors": [],
+      "untranslatedInExercisedNewPanels": []
+    },
+    {
+      "route": "clinical-simulations/modules/09-nebulization.html",
+      "checks": {
+        "ArabicDefault": true,
+        "LanguageSwitchKeepsSelections": true,
+        "PreferenceSurvivesReload": true,
+        "ReviewedPanels": [
+          "#sourceOpen",
+          "#quizOpen",
+          "#historyOpen"
+        ],
+        "EnglishSpeechAttributesUnchanged": true,
+        "ExportPreservesMachineValues": true,
+        "DemoStarts": true,
+        "SwitchDuringDemo": true,
+        "NoPageOverflow390": true,
+        "NoPageErrors": true
+      },
+      "pageErrors": [],
+      "untranslatedInExercisedNewPanels": []
+    },
+    {
+      "route": "clinical-simulations/modules/10-gown-diaper.html",
+      "checks": {
+        "ArabicDefault": true,
+        "LanguageSwitchKeepsSelections": true,
+        "PreferenceSurvivesReload": true,
+        "ReviewedPanels": [
+          "#sourceOpen",
+          "#quizOpen",
+          "#historyOpen",
+          "#routesOpen"
+        ],
+        "EnglishSpeechAttributesUnchanged": true,
+        "ExportPreservesMachineValues": true,
+        "DemoStarts": true,
+        "SwitchDuringDemo": true,
+        "NoPageOverflow390": true,
+        "NoPageErrors": true
+      },
+      "pageErrors": [],
+      "untranslatedInExercisedNewPanels": []
+    },
+    {
+      "route": "hub-to-seven-to-advanced",
+      "checks": {
+        "iframeLanguage": true,
+        "sharedLanguage": true,
+        "catalogueLinkCarriesArabic": true
+      }
+    }
+  ],
+  "failures": [],
+  "limits": [
+    "Browser testing uses desktop Chromium and an emulated narrow viewport, not native phones.",
+    "This is a language/UI regression test, not clinical approval.",
+    "Original English source quotations and reference titles are intentionally retained in the seven native bilingual lessons."
+  ]
+}
