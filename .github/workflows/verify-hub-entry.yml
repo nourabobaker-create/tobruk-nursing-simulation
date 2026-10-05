@@ -1,0 +1,49 @@
+name: Verify live Faculty Hub entry and identity
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/verify-hub-entry.yml']
+permissions:
+  contents: read
+jobs:
+  live-browser-check:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Prepare browser
+        run: |
+          npm install --prefix /tmp/hub-browser playwright
+          /tmp/hub-browser/node_modules/.bin/playwright install chromium
+      - name: Check live entry routes and bilingual identity without deployment
+        env:
+          HUB_BASE_URL: https://nourabobaker-create.github.io/tobruk-nursing-simulation/
+          HUB_TEST_OUTPUT: /tmp/hub-live-independent
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path('.github/hub-identity-check.cjs')
+          s=p.read_text()
+          s=s.replace("}catch(e){report.passed=false;", """}catch(e){
+          for(const ctx of browser.contexts())for(const pg of ctx.pages()){
+            try{
+              const d=await pg.evaluate(()=>({url:location.href,title:document.title,hero:document.querySelector('#heroTitle')?.textContent,version:document.querySelector('meta[name=faculty-hub-identity-version]')?.content,student:document.querySelector('#studentBtn')?.outerHTML,breadcrumb:document.querySelector('#facultyBreadcrumb')?.outerHTML,entry:document.querySelector('#faculty-first-entry')?.textContent,topLevel:window.top===window.self,referrer:document.referrer}));
+              console.log('LIVE DIAGNOSTICS',JSON.stringify(d));
+              fs.writeFileSync(out+'/failure.html',await pg.content());
+              await pg.screenshot({path:out+'/failure.png',fullPage:true});
+            }catch(diagnosticError){console.log(String(diagnosticError));}
+          }
+          report.passed=false;""")
+          Path('/tmp/hub-live-check.cjs').write_text(s)
+          PY
+          node /tmp/hub-live-check.cjs
+      - name: Preserve live browser report and screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: live-faculty-hub-check-${{ github.run_attempt }}
+          path: /tmp/hub-live-independent
+          retention-days: 7
