@@ -1,0 +1,52 @@
+name: Publish tested Arabic review release
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/publish-arabic-release.yml']
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+jobs:
+  publish-reviewed-source:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify original clinical-source provenance and exact locale packaging
+        run: |
+          python simulation-language-review/rebuild_locales.py
+          git diff --exit-code -- clinical-simulations
+          python - <<'PY'
+          import json,pathlib
+          r=json.loads(pathlib.Path('simulation-language-review/verified-browser-results.json').read_text())
+          assert len(r['results'])==18 and not r['failures']
+          PY
+      - name: Read existing Pages configuration without changing the publishing source
+        id: pages
+        uses: actions/configure-pages@v5
+      - name: Build the existing site with the same Jekyll mechanism
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+          baseurl: ${{ steps.pages.outputs.base_path }}
+      - name: Verify Arabic release is in the site artifact
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          root=Path('_site')
+          assert '20261005-ar2' in (root/'clinical-simulations/index.html').read_text()
+          for p in (root/'clinical-simulations/modules').glob('*.html'):
+              assert 'id="tobruk-ar-dictionary"' in p.read_text(),str(p)
+          assert len(list((root/'clinical-simulations/modules').glob('*.html')))==10
+          PY
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: ./_site
+      - name: Deploy the reviewed current main branch
+        id: deployment
+        uses: actions/deploy-pages@v4
