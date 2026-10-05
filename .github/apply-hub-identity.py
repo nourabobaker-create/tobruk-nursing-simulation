@@ -26,13 +26,36 @@ class LogoParser(HTMLParser):
     def __init__(self):
         super().__init__()
         self.logos = {}
+        self.brand_images = []
+        self.div_depth = 0
+        self.brand_depth = None
     def handle_starttag(self, tag, attrs):
         d = dict(attrs)
-        if tag == 'img' and d.get('id') in ('facultyLogo', 'uniLogo'):
-            self.logos[d['id']] = d.get('src', '')
+        if tag == 'div':
+            self.div_depth += 1
+            if 'brand' in d.get('class', '').split():
+                self.brand_depth = self.div_depth
+        if tag == 'img':
+            if d.get('id') in ('facultyLogo', 'uniLogo'):
+                self.logos[d['id']] = d.get('src', '')
+            if self.brand_depth is not None and d.get('src'):
+                self.brand_images.append(d['src'])
+    def handle_endtag(self, tag):
+        if tag == 'div':
+            if self.brand_depth == self.div_depth:
+                self.brand_depth = None
+            self.div_depth -= 1
 
 parser = LogoParser()
 parser.feed(student)
+# Both existing hub logo loaders fall back to .brand img in English II.
+# Match that exact source and order, rather than assuming the Student Hub's
+# initially empty <img> tags already contain the data URI.
+if not all(parser.logos.get(k) for k in ('uniLogo', 'facultyLogo')):
+    source_parser = LogoParser()
+    source_parser.feed((ROOT / 'english-ii/index.html').read_text(encoding='utf-8'))
+    assert len(source_parser.brand_images) == 2, 'Expected two original English II brand images'
+    parser.logos.update(zip(('uniLogo', 'facultyLogo'), source_parser.brand_images))
 brand = ROOT / 'hub-branding'
 brand.mkdir(exist_ok=True)
 logo_paths = {}
@@ -103,8 +126,7 @@ section = '''<section class="section identitySection" id="faculty-identity" aria
 
 '''
 
-# Serve the original logo files directly; the main hub no longer fetches the
-# entire Student Hub HTML merely to find its embedded logo images.
+# Serve original logo files directly instead of fetching entire course pages.
 for identity, src in logo_paths.items():
     pattern = r'<img\b[^>]*\bid="' + identity + r'"[^>]*>'
     def replace_image(m, src=src, identity=identity):
@@ -126,10 +148,9 @@ root = root.replace('href="student-learning-hub/#home"', 'href="student-learning
 root = root.replace('"brandSub":"Faculty Portal"', '"brandSub":"Faculty Hub"').replace('"heroEye":"Faculty Portal · Development Version"', '"heroEye":"Faculty Hub · Development Version"').replace('"heroTitle":"Faculty of Nursing Portal"', '"heroTitle":"Faculty of Nursing Hub"').replace('"studentBtn":"Open Student Portal"', '"studentBtn":"Open Student Hub"')
 root = root.replace('<meta charset="utf-8">', '<meta charset="utf-8">\n<meta name="faculty-hub-identity-version" content="' + VERSION + '">\n<link rel="canonical" href="https://nourabobaker-create.github.io/tobruk-nursing-simulation/">\n<script>try{sessionStorage.setItem("tobruk-faculty-entry:"+new URL("./",location.href).pathname,"1");}catch(e){}</script>', 1)
 
-# Fresh visitors using the old generic Student Hub address see the Faculty Hub
-# first. Intentional navigation from the faculty hub, reloads, and deep links
-# to learning content remain functional. No localStorage or learning data is
-# cleared. The explicit entry parameter also works when storage is blocked.
+# Fresh generic Student Hub entry goes to Faculty Hub first. Specific learning
+# deep links and intentional internal navigation remain available. No learning
+# progress, localStorage, caches, or user data are cleared.
 entry_guard = '''
 <script id="faculty-first-entry">
 (function(){
@@ -166,7 +187,7 @@ Published interpretation: the four symbol meanings in the Faculty technical repo
 
 The report describes the lamp (care, vigilance, professional responsibility), open book (education, scientific method, research), heartbeat (life, clinical practice), and wheat branches (giving, continuity, growth and University affiliation). The English wording is an explanatory translation. No meaning has been invented for the colours, and this page makes no new claim about formal approval.
 
-The image files here are byte-for-byte copies of the existing Student Hub embedded originals, not new or redrawn logos. The private full report and other proposed logos are not published.
+The image files here are byte-for-byte copies of the original English II brand images already used by the hubs' logo loaders, not new or redrawn logos. The private full report and other proposed logos are not published.
 
 ## Entry behaviour
 The site root is the Faculty Hub. A fresh visit to the old generic `student-learning-hub/` or `student-learning-hub/index.html` address (including `#home`) redirects to the Faculty Hub. Intentional Student Hub links from the Faculty Hub carry `entry=faculty`. A session-only marker prevents repeated detours during navigation and refresh. Specific learning-section deep links are preserved. No learning progress or user data is removed.
