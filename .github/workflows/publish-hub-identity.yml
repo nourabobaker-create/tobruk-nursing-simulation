@@ -26,7 +26,16 @@ jobs:
           ref: main
           fetch-depth: 1
       - name: Apply only the requested hub identity and entry changes
-        run: python3 .github/apply-hub-identity.py
+        run: |
+          python3 .github/apply-hub-identity.py
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path('index.html')
+          s=p.read_text()
+          if '/* Hub navigation pointer fix */' not in s:
+              s=s.replace('</style>','/* Hub navigation pointer fix */\n.hero::after{pointer-events:none}.heroBtns{position:relative;z-index:1}\n</style>',1)
+              p.write_text(s)
+          PY
       - name: Install browser test tools outside the site
         run: |
           npm install --prefix /tmp/hub-browser playwright
