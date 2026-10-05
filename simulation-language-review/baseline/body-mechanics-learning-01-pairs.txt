@@ -1,7 +1,0 @@
-body-mechanics-learning-01/app.js:5
-EN: تعلّم
-AR: تدرّب
-
-body-mechanics-learning-01/app.js:17
-EN: Proper Body Mechanics · Tobruk Nursing
-AR: ميكانيكا الجسم السليمة · تمريض طبرق

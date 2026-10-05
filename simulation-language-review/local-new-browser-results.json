@@ -1,0 +1,141 @@
+[
+  {
+    "module": "01-cpr.html",
+    "panels": [
+      "#sourceBtn",
+      "#termsBtn",
+      "watch"
+    ],
+    "errors": [],
+    "overflow390": false,
+    "missing": 0,
+    "languageSwitchDuringAnimation": true
+  },
+  {
+    "module": "02-choking.html",
+    "panels": [
+      "#sources",
+      "#terms",
+      "watch"
+    ],
+    "errors": [],
+    "overflow390": false,
+    "missing": 0,
+    "languageSwitchDuringAnimation": true
+  },
+  {
+    "module": "03-ecg.html",
+    "panels": [
+      "#sourceBtn",
+      "#termsBtn",
+      "#quizBtn",
+      "#checklistBtn",
+      "#helpBtn",
+      "watch"
+    ],
+    "errors": [],
+    "overflow390": false,
+    "missing": 0,
+    "languageSwitchDuringAnimation": true
+  },
+  {
+    "module": "04-ngt-insertion.html",
+    "panels": [
+      "#sourceBtn",
+      "#termsBtn",
+      "#quizBtn",
+      "#checklistBtn",
+      "watch"
+    ],
+    "errors": [],
+    "overflow390": false,
+    "missing": 0,
+    "languageSwitchDuringAnimation": true
+  },
+  {
+    "module": "05-ngt-removal.html",
+    "panels": [
+      "#sourceBtn",
+      "#termsBtn",
+      "#quizBtn",
+      "#checklistBtn",
+      "watch"
+    ],
+    "errors": [],
+    "overflow390": false,
+    "missing": 0,
+    "languageSwitchDuringAnimation": true
+  },
+  {
+    "module": "06-blood-extraction.html",
+    "panels": [
+      "#sourcesBtn",
+      "#termsBtn",
+      "#quizBtn",
+      "#checklistBtn",
+      "#recordBtn",
+      "#helpBtn",
+      "watch"
+    ],
+    "errors": [],
+    "overflow390": false,
+    "missing": 0,
+    "languageSwitchDuringAnimation": true
+  },
+  {
+    "module": "07-catheterization.html",
+    "panels": [
+      "#sourcesBtn",
+      "#termsBtn",
+      "#quizBtn",
+      "#checklistBtn",
+      "#recordBtn",
+      "#helpBtn",
+      "watch"
+    ],
+    "errors": [],
+    "overflow390": false,
+    "missing": 0,
+    "languageSwitchDuringAnimation": true
+  },
+  {
+    "module": "08-bandaging.html",
+    "panels": [
+      "#recordsOpen",
+      "#sourceOpen",
+      "#quizOpen",
+      "watch"
+    ],
+    "errors": [],
+    "overflow390": false,
+    "missing": 0,
+    "languageSwitchDuringAnimation": true
+  },
+  {
+    "module": "09-nebulization.html",
+    "panels": [
+      "#sourceOpen",
+      "#quizOpen",
+      "#historyOpen",
+      "watch"
+    ],
+    "errors": [],
+    "overflow390": false,
+    "missing": 0,
+    "languageSwitchDuringAnimation": true
+  },
+  {
+    "module": "10-gown-diaper.html",
+    "panels": [
+      "#routesOpen",
+      "#sourceOpen",
+      "#quizOpen",
+      "#historyOpen",
+      "watch"
+    ],
+    "errors": [],
+    "overflow390": false,
+    "missing": 0,
+    "languageSwitchDuringAnimation": true
+  }
+]

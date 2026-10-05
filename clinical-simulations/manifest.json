@@ -1,6 +1,6 @@
 {
-  "release": "20261005-1",
-  "description": "Ten original delivered simulation prototypes, unchanged HTML bytes.",
+  "release": "20261005-ar2",
+  "description": "Ten teaching prototypes with reviewed Arabic interface and shared language preference; original clinical logic retained.",
   "modules": [
     {
       "number": 1,
@@ -17,8 +17,17 @@
       "category": "emergency",
       "status": "teaching-prototype",
       "clinical_approval": "pending",
-      "sha256": "06e9f121c9d800c1bbe1215e47505e808f5652027b618801a9b25cfe9ebfa0e6",
-      "bytes": 132726
+      "sha256": "364617a7c65ae4a54f80739a9d8c0ede80b890bd7bee2f3eda15c602bf567a06",
+      "bytes": 231439,
+      "original_sha256": "06e9f121c9d800c1bbe1215e47505e808f5652027b618801a9b25cfe9ebfa0e6",
+      "original_bytes": 132726,
+      "interface_languages": [
+        "ar",
+        "en"
+      ],
+      "default_language": "ar",
+      "speech_language": "en",
+      "language_release": "20261005-ar2"
     },
     {
       "number": 2,
@@ -35,8 +44,17 @@
       "category": "emergency",
       "status": "teaching-prototype",
       "clinical_approval": "pending",
-      "sha256": "27405555e22c9a6747fbb02a763f2f383a6983562945b9c76118970e0131f47c",
-      "bytes": 157582
+      "sha256": "71a1b6dbcc050268cb996b555a109f4d5ae7eb860e401dc4703294c8043a9ca2",
+      "bytes": 272768,
+      "original_sha256": "27405555e22c9a6747fbb02a763f2f383a6983562945b9c76118970e0131f47c",
+      "original_bytes": 157582,
+      "interface_languages": [
+        "ar",
+        "en"
+      ],
+      "default_language": "ar",
+      "speech_language": "en",
+      "language_release": "20261005-ar2"
     },
     {
       "number": 3,
@@ -53,8 +71,17 @@
       "category": "procedures",
       "status": "teaching-prototype",
       "clinical_approval": "pending",
-      "sha256": "a6565b6dd4a8e62245debc88c89444016d8812296b3f49f05d673232e816bcf3",
-      "bytes": 140887
+      "sha256": "7d301ce8e2ec3c9635a79e5f7e82ea3523cd218d2cc573b7fb3d20a2e757881b",
+      "bytes": 254819,
+      "original_sha256": "a6565b6dd4a8e62245debc88c89444016d8812296b3f49f05d673232e816bcf3",
+      "original_bytes": 140887,
+      "interface_languages": [
+        "ar",
+        "en"
+      ],
+      "default_language": "ar",
+      "speech_language": "en",
+      "language_release": "20261005-ar2"
     },
     {
       "number": 4,
@@ -71,8 +98,17 @@
       "category": "procedures",
       "status": "teaching-prototype",
       "clinical_approval": "pending",
-      "sha256": "cfff1b15190b8982aea1ac4b946e6bc543e7d0b38c84b99633c10721475cf8cc",
-      "bytes": 162113
+      "sha256": "a97e9ece56da826f2ebcc1175a369c4ae14c161496bcb39ea93516b248d7b868",
+      "bytes": 293286,
+      "original_sha256": "cfff1b15190b8982aea1ac4b946e6bc543e7d0b38c84b99633c10721475cf8cc",
+      "original_bytes": 162113,
+      "interface_languages": [
+        "ar",
+        "en"
+      ],
+      "default_language": "ar",
+      "speech_language": "en",
+      "language_release": "20261005-ar2"
     },
     {
       "number": 5,
@@ -89,8 +125,17 @@
       "category": "procedures",
       "status": "teaching-prototype",
       "clinical_approval": "pending",
-      "sha256": "b4dda4aa8e54c6351dcdd77dfb6828968422297422b73488ad48339d5aca2581",
-      "bytes": 160374
+      "sha256": "68b7376cab906d65130c4c758d2bdb612b3ca52ca56b29612f9e6b4f87f99159",
+      "bytes": 272251,
+      "original_sha256": "b4dda4aa8e54c6351dcdd77dfb6828968422297422b73488ad48339d5aca2581",
+      "original_bytes": 160374,
+      "interface_languages": [
+        "ar",
+        "en"
+      ],
+      "default_language": "ar",
+      "speech_language": "en",
+      "language_release": "20261005-ar2"
     },
     {
       "number": 6,
@@ -107,8 +152,17 @@
       "category": "procedures",
       "status": "teaching-prototype",
       "clinical_approval": "pending",
-      "sha256": "0d3780119f14dd07107ef48cb6387c1f159173bcf0569133438433af5344795b",
-      "bytes": 164120
+      "sha256": "88878a3427602a4f35dec65643f998961950572e9d7969bf1471132321377018",
+      "bytes": 297838,
+      "original_sha256": "0d3780119f14dd07107ef48cb6387c1f159173bcf0569133438433af5344795b",
+      "original_bytes": 164120,
+      "interface_languages": [
+        "ar",
+        "en"
+      ],
+      "default_language": "ar",
+      "speech_language": "en",
+      "language_release": "20261005-ar2"
     },
     {
       "number": 7,
@@ -125,8 +179,17 @@
       "category": "procedures",
       "status": "teaching-prototype",
       "clinical_approval": "pending",
-      "sha256": "39b6edd2953c550bd223928cd6dd5ca72eafa9a3bddfef2bc848ea894f811037",
-      "bytes": 176397
+      "sha256": "242a8baef45746fbc3a615e1865b7891d6c1e3531a02163517a439bdb6561079",
+      "bytes": 317151,
+      "original_sha256": "39b6edd2953c550bd223928cd6dd5ca72eafa9a3bddfef2bc848ea894f811037",
+      "original_bytes": 176397,
+      "interface_languages": [
+        "ar",
+        "en"
+      ],
+      "default_language": "ar",
+      "speech_language": "en",
+      "language_release": "20261005-ar2"
     },
     {
       "number": 8,
@@ -143,8 +206,17 @@
       "category": "care",
       "status": "teaching-prototype",
       "clinical_approval": "pending",
-      "sha256": "10a92a8bf5982491d13d3a683e97b341fecb4ac2fcba887ce854dabfaba25022",
-      "bytes": 142253
+      "sha256": "cffccf53ec363a2c79e028a3b4e85df4879634eb7901d14cd24dafc7f2695774",
+      "bytes": 265029,
+      "original_sha256": "10a92a8bf5982491d13d3a683e97b341fecb4ac2fcba887ce854dabfaba25022",
+      "original_bytes": 142253,
+      "interface_languages": [
+        "ar",
+        "en"
+      ],
+      "default_language": "ar",
+      "speech_language": "en",
+      "language_release": "20261005-ar2"
     },
     {
       "number": 9,
@@ -161,8 +233,17 @@
       "category": "care",
       "status": "teaching-prototype",
       "clinical_approval": "pending",
-      "sha256": "bc4ca90e55209cb2cc432fb1c07d8745a7e77c4973e2cf3e3f83faa5b72557c9",
-      "bytes": 156685
+      "sha256": "faeccb07653a1587e3d0c370b2daaa139708009082e46b7516c53922107ae171",
+      "bytes": 270385,
+      "original_sha256": "bc4ca90e55209cb2cc432fb1c07d8745a7e77c4973e2cf3e3f83faa5b72557c9",
+      "original_bytes": 156685,
+      "interface_languages": [
+        "ar",
+        "en"
+      ],
+      "default_language": "ar",
+      "speech_language": "en",
+      "language_release": "20261005-ar2"
     },
     {
       "number": 10,
@@ -179,8 +260,18 @@
       "category": "care",
       "status": "teaching-prototype",
       "clinical_approval": "pending",
-      "sha256": "7a977eee1344ac97644ebd060d9532852552eb9b6aabea898a8f364600ca97cc",
-      "bytes": 171318
+      "sha256": "eeb54d3b411f435ec26c72e016f806a3dda7004b94f13a65a2ce93663482a4d4",
+      "bytes": 312731,
+      "original_sha256": "7a977eee1344ac97644ebd060d9532852552eb9b6aabea898a8f364600ca97cc",
+      "original_bytes": 171318,
+      "interface_languages": [
+        "ar",
+        "en"
+      ],
+      "default_language": "ar",
+      "speech_language": "en",
+      "language_release": "20261005-ar2"
     }
-  ]
+  ],
+  "language_review": "../simulation-language-review/README.md"
 }

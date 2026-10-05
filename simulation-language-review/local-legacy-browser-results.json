@@ -1,0 +1,96 @@
+[
+  {
+    "path": "handwash-learning-03/",
+    "errors": [],
+    "lang": "ar",
+    "globals": [
+      "onbeforeinstallprompt",
+      "prompt",
+      "chrome",
+      "nanoBoot",
+      "nano"
+    ]
+  },
+  {
+    "path": "nursing-skills/gloving.html",
+    "errors": [],
+    "lang": "ar",
+    "globals": [
+      "onbeforeinstallprompt",
+      "prompt",
+      "chrome",
+      "GLOVING_DATA",
+      "gloving"
+    ]
+  },
+  {
+    "path": "range-of-motion-learning-01/",
+    "errors": [],
+    "lang": "ar",
+    "globals": [
+      "onbeforeinstallprompt",
+      "prompt",
+      "chrome",
+      "ROM_DATA",
+      "rom"
+    ]
+  },
+  {
+    "path": "body-mechanics-learning-01/",
+    "errors": [],
+    "lang": "ar",
+    "globals": [
+      "onbeforeinstallprompt",
+      "prompt",
+      "chrome",
+      "BM_DATA",
+      "bodyMechanics"
+    ]
+  },
+  {
+    "path": "turning-moving-learning-01/",
+    "errors": [],
+    "lang": "ar",
+    "globals": [
+      "onbeforeinstallprompt",
+      "prompt",
+      "chrome",
+      "TM_DATA",
+      "turningMoving"
+    ]
+  },
+  {
+    "path": "patient-positioning-learning-01/",
+    "errors": [],
+    "lang": "ar",
+    "globals": [
+      "onbeforeinstallprompt",
+      "prompt",
+      "chrome",
+      "POS_DATA",
+      "positioning"
+    ]
+  },
+  {
+    "path": "wound-dressing-learning-01/",
+    "errors": [],
+    "lang": "ar",
+    "globals": [
+      "onbeforeinstallprompt",
+      "prompt",
+      "chrome",
+      "WOUND_DATA",
+      "woundDressing"
+    ]
+  },
+  {
+    "path": "nursing-skills/",
+    "errors": [],
+    "lang": "ar",
+    "globals": [
+      "onbeforeinstallprompt",
+      "prompt",
+      "chrome"
+    ]
+  }
+]
