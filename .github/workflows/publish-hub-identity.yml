@@ -1,0 +1,89 @@
+name: Publish Faculty Hub logo and first-entry update
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/publish-hub-identity.yml'
+      - '.github/apply-hub-identity.py'
+      - '.github/hub-identity-check.cjs'
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: faculty-hub-identity-publish
+  cancel-in-progress: false
+jobs:
+  update-and-publish:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 15
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+      - name: Apply only the requested hub identity and entry changes
+        run: python3 .github/apply-hub-identity.py
+      - name: Install browser test tools outside the site
+        run: |
+          npm install --prefix /tmp/hub-browser playwright
+          /tmp/hub-browser/node_modules/.bin/playwright install --with-deps chromium
+      - name: Test logo display, translation, mobile layout and entry routes
+        run: |
+          python3 -m http.server 8765 --directory . >/tmp/hub-http.log 2>&1 &
+          sleep 2
+          node .github/hub-identity-check.cjs
+      - name: Save the source changes without touching learning content
+        run: |
+          git diff --exit-code -- clinical-simulations nursing-skills english-ii e-library-v3 quality-cycle accreditation
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html student-learning-hub/index.html hub-branding
+          if ! git diff --cached --quiet; then
+            git commit -m 'Add documented logo meanings and make Faculty Hub the first entry'
+            git push origin HEAD:main
+          fi
+      - name: Read existing Pages settings without changing the publishing source
+        id: pages
+        uses: actions/configure-pages@v5
+      - name: Build the existing site with its Jekyll publishing mechanism
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+          baseurl: ${{ steps.pages.outputs.base_path }}
+      - name: Verify the updated hub is in the publish artifact
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          r=Path('_site')
+          assert 'id="faculty-identity"' in (r/'index.html').read_text()
+          assert 'faculty-first-entry' in (r/'student-learning-hub/index.html').read_text()
+          assert len(list((r/'hub-branding').glob('*-logo.*')))==2
+          PY
+          test "$(git rev-parse HEAD)" = "$(git ls-remote origin refs/heads/main | cut -f1)"
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: ./_site
+      - name: Publish the tested current main branch
+        id: deployment
+        uses: actions/deploy-pages@v4
+      - name: Verify the live public hub and entry routes
+        env:
+          HUB_BASE_URL: ${{ steps.deployment.outputs.page_url }}
+          HUB_TEST_OUTPUT: /tmp/hub-identity-live-results
+        run: |
+          sleep 15
+          node .github/hub-identity-check.cjs
+      - name: Preserve browser test results and screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: faculty-hub-identity-browser-review
+          path: |
+            /tmp/hub-identity-results
+            /tmp/hub-identity-live-results
+          retention-days: 7
