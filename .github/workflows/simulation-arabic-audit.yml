@@ -1,0 +1,26 @@
+name: Simulation Arabic source audit
+on:
+  push:
+    branches: ['arabic-simulations-review-20261005']
+    paths: ['.github/workflows/simulation-arabic-audit.yml']
+permissions:
+  contents: write
+jobs:
+  source-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: arabic-simulations-review-20261005
+      - name: Install syntax-only tools
+        run: npm install --prefix /tmp/tobruk-ar-tools acorn@8 acorn-walk@8 --no-audit --no-fund
+      - name: Inventory the seven previously published skills
+        run: node .github/scan-simulation-arabic.cjs
+      - name: Save baseline on the review branch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add simulation-language-review/baseline
+          git commit -m 'Record source-based Arabic baseline of seven earlier skills'
+          git push origin HEAD:arabic-simulations-review-20261005
