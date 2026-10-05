@@ -32,8 +32,11 @@ jobs:
               z.extractall(dest)
           PY
       - name: Apply scoped changes with per-file concurrency guards
-        run: python /tmp/arabic-review/apply.py "$GITHUB_WORKSPACE"
-      - name: Save the candidate on the review branch only
+        run: |
+          python /tmp/arabic-review/apply.py "$GITHUB_WORKSPACE"
+          rm .github/workflows/simulation-language-checks.yml
+          git restore .github/workflows
+      - name: Save content candidate without writing workflow files
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
