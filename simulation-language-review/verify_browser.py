@@ -26,12 +26,15 @@ async def main():
     await page.wait_for_function('(key)=>!!window[key]',arg=global_name)
     await page.wait_for_function("document.documentElement.lang==='ar'")
     checks['ArabicDefault']=True
+    if route.endswith('03-ecg.html'):
+     for electrode in ['V1','V2','V3','V4','V5','V6','RA','LA','RL','LL']:assert await page.locator('#electrode-'+electrode).inner_text()==electrode
+     checks['ECGIdentifiersPreserved']=True
     lang=page.locator('#simulationLanguage' if global_name=='TobrukLocale' else ('#language' if global_name=='gloving' else '#lang'))
     values=await page.locator('select').evaluate_all('(els)=>els.map(e=>[e.id,e.value])')
     await lang.click();await page.wait_for_function("document.documentElement.lang==='en'")
     await lang.click();await page.wait_for_function("document.documentElement.lang==='ar'")
     assert values==await page.locator('select').evaluate_all('(els)=>els.map(e=>[e.id,e.value])');checks['LanguageSwitchKeepsSelections']=True
-    await page.evaluate("localStorage.setItem('tobruk-simulation-language','en')")
+    await lang.click();await page.wait_for_function("document.documentElement.lang==='en'")
     await page.reload(wait_until='load');await page.wait_for_function('(key)=>!!window[key]',arg=global_name)
     await page.wait_for_function("document.documentElement.lang==='en'");checks['PreferenceSurvivesReload']=True
     await lang.click();await page.wait_for_function("document.documentElement.lang==='ar'")

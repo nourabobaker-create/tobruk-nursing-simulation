@@ -11,9 +11,12 @@ let language='ar',observer,scheduled=false,button;
 try{const l=new URL(location.href).searchParams.get('lang')||localStorage.getItem(KEY);if(l==='en'||l==='ar')language=l;}catch(e){}
 function translate(value,level=0){
  const s=norm(value);if(!s||language!=='ar'||level>3)return String(value);
+ if(/^\d+\s+ICS$/.test(s))return String(value);
+ if(/^(?:V[1-6]|RA|LA|RL|LL|ECG|CPR|AED|NGT?|pH|SpO₂|SpO2|MCL|ICS|IV|JSON|HTML|TXT|WebGL)$/.test(s))return String(value);
  if(dict[s]!==undefined)return dict[s];if(cache.has(s))return cache.get(s);
  if(/^[\u0600-\u06ff\d\s\W]+$/.test(s)||!/[a-zA-Z]/.test(s)||/^https?:\/\//.test(s))return String(value);
  let out;
+ const icon=s.match(/^([▶◖])\s+(.+)$/);if(icon&&dict[icon[2]])out=icon[1]+' '+dict[icon[2]]+' · '+icon[2];
  const numbered=s.match(/^(\[S\d+\]\s*|\d+[.)]\s+)(.+)$/);if(numbered){const tail=translate(numbered[2],level+1);if(tail!==numbered[2])out=numbered[1]+tail;}
  for(const t of templates){if(out!==undefined)break;const m=s.match(t.r);if(m){const values={};t.ids.forEach((id,i)=>values[id]=translate(m[i+1],level+1));out=t.v.replace(/⟦(\d+)⟧/g,(_,id)=>values[id]);break;}}
  // Generated records and labels consist of separate known text segments.
@@ -53,6 +56,8 @@ function boot(){
  html[data-sim-locale=ar] .metrics strong.text,html[data-sim-locale=ar] .metrics strong.response{font-size:14px;line-height:1.45}
  html[data-sim-locale=ar] .trial,html[data-sim-locale=ar] .orientation{letter-spacing:0!important}
  html[data-sim-locale=ar] input[type=number],html[data-sim-locale=ar] input[type=range],html[data-sim-locale=ar] .trace-box canvas,html[data-sim-locale=ar] canvas{direction:ltr}
+ html[data-sim-locale=ar] .metrics strong{direction:ltr;unicode-bidi:isolate} html[data-sim-locale=ar] .electrodes button{min-width:0}
+ html[data-sim-locale=ar] #qualityMetric{direction:rtl!important;display:flex;flex-wrap:wrap;gap:4px;align-items:baseline} html[data-sim-locale=ar] #qualityMetric small{font-size:12px}
  html[data-sim-locale=ar] table{direction:rtl} html[data-sim-locale=ar] th,html[data-sim-locale=ar] td{text-align:start}
  html[data-sim-locale=ar] .scope{max-width:100%;line-height:1.65}
  `;document.head.append(css);
