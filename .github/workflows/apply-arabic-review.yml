@@ -13,40 +13,37 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: arabic-simulations-review-20261005
-      - name: Verify the exact reviewed public teaching patch
+      - name: Verify the exact reviewed display polish
         run: |
           python - <<'PY'
           import hashlib,pathlib,urllib.request,zipfile
-          url='https://drive.usercontent.google.com/download?id=1CWeFCoREk_Ly6Wb051ONOiAoXHs3mC_5&export=download&confirm=t'
+          url='https://drive.usercontent.google.com/download?id=1zGiwjBqC2SKYkH_VOesERN-SiYTIFjcI&export=download&confirm=t'
           data=urllib.request.urlopen(url,timeout=90).read(5000000)
-          assert hashlib.sha256(data).hexdigest()=='c4f762686db151bb2690f58892ebbc63c5855859e0cea9e0c4ac0844879a616a','Patch checksum mismatch'
-          p=pathlib.Path('/tmp/arabic-review.zip');p.write_bytes(data)
-          dest=pathlib.Path('/tmp/arabic-review');dest.mkdir()
+          assert hashlib.sha256(data).hexdigest()=='b1c5c489eecef14885303e05ae45bf47ec054d28ef24a7654cac5ec45e72daac'
+          p=pathlib.Path('/tmp/arabic-polish.zip');p.write_bytes(data)
+          dest=pathlib.Path('/tmp/arabic-polish');dest.mkdir()
           with zipfile.ZipFile(p) as z:
               assert sum(i.file_size for i in z.infolist())<15000000
               for i in z.infolist():
                   a=pathlib.PurePosixPath(i.filename)
                   assert not a.is_absolute() and '..' not in a.parts
-                  assert i.filename in ('apply.py','patch-manifest.json') or i.filename.startswith('files/')
+                  assert i.filename in ('apply.py','manifest.json') or i.filename.startswith('files/')
                   assert (i.external_attr>>16)&0o170000!=0o120000
               z.extractall(dest)
           PY
-      - name: Apply scoped changes with per-file concurrency guards
-        run: |
-          python /tmp/arabic-review/apply.py "$GITHUB_WORKSPACE"
-          rm .github/workflows/simulation-language-checks.yml
-          git restore .github/workflows
-      - name: Save content candidate without writing workflow files
+      - name: Apply scoped display-only refinements
+        run: python /tmp/arabic-polish/apply.py "$GITHUB_WORKSPACE"
+      - name: Save refined candidate on review branch
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add -A
-          git commit -m 'Complete Arabic interface and shared language choice for 17 active simulations'
+          git commit -m 'Polish Arabic headings and complete source translations; preserve clinical label IDs'
           git push origin HEAD:arabic-simulations-review-20261005
       - run: python -m pip install playwright --quiet
-      - name: Test actual HTTP routes and language persistence
+      - name: Verify 17 real routes, clinical label IDs, and language preference
         run: python simulation-language-review/verify_browser.py
-      - name: Preserve the successful executed report
+      - name: Preserve successful executed report
         run: |
           cp /tmp/tobruk-language-qa/report.json simulation-language-review/verified-browser-results.json
           git add simulation-language-review/verified-browser-results.json
