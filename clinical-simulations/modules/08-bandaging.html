@@ -1,0 +1,710 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#1b4239"><meta name="description" content="Four bandaging techniques: an interactive clinical task-trainer learning prototype for the Faculty of Nursing, Tobruk University."><title>Bandaging | Tobruk Nursing Skills 08</title><style>:root{--ink:#1b4239;--muted:#687b70;--green:#28684f;--gold:#a68853;--paper:#f2f5ef;--line:#dbe4d8;--red:#9a493b;--cream:#fffef9;font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;color:var(--ink);background:var(--paper);font-synthesis:none}*{box-sizing:border-box}body{margin:0}button,input,select,textarea{font:inherit;color:inherit}button{border:1px solid var(--line);background:#fff;border-radius:8px;min-height:42px;padding:10px 13px;cursor:pointer;touch-action:manipulation;line-height:1.45}button:hover{background:#edf4e9}button:disabled{opacity:.46;cursor:not-allowed}button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible,a:focus-visible,textarea:focus-visible{outline:3px solid var(--gold);outline-offset:3px}.primary{color:#fff;background:var(--ink);border-color:var(--ink)}.primary:hover{background:#2a6450}.active{background:var(--ink)!important;color:white!important;border-color:var(--ink)!important}.secondary{background:#edf3e7}.small{font-size:11px;padding:7px 10px;min-height:34px}.danger{color:var(--red)}.brand{background:#fff;border-bottom:3px solid var(--gold);padding:12px max(24px,calc((100vw - 1480px)/2));display:flex;align-items:center;justify-content:space-between;gap:15px}.identity{display:flex;align-items:center;gap:10px}.identity img{width:48px;height:51px;object-fit:contain}.identity b,.identity span,.identity small{display:block}.identity b{font-size:12px;letter-spacing:1.7px}.identity span{font-size:11px;margin-top:3px}.identity small{font-size:10px;color:var(--muted);margin-top:3px}.brand-tools{display:flex;gap:7px;align-items:center;flex-wrap:wrap}.trial{font-size:9px;letter-spacing:1px;background:#f5eedc;color:#7c632e;padding:9px;border-radius:5px}main{max-width:1480px;margin:auto;padding:24px 26px 12px}.heading{display:flex;justify-content:space-between;gap:16px;align-items:flex-end;margin:0 0 18px}.eyebrow{font-size:10px;letter-spacing:2px;font-weight:750;color:var(--green)}h1{font-size:38px;letter-spacing:-1.3px;line-height:1.2;margin:6px 0}h1 span{font-weight:350}.heading p{font-size:13px;line-height:1.6;color:var(--muted);margin:0}.scope{font-size:10px;line-height:1.8;text-align:right;max-width:300px;color:var(--muted)}.method-nav{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-bottom:18px}.method-nav button{text-align:left;padding:12px 15px;background:#fafcf7}.method-nav b{display:block;font-size:13px}.method-nav small{display:block;font-size:10px;opacity:.77;margin-top:4px}.method-nav span{font-size:9px;margin-right:7px;opacity:.7}.workspace{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(345px,1fr);gap:20px;align-items:start}.scene-panel{border:1px solid var(--line);border-radius:15px;overflow:hidden;background:#fff;box-shadow:0 6px 26px #123e350a}.scene-top{padding:10px 13px;display:flex;align-items:center;justify-content:space-between;gap:7px;flex-wrap:wrap}.scene-title{font-size:9px;font-weight:750;letter-spacing:1.2px}.scene-title:before{content:'';display:inline-block;width:6px;height:6px;margin-right:7px;background:var(--green);border-radius:100%}.view-buttons{display:flex;gap:3px}.view-buttons button{border-color:transparent}.stage{height:433px;background:radial-gradient(ellipse at 35% 24%,#f1f3eb,#dce4d7);position:relative;overflow:hidden}.stage canvas{position:absolute;inset:0;width:100%;height:100%;display:block}#world{touch-action:pan-y}#overlay{pointer-events:none}.orientation{position:absolute;left:12px;right:12px;top:10px;display:flex;justify-content:space-between;gap:6px;pointer-events:none}.orientation span{background:#fafff4ed;border:1px solid #fff;padding:6px 8px;font-size:9px;letter-spacing:.5px;border-radius:5px}.rotation{position:absolute;right:10px;top:52px;display:grid;gap:5px}.rotation button{background:#ffffffd9;width:32px;min-height:32px;padding:4px;font-size:15px}.scene-caption{position:absolute;bottom:11px;left:12px;right:12px;background:#fffff4ed;border:1px solid white;padding:9px 12px;text-align:center;border-radius:7px;line-height:1.5;font-size:11px;color:#53664f;pointer-events:none}.view-footer{padding:9px 12px;display:flex;align-items:center;justify-content:space-between;gap:8px;border-bottom:1px solid var(--line)}.view-footer>div{display:flex;gap:5px;flex-wrap:wrap}.view-footer span{font-size:9px;color:var(--muted)}.bedside{display:flex;gap:7px;flex-wrap:wrap;padding:12px;background:#f2f6ed;border-bottom:1px solid var(--line);min-height:65px;align-items:center}.bedside button{font-size:12px;flex:1}.bedside p{margin:0;font-size:12px;line-height:1.6}.metrics{display:grid;grid-template-columns:repeat(3,1fr);padding:18px 16px}.metric{padding:0 14px;border-right:1px solid var(--line)}.metric:first-child{padding-left:0}.metric:last-child{border:0}.metric span{display:block;font-size:9px;letter-spacing:.8px;color:var(--muted)}.metric strong{display:block;font-size:24px;margin-top:5px;font-weight:550;font-variant-numeric:tabular-nums}.metric strong small{font-size:12px}.metric .text{font-size:14px;line-height:1.6}.safety-strip{font-size:11px;line-height:1.65;background:#f7f0df;color:#7c663e;padding:11px 14px;border-top:1px solid var(--line)}.safety-strip.stop{color:var(--red);background:#fbebe4}.learning-panel{border:1px solid var(--line);border-radius:15px;background:var(--cream);padding:22px;min-height:685px}.phase-line{display:flex;justify-content:space-between;align-items:center;font-size:10px;letter-spacing:1px;color:var(--green);font-weight:750}.phase-line strong{font-size:24px;letter-spacing:-.5px;color:var(--gold)}.progress{height:3px;background:#e3e9dd;margin:13px 0 20px}.progress div{height:100%;background:var(--green);transition:width .2s}h2{font-size:25px;line-height:1.2;letter-spacing:-.55px;margin:0 0 10px}h3{font-size:14px;margin:15px 0 8px}p{font-size:13px;line-height:1.75}.intro{margin:0 0 9px;color:#46634f}.ar{direction:rtl;text-align:right;font-family:Tahoma,Arial,sans-serif;font-size:13px;line-height:1.85;color:#5a7460;margin:8px 0}.no-ar .ar{display:none}.source-tag{display:inline-block;font-size:9px;padding:5px 7px;border-radius:4px;color:#526b48;background:#edf2e4;margin:4px 0 8px;font-weight:650}.extension{background:#f7edd7;color:#826226}.rationale{border-left:3px solid #95b394;background:#edf3e6;padding:10px 12px;font-size:12px;line-height:1.7;margin:12px 0}.rationale b{display:block;font-size:9px;letter-spacing:1px;margin-bottom:3px}.helper{font-size:11px;color:var(--muted);line-height:1.6}.field{margin:13px 0}.field>label{display:block;font-size:10px;font-weight:750;letter-spacing:.6px;margin-bottom:6px}select,textarea,input[type=text]{width:100%;border:1px solid var(--line);background:#fff;border-radius:7px;padding:10px;font-size:12px}textarea{min-height:86px;resize:vertical}.actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:13px}.actions>button{flex:1;font-size:12px;min-width:120px}.choices{display:grid;gap:7px;margin:13px 0}.choices button{text-align:left;font-size:12px;line-height:1.6}.choices button b{font-weight:650}.choices .done{background:#eaf2e5;border-color:#a1b793}.choices .done:before{content:'✓ ';color:var(--green)}.row{display:flex;align-items:center;justify-content:space-between;gap:10px}.toggle-row{display:flex;gap:6px}.toggle-row button{flex:1;font-size:11px}.feedback{border-left:3px solid var(--green);background:#eef4e7;font-size:12px;line-height:1.7;padding:11px 12px;margin:12px 0}.feedback.bad{border-color:var(--red);background:#faeee7;color:#844636}.feedback:empty{display:none}.move-card{background:#fff;border:1px solid var(--line);border-radius:9px;padding:12px;margin:12px 0}.move-card small{font-size:9px;letter-spacing:.6px;color:var(--muted)}.move-card strong{display:block;font-size:15px;margin:5px 0 6px}.move-card p{font-size:12px;margin:0}.move-progress{height:6px;background:#e5ebdf;border-radius:8px;margin-top:10px;overflow:hidden}.move-progress div{height:100%;background:var(--gold)}input[type=range]{width:100%;accent-color:var(--green)}.setting-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}.phase-chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:12px}.phase-chips span{font-size:9px;padding:6px 7px;border:1px solid var(--line);border-radius:4px}.phase-chips .complete{background:#eaf1e4}.case-card{border:1px solid #deceb0;background:#fbf6e9;padding:12px;border-radius:9px;font-size:12px;line-height:1.65;margin:12px 0}.case-card b{display:block;font-size:10px;letter-spacing:.7px;margin-bottom:5px}.below{display:grid;grid-template-columns:1.15fr 1fr;gap:20px;margin-top:20px}details{border:1px solid var(--line);border-radius:10px;background:#fbfdf8;margin:10px 0;overflow:hidden}summary{font-size:12px;font-weight:650;cursor:pointer;padding:13px 15px}details>div{padding:0 15px 15px}.below details{margin:0}.vocab{display:grid;grid-template-columns:1fr 1fr;gap:7px}.vocab button{text-align:left;font-size:12px;background:#fff}.vocab small{display:block;font-size:11px;color:var(--muted);margin-top:4px}.tabbar{display:flex;gap:6px;flex-wrap:wrap}.dialog{border:1px solid var(--line);border-radius:16px;max-width:780px;width:calc(100vw - 30px);max-height:86dvh;padding:0;background:#fffef9;color:var(--ink);box-shadow:0 30px 100px #09251b60}.dialog::backdrop{background:#16362980;backdrop-filter:blur(3px)}.dialog-head{padding:17px 20px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;background:#fffef9;z-index:2}.dialog-head h2{font-size:21px;margin:0}.dialog-body{padding:20px}.dialog-body p,.dialog-body li{font-size:12px;line-height:1.8}.dialog-body table{border-collapse:collapse;width:100%;font-size:11px;margin:12px 0}.dialog-body th,.dialog-body td{border:1px solid var(--line);padding:9px;text-align:left;vertical-align:top;line-height:1.7}.dialog-body th{background:#edf3e7}.dialog-body a{color:#256e53;overflow-wrap:anywhere}.quiz-option{display:block;width:100%;margin:8px 0;text-align:left;font-size:12px}.good-result{background:#eaf2e4;border:1px solid #adbea0;padding:14px;border-radius:10px}.records{padding:0}.records li{list-style:none;border:1px solid var(--line);padding:12px;border-radius:8px;margin:8px 0}.hidden{display:none!important}footer{padding:20px 6px 10px;font-size:10px;line-height:1.7;color:var(--muted);display:flex;justify-content:space-between;gap:16px}.kbd{border:1px solid var(--line);padding:1px 4px;border-radius:3px;font-size:10px}.sim-table{width:100%;border-collapse:collapse;font-size:12px}.sim-table td{padding:8px;border-bottom:1px solid var(--line)}.inline-note{background:#f5efdf;border-radius:7px;padding:9px 11px;font-size:11px;line-height:1.7}.speech-state{font-size:10px;color:var(--muted);min-height:18px}
+@media(min-width:1150px){.scene-panel{position:sticky;top:12px}.learning-panel{min-height:718px}}
+@media(max-width:1000px){main{padding:19px 18px}.workspace{grid-template-columns:minmax(0,1.1fr) minmax(325px,1fr);gap:14px}.stage{height:390px}.heading h1{font-size:32px}.scope{max-width:225px}.learning-panel{padding:18px}.method-nav button{padding:10px}.brand{padding:10px 18px}}
+@media(max-width:760px){.brand{padding:10px 12px;align-items:flex-start}.identity{gap:6px}.identity img{width:32px;height:38px}.identity b{font-size:9px;letter-spacing:1px}.identity span{font-size:9px}.identity small{font-size:8px}.brand-tools{justify-content:flex-end;gap:4px;max-width:150px}.trial{display:none}.brand-tools .small{font-size:10px;min-height:32px;padding:6px 7px}main{padding:17px 12px}.heading{display:block;margin-bottom:14px}.heading h1{font-size:31px}.heading p{font-size:12px}.scope{display:none}.method-nav{grid-template-columns:1fr 1fr;gap:7px;margin-bottom:13px}.method-nav b{font-size:12px}.method-nav small{font-size:9px}.workspace{display:flex;flex-direction:column;gap:14px}.scene-panel,.learning-panel{width:100%}.stage{height:335px}.learning-panel{padding:20px;min-height:0}.scene-top{padding:9px 10px}.view-buttons{gap:0}.view-buttons button{font-size:10px;padding:6px 7px}.scene-title{font-size:8px;letter-spacing:.5px}.view-footer span{display:none}.metrics{padding:14px}.metric{padding:0 11px}.metric strong{font-size:23px}.metric span{font-size:8px;letter-spacing:.4px}.metric .text{font-size:12px}.below{grid-template-columns:1fr;gap:12px;margin-top:14px}.below .vocab{grid-template-columns:1fr 1fr}.scene-caption{font-size:10px;left:8px;right:8px}.safety-strip{font-size:10px}.orientation span{font-size:8px}.dialog-body{padding:16px}.dialog-body table{font-size:10px}.dialog-body td,.dialog-body th{padding:6px}.dialog-head{padding:14px}.dialog-head h2{font-size:18px}footer{display:block;font-size:9px}.bedside button{min-width:90px;padding:10px 8px;font-size:11px}.method-nav{scroll-margin-top:10px}}
+@media(prefers-reduced-motion:reduce){.progress div{transition:none}}
+
+/* Keep instructions below the model so they never cover the moving hands. */
+.scene-caption{position:static;margin:0;border:0;border-radius:0;background:#f8fbf3;padding:8px 12px;min-height:33px}
+.quiz-option.done{background:#eaf2e5;border-color:#95b394;opacity:1}
+</style></head><body>
+<header class="brand"><div class="identity"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEA3ADcAAD/2wBDAAIBAQEBAQIBAQECAgICAgQDAgICAgUEBAMEBgUGBgYFBgYGBwkIBgcJBwYGCAsICQoKCgoKBggLDAsKDAkKCgr/2wBDAQICAgICAgUDAwUKBwYHCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgr/wAARCACSAJcDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD99KKKKACgnHNIzba4/wCMHxu+H3wT8NnxF491wW6ySLDY2UCGW6vp2OFgghTLzSMeAqgn8MmolUhCLbY0nJ2R10k6x9fzx0rjvEHxn8I2WryeGdC+067qsQBl03Q4hO8P/XV8iOH/ALaMua4jSPD3xu/aBK618Tri98EeFZebfwfp9zt1O8j7G9ukOYM94ITkYw0hyVHT6t4y+DH7PHhyPRLeOz0+KIfuNJ06IeY2erbRzknqzdfWpoqvipJU4/5szrVqGGpudWSSRr2H/CztZYSXg0/RYmOVhiJurgD/AGmO1Fb2Ace5rQXw/awHzNT1e7uCCCzz3W0H/gK4X9K+d/Gv7ZfjXV5Xg8DaPDpUBJCzXAEsxHrz8oP515L8Qviz4jOh6h4u+IPjm+ex0+1lu7+aeZikUUaFnYqvGAoJ4FfSYfhzGSjz1pKK8z5TGcYYKi7UouXnsj7au/FXwx0ImLUfEujQMOqz3kYb9Tmqv/C0/gyX48eaBk9/t0X+Nfnje/Hf4YR/CC/+Oui+IodZ8N2Fo1zcXui/6S2xSNw2ryGGeQcEd8VD4O/aJ+Efjn4KTftBaN4sgHhm1tpJb28n+Vrby+GSRequDgbepLDGciumOSYC9pV9bX6bd9zx58cVr+7SX3n6QWetfDfXhjS9d0q5OODa3kZP/jpzUreHN2ZNJ168tSeQUnEqfTbIGH5c1+bPwh/aD+Gnxl+Gkvxl8LXstpoNvczRTX+rxfZAhjwWcljgJ833s44PpXefBb9prUvE3h2Lxr8HvincXulSzSRwXMExkglKMUYAOMEblIzjBxWcuHqdayw9ZNtXXodOG43pTklVp79nc+177UfiX4f3XDaNZ69bJy6WUv2a6x/spITG5+rpT/C3xi8FeKNV/wCEci1FrHVo13S6NqkLW90o6bgj43r/ALSbl7ZrxXwH+2prVmyWXxD8OrdRng3mngK6+5Q8H8CK9VaP4K/tGeGxBcLZ6pFEd8Y3GO6s5McMrKRJC47MpB9DXh4zLcfgdZR0+9H1mBzjL8xXuT17Pc9AjmVzgH9KkVivYH614brGtfHD9msnUr+HUfiH4IiH76WCHdrmjx5+8VUf8TCMDqQBMApOJDXqHw8+Jvgn4qeF7Txr4A8S2mq6Xex7oLq0mDr7qe6sDwVOCCMEZrhhWhOXLsz1HBrXodH5h7AflTaAQRkUVsQFFFFABSO4Rcml+tedftP/ALR3gL9l34O6v8X/AB/dEWmnwEWtrEMy3tywxFbxj+J3bgenJ6A1FSpCnByk7IqMZTkox3ZlftRftV+Gf2ctAsraHSZ9e8XeIbj7J4P8I2DD7Tq112Uf3I1yC8h+VV5Pvg/AL9nDxDZ69/w0R+03rdvr3xCu4SYVH/Hh4ZgYZNpYqSQoAOHm+/IVySBgVy37EnwA8dazrd3+2d+1JarJ8QvFtsp0zSpvmi8K6YTmKygB+45UgyN1LcHvl/7S/wC0JdeJbyb4e+Cb1k0+JjHqF5C2DcMDyin+4COfX6UZXl+JzjEKW0ei7LuzjzfM8Nk+Hbb97b1fZGv8bf2sjavP4S+Fcqs65S51fqqnoVjHf/e6ema8GuJr7Vbx7/U7qW5nmO6SeaQszH3JpLbT0chMHHetO10/ywCEJHpX6XhMHhsvhamterPyfGY/GZnV56z06LojO+xhIXkZd2FJ6+lfImi/8FRf2YvjHYa78F/jFpWseD4dXtLvSZ9SBFzCEkV4WfzEXKHBzkoQO9ew/t6ftgap+xj4F0Lxbo/gmz12TWdYazktrq7aERoImkLAqpyflA9Oa+QNI/a4/wCCb/xrmkPx6/Y1TwzLduzXGt+FyWVHY8yN5Plt3J+6x9jXgZ1mzhXVClUSaWqknZ38zw8ZV5aipRkl3TWh1vw8+BnxZ/YC8Qr8b/g74ug+JvwY1bA8TQ6Y6yOlmeDO8SllZowxO9OCAQwUHj0jW/2bfBXiP4gwfA74c5j+F/xaktvGN5/Zr7bdIrQb54I8HCLO72R4+6C3pxgfCv4IX3wdsJ/jx/wTb+NA+Ifg7aJPFPw11S8EjTwEHcEUhSsu0ttDqrcYy/3a7z4a+PvBnibwJL8MfhtqU2m+HvFcVzf+H9dlh2N4W0o5fWLN3I/cPbyKURCf+XiLGQma8jDRopcklyrdLdeaT7Pt0M6VGKXK1Zdr/k+xwfxB+FHjL9uvWZvh/wDDjXIPAHwF8FyGy/tG2iCR6vNAxEjxJlVaJMbQzHaMFvmJwIIf26f2Mf2HPhxa/Aj4Q6vrPjz+xnm/f2hjWNpHdnbdOVVW5Y/cVhjua2vH3ww1D9o3wDDrHxB+Jq/CD9nfQ7eO38O6ZE6213r0EYwlzKH4VH+8isGJHzbCTurxLXfjx/wS4+C4bT/g1+yze/ESa1+U6x4jeQQSMP4sS5JH/bNRz0qZYmrh5OrSkoy/mlq7f3UtkZVYOi3OLSv1f6I/QP4eeIV8feANF8dpp7Wy6xpUF6Lcy7/KEkYfZuwM4zjOBW/omsa54X1VdZ8PanNaXcRBSWFyp+h7Eex4r50/4J+ft2X/AO15rWv+ET8KdN8N2XhvTLeSxTT71pFKMxQJtKqFAC8YFfStzYKMlVI4r7bAY2lj8JGSfNF76feeph589GNSm/n5n0H8Dv2ptM8aPF4R+IHlWeqN8kFwOIro+n+wx9Oh7Vzfxo+BPxG+B/im8/aO/ZBsUe/kYz+L/h15gjsvEy5O+WPtb3oGSsgGHI2uDkEeHXdsVbeu4YOQR1B9a+hP2X/2hpNY8n4beOr3deY26bfSNkzAD/Vuf73oe/1r5rPuHocntsOtF969PI/QOHeJ5ymsNinr0b6+p337O/7RPw6/aS+H0HxB+HWpO8JlMGoWFzH5dzp10vEltPGeY5EPBB+oyDXoGQeRXx1+1t4C8Yfsa/EyX9vL9n7SZrrSJCifF7wbacR6lZA86lEg4FzEDkn+JAc9Dn6k+F/xH8HfFrwHpfxI+H+uRajo2s2aXVheQ/dkjYZH0PYjsQRXyOHxEpTdKp8a/Fdz7qtTSSqQ+F/gzoaKKK7TAiuZQkZbeBgZOTXwr4Ull/4KRft83fiW7JufhL8DdTEejxNzDrPiEY3TEdHSLBx9FP8AEa9X/wCCqH7Tl9+zR+ybq+qeE7h18T+J5l0DwxHFzIbq4VhvQdSUQMwwOuPUV0H7E3wC0L9i/wDZD0HwBdpHFc6ZpTah4iuv4pr2QGad2J6kMSo9lAryK98bjo4aK92OsvXov1OyDjhcJKvLRvReXd/oXf2rvjCPBmgL8P8Aw5cBNS1KIi4kjPMEHQ/QtyB7ZPpXzTYWpYBcHjqcVf8AGni3UviB4vvvFeoyEy3k5ZFJ/wBWnRVHsAAKNOtS3zD055r9ey7BRy/Bxhb3nqz8VzbMJZpjpTfwrRf15lqysEjw2OfpWlb27YyRnj0rhfiL8fPhX8ItW0vw94z8URx6prFzHb6XpFuvm3VwzuEUiNeQuT944HBr0uztdwBxjtnNZ/W6NacoU5JuO9unqa08BVp0o1KsWlLa58O/tX/t1axH+0Bdfsz/AAw/ZBsviH4h8O3amCXWLP7aiSvEjGSOFEJQAOAXJFd38O/HX/BVa50lLrXP2RfhpDp+0/8AEol1j7HNs/uhfMkQEjjBArzj40/8FF49I+OmtfBz/gn18ELXW/HWvar9n1nxW1j5xvLlFEXyRjl1TaAXciMbSduPmqt8UP2fNW8I20PjT/gpV/wUs1PT9SvIhNH4R8LXRjkTvtSOP7wHTKwhc/xHv8TWxcpYmcudys+llFdld7nz6nKWIlJScreiS+bOp1cfDq++Ilr4k8XfCbXP2bvifHPjTPFsFskmgapIT/qbiWH9zIjHGVkCHnhia19R8O6zbXuvx+JvCsMUmtazbTeM/hxowJ/4SzV8f6NcafKePsF1tWa4J5UWrB/4q84+HPj/AOBeg2c0PwH+OH7REukldt5ca54Gk17RJk5B8+CSM5jOTnG1sZIINet6BfxX3w/luPCOu6RL4VFszGbSrl4NMjiYr56JqUp83RoCQvnWTK0oxthOGyJp14z9TqowhV3scr4p0/wHf/E1tc+MHhLVPjz8TLU7bXwL4StTL4d8KjtAzviFWXozyFnY/wAArs9b8bf8FQLPSfN+HX7IXw20mxji/daJP4hWScJ/c2xvHHn26V5d44+Knwsv9Ii0Dxd8UPjKnhq2UrFZ/CH4dzaPoVuv+zK0fm3AH/PR2O7rgVh/Db9nT4R/Ga9a8/Ya/wCClfirSfFUeXTw94u1CVLiVhyQUJRyM4yVSQDuKlYi8rR/BpP8dzCbcp2jr6NJ/iTeAP8AgoB8TfhR8eLD4dfH/wDYd0/wjrfinU7XTZdU0Sy+xvMZZlRWJdSs6qz54f1r7smsjtOQBgHBxXwlB+3X8VPgx8QbP9m3/gqV8I7fV4rLULe80rxfBZruikjkDQ3i+WAsyKwBLx7WGCCpORX3NqvjDw/D8P5fiTpc76lpY0htRgk09DI11AIvMBjA5Yleg75r3skxSVOalUvy9GkmvU6sug6/NTUru+1rNFO/ssDCqDxk8VlSrLayi5tpXjkicNG6nBVhyCD2qp8Jfjj8Kvj14cPij4Y+KrfUYFwLm3ztntmI+7LGfmQ/Xg44JrX1O3JQlV56ivpcLiqGMpKVOSlF9tjXGYWvhKjjUTjJH1L+z/8AE+z+Mnw+k0/X1ik1C1T7PqlvKoImUrjdjuGGQffIr5l/Zh1O7/4J+/tp6n+xB4jvHT4eePRLrXwouJW/d2dyzZuNPyegyWKj6d3rQ+CXxAk+GnxGstcklK2kzC31BSeDGxxk/Q4Ofauo/wCCt/wE1X4s/suyfFD4e74vGHw0v4/FHhrULUfvU+zjfKi46goC2OQTGtfm/FuWTwNb6xRXw+8vTqj9S4RzVZjhfY1Xr8L9ejPq9J0K56fU0V5b+yB+0FpH7Un7N/hT45aS0Y/tvTFa9hRgfJukJjmjOOm2RWFFc9GpGtSjOOzSZ684SpzcZbo+U/2rX/4al/4K5/Cv9m5ZBPonw20tvFOtxYyguch49wPHH7j/AL+Gvpz9sXxf/YXw3g8NWsxE2r3IjcA4PlINzfgTtH418vf8Ezf+Lwf8FFf2j/2h7oiU22qLoNhN1CxJKVIUn2to69c/bR1uS6+JVnonmApp+nKcD+85JP6BaXBuG+uY913rzSb+UdEefxliHgsrdKLtaKXzerPKLSIEjbk5GMY5rx+0/awu9d+JPjeTwlD5vhb4ZaYw1RoYfNk1nVJGaOK2jODhVdSPlBLNj+Hg7Xif413Gk/HrRfgtowi33PhvUNV1ORx8yrGmIUX0JYOxP+yK+av2WPH/AMUNB+FR+En7NHhyHVfHnjLWJ9T8Qaxcxh7fQrXfsieVj8vmHYzgHON3QkgV7fEnETjjI4ehJ2TkpW1batZL5s+Z4byBSwcsTXim2ouN9km9W/kj1P8AY5/Zf1rUPjdJ+0J+1BrsNz8QdSifUtH8KyyB5NMt2IUTSJk7CN2xE4C47sOPta0tn8oRkdBzXkf7LH7NsHwM0e91PxB4nu/EXi3W5Fn8SeJNQcvLcyY4jQtysSknav48dB7TZRfKDgHI7V25FgP7Oy204WlLWV3du/dl5xi1mONdpXhFWVtEvRHwp44+HGq/8Etf2Z7/AMZfC7w9beIPi18SPGR0y01eOx817Z7lppY4oVIJYIifd6PI2SMACvOP+FEeN/2V7zwv4p+Knw9HxW/aO+Ld3Inh+w8RN9rsvDu0qGnl3ZWaRd6k5wiYPICkt+murfDnwj4vv9H1TxJoUF7caFqIv9JeZc/ZrnypIhKvbcElcAnpuz1Gamm+EfhrVPinpfxYv7WOXU9J0a50+wZ4h+5WeSJ5GU9VY+Uq8diR3rzcTlqcrw0S2Xbu/U+efD6qSvF2Wll27v1PgHV9Z+EPwM17b+2N+0r8QPij4rtJYz4h0XwHfz2Wh+F9zBfLdbWSNRgnGMgkr90Hr9q+G/gJ+zh4h0zRfid4d8JaXeWi6bHcadq0l28qTwFQyTyM7kTOByJJdzpk4I5ryr9qv9lnwb8G/wBhf4ljTdY1PTrzXtTuta8Q63o2k/aXu5Jp3cRTxgFmtlVwhP8AABv9av8A7MV/pmqf8EqJfFA+EmhpbQeF7gtokfidUsNQCqN8jymXNsGO4yREgqwcY5Gfm8NjcVgsbOhiLfA5JW7dG+p9/T4byj+zqc8NDXmUW3re/U8J8T/EX9kH4zfEm/0X4Y/tF/FX4X6sNXl07SPG8fiO8n0PULpD939/M6Mpz91igKkdMivOvGn7Pfin47/Gi4/ZH/aJ0Ow8M/GrTbGTVfAPxe8NWQtrfxJbxDcEuI4gg3cMfMX5lKkY4w3t37AP7N/gz9pb/gnd4h+H/iHUL25ttf1K5a0judJ8i00O7A3IbHIy4R2G6UE7uUBwpr6w8S/BLwv4l8VeDvHOrWSjV/B8srWF7Gg3lZbWSCSIt12HeGx6xrW+U0sXmFJVq1rSs1bT5evmeJxLwzlSqqOFVpJ2kujX6M+BPgL4T8b/ALePwk8e/sXftp6O8fj34cSRLpPiu4hBvYTIsgikZuPNUFBkgjzUcE8/NX2N8JvAupfD74Q+G/AOtPFNd6LoNrZXLwnKO8USoxGeoOD1ruX8B+FrLxXeeO7TQraLWb+0itb7UY4sSzwxFmjV2/iCl2xnpnFR38AUgqo6dq+1yzBqjFylrJ6X7rpfufPYfLlgruTvLa/W3T5+Z8A/GH4G+Iv2av2jr39pH9lW6GpabZ3yt4/8Fae2ZbOKUB3xEOWiZSXXA+RhkZA49S8P/tE3uk/tKXHwE8dX6XFp4i09Na8C6sUEZlt5VLG1cAAErtba3UgYOTjPTftYfsxeKfHeqwfGX4FeNJPC/j/SbcpBexSbINThzkW9yOjDrgsCBkgjHT5Y+I/xI8S/FX42fCqT4p+FD4Y+JHhHxXbaVrWnBNiXtrJIGjuYezJuVwQCQN/Bwa+NxFavw1jpeyThGU00t4NPSSXZ+XfY++hQw/EOCXtWpOMGm/tppXi339ex9pXaMQYyuM9OK+uvgB4it/id8E7S31dVuGS3k0+/jcZ3hQUwR3yhH518B/Cr42R+PfiR47+GF7JGb7wjr5ihdBjzLRwChPurBlPsB619ffsMa5JjXvDDvlVeO5jH1yrfyFfcZpVw+bZN9Yp6pNr9Gj4zIo4nKc7+rVVZyX/BTPC/+CQmpXnwQ+Mvxu/YT1a5by/BXiltS0CGQnIsp2P3c9seS3/bT3orK+JmpJ+z9/wXT0zxWqiGy+IXw6kS9AOFkkhgbr7/AOix/lRX5ZgMasJSlQm/hk18r6H63iqHt5xqr7ST+fUu/wDBADGtfCT4n+PpTun1f4k3Dyvjr+5ST+cp/Ou4/agunu/jlru5ifKaGNc9gIErif8Ag3uC2H7Ovjzw7McT2HxEuI5h3B+zwL/NT+tb37aWoXvh3x5441myQtcWti9zAo7storL+or6nw9qwpYGNSXSDZ8d4h05VKns47uaX4Hxfrl1daf/AMFW9KsbxnW1vvDTW5djgJC1lMWOTwAGBNWfgjdW/wAVfixB+zj+yza3GkfDHwpqIuvG3iaI4udfnRshDKMZR2XGBjKZPAwKw/iTF4m+OPwn+Gn7RnwjsRe+J9a0qXwjq7KTuhmuYmhMrEA7SjeacnHyyA177+yHbfD/AOFXiS//AGX/AIZ2sV0ng7SYJvF2uD711qs7cpxwMKjEg/dyq9jXl4PDzxOdOLdqc586l1lzJNRXlpqdtXE08NlEWlepCCg49E4uzk/v09T6Q0lFQBAuOecVu6bGo4A78c1h6YQCD2rc06RcjDD6mv0qvdQZ8PQvJm3p8e1iV/GtvSIBM6rt6nnPpXAXXxY8JaV4th8BJdPd65cwGePS7JN8oi+b943RUTKkZJHJA7ityDxV8Rl2t4Y+GMEkgOMa54hS0U/jBFcnH1H4V4s5N7HvUIuyvoemRaHYajYy6Zf2sc1vcQtHPDIoKuhBBUg9QRX5OfDK4utN/wCCNn7Sel2dzJHa6f8AE2G3tYUcgRRNfaeGRR2UjII9zX6Z+HvGn7Q1vdKfEHwR8Otankvofjt7mbH/AFzuLG3Qn/toK+TNM+Bv7Jvh3wt8Sv8AgmBF4r8fz+JvHs8fjDUNOXR4heRwLLBKDA5/cPHvhEe4tjJYZyK+LzvAYjF1oyprpJfetD7HKsTh8PQcZd4v7mfVX7Ofg/TPDX7NngHw7Y2qQw23g3TEEca4AYWseTx3JOTVvVYY4WPl9j/Wubsvip498B+B9L0Cy/ZX8e3dtpenQ2kbJe6K07JFGqBmT7eOSFBwOfauc1X9obUr/TZZ9F+AXj+fUFUmPTLjRI7Yu/8Ad86aVYQPffj619Jl8JUcPGL6JL8DwseuetKSd7v8zrb+JQ29RyR61hXg4IPuDXNfBX9oHS/jF4Ssb/XNIXw94jkN5Dqnha6vllmsbi1ufs08e5QA4WTbhh1WSM4+YV0t8xwQV/iycV7uDnzO585ioWnqjmPHOgWHirw/e+GdUQta39pJbXG04bY6lWwexwa+GvCniZdL/aF0T9lz9sC1e41nw5rUNx8OfH64Wa4iWTMMM7sPnWQKFz/eyDzhq+9NTIA2MQB618f/ALWXhjQ/2mPF3ib4Jxwx6f8AELwXaQ614Fvozh72AorvEO7HepHHQ7T2OfG4poyVGniKb9+L+F7S629dNDvyCtFVqlCa92Seq3j0v6a6nnv7Gh1XVP20fjLr0iv5C3t1FMT0DfbW2D/vlTX6JfsS3rRfFi9tEbHn6G5YepWWP/E1+bnhHxJrHwi/ZhuPizriCx8ZfFj4iwSw2yIVdYRdozrtPIXCy/8Af0Cv0d/YoheT4w3Eqg7YtCmycf8ATWIVlw1OMOGa+Hl8Xxu/TnbaX3EZ5Bz4loYiHw35F58iSb/E+cv+C5Osy/Dz9qz4MfEzT5TFcx6Lq8JkQ4ONm0f+jj+dFV/+C/lhL4k+OXwb8L6eS1zJpusOEUZbGIz/ACQ/lRX4pn9fEUs3qxp7X/RH7LlNOlPL4OS/q53/APwR6cfDb9pn9o/4ATgodO8aHUbWFjz5TyzLnH0KfpXpX7a+gJ/wtGaSaL9zq2lx7x/eAUxt+gFec6qq/sxf8Fx7bW7hhBonxm8Fm3J+6hvowvpwW3W69f8Anua9/wD2+PBN9q3gO08T6PM8FzAs1obiMfNF5qnY4+jgfia/VeDasMLOdCa+Fyjbyeq+8/NuMsPPE4SNaG/uy+7Rn5Qfst/FfxT+yP4h+L3wW15D/wASbSL3V9Bjn6CeFCVdc9nRo2/4DXun/BL3wVqOhfBG7+Jfia4eTVvHetS6lNLOf3k0aHYrc8nLF2z/ALdeP6rbJ+1z8PtTuNKht7P40eDNLvNK1zTCoQ6zbNG8D4HG4kEspz8jnB4Ir0iy8Z3Pwt/aW+AfwGtVa3t7XwHPb6jbMNuJpLYbdw9d9t+bGuTK28DmNOrOXNRg2oPs5ytZ+cdVYvMP9twc6VOPLWmk5+kI3uvKWjPsvT3BTj0Bzms74vfFbS/gt8JNe+KOqQiWPR9PknitvMCm4m+7FCpPRpJCiD3apNLuwOGbBHBGK+E/+C8P7QWr6b8M/DP7LngTVRb6t4v1GKe6kEhUKrSfZ7VGI6KZ3afPYWTntX6XjKns6EmfEZbTdWsos73/AIIf+Etd17wr4r/aT8W65cand+KtXuTa3twzMGiklEmY89EkRLefA6eeR61+gtpc+UQw6EflXgn7E/w70H4G/su+D/B9rAun2sOkxzsLhRGV8wb1D56MEKKfTaB2r02P4u/DGGf7LJ8S9A3jqh1mDcPw3146jywV9z2pVfaVWz0/StcMSBJDx2b0rxC+0rw9cf8ABTez8fmCP7bB8DpbTz9nzbDq4OM+nX8zXe6R4q0nWoDLoWsWt5GMZktrhZAPxUmvPp9O1MftqweJ/IP2Z/hY9qZewkXUlfH1w9YTpKTR0060oJ6nt2q600ylYzwO/TisC7mByxJ/PrWZrvjbw34ePl+IfEdjZFl3It1dohYewYgn8K5+T4z/AAsnm8p/iJoqN6S6lGv8yK3UUtDGU5Sdz8+v+C2PgvxB8K3s/jz4O1K+06LT/Fem+KZbjT5CmDC8NlqA4xuOz+zroKeC1m7Hoa+3Pgz8WNJ+Nfwh8P8AxS0WaOSHW9LjuGML5VJcbZEB/wBmRXX6rXFft7fC3Qf2gf2WvEegSxJqVtHptxKfsm2QyWzQSRXIiI4MnkSzFMH74Svkv/ggl+0Bqep/CLxB+y9441QvrPgq/la3SRyd6rM0Nzs9vNVJj/1+Ct8MvY4hJ7M58RzVsDz21i/wPvvVWBGMjPrmvh//AIKRR658IPjN8Pf2rvBEu2bTbn+zNSMTcMFYuEbH95GlQj0r7U1KfBC7uOjH2r4B0DVPFH7UH7LXxf8AD2laW+s6xD8VEvtCtn+cgTXcO1QT91QgkB7bSe1eXxfNTwscLBfvJXlG294al8NRlHFSxUv4cbRlfa09PwI/i1qmqftT/wDBQPR/BWgQN/wj3gRopZ0jH7uNo2E0rsOgLSbI/wAB71+nH7CejM2sa7r3aO0jtlY/7Tbj/wCgivzkt73Sfgl4r0/9nP4Y6omqfEnxhrUd94+8RWq/8eSF/NmRSPu4UMFTPAYk8kCv1X/ZJ8K3Hhn4Sx6zeRCOXVZ3uWzxhPup+i5/GvOyiao5TipVHerVkuZ9Fp8PyW9juxlP6xnWFVONqVOL5V1f95+r2PkD9sXQ4/2gf+Cy3w7+E8aefD4Z8BXl1exg5CGWC4xn0+9H+YorV/4J2I/7Q3/BSX49/tgSRtNpumzx+GfD87LlNsYSNyh/3bdD/wBtTRXx+Gy2jmHPiJ/ak7emy/I+1xGKnheWlF7RV/Xc7P8A4LNfBvxLrHwN0L9pv4a2p/4Sr4ReIYNetZUX5mtFYecvrgEI59kb1r6C8G+LfCX7Wv7M+m+NPD86tY+KvD8d1ZsCCYpWTIH1SQEH3WvQPE2g6T4l0O88Pa3Yx3Fnf2r293BKuVkjdSrKR3BBIr4m/wCCf2ran+xd+0V4r/4Jx/EC8c6PJcS698J9QuW+W6sZWLy2oLdXjYkkequa9VN5dmirbRnb/wACW3+RwTpwxuXypS1cb/8AgL3/AMz5D/bJ/ZI+JehfE0/tB/s/NLZeMNGuC2r6ZbHa1yY8KXQcB2wCGQ/fHvwfONS+NafF39pD4OfH9oFsNUs9Wt9C8W6W2VazvFmIztPISRZHIz02kHkV+kf/AAUo/Zu8aeINIi+Lnwc146XrtnOJ4pusPnqNoSZejRyD5G9CFPWvzm8WfFD4AfFzxevh79p7wVe/DT4kaTcoY/E9hDutnmQ5V5B1dCQCNwIx0cVrnmGoRrKtQl7NTcZNP4HNO7s/sv13PJyetiaUZUMRH2jpqUU1rNRa0uvtL01R9efCH9ohfFXxu8bfAvxNbw22r+Gr1ZtP8kHF5p8iqUfk/fUsFbHHQ+uPzs/4KKfsrf8ABQb9pj9qjWPir8N/hhd2sGm+IJLbRpNT017iGTTre2FvbsgRXQq5lvJCDggzDgGvff2nvEV18Gf2q/h7+2F4Z1m31Lw7q1nBp+vappkgkt5GAMcvKkgK0ThlyTyh9K+zNH+KHgu98aTfDy31+D+14rGO+Wxdtry2z/dmTP30yCMrnBHOOK+nyrHf2j7XDYqdpU5aO+6esTw8Vh5ZY6eJw0OaM46r+VrSR+SSfsa/8Fr9Y2FtcgtX2/8AH5D4Is2nXjjEkyh/x3VW1T/gml/wWj8UDGrftE/FAKxH7rT72O3jA/3V1CID8q/aWyvgRy2VHana1rF9p2g3mp6YIXngtJJIIrklUZ1UkBiOQMjnFezLLYWu2zkp55NtLkR+Lnh7/glf/wAFnvA8r+LPBP7SPxWi1SCNmhi/t+AGRgOFJfVyME+oP0rxPQP2vv8AgvNr37SL/s32nxV+JbeO/tDaVcaObSIPBjO5i7II0UBS3m7gpAzvPWv2w0H9rDxV4p8F/CZ9P0jS7DXfid4an1RZL0u1naPBaRTvCMFWYsZQBkg7Uc9sVyGmf8FGW8RfDjUvitoXhWztrPwx4Q0fXfEGmX0jefdR3c0scyWrggEReRJtcgh2wuF61xTwsE7czR6cMdWnvTR+a/iP/gk1/wAFhPGt7c654u+PnxPa9uJN8z3GsJ87H/rhqjDr7UzQf+CXP/BZjwEftHhj9pn4l2rA/cXVrtlP1UXTg9K/Vrw3+2Jda94s0i4l0W2Twx4g+Iuo+DdNnVm+0peWsc+Lh+dpjeW1njCgZUbGyckD2ma6i+8zbjW9HL6VRX5mzkr5pXpaOCR+MEH7Ln/Bc7RoJYn+KV9dPMhV7qbwqvnsCCOZUj8w/wDfVbn/AATx/ZW/b9/Zh/a1sPih8Tvhtqup2+ueJYI9au7DSGt4re1uIjb3MsgbYAg22spwCSbf1Nfrpd3wXLH8K8k+Kf7TngTwd4N8beIdL1iO9l8F6WZb9oGDRJdMD5Vtvzgys23KjpuGcU69HCYKHtas7cuur7amFLMcXjP3NOmnzWWi76GRqX7ScXiL4veM/hv4ZWFtP8D+FJrvxDqDZJF4w/dwoc4G1QxY/wB7A7GviL9nz46+L/gl8EtQ8J/COyk1Lx58RtYaTT4bSLzHsbWMFPO2j/lozGTaDwAu48AZ9N/Zh8MR6R+yR46+Inxk+JNp4Um+KGpFptY1A5mks8sJWiQ4Lu5kmC4B6g4NZXws+KngjTNT/wCFM/8ABP8A+Fc0mp3KeVqnj/xHDuMSdGlxzhcDIB2jOAENfnmOxeLzOvh686vJKSnZLWdpPRRS62W7ta59ZhMPhstoYijCnzRi43b0heKu3KXq9lue0f8ABPb9h7XfB3ieLVvG07X3jbxLNtv52k8z7FCx3yLvOdzdWZs4JAH1+9P2+vj5pf7IP7HHiXxvpkiw3lvpX9l+GoByWvZkMUAA7lSd59kNZv7AP7O83wh+HEHiXxHqFze6ldQkLe3zFpZQ3zSTNnoXbJx0CgCvHvidDJ/wUX/4KGaV8KrFTd/DD4HXSap4lnGTBqWvf8srYHkP5fQjsBIO/Po5rOhgsvp4LCRt0XVuT3bfUzyWniMViZ47FyvfXslFbJLoj2D/AIJdfs2XH7MP7HHhjwhr1sV1/Vo31jxE7j5zdXB37W75RCic91NFfRItnAwgGKKeFoRw2HjSj0R3Vqsq1Vze7LDAkYFfPn7fP7Jmp/tD+BNP8Z/DHUl0j4k+Bb7+1/AmtrwVuY/mNvIe8Uu0KQcjocEZB+g2kRAS7YxTXRZV3DkEccdaqvQp4ik6c9mFKpKlUUo7nh37I37SPhj9r/4Nz23irRDpnifSy2l+PPCV2MTaberlZEZTzsbBZG7gjuDXyp+33+xP8P4rC6vPiF8P7vW9PhR5NH1HSIz9uRc5KIRjc6jnYchsZAJ4r6L/AGlv2aPHvhj4nR/tf/sp28cPjeztxF4n8N7hFbeMLFf+XeU9FuFAPlSnocA8dO6+Enxa+E37YPwunmtbVlZHNr4g8P6inl3uj3q/fgmQ4aORGHB6HqpINLAYvkjLCYyKlF6Waun2fqjjzPA+3ccRhm4zT0admu6fkz8cvCnwJ8CwaTqnhH4LftbeGr7RdTBj1TwN46XyNsnbIJDxTIQMOqKwI5Pau+vv2fvjH48+DOgtbeNtEtfiZ8O2EfhTxDo+vRyDVLEDi3c8FWGABuBB7/eNfSP7Zv8AwTA+FurajP4l8TeBhd20zfu/EGm/uLhMngTFeGPQZYEH26V8SeIf2Vv2KvAXi2fQfFX7SfijwzdQOR9k1DTHjLAHqkhhCuvoVJBrkxWTzwS9pRpwdOStdVHG3bSWzT21Iw+bRxkvZV6ko1E72dPmv0eq3T66H03+zp+2zF4ieH4bftF6LL4J8bQfung1eI21vqTdN8LPhdx67Mn/AGSR0991G8uNV0K6s7OaNHubV44ZmXegLKQCQCNwz2BGfWvzt17xZ/wTo+HGmJaXXiXxd8UZ7Zt9vp95fXC2qvjg5YRoPTgNW18OPj1+2Z+0bBB4Q/Zn8Daf8OvBtnlF1GC3Hk2kWeSZpQd7dTiNc+vrXflvFdTBw+qYpqtPZcj5pf8AbzS5fnc48fw1HFT+s4ZOlG925+6vkm769j6wsf2d3X9nHw18AtV1/S7xtB0mHT11ybQg8sQji8oT28cjsIZtuQGJYAnOCOKPE/7Jnwn8UeHPC3w6k0HSrfwv4Ws7O1t7OPTw13Pb2rpJDbNck7kh8yNGdVGZMEFgGbPjHw/m1nUri48FfDj4weOfih4it28rWPE9x4rutP0TS5fRTCw80jnCR7zxyy121x8AP2hYPC9ult+174ivdTgZGnt7q2ihtboA5MJkhAuIwenmCQt65r6PDZhUxVLmp4ZvvZrT/P5XPDrYenhaijUxKi29Lp6+fdL1sddo/wCzLpWieMtP1GTxIk2haR45v/Ful6Qtntkj1G7jlV98m/DRq9xPKqhQd0gGcKM+na34l03R9Ol1TVNRgtLaBd81zcyiOONQOrMxAA96+RvGT+JNd1+LwHafHbxx8JvHrru07Tdb8SzajpGrkf8APGeVmDZP8JIcd0NeX/EX9pr9ov4Vxn4U/tyfAvT/ABroDygpdXEIiExHAkimiHlscZ4IDeuK4MVxXQwEZKdJxX828U/71tV9x20eH6+YOLhVT/u7Sa7xvo/vPXPjr+1l8Svj9qMnwS/Yq065vftMnk6549SMrZWUR+VxHKRtBxnMmc8fICeRzHxC/Zo1/wAPfDrw98APAfirwevh2wuhqvi7VfEmveUddvzzh0Ql/LQ84yM4HPGTwVrd/wDBOn4naGNO0n4veM/h8mSw0SW8uGt42PJ2giROv+0CaPh1+xx+xr8TPFY0fwb8dvFHipusyWmmusMY6/vJjDsH55Oa+U5sfnFRybhVlPRctRJKPZK115tn0TWBymkkuekoatOm5Nvu3e3okP139n34WeOPHVo3xv8A2rYvGusybYdN8J+BbUP5aAYEMQQssMSgdlQBQST3r9Bv2I/2M/BenWtvLoPgyHR/DNmytLCqHffSgdGckmT/AGmJPp9KP7Ff/BNT4a+DFi8T6X4Fj0fTWQZvZjvvL5fTzGyVQ+2Aew719DftDftD+F/2a/DeneBfAvhZ9f8AGGsqbXwb4H0kgT3sgGN7dooEHzPK2AAOpJAr26NDCcP0Jvkh7V7tXk15KT1b9NDyn9bz6vBznP2Mdou0U/NxWiXqcl+3b+0n4q+GGhaZ+zv+zvYpqXxT8dKbLwzp0QGNNt8Yl1Gbg7IolyQSMFgOuDXd/sa/sr+E/wBkX4Laf8LvDlwb28Ja68Qa3MCZtTv5Dulnckk5J4AJOAAO1c9+yZ+yhrHw11jVfjz8ctbi8RfFHxYgOt6xszFp1vnKadaA8pBH+bkEntXvOEhTcSAB3xXm4ejUrVfb1Vr0XZf5vqfRVJwp0/Y09uo6ikV1cZU5or0TmHRIWlJY5G3GKSYiNiqISFXJCinwdTn0qT5Ce2e9AFVkaaISeUeegNePfGD9l+TVfGA+OHwP8Qjwl4/t4Nj3yxbrLWoh0t9QhBHnp1CuCJI85U4yD7Z7Y4qvKgJKnms6lKFVWkhxlKLujyb4X/tCW3ibUF+Evxu8KDwt4zaMh9FvnEltqQUfNLZT423EZxnbxIo++i1ynx4/YG+FfxdspZdM0DTtz5Labqdok9sxPoCCYz9Pyr2Xx78N/BvxJ0FvDfjXw3a6lZs4cRXEeSjg5V0bqjg8hlIIPQ1yum+CPit8NB9l8FeLR4h0mP8A1emeJJ2F1CP7sd2qsWXjgSqzer46OjXxGG0fvL7/AL0Y18Lh8Vq9H3WjXoz4b8Q/8E/fhX8I9VXUfEf7Oei24jlDR3jWAkh3g8EE5X8COeK534+fB/xZ8YdG0jwHoPj+Tw94ZWcjxFY6VFslvrfAxEj/AMC8EEYxhu+MH9IIviNot7E2n+MtDvdK8z5JYdXth5TA9vNUtER/wKsbWv2c/gh4vb7UvhmGEuMibTZzGOe/ynH6V7dDG5TOg6VbDqKlu46XPnMXlGcwrKrh8Q5W2U3ex8W+CfDHhn4b+GLTwf4L0SHTtOsogkFtbpgD1Jx95j1LHJJrbe/iCEo/zAccHGa+kL79iD4eTOXsPFOrwA9FZ43x+ag1WH7DPhMH/ke9RPbHkR5r6Cjm+T0qSjBtJdLbHzFbh3PalRylZt7u+58lfF34XeCfjd4OuPBfj7Rxc20o3QTIds1tIOkkT4yjD179DkVlfBz4c+LvCXw1b4d/GDxfB4xiiuJEtbjU7MMWtePLjk3bvMYAHkjuBzjNfa+n/sS/DS3lD6l4g1a65+4JkjB/Jc/rXUaL8DPgf4EjN8PDNkvl/P8AadRk8zbjvmQkCvOxGYZI8R7dU3KVrdk15rqenhcl4gVD2DqKMLp92n5PdHw94F/4JsfDT4k6hHqfh/8AZz0KK3d8i9ubHbB1yTzw34DHQV9c/BH9i/4V/Bm0geTRrOe4hw0MFvapFbQHr8sYGCfc/pXd3nxK85TaeB/DN/q8pXELQReTbKexaaTA2+6Bz6A1h6l8KPHPxRzH8WfGBg0puT4c8OSSQxTAj7s9wcSyjj7q+Up5yG7fPV8dBNrD0owv/Kkvve59ThsrUUniKsqjX8zbX3bGL8RP2hvEPiPVZ/hV+y14etfEHiK3k8jUtYuSRo+hHOCbiVf9bIOcW8RLkj5ig5rS+Bv7MPh74UalffEDxDrF14o8cazg634s1ZVM8g6+RABxb26knbCnA6nJJJ9A8LeD/DvgvQrfw14W0G002wtIwltZ2cIjjjX0CrwK1ogN4AGB6VwRoSlPnq6vp2R63NaPLHQictBDvMROOy8mpYgGcq69ACP5VL35HHaglc84ziukggaMpMxBGDjFFOmI39aKAG7mHQkUWBJV8n+M0UUAWKgf75+tFFACVBd/dH+9/jRRU9GAx1U7gVGNvTH0rmPE9hY6fPJLYWcUDZB3QxhTn8KKKI7lT+IXwPf31zaubm9lkxKQN8hOBn3rpn4i3Dg56/hRRSe4o7HJeL9Qv4LyCOC+mRS3KpKQDVvwjpunXIW6uLCCSQKCJHiBYH6kUUU1sC3Ogbnbn3qxb/6oH3oopyNZ/AiSnRf6wUUULYxJqr3ZInjwSOaKKYASTyTRRRQB/9k=" alt="Tobruk University logo"><img src="data:image/webp;base64,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" alt="Faculty of Nursing logo"><div><b>TOBRUK UNIVERSITY</b><span>Faculty of Nursing · Clinical Learning</span><small>كلية التمريض · جامعة طبرق</small></div></div><div class="brand-tools"><span class="trial">EDUCATIONAL PROTOTYPE</span><button class="small" id="arabic" aria-pressed="true">Arabic support ✓</button><button class="small" id="sourceOpen">Sources & safety</button></div></header>
+<main><section class="heading"><div><div class="eyebrow">TOBRUK NURSING SKILLS / 08</div><h1>Bandaging <span>· the moving technique</span></h1><p>Observe the turn. Control the sequence. Understand the reason.</p></div><div class="scope"><b>CLINICAL TASK-TRAINER LAB</b><br>Four methods from your practical checklist.<br>No pressure measurement or competence certification.</div></section>
+<nav class="method-nav" id="methodNav" aria-label="Bandaging techniques"></nav>
+<section class="workspace"><div class="scene-panel"><div class="scene-top"><span class="scene-title">LIVE PROCEDURAL MODEL</span><div class="view-buttons"><button class="small active" data-view="overview">Overview</button><button class="small" data-view="hands">Hands</button><button class="small" data-view="back">Other side</button><button class="small" data-view="top">Top</button></div></div>
+<div class="stage" id="stage"><canvas id="world" aria-label="Three-dimensional clinical limb model with animated bandage and gloved hands"></canvas><canvas id="overlay" aria-hidden="true"></canvas><div class="orientation"><span id="modelLabel">JOINT TASK TRAINER</span><span id="modeLabel">SELECT A LEARNING MODE</span></div><div class="rotation"><button id="rotL" title="Rotate left" aria-label="Rotate model left">↶</button><button id="rotR" title="Rotate right" aria-label="Rotate model right">↷</button><button id="zoomIn" title="Zoom in" aria-label="Zoom in">+</button><button id="zoomOut" title="Zoom out" aria-label="Zoom out">−</button></div></div><div class="scene-caption" id="caption">Choose a technique, then watch or practise.</div>
+<div class="view-footer"><div><button id="pause" class="small" disabled>Pause</button><button id="slow" class="small" aria-pressed="false">Slow motion</button><button id="labels" class="small active" aria-pressed="true">Landmarks</button><button id="hideHands" class="small" aria-pressed="false">Hide hands</button></div><span id="renderer">Initialising renderer…</span></div>
+<div class="bedside" id="bedside"></div><div class="metrics"><div class="metric"><span>MOVEMENT</span><strong id="moveMetric">0 <small>/ —</small></strong></div><div class="metric"><span id="secondMetricLabel">PATTERN</span><strong class="text" id="patternMetric">Figure-eight</strong></div><div class="metric"><span>APPLICATION</span><strong class="text" id="stateMetric">Not started</strong></div></div><div id="safetyStrip" class="safety-strip">Educational geometry only. Bandage tightness and circulation must be assessed on a real training limb with an instructor.</div></div>
+<article class="learning-panel" id="panel"><div class="phase-line"><span id="phaseLabel">LEARNING LAB</span><strong id="stepNum">08</strong></div><div class="progress"><div id="progress"></div></div><div id="stepContent"></div><div id="feedback" class="feedback" role="status" aria-live="polite"></div><div class="speech-state" id="speechState" role="status"></div></article></section>
+<section class="below"><details><summary>Terminology · individual English pronunciation</summary><div id="vocab" class="vocab"></div></details><details><summary>My practice notes & saved records</summary><div><p class="helper">Saved on this browser only when storage is available. File previews and private browsing may not retain data. Export a copy to keep it. Do not enter real patient information.</p><textarea id="notes" aria-label="My practice notes" placeholder="What did you notice about the hand movement or fold?"></textarea><div class="row"><span id="noteState" class="helper"></span><button class="small" id="exportNotes">Export notes</button></div><div class="actions"><button class="small" id="recordsOpen">Practice history</button><button class="small" id="quizOpen">12-question review</button></div></div></details></section>
+<footer><div>© 2026 Faculty of Nursing · Tobruk University. Educational sharing with attribution.<br>Original checklist: 8.Bandaging.docx · Practical simulation does not replace supervised skills-laboratory training.</div><div>Trial build 08.1 · Clinical review required<br>No login, telemetry, camera, microphone or cloud submission.</div></footer></main>
+<dialog class="dialog" id="modal"><div class="dialog-head"><h2 id="modalTitle"></h2><button id="closeModal" class="small" aria-label="Close dialog">Close ×</button></div><div class="dialog-body" id="modalBody"></div></dialog>
+<noscript>This interactive simulation requires JavaScript. Open the HTML file in a browser, not a document preview.</noscript>
+<script>/* Tobruk clinical procedural rendering engine.
+   Original procedural surface models. No external model, library, network request or telemetry.
+   The software fallback rasterises the SAME surface meshes as WebGL; it does not use cartoon substitutes.
+*/
+class LabScene {
+ constructor(canvas,overlay){
+  this.canvas=canvas;this.overlay=overlay;this.ctx=overlay.getContext('2d');
+  this.az=.30;this.el=.62;this.zoom=1;this.desired={az:.30,el:.62,zoom:1};this.view='overview';
+  this.vp=null;this.primitives=[];this.meshes={};this.gl=null;this.poseBlend=0;
+  this.hand=[-.5,.93,0];this.pad1=[-1.13,.84,-.36];this.pad2=[-.04,.6,.66];
+  try{this.gl=canvas.getContext('webgl',{antialias:true,alpha:true,preserveDrawingBuffer:true})}catch(e){}
+  if(this.gl){try{this.initGL()}catch(e){const fresh=canvas.cloneNode(false);canvas.replaceWith(fresh);this.canvas=fresh;this.gl=null;this.soft=fresh.getContext('2d');}}
+  else this.soft=canvas.getContext('2d');
+  this.initModels();
+ }
+ static add(a,b){return a.map((x,i)=>x+b[i])} static sub(a,b){return a.map((x,i)=>x-b[i])}
+ static mulv(a,n){return a.map(x=>x*n)} static dot(a,b){return a.reduce((s,x,i)=>s+x*b[i],0)}
+ static cross(a,b){return[a[1]*b[2]-a[2]*b[1],a[2]*b[0]-a[0]*b[2],a[0]*b[1]-a[1]*b[0]]}
+ static norm(a){let l=Math.hypot(...a)||1;return a.map(x=>x/l)}
+ static mix(a,b,t){return a.map((x,i)=>x+(b[i]-x)*t)}
+ static mm(a,b){let o=new Float32Array(16);for(let c=0;c<4;c++)for(let r=0;r<4;r++)for(let k=0;k<4;k++)o[c*4+r]+=a[k*4+r]*b[c*4+k];return o}
+ static mv(a,v){return[0,1,2,3].map(r=>a[r]*v[0]+a[4+r]*v[1]+a[8+r]*v[2]+a[12+r]*v[3])}
+ static look(eye,target){const z=this.norm(this.sub(eye,target)),x=this.norm(this.cross([0,1,0],z)),y=this.cross(z,x);return new Float32Array([x[0],y[0],z[0],0,x[1],y[1],z[1],0,x[2],y[2],z[2],0,-this.dot(x,eye),-this.dot(y,eye),-this.dot(z,eye),1])}
+ static perspective(fov,aspect,n,f){const t=1/Math.tan(fov/2);return new Float32Array([t/aspect,0,0,0,0,t,0,0,0,0,(f+n)/(n-f),-1,0,0,2*f*n/(n-f),0])}
+ static inv(a){const out=new Float32Array(16);let m=Array.from({length:4},(_,r)=>Array.from({length:8},(_,c)=>c<4?a[c*4+r]:(c-4===r?1:0)));for(let c=0;c<4;c++){let k=c;for(let r=c+1;r<4;r++)if(Math.abs(m[r][c])>Math.abs(m[k][c]))k=r;[m[c],m[k]]=[m[k],m[c]];const d=m[c][c];if(Math.abs(d)<1e-9)return null;m[c]=m[c].map(v=>v/d);for(let r=0;r<4;r++)if(r!==c){let q=m[r][c];m[r]=m[r].map((v,j)=>v-q*m[c][j])}}for(let c=0;c<4;c++)for(let r=0;r<4;r++)out[c*4+r]=m[r][c+4];return out}
+ static gaussian(x,c,w){return Math.exp(-(((x-c)/w)**2))}
+ color(hex){return[(hex>>16&255)/255,(hex>>8&255)/255,(hex&255)/255]}
+ initGL(){
+  const gl=this.gl,vs=`attribute vec3 p;attribute vec3 n;uniform mat4 vp;uniform mat4 model;uniform mat3 normM;uniform float deform;varying vec3 normal;varying vec3 pos;
+  void main(){vec4 w=model*vec4(p,1.0);vec3 N=normalize(normM*n);float weight=exp(-pow((w.x+0.5)/0.59,2.0)-pow(w.z/0.40,2.0))*max(N.y,0.0);w.y-=deform*weight;N.x-=deform*weight*2.0*(w.x+0.5)/(0.59*0.59);N.z-=deform*weight*2.0*w.z/(0.40*0.40);normal=normalize(N);pos=w.xyz;gl_Position=vp*w;}`;
+  const fs=`precision mediump float;uniform vec3 color;uniform vec3 eye;varying vec3 normal;varying vec3 pos;
+  void main(){vec3 N=normalize(normal);if(dot(N,eye-pos)<0.0)N=-N;vec3 L=normalize(vec3(-0.45,0.9,0.65));vec3 L2=normalize(vec3(0.6,0.5,-0.55));float light=0.51+0.36*max(dot(N,L),0.0)+0.16*max(dot(N,L2),0.0);float highlight=0.045*pow(max(dot(N,normalize(L+normalize(eye-pos))),0.0),25.0);float occlusion=0.89+0.11*clamp(pos.y/0.5,0.0,1.0);gl_FragColor=vec4(color*light*occlusion+vec3(highlight),1.0);}`;
+  const compile=(type,s)=>{let o=gl.createShader(type);gl.shaderSource(o,s);gl.compileShader(o);if(!gl.getShaderParameter(o,gl.COMPILE_STATUS))throw Error(gl.getShaderInfoLog(o));return o};
+  let prog=gl.createProgram();gl.attachShader(prog,compile(gl.VERTEX_SHADER,vs));gl.attachShader(prog,compile(gl.FRAGMENT_SHADER,fs));gl.linkProgram(prog);if(!gl.getProgramParameter(prog,gl.LINK_STATUS))throw Error(gl.getProgramInfoLog(prog));gl.useProgram(prog);this.prog=prog;this.u={};['vp','model','normM','deform','color','eye'].forEach(n=>this.u[n]=gl.getUniformLocation(prog,n));this.a={p:gl.getAttribLocation(prog,'p'),n:gl.getAttribLocation(prog,'n')};gl.enable(gl.DEPTH_TEST);gl.clearColor(0,0,0,0);
+ }
+ geometry(name,p,ix){
+  const n=new Float32Array(p.length);
+  for(let i=0;i<ix.length;i+=3){const a=ix[i]*3,b=ix[i+1]*3,c=ix[i+2]*3;const ux=p[b]-p[a],uy=p[b+1]-p[a+1],uz=p[b+2]-p[a+2],vx=p[c]-p[a],vy=p[c+1]-p[a+1],vz=p[c+2]-p[a+2],nx=uy*vz-uz*vy,ny=uz*vx-ux*vz,nz=ux*vy-uy*vx;for(const k of [a,b,c]){n[k]+=nx;n[k+1]+=ny;n[k+2]+=nz;}}
+  for(let i=0;i<n.length;i+=3){const l=Math.hypot(n[i],n[i+1],n[i+2])||1;n[i]/=l;n[i+1]/=l;n[i+2]/=l;}
+  const mesh=this.meshes[name]||{};mesh.positions=new Float32Array(p);mesh.normals=n;mesh.indices=new Uint16Array(ix);mesh.count=ix.length;
+  if(this.gl){const gl=this.gl;for(const [key,arr,target] of [['p',mesh.positions,gl.ARRAY_BUFFER],['n',n,gl.ARRAY_BUFFER],['i',mesh.indices,gl.ELEMENT_ARRAY_BUFFER]]){if(!mesh[key])mesh[key]=gl.createBuffer();gl.bindBuffer(target,mesh[key]);gl.bufferData(target,arr,gl.DYNAMIC_DRAW);}}
+  this.meshes[name]=mesh;return mesh;
+ }
+ // Closed loft; rings wrap a true surface, rather than a chain of spheres.
+ loft(name,profiles,segments=32,subdiv=3,modify=null){
+  let rings=[];
+  for(let k=0;k<profiles.length-1;k++)for(let j=0;j<subdiv;j++){
+   const t=j/subdiv;let row=[];
+   for(let c=0;c<profiles[k].length;c++){
+    // Catmull-Rom interpolation keeps contour transitions smooth.
+    let a=profiles[Math.max(0,k-1)][c],b=profiles[k][c],cc=profiles[k+1][c],d=profiles[Math.min(profiles.length-1,k+2)][c];
+    row.push(.5*((2*b)+(-a+cc)*t+(2*a-5*b+4*cc-d)*t*t+(-a+3*b-3*cc+d)*t*t*t));
+   }rings.push(row);
+  }rings.push(profiles[profiles.length-1]);
+  let p=[],ix=[];
+  for(const row of rings){const [y,rx,rf,rb]=row;for(let j=0;j<segments;j++){const a=j*2*Math.PI/segments,ca=Math.cos(a);let v=[Math.sin(a)*Math.max(.0001,rx),y,ca*(ca>=0?rf:(rb===undefined?rf:rb))];if(modify)v=modify(v,a,row);p.push(...v);}}
+  for(let i=0;i<rings.length-1;i++)for(let j=0;j<segments;j++){let a=i*segments+j,b=i*segments+(j+1)%segments,c=a+segments,d=b+segments;ix.push(a,b,c,b,d,c);}
+  let bot=p.length/3;p.push(0,rings[0][0],0);let top=p.length/3;p.push(0,rings[rings.length-1][0],0);
+  for(let j=0;j<segments;j++){ix.push(bot,(j+1)%segments,j);let a=(rings.length-1)*segments;ix.push(top,a+j,a+(j+1)%segments);}
+  return this.geometry(name,p,ix);
+ }
+ sweep(name,points,radii,segments=14){
+  const p=[],ix=[];
+  for(let i=0;i<points.length;i++){
+   const y=LabScene.norm(LabScene.sub(points[Math.min(points.length-1,i+1)],points[Math.max(0,i-1)]));
+   let ref=Math.abs(y[2])<.82?[0,0,1]:[1,0,0],x=LabScene.norm(LabScene.cross(y,ref)),z=LabScene.cross(x,y);
+   let r=Array.isArray(radii[i])?radii[i]:[radii[i],radii[i]];
+   for(let j=0;j<segments;j++){let a=j*2*Math.PI/segments;p.push(...LabScene.add(points[i],LabScene.add(LabScene.mulv(x,Math.cos(a)*r[0]),LabScene.mulv(z,Math.sin(a)*r[1]))));}
+  }
+  for(let i=0;i<points.length-1;i++)for(let j=0;j<segments;j++){let a=i*segments+j,b=i*segments+(j+1)%segments,c=a+segments,d=b+segments;ix.push(a,c,b,b,c,d);}
+  const a=p.length/3;p.push(...points[0]);const b=p.length/3;p.push(...points[points.length-1]);
+  for(let j=0;j<segments;j++){ix.push(a,j,(j+1)%segments);let k=(points.length-1)*segments;ix.push(b,k+(j+1)%segments,k+j);}
+  return this.geometry(name,p,ix);
+ }
+ initModels(){
+  this.loft('ellipsoid',[[-1,.002,.002],[-.94,.34,.34],[-.70,.71,.71],[0,1,1],[.70,.71,.71],[.94,.34,.34],[1,.002,.002]],24,2);
+  const faces=[[[1,-1,-1],[1,1,-1],[1,1,1],[1,-1,1]],[[-1,-1,1],[-1,1,1],[-1,1,-1],[-1,-1,-1]],[[-1,1,-1],[-1,1,1],[1,1,1],[1,1,-1]],[[-1,-1,1],[-1,-1,-1],[1,-1,-1],[1,-1,1]],[[1,-1,1],[1,1,1],[-1,1,1],[-1,-1,1]],[[-1,-1,-1],[-1,1,-1],[1,1,-1],[1,-1,-1]]];
+  let p=[],ix=[];faces.forEach((v,i)=>{v.forEach(x=>p.push(...x));let k=i*4;ix.push(k,k+1,k+2,k,k+2,k+3);});this.geometry('box',p,ix);
+  this.loft('cylinder',[[0,1,1],[1,1,1]],32,1);
+  this.loft('forearm',[[0,.11,.109],[.19,.13,.11],[.4,.12,.095],[.66,.093,.08],[1,.069,.061]],24,2);
+  this.loft('scrubSleeve',[[0,.185,.172],[.18,.20,.181],[.46,.186,.17],[.77,.165,.15],[1,.154,.142]],24,2);
+  this.loft('palm',[[-.17,.066,.032,.033],[-.13,.105,.039,.037],[-.04,.145,.044,.04],[.055,.152,.043,.039],[.125,.137,.037,.033],[.157,.117,.031,.026]],28,3);
+ }
+ model(pos,scale,basis){let b=basis||[[1,0,0],[0,1,0],[0,0,1]];return new Float32Array([...b[0].map(x=>x*scale[0]),0,...b[1].map(x=>x*scale[1]),0,...b[2].map(x=>x*scale[2]),0,...pos,1])}
+ shape(type,pos,scale,color,basis,deform=0){this.primitives.push({type,pos,scale,color,basis:basis||[[1,0,0],[0,1,0],[0,0,1]],deform});}
+ box(p,s,c,b){this.shape('box',p,s,c,b)} ball(p,s,c,b,d=0){this.shape('ellipsoid',p,s,c,b,d)}
+ segment(type,a,b,color,scaleX=1,scaleZ=1){let y=LabScene.norm(LabScene.sub(b,a)),ref=Math.abs(y[2])<.85?[0,0,1]:[1,0,0],x=LabScene.norm(LabScene.cross(y,ref)),z=LabScene.cross(x,y),len=Math.hypot(...LabScene.sub(b,a));this.shape(type,a,[scaleX,len,scaleZ],color,[x,y,z]);}
+ curve(name,points,r,color,basis=null,origin=[0,0,0],scale=[1,1,1]){if(!this.meshes[name])this.sweep(name,points,points.map(()=>r),10);this.shape(name,origin,scale,color,basis);}
+ setView(v,instant=false){this.view=v;const p={overview:[.28,.62,1],top:[0,1.54,1.14],side:[.10,.33,1.26],airway:[-1.02,.60,1.26],pads:[-.10,1.14,1.1],detail:[.70,.53,1.38]}[v]||[.28,.62,1];this.desired={az:p[0],el:p[1],zoom:p[2]};if(instant){this.az=p[0];this.el=p[1];this.zoom=p[2];}}
+ rotate(a){this.desired.az+=a} elevate(a){this.desired.el=Math.max(.15,Math.min(1.55,this.desired.el+a))}
+ zoomBy(v){this.desired.zoom=Math.max(.7,Math.min(1.9,this.desired.zoom*v))}
+ project(v){if(!this.vp)return[0,0,0];let p=LabScene.mv(this.vp,[...v,1]);return[(p[0]/p[3]*.5+.5)*this.w,(-p[1]/p[3]*.5+.5)*this.h,p[2]/p[3]]}
+ planePoint(px,py,y=.9){let inv=LabScene.inv(this.vp);if(!inv)return null;let a=LabScene.mv(inv,[px/this.w*2-1,1-py/this.h*2,-1,1]),b=LabScene.mv(inv,[px/this.w*2-1,1-py/this.h*2,1,1]);a=a.slice(0,3).map(v=>v/a[3]);b=b.slice(0,3).map(v=>v/b[3]);let t=(y-a[1])/(b[1]-a[1]);return a.map((v,i)=>v+t*(b[i]-v))}
+ pointerTarget(px,py,v,r=35){let p=this.project(v);return Math.hypot(px-p[0],py-p[1])<=r}
+
+ limbSurface(name,a,b,c,radii,col){
+  const sig=[...a,...b,...c,...radii].map(v=>Math.round(v*1500)).join(',');
+  if(!this.meshes[name]||this.meshes[name].signature!==sig){
+   const points=[],rr=[],num=18;
+   for(let i=0;i<=num;i++){
+    let u=i/num*2,part=Math.min(1,Math.floor(u)),t=u-part;
+    const vals=[a,b,c],p0=vals[Math.max(0,part-1)],p1=vals[part],p2=vals[part+1],p3=vals[Math.min(2,part+2)];
+    points.push(p1.map((v,k)=>.5*(2*v+(-p0[k]+p2[k])*t+(2*p0[k]-5*v+4*p2[k]-p3[k])*t*t+(-p0[k]+3*v-3*p2[k]+p3[k])*t*t*t)));
+    let ri=i/num*(radii.length-1),j=Math.min(radii.length-2,Math.floor(ri)),f=ri-j;rr.push(radii[j]+(radii[j+1]-radii[j])*f);
+   }
+   this.sweep(name,points,rr,20);this.meshes[name].signature=sig;
+  }
+  this.shape(name,[0,0,0],[1,1,1],col);
+ }
+ handAt(x,y,z,top=false,skin=false,basis=null,scale=1){
+  const col=skin?0xc8b398:top?0xe0e5e3:0xe9edeb;
+  // Palm normal points up, fingers point across the chest, wrist towards rescuer.
+  const B=basis||[[-1,0,0],[0,0,1],[0,1,0]],O=[x,y,z];const hs=[top?-scale:scale,scale,scale];
+  const tr=v=>LabScene.add(O,LabScene.mulv(v.reduce((a,n,i)=>LabScene.add(a,LabScene.mulv(B[i],n)),[0,0,0]),scale));
+  this.shape('palm',O,hs,col,B);
+  const lengths=[.20,.26,.244,.19];
+  for(let i=0;i<4;i++){
+   const fx=-.105+i*.069+(top?.021:0),len=lengths[i];
+   const pts=[[fx,.118,.003],[fx,.17,.008],[fx+(top?-.012:0),.22,.01],[fx+(top?-.03:0),.118+len*.79,top?-.048:.031],[fx+(top?-.032:0),.118+len,top?-.064:.045]];
+   const name='handFinger'+(top?'T':'B')+i;
+   if(!this.meshes[name])this.sweep(name,pts,[.030,.029,.026,.022,.008],12);
+   this.shape(name,O,hs,col,B);
+  }
+  const thumb=top?[[.10,-.045,.009],[.17,-.018,.018],[.20,.058,-.014],[.18,.135,-.027]]:[[.105,-.065,0],[.165,-.007,.006],[.193,.06,.02],[.18,.114,.025]];
+  const name=top?'handThumbT':'handThumbB';if(!this.meshes[name])this.sweep(name,thumb,[.038,.034,.028,.01],14);this.shape(name,O,hs,col,B);
+ }
+ renderGL(w,h){
+  const gl=this.gl;gl.viewport(0,0,w,h);gl.clear(gl.COLOR_BUFFER_BIT|gl.DEPTH_BUFFER_BIT);gl.useProgram(this.prog);gl.uniformMatrix4fv(this.u.vp,false,this.vp);gl.uniform3fv(this.u.eye,this.eye);
+  for(const o of this.primitives){const mesh=this.meshes[o.type],b=o.basis,sc=o.scale;gl.uniformMatrix4fv(this.u.model,false,this.model(o.pos,sc,b));gl.uniformMatrix3fv(this.u.normM,false,new Float32Array([...b[0].map(x=>x/sc[0]),...b[1].map(x=>x/sc[1]),...b[2].map(x=>x/sc[2])]));gl.uniform1f(this.u.deform,o.deform);gl.uniform3fv(this.u.color,this.color(o.color));for(let a of ['p','n']){gl.bindBuffer(gl.ARRAY_BUFFER,mesh[a]);gl.vertexAttribPointer(this.a[a],3,gl.FLOAT,false,0,0);gl.enableVertexAttribArray(this.a[a]);}gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER,mesh.i);gl.drawElements(gl.TRIANGLES,mesh.count,gl.UNSIGNED_SHORT,0);}
+ }
+ // Z-buffered, Gouraud-shaded triangle fallback. Identical anatomy, geometry and pose to WebGL.
+ renderSoft(w,h){
+  if(!this.image||this.image.width!==w||this.image.height!==h){this.image=this.soft.createImageData(w,h);this.depthBuffer=new Float32Array(w*h);}
+  const pixels=this.image.data,zb=this.depthBuffer;pixels.fill(0);zb.fill(Infinity);
+  const V=this.vp,L=LabScene.norm([-.45,.90,.65]),L2=LabScene.norm([.60,.50,-.55]);
+  for(const o of this.primitives){
+   const mesh=this.meshes[o.type],p=mesh.positions,n=mesh.normals,idx=mesh.indices,b=o.basis,sc=o.scale,col=this.color(o.color).map(x=>x*255);
+   if(!mesh.screen||mesh.screen.length!==p.length/3*4)mesh.screen=new Float32Array(p.length/3*4);const out=mesh.screen;
+   for(let i=0,j=0;i<p.length;i+=3,j+=4){
+    let x=o.pos[0]+b[0][0]*p[i]*sc[0]+b[1][0]*p[i+1]*sc[1]+b[2][0]*p[i+2]*sc[2],y=o.pos[1]+b[0][1]*p[i]*sc[0]+b[1][1]*p[i+1]*sc[1]+b[2][1]*p[i+2]*sc[2],z=o.pos[2]+b[0][2]*p[i]*sc[0]+b[1][2]*p[i+1]*sc[1]+b[2][2]*p[i+2]*sc[2];
+    let nx=b[0][0]*n[i]/sc[0]+b[1][0]*n[i+1]/sc[1]+b[2][0]*n[i+2]/sc[2],ny=b[0][1]*n[i]/sc[0]+b[1][1]*n[i+1]/sc[1]+b[2][1]*n[i+2]/sc[2],nz=b[0][2]*n[i]/sc[0]+b[1][2]*n[i+1]/sc[1]+b[2][2]*n[i+2]/sc[2],len=Math.hypot(nx,ny,nz)||1;nx/=len;ny/=len;nz/=len;
+    if(o.deform){let wt=Math.exp(-(((x+.5)/.59)**2)-((z/.4)**2))*Math.max(ny,0);y-=o.deform*wt;nx-=o.deform*wt*2*(x+.5)/(.59*.59);nz-=o.deform*wt*2*z/.16;len=Math.hypot(nx,ny,nz)||1;nx/=len;ny/=len;nz/=len;}
+    const cw=V[3]*x+V[7]*y+V[11]*z+V[15];out[j]=((V[0]*x+V[4]*y+V[8]*z+V[12])/cw*.5+.5)*w;out[j+1]=(.5-(V[1]*x+V[5]*y+V[9]*z+V[13])/cw*.5)*h;out[j+2]=(V[2]*x+V[6]*y+V[10]*z+V[14])/cw;
+    if(nx*(this.eye[0]-x)+ny*(this.eye[1]-y)+nz*(this.eye[2]-z)<0){nx=-nx;ny=-ny;nz=-nz;}
+    out[j+3]=(.51+.36*Math.max(nx*L[0]+ny*L[1]+nz*L[2],0)+.16*Math.max(nx*L2[0]+ny*L2[1]+nz*L2[2],0))*(.89+.11*Math.min(1,Math.max(0,y/.5)));
+   }
+   for(let t=0;t<idx.length;t+=3){
+    const a=idx[t]*4,b=idx[t+1]*4,c=idx[t+2]*4;
+    // The close-up camera can put distant limb/tube triangles behind the eye.
+    // Reject triangles crossing the clip volume in the CPU fallback to avoid projected spikes.
+    if([out[a+2],out[b+2],out[c+2]].some(z=>!Number.isFinite(z)||z < -1 || z > 1))continue;
+    const ax=out[a],ay=out[a+1],bx=out[b],by=out[b+1],cx=out[c],cy=out[c+1];
+    const area=(by-cy)*(ax-cx)+(cx-bx)*(ay-cy);if(Math.abs(area)<.007)continue;
+    let x0=Math.max(0,Math.ceil(Math.min(ax,bx,cx)-.5)),x1=Math.min(w-1,Math.floor(Math.max(ax,bx,cx)-.5)),y0=Math.max(0,Math.ceil(Math.min(ay,by,cy)-.5)),y1=Math.min(h-1,Math.floor(Math.max(ay,by,cy)-.5));if(x1<x0||y1<y0)continue;
+    const ia=1/area,dadx=(by-cy)*ia,dady=(cx-bx)*ia,dbdx=(cy-ay)*ia,dbdy=(ax-cx)*ia;
+    let wa0=((by-cy)*(x0+.5-cx)+(cx-bx)*(y0+.5-cy))*ia,wb0=((cy-ay)*(x0+.5-cx)+(ax-cx)*(y0+.5-cy))*ia;
+    const az=out[a+2],bz=out[b+2],cz=out[c+2],al=out[a+3],bl=out[b+3],cl=out[c+3];
+    for(let yy=y0;yy<=y1;yy++){
+     let wa=wa0,wb=wb0,k=yy*w+x0;
+     for(let xx=x0;xx<=x1;xx++,k++,wa+=dadx,wb+=dbdx){const wc=1-wa-wb;if(wa<-.00001||wb<-.00001||wc<-.00001)continue;const z=wa*az+wb*bz+wc*cz;if(z>=zb[k]||z<-1||z>1)continue;zb[k]=z;const light=wa*al+wb*bl+wc*cl,di=k*4;pixels[di]=col[0]*light;pixels[di+1]=col[1]*light;pixels[di+2]=col[2]*light;pixels[di+3]=255;}
+     wa0+=dady;wb0+=dbdy;
+    }
+   }
+  }
+  this.soft.putImageData(this.image,0,0);
+ }
+ label(p,text,color='#465f66',below=false){let q=this.project(p),c=this.ctx;c.font='500 10px system-ui,Arial';let m=c.measureText(text).width,w=m+16,x=Math.max(7,Math.min(this.w-w-7,q[0]-w/2)),y=q[1]+(below?22:-32);y=Math.max(45,Math.min(this.h-55,y));c.strokeStyle=color;c.lineWidth=1;c.beginPath();c.moveTo(q[0],q[1]);c.lineTo(x+w/2,y+10);c.stroke();c.fillStyle='#fffffff0';c.beginPath();c.roundRect(x,y-7,w,23,4);c.fill();c.fillStyle=color;c.fillText(text,x+8,y+8);c.beginPath();c.arc(q[0],q[1],3,0,Math.PI*2);c.fill();}
+ ring(p,r=15){let q=this.project(p),c=this.ctx;c.strokeStyle='#647c82';c.lineWidth=1.2;c.setLineDash([4,3]);c.beginPath();c.arc(q[0],q[1],r,0,Math.PI*2);c.stroke();c.setLineDash([]);}
+}
+</script><script>/* Curricular content: uploaded 8.Bandaging.docx, pp.1–2. Safety extension and invented
+   practice cases are explicitly identified. No institutional adoption is implied. */
+const METHODS={
+ eight:{name:'Figure-eight',ar:'الرباط على شكل الرقم ثمانية',model:'JOINT TASK TRAINER',short:'Cross above & below the joint',source:'Checklist p.1 · step 7 · Figure eight',intro:'Anchor at the centre of the joint. Carry the bandage obliquely above and below it, building overlapping figure-eight turns, then secure the end.',arabic:'ثبّت بداية الرباط في منتصف المفصل، ثم مرّر اللفّات بصورة مائلة أعلى المفصل وأسفله على شكل الرقم ثمانية مع التداخل، ثم ثبّت النهاية.',rationale:'The checklist uses this overlapping pattern until the required immobilisation is obtained. This model shows the wrapping pattern; it does not test immobilisation or determine a treatment plan.',anchor:'centre',purpose:'Support a joint as directed',kind:'joint',labels:['Centre of joint','Above joint','Below joint']},
+ spiral:{name:'Spiral',ar:'الرباط الحلزوني',model:'FOREARM TASK TRAINER',short:'Advance with overlapping turns',source:'Checklist pp.1–2 · step 7 · Spiral',intro:'Anchor distally with two or three circular turns. Advance upward, overlapping one-half to two-thirds of the bandage width with each turn. Secure the end.',arabic:'ابدأ من الطرف الأبعد عن الجذع بلفّتين أو ثلاث لفّات دائرية، ثم تقدّم إلى الأعلى مع تداخل نصف عرض الرباط إلى ثلثيه في كل لفّة، وثبّت النهاية.',rationale:'The overlap target comes directly from the checklist. The illustrated target area and total number of advancing turns are teaching choices, not a prescribed treatment length.',anchor:'distal',purpose:'Hold a prepared dressing in place',kind:'arm',labels:['Distal start','Advance proximally','Prepared dressing']},
+ recurrent:{name:'Recurrent turns',ar:'اللفّات الراجعة — طريقة الطرف المتبقي',model:'ROUNDED-END TASK TRAINER',short:'Cover the end · return & secure',source:'Checklist p.2 · step 7 · Recurrent turns (stump method)',intro:'Anchor with two proximal circular turns. Reverse at the centre front, carry the roll over the distal end to the back, and reverse back again. Continue until covered, then add two circular securing turns.',arabic:'ثبّت الرباط بلفّتين دائريتين عند النهاية الأقرب للجذع. اثنِ الرباط من الأمام ومرّره فوق النهاية البعيدة إلى الخلف، ثم أعده في الاتجاه المقابل. بعد تغطية المنطقة أضف لفّتين دائريتين وثبّت النهاية.',rationale:'The checklist calls this the “stump method”. Here it is a rounded-end task-trainer demonstration, not a residual-limb shaping or compression prescription. Seven covering passes are a visual teaching choice.',anchor:'proximal',purpose:'Retain a dressing over a rounded end',kind:'stump',labels:['Proximal anchor','Distal end','Front / back reversal']},
+ reverse:{name:'Reverse spiral',ar:'الرباط الحلزوني المعكوس',model:'TAPERED FOREARM TRAINER',short:'Advance · hold · fold back',source:'Checklist p.2 · step 7 · Reverse spiral',intro:'Anchor distally with two or three turns. Advance the roll proximally at about 30°. Halfway through each turn, fold the bandage towards the nurse and continue downward. Repeat while progressing proximally, then secure.',arabic:'ابدأ بلفّتين أو ثلاث عند الطرف البعيد، ثم تقدّم باتجاه الجذع بزاوية نحو ٣٠ درجة. في منتصف كل لفّة اثنِ الرباط باتجاه الممرّض، وأكمل الجزء الهابط مع استمرار التقدّم إلى الأعلى.',rationale:'The reversal is a visible fold of the cloth, not a direction arrow. The rendered fabric and angle are illustrative; an instructor must demonstrate the real hand grip, fold and material response.',anchor:'distal',purpose:'Retain a dressing on a tapered area',kind:'arm',labels:['Distal anchor','Hold the fold','Progress proximally']}
+};
+const CASES={routine:{label:'Routine application',description:'Fictional adult skills-lab case. The instructor has selected this bandaging method. The required wound care is already completed, the area is supported, and the patient is comfortable.',ar:'حالة تدريب افتراضية لشخص بالغ: حدّد المدرّب طريقة الربط، وأُنجزت العناية المطلوبة بالموضع، والطرف مسنود والمريض مرتاح.'},tight:{label:'Circulation concern after wrapping',description:'Fictional safety-extension case. Complete the selected wrap, then review a circulation concern. The model is not predicting circulation from your movements.',ar:'حالة افتراضية مضافة للسلامة: بعد إتمام الربط تظهر ملاحظة تتعلق بالدورة الدموية. هذه الاستجابة ليست قياسًا أو تنبؤًا من النموذج.'},skin:{label:'Skin assessment needs review',description:'Fictional checklist-based case. Review the skin observation before deciding whether to continue. Do not invent a diagnosis or a wound-care order.',ar:'حالة افتراضية مستندة إلى التقييم في الملف: راجع حالة الجلد قبل الاستمرار، ولا تفترض تشخيصًا أو أمرًا علاجيًا.'},pause:{label:'Patient asks to wait',description:'Fictional communication case. Preparation can be completed, but the patient asks to wait during the explanation. A held attempt is not a completed bandage.',ar:'حالة تواصل افتراضية: يطلب المريض الانتظار عند شرح الإجراء. لا تُسجّل المحاولة المؤجّلة كإجراء مكتمل.'}};
+const VOCAB=[['Bandage','رباط'],['Circular turn','لفّة دائرية'],['Figure-eight','لفّات على شكل الرقم ثمانية'],['Spiral','حلزوني'],['Recurrent turns','لفّات راجعة'],['Reverse spiral','حلزوني معكوس'],['Distal','الأبعد عن الجذع'],['Proximal','الأقرب إلى الجذع'],['Overlap','تداخل اللفّات'],['Skin integrity','سلامة الجلد'],['Circulation','الدورة الدموية'],['Secure the end','ثبّت نهاية الرباط']];
+const COVERAGE=[
+ ['1','Privacy; handwashing; gloves.','Three preparation actions.','Checklist'],
+ ['2','Wound care as ordered/required; determine the purpose.','Purpose decision. Wound care is assumed completed in the fictional routine case; it is not independently taught.','Checklist'],
+ ['3','Assess skin dryness, fragility, breakdown, bleeding and infection signs.','Skin observation and hold-for-review branch. No diagnosis is generated.','Checklist'],
+ ['4','Assess comfort and consciousness; explain the procedure.','Explanation, cooperation and patient-requested hold.','Checklist'],
+ ['5','Gather supplies based on assessment.','Equipment selection; supplies are scenario-specific illustrations.','Checklist + teaching example'],
+ ['6','Dominant hand holds roll; nondominant hand holds loose end; even, firm application, not too tight.','Moving roll hand and supporting hand; anchor-landmark and application-setting decisions. No force sensor.','Checklist'],
+ ['7a','Figure eight: centre-joint anchor, oblique alternating wraps above/below, overlap and secure.','Separate crossing-above and crossing-below movements. One initial anchor turn and three eight-pairs are illustration choices.','Checklist + teaching geometry'],
+ ['7b','Spiral: 2–3 distal circular turns; 1/2–2/3 overlap; advance and secure.','Choice of 2 or 3 anchors, overlap setting and sequential advancing turns. 67% is a rounded display of two-thirds.','Checklist'],
+ ['7c','Recurrent: two proximal anchors; reverse over distal end front/back; two final circles and secure.','Raised fold, over-end passes, return folds, two securing circles. Seven covering passes are a visual teaching choice.','Checklist + teaching geometry'],
+ ['7d','Reverse spiral: 2–3 distal anchors; about 30°; fold towards nurse halfway through; continue downward, advance, secure.','Rise / hold-and-fold / downward continuation are separate controlled movements. Fabric and angle are schematic.','Checklist'],
+ ['8','Remove and dispose of gloves; wash hands.','Two final hygiene actions for completed, held and interrupted attempts.','Checklist'],
+ ['Added','Circulation review; reapply more loosely when circulation is restricted.','Explicit safety extension; based on St John Ambulance. Routine data and abnormal results are fictional, not measured. A stump trainer has no distal finger/toe; no finger test is fabricated for it.','External safety extension'],
+ ['Added','Review quiz, local notes and practice debrief.','Learning support; no official marks, pass threshold, clinical competence claim or patient record.','Simulation design']
+];
+const QUIZ=[
+ {q:'What does the checklist require before starting?',a:['Privacy, handwashing and gloves','Wrapping first, then privacy','Gloves without handwashing'],k:0,r:'Step 1 combines privacy, washing hands and applying gloves.',src:'Checklist p.1 · step 1'},
+ {q:'Which finding belongs in the skin assessment?',a:['Only the colour of the bandage','Dryness, fragility, breakdown, bleeding or infection signs','Only the length of the roll'],k:1,r:'These are the skin-assessment observations named in step 3.',src:'Checklist p.1 · step 3'},
+ {q:'How should the roll and its loose end be held initially?',a:['Roll in dominant hand; loose end held by nondominant hand','Both should be left unsupported','Only the roll needs to be held'],k:0,r:'Step 6 assigns the roll to the dominant hand and the loose end to the nondominant hand.',src:'Checklist p.1 · step 6'},
+ {q:'What application quality is specified?',a:['As tight as possible','Loose enough to fall away','Even and firm, avoiding excessive tightness'],k:2,r:'The checklist cautions against making the bandage too tight.',src:'Checklist p.1 · step 6'},
+ {q:'Where is the figure-eight bandage anchored in this checklist?',a:['At any convenient place','At the centre of the joint','Only at the distal end of the fingers'],k:1,r:'The figure-eight description explicitly starts at the centre of the joint.',src:'Checklist p.1 · step 7'},
+ {q:'What movement creates the figure-eight pattern?',a:['Alternating oblique turns above and below the joint','Only repeating circles in one place','Passing straight over a rounded end'],k:0,r:'The checklist describes oblique circular movement above and below the joint.',src:'Checklist p.1 · step 7'},
+ {q:'What overlap does the checklist give for spiral bandaging?',a:['No overlap','One-half to two-thirds of the width','Every turn fully covers all previous turns'],k:1,r:'One-half to two-thirds is the source target. The app displays this as 50% to about 67%.',src:'Checklist pp.1–2 · step 7'},
+ {q:'How many initial circular turns are specified for the spiral method?',a:['Exactly one','Two or three','Exactly seven'],k:1,r:'The spiral and reverse-spiral descriptions both allow two or three initial turns.',src:'Checklist pp.1–2 · step 7'},
+ {q:'How is the recurrent pattern completed after the end is covered?',a:['Leave the loose end free','Remove all covering passes','Add two circular turns and secure the end'],k:2,r:'The recurrent-turns description ends with two further circular turns and securement.',src:'Checklist p.2 · step 7'},
+ {q:'When is the reverse-spiral fold made?',a:['Halfway through each turn, towards the nurse','Only after the entire procedure','Without holding or controlling the fabric'],k:0,r:'The checklist gives about 30° for the advancing roll and a fold towards the nurse halfway through each turn.',src:'Checklist p.2 · step 7'},
+ {q:'Safety extension: the circulation check suggests the wrap is too tight. What is the appropriate response?',a:['Ignore it because the wrap looks tidy','Tighten it further','Reapply more loosely and reassess; seek clinical review for persisting concerns'],k:2,r:'St John Ambulance advises reapplying more loosely when the wrap restricts circulation. Escalation of a persisting concern is a conservative teaching decision, not a diagnosis from the app.',src:'External safety extension · St John Ambulance; conservative escalation branch'},
+ {q:'Can successful completion of this app certify clinical competence?',a:['Yes, because animation measures real pressure','No; the app records learning actions, not real force, circulation or hands-on competence','Yes, after watching the demonstration'],k:1,r:'Physical technique, tissue response, tension and clinical suitability require supervised practical assessment.',src:'Simulation limitation'}
+];
+const SOURCE_HTML=`<p><b>Primary curricular source:</b> <i>8.Bandaging.docx</i>, Faculty of Nursing, Tobruk University, “Final Practical Examination — Bandaging”, 2 pages. The eight numbered steps and four named methods are retained. The original file is included in the source package.</p>
+<div class="inline-note"><b>This is not a revised official checklist.</b> It visualises the uploaded teaching document. External safety material, fictional cases, geometry choices and learning tools are labelled separately. Nothing here establishes an approved treatment order or an examination grade.</div>
+<h3>What the file supports</h3><p>Privacy, hand hygiene and gloves; determining the bandage purpose and completing required wound care; skin assessment; comfort, consciousness and explanation; equipment preparation; control of the roll and loose end; even and firm application without excessive tightness; four bandaging methods; and final glove disposal and handwashing.</p>
+<p>Step 2 lists possible purposes: covering a wound/protection from infection, holding a dressing, applying pressure to control bleeding, support/immobilisation, maintaining circulation, reducing oedema and wound splinting. These are retained as the source’s list, not a claim that any bandage automatically achieves all of them. This app does <b>not</b> teach emergency bleeding control or therapeutic compression.</p>
+<h3>External safety extension — separate from the file</h3><p><a href="https://www.sja.org.uk/first-aid-advice/bandage-dressing/" target="_blank" rel="noopener noreferrer">St John Ambulance: How to put on a bandage</a>, clinically reviewed 28 April 2025; accessed 30 September 2026. The source advises firm application without restricting circulation, leaving fingers/toes visible when applicable, checking circulation and reapplying more loosely when necessary. Its finger/toe check is not applied to the rounded-end trainer, which has no distal digits. Local clinical assessment and the instructor’s direction remain necessary.</p>
+<p>The abnormal circulation result and all patient statements are <b>fictional teaching events</b>, not responses calculated from tissue physiology. An interrupted bandage is removed in this exercise and handed over for reassessment. Reapplication, if appropriate, requires a fresh training attempt; the app never marks this interrupted event as a normal completed procedure.</p>
+<h3>What is illustrative or not supplied</h3><p>The file does not specify a numerical pressure target, material/device-specific tension, a full neurovascular-assessment protocol, wound-care detail, an assessment score or a required number of advancing passes. The app supplies none as clinical rules. Bandage width, trained area, target-mark positions, most movement counts and example supplies are geometry/design choices. Two versus three initial turns are selectable for spiral and reverse spiral; recurrent turns use the source’s two initial and two final circles.</p>
+<p>The source’s “stump method” is demonstrated only as a <b>recurrent covering pattern on a rounded task trainer</b>. It is not a postoperative residual-limb compression/shaping protocol. The reverse-spiral angle and fabric fold are illustrative rather than cloth-physics measurements. Clinical instructor review of all trajectories is required before student release.</p>
+<h3>Source-to-simulation coverage</h3><table><thead><tr><th>Step</th><th>Source content</th><th>Implementation / limit</th><th>Basis</th></tr></thead><tbody>${COVERAGE.map(r=>'<tr>'+r.map(c=>'<td>'+c+'</td>').join('')+'</tr>').join('')}</tbody></table>
+<h3>Privacy, accessibility and technical limits</h3><p>One standalone HTML file. No network request is needed for the simulation. No login, analytics, recording, camera, microphone or cloud upload. Notes and recent practice records stay in browser storage when available; exports are user-initiated. Do not enter identifiable patient information. Browser storage can be cleared by the browser, and local-file storage behaviour varies.</p><p>English pronunciation uses the device/browser speech service, if available. Only the selected term or instruction is spoken; the app does not request a microphone. Some device voices may depend on their own network service. Physical devices and native screen-reader behaviour need testing. The 3-D scene has labelled buttons and non-drag alternatives, but it is not a fully nonvisual practical substitute.</p>`;
+</script><script>/* Original parametric limb and cloth surfaces. Fixed illustrative trajectories, not
+   fabric/force physics. Ribbons are filled, finite-width meshes which remain on
+   the limb; the roll and two gloved hand rigs follow the leading edge. */
+const BV={add:LabScene.add,sub:LabScene.sub,mul:LabScene.mulv,dot:LabScene.dot,cross:LabScene.cross,norm:LabScene.norm,mix:LabScene.mix};
+const BAND_WIDTH=.46;
+function bodyRadius(m,x){
+ if(m==='recurrent')return x<-.92?Math.sqrt(Math.max(.00005,.56*.56-(x+.92)**2)):.56;
+ if(m==='eight')return .285+.025*(x+2)+.10*Math.exp(-(((x+.73)/.72)**2))+.085*Math.exp(-(((x-1.45)/.90)**2));
+ return .25+.075*(x+1.9)+.04*Math.exp(-(((x+.25)/.82)**2));
+}
+function axisY(m,x){return m==='recurrent'?1.04:m==='eight'?1.03+.13*Math.max(x,0):1.03;}
+function atCylinder(m,x,a){let r=bodyRadius(m,x);return[x,axisY(m,x)+r*Math.cos(a),r*Math.sin(a)];}
+function normalAt(m,p){if(m==='recurrent'&&p[0]<-.92)return BV.norm(BV.sub(p,[-.92,1.04,0]));return BV.norm([0,p[1]-axisY(m,p[0]),p[2]]);}
+function projectToSkin(m,p){
+ if(m==='recurrent'&&p[0]<-.92){let n=BV.norm(BV.sub(p,[-.92,1.04,0]));return BV.add([-.92,1.04,0],BV.mul(n,.56));}
+ let x=p[0],theta=Math.atan2(p[2],p[1]-axisY(m,x));return atCylinder(m,x,theta);
+}
+function makePlan(m,overlap=.60,angle=30,anchors=2){
+ let arr=[];const push=(type,label,en,ar,fn,duration=2.8)=>arr.push({type,label,en,ar,point:fn,duration});
+ const circle=(x,theta,label,type='circle')=>push(type,label,'Keep the roll controlled and the loose end supported while completing the circular turn.','أكمل اللفّة الدائرية مع التحكم في اللفافة وإسناد البداية.',t=>atCylinder(m,x,theta+Math.PI*2*t));
+ const circStart=m==='reverse'?-Math.PI/2:Math.PI/2;
+ const xAnchor=m==='eight'?0:m==='recurrent'?.88:-1.32;
+ for(let k=0;k<(m==='eight'?1:m==='recurrent'?2:anchors);k++)circle(xAnchor,circStart,`Anchor turn ${k+1}`);
+ if(m==='eight'){
+  for(let k=0;k<3;k++)for(let side=0;side<2;side++){
+   let amp=.83-k*.14;
+   push(side===0?'above':'below',side===0?'Cross above the joint':'Cross below the joint',side===0?'Carry the roll obliquely around the area above the joint and return across the front.':'Cross in the opposite direction, around the area below the joint. This completes the eight-pair.',side===0?'مرّر اللفافة بصورة مائلة حول المنطقة أعلى المفصل ثم أعدها عبر الأمام.':'اعبر في الاتجاه المقابل حول المنطقة أسفل المفصل لإكمال شكل الثمانية.',t=>{let u=(side+t)*Math.PI*2;return atCylinder(m,amp*Math.sin(u/2),Math.PI/2+u);},3.7);
+  }
+ }
+ if(m==='spiral'){
+  let pitch=BAND_WIDTH*(1-overlap),turns=Math.ceil(2.05/pitch);
+  for(let k=0;k<turns;k++)push('advance',`Spiral turn ${k+1}`,'Advance proximally, keeping the previous turn overlapped by one-half to two-thirds of the width.','تقدّم باتجاه الجذع مع تداخل نصف عرض اللفّة السابقة إلى ثلثيه.',t=>atCylinder(m,xAnchor+(k+t)*pitch,Math.PI/2+2*Math.PI*t));
+ }
+ if(m==='reverse'){
+  const pitch=.23;
+  for(let k=0;k<6;k++){
+   let base=xAnchor+k*pitch,lift=Math.PI*bodyRadius(m,base+.35)*Math.tan(angle*Math.PI/180),foldX=base+lift;
+   push('rise',`Advance · half-turn ${k+1}`,'Advance the roll proximally at about 30°. Stop halfway through the turn, ready for the reversal.','تقدّم باللفافة بزاوية نحو ٣٠ درجة، وتوقّف عند منتصف اللفّة استعدادًا للثني.',t=>atCylinder(m,base+lift*t,-Math.PI/2+Math.PI*t),2.6);
+   push('fold',`Hold & reverse · fold ${k+1}`,'Hold the laid bandage with the supporting hand. Bring the free bandage towards the nurse and fold it back before continuing.','أمسك الجزء الموضوع باليد المساندة، واثنِ الجزء الحر من الرباط باتجاه الممرّض قبل إكمال اللفّة.',t=>atCylinder(m,foldX,Math.PI/2+.015*t),2.4);
+   push('down',`Continue downward · turn ${k+1}`,'Complete the downward half of this turn. The next advancing half-turn begins a little more proximally.','أكمل الجزء الهابط من اللفّة، ثم ابدأ اللفّة التالية من موضع أقرب إلى الجذع.',t=>atCylinder(m,foldX-(lift-pitch)*t,Math.PI/2+Math.PI*t),2.6);
+  }
+ }
+ if(m==='recurrent'){
+  let last=Math.PI/2;const offsets=[0,.37,-.37,.74,-.74,1.11,-1.11];
+  for(let k=0;k<offsets.length;k++){
+   let alpha=Math.PI/2+offsets[k],rev=k%2!==0,start=alpha+(rev?Math.PI:0),old=last;
+   // Shortest re-position at the held edge between adjacent covering strips.
+   let delta=((start-old+Math.PI*3)%(Math.PI*2))-Math.PI;
+   push('fold',`${k===0?'First':'Return'} fold · pass ${k+1}`,'Hold the bandage at the front or back anchor and reverse the free roll over the distal end.','ثبّت الرباط عند نقطة الارتكاز الأمامية أو الخلفية، ثم اثنِ اللفافة لتمريرها فوق النهاية البعيدة.',t=>atCylinder(m,.88,old+delta*t),2.1);
+   push('over',`${rev?'Back → front':'Front → back'} · over the end`,'Carry a full-width strip over the rounded end, keeping it supported. Place the next strip alongside with overlap until the end is covered.','مرّر شريط الرباط فوق النهاية المستديرة مع إسناده، ثم ضع الشريط التالي بجانبه مع التداخل حتى التغطية.',t=>{
+    let q=rev?1-t:t;
+    if(q<.35)return atCylinder(m,.88-1.8*q/.35,alpha);
+    if(q>.65)return atCylinder(m,-.92+1.8*(q-.65)/.35,alpha+Math.PI);
+    let beta=(q-.35)/.30*Math.PI;
+    return[-.92-.56*Math.sin(beta),1.04+.56*Math.cos(beta)*Math.cos(alpha),.56*Math.cos(beta)*Math.sin(alpha)];
+   },4.5);
+   last=alpha+(rev?0:Math.PI);
+  }
+  circle(.88,last,'Final securing circle 1','finalcircle');circle(.88,last,'Final securing circle 2','finalcircle');
+ }
+ let last=arr.at(-1).point(1);
+ push('secure','Secure the free end','Hold the completed wrap while securing the free end. The illustrated fastener is a teaching example.','أمسك الرباط المكتمل أثناء تثبيت النهاية الحرة. أداة التثبيت المعروضة مثال تعليمي.',()=>last,1.6);
+ return arr;
+}
+class BandageScene extends LabScene{
+ constructor(c,o){super(c,o);this.plan=[];this.key='';this.meshNames=[];this.rollPosition=[0,0,0];this.handPosition=[0,0,0];this.ready=false;this.setView('overview',true);}
+ setView(v,instant=false){this.view=v;const a={overview:[.28,.49,1],hands:[.05,.40,1.23],back:[3.22,.48,1],top:[0,1.48,1.07]}[v]||[.28,.49,1];this.desired={az:a[0],el:a[1],zoom:a[2]};if(instant){this.az=a[0];this.el=a[1];this.zoom=a[2];}}
+ frame(m,j,t){let seg=this.plan[j],p=seg.point(t),n=normalAt(m,p),a=seg.point(Math.max(0,t-.005)),b=seg.point(Math.min(1,t+.005));let tang=BV.norm(BV.sub(b,a));if(Math.hypot(...BV.sub(b,a))<.00001)tang=BV.norm([0,-n[2],n[1]]);let across=BV.norm(BV.cross(n,tang));return{p,n,tang,across};}
+ clearPlan(){for(let n of this.meshNames){let a=this.meshes[n];if(a&&this.gl)for(let k of ['p','n','i'])this.gl.deleteBuffer(a[k]);delete this.meshes[n];}this.meshNames=[];this.key='';}
+ build(m,overlap,angle,anchors){const key=[m,overlap,angle,anchors].join('|');if(key===this.key)return;this.clearPlan();this.key=key;this.plan=makePlan(m,overlap,angle,anchors);this.partialSig='';this.body(m);for(let i=0;i<this.plan.length;i++)if(this.plan[i].type!=='secure')this.ribbon(m,i,1,'band'+i);}
+ body(m){let p=[],idx=[],N=84,R=48;let xmin=m==='recurrent'?-1.479:-2.13,xmax=m==='recurrent'?1.95:2.22;
+  for(let i=0;i<=N;i++){let x=xmin+(xmax-xmin)*i/N;for(let j=0;j<R;j++)p.push(...atCylinder(m,x,j/R*Math.PI*2));}
+  for(let i=0;i<N;i++)for(let j=0;j<R;j++){let a=i*R+j,b=i*R+(j+1)%R;idx.push(a,b,a+R,b,b+R,a+R);}
+  let first=p.length/3;p.push(xmin,axisY(m,xmin),0);let last=p.length/3;p.push(xmax,axisY(m,xmax),0);for(let j=0;j<R;j++){idx.push(first,(j+1)%R,j);let q=N*R;idx.push(last,q+j,q+(j+1)%R);}this.geometry('trainingLimb',p,idx);
+ }
+ ribbon(m,j,to,name){
+  const fold=this.plan[j].type==='fold',N=fold?16:Math.max(2,Math.ceil(85*to)),W=8,p=[],ix=[],ep=[],ei=[];
+  // A reversal is ONE moving flap, not the swept volume of all prior flap
+  // positions. Its free portion rises and returns flat as the fold is completed.
+  for(let i=0;i<=N;i++){
+   const t=fold?to:i/N*to,f=this.frame(m,j,t),off=.026+(j+t)*.0033;
+   let tangent=f.tang;
+   if(fold){
+    let prev=this.plan[Math.max(0,j-1)],a=prev.point(.985),b=prev.point(1);
+    tangent=BV.norm(BV.sub(b,a));
+    tangent=BV.norm(BV.sub(tangent,BV.mul(f.n,BV.dot(tangent,f.n))));
+   }
+   let across=BV.norm(BV.cross(f.n,tangent));
+   for(let k=0;k<=W;k++){
+    let u=(k/W-.5)*BAND_WIDTH,base;
+    if(fold){
+     const along=(i/N)*.30,angle=Math.PI*to;
+     const local=BV.add(BV.mul(across,u),BV.mul(tangent,along*Math.cos(angle)));
+     base=projectToSkin(m,BV.add(f.p,local));
+     base=BV.add(base,BV.mul(normalAt(m,base),off+.004+along*Math.sin(angle)));
+    }else{base=projectToSkin(m,BV.add(f.p,BV.mul(across,u)));base=BV.add(base,BV.mul(normalAt(m,base),off));}
+    p.push(...base);
+   }
+  }
+  for(let i=0;i<N;i++)for(let k=0;k<W;k++){let a=i*(W+1)+k,b=a+W+1;ix.push(a,b,a+1,a+1,b,b+1);}
+  this.geometry(name,p,ix);if(!this.meshNames.includes(name))this.meshNames.push(name);
+  // Two narrow fabric selvedges follow the same physical mesh; they do not
+  // replace the filled bandage. A faint central weave seam clarifies each layer.
+  for(const k of [0,W]){let start=ep.length/3;for(let i=0;i<=N;i++){
+    let a=p.slice((i*(W+1)+k)*3,(i*(W+1)+k)*3+3),b=p.slice((i*(W+1)+(k===0?1:W-1))*3,(i*(W+1)+(k===0?1:W-1))*3+3);
+    let n=normalAt(m,a);ep.push(...BV.add(a,BV.mul(n,.002)),...BV.add(BV.mix(a,b,.18),BV.mul(n,.002)));
+   }for(let i=0;i<N;i++){let a=start+i*2;ei.push(a,a+2,a+1,a+1,a+2,a+3);}}
+  this.geometry(name+'edge',ep,ei);if(!this.meshNames.includes(name+'edge'))this.meshNames.push(name+'edge');
+ }
+ drawCloth(name,fold=false){this.shape(name,[0,0,0],[1,1,1],fold?0xe3d7b9:0xefe9d7);this.shape(name+'edge',[0,0,0],[1,1,1],0xc2b597);}
+ glove(origin,basis,curl=false,scale=1.20){
+  const col=0xaacbd1,tr=v=>BV.add(origin,BV.mul(v.reduce((a,n,i)=>BV.add(a,BV.mul(basis[i],n)),[0,0,0]),scale));
+  this.shape('palm',origin,[scale,scale,scale],col,basis);
+  for(let i=0;i<4;i++){
+   let fx=-.105+i*.069,len=[.20,.255,.238,.185][i],name='grip'+(curl?'C':'F')+i;
+   if(!this.meshes[name]){let pts=curl?[[fx,.113,0],[fx,.175,-.005],[fx,.215,-.035],[fx,.224,-.102],[fx,.186,-.168]]:[[fx,.113,0],[fx,.19,-.005],[fx,.118+len*.8,-.025],[fx,.118+len,-.035]];this.sweep(name,pts,curl?[.030,.03,.028,.024,.013]:[.03,.03,.024,.009],12);}
+   this.shape(name,origin,[scale,scale,scale],col,basis);
+  }
+  let name='thumb'+curl;if(!this.meshes[name])this.sweep(name,curl?[[.10,-.045,0],[.16,.008,-.016],[.18,.08,-.08],[.14,.125,-.135]]:[[.10,-.06,0],[.175,.00,-.01],[.19,.09,-.025],[.17,.125,-.035]],[.035,.036,.027,.011],14);
+  this.shape(name,origin,[scale,scale,scale],col,basis);
+  let wrist=tr([0,-.19,0]),fore=tr([0,-.83,.13]),end=tr([0,-1.10,.22]);
+  this.segment('forearm',fore,wrist,0xaacbd1,1.28,1.28);this.segment('scrubSleeve',end,fore,0x316560,1.02,1.02);
+  this.segment('cylinder',tr([0,-.265,0]),tr([0,-.235,0]),0x95b8bd,.09,.075);
+ }
+ drawRoll(m,j,t,hidden){
+  let f=this.frame(m,j,t),fold=this.plan[j].type==='fold',level=.026+(j+t)*.0033,rad=.23-.075*(j+t)/this.plan.length;
+  let contact=BV.add(f.p,BV.mul(f.n,level)),tang=f.tang,across=f.across;
+  if(fold&&m==='reverse'){tang=BV.norm([1,.08,0]);across=BV.norm(BV.cross(f.n,tang));}
+  let roll=BV.add(contact,BV.add(BV.mul(f.n,rad+.13+(fold?.22*Math.sin(Math.PI*t):0)),BV.mul(tang,.20)));
+  if(fold)roll=BV.add(roll,BV.mul(across,-.35*Math.sin(Math.PI*t)));
+  this.rollPosition=roll;
+  let a=BV.add(roll,BV.mul(across,-BAND_WIDTH/2)),b=BV.add(roll,BV.mul(across,BAND_WIDTH/2));
+  this.segment('cylinder',a,b,0xf0e9d8,rad,rad);
+  for(let side of [-1,1]){
+   let q=BV.add(roll,BV.mul(across,side*(BAND_WIDTH/2+.003))),q2=BV.add(q,BV.mul(across,side*.004));
+   this.segment('cylinder',q,q2,0xcfc5ad,rad*.88,rad*.88);this.segment('cylinder',BV.add(q,BV.mul(across,side*.005)),BV.add(q,BV.mul(across,side*.009)),0x907754,rad*.28,rad*.28);
+   // Visible rotating edge seam shows unwinding rather than a sliding cylinder.
+   let rot=(j+t)*Math.PI*2*1.6,v=BV.add(BV.mul(f.n,Math.cos(rot)*rad*.78),BV.mul(tang,Math.sin(rot)*rad*.78));
+   this.ball(BV.add(q,v),[.014,.014,.014],0xaa9770);
+  }
+  // Live unrolled bridge joining the laid ribbon to the rotating roll.
+  let pp=[],ii=[];for(let n=0;n<=12;n++){let u=n/12;for(let k=0;k<=8;k++){
+   let v=(k/8-.5)*BAND_WIDTH,start=projectToSkin(m,BV.add(f.p,BV.mul(across,v)));start=BV.add(start,BV.mul(normalAt(m,start),level+.002));
+   let end=BV.add(BV.add(roll,BV.mul(across,v)),BV.mul(f.n,-rad)),pt=BV.mix(start,end,u);pt=BV.add(pt,BV.mul(f.n,.026*Math.sin(Math.PI*u)));pp.push(...pt);
+  }}for(let n=0;n<12;n++)for(let k=0;k<8;k++){let a=n*9+k;ii.push(a,a+9,a+1,a+1,a+9,a+10);}this.geometry('liveBridge',pp,ii);this.shape('liveBridge',[0,0,0],[1,1,1],0xeee6d3);
+  if(hidden)return;
+  const B=[BV.mul(across,-1),tang,f.n];let holdOrigin=BV.add(roll,BV.add(BV.mul(f.n,.195),BV.mul(tang,-.03)));this.handPosition=holdOrigin;this.glove(holdOrigin,B,true,1.15);
+  let guide=BV.add(contact,BV.add(BV.mul(tang,-.29),BV.mul(f.n,.087))),GB=[across,tang,f.n];
+  if(fold)guide=BV.add(guide,BV.mul(across,-.17));this.glove(guide,GB,false,1.08);
+ }
+ sceneObjects(s){
+  const m=s.method;this.box([0,.11,0],[2.62,.085,1.0],0x84958b);this.box([0,.215,0],[2.59,.015,.98],0xc3cdc1);
+  for(let x of [m==='recurrent'?1.7:1.99,m==='recurrent'?-.5:-1.94]){this.box([x,.39,0],[.13,.17,.38],0x6c8378);this.ball([x,.56,0],[.23,.10,.44],0xc3cebc);}
+  this.shape('trainingLimb',[0,0,0],[1,1,1],0xc7aa8b);
+  // Quiet, continuous skin-tone hand at the distal end; no expressive character.
+  if(m!=='recurrent'){
+   this.ball([-2.27,1.025,0],[.28,.14,.235],0xc7aa8b);
+   for(let i=0;i<4;i++){let z=-.157+i*.098,len=[.37,.46,.435,.34][i];let name='patientDigit'+i;if(!this.meshes[name])this.sweep(name,[[-2.43,1.035,z],[-2.55,1.025,z],[-2.43-len,1.01,z+.02]],[.046,.046,.024],14);this.shape(name,[0,0,0],[1,1,1],0xc7aa8b);}
+   if(!this.meshes.patientThumb)this.sweep('patientThumb',[[-2.15,1.02,.15],[-2.30,1.035,.34],[-2.47,1.025,.35]],[.070,.066,.024],16);this.shape('patientThumb',[0,0,0],[1,1,1],0xc7aa8b);
+  }else this.segment('cylinder',[1.945,1.04,0],[2.0,1.04,0],0x657b70,.56,.56);
+  // The covered wound/dressing is assumed prepared; no open injury is depicted.
+  if(m==='spiral'||m==='reverse'){
+   let yy=axisY(m,-.1)+bodyRadius(m,-.1)+.006;this.box([-.1,yy,0],[.39,.012,.15],0xdfddd4);
+  }
+  let showIndex=s.stage==='welcome'?Math.min(m==='reverse'?7:m==='recurrent'?7:4,this.plan.length-1):s.move;
+  let progress=s.stage==='welcome'?.65:s.fraction;
+  if(s.removed){showIndex=0;progress=0;}
+  for(let j=0;j<Math.min(showIndex,this.plan.length);j++)if(this.plan[j].type!=='secure')this.drawCloth('band'+j,this.plan[j].type==='fold');
+  if(showIndex<this.plan.length&&this.plan[showIndex].type!=='secure'&&progress>.0001){let sig=[showIndex,Math.round(progress*240)].join('|');if(sig!==this.partialSig){this.ribbon(m,showIndex,progress,'liveRibbon');this.partialSig=sig;}this.drawCloth('liveRibbon',this.plan[showIndex].type==='fold');}
+  const complete=(s.secured||s.stage==='demoDone')&&!s.removed;
+  if(complete){let f=this.frame(m,this.plan.length-1,1),normal=f.n,across=f.across,along=BV.norm(BV.cross(across,normal)),O=BV.add(f.p,BV.mul(normal,.036+(this.plan.length-1)*.0033));this.box(O,[.17,.012,.07],0xb5c2bc,[across,normal,along]);}
+  else if(!s.removed){let j=Math.min(showIndex,this.plan.length-2);this.drawRoll(m,j,this.plan[showIndex]?.type==='secure'?1:progress,s.hideHands||!['welcome','wrap','anchor','demo','demoDone','remove'].includes(s.stage));}
+  this.activeIndex=showIndex;this.activeFraction=progress;
+ }
+ landmark(m,type){let x=type==='distal'?-1.32:type==='proximal'?.88:0;return atCylinder(m,x,Math.PI/2);}
+ drawOverlay(s){
+  if(!s.labels)return;
+  if(s.stage==='anchor'){
+   for(let t of ['distal','centre','proximal']){let p=this.landmark(s.method,t);this.ring(p,18);this.label(p,t==='centre'?(s.method==='eight'?'Centre of joint':'Middle of area'):t==='distal'?'Distal start':'Proximal start','#536c58',t==='centre');}
+  }else if(this.view==='hands'){
+   if(['demo','wrap','welcome'].includes(s.stage)&&!s.hideHands)this.label(this.rollPosition,'Roll unwinds as the hand moves','#45675a',true);
+  }else{
+   this.label(this.landmark(s.method,s.method==='recurrent'?'proximal':s.method==='eight'?'centre':'distal'),s.method==='recurrent'?'Proximal circular anchor':s.method==='eight'?'Centre-joint anchor':'Distal anchor','#536b55');
+   if(s.method==='recurrent')this.label([-1.48,1.04,0],'Cover the distal end','#536b55',true);
+   else if(s.method==='eight')this.label([.9,1.17,.42],'Alternate above and below','#536b55',true);
+   else this.label([.80,1.1,.43],'Advance towards the body','#536b55',true);
+  }
+ }
+ render(s,dt){
+  const r=this.canvas.getBoundingClientRect();if(r.width<1||r.height<1)return;this.w=r.width;this.h=r.height;
+  const dpr=Math.min(window.devicePixelRatio||1,this.gl?1.8:1.2),w=Math.round(this.w*dpr),h=Math.round(this.h*dpr);
+  if(this.canvas.width!==w||this.canvas.height!==h){this.canvas.width=w;this.canvas.height=h;this.overlay.width=w;this.overlay.height=h;this.image=null;}
+  this.ctx.setTransform(dpr,0,0,dpr,0,0);this.ctx.clearRect(0,0,this.w,this.h);
+  const ease=1-Math.exp(-Math.min(dt,.1)*10);for(let k of ['az','el','zoom'])this[k]+=(this.desired[k]-this[k])*ease;
+  this.build(s.method,s.overlap/100,s.angle,s.anchors);
+  let target=s.method==='recurrent'?[.04,1.05,0]:[-.15,1.08,0];
+  if(this.view==='hands')target=s.method==='recurrent'?[-.42,.96,.07]:[-.15,.98,0];
+  let dist=6.3*Math.max(1,1.55/(this.w/this.h))/this.zoom;if(s.method==='recurrent')dist*=.88;
+  this.eye=[target[0]+dist*Math.sin(this.az)*Math.cos(this.el),target[1]+dist*Math.sin(this.el),target[2]+dist*Math.cos(this.az)*Math.cos(this.el)];
+  this.vp=LabScene.mm(LabScene.perspective(.66,this.w/this.h,.1,70),LabScene.look(this.eye,target));
+  this.primitives=[];this.sceneObjects(s);if(this.gl)this.renderGL(w,h);else this.renderSoft(w,h);this.drawOverlay(s);this.ready=true;
+ }
+}
+</script><script>'use strict';
+const $=id=>document.getElementById(id),esc=x=>String(x).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const STORAGE='tobruk.bandaging.v1';let storageAvailable=true,records=[],notes='';
+try{records=JSON.parse(localStorage.getItem(STORAGE+'.records')||'[]');if(!Array.isArray(records))records=[];records=records.filter(r=>r&&typeof r==='object'&&typeof r.method==='string'&&typeof r.created==='string'&&typeof r.outcome==='string').slice(0,24);notes=localStorage.getItem(STORAGE+'.notes')||'';localStorage.setItem(STORAGE+'.probe','1');localStorage.removeItem(STORAGE+'.probe');}catch(e){storageAvailable=false;records=[];}
+let s,scene,feedbackText='',feedbackBad=false,currentInstruction='',lastTime=0,renderTime=0,renderError=false,pendingAction=null,quizState=null;
+function initial(method='eight'){return{method,stage:'welcome',caseId:'routine',mode:'guided',scope:'full',overlap:60,angle:30,anchors:2,tension:'even',move:0,fraction:0,movesDone:0,animating:false,paused:false,slow:false,labels:true,hideHands:false,flags:{},supplies:[],logs:[],errors:0,secured:false,removed:false,removeAnimating:false,checked:false,outcome:'',started:null,record:null,holdReason:'',safeConcern:false,view:'overview'};}
+s=initial();
+function log(event,detail=''){s.logs.push({at:new Date().toISOString(),event,detail});}
+function clearFeedback(){feedbackText='';feedbackBad=false;$('feedback').textContent='';}
+function tell(en,ar='',bad=false){feedbackText=en+(ar&&!document.body.classList.contains('no-ar')?' '+ar:'');feedbackBad=bad;$('feedback').textContent=feedbackText;$('feedback').className='feedback'+(bad?' bad':'');}
+function fail(en,ar=''){s.errors++;log('Decision corrected',en);tell(en,ar,true);return false;}
+function tag(t,extra=false){return`<div class="source-tag${extra?' extension':''}">${esc(t)}</div>`;}
+function paragraph(en,ar=''){currentInstruction=en;return`<p class="intro">${esc(en)}</p>${ar?`<p class="ar" lang="ar">${esc(ar)}</p>`:''}`;}
+function rationale(en){return`<div class="rationale"><b>WHY THIS MATTERS</b>${esc(en)}</div>`;}
+function button(text,action,value='',className='',disabled=false){return`<button class="${className}" data-action="${action}" data-value="${esc(value)}"${disabled?' disabled':''}>${esc(text)}</button>`;}
+function speakButton(){return`<button class="small" data-action="speak">▶ Read this instruction</button>`;}
+function phase(label,n,progress){$('phaseLabel').textContent=label;$('stepNum').textContent=n;$('progress').style.width=progress+'%';}
+function methodInfo(){return METHODS[s.method];}
+function plan(){return makePlan(s.method,s.overlap/100,s.angle,s.anchors);}
+function currentMove(){return plan()[s.move];}
+function setStage(stage){s.stage=stage;clearFeedback();log('Stage',stage);paint();}
+function start(kind){
+ const method=s.method,caseId=$('caseSelect')?.value||s.caseId,rawMode=$('modeSelect')?.value||s.mode,mode=['guided','challenge'].includes(rawMode)?rawMode:'guided',anchors=Number($('anchorSelect')?.value||s.anchors),prefs={slow:s.slow,labels:s.labels,hideHands:s.hideHands};
+ s={...initial(method),...prefs,caseId,mode,anchors,scope:kind==='practice'?'technique only':'full',started:new Date().toISOString()};
+ if(kind==='demo'){s.stage='demo';s.scope='demonstration';s.caseId='routine';s.animating=true;s.mode='demonstration';log('Demonstration started');}
+ else {s.stage=kind==='practice'?'anchor':'prep';if(kind==='practice')s.caseId='routine';log('Attempt started',s.scope);}
+ scene.setView('overview');paint();
+}
+function chooseMethod(id){if(!METHODS[id])return;const change=()=>{const p={slow:s.slow,labels:s.labels,hideHands:s.hideHands};s={...initial(id),...p};scene.setView('overview');scene.partialSig='';clearFeedback();paint();};
+ if(['welcome','summary','demo','demoDone'].includes(s.stage)){change();return;}
+ requestLeave(change,'Switching methods discards this unfinished practice attempt. Saved notes and earlier records are retained.');
+}
+function requestLeave(fn,text){pendingAction=fn;openModal('Leave this attempt?',`<p>${esc(text)}</p><div class="actions">${button('Stay in this attempt','stay','','secondary')}${button('Leave this attempt','leave','','primary')}</div>`);}
+function reset(){requestLeave(()=>{let m=s.method,p={slow:s.slow,labels:s.labels,hideHands:s.hideHands};s={...initial(m),...p};clearFeedback();paint();},'This restarts the selected technique. Unfinished practice is not counted as a completed procedure.');}
+function paint(){
+ const M=methodInfo(),P=plan();$('methodNav').innerHTML=Object.entries(METHODS).map(([k,m],i)=>`<button class="${s.method===k?'active':''}" data-action="method" data-value="${k}" aria-pressed="${s.method===k}"><b><span>0${i+1}</span>${m.name}</b><small>${m.short}</small></button>`).join('');
+ $('modelLabel').textContent=M.model;$('modeLabel').textContent=s.stage==='welcome'?'STATIC TECHNIQUE PREVIEW':s.scope==='demonstration'?'DEMONSTRATION · NOT ASSESSED':(s.mode+' · '+s.scope).toUpperCase();
+ $('patternMetric').textContent=M.name;$('secondMetricLabel').textContent='PATTERN';$('moveMetric').innerHTML=`${s.stage==='welcome'?0:s.movesDone} <small>/ ${P.length}</small>`;
+ $('stateMetric').textContent=s.stage==='welcome'?'Preview only':s.stage==='demoDone'?'Demonstrated':s.removed?'Not applied':s.secured?'Secured':s.move>0?'In progress':'Not applied';
+ $('pause').disabled=!(s.animating||s.removeAnimating);$('pause').textContent=s.paused?'Resume':'Pause';$('slow').classList.toggle('active',s.slow);$('slow').setAttribute('aria-pressed',s.slow);$('labels').classList.toggle('active',s.labels);$('labels').setAttribute('aria-pressed',s.labels);$('hideHands').classList.toggle('active',s.hideHands);$('hideHands').setAttribute('aria-pressed',s.hideHands);
+ document.querySelectorAll('[data-view]').forEach(b=>b.classList.toggle('active',scene?.view===b.dataset.view));
+ let c='',bed='',caption='',stage=s.stage;
+ const common=(title,en,ar,source,ext=false)=>`<h2>${title}</h2>${paragraph(en,ar)}${tag(source,ext)}`;
+ if(stage==='welcome'){
+  phase('SELECT · OBSERVE · PRACTISE','08',0);
+  c=common(M.name,M.intro,M.arabic,M.source)+rationale(M.rationale);
+  c+=`<div class="field"><label for="caseSelect">PRACTICE CASE</label><select id="caseSelect">${Object.entries(CASES).map(([k,v])=>`<option value="${k}"${s.caseId===k?' selected':''}>${v.label}</option>`).join('')}</select></div><div class="setting-row"><div class="field"><label for="modeSelect">LEARNING MODE</label><select id="modeSelect"><option value="guided"${s.mode==='guided'?' selected':''}>Guided · explanations visible</option><option value="challenge"${s.mode==='challenge'?' selected':''}>Challenge · select the next move</option></select></div>${['spiral','reverse'].includes(s.method)?`<div class="field"><label for="anchorSelect">INITIAL CIRCULAR TURNS</label><select id="anchorSelect"><option value="2"${s.anchors===2?' selected':''}>2 turns</option><option value="3"${s.anchors===3?' selected':''}>3 turns</option></select></div>`:''}</div>`;
+  c+=`<div class="actions">${button(s.mode==='challenge'?'Start challenge procedure':'Start guided procedure','start','full','primary')}${button('Try wrapping only','start','practice','secondary')}</div><p class="helper">“Wrapping only” skips preparation and does not count as the complete checklist. Challenge mode hides the next-movement cue, not safety feedback.</p>`;
+  bed=button('▶ Watch the technique','start','demo','primary')+button('Try wrapping only','start','practice','secondary');
+  caption='Static preview. Choose Watch to see the entire wrapping sequence.';
+ }
+ if(stage==='prep'){
+  phase('PREPARE · CHECKLIST STEP 1','01',5);
+  c=common('Privacy and clean practice','Provide privacy, wash your hands, and apply gloves before the bandaging procedure.','وفّر الخصوصية، واغسل اليدين، ثم ارتدِ القفازات قبل بدء الربط.','Checklist p.1 · step 1')+rationale('The checklist links privacy with dignity, and handwashing and gloves with infection control.');
+  c+=`<div class="case-card"><b>${CASES[s.caseId].label.toUpperCase()} · FICTIONAL</b>${CASES[s.caseId].description}</div><div class="choices">${button('Provide privacy','flag','privacy',s.flags.privacy?'done':'')}${button('Wash hands','flag','hands',s.flags.hands?'done':'')}${button('Apply gloves','flag','gloves',s.flags.gloves?'done':'')}</div><div class="actions">${button('Continue to purpose','next','','primary',!['privacy','hands','gloves'].every(k=>s.flags[k]))}</div>`;
+  caption='Prepare before touching the bandage. The model is illustrative.';
+ }
+ if(stage==='purpose'){
+  phase('ASSESS · CHECKLIST STEP 2','02',14);
+  c=common('Why is this bandage needed?','Required wound care has already been completed in this fictional case. The instructor has selected the method shown. Choose the purpose for this exercise.','أُنجزت العناية المطلوبة بالموضع في هذه الحالة الافتراضية. حدّد المدرّب طريقة الربط المعروضة؛ اختر هدف هذا التمرين.','Checklist p.1 · step 2; case details are teaching examples');
+  c+=`<div class="choices">${button('A bandage automatically achieves every possible purpose','purpose','wrong')}${button(M.purpose,'purpose','correct')}${button('The appearance matters more than the purpose','purpose','wrong')}</div>`+rationale('The checklist requires determining the need for a bandage, rather than selecting a technique only because it looks suitable. Wound-care detail and treatment orders are outside this simulation.');caption='Decide the purpose before selecting and applying supplies.';
+ }
+ if(stage==='skin'){
+  phase('ASSESS · CHECKLIST STEP 3','03',24);
+  c=common('Inspect the skin','Review skin integrity, including dryness, fragility, breakdown, bleeding and signs of infection.','راجع سلامة الجلد، بما في ذلك الجفاف والهشاشة والتلف والنزف وعلامات العدوى.','Checklist p.1 · step 3');
+  c+=button('Inspect the prepared area','inspectSkin','','secondary',s.flags.skinObserved);
+  if(s.flags.skinObserved){c+=`<div class="case-card"><b>FICTIONAL OBSERVATION</b>${s.caseId==='skin'?'Fragile skin and a small area of breakdown need review. No additional wound-care order is supplied.':'The area is prepared. No dryness, fragility, breakdown, bleeding or infection concern is described in this case.'}</div><div class="choices">${button('Continue with the stated normal findings','skinDecision','continue')}${button('Hold and request assessment / clarification','skinDecision','hold')}</div>`;}
+  caption='Skin observations are supplied case data, not detected by the 3-D model.';
+ }
+ if(stage==='comfort'){
+  phase('EXPLAIN · CHECKLIST STEP 4','04',33);
+  c=common('Comfort and cooperation','Assess comfort and consciousness, explain what you will do, and check that the patient can cooperate and tolerate the procedure.','قيّم الراحة والوعي، واشرح ما ستقوم به، وتحقّق من قدرة المريض على التعاون وتحمّل الإجراء.','Checklist p.1 · step 4')+rationale('The checklist connects explanation and assessment with reducing anxiety and gaining cooperation.');
+  c+=button('Explain and assess cooperation','explain','','secondary',s.flags.explained);
+  if(s.flags.explained)c+=`<div class="case-card"><b>FICTIONAL PATIENT RESPONSE</b>${s.caseId==='pause'?'“Please wait. I am not ready for you to continue.”':'Alert, comfortable, understands the explanation and agrees to continue.'}</div><div class="choices">${button('Proceed with the patient’s agreement','comfortDecision','continue')}${button('Respect the request to wait; hold the procedure','comfortDecision','hold')}</div>`;
+  caption='An unfinished or held attempt must not be recorded as a completed bandage.';
+ }
+ if(stage==='supplies'){
+  phase('ORGANISE · CHECKLIST STEP 5','05',42);
+  c=common('Gather the required supplies','Select the supplies for this teaching case. Their exact size and material must be chosen for the real assessment and local instructions.','اجمع مستلزمات الحالة التدريبية. يُحدَّد الحجم ونوع المادة في التطبيق الفعلي حسب التقييم والتعليمات المعتمدة.','Checklist p.1 · step 5; example supplies are added for practice')+rationale('Preparing supplies in advance helps avoid interruption and saves time and effort.');
+  c+=`<div class="choices">${[['roll','Roller bandage selected by the instructor'],['gloves','Gloves and hand-hygiene supplies'],['dressing','Required dressing / wound-care supplies'],['fastener','Appropriate securing material'],['wrong','Tourniquet to tighten the wrap']].map(([v,t])=>button(t,'supply',v,s.supplies.includes(v)?'done':'')).join('')}</div><div class="actions">${button('Move to hand position','next','','primary',s.supplies.length<4)}</div>`;caption='Supplies shown are examples, not a universal equipment prescription.';
+ }
+ if(stage==='anchor'){
+  phase('POSITION · CHECKLIST STEP 6','06',50);
+  c=common('Place the loose end','Select the starting area on the model, or use the labelled buttons. Then choose the correct initial hand roles.','اختر موضع البداية على النموذج أو بالأزرار، ثم حدّد دور كل يد عند بدء الربط.',M.source+' + step 6');
+  if(s.scope==='technique only')c+=`<p class="inline-note">Technique-only practice: privacy, assessment, wound care and preparation are assumed, not credited.</p>`;
+  c+=`<h3>1 · Starting area</h3><div class="toggle-row">${['distal','centre','proximal'].map(v=>button(v==='centre'?'Centre':v[0].toUpperCase()+v.slice(1),'anchor',v,s.flags.anchor===v?'active':'')).join('')}</div><h3>2 · Hand roles</h3><div class="choices">${button('Dominant hand: roll · Nondominant hand: loose end','grip','correct',s.flags.grip?'done':'')}${button('Release the loose end before the anchor is established','grip','wrong')}</div><div class="actions">${button('Begin wrapping','next','','primary',!(s.flags.anchor&&s.flags.grip))}</div>`;
+  if(s.mode==='guided')c+=rationale(`For ${M.name}, the checklist places the anchor at the ${M.anchor==='centre'?'centre of the joint':M.anchor+' part of the area'}. The loose end is supported as the roll is controlled.`);
+  caption='Tap the marked starting area, or choose the same area using a button.';
+ }
+ if(stage==='wrap'||stage==='demo'){
+  phase(stage==='demo'?'WATCH · NOT A PRACTICE RECORD':'APPLY · CHECKLIST STEP 7','07',60+26*s.move/P.length);
+  const seg=P[Math.min(s.move,P.length-1)],guided=s.mode!=='challenge';
+  c=common(stage==='demo'?'Watch the moving technique':guided?seg.label:'Choose the next movement',guided?seg.en:'Use the previous turn and the selected technique to decide the next movement. Wrong choices are explained; they do not apply an unsafe wrap.',guided?seg.ar:'حدّد الحركة التالية حسب اللفّة السابقة والطريقة المختارة. تُشرح الاختيارات غير المناسبة دون تطبيق ربط غير آمن.',M.source);
+  if(stage==='wrap'){
+   c+=`<div class="field"><label>APPLICATION SETTING · NOT A FORCE MEASUREMENT</label><div class="toggle-row">${[['loose','Loose'],['even','Even & firm'],['tight','Too tight']].map(([v,t])=>button(t,'tension',v,s.tension===v?'active':'',s.animating)).join('')}</div></div>`;
+   if(s.method==='spiral')c+=`<div class="field"><label for="overlap">OVERLAP · CHECKLIST TARGET 50% TO ABOUT 67%</label><select id="overlap" ${s.move>0||s.animating?'disabled':''}>${[30,50,60,67,80].map(v=>`<option value="${v}"${s.overlap===v?' selected':''}>${v}%${v===67?' · rounded two-thirds':''}</option>`).join('')}</select></div>`;
+   if(s.method==='reverse')c+=`<div class="field"><label for="angle">ADVANCING ANGLE · SCHEMATIC, NOT A MEASUREMENT</label><select id="angle" ${s.move>0||s.animating?'disabled':''}>${[15,30,45].map(v=>`<option value="${v}"${s.angle===v?' selected':''}>About ${v}°</option>`).join('')}</select></div>`;
+  }
+  c+=`<div class="move-card"><small>MOVEMENT ${s.move+1} OF ${P.length} ${stage==='demo'?'· DEMONSTRATION':''}</small><strong>${guided?seg.label:s.animating?'Movement in progress':'Your next decision'}</strong><p>${s.animating?(s.paused?'Paused — inspect the hand and fabric before resuming.':'Observe the roll, supporting hand and newly laid layer.'):'Each action plays one controlled movement. Pause at any point to inspect it.'}</p><div class="move-progress"><div id="moveBar" style="width:${s.fraction*100}%"></div></div></div>`;
+  if(stage==='demo'){
+   c+=`<div class="field"><label for="demoScrub">REPLAY POSITION · DEMONSTRATION ONLY</label><input id="demoScrub" type="range" min="0" max="${P.length-.001}" step="0.01" value="${s.move+s.fraction}"></div><div class="actions">${button(s.paused?'Resume demonstration':'Pause demonstration','pause','','primary')}${button('Return to technique menu','demoMenu','','secondary')}</div><p class="helper">Demonstrations do not create completed procedure records. Move the replay slider to inspect a fold, then press Resume.</p>`;
+   bed=button(s.paused?'▶ Resume':'Pause','pause','','primary')+button('Replay from start','replay','','secondary');
+  }else{
+   let opts=moveOptions();c+=`<div class="choices">${opts.map(([v,t])=>button(t,'move',v,s.mode==='guided'&&v===seg.type?'primary':'',s.animating)).join('')}</div><div class="actions">${button('Restart this attempt','reset','','small')}${s.move>0?button('End incomplete attempt','abort','','small danger'):''}</div>`;
+   bed=s.animating?button(s.paused?'▶ Resume this movement':'Pause this movement','pause','','primary'):opts.map(([v,t])=>button(t,'move',v,s.mode==='guided'&&v===seg.type?'primary':'')).join('');
+  }
+  c+=`<p class="helper">The roll follows a planned teaching path. You control sequence and playback, not physical tension. Fold shape and overlap geometry need instructor review.</p>`;
+  caption=s.paused?'Paused. Rotate the model or change view to inspect the technique.':guided?seg.label+(s.animating?' · moving':' · ready'):s.animating?'Controlled movement in progress':'Choose the next movement — the bandage stays where it was laid.';
+ }
+ if(stage==='demoDone'){
+  phase('OBSERVED · NOT ASSESSED','✓',100);c=common('Demonstration complete','The completed pattern is visible. Rotate it, inspect it from the other side, or practise the sequence yourself.','يمكنك تدوير النمط المكتمل وفحصه من الجهة الأخرى، أو تجربة التسلسل بنفسك.','Demonstration only · no procedure record')+rationale(M.rationale)+`<div class="actions">${button('Practise this wrapping pattern','start','practice','primary')}${button('Replay demonstration','replay','','secondary')}</div><div class="actions">${button('Return to technique menu','demoMenu')}${button('Review questions','quiz')}</div>`;bed=button('Practise this technique','start','practice','primary')+button('Replay','replay','','secondary');caption='Demonstration finished. Viewing a pattern is not a practical assessment.';
+ }
+ if(stage==='inspect'){
+  phase('REVIEW · LABELLED SAFETY EXTENSION','+',89);
+  c=common('Review comfort and circulation','Inspect the application and reassess the patient before accepting completion. These findings are supplied by the fictional case, not measured by the model.','راجع الرباط وراحة المريض قبل قبول الإتمام. النتائج المعروضة بيانات لحالة افتراضية وليست قياسات من النموذج.','External safety extension · St John Ambulance',true);
+  if(s.method==='recurrent')c+=`<p class="inline-note">Rounded-end trainer: no distal fingers or toes exist. Do not invent a finger/toe circulation result. Use the relevant clinical assessment and local instructions.</p>`;
+  c+=button('Inspect application and review findings','check','','secondary',s.checked);
+  if(s.checked){let abnormal=s.caseId==='tight';c+=`<div class="case-card"><b>FICTIONAL FINDINGS · ${abnormal?'CONCERN REQUIRES ACTION':'NO CONCERN DESCRIBED'}</b>${s.method==='recurrent'?(abnormal?'The patient reports increasing discomfort under the wrap. The cause has not been diagnosed.':'The patient is comfortable; the prepared covering is retained. Local assessment is recorded as showing no concern for this case. No distal-digit result is claimed.'):(abnormal?'The exposed fingers remain pale after the reported circulation check, and the patient reports that the wrap feels tight.':'The exposed fingers regain their usual colour promptly. The patient reports no new discomfort. These are scenario observations, not a measured test.')}</div><div class="choices">${button('Accept the stated normal findings','checkDecision','accept')}${button('Remove the constricting wrap and request reassessment','checkDecision','remove')}${button('Ignore the concern because the wrap looks neat','checkDecision','ignore')}</div>`;}
+  c+=rationale('The uploaded checklist warns against excessive tightness. St John Ambulance adds checking circulation and reapplying more loosely when necessary. This concern branch ends as interrupted; it does not diagnose the cause or silently mark a reapplication successful.');caption='Check the patient, not just the appearance of the bandage.';
+ }
+ if(stage==='remove'){
+  phase('INTERRUPTED · REASSESSMENT REQUIRED','!',90);c=common('Stop and remove this application','The model is unwinding the teaching wrap. The attempt will be recorded as interrupted and not in place, then handed over for clinical reassessment.','يُزال الرباط في العرض التوضيحي. تُسجَّل المحاولة كإجراء غير مكتمل مع الإحالة لإعادة التقييم.','Labelled safety / scenario extension',true)+`<div class="inline-note">This reverse animation is an illustrative removal, not a separate clinical removal protocol.</div>`;bed=button(s.paused?'Resume removal animation':'Pause removal animation','pause','','primary');caption='Illustrative removal. Do not leave this concern recorded as normal completion.';
+ }
+ if(stage==='hygiene'){
+  phase('FINISH · CHECKLIST STEP 8','08',95);c=common('Dispose of gloves and wash hands','Complete final infection-control actions before creating the practice debrief.','أكمل إجراءات مكافحة العدوى الختامية قبل إنشاء سجل التدريب.','Checklist p.2 · step 8');
+  if(s.outcome!=='completed')c+=`<p class="inline-note"><b>${s.outcome==='held'?'Held':'Interrupted'}:</b> ${esc(s.holdReason)} This will not be saved as a successful application.</p>`;
+  c+=`<div class="choices">${button('Remove and appropriately dispose of gloves','hygiene','gloves',s.flags.finalGloves?'done':'')}${button('Wash hands after glove disposal','hygiene','hands',s.flags.finalHands?'done':'')}</div><div class="actions">${button('Create practice debrief','finish','','primary',!(s.flags.finalGloves&&s.flags.finalHands))}</div>`;caption='Final hygiene applies to completed, held and interrupted attempts.';
+ }
+ if(stage==='summary'){
+  phase('PRACTICE DEBRIEF · NOT A CLINICAL GRADE','✓',100);const R=s.record;
+  c=common(R.outcome==='completed'?'Practice sequence completed':R.outcome==='held'?'Procedure held':'Attempt interrupted',R.outcome==='completed'?'You completed the selected teaching sequence and its final review. This is a learning record, not a certification of hands-on competence.':s.holdReason,R.outcome==='completed'?'أكملت التسلسل التعليمي والمراجعة النهائية. هذا سجل تعلّم وليس شهادة كفاءة عملية.':'لا يُسجَّل الإجراء المؤجّل أو المتوقف على أنه مكتمل.','Simulation-generated learning record');
+  c+=`<table class="sim-table"><tr><td>Technique</td><td><b>${M.name}</b></td></tr><tr><td>Scope</td><td>${R.scope}</td></tr><tr><td>Outcome</td><td>${R.outcome}</td></tr><tr><td>Bandage in place</td><td>${R.bandageInPlace?'Yes · model only':'No'}</td></tr><tr><td>Movement actions completed</td><td>${R.movesCompleted} / ${R.movesPlanned}</td></tr><tr><td>Decisions corrected</td><td>${R.corrections}</td></tr></table>`;
+  if(R.scope==='technique only')c+=`<p class="inline-note">Preparation and assessment were skipped in wrapping-only mode. This record is not the full eight-step checklist.</p>`;
+  c+=`<div class="actions">${button('Export debrief · TXT','export','txt','primary')}${button('Export record · JSON','export','json','secondary')}</div><div class="actions">${button('Try another method','demoMenu')}${button('12-question review','quiz')}</div><p class="helper">${storageAvailable?'A copy is retained in this browser’s practice history.':'Browser storage is unavailable. Export a copy now to retain this record.'}</p>`;bed=button('Export practice debrief','export','txt','primary')+button('Choose another method','demoMenu');caption='Learning record only. Real technique, force, tissue response and clinical suitability need an instructor.';
+ }
+ if(!['welcome','demo','demoDone','summary'].includes(stage))c+=`<div class="actions">${speakButton()}</div>`;
+ if(!bed)bed=`<p>${stage==='anchor'?'Choose the start point in the scene or use the labelled buttons.':stage==='summary'?'Review your learning record.':'Complete the current learning step in the panel.'}</p>`;
+ $('stepContent').innerHTML=c;$('bedside').innerHTML=bed;$('caption').textContent=caption;$('feedback').textContent=feedbackText;$('feedback').className='feedback'+(feedbackBad?' bad':'');
+ $('safetyStrip').textContent=s.outcome==='interrupted'||s.safeConcern?'Concern requires reassessment. This attempt cannot be recorded as a normal completed application.':'Educational geometry only. This app does not measure pressure, tissue resistance, circulation or clinical competence.';$('safetyStrip').classList.toggle('stop',s.outcome==='interrupted'||s.safeConcern);
+}
+function moveOptions(){let kind=currentMove()?.type;let names={circle:'Apply circular anchor',above:'Cross above the joint',below:'Cross below the joint',advance:'Advance with overlap',rise:'Advance to the half-turn',fold:'Hold & fold back',down:'Continue downward',over:'Pass over the distal end',finalcircle:'Add securing circular turn',secure:'Secure the end'};
+ let order;
+ if(s.mode==='guided')order=[kind,kind==='secure'?'circle':'secure'];
+ else if(s.method==='eight')order=['circle','above','below','secure'];
+ else if(s.method==='spiral')order=['circle','advance','secure'];
+ else if(s.method==='reverse')order=['circle','rise','fold','down','secure'];
+ else order=['circle','fold','over','finalcircle','secure'];
+ return [...new Set(order)].filter(k=>names[k]).map(k=>[k,names[k]]);
+}
+function next(){
+ if(s.stage==='prep'){if(!['privacy','hands','gloves'].every(k=>s.flags[k]))return fail('Complete privacy, handwashing and glove application first.');setStage('purpose');}
+ else if(s.stage==='supplies'){if(s.supplies.length<4)return fail('Collect all four appropriate supply groups.');setStage('anchor');}
+ else if(s.stage==='anchor'){if(!s.flags.anchor||!s.flags.grip)return fail('Choose the source-specific anchor and the correct hand roles.');setStage('wrap');}
+}
+function perform(type){
+ if(s.stage!=='wrap'||s.animating)return;
+ let seg=currentMove();if(!seg)return;
+ if(s.tension!=='even')return fail(s.tension==='tight'?'The checklist warns against excessive tightness. Choose even and firm application; the app is not measuring force.':'A loose application does not meet the checklist’s even, firm instruction. Adjust the setting before continuing.');
+ if(s.method==='spiral'&&(s.overlap<50||s.overlap>67))return fail('For the spiral method, select one-half to two-thirds overlap (50% to about 67%) before applying the first turn.');
+ if(s.method==='reverse'&&s.angle!==30)return fail('This checklist specifies about 30° for the advancing roll. Set the schematic angle to 30° before beginning.');
+ if(type!==seg.type)return fail(type==='secure'?'Do not secure an incomplete pattern. Complete the required turns and reversals first.':`That does not match the next part of this method. ${seg.en}`);
+ s.animating=true;s.paused=false;clearFeedback();log('Movement started',seg.label);paint();
+}
+function tick(dt){
+ if(s.paused||$('modal').open)return;
+ const speed=s.slow?.45:1;
+ if(s.removeAnimating){s.fraction-=dt*speed*3.8;if(s.fraction<=0){s.move--;s.fraction=1;if(s.move<0){s.move=0;s.fraction=0;s.removeAnimating=false;s.removed=true;setStage('hygiene');}else paint();}return;}
+ if(!s.animating||!['demo','wrap'].includes(s.stage))return;
+ const seg=currentMove();if(!seg)return;s.fraction+=dt*speed/seg.duration;
+ if(s.fraction>=1){s.fraction=0;s.move++;s.movesDone=s.move;log('Movement completed',seg.label);
+  if(seg.type==='secure'){s.secured=true;s.animating=false;if(s.stage==='demo')setStage('demoDone');else setStage('inspect');}
+  else{if(s.stage!=='demo')s.animating=false;paint();}
+ }else{$('moveBar')&&($('moveBar').style.width=s.fraction*100+'%');if($('demoScrub'))$('demoScrub').value=s.move+s.fraction;}
+}
+function hold(reason){s.outcome='held';s.holdReason=reason;s.animating=false;s.removed=true;log('Procedure held',reason);setStage('hygiene');}
+function interrupt(reason){s.outcome='interrupted';s.holdReason=reason;s.animating=false;s.secured=false;s.safeConcern=true;log('Application interrupted',reason);s.stage='remove';s.removeAnimating=true;s.paused=false;if(s.move>=plan().length-1){s.move=plan().length-2;s.fraction=1;}else if(s.fraction<=0){s.move--;s.fraction=1;}if(s.move<0){s.move=0;s.fraction=0;s.removeAnimating=false;s.removed=true;setStage('hygiene');return;}paint();}
+function finish(){
+ if(s.stage!=='hygiene'||!s.flags.finalHands||!s.flags.finalGloves)return fail('Complete final glove disposal and handwashing before saving.');
+ if(!['completed','held','interrupted'].includes(s.outcome))return fail('A valid outcome has not been established.');
+ if(s.outcome==='completed'&&(!s.secured||!s.checked||s.safeConcern||s.move!==plan().length))return fail('Completion is blocked: the pattern and review must actually be complete without an unresolved concern.');
+ const record={version:'08.1',created:new Date().toISOString(),started:s.started,skill:'Bandaging',method:methodInfo().name,case:CASES[s.caseId].label,mode:s.mode,scope:s.scope,outcome:s.outcome,bandageInPlace:!!s.secured&&!s.removed,movesCompleted:s.movesDone,movesPlanned:plan().length,corrections:s.errors,reason:s.holdReason||'Selected learning sequence and fictional final review completed.',settings:{initialAnchors:s.method==='eight'?'one (illustrative)':s.method==='recurrent'?2:s.anchors,spiralOverlap:s.method==='spiral'?s.overlap+'%':null,reverseAngle:s.method==='reverse'?s.angle+' degrees (illustrative)':null,applicationSetting:s.tension,physicalPressure:'not measured'},finalHygiene:true,source:'8.Bandaging.docx, pp.1–2; separately labelled St John Ambulance circulation extension',clinicalCompetenceAssessed:false,events:s.logs.slice()};
+ s.record=record;records.unshift(record);records=records.slice(0,24);try{localStorage.setItem(STORAGE+'.records',JSON.stringify(records));}catch(e){storageAvailable=false;}setStage('summary');
+}
+function download(name,text,type='text/plain'){const b=new Blob([text],{type:type+';charset=utf-8'}),u=URL.createObjectURL(b),a=document.createElement('a');a.href=u;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),3000);}
+function recordText(r){return`FACULTY OF NURSING · TOBRUK UNIVERSITY\nBANDAGING — PRACTICE DEBRIEF (NOT A CLINICAL GRADE)\n\nCreated: ${r.created}\nTechnique: ${r.method}\nCase: ${r.case} (fictional)\nScope: ${r.scope}\nMode: ${r.mode}\nOutcome: ${r.outcome}\nBandage in place in the model: ${r.bandageInPlace?'Yes':'No'}\nMovement actions completed: ${r.movesCompleted}/${r.movesPlanned}\nDecisions corrected: ${r.corrections}\nReason: ${r.reason}\nFinal hygiene completed: ${r.finalHygiene}\n\nSettings: ${JSON.stringify(r.settings,null,2)}\n\nCurricular basis: ${r.source}\n\nThe app does not assess physical pressure, material handling, real circulation, tissue response or clinical competence. A technique-only attempt does not credit skipped preparation. No real patient data are represented.\n\nACTION LOG\n${r.events.map(e=>e.at+' | '+e.event+' | '+e.detail).join('\n')}\n`;}
+function exportRecord(format,r=s.record){if(!r)return;let slug=r.method.toLowerCase().replace(/[^a-z]+/g,'_');download(`Tobruk_Bandaging_${slug}_${r.outcome}.${format}`,format==='json'?JSON.stringify(r,null,2):recordText(r),format==='json'?'application/json':'text/plain');}
+function openModal(title,html){$('modalTitle').textContent=title;$('modalBody').innerHTML=html;if(!$('modal').open)$('modal').showModal();}
+function closeModal(){$('modal').close();pendingAction=null;}
+function showRecords(){openModal('My practice history',`<p>These are local learning records, not marks or patient records. Demonstrations are not counted.</p>${records.length?`<ul class="records">${records.map((r,i)=>`<li><b>${esc(r.method)} · ${esc(r.outcome)}</b><br><small>${esc(r.created)} · ${esc(r.scope)} · ${esc(r.mode)}</small><div class="actions">${button('Export TXT','history',i+'|txt','small')}${button('Export JSON','history',i+'|json','small')}</div></li>`).join('')}</ul>`:'<p>No saved practice attempts yet.</p>'}<div class="actions">${button('Clear saved history','clearHistory','','small danger',!records.length)}</div>`);}
+function speak(text){
+ if(!('speechSynthesis'in window)||!('SpeechSynthesisUtterance'in window)){$('speechState').textContent='English speech is unavailable in this browser.';return;}
+ const synth=window.speechSynthesis,voices=synth.getVoices(),english=voices.filter(v=>/^en[-_]/i.test(v.lang));
+ if(voices.length&&!english.length){$('speechState').textContent='No English voice is installed. The written instruction remains available.';return;}
+ synth.cancel();const u=new SpeechSynthesisUtterance(text);u.lang='en-GB';u.rate=.88;if(english.length)u.voice=english.find(v=>v.localService)||english[0];u.onstart=()=>{$('speechState').textContent='Reading only the selected English item…';};u.onend=()=>{$('speechState').textContent='';};u.onerror=()=>{$('speechState').textContent='The device could not play this English voice.';};synth.speak(u);
+}
+function beginQuiz(){quizState={i:0,correct:0,selected:null,answered:false};paintQuiz();}
+function paintQuiz(){let q=QUIZ[quizState.i];if(!q){openModal('Knowledge review complete',`<div class="good-result"><h3>${quizState.correct} / ${QUIZ.length} correct on the first choice</h3><p>This is a knowledge check only, not the practical-examination score or clinical competence assessment.</p></div><div class="actions">${button('Review again','quiz','','primary')}${button('Close review','close')}</div>`);return;}
+ let done=quizState.answered;
+ openModal(`Knowledge review · ${quizState.i+1} / ${QUIZ.length}`,`${tag(q.src,q.src.startsWith('External'))}<h3>${esc(q.q)}</h3>${q.a.map((t,k)=>button(t,'answer',k,'quiz-option'+(done&&k===q.k?' done':''),done)).join('')}${done?`<div class="feedback${quizState.selected===q.k?'':' bad'}">${quizState.selected===q.k?'Correct. ':'Review: '}${esc(q.r)}</div><div class="actions">${button(quizState.i===QUIZ.length-1?'Show review result':'Next question','quizNext','','primary')}</div>`:''}`);
+}
+function pause(){if(!(s.animating||s.removeAnimating))return;s.paused=!s.paused;paint();}
+function changeSetting(id,value){
+ if(s.stage!=='wrap'||s.move>0||s.animating)return;
+ if(id==='overlap'&&[30,50,60,67,80].includes(Number(value)))s.overlap=Number(value);
+ if(id==='angle'&&[15,30,45].includes(Number(value)))s.angle=Number(value);
+ scene.partialSig='';paint();
+}
+function dispatch(action,value){
+ if(action==='method')return chooseMethod(value);
+ if(action==='start')return start(value);
+ if(action==='next')return next();
+ if(action==='move')return perform(value);
+ if(action==='pause')return pause();
+ if(action==='reset')return reset();
+ if(action==='demoMenu'){if(!['demo','demoDone','summary','welcome'].includes(s.stage))return reset();s={...initial(s.method),slow:s.slow,labels:s.labels,hideHands:s.hideHands};clearFeedback();return paint();}
+ if(action==='replay')return start('demo');
+ if(action==='speak')return speak(currentInstruction);
+ if(action==='term')return speak(VOCAB[Number(value)]?.[0]||'');
+ if(action==='flag'&&s.stage==='prep'){
+  if(!['privacy','hands','gloves'].includes(value))return;if(value==='gloves'&&!s.flags.hands)return fail('Wash your hands before applying gloves.');s.flags[value]=true;log('Preparation action',value);clearFeedback();return paint();
+ }
+ if(action==='purpose'&&s.stage==='purpose'){if(value!=='correct')return fail('Use the stated purpose for this exercise. A bandage does not automatically achieve every possible purpose.');log('Purpose selected',methodInfo().purpose);return setStage('skin');}
+ if(action==='inspectSkin'&&s.stage==='skin'){s.flags.skinObserved=true;log('Skin observed');return paint();}
+ if(action==='skinDecision'&&s.stage==='skin'&&s.flags.skinObserved){if(s.caseId==='skin'){if(value==='continue')return fail('The observation needs review; no further wound-care order is supplied. Hold rather than inventing an intervention.');return hold('Skin concern identified. Assessment / clarification requested before application.');}if(value==='hold')return hold('Learner chose to hold and seek assessment before application.');return setStage('comfort');}
+ if(action==='explain'&&s.stage==='comfort'){s.flags.explained=true;log('Procedure explained; comfort and cooperation assessed');return paint();}
+ if(action==='comfortDecision'&&s.stage==='comfort'&&s.flags.explained){if(s.caseId==='pause'){if(value==='continue')return fail('The patient asked you to wait. Respect the request and hold this attempt.');return hold('Patient asked to wait. No bandage applied.');}if(value==='hold')return hold('Learner chose to hold the procedure for reassessment.');return setStage('supplies');}
+ if(action==='supply'&&s.stage==='supplies'){if(value==='wrong')return fail('Do not use a tourniquet to tighten this bandage. The checklist cautions against excessive tightness.');if(!s.supplies.includes(value)){s.supplies.push(value);log('Supply group selected',value);}clearFeedback();return paint();}
+ if(action==='anchor'&&s.stage==='anchor'){if(value!==methodInfo().anchor)return fail(`For this method the uploaded checklist specifies the ${methodInfo().anchor==='centre'?'centre of the joint':methodInfo().anchor+' area'} as the anchor.`);s.flags.anchor=value;log('Anchor selected',value);clearFeedback();return paint();}
+ if(action==='grip'&&s.stage==='anchor'){if(value!=='correct')return fail('Support the loose end with the nondominant hand while the dominant hand controls the roll.');s.flags.grip=true;log('Hand roles selected');clearFeedback();return paint();}
+ if(action==='tension'&&s.stage==='wrap'&&!s.animating&&['even','tight','loose'].includes(value)){s.tension=value;log('Application setting',value+' (not measured)');clearFeedback();return paint();}
+ if(action==='check'&&s.stage==='inspect'){s.checked=true;s.safeConcern=s.caseId==='tight';log('Fictional post-application findings reviewed',s.safeConcern?'Concern':'No concern described');return paint();}
+ if(action==='checkDecision'&&s.stage==='inspect'&&s.checked){if(value==='ignore')return fail('Appearance does not establish safety. Respond to the circulation or comfort finding.');if(value==='accept'){if(s.safeConcern)return fail('Do not accept abnormal findings as normal completion. This concern requires action and reassessment.');s.outcome='completed';log('Fictional normal findings accepted');return setStage('hygiene');}if(value==='remove')return interrupt(s.safeConcern?'Circulation / comfort concern. Wrap removed in the teaching model; clinical reassessment requested.':'Learner elected to remove the wrap and request reassessment.');}
+ if(action==='abort'&&s.stage==='wrap')return requestLeave(()=>interrupt('Learner ended an incomplete application. No completed bandage is claimed.'),'End this unfinished attempt and remove the illustrated wrap? It will be recorded as interrupted after final hygiene.');
+ if(action==='hygiene'&&s.stage==='hygiene'){if(value==='hands'&&!s.flags.finalGloves)return fail('Remove and appropriately dispose of gloves before final handwashing.');if(value==='gloves')s.flags.finalGloves=true;if(value==='hands')s.flags.finalHands=true;log('Final hygiene',value);clearFeedback();return paint();}
+ if(action==='finish')return finish();
+ if(action==='export')return exportRecord(value);
+ if(action==='history'){let [n,format]=value.split('|');return exportRecord(format,records[Number(n)]);}
+ if(action==='quiz')return beginQuiz();
+ if(action==='answer'&&quizState&&!quizState.answered){let k=Number(value);quizState.answered=true;quizState.selected=k;if(k===QUIZ[quizState.i].k)quizState.correct++;return paintQuiz();}
+ if(action==='quizNext'&&quizState?.answered){quizState.i++;quizState.answered=false;quizState.selected=null;return paintQuiz();}
+ if(action==='clearHistory')return openModal('Clear practice history?',`<p>This deletes saved bandaging practice records from this browser only. Notes and files you have already exported remain unchanged.</p><div class="actions">${button('Keep records','historyCancel')}${button('Delete local history','confirmClear','','danger')}</div>`);
+ if(action==='historyCancel')return showRecords();
+ if(action==='confirmClear'){records=[];try{localStorage.removeItem(STORAGE+'.records');}catch(e){storageAvailable=false;}return showRecords();}
+ if(action==='close'||action==='stay')return closeModal();
+ if(action==='leave'){const fn=pendingAction;closeModal();if(fn)fn();}
+}
+document.addEventListener('click',e=>{const b=e.target.closest('button[data-action]');if(b&&!b.disabled)dispatch(b.dataset.action,b.dataset.value);});
+document.addEventListener('change',e=>{if(['overlap','angle'].includes(e.target.id))changeSetting(e.target.id,e.target.value);if(e.target.id==='modeSelect'){s.mode=e.target.value;const b=document.querySelector('[data-action="start"][data-value="full"]');if(b)b.textContent=s.mode==='challenge'?'Start challenge procedure':'Start guided procedure';}if(e.target.id==='caseSelect')s.caseId=e.target.value;if(e.target.id==='anchorSelect')s.anchors=Number(e.target.value);if(e.target.id==='demoScrub')paint();});
+document.addEventListener('input',e=>{if(e.target.id==='demoScrub'&&s.stage==='demo'){let v=Number(e.target.value),len=plan().length;s.move=Math.min(len-1,Math.floor(v));s.fraction=v-s.move;s.movesDone=s.move;s.paused=true;s.animating=true;s.secured=false;$('pause').textContent='Resume';$('moveMetric').innerHTML=s.move+' <small>/ '+len+'</small>';log('Demonstration replay position changed');}});
+document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>{scene.setView(b.dataset.view);paint();}));
+$('pause').addEventListener('click',pause);$('slow').addEventListener('click',()=>{s.slow=!s.slow;paint();});$('labels').addEventListener('click',()=>{s.labels=!s.labels;paint();});$('hideHands').addEventListener('click',()=>{s.hideHands=!s.hideHands;paint();});$('rotL').addEventListener('click',()=>scene.rotate(-.30));$('rotR').addEventListener('click',()=>scene.rotate(.30));$('zoomIn').addEventListener('click',()=>scene.zoomBy(1.13));$('zoomOut').addEventListener('click',()=>scene.zoomBy(1/1.13));
+$('arabic').addEventListener('click',()=>{document.body.classList.toggle('no-ar');const on=!document.body.classList.contains('no-ar');$('arabic').textContent=on?'Arabic support ✓':'Arabic support';$('arabic').setAttribute('aria-pressed',on);});
+$('sourceOpen').addEventListener('click',()=>openModal('Sources, coverage & safety',SOURCE_HTML));$('closeModal').addEventListener('click',closeModal);$('recordsOpen').addEventListener('click',showRecords);$('quizOpen').addEventListener('click',beginQuiz);
+$('modal').addEventListener('cancel',()=>{pendingAction=null;});
+$('vocab').innerHTML=VOCAB.map(([en,ar],i)=>`<button data-action="term" data-value="${i}" aria-label="Pronounce ${esc(en)}"><b>▶ ${en}</b><small class="ar" lang="ar">${ar}</small></button>`).join('');
+$('notes').value=notes;$('noteState').textContent=storageAvailable?'Saved on this browser only.':'Storage unavailable — use Export notes.';
+$('notes').addEventListener('input',()=>{notes=$('notes').value;try{localStorage.setItem(STORAGE+'.notes',notes);$('noteState').textContent='Saved on this browser.';}catch(e){storageAvailable=false;$('noteState').textContent='Not saved locally — use Export notes.';}});
+$('exportNotes').addEventListener('click',()=>download('Tobruk_Bandaging_My_Notes.txt','BANDAGING · MY PRACTICE NOTES\n'+notes));
+document.addEventListener('visibilitychange',()=>{if(document.hidden&&(s.animating||s.removeAnimating)){s.paused=true;paint();}});
+document.addEventListener('keydown',e=>{if(e.code==='Space'&&!/INPUT|TEXTAREA|SELECT|BUTTON/.test(e.target.tagName)&&!$('modal').open&&(s.animating||s.removeAnimating)){e.preventDefault();pause();}});
+try{scene=new BandageScene($('world'),$('overlay'));$('renderer').textContent=scene.gl?'WebGL · local rendering':'Software rendering · same 3-D surfaces';
+ scene.canvas.addEventListener('click',e=>{if(s.stage!=='anchor')return;let r=scene.canvas.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top,best=null,d=Infinity;for(let k of ['distal','centre','proximal']){let p=scene.project(scene.landmark(s.method,k)),dd=Math.hypot(x-p[0],y-p[1]);if(dd<d){best=k;d=dd;}}if(d<48)dispatch('anchor',best);else tell('Tap a marked starting area, or choose it using the labelled buttons.');});
+ scene.canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();s.paused=true;renderError=true;tell('Graphics context was lost. Reload the file or use another browser; notes and exported records are unaffected.','',true);});
+ paint();
+ function loop(now){let dt=lastTime?Math.min((now-lastTime)/1000,.08):.016;lastTime=now;tick(dt);let interval=scene.gl?25:85;if(now-renderTime>=interval&&!renderError){try{scene.render(s,renderTime?Math.min((now-renderTime)/1000,.2):.016);renderTime=now;}catch(e){renderError=true;console.error(e);tell('The model could not render. Reload this HTML file in a browser.','',true);}}requestAnimationFrame(loop);}requestAnimationFrame(loop);
+}catch(e){console.error(e);$('renderer').textContent='Renderer unavailable';$('stepContent').innerHTML='<h2>Browser rendering unavailable</h2><p>Open this HTML file in a browser rather than a document preview. Reload or try another browser. Sources & safety remains available.</p>';}
+</script></body></html>
