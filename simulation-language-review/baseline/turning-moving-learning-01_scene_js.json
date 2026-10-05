@@ -1,0 +1,29 @@
+{
+  "path": "turning-moving-learning-01/scene.js",
+  "pairs": [],
+  "arabic": [
+    "تأكيد غسل اليدين",
+    "اشرح قبل المناولة",
+    "نموذج صفّي · لا حساب لقوة المناولة",
+    "القريب: جهة الممرض",
+    "الجانب البعيد",
+    "الرأس",
+    "القدمان",
+    "انتقال وليس دورانًا",
+    "منظر طرفي: دوران الجسم",
+    "الرأس محمي طوال التقليب",
+    "توقف توضيحي داخل المرتبة"
+  ],
+  "englishOnly": [
+    "use strict",
+    "Handwashing acknowledgement",
+    "Explain before handling",
+    "Classroom mannequin · no manual-force calculation",
+    "NEAR: nurse’s side",
+    "FAR side",
+    "Translation, not rotation",
+    "End view: body rotation",
+    "Head protected throughout",
+    "Illustrative stop inside mattress"
+  ]
+}

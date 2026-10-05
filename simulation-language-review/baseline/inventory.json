@@ -1,0 +1,348 @@
+[
+  {
+    "path": "handwash-learning-03/base.html",
+    "bytes": 13552,
+    "arabicCharacters": 7,
+    "pairs": 0,
+    "arabicLiterals": 0,
+    "englishOnlyCount": 0,
+    "parseErrors": [],
+    "scriptSources": [
+      "nano02.js"
+    ],
+    "languageControls": [
+      "id=\"lang\""
+    ]
+  },
+  {
+    "path": "handwash-learning-03/base.js",
+    "bytes": 52545,
+    "arabicCharacters": 5425,
+    "pairs": 55,
+    "arabicLiterals": 169,
+    "englishOnlyCount": 94,
+    "parseErrors": [],
+    "scriptSources": [],
+    "languageControls": [
+      "let lang='en',mode='train',s,drag=null,keys=new Set(),lastTime=0,lastUI='',feedbackUntil=0,uiTime=0,learnIndex=0,playing=true,demoTime=0"
+    ]
+  },
+  {
+    "path": "handwash-learning-03/boot.js",
+    "bytes": 8234,
+    "arabicCharacters": 106,
+    "pairs": 0,
+    "arabicLiterals": 5,
+    "englishOnlyCount": 12,
+    "parseErrors": [],
+    "scriptSources": [],
+    "languageControls": []
+  },
+  {
+    "path": "handwash-learning-03/index.html",
+    "bytes": 1016,
+    "arabicCharacters": 54,
+    "pairs": 0,
+    "arabicLiterals": 0,
+    "englishOnlyCount": 0,
+    "parseErrors": [],
+    "scriptSources": [
+      "boot.js"
+    ],
+    "languageControls": []
+  },
+  {
+    "path": "handwash-learning-03/suite.js",
+    "bytes": 30579,
+    "arabicCharacters": 3187,
+    "pairs": 5,
+    "arabicLiterals": 99,
+    "englishOnlyCount": 85,
+    "parseErrors": [],
+    "scriptSources": [],
+    "languageControls": []
+  },
+  {
+    "path": "nursing-skills/gloving.html",
+    "bytes": 762,
+    "arabicCharacters": 34,
+    "pairs": 0,
+    "arabicLiterals": 0,
+    "englishOnlyCount": 0,
+    "parseErrors": [],
+    "scriptSources": [
+      "gloving-loader.js"
+    ],
+    "languageControls": []
+  },
+  {
+    "path": "range-of-motion-learning-01/app.js",
+    "bytes": 31845,
+    "arabicCharacters": 2888,
+    "pairs": 6,
+    "arabicLiterals": 108,
+    "englishOnlyCount": 96,
+    "parseErrors": [],
+    "scriptSources": [],
+    "languageControls": [
+      "let lang='en',mode='learn',selected=0,p=0,playing=false,speed=1,lastFrame=0,lastPaint=0,lastInput=-999,activeTime=0,drag=null,completed=Array(16).fill(false),reached=Array(16).fill(false),"
+    ]
+  },
+  {
+    "path": "range-of-motion-learning-01/arabic-terms.js",
+    "bytes": 3756,
+    "arabicCharacters": 967,
+    "pairs": 0,
+    "arabicLiterals": 13,
+    "englishOnlyCount": 1,
+    "parseErrors": [],
+    "scriptSources": [],
+    "languageControls": []
+  },
+  {
+    "path": "range-of-motion-learning-01/content.js",
+    "bytes": 18771,
+    "arabicCharacters": 3854,
+    "pairs": 100,
+    "arabicLiterals": 100,
+    "englishOnlyCount": 18,
+    "parseErrors": [],
+    "scriptSources": [],
+    "languageControls": []
+  },
+  {
+    "path": "range-of-motion-learning-01/index.html",
+    "bytes": 1931,
+    "arabicCharacters": 64,
+    "pairs": 0,
+    "arabicLiterals": 0,
+    "englishOnlyCount": 0,
+    "parseErrors": [],
+    "scriptSources": [
+      "content.js",
+      "arabic-terms.js?v=20260924",
+      "scene.js",
+      "app.js"
+    ],
+    "languageControls": [
+      "id=\"lang\""
+    ]
+  },
+  {
+    "path": "range-of-motion-learning-01/scene.js",
+    "bytes": 11568,
+    "arabicCharacters": 307,
+    "pairs": 0,
+    "arabicLiterals": 22,
+    "englishOnlyCount": 22,
+    "parseErrors": [],
+    "scriptSources": [],
+    "languageControls": []
+  },
+  {
+    "path": "body-mechanics-learning-01/app.js",
+    "bytes": 39325,
+    "arabicCharacters": 3376,
+    "pairs": 2,
+    "arabicLiterals": 128,
+    "englishOnlyCount": 120,
+    "parseErrors": [],
+    "scriptSources": [],
+    "languageControls": [
+      "let lang='en',mode='learn',topic=0,progress=0,variant=0,playing=false,speed=1,lastTime=0,lastDraw=0,lastInput=-999,active=0,drag=null,guideReturn='learn',reviewReturn='test',testReview=fal"
+    ]
+  },
+  {
+    "path": "body-mechanics-learning-01/content.js",
+    "bytes": 44849,
+    "arabicCharacters": 10054,
+    "pairs": 0,
+    "arabicLiterals": 334,
+    "englishOnlyCount": 355,
+    "parseErrors": [],
+    "scriptSources": [],
+    "languageControls": []
+  },
+  {
+    "path": "body-mechanics-learning-01/index.html",
+    "bytes": 2048,
+    "arabicCharacters": 75,
+    "pairs": 0,
+    "arabicLiterals": 0,
+    "englishOnlyCount": 0,
+    "parseErrors": [],
+    "scriptSources": [
+      "content.js",
+      "scene.js",
+      "app.js"
+    ],
+    "languageControls": [
+      "id=\"lang\""
+    ]
+  },
+  {
+    "path": "body-mechanics-learning-01/scene.js",
+    "bytes": 14831,
+    "arabicCharacters": 215,
+    "pairs": 0,
+    "arabicLiterals": 11,
+    "englishOnlyCount": 12,
+    "parseErrors": [],
+    "scriptSources": [],
+    "languageControls": []
+  },
+  {
+    "path": "turning-moving-learning-01/addon.js",
+    "bytes": 7372,
+    "arabicCharacters": 489,
+    "pairs": 12,
+    "arabicLiterals": 12,
+    "englishOnlyCount": 0,
+    "parseErrors": [],
+    "scriptSources": [],
+    "languageControls": []
+  },
+  {
+    "path": "turning-moving-learning-01/boot.js",
+    "bytes": 3498,
+    "arabicCharacters": 141,
+    "pairs": 0,
+    "arabicLiterals": 6,
+    "englishOnlyCount": 13,
+    "parseErrors": [],
+    "scriptSources": [],
+    "languageControls": [
+      "let lang','",
+      "let lang')"
+    ]
+  },
+  {
+    "path": "turning-moving-learning-01/engine-base.js",
+    "bytes": 39325,
+    "arabicCharacters": 3376,
+    "pairs": 2,
+    "arabicLiterals": 128,
+    "englishOnlyCount": 120,
+    "parseErrors": [],
+    "scriptSources": [],
+    "languageControls": [
+      "let lang='en',mode='learn',topic=0,progress=0,variant=0,playing=false,speed=1,lastTime=0,lastDraw=0,lastInput=-999,active=0,drag=null,guideReturn='learn',reviewReturn='test',testReview=fal"
+    ]
+  },
+  {
+    "path": "turning-moving-learning-01/index.html",
+    "bytes": 2035,
+    "arabicCharacters": 75,
+    "pairs": 0,
+    "arabicLiterals": 0,
+    "englishOnlyCount": 0,
+    "parseErrors": [],
+    "scriptSources": [
+      "scene.js",
+      "boot.js"
+    ],
+    "languageControls": [
+      "id=\"lang\""
+    ]
+  },
+  {
+    "path": "turning-moving-learning-01/scene.js",
+    "bytes": 11727,
+    "arabicCharacters": 171,
+    "pairs": 0,
+    "arabicLiterals": 11,
+    "englishOnlyCount": 10,
+    "parseErrors": [],
+    "scriptSources": [],
+    "languageControls": []
+  },
+  {
+    "path": "patient-positioning-learning-01/addon.js",
+    "bytes": 5590,
+    "arabicCharacters": 0,
+    "pairs": 0,
+    "arabicLiterals": 0,
+    "englishOnlyCount": 0,
+    "parseErrors": [],
+    "scriptSources": [],
+    "languageControls": []
+  },
+  {
+    "path": "patient-positioning-learning-01/boot.js",
+    "bytes": 6859,
+    "arabicCharacters": 491,
+    "pairs": 8,
+    "arabicLiterals": 16,
+    "englishOnlyCount": 15,
+    "parseErrors": [],
+    "scriptSources": [],
+    "languageControls": [
+      "let lang','",
+      "let lang')"
+    ]
+  },
+  {
+    "path": "patient-positioning-learning-01/engine-base.js",
+    "bytes": 39325,
+    "arabicCharacters": 3376,
+    "pairs": 2,
+    "arabicLiterals": 128,
+    "englishOnlyCount": 120,
+    "parseErrors": [],
+    "scriptSources": [],
+    "languageControls": [
+      "let lang='en',mode='learn',topic=0,progress=0,variant=0,playing=false,speed=1,lastTime=0,lastDraw=0,lastInput=-999,active=0,drag=null,guideReturn='learn',reviewReturn='test',testReview=fal"
+    ]
+  },
+  {
+    "path": "patient-positioning-learning-01/index.html",
+    "bytes": 2023,
+    "arabicCharacters": 75,
+    "pairs": 0,
+    "arabicLiterals": 0,
+    "englishOnlyCount": 0,
+    "parseErrors": [],
+    "scriptSources": [
+      "scene.js",
+      "boot.js"
+    ],
+    "languageControls": [
+      "id=\"lang\""
+    ]
+  },
+  {
+    "path": "patient-positioning-learning-01/scene.js",
+    "bytes": 15163,
+    "arabicCharacters": 331,
+    "pairs": 0,
+    "arabicLiterals": 15,
+    "englishOnlyCount": 16,
+    "parseErrors": [],
+    "scriptSources": [],
+    "languageControls": []
+  },
+  {
+    "path": "wound-dressing-learning-01/index.html",
+    "bytes": 922,
+    "arabicCharacters": 52,
+    "pairs": 0,
+    "arabicLiterals": 0,
+    "englishOnlyCount": 0,
+    "parseErrors": [],
+    "scriptSources": [
+      "loader.js"
+    ],
+    "languageControls": []
+  },
+  {
+    "path": "wound-dressing-learning-01/loader.js",
+    "bytes": 3962,
+    "arabicCharacters": 37,
+    "pairs": 0,
+    "arabicLiterals": 1,
+    "englishOnlyCount": 15,
+    "parseErrors": [],
+    "scriptSources": [],
+    "languageControls": []
+  }
+]

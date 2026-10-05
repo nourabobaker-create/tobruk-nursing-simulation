@@ -1,0 +1,80 @@
+{
+  "path": "turning-moving-learning-01/addon.js",
+  "pairs": [
+    {
+      "en": "Patient assessment",
+      "ar": "تقييم المريض",
+      "line": 7
+    },
+    {
+      "en": "Position and movement restrictions checked with the clinical team",
+      "ar": "مراجعة الوضعية وقيود الحركة مع الفريق السريري",
+      "line": 7
+    },
+    {
+      "en": "Assume any patient can follow this picture",
+      "ar": "افتراض أن أي مريض يمكن تحريكه وفق الرسم",
+      "line": 7
+    },
+    {
+      "en": "The source contains no patient-specific contraindication or capability assessment. Resolve that before handling.",
+      "ar": "لا يتضمن المصدر تقييمًا خاصًا بالمريض لموانع الحركة أو قدرته. احسم ذلك قبل المناولة.",
+      "line": 7
+    },
+    {
+      "en": "Assistance and equipment",
+      "ar": "المساعدة والوسائل",
+      "line": 8
+    },
+    {
+      "en": "Required assistance and equipment selected and ready under the local plan",
+      "ar": "المساعدة والوسائل المطلوبة محددة وجاهزة وفق الخطة المحلية",
+      "line": 8
+    },
+    {
+      "en": "The drawn hands mean I should do it alone",
+      "ar": "اليدان المرسومتان تعنيان أن أنفذ وحدي",
+      "line": 8
+    },
+    {
+      "en": "Landmarks are not a staffing plan. Appropriate handling assistance/equipment must be determined, not assumed.",
+      "ar": "المعالم ليست خطة عاملين. يجب تحديد المساعدة والوسائل المناسبة، لا افتراضها.",
+      "line": 8
+    },
+    {
+      "en": "Setup and monitoring",
+      "ar": "الإعداد والمراقبة",
+      "line": 9
+    },
+    {
+      "en": "Bed/workspace secure; breathing, lines, limb clearance and comfort plan checked",
+      "ar": "السرير ومكان العمل آمنان؛ مراجعة التنفس والأنابيب وخلو الأطراف والراحة",
+      "line": 9
+    },
+    {
+      "en": "Check those only after completing the move",
+      "ar": "فحص ذلك بعد إكمال الحركة فقط",
+      "line": 9
+    },
+    {
+      "en": "The classroom sequence omits these assessments. The added checkpoint keeps unresolved hazards from being mistaken for readiness.",
+      "ar": "يغفل التسلسل الصفّي هذه التقييمات. تمنع النقطة المضافة اعتبار المخاطر غير المحسومة جاهزيةً.",
+      "line": 9
+    }
+  ],
+  "arabic": [
+    "تقييم المريض",
+    "مراجعة الوضعية وقيود الحركة مع الفريق السريري",
+    "افتراض أن أي مريض يمكن تحريكه وفق الرسم",
+    "لا يتضمن المصدر تقييمًا خاصًا بالمريض لموانع الحركة أو قدرته. احسم ذلك قبل المناولة.",
+    "المساعدة والوسائل",
+    "المساعدة والوسائل المطلوبة محددة وجاهزة وفق الخطة المحلية",
+    "اليدان المرسومتان تعنيان أن أنفذ وحدي",
+    "المعالم ليست خطة عاملين. يجب تحديد المساعدة والوسائل المناسبة، لا افتراضها.",
+    "الإعداد والمراقبة",
+    "السرير ومكان العمل آمنان؛ مراجعة التنفس والأنابيب وخلو الأطراف والراحة",
+    "فحص ذلك بعد إكمال الحركة فقط",
+    "يغفل التسلسل الصفّي هذه التقييمات. تمنع النقطة المضافة اعتبار المخاطر غير المحسومة جاهزيةً."
+  ],
+  "englishOnly": []
+}

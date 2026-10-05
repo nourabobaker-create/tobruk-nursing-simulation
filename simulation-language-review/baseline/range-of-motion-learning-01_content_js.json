@@ -1,0 +1,627 @@
+{
+  "path": "range-of-motion-learning-01/content.js",
+  "pairs": [
+    {
+      "en": "Elbow angle",
+      "ar": "زاوية المرفق",
+      "line": 5
+    },
+    {
+      "en": "Ankle: up / down",
+      "ar": "الكاحل: أعلى / أسفل",
+      "line": 5
+    },
+    {
+      "en": "Shoulder: up / down",
+      "ar": "الكتف: أعلى / أسفل",
+      "line": 5
+    },
+    {
+      "en": "Sole: out / in",
+      "ar": "باطن القدم: خارج / داخل",
+      "line": 5
+    },
+    {
+      "en": "Arm: away / toward",
+      "ar": "الذراع: ابتعاد / اقتراب",
+      "line": 5
+    },
+    {
+      "en": "Shoulder rotation",
+      "ar": "دوران الكتف",
+      "line": 5
+    },
+    {
+      "en": "Forearm rotation",
+      "ar": "دوران الساعد",
+      "line": 5
+    },
+    {
+      "en": "Shoulder: back / forward",
+      "ar": "الكتف: خلف / أمام",
+      "line": 5
+    },
+    {
+      "en": "Flexion",
+      "ar": "الثني",
+      "line": 7
+    },
+    {
+      "en": "Decrease the angle at a joint; bend it.",
+      "ar": "تقليل الزاوية عند المفصل؛ ثني المفصل.",
+      "line": 7
+    },
+    {
+      "en": "Watch the forearm bend toward the upper arm. The upper arm stays still in this example.",
+      "ar": "راقب الساعد وهو ينثني نحو العضد. يبقى العضد ثابتًا في هذا المثال.",
+      "line": 7
+    },
+    {
+      "en": "Follow the angle between the upper arm and forearm, not where the fingers happen to point.",
+      "ar": "تابع الزاوية بين العضد والساعد، لا الاتجاه الذي تشير إليه الأصابع.",
+      "line": 7
+    },
+    {
+      "en": "A smaller elbow angle is flexion, not extension.",
+      "ar": "نقصان زاوية المرفق ثني، وليس بسطًا.",
+      "line": 7
+    },
+    {
+      "en": "Extension",
+      "ar": "البسط",
+      "line": 8
+    },
+    {
+      "en": "Increase the angle at a joint; straighten it.",
+      "ar": "زيادة الزاوية عند المفصل؛ بسط المفصل.",
+      "line": 8
+    },
+    {
+      "en": "The bent forearm moves away from the upper arm as the elbow straightens.",
+      "ar": "يبتعد الساعد المثني عن العضد مع استقامة المرفق.",
+      "line": 8
+    },
+    {
+      "en": "Start from a bent elbow and look for an increasing angle.",
+      "ar": "ابدأ بمرفق مثني وراقب زيادة الزاوية.",
+      "line": 8
+    },
+    {
+      "en": "Straightening does not mean forcing beyond the straight position shown.",
+      "ar": "البسط لا يعني دفع المفصل إلى ما بعد الاستقامة الموضحة.",
+      "line": 8
+    },
+    {
+      "en": "Dorsiflexion",
+      "ar": "الثني الظهري للقدم",
+      "line": 9
+    },
+    {
+      "en": "Bring the top of the foot toward the front of the lower leg.",
+      "ar": "قرّب ظهر القدم نحو مقدمة الساق.",
+      "line": 9
+    },
+    {
+      "en": "The forefoot lifts toward the shin; the lower leg stays still.",
+      "ar": "يرتفع مقدم القدم نحو الساق، بينما تبقى الساق ثابتة.",
+      "line": 9
+    },
+    {
+      "en": "Watch the relationship between the top of the foot and the shin.",
+      "ar": "راقب العلاقة بين ظهر القدم ومقدمة الساق.",
+      "line": 9
+    },
+    {
+      "en": "Lifting the forefoot differs from turning the sole inward.",
+      "ar": "رفع مقدم القدم يختلف عن توجيه باطنها للداخل.",
+      "line": 9
+    },
+    {
+      "en": "Plantar flexion",
+      "ar": "الثني الأخمصي للقدم",
+      "line": 10
+    },
+    {
+      "en": "Point the foot downward, away from the front of the lower leg.",
+      "ar": "وجّه القدم إلى أسفل، بعيدًا عن مقدمة الساق.",
+      "line": 10
+    },
+    {
+      "en": "The forefoot points away from the shin rather than lifting toward it.",
+      "ar": "يتجه مقدم القدم بعيدًا عن الساق بدل ارتفاعه نحوها.",
+      "line": 10
+    },
+    {
+      "en": "Follow the whole foot at the ankle; bending only the toes is not this demonstration.",
+      "ar": "تابع حركة القدم عند الكاحل؛ ثني أصابع القدم وحدها ليس الحركة المقصودة.",
+      "line": 10
+    },
+    {
+      "en": "This is not eversion: the sole is not being turned away from the other foot.",
+      "ar": "هذا ليس قلبًا للخارج؛ لا يُوجَّه باطن القدم بعيدًا عن القدم الأخرى.",
+      "line": 10
+    },
+    {
+      "en": "Elevation",
+      "ar": "الرفع",
+      "line": 11
+    },
+    {
+      "en": "Move a body part in a superior direction—upward.",
+      "ar": "تحريك جزء من الجسم باتجاه علوي؛ إلى أعلى.",
+      "line": 11
+    },
+    {
+      "en": "Watch both shoulders rise toward the ears while the head stays in place.",
+      "ar": "راقب ارتفاع الكتفين نحو الأذنين مع ثبات الرأس.",
+      "line": 11
+    },
+    {
+      "en": "The shoulder shrug illustrates upward movement without raising the arms sideways.",
+      "ar": "يوضح هز الكتفين للأعلى حركة الرفع دون إبعاد الذراعين جانبًا.",
+      "line": 11
+    },
+    {
+      "en": "Shoulder elevation and arm abduction are different movements.",
+      "ar": "رفع الكتف وإبعاد الذراع حركتان مختلفتان.",
+      "line": 11
+    },
+    {
+      "en": "Depression",
+      "ar": "الخفض",
+      "line": 12
+    },
+    {
+      "en": "Move a body part in an inferior direction—downward.",
+      "ar": "تحريك جزء من الجسم باتجاه سفلي؛ إلى أسفل.",
+      "line": 12
+    },
+    {
+      "en": "Watch the raised shoulders lower while the head stays still.",
+      "ar": "راقب نزول الكتفين المرفوعين مع ثبات الرأس.",
+      "line": 12
+    },
+    {
+      "en": "The starting shoulders are raised; the displayed action is their lowering.",
+      "ar": "يبدأ الكتفان مرفوعين؛ الفعل المعروض هو خفضهما.",
+      "line": 12
+    },
+    {
+      "en": "Here depression names a movement direction, not a mood.",
+      "ar": "المقصود هنا اتجاه حركة، وليس حالة مزاجية.",
+      "line": 12
+    },
+    {
+      "en": "Eversion",
+      "ar": "قلب باطن القدم للخارج",
+      "line": 13
+    },
+    {
+      "en": "Turn the sole away from the body midline and the other foot.",
+      "ar": "وجّه باطن القدم بعيدًا عن الخط الناصف للجسم والقدم الأخرى.",
+      "line": 13
+    },
+    {
+      "en": "The model’s right foot rolls so its sole faces outward; compare it with the other foot.",
+      "ar": "تميل قدم النموذج اليمنى بحيث يتجه باطنها للخارج؛ قارنها بالقدم الأخرى.",
+      "line": 13
+    },
+    {
+      "en": "Judge the direction of the sole, not just the toe tip.",
+      "ar": "احكم من اتجاه باطن القدم، وليس طرف الأصابع فقط.",
+      "line": 13
+    },
+    {
+      "en": "This is a foot-roll movement, not simply pointing the toes down.",
+      "ar": "هذه حركة قلب للقدم، وليست مجرد توجيه الأصابع لأسفل.",
+      "line": 13
+    },
+    {
+      "en": "Inversion",
+      "ar": "قلب باطن القدم للداخل",
+      "line": 14
+    },
+    {
+      "en": "Turn the sole toward the body midline and the other foot.",
+      "ar": "وجّه باطن القدم نحو الخط الناصف للجسم والقدم الأخرى.",
+      "line": 14
+    },
+    {
+      "en": "The same right foot rolls the other way: its sole faces toward the other foot.",
+      "ar": "تميل القدم اليمنى نفسها بالاتجاه الآخر؛ يتجه باطنها نحو القدم الأخرى.",
+      "line": 14
+    },
+    {
+      "en": "Use the other foot as a reference for “inward.”",
+      "ar": "استخدم القدم الأخرى مرجعًا لمعنى «للداخل».",
+      "line": 14
+    },
+    {
+      "en": "Inversion concerns the sole; dorsiflexion concerns the foot approaching the shin.",
+      "ar": "القلب للداخل يتعلق بباطن القدم؛ الثني الظهري يتعلق باقتراب القدم من الساق.",
+      "line": 14
+    },
+    {
+      "en": "Abduction",
+      "ar": "الإبعاد",
+      "line": 15
+    },
+    {
+      "en": "Move a limb away from the midline of the body.",
+      "ar": "تحريك طرف بعيدًا عن الخط الناصف للجسم.",
+      "line": 15
+    },
+    {
+      "en": "The right arm moves sideways away from the trunk. The body midline is fixed.",
+      "ar": "تتحرك الذراع اليمنى جانبًا بعيدًا عن الجذع. يبقى الخط الناصف للجسم ثابتًا.",
+      "line": 15
+    },
+    {
+      "en": "Compare the arm with the body midline, not with the screen edge.",
+      "ar": "قارن الذراع بالخط الناصف للجسم، وليس بحافة الشاشة.",
+      "line": 15
+    },
+    {
+      "en": "Moving the whole arm sideways is not the same as rotating it around its own long axis.",
+      "ar": "تحريك الذراع جانبًا ليس دورانها حول محورها الطولي.",
+      "line": 15
+    },
+    {
+      "en": "Adduction",
+      "ar": "التقريب",
+      "line": 16
+    },
+    {
+      "en": "Move a limb toward the midline of the body.",
+      "ar": "تحريك طرف نحو الخط الناصف للجسم.",
+      "line": 16
+    },
+    {
+      "en": "The arm begins away from the trunk and returns toward the side.",
+      "ar": "تبدأ الذراع بعيدة عن الجذع ثم تعود نحو جانبه.",
+      "line": 16
+    },
+    {
+      "en": "Toward the midline is the opposite of away from it.",
+      "ar": "نحو الخط الناصف هو عكس الابتعاد عنه.",
+      "line": 16
+    },
+    {
+      "en": "Entry 10 repeats “Abduction,” but its definition describes adduction. See the clarification.",
+      "ar": "يكرر البند 10 كلمة Abduction لكن تعريفه يصف التقريب. راجع التوضيح.",
+      "line": 16
+    },
+    {
+      "en": "Lateral rotation",
+      "ar": "الدوران الوحشي (الخارجي)",
+      "line": 17
+    },
+    {
+      "en": "Rotate a limb away from the body midline around its long axis.",
+      "ar": "تدوير الطرف للخارج بعيدًا عن الخط الناصف حول محوره الطولي.",
+      "line": 17
+    },
+    {
+      "en": "The upper arm turns at the shoulder. With the elbow bent, the forearm swings outward while the elbow stays beside the trunk.",
+      "ar": "يدور العضد عند الكتف. ومع ثني المرفق يتحرك الساعد للخارج ويبقى المرفق قرب الجذع.",
+      "line": 17
+    },
+    {
+      "en": "The bent forearm makes the upper-arm rotation visible. It is not a sideways lift of the whole arm.",
+      "ar": "يجعل الساعد المثني دوران العضد واضحًا. ليست الحركة رفع الذراع كلها جانبًا.",
+      "line": 17
+    },
+    {
+      "en": "Lateral rotation is not forearm supination: watch which body segment turns.",
+      "ar": "الدوران الخارجي ليس استلقاء الساعد؛ راقب الجزء الذي يدور.",
+      "line": 17
+    },
+    {
+      "en": "Medial rotation",
+      "ar": "الدوران الإنسي (الداخلي)",
+      "line": 18
+    },
+    {
+      "en": "Rotate a limb toward the body midline around its long axis.",
+      "ar": "تدوير الطرف للداخل نحو الخط الناصف حول محوره الطولي.",
+      "line": 18
+    },
+    {
+      "en": "The upper arm turns inward at the shoulder, bringing the bent forearm toward the abdomen.",
+      "ar": "يدور العضد للداخل عند الكتف فيقترب الساعد المثني من البطن.",
+      "line": 18
+    },
+    {
+      "en": "Keep the example’s elbow beside the trunk; follow the swing of the bent forearm.",
+      "ar": "يبقى المرفق في هذا المثال قرب الجذع؛ تابع حركة الساعد المثني.",
+      "line": 18
+    },
+    {
+      "en": "Rotation is not elbow flexion—the elbow angle remains unchanged here.",
+      "ar": "هذا دوران وليس ثني المرفق؛ تبقى زاوية المرفق ثابتة هنا.",
+      "line": 18
+    },
+    {
+      "en": "Pronation",
+      "ar": "كبّ الساعد",
+      "line": 19
+    },
+    {
+      "en": "Rotate the forearm so the palm faces down with the elbow bent.",
+      "ar": "تدوير الساعد لتتجه راحة اليد لأسفل مع ثني المرفق.",
+      "line": 19
+    },
+    {
+      "en": "The palm turns from up to down. The elbow angle stays the same.",
+      "ar": "تدور الراحة من أعلى إلى أسفل مع بقاء زاوية المرفق كما هي.",
+      "line": 19
+    },
+    {
+      "en": "Watch the palm surface turning; the wrist does not need to bend.",
+      "ar": "راقب دوران سطح الراحة؛ لا تحتاج إلى ثني الرسغ.",
+      "line": 19
+    },
+    {
+      "en": "Turning the forearm is different from rotating the upper arm at the shoulder.",
+      "ar": "دوران الساعد يختلف عن دوران العضد عند الكتف.",
+      "line": 19
+    },
+    {
+      "en": "Supination",
+      "ar": "استلقاء الساعد",
+      "line": 20
+    },
+    {
+      "en": "Rotate the forearm so the palm faces up with the elbow bent.",
+      "ar": "تدوير الساعد لتتجه راحة اليد لأعلى مع ثني المرفق.",
+      "line": 20
+    },
+    {
+      "en": "The palm turns from down to up without changing the elbow angle.",
+      "ar": "تدور الراحة من أسفل إلى أعلى دون تغيير زاوية المرفق.",
+      "line": 20
+    },
+    {
+      "en": "Remember the palm-up finish in this bent-elbow example.",
+      "ar": "تذكر النهاية والراحة لأعلى في مثال المرفق المثني.",
+      "line": 20
+    },
+    {
+      "en": "Palm up is this example’s end position; the animation also shows the movement into it.",
+      "ar": "الراحة لأعلى وضع النهاية هنا؛ يعرض الرسم الحركة التي تؤدي إليه أيضًا.",
+      "line": 20
+    },
+    {
+      "en": "Retraction",
+      "ar": "السحب للخلف",
+      "line": 21
+    },
+    {
+      "en": "Move the shoulder girdle backward; the shoulder blades move back and toward the spine.",
+      "ar": "تحريك حزام الكتف للخلف؛ يتحرك لوحا الكتف للخلف ونحو العمود الفقري.",
+      "line": 21
+    },
+    {
+      "en": "Use the top-view inset: the shoulders move backward around the rib cage.",
+      "ar": "استخدم المنظر العلوي المكبّر؛ يتحرك الكتفان للخلف حول القفص الصدري.",
+      "line": 21
+    },
+    {
+      "en": "Anterior means front, posterior means back. This example moves backward, not upward.",
+      "ar": "الأمامي يعني جهة الأمام والخلفي جهة الخلف. يتحرك المثال للخلف وليس للأعلى.",
+      "line": 21
+    },
+    {
+      "en": "The source combines “anterior” with “towards the back.” Those directions conflict.",
+      "ar": "يجمع المصدر بين «أمامي» و«نحو الخلف»، وهما اتجاهان متعارضان.",
+      "line": 21
+    },
+    {
+      "en": "Protraction",
+      "ar": "الدفع للأمام",
+      "line": 22
+    },
+    {
+      "en": "Move the shoulder girdle forward around the rib cage.",
+      "ar": "تحريك حزام الكتف للأمام حول القفص الصدري.",
+      "line": 22
+    },
+    {
+      "en": "Use the top view: the shoulders move forward while the trunk stays in place.",
+      "ar": "استخدم المنظر العلوي؛ يتحرك الكتفان للأمام ويبقى الجذع ثابتًا.",
+      "line": 22
+    },
+    {
+      "en": "Forward shoulder movement is different from bending the elbow or lifting the shoulder.",
+      "ar": "حركة الكتف للأمام تختلف عن ثني المرفق أو رفع الكتف.",
+      "line": 22
+    },
+    {
+      "en": "The source says “posterior/towards the back,” which conflicts with protraction.",
+      "ar": "يذكر المصدر «خلفي/نحو الخلف»، وهذا يتعارض مع الدفع للأمام.",
+      "line": 22
+    },
+    {
+      "en": "Entry 10 repeats Abduction although the definition says toward the midline. The displayed term and answer key use Adduction, supported by OpenStax §9.5. The original wording is retained below.",
+      "ar": "يكرر البند 10 كلمة Abduction رغم أن التعريف يقول نحو الخط الناصف. يستخدم العرض ومفتاح الإجابة Adduction (التقريب) وفق OpenStax، قسم 9.5. النص الأصلي محفوظ أدناه.",
+      "line": 25
+    },
+    {
+      "en": "Entry 15 combines anterior with “towards the back,” an internal contradiction. The animation uses backward/posterior shoulder movement for Retraction, supported by OpenStax §9.5.",
+      "ar": "يجمع البند 15 بين anterior و«نحو الخلف»، وهو تعارض داخل النص. يستخدم الرسم حركة الكتف الخلفية لـ Retraction وفق OpenStax، قسم 9.5.",
+      "line": 26
+    },
+    {
+      "en": "Entry 16 gives posterior/backward for Protraction. The animation uses forward/anterior shoulder movement, supported by OpenStax §9.5. The original line has not been erased or silently changed.",
+      "ar": "يعطي البند 16 معنى خلفي لـ Protraction. يستخدم الرسم الحركة الأمامية للكتف وفق OpenStax، قسم 9.5. لم يُحذف السطر الأصلي أو يُغيّر دون توضيح.",
+      "line": 27
+    },
+    {
+      "en": "Entries 7–8 describe “rotating the ankle.” Anatomical clarification: inversion/eversion involve joints of the hindfoot, rather than the ankle hinge alone. The animation shows the sole turning in/out, not a precise joint model.",
+      "ar": "يصف البندان 7–8 «تدوير الكاحل». توضيح تشريحي: تشمل حركتا القلب مفاصل مؤخر القدم، لا مفصل الكاحل الرِّزّي وحده. يوضح الرسم اتجاه الباطن وليس نموذجًا مفصليًا دقيقًا.",
+      "line": 28
+    },
+    {
+      "en": "With the elbow bent, the palm turns downward while the upper arm stays still. Which term fits?",
+      "ar": "مع ثني المرفق تدور الراحة لأسفل والعضد ثابت. ما المصطلح؟",
+      "line": 31
+    },
+    {
+      "en": "The upper arm stays next to the trunk. Its long-axis rotation swings the bent forearm outward. Which movement is this?",
+      "ar": "يبقى العضد بجانب الجذع ويدور حول محوره فيحرك الساعد المثني للخارج. ما الحركة؟",
+      "line": 32
+    },
+    {
+      "en": "A raised shoulder returns downward without the arm being brought in from the side. What is this?",
+      "ar": "يعود كتف مرفوع إلى أسفل، دون تقريب ذراع كانت مبعدة جانبًا. ما الحركة؟",
+      "line": 33
+    },
+    {
+      "en": "The arm returns toward the body after a sideways lift. Which term names the return?",
+      "ar": "تعود الذراع نحو الجسم بعد إبعادها جانبًا. ما اسم حركة العودة؟",
+      "line": 34
+    },
+    {
+      "en": "The sole faces toward the other foot. Which term fits, rather than lifting the foot toward the shin?",
+      "ar": "يتجه باطن القدم نحو القدم الأخرى. ما المصطلح، بدلًا من رفع القدم نحو الساق؟",
+      "line": 35
+    },
+    {
+      "en": "The shoulders move forward around the rib cage. Which term matches the clarified terminology?",
+      "ar": "يتحرك الكتفان للأمام حول القفص الصدري. ما المصطلح وفق التوضيح التشريحي؟",
+      "line": 36
+    },
+    {
+      "en": "In the clarified terminology, what is the opposite of Protraction?",
+      "ar": "في المصطلحات الموضحة، ما عكس Protraction؟",
+      "line": 37
+    },
+    {
+      "en": "Which term describes an increasing elbow angle, without rotating the forearm?",
+      "ar": "أي مصطلح يصف زيادة زاوية المرفق دون دوران الساعد؟",
+      "line": 38
+    }
+  ],
+  "arabic": [
+    "زاوية المرفق",
+    "الكاحل: أعلى / أسفل",
+    "الكتف: أعلى / أسفل",
+    "باطن القدم: خارج / داخل",
+    "الذراع: ابتعاد / اقتراب",
+    "دوران الكتف",
+    "دوران الساعد",
+    "الكتف: خلف / أمام",
+    "الثني",
+    "تقليل الزاوية عند المفصل؛ ثني المفصل.",
+    "راقب الساعد وهو ينثني نحو العضد. يبقى العضد ثابتًا في هذا المثال.",
+    "تابع الزاوية بين العضد والساعد، لا الاتجاه الذي تشير إليه الأصابع.",
+    "نقصان زاوية المرفق ثني، وليس بسطًا.",
+    "البسط",
+    "زيادة الزاوية عند المفصل؛ بسط المفصل.",
+    "يبتعد الساعد المثني عن العضد مع استقامة المرفق.",
+    "ابدأ بمرفق مثني وراقب زيادة الزاوية.",
+    "البسط لا يعني دفع المفصل إلى ما بعد الاستقامة الموضحة.",
+    "الثني الظهري للقدم",
+    "قرّب ظهر القدم نحو مقدمة الساق.",
+    "يرتفع مقدم القدم نحو الساق، بينما تبقى الساق ثابتة.",
+    "راقب العلاقة بين ظهر القدم ومقدمة الساق.",
+    "رفع مقدم القدم يختلف عن توجيه باطنها للداخل.",
+    "الثني الأخمصي للقدم",
+    "وجّه القدم إلى أسفل، بعيدًا عن مقدمة الساق.",
+    "يتجه مقدم القدم بعيدًا عن الساق بدل ارتفاعه نحوها.",
+    "تابع حركة القدم عند الكاحل؛ ثني أصابع القدم وحدها ليس الحركة المقصودة.",
+    "هذا ليس قلبًا للخارج؛ لا يُوجَّه باطن القدم بعيدًا عن القدم الأخرى.",
+    "الرفع",
+    "تحريك جزء من الجسم باتجاه علوي؛ إلى أعلى.",
+    "راقب ارتفاع الكتفين نحو الأذنين مع ثبات الرأس.",
+    "يوضح هز الكتفين للأعلى حركة الرفع دون إبعاد الذراعين جانبًا.",
+    "رفع الكتف وإبعاد الذراع حركتان مختلفتان.",
+    "الخفض",
+    "تحريك جزء من الجسم باتجاه سفلي؛ إلى أسفل.",
+    "راقب نزول الكتفين المرفوعين مع ثبات الرأس.",
+    "يبدأ الكتفان مرفوعين؛ الفعل المعروض هو خفضهما.",
+    "المقصود هنا اتجاه حركة، وليس حالة مزاجية.",
+    "قلب باطن القدم للخارج",
+    "وجّه باطن القدم بعيدًا عن الخط الناصف للجسم والقدم الأخرى.",
+    "تميل قدم النموذج اليمنى بحيث يتجه باطنها للخارج؛ قارنها بالقدم الأخرى.",
+    "احكم من اتجاه باطن القدم، وليس طرف الأصابع فقط.",
+    "هذه حركة قلب للقدم، وليست مجرد توجيه الأصابع لأسفل.",
+    "قلب باطن القدم للداخل",
+    "وجّه باطن القدم نحو الخط الناصف للجسم والقدم الأخرى.",
+    "تميل القدم اليمنى نفسها بالاتجاه الآخر؛ يتجه باطنها نحو القدم الأخرى.",
+    "استخدم القدم الأخرى مرجعًا لمعنى «للداخل».",
+    "القلب للداخل يتعلق بباطن القدم؛ الثني الظهري يتعلق باقتراب القدم من الساق.",
+    "الإبعاد",
+    "تحريك طرف بعيدًا عن الخط الناصف للجسم.",
+    "تتحرك الذراع اليمنى جانبًا بعيدًا عن الجذع. يبقى الخط الناصف للجسم ثابتًا.",
+    "قارن الذراع بالخط الناصف للجسم، وليس بحافة الشاشة.",
+    "تحريك الذراع جانبًا ليس دورانها حول محورها الطولي.",
+    "التقريب",
+    "تحريك طرف نحو الخط الناصف للجسم.",
+    "تبدأ الذراع بعيدة عن الجذع ثم تعود نحو جانبه.",
+    "نحو الخط الناصف هو عكس الابتعاد عنه.",
+    "يكرر البند 10 كلمة Abduction لكن تعريفه يصف التقريب. راجع التوضيح.",
+    "الدوران الوحشي (الخارجي)",
+    "تدوير الطرف للخارج بعيدًا عن الخط الناصف حول محوره الطولي.",
+    "يدور العضد عند الكتف. ومع ثني المرفق يتحرك الساعد للخارج ويبقى المرفق قرب الجذع.",
+    "يجعل الساعد المثني دوران العضد واضحًا. ليست الحركة رفع الذراع كلها جانبًا.",
+    "الدوران الخارجي ليس استلقاء الساعد؛ راقب الجزء الذي يدور.",
+    "الدوران الإنسي (الداخلي)",
+    "تدوير الطرف للداخل نحو الخط الناصف حول محوره الطولي.",
+    "يدور العضد للداخل عند الكتف فيقترب الساعد المثني من البطن.",
+    "يبقى المرفق في هذا المثال قرب الجذع؛ تابع حركة الساعد المثني.",
+    "هذا دوران وليس ثني المرفق؛ تبقى زاوية المرفق ثابتة هنا.",
+    "كبّ الساعد",
+    "تدوير الساعد لتتجه راحة اليد لأسفل مع ثني المرفق.",
+    "تدور الراحة من أعلى إلى أسفل مع بقاء زاوية المرفق كما هي.",
+    "راقب دوران سطح الراحة؛ لا تحتاج إلى ثني الرسغ.",
+    "دوران الساعد يختلف عن دوران العضد عند الكتف.",
+    "استلقاء الساعد",
+    "تدوير الساعد لتتجه راحة اليد لأعلى مع ثني المرفق.",
+    "تدور الراحة من أسفل إلى أعلى دون تغيير زاوية المرفق.",
+    "تذكر النهاية والراحة لأعلى في مثال المرفق المثني.",
+    "الراحة لأعلى وضع النهاية هنا؛ يعرض الرسم الحركة التي تؤدي إليه أيضًا.",
+    "السحب للخلف",
+    "تحريك حزام الكتف للخلف؛ يتحرك لوحا الكتف للخلف ونحو العمود الفقري.",
+    "استخدم المنظر العلوي المكبّر؛ يتحرك الكتفان للخلف حول القفص الصدري.",
+    "الأمامي يعني جهة الأمام والخلفي جهة الخلف. يتحرك المثال للخلف وليس للأعلى.",
+    "يجمع المصدر بين «أمامي» و«نحو الخلف»، وهما اتجاهان متعارضان.",
+    "الدفع للأمام",
+    "تحريك حزام الكتف للأمام حول القفص الصدري.",
+    "استخدم المنظر العلوي؛ يتحرك الكتفان للأمام ويبقى الجذع ثابتًا.",
+    "حركة الكتف للأمام تختلف عن ثني المرفق أو رفع الكتف.",
+    "يذكر المصدر «خلفي/نحو الخلف»، وهذا يتعارض مع الدفع للأمام.",
+    "يكرر البند 10 كلمة Abduction رغم أن التعريف يقول نحو الخط الناصف. يستخدم العرض ومفتاح الإجابة Adduction (التقريب) وفق OpenStax، قسم 9.5. النص الأصلي محفوظ أدناه.",
+    "يجمع البند 15 بين anterior و«نحو الخلف»، وهو تعارض داخل النص. يستخدم الرسم حركة الكتف الخلفية لـ Retraction وفق OpenStax، قسم 9.5.",
+    "يعطي البند 16 معنى خلفي لـ Protraction. يستخدم الرسم الحركة الأمامية للكتف وفق OpenStax، قسم 9.5. لم يُحذف السطر الأصلي أو يُغيّر دون توضيح.",
+    "يصف البندان 7–8 «تدوير الكاحل». توضيح تشريحي: تشمل حركتا القلب مفاصل مؤخر القدم، لا مفصل الكاحل الرِّزّي وحده. يوضح الرسم اتجاه الباطن وليس نموذجًا مفصليًا دقيقًا.",
+    "مع ثني المرفق تدور الراحة لأسفل والعضد ثابت. ما المصطلح؟",
+    "يبقى العضد بجانب الجذع ويدور حول محوره فيحرك الساعد المثني للخارج. ما الحركة؟",
+    "يعود كتف مرفوع إلى أسفل، دون تقريب ذراع كانت مبعدة جانبًا. ما الحركة؟",
+    "تعود الذراع نحو الجسم بعد إبعادها جانبًا. ما اسم حركة العودة؟",
+    "يتجه باطن القدم نحو القدم الأخرى. ما المصطلح، بدلًا من رفع القدم نحو الساق؟",
+    "يتحرك الكتفان للأمام حول القفص الصدري. ما المصطلح وفق التوضيح التشريحي؟",
+    "في المصطلحات الموضحة، ما عكس Protraction؟",
+    "أي مصطلح يصف زيادة زاوية المرفق دون دوران الساعد؟"
+  ],
+  "englishOnly": [
+    "use strict",
+    "3. Range of Motion-Terms of movement.docx",
+    "Flexion –decreasing the angle of the joint. Bending the joint.",
+    "Extension- increasing the angle of the joint. Straightening the joint.",
+    "Dorsiflexion-decreasing the angle of the ankle joint.",
+    "Plantar flexion-increasing the angle of the ankle.",
+    "Elevation-moving a body part in a superior direction.",
+    "Depression-moving a body part in a inferior direction.",
+    "Eversion- rotating the ankle so that the sole of the foot points away from the other.",
+    "Inversion- rotating the ankle so that the sole of the foot points towards the other.",
+    "Abduction-moving a limb away from the center line (medial line ) of the body.",
+    "Abduction-moving a limb towards the center line (medial line ) of the body.",
+    "Lateral Rotation-rotating limb away from the center line (medial line) of the body.",
+    "Medial Rotation-rotating limb towards the center line (medial line) of the body.",
+    "Pronation-rotating the forearm so that the palm faces down if the forearm is flexed.",
+    "Supination-rotating the forearm so that the palm faces up if the forearm is flexed.",
+    "Retraction-anterior movement (towards the back of the body)of the arm at the shoulder.",
+    "Protraction-posterior movement (towards the back of the body) of the arm at the shoulder."
+  ]
+}

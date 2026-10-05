@@ -1,0 +1,423 @@
+range-of-motion-learning-01/app.js:5
+EN: تعلّم
+AR: تدرّب
+
+range-of-motion-learning-01/app.js:11
+EN: Which term matches this movement?
+AR: أي مصطلح يطابق هذه الحركة؟
+
+range-of-motion-learning-01/app.js:11
+EN: Which term matches this definition?
+AR: أي مصطلح يطابق هذا التعريف؟
+
+range-of-motion-learning-01/app.js:17
+EN: Animated movement to identify
+AR: حركة متحركة للتعرف عليها
+
+range-of-motion-learning-01/app.js:38
+EN: Preparing file…
+AR: يجري تجهيز الملف…
+
+range-of-motion-learning-01/app.js:38
+EN: Could not save. Keep using this web page; check the connection before retrying.
+AR: تعذر الحفظ. يمكنك متابعة الصفحة؛ تحقق من الاتصال قبل المحاولة مجددًا.
+
+range-of-motion-learning-01/content.js:5
+EN: Elbow angle
+AR: زاوية المرفق
+
+range-of-motion-learning-01/content.js:5
+EN: Ankle: up / down
+AR: الكاحل: أعلى / أسفل
+
+range-of-motion-learning-01/content.js:5
+EN: Shoulder: up / down
+AR: الكتف: أعلى / أسفل
+
+range-of-motion-learning-01/content.js:5
+EN: Sole: out / in
+AR: باطن القدم: خارج / داخل
+
+range-of-motion-learning-01/content.js:5
+EN: Arm: away / toward
+AR: الذراع: ابتعاد / اقتراب
+
+range-of-motion-learning-01/content.js:5
+EN: Shoulder rotation
+AR: دوران الكتف
+
+range-of-motion-learning-01/content.js:5
+EN: Forearm rotation
+AR: دوران الساعد
+
+range-of-motion-learning-01/content.js:5
+EN: Shoulder: back / forward
+AR: الكتف: خلف / أمام
+
+range-of-motion-learning-01/content.js:7
+EN: Flexion
+AR: الثني
+
+range-of-motion-learning-01/content.js:7
+EN: Decrease the angle at a joint; bend it.
+AR: تقليل الزاوية عند المفصل؛ ثني المفصل.
+
+range-of-motion-learning-01/content.js:7
+EN: Watch the forearm bend toward the upper arm. The upper arm stays still in this example.
+AR: راقب الساعد وهو ينثني نحو العضد. يبقى العضد ثابتًا في هذا المثال.
+
+range-of-motion-learning-01/content.js:7
+EN: Follow the angle between the upper arm and forearm, not where the fingers happen to point.
+AR: تابع الزاوية بين العضد والساعد، لا الاتجاه الذي تشير إليه الأصابع.
+
+range-of-motion-learning-01/content.js:7
+EN: A smaller elbow angle is flexion, not extension.
+AR: نقصان زاوية المرفق ثني، وليس بسطًا.
+
+range-of-motion-learning-01/content.js:8
+EN: Extension
+AR: البسط
+
+range-of-motion-learning-01/content.js:8
+EN: Increase the angle at a joint; straighten it.
+AR: زيادة الزاوية عند المفصل؛ بسط المفصل.
+
+range-of-motion-learning-01/content.js:8
+EN: The bent forearm moves away from the upper arm as the elbow straightens.
+AR: يبتعد الساعد المثني عن العضد مع استقامة المرفق.
+
+range-of-motion-learning-01/content.js:8
+EN: Start from a bent elbow and look for an increasing angle.
+AR: ابدأ بمرفق مثني وراقب زيادة الزاوية.
+
+range-of-motion-learning-01/content.js:8
+EN: Straightening does not mean forcing beyond the straight position shown.
+AR: البسط لا يعني دفع المفصل إلى ما بعد الاستقامة الموضحة.
+
+range-of-motion-learning-01/content.js:9
+EN: Dorsiflexion
+AR: الثني الظهري للقدم
+
+range-of-motion-learning-01/content.js:9
+EN: Bring the top of the foot toward the front of the lower leg.
+AR: قرّب ظهر القدم نحو مقدمة الساق.
+
+range-of-motion-learning-01/content.js:9
+EN: The forefoot lifts toward the shin; the lower leg stays still.
+AR: يرتفع مقدم القدم نحو الساق، بينما تبقى الساق ثابتة.
+
+range-of-motion-learning-01/content.js:9
+EN: Watch the relationship between the top of the foot and the shin.
+AR: راقب العلاقة بين ظهر القدم ومقدمة الساق.
+
+range-of-motion-learning-01/content.js:9
+EN: Lifting the forefoot differs from turning the sole inward.
+AR: رفع مقدم القدم يختلف عن توجيه باطنها للداخل.
+
+range-of-motion-learning-01/content.js:10
+EN: Plantar flexion
+AR: الثني الأخمصي للقدم
+
+range-of-motion-learning-01/content.js:10
+EN: Point the foot downward, away from the front of the lower leg.
+AR: وجّه القدم إلى أسفل، بعيدًا عن مقدمة الساق.
+
+range-of-motion-learning-01/content.js:10
+EN: The forefoot points away from the shin rather than lifting toward it.
+AR: يتجه مقدم القدم بعيدًا عن الساق بدل ارتفاعه نحوها.
+
+range-of-motion-learning-01/content.js:10
+EN: Follow the whole foot at the ankle; bending only the toes is not this demonstration.
+AR: تابع حركة القدم عند الكاحل؛ ثني أصابع القدم وحدها ليس الحركة المقصودة.
+
+range-of-motion-learning-01/content.js:10
+EN: This is not eversion: the sole is not being turned away from the other foot.
+AR: هذا ليس قلبًا للخارج؛ لا يُوجَّه باطن القدم بعيدًا عن القدم الأخرى.
+
+range-of-motion-learning-01/content.js:11
+EN: Elevation
+AR: الرفع
+
+range-of-motion-learning-01/content.js:11
+EN: Move a body part in a superior direction—upward.
+AR: تحريك جزء من الجسم باتجاه علوي؛ إلى أعلى.
+
+range-of-motion-learning-01/content.js:11
+EN: Watch both shoulders rise toward the ears while the head stays in place.
+AR: راقب ارتفاع الكتفين نحو الأذنين مع ثبات الرأس.
+
+range-of-motion-learning-01/content.js:11
+EN: The shoulder shrug illustrates upward movement without raising the arms sideways.
+AR: يوضح هز الكتفين للأعلى حركة الرفع دون إبعاد الذراعين جانبًا.
+
+range-of-motion-learning-01/content.js:11
+EN: Shoulder elevation and arm abduction are different movements.
+AR: رفع الكتف وإبعاد الذراع حركتان مختلفتان.
+
+range-of-motion-learning-01/content.js:12
+EN: Depression
+AR: الخفض
+
+range-of-motion-learning-01/content.js:12
+EN: Move a body part in an inferior direction—downward.
+AR: تحريك جزء من الجسم باتجاه سفلي؛ إلى أسفل.
+
+range-of-motion-learning-01/content.js:12
+EN: Watch the raised shoulders lower while the head stays still.
+AR: راقب نزول الكتفين المرفوعين مع ثبات الرأس.
+
+range-of-motion-learning-01/content.js:12
+EN: The starting shoulders are raised; the displayed action is their lowering.
+AR: يبدأ الكتفان مرفوعين؛ الفعل المعروض هو خفضهما.
+
+range-of-motion-learning-01/content.js:12
+EN: Here depression names a movement direction, not a mood.
+AR: المقصود هنا اتجاه حركة، وليس حالة مزاجية.
+
+range-of-motion-learning-01/content.js:13
+EN: Eversion
+AR: قلب باطن القدم للخارج
+
+range-of-motion-learning-01/content.js:13
+EN: Turn the sole away from the body midline and the other foot.
+AR: وجّه باطن القدم بعيدًا عن الخط الناصف للجسم والقدم الأخرى.
+
+range-of-motion-learning-01/content.js:13
+EN: The model’s right foot rolls so its sole faces outward; compare it with the other foot.
+AR: تميل قدم النموذج اليمنى بحيث يتجه باطنها للخارج؛ قارنها بالقدم الأخرى.
+
+range-of-motion-learning-01/content.js:13
+EN: Judge the direction of the sole, not just the toe tip.
+AR: احكم من اتجاه باطن القدم، وليس طرف الأصابع فقط.
+
+range-of-motion-learning-01/content.js:13
+EN: This is a foot-roll movement, not simply pointing the toes down.
+AR: هذه حركة قلب للقدم، وليست مجرد توجيه الأصابع لأسفل.
+
+range-of-motion-learning-01/content.js:14
+EN: Inversion
+AR: قلب باطن القدم للداخل
+
+range-of-motion-learning-01/content.js:14
+EN: Turn the sole toward the body midline and the other foot.
+AR: وجّه باطن القدم نحو الخط الناصف للجسم والقدم الأخرى.
+
+range-of-motion-learning-01/content.js:14
+EN: The same right foot rolls the other way: its sole faces toward the other foot.
+AR: تميل القدم اليمنى نفسها بالاتجاه الآخر؛ يتجه باطنها نحو القدم الأخرى.
+
+range-of-motion-learning-01/content.js:14
+EN: Use the other foot as a reference for “inward.”
+AR: استخدم القدم الأخرى مرجعًا لمعنى «للداخل».
+
+range-of-motion-learning-01/content.js:14
+EN: Inversion concerns the sole; dorsiflexion concerns the foot approaching the shin.
+AR: القلب للداخل يتعلق بباطن القدم؛ الثني الظهري يتعلق باقتراب القدم من الساق.
+
+range-of-motion-learning-01/content.js:15
+EN: Abduction
+AR: الإبعاد
+
+range-of-motion-learning-01/content.js:15
+EN: Move a limb away from the midline of the body.
+AR: تحريك طرف بعيدًا عن الخط الناصف للجسم.
+
+range-of-motion-learning-01/content.js:15
+EN: The right arm moves sideways away from the trunk. The body midline is fixed.
+AR: تتحرك الذراع اليمنى جانبًا بعيدًا عن الجذع. يبقى الخط الناصف للجسم ثابتًا.
+
+range-of-motion-learning-01/content.js:15
+EN: Compare the arm with the body midline, not with the screen edge.
+AR: قارن الذراع بالخط الناصف للجسم، وليس بحافة الشاشة.
+
+range-of-motion-learning-01/content.js:15
+EN: Moving the whole arm sideways is not the same as rotating it around its own long axis.
+AR: تحريك الذراع جانبًا ليس دورانها حول محورها الطولي.
+
+range-of-motion-learning-01/content.js:16
+EN: Adduction
+AR: التقريب
+
+range-of-motion-learning-01/content.js:16
+EN: Move a limb toward the midline of the body.
+AR: تحريك طرف نحو الخط الناصف للجسم.
+
+range-of-motion-learning-01/content.js:16
+EN: The arm begins away from the trunk and returns toward the side.
+AR: تبدأ الذراع بعيدة عن الجذع ثم تعود نحو جانبه.
+
+range-of-motion-learning-01/content.js:16
+EN: Toward the midline is the opposite of away from it.
+AR: نحو الخط الناصف هو عكس الابتعاد عنه.
+
+range-of-motion-learning-01/content.js:16
+EN: Entry 10 repeats “Abduction,” but its definition describes adduction. See the clarification.
+AR: يكرر البند 10 كلمة Abduction لكن تعريفه يصف التقريب. راجع التوضيح.
+
+range-of-motion-learning-01/content.js:17
+EN: Lateral rotation
+AR: الدوران الوحشي (الخارجي)
+
+range-of-motion-learning-01/content.js:17
+EN: Rotate a limb away from the body midline around its long axis.
+AR: تدوير الطرف للخارج بعيدًا عن الخط الناصف حول محوره الطولي.
+
+range-of-motion-learning-01/content.js:17
+EN: The upper arm turns at the shoulder. With the elbow bent, the forearm swings outward while the elbow stays beside the trunk.
+AR: يدور العضد عند الكتف. ومع ثني المرفق يتحرك الساعد للخارج ويبقى المرفق قرب الجذع.
+
+range-of-motion-learning-01/content.js:17
+EN: The bent forearm makes the upper-arm rotation visible. It is not a sideways lift of the whole arm.
+AR: يجعل الساعد المثني دوران العضد واضحًا. ليست الحركة رفع الذراع كلها جانبًا.
+
+range-of-motion-learning-01/content.js:17
+EN: Lateral rotation is not forearm supination: watch which body segment turns.
+AR: الدوران الخارجي ليس استلقاء الساعد؛ راقب الجزء الذي يدور.
+
+range-of-motion-learning-01/content.js:18
+EN: Medial rotation
+AR: الدوران الإنسي (الداخلي)
+
+range-of-motion-learning-01/content.js:18
+EN: Rotate a limb toward the body midline around its long axis.
+AR: تدوير الطرف للداخل نحو الخط الناصف حول محوره الطولي.
+
+range-of-motion-learning-01/content.js:18
+EN: The upper arm turns inward at the shoulder, bringing the bent forearm toward the abdomen.
+AR: يدور العضد للداخل عند الكتف فيقترب الساعد المثني من البطن.
+
+range-of-motion-learning-01/content.js:18
+EN: Keep the example’s elbow beside the trunk; follow the swing of the bent forearm.
+AR: يبقى المرفق في هذا المثال قرب الجذع؛ تابع حركة الساعد المثني.
+
+range-of-motion-learning-01/content.js:18
+EN: Rotation is not elbow flexion—the elbow angle remains unchanged here.
+AR: هذا دوران وليس ثني المرفق؛ تبقى زاوية المرفق ثابتة هنا.
+
+range-of-motion-learning-01/content.js:19
+EN: Pronation
+AR: كبّ الساعد
+
+range-of-motion-learning-01/content.js:19
+EN: Rotate the forearm so the palm faces down with the elbow bent.
+AR: تدوير الساعد لتتجه راحة اليد لأسفل مع ثني المرفق.
+
+range-of-motion-learning-01/content.js:19
+EN: The palm turns from up to down. The elbow angle stays the same.
+AR: تدور الراحة من أعلى إلى أسفل مع بقاء زاوية المرفق كما هي.
+
+range-of-motion-learning-01/content.js:19
+EN: Watch the palm surface turning; the wrist does not need to bend.
+AR: راقب دوران سطح الراحة؛ لا تحتاج إلى ثني الرسغ.
+
+range-of-motion-learning-01/content.js:19
+EN: Turning the forearm is different from rotating the upper arm at the shoulder.
+AR: دوران الساعد يختلف عن دوران العضد عند الكتف.
+
+range-of-motion-learning-01/content.js:20
+EN: Supination
+AR: استلقاء الساعد
+
+range-of-motion-learning-01/content.js:20
+EN: Rotate the forearm so the palm faces up with the elbow bent.
+AR: تدوير الساعد لتتجه راحة اليد لأعلى مع ثني المرفق.
+
+range-of-motion-learning-01/content.js:20
+EN: The palm turns from down to up without changing the elbow angle.
+AR: تدور الراحة من أسفل إلى أعلى دون تغيير زاوية المرفق.
+
+range-of-motion-learning-01/content.js:20
+EN: Remember the palm-up finish in this bent-elbow example.
+AR: تذكر النهاية والراحة لأعلى في مثال المرفق المثني.
+
+range-of-motion-learning-01/content.js:20
+EN: Palm up is this example’s end position; the animation also shows the movement into it.
+AR: الراحة لأعلى وضع النهاية هنا؛ يعرض الرسم الحركة التي تؤدي إليه أيضًا.
+
+range-of-motion-learning-01/content.js:21
+EN: Retraction
+AR: السحب للخلف
+
+range-of-motion-learning-01/content.js:21
+EN: Move the shoulder girdle backward; the shoulder blades move back and toward the spine.
+AR: تحريك حزام الكتف للخلف؛ يتحرك لوحا الكتف للخلف ونحو العمود الفقري.
+
+range-of-motion-learning-01/content.js:21
+EN: Use the top-view inset: the shoulders move backward around the rib cage.
+AR: استخدم المنظر العلوي المكبّر؛ يتحرك الكتفان للخلف حول القفص الصدري.
+
+range-of-motion-learning-01/content.js:21
+EN: Anterior means front, posterior means back. This example moves backward, not upward.
+AR: الأمامي يعني جهة الأمام والخلفي جهة الخلف. يتحرك المثال للخلف وليس للأعلى.
+
+range-of-motion-learning-01/content.js:21
+EN: The source combines “anterior” with “towards the back.” Those directions conflict.
+AR: يجمع المصدر بين «أمامي» و«نحو الخلف»، وهما اتجاهان متعارضان.
+
+range-of-motion-learning-01/content.js:22
+EN: Protraction
+AR: الدفع للأمام
+
+range-of-motion-learning-01/content.js:22
+EN: Move the shoulder girdle forward around the rib cage.
+AR: تحريك حزام الكتف للأمام حول القفص الصدري.
+
+range-of-motion-learning-01/content.js:22
+EN: Use the top view: the shoulders move forward while the trunk stays in place.
+AR: استخدم المنظر العلوي؛ يتحرك الكتفان للأمام ويبقى الجذع ثابتًا.
+
+range-of-motion-learning-01/content.js:22
+EN: Forward shoulder movement is different from bending the elbow or lifting the shoulder.
+AR: حركة الكتف للأمام تختلف عن ثني المرفق أو رفع الكتف.
+
+range-of-motion-learning-01/content.js:22
+EN: The source says “posterior/towards the back,” which conflicts with protraction.
+AR: يذكر المصدر «خلفي/نحو الخلف»، وهذا يتعارض مع الدفع للأمام.
+
+range-of-motion-learning-01/content.js:25
+EN: Entry 10 repeats Abduction although the definition says toward the midline. The displayed term and answer key use Adduction, supported by OpenStax §9.5. The original wording is retained below.
+AR: يكرر البند 10 كلمة Abduction رغم أن التعريف يقول نحو الخط الناصف. يستخدم العرض ومفتاح الإجابة Adduction (التقريب) وفق OpenStax، قسم 9.5. النص الأصلي محفوظ أدناه.
+
+range-of-motion-learning-01/content.js:26
+EN: Entry 15 combines anterior with “towards the back,” an internal contradiction. The animation uses backward/posterior shoulder movement for Retraction, supported by OpenStax §9.5.
+AR: يجمع البند 15 بين anterior و«نحو الخلف»، وهو تعارض داخل النص. يستخدم الرسم حركة الكتف الخلفية لـ Retraction وفق OpenStax، قسم 9.5.
+
+range-of-motion-learning-01/content.js:27
+EN: Entry 16 gives posterior/backward for Protraction. The animation uses forward/anterior shoulder movement, supported by OpenStax §9.5. The original line has not been erased or silently changed.
+AR: يعطي البند 16 معنى خلفي لـ Protraction. يستخدم الرسم الحركة الأمامية للكتف وفق OpenStax، قسم 9.5. لم يُحذف السطر الأصلي أو يُغيّر دون توضيح.
+
+range-of-motion-learning-01/content.js:28
+EN: Entries 7–8 describe “rotating the ankle.” Anatomical clarification: inversion/eversion involve joints of the hindfoot, rather than the ankle hinge alone. The animation shows the sole turning in/out, not a precise joint model.
+AR: يصف البندان 7–8 «تدوير الكاحل». توضيح تشريحي: تشمل حركتا القلب مفاصل مؤخر القدم، لا مفصل الكاحل الرِّزّي وحده. يوضح الرسم اتجاه الباطن وليس نموذجًا مفصليًا دقيقًا.
+
+range-of-motion-learning-01/content.js:31
+EN: With the elbow bent, the palm turns downward while the upper arm stays still. Which term fits?
+AR: مع ثني المرفق تدور الراحة لأسفل والعضد ثابت. ما المصطلح؟
+
+range-of-motion-learning-01/content.js:32
+EN: The upper arm stays next to the trunk. Its long-axis rotation swings the bent forearm outward. Which movement is this?
+AR: يبقى العضد بجانب الجذع ويدور حول محوره فيحرك الساعد المثني للخارج. ما الحركة؟
+
+range-of-motion-learning-01/content.js:33
+EN: A raised shoulder returns downward without the arm being brought in from the side. What is this?
+AR: يعود كتف مرفوع إلى أسفل، دون تقريب ذراع كانت مبعدة جانبًا. ما الحركة؟
+
+range-of-motion-learning-01/content.js:34
+EN: The arm returns toward the body after a sideways lift. Which term names the return?
+AR: تعود الذراع نحو الجسم بعد إبعادها جانبًا. ما اسم حركة العودة؟
+
+range-of-motion-learning-01/content.js:35
+EN: The sole faces toward the other foot. Which term fits, rather than lifting the foot toward the shin?
+AR: يتجه باطن القدم نحو القدم الأخرى. ما المصطلح، بدلًا من رفع القدم نحو الساق؟
+
+range-of-motion-learning-01/content.js:36
+EN: The shoulders move forward around the rib cage. Which term matches the clarified terminology?
+AR: يتحرك الكتفان للأمام حول القفص الصدري. ما المصطلح وفق التوضيح التشريحي؟
+
+range-of-motion-learning-01/content.js:37
+EN: In the clarified terminology, what is the opposite of Protraction?
+AR: في المصطلحات الموضحة، ما عكس Protraction؟
+
+range-of-motion-learning-01/content.js:38
+EN: Which term describes an increasing elbow angle, without rotating the forearm?
+AR: أي مصطلح يصف زيادة زاوية المرفق دون دوران الساعد؟

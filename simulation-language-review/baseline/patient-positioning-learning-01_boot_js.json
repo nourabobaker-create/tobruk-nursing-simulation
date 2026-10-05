@@ -1,0 +1,80 @@
+{
+  "path": "patient-positioning-learning-01/boot.js",
+  "pairs": [
+    {
+      "en": "No rationale is supplied for this entry in the provided files.",
+      "ar": "لا يقدم الملفان مبررًا لهذه الخانة.",
+      "line": 36
+    },
+    {
+      "en": "Choose…",
+      "ar": "اختر…",
+      "line": 36
+    },
+    {
+      "en": "Flat on the back, legs together",
+      "ar": "على الظهر مسطحًا والساقان معًا",
+      "line": 38
+    },
+    {
+      "en": "On the abdomen with knees beneath raised hips",
+      "ar": "على البطن والركبتان تحت الوركين المرتفعين",
+      "line": 38
+    },
+    {
+      "en": "Backrest raised to 90°",
+      "ar": "مسند ظهر مرفوع إلى 90°",
+      "line": 38
+    },
+    {
+      "en": "The notes define horizontal recumbent as flat on the back; knees may be straight or slightly flexed.",
+      "ar": "تعرف الملاحظات الاستلقاء الأفقي بأنه مسطح على الظهر؛ قد تكون الركبتان ممدودتين أو مثنيتين قليلًا.",
+      "line": 38
+    },
+    {
+      "en": "That describes a different arrangement, not the flat-back entry.",
+      "ar": "هذا ترتيب آخر وليس البند الظهري المسطح.",
+      "line": 38
+    },
+    {
+      "en": "The near-upright 90° setup belongs to High Fowler’s in the checklist.",
+      "ar": "ينتمي إعداد 90° القريب من العمودي لفاولر المرتفع في القائمة.",
+      "line": 38
+    }
+  ],
+  "arabic": [
+    "['Proper Body Mechanics · Tobruk Nursing','ميكانيكا الجسم السليمة · تمريض طبرق']",
+    "['Patient Positioning · Tobruk Nursing','وضعيات المريض · تمريض طبرق']",
+    "<p class=\"small\">${q.basis==='added-safety'?bi(['Added safety interpretation','تفسير سلامة مضاف']):q.basis==='source-gap'?bi(['Source difference / limitation','فرق أو حد في المصدر']):bi(['Source-based learning','تعلم قائم على المصدر'])}</p><h1 class=\"question\">${bi(q.stem)}</h1>",
+    "لا يقدم الملفان مبررًا لهذه الخانة.",
+    "اختر…",
+    "يطابق هذا التفصيل المحدد. ",
+    "يغيّر هذا الخيار التفصيل المطلوب أو يحذفه. ",
+    "على الظهر مسطحًا والساقان معًا",
+    "على البطن والركبتان تحت الوركين المرتفعين",
+    "مسند ظهر مرفوع إلى 90°",
+    "تعرف الملاحظات الاستلقاء الأفقي بأنه مسطح على الظهر؛ قد تكون الركبتان ممدودتين أو مثنيتين قليلًا.",
+    "هذا ترتيب آخر وليس البند الظهري المسطح.",
+    "ينتمي إعداد 90° القريب من العمودي لفاولر المرتفع في القائمة.",
+    "في ",
+    "، أي اختيار يطابق التفصيل المحدد؟",
+    "Unable to open the module. Check the connection and reload. تعذر فتح الوحدة؛ تحقق من الاتصال وأعد التحميل. "
+  ],
+  "englishOnly": [
+    "use strict",
+    "Incomplete positioning content",
+    "Engine mismatch: ",
+    ";\nlet lang",
+    ";\nconst labels=",
+    "const conceptIDs=[2,5,7,10,14,17,18];",
+    "function details(i,full=false)",
+    "function detailsOld(i,full=false)",
+    "No rationale supplied for this entry.",
+    "This matches the stated feature. ",
+    "This option changes or omits the feature required here. ",
+    ", which choice matches the specified feature?",
+    "OSHA — Safe Patient Handling",
+    "FDA — Bed Safety",
+    "AHA / Red Cross — 2024 First Aid, §5.2 Position for Shock"
+  ]
+}

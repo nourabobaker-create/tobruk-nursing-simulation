@@ -1,0 +1,542 @@
+{
+  "path": "handwash-learning-03/base.js",
+  "pairs": [
+    {
+      "en": "Rub palm against palm.",
+      "ar": "افرك الراحتين معًا.",
+      "line": 73
+    },
+    {
+      "en": "Move both palms in firm circles; cover the whole palm, not just its centre.",
+      "ar": "حرّك الراحتين بحركات دائرية مع فرك جميع أجزاء الراحة، وليس وسطها فقط.",
+      "line": 73
+    },
+    {
+      "en": "Palms",
+      "ar": "الراحتان",
+      "line": 73
+    },
+    {
+      "en": "Right palm over the left hand.",
+      "ar": "راحة اليمنى فوق ظهر اليسرى.",
+      "line": 74
+    },
+    {
+      "en": "Spread and interlace the fingers. Rub the back of the hand with the opposite palm.",
+      "ar": "باعد بين الأصابع وشبّكها، وافرك ظهر اليد براحة اليد الأخرى.",
+      "line": 74
+    },
+    {
+      "en": "Left back",
+      "ar": "ظهر اليسرى",
+      "line": 74
+    },
+    {
+      "en": "Left palm over the right hand.",
+      "ar": "راحة اليسرى فوق ظهر اليمنى.",
+      "line": 75
+    },
+    {
+      "en": "Change hands so both backs receive friction.",
+      "ar": "بدّل اليدين حتى يشمل الفرك ظهري اليدين.",
+      "line": 75
+    },
+    {
+      "en": "Right back",
+      "ar": "ظهر اليمنى",
+      "line": 75
+    },
+    {
+      "en": "Interlace and slide the fingers.",
+      "ar": "شبّك الأصابع وحرّكها.",
+      "line": 76
+    },
+    {
+      "en": "Keep palms together. Slide the fingers through the opposing gaps to reach their sides and webs.",
+      "ar": "قرّب الراحتين وحرّك الأصابع المتشابكة لفرك الجوانب والمسافات بينها.",
+      "line": 76
+    },
+    {
+      "en": "Between fingers",
+      "ar": "بين الأصابع",
+      "line": 76
+    },
+    {
+      "en": "Hook the fingers into opposing palms.",
+      "ar": "اثنِ الأصابع داخل الراحتين المتقابلتين.",
+      "line": 77
+    },
+    {
+      "en": "Bend the fingers and rub their backs against the opposite palms.",
+      "ar": "اثنِ الأصابع وافرك ظهورها ومفاصلها داخل راحة اليد المقابلة.",
+      "line": 77
+    },
+    {
+      "en": "Knuckles",
+      "ar": "مفاصل الأصابع",
+      "line": 77
+    },
+    {
+      "en": "Rotate around the left thumb.",
+      "ar": "افرك إبهام اليسرى بحركة دورانية.",
+      "line": 78
+    },
+    {
+      "en": "Enclose the thumb in the opposite hand and rotate around it, including the base.",
+      "ar": "أحط الإبهام باليد الأخرى وافركه بحركة دورانية تشمل قاعدته.",
+      "line": 78
+    },
+    {
+      "en": "Left thumb",
+      "ar": "إبهام اليسرى",
+      "line": 78
+    },
+    {
+      "en": "Rotate around the right thumb.",
+      "ar": "افرك إبهام اليمنى بحركة دورانية.",
+      "line": 79
+    },
+    {
+      "en": "Repeat the clasping rotation on the other thumb.",
+      "ar": "كرّر الإحاطة والفرك الدوراني على الإبهام الآخر.",
+      "line": 79
+    },
+    {
+      "en": "Right thumb",
+      "ar": "إبهام اليمنى",
+      "line": 79
+    },
+    {
+      "en": "Work around each left finger.",
+      "ar": "افرك كل إصبع من أصابع اليسرى.",
+      "line": 80
+    },
+    {
+      "en": "The opposite hand wraps around each finger in turn. Include all sides; thumbs have their own movement.",
+      "ar": "تلتف اليد المقابلة حول كل إصبع على حدة لفرك جوانبه. للإبهامين حركة مستقلة.",
+      "line": 80
+    },
+    {
+      "en": "Left fingers",
+      "ar": "أصابع اليسرى",
+      "line": 80
+    },
+    {
+      "en": "Work around each right finger.",
+      "ar": "افرك كل إصبع من أصابع اليمنى.",
+      "line": 81
+    },
+    {
+      "en": "Move from one finger to the next; do not leave out the little finger.",
+      "ar": "انتقل من إصبع إلى التالي، ولا تُهمل الخنصر.",
+      "line": 81
+    },
+    {
+      "en": "Right fingers",
+      "ar": "أصابع اليمنى",
+      "line": 81
+    },
+    {
+      "en": "Circle the left wrist.",
+      "ar": "افرك رسغ اليسرى بحركة دائرية.",
+      "line": 82
+    },
+    {
+      "en": "Wrap the opposite hand around the wrist and rotate to cover all sides.",
+      "ar": "أحط الرسغ باليد الأخرى وافرك جميع جوانبه بحركة دائرية.",
+      "line": 82
+    },
+    {
+      "en": "Left wrist",
+      "ar": "رسغ اليسرى",
+      "line": 82
+    },
+    {
+      "en": "Circle the right wrist.",
+      "ar": "افرك رسغ اليمنى بحركة دائرية.",
+      "line": 83
+    },
+    {
+      "en": "Repeat around the other wrist; do not stop at the palm.",
+      "ar": "كرّر الفرك حول الرسغ الآخر، ولا تقتصر على راحة اليد.",
+      "line": 83
+    },
+    {
+      "en": "Right wrist",
+      "ar": "رسغ اليمنى",
+      "line": 83
+    },
+    {
+      "en": "Wash the exposed left forearm.",
+      "ar": "اغسل الجزء المكشوف من الساعد الأيسر.",
+      "line": 84
+    },
+    {
+      "en": "For this course procedure, extend washing as high as contamination is likely. Keep sleeves clear.",
+      "ar": "في هذا الإجراء التعليمي يمتد الغسل إلى موضع التلوث المحتمل من الساعد، مع إبعاد الأكمام.",
+      "line": 84
+    },
+    {
+      "en": "Left forearm",
+      "ar": "ساعد اليسرى",
+      "line": 84
+    },
+    {
+      "en": "Wash the exposed right forearm.",
+      "ar": "اغسل الجزء المكشوف من الساعد الأيمن.",
+      "line": 85
+    },
+    {
+      "en": "Repeat on the opposite forearm. The extent depends on the contaminated area.",
+      "ar": "كرّر على الساعد الآخر؛ يمتد الغسل بحسب منطقة التلوث المحتمل.",
+      "line": 85
+    },
+    {
+      "en": "Right forearm",
+      "ar": "ساعد اليمنى",
+      "line": 85
+    },
+    {
+      "en": "Rotate left fingertips in the right palm.",
+      "ar": "دوّر أطراف أصابع اليسرى داخل راحة اليمنى.",
+      "line": 86
+    },
+    {
+      "en": "Bend and gather the fingertips. Rub them in small circles against the opposite palm. This is not a demonstration of removing debris from beneath a nail.",
+      "ar": "اثنِ أطراف الأصابع وضمّها، وافركها بدوائر صغيرة داخل الراحة المقابلة. هذه ليست محاكاة لإزالة الأوساخ من تحت الظفر.",
+      "line": 86
+    },
+    {
+      "en": "Left fingertips",
+      "ar": "أطراف اليسرى",
+      "line": 86
+    },
+    {
+      "en": "Rotate right fingertips in the left palm.",
+      "ar": "دوّر أطراف أصابع اليمنى داخل راحة اليسرى.",
+      "line": 87
+    },
+    {
+      "en": "Repeat the fingertip and nail-edge movement on the other hand. Subungual debris needs the approved practical method.",
+      "ar": "كرّر فرك الأطراف وحواف الأظافر في اليد الأخرى. الأوساخ تحت الظفر تحتاج إلى الطريقة العملية المعتمدة.",
+      "line": 87
+    },
+    {
+      "en": "Right fingertips",
+      "ar": "أطراف اليمنى",
+      "line": 87
+    },
+    {
+      "en": "الماء",
+      "ar": "البلل",
+      "line": 90
+    },
+    {
+      "en": "تعلّم",
+      "ar": "تدرّب",
+      "line": 90
+    },
+    {
+      "en": "عرض تعليمي · لا يُحتسب تدريبًا",
+      "ar": "تدريب موجّه · أنت تحرّك اليدين",
+      "line": 90
+    },
+    {
+      "en": "استعد قبل الغسل.",
+      "ar": "افتح الماء واضبطه.",
+      "line": 90
+    },
+    {
+      "en": "أبعد الزي عن الحوض. انزع الساعة واكشف الساعدين.",
+      "ar": "اضغط على المقبض، واختر ماءً دافئًا مريحًا وتدفقًا لطيفًا.",
+      "line": 90
+    },
+    {
+      "en": "الزي بعيد عن الحوض",
+      "ar": "الساعة منزوعة",
+      "line": 90
+    },
+    {
+      "en": "الاستعداد",
+      "ar": "ضبط الماء",
+      "line": 90
+    },
+    {
+      "en": "Focused retry: completed movements are retained.",
+      "ar": "إعادة مركزة: تم الاحتفاظ بالحركات المكتملة.",
+      "line": 109
+    },
+    {
+      "en": "Interactive sink. Use the faucet, soap and towel buttons. Drag hands or use arrows. Alternate arrow keys to rub.",
+      "ar": "حوض تفاعلي. استخدم أزرار الصنبور والصابون والمنشفة. اسحب اليدين أو استخدم الأسهم وتناوب بينها للفرك.",
+      "line": 111
+    },
+    {
+      "en": "Current interaction progress",
+      "ar": "تقدم التفاعل الحالي",
+      "line": 117
+    }
+  ],
+  "arabic": [
+    "الراحتان",
+    "افرك الراحتين معًا.",
+    "حرّك الراحتين بحركات دائرية مع فرك جميع أجزاء الراحة، وليس وسطها فقط.",
+    "ظهر اليسرى",
+    "راحة اليمنى فوق ظهر اليسرى.",
+    "باعد بين الأصابع وشبّكها، وافرك ظهر اليد براحة اليد الأخرى.",
+    "ظهر اليمنى",
+    "راحة اليسرى فوق ظهر اليمنى.",
+    "بدّل اليدين حتى يشمل الفرك ظهري اليدين.",
+    "بين الأصابع",
+    "شبّك الأصابع وحرّكها.",
+    "قرّب الراحتين وحرّك الأصابع المتشابكة لفرك الجوانب والمسافات بينها.",
+    "مفاصل الأصابع",
+    "اثنِ الأصابع داخل الراحتين المتقابلتين.",
+    "اثنِ الأصابع وافرك ظهورها ومفاصلها داخل راحة اليد المقابلة.",
+    "إبهام اليسرى",
+    "افرك إبهام اليسرى بحركة دورانية.",
+    "أحط الإبهام باليد الأخرى وافركه بحركة دورانية تشمل قاعدته.",
+    "إبهام اليمنى",
+    "افرك إبهام اليمنى بحركة دورانية.",
+    "كرّر الإحاطة والفرك الدوراني على الإبهام الآخر.",
+    "أصابع اليسرى",
+    "افرك كل إصبع من أصابع اليسرى.",
+    "تلتف اليد المقابلة حول كل إصبع على حدة لفرك جوانبه. للإبهامين حركة مستقلة.",
+    "أصابع اليمنى",
+    "افرك كل إصبع من أصابع اليمنى.",
+    "انتقل من إصبع إلى التالي، ولا تُهمل الخنصر.",
+    "رسغ اليسرى",
+    "افرك رسغ اليسرى بحركة دائرية.",
+    "أحط الرسغ باليد الأخرى وافرك جميع جوانبه بحركة دائرية.",
+    "رسغ اليمنى",
+    "افرك رسغ اليمنى بحركة دائرية.",
+    "كرّر الفرك حول الرسغ الآخر، ولا تقتصر على راحة اليد.",
+    "ساعد اليسرى",
+    "اغسل الجزء المكشوف من الساعد الأيسر.",
+    "في هذا الإجراء التعليمي يمتد الغسل إلى موضع التلوث المحتمل من الساعد، مع إبعاد الأكمام.",
+    "ساعد اليمنى",
+    "اغسل الجزء المكشوف من الساعد الأيمن.",
+    "كرّر على الساعد الآخر؛ يمتد الغسل بحسب منطقة التلوث المحتمل.",
+    "أطراف اليسرى",
+    "دوّر أطراف أصابع اليسرى داخل راحة اليمنى.",
+    "اثنِ أطراف الأصابع وضمّها، وافركها بدوائر صغيرة داخل الراحة المقابلة. هذه ليست محاكاة لإزالة الأوساخ من تحت الظفر.",
+    "أطراف اليمنى",
+    "دوّر أطراف أصابع اليمنى داخل راحة اليسرى.",
+    "كرّر فرك الأطراف وحواف الأظافر في اليد الأخرى. الأوساخ تحت الظفر تحتاج إلى الطريقة العملية المعتمدة.",
+    "كلية التمريض · جامعة طبرق",
+    "غسل اليدين",
+    "حوض واحد. أنت تتحكم.",
+    "الماء",
+    "البلل",
+    "الصابون",
+    "الفرك",
+    "الشطف",
+    "التجفيف",
+    "تعلّم",
+    "تدرّب",
+    "اختبر نفسك",
+    "عرض تعليمي · لا يُحتسب تدريبًا",
+    "تدريب موجّه · أنت تحرّك اليدين",
+    "محاولة مستقلة · اختر أفعالك",
+    "تعليم · تدريب · اختبار بالمحاكاة. التقدم على الشاشة ليس قياسًا للنظافة أو اعتمادًا للكفاءة السريرية. لا تُجمع بيانات الطلاب.",
+    "استعد قبل الغسل.",
+    "افتح الماء واضبطه.",
+    "ضع اليدين والرسغين تحت الماء.",
+    "أضف الصابون السائل.",
+    "افرك جميع الأسطح.",
+    "اشطف جيدًا.",
+    "جفّف اليدين والرسغين.",
+    "أغلق الصنبور بالمنشفة.",
+    "سجل محاولتك بالمحاكاة.",
+    "أبعد الزي عن الحوض. انزع الساعة واكشف الساعدين.",
+    "اضغط على المقبض، واختر ماءً دافئًا مريحًا وتدفقًا لطيفًا.",
+    "اسحب اليدين تحت الماء. في التطبيق العملي اجعلهما أدنى من المرفقين.",
+    "اضغط على المضخة، واستخدم صابونًا يكفي لتغطية جميع الأسطح.",
+    "اسحب أو ارسم دوائر فوق اليدين. التوقف لا يضيف إلى زمن الفرك.",
+    "اسحب اليدين مجددًا تحت الماء الجاري لإزالة الصابون.",
+    "خذ منشفة ورقية، ثم حرّك فوق اليدين لتجفيفهما بالتربيت.",
+    "اضغط على المقبض؛ ستستخدم اليد المنشفة حاجزًا واقيًا.",
+    "راجع الحركات والقرارات، ثم تدرّب مجددًا.",
+    "الصنبور",
+    "مفتوح",
+    "مغلق",
+    "منشفة ورقية",
+    "تدرّب مجددًا",
+    "حفظ دون إنترنت",
+    "ابدأ الغسل",
+    "ابتعد بالزي عن الحوض",
+    "انزع الساعة",
+    "اكشف الساعدين",
+    "تم",
+    "التدفق",
+    "دافئ مريح",
+    "بارد",
+    "ساخن",
+    "لطيف",
+    "قوي",
+    "السابق",
+    "التالي",
+    "إيقاف مؤقت",
+    "تشغيل",
+    "إنهاء الفرك ثم الشطف",
+    "إنهاء الاختبار",
+    "تدرّب على الحركات الناقصة",
+    "ثانية فرك فعلي",
+    "حركة",
+    "عرض تعليمي · لا يُحتسب في التدريب",
+    "استمر بالحركة",
+    "متوقف · حرّك للفرك",
+    "اغسل يديك دون إرشاد للخطوة التالية.",
+    "استخدم الأدوات واختر أسطح اليدين بنفسك، ثم أكمل الإجراء.",
+    "إبعاد الزي عن الحوض وكشف الجلد يساعدان على تجنب التلامس وإتاحة مناطق الغسل.",
+    "استخدم الماء الجاري واجعل اليدين أدنى من المرفقين. الرسم مشهد مقرّب وليس تقييمًا لوضعية جسمك.",
+    "اتبع كمية المنتج الموصى بها لتغطية الجلد. وجود الرغوة لا يثبت اكتمال الغسل.",
+    "أزل الصابون عن اليدين والرسغين وأجزاء الساعدين المغسولة دون ملامسة الحوض.",
+    "استخدم منشفة أحادية الاستعمال وربّت بلطف على كل المناطق المغسولة؛ تجنّب الفرك العنيف للتجفيف.",
+    "استخدم المنشفة لحماية اليدين النظيفتين من سطح الصنبور المستخدم.",
+    "هيّئ الوقفة والساعة والأكمام أولًا.",
+    "افتح الماء أولًا.",
+    "اختر الماء الدافئ المريح والتدفق اللطيف قبل البلل.",
+    "بلّل اليدين والرسغين قبل الصابون.",
+    "أضف الصابون قبل الفرك.",
+    "بعض الحركات لم تكتمل. أكملها قبل الشطف.",
+    "اشطف جيدًا قبل أخذ المنشفة.",
+    "خذ منشفة ورقية أولًا.",
+    "لمست اليدان الصنبور دون حاجز بعد الشطف. أعد الغسل ثم استخدم المنشفة للإغلاق.",
+    "الماء مغلق. افتحه للمتابعة.",
+    "تجنّب الماء الساخن والتدفق المتناثر. اضبط الصنبور.",
+    "جاهز. افتح الماء.",
+    "السحب أو الحركات الدائرية يحركان الرسم؛ الثبات لا يضيف وقت فرك.",
+    "تم تسجيل الفعل. واصل المحاولة.",
+    "اكتملت الحركة.",
+    "اكتملت جميع الحركات بالمحاكاة.",
+    "بعض الأجزاء تحتاج إلى محاولة أخرى.",
+    "هذا سجل لأفعال الشاشة والحركة، وليس تقييمًا للضغط الحقيقي أو وضع اليدين أو إزالة أوساخ الأظافر أو الكفاءة السريرية.",
+    "غير مكتمل",
+    "ملاحظات التسلسل والسلامة",
+    "لم تُسجل ملاحظات على التسلسل أو السلامة.",
+    "أفعال الإجراء",
+    "إزالة الأوساخ من تحت الأظافر ما تزال تحتاج إلى تحقق عملي.",
+    "ملاحظات التدريب والمراجع",
+    "30 ثانية للفرك الأساسي و6 ثوانٍ لتدريب الأطراف؛ أهداف للمحاكاة وليست مددًا إلزامية لكل منطقة.",
+    "راقب اليدين. استخدم التالي لدراسة الحركة التالية، أو أوقف العرض لتفحص الوضعية.",
+    "أعد هذه الحركة",
+    "العرض متوقف. اضغط تشغيل للمتابعة.",
+    "انتهت محاولتك.",
+    "الفرك الفعلي على الشاشة",
+    "الزي بعيد عن الحوض",
+    "الساعة منزوعة",
+    "الساعدان مكشوفان",
+    "محاولة الصابون قبل البلل",
+    "محاولة التجفيف قبل الشطف",
+    "إنهاء الفرك مع حركات ناقصة",
+    "لمس الصنبور بعد الشطف دون منشفة",
+    "محاولة البلل بماء ساخن أو تدفق قوي",
+    "بدء الماء قبل اكتمال الاستعداد",
+    "محاولة الفرك قبل الصابون",
+    "الاستعداد",
+    "ضبط الماء",
+    "بلل اليدين والرسغين",
+    "إغلاق الصنبور بأمان",
+    "إعادة مركزة: تم الاحتفاظ بالحركات المكتملة.",
+    "العربية",
+    "حوض تفاعلي. استخدم أزرار الصنبور والصابون والمنشفة. اسحب اليدين أو استخدم الأسهم وتناوب بينها للفرك.",
+    "تقدم التفاعل الحالي"
+  ],
+  "englishOnly": [
+    "use strict",
+    "FACULTY OF NURSING · TOBRUK UNIVERSITY",
+    "ONE SINK. YOUR HANDS.",
+    "Demonstration · not scored",
+    "Guided practice · you move the hands",
+    "Independent attempt · choose your actions",
+    "Teaching · training · simulation testing. On-screen progress is not a measurement of cleanliness or a clinical competency sign-off. No student data is collected.",
+    "Prepare before washing.",
+    "Turn on and adjust the water.",
+    "Bring hands and wrists under the water.",
+    "Add liquid soap.",
+    "Rub every surface.",
+    "Rinse thoroughly.",
+    "Dry hands and wrists.",
+    "Use the towel to turn off the tap.",
+    "Your simulation record.",
+    "Keep the uniform off the sink. Remove your watch and expose the forearms.",
+    "Tap the handle. Select comfortably warm water and a gentle flow.",
+    "Drag the hands under the stream. Keep hands lower than elbows in practice.",
+    "Tap the pump; use enough soap to cover all surfaces.",
+    "Swipe or draw circles over the hands. Still hands do not advance the clock.",
+    "Drag the hands back under running water. The soap washes away.",
+    "Take a paper towel, then move over the hands to pat them dry.",
+    "Tap the handle; the hand uses the paper towel as a barrier.",
+    "Review the movements and decisions, then practise again.",
+    "Paper towel",
+    "Train again",
+    "Save offline",
+    "Start washing",
+    "Stand clear of sink",
+    "Remove watch",
+    "Expose forearms",
+    "Comfortably warm",
+    "Finish rubbing → rinse",
+    "End test",
+    "Practise incomplete movements",
+    "s active rubbing",
+    "Demonstration · no training credit",
+    "Keep moving",
+    "Paused · move to rub",
+    "Wash your hands without the next-step prompts.",
+    "Use the objects. Choose hand surfaces yourself, then finish the procedure.",
+    "A clear working position and exposed skin help prevent contact with the sink and give access for washing.",
+    "Use running water; keep the hands below elbow level. The drawing is a close-up, not a check of your body position.",
+    "Use the product-recommended amount to cover the skin surfaces. The lather does not prove that washing is complete.",
+    "Remove soap from hands, wrists and washed forearm areas without touching the sink.",
+    "Use a single-use towel and gentle patting. Dry all washed areas; do not rub the skin harshly.",
+    "Protect clean hands from the used tap surface with the paper towel.",
+    "Prepare your position, watch and sleeves first.",
+    "Turn on the water first.",
+    "Choose comfortably warm water and a gentle flow before wetting.",
+    "Wet your hands and wrists before applying soap.",
+    "Apply soap before rubbing.",
+    "Some movements are incomplete. Finish those before rinsing.",
+    "Rinse thoroughly before taking a towel.",
+    "Take a paper towel first.",
+    "Bare clean hands touched the tap. Rewash, then use a towel to close it.",
+    "Water is off. Turn the tap on to continue.",
+    "Avoid hot water and strong splashing. Adjust the tap.",
+    "Ready. Start the water.",
+    "A swipe or circular movement drives the animation. Holding still gives no rubbing credit.",
+    "Action recorded. Continue your attempt.",
+    "Movement completed.",
+    "All simulated movements completed.",
+    "Some parts need another attempt.",
+    "This records screen actions and active movement, not real pressure, hand position, nail-debris removal or clinical competence.",
+    "Sequence / safety events",
+    "No sequence or safety events were recorded.",
+    "Procedure actions",
+    "Removing debris from beneath nails still requires practical verification.",
+    "Training notes & sources",
+    "30 s core rubbing + 6 s fingertip practice. These are simulation targets, not mandatory seconds per area.",
+    "Watch the hands. Use Next to study the next action; pause to inspect the grip.",
+    "Repeat this movement",
+    "Stopped. Use Play to continue.",
+    "Your attempt has ended.",
+    "Active on-screen rubbing",
+    "Position clear",
+    "Watch removed",
+    "Forearms exposed",
+    "Tried soap before wetting",
+    "Tried drying before rinsing",
+    "Finished rubbing with movements missing",
+    "Touched the tap after rinsing without a towel",
+    "Tried to wet hands with hot water or strong flow",
+    "Started before preparation was complete",
+    "Tried rubbing before soap",
+    "Water adjusted",
+    "Hands / wrists wetted",
+    "Soap applied",
+    "Tap closed safely",
+    "Switch to Arabic",
+    "Switch to English",
+    "<!doctype html>\n"
+  ]
+}

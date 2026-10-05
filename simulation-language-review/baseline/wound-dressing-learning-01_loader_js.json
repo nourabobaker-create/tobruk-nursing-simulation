@@ -1,0 +1,24 @@
+{
+  "path": "wound-dressing-learning-01/loader.js",
+  "pairs": [],
+  "arabic": [
+    "Could not open this lesson. Check the connection and reload. تعذر فتح الدرس؛ تحقق من الاتصال وأعد التحميل. "
+  ],
+  "englishOnly": [
+    "use strict",
+    "Truncated module",
+    "Invalid code",
+    "Module size exceeded",
+    "Invalid block",
+    "Invalid repeat",
+    "Length overflow",
+    "Invalid block type",
+    "Invalid match",
+    "Invalid distance",
+    "Match before start",
+    "Incomplete module",
+    "Module part ",
+    " could not load",
+    "Module integrity check failed"
+  ]
+}
