@@ -2,6 +2,21 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="utf-8">
+<script id="faculty-first-entry">
+(function(){
+ 'use strict';
+ if(window.top!==window.self)return;
+ var here=new URL(location.href),home=new URL('../',here),key='tobruk-faculty-entry:'+home.pathname;
+ var generic=!here.hash||here.hash==='#home';
+ if(!generic)return;
+ var allowed=here.searchParams.get('entry')==='faculty';
+ try{allowed=allowed||sessionStorage.getItem(key)==='1';}catch(e){}
+ try{var ref=new URL(document.referrer);allowed=allowed||(ref.origin===home.origin&&ref.pathname.startsWith(home.pathname));}catch(e){}
+ if(!allowed){location.replace(home.href);return;}
+ try{sessionStorage.setItem(key,'1');}catch(e){}
+})();
+</script>
+
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
@@ -151,9 +166,17 @@ textarea{width:100%;min-height:100px;border:1px solid var(--line);border-radius:
  .mobileNav button.active{background:var(--green);color:white}
 }
 @media print{.topbar,.mobileNav,.heroactions,.guideNav,.courseTools,.framebar{display:none!important}.panel{display:block!important}iframe{display:none!important}body{background:#fff}.card,.guideHero,.formcard{box-shadow:none}}
+
+.facultyBreadcrumb{padding:10px 18px;background:#eaf4ef;color:#174b3b;border-bottom:1px solid #cfe3d9;font-size:15px;line-height:1.6}
+.facultyBreadcrumb div{max-width:1464px;margin:auto;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.facultyBreadcrumb a{color:#174b3b;font-weight:900;text-decoration:underline;text-underline-offset:3px}
+html[lang="en"] .facultyBreadcrumb .facultyCrumbAr{display:none}
+html:not([lang="en"]) .facultyBreadcrumb .facultyCrumbEn{display:none}
+
 </style>
 </head>
 <body>
+<nav id="facultyBreadcrumb" class="facultyBreadcrumb" aria-label="مسار البوابة / Hub navigation"><div><a href="../"><span class="facultyCrumbAr" lang="ar">الرئيسية · بوابة كلية التمريض</span><span class="facultyCrumbEn" lang="en">Home · Faculty Hub</span></a><span aria-hidden="true"> / </span><span aria-current="page"><span class="facultyCrumbAr" lang="ar">بوابة الطالب</span><span class="facultyCrumbEn" lang="en">Student Hub</span></span></div></nav>
 <header class="topbar">
  <div class="topin">
   <div class="brand">

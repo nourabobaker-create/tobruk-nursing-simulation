@@ -2,6 +2,9 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="utf-8">
+<meta name="faculty-hub-identity-version" content="20261005-identity-1">
+<link rel="canonical" href="https://nourabobaker-create.github.io/tobruk-nursing-simulation/">
+<script>try{sessionStorage.setItem("tobruk-faculty-entry:"+new URL("./",location.href).pathname,"1");}catch(e){}</script>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>بوابة كلية التمريض · جامعة طبرق</title>
 <meta name="description" content="بوابة كلية التمريض – جامعة طبرق: التعريف بالكلية، بوابة الطالب، الجودة والتحسين، البرنامج الأكاديمي، البحث، التدريب السريري والخريجون.">
@@ -42,6 +45,31 @@ main{max-width:1260px;margin:auto;padding:22px 20px 50px}
 @media(max-width:1000px){.portalGrid{grid-template-columns:repeat(2,1fr)}.summary{grid-template-columns:repeat(2,1fr)}.valueGrid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:720px){.topin{align-items:flex-start}.nav a:not(.keep){display:none}.brandtext strong{font-size:18px}.logo{width:46px;height:46px}.hero{padding:27px;border-radius:26px}.hero h1{font-size:36px}.aboutGrid,.surveyGrid,.goalList{grid-template-columns:1fr}.portalGrid{grid-template-columns:1fr 1fr}.sectionHead{display:block}}
 @media(max-width:480px){main{padding-inline:13px}.portalGrid{grid-template-columns:1fr}.summary{grid-template-columns:1fr 1fr}.hero h1{font-size:31px}}
+
+/* Faculty identity, 20261005: original artwork; four source-based meanings. */
+.identity-ar,.identity-en{unicode-bidi:plaintext}
+html[lang="en"] .identity-ar{display:none!important}
+html:not([lang="en"]) .identity-en{display:none!important}
+.identitySection{scroll-margin-top:160px}
+.identityShell{display:grid;grid-template-columns:minmax(210px,.85fr) minmax(0,2fr);gap:26px;background:#fff;border:1px solid var(--line);border-top:4px solid var(--gold);border-radius:26px;padding:28px;box-shadow:var(--shadow)}
+.identityFigure{margin:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;text-align:center;min-width:0}
+.identityFigure img{display:block;width:min(100%,260px);height:auto;aspect-ratio:1;object-fit:contain}
+.identityFigure figcaption{font-size:19px;font-weight:800;color:var(--green);line-height:1.65}
+.identityLead{margin:0 0 16px;color:#445c53;font-size:18px;line-height:1.8}
+.identityMeanings{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:0}
+.identityMeaning{border:1px solid var(--line);border-radius:17px;padding:16px;background:#f8fbf9;min-width:0}
+.identityMeaning dt{font-size:21px;color:var(--green);font-weight:900;margin-bottom:4px}
+.identityMeaning dd{font-size:17px;color:#445c53;margin:0;line-height:1.8}
+.identitySource{margin:16px 0 0;color:var(--muted);font-size:13px;line-height:1.8;border-top:1px solid var(--line);padding-top:12px}
+.identityLogoLink{display:inline-flex;border-radius:12px;flex-shrink:0}
+.identityLogoLink:focus-visible,.identityJump:focus-visible{outline:3px solid var(--gold);outline-offset:4px}
+.topin{flex-wrap:wrap}.brand,.brandtext{min-width:0}
+@media(max-width:720px){.identityShell{grid-template-columns:1fr;padding:20px;gap:20px}.identityFigure img{width:190px}.identityFigure figcaption{font-size:18px}.identitySection{scroll-margin-top:170px}.topin{justify-content:center;padding:9px 12px;gap:8px}.brand{justify-content:center;width:100%;gap:8px}.brandtext{text-align:center}.nav{justify-content:center;width:100%}.nav a,.nav button{font-size:14px;padding:7px 10px}.brandtext strong{font-size:18px;overflow-wrap:anywhere}}
+@media(max-width:480px){.identityMeanings{grid-template-columns:1fr}.identityShell{padding:18px}.identityMeaning{padding:14px}.identityLead,.identityMeaning dd{font-size:17px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.portalCard{transition:none}}
+
+/* Hub navigation pointer fix */
+.hero::after{pointer-events:none}.heroBtns{position:relative;z-index:1}
 </style>
 <script src="quality-cycle/bridge.js?v=20261002-1" defer></script>
 </head>
@@ -49,13 +77,13 @@ main{max-width:1260px;margin:auto;padding:22px 20px 50px}
 <header class="topbar">
  <div class="topin">
   <div class="brand">
-   <img class="logo" id="uniLogo" alt="شعار جامعة طبرق">
+   <img class="logo" id="uniLogo" alt="شعار جامعة طبرق" src="hub-branding/university-logo.webp">
    <div class="brandtext"><strong id="brandTitle">كلية التمريض، جامعة طبرق</strong><small id="brandSub">بوابة كلية التمريض</small></div>
-   <img class="logo" id="facultyLogo" alt="شعار كلية التمريض">
+   <a class="identityLogoLink" href="#faculty-identity" aria-label="دلالات شعار الكلية / Faculty logo meaning"><img class="logo" id="facultyLogo" alt="شعار كلية التمريض" src="hub-branding/faculty-logo.webp"></a>
   </div>
   <nav class="nav">
-   <a href="#about">عن الكلية</a><a href="#quality">الجودة</a>
-   <a class="gold keep" href="student-learning-hub/">🎓 بوابة الطالب</a>
+   <a href="#about">عن الكلية</a><a class="keep identityJump" href="#faculty-identity"><span class="identity-ar" lang="ar">شعار الكلية</span><span class="identity-en" lang="en">Our Logo</span></a><a href="#quality">الجودة</a>
+   <a class="gold keep" href="student-learning-hub/?entry=faculty">🎓 بوابة الطالب</a>
    <button class="keep" id="langBtn">English</button>
   </nav>
  </div>
@@ -67,8 +95,9 @@ main{max-width:1260px;margin:auto;padding:22px 20px 50px}
  <h1 id="heroTitle">بوابة كلية التمريض</h1>
  <p id="heroText">مدخل موحّد للتعريف بالكلية وبرنامجها الأكاديمي، والوصول إلى بوابة الطالب، والجودة والتحسين المستمر، والتدريب السريري، والبحث، وخدمة المجتمع والخريجين.</p>
  <div class="heroBtns">
-  <a class="btn gold" href="student-learning-hub/" id="studentBtn">فتح بوابة الطالب</a>
+  <a class="btn gold" href="student-learning-hub/?entry=faculty" id="studentBtn">فتح بوابة الطالب</a>
   <a class="btn ghost" href="#about" id="aboutBtn">تعرف على الكلية</a>
+  <a class="btn ghost identityJump" href="#faculty-identity"><span class="identity-ar" lang="ar">شعارنا ودلالاته</span><span class="identity-en" lang="en">Our Logo and Its Meaning</span></a>
   <a class="btn ghost" href="#quality" id="qualityBtn">الجودة والتحسين</a>
  </div>
  <div class="summary">
@@ -82,14 +111,25 @@ main{max-width:1260px;margin:auto;padding:22px 20px 50px}
 <section class="section">
  <div class="sectionHead"><div><h2>مسارات البوابة</h2><p>اختر المسار المناسب للوصول إلى الخدمة أو المحتوى المطلوب.</p></div></div>
  <div class="portalGrid">
-  <a class="portalCard" href="student-learning-hub/"><div class="ico">🎓</div><h3>بوابة الطالب</h3><p>الجداول، دليل الطالب، رفيق الدراسة، المحاكاة، المكتبة، الدعم والخدمات.</p><span class="go">فتح البوابة ←</span></a>
+  <a class="portalCard" href="student-learning-hub/?entry=faculty"><div class="ico">🎓</div><h3>بوابة الطالب</h3><p>الجداول، دليل الطالب، رفيق الدراسة، المحاكاة، المكتبة، الدعم والخدمات.</p><span class="go">فتح البوابة ←</span></a>
   <a class="portalCard" href="#about"><div class="ico">🏛️</div><h3>عن الكلية</h3><p>الرؤية والرسالة والقيم والأهداف والتوجهات الاستراتيجية.</p><span class="go">عرض القسم ←</span></a>
-  <a class="portalCard" href="student-learning-hub/#home"><div class="ico">📘</div><h3>برنامج بكالوريوس التمريض</h3><p>الخطة الدراسية والمقررات والمسار الأكاديمي ومراجع الطالب.</p><span class="go">فتح البرنامج ←</span></a>
+  <a class="portalCard" href="student-learning-hub/?entry=faculty#home"><div class="ico">📘</div><h3>برنامج بكالوريوس التمريض</h3><p>الخطة الدراسية والمقررات والمسار الأكاديمي ومراجع الطالب.</p><span class="go">فتح البرنامج ←</span></a>
   <a class="portalCard" href="#quality"><div class="ico">✅</div><h3>الجودة والتحسين المستمر</h3><p>تقويم الاستبانات، المشاركة المفتوحة، الملاحظات وقنوات التحسين.</p><span class="go">فتح الجودة ←</span></a>
   <a class="portalCard" href="clinical-simulations/"><div class="ico">🩺</div><h3>التدريب والمهارات</h3><p>دعم المهارات التمريضية والمحاكاة والتعلم العملي المساند.</p><span class="go">فتح المهارات ←</span></a>
   <a class="portalCard" href="e-library-v3/"><div class="ico">🔬</div><h3>البحث والمكتبة الرقمية</h3><p>مصادر التعلم والبحث العلمي وبحوث التخرج والقراءة الأكاديمية.</p><span class="go">فتح المكتبة ←</span></a>
-  <a class="portalCard" href="student-learning-hub/"><div class="ico">🤝</div><h3>خدمة المجتمع والشراكات</h3><p>مساحة تتوسع للأنشطة المجتمعية والأولويات الصحية والشراكات.</p><span class="go">استعراض البوابة ←</span></a>
-  <a class="portalCard" href="student-learning-hub/"><div class="ico">🎓</div><h3>الخريجون</h3><p>التواصل مع الخريجين والتعلم بعد التخرج والمشاركة في التطوير.</p><span class="go">استعراض البوابة ←</span></a>
+  <a class="portalCard" href="student-learning-hub/?entry=faculty"><div class="ico">🤝</div><h3>خدمة المجتمع والشراكات</h3><p>مساحة تتوسع للأنشطة المجتمعية والأولويات الصحية والشراكات.</p><span class="go">استعراض البوابة ←</span></a>
+  <a class="portalCard" href="student-learning-hub/?entry=faculty"><div class="ico">🎓</div><h3>الخريجون</h3><p>التواصل مع الخريجين والتعلم بعد التخرج والمشاركة في التطوير.</p><span class="go">استعراض البوابة ←</span></a>
+ </div>
+</section>
+
+<section class="section identitySection" id="faculty-identity" aria-labelledby="identityTitle">
+ <div class="sectionHead"><div><h2 id="identityTitle"><span class="identity-ar" lang="ar">شعار الكلية ودلالاته</span><span class="identity-en" lang="en">Our Logo and Its Meaning</span></h2><p><span class="identity-ar" lang="ar">هوية تجمع العلم والرعاية والانتماء إلى جامعة طبرق.</span><span class="identity-en" lang="en">An identity connecting knowledge, care and belonging to Tobruk University.</span></p></div></div>
+ <div class="identityShell">
+  <figure class="identityFigure"><img src="hub-branding/faculty-logo.webp" alt="شعار كلية التمريض – جامعة طبرق / Faculty of Nursing – Tobruk University logo" width="300" height="300" loading="lazy" decoding="async"><figcaption><span class="identity-ar" lang="ar">كلية التمريض، جامعة طبرق</span><span class="identity-en" lang="en">Faculty of Nursing, Tobruk University</span></figcaption></figure>
+  <div><p class="identityLead"><span class="identity-ar" lang="ar">يجمع الشعار بين الأساس الأكاديمي للتمريض، ومسؤوليته المهنية والإنسانية، وانتماء الكلية المؤسسي إلى جامعة طبرق.</span><span class="identity-en" lang="en">The logo brings together nursing’s academic foundation, its professional and human responsibilities, and the Faculty’s affiliation with Tobruk University.</span></p>
+   <dl class="identityMeanings"><div class="identityMeaning"><dt><span class="identity-ar" lang="ar">المصباح (السراج)</span><span class="identity-en" lang="en">The nursing lamp</span></dt><dd><span class="identity-ar" lang="ar">يرمز إلى الرعاية واليقظة والمسؤولية المهنية، ويعكس البعد الإنساني والأخلاقي للممارسة التمريضية.</span><span class="identity-en" lang="en">Represents care, vigilance and professional responsibility, reflecting the human and ethical dimensions of nursing practice.</span></dd></div><div class="identityMeaning"><dt><span class="identity-ar" lang="ar">الكتاب المفتوح</span><span class="identity-en" lang="en">The open book</span></dt><dd><span class="identity-ar" lang="ar">يعبّر عن التعليم الأكاديمي والمنهج العلمي والبحث، ويؤكد أن الممارسة التمريضية تنطلق من أساس معرفي.</span><span class="identity-en" lang="en">Represents academic education, scientific inquiry and research, affirming that nursing practice rests on a foundation of knowledge.</span></dd></div><div class="identityMeaning"><dt><span class="identity-ar" lang="ar">خط نبض القلب</span><span class="identity-en" lang="en">The heartbeat line</span></dt><dd><span class="identity-ar" lang="ar">يرمز إلى الحياة والممارسة السريرية، ويعكس الدور الحيوي للتمريض في منظومة الرعاية الصحية.</span><span class="identity-en" lang="en">Represents life and clinical practice, reflecting the vital role of nursing within healthcare.</span></dd></div><div class="identityMeaning"><dt><span class="identity-ar" lang="ar">السنابل الجانبية</span><span class="identity-en" lang="en">The wheat branches</span></dt><dd><span class="identity-ar" lang="ar">ترمز إلى العطاء والاستمرارية والنمو، وهي مستوحاة من الهوية البصرية لجامعة طبرق، بما يعزز الانتماء المؤسسي.</span><span class="identity-en" lang="en">Represent giving, continuity and growth. Inspired by Tobruk University’s visual identity, they reinforce the Faculty’s institutional affiliation.</span></dd></div></dl>
+   <p class="identitySource"><span class="identity-ar" lang="ar">مرجع الدلالات: التقرير الفني بشأن مقترحات تحديث شعار كلية التمريض، 23 ديسمبر 2025 — ملخص الدلالات الرمزية. النص الإنجليزي ترجمة تعريفية.</span><span class="identity-en" lang="en">Symbol meanings are based on the Faculty’s technical report on proposed logo updates, 23 December 2025, symbolic-meanings summary. English text is an explanatory translation.</span></p>
+  </div>
  </div>
 </section>
 
@@ -169,9 +209,9 @@ main{max-width:1260px;margin:auto;padding:22px 20px 50px}
 <script>
 let lang="ar";
 const EN={
-"brandTitle":"Faculty of Nursing, Tobruk University","brandSub":"Faculty Portal","heroEye":"Faculty Portal · Development Version",
-"heroTitle":"Faculty of Nursing Portal","heroText":"A unified entry point for the Faculty, its academic programme, Student Portal, quality improvement, clinical training, research, community service and alumni.",
-"studentBtn":"Open Student Portal","aboutBtn":"About the Faculty","qualityBtn":"Quality & Improvement"
+"brandTitle":"Faculty of Nursing, Tobruk University","brandSub":"Faculty Hub","heroEye":"Faculty Hub · Development Version",
+"heroTitle":"Faculty of Nursing Hub","heroText":"A unified entry point for the Faculty, its academic programme, Student Portal, quality improvement, clinical training, research, community service and alumni.",
+"studentBtn":"Open Student Hub","aboutBtn":"About the Faculty","qualityBtn":"Quality & Improvement"
 };
 document.getElementById("langBtn").onclick=()=>{
  lang=lang==="ar"?"en":"ar";document.documentElement.lang=lang;document.documentElement.dir=lang==="ar"?"rtl":"ltr";
@@ -179,23 +219,7 @@ document.getElementById("langBtn").onclick=()=>{
  if(lang==="en"){Object.entries(EN).forEach(([k,v])=>{const e=document.getElementById(k);if(e)e.textContent=v});}
  else{location.reload();}
 };
-async function loadLogos(){
- try{
-  const txt=await fetch("student-learning-hub/index.html",{cache:"force-cache"}).then(r=>r.text());
-  const doc=new DOMParser().parseFromString(txt,"text/html");
-  const u=doc.getElementById("uniLogo"),f=doc.getElementById("facultyLogo");
-  if(u?.getAttribute("src"))document.getElementById("uniLogo").src=u.getAttribute("src");
-  if(f?.getAttribute("src"))document.getElementById("facultyLogo").src=f.getAttribute("src");
-  if(!document.getElementById("uniLogo").getAttribute("src")){
-   const etxt=await fetch("english-ii/index.html",{cache:"force-cache"}).then(r=>r.text());
-   const edoc=new DOMParser().parseFromString(etxt,"text/html");
-   const imgs=[...edoc.querySelectorAll(".brand img")];
-   if(imgs[0])document.getElementById("uniLogo").src=imgs[0].getAttribute("src");
-   if(imgs[1])document.getElementById("facultyLogo").src=imgs[1].getAttribute("src");
-  }
- }catch(e){}
-}
-loadLogos();
+
 </script>
 </body>
 </html>
