@@ -545,7 +545,7 @@ details.q{border:1px solid var(--line);border-radius:15px;padding:11px 13px;marg
 
 <section class="chatbox" id="chatbox" aria-label="اسأل رفيق الدراسة">
  <div class="chatHead"><b>💬 اسأل رفيق الدراسة</b><button class="closeX" id="closeChat" type="button">×</button></div>
- <div class="chatMsgs" id="chatMsgs"><div class="msg bot">مرحبًا 👋 اسألني عن أي مقرر في هذا الفصل، أو اطلب شرح مفهوم بطريقة أبسط. أجيب من محتوى رفيق الدراسة الموجود في هذه الصفحة.</div></div>
+ <div class="chatMsgs" id="chatMsgs"><div class="msg bot">مرحبًا 👋 اسأل بطريقتك العادية عن أي مقرر في البرنامج: اشرح، قارن، أعطني مثالًا، اختبرني، أو لخص. أبحث في محتوى رفيق الدراسة والمصادر المفتوحة المرتبطة بالمقرر، وإذا لم أجد أساسًا كافيًا للإجابة سأقول ذلك بوضوح.</div></div>
  <div class="quickQs">
   <button type="button" data-quick-q="ما الفرق بين التشريح والفسيولوجيا؟">Anatomy vs Physiology</button>
   <button type="button" data-quick-q="اشرح الاتزان الداخلي ببساطة">Homeostasis</button>
@@ -600,42 +600,12 @@ document.getElementById("exportNotes").onclick=()=>{
  const blob=new Blob([txt],{type:"text/plain;charset=utf-8"}),a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="كشكول-رفيق-الدراسة.txt";a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);
 };
 
-// Local assistant: searches visible course content + curated answers.
-const chatbox=document.getElementById("chatbox"),msgs=document.getElementById("chatMsgs");
+// Study Companion assistant UI. Answering/search logic lives in qa-engine.js.
+const chatbox=document.getElementById("chatbox");
 document.getElementById("chatLauncher").onclick=()=>chatbox.classList.toggle("open");
 document.getElementById("closeChat").onclick=()=>chatbox.classList.remove("open");
-function addMsg(text,who){const d=document.createElement("div");d.className="msg "+who;d.textContent=text;msgs.appendChild(d);msgs.scrollTop=msgs.scrollHeight}
-const canned=[
- {k:["تشريح","فسيولوج","anatomy","physiology"],a:"التشريح Anatomy يركز على بناء الجسم وموقع أجزائه، أما الفسيولوجيا Physiology فتركز على كيفية عمل هذه الأجزاء. أفضل طريقة للدراسة هي ربط المكان والتركيب بالوظيفة ثم سؤال نفسك: ماذا قد يحدث إذا اختلت الوظيفة؟"},
- {k:["اتزان","homeostasis"],a:"الاتزان الداخلي Homeostasis هو محاولة الجسم إبقاء ظروفه الداخلية ضمن مدى مناسب مثل الحرارة والضغط والسوائل والجلوكوز، رغم التغيرات التي تحدث حوله أو داخله."},
- {k:["كيمياء","biochem","biochemistry"],a:"الكيمياء الحيوية تشرح ما يحدث داخل الجسم على مستوى الجزيئات: الماء وpH، الجلوكوز، الدهون، البروتينات، الإنزيمات، الفيتامينات والاستقلاب. أهميتها أنها تساعدك لاحقًا على فهم التحاليل والسكري والطاقة والسوائل والأدوية."},
- {k:["rle","خبرة","غسل","قفاز","علامات حيوية"],a:"في RLE 1 تتعلم مبادئ السلامة ومكافحة العدوى وغسل اليدين وPPE والوضعيات وRange of Motion والنظافة والراحة وترتيب السرير والعلامات الحيوية. الفكرة ليست حفظ الخطوات فقط، بل فهم لماذا تُفعل كل خطوة وكيف تحمي المريض ونفسك."},
- {k:["اجتماع","sociology"],a:"علم الاجتماع الطبي يذكرك أن المرض لا يحدث في فراغ. الأسرة والدخل والتعليم والثقافة والسكن والمواصلات والوصول للخدمة قد تؤثر في صحة الشخص وقدرته على اتباع العلاج."},
- {k:["نظرية","theory","نظريات"],a:"الأسس النظرية في التمريض تساعدك على فهم التمريض كطريقة تفكير وليس مجرد إجراءات. تركز على الإنسان والصحة والبيئة ودور الممرض، وتعرض نماذج مثل Nightingale وHenderson وOrem وPeplau وRoy وLeininger."},
- {k:["انجليزي","english"],a:"English 1 يبني اللغة الأساسية التي تحتاجها لفهم المصطلحات والتعليمات وطرح الأسئلة والتأكد من الفهم. حاول أن تتعلم الكلمات داخل جمل ومواقف تمريضية، لا كقائمة منفصلة."}
-];
-function answerQuestion(q){
- const x=q.toLowerCase().trim();
- for(const c of canned) if(c.k.some(k=>x.includes(k.toLowerCase()))) return c.a;
- let best=null,bestScore=0;
- document.querySelectorAll(".course").forEach(sec=>{
-  const title=sec.querySelector("h2")?.textContent||"", text=sec.innerText.replace(/\s+/g," ");
-  const words=x.split(/\s+/).filter(w=>w.length>2);
-  const score=words.reduce((s,w)=>s+(text.toLowerCase().includes(w)?1:0),0);
-  if(score>bestScore){bestScore=score;best={title,text}}
- });
- if(best&&bestScore>0){
-  const words=x.split(/\s+/).filter(w=>w.length>2);
-  let pos=-1;for(const w of words){pos=best.text.toLowerCase().indexOf(w);if(pos>=0)break}
-  const start=Math.max(0,pos-120), snippet=best.text.slice(start,start+560);
-  return "وجدت هذا في مقرر «"+best.title+"»:\n\n"+snippet+(snippet.length>=560?"…":"")+"\n\nيمكنك فتح المقرر من بطاقته للمزيد.";
- }
- return "لم أجد إجابة مباشرة في محتوى هذا الفصل بعد. جرّب ذكر اسم المقرر أو المفهوم، مثل: Homeostasis، الإنزيمات، غسل اليدين، أو علم الاجتماع الطبي.";
-}
-document.getElementById("chatForm").addEventListener("submit",e=>{e.preventDefault();const inp=document.getElementById("chatInput"),q=inp.value.trim();if(!q)return;addMsg(q,"user");inp.value="";setTimeout(()=>addMsg(answerQuestion(q),"bot"),80)});
-document.querySelectorAll("[data-quick-q]").forEach(b=>b.onclick=()=>{const q=b.dataset.quickQ;addMsg(q,"user");setTimeout(()=>addMsg(answerQuestion(q),"bot"),80)});
 </script>
 
-<script src="qa-corpus.js?v=20261006-3"></script><script src="qa-engine.js?v=20261006-3"></script><script>RafeqQA.init({lang:"ar"});</script>
+<script src="qa-corpus.js?v=20261006-4"></script><script src="qa-engine.js?v=20261006-4"></script><script>RafeqQA.init({lang:"ar"});</script>
 </body>
 </html>
