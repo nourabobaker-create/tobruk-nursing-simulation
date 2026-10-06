@@ -215,7 +215,6 @@ html:not([lang="en"]) .facultyBreadcrumb .facultyCrumbEn{display:none}
   <button type="button" data-route="simulation">🩺 محاكاة المهارات</button>
   <button type="button" data-route="library">🌐 المكتبة الرقمية</button>
   <button type="button" onclick="document.getElementById('yearHubTitle')?.scrollIntoView({behavior:'smooth',block:'start'})">🗓️ العام الأكاديمي</button>
-  <button type="button" data-hub-detail="quality">✅ الجودة والتحسين</button>
   <a href="https://forms.gle/1SRA82yXSH1QpRkz5" target="_blank" rel="noopener">📝 الشكاوى والملاحظات</a>
  </div>
  <div class="notice" id="masterNotice">
@@ -224,8 +223,8 @@ html:not([lang="en"]) .facultyBreadcrumb .facultyCrumbEn{display:none}
  <div class="grid3">
   <article class="card">
    <div class="icon">🩺</div><h2 id="c1t">محاكاة المهارات</h2>
-   <p id="c1p">سبع وحدات مهارية تفاعلية تتضمن التعلم، الحركة المرئية، التدريب، المبررات، والأسئلة الكتابية.</p>
-   <div class="actions"><button class="btn primary" data-route="simulation" id="c1b">فتح المحاكاة</button></div>
+   <p id="c1p">مسار للمهارات الأساسية، إضافة إلى مكتبة محاكاة سريرية متقدمة تضم 10 وحدات تفاعلية للتعلّم والتجربة.</p>
+   <div class="actions"><button class="btn primary" data-route="simulation" id="c1b">المهارات الأساسية</button><a class="btn soft" href="../clinical-simulations/" target="_blank" rel="noopener">المحاكاة المتقدمة · 10 وحدات</a></div>
   </article>
   <article class="card">
    <div class="icon">📘</div><h2 id="c2t">دليل الطالب</h2>
@@ -246,7 +245,7 @@ html:not([lang="en"]) .facultyBreadcrumb .facultyCrumbEn{display:none}
  </div>
 
  <div class="sectionhead">
-  <div><h2 id="yearHubTitle">العام الأكاديمي 2026/2027</h2><p id="yearHubSub">جداول المحاضرات، الخطة الدراسية، الأنشطة الأكاديمية والعلمية، بحوث التخرج، وأنشطة عالمية يمكن حضورها إلكترونيًا.</p></div>
+  <div><h2 id="yearHubTitle">العام الأكاديمي 2026/2027</h2><p id="yearHubSub">جداول المحاضرات، الخطة الدراسية، مقررات البرنامج، نتائج البحوث، وفرص ومصادر تعليمية مساندة.</p></div>
  </div>
  <div class="hubTileGrid" id="academicTileGrid">
   <button class="hubTile" type="button" data-hub-detail="lecture">
@@ -258,12 +257,6 @@ html:not([lang="en"]) .facultyBreadcrumb .facultyCrumbEn{display:none}
   <button class="hubTile" type="button" data-hub-detail="courses">
    <span class="hubTileIcon">📚</span><span class="hubTileTitle">مقررات البرنامج</span>
   </button>
-  <button class="hubTile" type="button" data-hub-detail="activities">
-   <span class="hubTileIcon">🎓</span><span class="hubTileTitle">الأنشطة الأكاديمية والعلمية</span>
-  </button>
-  <button class="hubTile" type="button" data-hub-detail="graduation">
-   <span class="hubTileIcon">🧪</span><span class="hubTileTitle">بحوث التخرج</span>
-  </button>
   <button class="hubTile" type="button" data-hub-detail="research">
    <span class="hubTileIcon">📊</span><span class="hubTileTitle">نتائج بحوث التخرج</span>
   </button>
@@ -272,9 +265,6 @@ html:not([lang="en"]) .facultyBreadcrumb .facultyCrumbEn{display:none}
   </button>
   <button class="hubTile" type="button" data-hub-detail="skills">
    <span class="hubTileIcon">🚀</span><span class="hubTileTitle">طوّر مهاراتك</span>
-  </button>
-  <button class="hubTile" type="button" data-hub-detail="quality">
-   <span class="hubTileIcon">✅</span><span class="hubTileTitle">شارك في تحسين الجودة</span>
   </button>
   <button class="hubTile" type="button" data-hub-detail="complaints">
    <span class="hubTileIcon">📝</span><span class="hubTileTitle">سجل الشكاوى والملاحظات</span>
@@ -354,26 +344,7 @@ html:not([lang="en"]) .facultyBreadcrumb .facultyCrumbEn{display:none}
    <div class="verifiedNote">لن يُضاف محتوى تفصيلي لأي مقرر من خلال هذه الصفحة إلا بعد اعتماد/الموافقة على ذلك. الغرض الحالي هو تعريف الطالب بالمقررات وموقعها في الخطة الدراسية فقط.</div>
   </article></div>
 
- <div class="hubDetail" id="hubDetail-activities"><div class="hubDetailTop"><button class="hubBack" type="button">← رجوع</button></div><article class="academicCard">
-   <h3>🎓 الأنشطة الأكاديمية والعلمية <small dir="ltr">· Academic & Scientific Activities</small></h3>
-   <p>مساحة لأنشطة الكلية المرتبطة بالتعلم والتطوير العلمي والمهني.</p>
-   <div class="activityList">
-    <div class="activityItem"><b>ورش العمل</b><small>العنوان · التاريخ · الفئة المستهدفة · الجهة المنظمة · مكان/رابط الحضور.</small></div>
-    <div class="activityItem"><b>الندوات والمحاضرات العلمية</b><small>تضاف الأنشطة فور تحديد البرنامج.</small></div>
-    <div class="activityItem"><b>لقاءات ومناقشات أكاديمية</b><small>يمكن ربطها بالمقررات أو المهارات أو البحث العلمي.</small></div>
-   </div>
-  </article></div>
- <div class="hubDetail" id="hubDetail-graduation"><div class="hubDetailTop"><button class="hubBack" type="button">← رجوع</button></div><article class="academicCard">
-   <h3>🧪 بحوث التخرج 2026/2027 <small dir="ltr">· Graduation Research</small></h3>
-   <p>خانة مخصصة لطلبة السنة الرابعة لتنظيم رحلة مشروع التخرج.</p>
-   <div class="activityList">
-    <div class="activityItem"><b>عناوين البحوث</b><small>تُضاف بعد اعتماد الموضوعات.</small></div>
-    <div class="activityItem"><b>المشرفون والطلبة</b><small>يُضاف التوزيع بعد اعتماده.</small></div>
-    <div class="activityItem"><b>المراحل والمواعيد</b><small>اختيار الموضوع · المقترح · جمع البيانات · التحليل · التسليم · المناقشة.</small></div>
-   </div>
-   <div class="placeholder">هذه الخانة الآن نموذج شكلي منظم، وجاهزة لإدراج بحوث التخرج الفعلية للعام الحالي.</div>
-  </article></div>
- <div class="hubDetail" id="hubDetail-research"><div class="hubDetailTop"><button class="hubBack" type="button">← رجوع</button></div><article class="academicCard">
+   <div class="hubDetail" id="hubDetail-research"><div class="hubDetailTop"><button class="hubBack" type="button">← رجوع</button></div><article class="academicCard">
    <h3>📊 نتائج بحوث التخرج للعام 2025/2026</h3>
    <p>نوقشت ستة مشروعات يومي 23 و24 مايو 2026. وتعرض هذه البطاقات خلاصة النتائج التعليمية/المجتمعية دون تعميمها خارج عينات كل بحث.</p>
    <div class="researchGrid">
@@ -388,39 +359,33 @@ html:not([lang="en"]) .facultyBreadcrumb .facultyCrumbEn{display:none}
   </article></div>
  <div class="hubDetail" id="hubDetail-global"><div class="hubDetailTop"><button class="hubBack" type="button">← رجوع</button></div><article class="academicCard">
    <h3>🌍 نشاطات أكاديمية وعلمية عالمية مجانية عبر الإنترنت</h3>
-   <p>أمثلة حقيقية تم التحقق من صفحاتها الرسمية في 27 سبتمبر 2026. افتح صفحة الحدث للتسجيل والتحقق من بقاء المقاعد؛ التوقيت أدناه كما يظهر في المصدر.</p>
+   <p>فرص تعليمية مجانية تم التحقق من صفحاتها الرسمية. تُخفى الفعاليات المنتهية تلقائيًا، ويُنصح بفتح صفحة الحدث للتحقق من التسجيل والتوقيت وأي تحديثات.</p>
    <div class="eventGrid">
-    <div class="eventItem">
-     <h4>الطب عن بُعد بالمغرب في 2026</h4>
-     <div class="eventMeta"><span>العربية</span><span>صحة رقمية</span><span>مجاني</span><span>مباشر أونلاين</span></div>
-     <p>1 أكتوبر 2026 · 19:00 بتوقيت الدار البيضاء · جلسة حول واقع الطب عن بعد والإطار القانوني وتجارب القطاع الصحي.</p>
-     <a href="https://jivox.ma/ar/webinaire" target="_blank" rel="noopener">التفاصيل والتسجيل ↗</a>
-    </div>
-    <div class="eventItem">
+    <div class="eventItem" data-event-end="2026-10-18">
      <h4>التوظيف والاختيار الذكي</h4>
      <div class="eventMeta"><span>العربية</span><span>مهارات مهنية</span><span>مجاني</span><span>مباشر أونلاين</span></div>
      <p>18 أكتوبر 2026 · 19:00 بتوقيت السعودية · مقابلات سلوكية وموقفية والحد من التحيز في الاختيار.</p>
      <a href="https://blueoceancorporation.com/training/webinar-seminar-register/intelligent-recruitment-and-selection" target="_blank" rel="noopener">التفاصيل والتسجيل ↗</a>
     </div>
-    <div class="eventItem">
+    <div class="eventItem" data-event-end="2026-10-21">
      <h4>Beyond the Hospital Walls: Patient Safety & Care Transitions</h4>
      <div class="eventMeta"><span>English</span><span>سلامة المرضى</span><span>Free</span><span>Zoom</span></div>
      <p>21 October 2026 · 12:00–13:00 · انتقال آمن للرعاية والاستعداد للطوارئ بعد الخروج من المستشفى.</p>
      <a href="https://www.bgs.org.uk/external-event/beyond-the-hospital-walls-elevating-patient-safety-care-transitions-and-emergency" target="_blank" rel="noopener">Event page ↗</a>
     </div>
-    <div class="eventItem">
+    <div class="eventItem" data-event-end="2026-10-29">
      <h4>Research & Policy in Health Humanities and Creative Health</h4>
      <div class="eventMeta"><span>English</span><span>بحث علمي</span><span>Free</span><span>Online</span></div>
      <p>29 October 2026 · 12:30–14:00 · كيف تُحوّل نتائج البحث الصحي إلى معرفة يمكن لصنّاع السياسات استخدامها.</p>
      <a href="https://ncch.org.uk/news/research-and-policy-in-health-humanities-creative-health" target="_blank" rel="noopener">Event page ↗</a>
     </div>
-    <div class="eventItem">
+    <div class="eventItem" data-event-end="2026-11-18">
      <h4>Understanding the Role of Admiral Nurses</h4>
      <div class="eventMeta"><span>English</span><span>تمريض الخرف</span><span>Free</span><span>Zoom</span></div>
      <p>18 November 2026 · 13:00–16:00 · Webinar من Dementia UK حول دور الممرض المتخصص في دعم الأسر المصابة بالخرف.</p>
      <a href="https://www.dementiauk.org/for-professionals/how-to-become-an-admiral-nurse/role-of-admiral-nurses-webinar/" target="_blank" rel="noopener">Event page ↗</a>
     </div>
-    <div class="eventItem">
+    <div class="eventItem" data-event-end="2027-02-19">
      <h4>Contemporary Mental Health & Holistic Nursing Care</h4>
      <div class="eventMeta"><span>English</span><span>تمريض نفسي</span><span>Free</span><span>Online series</span></div>
      <p>27 Nov & 11 Dec 2026، ثم 15 Jan و19 Feb 2027 · سلسلة من Hong Kong College of Mental Health Nursing.</p>
@@ -446,51 +411,7 @@ html:not([lang="en"]) .facultyBreadcrumb .facultyCrumbEn{display:none}
   </article>
  </div></div>
 
- <div class="hubDetail" id="hubDetail-quality"><div class="hubDetailTop"><button class="hubBack" type="button">← رجوع</button></div><article class="academicCard">
-   <h3>✅ الجودة والتحسين المستمر</h3>
-   <p>تُعرض أدوات القياس بحسب توقيتها حتى يعرف كل مشارك متى يُطلب رأيه، مع فصل الاستبانات الدورية الرسمية عن قنوات المشاركة المفتوحة طوال العام.</p>
-
-   <div class="callout"><b>📅 الاستبانات الدورية وفق دليل ضمان الجودة بجامعة طبرق</b><br>تُفعّل في الفترات المحددة، ثم تُغلق للتحليل وإعداد التوصيات وإجراءات التحسين.</div>
-   <div class="platformGrid">
-    <div class="platformItem"><h4>رضا عضو هيئة التدريس</h4><p>تُفتح خلال الأسبوعين الأخيرين من كل فصل دراسي.</p></div>
-    <div class="platformItem"><h4>رضا الطلبة</h4><p>تُفتح خلال الأسبوعين الأخيرين من كل فصل دراسي.</p></div>
-    <div class="platformItem"><h4>رضا العاملين</h4><p>تُفتح في نهاية العام الدراسي.</p></div>
-    <div class="platformItem"><h4>رضا زوار المكتبة</h4><p>تُفتح في نهاية العام الدراسي.</p></div>
-    <div class="platformItem"><h4>تقييم عضو هيئة التدريس للمقرر</h4><p>تُفتح خلال الأسبوعين الأخيرين من كل فصل دراسي.</p></div>
-    <div class="platformItem"><h4>تقييم رئيس القسم العلمي لأداء أعضاء هيئة التدريس</h4><p>تُفتح خلال الأسبوعين الأخيرين من كل فصل دراسي.</p></div>
-    <div class="platformItem"><h4>تقييم أداء رئيس قسم ضمان الجودة</h4><p>تُفتح كل ستة أشهر.</p></div>
-    <div class="platformItem"><h4>تقييم الطالب لعضو هيئة التدريس</h4><p>تُفتح خلال الأسبوعين الأخيرين من كل فصل دراسي.</p></div>
-    <div class="platformItem"><h4>تقييم الطالب للمقرر</h4><p>تُفتح خلال الأسبوعين الأخيرين من كل فصل دراسي.</p></div>
-    <div class="platformItem"><h4>استبانة أرباب العمل</h4><p>تُفتح في نهاية العام الدراسي.</p></div>
-    <div class="platformItem"><h4>استطلاع آراء الخريجين</h4><p>تُفتح في نهاية العام الدراسي.</p></div>
-   </div>
-
-   <div class="callout" style="margin-top:16px"><b>🩺 استبانات وأدوات كلية التمريض</b><br>أدوات إضافية أو مدمجة ترتبط بطبيعة برنامج التمريض وخطة الجودة والتحسين بالكلية.</div>
-   <div class="platformGrid">
-    <div class="platformItem"><h4>🎓 تجربة الطالب التعليمية والخدمات المساندة</h4><p>تُفتح خلال الأسبوعين الأخيرين من كل فصل دراسي، وتغطي تجربة التعليم والدعم والخدمات ومصادر التعلم.</p></div>
-    <div class="platformItem"><h4>📚 تجربة المقرر والتعلّم وأساليب التدريس</h4><p>تُفتح خلال الأسبوعين الأخيرين من كل فصل دراسي، وتجمع قياس تجربة المقرر والتدريس بصياغة مهنية غير شخصية.</p></div>
-    <div class="platformItem"><h4>🩺 تجربة التدريب السريري</h4><p>تُفتح في نهاية فترة التدريب أو في نهاية الفصل الذي يتضمن تدريبًا سريريًا.</p></div>
-    <div class="platformItem"><h4>🧭 التعثر الأكاديمي والدعم المبكر</h4><p>تُفتح عند ظهور مؤشرات تعثر أو صعوبات دراسية، ويمكن تفعيلها بعد ظهور نتائج أو مؤشرات مبكرة.</p></div>
-    <div class="platformItem"><h4>🤝 أصحاب العلاقة حول الخطة الاستراتيجية</h4><p>تُفتح رسميًا عند إعداد الخطة الاستراتيجية أو مراجعتها الدورية.</p></div>
-    <div class="platformItem"><h4>🌍 احتياجات المجتمع المحلي والقطاع الصحي</h4><p>تُفتح عند إعداد أو تحديث خطة خدمة المجتمع، أو عندما تحتاج الكلية إلى تحديد أولويات صحية ومجتمعية جديدة.</p></div>
-   </div>
-
-   <div class="callout" style="margin-top:16px"><b>💬 مفتوح طوال العام</b><br>هذه قنوات تغذية راجعة مستمرة، وليست بديلًا عن الاستبانات الدورية ولا تُدمج نتائجها معها إحصائيًا.</div>
-   <div class="platformGrid">
-    <div class="platformItem">
-     <h4>📝 الشكاوى والملاحظات</h4>
-     <p>مفتوح طوال العام لتسجيل شكوى أو ملاحظة ومتابعتها من الجهة المختصة.</p>
-     <span class="tag">متاح الآن · طوال العام</span>
-     <div class="actions"><a class="btn gold" href="https://forms.gle/1SRA82yXSH1QpRkz5" target="_blank" rel="noopener">فتح النموذج ↗</a></div>
-    </div>
-    <div class="platformItem"><h4>💡 صوتك للتحسين</h4><p>مفتوح طوال العام لاستقبال فكرة أو اقتراح تطويري يتعلق بالتعليم أو الخدمات أو التدريب أو البيئة التعليمية.</p><span class="tag">سيُفعّل عند إنشاء النموذج</span></div>
-    <div class="platformItem"><h4>🎯 شاركنا رأيك في الخطة الاستراتيجية</h4><p>مفتوح طوال العام لاستقبال تعليق على الرؤية أو الرسالة أو القيم أو الأهداف أو الأولويات، وتُحال الملاحظات المهمة للمراجعة والمتابعة.</p><span class="tag">سيُفعّل عند إنشاء النموذج</span></div>
-   </div>
-
-   <div class="verifiedNote"><b>منهجية المتابعة:</b> الاستبانات الدورية تُغلق بعد فترة التطبيق ويصدر عنها تحليل وتوصيات. أما القنوات المفتوحة فتُراجع بصورة مستمرة، وتُحال الملاحظات المهمة إلى الجهة المختصة مع توثيق الإجراء عند الحاجة.</div>
-  </article></div>
-
- <div class="hubDetail" id="hubDetail-complaints"><div class="hubDetailTop"><button class="hubBack" type="button">← رجوع</button></div><article class="academicCard">
+  <div class="hubDetail" id="hubDetail-complaints"><div class="hubDetailTop"><button class="hubBack" type="button">← رجوع</button></div><article class="academicCard">
    <h3>📝 سجل الشكاوى والملاحظات</h3>
    <p>مساحة مخصصة لإحالة الطالب إلى نموذج إلكتروني لتسجيل الشكوى أو الملاحظة بصورة منظمة، حتى يمكن متابعتها من الجهة المختصة بدل ضياعها في الرسائل غير الرسمية.</p>
    <div class="callout"><b>إرسال شكوى أو ملاحظة:</b> استخدم النموذج الإلكتروني المخصص للكلية لتسجيل الشكوى أو الملاحظة بصورة منظمة حتى يمكن إحالتها ومتابعتها.</div>
@@ -500,16 +421,19 @@ html:not([lang="en"]) .facultyBreadcrumb .facultyCrumbEn{display:none}
 
  <div class="hubDetail" id="hubDetail-alumni"><div class="hubDetailTop"><button class="hubBack" type="button">← رجوع</button></div><article class="academicCard">
    <h3>🎓 مساحة الخريجين</h3>
-   <p>قسم يتطور ليبقى الخريج مرتبطًا بالكلية بعد التخرج، ويجمع ما يفيده في الانتقال إلى الممارسة والتطوير المهني والبحث.</p>
+   <p>مساحة للتواصل مع خريجي كلية التمريض والاستفادة من خبراتهم واحتياجاتهم في تطوير البرنامج، مع إتاحة مصادر للتعلم والبحث بعد التخرج.</p>
    <div class="platformGrid">
-    <div class="platformItem"><h4>📌 تحديث بيانات الخريجين</h4><p>مكان مخصص مستقبلًا لتحديث بيانات التواصل، جهة العمل، والدراسات العليا بما يدعم متابعة الخريجين.</p></div>
-    <div class="platformItem"><h4>📚 التعلم بعد التخرج</h4><p>الوصول إلى المكتبة الرقمية، الأدلة، المقالات، ومصادر التطوير المهني المستمر.</p><button class="btn soft" type="button" data-route="library">فتح المكتبة الرقمية</button></div>
-    <div class="platformItem"><h4>🔬 البحث والدراسات العليا</h4><p>مصادر البحث العلمي، PubMed، MeSH، الكتابة الأكاديمية، ومهارات إعداد الدراسات والأوراق العلمية.</p></div>
-    <div class="platformItem"><h4>🤝 التواصل والمشاركة</h4><p>يمكن لاحقًا إضافة استبيانات الخريجين، فرص المشاركة في أنشطة الكلية، وخبرات الخريجين التي تفيد الطلبة الحاليين.</p></div>
+    <div class="platformItem">
+     <h4>📝 استبيان الخريجين</h4>
+     <p>استبانة مخصصة لخريجي الكلية حول تجربة البرنامج، الاستعداد للعمل، التدريب السريري، المهارات التي تحتاج تعزيزًا، ومقترحات التطوير.</p>
+     <a href="https://docs.google.com/forms/d/e/1FAIpQLScgpKlUwcn7uZKHLLpWGfDWqfTtUfK8BiKAsj437ePUxQOWIQ/viewform" target="_blank" rel="noopener">فتح استبيان الخريجين ↗</a>
+    </div>
+    <div class="platformItem"><h4>📚 التعلم بعد التخرج</h4><p>كتب ومقالات وأدلة ومصادر تعلم مفتوحة تدعم التطوير المهني المستمر.</p><button class="btn soft" type="button" data-route="library">فتح المكتبة الرقمية</button></div>
+    <div class="platformItem"><h4>🔬 البحث والدراسات العليا</h4><p>مصادر للبحث العلمي، PubMed، MeSH، الكتابة الأكاديمية، وتصميم الدراسات وتحليلها.</p><button class="btn soft" type="button" data-route="library">فتح مركز البحث</button></div>
+    <div class="platformItem"><h4>💬 تواصل وملاحظات</h4><p>يمكن للخريج إرسال ملاحظة أو مقترح إلى الكلية عبر القناة العامة للملاحظات والشكاوى.</p><a href="https://forms.gle/1SRA82yXSH1QpRkz5" target="_blank" rel="noopener">إرسال ملاحظة ↗</a></div>
    </div>
-   <div class="verifiedNote">هذا القسم في مرحلة البناء وسيُوسّع تدريجيًا وفق بيانات واحتياجات الخريجين.</div>
+   <div class="verifiedNote"><b>الخصوصية والمتابعة:</b> استبيان الخريجين مرتبط داخليًا بسجل القياس والتحسين. تعرض البوابة العامة الأداة فقط، ولا تعرض الردود الفردية أو ملفات التحليل الداخلية.</div>
   </article></div>
-
 
 </section>
 
@@ -517,7 +441,7 @@ html:not([lang="en"]) .facultyBreadcrumb .facultyCrumbEn{display:none}
  <div class="frameShell">
   <div class="framebar">
    <div><strong id="simTitle">محاكاة المهارات التمريضية</strong><div style="font-size:12px;color:var(--muted)" id="simNote">تعلّم وتدرّب، ثم ارجع دائماً إلى المشرف/عضو هيئة التدريس والدليل العملي المعتمد.</div></div>
-   <div class="actions"><a class="btn soft" href="../nursing-skills/" target="_blank" rel="noopener" id="simFull">فتح بملء الشاشة</a><button class="btn" data-route="home">الرئيسية</button></div>
+   <div class="actions"><a class="btn soft" href="../nursing-skills/" target="_blank" rel="noopener" id="simFull">فتح المهارات الأساسية بملء الشاشة</a><a class="btn soft" href="../clinical-simulations/" target="_blank" rel="noopener">المحاكاة المتقدمة · 10 وحدات</a><button class="btn" data-route="home">الرئيسية</button></div>
   </div>
   <iframe class="appframe" src="../nursing-skills/" title="Tobruk Nursing Skills"></iframe>
  </div>
@@ -626,7 +550,7 @@ html:not([lang="en"]) .facultyBreadcrumb .facultyCrumbEn{display:none}
     <div class="callout warn"><b>من حالات الفصل الواردة في الدليل:</b> الانقطاع فصلين دراسيين متتاليين دون تجديد أو إيقاف قيد، أو الحصول على تقدير عام ضعيف جدًا في فصلين، أو الرسوب سنتين متتاليتين في مرحلة واحدة، أو بلوغ أربعة إنذارات، أو الإدانة بالغش للمرة الثانية، أو استنفاد الحد الأقصى لمدة الدراسة.</div>
 
     <h3 style="margin-top:20px">التخرج والامتياز</h3>
-    <p>مدة الدراسة الأساسية <b>أربع سنوات</b>، ويُلزم الطالب باستكمال المقررات والبحوث والتدريبات الميدانية، ثم <b>أربعة أشهر امتياز</b>. ولا يُعد الطالب متخرجًا قبل اجتياز فترة الامتياز.</p>
+    <p><b>التخرج الأكاديمي:</b> يتم بعد استكمال متطلبات البرنامج المعتمدة خلال سنوات الدراسة. وتأتي <b>فترة الامتياز (أربعة أشهر)</b> بعد التخرج كمرحلة تطبيقية لاحقة وفق تنظيم الكلية والجهات المختصة.</p>
     <div class="callout"><b>متطلبات الخطة المرجعية:</b> اجتياز <b>50 مقررًا</b> بما يعادل <b>140 ساعة معتمدة</b> و<b>240 نقطة ECTS</b>، بواقع 60 ECTS لكل سنة دراسية.</div>
     <div class="callout"><b>مدة الدراسة القصوى:</b> يذكر الدليل أربع سنوات أساسية مع إمكانية امتداد المدة لسنتين دراسيتين إضافيتين كحد أقصى، ولا تُحتسب سنة إيقاف القيد من مدة الدراسة الفعلية.</div>
    </article>
@@ -712,7 +636,6 @@ html:not([lang="en"]) .facultyBreadcrumb .facultyCrumbEn{display:none}
    <article class="card">
     <h3>كيف تستخدم هذا التطبيق مع الوثائق؟</h3>
     <p>استخدم التطبيق للوصول السريع والفهم الأولي، ثم افتح/اطلب الوثيقة الرسمية الكاملة عندما تحتاج نصاً نظامياً أو قراراً أكاديمياً.</p>
-    <div class="callout">في النسخ القادمة يمكن ربط كل بطاقة مباشرة بالنسخة الرسمية المنشورة من الوثيقة عندما يتوفر رابط الجامعة النهائي المعتمد.</div>
    </article>
   </div>
  </div>
@@ -831,7 +754,7 @@ const T={
  heroText:"مساحة واحدة تجمع ما يساعد طالب التمريض على الفهم والتعلّم والمراجعة والوصول إلى الأدلة والخدمات المساندة خلال سنوات الدراسة.",
  heroStart:"ابدأ بالمحاكاة",
  masterNotice:"<strong>مهم قبل البدء:</strong> هذه البوابة وسيلة تعليمية مساندة وتجريبية، وليست بديلاً عن المقررات المعتمدة، أو عضو هيئة التدريس، أو التدريب العملي/السريري تحت الإشراف، أو اللوائح والأدلة الرسمية الكاملة. عند وجود أي اختلاف، يُرجع إلى الكلية وأستاذ المقرر والنسخة الرسمية الكاملة من الوثيقة.",
- c1t:"محاكاة المهارات",c1p:"سبع وحدات مهارية تفاعلية تتضمن التعلم، الحركة المرئية، التدريب، المبررات، والأسئلة الكتابية.",c1b:"فتح المحاكاة",
+ c1t:"محاكاة المهارات",c1p:"مسار للمهارات الأساسية، إضافة إلى مكتبة محاكاة سريرية متقدمة تضم 10 وحدات تفاعلية للتعلّم والتجربة.",c1b:"المهارات الأساسية",
  c2t:"دليل الطالب",c2p:"البداية، نظام الدراسة، الغياب، الامتحانات، المسار الدراسي، الخطة بأربع سنوات، الانضباط، والامتياز.",c2b:"فتح الدليل",
  c3t:"رفيق الدراسة",c3p:"دعم عام للمقررات مبني على دليل كليات التمريض. يساعد على تكوين قاعدة فهمية تسهّل الدراسة والنجاح، وتربط المعرفة بما يحتاجه الطالب لاحقًا في العمل وخدمة الناس.",c3b:"فتح رفيق الدراسة",
  c4t:"المكتبة الرقمية والبحث",c4p:"كتب ومراجع مفتوحة، مقالات علمية، قوائم قراءة، دعم بحوث التخرج من الفكرة إلى المناقشة، رفيق دراسة، ومساحة قصيرة لاستعادة التركيز.",c4b:"فتح المكتبة ومركز البحث",
@@ -849,7 +772,7 @@ const T={
  heroText:"One space that helps nursing students understand, learn, revise, access guidance, and use supporting services throughout the programme.",
  heroStart:"Start with Simulation",
  masterNotice:"<strong>Before you start:</strong> This is a supplementary pilot learning resource. It does not replace the approved curriculum, instructors, supervised practical/clinical teaching, or complete official regulations and guides. If anything differs, follow the Faculty, course instructor, and the complete official document.",
- c1t:"Skills Simulation",c1p:"Seven interactive skills modules with visible movement, guided practice, rationales, and written practice.",c1b:"Open Simulation",
+ c1t:"Skills Simulation",c1p:"A foundational skills pathway plus an advanced clinical simulation library with 10 interactive learning and practice modules.",c1b:"Foundational Skills",
  c2t:"Student Guide",c2p:"Orientation, study rules, attendance, exams, four-year curriculum, conduct, and internship guidance.",c2b:"Open Guide",
  c3t:"Study Companion",c3p:"General course support based on the Nursing Faculties Guide. It builds a foundation for understanding, study success, future practice, and helping people through better-informed nursing care.",c3b:"Open Study Companion",
  c4t:"Digital Library & Research",c4p:"Open books and references, scholarly articles, reading lists, graduation-research support from idea to defense, study support, and a short reset room.",c4b:"Open Library & Research Hub",
@@ -1108,7 +1031,7 @@ const staticTextMap={
 "الانتقال، التعثر، والإنذار":"Progression, Failure & Warnings","الانتقال للسنة التالية:":"Progression to the next year:","ينتقل الطالب إذا نجح في جميع المقررات، أو رسب في مقررين على الأكثر، بشرط ألا يكون أحدهما من مقررات التدريب السريري أو المعملي من سنته أو سنة أدنى.":"A student progresses after passing all courses, or with no more than two failed courses, provided neither is a clinical or laboratory training course from the current or an earlier year.",
 "إعادة المقرر:":"Repeating a failed course:","يعيد الطالب المقرر الذي رسب فيه دراسةً وامتحانًا وفق المحتوى العلمي الذي يدرّس للدفعة التي تدرس المقرر وقت الإعادة.":"The student repeats both study and examination according to the course content taught to the cohort taking that course at the time of repetition.",
 "من حالات الفصل الواردة في الدليل:":"Examples of dismissal conditions in the Guide:","الانقطاع فصلين دراسيين متتاليين دون تجديد أو إيقاف قيد، أو الحصول على تقدير عام ضعيف جدًا في فصلين، أو الرسوب سنتين متتاليتين في مرحلة واحدة، أو بلوغ أربعة إنذارات، أو الإدانة بالغش للمرة الثانية، أو استنفاد الحد الأقصى لمدة الدراسة.":"These include two consecutive semesters of unjustified non-attendance without registration renewal/suspension, an overall Very Poor grade in two semesters, failing the same year twice consecutively, reaching four warnings, a second cheating conviction, or exhausting the maximum study period.",
-"التخرج والامتياز":"Graduation & Internship","مدة الدراسة الأساسية":"Standard study duration:","أربع سنوات":"four years","، ويُلزم الطالب باستكمال المقررات والبحوث والتدريبات الميدانية، ثم":"; students must complete courses, research, and field training, followed by","أربعة أشهر امتياز":"four months of internship",". ولا يُعد الطالب متخرجًا قبل اجتياز فترة الامتياز.":". A student is not considered graduated until the internship is completed.",
+"التخرج والامتياز":"Graduation & Internship","التخرج الأكاديمي:":"Academic graduation:","يتم بعد استكمال متطلبات البرنامج المعتمدة خلال سنوات الدراسة. وتأتي":"is completed after fulfilling the approved programme requirements during the study years. The","فترة الامتياز (أربعة أشهر)":"internship period (four months)","بعد التخرج كمرحلة تطبيقية لاحقة وفق تنظيم الكلية والجهات المختصة.":"comes after graduation as a later practical stage, subject to Faculty and competent-authority arrangements.","مدة الدراسة الأساسية":"Standard study duration:","أربع سنوات":"four years","، ويُلزم الطالب باستكمال المقررات والبحوث والتدريبات الميدانية، ثم":"; students must complete courses, research, and field training, followed by","أربعة أشهر امتياز":"four months of internship",". ولا يُعد الطالب متخرجًا قبل اجتياز فترة الامتياز.":". A student is not considered graduated until the internship is completed.",
 "متطلبات الخطة المرجعية:":"Reference curriculum requirements:","اجتياز":"complete","50 مقررًا":"50 courses","بما يعادل":"equivalent to","140 ساعة معتمدة":"140 credit units","و":"and","240 نقطة ECTS":"240 ECTS","، بواقع 60 ECTS لكل سنة دراسية.":", with 60 ECTS per academic year.",
 "مدة الدراسة القصوى:":"Maximum study period:","يذكر الدليل أربع سنوات أساسية مع إمكانية امتداد المدة لسنتين دراسيتين إضافيتين كحد أقصى، ولا تُحتسب سنة إيقاف القيد من مدة الدراسة الفعلية.":"The Guide states four standard years with up to two additional academic years as the maximum extension; a year of approved registration suspension is not counted in the actual study period.",
 "الخطة الدراسية المرجعية · Four-year Curriculum":"Reference Curriculum · Four-Year Programme","البيانات أدناه مأخوذة من دليل كليات التمريض المرجعي. تعرض المقررات وساعات الاتصال وإجمالي عبء التعلّم وECTS. الجداول الفعلية وتوزيع المقررات على دفعتك تؤكدها الكلية.":"The data below come from the reference Nursing Faculties Guide and show courses, contact hours, total workload, and ECTS. Actual delivery and cohort scheduling are confirmed by the Faculty.",
@@ -1200,6 +1123,14 @@ async function loadLogos(){
 loadLogos();captureStaticText();applyLang();
 
 
+function hidePastEvents(){
+ const today=new Date();today.setHours(0,0,0,0);
+ document.querySelectorAll("[data-event-end]").forEach(card=>{
+  const d=new Date(card.dataset.eventEnd+"T23:59:59");
+  if(!Number.isNaN(d.getTime())&&d<today)card.remove();
+ });
+}
+
 function openStudyCompanion(){location.href=lang==="en"?"../study-companion/english.html":"../study-companion/";}
 
 function openHubDetail(name){
@@ -1239,6 +1170,9 @@ document.addEventListener("click",e=>{
 });
 document.getElementById("homeBtn").addEventListener("click",()=>route("home"));
 route(location.hash.replace("#","")||"home");
+const requestedDetail=new URLSearchParams(location.search).get("detail");
+if(requestedDetail&&document.getElementById("hubDetail-"+requestedDetail)){route("home");openHubDetail(requestedDetail);}
+hidePastEvents();
 
 document.querySelectorAll("[data-guide]").forEach(b=>b.addEventListener("click",()=>{
  document.querySelectorAll("[data-guide]").forEach(x=>x.classList.remove("active"));b.classList.add("active");
