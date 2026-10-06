@@ -38,13 +38,13 @@ const GROUPS=[
 ["maternity","الامومة","الأمومة","الولادة","labor","pregnancy","الحمل"],["pediatric","اطفال","أطفال","تمريض الأطفال","pediatrics"],
 ["elderly","المسنين","كبار السن","geriatrics"],["oncology","الأورام","سرطان","cancer","metastasis","نقائل"]
 ];
-const STOP_AR=new Set("ما ماذا من في على الى إلى عن هل هو هي هذا هذه ذلك تلك كيف لماذا متى اين أين اي أي و أو او ثم مع بدون عند بعد قبل لي ليش شن شنو يعني معنى اشرح وضح ممكن اريد أريد سؤال جواب اجابة إجابة".split(/\s+/));
-const STOP_EN=new Set("what why how when where which who is are was were be been being the a an of in on at to for from with without and or then this that these those explain tell me please can could would should do does did".split(/\s+/));
+const STOP_AR=new Set("ما ماذا من في على الى إلى عن هل هو هي هذا هذه ذلك تلك كيف لماذا متى اين أين اي أي و أو او ثم مع بدون عند بعد قبل بين لي ليش شن شنو يعني معنى اشرح وضح ممكن اريد أريد سؤال جواب اجابة إجابة ببساطة ببساطه بسيط".split(/\s+/));
+const STOP_EN=new Set("what why how when where which who is are was were be been being the a an of in on at to for from with without and or then this that these those explain tell me please can could would should do does did simply simple".split(/\s+/));
 const aliasMap=new Map();
 for(const g of GROUPS){const canon=normal(g[0]);for(const x of g)aliasMap.set(normal(x),canon)}
-function normal(s){return String(s||"").toLowerCase().replace(/[\u064B-\u065F\u0670\u0640]/g,"").replace(/[أإآٱ]/g,"ا").replace(/ى/g,"ي").replace(/ؤ/g,"و").replace(/ئ/g,"ي").replace(/ة/g,"ه").replace(/[^a-z0-9\u0600-\u06ff%+\-]+/g," ").replace(/\s+/g," ").trim()}
+function normal(s){return String(s||"").toLowerCase().replace(/[؟،؛]/g," ").replace(/[\u064B-\u065F\u0670\u0640]/g,"").replace(/[أإآٱ]/g,"ا").replace(/ى/g,"ي").replace(/ؤ/g,"و").replace(/ئ/g,"ي").replace(/ة/g,"ه").replace(/[^a-z0-9\u0600-\u06ff%+\-]+/g," ").replace(/\s+/g," ").trim()}
 function canonical(s){let x=" "+normal(s)+" ";const keys=[...aliasMap.keys()].sort((a,b)=>b.length-a.length);for(const k of keys){if(k.length>2)x=x.split(" "+k+" ").join(" "+aliasMap.get(k)+" ")}return x.trim()}
-function words(s){return canonical(s).split(/\s+/).filter(w=>w.length>1&&!STOP_AR.has(w)&&!STOP_EN.has(w))}
+function words(s){const raw=canonical(s).split(/\s+/),out=[];for(let w of raw){if(w.length>4&&/^وال/.test(w))w=w.slice(3);else if(w.length>4&&/^(بال|كال|فال|لل)/.test(w))w=w.slice(2);else if(w.length>4&&/^ال/.test(w))w=w.slice(2);else if(w.length>4&&/^و/.test(w))w=w.slice(1);if(w.length>1&&!STOP_AR.has(w)&&!STOP_EN.has(w))out.push(w)}return out}
 function grams(s){const x=normal(s).replace(/\s/g,""),a=[];for(let i=0;i<x.length-2;i++)a.push(x.slice(i,i+3));return a}
 function fuzzy(a,b){if(!a||!b)return 0;if(a===b)return 1;if(a.length<4||b.length<4)return 0;const A=new Set(grams(a)),B=new Set(grams(b));let h=0;A.forEach(x=>{if(B.has(x))h++});return h/Math.max(A.size,B.size,1)}
 function language(q,fallback){const a=(String(q).match(/[\u0600-\u06ff]/g)||[]).length,e=(String(q).match(/[A-Za-z]/g)||[]).length;return a>e?"ar":e>a?"en":fallback||"ar"}
