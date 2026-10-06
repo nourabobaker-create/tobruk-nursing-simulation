@@ -1,8 +1,0 @@
-{
-  "schemaVersion": 1,
-  "updatedAt": "2026-10-02",
-  "publicationMode": "reviewed-releases-only",
-  "notice": "لم تُرحّل إلى هذا القسم بعد ملخصات نتائج مجازة للنشر. هذا لا يعني أن الاستبانات لم تُنفذ أو أن تقارير التحليل غير موجودة؛ النشر هنا ينتظر اختيار التقرير ومراجعة الخصوصية وإجازة الملخص.",
-  "allowedItemFields": ["id", "theme", "period", "method", "heard", "action", "status", "nextReview", "limitations", "approvedOn", "approvalRef"],
-  "items": []
-}
