@@ -24,7 +24,7 @@ const GROUPS=[
 ["pharmacodynamics","فارماكودينامكس","الفارماكودينامكس","فارماكوداينمكس","ديناميكية الدواء","ديناميكيه الدواء","تاثير الدواء","تأثير الدواء"],
 ["infection","عدوى","العدوى","infection control","مكافحة العدوى"],["hand hygiene","غسل اليدين","نظافة اليدين"],
 ["blood pressure","ضغط الدم","الضغط"],["vital signs","العلامات الحيوية","vitals"],["pain","الألم","الم","وجع"],
-["assessment","التقييم","الفحص","فحص المريض"],["communication","التواصل","اتصال","التخاطب"],
+["assessment","التقييم","الفحص","فحص المريض"],["communication","التواصل","اتصال","التخاطب"],["teach back","teach-back","التحقق من الفهم","اعاده الشرح","إعادة الشرح"],["sbar","اسبار","تسليم الحاله","تسليم الحالة","handover"],
 ["therapeutic communication","التواصل العلاجي","التواصل التمريضي"],["microbiology","الاحياء الدقيقة","الأحياء الدقيقة","ميكروبيولوجي","ميكرو"],
 ["gram stain","صبغة غرام","جرام ستين","غرام"],["antimicrobial resistance","مقاومة المضادات","مقاومة المضادات الحيوية","antibiotic resistance"],
 ["psychology","علم النفس","نفسية","نفسي"],["stress","الضغط النفسي","التوتر","التكيف"],
@@ -36,7 +36,7 @@ const GROUPS=[
 ["critical care","العناية الحرجة","shock","صدمة"],["mental health","الصحة النفسية","الصحة العقلية","psychiatric"],
 ["community health","صحة المجتمع","تمريض المجتمع","primary health care","الرعاية الصحية الاولية","الرعاية الصحية الأولية"],
 ["maternity","الامومة","الأمومة","الولادة","labor","pregnancy","الحمل"],["pediatric","اطفال","أطفال","تمريض الأطفال","pediatrics"],
-["elderly","المسنين","كبار السن","geriatrics"],["oncology","الأورام","سرطان","cancer","metastasis","نقائل"]
+["elderly","المسن","مسن","المسنين","كبير السن","كبار السن","geriatrics"],["oncology","الأورام","سرطان","cancer","metastasis","نقائل"]
 ];
 const STOP_AR=new Set("ما ماذا من في على الى إلى عن هل هو هي هذا هذه ذلك تلك كيف لماذا متى اين أين اي أي و أو او ثم مع بدون عند بعد قبل بين لي ليش شن شنو يعني معنى اشرح وضح ممكن اريد أريد سؤال جواب اجابة إجابة ببساطة ببساطه بسيط".split(/\s+/));
 const STOP_EN=new Set("what why how when where which who is are was were be been being the a an of in on at to for from with without and or then this that these those explain tell me please can could would should do does did simply simple".split(/\s+/));
