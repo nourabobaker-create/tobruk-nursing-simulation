@@ -26,7 +26,7 @@ function link(text, url, cls) { const a = node('a',cls,text); a.href = safeUrl(u
 function resetElement(el) { el.replaceChildren(); return el; }
 function toast(message) { const t = $('toast'); t.textContent = message; t.hidden = false; clearTimeout(toast.timer); toast.timer = setTimeout(() => { t.hidden = true; }, 2600); }
 function persist() { try { localStorage.setItem(storeKey,JSON.stringify({saved:[...saved],progress:[...progress]})); } catch (_) { storageAvailable = false; toast('تعذّر الحفظ في هذا المتصفح؛ نزّل قائمتك للاحتفاظ بها.'); } }
-function searchMatch(query, text) { if (!query.trim()) return true; const haystack = normalize(text); return query.split('|').some(part => normalize(part).split(' ').filter(Boolean).every(word => haystack.includes(word))); }
+function searchMatch(query, text) { if (!query.trim()) return true; const haystack = normalize(text); return query.split('|').some(part => normalize(part).split(' ').filter(Boolean).every(word => haystack.includes(word) || (/^ال[\u0600-\u06ff]{3}/.test(word) && haystack.includes(word.slice(2))))); }
 function resourceText(r) { return [r.title_ar,r.title_original,r.provider,r.description_ar,...(r.topics || [])].join(' '); }
 function languageLabel(r) { return LANGUAGES[r.language] || r.language || 'لغة غير محددة'; }
 function resourceRank(r) { return (r.language === 'ar' ? 20 : r.language === 'multi' ? 10 : 0) + (r.type === 'book' ? 8 : r.type === 'guide' ? 4 : 0) + (r.verification === 'page_checked' ? 2 : 0); }
@@ -130,7 +130,7 @@ function sourceItem(source,index) { if (typeof source === 'string') { const foun
 function updateProgress() { $('skill-progress').textContent = 'راجعت ' + number(progress.size) + ' من ' + number(skills.length) + ' مهارة. التقدم يُحفظ على هذا الجهاز فقط' + (storageAvailable ? '.' : '؛ الحفظ غير متاح في هذا المتصفح.'); }
 function renderSkills() {
  const target = resetElement($('skills-grid')); const q = $('skill-search').value; const domain = $('skill-domain').value;
- const items = skills.filter(s => (!domain || s.domain_ar === domain) && searchMatch(q,[s.title_ar,s.domain_ar,s.goal_ar,...(s.topics || [])].join(' ')));
+ const items = skills.filter(s => (!domain || s.domain_ar === domain) && searchMatch(q,[s.title_ar,s.domain_ar,s.goal_ar,s.practice_ar,s.reflection_ar,s.assessment_ar,...(s.topics || []),...(s.source_titles || [])].join(' ')));
  $('skill-count').textContent = number(items.length) + ' مهارة'; updateProgress();
  if (!items.length) { target.append(empty('لا توجد مهارات مطابقة')); return; }
  items.forEach(s => { const d = node('details','skill-card'); const summary = node('summary'); const names = node('span'); names.append(node('span','skill-title',s.title_ar),node('span','skill-meta',[s.domain_ar,LEVELS[s.level] || s.level,s.clinical ? 'تدريب بإشراف' : 'تطوير شخصي ومهني'].filter(Boolean).join(' · '))); summary.append(names); d.append(summary); const body = node('div','skill-content'); appendSkillBlock(body,'الهدف',s.goal_ar); appendSkillBlock(body,'تدريب مقترح',s.practice_ar); appendSkillBlock(body,'تأمل بعد التدريب',s.reflection_ar); appendSkillBlock(body,'راجع أداءك',s.assessment_ar);
