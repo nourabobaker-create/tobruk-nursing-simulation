@@ -6,7 +6,7 @@ const resources = Array.isArray(catalogue.resources) ? catalogue.resources : [];
 const curriculum = Array.isArray(catalogue.curriculum) ? catalogue.curriculum : [];
 const skills = Array.isArray(catalogue.skills) ? catalogue.skills : [];
 const byId = new Map(resources.map(r => [String(r.id), r]));
-const TYPES = {book:'كتاب',chapter:'فصل تعليمي',article:'مقال',guide:'دليل أو قائمة تحقق',video:'فيديو',course:'دورة',journal:'مجلة أو دورية',tool:'أداة'};
+const TYPES = {book:'كتاب',chapter:'فصل تعليمي',article:'مقال تثقيفي',paper:'مقالة بحثية',guide:'دليل أو قائمة تحقق',video:'فيديو',course:'دورة',journal:'مجلة أو دورية',tool:'أداة'};
 const LANGUAGES = {ar:'العربية',en:'الإنجليزية',multi:'متعدد اللغات'};
 const LEVELS = {foundation:'تأسيسي',clinical:'سريري',graduate:'الاستعداد للمهنة',all:'جميع المستويات'};
 const ACCESS = {free:'مجاني',free_registration:'مجاني بحساب مجاني',free_learning_paid_certificate:'التعلّم مجاني؛ الشهادة مدفوعة',mixed:'وصول متنوع'};
@@ -27,15 +27,19 @@ function resetElement(el) { el.replaceChildren(); return el; }
 function toast(message) { const t = $('toast'); t.textContent = message; t.hidden = false; clearTimeout(toast.timer); toast.timer = setTimeout(() => { t.hidden = true; }, 2600); }
 function persist() { try { localStorage.setItem(storeKey,JSON.stringify({saved:[...saved],progress:[...progress]})); } catch (_) { storageAvailable = false; toast('تعذّر الحفظ في هذا المتصفح؛ نزّل قائمتك للاحتفاظ بها.'); } }
 function searchMatch(query, text) { if (!query.trim()) return true; const haystack = normalize(text); return query.split('|').some(part => normalize(part).split(' ').filter(Boolean).every(word => haystack.includes(word) || (/^ال[\u0600-\u06ff]{3}/.test(word) && haystack.includes(word.slice(2))))); }
-function resourceText(r) { return [r.title_ar,r.title_original,r.provider,r.description_ar,...(r.topics || [])].join(' '); }
+function resourceText(r) { return [r.title_ar,r.title_original,r.provider,r.description_ar,r.doi,r.year,r.study_type_ar,...(r.topics || [])].join(' '); }
 function languageLabel(r) { return LANGUAGES[r.language] || r.language || 'لغة غير محددة'; }
 function resourceRank(r) { return (r.language === 'ar' ? 20 : r.language === 'multi' ? 10 : 0) + (r.type === 'book' ? 8 : r.type === 'guide' ? 4 : 0) + (r.verification === 'page_checked' ? 2 : 0); }
 const ranked = [...resources].sort((a,b) => resourceRank(b) - resourceRank(a));
+const papers = resources.filter(r => r.type === 'paper' && r.access === 'free').sort((a,b) => (b.language === 'ar') - (a.language === 'ar') || Number(b.year || 0) - Number(a.year || 0));
+let paperVisible = PAGE_SIZE, paperFiltered = [...papers];
+function paperStudyGroup(r) { const t=String(r.study_type_ar || ''); if (t.includes('مراجعة منهجية') || t.includes('تحليل تلوي')) return 'مراجعات منهجية وتحليلات تلوية'; if (t.includes('مراجعة نطاقية')) return 'مراجعات نطاقية'; if (t.includes('مراجعة') || t.includes('توليف')) return 'مراجعات علمية أخرى'; if (t.includes('تجربة') && t.includes('عشوائ')) return 'تجارب عشوائية'; if (t.includes('مختلطة')) return 'دراسات بالطرق المختلطة'; if (t.includes('شبه تجريبية') || t.includes('تحسين جودة') || t.includes('قبلية وبعدية')) return 'دراسات تدخلية وتحسين جودة'; if (t.includes('نوعي') || t.includes('ظاهراتية') || t.includes('إثنو')) return 'دراسات نوعية'; if (t.includes('مقطعية') || t.includes('مسحية') || t.includes('ارتباطية')) return 'دراسات مقطعية ومسحية'; if (t.includes('رصدية') || t.includes('أتراب') || t.includes('حالات وشواهد')) return 'دراسات رصدية أخرى'; return 'مناهج أخرى'; }
 function empty(message, detail) { const e = node('div','empty-state'); e.append(node('strong','',message),node('p','',detail || 'جرّب كلمة أخرى أو خفف المرشحات.')); return e; }
 function saveButtons() { document.querySelectorAll('[data-save-id]').forEach(b => { const active = saved.has(b.dataset.saveId); b.setAttribute('aria-pressed',String(active)); b.textContent = active ? '★' : '☆'; b.setAttribute('aria-label',(active ? 'إزالة من قائمتي: ' : 'حفظ في قائمتي: ') + (byId.get(b.dataset.saveId)?.title_ar || 'المصدر')); }); $('saved-count').textContent = number(saved.size); }
 function toggleSave(id) { saved.has(id) ? saved.delete(id) : saved.add(id); persist(); saveButtons(); if (activePanel === 'saved') renderSaved(); toast(saved.has(id) ? 'أُضيف المصدر إلى قائمتك على هذا الجهاز.' : 'أُزيل المصدر من قائمتك.'); }
 function resourceCard(r) {
  const card = node('article','resource-card');
+ if (r.type === 'paper') card.classList.add('is-paper');
  const top = node('div','card-top'); top.append(node('span','type-label',TYPES[r.type] || 'مصدر'));
  const save = node('button','save-button'); save.type = 'button'; save.dataset.saveId = String(r.id); save.setAttribute('aria-pressed',String(saved.has(String(r.id)))); save.setAttribute('aria-label','حفظ في قائمتي: ' + r.title_ar); save.textContent = saved.has(String(r.id)) ? '★' : '☆'; save.addEventListener('click',() => toggleSave(String(r.id))); top.append(save);
  const title = node('h3','resource-title'); title.append(link(r.title_ar || r.title_original,r.url));
@@ -44,11 +48,21 @@ function resourceCard(r) {
  const badges = node('div','badges'); badges.append(node('span','badge language',languageLabel(r)),node('span','badge cost',ACCESS[r.access] || r.access || 'راجع شروط المصدر'));
  if (LEVELS[r.level]) badges.append(node('span','badge',LEVELS[r.level]));
  card.append(badges,node('p','resource-description',r.description_ar || ''),node('div','resource-provider',r.provider || ''));
+ if (r.type === 'paper') {
+  const meta = node('div','badges paper-meta');
+  if (r.year) meta.append(node('span','badge','نُشرت عام '+String(r.year)));
+  if (r.study_type_ar) meta.append(node('span','badge',r.study_type_ar));
+  card.append(meta);
+  if (r.doi) { const doi = link('DOI: '+r.doi,'https://doi.org/'+r.doi,'paper-doi'); doi.dir='ltr'; card.append(doi); }
+  const copy=node('button','link-button copy-paper','نسخ بيانات المقالة'); copy.type='button';
+  copy.addEventListener('click',async () => { const citation=[r.title_original || r.title_ar,r.year ? '('+r.year+')' : '',r.provider,r.doi ? 'https://doi.org/'+r.doi : r.url].filter(Boolean).join('. '); try { await navigator.clipboard.writeText(citation); toast('نُسخت بيانات المقالة؛ راجع متطلبات التوثيق وأسماء المؤلفين عند إعداد المرجع.'); } catch (_) { toast('النسخ غير متاح هنا؛ يمكنك تنزيل قائمة الأبحاث أو فتح المصدر.'); } });
+  card.append(copy);
+ }
  const topics = node('div','badges'); (r.topics || []).slice(0,3).forEach(t => topics.append(node('span','badge',t))); card.append(topics);
  if (r.access_note_ar) card.append(node('p','access-note',r.access_note_ar));
  const cert = r.certificate_note_ar || r.certificate_ar || r.certificate;
  if (r.type === 'course' && cert) card.append(node('p','access-note','الشهادة: ' + (typeof cert === 'string' ? cert : JSON.stringify(cert))));
- const bottom = node('div','card-bottom'); bottom.append(link('افتح المصدر ↗',r.url,'open-source'),node('span','verification',r.verification === 'page_checked' ? 'الصفحة مفحوصة' : r.verification === 'index_checked' ? 'الفهرس مفحوص' : 'راجع تقرير التحقق')); card.append(bottom);
+ const bottom = node('div','card-bottom'); bottom.append(link(r.type === 'paper' ? 'اقرأ النص الكامل ↗' : 'افتح المصدر ↗',r.url,'open-source'),node('span','verification',r.verification === 'page_checked' ? 'الصفحة مفحوصة' : r.verification === 'index_checked' ? 'الفهرس مفحوص' : 'راجع تقرير التحقق')); card.append(bottom);
  return card;
 }
 function fillCards(target,items) { resetElement(target); if (!items.length) { target.append(empty('لا توجد مواد مطابقة')); return; } const f = document.createDocumentFragment(); items.forEach(r => f.append(resourceCard(r))); target.append(f); }
@@ -103,6 +117,10 @@ const pickedArabic = new Set();
 for (const type of ['book','article','guide']) ranked.filter(r => r.language === 'ar' && r.type === type).slice(0,2).forEach(r => { arabicPicks.push(r); pickedArabic.add(r.id); });
 ranked.filter(r => r.language === 'ar' && ['book','article','guide'].includes(r.type) && !pickedArabic.has(r.id)).slice(0,6-arabicPicks.length).forEach(r => arabicPicks.push(r));
 fillCards($('arabic-featured'),arabicPicks);
+const paperPicks = [], paperTopics = new Set();
+for (const [language,limit] of [['ar',2],['en',4]]) { let picked=0; for (const p of papers.filter(r=>r.language===language)) { const topic=(p.topics || [p.provider])[0]; if (!paperTopics.has(topic)) { paperPicks.push(p); paperTopics.add(topic); picked++; } if (picked>=limit) break; } }
+for (const p of papers) { if (paperPicks.length>=6) break; if (!paperPicks.includes(p)) paperPicks.push(p); }
+fillCards($('papers-featured'),paperPicks);
 const bookPicks = [...ranked.filter(r => r.type === 'book' && r.language === 'ar').slice(0,2),...resources.filter(r => r.type === 'book' && r.language !== 'ar').slice(0,4)];
 fillCards($('books-featured'),bookPicks);
 function yearLabel(year) { const names = {1:'السنة الأولى',2:'السنة الثانية',3:'السنة الثالثة',4:'السنة الرابعة'}; return names[year] || String(year || 'غير محدد'); }
@@ -141,6 +159,10 @@ function renderSkills() {
 $('skill-domain').addEventListener('change',renderSkills); $('skill-search').addEventListener('input',renderSkills);
 const freeCourses = ranked.filter(r => r.type === 'course' && ['free','free_registration'].includes(r.access));
 const journals = ranked.filter(r => r.type === 'journal');
+for (const [field,values] of [['paper-topic',[...new Set(papers.flatMap(r => r.topics || []))].sort((a,b)=>a.localeCompare(b,'ar'))],['paper-study',[...new Set(papers.map(paperStudyGroup))].sort((a,b)=>a.localeCompare(b,'ar'))],['paper-year',[...new Set(papers.map(r => r.year).filter(Boolean))].sort((a,b)=>Number(b)-Number(a))]]) { values.forEach(v=>{ const o=node('option','',String(v)); o.value=String(v); $(field).append(o); }); }
+function renderPapers() { $('papers-count').textContent=number(papers.length)+' مقالة بنص كامل مفتوح'; $('paper-results-count').textContent=number(paperFiltered.length)+' نتيجة · يعرض '+number(Math.min(paperVisible,paperFiltered.length)); fillCards($('papers-grid'),paperFiltered.slice(0,paperVisible)); $('papers-more').hidden=paperVisible>=paperFiltered.length; $('export-papers').disabled=!paperFiltered.length; }
+function applyPaperFilters() { const q=$('paper-search').value, lang=$('paper-language').value, topic=$('paper-topic').value, study=$('paper-study').value, year=$('paper-year').value; paperFiltered=papers.filter(r=>searchMatch(q,resourceText(r)) && (!lang || r.language===lang) && (!topic || (r.topics || []).includes(topic)) && (!study || paperStudyGroup(r)===study) && (!year || String(r.year)===year)); paperVisible=PAGE_SIZE; renderPapers(); }
+$('paper-search').addEventListener('input',applyPaperFilters); ['paper-language','paper-topic','paper-study','paper-year'].forEach(id=>$(id).addEventListener('change',applyPaperFilters)); $('paper-filter-form').addEventListener('submit',e=>e.preventDefault()); $('paper-filter-form').addEventListener('reset',()=>setTimeout(applyPaperFilters,0)); $('papers-more').addEventListener('click',()=>{paperVisible+=PAGE_SIZE;renderPapers();}); $('export-papers').addEventListener('click',()=>downloadCSV(paperFiltered,'Tobruk_Nursing_Open_Research.csv'));
 function renderCourses() { $('course-count').textContent=number(freeCourses.length)+' دورة مجانية'; fillCards($('courses-grid'),freeCourses.slice(0,courseVisible)); $('courses-more').hidden=courseVisible>=freeCourses.length; }
 function renderJournals() { $('journal-count').textContent=number(journals.length)+' مجلة ودورية'; fillCards($('journals-grid'),journals.slice(0,journalVisible)); $('journals-more').hidden=journalVisible>=journals.length; }
 $('courses-more').addEventListener('click',() => { courseVisible += PAGE_SIZE; renderCourses(); }); $('journals-more').addEventListener('click',() => { journalVisible += PAGE_SIZE; renderJournals(); });
@@ -148,14 +170,14 @@ const researchStages=[['01','السؤال والخطة','حوّل الاهتما
 researchStages.forEach(([n,title,desc,query]) => { const b=node('button','research-step'); b.append(node('span','step-number','المرحلة '+number(n)),node('strong','',title),node('small','',desc)); b.addEventListener('click',() => goResources({query})); $('research-pathways').append(b); });
 function renderSaved() { const items=ranked.filter(r => saved.has(String(r.id))); fillCards($('saved-grid'),items); if (!items.length) { resetElement($('saved-grid')).append(empty('قائمتك تنتظر أول مصدر','اضغط النجمة بجانب أي مصدر لتحفظه هنا.')); } $('export-saved').disabled=!items.length; saveButtons(); }
 function csvCell(value) { let s=Array.isArray(value) ? value.join(' | ') : String(value || ''); if (/^[=+\-@\t\r]/.test(s)) s="'"+s; return '"'+s.replace(/"/g,'""')+'"'; }
-function downloadCSV(items,name) { const headings=['المعرف','العنوان العربي','العنوان الأصلي','الرابط','الجهة','اللغة','النوع','الموضوعات','المستوى','الوصول','ملاحظات الوصول','التحقق','تاريخ التحقق','دليل التحقق']; const fields=['id','title_ar','title_original','url','provider','language','type','topics','level','access','access_note_ar','verification','verified_at','evidence_url']; const lines=[headings.map(csvCell).join(','),...items.map(r => fields.map(k => csvCell(r[k])).join(','))].join('\r\n'); const blob=new Blob(['\ufeff'+lines],{type:'text/csv;charset=utf-8;'}); const url=URL.createObjectURL(blob); const a=node('a'); a.href=url; a.download=name; document.body.append(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(url),1000); toast('تم تنزيل الفهرس. فتح المصادر الخارجية يحتاج الإنترنت.'); }
+function downloadCSV(items,name) { const headings=['المعرف','العنوان العربي','العنوان الأصلي','الرابط','الجهة','اللغة','النوع','الموضوعات','المستوى','الوصول','ملاحظات الوصول','التحقق','تاريخ التحقق','دليل التحقق','سنة النشر','نوع الدراسة','DOI','الترخيص']; const fields=['id','title_ar','title_original','url','provider','language','type','topics','level','access','access_note_ar','verification','verified_at','evidence_url','year','study_type_ar','doi','license']; const lines=[headings.map(csvCell).join(','),...items.map(r => fields.map(k => csvCell(r[k])).join(','))].join('\r\n'); const blob=new Blob(['\ufeff'+lines],{type:'text/csv;charset=utf-8;'}); const url=URL.createObjectURL(blob); const a=node('a'); a.href=url; a.download=name; document.body.append(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(url),1000); toast('تم تنزيل الفهرس. فتح المصادر الخارجية يحتاج الإنترنت.'); }
 $('export-all').addEventListener('click',() => downloadCSV(resources,'Tobruk_Nursing_Library_Catalog.csv')); $('about-export').addEventListener('click',() => downloadCSV(resources,'Tobruk_Nursing_Library_Catalog.csv')); $('export-saved').addEventListener('click',() => downloadCSV(resources.filter(r => saved.has(String(r.id))),'Tobruk_Nursing_My_Reading_List.csv'));
 Object.entries(TYPES).forEach(([type,label]) => { const e=node('div','about-stat'); e.append(node('strong','',number(stats.types[type] || 0)),node('span','',label)); $('about-stats').append(e); });
 const verificationCount=resources.filter(r => r.verification === 'page_checked').length;
 $('release-note').textContent='الفهرس: '+number(resources.length)+' مدخلًا · '+number(verificationCount)+' صفحة مفحوصة · '+number(resources.filter(r => r.verification === 'index_checked').length)+' رابطًا من فهرس مفحوص. '+(catalogue.release?.date ? 'تحديث '+catalogue.release.date : 'راجع تقرير المصادر لتاريخ التحقق.')+' حفظ المفضلة والتقدم محلي فقط.';
 function renderBenchmarks() { const data=Array.isArray(catalogue.benchmarks) ? catalogue.benchmarks : []; if (!data.length) return; const box=$('benchmarks'); box.append(node('h2','','ماذا نتعلم من ممارسات ونتائج منشورة؟')); const grid=node('div','benchmark-list'); data.forEach(b => { const e=node('article','benchmark-card'); const title=b.title_ar || b.institution_ar || b.name_ar || b.name || b.provider || 'تجربة تعليمية مفتوحة'; const url=b.url || b.evidence_url || b.source_url; const h=node('h3'); url ? h.append(link(title,url)) : h.append(document.createTextNode(title)); e.append(h); const desc=b.description_ar || b.lesson_ar || b.why_ar || b.note_ar || b.rationale_ar; if (desc) e.append(node('p','',desc)); if (b.evidence_ar) e.append(node('p','',b.evidence_ar)); grid.append(e); }); box.append(grid); }
 if (!resources.length) { const warning=node('div','error-banner','تعذّر تحميل الفهرس. حدّث الصفحة، أو افتح الإصدار السابق من الرابط أسفل الصفحة.'); $('main').prepend(warning); }
-applyFilters(); renderCurriculum(); renderSkills(); renderCourses(); renderJournals(); renderSaved(); renderBenchmarks(); saveButtons();
+applyFilters(); renderCurriculum(); renderSkills(); renderCourses(); renderJournals(); renderPapers(); renderSaved(); renderBenchmarks(); saveButtons();
 showPanel(location.hash.slice(1) || 'discover',false);
 window.addEventListener('hashchange',() => showPanel(location.hash.slice(1) || 'discover',false));
 })();
