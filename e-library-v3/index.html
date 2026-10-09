@@ -13,6 +13,7 @@
 <script defer src="data/resources-5.js?v=20261007-research-2"></script>
 <script defer src="data/resources-6.js?v=20261007-research-2"></script>
 <script defer src="data/resources-7.js?v=20261007-research-2"></script>
+<script defer src="data/nursing-atlas.js?v=20261009-atlas-entry-1"></script>
 <script defer src="library.js?v=20261007-research-2"></script>
 </head>
 <body>
@@ -30,7 +31,9 @@
 <form class="hero-search" id="hero-search"><label for="hero-query">ابحث عن موضوع، مهارة، كتاب أو مقرر</label><div class="search-row"><input id="hero-query" type="search" autocomplete="off" placeholder="مثال: الصدمات، التواصل، حساب الجرعات، anatomy"><button type="submit">ابحث في المكتبة <span aria-hidden="true">←</span></button></div></form>
 <div class="hero-links"><button class="text-button" data-go="curriculum">ابدأ من مقررك ←</button><button class="text-button" data-go="skills">اختر مهارة تتدرّب عليها ←</button></div></div>
 <aside class="hero-aside" aria-label="المكتبة بالأرقام"><div class="book-art" aria-hidden="true"><div class="book book-one">المعرفة</div><div class="book book-two">المهارة</div><div class="book book-three">الإنسان</div></div><div id="hero-stats" class="hero-stats"></div><p class="stat-footnote">مدخلات تعليمية تشمل كتبًا وفصولًا ومقالات وأدلة، بروابط مباشرة إلى جهاتها.</p></aside></div></div>
-<div class="wrap section-space"><div class="section-heading"><div><p class="eyebrow">طريق قصير إلى ما يهمّك</p><h2>ما الذي تحتاجه اليوم؟</h2></div><span class="soft-label">8 مسارات للتعلّم والعمل</span></div><div class="pathway-grid" id="pathways"></div>
+<div class="wrap section-space">
+<article class="callout" id="nursing-atlas-entry" aria-labelledby="nursing-atlas-title"><div><p class="eyebrow">دفتر مصوّر تفاعلي · عربي / English</p><h2 id="nursing-atlas-title">أطلس التمريض</h2><p lang="en" dir="ltr">Nursing Atlas</p><p>تعرّف إلى الأدوات والأجهزة والضمادات والأدوية والسجلات، وتحريك المريض وتسليم الشفت وأركان الرعاية المختلفة. للمعرفة العامة فقط؛ غير مرتبط بالمقررات أو الامتحانات.</p></div><a class="primary-button" id="library-atlas-open" href="../clinical-discovery/" target="_top">افتح أطلس التمريض ←</a></article>
+<div class="section-heading"><div><p class="eyebrow">طريق قصير إلى ما يهمّك</p><h2>ما الذي تحتاجه اليوم؟</h2></div><span class="soft-label">8 مسارات للتعلّم والعمل</span></div><div class="pathway-grid" id="pathways"></div>
 <div class="section-heading featured-heading"><div><p class="eyebrow">اقرأ بلغتك، وافتح أفقك</p><h2>اختيارات بالعربية</h2></div><button class="link-button" id="show-arabic">جميع المصادر العربية ←</button></div><div class="resource-grid" id="arabic-featured"></div>
 <div class="section-heading featured-heading"><div><p class="eyebrow">اقرأ الدراسة، ثم ناقش الدليل</p><h2>أبحاث علمية بنص كامل مفتوح</h2></div><button class="link-button" data-go="papers">تصفّح الأبحاث العلمية ←</button></div><div class="resource-grid" id="papers-featured"></div>
 <div class="section-heading featured-heading"><div><p class="eyebrow">مرجع يعود معك كل مرة</p><h2>كتب كاملة مفتوحة</h2></div><button class="link-button" id="show-books">تصفّح الكتب ←</button></div><div class="resource-grid" id="books-featured"></div>
