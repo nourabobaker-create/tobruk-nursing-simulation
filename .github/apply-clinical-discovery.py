@@ -3,7 +3,7 @@ from pathlib import Path
 import base64, hashlib, json, zlib
 root=Path('.')
 release=json.loads((root/'.github/clinical-discovery-release.json').read_text())
-raw=zlib.decompress(base64.b64decode(release['payload'],validate=True))
+raw=zlib.decompress(base64.b64decode(''.join(release['payload']),validate=True))
 assert hashlib.sha256(raw).hexdigest()==release['sha256'],'Release checksum mismatch'
 files=json.loads(raw)
 allowed={'clinical-discovery/index.html','clinical-discovery/style.css','clinical-discovery/app.js','clinical-discovery/content.js','clinical-discovery/README.md','hub-feedback/config.js','hub-feedback/feedback.js'}
