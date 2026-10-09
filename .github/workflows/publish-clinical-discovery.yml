@@ -1,0 +1,138 @@
+name: Publish general clinical knowledge and voluntary feedback
+on:
+  push:
+    branches: [main]
+    paths: ['.github/clinical-discovery-release.json']
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: clinical-discovery-release
+  cancel-in-progress: false
+jobs:
+  release:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 15
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+      - name: Apply only the scoped educational release
+        run: python3 .github/apply-clinical-discovery.py
+      - name: Prepare browser outside the repository
+        run: |
+          npm install --prefix /tmp/discovery-browser playwright
+          /tmp/discovery-browser/node_modules/.bin/playwright install --with-deps chromium
+      - name: Check both languages, all topics, mobile layout and voluntary-only feedback
+        run: |
+          python3 -m http.server 8765 --directory . >/tmp/discovery-server.log 2>&1 &
+          sleep 2
+          mkdir -p /tmp/discovery-results
+          cat > /tmp/discovery-check.cjs <<'JS'
+          const {chromium}=require('/tmp/discovery-browser/node_modules/playwright');
+          const fs=require('fs');
+          (async()=>{
+            const b=await chromium.launch({headless:true});
+            const errors=[],posts=[],external=[];let checks=0;
+            for(const width of [360,768,1280]){
+              const p=await b.newPage({viewport:{width,height:900}});
+              p.on('pageerror',e=>errors.push(String(e)));
+              p.on('request',r=>{if(r.method()==='POST')posts.push(r.url());if(!r.url().startsWith('http://127.0.0.1:8765/'))external.push(r.url());});
+              await p.goto('http://127.0.0.1:8765/clinical-discovery/');
+              await p.waitForSelector('.topic-card');
+              if(await p.locator('.topic-card').count()!==7)throw Error('Topic count');
+              if(!(await p.locator('.brand img').evaluateAll(xs=>xs.every(x=>x.complete&&x.naturalWidth>0))))throw Error('Logo missing');
+              const ids=await p.evaluate(()=>window.ClinicalDiscoveryTopics.map(t=>t.id));
+              for(const lang of ['ar','en']){
+                if(lang==='en')await p.locator('#language').click();
+                for(const id of ids){
+                  await p.evaluate(id=>location.hash=id,id);
+                  await p.waitForSelector('#detail h1');
+                  if(await p.locator('#detail .hub-feedback').count()!==5)throw Error('Section feedback missing');
+                  await p.locator('[data-choice]').first().click();
+                  if(!(await p.locator('.answer').isVisible()))throw Error('Explanation missing');
+                  await p.locator('#detail .hub-feedback summary').first().click();
+                  const configured=await p.evaluate(()=>window.HubFeedbackConfig.ready);
+                  if(configured){
+                    const href=await p.locator('#detail .hub-feedback a').first().getAttribute('href');
+                    const u=new URL(href);
+                    if(u.hostname!=='docs.google.com'||!u.search.includes('topic%3D'+id))throw Error('Wrong feedback context');
+                  }
+                  if(!(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)))throw Error('Horizontal page overflow');
+                  checks++;
+                }
+                await p.screenshot({path:'/tmp/discovery-results/topic-'+width+'-'+lang+'.png',fullPage:true});
+                await p.evaluate(()=>location.hash='');
+                await p.waitForSelector('.topic-card');
+                await p.screenshot({path:'/tmp/discovery-results/home-'+width+'-'+lang+'.png',fullPage:true});
+              }
+              await p.close();
+            }
+            if(errors.length||posts.length||external.length)throw Error(JSON.stringify({errors,posts,external}));
+            const hub=await b.newPage();
+            await hub.goto('http://127.0.0.1:8765/student-learning-hub/?entry=faculty');
+            await hub.waitForSelector('#clinical-discovery-card');
+            if(await hub.locator('#clinical-discovery-shortcut').count()!==1)throw Error('Hub shortcut');
+            if(!(await hub.locator('#faculty-first-entry').count()))throw Error('Existing faculty-first entry changed');
+            await hub.close();
+            fs.writeFileSync('/tmp/discovery-results/report.json',JSON.stringify({passed:true,checks,errors,posts,external},null,2));
+            console.log('PASS',checks,'topic checks; no automatic external feedback or POST requests');
+            await b.close();
+          })().catch(e=>{console.error(e);process.exit(1);});
+          JS
+          node /tmp/discovery-check.cjs
+      - name: Preserve existing learning tools and commit the tested change
+        run: |
+          git diff --exit-code -- index.html clinical-simulations nursing-skills english-ii e-library-v3 quality-cycle accreditation
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add student-learning-hub/index.html clinical-discovery hub-feedback
+          if ! git diff --cached --quiet; then
+            git commit -m 'Add general-knowledge discovery and private voluntary contextual feedback'
+            git push origin HEAD:main
+          fi
+      - name: Read existing Pages configuration
+        id: pages
+        uses: actions/configure-pages@v5
+      - name: Build with the existing publishing mechanism
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+          baseurl: ${{ steps.pages.outputs.base_path }}
+      - name: Check artifact and branch consistency
+        run: |
+          test -f _site/clinical-discovery/index.html
+          test -f _site/hub-feedback/feedback.js
+          test "$(git rev-parse HEAD)" = "$(git ls-remote origin refs/heads/main | cut -f1)"
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: ./_site
+      - name: Publish tested main
+        id: deployment
+        uses: actions/deploy-pages@v4
+      - name: Verify live publication
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: |
+          sleep 15
+          python3 - <<'PY'
+          import os,urllib.request
+          base=os.environ['PAGE_URL'].rstrip('/')+'/'
+          for path,needle in [('clinical-discovery/index.html','id="cards"'),('hub-feedback/feedback.js','window.HubFeedback'),('student-learning-hub/index.html','id="clinical-discovery-card"')]:
+              with urllib.request.urlopen(base+path+'?release=20261009-1',timeout=30) as r: text=r.read().decode()
+              assert needle in text,(path,'Live release not found')
+          print('Live publication verified')
+          PY
+      - name: Preserve test report and screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: clinical-discovery-review
+          path: /tmp/discovery-results
+          retention-days: 7
