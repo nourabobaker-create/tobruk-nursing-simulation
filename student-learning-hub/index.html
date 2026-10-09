@@ -174,6 +174,10 @@ html[lang="en"] .facultyBreadcrumb .facultyCrumbAr{display:none}
 html:not([lang="en"]) .facultyBreadcrumb .facultyCrumbEn{display:none}
 
 </style>
+<style id="clinical-discovery-entry-style">
+html[lang="en"] .discovery-ar{display:none!important}
+html:not([lang="en"]) .discovery-en{display:none!important}
+</style>
 </head>
 <body>
 <nav id="facultyBreadcrumb" class="facultyBreadcrumb" aria-label="مسار البوابة / Hub navigation"><div><a href="../"><span class="facultyCrumbAr" lang="ar">الرئيسية · بوابة كلية التمريض</span><span class="facultyCrumbEn" lang="en">Home · Faculty Hub</span></a><span aria-hidden="true"> / </span><span aria-current="page"><span class="facultyCrumbAr" lang="ar">بوابة الطالب</span><span class="facultyCrumbEn" lang="en">Student Hub</span></span></div></nav>
@@ -209,6 +213,7 @@ html:not([lang="en"]) .facultyBreadcrumb .facultyCrumbEn{display:none}
   <div class="shareTop" id="shareTop"><div class="shareLead" id="shareLead">نشجّع أبناءنا الطلاب على مشاركة التطبيق مع أقرانهم في كليات التمريض بالجامعات الليبية، إيمانًا بأهمية نشر المعرفة وتبادل الفائدة.</div><div class="hadithTop" id="hadithTop">قال رسول الله صلى الله عليه وسلم: «مَنْ دَلَّ عَلَى خَيْرٍ فَلَهُ مِثْلُ أَجْرِ فَاعِلِهِ» <span class="hadithSource">رواه مسلم</span></div></div>
  </div>
  <div class="quickPortalLinks" id="quickPortalLinks">
+  <a href="../clinical-discovery/" id="clinical-discovery-shortcut"><span class="discovery-ar">🔎 اكتشف بثقة</span><span class="discovery-en">🔎 Discover with confidence</span></a>
   <a href="../">🏛️ بوابة الكلية</a>
   <button type="button" data-route="guide">📘 دليل الطالب</button>
   <button type="button" onclick="openStudyCompanion()">📚 رفيق الدراسة</button>
@@ -221,6 +226,11 @@ html:not([lang="en"]) .facultyBreadcrumb .facultyCrumbEn{display:none}
   <strong>مهم قبل البدء:</strong> هذه البوابة وسيلة تعليمية مساندة وتجريبية، وليست بديلاً عن المقررات المعتمدة، أو عضو هيئة التدريس، أو التدريب العملي/السريري تحت الإشراف، أو اللوائح والأدلة الرسمية الكاملة. عند وجود أي اختلاف، يُرجع إلى الكلية وأستاذ المقرر والنسخة الرسمية الكاملة من الوثيقة.
  </div>
  <div class="grid3">
+  <article class="card" id="clinical-discovery-card">
+   <div class="icon">🔎</div><h2><span class="discovery-ar">اكتشف بثقة</span><span class="discovery-en">Discover with confidence</span></h2>
+   <p><span class="discovery-ar">معرفة عامة للتعرّف على الأدوات والأجهزة والأدوية والسجلات، والسؤال بثقة. هذا القسم غير مرتبط بمقرر أو امتحان.</span><span class="discovery-en">Get familiar with clinical items, devices, medication handling and charts. General knowledge, not linked to a course or exam.</span></p>
+   <div class="actions"><a class="btn primary" href="../clinical-discovery/"><span class="discovery-ar">ابدأ الاكتشاف</span><span class="discovery-en">Start exploring</span></a></div>
+  </article>
   <article class="card">
    <div class="icon">🩺</div><h2 id="c1t">محاكاة المهارات</h2>
    <p id="c1p">مسار للمهارات الأساسية، إضافة إلى مكتبة محاكاة سريرية متقدمة تضم 10 وحدات تفاعلية للتعلّم والتجربة.</p>
@@ -1237,5 +1247,9 @@ document.querySelectorAll("[data-q]").forEach(b=>b.addEventListener("click",()=>
 
 <!-- Advanced clinical simulation catalogue: additive navigation only -->
 <script src="../clinical-simulations/portal-link.js?v=20261005-ar2" defer></script>
+
+<div class="hub-feedback-global" data-hub-page-feedback data-feedback-topic="student-hub" data-feedback-part="page"></div>
+<script defer src="../hub-feedback/config.js?v=20261009-1"></script>
+<script defer src="../hub-feedback/feedback.js?v=20261009-1"></script>
 </body>
 </html>
