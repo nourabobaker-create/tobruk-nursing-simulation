@@ -8,3 +8,11 @@
 .resource-card.is-paper .original-title{max-height:none;overflow:visible;font-size:13px;text-align:left}.paper-doi{font:12px/1.5 system-ui,sans-serif;overflow-wrap:anywhere;text-align:left}.copy-paper{align-self:flex-start;font-size:16px;text-align:right}.paper-meta .badge{font-size:14px}
 
 .about-stats{grid-template-columns:repeat(3,minmax(0,1fr))}@media(max-width:720px){.about-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.about-stat:last-child:nth-child(odd){grid-column:1/-1}}
+
+/* Evidence notes remain visible beside the learning source. */
+.mapping-status{font-size:.87rem;line-height:1.7;color:#536b5d;background:#edf4ed;border-right:3px solid #7aa086;padding:.6rem .8rem;border-radius:.4rem}
+.mapping-evidence{list-style:none;padding:0!important;margin:0}
+.mapping-evidence li{padding:.9rem 0;border-bottom:1px solid #dce8df}
+.mapping-meta{display:block;color:#667b6e;font-size:.8rem;line-height:1.7;margin-top:.4rem;overflow-wrap:anywhere}
+.mapping-support,.mapping-limit{font-size:.9rem;line-height:1.8;margin:.4rem 0!important}
+.mapping-limit{color:#79582d}

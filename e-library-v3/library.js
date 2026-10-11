@@ -137,7 +137,26 @@ function renderCurriculum() {
  items.forEach(c => { const d = node('details','course-card'); const s = node('summary'); const names = node('span'); names.append(node('span','course-title',c.title_ar),node('span','course-meta',[yearLabel(c.year),c.semester ? 'الفصل '+number(c.semester) : '',c.code || '',number((c.resource_ids || []).length)+' رابطًا مقترحًا'].filter(Boolean).join(' · '))); s.append(names); d.append(s);
  const content = node('div','course-content'); content.append(node('p','',c.title_original || 'موضوعات المقرر'));
  const modules = Array.isArray(c.modules) && c.modules.length ? c.modules : (c.topics || []).map(t => ({title_ar:t,resource_ids:[]}));
- modules.forEach(m => { const md = node('details','module'); const matches = relatedForModule(c,m); md.append(node('summary','',m.title_ar || m.title || 'موضوع')); if (matches.length) { const ul = node('ul'); matches.slice(0,8).forEach(r => { const li = node('li'); li.append(link(r.title_ar,r.url)); ul.append(li); }); md.append(ul); if (matches.length > 8) { const b = node('button','link-button module-more','كل مصادر هذا المقرر ←'); b.type = 'button'; b.addEventListener('click',() => goResources({course:String(c.id)})); md.append(b); } } else md.append(node('p','missing','يحتاج استكمال الربط')); content.append(md); });
+ modules.forEach(m => {
+  const md = node('details','module'); const matches = relatedForModule(c,m); const review = m.mapping_review;
+  md.append(node('summary','',m.title_ar || m.title || 'موضوع'));
+  if (review && Array.isArray(review.source_links) && review.source_links.length) {
+   md.append(node('p','mapping-status','دعم جزئي موثق · '+review.reviewed_at+' · تبقى حدود المحتوى والتطبيق بحاجة إلى استكمال'));
+   const ul = node('ul','mapping-evidence');
+   review.source_links.forEach(evidence => {
+    const r = byId.get(String(evidence.resource_id)); if (!r) return;
+    const li = node('li'); li.append(link(r.title_ar,evidence.url || r.url));
+    li.append(node('small','mapping-meta',[LANGUAGES[evidence.language] || evidence.language,TYPES[evidence.source_type] || evidence.source_type,evidence.locator].filter(Boolean).join(' · ')));
+    li.append(node('p','mapping-support','يدعم: '+evidence.supported_aspects_ar));
+    li.append(node('p','mapping-limit','حدود التغطية: '+evidence.coverage_limits_ar)); ul.append(li);
+   }); md.append(ul);
+  } else if (matches.length) {
+   md.append(node('p','mapping-status','ربط أولي سابق؛ لم تشمل مراجعة المفردات التسعين تدقيق تغطيته كاملة.'));
+   const ul = node('ul'); matches.slice(0,8).forEach(r => { const li = node('li'); li.append(link(r.title_ar,r.url)); ul.append(li); }); md.append(ul);
+   if (matches.length > 8) { const b = node('button','link-button module-more','كل مصادر هذا المقرر ←'); b.type = 'button'; b.addEventListener('click',() => goResources({course:String(c.id)})); md.append(b); }
+  } else md.append(node('p','missing','يحتاج استكمال الربط'));
+  content.append(md);
+ });
  if (!modules.length) content.append(node('p','missing','يحتاج استكمال الربط'));
  const b = node('button','link-button module-more','تصفح جميع مصادر المقرر ←'); b.addEventListener('click',() => goResources({course:String(c.id)})); content.append(b); d.append(content); target.append(d); });
 }
@@ -181,3 +200,4 @@ applyFilters(); renderCurriculum(); renderSkills(); renderCourses(); renderJourn
 showPanel(location.hash.slice(1) || 'discover',false);
 window.addEventListener('hashchange',() => showPanel(location.hash.slice(1) || 'discover',false));
 })();
+

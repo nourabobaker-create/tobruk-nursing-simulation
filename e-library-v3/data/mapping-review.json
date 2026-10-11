@@ -1,0 +1,3050 @@
+{
+  "version": "1.0",
+  "reviewed_at": "2026-10-12",
+  "baseline_commit": "e8b8eb54162ca10b005a28e3e8c4f6d34e526542",
+  "baseline_modules": 600,
+  "baseline_linked": 510,
+  "baseline_gaps": 90,
+  "method_ar": "استخراج المفردات بلا روابط من النسخة المشار إليها، مراجعة المصادر الحالية أولًا، ثم فحص محتوى المواضع الداعمة وإضافة مصادر محددة. الدعم الموثق جزئي، وليس شهادة تغطية تعليمية كاملة.",
+  "limitations_ar": "510 مطابقة أولية سابقة بقيت محفوظة ولم تراجع تفاصيلها في هذه المهمة. جميع المفردات التسعين تحمل حدودًا معلنة. فحص القراءة لا يثبت إتقان المهارة أو اعتماد المرجع.",
+  "stats": {
+    "total": 2541,
+    "arabic": 1133,
+    "types": {
+      "book": 62,
+      "chapter": 844,
+      "guide": 174,
+      "video": 20,
+      "article": 967,
+      "tool": 78,
+      "course": 122,
+      "journal": 54,
+      "paper": 220
+    },
+    "courses": 50,
+    "skills": 100,
+    "providers": 187,
+    "verified_page": 1647,
+    "verified_index": 894,
+    "free_courses": 122,
+    "arabic_courses": 64,
+    "modules": 600,
+    "modules_linked": 600,
+    "research_papers": 220,
+    "arabic_papers": 22,
+    "modules_reviewed_partial": 90,
+    "modules_legacy_preliminary": 510,
+    "modules_without_links": 0,
+    "modules_full_coverage_confirmed": 0,
+    "gap_review_new_resources": 15,
+    "gap_review_existing_resources_reused": 56,
+    "previously_visible_faculty_resources_registered": 1
+  },
+  "new_resource_ids": [
+    "review-medterm2e",
+    "review-icope2-ar",
+    "review-bc-home",
+    "review-bc-daily",
+    "review-bc-food",
+    "review-bc-family",
+    "review-ar-greetings",
+    "review-ar-family",
+    "review-nursing-as-caring",
+    "review-nursing-informatics",
+    "review-icn-code",
+    "review-ms-word-ar",
+    "review-osu-glycogen",
+    "review-who-facility-indicators",
+    "review-bc-discussion"
+  ],
+  "modules": [
+    {
+      "id": "CRS-001-M05",
+      "course_id": "CRS-001",
+      "code": "LANG 100ly",
+      "course": "اللغة العربية",
+      "module_index": 4,
+      "title": "مفردات التحية والتعارف.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "review-ar-greetings",
+          "url": "https://learning.aljazeera.net/ar/node/19398",
+          "language": "ar",
+          "source_type": "video",
+          "locator": "تَشَرَّفْنَاNice to meet you / مفرداتVocabulary",
+          "supported_aspects_ar": "التحية وتبادل الاسم والتعارف في حوار مشكول",
+          "coverage_limits_ar": "الدرس موجّه لمتعلمي العربية؛ ملاءمة مستواه لطلاب الكلية تحتاج مراجعة.",
+          "check_key": "arabic-hello",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "7b90bcde48183ab9e707c1dc48610059a435029efa3fa2d90c600f2387f5a6a2"
+        }
+      ],
+      "remaining_scope_ar": "الدرس موجّه لمتعلمي العربية؛ ملاءمة مستواه لطلاب الكلية تحتاج مراجعة."
+    },
+    {
+      "id": "CRS-001-M06",
+      "course_id": "CRS-001",
+      "code": "LANG 100ly",
+      "course": "اللغة العربية",
+      "module_index": 5,
+      "title": "مفردات الأسرة والطعام والملابس.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "review-ar-family",
+          "url": "https://learning.aljazeera.net/ar/node/19294",
+          "language": "ar",
+          "source_type": "video",
+          "locator": "أُسْرَتِيMy family / مفرداتVocabulary",
+          "supported_aspects_ar": "ألفاظ القرابة ووصف أفراد الأسرة",
+          "coverage_limits_ar": "هذا الرابط يدعم الأسرة فقط؛ مفردات الطعام والملابس ما زالت تحتاج نشاطًا أو مرجعًا مكملًا.",
+          "check_key": "arabic-family",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "00373177b48fd7ce929558d8c062580c0cdd041344ba5fff0e3ebf6f4a116273"
+        }
+      ],
+      "remaining_scope_ar": "هذا الرابط يدعم الأسرة فقط؛ مفردات الطعام والملابس ما زالت تحتاج نشاطًا أو مرجعًا مكملًا."
+    },
+    {
+      "id": "CRS-002-M04",
+      "course_id": "CRS-002",
+      "code": "ENGL 101ly",
+      "course": "اللغة الإنجليزية 1",
+      "module_index": 3,
+      "title": "أزمنة الأفعال: الصيغ والاستخدام في سياقات مألوفة.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "language-34e50eca39",
+          "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2/present-simple",
+          "language": "en",
+          "source_type": "guide",
+          "locator": "Present simple / Grammar explanation",
+          "supported_aspects_ar": "صياغة المضارع البسيط واستخداماته",
+          "coverage_limits_ar": "لا يغطي كل الأزمنة أو جميع السياقات.",
+          "check_key": "language-34e50eca39",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "44e3d0119418e24ed626e22af4fd15c06f1270d1e31180273469fd88cfba2e90"
+        },
+        {
+          "resource_id": "language-10a7b23296",
+          "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2/past-continuous-past-simple",
+          "language": "en",
+          "source_type": "guide",
+          "locator": "Past continuous and past simple / Grammar explanation",
+          "supported_aspects_ar": "التمييز بين الماضي البسيط والمستمر",
+          "coverage_limits_ar": "لا يغطي كل الأزمنة أو جميع السياقات.",
+          "check_key": "language-10a7b23296",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "bfed5a1697ac71eb5f9e50e836f4e63b610b357317ed456bcb146aaa235e464e"
+        }
+      ],
+      "remaining_scope_ar": "لا يغطي كل الأزمنة أو جميع السياقات."
+    },
+    {
+      "id": "CRS-002-M05",
+      "course_id": "CRS-002",
+      "code": "ENGL 101ly",
+      "course": "اللغة الإنجليزية 1",
+      "module_index": 4,
+      "title": "المصطلحات الطبية الأساسية واستخدامها ضمن أقسام الكلام.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "CS-024",
+          "url": "https://medlineplus.gov/appendixa.html",
+          "language": "en",
+          "source_type": "guide",
+          "locator": "Appendix A: Word Parts and What They Mean / General Words",
+          "supported_aspects_ar": "أجزاء كلمات طبية ومعاني جذور وبادئات ولواحق",
+          "coverage_limits_ar": "لا يشرح أقسام الكلام نحويًا؛ يلزم تطبيق لغوي يميز الأسماء والأفعال والصفات.",
+          "check_key": "CS-024",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "18299a5f306bd6b0fdcebde26f80cedb51378b50301eeb5a2bcde9ffb217d218"
+        }
+      ],
+      "remaining_scope_ar": "لا يشرح أقسام الكلام نحويًا؛ يلزم تطبيق لغوي يميز الأسماء والأفعال والصفات."
+    },
+    {
+      "id": "CRS-003-M09",
+      "course_id": "CRS-003",
+      "code": "BIOL 101aly",
+      "course": "التشريح ووظائف الأعضاء 1",
+      "module_index": 8,
+      "title": "فسيولوجيا الدوران والتحكم فيه؛ تنظيم الضغط الشرياني.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "os-anatomy-and-physiology-2e-20",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-4-homeostatic-regulation-of-the-vascular-system",
+          "language": "en",
+          "source_type": "chapter",
+          "locator": "20-4-homeostatic-regulation-of-the-vascular-system",
+          "supported_aspects_ar": "تنظيم الدوران والضغط وآليات الاستتباب",
+          "coverage_limits_ar": "دعم للشرح النظري؛ لا يثبت حل كل تطبيقات المقرر.",
+          "check_key": "os-anatomy-and-physiology-2e-20-20-4-homeostatic-regulation-of-the-vascular-system",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "41b725beb1278f02be6a93ee415e1deb7d5490196a2234c9f88d1ce15cf4565c"
+        }
+      ],
+      "remaining_scope_ar": "دعم للشرح النظري؛ لا يثبت حل كل تطبيقات المقرر."
+    },
+    {
+      "id": "CRS-004-M03",
+      "course_id": "CRS-004",
+      "code": "SOCSCI 100ly",
+      "course": "علم الاجتماع الطبي",
+      "module_index": 2,
+      "title": "إسهام الرعاية الطبية في الصحة وحدودها.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "os-fundamentals-nursing-04",
+          "url": "https://openstax.org/books/fundamentals-nursing/pages/4-1-defining-health-and-wellness",
+          "language": "en",
+          "source_type": "chapter",
+          "locator": "4-1-defining-health-and-wellness",
+          "supported_aspects_ar": "أبعاد الصحة ومحدداتها وحدود المنظور الطبي وحده",
+          "coverage_limits_ar": "لا يمثل معالجة كاملة لكل نظريات علم الاجتماع الطبي.",
+          "check_key": "os-fundamentals-nursing-04-4-1-defining-health-and-wellness",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "604d4cb8bc646c72f1af09b018236229c57537ef147f2a8a756806d32d3d7960"
+        }
+      ],
+      "remaining_scope_ar": "لا يمثل معالجة كاملة لكل نظريات علم الاجتماع الطبي."
+    },
+    {
+      "id": "CRS-004-M07",
+      "course_id": "CRS-004",
+      "code": "SOCSCI 100ly",
+      "course": "علم الاجتماع الطبي",
+      "module_index": 6,
+      "title": "خبرات المرض والحصول على الرعاية.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "os-fundamentals-nursing-04",
+          "url": "https://openstax.org/books/fundamentals-nursing/pages/4-4-community-based-health-care",
+          "language": "en",
+          "source_type": "chapter",
+          "locator": "4-4-community-based-health-care",
+          "supported_aspects_ar": "عوائق الوصول والرعاية المجتمعية وتجارب الاحتياج للرعاية",
+          "coverage_limits_ar": "السياق الأمريكي يحتاج تكييفًا؛ لا يغطي جميع خبرات المرض في ليبيا.",
+          "check_key": "os-fundamentals-nursing-04-4-4-community-based-health-care",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "e3774df45a05288934910fa17819ad8de32f217b0edc9398f96b2d56c1da15bd"
+        }
+      ],
+      "remaining_scope_ar": "السياق الأمريكي يحتاج تكييفًا؛ لا يغطي جميع خبرات المرض في ليبيا."
+    },
+    {
+      "id": "CRS-004-M10",
+      "course_id": "CRS-004",
+      "code": "SOCSCI 100ly",
+      "course": "علم الاجتماع الطبي",
+      "module_index": 9,
+      "title": "المهنة الطبية والمهن الصحية الأخرى.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "openrn-nursingfundamentals-1-4",
+          "url": "https://wtcs.pressbooks.pub/nursingfundamentals/chapter/1-4-health-care-settings-and-team/",
+          "language": "en",
+          "source_type": "chapter",
+          "locator": "1.4 Health Care Settings & Team / Health Care Settings",
+          "supported_aspects_ar": "أدوار المهن الصحية والتمريض وعمل الفريق",
+          "coverage_limits_ar": "دعم لوصف الأدوار؛ لا يغطي التحليل السوسيولوجي للمهنة كاملًا.",
+          "check_key": "openrn-nursingfundamentals-1-4",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "6508fb96e7fb35e48f9b743d0f1a02148cf7b66d1b6c93a146b12135d81b7f52"
+        }
+      ],
+      "remaining_scope_ar": "دعم لوصف الأدوار؛ لا يغطي التحليل السوسيولوجي للمهنة كاملًا."
+    },
+    {
+      "id": "CRS-005-M02",
+      "course_id": "CRS-005",
+      "code": "NURS 101ly",
+      "course": "الأسس النظرية في التمريض",
+      "module_index": 1,
+      "title": "الإنسان والصحة والبيئة والتمريض: نايتنغيل وويدنباخ وهندرسون.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "os-fundamentals-nursing-01",
+          "url": "https://openstax.org/books/fundamentals-nursing/pages/1-5-selected-nursing-theorist",
+          "language": "en",
+          "source_type": "chapter",
+          "locator": "1-5-selected-nursing-theorist",
+          "supported_aspects_ar": "نايتنغيل وهندرسون وربط النظرية بالشخص والبيئة والصحة",
+          "coverage_limits_ar": "ويدنباخ لم تتحقق في هذا الموضع؛ لا تعتبر الوحدة مكتملة.",
+          "check_key": "os-fundamentals-nursing-01-1-5-selected-nursing-theorist",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "f124d10646a2e08cd5fdae6b4f5e4c79f38f3ddce1d9e34d415bb5625f27e7e3"
+        }
+      ],
+      "remaining_scope_ar": "ويدنباخ لم تتحقق في هذا الموضع؛ لا تعتبر الوحدة مكتملة."
+    },
+    {
+      "id": "CRS-005-M06",
+      "course_id": "CRS-005",
+      "code": "NURS 101ly",
+      "course": "الأسس النظرية في التمريض",
+      "module_index": 5,
+      "title": "منظورات العلاقات بين الأشخاص: بيبلاو وأورلاندو وترافلبي.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "os-fundamentals-nursing-01",
+          "url": "https://openstax.org/books/fundamentals-nursing/pages/1-5-selected-nursing-theorist",
+          "language": "en",
+          "source_type": "chapter",
+          "locator": "1-5-selected-nursing-theorist",
+          "supported_aspects_ar": "بيبلاو والعلاقة العلاجية بين الممرض والمريض",
+          "coverage_limits_ar": "أورلاندو وترافلبي لم تتحققا في هذا الموضع؛ يلزم مرجع مكمل.",
+          "check_key": "os-fundamentals-nursing-01-1-5-selected-nursing-theorist",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "f124d10646a2e08cd5fdae6b4f5e4c79f38f3ddce1d9e34d415bb5625f27e7e3"
+        }
+      ],
+      "remaining_scope_ar": "أورلاندو وترافلبي لم تتحققا في هذا الموضع؛ يلزم مرجع مكمل."
+    },
+    {
+      "id": "CRS-005-M08",
+      "course_id": "CRS-005",
+      "code": "NURS 101ly",
+      "course": "الأسس النظرية في التمريض",
+      "module_index": 7,
+      "title": "فيتزباتريك وبويكن وشوينهوفر؛ مارغريت نيومان وباترسون وزدراد.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "review-nursing-as-caring",
+          "url": "https://www.gutenberg.org/files/42988/42988-h/42988-h.htm",
+          "language": "en",
+          "source_type": "book",
+          "locator": "الفصلان الأول والثاني: Nursing as Caring",
+          "supported_aspects_ar": "عرض نموذج بويكن وشوينهوفر من نص المؤلفتين",
+          "coverage_limits_ar": "فيتزباتريك ومارغريت نيومان وباترسون وزدراد لم تراجع نظرياتهم كاملة؛ الإشارة إليهم ليست تغطية لنظرياتهم.",
+          "check_key": "caring-book",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "7a13b22f3a68ab74332384dc6a92e52f10d92f4a05d8f8b8752349abfc6d774b"
+        }
+      ],
+      "remaining_scope_ar": "فيتزباتريك ومارغريت نيومان وباترسون وزدراد لم تراجع نظرياتهم كاملة؛ الإشارة إليهم ليست تغطية لنظرياتهم."
+    },
+    {
+      "id": "CRS-005-M10",
+      "course_id": "CRS-005",
+      "code": "NURS 101ly",
+      "course": "الأسس النظرية في التمريض",
+      "module_index": 9,
+      "title": "الصحة بوصفها ظاهرة متعددة العوامل؛ العلاقات بين العوامل المؤثرة.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "os-fundamentals-nursing-04",
+          "url": "https://openstax.org/books/fundamentals-nursing/pages/4-1-defining-health-and-wellness",
+          "language": "en",
+          "source_type": "chapter",
+          "locator": "4-1-defining-health-and-wellness",
+          "supported_aspects_ar": "العوامل الجسدية والنفسية والاجتماعية المؤثرة في الصحة",
+          "coverage_limits_ar": "لا يغطي كل نموذج نظري أو تطبيق على حالة.",
+          "check_key": "os-fundamentals-nursing-04-4-1-defining-health-and-wellness",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "604d4cb8bc646c72f1af09b018236229c57537ef147f2a8a756806d32d3d7960"
+        }
+      ],
+      "remaining_scope_ar": "لا يغطي كل نموذج نظري أو تطبيق على حالة."
+    },
+    {
+      "id": "CRS-005-M11",
+      "course_id": "CRS-005",
+      "code": "NURS 101ly",
+      "course": "الأسس النظرية في التمريض",
+      "module_index": 10,
+      "title": "الصفات المعززة للرعاية والقيم الأساسية والتمريض المستجيب للثقافة.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "openrn-nursingfundamentals-3-8",
+          "url": "https://wtcs.pressbooks.pub/nursingfundamentals/chapter/3-8-culturally-responsive-care/",
+          "language": "en",
+          "source_type": "chapter",
+          "locator": "3.8 Culturally Responsive Care / Culturally Safe Environment",
+          "supported_aspects_ar": "التواضع الثقافي والرعاية المستجيبة للثقافة",
+          "coverage_limits_ar": "لا يثبت تغطية جميع القيم أو تقويم السلوك المهني.",
+          "check_key": "openrn-nursingfundamentals-3-8",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "0c2281b0009e9326692b985b9d281fea7e4c608bb485cbb4cd3a1c170651344d"
+        },
+        {
+          "resource_id": "pa-comm-020",
+          "url": "https://link.springer.com/article/10.1186/s12912-024-01773-8?error=cookies_not_supported&code=52bfb4c0-404f-44c7-ac2d-788701936768",
+          "language": "en",
+          "source_type": "paper",
+          "locator": "Methods / Findings / Discussion",
+          "supported_aspects_ar": "تجارب طلبة التمريض في الرعاية متعددة الثقافات",
+          "coverage_limits_ar": "دراسة نوعية في سياق محدد؛ تستخدم للمناقشة لا لتعميم النتائج.",
+          "check_key": "pa-comm-020",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "5d4c1a0d7a4aae3cd7af1d462447bac7c746c1f6046b88fb927fda2fa2abd886"
+        }
+      ],
+      "remaining_scope_ar": "لا يثبت تغطية جميع القيم أو تقويم السلوك المهني.؛ دراسة نوعية في سياق محدد؛ تستخدم للمناقشة لا لتعميم النتائج."
+    },
+    {
+      "id": "CRS-006-M02",
+      "course_id": "CRS-006",
+      "code": "CHEM 101ly",
+      "course": "الكيمياء الحيوية",
+      "module_index": 1,
+      "title": "الماء والأس الهيدروجيني ومعادلة هندرسون–هاسلبالخ والمحاليل المنظمة والحُماض والقلاء.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "os-chemistry-2e-14",
+          "url": "https://openstax.org/books/chemistry-2e/pages/14-6-buffers",
+          "language": "en",
+          "source_type": "chapter",
+          "locator": "14-6-buffers",
+          "supported_aspects_ar": "المحاليل المنظمة ومعادلة هندرسون–هاسلبالخ",
+          "coverage_limits_ar": "التطبيق الكيميائي لا يغطي وحده الحُماض والقلاء السريريين أو جميع خصائص الماء.",
+          "check_key": "os-chemistry-2e-14-14-6-buffers",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "b3c30d08b517f6c16f16987f8415472a4161253c0c0d4f925a91380e89bc4d4c"
+        }
+      ],
+      "remaining_scope_ar": "التطبيق الكيميائي لا يغطي وحده الحُماض والقلاء السريريين أو جميع خصائص الماء."
+    },
+    {
+      "id": "CRS-006-M03",
+      "course_id": "CRS-006",
+      "code": "CHEM 101ly",
+      "course": "الكيمياء الحيوية",
+      "module_index": 2,
+      "title": "الكربوهيدرات: التصنيف والتركيب والتماكب والسكريات الأحادية والثنائية والمتعددة والغليكوزأمينوغليكانات.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "os-biology-2e-03",
+          "url": "https://openstax.org/books/biology-2e/pages/3-2-carbohydrates",
+          "language": "en",
+          "source_type": "chapter",
+          "locator": "3-2-carbohydrates",
+          "supported_aspects_ar": "تصنيف السكريات وبناها والسكريات الأحادية والثنائية والمتعددة",
+          "coverage_limits_ar": "تفاصيل الغليكوزأمينوغليكانات والتماكب المتقدم تحتاج استكمالًا.",
+          "check_key": "os-biology-2e-03-3-2-carbohydrates",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "9f23922baae1cda5fa1da3398bc14d3c59d7dc75548041ecf6d89dbd5c97027e"
+        }
+      ],
+      "remaining_scope_ar": "تفاصيل الغليكوزأمينوغليكانات والتماكب المتقدم تحتاج استكمالًا."
+    },
+    {
+      "id": "CRS-006-M07",
+      "course_id": "CRS-006",
+      "code": "CHEM 101ly",
+      "course": "الكيمياء الحيوية",
+      "module_index": 6,
+      "title": "الفيتامينات والمعادن: المصادر والوظائف والاحتياجات والنقص والزيادة.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "os-nutrition-03",
+          "url": "https://openstax.org/books/nutrition/pages/3-1-vitamins",
+          "language": "en",
+          "source_type": "chapter",
+          "locator": "3-1-vitamins",
+          "supported_aspects_ar": "الفيتامينات ووظائفها ومدخولها وآثار نقصها وزيادتها",
+          "coverage_limits_ar": "مقادير الاحتياج والسياقات السريرية تحتاج مراجعة بحسب الحالة والمراجع المحلية.",
+          "check_key": "os-nutrition-03-3-1-vitamins",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "282aaf13648bd0f05ae0ced38a2a641f199ae1391a3cc6caecbb211454f3430d"
+        },
+        {
+          "resource_id": "os-nutrition-03",
+          "url": "https://openstax.org/books/nutrition/pages/3-2-minerals",
+          "language": "en",
+          "source_type": "chapter",
+          "locator": "3-2-minerals",
+          "supported_aspects_ar": "المعادن ومصادرها ووظائفها ومدخولها",
+          "coverage_limits_ar": "مقادير الاحتياج والسياقات السريرية تحتاج مراجعة بحسب الحالة والمراجع المحلية.",
+          "check_key": "os-nutrition-03-3-2-minerals",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "185c9dba517d9de03c773aa14f5a19d0ca0528421947c6d452aa3656a7f8aabb"
+        }
+      ],
+      "remaining_scope_ar": "مقادير الاحتياج والسياقات السريرية تحتاج مراجعة بحسب الحالة والمراجع المحلية."
+    },
+    {
+      "id": "CRS-006-M11",
+      "course_id": "CRS-006",
+      "code": "CHEM 101ly",
+      "course": "الكيمياء الحيوية",
+      "module_index": 10,
+      "title": "تكوين الغليكوجين وتحلله واضطرابات تخزينه ومسار أحادي فوسفات الهكسوز.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "review-osu-glycogen",
+          "url": "https://courses.ecampus.oregonstate.edu/bb450/lecture/glycogennotes.html",
+          "language": "en",
+          "source_type": "guide",
+          "locator": "Glycogen Biosynthesis; Glycogen Breakdown",
+          "supported_aspects_ar": "تصنيع الغليكوجين وتحلله وتنظيمهما واضطرابات التخزين",
+          "coverage_limits_ar": "ذُكر مسار البنتوز فوسفات فقط؛ لم تتحقق هنا تغطيته التفصيلية، فتظل هذه جزئية معلنة.",
+          "check_key": "oregon-glycogen",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "6b53b25e1965301cfec8a6e2bff974b12712d5bb202c804439d052f3165bba77"
+        }
+      ],
+      "remaining_scope_ar": "ذُكر مسار البنتوز فوسفات فقط؛ لم تتحقق هنا تغطيته التفصيلية، فتظل هذه جزئية معلنة."
+    },
+    {
+      "id": "CRS-007-M05",
+      "course_id": "CRS-007",
+      "code": "NURS 102ly",
+      "course": "الخبرة التعليمية المرتبطة 1",
+      "module_index": 4,
+      "title": "الوحدة التدريبية 5: التوثيق والسجلات وإرشادات إجراءات الممارسة السريرية.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "openrn-nursingfundamentals-2-5",
+          "url": "https://wtcs.pressbooks.pub/nursingfundamentals/chapter/2-5-documentation/",
+          "language": "en",
+          "source_type": "guide",
+          "locator": "2.5 Documentation / Using Technology to Access Information",
+          "supported_aspects_ar": "أنواع السجلات ومبادئ التوثيق والأمثلة",
+          "coverage_limits_ar": "لا يمثل وحده جميع إرشادات إجراءات الممارسة السريرية.",
+          "check_key": "openrn-nursingfundamentals-2-5",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "42aaf4a6f8ab3872eb55dce4cb953dc9e8b27364a0f07b429df152916aec82d9"
+        }
+      ],
+      "remaining_scope_ar": "لا يمثل وحده جميع إرشادات إجراءات الممارسة السريرية."
+    },
+    {
+      "id": "CRS-007-M12",
+      "course_id": "CRS-007",
+      "code": "NURS 102ly",
+      "course": "الخبرة التعليمية المرتبطة 1",
+      "module_index": 11,
+      "title": "الوحدة التدريبية 12: تدريب متكامل على الرعاية والنتائج الطبيعية وغير الطبيعية والإبلاغ وترسيخ المهارات.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "openrn-nursingfundamentals-4-8",
+          "url": "https://wtcs.pressbooks.pub/nursingfundamentals/chapter/4-8-evaluation/",
+          "language": "en",
+          "source_type": "chapter",
+          "locator": "4.8 Evaluation / Putting It Together",
+          "supported_aspects_ar": "تقويم النتائج ومقارنتها بالأهداف وتعديل الرعاية",
+          "coverage_limits_ar": "لا يقدم تدريبًا متكاملًا على كل مهارات السنة أو تقويمًا عمليًا.",
+          "check_key": "openrn-nursingfundamentals-4-8",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "fd3f1a55878d23319aef3cb59cc00009dde56eca40a076a048cb307caf5190bb"
+        },
+        {
+          "resource_id": "openrn-nursingfundamentals-2-4",
+          "url": "https://wtcs.pressbooks.pub/nursingfundamentals/chapter/2-4-communicating-with-health-care-team-members/",
+          "language": "en",
+          "source_type": "chapter",
+          "locator": "2.4 Communicating With Health Care Team Members / Reports to Health Care Team Members",
+          "supported_aspects_ar": "الإبلاغ المنظم للفريق عن التغيرات",
+          "coverage_limits_ar": "تطبيق المهارات وإثبات الأداء يحتاج إشرافًا محليًا.",
+          "check_key": "openrn-nursingfundamentals-2-4",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "9f2a9a93770878e1eda1c2498003a9151c5f1aadee34d363ae8c2a32aaf86eab"
+        }
+      ],
+      "remaining_scope_ar": "لا يقدم تدريبًا متكاملًا على كل مهارات السنة أو تقويمًا عمليًا.؛ تطبيق المهارات وإثبات الأداء يحتاج إشرافًا محليًا."
+    },
+    {
+      "id": "CRS-010-M08",
+      "course_id": "CRS-010",
+      "code": "MED 103ly",
+      "course": "التشريح ووظائف الأعضاء 2",
+      "module_index": 7,
+      "title": "القناة الهضمية: الطبقات والصفاق والفم والبلعوم والمريء والبلع والمعدة.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "os-anatomy-and-physiology-2e-23",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-1-overview-of-the-digestive-system",
+          "language": "en",
+          "source_type": "chapter",
+          "locator": "23-1-overview-of-the-digestive-system",
+          "supported_aspects_ar": "طبقات القناة الهضمية والصفاق",
+          "coverage_limits_ar": "لا يغطي وحده الفم والبلعوم والمريء والمعدة.",
+          "check_key": "os-anatomy-and-physiology-2e-23-23-1-overview-of-the-digestive-system",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "0013f05cb0f5e53bb3501d44113b629809794544dba78c308e744aee678fa0b2"
+        },
+        {
+          "resource_id": "os-anatomy-and-physiology-2e-23",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-3-the-mouth-pharynx-and-esophagus",
+          "language": "en",
+          "source_type": "chapter",
+          "locator": "23-3-the-mouth-pharynx-and-esophagus",
+          "supported_aspects_ar": "الفم والبلعوم والمريء والبلع",
+          "coverage_limits_ar": "المعدة تحتاج قراءة القسم 23.4؛ لم تُعتبر كامل الوحدة متحققة.",
+          "check_key": "os-anatomy-and-physiology-2e-23-23-3-the-mouth-pharynx-and-esophagus",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "65b050a52ae2ee3e244b2575d742302ee609690c9713f0c82af27be64bf59c02"
+        }
+      ],
+      "remaining_scope_ar": "لا يغطي وحده الفم والبلعوم والمريء والمعدة.؛ المعدة تحتاج قراءة القسم 23.4؛ لم تُعتبر كامل الوحدة متحققة."
+    },
+    {
+      "id": "CRS-010-M09",
+      "course_id": "CRS-010",
+      "code": "MED 103ly",
+      "course": "التشريح ووظائف الأعضاء 2",
+      "module_index": 8,
+      "title": "البنكرياس والكبد والمرارة والأمعاء الدقيقة والغليظة.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "os-anatomy-and-physiology-2e-23",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder",
+          "language": "en",
+          "source_type": "chapter",
+          "locator": "23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder",
+          "supported_aspects_ar": "الكبد والبنكرياس والمرارة",
+          "coverage_limits_ar": "يلزم الجزء الخاص بالأمعاء لتغطية باقي الوحدة.",
+          "check_key": "os-anatomy-and-physiology-2e-23-23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "5e012eade0af60716d0f608900d9ffde6a2a40232d50248b14773fb22339df95"
+        },
+        {
+          "resource_id": "os-anatomy-and-physiology-2e-23",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines",
+          "language": "en",
+          "source_type": "chapter",
+          "locator": "23-5-the-small-and-large-intestines",
+          "supported_aspects_ar": "الأمعاء الدقيقة والغليظة ووظائفهما",
+          "coverage_limits_ar": "المطابقة الموضوعية لا تثبت تغطية كل تفاصيل توصيف المقرر.",
+          "check_key": "os-anatomy-and-physiology-2e-23-23-5-the-small-and-large-intestines",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "1153d8a44893e91872a51cd8959c8d2dc6365d15c463e6cf98e20a6820bb6c90"
+        }
+      ],
+      "remaining_scope_ar": "يلزم الجزء الخاص بالأمعاء لتغطية باقي الوحدة.؛ المطابقة الموضوعية لا تثبت تغطية كل تفاصيل توصيف المقرر."
+    },
+    {
+      "id": "CRS-011-M03",
+      "course_id": "CRS-011",
+      "code": "NURS 104ly",
+      "course": "أساسيات التمريض",
+      "module_index": 2,
+      "title": "مستويات الإتقان لدى بينر والتطور المهني.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "openrn-nursingmpc-11-5",
+          "url": "https://wtcs.pressbooks.pub/nursingmpc/chapter/11-5-transitioning-to-the-rn-role/",
+          "language": "en",
+          "source_type": "chapter",
+          "locator": "Benner’s Novice to Expert Theory / Mentorship",
+          "supported_aspects_ar": "مراحل بينر من المبتدئ إلى الخبير والانتقال إلى الدور المهني",
+          "coverage_limits_ar": "لا يمثل قياسًا فعليًا لمستوى إتقان الطالب.",
+          "check_key": "openrn-nursingmpc-11-5",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "2d019d9da271518c644b3b6277e4129a4f69c4107e124d953e7b6faacaef7066"
+        }
+      ],
+      "remaining_scope_ar": "لا يمثل قياسًا فعليًا لمستوى إتقان الطالب."
+    },
+    {
+      "id": "CRS-011-M04",
+      "course_id": "CRS-011",
+      "code": "NURS 104ly",
+      "course": "أساسيات التمريض",
+      "module_index": 3,
+      "title": "الأدوار والمسؤوليات التمريضية ونطاق الممارسة ومجالاتها.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "openrn-nursingfundamentals-1-4",
+          "url": "https://wtcs.pressbooks.pub/nursingfundamentals/chapter/1-4-health-care-settings-and-team/",
+          "language": "en",
+          "source_type": "chapter",
+          "locator": "1.4 Health Care Settings & Team / Health Care Settings",
+          "supported_aspects_ar": "أدوار الفريق ومسؤوليات التمريض ومواقع الرعاية",
+          "coverage_limits_ar": "نطاق الممارسة القانوني الأمريكي لا يُنقل بوصفه حكمًا قانونيًا ليبيًا.",
+          "check_key": "openrn-nursingfundamentals-1-4",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "6508fb96e7fb35e48f9b743d0f1a02148cf7b66d1b6c93a146b12135d81b7f52"
+        }
+      ],
+      "remaining_scope_ar": "نطاق الممارسة القانوني الأمريكي لا يُنقل بوصفه حكمًا قانونيًا ليبيًا."
+    },
+    {
+      "id": "CRS-012-M04",
+      "course_id": "CRS-012",
+      "code": "NURS 105ly",
+      "course": "الخبرة التعليمية المرتبطة 2",
+      "module_index": 3,
+      "title": "الوحدة التدريبية 4: مراجعة الأجهزة وتسلسل تقييم البالغين.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "openrn-nursingskills-2-3",
+          "url": "https://wtcs.pressbooks.pub/nursingskills/chapter/2-3-components-of-a-health-history/",
+          "language": "en",
+          "source_type": "chapter",
+          "locator": "2.3 Components of a Health History",
+          "supported_aspects_ar": "مكونات التاريخ الصحي ومراجعة أجهزة الجسم",
+          "coverage_limits_ar": "ليس تسلسل فحص بدني كاملًا للبالغ؛ تبقى المهارة بحاجة إلى قائمة تدريب كاملة.",
+          "check_key": "openrn-nursingskills-2-3",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "94ec63fc418549ad5e420e23661518b2be2a4d23f2a362618188f473cc974f46"
+        }
+      ],
+      "remaining_scope_ar": "ليس تسلسل فحص بدني كاملًا للبالغ؛ تبقى المهارة بحاجة إلى قائمة تدريب كاملة."
+    },
+    {
+      "id": "CRS-013-M05",
+      "course_id": "CRS-013",
+      "code": "MED 104ly",
+      "course": "الأحياء الدقيقة للتمريض",
+      "module_index": 4,
+      "title": "التعقيم والتطهير وتطبيقاتهما في البيئات السريرية.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "os-microbiology-13",
+          "url": "https://openstax.org/books/microbiology/pages/13-1-controlling-microbial-growth",
+          "language": "en",
+          "source_type": "chapter",
+          "locator": "13-1-controlling-microbial-growth",
+          "supported_aspects_ar": "التمييز بين التعقيم والتطهير والتطهير الجلدي",
+          "coverage_limits_ar": "يحتاج التطبيق إلى دليل المؤسسة؛ لا يثبت إتقان الإجراءات.",
+          "check_key": "os-microbiology-13-13-1-controlling-microbial-growth",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "b85b5d59dedb9e778b1873867a566a04df9e65b2a9cb8c2bc91bf8d56760f7c3"
+        },
+        {
+          "resource_id": "os-microbiology-13",
+          "url": "https://openstax.org/books/microbiology/pages/13-2-using-physical-methods-to-control-microorganisms",
+          "language": "en",
+          "source_type": "chapter",
+          "locator": "13-2-using-physical-methods-to-control-microorganisms",
+          "supported_aspects_ar": "وسائل السيطرة الفيزيائية على الميكروبات",
+          "coverage_limits_ar": "لا يغطي وحده كل المواد الكيميائية أو متطلبات الموقع السريري.",
+          "check_key": "os-microbiology-13-13-2-using-physical-methods-to-control-microorganisms",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "e293397673142bc2f916a823b54f9477154cc5eeb882c292fb211d5b53ae765a"
+        }
+      ],
+      "remaining_scope_ar": "يحتاج التطبيق إلى دليل المؤسسة؛ لا يثبت إتقان الإجراءات.؛ لا يغطي وحده كل المواد الكيميائية أو متطلبات الموقع السريري."
+    },
+    {
+      "id": "CRS-013-M11",
+      "course_id": "CRS-013",
+      "code": "MED 104ly",
+      "course": "الأحياء الدقيقة للتمريض",
+      "module_index": 10,
+      "title": "العدوى المرتبطة بالأعضاء ومدخل إلى الطفيليات والمسؤوليات التمريضية.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "os-microbiology-24",
+          "url": "https://openstax.org/books/microbiology/pages/24-5-protozoan-infections-of-the-gastrointestinal-tract",
+          "language": "en",
+          "source_type": "chapter",
+          "locator": "24-5-protozoan-infections-of-the-gastrointestinal-tract",
+          "supported_aspects_ar": "نماذج العدوى بالطفيليات الأولية في الجهاز الهضمي",
+          "coverage_limits_ar": "جزء محدد من الطفيليات؛ ليست جميع العدوى المرتبطة بالأعضاء.",
+          "check_key": "os-microbiology-24-24-5-protozoan-infections-of-the-gastrointestinal-tract",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "73a293cce74d375aaa18941044ecf0ad65e21e38f396c40d8cc73827f5457da6"
+        },
+        {
+          "resource_id": "openrn-nursingfundamentals-9-6",
+          "url": "https://wtcs.pressbooks.pub/nursingfundamentals/chapter/9-6-preventing-infection/",
+          "language": "en",
+          "source_type": "chapter",
+          "locator": "9.6 Preventing Infection / Interventions to Break the Chain of Infection",
+          "supported_aspects_ar": "مسؤوليات الوقاية من العدوى والاحتياطات",
+          "coverage_limits_ar": "يلزم استكمال عدوى الأجهزة الأخرى والتطبيق العملي.",
+          "check_key": "openrn-nursingfundamentals-9-6",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "c85b68ed1ff13cca29a4e064a893e2c93e384ed3593e51df946b3eb1e4111d88"
+        }
+      ],
+      "remaining_scope_ar": "جزء محدد من الطفيليات؛ ليست جميع العدوى المرتبطة بالأعضاء.؛ يلزم استكمال عدوى الأجهزة الأخرى والتطبيق العملي."
+    },
+    {
+      "id": "CRS-015-M01",
+      "course_id": "CRS-015",
+      "code": "LANG 102ly",
+      "course": "مهارات التواصل 1",
+      "module_index": 0,
+      "title": "التهيئة والتعارف؛ أغراض التواصل.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "language-ec4c4c0587",
+          "url": "https://learnenglish.britishcouncil.org/free-resources/speaking/a1/meeting-new-people",
+          "language": "en",
+          "source_type": "guide",
+          "locator": "Meeting new people / Preparation",
+          "supported_aspects_ar": "حوار التعارف والتحية بالإنجليزية",
+          "coverage_limits_ar": "أغراض التواصل الأوسع تحتاج استكمالًا.",
+          "check_key": "language-ec4c4c0587",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "2b4848135be8617c40e59db68da36528b35fc16c06530a70358c152292427559"
+        }
+      ],
+      "remaining_scope_ar": "أغراض التواصل الأوسع تحتاج استكمالًا."
+    },
+    {
+      "id": "CRS-015-M07",
+      "course_id": "CRS-015",
+      "code": "LANG 102ly",
+      "course": "مهارات التواصل 1",
+      "module_index": 6,
+      "title": "القراءة الجماعية: تبادل الأدوار والنطق والمناقشة.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "review-bc-discussion",
+          "url": "https://www.teachingenglish.org.uk/professional-development/teachers/managing-lesson/group-discussion-skills",
+          "language": "en",
+          "source_type": "guide",
+          "locator": "Group discussion skills / Why teach group discussion skills?",
+          "supported_aspects_ar": "تبادل الأدوار والمناقشة الجماعية وتيسير المشاركة",
+          "coverage_limits_ar": "ليس درس قراءة جماعية أو تدريبًا شاملًا على النطق؛ تبقى هاتان الجزئيتان معلنتين.",
+          "check_key": "teaching-discussion",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "0d1ef3aba8fed2ef198ee370f69ecc2f306f3a64f18ba3057c3f28cb4df947d6"
+        }
+      ],
+      "remaining_scope_ar": "ليس درس قراءة جماعية أو تدريبًا شاملًا على النطق؛ تبقى هاتان الجزئيتان معلنتين."
+    },
+    {
+      "id": "CRS-015-M09",
+      "course_id": "CRS-015",
+      "code": "LANG 102ly",
+      "course": "مهارات التواصل 1",
+      "module_index": 8,
+      "title": "أقسام الكلام في الكتابة الموجهة.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "language-3317514286",
+          "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/personal-pronouns",
+          "language": "en",
+          "source_type": "guide",
+          "locator": "Personal pronouns / he, she and they",
+          "supported_aspects_ar": "أنواع الضمائر واستخدامها",
+          "coverage_limits_ar": "يدعم جزءًا من أقسام الكلام؛ لا يغطيها جميعًا أو الكتابة الموجهة كاملة.",
+          "check_key": "language-3317514286",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "db5c70e3471eb3af69c9aef28f96be7b8ae424b2a8d6b0434692927826c77ae9"
+        },
+        {
+          "resource_id": "language-34e50eca39",
+          "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2/present-simple",
+          "language": "en",
+          "source_type": "guide",
+          "locator": "Present simple / Grammar explanation",
+          "supported_aspects_ar": "الأفعال في المضارع البسيط",
+          "coverage_limits_ar": "يدعم جزءًا من أقسام الكلام؛ لا يغطيها جميعًا أو الكتابة الموجهة كاملة.",
+          "check_key": "language-34e50eca39",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "44e3d0119418e24ed626e22af4fd15c06f1270d1e31180273469fd88cfba2e90"
+        }
+      ],
+      "remaining_scope_ar": "يدعم جزءًا من أقسام الكلام؛ لا يغطيها جميعًا أو الكتابة الموجهة كاملة."
+    },
+    {
+      "id": "CRS-015-M10",
+      "course_id": "CRS-015",
+      "code": "LANG 102ly",
+      "course": "مهارات التواصل 1",
+      "module_index": 9,
+      "title": "بناء الجمل وتصحيحها باستخدام المفردات المستهدفة.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "language-34e50eca39",
+          "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2/present-simple",
+          "language": "en",
+          "source_type": "guide",
+          "locator": "Present simple / Grammar explanation",
+          "supported_aspects_ar": "بناء جمل مثبتة ومنفية وأسئلة بالمضارع البسيط",
+          "coverage_limits_ar": "المفردات المستهدفة والتصحيح في سياق المقرر يحتاجان نشاطًا مكمّلًا.",
+          "check_key": "language-34e50eca39",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "44e3d0119418e24ed626e22af4fd15c06f1270d1e31180273469fd88cfba2e90"
+        }
+      ],
+      "remaining_scope_ar": "المفردات المستهدفة والتصحيح في سياق المقرر يحتاجان نشاطًا مكمّلًا."
+    },
+    {
+      "id": "CRS-017-M11",
+      "course_id": "CRS-017",
+      "code": "MED 202ly",
+      "course": "علم الأدوية",
+      "module_index": 10,
+      "title": "مرخيات الرحم ومنبهاته.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "os-pharmacology-36",
+          "url": "https://openstax.org/books/pharmacology/pages/36-3-uterine-motility-drugs-and-lactation-considerations",
+          "language": "en",
+          "source_type": "chapter",
+          "locator": "36-3-uterine-motility-drugs-and-lactation-considerations",
+          "supported_aspects_ar": "منبهات تقلص الرحم ومثبطاته ومراقبتها",
+          "coverage_limits_ar": "مصدر تعليمي؛ ليس بروتوكول إعطاء دواء أو تحديد جرعات لحالة.",
+          "check_key": "os-pharmacology-36-36-3-uterine-motility-drugs-and-lactation-considerations",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "bd793fff4430144c7f4a8118e6354b2284162cd02bb9835cbebbb15303537bde"
+        }
+      ],
+      "remaining_scope_ar": "مصدر تعليمي؛ ليس بروتوكول إعطاء دواء أو تحديد جرعات لحالة."
+    },
+    {
+      "id": "CRS-019-M06",
+      "course_id": "CRS-019",
+      "code": "LANG 201ly",
+      "course": "اللغة الإنجليزية 2",
+      "module_index": 5,
+      "title": "موقع الظرف واستخدامه في الرسائل الشفهية والمكتوبة.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "language-aaa5ff4380",
+          "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/adverbials-manner",
+          "language": "en",
+          "source_type": "guide",
+          "locator": "Adverbials of manner / Adverbials of manner and link verbs",
+          "supported_aspects_ar": "ظروف الطريقة ومواقعها الشائعة في الجمل",
+          "coverage_limits_ar": "لا يغطي وحده جميع أنواع الظروف أو الرسائل الطبية.",
+          "check_key": "language-aaa5ff4380",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "6d4fe879de2a3316c1feca5dfd717a3660d89fbd67f191b3b2f8a77fa1337c52"
+        }
+      ],
+      "remaining_scope_ar": "لا يغطي وحده جميع أنواع الظروف أو الرسائل الطبية."
+    },
+    {
+      "id": "CRS-021-M02",
+      "course_id": "CRS-021",
+      "code": "NURS 202ly",
+      "course": "الخبرة التعليمية المرتبطة 3",
+      "module_index": 1,
+      "title": "الوحدة التدريبية 2: مناورات ليوبولد وقياس ارتفاع قاع الرحم.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "os-maternal-newborn-nursing-16",
+          "url": "https://openstax.org/books/maternal-newborn-nursing/pages/16-2-external-and-internal-monitoring",
+          "language": "en",
+          "source_type": "chapter",
+          "locator": "16-2-external-and-internal-monitoring",
+          "supported_aspects_ar": "شرح مناورات ليوبولد الأربع لتحديد وضع الجنين",
+          "coverage_limits_ar": "القراءة لا تثبت ممارسة المناورات بأمان.",
+          "check_key": "os-maternal-newborn-nursing-16-16-2-external-and-internal-monitoring",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "4a0dc79fa07cc0556e9afae68b462508c030e498e2b5075ff583efcd869d4e66"
+        },
+        {
+          "resource_id": "os-maternal-newborn-nursing-11",
+          "url": "https://openstax.org/books/maternal-newborn-nursing/pages/11-3-care-in-the-second-trimester-of-pregnancy",
+          "language": "en",
+          "source_type": "chapter",
+          "locator": "11-3-care-in-the-second-trimester-of-pregnancy",
+          "supported_aspects_ar": "تقييم وقياس ارتفاع قاع الرحم في المتابعة",
+          "coverage_limits_ar": "يتطلب تدريبًا سريريًا؛ لا يمثل اعتمادًا للمهارة.",
+          "check_key": "os-maternal-newborn-nursing-11-11-3-care-in-the-second-trimester-of-pregnancy",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "c42f86eaad598dd33caa081220c4a59626c6906c25c81b64498062947c2be0c1"
+        }
+      ],
+      "remaining_scope_ar": "القراءة لا تثبت ممارسة المناورات بأمان.؛ يتطلب تدريبًا سريريًا؛ لا يمثل اعتمادًا للمهارة."
+    },
+    {
+      "id": "CRS-022-M06",
+      "course_id": "CRS-022",
+      "code": "MED 204ly",
+      "course": "التغذية العلاجية",
+      "module_index": 5,
+      "title": "التغذية عند تعذر التناول الفموي؛ مبادئ التغذية المعوية.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "openrn-nursingfundamentals-14-2",
+          "url": "https://wtcs.pressbooks.pub/nursingfundamentals/chapter/14-2-nutrition-basic-concepts/",
+          "language": "en",
+          "source_type": "chapter",
+          "locator": "14.2 Nutrition Basic Concepts / Digestive System",
+          "supported_aspects_ar": "مبادئ التغذية المعوية والأنابيب عند تعذر التغذية الفموية",
+          "coverage_limits_ar": "لا يحدد وصفة تغذية خاصة أو يغطي كل إجراءات إدارتها.",
+          "check_key": "openrn-nursingfundamentals-14-2",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "f5674950e8d9ef5fcbb94dabf5c8a3aa6a8d1d85a5135c265dec21d39acbee96"
+        }
+      ],
+      "remaining_scope_ar": "لا يحدد وصفة تغذية خاصة أو يغطي كل إجراءات إدارتها."
+    },
+    {
+      "id": "CRS-023-M10",
+      "course_id": "CRS-023",
+      "code": "NURS 203ly",
+      "course": "النمو والتطور",
+      "module_index": 9,
+      "title": "الرشد المبكر والمتوسط: الأبعاد والخصائص والآثار التمريضية.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "os-fundamentals-nursing-40",
+          "url": "https://openstax.org/books/fundamentals-nursing/pages/40-1-growth-and-development-stages",
+          "language": "en",
+          "source_type": "chapter",
+          "locator": "40-1-growth-and-development-stages",
+          "supported_aspects_ar": "خصائص الرشد المبكر والمتوسط وأبعادهما",
+          "coverage_limits_ar": "المواءمة مع كل نظريات المقرر والتطبيقات التمريضية تحتاج مراجعة.",
+          "check_key": "os-fundamentals-nursing-40-40-1-growth-and-development-stages",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "65d0958a1aa833c07424e015e5fafedd79fa1316faed1486c09e52e262b5373f"
+        }
+      ],
+      "remaining_scope_ar": "المواءمة مع كل نظريات المقرر والتطبيقات التمريضية تحتاج مراجعة."
+    },
+    {
+      "id": "CRS-024-M03",
+      "course_id": "CRS-024",
+      "code": "NURS 204y",
+      "course": "الخبرة التعليمية المرتبطة 4",
+      "module_index": 2,
+      "title": "الوحدة التدريبية 3: التقييم التمريضي للأطفال والتواصل الملائم للعمر.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "os-maternal-newborn-nursing-25",
+          "url": "https://openstax.org/books/maternal-newborn-nursing/pages/25-5-parent-newborn-bonding-and-attachment",
+          "language": "en",
+          "source_type": "chapter",
+          "locator": "25-5-parent-newborn-bonding-and-attachment",
+          "supported_aspects_ar": "ملاحظة الترابط والتواصل مع الأسرة وحديث الولادة",
+          "coverage_limits_ar": "يدعم حديث الولادة والأسرة فقط؛ التقييم الكامل للأطفال والتواصل عبر بقية الأعمار يحتاجان استكمالًا.",
+          "check_key": "os-maternal-newborn-nursing-25-25-5-parent-newborn-bonding-and-attachment",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "4c1f066b117d6ac2cd5a912311bc7c9e7161d2f8acc5153ac917473cc6467314"
+        }
+      ],
+      "remaining_scope_ar": "يدعم حديث الولادة والأسرة فقط؛ التقييم الكامل للأطفال والتواصل عبر بقية الأعمار يحتاجان استكمالًا."
+    },
+    {
+      "id": "CRS-026-M01",
+      "course_id": "CRS-026",
+      "code": "LANG 202y",
+      "course": "مهارات التواصل 2",
+      "module_index": 0,
+      "title": "التهيئة والتعارف وأغراض التواصل.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "language-ec4c4c0587",
+          "url": "https://learnenglish.britishcouncil.org/free-resources/speaking/a1/meeting-new-people",
+          "language": "en",
+          "source_type": "guide",
+          "locator": "Meeting new people / Preparation",
+          "supported_aspects_ar": "التحية والتعارف وعرض المساعدة في حوار إنجليزي",
+          "coverage_limits_ar": "لا يغطي جميع أغراض التواصل أو الاستخدام التمريضي المتخصص.",
+          "check_key": "language-ec4c4c0587",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "2b4848135be8617c40e59db68da36528b35fc16c06530a70358c152292427559"
+        }
+      ],
+      "remaining_scope_ar": "لا يغطي جميع أغراض التواصل أو الاستخدام التمريضي المتخصص."
+    },
+    {
+      "id": "CRS-026-M05",
+      "course_id": "CRS-026",
+      "code": "LANG 202y",
+      "course": "مهارات التواصل 2",
+      "module_index": 4,
+      "title": "تطبيق لغوي: المنازل والأنشطة اليومية.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "review-bc-home",
+          "url": "https://learnenglish.britishcouncil.org/free-resources/vocabulary/a1-a2/homes",
+          "language": "en",
+          "source_type": "guide",
+          "locator": "Homes / Task 1",
+          "supported_aspects_ar": "ألفاظ المنازل في تمارين مفردات",
+          "coverage_limits_ar": "لا يغطي وحده الأنشطة اليومية أو الأداء الشفهي.",
+          "check_key": "bc-home",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "fd8a1c1146ac9a9da6f48e8200a1d56d9262f1d4f8795eea49c88135702b9f07"
+        },
+        {
+          "resource_id": "review-bc-daily",
+          "url": "https://learnenglish.britishcouncil.org/free-resources/vocabulary/a1-a2/daily-routine-vocabulary-a1-beginner-english-vocabulary-lesson",
+          "language": "en",
+          "source_type": "guide",
+          "locator": "Daily routine vocabulary – A1 beginner English vocabulary lesson and exercises / Example sentences with time expressions",
+          "supported_aspects_ar": "الأنشطة اليومية وجمل المضارع والتعبير عن الوقت",
+          "coverage_limits_ar": "لا يثبت الإتقان؛ مستوى تمهيدي يحتاج تكييفًا لمستوى المقرر.",
+          "check_key": "bc-daily",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "b565ee73e27d6cff8ccd238d9eba05c4fb9ca12ff6a9c5ef925e2b6e4cb1b25a"
+        }
+      ],
+      "remaining_scope_ar": "لا يغطي وحده الأنشطة اليومية أو الأداء الشفهي.؛ لا يثبت الإتقان؛ مستوى تمهيدي يحتاج تكييفًا لمستوى المقرر."
+    },
+    {
+      "id": "CRS-026-M06",
+      "course_id": "CRS-026",
+      "code": "LANG 202y",
+      "course": "مهارات التواصل 2",
+      "module_index": 5,
+      "title": "تطبيق لغوي: الطعام والأسرة.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "review-bc-food",
+          "url": "https://learnenglish.britishcouncil.org/free-resources/vocabulary/a1-a2/meals-cooking",
+          "language": "en",
+          "source_type": "guide",
+          "locator": "Meals and cooking / Task 1",
+          "supported_aspects_ar": "مفردات الوجبات وطرق الطهي",
+          "coverage_limits_ar": "لا يشمل وحده مفردات الأسرة أو حوارًا صحيًا متخصصًا.",
+          "check_key": "bc-food",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "3b3985e7ec14591d4f182d56304ea977f8605d247fe83db7f3c2dddce6a6674d"
+        },
+        {
+          "resource_id": "review-bc-family",
+          "url": "https://learnenglish.britishcouncil.org/free-resources/general/video-series/starting-out/episode-09-family-photos",
+          "language": "en",
+          "source_type": "video",
+          "locator": "Episode 09 - Family photos / Transcript",
+          "supported_aspects_ar": "نص حوار عن أفراد الأسرة والقرابة",
+          "coverage_limits_ar": "لم يُختبر تشغيل الفيديو؛ يغطي أمثلة محددة فقط.",
+          "check_key": "bc-family-canonical",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "756c950046edf0a67e400d5dd9c3227d3633ad6da024e84b3cb5dbad9a858898"
+        }
+      ],
+      "remaining_scope_ar": "لا يشمل وحده مفردات الأسرة أو حوارًا صحيًا متخصصًا.؛ لم يُختبر تشغيل الفيديو؛ يغطي أمثلة محددة فقط."
+    },
+    {
+      "id": "CRS-026-M07",
+      "course_id": "CRS-026",
+      "code": "LANG 202y",
+      "course": "مهارات التواصل 2",
+      "module_index": 6,
+      "title": "تطبيق لغوي: الألوان والملابس.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "language-52ed395d65",
+          "url": "https://learnenglish.britishcouncil.org/free-resources/listening/a1/shopping-clothes",
+          "language": "en",
+          "source_type": "guide",
+          "locator": "Shopping for clothes / Preparation",
+          "supported_aspects_ar": "طلب لون ومقاس قطعة ملابس في نص حوار",
+          "coverage_limits_ar": "أمثلة ألوان محدودة؛ ليست قائمة شاملة بكل الألوان والملابس.",
+          "check_key": "language-52ed395d65",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "c048c4b8e7111d8b16fb92b21ac45edf487a2815236b2c99ae194c52626dcea6"
+        }
+      ],
+      "remaining_scope_ar": "أمثلة ألوان محدودة؛ ليست قائمة شاملة بكل الألوان والملابس."
+    },
+    {
+      "id": "CRS-026-M08",
+      "course_id": "CRS-026",
+      "code": "LANG 202y",
+      "course": "مهارات التواصل 2",
+      "module_index": 7,
+      "title": "تطبيق لغوي: التسوق والطلبات.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "language-52ed395d65",
+          "url": "https://learnenglish.britishcouncil.org/free-resources/listening/a1/shopping-clothes",
+          "language": "en",
+          "source_type": "guide",
+          "locator": "Shopping for clothes / Preparation",
+          "supported_aspects_ar": "طلبات التسوق والمساعدة والدفع",
+          "coverage_limits_ar": "يعرض موقف متجر ملابس واحدًا؛ ليس كل سياقات التسوق.",
+          "check_key": "language-52ed395d65",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "c048c4b8e7111d8b16fb92b21ac45edf487a2815236b2c99ae194c52626dcea6"
+        }
+      ],
+      "remaining_scope_ar": "يعرض موقف متجر ملابس واحدًا؛ ليس كل سياقات التسوق."
+    },
+    {
+      "id": "CRS-026-M09",
+      "course_id": "CRS-026",
+      "code": "LANG 202y",
+      "course": "مهارات التواصل 2",
+      "module_index": 8,
+      "title": "تطبيق لغوي: الكميات والأسعار وحوارات «كم الثمن؟».",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "language-52ed395d65",
+          "url": "https://learnenglish.britishcouncil.org/free-resources/listening/a1/shopping-clothes",
+          "language": "en",
+          "source_type": "guide",
+          "locator": "Shopping for clothes / Preparation",
+          "supported_aspects_ar": "السؤال عن الثمن وذكر السعر في الحوار",
+          "coverage_limits_ar": "لا يغطي جميع تعبيرات الكميات؛ يلزم تدريب أوسع على الأعداد والكميات.",
+          "check_key": "language-52ed395d65",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "c048c4b8e7111d8b16fb92b21ac45edf487a2815236b2c99ae194c52626dcea6"
+        }
+      ],
+      "remaining_scope_ar": "لا يغطي جميع تعبيرات الكميات؛ يلزم تدريب أوسع على الأعداد والكميات."
+    },
+    {
+      "id": "CRS-026-M10",
+      "course_id": "CRS-026",
+      "code": "LANG 202y",
+      "course": "مهارات التواصل 2",
+      "module_index": 9,
+      "title": "تطبيق لغوي: الاهتمامات والأنشطة المفضلة.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "language-7cc1dfc7ba",
+          "url": "https://learnenglish.britishcouncil.org/free-resources/speaking/a2/talking-about-personal-interests",
+          "language": "en",
+          "source_type": "guide",
+          "locator": "Talking about personal interests / Preparation",
+          "supported_aspects_ar": "التحدث عن الاهتمامات والأنشطة المفضلة",
+          "coverage_limits_ar": "نموذج حوار وتمارين؛ لا يثبت الطلاقة المستقلة.",
+          "check_key": "language-7cc1dfc7ba",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "e14d83265b16f8518974d56d167ec57b9d194004925cae383d21f4264e2cc93f"
+        }
+      ],
+      "remaining_scope_ar": "نموذج حوار وتمارين؛ لا يثبت الطلاقة المستقلة."
+    },
+    {
+      "id": "CRS-027-M03",
+      "course_id": "CRS-027",
+      "code": "EDUC 201ly",
+      "course": "استراتيجيات التثقيف الصحي",
+      "module_index": 2,
+      "title": "خصائص المتعلم واستعداده ودافعيته ونظريات تغيير السلوك.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "os-fundamentals-nursing-17",
+          "url": "https://openstax.org/books/fundamentals-nursing/pages/17-3-the-nurses-role-in-patient-and-family-education",
+          "language": "en",
+          "source_type": "chapter",
+          "locator": "17-3-the-nurses-role-in-patient-and-family-education",
+          "supported_aspects_ar": "تقييم احتياجات المتعلم واستعداده ولغته وخصائصه",
+          "coverage_limits_ar": "نظريات تغيير السلوك بكل أنواعها لم تتحقق في هذا الموضع.",
+          "check_key": "os-fundamentals-nursing-17-17-3-the-nurses-role-in-patient-and-family-education",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "d563672d894f3d8b90952e4a1a4ab652ae5d40f11e5e873197c6402f76c38632"
+        }
+      ],
+      "remaining_scope_ar": "نظريات تغيير السلوك بكل أنواعها لم تتحقق في هذا الموضع."
+    },
+    {
+      "id": "CRS-027-M06",
+      "course_id": "CRS-027",
+      "code": "EDUC 201ly",
+      "course": "استراتيجيات التثقيف الصحي",
+      "module_index": 5,
+      "title": "المحاضرات: الأغراض والأنواع والمزايا والحدود والأساليب التفاعلية.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "os-fundamentals-nursing-17",
+          "url": "https://openstax.org/books/fundamentals-nursing/pages/17-2-methods-and-approaches-to-learning-and-teaching",
+          "language": "en",
+          "source_type": "chapter",
+          "locator": "17-2-methods-and-approaches-to-learning-and-teaching",
+          "supported_aspects_ar": "المحاضرة ضمن طرق تعليم المريض والمجموعات ومزايا ملاءمة الطريقة",
+          "coverage_limits_ar": "لا يشمل كل تصنيفات المحاضرات أو تصميمها بالتفصيل.",
+          "check_key": "os-fundamentals-nursing-17-17-2-methods-and-approaches-to-learning-and-teaching",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "d57c1f486cb599a7f42e52f65ed43e2eadf689a53ba78713ba7e97ce655755e5"
+        }
+      ],
+      "remaining_scope_ar": "لا يشمل كل تصنيفات المحاضرات أو تصميمها بالتفصيل."
+    },
+    {
+      "id": "CRS-027-M07",
+      "course_id": "CRS-027",
+      "code": "EDUC 201ly",
+      "course": "استراتيجيات التثقيف الصحي",
+      "module_index": 6,
+      "title": "المناقشة وطرح الأسئلة: الأنواع والأغراض وأساليب التيسير.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "review-bc-discussion",
+          "url": "https://www.teachingenglish.org.uk/professional-development/teachers/managing-lesson/group-discussion-skills",
+          "language": "en",
+          "source_type": "guide",
+          "locator": "Group discussion skills / Why teach group discussion skills?",
+          "supported_aspects_ar": "أنواع المناقشة وإعداد المجموعات والمهارات والتغذية الراجعة",
+          "coverage_limits_ar": "السياق لغوي؛ يحتاج تكييفًا للتثقيف الصحي وطرق طرح الأسئلة.",
+          "check_key": "teaching-discussion",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "0d1ef3aba8fed2ef198ee370f69ecc2f306f3a64f18ba3057c3f28cb4df947d6"
+        }
+      ],
+      "remaining_scope_ar": "السياق لغوي؛ يحتاج تكييفًا للتثقيف الصحي وطرق طرح الأسئلة."
+    },
+    {
+      "id": "CRS-028-M05",
+      "course_id": "CRS-028",
+      "code": "NURS 206ly",
+      "course": "أخلاقيات وتشريعات التمريض",
+      "module_index": 4,
+      "title": "الفضائل والرذائل والعادات؛ الوفاء والصدق والنزاهة والتواضع والاحترام والرحمة والحكمة والشجاعة.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "openrn-nursingmpc-7-3",
+          "url": "https://wtcs.pressbooks.pub/nursingmpc/chapter/7-3-values-and-ethics-for-interprofessional-practice/",
+          "language": "en",
+          "source_type": "chapter",
+          "locator": "7.3 Values and Ethics for Interprofessional Practice / Components of IPEC’s Values/Ethics for Interprofessional Practice Competency[3]",
+          "supported_aspects_ar": "القيم والاحترام والنزاهة والأخلاقيات في عمل الفريق",
+          "coverage_limits_ar": "ليست معالجة فلسفية كاملة لكل الفضائل والرذائل المذكورة في الوحدة.",
+          "check_key": "openrn-nursingmpc-7-3",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "5f1a438ae32df975031f448e81caabdfe3c715c420a2055c038b161191280e94"
+        }
+      ],
+      "remaining_scope_ar": "ليست معالجة فلسفية كاملة لكل الفضائل والرذائل المذكورة في الوحدة."
+    },
+    {
+      "id": "CRS-028-M09",
+      "course_id": "CRS-028",
+      "code": "NURS 206ly",
+      "course": "أخلاقيات وتشريعات التمريض",
+      "module_index": 8,
+      "title": "التطور المهني وأخلاقيات التمريض والمجلس الدولي للممرضات.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "review-icn-code",
+          "url": "https://admin.icn.ch/sites/default/files/2023-06/ICN_Code-of-Ethics_EN_Web.pdf",
+          "language": "en",
+          "source_type": "guide",
+          "locator": "Nurses and practice / Nurses and the profession",
+          "supported_aspects_ar": "الميثاق الرسمي للمجلس الدولي ومسؤولية التطور والكفاية المهنية",
+          "coverage_limits_ar": "الميثاق لا يستبدل اللوائح الوطنية أو التاريخ الكامل لتطور التمريض.",
+          "check_key": "icn-pdf",
+          "checked_at": "2026-10-12",
+          "verification_method": "pdf_text_sections_inspected",
+          "content_sha256": "45e89346a7d23033dfad77b5167c691ac480cc222e46ffbd5404c820932abfce"
+        }
+      ],
+      "remaining_scope_ar": "الميثاق لا يستبدل اللوائح الوطنية أو التاريخ الكامل لتطور التمريض."
+    },
+    {
+      "id": "CRS-030-M03",
+      "course_id": "CRS-030",
+      "code": "NURS 302ly",
+      "course": "تمريض الأطفال",
+      "module_index": 2,
+      "title": "عدوى الجهاز التنفسي العلوي والتهاب الأنف والبلعوم والبلعوم واللوزتين والأذن الوسطى.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "os-microbiology-22",
+          "url": "https://openstax.org/books/microbiology/pages/22-2-bacterial-infections-of-the-respiratory-tract",
+          "language": "en",
+          "source_type": "chapter",
+          "locator": "22-2-bacterial-infections-of-the-respiratory-tract",
+          "supported_aspects_ar": "التهاب البلعوم والأذن الوسطى وعدوى تنفسية بكتيرية",
+          "coverage_limits_ar": "المرجع يشرح العدوى؛ لا يغطي وحده خطط تمريض الأطفال أو جميع العدوى الفيروسية.",
+          "check_key": "os-microbiology-22-22-2-bacterial-infections-of-the-respiratory-tract",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "2fed3ee03d01464ff6be8516dd028550eeb1bb7817f128f72463b7ee8416de47"
+        },
+        {
+          "resource_id": "os-microbiology-22",
+          "url": "https://openstax.org/books/microbiology/pages/22-3-viral-infections-of-the-respiratory-tract",
+          "language": "en",
+          "source_type": "chapter",
+          "locator": "22-3-viral-infections-of-the-respiratory-tract",
+          "supported_aspects_ar": "العدوى الفيروسية التنفسية والتهاب الأنف",
+          "coverage_limits_ar": "معلومات ميكروبيولوجية تحتاج ربطًا بتقييم الطفل ورعايته.",
+          "check_key": "os-microbiology-22-22-3-viral-infections-of-the-respiratory-tract",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "2c798d71fc96fe43d0c0ac71b75579d05886b5b47e6d2b43bfbc3efc30c32367"
+        }
+      ],
+      "remaining_scope_ar": "المرجع يشرح العدوى؛ لا يغطي وحده خطط تمريض الأطفال أو جميع العدوى الفيروسية.؛ معلومات ميكروبيولوجية تحتاج ربطًا بتقييم الطفل ورعايته."
+    },
+    {
+      "id": "CRS-031-M04",
+      "course_id": "CRS-031",
+      "code": "NURS 303ly",
+      "course": "مقدمة في الحاسوب ومعلوماتية التمريض",
+      "module_index": 3,
+      "title": "البرمجيات ونظم التشغيل والبرامج التطبيقية.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "review-nursing-informatics",
+          "url": "https://uen.pressbooks.pub/nursinginformaticsandcommunicationessentials/chapter/chapter-1/",
+          "language": "en",
+          "source_type": "book",
+          "locator": "Software / Operating System (OS) software",
+          "supported_aspects_ar": "البرمجيات ونظم التشغيل والبرامج التطبيقية",
+          "coverage_limits_ar": "دعم للمفاهيم؛ لا يثبت الاستخدام العملي للحاسوب.",
+          "check_key": "informatics",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "8d3a7d67ba3c0367be6815b209efb6a8e10bef9115a5a0413892725a8d9b4a28"
+        }
+      ],
+      "remaining_scope_ar": "دعم للمفاهيم؛ لا يثبت الاستخدام العملي للحاسوب."
+    },
+    {
+      "id": "CRS-031-M05",
+      "course_id": "CRS-031",
+      "code": "NURS 303ly",
+      "course": "مقدمة في الحاسوب ومعلوماتية التمريض",
+      "module_index": 4,
+      "title": "معالجة النصوص وإعداد وثائق مرتبطة بالتمريض.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "review-ms-word-ar",
+          "url": "https://support.microsoft.com/ar-sa/word/basic-tasks-in-word",
+          "language": "ar",
+          "source_type": "guide",
+          "locator": "المهام الأساسية في Word‏ / بدء مستند",
+          "supported_aspects_ar": "إنشاء المستند وحفظه وتنسيقه وطباعته بالعربية",
+          "coverage_limits_ar": "الدليل عام؛ إعداد نموذج وثيقة تمريض وتقييمه يحتاج تدريبًا محليًا.",
+          "check_key": "word-basics-ar",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "8b188edc4c12c3c06efcc9c12560ba28e40aa16a1f6b221bff0affdd7b9770e6"
+        },
+        {
+          "resource_id": "openrn-nursingskills-1-6",
+          "url": "https://wtcs.pressbooks.pub/nursingskills/chapter/1-6-sample-documentation/",
+          "language": "en",
+          "source_type": "guide",
+          "locator": "1.6 Sample Documentation / Sample Documentation of Expected Findings",
+          "supported_aspects_ar": "مثال وثيقة ملاحظة تمريضية لتطبيق معالجة النصوص",
+          "coverage_limits_ar": "المثال لا يغطي كل أنواع الوثائق أو مهارات البرنامج.",
+          "check_key": "openrn-nursingskills-1-6",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "16aaa72005da1768525eb2be07d5e7335568cb073a0420c9e6ac4b977eef5cd7"
+        }
+      ],
+      "remaining_scope_ar": "الدليل عام؛ إعداد نموذج وثيقة تمريض وتقييمه يحتاج تدريبًا محليًا.؛ المثال لا يغطي كل أنواع الوثائق أو مهارات البرنامج."
+    },
+    {
+      "id": "CRS-031-M06",
+      "course_id": "CRS-031",
+      "code": "NURS 303ly",
+      "course": "مقدمة في الحاسوب ومعلوماتية التمريض",
+      "module_index": 5,
+      "title": "خلفية المعلوماتية وتطورها التاريخي.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "review-nursing-informatics",
+          "url": "https://uen.pressbooks.pub/nursinginformaticsandcommunicationessentials/chapter/chapter-1/",
+          "language": "en",
+          "source_type": "book",
+          "locator": "Clinical Informatics / Nursing Informatics / DIKW",
+          "supported_aspects_ar": "تعريف المعلوماتية وتكامل علوم التمريض والحاسوب والمعلومات",
+          "coverage_limits_ar": "التطور التاريخي المفصل لم يتحقق في هذا الفصل؛ لا تعتبر الوحدة مكتملة.",
+          "check_key": "informatics",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "8d3a7d67ba3c0367be6815b209efb6a8e10bef9115a5a0413892725a8d9b4a28"
+        }
+      ],
+      "remaining_scope_ar": "التطور التاريخي المفصل لم يتحقق في هذا الفصل؛ لا تعتبر الوحدة مكتملة."
+    },
+    {
+      "id": "CRS-031-M10",
+      "course_id": "CRS-031",
+      "code": "NURS 303ly",
+      "course": "مقدمة في الحاسوب ومعلوماتية التمريض",
+      "module_index": 9,
+      "title": "السجلات الصحية الإلكترونية والسرية والوصول المسؤول.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "review-nursing-informatics",
+          "url": "https://uen.pressbooks.pub/nursinginformaticsandcommunicationessentials/chapter/chapter-6/",
+          "language": "en",
+          "source_type": "book",
+          "locator": "Electronic Health Records / Challenges with EHRs",
+          "supported_aspects_ar": "السجلات الصحية الإلكترونية ووظائفها وتحدياتها ودعم القرار",
+          "coverage_limits_ar": "المرجع تعليمي عام؛ يحتاج صلاحيات وسياسة وصول محلية.",
+          "check_key": "informatics-section-2",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "3c4cccb04436c3a642ddb8f5638127e8ac5c48a6edc4fb7a6dcb2bb17ef08ae6"
+        },
+        {
+          "resource_id": "review-nursing-informatics",
+          "url": "https://uen.pressbooks.pub/nursinginformaticsandcommunicationessentials/chapter/chapter-7/",
+          "language": "en",
+          "source_type": "book",
+          "locator": "Confidentiality and Security",
+          "supported_aspects_ar": "السرية والأمن وحماية الوصول إلى المعلومات",
+          "coverage_limits_ar": "المواد القانونية الأجنبية لا تحل محل القانون الليبي.",
+          "check_key": "informatics-security",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "10a7441eeee86b453bb57532d361062f2eb87dc04050e22ea78dea7a9769c880"
+        }
+      ],
+      "remaining_scope_ar": "المرجع تعليمي عام؛ يحتاج صلاحيات وسياسة وصول محلية.؛ المواد القانونية الأجنبية لا تحل محل القانون الليبي."
+    },
+    {
+      "id": "CRS-031-M12",
+      "course_id": "CRS-031",
+      "code": "NURS 303ly",
+      "course": "مقدمة في الحاسوب ومعلوماتية التمريض",
+      "module_index": 11,
+      "title": "التقييم النقدي للمعلوماتية وتكاملها مع الممارسة التمريضية.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "review-nursing-informatics",
+          "url": "https://uen.pressbooks.pub/nursinginformaticsandcommunicationessentials/chapter/4-2/",
+          "language": "en",
+          "source_type": "book",
+          "locator": "Information Literacy and Management",
+          "supported_aspects_ar": "التقييم النقدي للمعلومات وجودتها واستخدام الدليل في الممارسة",
+          "coverage_limits_ar": "لا يقيّم جودة منظومة الكلية الفعلية أو يثبت أثرها.",
+          "check_key": "informatics-literacy",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "89307e9fdd8c9a078255f392d15cebfbcf118e9b625c405ace129bb4905be166"
+        }
+      ],
+      "remaining_scope_ar": "لا يقيّم جودة منظومة الكلية الفعلية أو يثبت أثرها."
+    },
+    {
+      "id": "CRS-033-M04",
+      "course_id": "CRS-033",
+      "code": "LANG 301ly",
+      "course": "مصطلحات طبية 1",
+      "module_index": 3,
+      "title": "مصطلحات الجهازين الجلدي والهضمي.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "review-medterm2e",
+          "url": "https://wtcs.pressbooks.pub/medterm/chapter/3-8-glossary/",
+          "language": "en",
+          "source_type": "book",
+          "locator": "المعجم التعليمي في الفصل 3",
+          "supported_aspects_ar": "مصطلحات الجلد والإصابات والخزعة",
+          "coverage_limits_ar": "لا يثبت استيعاب كل قائمة مفردات المقرر أو القدرة على استخدامها في حوار سريري.",
+          "check_key": "mt-3",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "7f07194d2e555135e3a591d3c0c9b9bb4b574fb9ec322b460bcdae6b8d8139bb"
+        },
+        {
+          "resource_id": "review-medterm2e",
+          "url": "https://wtcs.pressbooks.pub/medterm/chapter/12-9-glossary/",
+          "language": "en",
+          "source_type": "book",
+          "locator": "المعجم التعليمي في الفصل 12",
+          "supported_aspects_ar": "مصطلحات الهضم وأعضاء الجهاز والإجراءات",
+          "coverage_limits_ar": "لا يثبت استيعاب كل قائمة مفردات المقرر أو القدرة على استخدامها في حوار سريري.",
+          "check_key": "mt-12",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "bfdd409ba9465b4c21d356ba45a9fb355b3b25a9178aae7bb1e3935a271d3efd"
+        }
+      ],
+      "remaining_scope_ar": "لا يثبت استيعاب كل قائمة مفردات المقرر أو القدرة على استخدامها في حوار سريري."
+    },
+    {
+      "id": "CRS-033-M05",
+      "course_id": "CRS-033",
+      "code": "LANG 301ly",
+      "course": "مصطلحات طبية 1",
+      "module_index": 4,
+      "title": "مصطلحات الجهازين التنفسي والقلبي الوعائي.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "review-medterm2e",
+          "url": "https://wtcs.pressbooks.pub/medterm/chapter/4-9-glossary/",
+          "language": "en",
+          "source_type": "book",
+          "locator": "المعجم التعليمي في الفصل 4",
+          "supported_aspects_ar": "مصطلحات التنفس والمجرى الهوائي والفحوص",
+          "coverage_limits_ar": "معجم تعليمي ونطق مكتوب؛ لا يثبت التدريب الشفهي أو تفسير حالة كاملة.",
+          "check_key": "mt-4",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "4cf0cbbecc9525c581c9e22500567635908a5ea5b5069643cf575c8ded12bf4d"
+        },
+        {
+          "resource_id": "review-medterm2e",
+          "url": "https://wtcs.pressbooks.pub/medterm/chapter/9-10-glossary/",
+          "language": "en",
+          "source_type": "book",
+          "locator": "المعجم التعليمي في الفصل 9",
+          "supported_aspects_ar": "مصطلحات القلب والدوران واضطرابات النظم",
+          "coverage_limits_ar": "معجم تعليمي ونطق مكتوب؛ لا يثبت التدريب الشفهي أو تفسير حالة كاملة.",
+          "check_key": "mt-9",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "b4e95a5c605c248602150380dec513ca1a48b9e427ec33e6b562b5d8686edd65"
+        }
+      ],
+      "remaining_scope_ar": "معجم تعليمي ونطق مكتوب؛ لا يثبت التدريب الشفهي أو تفسير حالة كاملة."
+    },
+    {
+      "id": "CRS-033-M06",
+      "course_id": "CRS-033",
+      "code": "LANG 301ly",
+      "course": "مصطلحات طبية 1",
+      "module_index": 5,
+      "title": "مصطلحات الدم والجهاز اللمفاوي.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "review-medterm2e",
+          "url": "https://wtcs.pressbooks.pub/medterm/chapter/10-9-glossary/",
+          "language": "en",
+          "source_type": "book",
+          "locator": "المعجم التعليمي في الفصل 10",
+          "supported_aspects_ar": "مصطلحات الدم وخلاياه وفحوصه",
+          "coverage_limits_ar": "لا يشمل التحقق من جميع اختصارات التقارير المحلية.",
+          "check_key": "mt-10",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "314cfb825a9143e11314d5555eb9fda228fc43137ad923ec65c8214e1c533a18"
+        },
+        {
+          "resource_id": "review-medterm2e",
+          "url": "https://wtcs.pressbooks.pub/medterm/chapter/11-9-glossary/",
+          "language": "en",
+          "source_type": "book",
+          "locator": "المعجم التعليمي في الفصل 11",
+          "supported_aspects_ar": "مصطلحات الجهاز اللمفاوي والمناعة",
+          "coverage_limits_ar": "لا يشمل التحقق من جميع اختصارات التقارير المحلية.",
+          "check_key": "mt-11",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "6c7b02e8522b900364d9819979b3a153746218863a5cae5f8470537785e91461"
+        }
+      ],
+      "remaining_scope_ar": "لا يشمل التحقق من جميع اختصارات التقارير المحلية."
+    },
+    {
+      "id": "CRS-033-M07",
+      "course_id": "CRS-033",
+      "code": "LANG 301ly",
+      "course": "مصطلحات طبية 1",
+      "module_index": 6,
+      "title": "مصطلحات الجهاز العضلي الهيكلي.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "review-medterm2e",
+          "url": "https://wtcs.pressbooks.pub/medterm/chapter/13-9-glossary/",
+          "language": "en",
+          "source_type": "book",
+          "locator": "المعجم التعليمي في الفصل 13",
+          "supported_aspects_ar": "مصطلحات العظام والمفاصل والإجراءات",
+          "coverage_limits_ar": "يدعم المعاني؛ لا يغني عن ممارسة النطق والتطبيق على سجلات.",
+          "check_key": "mt-13",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "e2a15d835286805db022372bf2d2f49b000707af32b90f5b2485900005169078"
+        },
+        {
+          "resource_id": "review-medterm2e",
+          "url": "https://wtcs.pressbooks.pub/medterm/chapter/14-9-glossary/",
+          "language": "en",
+          "source_type": "book",
+          "locator": "المعجم التعليمي في الفصل 14",
+          "supported_aspects_ar": "مصطلحات العضلات والحركة",
+          "coverage_limits_ar": "يدعم المعاني؛ لا يغني عن ممارسة النطق والتطبيق على سجلات.",
+          "check_key": "mt-14",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "321092b2dee89b9e50ea9e3d0b00714ab21ea7424f9de365959e6e6110df7e21"
+        }
+      ],
+      "remaining_scope_ar": "يدعم المعاني؛ لا يغني عن ممارسة النطق والتطبيق على سجلات."
+    },
+    {
+      "id": "CRS-033-M08",
+      "course_id": "CRS-033",
+      "code": "LANG 301ly",
+      "course": "مصطلحات طبية 1",
+      "module_index": 7,
+      "title": "مصطلحات الجهاز البولي.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "review-medterm2e",
+          "url": "https://wtcs.pressbooks.pub/medterm/chapter/5-9-glossary/",
+          "language": "en",
+          "source_type": "book",
+          "locator": "المعجم التعليمي في الفصل 5",
+          "supported_aspects_ar": "مصطلحات البول ووظائف الكلى والفحوص",
+          "coverage_limits_ar": "لا يثبت تغطية جميع بنود الوحدة أو تفسير النتائج المختبرية.",
+          "check_key": "mt-5",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "db048032664a20bd7c075b681f0cf3770b4502812bd176d267f25fbcaa324667"
+        }
+      ],
+      "remaining_scope_ar": "لا يثبت تغطية جميع بنود الوحدة أو تفسير النتائج المختبرية."
+    },
+    {
+      "id": "CRS-033-M09",
+      "course_id": "CRS-033",
+      "code": "LANG 301ly",
+      "course": "مصطلحات طبية 1",
+      "module_index": 8,
+      "title": "مصطلحات الجهاز التناسلي الأنثوي والذكري.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "review-medterm2e",
+          "url": "https://wtcs.pressbooks.pub/medterm/chapter/6-9-glossary/",
+          "language": "en",
+          "source_type": "book",
+          "locator": "المعجم التعليمي في الفصل 6",
+          "supported_aspects_ar": "مصطلحات الجهاز التناسلي الذكري",
+          "coverage_limits_ar": "لا يغطي وحده السياقات الثقافية أو مهارات التواصل الحساسة.",
+          "check_key": "mt-6",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "3585ee1d592f7912d715bb6db8d0ef99f8e0508dcc7af25125717696a3721b3a"
+        },
+        {
+          "resource_id": "review-medterm2e",
+          "url": "https://wtcs.pressbooks.pub/medterm/chapter/7-9-glossary/",
+          "language": "en",
+          "source_type": "book",
+          "locator": "المعجم التعليمي في الفصل 7",
+          "supported_aspects_ar": "مصطلحات الجهاز التناسلي الأنثوي",
+          "coverage_limits_ar": "لا يغطي وحده السياقات الثقافية أو مهارات التواصل الحساسة.",
+          "check_key": "mt-7",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "0e6bec6bdac49ec30fc00d6d392455bcc4f7f34a56eaeb607896317f3187c4b4"
+        }
+      ],
+      "remaining_scope_ar": "لا يغطي وحده السياقات الثقافية أو مهارات التواصل الحساسة."
+    },
+    {
+      "id": "CRS-033-M10",
+      "course_id": "CRS-033",
+      "code": "LANG 301ly",
+      "course": "مصطلحات طبية 1",
+      "module_index": 9,
+      "title": "مصطلحات جهازي الغدد الصماء والعصبي.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "review-medterm2e",
+          "url": "https://wtcs.pressbooks.pub/medterm/chapter/17-9-glossary/",
+          "language": "en",
+          "source_type": "book",
+          "locator": "المعجم التعليمي في الفصل 17",
+          "supported_aspects_ar": "مصطلحات الغدد والهرمونات واضطراباتها",
+          "coverage_limits_ar": "دعم للمصطلح؛ لا يدّعي التفسير السريري الكامل.",
+          "check_key": "mt-17",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "003c5a6d2d9ae05356171b6426c04421c4e3bc2fd310bc113419e5f8dd5ef09a"
+        },
+        {
+          "resource_id": "review-medterm2e",
+          "url": "https://wtcs.pressbooks.pub/medterm/chapter/16-9-glossary/",
+          "language": "en",
+          "source_type": "book",
+          "locator": "المعجم التعليمي في الفصل 16",
+          "supported_aspects_ar": "مصطلحات الأعصاب والاضطرابات والإجراءات",
+          "coverage_limits_ar": "دعم للمصطلح؛ لا يدّعي التفسير السريري الكامل.",
+          "check_key": "mt-16",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "0a5ed0618477976a80cb31392f93947f963874df68cc4ed1e5027df518df1f92"
+        }
+      ],
+      "remaining_scope_ar": "دعم للمصطلح؛ لا يدّعي التفسير السريري الكامل."
+    },
+    {
+      "id": "CRS-033-M11",
+      "course_id": "CRS-033",
+      "code": "LANG 301ly",
+      "course": "مصطلحات طبية 1",
+      "module_index": 10,
+      "title": "مصطلحات الحواس الخاصة؛ لغة التشخيص والإجراءات.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "review-medterm2e",
+          "url": "https://wtcs.pressbooks.pub/medterm/chapter/15-8-glossary/",
+          "language": "en",
+          "source_type": "book",
+          "locator": "المعجم التعليمي في الفصل 15",
+          "supported_aspects_ar": "مصطلحات الرؤية والسمع والشم والفحوص والإجراءات",
+          "coverage_limits_ar": "لا يثبت النطق العملي أو تغطية كل لغة التشخيص.",
+          "check_key": "mt-15",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "da17d5a116ee1024fc678f576e3ba2813493fe43d255dc36c267ebeb0f93c7ea"
+        }
+      ],
+      "remaining_scope_ar": "لا يثبت النطق العملي أو تغطية كل لغة التشخيص."
+    },
+    {
+      "id": "CRS-035-M06",
+      "course_id": "CRS-035",
+      "code": "MATH 301ly",
+      "course": "الإحصاء الحيوي",
+      "module_index": 5,
+      "title": "الإحصاءات الإدارية الصحية: التعداد السكاني ونسب الإشغال.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "review-who-facility-indicators",
+          "url": "https://cdn.who.int/media/docs/default-source/world-health-data-platform/rhis-modules/facilityanalysisguidance-indicators-2021--01-21.pdf?sfvrsn=76b0be9b_5",
+          "language": "en",
+          "source_type": "guide",
+          "locator": "Bed occupancy rate (BOR): numerator and denominator",
+          "supported_aspects_ar": "تعريف إشغال الأسرة وبسطه ومقامه ضمن مؤشرات المرافق",
+          "coverage_limits_ar": "التعداد السكاني والمقامات السكانية وإجراءات الإحصاء الإداري المحلية تحتاج استكمالًا.",
+          "check_key": "who-beds-toolkit",
+          "checked_at": "2026-10-12",
+          "verification_method": "pdf_text_sections_inspected",
+          "content_sha256": "f2364eb7d01567c909070c1e7c2a57315632811f182e405ff1c9742800c9ae7b"
+        }
+      ],
+      "remaining_scope_ar": "التعداد السكاني والمقامات السكانية وإجراءات الإحصاء الإداري المحلية تحتاج استكمالًا."
+    },
+    {
+      "id": "CRS-039-M01",
+      "course_id": "CRS-039",
+      "code": "LANG 302ly",
+      "course": "مهارات التواصل 3",
+      "module_index": 0,
+      "title": "التهيئة والتعارف وأغراض التواصل الشفهي.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "language-ec4c4c0587",
+          "url": "https://learnenglish.britishcouncil.org/free-resources/speaking/a1/meeting-new-people",
+          "language": "en",
+          "source_type": "guide",
+          "locator": "Meeting new people / Preparation",
+          "supported_aspects_ar": "نموذج تعارف وتواصل شفهي بالإنجليزية",
+          "coverage_limits_ar": "درس تمهيدي؛ لا يثبت المستوى المطلوب للمقرر الثالث.",
+          "check_key": "language-ec4c4c0587",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "2b4848135be8617c40e59db68da36528b35fc16c06530a70358c152292427559"
+        }
+      ],
+      "remaining_scope_ar": "درس تمهيدي؛ لا يثبت المستوى المطلوب للمقرر الثالث."
+    },
+    {
+      "id": "CRS-039-M07",
+      "course_id": "CRS-039",
+      "code": "LANG 302ly",
+      "course": "مهارات التواصل 3",
+      "module_index": 6,
+      "title": "القراءة بفهم وتذوق وتعبير ونطق مناسب لأصوات العلة.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "language-d01b49b723",
+          "url": "https://learnenglish.britishcouncil.org/apps/learnenglish-sounds-right",
+          "language": "en",
+          "source_type": "tool",
+          "locator": "LearnEnglish Sounds Right / Learners of English",
+          "supported_aspects_ar": "وصف أداة أصوات العلة والصوامت ونماذجها الرسمية",
+          "coverage_limits_ar": "فُحصت صفحة الأداة لا تشغيل التطبيق؛ القراءة والتذوق والتعبير بحاجة إلى تدريب نصي.",
+          "check_key": "language-d01b49b723",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "61a0621f4518cff02f615c32d1628d4a7c10a44b45d86ea389ec949971d05786"
+        },
+        {
+          "resource_id": "language-7333dbf59e",
+          "url": "https://learnenglish.britishcouncil.org/free-resources/reading/b1/email-request-help",
+          "language": "en",
+          "source_type": "guide",
+          "locator": "An email request for help / Preparation",
+          "supported_aspects_ar": "فهم نص طلب مساعدة بالإنجليزية وتمارينه",
+          "coverage_limits_ar": "ليس تقويمًا شاملًا للقراءة التعبيرية أو النطق.",
+          "check_key": "language-7333dbf59e",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "105fe6ae2e6b8d54fcf1a0d4a417007fe2ff39ee9e4f2dbe9dbe35a9f1ab863c"
+        }
+      ],
+      "remaining_scope_ar": "فُحصت صفحة الأداة لا تشغيل التطبيق؛ القراءة والتذوق والتعبير بحاجة إلى تدريب نصي.؛ ليس تقويمًا شاملًا للقراءة التعبيرية أو النطق."
+    },
+    {
+      "id": "CRS-039-M08",
+      "course_id": "CRS-039",
+      "code": "LANG 302ly",
+      "course": "مهارات التواصل 3",
+      "module_index": 7,
+      "title": "القراءة التعبيرية والتغذية الراجعة البناءة حول النطق.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "review-bc-discussion",
+          "url": "https://www.teachingenglish.org.uk/professional-development/teachers/managing-lesson/group-discussion-skills",
+          "language": "en",
+          "source_type": "guide",
+          "locator": "Group discussion skills / Why teach group discussion skills?",
+          "supported_aspects_ar": "إعطاء تغذية راجعة بناءة وتشجيع مشاركة المجموعة",
+          "coverage_limits_ar": "التغذية الراجعة هنا عامة وليست خطة متخصصة لتقويم النطق.",
+          "check_key": "teaching-discussion",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "0d1ef3aba8fed2ef198ee370f69ecc2f306f3a64f18ba3057c3f28cb4df947d6"
+        },
+        {
+          "resource_id": "language-d01b49b723",
+          "url": "https://learnenglish.britishcouncil.org/apps/learnenglish-sounds-right",
+          "language": "en",
+          "source_type": "tool",
+          "locator": "LearnEnglish Sounds Right / Learners of English",
+          "supported_aspects_ar": "مرجع أصوات يمكن الاستعانة به للنطق",
+          "coverage_limits_ar": "لا يثبت قراءة الطالب التعبيرية أو صحة نطقه بالفعل.",
+          "check_key": "language-d01b49b723",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "61a0621f4518cff02f615c32d1628d4a7c10a44b45d86ea389ec949971d05786"
+        }
+      ],
+      "remaining_scope_ar": "التغذية الراجعة هنا عامة وليست خطة متخصصة لتقويم النطق.؛ لا يثبت قراءة الطالب التعبيرية أو صحة نطقه بالفعل."
+    },
+    {
+      "id": "CRS-039-M09",
+      "course_id": "CRS-039",
+      "code": "LANG 302ly",
+      "course": "مهارات التواصل 3",
+      "module_index": 8,
+      "title": "تبادل الأفكار عبر تمارين النطق والتواصل.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "language-78f0b1a04d",
+          "url": "https://learnenglish.britishcouncil.org/free-resources/listening/a1/organising-group-project",
+          "language": "en",
+          "source_type": "guide",
+          "locator": "Organising a group project / Preparation",
+          "supported_aspects_ar": "تبادل أفكار لتنظيم مشروع جماعي في نص حوار",
+          "coverage_limits_ar": "الحوار يدعم التواصل؛ تمارين النطق والتقويم الصوتي ليست مكتملة.",
+          "check_key": "language-78f0b1a04d",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "2f8fcd7284a50771021ecd43d20ea8b307e3d4c67beac15f8b99f2f746a6acb9"
+        }
+      ],
+      "remaining_scope_ar": "الحوار يدعم التواصل؛ تمارين النطق والتقويم الصوتي ليست مكتملة."
+    },
+    {
+      "id": "CRS-039-M11",
+      "course_id": "CRS-039",
+      "code": "LANG 302ly",
+      "course": "مهارات التواصل 3",
+      "module_index": 10,
+      "title": "تنظيم عرض عام أو رسمي قصير بدعم تمهيدي من الشرائح.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "review-bc-discussion",
+          "url": "https://www.teachingenglish.org.uk/professional-development/teachers/managing-lesson/group-discussion-skills",
+          "language": "en",
+          "source_type": "guide",
+          "locator": "Group discussion skills / Why teach group discussion skills?",
+          "supported_aspects_ar": "تنظيم الأفكار والمشاركة وتقديم الرأي للمجموعة",
+          "coverage_limits_ar": "لا يغطي إعداد الشرائح أو كل عناصر العرض الرسمي؛ تبقى فجوة نطاق معلنة.",
+          "check_key": "teaching-discussion",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "0d1ef3aba8fed2ef198ee370f69ecc2f306f3a64f18ba3057c3f28cb4df947d6"
+        }
+      ],
+      "remaining_scope_ar": "لا يغطي إعداد الشرائح أو كل عناصر العرض الرسمي؛ تبقى فجوة نطاق معلنة."
+    },
+    {
+      "id": "CRS-043-M11",
+      "course_id": "CRS-043",
+      "code": "NURS 404ly",
+      "course": "البحث التمريضي 1",
+      "module_index": 10,
+      "title": "عرض النتائج وتحليلها وإبلاغها وتوظيفها.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "JR-098",
+          "url": "https://opentextbc.ca/researchmethods/chapter/writing-a-research-report-in-american-psychological-association-apa-style/",
+          "language": "en",
+          "source_type": "book",
+          "locator": "Results / Discussion / APA research report",
+          "supported_aspects_ar": "قسم النتائج والمناقشة والإبلاغ في نموذج تقرير بحث",
+          "coverage_limits_ar": "السياق بحث نفسي وAPA؛ ليس دليلًا كاملًا لتوظيف نتائج البحث التمريضي.",
+          "check_key": "research-33",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "5d6ca4bfb4cb7f297561d6118b59e49667dfee617033a9bdf8b7cad68dab37c9"
+        },
+        {
+          "resource_id": "JR-084",
+          "url": "https://applications.emro.who.int/dsaf/dsa238.pdf",
+          "language": "ar",
+          "source_type": "book",
+          "locator": "الفصلان 8 و9؛ موضع الإبلاغ في الفصل 10",
+          "supported_aspects_ar": "وصف النتائج وتحليلها وتفسيرها وإبلاغها",
+          "coverage_limits_ar": "يلزم مواءمة أمثلة الدليل القديمة مع بيانات ومنهج المشروع الحالي.",
+          "check_key": "JR-084-visual",
+          "checked_at": "2026-10-12",
+          "verification_method": "pdf_visual_sections_inspected",
+          "content_sha256": "9b01b58166a9c8ac312b6af6fced1d5d7d58f23f1d0d107d0f8cfa9b557323e6"
+        }
+      ],
+      "remaining_scope_ar": "السياق بحث نفسي وAPA؛ ليس دليلًا كاملًا لتوظيف نتائج البحث التمريضي.؛ يلزم مواءمة أمثلة الدليل القديمة مع بيانات ومنهج المشروع الحالي."
+    },
+    {
+      "id": "CRS-043-M12",
+      "course_id": "CRS-043",
+      "code": "NURS 404ly",
+      "course": "البحث التمريضي 1",
+      "module_index": 11,
+      "title": "تكامل المقترح وتبرير المنهجية والاستعداد لحلقة المناقشة.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "JR-084",
+          "url": "https://applications.emro.who.int/dsaf/dsa238.pdf",
+          "language": "ar",
+          "source_type": "book",
+          "locator": "الفصل 6: تقديم اقتراح البحث؛ صفحتا PDF 77 و81",
+          "supported_aspects_ar": "معايير جودة مقترح المشروع وتبرير تصميمه وقدرته على التنفيذ وميزانيته",
+          "coverage_limits_ar": "لا يثبت اكتمال مقترح الطالب أو استعداده الفعلي للمناقشة.",
+          "check_key": "JR-084-visual",
+          "checked_at": "2026-10-12",
+          "verification_method": "pdf_visual_sections_inspected",
+          "content_sha256": "9b01b58166a9c8ac312b6af6fced1d5d7d58f23f1d0d107d0f8cfa9b557323e6"
+        }
+      ],
+      "remaining_scope_ar": "لا يثبت اكتمال مقترح الطالب أو استعداده الفعلي للمناقشة."
+    },
+    {
+      "id": "CRS-044-M01",
+      "course_id": "CRS-044",
+      "code": "LANG 401ly",
+      "course": "مصطلحات طبية 2",
+      "module_index": 0,
+      "title": "مصطلحات قسم الطوارئ؛ مراجعة أجزاء الكلمات والاختصارات.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "os-medical-surgical-nursing-33",
+          "url": "https://openstax.org/books/medical-surgical-nursing/pages/33-1-triage-and-assessment",
+          "language": "en",
+          "source_type": "chapter",
+          "locator": "33-1-triage-and-assessment",
+          "supported_aspects_ar": "مصطلحات الفرز وABCDE والتقييم والتوثيق في الطوارئ",
+          "coverage_limits_ar": "يبقى تمرين أجزاء الكلمات والاختصارات المحلية والتواصل الشفهي مطلوبًا.",
+          "check_key": "os-medical-surgical-nursing-33-33-1-triage-and-assessment",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "c8ceff60ac5d352abe3e5a9e0289bf65ff31e7673e15474bdd1c4c5320dcd825"
+        },
+        {
+          "resource_id": "CS-023",
+          "url": "https://medlineplus.gov/medwords/Tutorial_Understanding_Medical_Words.pdf",
+          "language": "en",
+          "source_type": "guide",
+          "locator": "Understanding Medical Words: Break It Up / Word Roots / Abbreviations",
+          "supported_aspects_ar": "شرح تجزئة الكلمات والجذور والبادئات واللواحق والاختصارات",
+          "coverage_limits_ar": "الشرح عام، ولا يقدم قائمة شاملة لمصطلحات الطوارئ.",
+          "check_key": "CS-023",
+          "checked_at": "2026-10-12",
+          "verification_method": "pdf_text_sections_inspected",
+          "content_sha256": "e2d0333f4fcbfa683333fd74f21ce7d8fd6b26724327fc4e370e15553016859a"
+        }
+      ],
+      "remaining_scope_ar": "يبقى تمرين أجزاء الكلمات والاختصارات المحلية والتواصل الشفهي مطلوبًا.؛ الشرح عام، ولا يقدم قائمة شاملة لمصطلحات الطوارئ."
+    },
+    {
+      "id": "CRS-044-M02",
+      "course_id": "CRS-044",
+      "code": "LANG 401ly",
+      "course": "مصطلحات طبية 2",
+      "module_index": 1,
+      "title": "مصطلحات القلب وتفسير السجلات في سياقها.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "review-medterm2e",
+          "url": "https://wtcs.pressbooks.pub/medterm/chapter/9-10-glossary/",
+          "language": "en",
+          "source_type": "book",
+          "locator": "المعجم التعليمي في الفصل 9",
+          "supported_aspects_ar": "لغة القلب وECG واضطرابات النظم ومعاني المصطلحات",
+          "coverage_limits_ar": "لا يعلّم وحده تفسير سجل قلب كامل أو اتخاذ قرار علاجي.",
+          "check_key": "mt-9",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "b4e95a5c605c248602150380dec513ca1a48b9e427ec33e6b562b5d8686edd65"
+        },
+        {
+          "resource_id": "openrn-nursingfundamentals-2-5",
+          "url": "https://wtcs.pressbooks.pub/nursingfundamentals/chapter/2-5-documentation/",
+          "language": "en",
+          "source_type": "guide",
+          "locator": "2.5 Documentation / Using Technology to Access Information",
+          "supported_aspects_ar": "نماذج DAR وSOAPIE وقراءة عناصر التوثيق",
+          "coverage_limits_ar": "النماذج عامة؛ لا تختص كلها بأمراض القلب.",
+          "check_key": "openrn-nursingfundamentals-2-5",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "42aaf4a6f8ab3872eb55dce4cb953dc9e8b27364a0f07b429df152916aec82d9"
+        }
+      ],
+      "remaining_scope_ar": "لا يعلّم وحده تفسير سجل قلب كامل أو اتخاذ قرار علاجي.؛ النماذج عامة؛ لا تختص كلها بأمراض القلب."
+    },
+    {
+      "id": "CRS-044-M03",
+      "course_id": "CRS-044",
+      "code": "LANG 401ly",
+      "course": "مصطلحات طبية 2",
+      "module_index": 2,
+      "title": "مصطلحات العناية المركزة والتواصل السريري.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "os-medical-surgical-nursing-35",
+          "url": "https://openstax.org/books/medical-surgical-nursing/pages/35-1-assessment-and-management-of-the-critically-ill-patient",
+          "language": "en",
+          "source_type": "chapter",
+          "locator": "35-1-assessment-and-management-of-the-critically-ill-patient",
+          "supported_aspects_ar": "لغة التقييم والرعاية في العناية المركزة",
+          "coverage_limits_ar": "لا يقدم بنك مصطلحات شاملًا أو تقويمًا للتواصل في المواقف الحرجة.",
+          "check_key": "os-medical-surgical-nursing-35-35-1-assessment-and-management-of-the-critically-ill-patient",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "55873f56c96bf98768f0dc9d7c280c16ffb90e80328e5ef0ed81b78dc88696ae"
+        },
+        {
+          "resource_id": "openrn-nursingmpc-3-2",
+          "url": "https://wtcs.pressbooks.pub/nursingmpc/chapter/3-2-communication/",
+          "language": "en",
+          "source_type": "chapter",
+          "locator": "3.2 Communication",
+          "supported_aspects_ar": "التسليم والتواصل المنظم مع الفريق",
+          "coverage_limits_ar": "يلزم تطبيقه على حالات العناية المركزة وتقييم الأداء الشفهي.",
+          "check_key": "openrn-nursingmpc-3-2",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "d83f4984c13493430198199a8ca8939fab504dcd10623653ebd9d9c5c790b930"
+        }
+      ],
+      "remaining_scope_ar": "لا يقدم بنك مصطلحات شاملًا أو تقويمًا للتواصل في المواقف الحرجة.؛ يلزم تطبيقه على حالات العناية المركزة وتقييم الأداء الشفهي."
+    },
+    {
+      "id": "CRS-044-M05",
+      "course_id": "CRS-044",
+      "code": "LANG 401ly",
+      "course": "مصطلحات طبية 2",
+      "module_index": 4,
+      "title": "مصطلحات الأورام وتفسير لغة العلاج.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "os-medical-surgical-nursing-31",
+          "url": "https://openstax.org/books/medical-surgical-nursing/pages/31-3-care-of-the-patient-with-cancer",
+          "language": "en",
+          "source_type": "chapter",
+          "locator": "31-3-care-of-the-patient-with-cancer",
+          "supported_aspects_ar": "مصطلحات رعاية مريض السرطان والتواصل والعلاج",
+          "coverage_limits_ar": "لا يثبت فهم جميع نظم العلاج أو اختصاصات الأورام.",
+          "check_key": "os-medical-surgical-nursing-31-31-3-care-of-the-patient-with-cancer",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "f0d91ead7b7310f48bebfa7587756ed8aa514a09e3c58a5d7043f10c7ff714fb"
+        },
+        {
+          "resource_id": "review-medterm2e",
+          "url": "https://wtcs.pressbooks.pub/medterm/chapter/11-9-glossary/",
+          "language": "en",
+          "source_type": "book",
+          "locator": "المعجم التعليمي في الفصل 11",
+          "supported_aspects_ar": "مصطلحات الورم والخزعة واللمفوما والانتشار",
+          "coverage_limits_ar": "يدعم جزءًا من لغة الأورام فقط.",
+          "check_key": "mt-11",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "6c7b02e8522b900364d9819979b3a153746218863a5cae5f8470537785e91461"
+        }
+      ],
+      "remaining_scope_ar": "لا يثبت فهم جميع نظم العلاج أو اختصاصات الأورام.؛ يدعم جزءًا من لغة الأورام فقط."
+    },
+    {
+      "id": "CRS-044-M06",
+      "course_id": "CRS-044",
+      "code": "LANG 401ly",
+      "course": "مصطلحات طبية 2",
+      "module_index": 5,
+      "title": "مصطلحات النساء والتوليد والمخاض والولادة.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "review-medterm2e",
+          "url": "https://wtcs.pressbooks.pub/medterm/chapter/8-8-glossary/",
+          "language": "en",
+          "source_type": "book",
+          "locator": "المعجم التعليمي في الفصل 8",
+          "supported_aspects_ar": "مصطلحات الحمل والمخاض والولادة وما بعد الولادة",
+          "coverage_limits_ar": "تبقى حوارات التواصل السريري والنطق بحاجة إلى تدريب.",
+          "check_key": "mt-8",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "d992b147c416bd33cccedacc2402e8d56ab3868a139c36e89b4a105877b3a76b"
+        }
+      ],
+      "remaining_scope_ar": "تبقى حوارات التواصل السريري والنطق بحاجة إلى تدريب."
+    },
+    {
+      "id": "CRS-044-M07",
+      "course_id": "CRS-044",
+      "code": "LANG 401ly",
+      "course": "مصطلحات طبية 2",
+      "module_index": 6,
+      "title": "مصطلحات الأطفال وحديثي الولادة.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "review-medterm2e",
+          "url": "https://wtcs.pressbooks.pub/medterm/chapter/8-4-fertilization-pregnancy-labor-delivery-and-postpartum/",
+          "language": "en",
+          "source_type": "book",
+          "locator": "8.4: Newborn Care / Apgar",
+          "supported_aspects_ar": "لغة رعاية حديث الولادة وتقييم Apgar",
+          "coverage_limits_ar": "حديثو الولادة جزء من طب الأطفال؛ مصطلحات بقية أعمار الطفولة لم تتحقق بالكامل.",
+          "check_key": "mt-8detail",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "16e3722902c51fe467187987d4839ba749d1f83c8827c558783c066a16a4ea48"
+        }
+      ],
+      "remaining_scope_ar": "حديثو الولادة جزء من طب الأطفال؛ مصطلحات بقية أعمار الطفولة لم تتحقق بالكامل."
+    },
+    {
+      "id": "CRS-044-M09",
+      "course_id": "CRS-044",
+      "code": "LANG 401ly",
+      "course": "مصطلحات طبية 2",
+      "module_index": 8,
+      "title": "مصطلحات غرفة العمليات والتواصل حول الإجراءات.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "os-medical-surgical-nursing-26",
+          "url": "https://openstax.org/books/medical-surgical-nursing/pages/26-3-intraoperative-nursing-management",
+          "language": "en",
+          "source_type": "chapter",
+          "locator": "26-3-intraoperative-nursing-management",
+          "supported_aspects_ar": "لغة أدوار الفريق والسلامة والتواصل أثناء العملية",
+          "coverage_limits_ar": "لا يثبت تغطية جميع أسماء العمليات أو إتقان الإبلاغ الشفهي.",
+          "check_key": "os-medical-surgical-nursing-26-26-3-intraoperative-nursing-management",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "5e01426e4b0a8db981e0c4c75415bcd06954f2f9a72c22ad46a3db9e5e3b889f"
+        }
+      ],
+      "remaining_scope_ar": "لا يثبت تغطية جميع أسماء العمليات أو إتقان الإبلاغ الشفهي."
+    },
+    {
+      "id": "CRS-044-M12",
+      "course_id": "CRS-044",
+      "code": "LANG 401ly",
+      "course": "مصطلحات طبية 2",
+      "module_index": 11,
+      "title": "السجلات الطبية وإدارة التمريض؛ تواصل شفهي وكتابي متكامل.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "openrn-nursingfundamentals-2-5",
+          "url": "https://wtcs.pressbooks.pub/nursingfundamentals/chapter/2-5-documentation/",
+          "language": "en",
+          "source_type": "guide",
+          "locator": "2.5 Documentation / Using Technology to Access Information",
+          "supported_aspects_ar": "صيغ التوثيق والسجل ومثال كتابي",
+          "coverage_limits_ar": "يبقى سياق إدارة التمريض والاختصارات المحلية والتقييم الشفهي بحاجة لاستكمال.",
+          "check_key": "openrn-nursingfundamentals-2-5",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "42aaf4a6f8ab3872eb55dce4cb953dc9e8b27364a0f07b429df152916aec82d9"
+        },
+        {
+          "resource_id": "openrn-nursingmpc-3-2",
+          "url": "https://wtcs.pressbooks.pub/nursingmpc/chapter/3-2-communication/",
+          "language": "en",
+          "source_type": "chapter",
+          "locator": "3.2 Communication",
+          "supported_aspects_ar": "التواصل المهني والتسليم في الفريق",
+          "coverage_limits_ar": "مصدر تعليمي لا يثبت نجاح ممارسة الطالب.",
+          "check_key": "openrn-nursingmpc-3-2",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "d83f4984c13493430198199a8ca8939fab504dcd10623653ebd9d9c5c790b930"
+        }
+      ],
+      "remaining_scope_ar": "يبقى سياق إدارة التمريض والاختصارات المحلية والتقييم الشفهي بحاجة لاستكمال.؛ مصدر تعليمي لا يثبت نجاح ممارسة الطالب."
+    },
+    {
+      "id": "CRS-045-M03",
+      "course_id": "CRS-045",
+      "code": "NURS 405ly",
+      "course": "القيادة والإدارة في التمريض",
+      "module_index": 2,
+      "title": "التواصل: المكونات والمبادئ والعوائق والطرق؛ مصادر القوة وأنواعها.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "openrn-nursingfundamentals-2-2",
+          "url": "https://wtcs.pressbooks.pub/nursingfundamentals/chapter/2-2-basic-communication-concepts/",
+          "language": "en",
+          "source_type": "chapter",
+          "locator": "2.2 Basic Communication Concepts / Types of Communication",
+          "supported_aspects_ar": "عناصر التواصل وطرقه والعوائق والتكيف مع المتلقي",
+          "coverage_limits_ar": "مصادر القوة وأنواعها لم تتحقق في هذا الموضع؛ يلزم مرجع مكمل.",
+          "check_key": "openrn-nursingfundamentals-2-2",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "ab079b8b7569146867fa9316d74597caf5d484e95bf0cf1af52bd5862e163222"
+        },
+        {
+          "resource_id": "pa-comm-001",
+          "url": "https://link.springer.com/article/10.1186/s12912-024-02038-0?error=cookies_not_supported&code=0cf37891-7dad-4f6d-b531-6f0fd1cdabf2",
+          "language": "en",
+          "source_type": "paper",
+          "locator": "Methods / Results / Discussion",
+          "supported_aspects_ar": "أبحاث عن عوائق التواصل العلاجي ونتائجه في أفريقيا",
+          "coverage_limits_ar": "المراجعة لا تقدم تصنيفًا كاملًا للقوة التنظيمية.",
+          "check_key": "pa-comm-001",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "a0bcb3dd7f33050faf554539eb6ddc9365cf6abf8a04b51fd71454d67da8adca"
+        }
+      ],
+      "remaining_scope_ar": "مصادر القوة وأنواعها لم تتحقق في هذا الموضع؛ يلزم مرجع مكمل.؛ المراجعة لا تقدم تصنيفًا كاملًا للقوة التنظيمية."
+    },
+    {
+      "id": "CRS-045-M09",
+      "course_id": "CRS-045",
+      "code": "NURS 405ly",
+      "course": "القيادة والإدارة في التمريض",
+      "module_index": 8,
+      "title": "التخطيط: الغرض والأنواع التنظيمية والعناصر والتنبؤ.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "openrn-nursingmpc-4-3",
+          "url": "https://wtcs.pressbooks.pub/nursingmpc/chapter/4-3-implementing-change/",
+          "language": "en",
+          "source_type": "chapter",
+          "locator": "4.3 Implementing Change / Change Theories",
+          "supported_aspects_ar": "التخطيط المنظم للتغيير وأهدافه وموارده وخطة العمل",
+          "coverage_limits_ar": "التنبؤ وكل أنواع التخطيط التنظيمي لم تتحقق هنا.",
+          "check_key": "openrn-nursingmpc-4-3",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "b54c64a6601abe976f210080519eeb81ad4a585bdc54c748afd56564dc98393e"
+        }
+      ],
+      "remaining_scope_ar": "التنبؤ وكل أنواع التخطيط التنظيمي لم تتحقق هنا."
+    },
+    {
+      "id": "CRS-046-M04",
+      "course_id": "CRS-046",
+      "code": "NURS 406ly",
+      "course": "تدريب تمريضي مكثف 4",
+      "module_index": 3,
+      "title": "الوحدة التدريبية 4: تقييم المرضى ذوي الحالات الحادة والحرجة ورعايتهم وفق المعايير.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "os-medical-surgical-nursing-35",
+          "url": "https://openstax.org/books/medical-surgical-nursing/pages/35-1-assessment-and-management-of-the-critically-ill-patient",
+          "language": "en",
+          "source_type": "chapter",
+          "locator": "35-1-assessment-and-management-of-the-critically-ill-patient",
+          "supported_aspects_ar": "مبادئ تقييم المريض الحرج وإدارة الرعاية وأدوار الممرض",
+          "coverage_limits_ar": "ليس قائمة تقويم مهارة أو معايير المؤسسة المحلية؛ التدريب العملي يحتاج إشرافًا.",
+          "check_key": "os-medical-surgical-nursing-35-35-1-assessment-and-management-of-the-critically-ill-patient",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "55873f56c96bf98768f0dc9d7c280c16ffb90e80328e5ef0ed81b78dc88696ae"
+        }
+      ],
+      "remaining_scope_ar": "ليس قائمة تقويم مهارة أو معايير المؤسسة المحلية؛ التدريب العملي يحتاج إشرافًا."
+    },
+    {
+      "id": "CRS-047-M04",
+      "course_id": "CRS-047",
+      "code": "NURS407ly",
+      "course": "رعاية المسنين",
+      "module_index": 3,
+      "title": "التغيرات الفسيولوجية الأساسية وأثرها الوظيفي.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "ar-8a8b2f86bbfe",
+          "url": "https://www.msdmanuals.com/ar/home/%D9%82%D8%B6%D8%A7%D9%8A%D8%A7-%D8%B5%D8%AD%D8%A9-%D9%83%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D8%B3%D9%86/%D8%B4%D9%8A%D8%AE%D9%88%D8%AE%D8%A9-%D8%A7%D9%84%D8%AC%D8%B3%D8%AF/%D8%A7%D9%84%D8%AA%D8%BA%D9%8A%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%AC%D8%B3%D8%AF%D9%8A%D8%A9-%D8%A7%D9%84%D9%85%D8%B1%D8%A7%D9%81%D9%82%D8%A9-%D9%84%D9%84%D8%B4%D9%8A%D8%AE%D9%88%D8%AE%D8%A9",
+          "language": "ar",
+          "source_type": "article",
+          "locator": "التغيرات الجسدية المرافقة للشيخوخة / شيخوخة الخلايا",
+          "supported_aspects_ar": "التغيرات في العضلات والحواس وبقية الأجهزة وآثارها الوظيفية",
+          "coverage_limits_ar": "نسخة تثقيف الجمهور؛ ليست دليل تشخيص أو خطة تمريض كاملة.",
+          "check_key": "ar-8a8b2f86bbfe",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "df8302b10cff1ce515c741cfa0511c56d21ce4e63e235df71ec38dc1edfa0cb3"
+        }
+      ],
+      "remaining_scope_ar": "نسخة تثقيف الجمهور؛ ليست دليل تشخيص أو خطة تمريض كاملة."
+    },
+    {
+      "id": "CRS-047-M06",
+      "course_id": "CRS-047",
+      "code": "NURS407ly",
+      "course": "رعاية المسنين",
+      "module_index": 5,
+      "title": "التمييز بين التغيرات العمرية المتوقعة والانحرافات الصحية.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "os-fundamentals-nursing-41",
+          "url": "https://openstax.org/books/fundamentals-nursing/pages/41-1-growth-and-development-stages",
+          "language": "en",
+          "source_type": "chapter",
+          "locator": "41-1-growth-and-development-stages",
+          "supported_aspects_ar": "التغيرات المتوقعة ومثال التفريق بين الهذيان والخرف",
+          "coverage_limits_ar": "مثال تعليمي لا يثبت إتقان جميع معايير التفريق بين الطبيعي والمرضي.",
+          "check_key": "os-fundamentals-nursing-41-41-1-growth-and-development-stages",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "6d9547ab2171ae1bc9caa1ce4bd00f415156a46b584a02a8506b25a02c87f4eb"
+        }
+      ],
+      "remaining_scope_ar": "مثال تعليمي لا يثبت إتقان جميع معايير التفريق بين الطبيعي والمرضي."
+    },
+    {
+      "id": "CRS-047-M07",
+      "course_id": "CRS-047",
+      "code": "NURS407ly",
+      "course": "رعاية المسنين",
+      "module_index": 6,
+      "title": "الاضطرابات الصحية الشائعة وآثارها التمريضية.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "os-fundamentals-nursing-41",
+          "url": "https://openstax.org/books/fundamentals-nursing/pages/41-3-health-risks-for-older-adults",
+          "language": "en",
+          "source_type": "chapter",
+          "locator": "41-3-health-risks-for-older-adults",
+          "supported_aspects_ar": "مخاطر المرض والسقوط والتراجع الوظيفي لدى كبار السن",
+          "coverage_limits_ar": "لا يغطي كل اضطراب أو بروتوكول علاجه.",
+          "check_key": "os-fundamentals-nursing-41-41-3-health-risks-for-older-adults",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "bf0cc15af7082af25c9e8268422b7d5a86a7c7d3346a955c72523a10d6944107"
+        },
+        {
+          "resource_id": "pa-clin-pmc11259443",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11259443/",
+          "language": "en",
+          "source_type": "paper",
+          "locator": "Methods / Results: fall accidents versus safe mobility",
+          "supported_aspects_ar": "بحث مراجعة نطاقية عن الوقاية من السقوط والحركة الآمنة",
+          "coverage_limits_ar": "السقوط والحركة جزء من الوحدة؛ البحث ليس بروتوكولًا عامًا لرعاية المسنين.",
+          "check_key": "pa-clin-pmc11259443",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "8d0a3569894509c49510f09c8684d34b2f2037607ac46ccb6a61649ae3eb2ad0"
+        }
+      ],
+      "remaining_scope_ar": "لا يغطي كل اضطراب أو بروتوكول علاجه.؛ السقوط والحركة جزء من الوحدة؛ البحث ليس بروتوكولًا عامًا لرعاية المسنين."
+    },
+    {
+      "id": "CRS-047-M08",
+      "course_id": "CRS-047",
+      "code": "NURS407ly",
+      "course": "رعاية المسنين",
+      "module_index": 7,
+      "title": "التقييم التغذوي وأوجه النقص والدعم الغذائي.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "ar-63c06efe6956",
+          "url": "https://www.moh.gov.sa/healthawareness/educationalcontent/health-of-older-persons/pages/003.aspx",
+          "language": "ar",
+          "source_type": "article",
+          "locator": "الوزارة / مركز المعرفة",
+          "supported_aspects_ar": "الغذاء الصحي والعوامل التي تؤثر في تناول المسن للطعام",
+          "coverage_limits_ar": "تثقيف عام؛ لا يغطي أدوات التقييم التغذوي أو العلاج الفردي كاملًا.",
+          "check_key": "ar-63c06efe6956",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "8f26cd34872bc13ac922f8f45db5696406fa77ae3948a29cb71f1ca956101859"
+        },
+        {
+          "resource_id": "review-icope2-ar",
+          "url": "https://iris.who.int/server/api/core/bitstreams/00a41385-6cac-4a1b-8192-fe346f1f6deb/content",
+          "language": "ar",
+          "source_type": "guide",
+          "locator": "الفصل 7: مسار الرعاية لتدبير سوء التغذية",
+          "supported_aspects_ar": "تقييم سوء التغذية ومسار الرعاية والدعم الغذائي",
+          "coverage_limits_ar": "يحتاج تكييفًا للموارد المحلية؛ لا يثبت ممارسة المهارة.",
+          "check_key": "who-icope-section-5",
+          "checked_at": "2026-10-12",
+          "verification_method": "pdf_text_sections_inspected",
+          "content_sha256": "d37e6fa28840ec71acbc6bb94361bd6db97247c2ca058b8bf2dbb93145e6cd0a"
+        }
+      ],
+      "remaining_scope_ar": "تثقيف عام؛ لا يغطي أدوات التقييم التغذوي أو العلاج الفردي كاملًا.؛ يحتاج تكييفًا للموارد المحلية؛ لا يثبت ممارسة المهارة."
+    },
+    {
+      "id": "CRS-047-M11",
+      "course_id": "CRS-047",
+      "code": "NURS407ly",
+      "course": "رعاية المسنين",
+      "module_index": 10,
+      "title": "خطط تمريض فردية ومعلومات صحية ودعم الأسرة.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "review-icope2-ar",
+          "url": "https://iris.who.int/server/api/core/bitstreams/00a41385-6cac-4a1b-8192-fe346f1f6deb/content",
+          "language": "ar",
+          "source_type": "guide",
+          "locator": "مسار الرعاية بأربع خطوات؛ دعم مقدمي الرعاية؛ ملحق خطة الرعاية",
+          "supported_aspects_ar": "التقييم الشخصي والخطة المتفق عليها ودعم مقدمي الرعاية",
+          "coverage_limits_ar": "خطة رعاية أولية عامة؛ يلزم تحويلها إلى خطة تمريضية مرتبطة بحالة محددة.",
+          "check_key": "who-icope-section-5",
+          "checked_at": "2026-10-12",
+          "verification_method": "pdf_text_sections_inspected",
+          "content_sha256": "d37e6fa28840ec71acbc6bb94361bd6db97247c2ca058b8bf2dbb93145e6cd0a"
+        },
+        {
+          "resource_id": "pa-spec-pmc8762939",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8762939/",
+          "language": "en",
+          "source_type": "paper",
+          "locator": "Methods / Intervention / Results / Limitations",
+          "supported_aspects_ar": "مثال بحثي لتدخل تمريضي متعدد المكونات وقياس نتائجه",
+          "coverage_limits_ar": "دراسة شبه تجريبية لفئة محددة في كوريا؛ لا تعمم نتائجها على جميع المسنين.",
+          "check_key": "pa-spec-pmc8762939",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "c957186b16dae992de7584ea3724628a55ab3bdeeca4fc722caa16e7b0f2a73c"
+        }
+      ],
+      "remaining_scope_ar": "خطة رعاية أولية عامة؛ يلزم تحويلها إلى خطة تمريضية مرتبطة بحالة محددة.؛ دراسة شبه تجريبية لفئة محددة في كوريا؛ لا تعمم نتائجها على جميع المسنين."
+    },
+    {
+      "id": "CRS-047-M12",
+      "course_id": "CRS-047",
+      "code": "NURS407ly",
+      "course": "رعاية المسنين",
+      "module_index": 11,
+      "title": "مراجعة حالات متكاملة وتواصل أخلاقي وتقويم الرعاية.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "pa-comm-018",
+          "url": "https://link.springer.com/article/10.1186/s12913-023-09120-4?error=cookies_not_supported&code=0ecac37c-a4e8-4aa1-a72e-faab65c65746",
+          "language": "en",
+          "source_type": "paper",
+          "locator": "Methods / Results / Discussion",
+          "supported_aspects_ar": "القرار المشترك وعوائق التواصل واحترام استقلالية المسن الهش",
+          "coverage_limits_ar": "مراجعة نطاقية في سياق الجراحة؛ لا تقدم حالة تمريض متكاملة أو اختبار كفاية.",
+          "check_key": "pa-comm-018",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "f60aea671a793071cf63f966b172a57d43fa44938e6afee6ebbe06fdace7539c"
+        },
+        {
+          "resource_id": "review-icope2-ar",
+          "url": "https://iris.who.int/server/api/core/bitstreams/00a41385-6cac-4a1b-8192-fe346f1f6deb/content",
+          "language": "ar",
+          "source_type": "guide",
+          "locator": "ملحق: مثال على خطة رعاية مبنية على التقييم",
+          "supported_aspects_ar": "مثال خطة شخصية والمتابعة وإعادة التقييم",
+          "coverage_limits_ar": "يبقى إعداد حالة كاملة وتقويم أداء الطالب بحاجة إلى نشاط محلي.",
+          "check_key": "who-icope-section-5",
+          "checked_at": "2026-10-12",
+          "verification_method": "pdf_text_sections_inspected",
+          "content_sha256": "d37e6fa28840ec71acbc6bb94361bd6db97247c2ca058b8bf2dbb93145e6cd0a"
+        }
+      ],
+      "remaining_scope_ar": "مراجعة نطاقية في سياق الجراحة؛ لا تقدم حالة تمريض متكاملة أو اختبار كفاية.؛ يبقى إعداد حالة كاملة وتقويم أداء الطالب بحاجة إلى نشاط محلي."
+    },
+    {
+      "id": "CRS-049-M10",
+      "course_id": "CRS-049",
+      "code": "NURS 409ly",
+      "course": "البحث التمريضي 2",
+      "module_index": 9,
+      "title": "عرض النتائج وتفسيرها ومناقشتها.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "JR-098",
+          "url": "https://opentextbc.ca/researchmethods/chapter/writing-a-research-report-in-american-psychological-association-apa-style/",
+          "language": "en",
+          "source_type": "book",
+          "locator": "Results / Discussion",
+          "supported_aspects_ar": "كتابة النتائج ومناقشتها وحدودها ضمن تقرير بحث",
+          "coverage_limits_ar": "لا يثبت تحليل بيانات الطالب الفعلية أو صحة اختبارات مشروعه.",
+          "check_key": "research-33",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "5d6ca4bfb4cb7f297561d6118b59e49667dfee617033a9bdf8b7cad68dab37c9"
+        },
+        {
+          "resource_id": "JR-084",
+          "url": "https://applications.emro.who.int/dsaf/dsa238.pdf",
+          "language": "ar",
+          "source_type": "book",
+          "locator": "الفصل 9؛ صفحة PDF 109",
+          "supported_aspects_ar": "تفسير النتائج والمقارنة وضوابط الاستنتاج",
+          "coverage_limits_ar": "لا يمثل فحصًا إحصائيًا لنتائج مشروع الطالب.",
+          "check_key": "JR-084-visual",
+          "checked_at": "2026-10-12",
+          "verification_method": "pdf_visual_sections_inspected",
+          "content_sha256": "9b01b58166a9c8ac312b6af6fced1d5d7d58f23f1d0d107d0f8cfa9b557323e6"
+        }
+      ],
+      "remaining_scope_ar": "لا يثبت تحليل بيانات الطالب الفعلية أو صحة اختبارات مشروعه.؛ لا يمثل فحصًا إحصائيًا لنتائج مشروع الطالب."
+    },
+    {
+      "id": "CRS-049-M11",
+      "course_id": "CRS-049",
+      "code": "NURS 409ly",
+      "course": "البحث التمريضي 2",
+      "module_index": 10,
+      "title": "الملخص والاستنتاجات والتوصيات والمستخلص والملاحق واستكمال التقرير.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "JR-098",
+          "url": "https://opentextbc.ca/researchmethods/chapter/writing-a-research-report-in-american-psychological-association-apa-style/",
+          "language": "en",
+          "source_type": "book",
+          "locator": "Title Page and Abstract / Discussion / Appendices",
+          "supported_aspects_ar": "المستخلص والمناقشة والمراجع والملاحق واستكمال التقرير",
+          "coverage_limits_ar": "صيغة APA تعليمية؛ متطلبات تقرير الكلية والتوصيات تحتاج مواءمة.",
+          "check_key": "research-33",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "5d6ca4bfb4cb7f297561d6118b59e49667dfee617033a9bdf8b7cad68dab37c9"
+        },
+        {
+          "resource_id": "JR-084",
+          "url": "https://applications.emro.who.int/dsaf/dsa238.pdf",
+          "language": "ar",
+          "source_type": "book",
+          "locator": "الفصل 11؛ صفحة PDF 133",
+          "supported_aspects_ar": "بنية الورقة العلمية والمستخلص والنتائج والمناقشة",
+          "coverage_limits_ar": "إرشادات عامة قديمة؛ متطلبات الكلية والتوثيق الحديثة تحتاج مواءمة.",
+          "check_key": "JR-084-visual",
+          "checked_at": "2026-10-12",
+          "verification_method": "pdf_visual_sections_inspected",
+          "content_sha256": "9b01b58166a9c8ac312b6af6fced1d5d7d58f23f1d0d107d0f8cfa9b557323e6"
+        }
+      ],
+      "remaining_scope_ar": "صيغة APA تعليمية؛ متطلبات تقرير الكلية والتوصيات تحتاج مواءمة.؛ إرشادات عامة قديمة؛ متطلبات الكلية والتوثيق الحديثة تحتاج مواءمة."
+    },
+    {
+      "id": "CRS-050-M10",
+      "course_id": "CRS-050",
+      "code": "LANG 402ly",
+      "course": "مهارات التواصل 4",
+      "module_index": 9,
+      "title": "التعامل مع الأسئلة والإجابة بوضوح.",
+      "status": "partial_support",
+      "reviewed_at": "2026-10-12",
+      "basis": "content_section_review",
+      "full_coverage_confirmed": false,
+      "source_links": [
+        {
+          "resource_id": "review-bc-discussion",
+          "url": "https://www.teachingenglish.org.uk/professional-development/teachers/managing-lesson/group-discussion-skills",
+          "language": "en",
+          "source_type": "guide",
+          "locator": "Group discussion skills / Why teach group discussion skills?",
+          "supported_aspects_ar": "الاستجابة للمناقشة والتوضيح ودعم الرأي بلغة مناسبة",
+          "coverage_limits_ar": "أسئلة العروض الرسمية والردود تحت الضغط تحتاج تدريبًا وتقويمًا مخصصًا.",
+          "check_key": "teaching-discussion",
+          "checked_at": "2026-10-12",
+          "verification_method": "http_get_content_inspected",
+          "content_sha256": "0d1ef3aba8fed2ef198ee370f69ecc2f306f3a64f18ba3057c3f28cb4df947d6"
+        }
+      ],
+      "remaining_scope_ar": "أسئلة العروض الرسمية والردود تحت الضغط تحتاج تدريبًا وتقويمًا مخصصًا."
+    }
+  ]
+}
