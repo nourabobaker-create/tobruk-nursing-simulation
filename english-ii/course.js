@@ -123,7 +123,6 @@ function lesson(id){
    <section class="studyCard"><h3>Lesson map</h3><div class="jump">${l.sections.map((s,i)=>'<button data-jump="sec-'+i+'">'+(i+1)+'. '+esc(s.title)+'</button>').join('')}<button data-jump="quiz">Interactive check</button><button data-jump="spot">Spot what is wrong</button><button data-jump="scenario">What would you do?</button><button data-jump="final">Final case</button></div></section>
    <section class="studyCard"><h3>Progress</h3><div class="bar"><span id="lessonBar" style="width:${lessonScore(l)}%"></span></div><div class="progressLabel"><span>Interactive tasks</span><span id="lessonPct">${lessonScore(l)}%</span></div></section>
    <section class="studyCard notes"><h3>Quick notes</h3><textarea id="sideNotes" placeholder="A memory trick, translation, question..."></textarea><div class="saveState">Auto-saved</div></section>
-   <section class="studyCard" id="coach"><h3>Offline Study Coach</h3><p class="small">Ask about this lesson. Answers come from built-in lesson content, not the internet.</p><div class="chatlog" id="chatlog"><div class="msg bot">Ask me about a term, chart, comparison, or how to organize the information.</div></div><div class="suggests"><button data-ask="Explain the key terms">Key terms</button><button data-ask="What should I notice first?">What matters?</button><button data-ask="ترجم المصطلحات">ترجم المصطلحات</button></div><div class="chatrow"><input id="chatInput" placeholder="Ask a study question..."><button class="btn primary" id="askBtn">Ask</button></div></section>
   </aside>
  </div>
  <div class="rights"><b>Faculty of Nursing · Tobruk University</b><br>Lesson source foundation: Cambridge English for Nursing Intermediate Plus, Unit ${l.number+2}. Content reorganized for learning. No publisher audio embedded.</div>`;
@@ -142,9 +141,6 @@ function bindLesson(l){
  ['#notesBox','#sideNotes'].forEach(sel=>$(sel).oninput=e=>{clearTimeout(timer);timer=setTimeout(()=>save(e.target.value),250)});
  $('#prevLesson').onclick=()=>{const i=DATA.lessons.findIndex(x=>x.id===l.id);if(i>0)openLesson(DATA.lessons[i-1].id);else location.hash=''};
  $('#nextLesson').onclick=()=>{const i=DATA.lessons.findIndex(x=>x.id===l.id);if(i<DATA.lessons.length-1)openLesson(DATA.lessons[i+1].id);else location.hash='challenge'};
- $$('.suggests button').forEach(b=>b.onclick=()=>askCoach(l,b.dataset.ask));
- $('#askBtn').onclick=()=>askCoach(l,$('#chatInput').value);
- $('#chatInput').onkeydown=e=>{if(e.key==='Enter')askCoach(l,e.target.value)};
 }
 function checkQ(l,i){
  const q=l.quiz[i],sel=document.querySelector('input[name="'+l.id+'q'+i+'"]:checked'),fb=$('#fb-'+l.id+'-'+i);
@@ -159,24 +155,6 @@ function checkScenario(l){
 function refreshProgress(){
  if(state.current){const l=lessonById(state.current),p=lessonScore(l);if($('#lessonBar'))$('#lessonBar').style.width=p+'%';if($('#lessonPct'))$('#lessonPct').textContent=p+'%'}
 }
-function lessonKnowledge(l){
- const kb=[];l.sections.forEach(s=>{
-   if(s.type==='terms')s.terms.forEach(t=>kb.push({keys:[t[0],t[1],t[2]],en:t[0]+': '+t[1]+'.',ar:t[0]+' = '+t[2]}));
-   if(s.body)kb.push({keys:[s.title,s.body],en:s.body,ar:s.arBody||s.arNote||s.ar||''});
-   if(s.arNote)kb.push({keys:[s.title,s.arNote],en:s.body||s.arNote,ar:s.arNote});
- });return kb
-}
-function askCoach(l,q){
- q=(q||'').trim();if(!q)return;addMsg(q,'user');const nq=q.toLowerCase();let best=null,score=0;
- lessonKnowledge(l).forEach(k=>{let s=0;k.keys.forEach(x=>{String(x).toLowerCase().split(/\s+/).forEach(w=>{if(w.length>3&&nq.includes(w))s++})});if(s>score){score=s;best=k}});
- if(nq.includes('key term')||nq.includes('مصطلح')){const ts=l.sections.find(s=>s.type==='terms')?.terms||[];best={en:'Key terms: '+ts.slice(0,8).map(t=>t[0]).join(', ')+'.',ar:'المصطلحات الأساسية: '+ts.slice(0,8).map(t=>t[0]+' = '+t[2]).join('؛ ')+'.'}}
- if(nq.includes('notice')||nq.includes('matter')||nq.includes('أهم'))best={en:'Start by organizing the information into categories, then look for change, missing data, contradictions and what needs follow-up.',ar:'ابدأ بتنظيم المعلومات إلى فئات، ثم ابحث عن التغير والمعلومات الناقصة والتناقضات وما يحتاج متابعة.'}
- if(nq.includes('ترجم')){const ts=l.sections.find(s=>s.type==='terms')?.terms||[];best={en:'Here are the built-in lesson translations.',ar:ts.slice(0,10).map(t=>t[0]+' = '+t[2]).join('؛ ')+'.'}}
- if(!best)best={en:'I can help with the built-in terms, charts, comparison tasks, error spotting and final case for this lesson. Try naming a term or asking what information matters.',ar:'يمكنني المساعدة في مصطلحات الدرس والجداول والمقارنة واكتشاف الأخطاء والحالة النهائية. اذكر المصطلح أو اسأل ما المعلومات المهمة.'}
- const isAr=/[\u0600-\u06ff]/.test(q);if(isAr){addMsg(best.ar||best.en,'bot');addMsg(best.en,'bot')}else{addMsg(best.en,'bot');if(state.lang==='ar'&&best.ar)addMsg(best.ar,'bot')}$('#chatInput').value=''
-}
-function addMsg(text,who){const d=document.createElement('div');d.className='msg '+who;d.textContent=text;$('#chatlog').appendChild(d);$('#chatlog').scrollTop=99999}
-
 function challenge(){
  setAccent(null);state.current=null;const pool=[];DATA.lessons.forEach(l=>l.quiz.forEach(q=>pool.push({l,q})));pool.sort(()=>.5-Math.random());const qs=pool.slice(0,8);
  $('#app').innerHTML='<div class="institution">'+esc(DATA.course.institution)+' &nbsp;|&nbsp; '+esc(DATA.course.institutionAr)+'</div><section class="hero"><div class="eyebrow">Mixed Challenge</div><h1>Five lessons · one brain workout</h1><p>Use what you learned across wound care, diabetes, specimens, medications and IV therapy.</p><div class="heroAr">تحدٍ مختلط من الدروس الخمسة.</div><div class="heroActions"><button class="btn primary" id="challengeHome">Course home</button></div></section><section class="quizCard" style="margin-top:16px"><h3>Mixed clinical-language challenge</h3>'+qs.map((x,i)=>'<div class="qitem"><small>Lesson '+x.l.number+' · '+esc(x.l.title)+'</small><b style="display:block">'+(i+1)+'. '+esc(x.q.q)+'</b>'+x.q.choices.map((c,ci)=>'<label class="choice"><input type="radio" name="mix'+i+'" value="'+ci+'">'+esc(c)+'</label>').join('')+'<button class="btn mixCheck" data-i="'+i+'">Check</button><div class="feedback" id="mixfb'+i+'"></div></div>').join('')+'</section><div class="rights"><b>Faculty of Nursing · Tobruk University</b></div>';

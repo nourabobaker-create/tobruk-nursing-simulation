@@ -122,6 +122,8 @@ details.q{border:1px solid var(--line);border-radius:15px;padding:11px 13px;marg
 .ruleNote{margin-top:9px;color:var(--muted);font-size:12px}
 @media(max-width:650px){.assessmentGrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 </style>
+<link rel="stylesheet" href="companion.css?v=20261012-1">
+<meta name="study-companion-version" content="20261012-1">
 </head>
 <body>
 <header class="top"><div class="topin">
@@ -516,7 +518,7 @@ details.q{border:1px solid var(--line);border-radius:15px;padding:11px 13px;marg
 <div class="studyDock">
  <button class="fab gold" id="notebookBtn" type="button">📒 كشكولي</button>
 </div>
-<button class="chatLauncher" id="chatLauncher" type="button">💬 اسأل رفيق الدراسة</button>
+
 
 <div class="drawerShade" id="drawerShade"></div>
 <aside class="drawer" id="notebookDrawer" aria-label="كشكول الطالب">
@@ -543,17 +545,7 @@ details.q{border:1px solid var(--line);border-radius:15px;padding:11px 13px;marg
  </div>
 </aside>
 
-<section class="chatbox" id="chatbox" aria-label="اسأل رفيق الدراسة">
- <div class="chatHead"><b>💬 اسأل رفيق الدراسة</b><button class="closeX" id="closeChat" type="button">×</button></div>
- <div class="chatMsgs" id="chatMsgs"><div class="msg bot">مرحبًا 👋 اسأل بطريقتك العادية عن أي مقرر في البرنامج: اشرح، قارن، أعطني مثالًا، اختبرني، أو لخص. أبحث في محتوى رفيق الدراسة والمصادر المفتوحة المرتبطة بالمقرر، وإذا لم أجد أساسًا كافيًا للإجابة سأقول ذلك بوضوح.</div></div>
- <div class="quickQs">
-  <button type="button" data-quick-q="ما الفرق بين التشريح والفسيولوجيا؟">Anatomy vs Physiology</button>
-  <button type="button" data-quick-q="اشرح الاتزان الداخلي ببساطة">Homeostasis</button>
-  <button type="button" data-quick-q="لماذا أدرس الكيمياء الحيوية؟">Biochemistry</button>
-  <button type="button" data-quick-q="ما أهم مهارات RLE 1؟">RLE 1</button>
- </div>
- <form class="chatForm" id="chatForm"><input id="chatInput" autocomplete="off" placeholder="اكتب سؤالك..."><button>إرسال</button></form>
-</section>
+
 
 </main>
 <footer class="footer">© 2026 كلية التمريض · جامعة طبرق | Faculty of Nursing · Tobruk University</footer>
@@ -601,11 +593,8 @@ document.getElementById("exportNotes").onclick=()=>{
 };
 
 // Study Companion assistant UI. Answering/search logic lives in qa-engine.js.
-const chatbox=document.getElementById("chatbox");
-document.getElementById("chatLauncher").onclick=()=>chatbox.classList.toggle("open");
-document.getElementById("closeChat").onclick=()=>chatbox.classList.remove("open");
 </script>
 
-<script src="qa-corpus.js?v=20261006-5"></script><script src="qa-engine.js?v=20261006-5"></script><script>RafeqQA.init({lang:"ar"});</script>
+<script src="qa-corpus.js?v=20261012-1"></script><script src="../english-ii/course-data.js?v=20261012-1"></script><script src="tools-core.js?v=20261012-1"></script><script src="qa-engine.js?v=20261012-1"></script><script>RafeqQA.init({lang:"ar"});</script>
 </body>
 </html>

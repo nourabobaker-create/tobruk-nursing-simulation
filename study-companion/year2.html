@@ -29,6 +29,8 @@ main{max-width:1260px;margin:auto;padding:18px}.hero{background:linear-gradient(
 .footer{text-align:center;color:var(--muted);font-size:12px;padding:28px 16px 38px}
 @media(max-width:950px){.courseDashboard{grid-template-columns:repeat(2,1fr)}}@media(max-width:760px){.grid,.grid2,.scenarios{grid-template-columns:1fr}.assessmentGrid{grid-template-columns:repeat(2,1fr)}}@media(max-width:540px){main{padding:10px}.courseDashboard{grid-template-columns:1fr}.hero{padding:21px 17px;border-radius:22px}.topin{flex-wrap:wrap}.brand{width:100%;flex-basis:100%}}
 </style>
+<link rel="stylesheet" href="companion.css?v=20261012-1">
+<meta name="study-companion-version" content="20261012-1">
 </head><body>
 <header class="top"><div class="topin"><div class="brand"><b>كلية التمريض · جامعة طبرق</b><small>رفيق الدراسة · السنة الثانية</small></div><a class="btn" href="index.html">السنة الأولى</a><a class="btn" href="year3.html">السنة الثالثة</a><a class="btn" href="year2-en.html" dir="ltr">English</a><a class="btn" href="../student-learning-hub/">البوابة</a></div></header>
 <main>
@@ -39,9 +41,9 @@ main{max-width:1260px;margin:auto;padding:18px}.hero{background:linear-gradient(
 <section id="courseHome"><div class="courseDashboard" id="courseGrid"></div></section>
 <section class="courseView" id="courseView"><div class="courseShell"><div id="courseContent"></div></div></section>
 
-<div class="studyDock"><button class="fab" id="notebookBtn">📒 كشكولي</button></div><button class="chatLauncher" id="chatLauncher">💬 اسأل رفيق الدراسة</button>
+<div class="studyDock"><button class="fab" id="notebookBtn">📒 كشكولي</button></div>
 <div class="drawerShade" id="drawerShade"></div><aside class="drawer" id="drawer"><div class="drawerHead"><h2>📒 كشكولي · السنة الثانية</h2><button class="closeX" id="closeNotebook">×</button></div><div class="drawerBody"><p style="color:var(--muted)">تُحفظ الملاحظات على هذا الجهاز والمتصفح فقط.</p><select class="noteSelect" id="noteCourse"></select><textarea class="noteArea" id="noteArea" placeholder="اكتب ملاحظاتك..."></textarea><div class="noteStatus" id="noteStatus">محفوظ تلقائيًا</div><button class="btn" id="exportNotes">تصدير الكشكول</button></div></aside>
-<section class="chatbox" id="chatbox"><div class="chatHead"><b>💬 اسأل رفيق الدراسة</b><button class="closeX" id="closeChat">×</button></div><div class="chatMsgs" id="chatMsgs"><div class="msg bot">اسألني عن أحد مقررات السنة الثانية أو مفهوم فيها، مثل: Pathophysiology، pharmacokinetics، stages of labor، therapeutic diet، أو primary health care.</div></div><form class="chatForm" id="chatForm"><input id="chatInput" placeholder="اكتب سؤالك..."><button>إرسال</button></form></section>
+
 </main><footer class="footer">© 2026 كلية التمريض · جامعة طبرق</footer>
 
 <script>
@@ -76,6 +78,5 @@ const drawer=document.getElementById("drawer"),shade=document.getElementById("dr
 function loadNote(){area.value=localStorage.getItem(key(sel.value))||"";status.textContent="محفوظ تلقائيًا"}function openNotebook(id){if(id)sel.value=id;loadNote();drawer.classList.add("open");shade.classList.add("open")}function closeNotebook(){drawer.classList.remove("open");shade.classList.remove("open")}document.getElementById("notebookBtn").onclick=()=>openNotebook(current?.id);document.getElementById("closeNotebook").onclick=closeNotebook;shade.onclick=closeNotebook;sel.onchange=loadNote;let timer;area.oninput=()=>{status.textContent="جارٍ الحفظ…";clearTimeout(timer);timer=setTimeout(()=>{localStorage.setItem(key(sel.value),area.value);status.textContent="تم الحفظ ✓"},220)};document.getElementById("exportNotes").onclick=()=>{let t="كشكول رفيق الدراسة - السنة الثانية\n\n";["general",...C.map(c=>c.id)].forEach(id=>{const v=localStorage.getItem(key(id));if(v&&v.trim()){const c=C.find(x=>x.id===id);t+=(c?c.n:"ملاحظات عامة")+"\n"+"=".repeat(25)+"\n"+v.trim()+"\n\n"}});const blob=new Blob([t],{type:"text/plain;charset=utf-8"}),a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="كشكول-السنة-الثانية.txt";a.click()};
 
 // Chat
-const chat=document.getElementById("chatbox"),msgs=document.getElementById("chatMsgs");document.getElementById("chatLauncher").onclick=()=>chat.classList.toggle("open");document.getElementById("closeChat").onclick=()=>chat.classList.remove("open");function add(t,w){const d=document.createElement("div");d.className="msg "+w;d.textContent=t;msgs.appendChild(d);msgs.scrollTop=msgs.scrollHeight}function ans(q){const x=q.toLowerCase(), words=x.split(/\s+/).filter(w=>w.length>2);let best=null,score=0;for(const c of C){const txt=[c.n,c.en,c.big,...c.concepts.flat(),...c.lessons.flat(),...c.sc.flat()].join(" ").toLowerCase();const s=words.reduce((a,w)=>a+(txt.includes(w)?1:0),0)+(x.includes(c.en.toLowerCase())||x.includes(c.n.toLowerCase())?3:0);if(s>score){score=s;best=c}}if(best)return "هذا السؤال يرتبط بمقرر «"+best.n+"».\n\n"+best.big+"\n\nافتح بطاقة المقرر لترى المفاهيم والمواقف المرتبطة به.";return "اذكر اسم المقرر أو المفهوم بصورة أوضح، مثل: pharmacokinetics، fluid balance، labor، therapeutic diet، growth milestones، أو informed consent."}document.getElementById("chatForm").onsubmit=e=>{e.preventDefault();const i=document.getElementById("chatInput"),q=i.value.trim();if(!q)return;add(q,"user");i.value="";setTimeout(()=>add(ans(q),"bot"),60)}
-</script><script src="qa-corpus.js?v=20261006-5"></script><script src="qa-engine.js?v=20261006-5"></script><script>RafeqQA.init({lang:"ar"});</script>
+</script><script src="qa-corpus.js?v=20261012-1"></script><script src="../english-ii/course-data.js?v=20261012-1"></script><script src="tools-core.js?v=20261012-1"></script><script src="qa-engine.js?v=20261012-1"></script><script>RafeqQA.init({lang:"ar"});</script>
 </body></html>

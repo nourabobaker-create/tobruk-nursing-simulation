@@ -7,7 +7,9 @@
 <title>English II · Faculty of Nursing · Tobruk University</title>
 <meta name="description" content="Interactive English II clinical learning course for nursing students at Tobruk University.">
 <link rel="manifest" href="manifest.webmanifest">
-<link rel="stylesheet" href="course.css?v=5">
+<link rel="stylesheet" href="course.css?v=20261012-1">
+<link rel="stylesheet" href="../study-companion/companion.css?v=20261012-1">
+<meta name="study-companion-version" content="20261012-1">
 </head>
 <body>
 <header class="topbar">
@@ -38,10 +40,14 @@
 </div>
 <main class="shell" id="app"></main>
 <noscript><div class="shell"><p>This interactive course requires JavaScript.</p></div></noscript>
-<script src="course-data.js?v=5"></script>
-<script src="course.js?v=5"></script>
+<script src="course-data.js?v=20261012-1"></script>
+<script src="course.js?v=20261012-1"></script>
+<script src="../study-companion/qa-corpus.js?v=20261012-1"></script>
+<script src="../study-companion/tools-core.js?v=20261012-1"></script>
+<script src="../study-companion/qa-engine.js?v=20261012-1"></script>
+<script>RafeqQA.init({englishLessons:true});</script>
 <script>
-if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js?v=5').catch(()=>{}))}
+if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js?v=20261012-1').catch(()=>{}))}
 </script>
 </body>
 </html>
