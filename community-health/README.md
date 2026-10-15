@@ -1,10 +1,10 @@
 # تمريض من أجل المجتمع
 
-Faculty of Nursing, Tobruk University — community health education prototype 0.4.1, 15 October 2026.
+Faculty of Nursing, Tobruk University — community health education prototype 0.5.0, 15 October 2026.
 
 ## Public experience
 
-91 original Arabic topic guides. Each combines an explanation, relevant symptoms or observations, practical actions, prevention, general treatment information, avoid/seek-help advice, a real-life example, and authoritative references. All guides await documented faculty review; real authors/reviewers are credited only after actual participation and consent.
+96 original Arabic topic guides. Each combines an explanation, relevant symptoms or observations, practical actions, prevention, general treatment information, avoid/seek-help advice, a real-life example, and authoritative references. All guides await documented faculty review; real authors/reviewers are credited only after actual participation and consent.
 
 The home page introduces the students' community service and self-funded voluntary effort, with an AI-generated illustrative community scene (not real students/patients). Original lightweight SVG drawings illustrate each topic. Everyday audience paths, Arabic search, favorites, print/share, larger text and device Arabic speech are available. Speech requires an available Arabic voice; local/offline and remote voices depend on the device. It never silently substitutes an English voice. Navigation stops speech.
 
@@ -18,13 +18,16 @@ The home-kit checklist can be repeated and is stored locally. No fixed water int
 - `community-extension.js`: 16 practical environmental/community guides with primary references and two audience paths.
 - `diabetes-content.js`: expanded diabetes overview and seven linked adult guides covering daily care, portion misconceptions, correction education, sick days/dehydration, hypoglycemia, feet and activity/follow-up.
 - `common-health.js`: 14 additional kidney/gout/women/addiction/mental guides and expanded blood-pressure care.
-- `health-hubs.js`: 18 visible illustrated entry points and matching dropdown selections, search aliases and related guides.
+- `conditions-update.js`, `condition-art.js`: five practical illustrated topics (PCOS, childhood tonsillitis, migraine, sinusitis, eczema and broken-skin contamination).
+- `source-sections.js`: curated source mapping for individual article sections and all scenario nodes, with honest topic-level fallback for unmapped sections.
+- `survey.js`: validated opt-in local repeated trial-survey records, upsert, summaries and formula-safe CSV.
+- `health-hubs.js`: 20 visible illustrated entry points and matching dropdown selections, search aliases and related guides.
 - `art.js`, `environment-art.js`, `clinical-art.js`: original SVG drawings, including 14 new environmental illustrations.
 - `scenario-data.js`, `simulation.js`: eight branching scenarios and a separate opt-in run record model.
 - `measure.js`: opt-in local repeated measurement, explicit cycle linkage, summaries and safe CSV export.
-- `sw.js`: scoped offline cache v0.4.1; previous app cache is migrated while unrelated caches remain untouched.
+- `sw.js`: scoped offline cache v0.5.0; previous app cache is migrated while unrelated caches remain untouched.
 - `measurement-protocol.md`: meaning, consent, pairing rules, limitations, central sharing and later quality integration.
-- `review-register.csv`: 91 article entries plus 8 scenario entries; human review and approval fields remain blank.
+- `review-register.csv`: 96 article entries plus 8 scenario entries; human review and approval fields remain blank.
 - `activity-record.csv`, `improvement-register.csv`: blank bilingual institutional work registers.
 - `plan.html`: original eight-week plan (v0.1 historical starting plan); `style.css` remains for that page. `app.js` is an unused baseline retained for reference. The public app does not load it.
 
@@ -44,7 +47,7 @@ Serve the complete folder on HTTPS, with no build/backend/paid API/CDN. All appl
 
 Update the release and cache name together. Keep source, approvals and backups under institutional ownership with a named maintainer and substitute. Confirm local emergency contacts before adding them.
 
-Software checks cover all 91 article/assessment routes, normalized Arabic search, audience filtering, bookmarks, speech text completeness and cancellation, missing Arabic voices, opt-in repeated measures, explicit cycle pairing, non-submitting feedback prefill, CSV safety, offline assets and migration. Real browser/mobile layout and audible Arabic voice quality still require device verification; no browser QA was available in this session.
+Software checks cover all 96 article/assessment routes, normalized Arabic search, audience filtering, bookmarks, speech text completeness and cancellation, missing Arabic voices, opt-in repeated measures, explicit cycle pairing, non-submitting feedback prefill, CSV safety, offline assets and migration. Real browser/mobile layout and audible Arabic voice quality still require device verification; no browser QA was available in this session.
 
 
 ## Branching scenarios
@@ -62,7 +65,7 @@ The home screen exposes diabetes, blood pressure, kidney disease, gout, women's 
 
 Insulin correction is explained with a fixed fictional arithmetic example only, using an already clinician-prescribed target and sensitivity factor in matching units. No personal dose calculator or default factor/target is provided. The education distinguishes meal insulin from correction insulin and covers active-insulin stacking, individualized timing, symptoms requiring urgent care, vomiting/diarrhea, dehydration, DKA including SGLT2-associated near-normal glucose, HHS, basal insulin and medication sick-day plans. Formula direction is explicitly isolated left-to-right within the Arabic text. Additional lesson text is included in speech.
 
-All 91 article/assessment routes, 18 nonempty entry points, icon/dropdown synchronization, full-text Arabic search, the fixed example and spoken lesson text, related links and source keys pass software checks. Existing eight scenarios, opt-in repeated records and offline cache migration pass regression checks. Original SVG illustrations were rendered and visually inspected. Actual browser/phone layout and audible Arabic quality were unavailable for verification in this environment. All additions remain educational drafts pending documented faculty review; no professional reviewer identity is fabricated.
+All 96 article/assessment routes, 18 nonempty entry points, icon/dropdown synchronization, full-text Arabic search, the fixed example and spoken lesson text, related links and source keys pass software checks. Existing eight scenarios, opt-in repeated records and offline cache migration pass regression checks. Original SVG illustrations were rendered and visually inspected. Actual browser/phone layout and audible Arabic quality were unavailable for verification in this environment. All additions remain educational drafts pending documented faculty review; no professional reviewer identity is fabricated.
 
 
 ## Hero artwork 0.4.1
@@ -70,3 +73,16 @@ All 91 article/assessment routes, 18 nonempty entry points, icon/dropdown synchr
 The headline is «بوعينا وسلوكنا الصحي، نحمي بعضنا بعضًا», supported by «نحوّل المعرفة إلى عادات صحية، ونرعى الإنسان والبيئة بروح التكافل.» The built-in image generation tool created a fictional editorial scene of a young male nurse holding an elderly man's hand as they walk together, both seen from behind without visible faces. It depicts no real participants. The website asset is `assets/community-hero-solidarity.webp` (1536×1024), compressed from the generated original. The previous image remains in the repository as historical artwork but is no longer loaded or precached by the current UI. The image is local and available in the scoped offline cache.
 
 The asset generation prompt and provenance are recorded in `assets/community-hero-solidarity.txt`.
+
+
+## Release 0.5.0: community trial and source transparency
+
+The home page explains that the application is a trial for technical operation, usability, content quality/usefulness and improvement ideas. A persistent labelled speech-bubble button opens a native Arabic survey in the app. It supports repeated participation with optional ease/clarity/usefulness ratings, multiple technical issue choices, criticism/corrections and suggestions. A response may consist of a rating or a comment; no name, demographics or patient data are requested.
+
+Preparing a response never submits it automatically. The existing college Google Form remains the central transport; its public page was rechecked and the application does not create or modify its settings. All required fields are prefilled and the visitor must press Submit in Google Forms. No development/test response was submitted. Explicit unchecked-by-default consent enables optional device storage; without consent, preparing the central handoff does not save the survey locally. Re-preparing the same form updates its saved participation; the New participation button starts another. The local dashboard/CSV count participations, not unique people, and show rating denominators excluding unanswered/not-tried choices. Local and central records are not automatically synchronized or aggregated.
+
+Every medical section exposes a readable collapsed reference disclosure. Curated mappings use “Sources for this section”; other sections clearly use the broader “Topic references” list rather than claiming precise attribution. The article header opens a full source list, including references assigned at section/lesson level. Every scenario node exposes the sources for its guidance. References are not added to spoken text, and opening an external source requires a connection. All medical content remains an educational draft awaiting faculty review.
+
+There are now 96 articles and 20 visible health entry points. Five new topics include cited explanatory sections, real-life examples, safe care and urgent warnings; tonsillitis distinguishes common viral causes from group A streptococcal complications, and eczema includes safe broken-skin care, contaminated-water avoidance and urgent infection signs. The established hero image and first-line-of-defense headline remain unchanged.
+
+Verification covers all routes, section/source keys, survey optional consent/upsert/repeat/reload/CSV safety, source disclosures, icon/dropdown synchronization, Arabic search and speech text, eight scenario graphs, existing repeated measures, and all offline assets. Original new SVG drawings were rendered and visually inspected. Actual browser/phone layout and audible Arabic quality remain unverified in this environment.
