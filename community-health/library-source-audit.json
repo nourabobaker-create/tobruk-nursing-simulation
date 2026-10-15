@@ -577,6 +577,150 @@
       "type": "application/pdf",
       "size": 2311512,
       "url": "https://www.unicef.org/adolescentkit/media/3281/file/AdolKit-Activity-guide-Our-days-AR.pdf"
+    },
+    {
+      "id": "down-family-ar",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 112137,
+      "url": "https://www.moh.gov.sa/healthawareness/educationalcontent/babyhealth/pages/005.aspx"
+    },
+    {
+      "id": "autism-family-ar",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 119134,
+      "url": "https://www.moh.gov.sa/healthawareness/educationalcontent/babyhealth/pages/autism-spectrum-disorder.aspx"
+    },
+    {
+      "id": "adhd-family-ar",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 144411,
+      "url": "https://www.moh.gov.sa/healthawareness/educationalcontent/babyhealth/pages/002.aspx"
+    },
+    {
+      "id": "cyberbullying-ar",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=UTF-8",
+      "size": 321541,
+      "url": "https://www.unicef.org/ar/%D8%A7%D9%84%D8%AA%D9%86%D9%85%D9%91%D8%B1-%D8%B9%D8%A8%D8%B1-%D8%A7%D9%84%D8%A5%D9%86%D8%AA%D8%B1%D9%86%D8%AA-%D9%83%D9%8A%D9%81-%D9%86%D9%88%D9%82%D9%81%D9%87/%D8%A7%D9%84%D9%82%D8%B6%D8%A7%D8%A1-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%B9%D9%86%D9%81"
+    },
+    {
+      "id": "body-image-ar",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=UTF-8",
+      "size": 220207,
+      "url": "https://www.unicef.org/parenting/ar/%D8%A7%D9%84%D9%85%D8%B1%D8%A7%D9%87%D9%82%D9%88%D9%86-%D9%88%D8%B5%D9%88%D8%B1%D8%A9-%D8%A7%D9%84%D8%AC%D8%B3%D8%AF/%D8%A7%D9%84%D8%B5%D8%AD%D8%A9-%D8%A7%D9%84%D8%B9%D9%82%D9%84%D9%8A%D8%A9"
+    },
+    {
+      "id": "teen-dialogue-11",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=UTF-8",
+      "size": 218992,
+      "url": "https://www.unicef.org/parenting/ar/%D9%86%D9%82%D8%A7%D8%B7-%D8%A7%D9%86%D8%B7%D9%84%D8%A7%D9%82-%D9%84%D8%A8%D8%AF%D8%A1-%D9%85%D8%AD%D8%A7%D8%AF%D8%AB%D8%A9-%D8%AD%D9%88%D9%84-%D8%A7%D9%84%D8%B5%D8%AD%D8%A9-%D8%A7%D9%84%D8%B9%D9%82%D9%84%D9%8A%D8%A9-1113-%D8%B3%D9%86%D8%A9/%D8%A7%D9%84%D8%B5%D8%AD%D8%A9-%D8%A7%D9%84%D8%B9%D9%82%D9%84%D9%8A%D8%A9"
+    },
+    {
+      "id": "teen-dialogue-14",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=UTF-8",
+      "size": 219589,
+      "url": "https://www.unicef.org/parenting/ar/%D9%86%D9%82%D8%A7%D8%B7-%D8%A7%D9%86%D8%B7%D9%84%D8%A7%D9%82-%D9%84%D8%A8%D8%AF%D8%A1-%D9%85%D8%AD%D8%A7%D8%AF%D8%AB%D8%A9-%D8%AD%D9%88%D9%84-%D8%A7%D9%84%D8%B5%D8%AD%D8%A9-%D8%A7%D9%84%D8%B9%D9%82%D9%84%D9%8A%D8%A9-1418-%D8%B3%D9%86%D8%A9/%D8%A7%D9%84%D8%B5%D8%AD%D8%A9-%D8%A7%D9%84%D8%B9%D9%82%D9%84%D9%8A%D8%A9"
+    },
+    {
+      "id": "adolescent-mental-ar",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 119230,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/adolescent-mental-health"
+    },
+    {
+      "id": "aid-book-illustrated",
+      "status": 200,
+      "arabic": true,
+      "type": "application/pdf",
+      "size": 2621256,
+      "url": "https://www.moh.gov.sa/Documents/moh-001.pdf"
+    },
+    {
+      "id": "aha-2025-ar",
+      "status": 200,
+      "arabic": true,
+      "type": "application/pdf",
+      "size": 3548192,
+      "url": "https://cpr.heart.org/-/media/CPR-Files/2025-documents-for-cpr-heart-edits-posting/Resuscitation-Science/252500_ARDZ_Hghlghts_2025ECCGuidelinesACCESSIBLE_251028.pdf?sc_lang=en"
+    },
+    {
+      "id": "home-injury-ar",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 104683,
+      "url": "https://www.moh.gov.sa/awarenessplateform/firstaid/pages/homeinjuries.aspx"
+    },
+    {
+      "id": "sports-injury-ar",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 106974,
+      "url": "https://www.moh.gov.sa/healthawareness/educationalcontent/miscellaneous/pages/022.aspx"
+    },
+    {
+      "id": "fracture-aid-ar",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 110265,
+      "url": "https://www.moh.gov.sa/healthawareness/educationalcontent/firstaid/pages/007.aspx"
+    },
+    {
+      "id": "head-aid-ar",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 110019,
+      "url": "https://www.moh.gov.sa/healthawareness/educationalcontent/firstaid/pages/008.aspx"
+    },
+    {
+      "id": "wound-aid-ar",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 104093,
+      "url": "https://www.moh.gov.sa/healthawareness/educationalcontent/firstaid/pages/017.aspx"
+    },
+    {
+      "id": "burn-aid-ar",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 119063,
+      "url": "https://www.moh.gov.sa/awarenessplateform/firstaid/pages/burns.aspx"
+    },
+    {
+      "id": "road-safety-ar",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 109586,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/road-traffic-injuries"
+    },
+    {
+      "id": "drowning-prevention-ar",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 107444,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/drowning"
     }
   ]
 }

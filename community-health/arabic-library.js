@@ -1331,5 +1331,365 @@ window.CommunityArabicLibrary=[
     "age": "لليافعين؛ دليل للمعلمين والميسرين",
     "tip": "دليل تحضير للكبار؛ اختاري نشاطًا مناسبًا دون إجبار على الإفصاح أو تحويله لعلاج نفسي.",
     "level": "تفصيلي للميسرين"
+  },
+  {
+    "id": "down-family-ar",
+    "title": "متلازمة داون: معلومات للأسرة",
+    "category": "اجتماعية ومجتمعية",
+    "description": "تعرف إلى النمو والدعم والمشكلات الصحية والمتابعة المناسبة.",
+    "topic": "down-understanding",
+    "url": "https://www.moh.gov.sa/healthawareness/educationalcontent/babyhealth/pages/005.aspx",
+    "publisher": "وزارة الصحة السعودية",
+    "language": "العربية",
+    "checked": "2026-10-16",
+    "kind": "article",
+    "level": "شرح للأسر والمعلمين",
+    "audiences": [
+      "public",
+      "teacher",
+      "teen"
+    ],
+    "age": "للأسرة والمعلمين والمراهقين مع دعم مناسب للعمر",
+    "tip": "ابدأ بالشرح المبسط داخل التطبيق؛ ناقش الأسئلة بهدوء دون تشخيص من علامة واحدة أو إحراج الطفل."
+  },
+  {
+    "id": "autism-family-ar",
+    "title": "التوحد: فهم ودعم فردي",
+    "category": "الدماغ والأعصاب",
+    "description": "شرح للنمو والتواصل وتنوع الاحتياجات وخيارات المساندة.",
+    "topic": "autism-understanding",
+    "url": "https://www.moh.gov.sa/healthawareness/educationalcontent/babyhealth/pages/autism-spectrum-disorder.aspx",
+    "publisher": "وزارة الصحة السعودية",
+    "language": "العربية",
+    "checked": "2026-10-16",
+    "kind": "article",
+    "level": "شرح للأسر والمعلمين",
+    "audiences": [
+      "public",
+      "teacher",
+      "teen"
+    ],
+    "age": "للأسرة والمعلمين والمراهقين مع دعم مناسب للعمر",
+    "tip": "ابدأ بالشرح المبسط داخل التطبيق؛ ناقش الأسئلة بهدوء دون تشخيص من علامة واحدة أو إحراج الطفل."
+  },
+  {
+    "id": "adhd-family-ar",
+    "title": "الانتباه وفرط الحركة",
+    "category": "الدماغ والأعصاب",
+    "description": "كيف نفهم صعوبات التنظيم والانتباه ومتى نطلب تقييمًا؟",
+    "topic": "adhd-family-support",
+    "url": "https://www.moh.gov.sa/healthawareness/educationalcontent/babyhealth/pages/002.aspx",
+    "publisher": "وزارة الصحة السعودية",
+    "language": "العربية",
+    "checked": "2026-10-16",
+    "kind": "article",
+    "level": "شرح للأسر والمعلمين",
+    "audiences": [
+      "public",
+      "teacher",
+      "teen"
+    ],
+    "age": "للأسرة والمعلمين والمراهقين مع دعم مناسب للعمر",
+    "tip": "ابدأ بالشرح المبسط داخل التطبيق؛ ناقش الأسئلة بهدوء دون تشخيص من علامة واحدة أو إحراج الطفل."
+  },
+  {
+    "id": "cyberbullying-ar",
+    "title": "التنمر الرقمي وطلب العون",
+    "category": "نفسية وسلوك",
+    "description": "طرق للحماية والإبلاغ والمساندة دون توسيع نشر الأذى.",
+    "topic": "cyberbullying-safety",
+    "url": "https://www.unicef.org/ar/التنمّر-عبر-الإنترنت-كيف-نوقفه/القضاء-على-العنف",
+    "publisher": "اليونيسف",
+    "language": "العربية",
+    "checked": "2026-10-16",
+    "kind": "article",
+    "level": "شرح للأسر والمعلمين",
+    "audiences": [
+      "public",
+      "teacher",
+      "teen"
+    ],
+    "age": "للأسرة والمعلمين والمراهقين مع دعم مناسب للعمر",
+    "tip": "ابدأ بالشرح المبسط داخل التطبيق؛ ناقش الأسئلة بهدوء دون تشخيص من علامة واحدة أو إحراج الطفل."
+  },
+  {
+    "id": "body-image-ar",
+    "title": "صورة الجسد لدى المراهقين",
+    "category": "نفسية وسلوك",
+    "description": "حوار أسري يحترم الجسد ويقلل أثر المقارنة والصور المعدلة.",
+    "topic": "teen-body-image",
+    "url": "https://www.unicef.org/parenting/ar/المراهقون-وصورة-الجسد/الصحة-العقلية",
+    "publisher": "اليونيسف",
+    "language": "العربية",
+    "checked": "2026-10-16",
+    "kind": "article",
+    "level": "شرح للأسر والمعلمين",
+    "audiences": [
+      "public",
+      "teacher",
+      "teen"
+    ],
+    "age": "للأسرة والمعلمين والمراهقين مع دعم مناسب للعمر",
+    "tip": "ابدأ بالشرح المبسط داخل التطبيق؛ ناقش الأسئلة بهدوء دون تشخيص من علامة واحدة أو إحراج الطفل."
+  },
+  {
+    "id": "teen-dialogue-11",
+    "title": "الحوار مع عمر 11–13 سنة",
+    "category": "نفسية وسلوك",
+    "description": "أفكار لفتح باب الحديث عن المشاعر والمدرسة والقلق.",
+    "topic": "teen-family-dialogue",
+    "url": "https://www.unicef.org/parenting/ar/نقاط-انطلاق-لبدء-محادثة-حول-الصحة-العقلية-1113-سنة/الصحة-العقلية",
+    "publisher": "اليونيسف",
+    "language": "العربية",
+    "checked": "2026-10-16",
+    "kind": "article",
+    "level": "شرح للأسر والمعلمين",
+    "audiences": [
+      "public",
+      "teacher",
+      "teen"
+    ],
+    "age": "للأسرة والمعلمين والمراهقين مع دعم مناسب للعمر",
+    "tip": "ابدأ بالشرح المبسط داخل التطبيق؛ ناقش الأسئلة بهدوء دون تشخيص من علامة واحدة أو إحراج الطفل."
+  },
+  {
+    "id": "teen-dialogue-14",
+    "title": "الحوار مع عمر 14–18 سنة",
+    "category": "نفسية وسلوك",
+    "description": "مساندة المراهق واحترام الخصوصية وملاحظة الحاجة للدعم.",
+    "topic": "teen-family-dialogue",
+    "url": "https://www.unicef.org/parenting/ar/نقاط-انطلاق-لبدء-محادثة-حول-الصحة-العقلية-1418-سنة/الصحة-العقلية",
+    "publisher": "اليونيسف",
+    "language": "العربية",
+    "checked": "2026-10-16",
+    "kind": "article",
+    "level": "شرح للأسر والمعلمين",
+    "audiences": [
+      "public",
+      "teacher",
+      "teen"
+    ],
+    "age": "للأسرة والمعلمين والمراهقين مع دعم مناسب للعمر",
+    "tip": "ابدأ بالشرح المبسط داخل التطبيق؛ ناقش الأسئلة بهدوء دون تشخيص من علامة واحدة أو إحراج الطفل."
+  },
+  {
+    "id": "adolescent-mental-ar",
+    "title": "فهم صحة المراهقين النفسية",
+    "category": "نفسية وسلوك",
+    "description": "عوامل الحماية ودور الأسرة والمدرسة والخدمات الصحية.",
+    "topic": "teen-family-dialogue",
+    "url": "https://www.who.int/ar/news-room/fact-sheets/detail/adolescent-mental-health",
+    "publisher": "منظمة الصحة العالمية",
+    "language": "العربية",
+    "checked": "2026-10-16",
+    "kind": "article",
+    "level": "شرح عام للكبار",
+    "audiences": [
+      "public",
+      "teacher",
+      "teen"
+    ],
+    "age": "للأسرة والمعلمين والمراهقين مع دعم مناسب للعمر",
+    "tip": "ابدأ بالشرح المبسط داخل التطبيق؛ ناقش الأسئلة بهدوء دون تشخيص من علامة واحدة أو إحراج الطفل."
+  },
+  {
+    "id": "aid-book-illustrated",
+    "title": "كتيب الإسعافات الأولية المصور",
+    "url": "https://www.moh.gov.sa/Documents/moh-001.pdf",
+    "publisher": "وزارة الصحة السعودية",
+    "kind": "book",
+    "topic": "home-accident-safety",
+    "category": "إسعاف وتكافل",
+    "description": "بطاقات مصورة عن إصابات وحالات شائعة، للاستعداد والقراءة المسبقة.",
+    "tip": "مرجع عام مصور؛ في الإنعاش والرضع ارجع إلى الدروس المحدثة وتدريب عملي معتمد.",
+    "language": "العربية",
+    "checked": "2026-10-16",
+    "level": "دليل مصور",
+    "audiences": [
+      "public",
+      "teacher",
+      "teen"
+    ],
+    "age": "للكبار والمراهقين مع توجيه؛ ليس نشاطًا عمليًا للأطفال"
+  },
+  {
+    "id": "aha-2025-ar",
+    "title": "أبرز إرشادات الإنعاش 2025 بالعربية",
+    "url": "https://cpr.heart.org/-/media/CPR-Files/2025-documents-for-cpr-heart-edits-posting/Resuscitation-Science/252500_ARDZ_Hghlghts_2025ECCGuidelinesACCESSIBLE_251028.pdf?sc_lang=en",
+    "publisher": "جمعية القلب الأمريكية AHA",
+    "kind": "book",
+    "topic": "adult-cpr",
+    "category": "إسعاف وتكافل",
+    "description": "ملخص مهني حديث عن إنعاش البالغين والأطفال والرضع؛ يحتاج خلفية أو شرح مدرب.",
+    "tip": "مرجع مهني مفصل. دروسنا تتبع RCUK 2025؛ قد تختلف بعض التقنيات بين البروتوكولات، فالتزم بتدريب معتمد واحد.",
+    "language": "العربية",
+    "checked": "2026-10-16",
+    "level": "مهني متقدم",
+    "audiences": [
+      "public",
+      "teacher",
+      "teen"
+    ],
+    "age": "للكبار والمراهقين مع توجيه؛ ليس نشاطًا عمليًا للأطفال"
+  },
+  {
+    "id": "home-injury-ar",
+    "title": "سلامة البيت ومنع الحوادث",
+    "url": "https://www.moh.gov.sa/awarenessplateform/firstaid/pages/homeinjuries.aspx",
+    "publisher": "وزارة الصحة السعودية",
+    "kind": "article",
+    "topic": "home-accident-safety",
+    "category": "إسعاف وتكافل",
+    "description": "أفكار للوقاية من أخطار المنزل وحماية الأطفال والأسرة.",
+    "tip": "استعمله لقائمة تفقد للبيت؛ لا تجعل الأطفال يجربون الأخطار.",
+    "language": "العربية",
+    "checked": "2026-10-16",
+    "level": "شرح عام للأسرة",
+    "audiences": [
+      "public",
+      "teacher",
+      "teen"
+    ],
+    "age": "للكبار والمراهقين مع توجيه؛ ليس نشاطًا عمليًا للأطفال"
+  },
+  {
+    "id": "sports-injury-ar",
+    "title": "الإصابات الرياضية والوقاية",
+    "url": "https://www.moh.gov.sa/healthawareness/educationalcontent/miscellaneous/pages/022.aspx",
+    "publisher": "وزارة الصحة السعودية",
+    "kind": "article",
+    "topic": "sports-injury-first-aid",
+    "category": "إسعاف وتكافل",
+    "description": "كيف تحدث إصابات التمرين وما الذي يساعد على الوقاية والتعافي؟",
+    "tip": "ابدأ بدروس التصرف الأول لدينا، ثم راجع الشرح؛ لا تختبر الإصابة بمواصلة اللعب.",
+    "language": "العربية",
+    "checked": "2026-10-16",
+    "level": "شرح عام للأسرة",
+    "audiences": [
+      "public",
+      "teacher",
+      "teen"
+    ],
+    "age": "للكبار والمراهقين مع توجيه؛ ليس نشاطًا عمليًا للأطفال"
+  },
+  {
+    "id": "fracture-aid-ar",
+    "title": "الإسعاف عند الكسور",
+    "url": "https://www.moh.gov.sa/healthawareness/educationalcontent/firstaid/pages/007.aspx",
+    "publisher": "وزارة الصحة السعودية",
+    "kind": "article",
+    "topic": "fracture-care",
+    "category": "إسعاف وتكافل",
+    "description": "علامات الكسر والحماية وطلب الرعاية بدل محاولة تقويم الطرف.",
+    "tip": "استعمله للتوعية؛ لا تتدرب على تقويم مفصل أو تحريك طرف مصاب.",
+    "language": "العربية",
+    "checked": "2026-10-16",
+    "level": "شرح عام للأسرة",
+    "audiences": [
+      "public",
+      "teacher",
+      "teen"
+    ],
+    "age": "للكبار والمراهقين مع توجيه؛ ليس نشاطًا عمليًا للأطفال"
+  },
+  {
+    "id": "head-aid-ar",
+    "title": "إصابات الرأس",
+    "url": "https://www.moh.gov.sa/healthawareness/educationalcontent/firstaid/pages/008.aspx",
+    "publisher": "وزارة الصحة السعودية",
+    "kind": "article",
+    "topic": "head-injury",
+    "category": "إسعاف وتكافل",
+    "description": "متى تحتاج ضربة الرأس تقييمًا وما علامات الخطر بعدها؟",
+    "tip": "لا تعتمد على وجود جرح ظاهر؛ اقرأ علامات الخطر والعودة الآمنة للنشاط.",
+    "language": "العربية",
+    "checked": "2026-10-16",
+    "level": "شرح عام للأسرة",
+    "audiences": [
+      "public",
+      "teacher",
+      "teen"
+    ],
+    "age": "للكبار والمراهقين مع توجيه؛ ليس نشاطًا عمليًا للأطفال"
+  },
+  {
+    "id": "wound-aid-ar",
+    "title": "الجروح والتعامل الأولي",
+    "url": "https://www.moh.gov.sa/healthawareness/educationalcontent/firstaid/pages/017.aspx",
+    "publisher": "وزارة الصحة السعودية",
+    "kind": "article",
+    "topic": "bleeding",
+    "category": "إسعاف وتكافل",
+    "description": "نظافة الجروح والضغط المباشر ومتى تطلب المساعدة.",
+    "tip": "النزف الشديد طارئ؛ لا تنتظر إكمال القراءة ولا تنزع جسمًا مغروسًا.",
+    "language": "العربية",
+    "checked": "2026-10-16",
+    "level": "شرح عام للأسرة",
+    "audiences": [
+      "public",
+      "teacher",
+      "teen"
+    ],
+    "age": "للكبار والمراهقين مع توجيه؛ ليس نشاطًا عمليًا للأطفال"
+  },
+  {
+    "id": "burn-aid-ar",
+    "title": "الحروق: افعل ولا تفعل",
+    "url": "https://www.moh.gov.sa/awarenessplateform/firstaid/pages/burns.aspx",
+    "publisher": "وزارة الصحة السعودية",
+    "kind": "article",
+    "topic": "burns",
+    "category": "إسعاف وتكافل",
+    "description": "التصرف الأولي وما يجب تجنبه من خلطات وثلج وفتح فقاعات.",
+    "tip": "انتبه لقوائم لا تفعل في الصفحة؛ التعليمات الإسعافية لا تغني عن التقييم عند الحروق الخطرة.",
+    "language": "العربية",
+    "checked": "2026-10-16",
+    "level": "شرح عام للأسرة",
+    "audiences": [
+      "public",
+      "teacher",
+      "teen"
+    ],
+    "age": "للكبار والمراهقين مع توجيه؛ ليس نشاطًا عمليًا للأطفال"
+  },
+  {
+    "id": "road-safety-ar",
+    "title": "حوادث المرور والوقاية",
+    "url": "https://www.who.int/ar/news-room/fact-sheets/detail/road-traffic-injuries",
+    "publisher": "منظمة الصحة العالمية",
+    "kind": "article",
+    "topic": "road-accident-first-aid",
+    "category": "إسعاف وتكافل",
+    "description": "حزام الأمان والخوذة ومقاعد الأطفال والسرعة والرعاية المبكرة.",
+    "tip": "هذا مرجع للوقاية والصحة العامة؛ خطوات مساعدة المصاب في الدرس المرتبط.",
+    "language": "العربية",
+    "checked": "2026-10-16",
+    "level": "شرح عام للأسرة",
+    "audiences": [
+      "public",
+      "teacher",
+      "teen"
+    ],
+    "age": "للكبار والمراهقين مع توجيه؛ ليس نشاطًا عمليًا للأطفال"
+  },
+  {
+    "id": "drowning-prevention-ar",
+    "title": "الغرق وحماية الأطفال",
+    "url": "https://www.who.int/ar/news-room/fact-sheets/detail/drowning",
+    "publisher": "منظمة الصحة العالمية",
+    "kind": "article",
+    "topic": "drowning-rescue",
+    "category": "إسعاف وتكافل",
+    "description": "أخطار الغرق ووسائل الوقاية وحماية الأسرة حول الماء.",
+    "tip": "مرجع للوقاية؛ لخطوات الإنقاذ والإنعاش اقرأ الدرس المرتبط واتبع الإسعاف في الطوارئ.",
+    "language": "العربية",
+    "checked": "2026-10-16",
+    "level": "شرح عام للأسرة",
+    "audiences": [
+      "public",
+      "teacher",
+      "teen"
+    ],
+    "age": "للكبار والمراهقين مع توجيه؛ ليس نشاطًا عمليًا للأطفال"
   }
 ];
