@@ -1,0 +1,37 @@
+﻿معرف المادة | ID,المجال | Domain,العنوان | Title,المصدر | Sources,الحالة | Status,الطلاب | Student authors,موافقة إظهار الأسماء | Name consent,المراجع | Reviewer,تاريخ المراجعة | Reviewed,ملاحظات | Notes,معتمد النشر | Approved by,تاريخ الاعتماد | Approved on,المراجعة التالية | Next review,الإصدار | Version
+blood-pressure,الأمراض المزمنة,ضغط الدم قد يرتفع دون أن تشعر,https://www.who.int/news-room/fact-sheets/detail/hypertension,بانتظار مراجعة الكلية | Awaiting faculty review,,,,,,,,,0.1.0
+diabetes,الأمراض المزمنة,السكري والعناية اليومية,https://www.who.int/news-room/fact-sheets/detail/diabetes,بانتظار مراجعة الكلية | Awaiting faculty review,,,,,,,,,0.1.0
+asthma,الأمراض المزمنة,الربو وخطة واضحة للأسرة,https://www.who.int/news-room/fact-sheets/detail/asthma,بانتظار مراجعة الكلية | Awaiting faculty review,,,,,,,,,0.1.0
+balanced-food,الغذاء والتغذية,غذاء متوازن بميزانية محدودة,https://www.who.int/news-room/fact-sheets/detail/healthy-diet,بانتظار مراجعة الكلية | Awaiting faculty review,,,,,,,,,0.1.0
+less-salt,الغذاء والتغذية,ملح أقل بالتدريج,https://www.who.int/news-room/fact-sheets/detail/healthy-diet | https://www.who.int/news-room/fact-sheets/detail/hypertension,بانتظار مراجعة الكلية | Awaiting faculty review,,,,,,,,,0.1.0
+food-safety,الغذاء والتغذية,خمس عادات لغذاء أكثر أمانًا,https://www.who.int/activities/promoting-safe-food-handling/five-key-to-safer-food/ | https://www.who.int/news-room/fact-sheets/detail/diarrhoeal-disease,بانتظار مراجعة الكلية | Awaiting faculty review,,,,,,,,,0.1.0
+burns,الإسعافات الأولية,حرق حراري ماذا أفعل أولًا,https://www.nhs.uk/conditions/burns-and-scalds/,بانتظار مراجعة الكلية | Awaiting faculty review,,,,,,,,,0.1.0
+bleeding,الإسعافات الأولية,النزف الشديد اطلب المساعدة واضغط,https://www.sja.org.uk/first-aid-advice/severe-bleeding/,بانتظار مراجعة الكلية | Awaiting faculty review,,,,,,,,,0.1.0
+stroke,الإسعافات الأولية,وجه وذراع وكلام الوقت مهم,https://www.sja.org.uk/first-aid-advice/stroke/,بانتظار مراجعة الكلية | Awaiting faculty review,,,,,,,,,0.1.0
+child-food,الأطفال والأسرة,طعام الطفل يتغير مع نموه,https://www.who.int/news-room/fact-sheets/detail/infant-and-young-child-feeding,بانتظار مراجعة الكلية | Awaiting faculty review,,,,,,,,,0.1.0
+child-dehydration,الأطفال والأسرة,الإسهال وعلامات الجفاف,https://www.who.int/news-room/fact-sheets/detail/diarrhoeal-disease,بانتظار مراجعة الكلية | Awaiting faculty review,,,,,,,,,0.1.0
+safe-home,الأطفال والأسرة,بيت أكثر أمانًا للطفل,https://www.sja.org.uk/first-aid-advice/poisoning/,بانتظار مراجعة الكلية | Awaiting faculty review,,,,,,,,,0.1.0
+antenatal,الأم والحمل,متابعة الحمل تبدأ مبكرًا,https://www.who.int/activities/promoting-healthy-pregnancy | https://www.cdc.gov/hearher/maternal-warning-signs/index.html,بانتظار مراجعة الكلية | Awaiting faculty review,,,,,,,,,0.1.0
+maternal-danger,الأم والحمل,علامات مهمة أثناء الحمل وبعد الولادة,https://www.cdc.gov/hearher/maternal-warning-signs/index.html,بانتظار مراجعة الكلية | Awaiting faculty review,,,,,,,,,0.1.0
+breastfeeding,الأم والحمل,دعم الرضاعة دون لوم,https://www.who.int/news-room/fact-sheets/detail/infant-and-young-child-feeding | https://www.who.int/news-room/fact-sheets/detail/diarrhoeal-disease,بانتظار مراجعة الكلية | Awaiting faculty review,,,,,,,,,0.1.0
+hand-hygiene,الوقاية من العدوى,يداكم وسيلة وقاية يومية,https://www.cdc.gov/clean-hands/about/index.html,بانتظار مراجعة الكلية | Awaiting faculty review,,,,,,,,,0.1.0
+respiratory,الوقاية من العدوى,نقلل العدوى التنفسية معًا,https://www.cdc.gov/respiratory-viruses/prevention/index.html,بانتظار مراجعة الكلية | Awaiting faculty review,,,,,,,,,0.1.0
+antibiotics,الوقاية من العدوى,المضاد الحيوي ليس لكل عدوى,https://www.who.int/news-room/fact-sheets/detail/antimicrobial-resistance,بانتظار مراجعة الكلية | Awaiting faculty review,,,,,,,,,0.1.0
+walking,الحركة والنشاط,ابدأ بحركة تناسبك,https://www.who.int/news-room/fact-sheets/detail/physical-activity,بانتظار مراجعة الكلية | Awaiting faculty review,,,,,,,,,0.1.0
+sitting,الحركة والنشاط,اكسر الجلوس الطويل,https://www.who.int/news-room/fact-sheets/detail/physical-activity,بانتظار مراجعة الكلية | Awaiting faculty review,,,,,,,,,0.1.0
+inclusive-activity,الحركة والنشاط,الحركة متاحة بقدرات مختلفة,https://www.who.int/news-room/fact-sheets/detail/physical-activity | https://www.cdc.gov/falls/prevention/index.html,بانتظار مراجعة الكلية | Awaiting faculty review,,,,,,,,,0.1.0
+stress,العافية النفسية,خطوات صغيرة عند الضغط النفسي,https://www.who.int/ar/news-room/questions-and-answers/item/stress,بانتظار مراجعة الكلية | Awaiting faculty review,,,,,,,,,0.1.0
+sleep,العافية النفسية,نوم أفضل بخطوات يومية,https://www.cdc.gov/sleep/about/,بانتظار مراجعة الكلية | Awaiting faculty review,,,,,,,,,0.1.0
+support,العافية النفسية,كيف ندعم شخصًا يمر بصعوبة,https://www.who.int/news-room/fact-sheets/detail/depression,بانتظار مراجعة الكلية | Awaiting faculty review,,,,,,,,,0.1.0
+falls,كبار السن والرعاية,الوقاية من السقوط تبدأ من البيت,https://www.cdc.gov/falls/prevention/index.html,بانتظار مراجعة الكلية | Awaiting faculty review,,,,,,,,,0.1.0
+older-medicines,كبار السن والرعاية,أدوية كثيرة مراجعة واحدة منظمة,https://www.fda.gov/media/76339/download,بانتظار مراجعة الكلية | Awaiting faculty review,,,,,,,,,0.1.0
+pressure-care,كبار السن والرعاية,العناية بمن تقل حركته,https://www.nhs.uk/conditions/pressure-sores/,بانتظار مراجعة الكلية | Awaiting faculty review,,,,,,,,,0.1.0
+medicine-list,سلامة الدواء,قائمة دوائك ترافقك,https://www.fda.gov/media/76339/download,بانتظار مراجعة الكلية | Awaiting faculty review,,,,,,,,,0.1.0
+medicine-storage,سلامة الدواء,احفظ الدواء حسب العبوة,https://www.sps.nhs.uk/articles/storing-medicines-at-ambient-temperatures/ | https://www.sja.org.uk/first-aid-advice/poisoning/,بانتظار مراجعة الكلية | Awaiting faculty review,,,,,,,,,0.1.0
+herbs,سلامة الدواء,طبيعي لا يعني آمنًا للجميع,https://www.nhs.uk/tests-and-treatments/herbal-medicines-and-complementary-therapies/,بانتظار مراجعة الكلية | Awaiting faculty review,,,,,,,,,0.1.0
+heat,الصحة والبيئة,احم نفسك ومن حولك من الحر,https://www.sja.org.uk/first-aid-advice/heat-exhaustion/,بانتظار مراجعة الكلية | Awaiting faculty review,,,,,,,,,0.1.0
+water,الصحة والبيئة,ماء الشرب يحتاج مصدرًا آمنًا,https://www.who.int/news-room/fact-sheets/detail/drinking-water | https://www.who.int/news-room/fact-sheets/detail/diarrhoeal-disease,بانتظار مراجعة الكلية | Awaiting faculty review,,,,,,,,,0.1.0
+cleaning,الصحة والبيئة,نظافة المنزل دون خلط مواد,https://www.cdc.gov/hygiene/about/cleaning-and-disinfecting-with-bleach.html | https://www.sja.org.uk/first-aid-advice/poisoning/,بانتظار مراجعة الكلية | Awaiting faculty review,,,,,,,,,0.1.0
+tobacco,صحتك عبر العمر,بيت خال من دخان التبغ,https://www.who.int/news-room/fact-sheets/detail/tobacco,بانتظار مراجعة الكلية | Awaiting faculty review,,,,,,,,,0.1.0
+oral-health,صحتك عبر العمر,صحة الفم جزء من صحتك,https://www.who.int/news-room/fact-sheets/detail/oral-health,بانتظار مراجعة الكلية | Awaiting faculty review,,,,,,,,,0.1.0
+early-check,صحتك عبر العمر,الكشف المبكر يبدأ بسؤال مناسب,https://www.who.int/news-room/fact-sheets/detail/cancer,بانتظار مراجعة الكلية | Awaiting faculty review,,,,,,,,,0.1.0
