@@ -1,6 +1,6 @@
 'use strict';
-const CACHE='nur-community-v0.1.0';
-const FILES=['./','./index.html','./style.css','./content.js','./branding.js','./app.js','./manifest.webmanifest','./assets/icon.svg','./assets/icon-192.png','./assets/icon-512.png','./plan.html','./review-register.csv','./activity-record.csv'];
+const CACHE='nur-community-v0.2.0';
+const FILES=['./','./index.html','./style-v2.css','./content.js','./rich-content.js','./art.js','./measure.js','./branding.js','./app-v2.js','./manifest.webmanifest','./assets/icon.svg','./assets/icon-192.png','./assets/icon-512.png','./assets/community-hero-v2.webp','./plan.html','./style.css','./review-register.csv','./activity-record.csv','./improvement-register.csv','./measurement-protocol.md'];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(FILES)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k.startsWith('nur-community-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
 self.addEventListener('fetch',e=>{if(e.request.method!=='GET')return;const u=new URL(e.request.url);if(u.origin!==self.location.origin||!u.pathname.startsWith(new URL('./',self.location).pathname))return;e.respondWith(fetch(e.request).then(r=>{if(r.ok&&FILES.some(p=>new URL(p,self.location).href===u.href)){const copy=r.clone();caches.open(CACHE).then(c=>c.put(e.request,copy)).catch(()=>{})}return r}).catch(async()=>{const hit=await caches.match(e.request);if(hit)return hit;if(e.request.mode==='navigate')return caches.match('./index.html');return Response.error()}));});
