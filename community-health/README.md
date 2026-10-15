@@ -1,6 +1,6 @@
 # تمريض من أجل المجتمع
 
-Faculty of Nursing, Tobruk University — community health education prototype 0.4.0, 15 October 2026.
+Faculty of Nursing, Tobruk University — community health education prototype 0.4.1, 15 October 2026.
 
 ## Public experience
 
@@ -22,7 +22,7 @@ The home-kit checklist can be repeated and is stored locally. No fixed water int
 - `art.js`, `environment-art.js`, `clinical-art.js`: original SVG drawings, including 14 new environmental illustrations.
 - `scenario-data.js`, `simulation.js`: eight branching scenarios and a separate opt-in run record model.
 - `measure.js`: opt-in local repeated measurement, explicit cycle linkage, summaries and safe CSV export.
-- `sw.js`: scoped offline cache v0.4.0; previous app cache is migrated while unrelated caches remain untouched.
+- `sw.js`: scoped offline cache v0.4.1; previous app cache is migrated while unrelated caches remain untouched.
 - `measurement-protocol.md`: meaning, consent, pairing rules, limitations, central sharing and later quality integration.
 - `review-register.csv`: 91 article entries plus 8 scenario entries; human review and approval fields remain blank.
 - `activity-record.csv`, `improvement-register.csv`: blank bilingual institutional work registers.
@@ -63,3 +63,10 @@ The home screen exposes diabetes, blood pressure, kidney disease, gout, women's 
 Insulin correction is explained with a fixed fictional arithmetic example only, using an already clinician-prescribed target and sensitivity factor in matching units. No personal dose calculator or default factor/target is provided. The education distinguishes meal insulin from correction insulin and covers active-insulin stacking, individualized timing, symptoms requiring urgent care, vomiting/diarrhea, dehydration, DKA including SGLT2-associated near-normal glucose, HHS, basal insulin and medication sick-day plans. Formula direction is explicitly isolated left-to-right within the Arabic text. Additional lesson text is included in speech.
 
 All 91 article/assessment routes, 18 nonempty entry points, icon/dropdown synchronization, full-text Arabic search, the fixed example and spoken lesson text, related links and source keys pass software checks. Existing eight scenarios, opt-in repeated records and offline cache migration pass regression checks. Original SVG illustrations were rendered and visually inspected. Actual browser/phone layout and audible Arabic quality were unavailable for verification in this environment. All additions remain educational drafts pending documented faculty review; no professional reviewer identity is fabricated.
+
+
+## Hero artwork 0.4.1
+
+The headline is «بوعينا وسلوكنا الصحي، نحمي بعضنا بعضًا», supported by «نحوّل المعرفة إلى عادات صحية، ونرعى الإنسان والبيئة بروح التكافل.» The built-in image generation tool created a fictional editorial scene of a young male nurse holding an elderly man's hand as they walk together, both seen from behind without visible faces. It depicts no real participants. The website asset is `assets/community-hero-solidarity.webp` (1536×1024), compressed from the generated original. The previous image remains in the repository as historical artwork but is no longer loaded or precached by the current UI. The image is local and available in the scoped offline cache.
+
+The asset generation prompt and provenance are recorded in `assets/community-hero-solidarity.txt`.
