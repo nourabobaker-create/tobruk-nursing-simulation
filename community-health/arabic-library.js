@@ -1,0 +1,267 @@
+/* Curated official Arabic reading links, not an endorsement by the publisher. */
+window.CommunityArabicLibrary=[
+  {
+    "id": "diabetes",
+    "title": "السكري: الأعراض والوقاية والرعاية",
+    "category": "مزمنة",
+    "description": "شرح الأنواع والعلامات ودور المتابعة والغذاء والنشاط.",
+    "topic": "diabetes",
+    "url": "https://www.who.int/ar/news-room/fact-sheets/detail/diabetes",
+    "publisher": "منظمة الصحة العالمية",
+    "language": "العربية",
+    "checked": "2026-10-15"
+  },
+  {
+    "id": "hypertension",
+    "title": "ارتفاع ضغط الدم",
+    "category": "مزمنة",
+    "description": "تعرف إلى عوامل الخطر والوقاية وأهمية القياس والعلاج.",
+    "topic": "blood-pressure",
+    "url": "https://www.who.int/ar/news-room/fact-sheets/detail/hypertension",
+    "publisher": "منظمة الصحة العالمية",
+    "language": "العربية",
+    "checked": "2026-10-15"
+  },
+  {
+    "id": "polycystic-ovary-syndrome",
+    "title": "تكيس المبايض",
+    "category": "الأم والطفل",
+    "description": "معلومات عن الأعراض والمتابعة وخيارات الرعاية.",
+    "topic": "pcos",
+    "url": "https://www.who.int/ar/news-room/fact-sheets/detail/polycystic-ovary-syndrome",
+    "publisher": "منظمة الصحة العالمية",
+    "language": "العربية",
+    "checked": "2026-10-15"
+  },
+  {
+    "id": "healthy-diet",
+    "title": "غذاء متوازن للأسرة",
+    "category": "غذاء وحركة",
+    "description": "مبادئ التنوع والتوازن وتقليل الملح والسكريات.",
+    "topic": "food-safety",
+    "url": "https://www.who.int/ar/news-room/fact-sheets/detail/healthy-diet",
+    "publisher": "منظمة الصحة العالمية",
+    "language": "العربية",
+    "checked": "2026-10-15"
+  },
+  {
+    "id": "physical-activity",
+    "title": "الحركة وتقليل الجلوس",
+    "category": "غذاء وحركة",
+    "description": "لماذا نتحرك؟ إرشادات عامة لمختلف الأعمار.",
+    "topic": "move-more-sit-less",
+    "url": "https://www.who.int/ar/news-room/fact-sheets/detail/physical-activity",
+    "publisher": "منظمة الصحة العالمية",
+    "language": "العربية",
+    "checked": "2026-10-15"
+  },
+  {
+    "id": "anaemia",
+    "title": "فقر الدم",
+    "category": "غذاء وحركة",
+    "description": "أسباب وعلامات فقر الدم وطرق الوقاية والرعاية.",
+    "topic": "anaemia-iron",
+    "url": "https://www.who.int/ar/news-room/fact-sheets/detail/anaemia",
+    "publisher": "منظمة الصحة العالمية",
+    "language": "العربية",
+    "checked": "2026-10-15"
+  },
+  {
+    "id": "depression",
+    "title": "فهم الاكتئاب",
+    "category": "نفسية وسلوك",
+    "description": "العلامات وإمكانات العلاج وطلب الدعم دون وصم.",
+    "topic": "mental-depression",
+    "url": "https://www.who.int/ar/news-room/fact-sheets/detail/depression",
+    "publisher": "منظمة الصحة العالمية",
+    "language": "العربية",
+    "checked": "2026-10-15"
+  },
+  {
+    "id": "anxiety-disorders",
+    "title": "فهم اضطرابات القلق",
+    "category": "نفسية وسلوك",
+    "description": "تمييز القلق المؤثر في الحياة والتعرف إلى الرعاية.",
+    "topic": "mental-anxiety",
+    "url": "https://www.who.int/ar/news-room/fact-sheets/detail/anxiety-disorders",
+    "publisher": "منظمة الصحة العالمية",
+    "language": "العربية",
+    "checked": "2026-10-15"
+  },
+  {
+    "id": "tobacco",
+    "title": "التبغ والنيكوتين",
+    "category": "نفسية وسلوك",
+    "description": "مخاطر الاستخدام والتعرض للدخان وأهمية الإقلاع.",
+    "topic": "addiction-help",
+    "url": "https://www.who.int/ar/news-room/fact-sheets/detail/tobacco",
+    "publisher": "منظمة الصحة العالمية",
+    "language": "العربية",
+    "checked": "2026-10-15"
+  },
+  {
+    "id": "immunization-coverage",
+    "title": "التطعيمات وحماية الأسرة",
+    "category": "عدوى ووقاية",
+    "description": "نظرة إلى الأمراض التي تقي منها اللقاحات.",
+    "topic": "vaccines",
+    "url": "https://www.who.int/ar/news-room/fact-sheets/detail/immunization-coverage",
+    "publisher": "منظمة الصحة العالمية",
+    "language": "العربية",
+    "checked": "2026-10-15"
+  },
+  {
+    "id": "antimicrobial-resistance",
+    "title": "مقاومة المضادات",
+    "category": "عدوى ووقاية",
+    "description": "لماذا تفقد بعض الأدوية فعاليتها وكيف نحافظ عليها؟",
+    "topic": "antibiotics",
+    "url": "https://www.who.int/ar/news-room/fact-sheets/detail/antimicrobial-resistance",
+    "publisher": "منظمة الصحة العالمية",
+    "language": "العربية",
+    "checked": "2026-10-15"
+  },
+  {
+    "id": "tuberculosis",
+    "title": "السل",
+    "category": "عدوى ووقاية",
+    "description": "الأعراض والانتقال والوقاية وأهمية إكمال العلاج.",
+    "topic": "tuberculosis",
+    "url": "https://www.who.int/ar/news-room/fact-sheets/detail/tuberculosis",
+    "publisher": "منظمة الصحة العالمية",
+    "language": "العربية",
+    "checked": "2026-10-15"
+  },
+  {
+    "id": "measles",
+    "title": "الحصبة",
+    "category": "عدوى ووقاية",
+    "description": "العلامات والمضاعفات ودور اللقاح في الحماية.",
+    "topic": "measles",
+    "url": "https://www.who.int/ar/news-room/fact-sheets/detail/measles",
+    "publisher": "منظمة الصحة العالمية",
+    "language": "العربية",
+    "checked": "2026-10-15"
+  },
+  {
+    "id": "hepatitis-b",
+    "title": "التهاب الكبد ب",
+    "category": "عدوى ووقاية",
+    "description": "طرق الانتقال والوقاية والتطعيم والمتابعة.",
+    "topic": "viral-hepatitis",
+    "url": "https://www.who.int/ar/news-room/fact-sheets/detail/hepatitis-b",
+    "publisher": "منظمة الصحة العالمية",
+    "language": "العربية",
+    "checked": "2026-10-15"
+  },
+  {
+    "id": "rabies",
+    "title": "داء الكلب بعد العضات",
+    "category": "إسعاف وتكافل",
+    "description": "أهمية غسل الجرح وطلب الوقاية بعد التعرض سريعًا.",
+    "topic": "animal-bites-rabies",
+    "url": "https://www.who.int/ar/news-room/fact-sheets/detail/rabies",
+    "publisher": "منظمة الصحة العالمية",
+    "language": "العربية",
+    "checked": "2026-10-15"
+  },
+  {
+    "id": "diarrhoeal-disease",
+    "title": "الإسهال والجفاف",
+    "category": "الأم والطفل",
+    "description": "أهمية الإماهة والماء المأمون والوقاية من العدوى.",
+    "topic": "child-dehydration",
+    "url": "https://www.who.int/ar/news-room/fact-sheets/detail/diarrhoeal-disease",
+    "publisher": "منظمة الصحة العالمية",
+    "language": "العربية",
+    "checked": "2026-10-15"
+  },
+  {
+    "id": "maternal-mortality",
+    "title": "سلامة الأم أثناء الحمل وبعده",
+    "category": "الأم والطفل",
+    "description": "فهم أسباب الأخطار ودور الرعاية والمتابعة.",
+    "topic": "maternal-danger",
+    "url": "https://www.who.int/ar/news-room/fact-sheets/detail/maternal-mortality",
+    "publisher": "منظمة الصحة العالمية",
+    "language": "العربية",
+    "checked": "2026-10-15"
+  },
+  {
+    "id": "infant-and-young-child-feeding",
+    "title": "تغذية الرضع وصغار الأطفال",
+    "category": "الأم والطفل",
+    "description": "مبادئ الرضاعة والتغذية التكميلية المناسبة للعمر.",
+    "topic": "breastfeeding",
+    "url": "https://www.who.int/ar/news-room/fact-sheets/detail/infant-and-young-child-feeding",
+    "publisher": "منظمة الصحة العالمية",
+    "language": "العربية",
+    "checked": "2026-10-15"
+  },
+  {
+    "id": "cervical-cancer",
+    "title": "الوقاية من سرطان عنق الرحم",
+    "category": "الأم والطفل",
+    "description": "دور التطعيم والفحص والكشف والعلاج المبكر.",
+    "topic": "women-health",
+    "url": "https://www.who.int/ar/news-room/fact-sheets/detail/cervical-cancer",
+    "publisher": "منظمة الصحة العالمية",
+    "language": "العربية",
+    "checked": "2026-10-15"
+  },
+  {
+    "id": "drinking-water",
+    "title": "ماء مأمون لصحة الأسرة",
+    "category": "الصحة والبيئة",
+    "description": "علاقة جودة الماء بالأمراض وأهمية الوصول لماء آمن.",
+    "topic": "water-storage",
+    "url": "https://www.who.int/ar/news-room/fact-sheets/detail/drinking-water",
+    "publisher": "منظمة الصحة العالمية",
+    "language": "العربية",
+    "checked": "2026-10-15"
+  },
+  {
+    "id": "food-safety",
+    "title": "سلامة الطعام",
+    "category": "الصحة والبيئة",
+    "description": "كيف تسبب الأغذية الملوثة المرض ولماذا تلزم الوقاية؟",
+    "topic": "food-safety",
+    "url": "https://www.who.int/ar/news-room/fact-sheets/detail/food-safety",
+    "publisher": "منظمة الصحة العالمية",
+    "language": "العربية",
+    "checked": "2026-10-15"
+  },
+  {
+    "id": "household-air-pollution-and-health",
+    "title": "هواء المنزل والصحة",
+    "category": "الصحة والبيئة",
+    "description": "تعرف إلى أضرار تلوث الهواء المنزلي والفئات الأكثر تأثرًا.",
+    "topic": "clean-air",
+    "url": "https://www.who.int/ar/news-room/fact-sheets/detail/household-air-pollution-and-health",
+    "publisher": "منظمة الصحة العالمية",
+    "language": "العربية",
+    "checked": "2026-10-15"
+  },
+  {
+    "id": "burns",
+    "title": "الحروق والوقاية منها",
+    "category": "إسعاف وتكافل",
+    "description": "أسباب الحروق والوقاية وأساسيات التعامل الأولي.",
+    "topic": "burns",
+    "url": "https://www.who.int/ar/news-room/fact-sheets/detail/burns",
+    "publisher": "منظمة الصحة العالمية",
+    "language": "العربية",
+    "checked": "2026-10-15"
+  },
+  {
+    "id": "blood-safety-and-availability",
+    "title": "التبرع بالدم ومأمونيته",
+    "category": "إسعاف وتكافل",
+    "description": "لماذا نحتاج متبرعين منتظمين وكيف ترتبط السلامة بالفحص؟",
+    "topic": "blood-donation",
+    "url": "https://www.who.int/ar/news-room/fact-sheets/detail/blood-safety-and-availability",
+    "publisher": "منظمة الصحة العالمية",
+    "language": "العربية",
+    "checked": "2026-10-15"
+  }
+];

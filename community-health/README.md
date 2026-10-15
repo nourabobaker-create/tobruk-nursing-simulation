@@ -1,6 +1,6 @@
 # تمريض من أجل المجتمع
 
-Faculty of Nursing, Tobruk University — community health education prototype, release 0.7.3, updated 16 October 2026. The initiative has its own Google Form embedded in a contextual in-app dialog; the earlier portal-form handoff has been removed.
+Faculty of Nursing, Tobruk University — community health education prototype, release 0.8.0, updated 15 October 2026. The initiative has its own Google Form embedded in a contextual in-app dialog; the earlier portal-form handoff has been removed.
 
 ## Public experience
 
@@ -28,7 +28,7 @@ The home-kit checklist can be repeated and is stored locally. No fixed water int
 - `measure.js`: opt-in local repeated measurement, explicit cycle linkage, summaries and safe CSV export.
 - `sw.js`: scoped offline cache; previous app cache is migrated while unrelated caches remain untouched.
 - `measurement-protocol.md`: feedback reception, local measurement consent and pairing rules, limitations, exports and requirements for later institutional quality integration.
-- `review-register.csv`: 138 article entries plus 8 scenario entries; human review and approval fields remain blank.
+- `review-register.csv`: 138 article entries plus 24 scenario entries; human review and approval fields remain blank.
 - `activity-record.csv`, `improvement-register.csv`: blank bilingual institutional work registers.
 - `plan.html`: original eight-week plan (v0.1 historical starting plan); `style.css` remains for that page. `app.js` is an unused baseline retained for reference. The public app does not load it.
 
@@ -138,3 +138,13 @@ Focused installation checks and the existing138-topic regression suite passed: f
 ## Release0.7.3: installed community-awareness application name
 
 The installed-app name is «التوعية المجتمعية — كلية التمريض، جامعة طبرق». Both name and short_name, application-name and Apple home-screen title use this full wording, so a short-name fallback no longer substitutes the faculty name alone. The public website retains its original «تمريض من أجل المجتمع» title and visible branding. The official faculty icon and stable installation identity are preserved. A phone launcher may shorten the visible text to fit its available label space.
+
+## Release 0.8.0: iPhone guidance, 24 scenarios and Arabic library
+
+The header install action remains visible on small screens and opens Arabic Safari/Chrome instructions when no native install event is available. Native prompts remain supported; installed standalone mode hides the header action. Apple instructions include Share, Add to Home Screen, Edit Actions and optional Open as Web App. This is web installation, not an App Store release. Real-device iPhone testing is still needed.
+
+Added 16 original branching scenarios (24 total, 96 nodes, 192 choices, 288 terminating paths). Existing scenario IDs and versions remain unchanged. New scenes cover diabetes, stroke, heat, burns, pregnancy, newborn jaundice, dehydration, animal bites, antibiotics, postoperative clot warning signs, cast problems, eczema infection, kidney-safe medicines and sleep/driving. All have primary references, per-node source links, related articles, audio and existing optional repeat measurement. Clinical approval fields remain blank for faculty review.
+
+The searchable Arabic library links to 24 official Arabic WHO fact sheets, grouped in seven subjects, with short original descriptions, publisher, link/language check date and an internal simplified guide. External sources and the survey require internet. No external pages are cached or copied wholesale.
+
+Validation: node verify.cjs passes 138 guides, 24 scenarios/all 288 paths, optional records, contextual survey, Arabic library search/filter/empty states, native install/fallback and service-worker migration with 47 exact local cache URLs. Browser and physical iPhone QA were not performed in this environment.
