@@ -1,10 +1,10 @@
 # تمريض من أجل المجتمع
 
-Faculty of Nursing, Tobruk University — community health education prototype, release 0.5.4, updated 15 October 2026. The initiative has its own Google Form embedded in a contextual in-app dialog; the earlier portal-form handoff has been removed.
+Faculty of Nursing, Tobruk University — community health education prototype, release 0.6.0, updated 15 October 2026. The initiative has its own Google Form embedded in a contextual in-app dialog; the earlier portal-form handoff has been removed.
 
 ## Public experience
 
-106 original Arabic topic guides. Each combines an explanation, relevant symptoms or observations, practical actions, prevention, general treatment information, avoid/seek-help advice, a real-life example, and authoritative references. All guides await documented faculty review; real authors/reviewers are credited only after actual participation and consent.
+126 original Arabic topic guides. Each combines an explanation, relevant symptoms or observations, practical actions, prevention, general treatment information, avoid/seek-help advice, a real-life example, and authoritative references. All guides await documented faculty review; real authors/reviewers are credited only after actual participation and consent.
 
 The home page introduces the students' community service and self-funded voluntary effort, with an AI-generated illustrative community scene (not real students/patients). Original lightweight SVG drawings illustrate each topic. Everyday audience paths, Arabic search, favorites, print/share, larger text and device Arabic speech are available. Speech requires an available Arabic voice; local/offline and remote voices depend on the device. It never silently substitutes an English voice. Navigation stops speech.
 
@@ -28,7 +28,7 @@ The home-kit checklist can be repeated and is stored locally. No fixed water int
 - `measure.js`: opt-in local repeated measurement, explicit cycle linkage, summaries and safe CSV export.
 - `sw.js`: scoped offline cache; previous app cache is migrated while unrelated caches remain untouched.
 - `measurement-protocol.md`: feedback reception, local measurement consent and pairing rules, limitations, exports and requirements for later institutional quality integration.
-- `review-register.csv`: 106 article entries plus 8 scenario entries; human review and approval fields remain blank.
+- `review-register.csv`: 126 article entries plus 8 scenario entries; human review and approval fields remain blank.
 - `activity-record.csv`, `improvement-register.csv`: blank bilingual institutional work registers.
 - `plan.html`: original eight-week plan (v0.1 historical starting plan); `style.css` remains for that page. `app.js` is an unused baseline retained for reference. The public app does not load it.
 
@@ -100,3 +100,12 @@ Eight new skin guides cover acne, skin fungi, scabies, psoriasis, contact dermat
 The release contains 106 guides and 20 visible entry points. New content remains an educational draft awaiting documented faculty review; source checks do not constitute faculty approval. The hero and slogan remain as approved.
 
 Software verification passed for release 0.5.4: all 106 article/assessment routes, the 9-guide skin field, immediate visibility of both new environment topics, natural Arabic search, all focused source links, original illustrations, complete speech text, contextual survey and repeated follow-up. Existing 8 simulations/96 paths and 36 offline entries passed. New SVG illustrations were rendered and visually inspected. Actual browser/phone layout and audible device voices were not verified in this release.
+
+
+## Release 0.6.0: communicable disease, everyday wellbeing and recovery
+
+Twenty new practical Arabic guides extend infectious disease education, anaemia and vitamin deficiencies, movement, and recovery after surgery, stroke, heart attack, venous clots, fractures, injuries and burns. The existing sleep, burn first-aid and two blood-donation guides are expanded. WHO health topics/fact sheets, NHS public patient information, CDC prevention resources and NIH ODS informed topic selection and section references. These are original educational summaries, not publisher-endorsed materials or faculty clinical approval.
+
+There are 126 guides and 24 visible entry points. Burns, home recovery, anaemia/vitamins and sleep have direct icons and matching dropdown entries. Blood donation has a dedicated home feature as well as its existing icon. New illustrations, full speech text, contextual feedback and optional repeated assessments accompany the content. Previous guides, local records and survey configuration are preserved.
+
+Software verification passed for release0.6.0: all126 article/assessment routes, 24 synchronized icons/dropdown fields, 20 new fully sourced guides, complete audio text, contextual feedback and repeated before/after/follow-up learning checks. Expanded sleep/burn/donation topics and the home blood-donation feature passed. Existing8 simulations/96 paths and40 exact-version offline entries passed regression checks. All10 new original SVG illustrations were rendered and visually inspected. Actual browser/phone layout and audible device voice quality were not tested in this release.

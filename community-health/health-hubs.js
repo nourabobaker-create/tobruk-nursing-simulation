@@ -1,7 +1,7 @@
 /* Visible entry points; data stays independent of presentation. */
 (()=>{
 'use strict';
-const R=window.COMMUNITY_V2;R.version='0.5.4';R.date='2026-10-15';
+const R=window.COMMUNITY_V2;R.version='0.6.0';R.date='2026-10-15';
 R.healthHubs=[
  {key:'diabetes',label:'السكري',art:'diabetes-plan',value:'hub:diabetes',ids:['diabetes','diabetes-daily-care','diabetes-food-portions','diabetes-high-correction','diabetes-sick-days','diabetes-hypoglycemia','diabetes-feet','diabetes-activity-followup']},
  {key:'pressure',label:'ضغط الدم',art:'pressure',value:'hub:pressure',ids:['blood-pressure']},
@@ -11,10 +11,14 @@ R.healthHubs=[
  {key:'mental',label:'الصحة النفسية',art:'mind-support',value:'mental'},
  {key:'addiction',label:'الإدمان والتعافي',art:'recovery',value:'addiction'},
  {key:'aid',label:'الإسعافات',art:'bandage',value:'aid'},
+ {key:'burns',label:'الحروق',art:'burn-care',value:'hub:burns',ids:['burns','burn-recovery']},
+ {key:'recovery',label:'التعافي في المنزل',art:'recovery-home',value:'recovery'},
  {key:'mother',label:'الحمل والأم',art:'mother',value:'mother'},
  {key:'child',label:'صحة الأطفال',art:'childfood',value:'child'},
  {key:'nutrition',label:'الغذاء والتغذية',art:'food',value:'nutrition'},
- {key:'infection',label:'العدوى والتطعيم',art:'vaccine',value:'infection'},
+ {key:'deficiencies',label:'فقر الدم والفيتامينات',art:'anaemia',value:'hub:deficiencies',ids:['anaemia-iron','vitamin-d','vitamin-b12-folate']},
+ {key:'sleep',label:'النوم والراحة',art:'sleep',value:'hub:sleep',ids:['sleep']},
+ {key:'infection',label:'الأمراض السارية والمعدية',art:'infection-network',value:'infection'},
  {key:'medicine',label:'سلامة الدواء',art:'medicine',value:'medicine'},
  {key:'older',label:'كبار السن',art:'older',value:'older'},
  {key:'environment',label:'البيئة والماء',art:'environment',value:'environment'},
