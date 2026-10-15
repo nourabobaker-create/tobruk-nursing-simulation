@@ -1,6 +1,6 @@
 # تمريض من أجل المجتمع
 
-Faculty of Nursing, Tobruk University — community health education prototype, release 0.7.0, updated 15 October 2026. The initiative has its own Google Form embedded in a contextual in-app dialog; the earlier portal-form handoff has been removed.
+Faculty of Nursing, Tobruk University — community health education prototype, release 0.7.1, updated 15 October 2026. The initiative has its own Google Form embedded in a contextual in-app dialog; the earlier portal-form handoff has been removed.
 
 ## Public experience
 
@@ -126,3 +126,10 @@ Postpartum mental health remains in Women's Health and also appears under Pregna
 These published examples informed navigation by life stage, family-help planning, questions to take to a visit, and explaining instructions back in one's own words. No interviews were conducted, publisher endorsement is not implied, and their text/illustrations were not copied. Local service schedules and maternity instructions take precedence over another country's programme examples.
 
 Software verification passed: all138 article/assessment routes;25 synchronized fields;12 new fully sourced, illustrated, searchable and spoken guides;repeated before/after/follow-up checks;contextual survey;mother/woman/child shared affiliations and maternal shortcuts. Existing8 scenarios/96 paths and44 exact-version offline entries passed. All9 original new SVG illustrations were rendered and visually inspected. Actual browser/phone layout and audible device voice quality were not tested in this release.
+
+
+## Release0.7.1: institutional installed-app identity
+
+The installed application's full name is «كلية التمريض، جامعة طبرق» and short home-screen name «كلية التمريض». The PWA, favicon and Apple touch icons use the existing authentic faculty logo, with white opaque padding to keep the circular emblem safe within adaptive masks. The original160×160 WebP from branding.js is converted losslessly to PNG with identical decoded pixels and embedded in the SVG with its original source hash; PNG launch icons are rendered at192,512and180 pixels. No logo was redrawn. Versioned manifest/icon URLs refresh cached assets; application id, scope and start_url remain unchanged. Existing installed icons may refresh according to browser/OS behavior, while newly added shortcuts use the updated metadata. Content, surveys and local record keys retain their established identities.
+
+Focused installation checks and the existing138-topic regression suite passed: full/short names, unchanged PWA identity, exact PNG dimensions, original logo source hash, Apple metadata and45 offline assets. Decoded source pixels were verified identical across the lossless WebP-to-PNG conversion, rendered launch icons were checked nonblank/opaque and visually reviewed, and important logo content fits the adaptive-mask safe area.
