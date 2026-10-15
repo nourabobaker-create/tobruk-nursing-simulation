@@ -14,4 +14,4 @@
 @media print{.related-topics,.health-hubs,.audience-paths{display:none}.learning-section{break-inside:avoid;box-shadow:none;background:white;border:1px solid #aaa}}
 .diabetes-shortcuts{padding:22px;background:#e9f3e7;border:1px solid #c5d8bf;border-radius:18px;margin:20px 0}.diabetes-shortcuts>b{display:block;color:#185e4c;margin-bottom:14px;font-size:1.1rem}.diabetes-shortcuts .button{background:#fffdf6;font-size:.94rem}@media print{.diabetes-shortcuts{display:none}}
 
-.formula-inline{direction:ltr;unicode-bidi:isolate;display:inline-block;white-space:nowrap;font-weight:700;font-variant-numeric:tabular-nums;padding:2px 8px;background:#f0e9d5;border-radius:5px}
+.formula-inline{direction:ltr;unicode-bidi:isolate;display:inline-block;max-width:100%;white-space:normal;font-weight:700;font-variant-numeric:tabular-nums;padding:2px 8px;background:#f0e9d5;border-radius:5px}
