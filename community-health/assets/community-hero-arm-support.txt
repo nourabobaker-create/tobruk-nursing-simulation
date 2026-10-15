@@ -1,0 +1,8 @@
+Asset: community-hero-arm-support.webp
+Created: 2026-10-15
+Mode: image edit with OpenAI image generation
+Reference: community-hero-solidarity.webp
+Purpose: Community-health homepage hero; fictional people, viewed from behind.
+Export: WebP quality 88, 1536 x 1024.
+Prompt:
+Edit this existing hero photograph with one precise change: the young male nurse gently supports the elderly man's LEFT ARM, instead of holding his hand. Keep the same two men viewed entirely from behind, the same coastal Mediterranean town, sea, olive tree, warm natural light, clothing, framing, and photorealistic style. The nurse remains on the LEFT in teal scrubs. The elderly man remains on the RIGHT in cream clothes, olive vest and white cap, holding his cane in his RIGHT hand. The nurse walks close beside him and uses his RIGHT hand to cradle/support the elderly man's LEFT arm just under the elbow or upper forearm, making the gesture clearly one of steadying and helping him walk. The elderly man's left elbow is naturally slightly bent and his left hand is free, not clasped in the nurse's hand. Ensure anatomically correct natural arms, hands and fingers, exactly two people, no extra limbs, no faces visible. Preserve the dignified, reassuring feeling of community solidarity and assistance. No text, logos or other changes.
