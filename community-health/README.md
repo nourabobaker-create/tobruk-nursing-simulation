@@ -1,10 +1,10 @@
 # تمريض من أجل المجتمع
 
-Faculty of Nursing, Tobruk University — community health education prototype, release 0.6.0, updated 15 October 2026. The initiative has its own Google Form embedded in a contextual in-app dialog; the earlier portal-form handoff has been removed.
+Faculty of Nursing, Tobruk University — community health education prototype, release 0.7.0, updated 15 October 2026. The initiative has its own Google Form embedded in a contextual in-app dialog; the earlier portal-form handoff has been removed.
 
 ## Public experience
 
-126 original Arabic topic guides. Each combines an explanation, relevant symptoms or observations, practical actions, prevention, general treatment information, avoid/seek-help advice, a real-life example, and authoritative references. All guides await documented faculty review; real authors/reviewers are credited only after actual participation and consent.
+138 original Arabic topic guides. Each combines an explanation, relevant symptoms or observations, practical actions, prevention, general treatment information, avoid/seek-help advice, a real-life example, and authoritative references. All guides await documented faculty review; real authors/reviewers are credited only after actual participation and consent.
 
 The home page introduces the students' community service and self-funded voluntary effort, with an AI-generated illustrative community scene (not real students/patients). Original lightweight SVG drawings illustrate each topic. Everyday audience paths, Arabic search, favorites, print/share, larger text and device Arabic speech are available. Speech requires an available Arabic voice; local/offline and remote voices depend on the device. It never silently substitutes an English voice. Navigation stops speech.
 
@@ -28,7 +28,7 @@ The home-kit checklist can be repeated and is stored locally. No fixed water int
 - `measure.js`: opt-in local repeated measurement, explicit cycle linkage, summaries and safe CSV export.
 - `sw.js`: scoped offline cache; previous app cache is migrated while unrelated caches remain untouched.
 - `measurement-protocol.md`: feedback reception, local measurement consent and pairing rules, limitations, exports and requirements for later institutional quality integration.
-- `review-register.csv`: 126 article entries plus 8 scenario entries; human review and approval fields remain blank.
+- `review-register.csv`: 138 article entries plus 8 scenario entries; human review and approval fields remain blank.
 - `activity-record.csv`, `improvement-register.csv`: blank bilingual institutional work registers.
 - `plan.html`: original eight-week plan (v0.1 historical starting plan); `style.css` remains for that page. `app.js` is an unused baseline retained for reference. The public app does not load it.
 
@@ -109,3 +109,20 @@ Twenty new practical Arabic guides extend infectious disease education, anaemia 
 There are 126 guides and 24 visible entry points. Burns, home recovery, anaemia/vitamins and sleep have direct icons and matching dropdown entries. Blood donation has a dedicated home feature as well as its existing icon. New illustrations, full speech text, contextual feedback and optional repeated assessments accompany the content. Previous guides, local records and survey configuration are preserved.
 
 Software verification passed for release0.6.0: all126 article/assessment routes, 24 synchronized icons/dropdown fields, 20 new fully sourced guides, complete audio text, contextual feedback and repeated before/after/follow-up learning checks. Expanded sleep/burn/donation topics and the home blood-donation feature passed. Existing8 simulations/96 paths and40 exact-version offline entries passed regression checks. All10 new original SVG illustrations were rendered and visually inspected. Actual browser/phone layout and audible device voice quality were not tested in this release.
+
+
+## Release 0.7.0: pregnancy, postnatal care and newborn examination
+
+Twelve new guides cover pregnancy hypertension/preeclampsia, gestational diabetes, food safety/nutrition, supplements, common discomforts, maternal activity/fetal movements, physical postnatal care, Caesarean recovery, newborn clinical checks, male and female newborn care, and the first week. The content distinguishes qualified clinical examination from parental observation and never requests intimate images or home diagnostic maneuvers. Clinical source reconciliation uses WHO, NHS, RCOG and government newborn-examination guidance. All content still awaits documented faculty review.
+
+Postpartum mental health remains in Women's Health and also appears under Pregnancy and Mother. The four newborn guides appear under both Mother and Child, with a dedicated newborn icon. Shared affiliations are supported in icon and dropdown filtering. A three-stage shortcut panel shows pregnancy, after-birth and newborn links. There are 138 guides and 25 visible entry points.
+
+### Nurse/midwife-led education consulted for topic selection
+
+- Institute of Health Visiting parent resources: https://ihv.org.uk/family-hub/parent-resources/ and https://ihv.org.uk/family-hub/parent-resources/pregnancy-birth-and-early-parenting/ . Public-health nurse/health-visitor education gives practical priority to early parenting, feeding, infant cues, family support and parental wellbeing.
+- Health for Under 5s: https://healthforunder5s.co.uk/about-this-site/ and https://healthforunder5s.co.uk/sections/pregnancy/the-role-of-the-health-visitor/ . This NHS-owned service describes content by health visitors/other experts, accessible conversational explanations, family involvement, age/life-stage navigation and review.
+- Tommy's practicing midwives: https://www.tommys.org/about-us/our-people/tommys-midwives . Named NHS midwives and specialist education informed pregnancy/postnatal question prompts.
+
+These published examples informed navigation by life stage, family-help planning, questions to take to a visit, and explaining instructions back in one's own words. No interviews were conducted, publisher endorsement is not implied, and their text/illustrations were not copied. Local service schedules and maternity instructions take precedence over another country's programme examples.
+
+Software verification passed: all138 article/assessment routes;25 synchronized fields;12 new fully sourced, illustrated, searchable and spoken guides;repeated before/after/follow-up checks;contextual survey;mother/woman/child shared affiliations and maternal shortcuts. Existing8 scenarios/96 paths and44 exact-version offline entries passed. All9 original new SVG illustrations were rendered and visually inspected. Actual browser/phone layout and audible device voice quality were not tested in this release.
