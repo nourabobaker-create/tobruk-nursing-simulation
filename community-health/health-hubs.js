@@ -1,7 +1,7 @@
 /* Visible entry points; data stays independent of presentation. */
 (()=>{
 'use strict';
-const R=window.COMMUNITY_V2;R.version='0.5.0';R.date='2026-10-15';
+const R=window.COMMUNITY_V2;R.version='0.5.4';R.date='2026-10-15';
 R.healthHubs=[
  {key:'diabetes',label:'السكري',art:'diabetes-plan',value:'hub:diabetes',ids:['diabetes','diabetes-daily-care','diabetes-food-portions','diabetes-high-correction','diabetes-sick-days','diabetes-hypoglycemia','diabetes-feet','diabetes-activity-followup']},
  {key:'pressure',label:'ضغط الدم',art:'pressure',value:'hub:pressure',ids:['blood-pressure']},
@@ -21,7 +21,7 @@ R.healthHubs=[
  {key:'blood',label:'التبرع بالدم',art:'blood',value:'hub:blood',ids:['blood-donation','blood-after']},
  {key:'movement',label:'الحركة والرياضة',art:'walk',value:'movement'},
  {key:'head-throat',label:'الصداع والجيوب',art:'migraine',value:'hub:head-throat',ids:['migraine','sinusitis']},
- {key:'skin',label:'صحة الجلد',art:'eczema',value:'skin'},
+ {key:'skin',label:'صحة الجلد والشمس',art:'sunscreen',value:'skin'},
  {key:'prevention',label:'الفحوص والوقاية',art:'checkup',value:'prevention'}
 ];
 R.searchAliases={diabetes:'السكر السكري مرض السكر داء السكري', 'blood-pressure':'ضغط الضغط ارتفاع الضغط انخفاض الضغط hypertension', 'kidney-disease':'الكلى الكلي الكلاوي الفشل الكلوي القصور الكلوي renal', 'kidney-stones':'حصوة حصى حصوات الكلى',gout:'النقرس نقرس حمض اليوريك داء الملوك','women-health':'النساء المرأة صحة النساء','addiction-help':'الادمان المخدرات الكحول تعاطي التعافي','mental-depression':'اكتئاب اكتئآب حزن الصحة النفسية','mental-anxiety':'قلق توتر الصحة النفسية'};

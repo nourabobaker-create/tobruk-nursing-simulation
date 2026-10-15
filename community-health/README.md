@@ -1,10 +1,10 @@
 # تمريض من أجل المجتمع
 
-Faculty of Nursing, Tobruk University — community health education prototype, release 0.5.3, updated 15 October 2026. The initiative has its own Google Form embedded in a contextual in-app dialog; the earlier portal-form handoff has been removed.
+Faculty of Nursing, Tobruk University — community health education prototype, release 0.5.4, updated 15 October 2026. The initiative has its own Google Form embedded in a contextual in-app dialog; the earlier portal-form handoff has been removed.
 
 ## Public experience
 
-96 original Arabic topic guides. Each combines an explanation, relevant symptoms or observations, practical actions, prevention, general treatment information, avoid/seek-help advice, a real-life example, and authoritative references. All guides await documented faculty review; real authors/reviewers are credited only after actual participation and consent.
+106 original Arabic topic guides. Each combines an explanation, relevant symptoms or observations, practical actions, prevention, general treatment information, avoid/seek-help advice, a real-life example, and authoritative references. All guides await documented faculty review; real authors/reviewers are credited only after actual participation and consent.
 
 The home page introduces the students' community service and self-funded voluntary effort, with an AI-generated illustrative community scene (not real students/patients). Original lightweight SVG drawings illustrate each topic. Everyday audience paths, Arabic search, favorites, print/share, larger text and device Arabic speech are available. Speech requires an available Arabic voice; local/offline and remote voices depend on the device. It never silently substitutes an English voice. Navigation stops speech.
 
@@ -28,7 +28,7 @@ The home-kit checklist can be repeated and is stored locally. No fixed water int
 - `measure.js`: opt-in local repeated measurement, explicit cycle linkage, summaries and safe CSV export.
 - `sw.js`: scoped offline cache; previous app cache is migrated while unrelated caches remain untouched.
 - `measurement-protocol.md`: feedback reception, local measurement consent and pairing rules, limitations, exports and requirements for later institutional quality integration.
-- `review-register.csv`: 96 article entries plus 8 scenario entries; human review and approval fields remain blank.
+- `review-register.csv`: 106 article entries plus 8 scenario entries; human review and approval fields remain blank.
 - `activity-record.csv`, `improvement-register.csv`: blank bilingual institutional work registers.
 - `plan.html`: original eight-week plan (v0.1 historical starting plan); `style.css` remains for that page. `app.js` is an unused baseline retained for reference. The public app does not load it.
 
@@ -91,3 +91,12 @@ Every medical section exposes a readable collapsed reference disclosure. Curated
 There are now 96 articles and 20 visible health entry points. Five new topics include cited explanatory sections, real-life examples, safe care and urgent warnings; tonsillitis distinguishes common viral causes from group A streptococcal complications, and eczema includes safe broken-skin care, contaminated-water avoidance and urgent infection signs. The established hero image and first-line-of-defense headline remain unchanged.
 
 Verification covers all routes, section/source keys, survey optional consent/upsert/repeat/reload/CSV safety, source disclosures, icon/dropdown synchronization, Arabic search and speech text, eight scenario graphs, existing repeated measures, and all offline assets. Original new SVG drawings were rendered and visually inspected. Actual browser/phone layout and audible Arabic quality remain unverified in this environment.
+
+
+## Release 0.5.4: skin, sun protection and safer shared surroundings
+
+Eight new skin guides cover acne, skin fungi, scabies, psoriasis, contact dermatitis, hives, changing skin lesions and sun protection alongside the existing eczema guide. Each includes symptoms, practical care, prevention, safe treatment information, urgent warning signs, a short assessment and readable section references. Two environment guides cover apartment littering, food waste attracting rodents, standing water in discarded containers enabling mosquitoes, and safe use and disposal of plastics. Original accessible SVG illustrations accompany the additions. Skin and environment discovery, Arabic search, speech, the contextual survey, repeated local learning measures and offline caching include all new guides.
+
+The release contains 106 guides and 20 visible entry points. New content remains an educational draft awaiting documented faculty review; source checks do not constitute faculty approval. The hero and slogan remain as approved.
+
+Software verification passed for release 0.5.4: all 106 article/assessment routes, the 9-guide skin field, immediate visibility of both new environment topics, natural Arabic search, all focused source links, original illustrations, complete speech text, contextual survey and repeated follow-up. Existing 8 simulations/96 paths and 36 offline entries passed. New SVG illustrations were rendered and visually inspected. Actual browser/phone layout and audible device voices were not verified in this release.
