@@ -161,3 +161,29 @@ cast-fingers,محاكاة,أصابع باردة داخل الجبس,https://www.
 eczema-infection,محاكاة,أكزيما تغيرت فجأة,https://www.nhs.uk/conditions/atopic-eczema/,بانتظار مراجعة الكلية,,,,,,,,,0.8.0
 kidney-painkiller,محاكاة,مسكن لصاحب مرض كلوي,https://www.niddk.nih.gov/health-information/kidney-disease/keeping-kidneys-safe,بانتظار مراجعة الكلية,,,,,,,,,0.8.0
 sleep-driving,محاكاة,ليلة بلا نوم وطريق طويل,https://www.nhs.uk/conditions/insomnia/,بانتظار مراجعة الكلية,,,,,,,,,0.8.0
+brain-health,neuro,صحة الدماغ: ذاكرة وحركة ومشاعر,https://www.who.int/health-topics/brain-health | https://www.who.int/ar/news-room/fact-sheets/detail/mental-health-strengthening-our-response,بانتظار مراجعة الكلية,,,,,,,,,0.9.0
+dementia-care,neuro,ألزهايمر والخرف: افهم وساند بكرامة,https://www.who.int/ar/news-room/fact-sheets/detail/dementia | https://www.nhs.uk/conditions/alzheimers-disease/ | https://www.who.int/health-topics/brain-health,بانتظار مراجعة الكلية,,,,,,,,,0.9.0
+parkinsons-care,neuro,باركنسون: أكثر من رعشة,https://www.who.int/ar/news-room/fact-sheets/detail/parkinson-disease | https://www.nhs.uk/conditions/parkinsons-disease/treatment/,بانتظار مراجعة الكلية,,,,,,,,,0.9.0
+epilepsy-care,neuro,الصرع: علاج وفهم دون وصم,https://www.who.int/ar/news-room/fact-sheets/detail/epilepsy | https://www.nhs.uk/symptoms/what-to-do-if-someone-has-a-seizure-fit/,بانتظار مراجعة الكلية,,,,,,,,,0.9.0
+seizure-first-aid,neuro,إذا حدث تشنج أمامك: احمِ ولا تُقيّد,https://www.nhs.uk/symptoms/what-to-do-if-someone-has-a-seizure-fit/ | https://www.who.int/ar/news-room/fact-sheets/detail/epilepsy,بانتظار مراجعة الكلية,,,,,,,,,0.9.0
+head-injury,neuro,إصابة الرأس والارتجاج: راقب ما بعد الضربة,https://www.nhs.uk/conditions/head-injury-and-concussion/ | https://www.who.int/health-topics/brain-health,بانتظار مراجعة الكلية,,,,,,,,,0.9.0
+peripheral-neuropathy,neuro,تنميل القدمين واعتلال الأعصاب,https://www.nhs.uk/conditions/peripheral-neuropathy/,بانتظار مراجعة الكلية,,,,,,,,,0.9.0
+heart-attack-signs,heart,النوبة القلبية: علامات لا تنتظر,https://www.who.int/ar/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds) | https://www.nhs.uk/conditions/heart-attack/,بانتظار مراجعة الكلية,,,,,,,,,0.9.0
+heart-failure-care,heart,قصور القلب: عناية يومية وخطة واضحة,https://www.nhs.uk/conditions/heart-failure/ | https://www.who.int/ar/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds),بانتظار مراجعة الكلية,,,,,,,,,0.9.0
+heart-rhythm,heart,الخفقان واضطراب نظم القلب,https://www.nhs.uk/conditions/arrhythmia/ | https://www.who.int/ar/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds),بانتظار مراجعة الكلية,,,,,,,,,0.9.0
+cholesterol-care,heart,الكوليسترول: افحص الخطر دون انتظار أعراض,https://www.nhs.uk/conditions/high-cholesterol/getting-tested/ | https://www.who.int/ar/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds),بانتظار مراجعة الكلية,,,,,,,,,0.9.0
+child-heart,heart,قلب الطفل: متى يحتاج الفحص؟,https://www.nhs.uk/conditions/congenital-heart-disease/,بانتظار مراجعة الكلية,,,,,,,,,0.9.0
+child-emotions,child,مشاعر الطفل: نفهم ونساعد دون وصم,https://www.unicef.org/parenting/ar/كيف-يعزز-اللّعب-الصحة-العقلية-لطفلك/نماء-الطفل | https://www.unicef.org/parenting/ar/كيف-تتحدث-مع-أطفالك-عن-التنمّر/رعاية-الأطفال | https://www.who.int/ar/news-room/fact-sheets/detail/mental-health-strengthening-our-response,بانتظار مراجعة الكلية,,,,,,,,,0.9.0
+community-belonging,mental,الانتماء والتكافل: صحة نفسية واجتماعية,https://www.who.int/ar/news-room/fact-sheets/detail/social-determinants-of-health | https://www.who.int/ar/news-room/fact-sheets/detail/mental-health-strengthening-our-response,بانتظار مراجعة الكلية,,,,,,,,,0.9.0
+feelings-cloud,قصة ونشاط تربوي,سلمى وسحابة المشاعر,https://www.unicef.org/parenting/ar/كيف-يعزز-اللّعب-الصحة-العقلية-لطفلك/نماء-الطفل,بانتظار مراجعة تربوية,,,,,,,,,0.9.0
+fallen-tower,قصة ونشاط تربوي,البرج الذي سقط,https://www.unicef.org/parenting/ar/ما-هو-الإجهاد-النفسي؟/الصحة-العقلية,بانتظار مراجعة تربوية,,,,,,,,,0.9.0
+new-friend-seat,قصة ونشاط تربوي,مقعد للصديق الجديد,https://www.unicef.org/tunisia/media/7726/file/ARABIC_CRC_A4_BOOKLET.pdf.pdf,بانتظار مراجعة تربوية,,,,,,,,,0.9.0
+everyone-plays,قصة ونشاط تربوي,كلنا نلعب بطريقتنا,https://www.unicef.org/parenting/ar/أنشطة-مرحة-للأطفال-ذوي-الإعاقة/رعاية-الأطفال,بانتظار مراجعة تربوية,,,,,,,,,0.9.0
+kind-words,قصة ونشاط تربوي,الكلمة التي تصلح الجسر,https://www.unicef.org/parenting/ar/كيف-تتحدث-مع-أطفالك-عن-التنمّر/رعاية-الأطفال,بانتظار مراجعة تربوية,,,,,,,,,0.9.0
+water-drops,قصة ونشاط تربوي,قطرة لها حكاية,https://www.who.int/ar/news-room/fact-sheets/detail/drinking-water,بانتظار مراجعة تربوية,,,,,,,,,0.9.0
+waste-window,قصة ونشاط تربوي,الكيس الذي لم يطر من النافذة,https://www.who.int/ar/news-room/fact-sheets/detail/health-care-waste,بانتظار مراجعة تربوية,,,,,,,,,0.9.0
+clean-air-tree,قصة ونشاط تربوي,الشجرة التي أحبت الهواء,https://www.unicef.org/parenting/ar/تلوث-الهواء/حالات-الطوارئ,بانتظار مراجعة تربوية,,,,,,,,,0.9.0
+soap-team,قصة ونشاط تربوي,فريق الماء والصابون,https://www.unicef.org/parenting/ar/كيف-تعلّم-أطفالك-غسل-اليدين/الصحة,بانتظار مراجعة تربوية,,,,,,,,,0.9.0
+brain-rest,قصة ونشاط تربوي,دماغ نادر يريد استراحة,https://www.unicef.org/parenting/ar/درس-بشأن-بناء-أدمغة-الأطفال-عن-طريق-اللعب/نماء-الطفل,بانتظار مراجعة تربوية,,,,,,,,,0.9.0
+heart-movement,قصة ونشاط تربوي,قلب رنا يحب اللعب,https://www.unicef.org/parenting/ar/أنشطة-مرحة-للأطفال-ذوي-الإعاقة/رعاية-الأطفال,بانتظار مراجعة تربوية,,,,,,,,,0.9.0
+helping-circle,قصة ونشاط تربوي,دائرة العون,https://www.unicef.org/tunisia/media/7726/file/ARABIC_CRC_A4_BOOKLET.pdf.pdf,بانتظار مراجعة تربوية,,,,,,,,,0.9.0

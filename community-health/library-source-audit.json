@@ -1,0 +1,582 @@
+{
+  "checked": "2026-10-16",
+  "method": "HTTPS GET with browser User-Agent; Arabic page text or publisher Arabic PDF; source checks are not faculty clinical approval",
+  "resources": [
+    {
+      "id": "diabetes",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 118418,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/diabetes"
+    },
+    {
+      "id": "hypertension",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 128329,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/hypertension"
+    },
+    {
+      "id": "polycystic-ovary-syndrome",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 117227,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/polycystic-ovary-syndrome"
+    },
+    {
+      "id": "healthy-diet",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 166742,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/healthy-diet"
+    },
+    {
+      "id": "physical-activity",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 121066,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/physical-activity"
+    },
+    {
+      "id": "anaemia",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 122679,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/anaemia"
+    },
+    {
+      "id": "depression",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 118502,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/depression"
+    },
+    {
+      "id": "anxiety-disorders",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 107581,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/anxiety-disorders"
+    },
+    {
+      "id": "tobacco",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 121865,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/tobacco"
+    },
+    {
+      "id": "immunization-coverage",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 117947,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/immunization-coverage"
+    },
+    {
+      "id": "antimicrobial-resistance",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 130415,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/antimicrobial-resistance"
+    },
+    {
+      "id": "tuberculosis",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 126928,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/tuberculosis"
+    },
+    {
+      "id": "measles",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 119251,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/measles"
+    },
+    {
+      "id": "hepatitis-b",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 134564,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/hepatitis-b"
+    },
+    {
+      "id": "rabies",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 126308,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/rabies"
+    },
+    {
+      "id": "diarrhoeal-disease",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 111187,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/diarrhoeal-disease"
+    },
+    {
+      "id": "maternal-mortality",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 116935,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/maternal-mortality"
+    },
+    {
+      "id": "infant-and-young-child-feeding",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 132386,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/infant-and-young-child-feeding"
+    },
+    {
+      "id": "cervical-cancer",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 124610,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/cervical-cancer"
+    },
+    {
+      "id": "drinking-water",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 116047,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/drinking-water"
+    },
+    {
+      "id": "food-safety",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 130995,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/food-safety"
+    },
+    {
+      "id": "household-air-pollution-and-health",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 127106,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/household-air-pollution-and-health"
+    },
+    {
+      "id": "burns",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 113829,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/burns"
+    },
+    {
+      "id": "blood-safety-and-availability",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 120100,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/blood-safety-and-availability"
+    },
+    {
+      "id": "dementia",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 124696,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/dementia"
+    },
+    {
+      "id": "parkinson-disease",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 104639,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/parkinson-disease"
+    },
+    {
+      "id": "epilepsy",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 111596,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/epilepsy"
+    },
+    {
+      "id": "stroke",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 121104,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/stroke"
+    },
+    {
+      "id": "cardiovascular-diseases-(cvds)",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 119444,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds)"
+    },
+    {
+      "id": "autism-spectrum-disorders",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 107288,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/autism-spectrum-disorders"
+    },
+    {
+      "id": "ageing-and-health",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 106305,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/ageing-and-health"
+    },
+    {
+      "id": "disability-and-health",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 106936,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/disability-and-health"
+    },
+    {
+      "id": "child-maltreatment",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 119870,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/child-maltreatment"
+    },
+    {
+      "id": "mental-health-strengthening-our-response",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 114295,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/mental-health-strengthening-our-response"
+    },
+    {
+      "id": "social-determinants-of-health",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 112111,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/social-determinants-of-health"
+    },
+    {
+      "id": "climate-change-and-health",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 118663,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/climate-change-and-health"
+    },
+    {
+      "id": "ambient-(outdoor)-air-quality-and-health",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 130294,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/ambient-(outdoor)-air-quality-and-health"
+    },
+    {
+      "id": "sanitation",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 106915,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/sanitation"
+    },
+    {
+      "id": "health-care-waste",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 126897,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/health-care-waste"
+    },
+    {
+      "id": "obesity-and-overweight",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 134852,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/obesity-and-overweight"
+    },
+    {
+      "id": "oral-health",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 117143,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/oral-health"
+    },
+    {
+      "id": "deafness-and-hearing-loss",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 116772,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/deafness-and-hearing-loss"
+    },
+    {
+      "id": "falls",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 98999,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/falls"
+    },
+    {
+      "id": "rehabilitation",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 141122,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/rehabilitation"
+    },
+    {
+      "id": "pesticide-residues-in-food",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 98020,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/pesticide-residues-in-food"
+    },
+    {
+      "id": "post-traumatic-stress-disorder",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 119066,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/post-traumatic-stress-disorder"
+    },
+    {
+      "id": "menopause",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 116637,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/menopause"
+    },
+    {
+      "id": "mental-health-of-older-adults",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 113875,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/mental-health-of-older-adults"
+    },
+    {
+      "id": "birth-defects",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 110831,
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/birth-defects"
+    },
+    {
+      "id": "play-toolbox",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=UTF-8",
+      "size": 235013,
+      "url": "https://www.unicef.org/parenting/ar/%D8%B5%D9%86%D8%AF%D9%88%D9%82-%D8%A7%D9%84%D9%84%D8%B9%D8%A8"
+    },
+    {
+      "id": "bullying-guide",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=UTF-8",
+      "size": 224926,
+      "url": "https://www.unicef.org/parenting/ar/%D9%83%D9%8A%D9%81-%D8%AA%D8%AA%D8%AD%D8%AF%D8%AB-%D9%85%D8%B9-%D8%A3%D8%B7%D9%81%D8%A7%D9%84%D9%83-%D8%B9%D9%86-%D8%A7%D9%84%D8%AA%D9%86%D9%85%D9%91%D8%B1/%D8%B1%D8%B9%D8%A7%D9%8A%D8%A9-%D8%A7%D9%84%D8%A3%D8%B7%D9%81%D8%A7%D9%84"
+    },
+    {
+      "id": "play-emergencies",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=UTF-8",
+      "size": 221102,
+      "url": "https://www.unicef.org/parenting/ar/%D8%A7%D9%84%D9%84%D8%B9%D8%A8-%D9%81%D9%8A-%D8%AD%D8%A7%D9%84%D8%A7%D8%AA-%D8%A7%D9%84%D8%B7%D9%88%D8%A7%D8%B1%D9%8A%D9%94/%D8%AD%D8%A7%D9%84%D8%A7%D8%AA-%D8%A7%D9%84%D8%B7%D9%88%D8%A7%D8%B1%D8%A6"
+    },
+    {
+      "id": "child-air",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=UTF-8",
+      "size": 235009,
+      "url": "https://www.unicef.org/parenting/ar/%D8%AA%D9%84%D9%88%D8%AB-%D8%A7%D9%84%D9%87%D9%88%D8%A7%D8%A1/%D8%AD%D8%A7%D9%84%D8%A7%D8%AA-%D8%A7%D9%84%D8%B7%D9%88%D8%A7%D8%B1%D8%A6"
+    },
+    {
+      "id": "play-mental",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=UTF-8",
+      "size": 216325,
+      "url": "https://www.unicef.org/parenting/ar/%D9%83%D9%8A%D9%81-%D9%8A%D8%B9%D8%B2%D8%B2-%D8%A7%D9%84%D9%84%D9%91%D8%B9%D8%A8-%D8%A7%D9%84%D8%B5%D8%AD%D8%A9-%D8%A7%D9%84%D8%B9%D9%82%D9%84%D9%8A%D8%A9-%D9%84%D8%B7%D9%81%D9%84%D9%83/%D9%86%D9%85%D8%A7%D8%A1-%D8%A7%D9%84%D8%B7%D9%81%D9%84"
+    },
+    {
+      "id": "screenfree",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=UTF-8",
+      "size": 228858,
+      "url": "https://www.unicef.org/parenting/ar/%D8%A3%D9%86%D8%B4%D8%B7%D8%A9-%D8%AF%D9%88%D9%86-%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-%D8%A3%D8%AC%D9%87%D8%B2%D8%A9-%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9/%D8%B1%D8%B9%D8%A7%D9%8A%D8%A9-%D8%A7%D9%84%D8%A3%D8%B7%D9%81%D8%A7%D9%84"
+    },
+    {
+      "id": "child-mental-video",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=UTF-8",
+      "size": 206649,
+      "url": "https://www.unicef.org/parenting/ar/%D8%AF%D8%B1%D8%B3-%D8%A7%D9%84%D9%8A%D9%88%D9%86%D9%8A%D8%B3%D9%81-%D8%A7%D9%84%D9%85%D8%B5%D8%BA%D8%B1-%D9%84%D8%AA%D9%86%D8%B4%D8%A6%D8%A9-%D8%A7%D9%84%D8%A3%D8%B7%D9%81%D8%A7%D9%84-%D8%A8%D8%B4%D8%A3%D9%86-%D8%A8%D9%86%D8%A7%D8%A1-%D8%B5%D8%AD%D8%A9-%D8%B7%D9%81%D9%84%D9%83-%D8%A7%D9%84%D8%B9%D9%82%D9%84%D9%8A%D8%A9/%D8%A7%D9%84%D8%B5%D8%AD%D8%A9"
+    },
+    {
+      "id": "brain-play-video",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=UTF-8",
+      "size": 203299,
+      "url": "https://www.unicef.org/parenting/ar/%D8%AF%D8%B1%D8%B3-%D8%A8%D8%B4%D8%A3%D9%86-%D8%A8%D9%86%D8%A7%D8%A1-%D8%A3%D8%AF%D9%85%D8%BA%D8%A9-%D8%A7%D9%84%D8%A3%D8%B7%D9%81%D8%A7%D9%84-%D8%B9%D9%86-%D8%B7%D8%B1%D9%8A%D9%82-%D8%A7%D9%84%D9%84%D8%B9%D8%A8/%D9%86%D9%85%D8%A7%D8%A1-%D8%A7%D9%84%D8%B7%D9%81%D9%84"
+    },
+    {
+      "id": "child-stress",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=UTF-8",
+      "size": 227530,
+      "url": "https://www.unicef.org/parenting/ar/%D9%85%D8%A7-%D9%87%D9%88-%D8%A7%D9%84%D8%A5%D8%AC%D9%87%D8%A7%D8%AF-%D8%A7%D9%84%D9%86%D9%81%D8%B3%D9%8A%D8%9F/%D8%A7%D9%84%D8%B5%D8%AD%D8%A9-%D8%A7%D9%84%D8%B9%D9%82%D9%84%D9%8A%D8%A9"
+    },
+    {
+      "id": "parent-stress",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=UTF-8",
+      "size": 231727,
+      "url": "https://www.unicef.org/parenting/ar/%D9%83%D9%8A%D9%81-%D9%86%D8%AE%D9%81%D9%81-%D8%A7%D9%84%D8%A5%D8%AC%D9%87%D8%A7%D8%AF-%D8%A7%D9%84%D9%86%D9%81%D8%B3%D9%8A/%D8%A7%D9%84%D8%B5%D8%AD%D8%A9-%D8%A7%D9%84%D8%B9%D9%82%D9%84%D9%8A%D8%A9"
+    },
+    {
+      "id": "teen-anger",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=UTF-8",
+      "size": 219856,
+      "url": "https://www.unicef.org/parenting/ar/%D9%83%D9%8A%D9%81-%D8%AA%D8%B9%D9%8A%D9%86-%D9%88%D9%84%D8%AF%D9%83-%D8%A7%D9%84%D9%85%D8%B1%D8%A7%D9%87%D9%82-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%AA%D8%AD%D9%83%D9%85-%D8%A8%D9%86%D9%88%D8%A8%D8%A7%D8%AA-%D8%A7%D9%84%D8%BA%D8%B6%D8%A8/%D8%A7%D9%84%D8%B5%D8%AD%D8%A9-%D8%A7%D9%84%D8%B9%D9%82%D9%84%D9%8A%D8%A9"
+    },
+    {
+      "id": "mental-wellbeing",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=UTF-8",
+      "size": 321045,
+      "url": "https://www.unicef.org/parenting/ar/%D8%A7%D9%84%D8%B5%D8%AD%D8%A9-%D8%A7%D9%84%D9%86%D9%81%D8%B3%D9%8A%D8%A9-%D9%88%D8%A7%D9%84%D8%B1%D9%81%D8%A7%D9%87"
+    },
+    {
+      "id": "science-play",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=UTF-8",
+      "size": 210079,
+      "url": "https://www.unicef.org/parenting/ar/%D8%B9%D9%84%D9%85-%D8%A7%D9%84%D9%84%D8%B9%D8%A8/%D8%B1%D8%B9%D8%A7%D9%8A%D8%A9-%D8%A7%D9%84%D8%A3%D8%B7%D9%81%D8%A7%D9%84"
+    },
+    {
+      "id": "free-play",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=UTF-8",
+      "size": 217031,
+      "url": "https://www.unicef.org/parenting/ar/%D9%85%D8%A7-%D9%87%D9%88-%D8%A7%D9%84%D9%84%D8%B9%D8%A8-%D8%A7%D9%84%D8%AD%D8%B1-%D9%88%D9%84%D9%85%D9%8E-%D8%B9%D9%84%D9%8A%D9%83-%D8%AA%D8%B4%D8%AC%D9%8A%D8%B9%D9%87-%D9%81%D9%8A-%D8%A7%D9%84%D9%85%D9%86%D8%B2%D9%84/%D8%B1%D8%B9%D8%A7%D9%8A%D8%A9-%D8%A7%D9%84%D8%A3%D8%B7%D9%81%D8%A7%D9%84"
+    },
+    {
+      "id": "inclusive-play",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=UTF-8",
+      "size": 210491,
+      "url": "https://www.unicef.org/parenting/ar/%D8%A3%D9%86%D8%B4%D8%B7%D8%A9-%D9%85%D8%B1%D8%AD%D8%A9-%D9%84%D9%84%D8%A3%D8%B7%D9%81%D8%A7%D9%84-%D8%B0%D9%88%D9%8A-%D8%A7%D9%84%D8%A5%D8%B9%D8%A7%D9%82%D8%A9/%D8%B1%D8%B9%D8%A7%D9%8A%D8%A9-%D8%A7%D9%84%D8%A3%D8%B7%D9%81%D8%A7%D9%84"
+    },
+    {
+      "id": "anytime-play",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=UTF-8",
+      "size": 230006,
+      "url": "https://www.unicef.org/parenting/ar/%D9%88%D9%82%D8%AA-%D8%A7%D9%84%D9%84%D8%B9%D8%A8%D8%8C-%D9%81%D9%8A-%D8%A3%D9%8A-%D9%88%D9%82%D8%AA/%D8%B1%D8%B9%D8%A7%D9%8A%D8%A9-%D8%A7%D9%84%D8%A3%D8%B7%D9%81%D8%A7%D9%84"
+    },
+    {
+      "id": "distress-child",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=UTF-8",
+      "size": 219102,
+      "url": "https://www.unicef.org/parenting/ar/%D9%83%D9%8A%D9%81-%D8%AA%D9%85%D9%8A%D8%B2-%D8%B9%D9%84%D8%A7%D9%85%D8%A7%D8%AA-%D8%A7%D9%84%D9%83%D8%B1%D8%A8-%D9%84%D8%AF%D9%89-%D8%A7%D9%84%D8%A3%D8%B7%D9%81%D8%A7%D9%84/%D8%B1%D8%B9%D8%A7%D9%8A%D8%A9-%D8%A7%D9%84%D8%A3%D8%B7%D9%81%D8%A7%D9%84"
+    },
+    {
+      "id": "teach-handwashing",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=UTF-8",
+      "size": 214769,
+      "url": "https://www.unicef.org/parenting/ar/%D9%83%D9%8A%D9%81-%D8%AA%D8%B9%D9%84%D9%91%D9%85-%D8%A3%D8%B7%D9%81%D8%A7%D9%84%D9%83-%D8%BA%D8%B3%D9%84-%D8%A7%D9%84%D9%8A%D8%AF%D9%8A%D9%86/%D8%A7%D9%84%D8%B5%D8%AD%D8%A9"
+    },
+    {
+      "id": "read-together",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=UTF-8",
+      "size": 120836,
+      "url": "https://www.unicef.org/ar/node/54416"
+    },
+    {
+      "id": "child-rights-book",
+      "status": 200,
+      "arabic": true,
+      "type": "application/pdf",
+      "size": 929632,
+      "url": "https://www.unicef.org/tunisia/media/7726/file/ARABIC_CRC_A4_BOOKLET.pdf.pdf"
+    },
+    {
+      "id": "psychosocial-manual",
+      "status": 200,
+      "arabic": true,
+      "type": "application/pdf",
+      "size": 1276398,
+      "url": "https://www.unicef.org/syria/media/13856/file/Syria-national-MHPSS-manuals-sessions-10-12-AR.pdf"
+    },
+    {
+      "id": "psychosocial-younger",
+      "status": 200,
+      "arabic": true,
+      "type": "application/pdf",
+      "size": 1062477,
+      "url": "https://www.unicef.org/syria/media/13831/file/Syria-national-MHPSS-manuals-sessions-6-9.pdf"
+    },
+    {
+      "id": "adolescent-activities",
+      "status": 200,
+      "arabic": true,
+      "type": "application/pdf",
+      "size": 2311512,
+      "url": "https://www.unicef.org/adolescentkit/media/3281/file/AdolKit-Activity-guide-Our-days-AR.pdf"
+    }
+  ]
+}

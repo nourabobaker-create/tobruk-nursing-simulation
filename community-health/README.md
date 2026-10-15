@@ -1,10 +1,10 @@
 # تمريض من أجل المجتمع
 
-Faculty of Nursing, Tobruk University — community health education prototype, release 0.8.0, updated 15 October 2026. The initiative has its own Google Form embedded in a contextual in-app dialog; the earlier portal-form handoff has been removed.
+Faculty of Nursing, Tobruk University — community health education prototype, release 0.9.0, updated 16 October 2026. The initiative has its own Google Form embedded in a contextual in-app dialog; the earlier portal-form handoff has been removed.
 
 ## Public experience
 
-138 original Arabic topic guides. Each combines an explanation, relevant symptoms or observations, practical actions, prevention, general treatment information, avoid/seek-help advice, a real-life example, and authoritative references. All guides await documented faculty review; real authors/reviewers are credited only after actual participation and consent.
+152 original Arabic topic guides. Each combines an explanation, relevant symptoms or observations, practical actions, prevention, general treatment information, avoid/seek-help advice, a real-life example, and authoritative references. All guides await documented faculty review; real authors/reviewers are credited only after actual participation and consent.
 
 The home page introduces the students' community service and self-funded voluntary effort, with an AI-generated illustrative community scene (not real students/patients). Original lightweight SVG drawings illustrate each topic. Everyday audience paths, Arabic search, favorites, print/share, larger text and device Arabic speech are available. Speech requires an available Arabic voice; local/offline and remote voices depend on the device. It never silently substitutes an English voice. Navigation stops speech.
 
@@ -28,7 +28,7 @@ The home-kit checklist can be repeated and is stored locally. No fixed water int
 - `measure.js`: opt-in local repeated measurement, explicit cycle linkage, summaries and safe CSV export.
 - `sw.js`: scoped offline cache; previous app cache is migrated while unrelated caches remain untouched.
 - `measurement-protocol.md`: feedback reception, local measurement consent and pairing rules, limitations, exports and requirements for later institutional quality integration.
-- `review-register.csv`: 138 article entries plus 24 scenario entries; human review and approval fields remain blank.
+- `review-register.csv`: 152 article entries, 24 scenario entries and 12 classroom story/activity entries; human review and approval fields remain blank.
 - `activity-record.csv`, `improvement-register.csv`: blank bilingual institutional work registers.
 - `plan.html`: original eight-week plan (v0.1 historical starting plan); `style.css` remains for that page. `app.js` is an unused baseline retained for reference. The public app does not load it.
 
@@ -148,3 +148,15 @@ Added 16 original branching scenarios (24 total, 96 nodes, 192 choices, 288 term
 The searchable Arabic library links to 24 official Arabic WHO fact sheets, grouped in seven subjects, with short original descriptions, publisher, link/language check date and an internal simplified guide. External sources and the survey require internet. No external pages are cached or copied wholesale.
 
 Validation: node verify.cjs passes 138 guides, 24 scenarios/all 288 paths, optional records, contextual survey, Arabic library search/filter/empty states, native install/fallback and service-worker migration with 47 exact local cache URLs. Browser and physical iPhone QA were not performed in this environment.
+
+## Release 0.9.0: brain, heart, social wellbeing and classroom reading
+
+Added 14 plain Arabic guides (152 total) and two visible health fields (27 total): brain health, dementia/Alzheimer, Parkinson, epilepsy, seizure first aid, head injury, peripheral neuropathy, heart attack, heart failure, rhythm problems, cholesterol, child heart, child emotions and social belonging. Each has symptoms, prevention, practical care, treatment context, urgent signs, illustrated scenes, references, audio and existing optional repeated learning measures. Sources are verified; faculty clinical sign-off remains pending.
+
+Expanded the library from 24 to 72 unique official Arabic resources, including four Arabic PDF guides/booklets from UNICEF. The mix includes mental, social, environmental, neurological and cardiac health, play, inclusion, bullying, child rights and teacher preparation. Facilitator manuals are marked for adults and preparation, not presented as preschool read-aloud stories. Age suggestions and brief descriptions are editorial guidance; official publisher endorsement is not implied. Primary sources were checked with HTTPS GET and Arabic text/PDF verification; see library-source-audit.json. PDFs are linked at publisher sites, not mirrored or copied.
+
+Added 12 original fictional read-aloud stories with optional questions and safe activities, age guidance, teacher notes, original symbolic SVG illustrations, full story audio and print layouts. Original materials are clearly distinguished from 72 external sources and await educator review. Sources support general educational principles, not publisher authorship of the stories. No child data, diagnostic assessments, compulsory disclosures or hazardous classroom demonstrations are introduced. The existing dedicated survey repeats in a dialog with the story title context.
+
+Library discovery now includes subject, audience and format filters, Arabic search, teacher/preschool shortcuts, combined mental/social discovery, pagination, descriptions read aloud and empty-state reset. Story text is available in the offline shell; external sources and survey require internet. Existing iPhone installation guidance, identity, logo, hero and slogan remain intact.
+
+Validation: node verify.cjs passes 152 guides, 27 fields, 24 scenarios/288 paths, 72 official resources, four PDF types, 12 complete story routes and spoken texts, contextual repeated survey, library filters/pagination/reset and 50 exact cached local resources. Browser, printed-page and physical-device QA were not available; run educator/clinical review and real-device checks before formal approval.
