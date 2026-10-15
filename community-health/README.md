@@ -1,6 +1,6 @@
 # تمريض من أجل المجتمع
 
-Faculty of Nursing, Tobruk University — community health education prototype, release 0.7.2, updated 16 October 2026. The initiative has its own Google Form embedded in a contextual in-app dialog; the earlier portal-form handoff has been removed.
+Faculty of Nursing, Tobruk University — community health education prototype, release 0.7.3, updated 16 October 2026. The initiative has its own Google Form embedded in a contextual in-app dialog; the earlier portal-form handoff has been removed.
 
 ## Public experience
 
@@ -135,6 +135,6 @@ The installed application's full name is «كلية التمريض، جامعة 
 Focused installation checks and the existing138-topic regression suite passed: full/short names, unchanged PWA identity, exact PNG dimensions, original logo source hash, Apple metadata and45 offline assets. Decoded source pixels were verified identical across the lossless WebP-to-PNG conversion, rendered launch icons were checked nonblank/opaque and visually reviewed, and important logo content fits the adaptive-mask safe area.
 
 
-## Release0.7.2: community-awareness application name
+## Release0.7.3: installed community-awareness application name
 
-The installed-app name is «التوعية المجتمعية — كلية التمريض، جامعة طبرق». Both name and short_name, the HTML title, application-name and Apple home-screen title use this full wording, so a short-name fallback no longer substitutes the faculty name alone. The official faculty icon and stable installation identity are preserved. A phone launcher may shorten the visible text to fit its available label space.
+The installed-app name is «التوعية المجتمعية — كلية التمريض، جامعة طبرق». Both name and short_name, application-name and Apple home-screen title use this full wording, so a short-name fallback no longer substitutes the faculty name alone. The public website retains its original «تمريض من أجل المجتمع» title and visible branding. The official faculty icon and stable installation identity are preserved. A phone launcher may shorten the visible text to fit its available label space.
