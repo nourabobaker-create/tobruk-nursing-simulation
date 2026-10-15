@@ -19,6 +19,7 @@
  function fields(input) {
   if(!input||typeof input!=='object'||Array.isArray(input))throw Error('invalid');
   const row={
+   instrument:string(input.instrument,40,'community-pilot-v1'),
    release:string(input.release,40),
    context:string(input.context,120),
    kind:string(input.kind,64,'general')||'general'
@@ -102,7 +103,7 @@
    };
   }
   csv() {
-   const cols=['id','time','updated','release','context','kind','ease','clarity','usefulness','issues','comment','suggestion'];
+   const cols=['id','time','updated','instrument','release','context','kind','ease','clarity','usefulness','issues','comment','suggestion'];
    const rows=this.rows.map(row=>cols.map(key=>key==='time'||key==='updated'?new Date(row[key]).toISOString():key==='issues'?row.issues.join(' | '):row[key]));
    return '\ufeff'+[cols,...rows].map(row=>row.map(quote).join(',')).join('\r\n');
   }

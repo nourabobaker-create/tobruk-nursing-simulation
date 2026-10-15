@@ -1,6 +1,6 @@
 /* Original educational expansion. No faculty sign-off is implied. */
 window.COMMUNITY_V2={version:'0.2.0',date:'2026-10-15',
-feedback:{url:'https://docs.google.com/forms/d/e/1FAIpQLSc74KBKDNEQwoWYLwrwUKth5rHO6lrwRyanZnQ2zlGPDWeWug/viewform',fields:{category:'368265257',year:'2069310938',date:'185225204',message:'177191333',recurrence:'1330979738',previous:'1008498616',suggestion:'1294929326',contact:'1778288853'}},
+// Feedback is handled by the dedicated in-app community-health survey.
 sources:{
  hpdiagnosis:['NIDDK NIH','فحوص جرثومة المعدة وعسر الهضم','https://www.niddk.nih.gov/health-information/digestive-diseases/indigestion-dyspepsia/diagnosis'],
  hptreat:['NIDDK NIH','علاج القرحة وجرثومة المعدة','https://www.niddk.nih.gov/health-information/digestive-diseases/peptic-ulcers-stomach-ulcers/treatment'],
