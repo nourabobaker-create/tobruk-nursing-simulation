@@ -721,6 +721,70 @@
       "type": "text/html; charset=utf-8",
       "size": 107444,
       "url": "https://www.who.int/ar/news-room/fact-sheets/detail/drowning"
+    },
+    {
+      "id": "parent-pack-011",
+      "url": "https://www.eca.gov.ae/-/media/ECA/Guidelines/documents/parent-pack-en.pdf?rev=7938b9f42df9437eab174d2c28ef6ffe",
+      "status": 200,
+      "arabic": true,
+      "type": "application/pdf",
+      "size": 7446271
+    },
+    {
+      "id": "child-development-cards-011",
+      "url": "https://www.unicef.org/media/96011/file/4-CCD-Counseling-Card-ar.pdf",
+      "status": 200,
+      "arabic": true,
+      "type": "application/pdf",
+      "size": 1079924
+    },
+    {
+      "id": "child-care-poster-011",
+      "url": "https://www.unicef.org/media/96031/file/8-CCD-Poster-ar.pdf",
+      "status": 200,
+      "arabic": true,
+      "type": "application/pdf",
+      "size": 612244
+    },
+    {
+      "id": "child-development-manual-011",
+      "url": "https://www.unicef.org/media/96006/file/3-CCD-Participant-Manual-ar.pdf",
+      "status": 200,
+      "arabic": true,
+      "type": "application/pdf",
+      "size": 3127294
+    },
+    {
+      "id": "school-mental-health-011",
+      "url": "https://www.unicef.org/media/137746/file/Promoting%20and%20protecting%20mental%20health%20in%20schools%20and%20learning%20environments.pdf",
+      "status": 200,
+      "arabic": true,
+      "type": "application/pdf",
+      "size": 675975
+    },
+    {
+      "id": "inclusive-classroom-011",
+      "url": "https://www.unicef.org/eca/sites/unicef.org.eca/files/Booklet%2011%20-%20Arabic_0.pdf",
+      "status": 200,
+      "arabic": true,
+      "type": "application/pdf",
+      "size": 1063157
+    },
+    {
+      "id": "head-lice-ar-011",
+      "url": "https://www.moh.gov.sa/awarenessplateform/varioustopics/pages/lice.aspx",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 120290
+    },
+    {
+      "id": "family-heat-011",
+      "url": "https://www.unicef.org/jordan/ar/كيف-تتعامل-مع-موجات-الحرّ؟/قصص",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=UTF-8",
+      "size": 220875
     }
   ]
 }

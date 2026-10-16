@@ -1,10 +1,10 @@
 # تمريض من أجل المجتمع
 
-Faculty of Nursing, Tobruk University — community health education prototype, release 0.10.0, updated 16 October 2026. The initiative has its own Google Form embedded in a contextual in-app dialog; the earlier portal-form handoff has been removed.
+Faculty of Nursing, Tobruk University — community health education prototype, release 0.11.0, updated 16 October 2026. The initiative has its own Google Form embedded in a contextual in-app dialog; the earlier portal-form handoff has been removed.
 
 ## Public experience
 
-174 original Arabic topic guides. Each combines an explanation, relevant symptoms or observations, practical actions, prevention, general treatment information, avoid/seek-help advice, a real-life example, and authoritative references. All guides await documented faculty review; real authors/reviewers are credited only after actual participation and consent.
+185 original Arabic topic guides. Each combines an explanation, relevant symptoms or observations, practical actions, prevention, general treatment information, avoid/seek-help advice, a real-life example, and authoritative references. All guides await documented faculty review; real authors/reviewers are credited only after actual participation and consent.
 
 The home page introduces the students' community service and self-funded voluntary effort, with an AI-generated illustrative community scene (not real students/patients). Original lightweight SVG drawings illustrate each topic. Everyday audience paths, Arabic search, favorites, print/share, larger text and device Arabic speech are available. Speech requires an available Arabic voice; local/offline and remote voices depend on the device. It never silently substitutes an English voice. Navigation stops speech.
 
@@ -28,7 +28,7 @@ The home-kit checklist can be repeated and is stored locally. No fixed water int
 - `measure.js`: opt-in local repeated measurement, explicit cycle linkage, summaries and safe CSV export.
 - `sw.js`: scoped offline cache; previous app cache is migrated while unrelated caches remain untouched.
 - `measurement-protocol.md`: feedback reception, local measurement consent and pairing rules, limitations, exports and requirements for later institutional quality integration.
-- `review-register.csv`: 174 article entries, 24 scenario entries and 12 classroom story/activity entries; human review and approval fields remain blank.
+- `review-register.csv`: 185 article entries, 24 scenario entries and 12 classroom story/activity entries; human review and approval fields remain blank.
 - `activity-record.csv`, `improvement-register.csv`: blank bilingual institutional work registers.
 - `plan.html`: original eight-week plan (v0.1 historical starting plan); `style.css` remains for that page. `app.js` is an unused baseline retained for reference. The public app does not load it.
 
@@ -168,3 +168,13 @@ Adds 12 guides on bullying, autism, Down syndrome, family dialogue, puberty, bod
 The front page explains community-health nursing and the supervised student initiative, with WHO/ICN references and professional scope boundaries. New symbolic SVG artwork supports the lessons. Critical resuscitation steps follow Resuscitation Council UK 2025 guidance; the Arabic AHA 2025 highlights are identified as a professional reference whose training protocol may differ. External emergency numbers belong to their source country. Publisher PDFs are linked, not redistributed.
 
 All 90 library links were checked by HTTPS; new PDFs were visually inspected. Automated regression checks cover all topic routes, repeated contextual feedback, read-aloud integration, 24 scenarios/288 paths, library filters, installation fallback and 53 offline-cache files. Physical-device/browser testing and documented faculty clinical review remain pending. Source verification does not constitute clinical approval.
+
+## Release 0.11.0 — children, first response and Tobruk access context
+
+Adds a dedicated child-facing #kids route with ten short illustrated lessons (ages 6–12, younger with an adult) on hand hygiene, personal tools, food sharing/allergy, street-food safety, balanced food, waste, water, inclusion, head lice and cough etiquette. A separate head-lice family guide covers detection, safe treatment, repeated checks and non-stigmatizing school handling. Child lessons retain Arabic speech, contextual repeated feedback and optional repeated learning checks. Adult notes are separate from the child text.
+
+Stroke and heart-attack guides now contain sequenced first-response actions, observation, oral-intake precautions and linked CPR. Aspirin guidance is limited to a conscious adult with suspected cardiac chest pain and appropriate safety exclusions; it is explicitly excluded from suspected stroke. Clinical review remains pending.
+
+The initiative owner reports that ordinary access in Tobruk is direct attendance at Tobruk Medical Center accidents/emergency, rather than assuming ambulance dispatch. local-care-context.js records that supplied context and adapts generic requests for help throughout guide/scenario text. The emergency page distinguishes urgent hospital care from routine clinic access and emphasizes immediate CPR without waiting for unavailable transport. No telephone number, guaranteed service or institutional endorsement is invented. Local clinical/operational confirmation is still required.
+
+The nursing-role introduction is shorter and centers awareness, healthy behavior and prevention, without a list of example subjects. The library now contains 98 external Arabic resources, including 12 PDF books/cards/briefs and family heat-safety reading, alongside 12 original classroom stories. Six newly linked PDFs were inspected for Arabic content and visual readability; adult-oriented manuals are labeled. All eight new resource URLs returned HTTP 200. There are 185 guides, 33 discovery fields and 55 offline files.

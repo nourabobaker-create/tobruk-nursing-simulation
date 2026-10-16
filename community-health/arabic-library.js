@@ -1691,5 +1691,158 @@ window.CommunityArabicLibrary=[
       "teen"
     ],
     "age": "للكبار والمراهقين مع توجيه؛ ليس نشاطًا عمليًا للأطفال"
+  },
+  {
+    "id": "parent-pack-011",
+    "title": "حزمة الوالدين: الصحة والتغذية والسلامة والتربية",
+    "url": "https://www.eca.gov.ae/-/media/ECA/Guidelines/documents/parent-pack-en.pdf?rev=7938b9f42df9437eab174d2c28ef6ffe",
+    "publisher": "هيئة أبوظبي للطفولة المبكرة",
+    "language": "العربية",
+    "checked": "2026-10-16",
+    "category": "الأم والطفل",
+    "description": "دليل مصور للأسرة عن السنوات الأولى والعلاقات والتعلم المبكر ورعاية الطفل.",
+    "topic": "postpartum-care",
+    "audiences": [
+      "public",
+      "teacher"
+    ],
+    "kind": "book",
+    "age": "للكبار ومقدمي الرعاية",
+    "level": "عملي للأسرة",
+    "tip": "ملف ثنائي اللغة؛ يتضمن العربية رغم اسم الملف الإنجليزي. الخدمات والأرقام والتشريعات الإماراتية تخص بلد المصدر."
+  },
+  {
+    "id": "child-development-cards-011",
+    "title": "بطاقات اللعب والتواصل لتنمية الطفل",
+    "url": "https://www.unicef.org/media/96011/file/4-CCD-Counseling-Card-ar.pdf",
+    "publisher": "اليونيسف ومنظمة الصحة العالمية",
+    "language": "العربية",
+    "checked": "2026-10-16",
+    "category": "الأم والطفل",
+    "description": "بطاقات مصورة تقترح اللعب والتواصل الملائمين لمراحل الطفولة المبكرة.",
+    "topic": "newborn-first-week",
+    "audiences": [
+      "public",
+      "teacher"
+    ],
+    "kind": "book",
+    "age": "من الولادة إلى الطفولة المبكرة؛ يقرأه بالغ",
+    "level": "بطاقات مصورة",
+    "tip": "اختاروا نشاطًا مناسبًا للعمر والقدرة، مع إشراف مباشر وأدوات آمنة غير قابلة للابتلاع."
+  },
+  {
+    "id": "child-care-poster-011",
+    "title": "ملصق الرعاية: اللعب والكلام والاستجابة للطفل",
+    "url": "https://www.unicef.org/media/96031/file/8-CCD-Poster-ar.pdf",
+    "publisher": "اليونيسف ومنظمة الصحة العالمية",
+    "language": "العربية",
+    "checked": "2026-10-16",
+    "category": "الأم والطفل",
+    "description": "ملصق عربي موجز للأهل عن فرص التواصل واللعب اليومي مع الطفل.",
+    "topic": "child-emotions",
+    "audiences": [
+      "public",
+      "teacher"
+    ],
+    "kind": "book",
+    "age": "للأهل ومقدمي رعاية الصغار",
+    "level": "ملصق مختصر",
+    "tip": "اقرأوا فكرة واحدة وجربوها؛ الملصق لا يستبدل تقييم النمو عند وجود قلق."
+  },
+  {
+    "id": "child-development-manual-011",
+    "title": "العناية بنماء الطفل: دليل المشارك",
+    "url": "https://www.unicef.org/media/96006/file/3-CCD-Participant-Manual-ar.pdf",
+    "publisher": "اليونيسف ومنظمة الصحة العالمية",
+    "language": "العربية",
+    "checked": "2026-10-16",
+    "category": "الأم والطفل",
+    "description": "دليل مفصل يساند التعلم المبكر والرعاية المستجيبة واللعب والتواصل.",
+    "topic": "child-emotions",
+    "audiences": [
+      "teacher",
+      "public"
+    ],
+    "kind": "book",
+    "age": "للكبار والعاملين مع الأسر",
+    "level": "مرجع تفصيلي",
+    "tip": "ابدأوا بالبطاقات المختصرة؛ الدليل أوسع ويحتاج تحضيرًا، وليس قصة تقرأ كاملة للأطفال."
+  },
+  {
+    "id": "school-mental-health-011",
+    "title": "تعزيز الصحة النفسية في المدارس وبيئات التعلم",
+    "url": "https://www.unicef.org/media/137746/file/Promoting%20and%20protecting%20mental%20health%20in%20schools%20and%20learning%20environments.pdf",
+    "publisher": "اليونيسف ومنظمة الصحة العالمية واليونسكو",
+    "language": "العربية",
+    "checked": "2026-10-16",
+    "category": "نفسية وسلوك",
+    "description": "كتيب عن بيئة مدرسية تدعم الصحة النفسية والانتماء والوقاية والوصول للمساندة.",
+    "topic": "kids-kind-school",
+    "audiences": [
+      "teacher",
+      "public"
+    ],
+    "kind": "book",
+    "age": "للمعلمات والأهل ومسؤولي المدارس",
+    "level": "دليل للبالغين",
+    "tip": "اختاروا إجراءً قابلًا للتطبيق في المدرسة؛ الكتيب ليس برنامج علاج فردي للطفل."
+  },
+  {
+    "id": "inclusive-classroom-011",
+    "title": "بيئة تعلم تصل إلى كل طفل: التصميم الشامل",
+    "url": "https://www.unicef.org/eca/sites/unicef.org.eca/files/Booklet%2011%20-%20Arabic_0.pdf",
+    "publisher": "اليونيسف",
+    "language": "العربية",
+    "checked": "2026-10-16",
+    "category": "اجتماعية ومجتمعية",
+    "description": "دليل يشرح طرق المشاركة والتعلم المتنوعة وتكييف الفصل مع قدرات الأطفال.",
+    "topic": "kids-kind-school",
+    "audiences": [
+      "teacher",
+      "public"
+    ],
+    "kind": "book",
+    "age": "للمعلمات والأسر؛ لا يقرأ كاملًا للصغار",
+    "level": "مرجع للتهيئة والدمج",
+    "tip": "اختاروا تكييفًا عمليًا مثل التعليم بالصورة أو إتاحة وقت أطول؛ لا تكشفوا تشخيص طفل أمام الصف."
+  },
+  {
+    "id": "family-heat-011",
+    "title": "الأسرة والأطفال في موجات الحر",
+    "url": "https://www.unicef.org/jordan/ar/كيف-تتعامل-مع-موجات-الحرّ؟/قصص",
+    "publisher": "اليونيسف",
+    "language": "العربية",
+    "checked": "2026-10-16",
+    "category": "بيئة ومجتمع",
+    "description": "شرح عملي للوقاية من الحر والتعرف إلى علاماته وحماية الأطفال عند ارتفاع الحرارة.",
+    "topic": "kids-water",
+    "audiences": [
+      "teacher",
+      "public",
+      "primary"
+    ],
+    "kind": "article",
+    "age": "غالبًا 8–12 سنة؛ وبعض الأنشطة للصغار مع بالغ",
+    "level": "مجموعة كتب وأنشطة",
+    "tip": "اقرأوا الإرشادات للكبار ثم اختاروا مع الطفل فعلًا بسيطًا: الظل والماء والراحة. الأعراض الخطرة تستدعي الطوارئ دون انتظار."
+  },
+  {
+    "id": "head-lice-ar-011",
+    "title": "قمل الرأس: مرجع عربي للأسرة",
+    "url": "https://www.moh.gov.sa/awarenessplateform/varioustopics/pages/lice.aspx",
+    "publisher": "وزارة الصحة السعودية",
+    "language": "العربية",
+    "checked": "2026-10-16",
+    "category": "الأم والطفل",
+    "description": "معلومات عن القمل وعلاماته وانتقاله والعناية الآمنة بالشعر.",
+    "topic": "head-lice-family",
+    "audiences": [
+      "public",
+      "teacher"
+    ],
+    "kind": "article",
+    "age": "للكبار ومقدمي الرعاية",
+    "level": "مقال عربي",
+    "tip": "راجعوا درس التطبيق لخطة المدرسة الأحدث؛ لا يُستخدم عزل الطفل أو حلاقة الشعر القسرية كقاعدة عامة، ولا علاج وقائي أو مبيد منزلي."
   }
 ];
