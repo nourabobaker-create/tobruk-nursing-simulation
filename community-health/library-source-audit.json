@@ -1,5 +1,5 @@
 {
-  "checked": "2026-10-16",
+  "checked": "2026-10-17",
   "method": "HTTPS GET with browser User-Agent; Arabic page text or publisher Arabic PDF; source checks are not faculty clinical approval",
   "resources": [
     {
@@ -785,6 +785,22 @@
       "arabic": true,
       "type": "text/html; charset=UTF-8",
       "size": 220875
+    },
+    {
+      "id": "work-eyes-ar",
+      "url": "https://www.moh.gov.sa/healthawareness/educationalcontent/diseases/eyes/pages/eyestrain.aspx",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 109906
+    },
+    {
+      "id": "work-mental-ar",
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/mental-health-at-work",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 118344
     }
   ]
 }

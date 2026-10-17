@@ -1844,5 +1844,43 @@ window.CommunityArabicLibrary=[
     "age": "للكبار ومقدمي الرعاية",
     "level": "مقال عربي",
     "tip": "راجعوا درس التطبيق لخطة المدرسة الأحدث؛ لا يُستخدم عزل الطفل أو حلاقة الشعر القسرية كقاعدة عامة، ولا علاج وقائي أو مبيد منزلي."
+  },
+  {
+    "id": "work-eyes-ar",
+    "title": "إجهاد العين عند استخدام الشاشات",
+    "url": "https://www.moh.gov.sa/healthawareness/educationalcontent/diseases/eyes/pages/eyestrain.aspx",
+    "topic": "work-eyes",
+    "description": "إرشادات عربية عن الجفاف والوهج والراحة وتعديل الشاشة وفحص النظر.",
+    "category": "صحة العاملين",
+    "publisher": "وزارة الصحة السعودية",
+    "language": "العربية",
+    "checked": "2026-10-17",
+    "kind": "article",
+    "level": "شرح عام للكبار",
+    "audiences": [
+      "public",
+      "teacher"
+    ],
+    "age": "للعاملين والمشرفين والكبار",
+    "tip": "ابدأ بالدرس المبسط داخل التطبيق. التشريعات والخدمات المذكورة بالمصدر تخص سياقه ولا تثبت أحكامًا محلية."
+  },
+  {
+    "id": "work-mental-ar",
+    "title": "الصحة النفسية في العمل",
+    "url": "https://www.who.int/ar/news-room/fact-sheets/detail/mental-health-at-work",
+    "topic": "work-stress",
+    "description": "شرح مخاطر أعباء العمل والمناوبات ودور الإدارة والدعم والوقاية.",
+    "category": "صحة العاملين",
+    "publisher": "منظمة الصحة العالمية",
+    "language": "العربية",
+    "checked": "2026-10-17",
+    "kind": "article",
+    "level": "شرح عام للكبار",
+    "audiences": [
+      "public",
+      "teacher"
+    ],
+    "age": "للعاملين والمشرفين والكبار",
+    "tip": "ابدأ بالدرس المبسط داخل التطبيق. التشريعات والخدمات المذكورة بالمصدر تخص سياقه ولا تثبت أحكامًا محلية."
   }
 ];

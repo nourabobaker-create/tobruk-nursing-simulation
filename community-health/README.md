@@ -1,10 +1,10 @@
 # تمريض من أجل المجتمع
 
-Faculty of Nursing, Tobruk University — community health education prototype, release 0.11.0, updated 16 October 2026. The initiative has its own Google Form embedded in a contextual in-app dialog; the earlier portal-form handoff has been removed.
+Faculty of Nursing, Tobruk University — community health education prototype, release 0.12.0, updated 17 October 2026. The initiative has its own Google Form embedded in a contextual in-app dialog; the earlier portal-form handoff has been removed.
 
 ## Public experience
 
-185 original Arabic topic guides. Each combines an explanation, relevant symptoms or observations, practical actions, prevention, general treatment information, avoid/seek-help advice, a real-life example, and authoritative references. All guides await documented faculty review; real authors/reviewers are credited only after actual participation and consent.
+197 original Arabic topic guides. Each combines an explanation, relevant symptoms or observations, practical actions, prevention, general treatment information, avoid/seek-help advice, a real-life example, and authoritative references. All guides await documented faculty review; real authors/reviewers are credited only after actual participation and consent.
 
 The home page introduces the students' community service and self-funded voluntary effort, with an AI-generated illustrative community scene (not real students/patients). Original lightweight SVG drawings illustrate each topic. Everyday audience paths, Arabic search, favorites, print/share, larger text and device Arabic speech are available. Speech requires an available Arabic voice; local/offline and remote voices depend on the device. It never silently substitutes an English voice. Navigation stops speech.
 
@@ -28,7 +28,7 @@ The home-kit checklist can be repeated and is stored locally. No fixed water int
 - `measure.js`: opt-in local repeated measurement, explicit cycle linkage, summaries and safe CSV export.
 - `sw.js`: scoped offline cache; previous app cache is migrated while unrelated caches remain untouched.
 - `measurement-protocol.md`: feedback reception, local measurement consent and pairing rules, limitations, exports and requirements for later institutional quality integration.
-- `review-register.csv`: 185 article entries, 24 scenario entries and 12 classroom story/activity entries; human review and approval fields remain blank.
+- `review-register.csv`: 197 article entries, 24 scenario entries and 12 classroom story/activity entries; human review and approval fields remain blank.
 - `activity-record.csv`, `improvement-register.csv`: blank bilingual institutional work registers.
 - `plan.html`: original eight-week plan (v0.1 historical starting plan); `style.css` remains for that page. `app.js` is an unused baseline retained for reference. The public app does not load it.
 
@@ -178,3 +178,11 @@ Stroke and heart-attack guides now contain sequenced first-response actions, obs
 The initiative owner reports that ordinary access in Tobruk is direct attendance at Tobruk Medical Center accidents/emergency, rather than assuming ambulance dispatch. local-care-context.js records that supplied context and adapts generic requests for help throughout guide/scenario text. The emergency page distinguishes urgent hospital care from routine clinic access and emphasizes immediate CPR without waiting for unavailable transport. No telephone number, guaranteed service or institutional endorsement is invented. Local clinical/operational confirmation is still required.
 
 The nursing-role introduction is shorter and centers awareness, healthy behavior and prevention, without a list of example subjects. The library now contains 98 external Arabic resources, including 12 PDF books/cards/briefs and family heat-safety reading, alongside 12 original classroom stories. Six newly linked PDFs were inspected for Arabic content and visual readability; adult-oriented manuals are labeled. All eight new resource URLs returned HTTP 200. There are 185 guides, 33 discovery fields and 55 offline files.
+
+## Release 0.12.0 — health during work
+
+Adds a dedicated #workers page, top navigation link, home-page feature, illustrated discovery icon, dropdown category and work audience path. Twelve original Arabic guides cover prolonged standing, taxi/professional drivers, desk setup, screen eye strain, hot work, shifts/fatigue, manual handling/patient transfer, cleaning/hairdressing, catering, noise, construction dust and psychological pressure. Three original symbolic SVG illustrations complement existing art.
+
+Each guide includes observations, practical actions, prevention, general care, danger signs, an everyday example, focused primary-source references, Arabic read-aloud, repeated contextual feedback and optional repeated before/after/followup learning. The material emphasizes workplace controls, supervision and equipment alongside individual choices. Driver exercises are restricted to safe stops; cooling and UV protection are distinguished. Compression garments and fluid restrictions need individual assessment. No universal safe lifting weight or fixed rest schedule is invented.
+
+The collection now has 197 guides, 34 discovery fields, 100 external Arabic library resources, 12 PDF references and 57 offline files. Two new Arabic library links returned HTTP 200 with readable Arabic. Automated route, source, related-link, audio, feedback, learning, library and offline checks passed; SVG illustrations were visually inspected. Physical-device/browser testing and documented faculty clinical review remain pending.
