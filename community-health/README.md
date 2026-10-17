@@ -1,6 +1,6 @@
 # تمريض من أجل المجتمع
 
-Faculty of Nursing, Tobruk University — community health education prototype, release 0.12.1, updated 17 October 2026. The initiative has its own Google Form embedded in a contextual in-app dialog; the earlier portal-form handoff has been removed.
+Faculty of Nursing, Tobruk University — community health education prototype, release 0.12.2, updated 17 October 2026. The initiative has its own Google Form embedded in a contextual in-app dialog; the earlier portal-form handoff has been removed.
 
 ## Public experience
 
@@ -190,3 +190,7 @@ The collection now has 197 guides, 34 discovery fields, 100 external Arabic libr
 ## Release 0.12.1 — public introduction
 
 Clarifies intentional scientific simplification, reliable per-topic sources, community-awareness purpose, individual health differences and the absence of personal medical services. Removes pending-review wording from the current public interface. The pilot notice concerns technology, usability and repeat feedback. No clinical lesson, data collection or survey destination changed.
+
+## Release 0.12.2 — information first
+
+Replaces the tall hero and successive introduction panels with a compact branded image strip, four direct links, immediate search/dropdown and eight visible health icons. Remaining fields are available in a closed disclosure and the existing dropdown. Initiative, source, nursing-role and pilot details remain in a closed section after topic results and on About. No health content, feedback channel or measurement behavior changed.
