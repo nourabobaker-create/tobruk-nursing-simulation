@@ -1,10 +1,10 @@
 # تمريض من أجل المجتمع
 
-Faculty of Nursing, Tobruk University — community health education prototype, release 0.12.0, updated 17 October 2026. The initiative has its own Google Form embedded in a contextual in-app dialog; the earlier portal-form handoff has been removed.
+Faculty of Nursing, Tobruk University — community health education prototype, release 0.12.1, updated 17 October 2026. The initiative has its own Google Form embedded in a contextual in-app dialog; the earlier portal-form handoff has been removed.
 
 ## Public experience
 
-197 original Arabic topic guides. Each combines an explanation, relevant symptoms or observations, practical actions, prevention, general treatment information, avoid/seek-help advice, a real-life example, and authoritative references. All guides await documented faculty review; real authors/reviewers are credited only after actual participation and consent.
+197 original Arabic topic guides. Each combines an explanation, relevant symptoms or observations, practical actions, prevention, general treatment information, avoid/seek-help advice, a real-life example, and authoritative references. The public content is plain-language community education with authoritative references. Actual contributors are credited only after participation and consent.
 
 The home page introduces the students' community service and self-funded voluntary effort, with an AI-generated illustrative community scene (not real students/patients). Original lightweight SVG drawings illustrate each topic. Everyday audience paths, Arabic search, favorites, print/share, larger text and device Arabic speech are available. Speech requires an available Arabic voice; local/offline and remote voices depend on the device. It never silently substitutes an English voice. Navigation stops speech.
 
@@ -186,3 +186,7 @@ Adds a dedicated #workers page, top navigation link, home-page feature, illustra
 Each guide includes observations, practical actions, prevention, general care, danger signs, an everyday example, focused primary-source references, Arabic read-aloud, repeated contextual feedback and optional repeated before/after/followup learning. The material emphasizes workplace controls, supervision and equipment alongside individual choices. Driver exercises are restricted to safe stops; cooling and UV protection are distinguished. Compression garments and fluid restrictions need individual assessment. No universal safe lifting weight or fixed rest schedule is invented.
 
 The collection now has 197 guides, 34 discovery fields, 100 external Arabic library resources, 12 PDF references and 57 offline files. Two new Arabic library links returned HTTP 200 with readable Arabic. Automated route, source, related-link, audio, feedback, learning, library and offline checks passed; SVG illustrations were visually inspected. Physical-device/browser testing and documented faculty clinical review remain pending.
+
+## Release 0.12.1 — public introduction
+
+Clarifies intentional scientific simplification, reliable per-topic sources, community-awareness purpose, individual health differences and the absence of personal medical services. Removes pending-review wording from the current public interface. The pilot notice concerns technology, usability and repeat feedback. No clinical lesson, data collection or survey destination changed.
