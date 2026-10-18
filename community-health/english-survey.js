@@ -52,7 +52,7 @@
         <span class="label">Community health survey · You may participate more than once</span>
         <h${h} id="communitySurveyTitle" tabindex="-1">${escapeHTML(heading)}</h${h}>
         <p>Help the Faculty of Nursing, Tobruk University, improve technical performance, ease of use, and the clarity and usefulness of this content. Comments, corrections, criticism, and ideas are welcome.</p>
-        <p>Participation is voluntary. Do not enter your name, patient details, personal health information, or anyone else's identifying information. This is not an emergency or medical-advice service.</p>
+        <p>Participation is voluntary. Do not enter names, patient details, personal health information, usernames, or anyone else's identifying information in your feedback. You may provide your own email address or WhatsApp number only in the optional notification field below. This is not an emergency or medical-advice service.</p>
       </div>
       <div class="survey-frame-tools">
         <button type="button" id="newFeedback" class="button">Start another response</button>
@@ -60,7 +60,7 @@
       </div>
       <p class="survey-online-note">An internet connection is required to submit. Your answers are sent directly to this initiative's existing Google Form only when you select “Send my feedback”. They are not saved on this device. You may return and submit again after another topic or visit.</p>
       <form id="communityEnglishFeedbackForm" class="panel form-panel english-survey-form" data-community-english-survey="true" method="post" action="${escapeHTML(POST_URL)}" target="communityEnglishResponse" accept-charset="UTF-8" aria-describedby="communityEnglishSurveyPrivacy">
-        <p class="form-note">The existing Google Form requires each question. For a written question with nothing to add, you can enter “No comment”.</p>
+        <p class="form-note">The rating and written-feedback questions below are required; contact details are optional. For a written question with nothing to add, you can enter “No comment”.</p>
         <label class="field" for="communityEnglishSurveyContext">Topic or situation being reviewed</label>
         <textarea id="communityEnglishSurveyContext" name="entry.1610240402" rows="2" readonly required>${escapeHTML(contextValue)}</textarea>
         ${questions.map(question => `<fieldset><legend>${escapeHTML(question.title)} <span class="form-note">(Required)</span></legend>${question.choices.map((choice, index) => `<label class="radio-choice" for="communityEnglish-${question.entry}-${index}"><input id="communityEnglish-${question.entry}-${index}" type="radio" name="entry.${question.entry}" value="${escapeHTML(choice[0])}" required><span>${escapeHTML(choice[1])}</span></label>`).join('')}</fieldset>`).join('')}
@@ -70,6 +70,9 @@
         <label class="field" for="communityEnglishSurveySuggestion">What topic or idea would you like us to add or improve? (Required)</label>
         <textarea id="communityEnglishSurveySuggestion" name="entry.1677006881" rows="4" required placeholder="Your ideas for this topic or the app." aria-describedby="communityEnglishSuggestionHelp"></textarea>
         <p id="communityEnglishSuggestionHelp" class="form-note">If you have no additional comment, write “No comment”.</p>
+        <label class="field" for="communityEnglishContact">Optional: leave an email address or WhatsApp number if you would like to be notified when your suggestion is implemented or your requested topic is added.</label>
+        <input type="text" id="communityEnglishContact" name="entry.1353214146" maxlength="200" autocomplete="off" aria-describedby="communityEnglishContactHelp">
+        <p id="communityEnglishContactHelp" class="form-note">Providing contact details means you agree to their use only for this notification. You may leave this blank and still submit feedback. Do not enter anyone else’s details; this is not for medical advice or follow-up.</p>
         <p id="communityEnglishSurveyPrivacy" class="form-note">By selecting “Send my feedback”, you agree to send these answers to the initiative team through Google Forms. Review your answers before sending. Check Google's confirmation or any error message below to verify receipt.</p>
         <button class="button primary" type="submit">Send my feedback</button>
       </form>

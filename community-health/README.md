@@ -211,3 +211,8 @@ The English option covers all 197 guides, 34 fields, 12 original stories, all sc
 The English survey posts directly, only on user submission, to the same community Google Form and response sheet. Canonical Arabic option values preserve compatibility; all displayed questions and options are English. Receipt is confirmed by Google, never inferred from an iframe load. One clearly marked technical submission was verified in the response sheet and must be excluded from participant analysis, along with the earlier technical test. Raw responses are not stored in this repository.
 
 Functional verification covers both languages, scenario branches, source and topic links, speech selection, repeat feedback and local measurement, install fallback, offline caching and cache migration. Physical-device and visual browser QA were not performed in this environment. No named clinical reviewer or formal clinical approval is asserted by this release.
+
+
+## Release 0.13.1 — Optional proposal notification
+
+The existing Google Form now includes one optional contact field (entry.1353214146), with Arabic/English instructions and purpose-limited consent by voluntary entry. Respondents may leave it blank and submit normally. The English app form mirrors that field. Contact details are sent only in the explicit form POST to the existing Google Form; they are not placed in context URLs or saved in the app. The public response-summary option remains off; sharing permissions are unchanged. This records a notification request for the initiative team and does not add an automatic messaging service.
