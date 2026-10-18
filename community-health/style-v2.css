@@ -54,3 +54,19 @@ body:has(.community-survey-dialog[open]){overflow:hidden}
 
 /* One readable introduction, followed by every health icon. */
 .home-intro-summary{font-size:.86rem;line-height:1.85;color:var(--ink);margin:12px 0 16px;padding:0 2px;max-width:100%;text-align:start}.home-intro-summary a{color:var(--green);font-weight:bold;text-decoration:underline;text-underline-offset:3px}#explore>.section-title{margin-top:8px}.home-direct{margin-top:14px}#explore>.search-tools{margin-top:14px}@media(max-width:700px){.home-intro-summary{font-size:.86rem;line-height:1.8;margin-block:10px 14px}.home-welcome img{width:108px;height:108px}}
+/* Bilingual access and a compact, controllable feedback update ticker. */
+html[lang="en"]:not([data-language-ready="true"]) body{visibility:hidden}
+html[lang="en"] body{font-family:Arial,Tahoma,sans-serif;letter-spacing:normal}
+html[dir="ltr"] .survey-launcher{right:18px;left:auto}
+html[dir="ltr"] .solidarity-headline{letter-spacing:-.02em}
+#languageToggle{font-family:Arial,Tahoma,sans-serif;font-weight:700;white-space:nowrap}
+.feedback-update-bar{display:flex;align-items:center;gap:10px;margin:10px 0 18px;padding:7px 12px;border:1px solid #bdd8ce;border-radius:12px;background:#edf6f1;color:#174e40;font-size:.82rem;line-height:1.6;overflow:hidden}
+.feedback-update-bar>button{flex:0 0 auto;min-width:36px;min-height:36px;padding:4px;border:1px solid #b6cec5;background:white;border-radius:8px;color:inherit}
+.ticker-clip{flex:1;min-width:0;overflow:hidden}.ticker-track{display:flex;width:max-content;gap:3rem;animation:communityTickerRtl 34s linear infinite}.ticker-track>span{white-space:nowrap}.ticker-track a{font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.feedback-update-bar:hover .ticker-track,.feedback-update-bar:focus-within .ticker-track,.feedback-update-bar.is-paused .ticker-track{animation-play-state:paused}
+html[dir="ltr"] .ticker-track{animation-name:communityTickerLtr}
+@keyframes communityTickerRtl{to{transform:translateX(50%)}}@keyframes communityTickerLtr{to{transform:translateX(-50%)}}
+.updates-grid{display:grid;gap:20px;grid-template-columns:repeat(2,minmax(0,1fr))}.update-card{min-width:0;margin-block:14px;border-inline-start:4px solid #2b8063}.update-card h2,.update-card h3{margin-block:8px}.update-card p,.update-card li{line-height:1.9}.update-card summary{cursor:pointer;font-weight:700;color:#185e4c;padding-block:7px}.update-sources{font-size:.84rem;margin-block:12px}.update-sources a{overflow-wrap:anywhere;text-underline-offset:3px}.update-action{background:#eef6f1;padding:12px;border-radius:9px}.update-card small{display:block;color:#52675e;line-height:1.8}.topic-updates{margin-block:24px}.topic-updates .update-card{background:#f5faf7}.english-survey-form fieldset{margin:20px 0;padding:16px;border:1px solid #b8cfc5;border-radius:10px}.english-survey-form textarea{width:100%;min-height:100px;padding:12px;font:inherit;border:1px solid #b8cfc5;border-radius:8px}.english-survey-form input[type="text"]{width:100%;padding:10px;font:inherit}.english-survey-form label{line-height:1.7}.english-survey-form legend{font-weight:700}.english-survey-form .radio-choice{padding:8px}.english-survey-form .field{margin-top:18px;display:block}.english-survey-status{padding:12px;background:#eef6f1;line-height:1.8}
+@media(max-width:650px){.updates-grid{grid-template-columns:1fr}.feedback-update-bar{font-size:.78rem;margin-block:8px 14px}.tools{flex-wrap:wrap}.solidarity-headline{overflow-wrap:normal}html[lang="en"] .solidarity-headline{font-size:1.6rem}.update-card{padding:18px}}
+@media(prefers-reduced-motion:reduce){.ticker-track,html[dir="ltr"] .ticker-track{animation:none;display:block;width:auto}.ticker-track>span{white-space:normal}.ticker-track>span[aria-hidden="true"]{display:none}.ticker-clip{overflow:visible}.feedback-update-bar>button{display:none}}
+@media print{.feedback-update-bar,#languageToggle{display:none!important}.updates-grid{display:block}}

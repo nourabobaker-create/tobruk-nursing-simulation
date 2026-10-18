@@ -39,7 +39,7 @@
 
 ## المحاكاة المتفرعة
 
-تضم النسخة 24 موقفًا متفرعًا (288 مسارًا ممكنًا). يتغير المسار بحسب الاختيار، ويظهر تفسير مباشرة قبل الانتقال. تبقى الاختيارات في الذاكرة أثناء الجولة، ولا تكتب في التخزين الدائم إلا بموافقة صريحة في صفحة النتيجة. الخروج أو إعادة التحميل يفقد الجولة غير المحفوظة. لا يوجد مؤقت، ولا يلزم تنفيذ أي تجربة فعلية.
+تضم النسخة 32 موقفًا متفرعًا (516 مسارًا ممكنًا). يتغير المسار بحسب الاختيار، ويظهر تفسير مباشرة قبل الانتقال. تبقى الاختيارات في الذاكرة أثناء الجولة، ولا تكتب في التخزين الدائم إلا بموافقة صريحة في صفحة النتيجة. الخروج أو إعادة التحميل يفقد الجولة غير المحفوظة. لا يوجد مؤقت، ولا يلزم تنفيذ أي تجربة فعلية.
 
 تُحفظ المحاكاة في سجل مستقل عن أسئلة المقالات. كل جولة لها معرف ووقت ومعرف سيناريو ونسخته وإصدار التطبيق ورمز نشاط اختياري ونوع الجولة (تدرب أو عودة لاحقة)، وقائمة مرتبة من معرفات العقد والاختيارات مع علامة القرار الآمن والخطر المهم. لا تُطلب أسماء أو أمراض أو جنسيات أو حالات إقامة. الضغط مجددًا لحفظ الجولة نفسها لا ينشئ سجلًا آخر؛ تبدأ الإعادة جولة جديدة.
 
@@ -77,3 +77,7 @@
 Release 0.5.3 embeds a separate college-owned Google Form for community-health feedback inside a contextual app dialog. Its six optional questions cover context, clarity, usefulness, usability, criticism/corrections/technical problems, and ideas. It requires no name, email question, sign-in or one-response limit. Submission and confirmation use Google Forms itself; iframe loading is not receipt. New participation reloads the same dedicated form, and the fallback link opens that form rather than the portal questionnaire. The online form receives feedback centrally; historical local feedback remains exportable only.
 
 Before/after/follow-up topic assessments and simulation runs remain separately consented local records. They are not automatically uploaded or linked to central feedback. Paired comparisons require matching topic, release, question, campaign and cycle. Counts are records/cycles or form participations, not unique people; behavioral outcomes are self-reported, and no causal or clinical effect is inferred. On 15 October 2026, one labelled technical response was submitted, Google showed its Arabic receipt confirmation, and the context and technical text appeared in Responses. Ratings were left blank, and this test must be excluded from community analysis. Complete software verification also passed; the embedded app interface and phone layout have not yet received actual browser/device testing. Institutional aggregation of local measurements and accreditation-system integration remain later steps.
+
+
+## اللغة وإصدار السؤال
+يُسجل اختيار لغة الواجهة في سجلات القياس والمحاكاة الجديدة. تتضمن هوية سؤال القياس رمز اللغة، ولا يربط التطبيق جولة محاكاة بجولة سابقة بلغة أخرى. عند قراءة سجلات قديمة بلا حقل لغة لا تفترض أنها قياس مكافئ للترجمة الجديدة، ولا تجمع نتائج اللغتين دون بيان.

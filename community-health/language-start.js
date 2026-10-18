@@ -1,0 +1,2 @@
+/* Language choice stays on this device. No translation service or tracking request is used. */
+(()=>{let code='ar';try{const requested=new URL(location.href).searchParams.get('lang');code=requested==='en'||requested==='ar'?requested:localStorage.getItem('nur-community-language')==='en'?'en':'ar';if(requested==='en'||requested==='ar')localStorage.setItem('nur-community-language',code);}catch{}window.CommunityLocale=code;document.documentElement.lang=code;document.documentElement.dir=code==='en'?'ltr':'rtl';})();

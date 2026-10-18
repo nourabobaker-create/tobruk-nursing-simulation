@@ -198,3 +198,16 @@ Replaces the tall hero and successive introduction panels with a compact branded
 ## Release 0.12.3 — one readable introduction, all icons visible
 
 Combines initiative, scientific simplification, reliable references, medical boundaries and pilot feedback into one short paragraph at a readable 0.86rem, directly before the full 34-field icon grid. Removes the extra intro panels and repeated trial strip from Home. Retains the branded image and slogan, the dropdown/search, all health content and About. No fields are hidden behind a disclosure.
+
+
+## Release 0.13.0 — 18 October 2026
+
+Community suggestions are implemented as five selected WHO developments, linked to relevant topics and collected at `#updates`; these show the publication date separately from the source-check date and are a dated snapshot, not a live feed. Global vaccine guidance does not assert local availability or replace Libya’s national programme.
+
+Eight additional, bilingual first aid scenarios bring the total to 32 scenarios and 516 possible paths. A compact ticker links to the changes, with pause, focus/hover pause and reduced-motion support.
+
+The English option covers all 197 guides, 34 fields, 12 original stories, all scenarios, library descriptions, interfaces, speech controls, local assessment tools and secondary plan/protocol pages. Original external Arabic resources stay labelled as Arabic. Translation is bundled locally, without an external translation service. The language choice is local; switching reloads the same route, so an unsaved practice round starts again. Existing bookmarks and saved records are retained.
+
+The English survey posts directly, only on user submission, to the same community Google Form and response sheet. Canonical Arabic option values preserve compatibility; all displayed questions and options are English. Receipt is confirmed by Google, never inferred from an iframe load. One clearly marked technical submission was verified in the response sheet and must be excluded from participant analysis, along with the earlier technical test. Raw responses are not stored in this repository.
+
+Functional verification covers both languages, scenario branches, source and topic links, speech selection, repeat feedback and local measurement, install fallback, offline caching and cache migration. Physical-device and visual browser QA were not performed in this environment. No named clinical reviewer or formal clinical approval is asserted by this release.

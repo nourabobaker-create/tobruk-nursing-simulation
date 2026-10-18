@@ -1,7 +1,7 @@
 /* Visible entry points; data stays independent of presentation. */
 (()=>{
 'use strict';
-const R=window.COMMUNITY_V2;R.version='0.12.3';R.date='2026-10-18';
+const R=window.COMMUNITY_V2;R.version='0.13.0';R.date='2026-10-18';
 R.healthHubs=[
  {key:'diabetes',label:'السكري',art:'diabetes-plan',value:'hub:diabetes',ids:['diabetes','diabetes-daily-care','diabetes-food-portions','diabetes-high-correction','diabetes-sick-days','diabetes-hypoglycemia','diabetes-feet','diabetes-activity-followup']},
  {key:'pressure',label:'ضغط الدم',art:'pressure',value:'hub:pressure',ids:['blood-pressure']},
