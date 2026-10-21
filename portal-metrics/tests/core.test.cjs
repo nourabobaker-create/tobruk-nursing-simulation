@@ -2,19 +2,20 @@
 const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict'),path=require('node:path');
 const coreSource=fs.readFileSync(path.join(__dirname,'../core.js'),'utf8'),trackerSource=fs.readFileSync(path.join(__dirname,'../tracker.js'),'utf8');
 function storage(){const m=new Map();return {getItem:k=>m.get(k)??null,setItem:(k,v)=>m.set(k,String(v)),removeItem:k=>m.delete(k),key:i=>[...m.keys()][i]??null,get length(){return m.size;}};}
-function harness({shared=false,test=false}={}){
+function harness({shared=false,test=false,topLevel=false}={}){
  let now=Date.now(),counter=0,frameVisible=true;
  class ClockDate extends Date{constructor(...args){super(...(args.length?args:[now]));}static now(){return now;}}
  const loc={href:'https://example.test/portal/e-library-v3/',origin:'https://example.test',pathname:'/portal/e-library-v3/',hash:''};
- const listeners={},docListeners={},intervals=[],sent=[];
+ const listeners={},docListeners={},intervals=[],sent=[],observers=[];
  const frame={hidden:false,parentElement:null,getClientRects:()=>frameVisible?[{}]:[],ownerDocument:{defaultView:{getComputedStyle:()=>({display:frameVisible?'block':'none',visibility:'visible'})}}};
  const localStorage=storage(),sessionStorage=storage();
- const document={currentScript:{src:'https://example.test/portal/portal-metrics/tracker.js'},documentElement:{lang:'ar'},visibilityState:'visible',readyState:'loading',head:{append(){}},createElement:()=>({}),addEventListener:(name,fn)=>docListeners[name]=fn};
+ const node=tag=>({tag,dataset:{},children:[],append(...nodes){this.children.push(...nodes);},replaceChildren(){this.children=[];},setAttribute(name,value){this[name]=value;}});
+ const document={currentScript:{src:'https://example.test/portal/portal-metrics/tracker.js'},documentElement:{lang:'ar'},visibilityState:'visible',readyState:'loading',head:{append(){}},body:node('body'),createElement:node,addEventListener:(name,fn)=>docListeners[name]=fn};
  const window={PortalMetricsConfig:{endpoint:shared?'https://script.google.com/macros/s/test-endpoint/exec':''},location:loc,localStorage,sessionStorage,document,frameElement:frame,addEventListener:(name,fn)=>listeners[name]=fn};
- window.self=window;window.top={location:{origin:loc.origin,href:'https://example.test/portal/'+(test?'?metrics_test=1':'')}};
- const c={window,document,location:loc,localStorage,sessionStorage,URL,Intl,Date:ClockDate,Number,Object,Array,String,Math,JSON,Map,Set,Error,navigator:{onLine:shared},crypto:{randomUUID:()=>`random_token_${++counter}`},setInterval:fn=>intervals.push(fn),setTimeout:fn=>fn(),fetch:async (url,options)=>{sent.push(JSON.parse(options.body));return {type:'opaque'};}};
+ window.self=window;window.top=topLevel?window:{location:{origin:loc.origin,href:'https://example.test/portal/'+(test?'?metrics_test=1':'')}};
+ const c={window,document,location:loc,localStorage,sessionStorage,URL,Intl,Date:ClockDate,Number,Object,Array,String,Math,JSON,Map,Set,Error,MutationObserver:class{constructor(callback){this.callback=callback;}observe(target,options){observers.push({callback:this.callback,target,options});}},navigator:{onLine:shared},crypto:{randomUUID:()=>`random_token_${++counter}`},setInterval:fn=>intervals.push(fn),setTimeout:fn=>fn(),fetch:async (url,options)=>{sent.push(JSON.parse(options.body));return {type:'opaque'};}};
  vm.createContext(c);vm.runInContext(coreSource,c);vm.runInContext(trackerSource,c);
- return {c,core:window.PortalMetricsCore,tracker:window.PortalMetrics,loc,localStorage,sessionStorage,listeners,docListeners,intervals,sent,start:()=>docListeners.DOMContentLoaded(),advance:n=>now+=n,show:v=>frameVisible=v};
+ return {c,document,observers,core:window.PortalMetricsCore,tracker:window.PortalMetrics,loc,localStorage,sessionStorage,listeners,docListeners,intervals,sent,start:()=>docListeners.DOMContentLoaded(),advance:n=>now+=n,show:v=>frameVisible=v};
 }
 let passed=0;function test(name,fn){const r=fn();if(r&&r.then)return r.then(()=>{passed++;process.stdout.write('✓ '+name+'\n');});passed++;process.stdout.write('✓ '+name+'\n');}
 (async()=>{
@@ -29,5 +30,6 @@ await test('parent test flag suppresses embedded measurements',()=>{const h=harn
 await test('aggregate deduplicates events and separates sessions from events',()=>{const h=harness();h.start();h.tracker.setMode('local');h.tracker.record('resource_open','item-1');const all=h.core.readEvents(),a=h.core.aggregate([...all,...all]);assert.equal(a.sessions,1);assert.equal(a.engagedSessions,1);assert.equal(a.rows.reduce((s,r)=>s+r.count,0),2);assert.equal(a.mode,'local');});
 await test('opaque retries retain identical event IDs without claiming receipt',async()=>{const h=harness({shared:true});h.start();h.tracker.setMode('shared');await new Promise(resolve=>setImmediate(resolve));assert.equal(h.sent.length,1);const id=h.sent[0].events[0].id;assert.equal(h.sent[0].events[0]._attempts,undefined);h.advance(6*60000);await h.tracker.flush();assert.equal(h.sent.length,2);assert.equal(h.sent[1].events[0].id,id);});
 await test('expired outbox is pruned even when there are no eligible retries',async()=>{const h=harness({shared:true});h.start();h.tracker.setMode('shared');await new Promise(resolve=>setImmediate(resolve));h.advance(25*60*60000);await h.tracker.flush();assert.equal(JSON.parse(h.localStorage.getItem('nur-portal-metrics-outbox-v1')).length,0);});
+await test('widget owns its translations and follows language changes without recording events',()=>{const h=harness({topLevel:true});h.start();const widget=h.document.body.children[0],descendants=n=>[n,...n.children.flatMap(descendants)];assert.equal(widget.dataset.noTranslate,'1');assert.equal(widget.children[0].textContent,'قياس الاستخدام والاستفادة · اختياري');widget.open=true;descendants(widget).find(n=>n.textContent==='أفادني').onclick();assert.ok(descendants(widget).some(n=>n.textContent?.includes('اختر أولًا')));assert.equal(h.observers.length,1);assert.deepEqual(Array.from(h.observers[0].options.attributeFilter),['lang']);h.document.documentElement.lang='en';h.observers[0].callback();assert.equal(widget.children[0].textContent,'Usage and usefulness measurement · optional');assert.equal(descendants(widget).some(n=>n.textContent?.includes('اختر أولًا')),false);assert.equal(widget.open,true);h.document.documentElement.lang='ar';h.observers[0].callback();assert.equal(widget.children[0].textContent,'قياس الاستخدام والاستفادة · اختياري');assert.equal(h.core.preference(),'off');assert.equal(h.core.readEvents().length,0);});
 process.stdout.write(passed+' core/tracker tests passed.\n');
 })().catch(e=>{process.stderr.write(e.stack+'\n');process.exitCode=1;});
