@@ -6,10 +6,18 @@ from pathlib import Path
 R=Path(__file__).resolve().parent;C=R.parent/'clinical-simulations'
 manifest=json.loads((C/'manifest.json').read_text());runtime=(R/'locale-runtime.js').read_text()
 pattern=r'<script id="tobruk-ar-dictionary" type="application/json">.*?</script>\n<script id="tobruk-ar-runtime">.*?</script>\n'
+# This optional, separately maintained portal wrapper is not clinical source.
+# Match its exact marker, four known relative script paths, and safe version tokens
+# only at the end of <head>; unexpected scripts or wrapper edits still fail provenance.
+metrics_pattern=(r'\n<!-- Anonymous usage measurement: disabled until the visitor opts in\. -->\n'
+ +''.join(r'<script defer src="\.\./\.\./portal-metrics/'+re.escape(name)+r'\?v=[A-Za-z0-9_-]+"></script>\n'
+          for name in ('config.js','core.js','tracker.js','activity-hooks.js'))
+ +r'(?=</head>)')
 sha=lambda b:hashlib.sha256(b).hexdigest()
 for item in manifest['modules']:
  p=C/item['url'];s=p.read_text();original,count=re.subn(pattern,'',s,count=1,flags=re.S)
  assert count==1,p
+ original=re.sub(metrics_pattern,'',original,count=1)
  if item['id']=='06-blood-extraction':original=original.replace("if(s.stage==='welcome'&&$('modeSelect'))$('modeSelect').value=s.mode;","if(s.stage==='welcome')$('modeSelect').value=s.mode;")
  assert sha(original.encode())==item['original_sha256'],f'Clinical source changed: {p}. Review it explicitly before updating provenance.'
  d=json.loads((R/'translations'/(p.stem+'.json')).read_text())
