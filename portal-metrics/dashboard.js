@@ -10,8 +10,8 @@ const meaningful = new Set(['resource_open','service_open','activity_start','act
 const viewEvents = new Set(['page_view','section_view']);
 const number = n => new Intl.NumberFormat('ar-LY').format(n);
 const pct = (a,b) => b ? new Intl.NumberFormat('ar-LY',{style:'percent',maximumFractionDigits:1}).format(a / b) : 'لا توجد إجابات';
-const sourceNames = {local:'هذا الجهاز فقط',shared:'ملخص جميع الأجهزة',import:'ملخص مستورد'};
-let source = 'local', summary = null, imported = null, importedName = '', sequence = 0;
+const sourceNames = {local:'هذا الجهاز فقط',shared:'ملخص الأجهزة المشاركة',import:'ملخص مستورد'};
+let source = safeEndpoint(config.endpoint) ? 'shared' : 'local', summary = null, imported = null, importedName = '', sequence = 0, sharedState = 'idle';
 function day(value = new Date()) { return new Intl.DateTimeFormat('en-CA',{timeZone:'Africa/Tripoli',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date(value)); }
 function validDay(value) { return typeof value === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(value) && Number.isFinite(Date.parse(value+'T12:00:00Z')) && new Date(value+'T12:00:00Z').toISOString().slice(0,10) === value; }
 function shiftDay(value, amount) { const d = new Date(value+'T12:00:00Z');d.setUTCDate(d.getUTCDate()+amount);return d.toISOString().slice(0,10); }
@@ -83,13 +83,14 @@ function status() {
   if(core?.preference?.()==='off')detail.textContent+=' القياس متوقف الآن على هذا الجهاز؛ تظل البيانات السابقة، إن وجدت، قابلة للعرض.';
   if(core?.storageAvailable && !core.storageAvailable())detail.textContent+=' التخزين غير متاح في هذا المتصفح؛ قد لا يمكن الاحتفاظ بالقياس.';
  }else if(source==='shared'){
-  title.textContent=summary?'ملخص جميع الأجهزة المشاركة في القياس':'الجمع المشترك غير متاح حاليًا';
+  title.textContent=summary?'ملخص الأجهزة المشاركة — الاتصال يعمل':sharedState==='loading'?'جارٍ قراءة ملخص الأجهزة المشاركة':safeEndpoint(config.endpoint)?'تعذّرت قراءة التجميع المشترك حاليًا':'الجمع المشترك غير مفعّل';
   detail.textContent=safeEndpoint(config.endpoint)?'يشمل الملخص الأحداث المستلمة من الصفحات المشاركة فقط؛ لا يشمل جميع الزوار بالضرورة.':'لوحة المؤشرات وأداة القياس جاهزتان؛ يلزم نشر نقطة التجميع وربطها قبل عرض إجمالي البوابة. لا تتوفر أرقام مشتركة الآن.';
+  if(summary&&!summary.rows.some(row=>row.count>0))detail.textContent+=' لم تُستقبل أحداث للفترة المختارة؛ نجاح الاتصال لا يعني وجود زيارات مسجلة.';
  }else{title.textContent='ملخص مستورد — لقطة محفوظة';detail.textContent='المصدر: '+importedName+' · يعرض فترة الملف الأصلية. لا يُدمج مع بيانات هذا الجهاز ولا يُحدّث تلقائيًا.';}
  if(summary?.partialCoverage)detail.textContent+=' تغطية جزئية: يبدأ السجل المحتفظ به من '+displayDay(summary.coverageFrom)+'.';
  if(summary?.truncated)detail.textContent+=' تنبيه: وصل السجل المحلي إلى حد الاحتفاظ، وقد تكون بعض الأحداث الأقدم غير متاحة.';
  box.append(title,detail);
- $('setup-status').textContent=safeEndpoint(config.endpoint)?'نقطة التجميع مهيأة في الإعدادات. اختر «جميع الأجهزة» للتحقق من الاتصال وعرض آخر ملخص.':'الجمع المشترك لم يُفعّل بعد. يعمل القياس الاختياري محليًا، ويحتاج الإجمالي إلى إتمام النشر والربط في الإعدادات.';
+ $('setup-status').textContent=source==='shared'&&summary?'تم التحقق من اتصال التجميع المشترك. يضم الملخص الأحداث المستلمة بعد موافقة الزوار على المشاركة.':safeEndpoint(config.endpoint)?'رابط التجميع مهيأ. تُقرأ حالته عند اختيار «الأجهزة المشاركة»؛ لا تعني تهيئة الرابط وحدها نجاح الاستلام.':'الجمع المشترك لم يُفعّل بعد. يعمل القياس الاختياري محليًا، ويحتاج الإجمالي إلى إتمام النشر والربط في الإعدادات.';
 }
 function makeKpi(label,value,note,empty=false) { const card=element('article','kpi');card.append(element('span','kpi-label',label),element('strong','kpi-value'+(empty?' empty-value':''),value),element('small','',note));return card; }
 function renderKpis(rows) {
@@ -112,7 +113,7 @@ function renderSections(rows) {
 }
 function renderDaily(rows) {
  const chart=$('daily-chart'),table=$('daily-rows');chart.replaceChildren();table.replaceChildren();
- if(!summary||!rows.some(r=>r.count>0)){chart.append(element('div','empty-state','لا تتوفر بيانات مقاسة لهذه الفترة والقسم.'));const tr=element('tr'),td=element('td','','لا تتوفر بيانات');td.colSpan=3;tr.append(td);table.append(tr);return;}
+ if(!summary||!rows.some(r=>r.count>0)){chart.append(element('div','empty-state',source==='shared'&&summary?'الاتصال يعمل؛ لا توجد أحداث مستلمة لهذه الفترة والقسم.':'لا تتوفر بيانات مقاسة لهذه الفترة والقسم.'));const tr=element('tr'),td=element('td','','لا تتوفر بيانات');td.colSpan=3;tr.append(td);table.append(tr);return;}
  const data=[];for(let d=summary.from;d<=summary.to;d=shiftDay(d,1)){const subset=rows.filter(r=>r.day===d);const measured=summary.collectionStartedAt&&d>=day(summary.collectionStartedAt)&&(!summary.coverageFrom||d>=summary.coverageFrom);data.push({day:d,views:count(subset,viewEvents),interactions:count(subset,meaningful),measured});}
  const max=Math.max(1,...data.map(r=>r.views));
  data.forEach((row,index)=>{const col=element('div','day-col'),bar=element('span','day-bar');bar.style.height=(row.views/max*100)+'%';col.title=displayDay(row.day)+' · '+(row.measured?number(row.views)+' فتح · '+number(row.interactions)+' تفاعل':'قبل بدء القياس');bar.setAttribute('aria-hidden','true');col.append(bar);if(index===0||index===data.length-1||index===Math.floor(data.length/2))col.append(element('span','day-label',row.day.slice(5)));chart.append(col);const tr=element('tr');tr.append(element('td','',displayDay(row.day)),element('td','',row.measured?number(row.views):'غير مقاس'),element('td','',row.measured?number(row.interactions):'غير مقاس'));table.append(tr);});
@@ -128,7 +129,7 @@ function render() {
  const rows=filteredRows();renderKpis(rows);renderSections(rows);renderDaily(rows);$('export').disabled=!summary||!rows.length;
 }
 async function refresh() {
- const request=++sequence;setError('');summary=null;render();$('refresh').disabled=true;
+ const request=++sequence;setError('');summary=null;if(source==='shared')sharedState=safeEndpoint(config.endpoint)?'loading':'unconfigured';render();$('refresh').disabled=true;
  try{
   if(!core)throw Error('تعذّر تحميل أداة المؤشرات؛ حدّث الصفحة وتحقق من اتصالك.');
   const dates=source==='import'?{from:imported?.from,to:imported?.to}:range();
@@ -137,8 +138,8 @@ async function refresh() {
   else if(source==='import'){if(!imported)throw Error('استورد ملخصًا إجماليًا أولًا.');result=imported;}
   else{const endpoint=safeEndpoint(config.endpoint);if(!endpoint){render();return;}result=await jsonp(endpoint,dates);}
   if(request!==sequence)return;
-  summary=result;render();
- }catch(error){if(request===sequence){summary=null;setError(error.message||'تعذّر تحميل المؤشرات.');render();}}
+  summary=result;if(source==='shared')sharedState='connected';render();
+ }catch(error){if(request===sequence){summary=null;if(source==='shared')sharedState='error';setError(error.message||'تعذّر تحميل المؤشرات.');render();}}
  finally{if(request===sequence)$('refresh').disabled=false;}
 }
 function setSource(value) {
@@ -163,5 +164,5 @@ for(const input of document.querySelectorAll('[name=source]'))input.addEventList
 $('import-file').addEventListener('change',async event=>{const file=event.target.files?.[0];if(!file)return;try{if(file.size>2*1024*1024)throw Error('حجم الملف يتجاوز الحد المسموح: ٢ ميغابايت.');const value=validateSummary(JSON.parse(await file.text()));if(value.mode!=='shared')throw Error('الاستيراد يقبل ملخص التجميع المشترك فقط.');imported=value;importedName=file.name.slice(0,120);$('import-source').hidden=false;setSource('import');}catch(error){setError(error instanceof SyntaxError?'الملف ليس JSON صالحًا.':error.message||'تعذّر استيراد الملف.');}finally{event.target.value='';}});
 window.addEventListener('storage',event=>{if(source==='local'&&event.key?.includes('metrics'))refresh();});
 window.PortalMetricsDashboard=Object.freeze({validateSummary,safeEndpoint});
-refresh();
+setSource(source);
 })();
