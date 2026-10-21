@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="مساحات التطوير المهني للموظفين والمعيدين وأعضاء هيئة التدريس بكلية التمريض، جامعة طبرق.">
+  <title>التطوير المهني · كلية التمريض، جامعة طبرق</title>
+  <link rel="stylesheet" href="hub.css?v=20261021-1">
+  <script defer src="hub.js?v=20261021-1"></script>
+  <script defer src="../portal-metrics/config.js?v=20261021-shared-1"></script>
+  <script defer src="../portal-metrics/core.js?v=20261021-1"></script>
+  <script defer src="../portal-metrics/tracker.js?v=20261021-locale-1"></script>
+  <script defer src="../portal-metrics/activity-hooks.js?v=20261021-1"></script>
+  <script defer src="measurement.js?v=20261021-2"></script>
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">انتقل إلى المحتوى</a>
+  <header class="header">
+    <div class="header-in">
+      <a class="brand" href="../">
+        <img src="../hub-branding/university-logo.webp" width="58" height="58" alt="جامعة طبرق" id="universityLogo">
+        <span><strong data-i18n="facultyName">كلية التمريض، جامعة طبرق</strong><small data-i18n="hubName">مساحات التطوير المهني</small></span>
+        <img src="../hub-branding/faculty-logo.webp" width="58" height="58" alt="كلية التمريض" id="facultyLogo">
+      </a>
+      <div class="header-actions"><a class="small-button" href="../" data-i18n="back">بوابة الكلية</a><button type="button" class="small-button language" id="languageButton" lang="en">English</button></div>
+    </div>
+  </header>
+  <main id="main">
+    <nav class="roles" aria-label="اختر مساحتك" id="roleNav"></nav>
+    <section class="hero" aria-labelledby="roleTitle">
+      <div><span class="eyebrow" data-i18n="eyebrow">تعلّم يفيد عملك</span><h1 id="roleTitle">مساحة الموظفين</h1><p id="roleDescription">أدلتك ومصادر تطويرك وأدوات تساعدك في العمل اليومي.</p></div>
+      <div class="hero-symbol" aria-hidden="true" id="roleSymbol">▣</div>
+    </section>
+    <div class="section-nav"><a href="#guides" data-i18n="guides">أدلتي</a><a href="#courses" data-i18n="courses">التدريب والتطوير</a><a href="#tools" data-i18n="tools">أدوات تفيدني</a><a href="#events" id="eventNav" data-i18n="events">تقويم الفعاليات</a><a href="#journal" data-i18n="journal">سجل تعلّمي</a></div>
+    <div id="loadStatus" class="notice" role="status" data-i18n="loading">جارٍ تحميل المصادر…</div>
+    <div class="filter-panel" id="resourceFilters" hidden>
+      <div class="field search-field"><label for="search" data-i18n="searchLabel">ابحث في أدلتك ومصادرك</label><input type="search" id="search" autocomplete="off" placeholder="موضوع أو مهارة أو جهة…"></div>
+      <div class="field"><label for="resourceLanguage" data-i18n="languageLabel">لغة المصدر</label><select id="resourceLanguage"></select></div>
+      <div class="field"><label for="topic" data-i18n="topicLabel">المجال</label><select id="topic"></select></div>
+      <label class="check"><input type="checkbox" id="favoritesOnly"><span data-i18n="favoritesOnly">المحفوظات فقط</span></label>
+    </div>
+    <section class="section" id="guides" aria-labelledby="guidesTitle"><div class="section-heading"><div><span class="kicker">01</span><h2 id="guidesTitle" data-i18n="guides">أدلتي</h2><p data-i18n="guideHelp">أدلة معتمدة بصيغة PDF للقراءة، مع قيود الطباعة والنسخ واستخراج النص.</p></div><span class="count" id="guideCount"></span></div><div class="cards guides-grid" id="guideCards"></div></section>
+    <section class="section" id="courses" aria-labelledby="coursesTitle"><div class="section-heading"><div><span class="kicker">02</span><h2 id="coursesTitle" data-i18n="courses">التدريب والتطوير</h2><p data-i18n="courseHelp">تعلّم بالوتيرة التي تناسبك. تفاصيل المجانية والشهادة موضّحة في كل مصدر.</p></div><span class="count" id="courseCount"></span></div><div class="cards" id="courseCards"></div></section>
+    <section class="section" id="tools" aria-labelledby="toolsTitle"><div class="section-heading"><div><span class="kicker">03</span><h2 id="toolsTitle" data-i18n="tools">أدوات تفيدني</h2><p data-i18n="toolHelp">مراجع وأدوات عملية للرجوع إليها عند الحاجة.</p></div><span class="count" id="toolCount"></span></div><div class="cards" id="toolCards"></div></section>
+    <section class="section events-section" id="events" aria-labelledby="eventsTitle" hidden>
+      <div class="section-heading"><div><span class="kicker">04</span><h2 id="eventsTitle" data-i18n="events">تقويم الفعاليات</h2><p data-i18n="eventHelp">ندوات وفعاليات مجانية عبر الإنترنت. المواعيد المعروضة بتوقيت ليبيا.</p></div><button type="button" id="downloadCalendar" class="button secondary" disabled data-i18n="downloadCalendar">إضافة الفعاليات المعروضة إلى تقويمي</button></div>
+      <div class="event-toolbar"><label for="eventLanguage" data-i18n="eventLanguage">لغة الفعالية</label><select id="eventLanguage"></select><span class="muted" data-i18n="timezone">ليبيا · UTC+2</span></div>
+      <div id="eventCards" class="event-cards"></div>
+      <div class="source-note" data-i18n="eventSourceNote">تحقّق من صفحة الجهة المنظمة قبل التسجيل؛ قد تتغير المواعيد أو شروط الحضور. تُخفى الفعاليات بعد انتهائها تلقائيًا.</div>
+      <h3 class="subheading" data-i18n="officialCalendars">تابع تقاويم الجهات المنظمة</h3><div class="cards" id="calendarCards"></div>
+    </section>
+    <section class="section journal-section" id="journal" aria-labelledby="journalTitle">
+      <div class="section-heading"><div><span class="kicker" id="journalNumber">05</span><h2 id="journalTitle" data-i18n="journal">سجل تعلّمي</h2><p data-i18n="journalHelp">من التعلّم إلى التطبيق: سجّل ما تعلّمته وما تغيّر في عملك.</p></div><button type="button" class="button secondary" id="exportJournal" data-i18n="exportJournal">تصدير السجل</button></div>
+      <p class="local-note" data-i18n="localNote">المحفوظات والسجل في هذا المتصفح على هذا الجهاز فقط، ولا يُرسلان إلى الكلية. تجنّب إدخال بيانات شخصية أو معلومات تخص الطلبة أو المرضى. صدّر سجلك للاحتفاظ بنسخة.</p>
+      <form id="journalForm" class="journal-form">
+        <div class="field"><label for="learningTitle" data-i18n="learningTitle">الدورة أو المهارة</label><input id="learningTitle" maxlength="180" required></div>
+        <div class="field"><label for="learningDate" data-i18n="learningDate">تاريخ التعلّم</label><input id="learningDate" type="date" required></div>
+        <div class="field"><label for="learningApplication" data-i18n="learningApplication">ما الذي سأطبّقه؟</label><textarea id="learningApplication" maxlength="1200" rows="3"></textarea></div>
+        <div class="field"><label for="learningResult" data-i18n="learningResult">ماذا حدث بعد التطبيق؟</label><textarea id="learningResult" maxlength="1200" rows="3"></textarea></div>
+        <button type="submit" class="button" data-i18n="saveEntry">حفظ في سجلي</button>
+      </form>
+      <p class="status-line" id="journalStatus" role="status" aria-live="polite"></p>
+      <div id="journalEntries" class="journal-entries"></div>
+      <button type="button" class="text-button danger" id="clearLocal" data-i18n="clearLocal">مسح السجل والمحفوظات من هذا الجهاز</button>
+    </section>
+    <footer><p data-i18n="footer">اختيار موارد التطوير لا يُعد اعتمادًا مهنيًا للدورة. يُرجع إلى الجهة المنظمة لشروط التسجيل والشهادات.</p><p id="updated"></p><a href="../#participate" data-i18n="suggest">اقترح مصدرًا أو أبلغ عن رابط لا يعمل</a></footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,723 @@
+{
+  "updated": "2026-10-21",
+  "resources": [
+    {
+      "id": "guide-staff",
+      "title": {
+        "ar": "دليل الموظف",
+        "en": "Employee guide"
+      },
+      "description": {
+        "ar": "المهام، جودة الخدمة، تنظيم العمل، والمسؤوليات المهنية.",
+        "en": "Responsibilities, service quality, work organisation and professional duties."
+      },
+      "provider": "كلية التمريض · Tobruk University",
+      "roles": [
+        "staff"
+      ],
+      "topic": {
+        "ar": "أدلة الكلية",
+        "en": "Faculty guides"
+      },
+      "language": "ar",
+      "url": "./guides/employee-guide.pdf",
+      "access": {
+        "ar": "ملف PDF بالعربية للقراءة، مع قيود الطباعة والنسخ واستخراج النص. نسخة النشر: 21 أكتوبر 2026.",
+        "en": "Arabic PDF for reading, with printing, copying and text-extraction restrictions. Published edition: 21 October 2026."
+      },
+      "kind": "guide",
+      "status": {
+        "ar": "معتمد · v0.3",
+        "en": "Approved · v0.3"
+      }
+    },
+    {
+      "id": "guide-faculty-ta",
+      "title": {
+        "ar": "دليل عضو هيئة التدريس والمعيد",
+        "en": "Faculty and teaching assistant guide"
+      },
+      "description": {
+        "ar": "المسؤوليات الأكاديمية، جودة التدريس، دعم الطلبة، والتطوير المهني.",
+        "en": "Academic responsibilities, teaching quality, student support and professional development."
+      },
+      "provider": "كلية التمريض · Tobruk University",
+      "roles": [
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "أدلة الكلية",
+        "en": "Faculty guides"
+      },
+      "language": "ar",
+      "url": "./guides/faculty-ta-guide.pdf",
+      "access": {
+        "ar": "ملف PDF بالعربية للقراءة، مع قيود الطباعة والنسخ واستخراج النص. نسخة النشر: 21 أكتوبر 2026.",
+        "en": "Arabic PDF for reading, with printing, copying and text-extraction restrictions. Published edition: 21 October 2026."
+      },
+      "kind": "guide",
+      "status": {
+        "ar": "معتمد · v0.3",
+        "en": "Approved · v0.3"
+      }
+    },
+    {
+      "id": "guide-research-en",
+      "title": {
+        "ar": "دليل البحث العلمي وبحوث التخرج – الإنجليزية",
+        "en": "Research and Graduation Research Guide"
+      },
+      "description": {
+        "ar": "النسخة الإنجليزية الحالية لأدوار البحث وأخلاقياته والإشراف على بحوث التخرج.",
+        "en": "The current English guide to research roles, ethics and graduation research supervision."
+      },
+      "provider": "كلية التمريض · Tobruk University",
+      "roles": [
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "أدلة الكلية",
+        "en": "Faculty guides"
+      },
+      "language": "en",
+      "url": "./guides/research-guide-en.pdf",
+      "access": {
+        "ar": "ملف PDF بالإنجليزية للقراءة، مع قيود الطباعة والنسخ واستخراج النص. نسخة النشر: 21 أكتوبر 2026.",
+        "en": "English PDF for reading, with printing, copying and text-extraction restrictions. Published edition: 21 October 2026."
+      },
+      "kind": "guide",
+      "status": {
+        "ar": "معتمد · v0.3",
+        "en": "Approved · v0.3"
+      }
+    },
+    {
+      "id": "ms-excel",
+      "title": {
+        "ar": "تعلّم Excel خطوة بخطوة",
+        "en": "Excel help and learning"
+      },
+      "description": {
+        "ar": "دروس مرجعية للجداول والصيغ وتنظيم البيانات.",
+        "en": "Reference lessons for spreadsheets, formulas and organised data."
+      },
+      "provider": "Microsoft",
+      "roles": [
+        "staff"
+      ],
+      "topic": {
+        "ar": "المهارات الرقمية",
+        "en": "Digital skills"
+      },
+      "language": "multi",
+      "url": "https://support.microsoft.com/ar-sa/excel/",
+      "access": {
+        "ar": "مواد تعليمية مجانية؛ لا شهادة. ترخيص برنامج Excel منفصل. غيّر لغة الموقع للإنجليزية عند الحاجة.",
+        "en": "Free learning materials; no certificate. Excel software licence is separate. Switch the provider website to English if needed."
+      },
+      "kind": "course"
+    },
+    {
+      "id": "workspace-admin",
+      "title": {
+        "ar": "تنظيم العمل الإداري بأدوات Google",
+        "en": "Google Workspace for administrative assistants"
+      },
+      "description": {
+        "ar": "إدارة الملفات والمواعيد والتواصل وتنظيم العمل.",
+        "en": "Organise files, schedules, communication and administrative work."
+      },
+      "provider": "Google",
+      "roles": [
+        "staff"
+      ],
+      "topic": {
+        "ar": "تنظيم العمل",
+        "en": "Work organisation"
+      },
+      "language": "multi",
+      "url": "https://support.google.com/a/users/answer/9282973?hl=ar",
+      "access": {
+        "ar": "إرشادات مجانية؛ لا شهادة. بعض الوظائف تتطلب حساب Workspace مناسبًا. يمكن تغيير لغة المصدر.",
+        "en": "Free guidance; no certificate. Some features require an appropriate Workspace account. Provider language can be changed."
+      },
+      "kind": "course"
+    },
+    {
+      "id": "ibm-skills",
+      "title": {
+        "ar": "مهارات رقمية ومهنية",
+        "en": "Digital and professional skills"
+      },
+      "description": {
+        "ar": "مسارات للتواصل والمهارات التقنية والذكاء الاصطناعي.",
+        "en": "Learning pathways for communication, technology and AI skills."
+      },
+      "provider": "IBM SkillsBuild",
+      "roles": [
+        "staff",
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "المهارات الرقمية",
+        "en": "Digital skills"
+      },
+      "language": "multi",
+      "url": "https://skillsbuild.org/ar/adult-learners",
+      "access": {
+        "ar": "تعلّم مجاني عبر الإنترنت؛ يلزم حساب. لغة الدورات والشارات تختلف بحسب المسار.",
+        "en": "Free online learning; account required. Course languages and credentials vary by pathway."
+      },
+      "kind": "course"
+    },
+    {
+      "id": "edraak-excel",
+      "title": {
+        "ar": "الجداول الإلكترونية Excel بالعربية",
+        "en": "Excel spreadsheets in Arabic"
+      },
+      "description": {
+        "ar": "أساسيات الجداول الإلكترونية وتطبيقاتها في العمل.",
+        "en": "Spreadsheet foundations for everyday work."
+      },
+      "provider": "إدراك · Edraak",
+      "roles": [
+        "staff",
+        "ta"
+      ],
+      "topic": {
+        "ar": "المهارات الرقمية",
+        "en": "Digital skills"
+      },
+      "language": "ar",
+      "url": "https://www.edraak.org/programs/course/icdl4-vt1-2021/",
+      "access": {
+        "ar": "التعلّم عبر إدراك مجاني ويلزم حساب. راجع التوفر وشروط الإتمام في صفحة الدورة.",
+        "en": "Edraak learning is free; account required. Check availability and completion conditions on the course page."
+      },
+      "kind": "course"
+    },
+    {
+      "id": "edraak-data",
+      "title": {
+        "ar": "تحليل البيانات باستخدام Excel",
+        "en": "Data analysis with Excel"
+      },
+      "description": {
+        "ar": "مدخل عربي لتنظيم البيانات وتحليلها وعرضها.",
+        "en": "An Arabic introduction to organising, analysing and presenting data."
+      },
+      "provider": "إدراك · Edraak",
+      "roles": [
+        "staff",
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "البيانات والبحث",
+        "en": "Data and research"
+      },
+      "language": "ar",
+      "url": "https://www.edraak.org/programs/course/dae101-vt1-2021/",
+      "access": {
+        "ar": "التعلّم عبر إدراك مجاني ويلزم حساب. راجع شروط الإتمام؛ ترخيص Excel منفصل.",
+        "en": "Edraak learning is free; account required. Check completion conditions; Excel software licence is separate."
+      },
+      "kind": "course"
+    },
+    {
+      "id": "next-excel",
+      "title": {
+        "ar": "تعلّم Excel بالإنجليزية",
+        "en": "Let’s Learn Excel"
+      },
+      "description": {
+        "ar": "تدريب ذاتي على استخدام الجداول.",
+        "en": "Self-paced spreadsheet training."
+      },
+      "provider": "NextGenU",
+      "roles": [
+        "staff"
+      ],
+      "topic": {
+        "ar": "المهارات الرقمية",
+        "en": "Digital skills"
+      },
+      "language": "en",
+      "url": "https://courses.nextgenu.org/course/view.php?id=447",
+      "access": {
+        "ar": "الدورة وشهادة الإتمام مجانًا؛ يلزم حساب واستيفاء المتطلبات. ترخيص البرنامج منفصل.",
+        "en": "Free course and completion certificate; account and course requirements apply. Software licence is separate."
+      },
+      "kind": "course"
+    },
+    {
+      "id": "next-spss",
+      "title": {
+        "ar": "مقدمة في SPSS",
+        "en": "Introduction to SPSS"
+      },
+      "description": {
+        "ar": "مدخل للتحليل الإحصائي للبيانات البحثية.",
+        "en": "An introduction to statistical analysis of research data."
+      },
+      "provider": "NextGenU",
+      "roles": [
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "البيانات والبحث",
+        "en": "Data and research"
+      },
+      "language": "en",
+      "url": "https://courses.nextgenu.org/course/view.php?id=438",
+      "access": {
+        "ar": "الدورة وشهادة الإتمام مجانًا؛ يلزم حساب. ترخيص SPSS منفصل.",
+        "en": "Free course and completion certificate; account required. SPSS software licence is separate."
+      },
+      "kind": "course"
+    },
+    {
+      "id": "clinical-research",
+      "title": {
+        "ar": "مقدمة في البحث السريري",
+        "en": "Introduction to Clinical Research"
+      },
+      "description": {
+        "ar": "مبادئ البحث السريري في وحدة قصيرة.",
+        "en": "A short introduction to clinical research principles."
+      },
+      "provider": "The Global Health Network",
+      "roles": [
+        "ta"
+      ],
+      "topic": {
+        "ar": "البيانات والبحث",
+        "en": "Data and research"
+      },
+      "language": "en",
+      "url": "https://globalhealthtrainingcentre.tghn.org/introduction-clinical-research/",
+      "access": {
+        "ar": "نحو 45 دقيقة؛ تعلّم وشهادة مجانًا بعد التسجيل واجتياز التقييم بحد 80%.",
+        "en": "About 45 minutes; free learning and certificate with registration and an assessment score of at least 80%."
+      },
+      "kind": "course"
+    },
+    {
+      "id": "assessment",
+      "title": {
+        "ar": "أساليب التقييم المبتكرة",
+        "en": "Exploring innovative assessment methods"
+      },
+      "description": {
+        "ar": "مواءمة التقييم مع مخرجات التعلم وتجريب تحسينه.",
+        "en": "Align assessment with learning outcomes and evaluate changes."
+      },
+      "provider": "The Open University · OpenLearn",
+      "roles": [
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "التدريس والتقييم",
+        "en": "Teaching and assessment"
+      },
+      "language": "en",
+      "url": "https://www.open.edu/openlearn/education-development/exploring-innovative-assessment-methods",
+      "access": {
+        "ar": "دورة مجانية وإفادة مشاركة مجانية؛ يلزم حساب لتتبع التقدم والإفادة.",
+        "en": "Free course and free participation statement; account needed for progress tracking and the statement."
+      },
+      "kind": "course"
+    },
+    {
+      "id": "online-teaching",
+      "title": {
+        "ar": "التدريس عبر الإنترنت",
+        "en": "Take your teaching online"
+      },
+      "description": {
+        "ar": "تصميم أنشطة تعلم وتفاعل وتقييم عبر الإنترنت.",
+        "en": "Design online learning, interaction and assessment."
+      },
+      "provider": "The Open University · OpenLearn",
+      "roles": [
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "التدريس والتقييم",
+        "en": "Teaching and assessment"
+      },
+      "language": "en",
+      "url": "https://www.open.edu/openlearn/education-development/education/take-your-teaching-online/content-section-overview",
+      "access": {
+        "ar": "دورة مجانية؛ شارة وإفادة مشاركة وفق متطلبات الإتمام والتسجيل.",
+        "en": "Free course; badge and participation statement subject to registration and completion requirements."
+      },
+      "kind": "course"
+    },
+    {
+      "id": "research-ethics",
+      "title": {
+        "ar": "أخلاقيات البحث العلمي",
+        "en": "Research Ethics Online Training V2"
+      },
+      "description": {
+        "ar": "وحدات عن أخلاقيات البحث وحماية المشاركين.",
+        "en": "Modules on research ethics and participant protection."
+      },
+      "provider": "The Global Health Network",
+      "roles": [
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "البيانات والبحث",
+        "en": "Data and research"
+      },
+      "language": "en",
+      "url": "https://globalhealthtrainingcentre.tghn.org/research-ethics-online-training-v2/",
+      "access": {
+        "ar": "تعلم وشهادات وحدات مجانًا؛ يلزم حساب و80% في التقييم.",
+        "en": "Free learning and module certificates; account and assessment score of 80% required."
+      },
+      "kind": "course"
+    },
+    {
+      "id": "gcp",
+      "title": {
+        "ar": "الممارسة السريرية الجيدة للبحوث",
+        "en": "ICH GCP E6(R3)"
+      },
+      "description": {
+        "ar": "مبادئ جودة وأخلاقيات إجراء البحوث السريرية.",
+        "en": "Principles of quality and ethics in clinical research."
+      },
+      "provider": "The Global Health Network",
+      "roles": [
+        "faculty"
+      ],
+      "topic": {
+        "ar": "البيانات والبحث",
+        "en": "Data and research"
+      },
+      "language": "en",
+      "url": "https://globalhealthtrainingcentre.tghn.org/ich-gcp-r3/",
+      "access": {
+        "ar": "نحو 180 دقيقة؛ تعلم وشهادة مجانًا بعد التسجيل و80% في التقييم. تبرع المؤسسة اختياري.",
+        "en": "About 180 minutes; free learning and certificate with registration and 80% assessment score. Organisational contribution is voluntary."
+      },
+      "kind": "course"
+    },
+    {
+      "id": "patient-safety",
+      "title": {
+        "ar": "سلامة المرضى",
+        "en": "Patient Safety"
+      },
+      "description": {
+        "ar": "تعلم يدعم ثقافة السلامة والتدريب التمريضي.",
+        "en": "Learning to support safety culture and nursing education."
+      },
+      "provider": "NextGenU",
+      "roles": [
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "السلامة والقيادة",
+        "en": "Safety and leadership"
+      },
+      "language": "en",
+      "url": "https://courses.nextgenu.org/course/view.php?id=313",
+      "access": {
+        "ar": "الدورة وشهادة الإتمام مجانًا؛ يلزم حساب واستيفاء متطلبات الدورة.",
+        "en": "Free course and completion certificate; account and course requirements apply."
+      },
+      "kind": "course"
+    },
+    {
+      "id": "nursing-leadership",
+      "title": {
+        "ar": "القيادة والإدارة في التمريض",
+        "en": "Leadership and Management in Nursing"
+      },
+      "description": {
+        "ar": "تطوير مهارات القيادة والعمل ضمن الفريق.",
+        "en": "Develop leadership and teamwork skills."
+      },
+      "provider": "NextGenU",
+      "roles": [
+        "faculty"
+      ],
+      "topic": {
+        "ar": "السلامة والقيادة",
+        "en": "Safety and leadership"
+      },
+      "language": "en",
+      "url": "https://courses.nextgenu.org/course/view.php?id=486",
+      "access": {
+        "ar": "الدورة وشهادة الإتمام مجانًا؛ يلزم حساب واستيفاء متطلبات الدورة.",
+        "en": "Free course and completion certificate; account and course requirements apply."
+      },
+      "kind": "course"
+    },
+    {
+      "id": "local-spss",
+      "title": {
+        "ar": "دورة SPSS للبحث التمريضي",
+        "en": "SPSS for Nursing and Health Research"
+      },
+      "description": {
+        "ar": "دعم ثنائي اللغة لتنظيم البيانات واختيار الاختبار وتفسير النتائج.",
+        "en": "Bilingual support for data organisation, test selection and interpretation."
+      },
+      "provider": "كلية التمريض · Tobruk University",
+      "roles": [
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "البيانات والبحث",
+        "en": "Data and research"
+      },
+      "language": "multi",
+      "url": "../spss-course/",
+      "access": {
+        "ar": "محتوى تعليمي مساند مجاني؛ لا يمنح مؤهلًا مهنيًا أو ترخيص SPSS.",
+        "en": "Free supplementary learning; does not provide a professional qualification or SPSS licence."
+      },
+      "kind": "course"
+    },
+    {
+      "id": "digital-library",
+      "title": {
+        "ar": "المكتبة الرقمية وطلب المصادر",
+        "en": "Digital library and resource requests"
+      },
+      "description": {
+        "ar": "مصادر تعليم وبحث وطلب إضافة مصادر بحسب الموضوع.",
+        "en": "Learning and research resources with requests for additional topics."
+      },
+      "provider": "كلية التمريض · Tobruk University",
+      "roles": [
+        "staff",
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "مصادر العمل",
+        "en": "Work resources"
+      },
+      "language": "multi",
+      "url": "../e-library-v3/",
+      "access": {
+        "ar": "بوابة مجانية للمصادر المتاحة؛ تختلف شروط الوصول بحسب المصدر.",
+        "en": "Free resource gateway; access conditions vary by source."
+      },
+      "kind": "tool"
+    },
+    {
+      "id": "clinical-sims",
+      "title": {
+        "ar": "المحاكاة والمهارات التمريضية",
+        "en": "Nursing simulations and skills"
+      },
+      "description": {
+        "ar": "أدوات مساندة لشرح المهارات والتحضير للتدريب.",
+        "en": "Supplementary tools for explaining skills and preparing for training."
+      },
+      "provider": "كلية التمريض · Tobruk University",
+      "roles": [
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "التدريس والتقييم",
+        "en": "Teaching and assessment"
+      },
+      "language": "multi",
+      "url": "../clinical-simulations/",
+      "access": {
+        "ar": "نماذج تعليمية تجريبية مجانية؛ تُستخدم مع إشراف وتحقق أستاذ المادة.",
+        "en": "Free experimental learning models; use with instructor supervision and verification."
+      },
+      "kind": "tool"
+    },
+    {
+      "id": "atlas",
+      "title": {
+        "ar": "أطلس التمريض المصوّر",
+        "en": "Nursing Pocket Atlas"
+      },
+      "description": {
+        "ar": "رسوم وأمثلة توثيق لدعم الشرح والتعلم.",
+        "en": "Illustrations and documentation examples for teaching and learning."
+      },
+      "provider": "كلية التمريض · Tobruk University",
+      "roles": [
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "مصادر العمل",
+        "en": "Work resources"
+      },
+      "language": "multi",
+      "url": "../clinical-discovery/",
+      "access": {
+        "ar": "أداة تعليمية مساندة مجانية.",
+        "en": "Free supplementary learning tool."
+      },
+      "kind": "tool"
+    },
+    {
+      "id": "openwho",
+      "title": {
+        "ar": "مواد منظمة الصحة العالمية للتعلم",
+        "en": "WHO learning resources"
+      },
+      "description": {
+        "ar": "مواد صحية للطوارئ والصحة العامة بلغات متعددة.",
+        "en": "Multilingual learning materials on emergencies and public health."
+      },
+      "provider": "OpenWHO",
+      "roles": [
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "مصادر العمل",
+        "en": "Work resources"
+      },
+      "language": "multi",
+      "url": "https://openwho.org/",
+      "access": {
+        "ar": "مجانية دون تسجيل؛ لا يقدم OpenWHO حاليًا شهادات. تحقق من لغة كل مادة.",
+        "en": "Free without registration; OpenWHO currently does not issue certificates. Check each resource language."
+      },
+      "kind": "tool"
+    }
+  ],
+  "events": [
+    {
+      "id": "cochrane-grade-20261112",
+      "title": {
+        "ar": "تلخيص نتائج مراجعات الأدلة باستخدام GRADE",
+        "en": "Summarising synthesis findings using GRADE"
+      },
+      "provider": "Cochrane Learning Live",
+      "url": "https://www.cochrane.org/events/summarising-synthesis-findings-using-grade",
+      "start": "2026-11-12T14:00:00Z",
+      "end": "2026-11-12T15:00:00Z",
+      "language": "en",
+      "freeNote": {
+        "ar": "ندوة مجانية ومفتوحة للجميع؛ يتطلب التسجيل حساب Cochrane. تفترض معرفة أولية بالمراجعات المنهجية.",
+        "en": "Free and open to all; Cochrane account required for registration. Assumes basic systematic review knowledge."
+      },
+      "sourceChecked": "2026-10-21"
+    },
+    {
+      "id": "cochrane-i2-20261117",
+      "title": {
+        "ar": "مؤشر I² لقياس عدم الاتساق في التحليل التلوي",
+        "en": "Reflections on the I-squared index for measuring inconsistency in meta-analysis"
+      },
+      "provider": "Cochrane Learning Live",
+      "url": "https://www.cochrane.org/events/reflections-i-squared-index-for-measuring-inconsistency-in-meta-analysis",
+      "start": "2026-11-17T09:00:00Z",
+      "end": "2026-11-17T10:00:00Z",
+      "language": "en",
+      "freeNote": {
+        "ar": "ندوة مجانية ومفتوحة للجميع؛ يتطلب التسجيل حساب Cochrane.",
+        "en": "Free and open to all; Cochrane account required for registration."
+      },
+      "sourceChecked": "2026-10-21"
+    },
+    {
+      "id": "cochrane-qes-20261119",
+      "title": {
+        "ar": "التعريف بدليل Cochrane–Campbell لتوليف الأدلة النوعية",
+        "en": "A preview of the new Cochrane–Campbell Handbook for Qualitative Evidence Synthesis"
+      },
+      "provider": "Cochrane Learning Live",
+      "url": "https://www.cochrane.org/events/preview-new-cochrane-campbell-handbook-qualitative-evidence-synthesis",
+      "start": "2026-11-19T12:00:00Z",
+      "end": "2026-11-19T13:00:00Z",
+      "language": "en",
+      "freeNote": {
+        "ar": "ندوة مجانية ومفتوحة للجميع؛ يتطلب التسجيل حساب Cochrane.",
+        "en": "Free and open to all; Cochrane account required for registration."
+      },
+      "sourceChecked": "2026-10-21"
+    },
+    {
+      "id": "cochrane-ai-20261123",
+      "title": {
+        "ar": "بناء أدوات الذكاء الاصطناعي وتقييمها في توليف الأدلة",
+        "en": "Building and evaluating AI tools for evidence synthesis"
+      },
+      "provider": "Cochrane Learning Live",
+      "url": "https://www.cochrane.org/events/building-and-evaluating-ai-tools",
+      "start": "2026-11-23T14:00:00Z",
+      "end": "2026-11-23T15:00:00Z",
+      "language": "en",
+      "freeNote": {
+        "ar": "ندوة مجانية ومفتوحة للجميع؛ يتطلب التسجيل حساب Cochrane.",
+        "en": "Free and open to all; Cochrane account required for registration."
+      },
+      "sourceChecked": "2026-10-21"
+    },
+    {
+      "id": "ilajnafsy-20261124",
+      "title": {
+        "ar": "الصحة النفسية في سياقات النزاع وما بعد النزاع",
+        "en": "Mental Health in Conflict and Post-Conflict Contexts"
+      },
+      "provider": "Ilajnafsy",
+      "url": "https://ilajnafsy.org/events/webinar-series/",
+      "start": "2026-11-24T10:00:00Z",
+      "end": "2026-11-24T12:00:00Z",
+      "language": "multi",
+      "freeNote": {
+        "ar": "الحضور مجاني؛ اختيار العربية أو الإنجليزية عند التسجيل. الموعد الأصلي 11:00–13:00 CET. لا يوجد وعد بشهادة.",
+        "en": "Free attendance; choose Arabic or English during registration. Original time 11:00–13:00 CET. No certificate promised."
+      },
+      "registrationDeadline": "2026-11-01",
+      "sourceChecked": "2026-10-21"
+    }
+  ],
+  "calendars": [
+    {
+      "title": {
+        "ar": "تقويم ندوات Cochrane وتسجيلاتها",
+        "en": "Cochrane webinars and recordings"
+      },
+      "provider": "Cochrane",
+      "url": "https://www.cochrane.org/learn/webinars",
+      "language": "en",
+      "note": {
+        "ar": "ندوات مجانية مباشرة وتسجيلات للبحث وتوليف الأدلة؛ التسجيل لكل فعالية من مصدرها.",
+        "en": "Free live webinars and recordings on research and evidence synthesis; register with the organiser."
+      }
+    },
+    {
+      "title": {
+        "ar": "فعاليات الصحة النفسية بالعربية والإنجليزية",
+        "en": "Mental health events in Arabic and English"
+      },
+      "provider": "Ilajnafsy",
+      "url": "https://ilajnafsy.org/events/",
+      "language": "multi",
+      "note": {
+        "ar": "راجع الإعلان الأصلي للمجانية واللغة والتاريخ في كل فعالية جديدة.",
+        "en": "Check each new announcement for price, language and dates."
+      }
+    }
+  ]
+}

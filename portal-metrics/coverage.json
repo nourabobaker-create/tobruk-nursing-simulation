@@ -1,5 +1,5 @@
 {
-  "version": "20261021-1",
+  "version": "20261021-development-2",
   "tracking": "visitor_opt_in",
   "pages": [
     "body-mechanics-learning-01/index.html",
@@ -31,6 +31,7 @@
     "nursing-skills/gloving.html",
     "nursing-skills/index.html",
     "patient-positioning-learning-01/index.html",
+    "professional-development/index.html",
     "range-of-motion-learning-01/index.html",
     "safety360/index.html",
     "skills-lab/index.html",
@@ -56,6 +57,8 @@
     "Hidden iframe views excluded",
     "Embedded srcdoc modules counted through visible parent pages",
     "External form responses not connected",
-    "Activity outcomes instrumented only for English II exercises"
+    "Professional development progress is optional self-report, not verified completion or impact",
+    "PDF guide clicks do not establish download completion or reading",
+    "Shared public summaries remain grouped by section/event; role and resource detail is local only"
   ]
 }
