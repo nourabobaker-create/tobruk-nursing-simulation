@@ -1,0 +1,33 @@
+'use strict';
+const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict'),path=require('node:path');
+const coreSource=fs.readFileSync(path.join(__dirname,'../core.js'),'utf8'),trackerSource=fs.readFileSync(path.join(__dirname,'../tracker.js'),'utf8');
+function storage(){const m=new Map();return {getItem:k=>m.get(k)??null,setItem:(k,v)=>m.set(k,String(v)),removeItem:k=>m.delete(k),key:i=>[...m.keys()][i]??null,get length(){return m.size;}};}
+function harness({shared=false,test=false}={}){
+ let now=Date.now(),counter=0,frameVisible=true;
+ class ClockDate extends Date{constructor(...args){super(...(args.length?args:[now]));}static now(){return now;}}
+ const loc={href:'https://example.test/portal/e-library-v3/',origin:'https://example.test',pathname:'/portal/e-library-v3/',hash:''};
+ const listeners={},docListeners={},intervals=[],sent=[];
+ const frame={hidden:false,parentElement:null,getClientRects:()=>frameVisible?[{}]:[],ownerDocument:{defaultView:{getComputedStyle:()=>({display:frameVisible?'block':'none',visibility:'visible'})}}};
+ const localStorage=storage(),sessionStorage=storage();
+ const document={currentScript:{src:'https://example.test/portal/portal-metrics/tracker.js'},documentElement:{lang:'ar'},visibilityState:'visible',readyState:'loading',head:{append(){}},createElement:()=>({}),addEventListener:(name,fn)=>docListeners[name]=fn};
+ const window={PortalMetricsConfig:{endpoint:shared?'https://script.google.com/macros/s/test-endpoint/exec':''},location:loc,localStorage,sessionStorage,document,frameElement:frame,addEventListener:(name,fn)=>listeners[name]=fn};
+ window.self=window;window.top={location:{origin:loc.origin,href:'https://example.test/portal/'+(test?'?metrics_test=1':'')}};
+ const c={window,document,location:loc,localStorage,sessionStorage,URL,Intl,Date:ClockDate,Number,Object,Array,String,Math,JSON,Map,Set,Error,navigator:{onLine:shared},crypto:{randomUUID:()=>`random_token_${++counter}`},setInterval:fn=>intervals.push(fn),setTimeout:fn=>fn(),fetch:async (url,options)=>{sent.push(JSON.parse(options.body));return {type:'opaque'};}};
+ vm.createContext(c);vm.runInContext(coreSource,c);vm.runInContext(trackerSource,c);
+ return {c,core:window.PortalMetricsCore,tracker:window.PortalMetrics,loc,localStorage,sessionStorage,listeners,docListeners,intervals,sent,start:()=>docListeners.DOMContentLoaded(),advance:n=>now+=n,show:v=>frameVisible=v};
+}
+let passed=0;function test(name,fn){const r=fn();if(r&&r.then)return r.then(()=>{passed++;process.stdout.write('✓ '+name+'\n');});passed++;process.stdout.write('✓ '+name+'\n');}
+(async()=>{
+await test('off by default and rejected measurement records',()=>{const h=harness();h.start();assert.equal(h.tracker.record('resource_open','item-1'),false);assert.equal(h.core.readEvents().length,0);});
+await test('core validates IDs, timestamps and spreadsheet-safe items',()=>{const h=harness(),base={id:'event_123456',session:'session_123456',at:Date.now(),section:'library',event:'resource_open',item:'item-1',language:'ar'};assert.ok(h.core.cleanEvent(base));assert.equal(h.core.cleanEvent({...base,id:123456789}),null);assert.equal(h.core.cleanEvent({...base,item:'-formula'}),null);assert.equal(h.core.cleanEvent({...base,section:'invented'}),null);});
+await test('idle polling never manufactures sessions or extra views',()=>{const h=harness();h.start();h.tracker.setMode('local');assert.equal(h.core.readEvents().length,1);h.advance(31*60000);h.intervals.forEach(fn=>fn());assert.equal(h.core.readEvents().length,1);h.tracker.record('resource_open','item-1');const rows=h.core.readEvents();assert.notEqual(rows[0].session,rows[1].session);});
+await test('reselecting current consent does not recount the view',()=>{const h=harness();h.start();h.tracker.setMode('local');h.tracker.setMode('local');assert.equal(h.core.readEvents().length,1);});
+await test('hidden iframe neither counts view nor interaction until displayed',()=>{const h=harness();h.show(false);h.start();h.tracker.setMode('local');assert.equal(h.core.readEvents().length,0);assert.equal(h.tracker.record('resource_open','item-1'),false);h.show(true);h.intervals.forEach(fn=>fn());assert.equal(h.core.readEvents().length,1);});
+await test('query-like hash changes never persist raw hash text',()=>{const h=harness();h.start();h.tracker.setMode('local');h.loc.hash='#search?patient=privatePerson';h.listeners.hashchange();const rows=h.core.readEvents();assert.equal(rows.length,2);assert.equal(JSON.stringify(rows).includes('privatePerson'),false);assert.equal(JSON.stringify(rows).includes('search?'),false);});
+await test('clear erases events/outbox/feedback and switches measurement off',()=>{const h=harness();h.start();h.tracker.setMode('local');h.sessionStorage.setItem('nur-feedback:session:library','1');h.localStorage.setItem('nur-portal-metrics-outbox-v1','[]');assert.equal(h.core.clear(),true);assert.equal(h.core.preference(),'off');assert.equal(h.core.readEvents().length,0);assert.equal(h.sessionStorage.length,0);h.intervals.forEach(fn=>fn());assert.equal(h.core.readEvents().length,0);});
+await test('parent test flag suppresses embedded measurements',()=>{const h=harness({test:true});h.start();h.tracker.setMode('local');assert.equal(h.tracker.record('resource_open','item-1'),false);assert.equal(h.core.readEvents().length,0);});
+await test('aggregate deduplicates events and separates sessions from events',()=>{const h=harness();h.start();h.tracker.setMode('local');h.tracker.record('resource_open','item-1');const all=h.core.readEvents(),a=h.core.aggregate([...all,...all]);assert.equal(a.sessions,1);assert.equal(a.engagedSessions,1);assert.equal(a.rows.reduce((s,r)=>s+r.count,0),2);assert.equal(a.mode,'local');});
+await test('opaque retries retain identical event IDs without claiming receipt',async()=>{const h=harness({shared:true});h.start();h.tracker.setMode('shared');await new Promise(resolve=>setImmediate(resolve));assert.equal(h.sent.length,1);const id=h.sent[0].events[0].id;assert.equal(h.sent[0].events[0]._attempts,undefined);h.advance(6*60000);await h.tracker.flush();assert.equal(h.sent.length,2);assert.equal(h.sent[1].events[0].id,id);});
+await test('expired outbox is pruned even when there are no eligible retries',async()=>{const h=harness({shared:true});h.start();h.tracker.setMode('shared');await new Promise(resolve=>setImmediate(resolve));h.advance(25*60*60000);await h.tracker.flush();assert.equal(JSON.parse(h.localStorage.getItem('nur-portal-metrics-outbox-v1')).length,0);});
+process.stdout.write(passed+' core/tracker tests passed.\n');
+})().catch(e=>{process.stderr.write(e.stack+'\n');process.exitCode=1;});

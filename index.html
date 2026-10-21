@@ -71,6 +71,12 @@ html:not([lang="en"]) .identity-en{display:none!important}
 /* Hub navigation pointer fix */
 .hero::after{pointer-events:none}.heroBtns{position:relative;z-index:1}
 </style>
+
+<!-- Anonymous usage measurement: disabled until the visitor opts in. -->
+<script defer src="portal-metrics/config.js?v=20261021-1"></script>
+<script defer src="portal-metrics/core.js?v=20261021-1"></script>
+<script defer src="portal-metrics/tracker.js?v=20261021-1"></script>
+<script defer src="portal-metrics/activity-hooks.js?v=20261021-1"></script>
 </head>
 <body>
 <header class="topbar">
@@ -81,7 +87,7 @@ html:not([lang="en"]) .identity-en{display:none!important}
    <a class="identityLogoLink" href="#faculty-identity" aria-label="دلالات شعار الكلية / Faculty logo meaning"><img class="logo" id="facultyLogo" alt="شعار كلية التمريض" src="hub-branding/faculty-logo.webp"></a>
   </div>
   <nav class="nav">
-   <a href="#about">عن الكلية</a><a class="keep identityJump" href="#faculty-identity"><span class="identity-ar" lang="ar">شعار الكلية</span><span class="identity-en" lang="en">Our Logo</span></a><a href="#participate">شارك وساهم</a>
+   <a href="#about">عن الكلية</a><a class="keep identityJump" href="#faculty-identity"><span class="identity-ar" lang="ar">شعار الكلية</span><span class="identity-en" lang="en">Our Logo</span></a><a href="#participate">شارك وساهم</a><a class="keep" href="portal-metrics/">مؤشرات البوابة</a>
    <a class="gold keep" href="student-learning-hub/?entry=faculty">🎓 بوابة الطالب</a>
   </nav>
  </div>

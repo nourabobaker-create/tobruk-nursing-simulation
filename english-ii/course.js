@@ -12,7 +12,7 @@ const notes=JSON.parse(localStorage.getItem('e2notes')||'{}');
 function esc(s=''){return String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
 function lessonById(id){return DATA.lessons.find(l=>l.id===id)}
 function setAccent(l){document.documentElement.style.setProperty('--accent',l?.accent||'#0f5f8f');document.documentElement.style.setProperty('--accentLight',l?.light||'#eaf4fa')}
-function mark(key){done[key]=true;localStorage.setItem('e2done',JSON.stringify(done));refreshProgress()}
+function mark(key){const first=!done[key];done[key]=true;localStorage.setItem('e2done',JSON.stringify(done));refreshProgress();if(first&&(/:q[0-9]+$/.test(key)||key.endsWith(':scenario')))window.PortalMetrics?.record('activity_complete','english-ii:'+key,'courses')}
 function lessonScore(l){const keys=l.quiz.map((_,i)=>l.id+':q'+i).concat([l.id+':spot',l.id+':scenario']);return Math.round(keys.filter(k=>done[k]).length/keys.length*100)}
 function overall(){return Math.round(DATA.lessons.reduce((a,l)=>a+lessonScore(l),0)/DATA.lessons.length)}
 function rights(){return '<div class="panelMark">© 2026 Faculty of Nursing · Tobruk University <span>كلية التمريض · جامعة طبرق</span></div>'}
