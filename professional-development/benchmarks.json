@@ -1,8 +1,8 @@
 {
   "updated": "2026-10-22",
   "scope": {
-    "ar": "مقارنة مرجعية مكتبية لأفكار تنظيم الخدمات والتطوير المهني المنشورة في مواقع الجامعات. اخترنا ممارسات محددة وكيّفناها مع احتياجات كلية التمريض وإمكاناتها؛ وهذه ليست مقارنة رقمية للأداء، ولا تعني شراكة أو اعتمادًا من الجامعات المذكورة. محتوى أدواتنا أصلي، وروابط المصادر تتيح الرجوع إلى الفكرة المرجعية.",
-    "en": "Desk-based benchmarking of service design and professional-development ideas published on university websites. Selected practices are adapted to the Faculty of Nursing’s needs and resources. This is not a numerical comparison of performance and does not imply a partnership or endorsement. Our tools contain original content; source links identify the practices that informed their design."
+    "ar": "مقارنة مرجعية مكتبية لأفكار تنظيم الخدمات والتطوير المهني من جامعات سعودية ودولية. اخترنا ممارسات وكيّفناها لاحتياجات الكلية وإمكاناتها؛ ليست مقارنة رقمية للأداء ولا شراكة أو اعتمادًا من الجهات المذكورة. يُعرض برنامج تنمية القدرات البشرية السعودي في قسم الخبرات السعودية بوصفه مرجع توجه وطني مستقل.",
+    "en": "Desk-based benchmarking of service-design and professional-development ideas from Saudi and international universities. Practices are adapted to Faculty needs/resources; this is not a numerical performance comparison, partnership or endorsement. Saudi HCDP appears separately as a national policy-direction reference."
   },
   "items": [
     {
@@ -132,6 +132,141 @@
         "faculty"
       ],
       "checked": "2026-10-22"
+    },
+    {
+      "id": "ksu-needs-and-roles",
+      "university": {
+        "ar": "جامعة الملك سعود",
+        "en": "King Saud University"
+      },
+      "title": {
+        "ar": "التطوير بحسب الدور والاحتياج",
+        "en": "Role- and needs-based development"
+      },
+      "url": "https://ccis.ksu.edu.sa/ar/node/2376",
+      "idea": {
+        "ar": "تُدرس الاحتياجات التدريبية للكلية وتُرتبط بخطة ومتابعة، مع تنسيق التطوير للفئات الأكاديمية والإدارية.",
+        "en": "Faculty training needs inform a plan and follow-up, with development coordinated across academic and administrative groups."
+      },
+      "adaptation": {
+        "ar": "نربط المسارات الخاصة بكل فئة باختيار مهارة تحتاجها في العمل، ثم خطوة تطبيق وشاهد وموعد مراجعة في خطة التطوير الشخصية.",
+        "en": "Role pathways connect a work-related skill need to an application step, evidence and a review date in the personal development plan."
+      },
+      "roles": [
+        "staff",
+        "ta",
+        "faculty"
+      ],
+      "checked": "2026-10-22",
+      "region": "sa"
+    },
+    {
+      "id": "pnu-duty-linked-development",
+      "university": {
+        "ar": "جامعة الأميرة نورة بنت عبدالرحمن",
+        "en": "Princess Nourah bint Abdulrahman University"
+      },
+      "title": {
+        "ar": "ربط التطوير بالمهام ومؤشرات الأداء",
+        "en": "Connect development to duties and performance indicators"
+      },
+      "url": "https://pnu.edu.sa/ar/Departments/GDHR/Pages/TrainingUnit.aspx",
+      "idea": {
+        "ar": "تُبنى الاحتياجات التدريبية من مصادر متعددة، منها واجبات الموظف ومؤشرات أدائه، وتشمل الهيئة التعليمية والإدارية.",
+        "en": "Training needs draw on multiple sources, including job duties and performance indicators, and cover educational and administrative personnel."
+      },
+      "adaptation": {
+        "ar": "تساعد خطة التطوير المستخدم على تحديد ما يريد تحسينه في مهمة فعلية، وما سيطبقه، وما الشاهد الذي سيراجعه لمعرفة الفائدة.",
+        "en": "The development plan asks what to improve in a real task, what action to try and what evidence to review to assess its usefulness."
+      },
+      "roles": [
+        "staff",
+        "ta",
+        "faculty"
+      ],
+      "checked": "2026-10-22",
+      "region": "sa"
+    },
+    {
+      "id": "kau-distinct-development-paths",
+      "university": {
+        "ar": "جامعة الملك عبدالعزيز",
+        "en": "King Abdulaziz University"
+      },
+      "title": {
+        "ar": "تنويع مسارات التطوير وتبادل الممارسات",
+        "en": "Differentiate development pathways and exchange practice"
+      },
+      "url": "https://kau.edu.sa/ar/page-legacy/center-for-university-education-development",
+      "idea": {
+        "ar": "يجمع مركز تطوير التعليم الجامعي الدورات والبرامج الممتدة والأدلة والملتقيات، مع مسارات للتدريس والقيادة والبحث ومشاركة الممارسات الناجحة.",
+        "en": "The university teaching-development centre brings together short courses, extended programmes, guides and forums, with teaching, leadership and research pathways and exchange of successful practice."
+      },
+      "adaptation": {
+        "ar": "نميّز الأدلة والدورات والمراجع والفعاليات في المساحة، ونربط مسارات التدريس والبحث والقيادة بخطوة تطبيق وتأمل في السجل الشخصي.",
+        "en": "The hub distinguishes guides, courses, references and events, and connects teaching, research and leadership pathways to an application step and reflection in the personal journal."
+      },
+      "roles": [
+        "staff",
+        "ta",
+        "faculty"
+      ],
+      "checked": "2026-10-22",
+      "region": "sa"
+    },
+    {
+      "id": "jouf-training-cycle",
+      "title": {
+        "ar": "الاحتياج ثم التدريب ثم قياس الأثر",
+        "en": "Needs-led training and impact follow-up"
+      },
+      "url": "https://ju.edu.sa/ar/objectives-skills-development-center",
+      "idea": {
+        "ar": "تحديد الاحتياجات، إعداد خطة سنوية، نقل أفضل الممارسات، استطلاع الآراء وقياس أثر التدريب.",
+        "en": "Identify needs, prepare an annual plan, adapt leading practice, collect feedback and follow up training impact."
+      },
+      "adaptation": {
+        "ar": "أضفنا اختيار «احتياجي الآن» لربط أولوية عمل بمصادر وخطوة تطبيق وشاهد مراجعة في خطة شخصية، مع إبقاء قياس الاستخدام منفصلًا عن تحقق الأثر.",
+        "en": "The needs selector links a work priority to resources, an application step and review evidence in a personal plan, while usage remains distinct from verified impact."
+      },
+      "university": {
+        "ar": "جامعة الجوف",
+        "en": "Jouf University"
+      },
+      "roles": [
+        "staff",
+        "ta",
+        "faculty"
+      ],
+      "checked": "2026-10-22",
+      "region": "sa"
+    },
+    {
+      "id": "hail-needs-to-impact",
+      "university": {
+        "ar": "جامعة حائل",
+        "en": "University of Hail"
+      },
+      "title": {
+        "ar": "تنظيم التطوير ومراجعة أثره",
+        "en": "Organise development and review its effect"
+      },
+      "url": "https://www.uoh.edu.sa/Ar/Deanships/Deanship-Q-D/S-K-Department/Pages/default.aspx",
+      "idea": {
+        "ar": "تربط إدارة تطوير المهارات الاحتياجات والخطط ورضا المستفيدين وقياس أثر التدريب.",
+        "en": "The skills-development administration connects needs, plans, participant feedback and training-impact review."
+      },
+      "adaptation": {
+        "ar": "نربط احتياجًا محددًا بخطة وخطوة تطبيق وشاهد مراجعة، ولا ننقل الأهداف الرقمية التاريخية للجامعة كأهداف للكلية.",
+        "en": "We connect a need to a plan, an application step and review evidence; historical university numerical targets are not adopted as Faculty targets."
+      },
+      "roles": [
+        "staff",
+        "ta",
+        "faculty"
+      ],
+      "checked": "2026-10-22",
+      "region": "sa"
     }
   ]
 }

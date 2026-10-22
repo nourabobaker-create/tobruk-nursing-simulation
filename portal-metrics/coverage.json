@@ -1,5 +1,5 @@
 {
-  "version": "20261022-development-3",
+  "version": "20261022-saudi-development-4",
   "tracking": "visitor_opt_in",
   "pages": [
     "body-mechanics-learning-01/index.html",
@@ -60,6 +60,7 @@
     "Professional development progress is optional self-report, not verified completion or impact",
     "PDF guide clicks do not establish download completion or reading",
     "Shared public summaries remain grouped by section/event; role and resource detail is local only",
-    "Workbench and pathway interactions do not establish completed training; personal plan text is never collected"
+    "Workbench and pathway interactions do not establish completed training; personal plan text is never collected",
+    "Development need selections are optional fixed-ID choices, not a staff survey or performance evaluation"
   ]
 }

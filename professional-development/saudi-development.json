@@ -1,0 +1,1254 @@
+{
+  "updated": "2026-10-22",
+  "scope": {
+    "ar": "مسح أولي لصفحات تطوير وتدريب من 29 جامعة سعودية. فُحصت صفحات محددة ومصادر عامة أو مفهرسة؛ لا يمثل ذلك فحص كل الجامعات أو كل برامجها. بعض فرص التدريب مخصصة للمنسوبين أو تحتاج تحقق أهلية ورسوم؛ لم نضف موعد حضور غير متحقق.",
+    "en": "An initial review of selected development/training pages from 29 Saudi universities, using public or officially indexed sources. This is not every university or every programme. Some training is affiliate-only or requires eligibility/fee checks. No unverified attendance date was added."
+  },
+  "nationalReference": {
+    "id": "saudi-vision2030-hcdp",
+    "institution": {
+      "ar": "رؤية السعودية 2030 · برنامج تنمية القدرات البشرية",
+      "en": "Saudi Vision 2030 · Human Capability Development Program"
+    },
+    "title": {
+      "ar": "التعلم مدى الحياة وتطوير المهارات",
+      "en": "Lifelong learning and skills development"
+    },
+    "url": "https://www.vision2030.gov.sa/en/explore/programs/human-capability-development-program",
+    "idea": {
+      "ar": "يعرض البرنامج التعلم مدى الحياة وتطوير المهارات ضمن توجه وطني لتنمية القدرات والاستعداد لاحتياجات المستقبل.",
+      "en": "The programme positions lifelong learning and skills development within a national direction for building capabilities and readiness for future needs."
+    },
+    "adaptation": {
+      "ar": "نستفيد من الفكرة في تشجيع تطوير مستمر مرتبط بالعمل: مهارة أحتاجها، خطوة أطبقها، ثم مراجعة ما تغير. هذا استلهام لفكرة عامة؛ لا يربط الكلية رسميًا بالبرنامج السعودي.",
+      "en": "The general idea informs continuous work-related development: a skill I need, an action I apply, then reflection on what changed. This does not formally affiliate the Faculty with the Saudi programme."
+    },
+    "roles": [
+      "staff",
+      "ta",
+      "faculty"
+    ],
+    "checked": "2026-10-22"
+  },
+  "jouf": {
+    "summary": {
+      "ar": "أفادنا نهج الجامعة في ربط الاحتياج بالخطة ومتابعة الأثر. أضفنا أدلة Outlook وOneDrive للقراءة، وروابط متابعة البرامج مع توضيح شروطها؛ لم يثبت في الصفحات المفحوصة تسجيل مجاني قادم مفتوح.",
+      "en": "The University’s needs-to-plan-to-impact approach informed this space. We added public Outlook and OneDrive references and programme-monitoring links with access conditions. No forthcoming free public registration was verified in the pages reviewed."
+    },
+    "paidSource": "https://ju.edu.sa/ar/technical-training-courses-jouf-university"
+  },
+  "sources": [
+    {
+      "id": "sa-seu-training-packs",
+      "title": {
+        "ar": "حقائب التعلم الإلكتروني: أساسي ومتقدم",
+        "en": "Basic and advanced e-learning training packs"
+      },
+      "description": {
+        "ar": "حقائب عربية وجلسات مصورة لتهيئة التدريس والأنشطة والتقييم باستخدام بلاك بورد.",
+        "en": "Arabic training packs and illustrated sessions for course delivery, activities and assessment using Blackboard."
+      },
+      "provider": "الجامعة السعودية الإلكترونية · Saudi Electronic University",
+      "roles": [
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "المهارات الرقمية",
+        "en": "Digital skills"
+      },
+      "language": "ar",
+      "url": "https://seu.edu.sa/ar/blackboard-system/training/",
+      "access": {
+        "ar": "صفحة حقائب عامة، مع ملفات PDF أساسية ومتقدمة مفتوحة للقراءة دون تسجيل. مرجع تعلّم ذاتي؛ لا شهادة للمطالعة. تشغيل نظام بلاك بورد يتطلب حساب مؤسسة مرخصة، وقد تختلف الواجهات الحالية.",
+        "en": "Public training-pack page with open basic and advanced PDFs, readable without registration. A self-study reference, not a certificate. Blackboard use requires an account at a licensed institution; current interfaces may differ."
+      },
+      "kind": "tool",
+      "sourceType": "reference",
+      "availability": "public",
+      "country": "sa",
+      "universityId": "seu",
+      "university": {
+        "ar": "الجامعة السعودية الإلكترونية",
+        "en": "Saudi Electronic University"
+      },
+      "sourceChecked": "2026-10-22"
+    },
+    {
+      "id": "sa-kau-elearning-tutorials",
+      "title": {
+        "ar": "مكتبة أدلة ودروس التعلم الإلكتروني",
+        "en": "E-learning guides and tutorial library"
+      },
+      "description": {
+        "ar": "شروح منشورة لإعداد المحتوى التعليمي وإدارته واستخدام أدوات نظام إدارة التعلم.",
+        "en": "Published tutorials for preparing and managing teaching content and learning-management-system tools."
+      },
+      "provider": "جامعة الملك عبدالعزيز · King Abdulaziz University",
+      "roles": [
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "المهارات الرقمية",
+        "en": "Digital skills"
+      },
+      "language": "ar",
+      "url": "https://kau.edu.sa/ar/page/guides-and-tutorials",
+      "access": {
+        "ar": "فهرس عام لأدلة ودروس، مع دليل PDF مفتوح ثبتت قراءته دون تسجيل. الاطلاع مجاني ولا يمنح شهادة؛ بعض الشروح خاصة بأنظمة الجامعة ولا تمنح مستخدم طبرق حسابًا عليها.",
+        "en": "Public guide/tutorial index, with an open PDF verified readable without registration. Free reference access, no certificate. Some tutorials are system-specific and do not grant Tobruk users a university account."
+      },
+      "kind": "tool",
+      "sourceType": "reference",
+      "availability": "public",
+      "country": "sa",
+      "universityId": "kau",
+      "university": {
+        "ar": "جامعة الملك عبدالعزيز",
+        "en": "King Abdulaziz University"
+      },
+      "sourceChecked": "2026-10-22"
+    },
+    {
+      "id": "sa-kau-question-bank-excel",
+      "title": {
+        "ar": "مرجع تنظيم أسئلة الاختبارات ورفعها من Excel",
+        "en": "Reference for organising exam questions and importing from Excel"
+      },
+      "description": {
+        "ar": "دليل عربي من 8 صفحات يشرح إعداد ملف الأسئلة ورفعه لنظام الاختبارات الإلكتروني.",
+        "en": "An eight-page Arabic guide on preparing a question file and importing it into an electronic examination system."
+      },
+      "provider": "جامعة الملك عبدالعزيز · King Abdulaziz University",
+      "roles": [
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "التدريس والتقييم",
+        "en": "Teaching and assessment"
+      },
+      "language": "ar",
+      "url": "https://kau.edu.sa/web/static/fc680ce5-50cc-43bd-b2f7-7981f67f4651",
+      "access": {
+        "ar": "ملف PDF جامعي عام مفتوح للقراءة دون تسجيل؛ لا شهادة. الشرح خاص بمنصة جامعة الملك عبدالعزيز، ويُستخدم مرجعًا للتنظيم فقط؛ تشغيل المنصة وترخيصها منفصلان.",
+        "en": "Public university PDF readable without registration; no certificate. The guide is specific to the University examination platform and is provided as an organisational reference. Platform access and licensing are separate."
+      },
+      "kind": "tool",
+      "sourceType": "reference",
+      "availability": "public",
+      "country": "sa",
+      "universityId": "kau",
+      "university": {
+        "ar": "جامعة الملك عبدالعزيز",
+        "en": "King Abdulaziz University"
+      },
+      "sourceChecked": "2026-10-22"
+    },
+    {
+      "id": "sa-qassim-cyber-awareness",
+      "title": {
+        "ar": "وعي سيبراني للعمل الرقمي اليومي",
+        "en": "Cybersecurity awareness for daily digital work"
+      },
+      "description": {
+        "ar": "مواد عربية توعوية عن تحديث الأجهزة والتصيد والنسخ الاحتياطي والتحقق من النماذج والحسابات.",
+        "en": "Arabic awareness materials on device updates, phishing, backups, information-request forms and account protection."
+      },
+      "provider": "جامعة القصيم · Qassim University",
+      "roles": [
+        "staff",
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "الأمان الرقمي",
+        "en": "Digital security"
+      },
+      "language": "ar",
+      "url": "https://www.qu.edu.sa/managements/cybersecurity/cyber-awareness/",
+      "access": {
+        "ar": "صفحة توعية عامة مجانية دون تسجيل، وليست دورة أو شهادة. تُكيّف الممارسات مع تعليمات جهة العمل؛ قنوات الإبلاغ الداخلية تخص جامعة القصيم.",
+        "en": "Free public awareness page, accessible without registration; not a course or certificate. Adapt practices to workplace instructions; internal incident-reporting channels belong to Qassim University."
+      },
+      "kind": "tool",
+      "sourceType": "reference",
+      "availability": "public",
+      "country": "sa",
+      "universityId": "qassim",
+      "university": {
+        "ar": "جامعة القصيم",
+        "en": "Qassim University"
+      },
+      "sourceChecked": "2026-10-22"
+    },
+    {
+      "id": "sa-pnu-training-plan-1448",
+      "title": {
+        "ar": "خطة تطوير القدرات وربط التدريب بالأثر — 1448 هـ",
+        "en": "Capacity-development plan linking training to impact —1448 H"
+      },
+      "description": {
+        "ar": "مرجع عربي وإنجليزي يربط المسارات التدريبية بالاحتياج والأهداف والمؤشرات ومراجعة الأثر.",
+        "en": "An Arabic/English reference linking development pathways to needs, objectives, indicators and impact review."
+      },
+      "provider": "جامعة الأميرة نورة بنت عبدالرحمن · Princess Nourah bint Abdulrahman University",
+      "roles": [
+        "staff",
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "التطوير والجودة",
+        "en": "Development and quality"
+      },
+      "language": "multi",
+      "url": "https://pnu.edu.sa/ar/Deanship/Devandskilldean/ViceDeanshipofdevelopment/Documents/dqd-mdcm1163.pdf",
+      "access": {
+        "ar": "خطة جامعية عامة من 137 صفحة مفتوحة للقراءة. للمقارنة المرجعية والتخطيط؛ ليست تسجيلًا في دورة أو وعدًا بمجانية الدورات أو أهلية منسوبي طبرق. ترتيبات الجامعة لا تحل محل لوائح الكلية.",
+        "en": "Public 137-page university plan for benchmarking and planning. It is not course enrolment and does not establish free tuition or Tobruk eligibility. University arrangements do not replace local Faculty regulations."
+      },
+      "kind": "tool",
+      "sourceType": "reference",
+      "availability": "public",
+      "country": "sa",
+      "universityId": "pnu",
+      "university": {
+        "ar": "جامعة الأميرة نورة بنت عبدالرحمن",
+        "en": "Princess Nourah bint Abdulrahman University"
+      },
+      "sourceChecked": "2026-10-22"
+    },
+    {
+      "id": "sa-mu-development-packs",
+      "title": {
+        "ar": "حقائب تطوير التدريس والجدارات الوظيفية",
+        "en": "Teaching-development and job-competency packs"
+      },
+      "description": {
+        "ar": "مواد عن نواتج التعلم، وخطط التحسين، والجدارات الوظيفية ومواءمة التعلم لمهارات المستقبل.",
+        "en": "Materials on learning outcomes, improvement plans, job competencies and future-skills alignment."
+      },
+      "provider": "جامعة المجمعة · Majmaah University",
+      "roles": [
+        "staff",
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "التطوير والجودة",
+        "en": "Development and quality"
+      },
+      "language": "ar",
+      "url": "https://www.mu.edu.sa/ar/deanships/deanship-of-development-and-quality/213821",
+      "access": {
+        "ar": "فهرس عام لحقائب قابلة للقراءة والتنزيل دون تسجيل. بعض الملفات أقدم؛ تُستخدم للمطالعة وتكييف الأفكار، ولا تمنح قراءتها شهادة أو صلاحية على أنظمة الجامعة.",
+        "en": "Public index of packs readable/downloadable without registration. Some files are older; use them as references and adapt ideas. Reading does not award a certificate or university-system access."
+      },
+      "kind": "tool",
+      "sourceType": "reference",
+      "availability": "public",
+      "country": "sa",
+      "universityId": "majmaah",
+      "university": {
+        "ar": "جامعة المجمعة",
+        "en": "Majmaah University"
+      },
+      "sourceChecked": "2026-10-22"
+    },
+    {
+      "id": "sa-mu-blackboard-packs",
+      "title": {
+        "ar": "حقائب بلاك بورد بالعربية والإنجليزية",
+        "en": "Arabic and English Blackboard training packs"
+      },
+      "description": {
+        "ar": "ملفات تدريبية للشرح الإلكتروني والأنشطة والتقييم داخل نظام إدارة التعلم.",
+        "en": "Training files for online course delivery, activities and assessment in a learning management system."
+      },
+      "provider": "جامعة المجمعة · Majmaah University",
+      "roles": [
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "المهارات الرقمية",
+        "en": "Digital skills"
+      },
+      "language": "multi",
+      "url": "https://www.mu.edu.sa/ar/deanships/deanship-of-quality-and-skills-development/129251",
+      "access": {
+        "ar": "حزم منشورة عامة بالعربية والإنجليزية، مع ملفات من 2019. مرجع أرشيفي مجاني للقراءة وليس تسجيلًا في دورة حالية؛ بعض الواجهات قد تختلف عن الإصدارات الحديثة. تشغيل النظام يحتاج حساب الجهة المرخصة؛ لا شهادة للقراءة.",
+        "en": "Public Arabic and English packs, including files from 2019. Free archival reading, not enrolment in a current course; interfaces may differ from newer versions. System use requires an account with a licensed institution. Reading awards no certificate."
+      },
+      "kind": "tool",
+      "sourceType": "archive",
+      "availability": "archive",
+      "country": "sa",
+      "universityId": "majmaah",
+      "university": {
+        "ar": "جامعة المجمعة",
+        "en": "Majmaah University"
+      },
+      "sourceChecked": "2026-10-22"
+    },
+    {
+      "id": "sa-taibah-elearning-guides",
+      "title": {
+        "ar": "أدلة التغذية الراجعة وإتاحة التعلم الإلكتروني",
+        "en": "Feedback and accessible e-learning guides"
+      },
+      "description": {
+        "ar": "أدلة منشورة عن التواصل مع المتعلم، والتغذية الراجعة، وإتاحة المحتوى والاختبارات الإلكترونية.",
+        "en": "Published guides on learner communication, feedback, content accessibility and online assessment."
+      },
+      "provider": "جامعة طيبة · Taibah University",
+      "roles": [
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "التدريس والإتاحة",
+        "en": "Teaching and accessibility"
+      },
+      "language": "ar",
+      "url": "https://www.taibahu.edu.sa/administration-of-e-learning/guides-and-forms-0",
+      "access": {
+        "ar": "صفحة أدلة عامة مجانية للقراءة والتنزيل دون تسجيل. بعض الآليات تخص جامعة طيبة؛ تؤخذ منها الأفكار وتُراعى لوائح الكلية المحلية. لا شهادة للمطالعة.",
+        "en": "Public guides free to read/download without registration. Some procedures belong to Taibah University; adapt the ideas to local Faculty regulations. Reading awards no certificate."
+      },
+      "kind": "tool",
+      "sourceType": "reference",
+      "availability": "public",
+      "country": "sa",
+      "universityId": "taibah",
+      "university": {
+        "ar": "جامعة طيبة",
+        "en": "Taibah University"
+      },
+      "sourceChecked": "2026-10-22"
+    },
+    {
+      "id": "sa-taibah-interactive-tools",
+      "title": {
+        "ar": "دليل مصور للأدوات التعليمية التفاعلية",
+        "en": "Illustrated guide to interactive teaching tools"
+      },
+      "description": {
+        "ar": "دليل عربي من 30 صفحة يشرح Kahoot وQuizizz وPadlet وأفكار استخدامها ومراجعة نتائج الأنشطة.",
+        "en": "A 30-page Arabic guide to Kahoot, Quizizz and Padlet, with activity ideas and result-review features."
+      },
+      "provider": "جامعة طيبة · Taibah University",
+      "roles": [
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "التدريس والتقييم",
+        "en": "Teaching and assessment"
+      },
+      "language": "ar",
+      "url": "https://www.taibahu.edu.sa/sites/default/files/2026-04/aldlyl%20almswr%20alshaml%20lladwat%20alt%60lymyt%20altfa%60lyt.pdf",
+      "access": {
+        "ar": "ملف PDF جامعي عام للقراءة دون تسجيل؛ لا شهادة. حسابات الأدوات وترخيصها وميزات خططها منفصلة عن مجانية الدليل، وقد تتغير الواجهات.",
+        "en": "Public university PDF readable without registration; no certificate. Tool accounts, licences and plan features are separate from the free guide, and interfaces can change."
+      },
+      "kind": "tool",
+      "sourceType": "reference",
+      "availability": "public",
+      "country": "sa",
+      "universityId": "taibah",
+      "university": {
+        "ar": "جامعة طيبة",
+        "en": "Taibah University"
+      },
+      "sourceChecked": "2026-10-22"
+    },
+    {
+      "id": "sa-mu-job-competencies",
+      "title": {
+        "ar": "تأمل مهارات العمل والجدارات الوظيفية",
+        "en": "Reflect on workplace skills and job competencies"
+      },
+      "description": {
+        "ar": "ورقة عربية للمراجعة الذاتية للتواصل والمرونة والتعلم المستمر وإدارة الوقت وحل المشكلات.",
+        "en": "An Arabic reflection worksheet for communication, adaptability, lifelong learning, time management and problem solving."
+      },
+      "provider": "جامعة المجمعة · Majmaah University",
+      "roles": [
+        "staff",
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "التطوير المهني",
+        "en": "Professional development"
+      },
+      "language": "ar",
+      "url": "https://www.mu.edu.sa/sites/default/files/content/2019/10/6.pdf",
+      "access": {
+        "ar": "ملف عام مجاني من حزم الجامعة، منشور في مسار أرشيفي 2019. للمطالعة والتأمل الذاتي فقط؛ ليس اختبارًا مقننًا أو تقييمًا وظيفيًا معتمدًا في كلية التمريض، ولا يمنح شهادة.",
+        "en": "Free public file from the University packs, in a 2019 archive path. For reading and personal reflection only; not a validated assessment or an approved Faculty of Nursing employment appraisal. No certificate."
+      },
+      "kind": "tool",
+      "sourceType": "archive",
+      "availability": "archive",
+      "country": "sa",
+      "universityId": "majmaah",
+      "university": {
+        "ar": "جامعة المجمعة",
+        "en": "Majmaah University"
+      },
+      "sourceChecked": "2026-10-22"
+    },
+    {
+      "id": "sa-najran-teaching-videos",
+      "title": {
+        "ar": "دروس مرئية لإدارة المقرر والاختبارات",
+        "en": "Course-management and assessment video tutorials"
+      },
+      "description": {
+        "ar": "مكتبة عربية لبنوك الأسئلة والاختبارات وإدارة محتوى المقرر؛ تضم دروس أكتوبر 2026 ومواد أقدم.",
+        "en": "An Arabic library on question banks, tests and course content, including October 2026 tutorials and older material."
+      },
+      "provider": "جامعة نجران · Najran University",
+      "roles": [
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "التدريس والتقييم",
+        "en": "Teaching and assessment"
+      },
+      "language": "ar",
+      "url": "https://portal.nu.edu.sa/ar/web/elearning-deanship/instructors-educational-videos",
+      "kind": "tool",
+      "availability": "recorded",
+      "access": {
+        "ar": "فهرس ودروس عامة للمشاهدة؛ ليست فعالية قادمة أو شهادة. تطبيق الخطوات على نظام الجامعة يتطلب حسابًا وصلاحيات، وقد تختلف واجهة النظام لديك.",
+        "en": "Public viewing references, not an upcoming event or certificate. Applying steps in the university system requires an authorised account; your LMS interface may differ."
+      },
+      "country": "sa",
+      "universityId": "najran",
+      "university": {
+        "ar": "جامعة نجران",
+        "en": "Najran University"
+      },
+      "sourceChecked": "2026-10-22",
+      "sourceType": "recordings"
+    },
+    {
+      "id": "sa-imam-elearning-guides",
+      "title": {
+        "ar": "أدلة التعليم الإلكتروني الأساسية والمتقدمة",
+        "en": "Basic and advanced e-learning guides"
+      },
+      "description": {
+        "ar": "مراجع عربية مرئية وتفاعلية لاستخدام Blackboard Ultra ومقارنة التعليم المتزامن وغير المتزامن.",
+        "en": "Arabic visual and interactive Blackboard Ultra references and a synchronous/asynchronous learning comparison."
+      },
+      "provider": "جامعة الإمام محمد بن سعود الإسلامية · IMSIU",
+      "roles": [
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "المهارات الرقمية",
+        "en": "Digital skills"
+      },
+      "language": "ar",
+      "url": "https://units.imamu.edu.sa/deanships/it/elearning/user_guides/Pages/default.aspx",
+      "kind": "tool",
+      "availability": "archive",
+      "access": {
+        "ar": "فهرس عام موسوم مؤرشف؛ لا يعلن دورة قادمة أو يمنح شهادة. مراجع النظام قد تحتاج تكييفًا مع النسخة المستخدمة في الكلية.",
+        "en": "A public catalogue explicitly marked archived; no upcoming course or certificate. System references may need adapting to the version used at the Faculty."
+      },
+      "country": "sa",
+      "universityId": "imam",
+      "university": {
+        "ar": "جامعة الإمام محمد بن سعود الإسلامية",
+        "en": "Imam Mohammad Ibn Saud Islamic University"
+      },
+      "sourceChecked": "2026-10-22",
+      "sourceType": "archive"
+    },
+    {
+      "id": "sa-hail-development-process",
+      "title": {
+        "ar": "تنظيم التطوير المهني من الاحتياج إلى المراجعة",
+        "en": "Professional development from needs to review"
+      },
+      "description": {
+        "ar": "مرجع للتعرّف على ربط الاحتياجات بخطة التدريب ومراجعة الرضا والأثر، للاستفادة من الفكرة في خطة تطوير شخصية.",
+        "en": "A reference showing how needs connect to training plans, satisfaction and impact review, to inform a personal development plan."
+      },
+      "provider": "جامعة حائل · University of Hail",
+      "roles": [
+        "staff",
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "التطوير المهني",
+        "en": "Professional development"
+      },
+      "language": "ar",
+      "url": "https://www.uoh.edu.sa/Ar/Deanships/Deanship-Q-D/S-K-Department/Pages/default.aspx",
+      "kind": "tool",
+      "availability": "reference",
+      "access": {
+        "ar": "صفحة مرجعية عامة، وليست دورة أو شهادة. البرامج التدريبية موجهة لمنسوبي الجامعة، وبعض الأهداف المنشورة تاريخية؛ لا تُنقل كأهداف للكلية.",
+        "en": "A public reference page, not a course or certificate. Training targets university members and some published targets are historical; they are not adopted as Faculty targets."
+      },
+      "country": "sa",
+      "universityId": "hail",
+      "university": {
+        "ar": "جامعة حائل",
+        "en": "University of Hail"
+      },
+      "sourceChecked": "2026-10-22",
+      "sourceType": "reference"
+    },
+    {
+      "id": "jouf-outlook",
+      "title": {
+        "ar": "دليل Outlook العربي – جامعة الجوف",
+        "en": "Jouf University Arabic Outlook guide"
+      },
+      "url": "https://ju.edu.sa/ar/guide-accessing-microsoft-outlook-browser-first-time-your-university-account",
+      "roles": [
+        "staff",
+        "ta",
+        "faculty"
+      ],
+      "language": "ar",
+      "access": {
+        "ar": "قراءة عامة مجانية بالعربية تشمل البريد والتقويم وتنظيم الرسائل. أمثلة الدخول تخص جامعة الجوف؛ التطبيق يحتاج حساب Microsoft 365 وصلاحيات وترخيصًا مناسبًا. ليست دورة أو شهادة.",
+        "en": "Free public Arabic reading on mail, calendars and message organisation. Sign-in examples are specific to Jouf; practice requires a suitable Microsoft 365 account, permissions and licence. Not a course or certificate."
+      },
+      "kind": "tool",
+      "sourceType": "reference",
+      "availability": "public",
+      "provider": "جامعة الجوف · Jouf University",
+      "topic": {
+        "ar": "المهارات الرقمية",
+        "en": "Digital skills"
+      },
+      "description": {
+        "ar": "مرجع عربي لتنظيم أدوات العمل الرقمي، مع أمثلة من البيئة الجامعية.",
+        "en": "Arabic reference for organising digital work tools, with university-specific examples."
+      },
+      "country": "sa",
+      "universityId": "jouf",
+      "university": {
+        "ar": "جامعة الجوف",
+        "en": "Jouf University"
+      },
+      "sourceChecked": "2026-10-22"
+    },
+    {
+      "id": "jouf-onedrive",
+      "title": {
+        "ar": "دليل OneDrive العربي – جامعة الجوف",
+        "en": "Jouf University Arabic OneDrive guide"
+      },
+      "url": "https://ju.edu.sa/ar/guide-accessing-microsoft-onedrive",
+      "roles": [
+        "staff",
+        "ta",
+        "faculty"
+      ],
+      "language": "ar",
+      "access": {
+        "ar": "مرجع عام مجاني بالعربية عن تنظيم الملفات والتخزين والتعاون. التطبيق يحتاج حسابًا وخطة وصلاحيات مناسبة؛ خدمات جامعة الجوف وحساباتها تخص منسوبيها. لا شهادة.",
+        "en": "Free public Arabic reference on organising files, storage and collaboration. Practice needs a suitable account, plan and permissions; Jouf accounts/services are for its members. No certificate."
+      },
+      "kind": "tool",
+      "sourceType": "reference",
+      "availability": "public",
+      "provider": "جامعة الجوف · Jouf University",
+      "topic": {
+        "ar": "المهارات الرقمية",
+        "en": "Digital skills"
+      },
+      "description": {
+        "ar": "مرجع عربي لتنظيم أدوات العمل الرقمي، مع أمثلة من البيئة الجامعية.",
+        "en": "Arabic reference for organising digital work tools, with university-specific examples."
+      },
+      "country": "sa",
+      "universityId": "jouf",
+      "university": {
+        "ar": "جامعة الجوف",
+        "en": "Jouf University"
+      },
+      "sourceChecked": "2026-10-22"
+    },
+    {
+      "id": "jouf-skills-center",
+      "universityId": "jouf",
+      "university": {
+        "ar": "جامعة الجوف",
+        "en": "Jouf University"
+      },
+      "provider": "جامعة الجوف · Jouf University",
+      "title": {
+        "ar": "مركز تنمية المهارات",
+        "en": "Skills Development Centre"
+      },
+      "url": "https://ju.edu.sa/ar/skills-development-center",
+      "description": {
+        "ar": "الاطلاع على تنظيم التطوير وروابط البرامج بالجامعة.",
+        "en": "Browse the development centre and its programme links."
+      },
+      "access": {
+        "ar": "الصفحة عامة؛ التسجيل الحالي والمجانية وأهلية الزائر الخارجي لم تثبت. تحقّق من إعلان كل برنامج قبل التسجيل.",
+        "en": "Public page; current registration, free access and external eligibility were not established. Check each programme announcement."
+      },
+      "roles": [
+        "staff",
+        "ta",
+        "faculty"
+      ],
+      "language": "ar",
+      "sourceType": "catalogue",
+      "availability": "conditional",
+      "sourceChecked": "2026-10-22"
+    },
+    {
+      "id": "jouf-elearning",
+      "universityId": "jouf",
+      "university": {
+        "ar": "جامعة الجوف",
+        "en": "Jouf University"
+      },
+      "provider": "جامعة الجوف · Jouf University",
+      "title": {
+        "ar": "أخبار التعليم الإلكتروني والتحول الرقمي",
+        "en": "E-learning and digital transformation news"
+      },
+      "url": "https://ju.edu.sa/ar/deanship-e-learning-and-digital-transformation",
+      "description": {
+        "ar": "تابع الإعلانات الأصلية والأدلة والفعاليات.",
+        "en": "Follow original announcements, guides and events."
+      },
+      "access": {
+        "ar": "الإعلانات الظاهرة عند الفحص شملت فعاليات سابقة؛ لا يمثل الرابط موعدًا قادمًا أو قبولًا مجانيًا عامًا.",
+        "en": "Announcements checked included past events. This link does not establish an upcoming date or free public eligibility."
+      },
+      "roles": [
+        "ta",
+        "faculty"
+      ],
+      "language": "ar",
+      "sourceType": "catalogue",
+      "availability": "conditional",
+      "sourceChecked": "2026-10-22"
+    },
+    {
+      "id": "sa-ksu-affiliate-training",
+      "universityId": "ksu",
+      "university": {
+        "ar": "جامعة الملك سعود",
+        "en": "King Saud University"
+      },
+      "provider": "جامعة الملك سعود · King Saud University",
+      "title": {
+        "ar": "منصة التدريب الإلكتروني — للمنسوبين",
+        "en": "E-training platform — university affiliates"
+      },
+      "url": "https://daleel.ksu.edu.sa/ar/node/2993",
+      "description": {
+        "ar": "مثال لتنظيم التعلم المرن والسجل التدريبي.",
+        "en": "An example of flexible learning and training-record organisation."
+      },
+      "access": {
+        "ar": "الخدمة مخصصة صراحة لمنسوبي جامعة الملك سعود؛ نعرضها مرجعًا وبوابة معلومات، ولا نوعد بحساب أو تسجيل لمنسوبي طبرق.",
+        "en": "Explicitly for King Saud University affiliates. Included as a reference and information portal; no account or enrolment for Tobruk members is promised."
+      },
+      "roles": [
+        "staff",
+        "ta",
+        "faculty"
+      ],
+      "language": "ar",
+      "sourceType": "catalogue",
+      "availability": "conditional",
+      "sourceChecked": "2026-10-22"
+    },
+    {
+      "id": "sa-qassim-namaa",
+      "universityId": "qassim",
+      "university": {
+        "ar": "جامعة القصيم",
+        "en": "Qassim University"
+      },
+      "provider": "جامعة القصيم · Qassim University",
+      "title": {
+        "ar": "نماء بلس — تحقق من أهلية البرنامج",
+        "en": "Namaa Plus — check programme eligibility"
+      },
+      "url": "https://namaa.qu.edu.sa/en/courses/categories/eld-faculty",
+      "description": {
+        "ar": "فهرس برامج تطوير التعليم والمهارات.",
+        "en": "Catalogue of education and skills development programmes."
+      },
+      "access": {
+        "ar": "بعض البرامج المجانية مخصصة لمجموعة متدربين أو مغلقة التسجيل. وصف البرنامج المعين وشروطه هما المرجع، ولا يُعد الفهرس تسجيلًا مفتوحًا للجميع.",
+        "en": "Some free programmes are restricted to a trainee group or closed. Individual programme conditions apply; this catalogue is not open enrolment for everyone."
+      },
+      "roles": [
+        "ta",
+        "faculty"
+      ],
+      "language": "ar",
+      "sourceType": "catalogue",
+      "availability": "conditional",
+      "sourceChecked": "2026-10-22"
+    },
+    {
+      "id": "sa-kku-training-portal",
+      "universityId": "kku",
+      "university": {
+        "ar": "جامعة الملك خالد",
+        "en": "King Khalid University"
+      },
+      "provider": "جامعة الملك خالد · King Khalid University",
+      "title": {
+        "ar": "منصة KKUx — دليل خدمة",
+        "en": "KKUx platform — service directory"
+      },
+      "url": "https://www.kku.edu.sa/ar/e-services/105972",
+      "description": {
+        "ar": "برامج ودورات ومحتوى تفاعلي للتطوير.",
+        "en": "Development programmes, courses and interactive content."
+      },
+      "access": {
+        "ar": "المجانية الشاملة والأهلية من ليبيا لم تتحققا؛ يُرجع إلى شروط ورسوم كل برنامج.",
+        "en": "Blanket free access and eligibility from Libya were not verified. Check each programme’s fees and conditions."
+      },
+      "roles": [
+        "staff",
+        "ta",
+        "faculty"
+      ],
+      "language": "ar",
+      "sourceType": "catalogue",
+      "availability": "conditional",
+      "sourceChecked": "2026-10-22"
+    },
+    {
+      "id": "sa-taibah-itqan",
+      "universityId": "taibah",
+      "university": {
+        "ar": "جامعة طيبة",
+        "en": "Taibah University"
+      },
+      "provider": "جامعة طيبة · Taibah University",
+      "title": {
+        "ar": "إتقان طيبة الرقمي — خيارات بشروط مختلفة",
+        "en": "Itqan Taibah Digital — programmes with varied conditions"
+      },
+      "url": "https://www.taibahu.edu.sa/e-service/httpstaibahufuturexsa",
+      "description": {
+        "ar": "بوابة للتعلم والتطوير بحسب البرنامج والفئة.",
+        "en": "Learning and development portal organised by programme and audience."
+      },
+      "access": {
+        "ar": "تضم برامج مجانية وأخرى مدفوعة، مع حساب أو نفاذ وشروط أهلية وشهادة بحسب البرنامج؛ ليست جميعها متاحة للزائر الخارجي.",
+        "en": "Contains free and paid programmes. Account, identity, eligibility and certificate conditions vary; not all programmes are available to external visitors."
+      },
+      "roles": [
+        "staff",
+        "ta",
+        "faculty"
+      ],
+      "language": "ar",
+      "sourceType": "catalogue",
+      "availability": "conditional",
+      "sourceChecked": "2026-10-22"
+    },
+    {
+      "id": "jouf-plan-1446-archive",
+      "universityId": "jouf",
+      "university": {
+        "ar": "جامعة الجوف",
+        "en": "Jouf University"
+      },
+      "provider": "جامعة الجوف · Jouf University",
+      "title": {
+        "ar": "خطة التدريب الإلكتروني 1446 — أرشيف",
+        "en": "E-learning training plan 1446 — archive"
+      },
+      "url": "https://ju.edu.sa/ar/e-learning-administration-announces-training-plan-2nd-semester-academic-year-1446",
+      "description": {
+        "ar": "مثال تاريخي لتنظيم التدريب بحسب فئة المستفيد.",
+        "en": "Historical example of role-based training organisation."
+      },
+      "access": {
+        "ar": "خطة 2024–2025 ؛ مرجع تنظيمي وليست مواعيد قادمة أو تسجيلات مرئية متحققة.",
+        "en": "A 2024–2025 plan; a design reference, not upcoming dates or verified video recordings."
+      },
+      "roles": [
+        "ta",
+        "faculty"
+      ],
+      "language": "ar",
+      "sourceType": "archive",
+      "availability": "archive",
+      "sourceChecked": "2026-10-22"
+    },
+    {
+      "id": "sa-kfupm-effective-teaching",
+      "title": {
+        "ar": "أفكار عملية للتحضير والتدريس الفعّال",
+        "en": "Practical preparation and effective teaching tips"
+      },
+      "description": {
+        "ar": "مرجع موجز للتحضير قبل الفصل، ووضوح خطة المقرر، والتعلم النشط وربط المخرجات بالتقييم.",
+        "en": "A concise reference for preparation, clear course outlines, active learning and aligning outcomes with assessment."
+      },
+      "provider": "جامعة الملك فهد للبترول والمعادن · KFUPM",
+      "roles": [
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "التدريس والتقييم",
+        "en": "Teaching and assessment"
+      },
+      "language": "en",
+      "url": "https://dad.kfupm.edu.sa/resources/tips/tips-for-effective-teaching/",
+      "kind": "tool",
+      "availability": "reference",
+      "access": {
+        "ar": "مقال جامعي عام بالإنجليزية دون تسجيل للقراءة؛ لا دورة أو شهادة. تُكيّف الأفكار مع دليل الكلية؛ خدمات الاستشارة الجامعية تخص منسوبي الجهة.",
+        "en": "A public English university article without sign-in for reading, not a course or certificate. Adapt ideas to Faculty guides; university consultation services serve its members."
+      },
+      "sourceChecked": "2026-10-22",
+      "country": "sa",
+      "universityId": "kfupm",
+      "university": {
+        "ar": "جامعة الملك فهد للبترول والمعادن",
+        "en": "King Fahd University of Petroleum and Minerals"
+      },
+      "sourceType": "reference"
+    },
+    {
+      "id": "sa-psau-ultra-video",
+      "title": {
+        "ar": "بداية استخدام Blackboard Ultra لأستاذ المادة",
+        "en": "Getting started with Blackboard Ultra for instructors"
+      },
+      "description": {
+        "ar": "مرجع مرئي عربي لأعضاء هيئة التدريس، منشور في يناير 2026.",
+        "en": "An Arabic visual reference for faculty published in January 2026."
+      },
+      "provider": "جامعة الأمير سطام بن عبدالعزيز · PSAU",
+      "roles": [
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "المهارات الرقمية",
+        "en": "Digital skills"
+      },
+      "language": "ar",
+      "url": "https://www.psau.edu.sa/elearning/ar/node/9159",
+      "kind": "tool",
+      "availability": "recorded",
+      "access": {
+        "ar": "صفحة عامة تضم فيديو إرشاديًا؛ ليست فعالية قادمة أو شهادة. التطبيق في نظام الجامعة يحتاج حسابًا وصلاحيات، وقد تختلف الواجهة في الكلية.",
+        "en": "A public instructional-video page, not an upcoming event or certificate. Applying it in the university LMS requires an authorised account; the Faculty interface may differ."
+      },
+      "sourceChecked": "2026-10-22",
+      "country": "sa",
+      "universityId": "prince-sattam",
+      "university": {
+        "ar": "جامعة الأمير سطام بن عبدالعزيز",
+        "en": "Prince Sattam bin Abdulaziz University"
+      },
+      "sourceType": "recordings"
+    }
+  ],
+  "coverage": [
+    {
+      "id": "jouf",
+      "university": {
+        "ar": "جامعة الجوف",
+        "en": "Jouf University"
+      },
+      "url": "https://ju.edu.sa/ar/skills-development-center",
+      "finding": {
+        "ar": "أدلة عربية عامة متاحة، ونهج للاحتياج والتخطيط والأثر. لم يثبت تسجيل مجاني قادم مفتوح؛ إعلان الدورات التقنية في 8 يونيو 2026 بمقابل مالي.",
+        "en": "Public Arabic guides and a needs/planning/impact approach. No forthcoming free public enrolment verified; the 8 June 2026 technical-course announcement charges fees."
+      },
+      "checked": "2026-10-22"
+    },
+    {
+      "university": {
+        "ar": "جامعة الملك سعود",
+        "en": "King Saud University"
+      },
+      "url": "https://daleel.ksu.edu.sa/ar/node/2993",
+      "id": "ksu",
+      "finding": {
+        "ar": "تدريب المنصة مخصص للمنسوبين؛ واستفدنا من تصنيف أنشطة أعضاء هيئة التدريس ثنائي اللغة مرجعيًا.",
+        "en": "The training platform is for affiliates; bilingual faculty-activity categories were identified for benchmarking."
+      },
+      "checked": "2026-10-22"
+    },
+    {
+      "university": {
+        "ar": "جامعة الملك عبدالعزيز",
+        "en": "King Abdulaziz University"
+      },
+      "url": "https://kau.edu.sa/ar/page/guides-and-tutorials",
+      "id": "kau",
+      "finding": {
+        "ar": "انتُقيت أدلة ودروس عامة وملف تنظيم أسئلة الاختبار؛ لا يترتب عليها حساب على الأنظمة أو شهادة.",
+        "en": "Public guides, tutorials and an examination-question file guide selected; no system account or certificate implied."
+      },
+      "checked": "2026-10-22"
+    },
+    {
+      "university": {
+        "ar": "جامعة الأميرة نورة بنت عبدالرحمن",
+        "en": "Princess Nourah bint Abdulrahman University"
+      },
+      "url": "https://pnu.edu.sa/ar/Deanship/Devandskilldean/ViceDeanshipofdevelopment/Documents/dqd-mdcm1163.pdf",
+      "id": "pnu",
+      "finding": {
+        "ar": "خطة 1448 ثنائية اللغة ربطت الاحتياج والمسارات بأهداف 2026–2030 والمؤشرات؛ مرجع تخطيط لا تسجيل مفتوح.",
+        "en": "Bilingual 1448 H plan maps needs and pathways to 2026–2030 objectives and indicators; planning reference, not open enrolment."
+      },
+      "checked": "2026-10-22"
+    },
+    {
+      "university": {
+        "ar": "جامعة أم القرى",
+        "en": "Umm Al-Qura University"
+      },
+      "url": "https://uqu.edu.sa/index.php/colshria/87312",
+      "id": "umm-al-qura",
+      "finding": {
+        "ar": "مرجع لجمع القنوات والأدلة في موضع واحد استجابة لصعوبة تعددها؛ لم تثبت إتاحة كل المواد الفرعية.",
+        "en": "Benchmark for consolidating channels and guidance in response to fragmentation; not all linked resources verified available."
+      },
+      "checked": "2026-10-22"
+    },
+    {
+      "university": {
+        "ar": "جامعة طيبة",
+        "en": "Taibah University"
+      },
+      "url": "https://www.taibahu.edu.sa/administration-of-e-learning/guides-and-forms-0",
+      "id": "taibah",
+      "finding": {
+        "ar": "أدلة عامة في التغذية الراجعة والإتاحة وأدوات التعليم التفاعلي؛ المنصة التدريبية تضم مجانيًا ومدفوعًا.",
+        "en": "Public feedback, accessibility and interactive-tools guides; the training platform contains both free and paid programs."
+      },
+      "checked": "2026-10-22"
+    },
+    {
+      "university": {
+        "ar": "جامعة القصيم",
+        "en": "Qassim University"
+      },
+      "url": "https://namaa.qu.edu.sa/en/courses/categories/eld-faculty",
+      "id": "qassim",
+      "finding": {
+        "ar": "موارد توعية سيبرانية عامة؛ دورات نماء المنتقاة مقيّدة لمجموعة أو مغلقة، فلا تُعرض كتسجيل حر.",
+        "en": "Public cybersecurity resources; selected Namaa courses are group-restricted or closed, so not presented as open enrolment."
+      },
+      "checked": "2026-10-22"
+    },
+    {
+      "university": {
+        "ar": "الجامعة السعودية الإلكترونية",
+        "en": "Saudi Electronic University"
+      },
+      "url": "https://seu.edu.sa/ar/blackboard-system/training/",
+      "id": "seu",
+      "finding": {
+        "ar": "حقائب PDF عامة أساسية ومتقدمة؛ صفحة التسجيلات مؤرخة 2020 وتم تمييزها أرشيفًا.",
+        "en": "Public basic and advanced PDF packs; recording page is dated 2020 and labelled as an archive."
+      },
+      "checked": "2026-10-22"
+    },
+    {
+      "university": {
+        "ar": "جامعة الملك خالد",
+        "en": "King Khalid University"
+      },
+      "url": "https://www.kku.edu.sa/ar/e-services/105972",
+      "id": "kku",
+      "finding": {
+        "ar": "دليل رسمي لمنصة KKUx؛ لم تثبت مجانية جميع البرامج أو أهلية التسجيل من ليبيا.",
+        "en": "Official KKUx directory; blanket free access and enrolment eligibility from Libya were not established."
+      },
+      "checked": "2026-10-22"
+    },
+    {
+      "university": {
+        "ar": "جامعة المجمعة",
+        "en": "Majmaah University"
+      },
+      "url": "https://www.mu.edu.sa/ar/deanships/deanship-of-development-and-quality/213821",
+      "id": "majmaah",
+      "finding": {
+        "ar": "حقائب تطوير وجودة عامة، وحزم عربية وإنجليزية، وورقة تأمل مهني؛ وُسمت الملفات القديمة بوضوح.",
+        "en": "Public development/quality packs, Arabic/English resources and a competency-reflection worksheet; older files clearly labelled."
+      },
+      "checked": "2026-10-22"
+    },
+    {
+      "university": {
+        "ar": "جامعة الإمام عبدالرحمن بن فيصل",
+        "en": "Imam Abdulrahman bin Faisal University"
+      },
+      "url": "https://pfutl.iau.edu.sa/downloads/PFUTL_V2_Ar.pdf",
+      "id": "uni-9",
+      "finding": {
+        "ar": "عُثر على دليل زمالة مهني مفهرس، لكن فتح الملف تعذر؛ لم يُضف مورد أو وعد تسجيل متاح.",
+        "en": "An indexed professional-fellowship guide was found, but the file could not be opened; no usable resource or enrolment promise added."
+      },
+      "checked": "2026-10-22"
+    },
+    {
+      "university": {
+        "ar": "جامعة الطائف",
+        "en": "Taif University"
+      },
+      "url": "https://maharat.tu.edu.sa/mod/page/view.php?id=90752",
+      "id": "taif",
+      "finding": {
+        "ar": "خطة تدريب متزامن وغير متزامن لأعضاء هيئة التدريس؛ سجل رسمي مفهرس، لكن فتح الصفحة تعذّر أثناء المراجعة.",
+        "en": "An indexed official plan describes synchronous and asynchronous faculty training; direct page access timed out during review."
+      },
+      "checked": "2026-10-22"
+    },
+    {
+      "university": {
+        "ar": "جامعة تبوك",
+        "en": "University of Tabuk"
+      },
+      "url": "https://elearn.ut.edu.sa/ut-global-guides.html",
+      "id": "tabuk",
+      "finding": {
+        "ar": "صفحة عامة لأدلة منصة التدريب الإلكتروني UTGLOBAL.",
+        "en": "A public guide page for the UTGLOBAL e-training platform."
+      },
+      "checked": "2026-10-22"
+    },
+    {
+      "university": {
+        "ar": "جامعة حائل",
+        "en": "University of Hail"
+      },
+      "url": "https://www.uoh.edu.sa/Ar/Deanships/Deanship-Q-D/S-K-Department/Pages/default.aspx",
+      "id": "hail",
+      "finding": {
+        "ar": "يوضح ربط الاحتياجات التدريبية والخطط والرضا وقياس الأثر؛ يحتوي أهدافًا تاريخية 2021–2022.",
+        "en": "Describes the link between training needs, plans, satisfaction and impact review; includes historical 2021–2022 targets."
+      },
+      "checked": "2026-10-22"
+    },
+    {
+      "university": {
+        "ar": "جامعة جازان",
+        "en": "Jazan University"
+      },
+      "url": "https://www.jazanu.edu.sa/ar/e-services/training",
+      "id": "jazan",
+      "finding": {
+        "ar": "تعريف بخدمة تنظيم التسجيل وحضور الدورات والشهادات؛ الصفحة تصف تطوير المنسوبين والطلاب.",
+        "en": "A service description for registration, attendance and certificates; the page refers to staff and students."
+      },
+      "checked": "2026-10-22"
+    },
+    {
+      "university": {
+        "ar": "جامعة نجران",
+        "en": "Najran University"
+      },
+      "url": "https://portal.nu.edu.sa/ar/web/elearning-deanship/instructors-educational-videos",
+      "id": "najran",
+      "finding": {
+        "ar": "مكتبة عامة بالعربية؛ تتضمن إنشاء بنوك الأسئلة والاختبارات ودروس إدارة المقرر، مع مواد منشورة في أكتوبر 2026 وأرشيف أقدم.",
+        "en": "A public Arabic library covering question banks, tests and course management, including October 2026 tutorials and older material."
+      },
+      "checked": "2026-10-22"
+    },
+    {
+      "university": {
+        "ar": "جامعة جدة",
+        "en": "University of Jeddah"
+      },
+      "url": "https://elearn.uj.edu.sa/page3.html",
+      "id": "jeddah",
+      "finding": {
+        "ar": "صفحة تعرض ورش التعلم المصغر والأنشطة واستراتيجيات التدريس بمواعيد يوم وشهر دون سنة واضحة.",
+        "en": "Lists microlearning, e-learning activities and teaching-strategy workshops with day/month times but no clear year."
+      },
+      "checked": "2026-10-22"
+    },
+    {
+      "university": {
+        "ar": "جامعة حفر الباطن",
+        "en": "University of Hafr Al Batin"
+      },
+      "url": "https://www.uhb.edu.sa/ar/supporting-deanships/deanship-of-development-and-quality",
+      "id": "hafr-albatin",
+      "finding": {
+        "ar": "صفحة عامة تجمع نماذج الجودة وأخبار التهيئة والتطوير لمنسوبي الجامعة.",
+        "en": "A public page combines quality templates with induction and staff-development news."
+      },
+      "checked": "2026-10-22"
+    },
+    {
+      "university": {
+        "ar": "جامعة شقراء",
+        "en": "Shaqra University"
+      },
+      "url": "https://www.su.edu.sa/ar/deanships/elearning-digital",
+      "id": "shaqra",
+      "finding": {
+        "ar": "مصدر رسمي عام عن دعم العمليات والخدمات الجامعية رقميًا.",
+        "en": "An official general source about digital support for university operations and services."
+      },
+      "checked": "2026-10-22"
+    },
+    {
+      "university": {
+        "ar": "جامعة الباحة",
+        "en": "Al Baha University"
+      },
+      "url": "https://bux.bu.edu.sa/",
+      "id": "al-baha",
+      "finding": {
+        "ar": "منصة تعرض برامج وتسجيلًا بحساب، مع أمثلة برامج برسوم؛ لا تكفي لإثبات دورة مجانية عامة مناسبة.",
+        "en": "A programme platform with account registration and priced examples; it does not establish a suitable public free course."
+      },
+      "checked": "2026-10-22"
+    },
+    {
+      "university": {
+        "ar": "جامعة بيشة",
+        "en": "University of Bisha"
+      },
+      "url": "https://mutqen.ub.edu.sa/",
+      "id": "bisha",
+      "finding": {
+        "ar": "منصة رسمية مفهرسة للتدريب والشهادات المهنية؛ تعذّر فتحها مباشرة أثناء الفحص.",
+        "en": "An indexed official training/professional-certificate platform; direct access timed out during review."
+      },
+      "checked": "2026-10-22"
+    },
+    {
+      "university": {
+        "ar": "الجامعة الإسلامية بالمدينة المنورة",
+        "en": "Islamic University of Madinah"
+      },
+      "url": "https://iu.edu.sa/elc",
+      "id": "islamic",
+      "finding": {
+        "ar": "يعرض التعلم المرن والبرامج الرقمية والشهادات المصغرة وتأهيل أعضاء هيئة التدريس والطلاب.",
+        "en": "Describes flexible learning, digital programmes, microcredentials and faculty/student development."
+      },
+      "checked": "2026-10-22"
+    },
+    {
+      "university": {
+        "ar": "جامعة الإمام محمد بن سعود الإسلامية",
+        "en": "Imam Mohammad Ibn Saud Islamic University"
+      },
+      "url": "https://units.imamu.edu.sa/deanships/it/elearning/user_guides/Pages/default.aspx",
+      "id": "imam",
+      "finding": {
+        "ar": "فهرس عربي عام لأدلة Blackboard Ultra الأساسية والمتقدمة والمرئية؛ الصفحة موسومة مؤرشفة.",
+        "en": "A public Arabic catalogue of basic, advanced and visual Blackboard Ultra guides; the page is explicitly archived."
+      },
+      "checked": "2026-10-22"
+    },
+    {
+      "id": "ksau-hs",
+      "university": {
+        "ar": "جامعة الملك سعود بن عبدالعزيز للعلوم الصحية",
+        "en": "King Saud bin Abdulaziz University for Health Sciences"
+      },
+      "url": "https://ksau-hs.edu.sa/English/Deanships/graduate-studies/Pages/continuing-prof-develop.aspx",
+      "checked": "2026-10-22",
+      "finding": {
+        "ar": "مصدر رسمي مفهرس عن برامج التطوير المهني والتعليم الطبي المستمر للممارسين الصحيين؛ تعذّر فتح الصفحة مباشرة أثناء التحقق. أهلية الحضور والرسوم والتسجيل تختلف حسب النشاط ولم تُتحقق؛ لا يُعلن كدورة مجانية أو كتدريب تمريضي متاح للجميع.",
+        "en": "An indexed official source describes continuing professional development and medical education for healthcare professionals; direct retrieval was unavailable. Eligibility, fees and registration vary by activity and were not verified; not advertised as free or universally accessible nursing training."
+      }
+    },
+    {
+      "id": "king-faisal",
+      "university": {
+        "ar": "جامعة الملك فيصل",
+        "en": "King Faisal University"
+      },
+      "url": "https://www.kfu.edu.sa/ar/Deans/QA/Pages/Tr-Portal.aspx",
+      "checked": "2026-10-22",
+      "finding": {
+        "ar": "بوابة رسمية مفهرسة تربط التسجيل والبرامج المسجلة والمقترحات التدريبية؛ المحتوى الكامل لم يظهر في النص المفتوح. لا تثبت الصفحة دورة عامة مجانية أو قبول الزائر الخارجي؛ يلزم التحقق من صفحة البرنامج أو التسجيل.",
+        "en": "An official indexed portal links registration, recorded programmes and training suggestions; full content was not exposed in the retrieved text. The page does not establish a public free course or external eligibility; check the specific programme or registration page."
+      }
+    },
+    {
+      "id": "kfupm",
+      "university": {
+        "ar": "جامعة الملك فهد للبترول والمعادن",
+        "en": "King Fahd University of Petroleum and Minerals"
+      },
+      "url": "https://dad.kfupm.edu.sa/resources/tips/tips-for-effective-teaching/",
+      "checked": "2026-10-22",
+      "finding": {
+        "ar": "مرجع عام بالإنجليزية للتحضير للمقرر وربط المخرجات بالتقييم وتهيئة أول جلسة والتعلم النشط. قراءة عامة دون تسجيل في الصفحة؛ ليست دورة أو شهادة. الاستشارات والورش المعلنة لخدمة منسوبي الجامعة.",
+        "en": "A public English reference on course preparation, outcome-assessment alignment, first-class preparation and active learning. Public reading without page sign-in; not a course or certificate. Listed consultations and workshops serve university members."
+      }
+    },
+    {
+      "id": "northern-border",
+      "university": {
+        "ar": "جامعة الحدود الشمالية",
+        "en": "Northern Border University"
+      },
+      "url": "https://general-administration-human-resources.nbu.edu.sa/administrative-development-department",
+      "checked": "2026-10-22",
+      "finding": {
+        "ar": "وصف رسمي مفهرس لحوكمة التدريب والأداء والتعاقب الوظيفي؛ تعذّر فتح الصفحة مباشرة أثناء الفحص. مرجع تنظيمي لمنسوبي الجامعة؛ لم يثبت فهرس دورات مجانية مفتوحة للزوار.",
+        "en": "An indexed official description covers training governance, performance and succession planning; direct retrieval timed out. A university-member organisational reference; no public free-course catalogue was established."
+      }
+    },
+    {
+      "id": "prince-sattam",
+      "university": {
+        "ar": "جامعة الأمير سطام بن عبدالعزيز",
+        "en": "Prince Sattam bin Abdulaziz University"
+      },
+      "url": "https://www.psau.edu.sa/elearning/ar/node/9159",
+      "checked": "2026-10-22",
+      "finding": {
+        "ar": "صفحة عامة بالعربية منشورة في 21 يناير 2026 تضم فيديو إرشاديًا لأعضاء هيئة التدريس. المشاهدة العامة لا تمنح شهادة؛ استخدام النظام الجامعي يتطلب حسابًا وصلاحية.",
+        "en": "A public Arabic page published on 21 January 2026 contains an instructional video for faculty. Public viewing does not award a certificate; university-system use requires an authorised account."
+      }
+    },
+    {
+      "id": "kaust",
+      "university": {
+        "ar": "جامعة الملك عبدالله للعلوم والتقنية",
+        "en": "King Abdullah University of Science and Technology"
+      },
+      "url": "https://it.kaust.edu.sa/services/detail/support---training/it-training---learning-resources",
+      "checked": "2026-10-22",
+      "finding": {
+        "ar": "صفحة رسمية مفهرسة تجمع الورش والممارسة والأدلة الذاتية للفئات الأكاديمية والموظفين والطلاب؛ لم تتوفر القراءة المباشرة أثناء الفحص. خدمة تخص تقنية كاوست؛ إتاحة المحتوى أو حضور الزائر الخارجي والشهادات لم تُتحقق.",
+        "en": "An indexed official page combines workshops, hands-on courses and self-paced guides for faculty/researchers, staff and students; direct retrieval was unavailable. A KAUST technology service; access to content, external participation and certificate conditions were not verified."
+      }
+    }
+  ]
+}

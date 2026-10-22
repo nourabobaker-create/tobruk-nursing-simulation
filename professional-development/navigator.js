@@ -4,7 +4,7 @@
   const params = new URLSearchParams(location.search);
   let role = roles.includes(params.get('role')) ? params.get('role') : 'staff';
   let lang = document.documentElement.lang === 'en' ? 'en' : 'ar';
-  let resources = [], events = [], benchmarks = null, benchmarkError = false;
+  let resources = [], events = [], benchmarks = null, benchmarkError = false, benchmarkRegion = 'sa';
   const KEY = 'tobruk-development-pathways-v1';
   let progress = {};
   try { const value = JSON.parse(localStorage.getItem(KEY) || '{}'); if (value && typeof value === 'object' && !Array.isArray(value)) progress = value; } catch (_) {}
@@ -39,11 +39,11 @@
     $('discovery').setAttribute('aria-label', tr('ابدأ من احتياجك', 'Start with your need'));
     const tiles = [
       ['▤', '#guides', tr('أعرف دوري', 'Understand my role'), tr('الأدلة المعتمدة ومسؤوليات العمل', 'Approved guides and responsibilities')],
-      ['↗', '#pathways', tr('أطوّر مهارة', 'Build a skill'), tr('مسار بخطوات ونتيجة عملية', 'A pathway with steps and a practical result')],
+      ['↗', '#development-needs', tr('أطوّر مهارة', 'Build a skill'), tr('اختر احتياجًا وموردًا وخطوة تطبيق', 'Choose a need, a resource and an action')],
       ['◎', '#workbench', tr('أخطط وأجهّز', 'Plan and prepare'), tr('خطة تطوير وخطة أسبوع وقائمة تحضير', 'Development plan, weekly plan and checklist')],
       ['⌕', '#resourceFilters', tr('أبحث عن مصدر', 'Find a resource'), tr('تصفية بحسب اللغة والمجال', 'Filter by language and topic')],
       [role === 'staff' ? '◇' : '▦', role === 'staff' ? '#journal' : '#events', role === 'staff' ? tr('أراجع ما طبّقت', 'Reflect on application') : tr('أتابع الفعاليات', 'Follow events'), role === 'staff' ? tr('سجل تعلّم وتأمل شخصي', 'A personal learning journal') : tr('فرص مجانية بتوقيت ليبيا', 'Free opportunities in Libya time')],
-      ['⊕', '#benchmarks', tr('مراجع تطوير المساحة', 'How this space was developed'), tr('الجامعات والأفكار التي استفدنا منها', 'The universities and ideas we learned from')]
+      ['⊕', '#saudi-development', tr('أستفيد من خبرات سعودية', 'Explore Saudi practices'), tr('جامعة الجوف ومصادر جامعية أخرى', 'Jouf and other university resources')]
     ];
     $('discovery').innerHTML = `<div class="discovery-heading"><h2>${tr('ماذا تريد أن تنجز اليوم؟', 'What would you like to accomplish today?')}</h2><p>${tr('ابدأ من حاجتك، ثم اختر المصدر أو الأداة التي تساعدك.', 'Start with your need, then choose the resource or tool that helps.')}</p></div><div class="service-grid">${tiles.map(([icon, href, title, note], i) => `<a class="service-tile" href="${href}" data-metrics-event="resource_open" data-metrics-item="development:${role}:quick:${i + 1}"><span aria-hidden="true">${icon}</span><strong>${esc(title)}</strong><small>${esc(note)}</small></a>`).join('')}</div><div class="space-overview"><span>${tr('في مساحتك', 'In your space')}</span><strong>${resources.filter(x => x.roles?.includes(role)).length} ${tr('مصدرًا ودليلًا', 'resources and guides')}</strong><strong>3 ${tr('مسارات عملية', 'practical pathways')}</strong><strong>3 ${tr('أدوات للتخطيط والتحضير', 'planning and preparation tools')}</strong>${role === 'staff' ? '' : `<strong>${events.filter(x => Date.parse(x.end) > Date.now()).length} ${tr('فعاليات قادمة', 'upcoming events')}</strong>`}</div>`;
   }
@@ -56,7 +56,7 @@
   }
   function renderBenchmarks() {
     if (!$('benchmarks')) return;
-    $('benchmarks').innerHTML = `<div class="section-heading"><div><span class="kicker">⊕</span><h2>${tr('المقارنة المرجعية · Benchmark', 'Benchmarking · design references')}</h2><p>${tr('اطّلعنا على خدمات جامعات أخرى واستفدنا من أفكارها في تطوير هذه المساحات.', 'We reviewed other universities’ services and adapted useful ideas for these spaces.')}</p></div></div>${!benchmarks ? `<p class="local-note">${benchmarkError ? tr('تعذّر تحميل المراجع الآن. أعد تحميل الصفحة للمحاولة.', 'The references could not be loaded. Reload to try again.') : tr('جارٍ تحميل المراجع…', 'Loading references…')}</p>` : `<p class="source-note">${esc(pick(benchmarks.scope))}</p><div class="benchmark-grid">${benchmarks.items.map(item => `<article class="benchmark-card"><span class="provider">${esc(pick(item.university))}</span><h3>${esc(pick(item.title))}</h3><p><strong>${tr('الفكرة المرجعية: ', 'Reference idea: ')}</strong>${esc(pick(item.idea))}</p><p><strong>${tr('تطبيقنا في الكلية: ', 'Our local adaptation: ')}</strong>${esc(pick(item.adaptation))}</p><a href="${esc(safeUrl(item.url))}" target="_blank" rel="noopener noreferrer" data-metrics-event="resource_open" data-metrics-item="development:${role}:benchmark:${esc(item.id)}">${tr('المصدر الجامعي الرسمي', 'Official university source')} ↗</a><small>${tr('تاريخ الاطلاع: ', 'Reviewed: ')}${esc(item.checked)}</small></article>`).join('')}</div>`}`;
+    $('benchmarks').innerHTML = `<div class="section-heading"><div><span class="kicker">⊕</span><h2>${tr('المقارنة المرجعية · Benchmark', 'Benchmarking · design references')}</h2><p>${tr('اطّلعنا على خدمات جامعات أخرى واستفدنا من أفكارها في تطوير هذه المساحات.', 'We reviewed other universities’ services and adapted useful ideas for these spaces.')}</p></div></div>${!benchmarks ? `<p class="local-note">${benchmarkError ? tr('تعذّر تحميل المراجع الآن. أعد تحميل الصفحة للمحاولة.', 'The references could not be loaded. Reload to try again.') : tr('جارٍ تحميل المراجع…', 'Loading references…')}</p>` : `<p class="source-note">${esc(pick(benchmarks.scope))}</p><label class="field" for="benchmarkRegion">${tr('نطاق المراجع', 'Reference group')}<select id="benchmarkRegion">${['sa','international','all'].map(value => `<option value="${value}" ${benchmarkRegion === value ? 'selected' : ''}>${value === 'sa' ? tr('الجامعات السعودية', 'Saudi universities') : value === 'international' ? tr('المراجع الدولية والعربية الأخرى', 'Other international and Arab references') : tr('جميع المراجع', 'All references')}</option>`).join('')}</select></label><div class="benchmark-grid">${benchmarks.items.filter(item => benchmarkRegion === 'all' || (benchmarkRegion === 'sa' ? item.region === 'sa' : item.region !== 'sa')).map(item => `<article class="benchmark-card"><span class="provider">${esc(pick(item.university))}</span><h3>${esc(pick(item.title))}</h3><p><strong>${tr('الفكرة المرجعية: ', 'Reference idea: ')}</strong>${esc(pick(item.idea))}</p><p><strong>${tr('تطبيقنا في الكلية: ', 'Our local adaptation: ')}</strong>${esc(pick(item.adaptation))}</p><a href="${esc(safeUrl(item.url))}" target="_blank" rel="noopener noreferrer" data-metrics-event="resource_open" data-metrics-item="development:${role}:benchmark:${esc(item.id)}">${tr('المصدر الجامعي الرسمي', 'Official university source')} ↗</a><small>${tr('تاريخ الاطلاع: ', 'Reviewed: ')}${esc(item.checked)}</small></article>`).join('')}</div>`}`;
   }
   function render() { renderDiscovery(); renderPaths(); renderBenchmarks(); }
   document.addEventListener('development:context', event => {
@@ -77,6 +77,7 @@
     if (path?.matches('details[data-path]') && !path.open) record('resource_open', 'pathway-open:' + path.dataset.path);
   });
   document.addEventListener('change', event => {
+    if (event.target.id === 'benchmarkRegion') { benchmarkRegion = event.target.value; renderBenchmarks(); return; }
     const value = event.target.dataset?.step;
     if (!value || !event.target.closest('#pathways')) return;
     const key = role + ':' + value, wasReported = progress['reported:' + key] === true;
@@ -87,5 +88,5 @@
     $('pathwayStatus').textContent = stored ? tr('حُدّث تقدمك على هذا الجهاز.', 'Your progress was updated on this device.') : tr('تعذّر الحفظ؛ يبقى التقدم في الصفحة الحالية فقط.', 'Could not save; progress will remain only in this page.');
   });
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', render, { once: true }); else render();
-  fetch('benchmarks.json?v=20261022-2').then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); }).then(value => { if (!Array.isArray(value.items)) throw new Error('Invalid benchmarks'); benchmarks = value; renderBenchmarks(); }).catch(() => { benchmarkError = true; renderBenchmarks(); });
+  fetch('benchmarks.json?v=20261022-3').then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); }).then(value => { if (!Array.isArray(value.items)) throw new Error('Invalid benchmarks'); benchmarks = value; renderBenchmarks(); }).catch(() => { benchmarkError = true; renderBenchmarks(); });
 })();

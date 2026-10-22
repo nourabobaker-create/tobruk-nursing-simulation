@@ -6,7 +6,7 @@
 })(typeof window !== 'undefined' ? window : globalThis, function () {
   'use strict';
   const roles = ['staff', 'ta', 'faculty'];
-  const fields = ['views', 'guides', 'resources', 'events', 'calendar', 'pathways', 'pathSteps', 'worktools', 'started', 'completed', 'applied'];
+  const fields = ['views', 'guides', 'resources', 'events', 'calendar', 'pathways', 'pathSteps', 'worktools', 'needs', 'started', 'completed', 'applied'];
   function classify(event) {
     const item = typeof event?.item === 'string' ? event.item : '';
     const view = /^development:role:(staff|ta|faculty)$/.exec(item);
@@ -15,6 +15,7 @@
     if (!match) return null;
     const role = match[1], action = match[2];
     if (event.event === 'resource_open') {
+      if (action.startsWith('needs:')) return { role, field: 'needs' };
       if (action.startsWith('pathway-open:')) return { role, field: 'pathways' };
       if (action.startsWith('guide-')) return { role, field: 'guides' };
       if (action.startsWith('calendar:')) return { role, field: 'calendar' };
@@ -62,10 +63,10 @@
       const now = Date.now(), events = core?.readEvents?.() || [], rows = aggregate(events, now - 30 * 86400000, now), any = rows.some(row => fields.some(field => row[field] > 0));
       if (!any) panel.append(node('p', t('لا تتوفر بيانات مقاسة لهذه المساحات على هذا الجهاز بعد. يبدأ تسجيل التفاعلات بعد تفعيل خيار القياس أسفل الصفحة.', 'No measured data for these spaces is available on this device yet. Recording starts after enabling optional measurement at the bottom of the page.')));
       const wrap = node('div', null, 'development-measurement-scroll'), table = node('table'), head = node('thead'), tr = node('tr');
-      const headers = [t('المساحة', 'Space'), t('جلسات', 'Sessions'), t('فتح الأدلة', 'Guide clicks'), t('فتح المصادر', 'Resource clicks'), t('الفعاليات', 'Event links'), t('طلب التقويم', 'Calendar requests'), t('فتح المسارات', 'Pathway opens'), t('خطوات مؤشّر عليها*', 'Steps checked*'), t('فتح أدوات العمل', 'Work-tool opens'), t('بدأ التعلّم*', 'Started*'), t('أكمل التعلّم*', 'Completed*'), t('طبّق مهارة*', 'Applied*')];
+      const headers = [t('المساحة', 'Space'), t('جلسات', 'Sessions'), t('فتح الأدلة', 'Guide clicks'), t('فتح المصادر', 'Resource clicks'), t('الفعاليات', 'Event links'), t('طلب التقويم', 'Calendar requests'), t('فتح المسارات', 'Pathway opens'), t('خطوات مؤشّر عليها*', 'Steps checked*'), t('فتح أدوات العمل', 'Work-tool opens'), t('اختيارات الاحتياج', 'Need selections'), t('بدأ التعلّم*', 'Started*'), t('أكمل التعلّم*', 'Completed*'), t('طبّق مهارة*', 'Applied*')];
       headers.forEach(label => { const th = node('th', label); th.scope = 'col'; tr.append(th); }); head.append(tr); table.append(head);
       const body = node('tbody'), names = { staff: t('الموظفون', 'Staff'), ta: t('المعيدون', 'Teaching assistants'), faculty: t('هيئة التدريس', 'Faculty') };
-      for (const row of rows) { const line = node('tr'), name = node('th', names[row.role]); name.scope = 'row'; line.append(name); for (const field of ['sessions', 'guides', 'resources', 'events', 'calendar', 'pathways', 'pathSteps', 'worktools', 'started', 'completed', 'applied']) line.append(node('td', any ? String(row[field]) : '—')); body.append(line); }
+      for (const row of rows) { const line = node('tr'), name = node('th', names[row.role]); name.scope = 'row'; line.append(name); for (const field of ['sessions', 'guides', 'resources', 'events', 'calendar', 'pathways', 'pathSteps', 'worktools', 'needs', 'started', 'completed', 'applied']) line.append(node('td', any ? String(row[field]) : '—')); body.append(line); }
       table.append(body); wrap.append(table); panel.append(wrap);
       panel.append(node('p', t('* إقرارات ذاتية اختيارية؛ لا تُعد تحققًا من الإتمام أو أثرًا مثبتًا. فتح أداة عمل أو تأشير خطوة مسار لا يثبت إتمام تدريب. فتح الدليل أو المصدر لا يثبت قراءته، وطلب التقويم لا يثبت الحضور. نص الخطط والسجل والبحث لا يُرسل إلى أداة القياس.', '* Optional self-reports, not verified completion or proven effect. Opening a work tool or checking a pathway step does not establish training completion. Guide/resource clicks do not establish reading; calendar requests do not establish attendance. Plan and journal text and search terms are not sent to measurement.')));
       const link = node('a', t('فتح لوحة مؤشرات البوابة', 'Open the portal dashboard')); link.href = '../portal-metrics/'; panel.append(link);
