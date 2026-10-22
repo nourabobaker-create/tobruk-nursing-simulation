@@ -1,0 +1,23 @@
+name: Manual metrics collector health check
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'portal-metrics/config.js'
+      - '.github/workflows/metrics-collector-healthcheck.yml'
+permissions:
+  contents: read
+jobs:
+  read-only-connectivity:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify privacy-safe health-probe contract without network
+        run: node portal-metrics/tools/collector-healthcheck.cjs --self-test
+      - name: Read aggregate JSON and dashboard JSONP; verify empty batches are rejected
+        run: node portal-metrics/tools/collector-healthcheck.cjs
