@@ -1,0 +1,60 @@
+name: Temporary controlled metrics receipt check
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/metrics-receipt-check.yml']
+permissions:
+  contents: read
+jobs:
+  controlled-receipt:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Send exactly two authorized synthetic events once and read aggregate receipt
+        run: |
+          node <<'NODE'
+          'use strict';
+          const fs=require('node:fs');
+          const {validateSummary}=require('./portal-metrics/tools/collector-healthcheck.cjs');
+          const emit=value=>process.stdout.write(JSON.stringify(value)+'\n');
+          const fail=code=>{const error=new Error(code);error.safeCode=code;throw error;};
+          const config=fs.readFileSync('portal-metrics/config.js','utf8');
+          const match=config.match(/endpoint\s*:\s*['"]([^'"]+)['"]/);
+          const endpoint=match&&new URL(match[1]);
+          if(!endpoint||endpoint.protocol!=='https:'||endpoint.hostname!=='script.google.com'||!/^\/macros\/s\/[A-Za-z0-9_-]+\/exec$/.test(endpoint.pathname)||endpoint.search||endpoint.hash)throw new Error('invalid_endpoint_configuration');
+          async function request(url,options={}){
+            const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),20000),started=Date.now();
+            try{
+              const response=await fetch(url,{...options,signal:controller.signal,redirect:'follow'});
+              const text=await response.text();
+              if(!response.ok)fail('http_error');
+              let data;try{data=JSON.parse(text);}catch{fail('invalid_json');}
+              return {data,httpStatus:response.status,milliseconds:Date.now()-started};
+            }catch(error){error.safeCode=controller.signal.aborted?'timeout':error.safeCode||'network_error';throw error;}
+            finally{clearTimeout(timer);}
+          }
+          (async()=>{
+            const at=new Date().toISOString();
+            const common={session:'qa_receipt_session_20261022_a71c',at,section:'simulations',item:'qa:collector-receipt-20261022-a71c',language:'ar'};
+            let posted;
+            try{
+              posted=await request(endpoint,{method:'POST',headers:{'Content-Type':'text/plain;charset=UTF-8'},body:JSON.stringify({schema:1,events:[{...common,id:'qa_receipt_start_20261022_a71c',event:'activity_start'},{...common,id:'qa_receipt_complete_20261022_a71c',event:'activity_complete'}]})});
+            }catch(error){emit({check:'controlled_receipt_post',ok:false,error:error.safeCode,requests:1,retries:0,acceptance:'unknown_do_not_retry'});process.exitCode=1;return;}
+            const p=posted.data,accepted=Number.isSafeInteger(p.accepted)?p.accepted:null;
+            const acceptedExactlyTwo=p.ok===true&&accepted===2&&p.duplicates===0&&p.rejected===0&&p.limited===0;
+            emit({check:'controlled_receipt_post',ok:acceptedExactlyTwo,httpStatus:posted.httpStatus,milliseconds:posted.milliseconds,accepted,requests:1,retries:0});
+            if(!acceptedExactlyTwo){process.exitCode=1;return;}
+            const summary=new URL(endpoint);summary.searchParams.set('action','summary');summary.searchParams.set('days','1');
+            try{
+              const read=await request(summary);validateSummary(read.data);
+              const total=event=>read.data.rows.filter(row=>row.section==='simulations'&&row.event===event).reduce((sum,row)=>sum+row.count,0);
+              const startVisible=total('activity_start')>=1,completionVisible=total('activity_complete')>=1;
+              emit({check:'aggregate_receipt',ok:startVisible&&completionVisible,httpStatus:read.httpStatus,milliseconds:read.milliseconds,startVisible,completionVisible,requests:2,retries:0});
+              if(!startVisible||!completionVisible)process.exitCode=1;
+            }catch(error){emit({check:'aggregate_receipt',ok:false,error:error.safeCode||'unexpected_summary_contract',requests:2,retries:0});process.exitCode=1;}
+          })().catch(()=>{emit({check:'controlled_receipt',ok:false,error:'internal_probe_error',retries:0});process.exitCode=1;});
+          NODE
