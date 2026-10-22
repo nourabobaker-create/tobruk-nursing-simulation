@@ -7,6 +7,8 @@ const fallbackSections = {faculty:'بوابة الكلية',students:'بوابة
 const sections = core?.sections || fallbackSections;
 const eventLabels = {page_view:'فتح صفحة',section_view:'فتح قسم',resource_open:'فتح مصدر',service_open:'فتح خدمة أو نموذج',activity_start:'بدء نشاط',activity_complete:'إتمام نشاط',feedback_useful:'أفادني',feedback_not_useful:'لم يفدني'};
 const meaningful = new Set(['resource_open','service_open','activity_start','activity_complete']);
+// Public catalogue names only; no learner answers or identity data.
+const scenarioTopics = Object.freeze({"orientation":"أول مهمة في القسم","consent-withdrawal":"وافق ثم طلب التوقف","identity-discrepancy":"اسمان متشابهان وملف مختلف","language-hearing-support":"الفهم قبل رفع الصوت","late-factual-record":"إدخال متأخر بلا تخمين","near-miss-openness":"توقّف الخطأ قبل وصوله للمريض","sbar-transfer":"رسالة تسليم تصل كاملة","speak-up-safety":"عندما لا يُسمع قلقك أول مرة","teachback-discharge":"هل شرحت بوضوح؟","two-tasks-priority":"مهمتان ووقت واحد","child-discharge-caregiver":"خروج الطفل: من سينفذ الخطة؟","child-fluid-observation":"الحفاض الجاف ليس تفصيلًا صغيرًا","child-isolation-play":"اللعب الآمن في غرفة العزل","child-pain-family":"طفل ساكت لكنه متألم","child-safeguarding-concern":"كلام الطفل يحتاج استماعًا وحماية","child-seizure-witness":"شاهدت نوبة: الوقت والحماية","child-weight-unit-check":"وزن الطفل لا يطابق الوحدة","febrile-child-behaviour":"انخفضت الحرارة لكن السلوك تغيّر","infant-breathing-change":"تنفّس الرضيع تغيّر","pediatrics":"طفل متردد ومرافق قلق","cast-neurovascular-change":"الجبس أصبح ضيقًا والأصابع مختلفة","hip-transfer-restrictions":"الانتقال بعد جراحة الورك","increasing-orthopaedic-pain":"الألم تغير رغم الخطة السابقة","limb-swelling-breathlessness":"تورم الساق ثم ضيق نفس","orthopedics":"قبل مساعدة مريض العظام على النهوض","pressure-area-observation":"تغير جلد تحت الضغط","team-manual-handling-plan":"لنحرك المريض كفريق","toileting-falls-prevention":"أريد الحمام الآن","traction-unexpected-change":"شيء تغير في جهاز الشد","walking-aid-safety":"مشاية قريبة… هل تناسب المريض؟","antenatal-consent-communication":"قبل فحص الحامل: هل فهمت ووافقت؟","delivery":"مهمة غير واضحة في غرفة الولادة","maternal-deterioration-handover":"تسليم واضح عند تغير حالة الأم","maternal-discharge-teachback":"قبل الخروج: متى تطلب الأم المساعدة؟","maternity-privacy":"مشاركة الطالب باختيار المريضة","perineal-care-privacy":"العناية بالعجان مع حفظ الخصوصية","post-caesarean-observation":"بعد القيصرية: ما الذي تغير؟","postpartum-bleeding-change":"نزف بعد الولادة أكثر من السابق","pregnancy-headache-vision":"صداع شديد وتشوش رؤية","respectful-breastfeeding-support":"دعم الرضاعة باحترام","blood-label-mismatch":"أنبوب وعينة وهوية غير متطابقة","catheter-drainage-check":"كيس القسطرة ليس مجرد وعاء","dressing":"تجهيز الضماد والتوقف عند التلوث","hand-hygiene-transitions":"قفازات نظيفة أم انتقال ملوّث؟","iv-site-change":"موضع القنية يؤلم ويتورم","ppe-contact-precautions":"قبل باب العزل وبعده","shared-equipment-cleaning":"هل الجهاز جاهز للمريض التالي؟","sharps-exposure-response":"وخزة أثناء التدريب","sterile-pack-integrity":"عبوة معقمة لكنها مبتلة","wound-drainage-change":"ماذا تغيّر في الضماد؟","allergy-record-mismatch":"المريض يقول حساسية والسجل لا يذكرها","cough-during-meal":"سعال وصوت مبلل أثناء الوجبة","discharge-medicine-understanding":"يقول فهمت؛ كيف نتحقق؟","fluid-chart-discrepancy":"ميزان السوائل لا يطابق ما حدث","individual-pressure-care":"جلد مختلف وخطة تحتاج مراجعة","medical-change":"لاحظت تغيرًا في المريضة كيف أبلّغ","new-confusion-observation":"كان يعرفك صباحًا؛ ماذا تغيّر؟","new-medicine-reaction":"حكة ثم تغير في التنفس","oxygen-device-displaced":"الأكسجين بعيد عن موضعه","possible-low-glucose":"تعرق وارتباك قبل الوجبة","pacu-handover-gap":"من الإفاقة للجناح: تسليم فيه فجوة","perioperative-positioning-team":"وضعية العملية: خطة تحمي الجلد والأعصاب","postoperative-drain-change":"المصرف بعد الجراحة: تغير غير متوقع","postoperative-pain-nausea-review":"الألم والغثيان: راجع القدرة على التعافي","postoperative-sedation-change":"بعد العملية: النعاس يتزايد","preoperative-fasting-uncertainty":"الصيام قبل العملية: معلومة ناقصة","surgical-count-concern":"العدّ الجراحي: ملاحظة تستحق أن تُسمع","surgical-handover":"تسليم واضح بعد العملية","surgical-identity-pause":"قبل التخدير: هوية وموقع غير متطابقين","theatre":"في العمليات أين أقف وماذا ألمس","neonatal":"إنذار بجوار الحاضنة","neonatal-apnoea-colour-change":"تغير التنفس أو اللون عند حديث الولادة","neonatal-feeding-change":"حديث الولادة لا يتحمل الرضعة كما سبق","neonatal-jaundice-observation":"اصفرار حديث الولادة: ملاحظة لا تقدير بالعين","neonatal-line-traction":"خط أو أنبوب مشدود: توقف ونسّق","neonatal-milk-identity":"الحليب المسحوب: تطابق الهوية أولًا","neonatal-parent-cue-support":"مشاركة الوالدين: اتبع إشارات الطفل","neonatal-parent-hand-hygiene":"عند الحاضنة: ساعد الأسرة على نظافة اليدين","neonatal-thermal-environment":"الحاضنة والحرارة: لاحظ قبل أن تعدل","neonatal-transfer-preparation":"قبل نقل حديث الولادة: أكمل حلقة التسليم","anticoagulant-bleeding-observation":"مضاد التخثر وعلامة نزف جديدة","cardiac":"عرض جديد في العناية القلبية","cardiac-access-site-change":"تغير عند موضع مدخل القسطرة","cardiac-breathlessness-position":"ضيق نفس تغير مع الاستلقاء","cardiac-chest-discomfort":"انزعاج صدري جديد أثناء الزيارة","cardiac-mobilisation-dizziness":"دوار عند بدء الحركة","cardiac-weight-oedema":"الوزن والتورم: قراءة الاتجاه","monitor-alarm":"إنذار جهاز المراقبة عند سرير المريض","pacemaker-individual-advice":"أسئلة النشاط بعد منظم القلب","telemetry-context":"إنذار التخطيط: المريض قبل الاستنتاج","acute-distress-safe-dialogue":"ضيق وانفعال: حوار آمن","allergic-emergency-activation":"تغير سريع بعد تعرض محتمل للحساسية","deterioration-structured-observation":"التدهور الحاد: ملاحظة منظمة","emergency":"في الطوارئ القسم مزدحم وما دوري","emergency-transfer-closed-loop":"نقل من الطوارئ: تأكيد الاستلام","relative-aggression-support":"مرافق غاضب: حدود واضحة ودعم","sepsis-change-trend":"عدوى مع تغير سريع في الحالة","stroke-time-report":"تغير مفاجئ في الكلام: الوقت مهم","trauma-movement-privacy":"بعد السقوط: الحركة والخصوصية","unresponsive-adult-call":"بالغ لا يستجيب: تفعيل النجدة"});
 const viewEvents = new Set(['page_view','section_view']);
 const number = n => new Intl.NumberFormat('ar-LY').format(n);
 const pct = (a,b) => b ? new Intl.NumberFormat('ar-LY',{style:'percent',maximumFractionDigits:1}).format(a / b) : 'لا توجد إجابات';
@@ -103,6 +105,8 @@ function renderKpis(rows) {
  target.append(makeKpi('جلسات الاستخدام',sessionKnown?number(sessions):'لا تتوفر بيانات','جلسات، وليست أشخاصًا مختلفين',!sessionKnown));
  target.append(makeKpi('مرات فتح المحتوى',hasData?number(views):'لا تتوفر بيانات','فتح الصفحات والأقسام',!hasData));
  target.append(makeKpi('التفاعلات',hasData?number(interactions):'لا تتوفر بيانات',sessionKnown&&sessions>0&&Number.isSafeInteger(engaged)?'الجلسات المتفاعلة: '+pct(engaged,sessions)+' ('+number(engaged)+' من '+number(sessions)+')':'فتح مصادر أو خدمات أو تفاعل مع نشاط',!hasData));
+ target.append(makeKpi('بدايات الأنشطة المسجلة',hasData?number(count(rows,new Set(['activity_start']))):'لا تتوفر بيانات','أحداث بدء من الأنشطة المدعومة، وليست عدد طلاب',!hasData));
+ target.append(makeKpi('إتمامات الأنشطة المسجلة',hasData?number(count(rows,new Set(['activity_complete']))):'لا تتوفر بيانات','بلوغ مراجعة تعلم أو نشاط أو إقرار ذاتي؛ لا يثبت نجاح إجراء أو كفاية سريرية',!hasData));
  target.append(makeKpi('الاستفادة المبلّغ عنها',responses?pct(useful,responses):(hasData?'لا توجد إجابات':'لا تتوفر بيانات'),responses?number(useful)+' «أفادني» من '+number(responses)+' إجابة':'رأي المجيبين عن الإفادة، لا اختبار تعلّم',!responses));
 }
 function renderSections(rows) {
@@ -110,6 +114,36 @@ function renderSections(rows) {
  const data=Object.entries(sections).filter(([id])=>selected==='all'||id===selected).map(([id,label])=>{const entries=rows.filter(row=>row.section===id);return {id,label,views:count(entries,viewEvents),interactions:count(entries,meaningful),useful:count(entries,new Set(['feedback_useful'])),responses:count(entries,new Set(['feedback_useful','feedback_not_useful']))};}).sort((a,b)=>b.views-a.views||b.interactions-a.interactions);
  const max=Math.max(1,...data.map(x=>x.views));
  data.forEach(row=>{const tr=element('tr'),name=element('td');name.append(element('span','section-name',row.label));const track=element('span','bar-track'),fill=element('span','bar-fill');fill.style.width=(hasData?row.views/max*100:0)+'%';track.setAttribute('aria-hidden','true');track.append(fill);name.append(track);tr.append(name,element('td',!hasData?'muted':'',hasData?number(row.views):'غير مقاس'),element('td',!hasData?'muted':'',hasData?number(row.interactions):'غير مقاس'));const benefit=element('td');benefit.append(element('span','',row.responses?pct(row.useful,row.responses):'—'));if(row.responses)benefit.append(element('div','small-text',number(row.responses)+' إجابة'));else benefit.append(element('div','small-text',hasData?'لا توجد إجابات':'غير مقاس'));tr.append(benefit);target.append(tr);});
+}
+function summarizeScenarioEvents(all, dates) {
+ if(!validDay(dates?.from)||!validDay(dates?.to)||dates.from>dates.to)throw Error('فترة تفصيل الموضوعات غير صالحة.');
+ const counts=new Map(Object.keys(scenarioTopics).map(id=>[id,{id,title:scenarioTopics[id],starts:0,completions:0}])),seen=new Set();
+ for(const raw of Array.isArray(all)?all:[]){
+  const e=core?.cleanEvent?.(raw);if(!e||seen.has(e.id))continue;seen.add(e.id);
+  if(e.section!=='simulations'||!['activity_start','activity_complete'].includes(e.event))continue;
+  const when=day(e.at);if(when<dates.from||when>dates.to)continue;
+  const match=/^clinical-scenario:([a-z0-9-]+)$/.exec(e.item);const target=match&&counts.get(match[1]);if(!target)continue;
+  target[e.event==='activity_start'?'starts':'completions']++;
+ }
+ return [...counts.values()].sort((a,b)=>b.starts-a.starts||b.completions-a.completions||a.title.localeCompare(b.title,'ar'));
+}
+function renderScenarioTopics() {
+ const target=$('scenario-topic-rows'),note=$('scenario-topic-note'),detail=$('scenario-topic-detail'),totals=$('scenario-topic-totals');
+ target.replaceChildren();detail.hidden=true;totals.textContent='';
+ if(!['all','simulations'].includes($('section').value)){note.textContent='اختر «المحاكاة والمهارات» أو «كل الأقسام» لعرض متابعة المواقف السريرية.';return;}
+ if(source!=='local'){
+  note.textContent='الملخص المشترك الحالي يعرض إجماليات الأقسام فقط؛ لا يوفّر تفصيل الموضوعات الـ100. أعداد البدء والإتمام أعلاه تشمل الأنشطة المدعومة في القسم المختار. تفصيل هذا الجدول متاح عند اختيار «هذا الجهاز» فقط، ولا يُعرض بديلًا عن البيانات المشتركة.';
+  return;
+ }
+ if(!summary){note.textContent='لا توجد قراءة محلية متاحة لهذه الفترة؛ لا نعرض أرقامًا تقديرية.';return;}
+ const data=summarizeScenarioEvents(core.readEvents(),summary),starts=data.reduce((n,r)=>n+r.starts,0),completions=data.reduce((n,r)=>n+r.completions,0),active=data.filter(r=>r.starts||r.completions).length;
+ note.textContent='تفصيل هذا الجهاز فقط للفترة المختارة، من أحداث المواقف السريرية المحفوظة بعد تفعيل القياس. البدء هو أول اختيار مسجل للموضوع في فتح الصفحة، والإتمام هو الوصول إلى مراجعة التعلم؛ إعادة المحاولة داخل فتح الصفحة نفسه لا تُعد بدءًا جديدًا. لا تُعرض إجابات أو نتائج أو تأملات الطالب.';
+ if(!active){totals.textContent='لا توجد أحداث بدء أو إتمام محفوظة للمواقف السريرية على هذا الجهاز في الفترة المختارة.';return;}
+ totals.textContent=number(active)+' من '+number(data.length)+' موضوعًا له تفاعل مسجل · '+number(starts)+' بدء · '+number(completions)+' إتمام. الأعداد لا تكوّن نسبة تحويل لمحاولات متطابقة، وقد يقع البدء والإتمام في فترات أو جلسات مختلفة.';
+ detail.hidden=false;
+ for(const row of data){
+  const tr=element('tr'),title=element('td'),link=element('a','scenario-topic-link',row.title);link.href='../clinical-simulations/scenarios/#'+row.id;title.append(link);tr.append(title,element('td','',number(row.starts)),element('td','',number(row.completions)));target.append(tr);
+ }
 }
 function renderDaily(rows) {
  const chart=$('daily-chart'),table=$('daily-rows');chart.replaceChildren();table.replaceChildren();
@@ -126,7 +160,7 @@ function render() {
  if(summary?.coverageFrom)$('collection-label').textContent+=' البيانات المحتفظ بها تبدأ من '+displayDay(summary.coverageFrom)+'.';
  if(summary?.partialCoverage)$('collection-label').textContent+=' تنبيه: جزء من الفترة المختارة يسبق التغطية المتاحة.';
  if(summary?.truncated)$('collection-label').textContent+=' بلغ السجل المحلي حد الاحتفاظ؛ قد لا يشمل جميع أحداث الفترة.';
- const rows=filteredRows();renderKpis(rows);renderSections(rows);renderDaily(rows);$('export').disabled=!summary||!rows.length;
+ const rows=filteredRows();renderKpis(rows);renderSections(rows);renderDaily(rows);renderScenarioTopics();$('export').disabled=!summary||!rows.length;
 }
 async function refresh() {
  const request=++sequence;setError('');summary=null;if(source==='shared')sharedState=safeEndpoint(config.endpoint)?'loading':'unconfigured';render();$('refresh').disabled=true;
@@ -163,6 +197,6 @@ $('refresh').addEventListener('click',refresh);$('print').addEventListener('clic
 for(const input of document.querySelectorAll('[name=source]'))input.addEventListener('change',()=>setSource(input.value));
 $('import-file').addEventListener('change',async event=>{const file=event.target.files?.[0];if(!file)return;try{if(file.size>2*1024*1024)throw Error('حجم الملف يتجاوز الحد المسموح: ٢ ميغابايت.');const value=validateSummary(JSON.parse(await file.text()));if(value.mode!=='shared')throw Error('الاستيراد يقبل ملخص التجميع المشترك فقط.');imported=value;importedName=file.name.slice(0,120);$('import-source').hidden=false;setSource('import');}catch(error){setError(error instanceof SyntaxError?'الملف ليس JSON صالحًا.':error.message||'تعذّر استيراد الملف.');}finally{event.target.value='';}});
 window.addEventListener('storage',event=>{if(source==='local'&&event.key?.includes('metrics'))refresh();});
-window.PortalMetricsDashboard=Object.freeze({validateSummary,safeEndpoint});
+window.PortalMetricsDashboard=Object.freeze({validateSummary,safeEndpoint,summarizeScenarioEvents});
 setSource(source);
 })();

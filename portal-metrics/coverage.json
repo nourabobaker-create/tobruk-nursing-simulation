@@ -1,5 +1,5 @@
 {
-  "version": "20261022-workguide-1",
+  "version": "20261022-simulation-instrumentation-1",
   "tracking": "visitor_opt_in",
   "pages": [
     "body-mechanics-learning-01/index.html",
@@ -18,6 +18,7 @@
     "clinical-simulations/modules/08-bandaging.html",
     "clinical-simulations/modules/09-nebulization.html",
     "clinical-simulations/modules/10-gown-diaper.html",
+    "clinical-simulations/scenarios/index.html",
     "community-health/index.html",
     "e-library-v3/index.html",
     "english-ii/index.html",
@@ -63,6 +64,178 @@
     "Shared public summaries remain grouped by section/event; role and resource detail is local only",
     "Workbench and pathway interactions do not establish completed training; personal plan text is never collected",
     "Development need selections are optional fixed-ID choices, not a staff survey or performance evaluation",
-    "Annual work companion interactions measure use only; personal task statuses and search text are never collected"
-  ]
+    "Annual work companion interactions measure use only; personal task statuses and search text are never collected",
+    "Advanced simulation completion means the selected learning attempt reached its generated debrief; focused drills and appropriate safety stops are not full procedures or competency passes",
+    "Seven older simulation completion hooks measure knowledge-review result panels only; procedural-training completion remains partial",
+    "Legacy activity completions require a start accepted after opt-in; earlier unconsented attempts are not backfilled",
+    "Demonstrations, menus, camera actions and source panels are not counted as practice starts",
+    "Assembled handwashing and decoded gloving and wound-dressing lessons receive the tracker after document replacement; loading shells are not counted as extra page views"
+  ],
+  "simulationActivityUnits": [
+    {
+      "page": "clinical-simulations/modules/01-cpr.html",
+      "item": "simulation:advanced:01-cpr:practice-review",
+      "start": "Explicit practice Start or Quick control; not page open, camera, source or demonstration",
+      "complete": "Visible generated debrief controls after the selected practice attempt; not procedure success",
+      "scope": "reviewed-practice-pathway",
+      "includesFocusedAndSafeStopPaths": true,
+      "proceduralCompetenceMeasured": false
+    },
+    {
+      "page": "clinical-simulations/modules/02-choking.html",
+      "item": "simulation:advanced:02-choking:practice-review",
+      "start": "Explicit practice Start or Quick control; not page open, camera, source or demonstration",
+      "complete": "Visible generated debrief controls after the selected practice attempt; not procedure success",
+      "scope": "reviewed-practice-pathway",
+      "includesFocusedAndSafeStopPaths": true,
+      "proceduralCompetenceMeasured": false
+    },
+    {
+      "page": "clinical-simulations/modules/03-ecg.html",
+      "item": "simulation:advanced:03-ecg:practice-review",
+      "start": "Explicit practice Start or Quick control; not page open, camera, source or demonstration",
+      "complete": "Visible generated debrief controls after the selected practice attempt; not procedure success",
+      "scope": "reviewed-practice-pathway",
+      "includesFocusedAndSafeStopPaths": true,
+      "proceduralCompetenceMeasured": false
+    },
+    {
+      "page": "clinical-simulations/modules/04-ngt-insertion.html",
+      "item": "simulation:advanced:04-ngt-insertion:practice-review",
+      "start": "Explicit practice Start or Quick control; not page open, camera, source or demonstration",
+      "complete": "Visible generated debrief controls after the selected practice attempt; not procedure success",
+      "scope": "reviewed-practice-pathway",
+      "includesFocusedAndSafeStopPaths": true,
+      "proceduralCompetenceMeasured": false
+    },
+    {
+      "page": "clinical-simulations/modules/05-ngt-removal.html",
+      "item": "simulation:advanced:05-ngt-removal:practice-review",
+      "start": "Explicit practice Start or Quick control; not page open, camera, source or demonstration",
+      "complete": "Visible generated debrief controls after the selected practice attempt; not procedure success",
+      "scope": "reviewed-practice-pathway",
+      "includesFocusedAndSafeStopPaths": true,
+      "proceduralCompetenceMeasured": false
+    },
+    {
+      "page": "clinical-simulations/modules/06-blood-extraction.html",
+      "item": "simulation:advanced:06-blood-extraction:practice-review",
+      "start": "Explicit practice Start or Quick control; not page open, camera, source or demonstration",
+      "complete": "Visible generated debrief controls after the selected practice attempt; not procedure success",
+      "scope": "reviewed-practice-pathway",
+      "includesFocusedAndSafeStopPaths": true,
+      "proceduralCompetenceMeasured": false
+    },
+    {
+      "page": "clinical-simulations/modules/07-catheterization.html",
+      "item": "simulation:advanced:07-catheterization:practice-review",
+      "start": "Explicit practice Start or Quick control; not page open, camera, source or demonstration",
+      "complete": "Visible generated debrief controls after the selected practice attempt; not procedure success",
+      "scope": "reviewed-practice-pathway",
+      "includesFocusedAndSafeStopPaths": true,
+      "proceduralCompetenceMeasured": false
+    },
+    {
+      "page": "clinical-simulations/modules/08-bandaging.html",
+      "item": "simulation:advanced:08-bandaging:practice-review",
+      "start": "Explicit practice Start or Quick control; not page open, camera, source or demonstration",
+      "complete": "Visible generated debrief controls after the selected practice attempt; not procedure success",
+      "scope": "reviewed-practice-pathway",
+      "includesFocusedAndSafeStopPaths": true,
+      "proceduralCompetenceMeasured": false
+    },
+    {
+      "page": "clinical-simulations/modules/09-nebulization.html",
+      "item": "simulation:advanced:09-nebulization:practice-review",
+      "start": "Explicit practice Start or Quick control; not page open, camera, source or demonstration",
+      "complete": "Visible generated debrief controls after the selected practice attempt; not procedure success",
+      "scope": "reviewed-practice-pathway",
+      "includesFocusedAndSafeStopPaths": true,
+      "proceduralCompetenceMeasured": false
+    },
+    {
+      "page": "clinical-simulations/modules/10-gown-diaper.html",
+      "item": "simulation:advanced:10-gown-diaper:practice-review",
+      "start": "Explicit practice Start or Quick control; not page open, camera, source or demonstration",
+      "complete": "Visible generated debrief controls after the selected practice attempt; not procedure success",
+      "scope": "reviewed-practice-pathway",
+      "includesFocusedAndSafeStopPaths": true,
+      "proceduralCompetenceMeasured": false
+    },
+    {
+      "page": "handwash-learning-03/index.html",
+      "item": "simulation:legacy:handwashing:knowledge-review",
+      "start": "Explicit knowledge-review begin or new full review control",
+      "complete": "Visible generated knowledge-review result panel",
+      "scope": "knowledge-review-only",
+      "proceduralCompletionCoverage": "partial: interactive skill paths are not counted as completed by these hooks",
+      "proceduralCompetenceMeasured": false
+    },
+    {
+      "page": "nursing-skills/gloving.html",
+      "item": "simulation:legacy:gloving:knowledge-review",
+      "start": "Explicit knowledge-review begin or new full review control",
+      "complete": "Visible generated knowledge-review result panel",
+      "scope": "knowledge-review-only",
+      "proceduralCompletionCoverage": "partial: interactive skill paths are not counted as completed by these hooks",
+      "proceduralCompetenceMeasured": false
+    },
+    {
+      "page": "range-of-motion-learning-01/index.html",
+      "item": "simulation:legacy:range-of-motion:knowledge-review",
+      "start": "Explicit knowledge-review begin or new full review control",
+      "complete": "Visible generated knowledge-review result panel",
+      "scope": "knowledge-review-only",
+      "proceduralCompletionCoverage": "partial: interactive skill paths are not counted as completed by these hooks",
+      "proceduralCompetenceMeasured": false
+    },
+    {
+      "page": "body-mechanics-learning-01/index.html",
+      "item": "simulation:legacy:body-mechanics:knowledge-review",
+      "start": "Explicit knowledge-review begin or new full review control",
+      "complete": "Visible generated knowledge-review result panel",
+      "scope": "knowledge-review-only",
+      "proceduralCompletionCoverage": "partial: interactive skill paths are not counted as completed by these hooks",
+      "proceduralCompetenceMeasured": false
+    },
+    {
+      "page": "turning-moving-learning-01/index.html",
+      "item": "simulation:legacy:turning-moving:knowledge-review",
+      "start": "Explicit knowledge-review begin or new full review control",
+      "complete": "Visible generated knowledge-review result panel",
+      "scope": "knowledge-review-only",
+      "proceduralCompletionCoverage": "partial: interactive skill paths are not counted as completed by these hooks",
+      "proceduralCompetenceMeasured": false
+    },
+    {
+      "page": "patient-positioning-learning-01/index.html",
+      "item": "simulation:legacy:patient-positioning:knowledge-review",
+      "start": "Explicit knowledge-review begin or new full review control",
+      "complete": "Visible generated knowledge-review result panel",
+      "scope": "knowledge-review-only",
+      "proceduralCompletionCoverage": "partial: interactive skill paths are not counted as completed by these hooks",
+      "proceduralCompetenceMeasured": false
+    },
+    {
+      "page": "wound-dressing-learning-01/index.html",
+      "item": "simulation:legacy:wound-dressing:knowledge-review",
+      "start": "Explicit knowledge-review begin or new full review control",
+      "complete": "Visible generated knowledge-review result panel",
+      "scope": "knowledge-review-only",
+      "proceduralCompletionCoverage": "partial: interactive skill paths are not counted as completed by these hooks",
+      "proceduralCompetenceMeasured": false
+    }
+  ],
+  "scenarioActivities": {
+    "page": "clinical-simulations/scenarios/index.html",
+    "topics": 100,
+    "itemPattern": "clinical-scenario:<authored-topic-id>",
+    "start": "First decision answer after optional consent",
+    "complete": "All six core decisions and the selected adaptive challenge reviewed",
+    "answersScoresBranchesAndReflectionCollected": false,
+    "eventsPerTopicPerPage": [
+      "activity_start",
+      "activity_complete"
+    ]
+  }
 }
