@@ -1,5 +1,7 @@
 # Staff, teaching assistant and faculty development
 
+Publication refresh: 22 October 2026 (`20261022-1`). The owner explicitly authorised publication on `main`, approved guide status and protected PDF copies. Cache versions are refreshed for the guide catalogue and follow-up interface. Read-only verification confirmed all 81 PDF pages have no text layer, AES-256 permissions prohibit printing/copying/modification, and the 24 existing metrics checks pass.
+
 Public entry points: `?role=staff`, `?role=ta`, `?role=faculty`; add `&lang=en` for English. Arabic and English controls describe the actual language of each resource. Institutional guides are presented as approved according to the user's explicit instruction of 21 October 2026. This instruction does not invent formal decision numbers or resolve operational gaps in the underlying references. The employee and faculty/TA guides are Arabic; the research guide is English. Version 0.3 source content was prepared on 14 October 2026; protected publication copies are dated 21 October 2026.
 
 `content.json` owns the curated links and calendar. Initial official-source check: 21 October 2026. This is a curated calendar, not a live feed or automatic web search. Expired sessions are hidden by the interface; new sessions need to be verified and added.
