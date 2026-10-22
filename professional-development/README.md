@@ -28,7 +28,7 @@ New fixed-ID events distinguish pathway opens, self-reported pathway steps and w
 
 ## Saudi university review - 22 October 2026
 
-The Saudi section documents selected public/officially indexed development pages from 29 universities, not every Saudi university or every programme. It contains 17 additional public references (63 general catalogue entries in total) and 7 separately labelled conditional/historical links. No new unverified live session is added. The legacy SEU 2020 recording links were omitted from recommendations because playback was not verified.
+The Saudi section documents selected public/officially indexed development pages from 29 universities, not every Saudi university or every programme. It contains 17 additional public references (63 general catalogue entries in total) and 7 separately labelled conditional/historical links. No new unverified live session is added. The legacy SEU 2020 recording links were omitted from recommendations because playback was not verified. Where direct retrieval was unavailable, the coverage table explicitly labels reliance on officially indexed descriptions and unverified access conditions; these entries are not course recommendations.
 
 Jouf receives a dedicated spotlight and public Outlook/OneDrive reading guides. Its 8 June 2026 technical training announcement explicitly charges fees; no future free public Jouf course was verified. KSU affiliate training and restricted/closed Qassim courses are information links with eligibility notices, not offers of open enrolment. Old guides/archives remain labelled. Saudi university documents are linked at their official source; they are not imported as Faculty policy or reposted copies.
 
