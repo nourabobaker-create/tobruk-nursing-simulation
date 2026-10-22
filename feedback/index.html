@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0d5b43">
+  <meta name="description" content="قنوات المشاركة والاستبانات وطلبات المصادر بكلية التمريض، جامعة طبرق.">
+  <title>ملاحظاتك وطلباتك · كلية التمريض · جامعة طبرق</title>
+  <link rel="stylesheet" href="style.css?v=20261022">
+  <script defer src="../hub-feedback/config.js?v=20261022-unified-1"></script>
+  <script defer src="../hub-feedback/feedback.js?v=20261022-unified-1"></script>
+  <script defer src="feedback-center.js?v=20261022-unified-1"></script>
+  <script defer src="../portal-metrics/config.js"></script>
+  <script defer src="../portal-metrics/core.js"></script>
+  <script defer src="../portal-metrics/tracker.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">انتقل إلى المحتوى</a>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="../" class="brand" aria-label="بوابة كلية التمريض" id="brandLink">
+        <img src="../hub-branding/university-logo.webp" width="58" height="58" alt="جامعة طبرق" id="universityLogo">
+        <span><strong data-i18n="faculty">كلية التمريض</strong><small data-i18n="university">جامعة طبرق</small></span>
+        <img src="../hub-branding/faculty-logo.webp" width="58" height="58" alt="كلية التمريض" id="facultyLogo">
+      </a>
+      <nav aria-label="التنقل" id="topNavigation">
+        <a class="back-link" href="../" data-i18n="home">بوابة الكلية</a>
+        <button class="language-button" type="button" id="languageButton" lang="en" aria-label="Switch to English">English</button>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    <section class="hero" aria-labelledby="pageTitle">
+      <div class="hero-copy">
+        <span class="eyebrow" data-i18n="eyebrow">مشاركة قصيرة · خدمة أوضح</span>
+        <h1 id="pageTitle" data-i18n="title">ملاحظاتك وطلباتك</h1>
+        <p data-i18n="intro">اختر ما تحتاجه. كل قناة توصل مشاركتك إلى مكانها المناسب، مع الحفاظ على خصوصيتها.</p>
+        <div class="hero-pills" aria-label="قنوات المشاركة" id="heroPills"><span data-i18n="pillOpinion">رأي وتقييم</span><span data-i18n="pillResources">طلب مصدر</span><span data-i18n="pillComplaint">شكوى خاصة</span></div>
+      </div>
+      <div class="hero-mark" aria-hidden="true"><svg viewBox="0 0 180 180" fill="none"><rect x="26" y="28" width="130" height="104" rx="27" stroke="currentColor" stroke-width="3"/><path d="M57 132v22l29-22M59 64h66M59 84h45" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><circle cx="132" cy="124" r="29" fill="#f3e5b9"/><path d="m119 124 9 9 17-19" stroke="#0d5b43" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    </section>
+
+    <div class="context-banner" id="sourceContext" hidden><span class="context-dot" aria-hidden="true"></span><p><strong data-i18n="contextLead">جئت من:</strong> <span id="sourceLabel"></span></p></div>
+
+    <section class="service-grid" aria-label="اختر قناة المشاركة" id="serviceGrid">
+      <article class="service-card opinion-card" aria-labelledby="opinionTitle">
+        <div class="card-top"><span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 11.5a7.5 7.5 0 0 1-7.5 7.5H7l-4 3v-6a7.5 7.5 0 0 1 2.5-11 7.5 7.5 0 0 1 14.5 6.5Z"/><path d="M8 10h8M8 14h5"/></svg></span><span class="badge" data-i18n="shortBadge">مشاركة قصيرة</span></div>
+        <h2 id="opinionTitle" data-i18n="opinionTitle">رأيك وتقييم تجربتك</h2>
+        <p data-i18n="opinionText">ملاحظة، اقتراح، مشكلة تقنية أو تقييم لسهولة الاستخدام ووضوح المحتوى وفائدته.</p>
+        <label for="serviceSelect" data-i18n="serviceLabel">عن أي جزء تريد المشاركة؟</label>
+        <select id="serviceSelect" name="service"><option value="general" data-i18n="serviceGeneral">مشاركة عامة</option><option value="portal" data-i18n="servicePortal">البوابة والدعم الطلابي</option><option value="simulation" data-i18n="serviceSimulation">المحاكاة والمهارات</option><option value="library" data-i18n="serviceLibrary">تجربتي في استخدام المكتبة</option><option value="community" data-i18n="serviceCommunity">تمريض من أجل المجتمع</option></select>
+        <a class="button primary" id="opinionLink" href="https://docs.google.com/forms/d/e/1FAIpQLSdG7RX939cZgxhCeT0iweHtdLRdntXAiH-Mxv9aVeW7WaTq6A/viewform?usp=pp_url&amp;entry.529558493=service%3Dgeneral%20%7C%20topic%3Dfeedback-center%20%7C%20channel%3Dparticipation-center%20%7C%20cycle%3Dcontinuous-20261022" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" data-metrics-event="service_open" data-metrics-item="unified-feedback-general"><span data-i18n="opinionAction">أرسل رأيك أو قيّم تجربتك</span><span aria-hidden="true">↗</span></a>
+        <p class="card-note" data-i18n="opinionNote">3 أسئلة تقييم اختيارية، وتعليق عند الحاجة. دون اسم أو بريد.</p>
+      </article>
+
+      <article class="service-card" aria-labelledby="libraryTitle">
+        <div class="card-top"><span class="card-icon gold" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5c-3-2-6-2-9-1v15c3-1 6-1 9 1 3-2 6-2 9-1V4c-3-1-6-1-9 1Zm0 0v15M6 8h3M6 11h3M15 8h3M15 11h3"/></svg></span><span class="badge light" data-i18n="requestBadge">خدمة مستقلة</span></div>
+        <h2 id="libraryTitle" data-i18n="libraryTitle">أطلب مصدرًا للمكتبة</h2>
+        <p data-i18n="libraryText">اذكر المقرر والموضوع الذي تحتاجه، أو اسم مرجع بعينه. يمكنك طلب مصادر عربية أو إنجليزية.</p>
+        <ul class="simple-list"><li data-i18n="libraryItemOne">يمكنك تقديم عدة طلبات، كل طلب في سطر.</li><li data-i18n="libraryItemTwo">توفير المصدر يعتمد على الإتاحة القانونية والإمكانات.</li></ul>
+        <a class="button secondary" id="libraryLink" href="https://docs.google.com/forms/d/e/1FAIpQLScY3fhP2cmr4wTvohViZG9F40dtCwOjK15TgNpCcGbEmBMZIw/viewform" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" data-metrics-event="service_open" data-metrics-item="library-resource-request"><span data-i18n="libraryAction">فتح طلب مصدر</span><span aria-hidden="true">↗</span></a>
+        <p class="card-note" data-i18n="libraryNote">طلبك محفوظ في قناة المكتبة، وتبقى تفاصيله خاصة.</p>
+      </article>
+
+      <article class="service-card private-card" aria-labelledby="complaintTitle">
+        <div class="card-top"><span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3M12 14v3"/></svg></span><span class="badge light" data-i18n="privateBadge">قناة خاصة</span></div>
+        <h2 id="complaintTitle" data-i18n="complaintTitle">شكوى أو ملاحظة خاصة</h2>
+        <p data-i18n="complaintText">لموضوع يحتاج مراجعة خاصة من الكلية، مثل الدراسة أو الخدمات أو التعاملات.</p>
+        <ul class="simple-list"><li data-i18n="complaintItemOne">اكتب الوقائع وما تقترحه للحل بوضوح.</li><li data-i18n="complaintItemTwo">اترك وسيلة تواصل عند رغبتك في التواصل معك.</li></ul>
+        <a class="button secondary" id="complaintLink" href="https://forms.gle/1SRA82yXSH1QpRkz5" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" data-metrics-event="service_open" data-metrics-item="private-complaint"><span data-i18n="complaintAction">فتح قناة الشكاوى</span><span aria-hidden="true">↗</span></a>
+        <p class="card-note" data-i18n="complaintNote">تُراجع التفاصيل بصورة خاصة وتُحال بحسب موضوعها.</p>
+      </article>
+    </section>
+
+    <section class="specialist-card" id="communityRequest" aria-labelledby="communityRequestTitle">
+      <span class="card-icon gold" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 11.5a7.5 7.5 0 0 1-7.5 7.5H7l-4 3v-6a7.5 7.5 0 0 1 2.5-11 7.5 7.5 0 0 1 14.5 6.5Z"/><path d="M12 7v8M8 11h8"/></svg></span>
+      <div class="specialist-copy"><span class="eyebrow muted" data-i18n="communityRequestEyebrow">مسار خاص بالمبادرة</span><h2 id="communityRequestTitle" data-i18n="communityRequestTitle">اقتراح موضوع للمبادرة وطلب إبلاغي</h2><p data-i18n="communityRequestText">اقترح موضوعًا أو تحسينًا لـ«تمريض من أجل المجتمع». يمكنك ترك وسيلة تواصل لطلب إبلاغك عند تنفيذ المقترح أو إضافة الموضوع؛ وتركها اختياري.</p><p class="card-note" data-i18n="communityRequestNote">يراجع فريق المبادرة الطلبات، وتبقى تفاصيل المقترح ووسيلة التواصل في قناة المبادرة الخاصة.</p></div>
+      <a class="button secondary specialist-action" id="communitySuggestionLink" href="https://docs.google.com/forms/d/e/1FAIpQLSfi9bib4uOn8O0qkKNK3hV13Z2Z3bV4BinsMtaDlhjxbS8aIg/viewform?hl=ar" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" data-metrics-event="service_open" data-metrics-item="community-topic-notification"><span data-i18n="communityRequestAction">اقتراح موضوع وطلب إبلاغي</span><span aria-hidden="true">↗</span></a>
+      <noscript><p>المشاركة في <a href="https://docs.google.com/forms/d/e/1FAIpQLSfi9bib4uOn8O0qkKNK3hV13Z2Z3bV4BinsMtaDlhjxbS8aIg/viewform?hl=ar" target="_blank" rel="noopener noreferrer">اقتراح موضوع للمبادرة وطلب إبلاغي</a> متاحة مع وسيلة تواصل اختيارية.</p></noscript>
+    </section>
+
+    <section class="cycle-section" id="surveys" aria-labelledby="surveysTitle">
+      <div class="section-heading"><div><span class="eyebrow muted" data-i18n="surveysEyebrow">بحسب دورك وموضوع المشاركة</span><h2 id="surveysTitle" data-i18n="surveysTitle">استبانات محددة بدورة</h2><p data-i18n="surveysIntro">اختر الاستبانة المناسبة لك بحسب الدعوة التي تلقيتها. تحتفظ كل دورة بأسئلتها ونتائجها.</p></div><span class="section-number" aria-hidden="true">↗</span></div>
+      <div class="survey-grid" id="surveyList"></div>
+      <noscript><p>للمشاركة في جولة الخطة الاستراتيجية: <a href="https://forms.gle/7hL3bUsMV7K3ZdPD7" target="_blank" rel="noopener noreferrer">العربية</a> · <a href="https://forms.gle/N5byC3sLV8obtxd88" target="_blank" rel="noopener noreferrer">English</a>. ويمكن فتح <a href="https://docs.google.com/forms/d/e/1FAIpQLScgpKlUwcn7uZKHLLpWGfDWqfTtUfK8BiKAsj437ePUxQOWIQ/viewform" target="_blank" rel="noopener noreferrer">استبانة الخريجين</a> · <a href="https://docs.google.com/forms/d/e/1FAIpQLSfPVrc2vHj5gMZ8n7uXuW9Qt2HkB5gu6MdODuTDbKl_v4Io5A/viewform" target="_blank" rel="noopener noreferrer">تجربة الطلبة في التدريب السريري</a> · <a href="https://docs.google.com/forms/d/e/1FAIpQLScYOpfU6UKKg8Ku8dGfR8W6dyD1aXQLyoPJs1Jp3myenwcAag/viewform" target="_blank" rel="noopener noreferrer">جهات التدريب والمؤسسات الصحية</a> <span>— يتطلب حساب جامعة طبرق حاليًا / Tobruk University account required at present</span>.</p></noscript>
+    </section>
+
+    <section class="privacy-note" aria-labelledby="privacyTitle"><span class="privacy-symbol" aria-hidden="true">✓</span><div><h2 id="privacyTitle" data-i18n="privacyTitle">مشاركتك في مكانها المناسب</h2><p data-i18n="privacyText">تُحفظ طلبات المكتبة والشكاوى في قنوات مستقلة. لا تعرض هذه الصفحة الردود الفردية أو بيانات التواصل. اضغط «إرسال» داخل النموذج لإتمام مشاركتك.</p></div></section>
+    <footer><p data-i18n="footer">كلية التمريض · جامعة طبرق</p><a href="../" data-i18n="back">العودة إلى بوابة الكلية</a></footer>
+  </main>
+</body>
+</html>
