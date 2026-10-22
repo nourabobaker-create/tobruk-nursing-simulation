@@ -2,17 +2,21 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="utf-8">
-  <meta name="professional-development-release" content="20261022-1">
+  <meta name="professional-development-release" content="20261022-2">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="مساحات التطوير المهني للموظفين والمعيدين وأعضاء هيئة التدريس بكلية التمريض، جامعة طبرق.">
   <title>التطوير المهني · كلية التمريض، جامعة طبرق</title>
-  <link rel="stylesheet" href="hub.css?v=20261021-1">
-  <script defer src="hub.js?v=20261022-1"></script>
+  <link rel="stylesheet" href="hub.css?v=20261022-2">
+  <link rel="stylesheet" href="navigator.css?v=20261022-2">
+  <link rel="stylesheet" href="workbench.css?v=20261022-2">
+  <script defer src="hub.js?v=20261022-2"></script>
+  <script defer src="navigator.js?v=20261022-2"></script>
+  <script defer src="workbench.js?v=20261022-2"></script>
   <script defer src="../portal-metrics/config.js?v=20261021-shared-1"></script>
   <script defer src="../portal-metrics/core.js?v=20261021-1"></script>
   <script defer src="../portal-metrics/tracker.js?v=20261021-locale-1"></script>
   <script defer src="../portal-metrics/activity-hooks.js?v=20261021-1"></script>
-  <script defer src="measurement.js?v=20261022-1"></script>
+  <script defer src="measurement.js?v=20261022-2"></script>
 </head>
 <body>
   <a class="skip" href="#main" data-i18n="skip">انتقل إلى المحتوى</a>
@@ -32,7 +36,11 @@
       <div><span class="eyebrow" data-i18n="eyebrow">تعلّم يفيد عملك</span><h1 id="roleTitle">مساحة الموظفين</h1><p id="roleDescription">أدلتك ومصادر تطويرك وأدوات تساعدك في العمل اليومي.</p></div>
       <div class="hero-symbol" aria-hidden="true" id="roleSymbol">▣</div>
     </section>
-    <div class="section-nav"><a href="#guides" data-i18n="guides">أدلتي</a><a href="#courses" data-i18n="courses">التدريب والتطوير</a><a href="#tools" data-i18n="tools">أدوات تفيدني</a><a href="#events" id="eventNav" data-i18n="events">تقويم الفعاليات</a><a href="#journal" data-i18n="journal">سجل تعلّمي</a></div>
+    <div class="section-nav"><a href="#pathways" data-i18n="pathways">مساراتي</a><a href="#workbench" data-i18n="workbench">أدوات العمل</a><a href="#guides" data-i18n="guides">أدلتي</a><a href="#courses" data-i18n="courses">التدريب والتطوير</a><a href="#tools" data-i18n="tools">أدوات تفيدني</a><a href="#events" id="eventNav" data-i18n="events">تقويم الفعاليات</a><a href="#journal" data-i18n="journal">سجل تعلّمي</a><a href="#benchmarks" data-i18n="benchmarks">المقارنة المرجعية</a></div>
+    <section id="discovery" aria-label="ابدأ من احتياجك"></section>
+    <section class="section" id="pathways"></section>
+    <section class="section" id="workbench"></section>
+    <div class="section-heading catalogue-heading"><div><h2 data-i18n="catalogue">مكتبة التطوير</h2><p data-i18n="catalogueHelp">اختر لغة المصدر والمجال، أو ابحث باسم المهارة.</p></div></div>
     <div id="loadStatus" class="notice" role="status" data-i18n="loading">جارٍ تحميل المصادر…</div>
     <div class="filter-panel" id="resourceFilters" hidden>
       <div class="field search-field"><label for="search" data-i18n="searchLabel">ابحث في أدلتك ومصادرك</label><input type="search" id="search" autocomplete="off" placeholder="موضوع أو مهارة أو جهة…"></div>
@@ -64,6 +72,7 @@
       <div id="journalEntries" class="journal-entries"></div>
       <button type="button" class="text-button danger" id="clearLocal" data-i18n="clearLocal">مسح السجل والمحفوظات من هذا الجهاز</button>
     </section>
+    <section class="section" id="benchmarks"></section>
     <footer><p data-i18n="footer">اختيار موارد التطوير لا يُعد اعتمادًا مهنيًا للدورة. يُرجع إلى الجهة المنظمة لشروط التسجيل والشهادات.</p><p id="updated"></p><a href="../#participate" data-i18n="suggest">اقترح مصدرًا أو أبلغ عن رابط لا يعمل</a></footer>
   </main>
 </body>

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-21",
+  "updated": "2026-10-22",
   "resources": [
     {
       "id": "guide-staff",
@@ -602,6 +602,686 @@
         "en": "Free without registration; OpenWHO currently does not issue certificates. Check each resource language."
       },
       "kind": "tool"
+    },
+    {
+      "id": "stanford-feedback",
+      "title": {
+        "ar": "التقييم البنائي والتغذية الراجعة",
+        "en": "Formative assessment and feedback"
+      },
+      "description": {
+        "ar": "طرق تقديم ملاحظات محددة تساعد الطالب على معرفة خطوته التالية.",
+        "en": "Ways to give specific feedback that helps students identify their next step."
+      },
+      "provider": "Stanford University",
+      "roles": [
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "التدريس والتقييم",
+        "en": "Teaching and assessment"
+      },
+      "language": "en",
+      "url": "https://teachingcommons.stanford.edu/teaching-guides/foundations-course-design/feedback-and-assessment/formative-assessment-and-feedback",
+      "access": {
+        "ar": "مرجع مفتوح للقراءة مجانًا دون تسجيل؛ لا يمنح شهادة. تُكيّف الأفكار مع لوائح الكلية ومقرراتها.",
+        "en": "Open reference, free to read without registration; no certificate. Adapt ideas to Faculty regulations and courses."
+      },
+      "kind": "tool",
+      "sourceChecked": "2026-10-22"
+    },
+    {
+      "id": "stanford-engagement",
+      "title": {
+        "ar": "زيادة مشاركة الطلبة في التعلّم",
+        "en": "Increasing student engagement"
+      },
+      "description": {
+        "ar": "اختيار أنشطة تعلّم وحوار وتعاون تناسب أهداف الجلسة.",
+        "en": "Choose learning, discussion and collaboration activities that fit session goals."
+      },
+      "provider": "Stanford University",
+      "roles": [
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "التدريس والتقييم",
+        "en": "Teaching and assessment"
+      },
+      "language": "en",
+      "url": "https://teachingcommons.stanford.edu/teaching-guides/foundations-course-design/learning-activities/increasing-student-engagement",
+      "access": {
+        "ar": "مرجع مفتوح للقراءة مجانًا دون تسجيل؛ لا يمنح شهادة. تُكيّف الأفكار مع لوائح الكلية ومقرراتها.",
+        "en": "Open reference, free to read without registration; no certificate. Adapt ideas to Faculty regulations and courses."
+      },
+      "kind": "tool",
+      "sourceChecked": "2026-10-22"
+    },
+    {
+      "id": "stanford-outcomes",
+      "title": {
+        "ar": "صياغة مخرجات تعلّم واضحة",
+        "en": "Creating learning outcomes"
+      },
+      "description": {
+        "ar": "ربط ما يتوقع أن ينجزه الطالب بالأنشطة وطريقة التقييم.",
+        "en": "Connect what students should be able to do with activities and assessment."
+      },
+      "provider": "Stanford University",
+      "roles": [
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "التدريس والتقييم",
+        "en": "Teaching and assessment"
+      },
+      "language": "en",
+      "url": "https://teachingcommons.stanford.edu/teaching-guides/foundations-course-design/course-planning/creating-learning-outcomes",
+      "access": {
+        "ar": "مرجع مفتوح للقراءة مجانًا دون تسجيل؛ لا يمنح شهادة. تُكيّف الأفكار مع لوائح الكلية ومقرراتها.",
+        "en": "Open reference, free to read without registration; no certificate. Adapt ideas to Faculty regulations and courses."
+      },
+      "kind": "tool",
+      "sourceChecked": "2026-10-22"
+    },
+    {
+      "id": "stanford-inclusion",
+      "title": {
+        "ar": "تدريس يراعي تنوّع احتياجات الطلبة",
+        "en": "Inclusive teaching practices"
+      },
+      "description": {
+        "ar": "مراجعة إتاحة المحتوى وتكلفته وطرق المشاركة لدعم فرص التعلّم.",
+        "en": "Review access, cost and participation methods to support learning opportunities."
+      },
+      "provider": "Stanford University",
+      "roles": [
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "التدريس والإتاحة",
+        "en": "Teaching and inclusion"
+      },
+      "language": "en",
+      "url": "https://teachingcommons.stanford.edu/teaching-guides/inclusive-teaching-guide/getting-started-inclusive-teaching/overview-inclusive",
+      "access": {
+        "ar": "مرجع مفتوح للقراءة مجانًا دون تسجيل؛ لا يمنح شهادة. تُكيّف الأفكار مع لوائح الكلية ومقرراتها.",
+        "en": "Open reference, free to read without registration; no certificate. Adapt ideas to Faculty regulations and courses."
+      },
+      "kind": "tool",
+      "sourceChecked": "2026-10-22"
+    },
+    {
+      "id": "berkeley-ta-start",
+      "title": {
+        "ar": "استعداد المعيد قبل بدء التدريس",
+        "en": "TA preparation before the semester"
+      },
+      "description": {
+        "ar": "التحضير مع أستاذ المادة، وتخطيط أول جلسة، وتنظيم الوقت والتواصل.",
+        "en": "Prepare with the course instructor, plan the first session and organise time and communication."
+      },
+      "provider": "University of California, Berkeley",
+      "roles": [
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "التدريس والتقييم",
+        "en": "Teaching and assessment"
+      },
+      "language": "en",
+      "url": "https://gsi.berkeley.edu/gsi-guide-contents/pre-semester-intro/",
+      "access": {
+        "ar": "مرجع مفتوح للقراءة مجانًا دون تسجيل؛ لا يمنح شهادة. تُكيّف الأفكار مع لوائح الكلية ومقرراتها.",
+        "en": "Open reference, free to read without registration; no certificate. Adapt ideas to Faculty regulations and courses."
+      },
+      "kind": "tool",
+      "sourceChecked": "2026-10-22"
+    },
+    {
+      "id": "berkeley-rubrics",
+      "title": {
+        "ar": "معايير التصحيح والتعليق على أعمال الطلبة",
+        "en": "Grading criteria and comments on student work"
+      },
+      "description": {
+        "ar": "توضيح معايير الحكم على العمل، واستخدام سلّم تقدير، وتحسين اتساق التصحيح.",
+        "en": "Clarify assessment criteria, use rubrics and improve consistency in marking."
+      },
+      "provider": "University of California, Berkeley",
+      "roles": [
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "التدريس والتقييم",
+        "en": "Teaching and assessment"
+      },
+      "language": "en",
+      "url": "https://gsi.berkeley.edu/gsi-guide-contents/grading-intro/",
+      "access": {
+        "ar": "مرجع مفتوح للقراءة مجانًا دون تسجيل؛ لا يمنح شهادة. تُكيّف الأفكار مع لوائح الكلية ومقرراتها.",
+        "en": "Open reference, free to read without registration; no certificate. Adapt ideas to Faculty regulations and courses."
+      },
+      "kind": "tool",
+      "sourceChecked": "2026-10-22"
+    },
+    {
+      "id": "zotero-references",
+      "title": {
+        "ar": "تنظيم المراجع والتوثيق باستخدام Zotero",
+        "en": "Managing references with Zotero"
+      },
+      "description": {
+        "ar": "جمع المراجع وتصنيفها وإدراج الاستشهادات وقوائم المراجع.",
+        "en": "Collect and organise sources and create citations and bibliographies."
+      },
+      "provider": "Zotero",
+      "roles": [
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "البيانات والبحث",
+        "en": "Data and research"
+      },
+      "language": "en",
+      "url": "https://www.zotero.org/support/quick_start_guide",
+      "access": {
+        "ar": "الشرح والبرنامج الأساسي مجانيان؛ لا شهادة. حساب للمزامنة؛ سعات تخزين الملفات الإضافية اختيارية ومدفوعة.",
+        "en": "Free documentation and core software; no certificate. Account for sync; extra attachment storage is optional and paid."
+      },
+      "kind": "tool",
+      "sourceChecked": "2026-10-22"
+    },
+    {
+      "id": "pubmed-search",
+      "title": {
+        "ar": "مهارات البحث في PubMed",
+        "en": "Searching PubMed effectively"
+      },
+      "description": {
+        "ar": "استخدام الكلمات المفتاحية والمرشّحات وحفظ الاستشهادات واستراتيجيات البحث.",
+        "en": "Use keywords and filters, export citations and develop search strategies."
+      },
+      "provider": "U.S. National Library of Medicine",
+      "roles": [
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "البيانات والبحث",
+        "en": "Data and research"
+      },
+      "language": "en",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/help/",
+      "access": {
+        "ar": "الدليل والبحث مجانيان دون تسجيل؛ لا شهادة. بعض النصوص الكاملة لدى الناشرين قد تحتاج اشتراكًا.",
+        "en": "Free guide and searching without registration; no certificate. Some publishers’ full-text articles may require a subscription."
+      },
+      "kind": "tool",
+      "sourceChecked": "2026-10-22"
+    },
+    {
+      "id": "equator-reporting",
+      "title": {
+        "ar": "اختيار قائمة تحقق لكتابة البحث",
+        "en": "Choosing a research reporting checklist"
+      },
+      "description": {
+        "ar": "البحث عن إرشادات كتابة التقارير المناسبة لنوع الدراسة وبحوث التخرج.",
+        "en": "Find reporting guidance suited to a study design or graduation project."
+      },
+      "provider": "EQUATOR Network",
+      "roles": [
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "البيانات والبحث",
+        "en": "Data and research"
+      },
+      "language": "en",
+      "url": "https://www.equator-network.org/",
+      "access": {
+        "ar": "المكتبة المرجعية متاحة مجانًا؛ لا شهادة عند قراءتها. دورات الجهة منفصلة وقد تكون بمقابل.",
+        "en": "The reference library is freely accessible; reading does not confer a certificate. Provider courses are separate and may be paid."
+      },
+      "kind": "tool",
+      "sourceChecked": "2026-10-22"
+    },
+    {
+      "id": "orcid-profile",
+      "title": {
+        "ar": "هوية الباحث وتنظيم سجله العلمي",
+        "en": "Researcher identity and ORCID record"
+      },
+      "description": {
+        "ar": "فهم معرّف الباحث المستمر وربط الإنتاج العلمي مع التحكم في ظهور المعلومات.",
+        "en": "Understand persistent researcher IDs and connect scholarly work while managing visibility."
+      },
+      "provider": "ORCID",
+      "roles": [
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "البحث والنشر",
+        "en": "Research and publishing"
+      },
+      "language": "en",
+      "url": "https://info.orcid.org/researchers/",
+      "access": {
+        "ar": "المعلومات ومعرّف ORCID للأفراد مجانيان؛ إنشاء السجل يحتاج حسابًا. ليست دورة أو شهادة.",
+        "en": "Information and individual ORCID IDs are free; creating a record requires an account. This is not a course or certificate."
+      },
+      "kind": "tool",
+      "sourceChecked": "2026-10-22"
+    },
+    {
+      "id": "inasp-writing",
+      "title": {
+        "ar": "تحسين مهارات الكتابة الأكاديمية",
+        "en": "Improving your academic writing skills"
+      },
+      "description": {
+        "ar": "دورة دراسة ذاتية لصقل أسلوب الكتابة الأكاديمية وتنظيمها.",
+        "en": "A self-study course for improving the structure and style of academic writing."
+      },
+      "provider": "INASP · Rising Scholars",
+      "roles": [
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "البحث والنشر",
+        "en": "Research and publishing"
+      },
+      "language": "en",
+      "url": "https://learn.inasp.info/enrol/index.php?id=355",
+      "access": {
+        "ar": "التسجيل في هذه الدورة الذاتية مجاني وفق قائمة Rising Scholars؛ نحو أسبوعين، ويلزم حساب. راجع متطلبات الإتمام داخل الدورة.",
+        "en": "Free enrolment in this self-study course according to Rising Scholars; about two weeks, account required. Check completion requirements in the course."
+      },
+      "kind": "course",
+      "sourceChecked": "2026-10-22"
+    },
+    {
+      "id": "edraak-feedback",
+      "title": {
+        "ar": "إعطاء واستقبال التغذية الراجعة بنجاح",
+        "en": "Giving and receiving feedback successfully"
+      },
+      "description": {
+        "ar": "تطوير مهارة تقديم الملاحظات واستقبالها في التعليم والعمل.",
+        "en": "Develop the ability to give and receive feedback in teaching and work."
+      },
+      "provider": "إدراك · Edraak",
+      "roles": [
+        "staff",
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "التواصل والعمل الجماعي",
+        "en": "Communication and teamwork"
+      },
+      "language": "ar",
+      "url": "https://www.edraak.org/programs/course/agr-v1/",
+      "access": {
+        "ar": "التعلّم مجاني ويلزم حساب. راجع التوفر ومتطلبات الإتمام والشهادة في صفحة الدورة.",
+        "en": "Free learning; account required. Check availability and completion/certificate requirements on the course page."
+      },
+      "kind": "course",
+      "sourceChecked": "2026-10-22"
+    },
+    {
+      "id": "unesco-open-science",
+      "title": {
+        "ar": "مدخل عربي إلى العلم المفتوح",
+        "en": "An Arabic introduction to open science"
+      },
+      "description": {
+        "ar": "فهم مبادئ إتاحة المعرفة والتعاون العلمي والتوصية الدولية للعلم المفتوح.",
+        "en": "Understand access to knowledge, scientific collaboration and the international open-science recommendation."
+      },
+      "provider": "UNESCO",
+      "roles": [
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "البحث والنشر",
+        "en": "Research and publishing"
+      },
+      "language": "ar",
+      "url": "https://www.unesco.org/ar/articles/alywnskw-ttmd-mayyr-dwlyt-tmwht-mn-ajl-allm-almftwh",
+      "access": {
+        "ar": "قراءة تعريفية مجانية بالعربية دون تسجيل؛ لا شهادة. تطبيق المشاركة يخضع للأخلاقيات والخصوصية وحقوق النشر.",
+        "en": "Free Arabic introductory reading without registration; no certificate. Sharing practices remain subject to ethics, privacy and copyright."
+      },
+      "kind": "tool",
+      "sourceChecked": "2026-10-22"
+    },
+    {
+      "id": "casp-appraisal",
+      "title": {
+        "ar": "قراءة البحث بنظرة نقدية",
+        "en": "Critical appraisal checklists"
+      },
+      "description": {
+        "ar": "أسئلة منظّمة لفحص جودة الدراسات قبل الاستفادة من نتائجها.",
+        "en": "Structured questions to appraise study quality before using its findings."
+      },
+      "provider": "Critical Appraisal Skills Programme · CASP",
+      "roles": [
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "البيانات والبحث",
+        "en": "Data and research"
+      },
+      "language": "en",
+      "url": "https://casp-uk.net/casp-tools-checklists/",
+      "access": {
+        "ar": "قوائم التحقق مجانية للتنزيل وفق شروط المصدر؛ لا تمنح شهادة. الدورات والاشتراكات لدى الجهة منفصلة.",
+        "en": "Checklists are free to download under source terms; no certificate. Provider courses and subscriptions are separate."
+      },
+      "kind": "tool",
+      "sourceChecked": "2026-10-22"
+    },
+    {
+      "id": "drive-organisation",
+      "title": {
+        "ar": "تنظيم الملفات والسجلات الرقمية",
+        "en": "Organising digital files and records"
+      },
+      "description": {
+        "ar": "تنظيم المجلدات وتسمية الملفات والأوصاف والاختصارات لتسهيل الاسترجاع.",
+        "en": "Organise folders, file names, descriptions and shortcuts for easier retrieval."
+      },
+      "provider": "Google",
+      "roles": [
+        "staff",
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "تنظيم العمل",
+        "en": "Work organisation"
+      },
+      "language": "multi",
+      "url": "https://support.google.com/drive/answer/2375091?co=GENIE.Platform%3DDesktop&hl=ar",
+      "access": {
+        "ar": "إرشادات مجانية دون تسجيل للقراءة؛ التطبيق يحتاج حساب Google وصلاحيات مناسبة. لا شهادة.",
+        "en": "Free guidance without sign-in; practice requires a Google account and appropriate permissions. No certificate."
+      },
+      "kind": "tool",
+      "sourceChecked": "2026-10-22"
+    },
+    {
+      "id": "accessible-word",
+      "title": {
+        "ar": "مستندات Word أسهل للجميع",
+        "en": "Accessible Word documents"
+      },
+      "description": {
+        "ar": "استخدام العناوين والنص البديل والجداول والروابط القابلة للوصول.",
+        "en": "Use accessible headings, alternative text, tables and links."
+      },
+      "provider": "Microsoft",
+      "roles": [
+        "staff",
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "الإتاحة الرقمية",
+        "en": "Digital accessibility"
+      },
+      "language": "multi",
+      "url": "https://support.microsoft.com/ar-sa/accessibility/word/make-your-word-documents-accessible-to-people-with-disabilities",
+      "access": {
+        "ar": "إرشادات مجانية؛ لا شهادة. استخدام Word وترخيصه منفصلان. يمكن تغيير لغة موقع Microsoft.",
+        "en": "Free guidance; no certificate. Word access and licensing are separate. Microsoft website language can be changed."
+      },
+      "kind": "tool",
+      "sourceChecked": "2026-10-22"
+    },
+    {
+      "id": "workplace-communication",
+      "title": {
+        "ar": "التواصل الفعّال في العمل",
+        "en": "Effective communication in the workplace"
+      },
+      "description": {
+        "ar": "تحسين الرسائل والتواصل الشفهي والتعامل مع المواقف الصعبة.",
+        "en": "Improve written and verbal communication and handle challenging situations."
+      },
+      "provider": "The Open University · OpenLearn",
+      "roles": [
+        "staff",
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "التواصل والعمل الجماعي",
+        "en": "Communication and teamwork"
+      },
+      "language": "en",
+      "url": "https://www.open.edu/openlearn/money-business/effective-communication-the-workplace/content-section-overview",
+      "access": {
+        "ar": "دورة مجانية، نحو 24 ساعة. المحتوى متاح دون تسجيل؛ حساب للتتبع وإفادة المشاركة والشارة بعد استيفاء المتطلبات.",
+        "en": "Free course, about 24 hours. Content is readable without signing up; an account is required for tracking, participation statement and badge after meeting requirements."
+      },
+      "kind": "course",
+      "sourceChecked": "2026-10-22"
+    },
+    {
+      "id": "teamwork",
+      "title": {
+        "ar": "العمل ضمن فريق",
+        "en": "Working in teams"
+      },
+      "description": {
+        "ar": "استكشاف الأدوار والتنوع والتعاون عن بُعد وتقييم العمل الجماعي.",
+        "en": "Explore roles, diversity, remote collaboration and teamwork."
+      },
+      "provider": "The Open University · OpenLearn",
+      "roles": [
+        "staff",
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "التواصل والعمل الجماعي",
+        "en": "Communication and teamwork"
+      },
+      "language": "en",
+      "url": "https://www.open.edu/openlearn/money-business/working-teams",
+      "access": {
+        "ar": "دورة مجانية، نحو 24 ساعة؛ المحتوى متاح دون تسجيل، وحساب للتتبع وإفادة المشاركة والشارة وفق متطلبات الإتمام.",
+        "en": "Free course, about 24 hours; content is readable without signing up, with an account required for tracking, participation statement and badge subject to completion requirements."
+      },
+      "kind": "course",
+      "sourceChecked": "2026-10-22"
+    },
+    {
+      "id": "cybersecurity-intro",
+      "title": {
+        "ar": "مقدمة في الأمن السيبراني",
+        "en": "Introduction to Cybersecurity"
+      },
+      "description": {
+        "ar": "فهم التهديدات الرقمية وحماية البيانات والخصوصية في الاستخدام اليومي.",
+        "en": "Explore digital threats, data protection and privacy in everyday use."
+      },
+      "provider": "Cisco Networking Academy",
+      "roles": [
+        "staff",
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "الأمان الرقمي",
+        "en": "Digital security"
+      },
+      "language": "en",
+      "url": "https://www.netacad.com/courses/introduction-to-cybersecurity",
+      "access": {
+        "ar": "دورة مجانية ذاتية للمبتدئين، نحو 6 ساعات؛ يلزم التسجيل. راجع شروط الإتمام واللغة لدى الجهة.",
+        "en": "Free self-paced beginner course, about 6 hours; registration required. Check the provider’s completion and language options."
+      },
+      "kind": "course",
+      "sourceChecked": "2026-10-22"
+    },
+    {
+      "id": "forms-basics",
+      "title": {
+        "ar": "إنشاء النماذج ومتابعة الردود",
+        "en": "Creating forms and reviewing responses"
+      },
+      "description": {
+        "ar": "إنشاء نموذج وتنظيم الأسئلة وربط الردود بجدول للتحليل.",
+        "en": "Create a form, organise questions and link responses to a spreadsheet."
+      },
+      "provider": "Google",
+      "roles": [
+        "staff",
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "تنظيم العمل",
+        "en": "Work organisation"
+      },
+      "language": "multi",
+      "url": "https://support.google.com/docs/answer/6281888?co=GENIE.Platform%3DDesktop&hl=ar",
+      "access": {
+        "ar": "إرشادات مجانية؛ لا شهادة. إنشاء النماذج يحتاج حساب Google؛ بعض مزايا المؤسسة تتطلب خطة مناسبة.",
+        "en": "Free guidance; no certificate. Creating forms requires a Google account; some organisational features require an eligible plan."
+      },
+      "kind": "tool",
+      "sourceChecked": "2026-10-22"
+    },
+    {
+      "id": "account-security",
+      "title": {
+        "ar": "حماية حساب العمل بالتحقق بخطوتين",
+        "en": "Protecting work accounts with two-step verification"
+      },
+      "description": {
+        "ar": "فهم خيارات التحقق وإرشادات حماية الدخول إلى حساب Google.",
+        "en": "Understand verification options and guidance for securing Google account access."
+      },
+      "provider": "Google",
+      "roles": [
+        "staff",
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "الأمان الرقمي",
+        "en": "Digital security"
+      },
+      "language": "multi",
+      "url": "https://support.google.com/accounts/answer/185839?co=GENIE.Platform%3DDesktop&hl=ar",
+      "access": {
+        "ar": "إرشادات مجانية؛ لا شهادة. الحساب المؤسسي يخضع لإعدادات المشرف.",
+        "en": "Free guidance; no certificate. Institutional accounts follow administrator settings."
+      },
+      "kind": "tool",
+      "sourceChecked": "2026-10-22"
+    },
+    {
+      "id": "outlook-organisation",
+      "title": {
+        "ar": "تنظيم البريد والمواعيد والمهام",
+        "en": "Organising email, appointments and tasks"
+      },
+      "description": {
+        "ar": "ممارسات لإدارة صندوق البريد والتقويم والأولويات في Outlook.",
+        "en": "Practical approaches to organising the inbox, calendar and priorities in Outlook."
+      },
+      "provider": "Microsoft",
+      "roles": [
+        "staff"
+      ],
+      "topic": {
+        "ar": "تنظيم العمل",
+        "en": "Work organisation"
+      },
+      "language": "multi",
+      "url": "https://support.microsoft.com/ar-sa/outlook/best-practices-for-outlook",
+      "access": {
+        "ar": "إرشادات مجانية؛ لا شهادة. التطبيق يحتاج إصدار Outlook وحسابًا مناسبين؛ الترخيص منفصل.",
+        "en": "Free guidance; no certificate. Practice requires a suitable Outlook version and account; licensing is separate."
+      },
+      "kind": "tool",
+      "sourceChecked": "2026-10-22"
+    },
+    {
+      "id": "qatar-teaching-recordings",
+      "title": {
+        "ar": "تسجيلات تطوير التدريس بالعربية والإنجليزية",
+        "en": "Arabic and English teaching-development recordings"
+      },
+      "description": {
+        "ar": "أرشيف ورش عن تصميم التعلم والتقييم والمشاركة والتعليم بالمشروعات.",
+        "en": "An archive of sessions on learning design, assessment, engagement and project-based teaching."
+      },
+      "provider": "جامعة قطر · Qatar University CETL",
+      "roles": [
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "التدريس والتقييم",
+        "en": "Teaching and assessment"
+      },
+      "language": "multi",
+      "url": "https://www.qu.edu.qa/en-us/Offices/cetl/Pages/cetl-events.aspx",
+      "kind": "tool",
+      "access": {
+        "ar": "تسجيلات عامة مجانية لفعاليات 2020–2021، وليست مواعيد قادمة. تختلف اللغة بحسب التسجيل؛ لا تُوعد شهادة أو حضور حالي.",
+        "en": "Free public recordings from 2020–2021, not upcoming events. Language varies by recording; no current attendance or certificate is promised."
+      },
+      "sourceChecked": "2026-10-22"
+    },
+    {
+      "id": "edinburgh-accessibility",
+      "title": {
+        "ar": "قائمة فحص إتاحة مواد التعلم",
+        "en": "Learning-material accessibility checklist"
+      },
+      "description": {
+        "ar": "أسئلة عملية لمراجعة تنظيم الملفات ووضوح النصوص والصور والوسائط.",
+        "en": "Practical checks for file organisation and accessible text, images and media."
+      },
+      "provider": "University of Edinburgh",
+      "roles": [
+        "staff",
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "إتاحة المحتوى",
+        "en": "Content accessibility"
+      },
+      "language": "en",
+      "url": "https://information-services.ed.ac.uk/learning-technology/accessibility/accessibility-checklist",
+      "kind": "tool",
+      "access": {
+        "ar": "مرجع جامعي عام مجاني بالإنجليزية؛ ليس دورة أو شهادة. بعض روابط الدعم والخدمات المضمنة تخص منسوبي جامعة إدنبرة.",
+        "en": "Free public university reference in English, not a course or certificate. Some linked support services are for Edinburgh members."
+      },
+      "sourceChecked": "2026-10-22"
     }
   ],
   "events": [

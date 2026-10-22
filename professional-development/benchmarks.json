@@ -1,0 +1,137 @@
+{
+  "updated": "2026-10-22",
+  "scope": {
+    "ar": "مقارنة مرجعية مكتبية لأفكار تنظيم الخدمات والتطوير المهني المنشورة في مواقع الجامعات. اخترنا ممارسات محددة وكيّفناها مع احتياجات كلية التمريض وإمكاناتها؛ وهذه ليست مقارنة رقمية للأداء، ولا تعني شراكة أو اعتمادًا من الجامعات المذكورة. محتوى أدواتنا أصلي، وروابط المصادر تتيح الرجوع إلى الفكرة المرجعية.",
+    "en": "Desk-based benchmarking of service design and professional-development ideas published on university websites. Selected practices are adapted to the Faculty of Nursing’s needs and resources. This is not a numerical comparison of performance and does not imply a partnership or endorsement. Our tools contain original content; source links identify the practices that informed their design."
+  },
+  "items": [
+    {
+      "id": "stanford-teaching-team",
+      "university": {
+        "ar": "جامعة ستانفورد",
+        "en": "Stanford University"
+      },
+      "title": {
+        "ar": "التعاون بين أستاذ المادة والمعيد",
+        "en": "TAs and the teaching team"
+      },
+      "url": "https://teachingcommons.stanford.edu/teaching-guides/foundations-course-design/course-planning/tas-and-teaching-team",
+      "idea": {
+        "ar": "توضيح المهام قبل التدريس، والاجتماعات الدورية القصيرة، ومراجعة الملاحظات خلال الفصل وبعده.",
+        "en": "Clarify responsibilities before teaching, hold regular brief team meetings, and review feedback during and after the term."
+      },
+      "adaptation": {
+        "ar": "أضفنا مسارات تعلّم وقائمة تحضير للحصة والتعاون مع أستاذ المادة. ويمكن لخطة العمل الأسبوعية تنظيم المهام، ولخطة التطوير تسجيل خطوة تطبيق ومراجعة الملاحظات.",
+        "en": "Learning pathways and a role preparation checklist support session preparation and collaboration with the course instructor. The weekly work plan can organise tasks, while the development plan can record an application step and reflection on feedback."
+      },
+      "roles": [
+        "ta",
+        "faculty"
+      ],
+      "checked": "2026-10-22"
+    },
+    {
+      "id": "ucl-individual-plan",
+      "university": {
+        "ar": "كلية لندن الجامعية UCL",
+        "en": "University College London (UCL)"
+      },
+      "title": {
+        "ar": "خطة التطوير الفردية",
+        "en": "Individual development planning"
+      },
+      "url": "https://www.ucl.ac.uk/research-innovation/case-studies/2023/dec/learning-plan-long-term-research-success",
+      "idea": {
+        "ar": "مراجعة الخبرة والاحتياج، ثم اختيار أهداف ذات أولوية وتحويلها إلى خطوات قابلة للمتابعة.",
+        "en": "Reflect on experience and development needs, select priority goals, and turn them into actions that can be reviewed."
+      },
+      "adaptation": {
+        "ar": "أضفنا خطة تطوير وتطبيق شخصية وسجلًا محليًا يربطان التعلّم بما سيطبّقه المستخدم وبالموعد والدليل الذي سيعود إليه عند المراجعة.",
+        "en": "A personal development and application plan, alongside the local journal, links learning to a planned action, review date and evidence to revisit."
+      },
+      "roles": [
+        "staff",
+        "ta",
+        "faculty"
+      ],
+      "checked": "2026-10-22"
+    },
+    {
+      "id": "oxford-induction-development",
+      "university": {
+        "ar": "جامعة أكسفورد · قسم الكيمياء الحيوية",
+        "en": "University of Oxford · Department of Biochemistry"
+      },
+      "title": {
+        "ar": "التهيئة ومراجعة التطوير والدعم المهني",
+        "en": "Induction, development reviews and mentoring"
+      },
+      "url": "https://www.bioch.ox.ac.uk/induction/development",
+      "idea": {
+        "ar": "ربط بدء الدور الجديد بالتواصل والدعم والتدريب، مع مراجعة احتياجات التطوير وإتاحة الإرشاد المهني.",
+        "en": "Connect a new role with communication, support and training, then review development needs and provide mentoring opportunities."
+      },
+      "adaptation": {
+        "ar": "أضفنا قوائم تهيئة لكل فئة، ومسارات تعلّم وخطة عمل أسبوعية تساعد المستخدم على تنظيم احتياجاته والمهام التي سيعدّها في دوره.",
+        "en": "Role preparation checklists, learning pathways and a weekly work plan help visitors organise development needs and the tasks they will prepare in their role."
+      },
+      "roles": [
+        "staff",
+        "ta",
+        "faculty"
+      ],
+      "checked": "2026-10-22"
+    },
+    {
+      "id": "edinburgh-accessibility",
+      "university": {
+        "ar": "جامعة إدنبرة",
+        "en": "The University of Edinburgh"
+      },
+      "title": {
+        "ar": "قوائم فحص إتاحة المحتوى الرقمي",
+        "en": "Practical digital accessibility checklists"
+      },
+      "url": "https://information-services.ed.ac.uk/learning-technology/accessibility/accessibility-checklist",
+      "idea": {
+        "ar": "تحويل إتاحة المحتوى إلى أسئلة فحص عملية للوثائق والوسائط ومواد التعلم، مع تمييز أنواع المصادر وتنظيمها بوضوح.",
+        "en": "Turn content accessibility into practical checks for documents, media and learning materials, and make resource types and organisation clear."
+      },
+      "adaptation": {
+        "ar": "أضفنا مصادر وخيارات لمراجعة وضوح المحتوى وإتاحته، مع بيان لغة كل مصدر ونوعه وشروط الوصول إليه.",
+        "en": "Resources and options support review of content clarity and accessibility, while each resource identifies its language, type and access conditions."
+      },
+      "roles": [
+        "staff",
+        "ta",
+        "faculty"
+      ],
+      "checked": "2026-10-22"
+    },
+    {
+      "id": "qatar-bilingual-recordings",
+      "university": {
+        "ar": "جامعة قطر",
+        "en": "Qatar University"
+      },
+      "title": {
+        "ar": "مكتبة خبرات التدريس المسجلة بالعربية والإنجليزية",
+        "en": "Arabic and English recorded teaching-development sessions"
+      },
+      "url": "https://www.qu.edu.qa/en-us/Offices/cetl/Pages/cetl-events.aspx",
+      "idea": {
+        "ar": "إتاحة تسجيلات لخبرات التدريس والتقييم وتصميم أنشطة التعلم، مع تنوّع عربي وإنجليزي في المكتبة المنشورة.",
+        "en": "Provide an archive of recorded teaching, assessment and learning-design sessions in Arabic and English."
+      },
+      "adaptation": {
+        "ar": "أضفنا التسجيلات والمراجع العملية إلى خيارات التطوير، مع فصلها عن الفعاليات القادمة. صفحة جامعة قطر المشار إليها أرشيف لفعاليات 2020–2021 وليست إعلانًا عن مواعيد حالية.",
+        "en": "Recorded sessions and practical references expand development choices and are distinguished from upcoming events. The linked Qatar University page is a 2020–2021 event archive, not a current event announcement."
+      },
+      "roles": [
+        "ta",
+        "faculty"
+      ],
+      "checked": "2026-10-22"
+    }
+  ]
+}
