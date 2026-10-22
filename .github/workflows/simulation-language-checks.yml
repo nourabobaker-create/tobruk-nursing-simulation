@@ -29,6 +29,16 @@ jobs:
         run: |
           python simulation-language-review/rebuild_locales.py
           git diff --exit-code -- clinical-simulations
+      - name: Validate the 100-topic authored corpus and both adaptive routes
+        run: |
+          python clinical-simulations/scenarios/build.py --check
+          node --check clinical-simulations/scenarios/app.js
+          node clinical-simulations/scenarios/tests/engine.cjs
+      - name: Install the scenario browser test runner outside the site
+        run: npm install --prefix /tmp/scenario-browser playwright
+      - name: Exercise both challenge routes for all 100 topics in Chromium
+        run: |
+          PLAYWRIGHT_MODULE=/tmp/scenario-browser/node_modules/playwright CHROME_BIN="$(command -v google-chrome)" node clinical-simulations/scenarios/tests/browser.cjs
       - run: python -m pip install playwright --quiet
       - name: Verify the 17 active simulations and language persistence
         run: python simulation-language-review/verify_browser.py
@@ -36,5 +46,7 @@ jobs:
         if: always()
         with:
           name: simulation-language-results
-          path: /tmp/tobruk-language-qa
+          path: |
+            /tmp/tobruk-language-qa
+            /tmp/clinical-100-*.png
           retention-days: 7

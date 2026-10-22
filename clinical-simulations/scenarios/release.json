@@ -1,0 +1,11 @@
+{
+  "version": "20261022-100",
+  "topics": 100,
+  "categories": 10,
+  "core_decisions": 600,
+  "adaptive_variants": 200,
+  "decisions_per_visit": 7,
+  "source_references": 231,
+  "unique_sources": 109,
+  "data_sha256": "5e8b61a14402a800e8ea66cd412fe604e432114bd6a0e8c62f3332769821fca4"
+}
