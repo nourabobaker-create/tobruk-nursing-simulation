@@ -1311,8 +1311,6 @@
       "kind": "tool",
       "sourceType": "reference",
       "availability": "public",
-      "country": "sa",
-      "universityId": "seu",
       "university": {
         "ar": "الجامعة السعودية الإلكترونية",
         "en": "Saudi Electronic University"
@@ -1347,8 +1345,6 @@
       "kind": "tool",
       "sourceType": "reference",
       "availability": "public",
-      "country": "sa",
-      "universityId": "kau",
       "university": {
         "ar": "جامعة الملك عبدالعزيز",
         "en": "King Abdulaziz University"
@@ -1383,8 +1379,6 @@
       "kind": "tool",
       "sourceType": "reference",
       "availability": "public",
-      "country": "sa",
-      "universityId": "kau",
       "university": {
         "ar": "جامعة الملك عبدالعزيز",
         "en": "King Abdulaziz University"
@@ -1420,8 +1414,6 @@
       "kind": "tool",
       "sourceType": "reference",
       "availability": "public",
-      "country": "sa",
-      "universityId": "qassim",
       "university": {
         "ar": "جامعة القصيم",
         "en": "Qassim University"
@@ -1457,8 +1449,6 @@
       "kind": "tool",
       "sourceType": "reference",
       "availability": "public",
-      "country": "sa",
-      "universityId": "pnu",
       "university": {
         "ar": "جامعة الأميرة نورة بنت عبدالرحمن",
         "en": "Princess Nourah bint Abdulrahman University"
@@ -1494,8 +1484,6 @@
       "kind": "tool",
       "sourceType": "reference",
       "availability": "public",
-      "country": "sa",
-      "universityId": "majmaah",
       "university": {
         "ar": "جامعة المجمعة",
         "en": "Majmaah University"
@@ -1530,8 +1518,6 @@
       "kind": "tool",
       "sourceType": "archive",
       "availability": "archive",
-      "country": "sa",
-      "universityId": "majmaah",
       "university": {
         "ar": "جامعة المجمعة",
         "en": "Majmaah University"
@@ -1566,8 +1552,6 @@
       "kind": "tool",
       "sourceType": "reference",
       "availability": "public",
-      "country": "sa",
-      "universityId": "taibah",
       "university": {
         "ar": "جامعة طيبة",
         "en": "Taibah University"
@@ -1602,8 +1586,6 @@
       "kind": "tool",
       "sourceType": "reference",
       "availability": "public",
-      "country": "sa",
-      "universityId": "taibah",
       "university": {
         "ar": "جامعة طيبة",
         "en": "Taibah University"
@@ -1639,8 +1621,6 @@
       "kind": "tool",
       "sourceType": "archive",
       "availability": "archive",
-      "country": "sa",
-      "universityId": "majmaah",
       "university": {
         "ar": "جامعة المجمعة",
         "en": "Majmaah University"
@@ -1674,8 +1654,6 @@
         "ar": "فهرس ودروس عامة للمشاهدة؛ ليست فعالية قادمة أو شهادة. تطبيق الخطوات على نظام الجامعة يتطلب حسابًا وصلاحيات، وقد تختلف واجهة النظام لديك.",
         "en": "Public viewing references, not an upcoming event or certificate. Applying steps in the university system requires an authorised account; your LMS interface may differ."
       },
-      "country": "sa",
-      "universityId": "najran",
       "university": {
         "ar": "جامعة نجران",
         "en": "Najran University"
@@ -1710,8 +1688,6 @@
         "ar": "فهرس عام موسوم مؤرشف؛ لا يعلن دورة قادمة أو يمنح شهادة. مراجع النظام قد تحتاج تكييفًا مع النسخة المستخدمة في الكلية.",
         "en": "A public catalogue explicitly marked archived; no upcoming course or certificate. System references may need adapting to the version used at the Faculty."
       },
-      "country": "sa",
-      "universityId": "imam",
       "university": {
         "ar": "جامعة الإمام محمد بن سعود الإسلامية",
         "en": "Imam Mohammad Ibn Saud Islamic University"
@@ -1747,8 +1723,6 @@
         "ar": "صفحة مرجعية عامة، وليست دورة أو شهادة. البرامج التدريبية موجهة لمنسوبي الجامعة، وبعض الأهداف المنشورة تاريخية؛ لا تُنقل كأهداف للكلية.",
         "en": "A public reference page, not a course or certificate. Training targets university members and some published targets are historical; they are not adopted as Faculty targets."
       },
-      "country": "sa",
-      "universityId": "hail",
       "university": {
         "ar": "جامعة حائل",
         "en": "University of Hail"
@@ -1785,8 +1759,6 @@
         "ar": "مرجع عربي لتنظيم أدوات العمل الرقمي، مع أمثلة من البيئة الجامعية.",
         "en": "Arabic reference for organising digital work tools, with university-specific examples."
       },
-      "country": "sa",
-      "universityId": "jouf",
       "university": {
         "ar": "جامعة الجوف",
         "en": "Jouf University"
@@ -1822,8 +1794,6 @@
         "ar": "مرجع عربي لتنظيم أدوات العمل الرقمي، مع أمثلة من البيئة الجامعية.",
         "en": "Arabic reference for organising digital work tools, with university-specific examples."
       },
-      "country": "sa",
-      "universityId": "jouf",
       "university": {
         "ar": "جامعة الجوف",
         "en": "Jouf University"
@@ -1858,8 +1828,6 @@
         "en": "A public English university article without sign-in for reading, not a course or certificate. Adapt ideas to Faculty guides; university consultation services serve its members."
       },
       "sourceChecked": "2026-10-22",
-      "country": "sa",
-      "universityId": "kfupm",
       "university": {
         "ar": "جامعة الملك فهد للبترول والمعادن",
         "en": "King Fahd University of Petroleum and Minerals"
@@ -1894,8 +1862,6 @@
         "en": "A public instructional-video page, not an upcoming event or certificate. Applying it in the university LMS requires an authorised account; the Faculty interface may differ."
       },
       "sourceChecked": "2026-10-22",
-      "country": "sa",
-      "universityId": "prince-sattam",
       "university": {
         "ar": "جامعة الأمير سطام بن عبدالعزيز",
         "en": "Prince Sattam bin Abdulaziz University"

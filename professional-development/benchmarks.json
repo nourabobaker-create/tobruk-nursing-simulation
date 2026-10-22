@@ -1,8 +1,8 @@
 {
   "updated": "2026-10-22",
   "scope": {
-    "ar": "مقارنة مرجعية مكتبية لأفكار تنظيم الخدمات والتطوير المهني من جامعات سعودية ودولية. اخترنا ممارسات وكيّفناها لاحتياجات الكلية وإمكاناتها؛ ليست مقارنة رقمية للأداء ولا شراكة أو اعتمادًا من الجهات المذكورة. يُعرض برنامج تنمية القدرات البشرية السعودي في قسم الخبرات السعودية بوصفه مرجع توجه وطني مستقل.",
-    "en": "Desk-based benchmarking of service-design and professional-development ideas from Saudi and international universities. Practices are adapted to Faculty needs/resources; this is not a numerical performance comparison, partnership or endorsement. Saudi HCDP appears separately as a national policy-direction reference."
+    "ar": "مقارنة مرجعية مكتبية لأفكار تنظيم الخدمات والتطوير المهني من جامعات متعددة. اخترنا ممارسات وكيّفناها لاحتياجات الكلية وإمكاناتها؛ ليست مقارنة رقمية للأداء ولا شراكة أو اعتمادًا من الجهات المذكورة.",
+    "en": "Desk-based benchmarking of service-design and professional-development ideas from several universities. Practices are adapted to Faculty needs and resources; this is not a numerical performance comparison, partnership or endorsement."
   },
   "items": [
     {
@@ -157,8 +157,7 @@
         "ta",
         "faculty"
       ],
-      "checked": "2026-10-22",
-      "region": "sa"
+      "checked": "2026-10-22"
     },
     {
       "id": "pnu-duty-linked-development",
@@ -184,8 +183,7 @@
         "ta",
         "faculty"
       ],
-      "checked": "2026-10-22",
-      "region": "sa"
+      "checked": "2026-10-22"
     },
     {
       "id": "kau-distinct-development-paths",
@@ -211,8 +209,7 @@
         "ta",
         "faculty"
       ],
-      "checked": "2026-10-22",
-      "region": "sa"
+      "checked": "2026-10-22"
     },
     {
       "id": "jouf-training-cycle",
@@ -238,8 +235,7 @@
         "ta",
         "faculty"
       ],
-      "checked": "2026-10-22",
-      "region": "sa"
+      "checked": "2026-10-22"
     },
     {
       "id": "hail-needs-to-impact",
@@ -265,8 +261,7 @@
         "ta",
         "faculty"
       ],
-      "checked": "2026-10-22",
-      "region": "sa"
+      "checked": "2026-10-22"
     }
   ]
 }
