@@ -46,8 +46,7 @@ function renderSurveys(){
   const cycle=document.createElement('span');cycle.textContent=survey.group==='strategy'?copy[lang].cycleStrategy:copy[lang].cycleProgramme;meta.append(cycle);
   const language=document.createElement('span');language.textContent=survey.language==='en'?copy[lang].langEn:copy[lang].langAr;meta.append(language);body.append(meta);
   const title=document.createElement('h3');title.textContent=survey[lang==='ar'?'titleAr':'titleEn'];body.append(title);
-  const description=document.createElement('p');description.textContent=survey[lang==='ar'?'descriptionAr':'descriptionEn'];body.append(description);
-  const accessNote=survey[lang==='ar'?'accessNoteAr':'accessNoteEn'];if(accessNote){const note=document.createElement('p');note.className='survey-access-note';note.textContent=accessNote;body.append(note);}a.append(body);
+  const description=document.createElement('p');description.textContent=survey[lang==='ar'?'descriptionAr':'descriptionEn'];body.append(description);a.append(body);
   const arrow=document.createElement('span');arrow.className='survey-arrow';arrow.setAttribute('aria-hidden','true');arrow.textContent='↗';a.append(arrow);list.append(a);
  }
  $('surveys').hidden=!list.children.length;
