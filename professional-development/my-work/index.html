@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="مرجع عملي مبسط لمهام الموظفين والمعيدين وأعضاء هيئة التدريس خلال العام بكلية التمريض، جامعة طبرق.">
+  <meta name="theme-color" content="#174b3b">
+  <title>دليلي العملي خلال العام | كلية التمريض، جامعة طبرق</title>
+  <link rel="stylesheet" href="work.css?v=20261022-1">
+  <script defer src="../../portal-metrics/config.js?v=20261021-shared-1"></script>
+  <script defer src="../../portal-metrics/core.js?v=20261021-1"></script>
+  <script defer src="../../portal-metrics/tracker.js?v=20261021-locale-1"></script>
+  <script defer src="../../portal-metrics/activity-hooks.js?v=20261021-1"></script>
+  <script defer src="work.js?v=20261022-1"></script>
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">انتقل إلى المحتوى</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../../" id="brandLink">
+        <img src="../../hub-branding/university-logo.webp" width="54" height="54" alt="جامعة طبرق" data-i18n-alt="university">
+        <span><strong data-i18n="faculty">كلية التمريض، جامعة طبرق</strong><small data-i18n="portal">بوابة الكلية</small></span>
+        <img src="../../hub-branding/faculty-logo.webp" width="54" height="54" alt="كلية التمريض" data-i18n-alt="facultyLogo">
+      </a>
+      <div class="header-actions">
+        <a class="quiet-button" href="../?role=staff" id="hubLink" data-i18n="back">مساحتي المهنية</a>
+        <button class="quiet-button language-button" type="button" id="languageButton" lang="en" aria-label="Switch to English">English</button>
+      </div>
+    </div>
+  </header>
+  <main id="main" tabindex="-1">
+    <section class="hero" aria-labelledby="pageTitle">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="eyebrow">عمل أوضح، خطوة بخطوة</p>
+        <h1 id="pageTitle" data-i18n="title">دليلي العملي خلال العام</h1>
+        <p class="hero-intro" data-i18n="lead">مرجع يساعدك على ترتيب العمل، ومعرفة مسؤولياتك وما تحتاجه في كل مرحلة.</p>
+        <p class="calendar-note"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="16" rx="3"/><path d="M8 3v4m8-4v4M4 11h16m-11 4h1m4 0h1"/></svg><span data-i18n="calendar">يرتبط التوقيت بالتقويم الأكاديمي ومواعيد العمل المعتمدة في الكلية.</span></p>
+      </div>
+      <div class="hero-art" aria-hidden="true"><svg viewBox="0 0 180 180"><circle class="art-ring" cx="90" cy="90" r="72"/><path class="art-path" d="M44 115V77a12 12 0 0 1 12-12h25m18 0h25a12 12 0 0 1 12 12v38a12 12 0 0 1-12 12H56a12 12 0 0 1-12-12Z"/><rect class="art-paper" x="66" y="39" width="49" height="72" rx="7"/><path class="art-detail" d="m77 62 5 5 10-11m-15 30 5 5 10-11m5-17h9M97 87h9"/><circle class="art-dot" cx="48" cy="115" r="15"/><path class="art-check" d="m41 115 5 5 10-11"/><path class="art-leaf" d="M128 126c22-1 27-18 24-29-18 0-29 9-24 29Zm0 0 16-19"/></svg></div>
+    </section>
+
+    <div id="loading" class="notice" role="status" data-i18n="loading">نجهّز لك الدليل العملي…</div>
+    <section id="loadError" class="notice load-error" aria-labelledby="errorTitle" hidden>
+      <h2 id="errorTitle" data-i18n="errorTitle">تعذّر تحميل الدليل</h2>
+      <p data-i18n="errorText">حاول مرة أخرى لعرض الأدوار ومهامها. يمكنك أيضًا العودة إلى مساحتك المهنية.</p>
+      <button id="retryButton" class="primary-button" type="button" data-i18n="retry">إعادة المحاولة</button>
+      <a href="../" class="text-link" id="errorHubLink" data-i18n="back">مساحتي المهنية</a>
+    </section>
+
+    <div id="workContent" hidden>
+      <section class="role-panel" aria-labelledby="roleHeading">
+        <div class="role-field">
+          <label for="roleSelect" id="roleHeading" data-i18n="chooseRole">ما دوري في الكلية؟</label>
+          <select id="roleSelect" aria-describedby="roleHint"></select>
+          <small id="roleHint" data-i18n="roleHint">اختر الدور الأقرب لعملك؛ يمكنك تغييره في أي وقت.</small>
+        </div>
+        <div class="role-intro">
+          <p class="small-heading" data-i18n="myResponsibility">مسؤوليتي ببساطة</p>
+          <h2 id="roleTitle"></h2>
+          <p id="roleResponsibility"></p>
+          <p id="roleIntro" class="muted"></p>
+        </div>
+      </section>
+
+      <section class="year-section" aria-labelledby="yearHeading">
+        <div class="section-heading"><div><p class="eyebrow green" data-i18n="yearEyebrow">نظرة على العام</p><h2 id="yearHeading" data-i18n="yearTitle">في أي مرحلة أعمل الآن؟</h2></div><button id="allPhases" class="quiet-button" type="button" aria-pressed="true" data-i18n="allPhases">كل المراحل</button></div>
+        <div class="year-path" id="yearPath" role="group" aria-label="مراحل العام" data-i18n-aria="yearPhases"></div>
+        <p id="phaseDescription" class="phase-description"></p>
+      </section>
+
+      <section class="tasks-section" aria-labelledby="tasksHeading">
+        <div class="task-heading-row">
+          <div><p class="eyebrow green" data-i18n="tasksEyebrow">على قدر حاجتك</p><h2 id="tasksHeading" data-i18n="tasksTitle">مهامي وخطواتي</h2></div>
+          <div class="search-field"><label for="taskSearch" data-i18n="searchLabel">ابحث في مهام هذا الدور</label><input id="taskSearch" type="search" autocomplete="off" maxlength="160" placeholder="مثل: التسجيل أو التقرير" data-i18n-placeholder="searchPlaceholder"></div>
+        </div>
+        <details class="how-to"><summary data-i18n="howTitle">كيف أستفيد من هذا الدليل؟</summary><p data-i18n="howText">اختر دورك ومرحلة العام، ثم افتح تفاصيل المهمة حين تحتاجها. يمكنك ترتيب خطواتك بعلامات شخصية تُحفظ في هذا المتصفح؛ ويكفي الاحتفاظ بمخرجات عملك المعتادة.</p></details>
+        <div class="task-meta"><p id="taskCount" role="status" aria-live="polite" aria-atomic="true"></p><p class="local-note" data-i18n="localNote">اختر علامة إن أحببت؛ اضغطها مرة أخرى لإزالتها. تُحفظ في هذا المتصفح فقط.</p></div>
+        <div id="tasks" class="task-grid"></div>
+        <div id="emptyTasks" class="empty-state" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4m-12-9h5"/></svg><h3 data-i18n="emptyTitle">لنجرب بحثًا آخر</h3><p data-i18n="emptyText">لا توجد مهام تطابق اختيارك. جرّب كلمة أقصر أو اعرض كل المراحل.</p><button type="button" class="quiet-button" id="resetFilters" data-i18n="resetFilters">عرض مهام الدور كلها</button></div>
+        <p id="storageMessage" class="storage-message" role="status" aria-live="polite"></p>
+      </section>
+
+      <section class="references" aria-labelledby="referencesHeading">
+        <div><p class="eyebrow green" data-i18n="referenceEyebrow">حين تحتاج إلى المزيد</p><h2 id="referencesHeading" data-i18n="referencesTitle">مرجعي في العمل</h2><p class="muted" data-i18n="referenceLead">للتفاصيل والصلاحيات والإجراءات الكاملة، ارجع إلى الدليل المرتبط بدورك.</p></div>
+        <div id="sources" class="source-list"></div>
+      </section>
+      <p class="updated" id="updated"></p>
+    </div>
+    <noscript><div class="notice">يحتاج الدليل التفاعلي إلى تفعيل JavaScript. <a href="../?role=staff">انتقل إلى مساحات التطوير المهني والأدلة.</a><p lang="en" dir="ltr">Enable JavaScript to use this guide. <a href="../?role=staff&amp;lang=en">Open the professional development hub and guides.</a></p></div></noscript>
+  </main>
+  <footer><p data-i18n="footer">كلية التمريض، جامعة طبرق · خطوات صغيرة تدعم جودة العمل</p></footer>
+</body>
+</html>

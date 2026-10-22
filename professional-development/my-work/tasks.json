@@ -1,0 +1,1908 @@
+{
+  "updated": "2026-10-22",
+  "phases": [
+    {
+      "id": "prepare",
+      "title": {
+        "ar": "أبدأ باستعداد",
+        "en": "A prepared start"
+      },
+      "description": {
+        "ar": "قبل العام أو الفصل أو بدء مهمة جديدة، أعرف المطلوب وأجهز ما يساعدني.",
+        "en": "Before a year, semester or new assignment, understand the work and prepare what you need."
+      }
+    },
+    {
+      "id": "semester",
+      "title": {
+        "ar": "أسير خطوة بخطوة",
+        "en": "During the semester"
+      },
+      "description": {
+        "ar": "أتابع عملي المعتاد، وأطلب المساندة عندما أحتاجها.",
+        "en": "Follow your normal work and seek support when needed."
+      }
+    },
+    {
+      "id": "assessment",
+      "title": {
+        "ar": "وقت التقييم والتدريب",
+        "en": "Assessment and clinical periods"
+      },
+      "description": {
+        "ar": "أراجع الجاهزية والدقة والسلامة بحسب دوري.",
+        "en": "Check readiness, accuracy and safety within your role."
+      }
+    },
+    {
+      "id": "semester-close",
+      "title": {
+        "ar": "أختتم الفصل بوضوح",
+        "en": "A clear semester close"
+      },
+      "description": {
+        "ar": "أكمل التسليم وأوضح ما أنجز وما بقي في السجلات القائمة.",
+        "en": "Complete handover and show what is finished or still open in existing records."
+      }
+    },
+    {
+      "id": "year-review",
+      "title": {
+        "ar": "أتعلم للعام القادم",
+        "en": "Learning for next year"
+      },
+      "description": {
+        "ar": "أراجع ما نفع، وأحدد تحسيناً واحتياجاً واقعياً للدورة التالية.",
+        "en": "Review what helped and identify a practical improvement and need for the next cycle."
+      }
+    }
+  ],
+  "roles": [
+    {
+      "id": "employee",
+      "audience": "staff",
+      "title": {
+        "ar": "الموظف",
+        "en": "Employee"
+      },
+      "intro": {
+        "ar": "خريطة صغيرة تساعدك على معرفة خطوتك التالية، والاستفادة من عملك اليومي دون تكرار التوثيق.",
+        "en": "A small map to help you see your next step and use your everyday work without repeating records."
+      },
+      "responsibility": {
+        "ar": "أقدم خدمة صحيحة ضمن تكليفي، وأحفظ أصلها، وأبلغ رئيسي بالنقص أو التعثر؛ وأعرف من يساعدني.",
+        "en": "Deliver accurate work within your assignment, keep its original record, flag gaps or delays and know where to get help."
+      },
+      "sources": [
+        {
+          "title": {
+            "ar": "دليل الموظف وجودة الخدمات الإدارية",
+            "en": "Employee and Administrative Service Quality Guide"
+          },
+          "url": "../guides/employee-guide.pdf",
+          "section": {
+            "ar": "حدود المسؤولية؛ بطاقة الخدمة؛ تنفيذ المعاملة؛ الإجازات والتسليم؛ الخطة والمؤشرات والسجلات",
+            "en": "Responsibilities; service cards; request handling; leave and handover; planning, indicators and records"
+          }
+        }
+      ],
+      "tasks": [
+        {
+          "id": "employee-assignment",
+          "phase": "prepare",
+          "title": {
+            "ar": "أعرف مهمتي ومن يساندني",
+            "en": "Know my task and support"
+          },
+          "purpose": {
+            "ar": "لتتضح الخدمة وحدود التصرف والتوقيع والبديل ومكان النماذج منذ البداية.",
+            "en": "Start with a clear service, authority, substitute and location of forms."
+          },
+          "when": {
+            "ar": "عند المباشرة أو تغير التكليف وقبل بدء دورة العمل.",
+            "en": "On joining, a changed assignment or a new work cycle."
+          },
+          "with": {
+            "ar": "الرئيس المباشر والبديل المكلف.",
+            "en": "Your line manager and assigned substitute."
+          },
+          "keep": {
+            "ar": "بطاقة المهمة أو التكليف القائم، وروابط النماذج الحالية.",
+            "en": "The existing assignment or task card and current form links."
+          }
+        },
+        {
+          "id": "employee-readiness",
+          "phase": "prepare",
+          "title": {
+            "ar": "أجهز أدوات العمل",
+            "en": "Prepare my work tools"
+          },
+          "purpose": {
+            "ar": "لأكشف نقص الأدوات أو الوصول قبل أن يؤثر في الخدمة.",
+            "en": "Identify missing tools or access before service is affected."
+          },
+          "when": {
+            "ar": "قبل تشغيل الخدمة وعند تغير أداة أو إجراء.",
+            "en": "Before the service starts and when a tool or process changes."
+          },
+          "with": {
+            "ar": "الرئيس المباشر والدعم التقني أو مسؤول المورد.",
+            "en": "Your manager, IT support or resource owner."
+          },
+          "keep": {
+            "ar": "طلب الدعم أو فحص الجاهزية الموجود، مع حالة النقص.",
+            "en": "The existing support request or readiness check and its status."
+          }
+        },
+        {
+          "id": "employee-request",
+          "phase": "semester",
+          "title": {
+            "ar": "أتابع المعاملة حتى الرد",
+            "en": "Follow a request through to a response"
+          },
+          "purpose": {
+            "ar": "ليعرف المستفيد المتطلبات وما تم وأين وصل طلبه.",
+            "en": "Help the user know the requirements, action taken and request status."
+          },
+          "when": {
+            "ar": "مع كل معاملة، وخلال متابعة الطلبات المفتوحة.",
+            "en": "For each request and when checking open requests."
+          },
+          "with": {
+            "ar": "صاحب التوقيع المختص والجهة المحال إليها.",
+            "en": "The authorised signatory and receiving office."
+          },
+          "keep": {
+            "ar": "مرجع الطلب والإحالة والرد وتاريخ التسليم في السجل القائم.",
+            "en": "Request, referral and response references and delivery date in the existing register."
+          }
+        },
+        {
+          "id": "employee-handover",
+          "phase": "semester",
+          "title": {
+            "ar": "أرتب الغياب والتسليم",
+            "en": "Arrange absence and handover"
+          },
+          "purpose": {
+            "ar": "لتستمر الخدمة ويجد البديل ما يحتاجه دون مشاركة كلمة المرور.",
+            "en": "Keep the service running and give the substitute the information they need."
+          },
+          "when": {
+            "ar": "قبل غياب متوقع أو انتقال مهمة، وعند العودة من الإجازة.",
+            "en": "Before planned absence or reassignment, and on returning from leave."
+          },
+          "with": {
+            "ar": "الرئيس المباشر والشؤون الإدارية والبديل.",
+            "en": "Your manager, Administrative Affairs and substitute."
+          },
+          "keep": {
+            "ar": "طلب الإجازة وقرارها والمباشرة وقائمة الأعمال المفتوحة، بحسب الحالة.",
+            "en": "The relevant leave request, decision, return record and open-work list."
+          }
+        },
+        {
+          "id": "employee-output",
+          "phase": "semester-close",
+          "title": {
+            "ar": "أراجع المخرج وأحفظ أصله",
+            "en": "Check the output and retain its original"
+          },
+          "purpose": {
+            "ar": "لتصل الخدمة صحيحة ويظل الرجوع إلى مصدرها سهلاً.",
+            "en": "Deliver an accurate service with an accessible original record."
+          },
+          "when": {
+            "ar": "عند تسليم المخرج أو إقفال المعاملة، لا بانتظار نهاية الفصل.",
+            "en": "When an output is delivered or a request closes; do not wait for semester end."
+          },
+          "with": {
+            "ar": "المراجع أو صاحب الصلاحية والمكلف بالأرشفة.",
+            "en": "The reviewer or authorised officer and records officer."
+          },
+          "keep": {
+            "ar": "المخرج المعتمد ومرجع القرار وموقع الأصل في الفهرس القائم.",
+            "en": "The authorised output, decision reference and original location in the existing index."
+          }
+        },
+        {
+          "id": "employee-learning",
+          "phase": "year-review",
+          "title": {
+            "ar": "أطبق شيئاً تعلمته",
+            "en": "Apply something I have learned"
+          },
+          "purpose": {
+            "ar": "ليتحول التدريب إلى خطوة أسهل أو مخرج أدق في عملي.",
+            "en": "Turn learning into an easier step or more accurate work."
+          },
+          "when": {
+            "ar": "عند تحديد احتياج تطوير وبعد فرصة مناسبة للتطبيق.",
+            "en": "When identifying a development need and after a suitable chance to apply it."
+          },
+          "with": {
+            "ar": "الرئيس المباشر والجهة المنظمة للتدريب.",
+            "en": "Your manager and training organiser."
+          },
+          "keep": {
+            "ar": "سجل التدريب القائم ومثال عمل يوضح ما تحسن.",
+            "en": "The existing training record and a work example showing improvement."
+          }
+        },
+        {
+          "id": "employee-improve",
+          "phase": "year-review",
+          "title": {
+            "ar": "أقترح تحسيناً بسيطاً",
+            "en": "Suggest a small improvement"
+          },
+          "purpose": {
+            "ar": "لأساعد في علاج سبب متكرر للخطأ أو التأخير من واقع عملي.",
+            "en": "Help address a recurring cause of error or delay seen in your work."
+          },
+          "when": {
+            "ar": "ضمن مراجعة الجهة لأعمالها واحتياج العام التالي.",
+            "en": "During your office's review of its work and next-year needs."
+          },
+          "with": {
+            "ar": "الرئيس المباشر ومالك الخدمة؛ والجودة للمساندة في القياس.",
+            "en": "Your manager and service owner, with QA supporting measurement."
+          },
+          "keep": {
+            "ar": "ملاحظة ونتيجة متابعة ضمن سجل الخدمة أو تقرير الجهة القائم.",
+            "en": "A note and follow-up result in the existing service record or office report."
+          }
+        }
+      ]
+    },
+    {
+      "id": "registrar",
+      "audience": "staff",
+      "title": {
+        "ar": "مسجل الكلية",
+        "en": "College Registrar"
+      },
+      "intro": {
+        "ar": "من استقبال المقبولين إلى السجل والتخرج: خطوات مرتبة تجعل البيانات والخدمة أوضح.",
+        "en": "From receiving admitted students to records and graduation: clear steps for accurate data and service."
+      },
+      "responsibility": {
+        "ar": "أدير القيد وملفات الطلبة والإفادات والإحصاءات ضمن الصلاحية، وأطابق الحالة والقرار مع المصدر.",
+        "en": "Manage registration, student records, statements and statistics within authority, matching status and decisions to their sources."
+      },
+      "sources": [
+        {
+          "title": {
+            "ar": "دليل الطالب",
+            "en": "Student Guide"
+          },
+          "url": "",
+          "section": {
+            "ar": "القيد والخدمة؛ الحضور والامتحانات؛ الدعم والتهيئة؛ التخرج، وآليات القبول والخدمة",
+            "en": "Registration and services; attendance and examinations; support and orientation; graduation, and admission/service mechanisms"
+          }
+        },
+        {
+          "title": {
+            "ar": "دليل الكلية والبرنامج",
+            "en": "College and Programme Guide"
+          },
+          "url": "",
+          "section": {
+            "ar": "القبول والقيد؛ توزيع المسؤوليات؛ إعداد الفصل؛ جودة البرنامج والخدمات",
+            "en": "Admission and registration; responsibilities; semester preparation; programme and service quality"
+          }
+        },
+        {
+          "title": {
+            "ar": "دليل الموظف وجودة الخدمات الإدارية",
+            "en": "Employee and Administrative Service Quality Guide"
+          },
+          "url": "../guides/employee-guide.pdf",
+          "section": {
+            "ar": "حدود المسؤولية؛ بطاقة الخدمة؛ تنفيذ المعاملة؛ الإجازات والتسليم؛ الخطة والمؤشرات والسجلات",
+            "en": "Responsibilities; service cards; request handling; leave and handover; planning, indicators and records"
+          }
+        }
+      ],
+      "tasks": [
+        {
+          "id": "registrar-capacity",
+          "phase": "prepare",
+          "title": {
+            "ar": "أربط القبول بالسعة المقررة",
+            "en": "Link intake to the approved capacity"
+          },
+          "purpose": {
+            "ar": "لتتفق قائمة القبول مع القرار الجامعي والقدرة التعليمية والسريرية.",
+            "en": "Keep admission lists aligned with the University decision and educational and clinical capacity."
+          },
+          "when": {
+            "ar": "مع دورة القبول؛ تجمع السعة من العمداء في أول اجتماع لمجلس الجامعة في العام.",
+            "en": "During admission; deans submit capacity at the first University Council meeting of the academic year."
+          },
+          "with": {
+            "ar": "العمادة والشؤون العلمية والتدريب والجهة الجامعية للقبول.",
+            "en": "The Dean's Office, Academic Affairs, Clinical Training and University admissions office."
+          },
+          "keep": {
+            "ar": "العدد المقر ومرجع الاجتماع أو الإحالة والقائمة المستلمة.",
+            "en": "The approved capacity, meeting or referral reference and received list."
+          }
+        },
+        {
+          "id": "registrar-enrolment",
+          "phase": "prepare",
+          "title": {
+            "ar": "أستكمل القيد الرسمي",
+            "en": "Complete formal registration"
+          },
+          "purpose": {
+            "ar": "ليتحول التقديم المبدئي عبر الجامعة إلى قيد صحيح بعد استيفاء المستندات.",
+            "en": "Turn preliminary University admission into valid registration after requirements are met."
+          },
+          "when": {
+            "ar": "عند إحالة قوائم المقبولين من منظومة الجامعة وخلال التسجيل المعلن.",
+            "en": "When University admission lists arrive and during the announced registration period."
+          },
+          "with": {
+            "ar": "الجهة الجامعية للقبول وموظف التسجيل المخول والطالب.",
+            "en": "University admissions, the authorised registration officer and student."
+          },
+          "keep": {
+            "ar": "قائمة المقبولين ومستندات القيد وحالته في الملف والسجل القائمين.",
+            "en": "The admitted list, registration documents and status in existing files and registers."
+          }
+        },
+        {
+          "id": "registrar-final-counts",
+          "phase": "prepare",
+          "title": {
+            "ar": "أثبت الأعداد بعد اكتمال التسجيل",
+            "en": "Confirm counts after registration is complete"
+          },
+          "purpose": {
+            "ar": "لتعبر الإحصائية الرسمية عن القيد المكتمل مع تاريخ ومصدر واضحين.",
+            "en": "Make official statistics reflect completed registration with a clear date and source."
+          },
+          "when": {
+            "ar": "بعد اكتمال التسجيل وإقفال القيد للدورة؛ تميز الأعداد الأولية قبل ذلك.",
+            "en": "After registration is complete and the cycle closes; earlier counts remain provisional."
+          },
+          "with": {
+            "ar": "فريق التسجيل والشؤون العلمية والجهة طالبة الإحصائية.",
+            "en": "Registration staff, Academic Affairs and the office requesting statistics."
+          },
+          "keep": {
+            "ar": "القائمة النهائية المؤرخة ومطابقة المجاميع ومرجع مصدر البيانات.",
+            "en": "The dated final list, reconciled totals and source reference."
+          }
+        },
+        {
+          "id": "registrar-status",
+          "phase": "semester",
+          "title": {
+            "ar": "أحافظ على تاريخ السجل",
+            "en": "Preserve the record history"
+          },
+          "purpose": {
+            "ar": "لتظل تغييرات الحالة قابلة للفهم والمراجعة، بما فيها الانسحاب أو إيقاف القيد.",
+            "en": "Keep status changes understandable and traceable, including withdrawal or suspension of registration."
+          },
+          "when": {
+            "ar": "عند ورود قرار أو طلب يستلزم تحديثاً مخولاً للحالة.",
+            "en": "When a decision or request requires an authorised status update."
+          },
+          "with": {
+            "ar": "صاحب القرار المختص والجهة الأكاديمية عند الحاجة.",
+            "en": "The competent decision maker and academic office when needed."
+          },
+          "keep": {
+            "ar": "القرار وأثر التحديث؛ تحفظ أسماء المنسحبين مع بيان الحالة أو في قائمة منفصلة، دون حذف الأصل.",
+            "en": "The decision and update history; retain withdrawn names with their status or in a separate list without deleting the original."
+          }
+        },
+        {
+          "id": "registrar-service",
+          "phase": "semester",
+          "title": {
+            "ar": "أوضح الخدمة وأتابع الرد",
+            "en": "Explain services and follow the response"
+          },
+          "purpose": {
+            "ar": "ليصل الطالب إلى الاطلاع على سجله أو الإفادة المطلوبة بأقل تنقل ممكن.",
+            "en": "Help students access their record or requested statement with fewer hand-offs."
+          },
+          "when": {
+            "ar": "مع طلب الاطلاع أو الإفادة أو تصحيح البيانات أو معاملة القيد.",
+            "en": "For record access, statements, data corrections or registration requests."
+          },
+          "with": {
+            "ar": "الطالب وصاحب التوقيع أو الاختصاص المطلوب.",
+            "en": "The student and the relevant authorised signatory or specialist."
+          },
+          "keep": {
+            "ar": "مرجع المعاملة والرد عند وجود معاملة؛ الاطلاع الشفوي يكون بعد التحقق من الهوية.",
+            "en": "A request and response reference where applicable; verbal record access follows identity verification."
+          }
+        },
+        {
+          "id": "registrar-assessment-lists",
+          "phase": "assessment",
+          "title": {
+            "ar": "أطابق قوائم الطلبة وحالاتهم",
+            "en": "Reconcile student lists and status"
+          },
+          "purpose": {
+            "ar": "لتستخدم الدراسة والامتحانات والتدريب قائمة صحيحة وتحال الفروق إلى صاحب الاختصاص.",
+            "en": "Give examinations and training accurate lists and route discrepancies to the competent office."
+          },
+          "when": {
+            "ar": "قبل استخدام القوائم في الامتحان أو التدريب، وعند تغير مؤثر.",
+            "en": "Before lists are used for examinations or training and after significant changes."
+          },
+          "with": {
+            "ar": "الدراسة والامتحانات والتدريب والشؤون العلمية.",
+            "en": "Study and Examinations, Clinical Training and Academic Affairs."
+          },
+          "keep": {
+            "ar": "قائمة مؤرخة ومطابقة وإحالات الفروق في السجل القائم.",
+            "en": "A dated reconciled list and discrepancy referrals in the existing record."
+          }
+        },
+        {
+          "id": "registrar-graduation",
+          "phase": "year-review",
+          "title": {
+            "ar": "أتحقق من استيفاء التخرج",
+            "en": "Verify graduation requirements"
+          },
+          "purpose": {
+            "ar": "لأفصل اجتياز السنة الرابعة عن استكمال جميع المتطلبات والامتياز واعتماد التخرج.",
+            "en": "Distinguish passing year four from completing all requirements, internship and graduation approval."
+          },
+          "when": {
+            "ar": "عند تجهيز قوائم المتوقع تخرجهم وقبل إصدار مستند التخرج.",
+            "en": "When preparing expected-graduate lists and before issuing graduation documents."
+          },
+          "with": {
+            "ar": "الشؤون العلمية والدراسة والامتحانات والتدريب والجهات المخولة بالتوقيع.",
+            "en": "Academic Affairs, Study and Examinations, Clinical Training and authorised signatories."
+          },
+          "keep": {
+            "ar": "مطابقة المتطلبات والامتياز والقرار وسجل إصدار الوثيقة القائم.",
+            "en": "The requirements and internship reconciliation, decision and existing document issue record."
+          }
+        },
+        {
+          "id": "registrar-service-review",
+          "phase": "year-review",
+          "title": {
+            "ar": "أراجع الخدمة والأخطاء المتكررة",
+            "en": "Review service and recurring errors"
+          },
+          "purpose": {
+            "ar": "لأختار معالجة واقعية ترفع دقة البيانات أو تيسر خدمة الطلبة.",
+            "en": "Choose a practical action that improves data accuracy or student service."
+          },
+          "when": {
+            "ar": "ضمن مراجعة أعمال التسجيل وتقرير الجهة القائم للدورة التالية.",
+            "en": "During the registration office's review and existing reporting for the next cycle."
+          },
+          "with": {
+            "ar": "مالك الخدمة والعمادة؛ والجودة لتحليل البيانات المجمعة.",
+            "en": "The service owner and Dean's Office, with QA analysing aggregate data."
+          },
+          "keep": {
+            "ar": "ملخص مجمع للأخطاء والطلبات المفتوحة والإجراء وأثره دون بيانات شخصية.",
+            "en": "An aggregate summary of errors, open requests, action and effect without personal data."
+          }
+        }
+      ]
+    },
+    {
+      "id": "administration",
+      "audience": "staff",
+      "title": {
+        "ar": "رئيس قسم الشؤون الإدارية",
+        "en": "Head of Administrative Affairs"
+      },
+      "intro": {
+        "ar": "تنظيم الفريق والاحتياج والخدمة في صورة خطوات يمكن توزيعها ومساندتها.",
+        "en": "A practical map for supporting staff, needs and services."
+      },
+      "responsibility": {
+        "ar": "أنظم العمل والملفات الوظيفية والإجازات والتسليم، وأتابع الموارد والخدمات ضمن التفويض وبالتنسيق مع الجامعة.",
+        "en": "Organise work, personnel records, leave and handover, and follow resources and services within delegated authority and in coordination with the University."
+      },
+      "sources": [
+        {
+          "title": {
+            "ar": "دليل الموظف وجودة الخدمات الإدارية",
+            "en": "Employee and Administrative Service Quality Guide"
+          },
+          "url": "../guides/employee-guide.pdf",
+          "section": {
+            "ar": "حدود المسؤولية؛ بطاقة الخدمة؛ تنفيذ المعاملة؛ الإجازات والتسليم؛ الخطة والمؤشرات والسجلات",
+            "en": "Responsibilities; service cards; request handling; leave and handover; planning, indicators and records"
+          }
+        },
+        {
+          "title": {
+            "ar": "دليل الكلية والبرنامج",
+            "en": "College and Programme Guide"
+          },
+          "url": "",
+          "section": {
+            "ar": "القبول والقيد؛ توزيع المسؤوليات؛ إعداد الفصل؛ جودة البرنامج والخدمات",
+            "en": "Admission and registration; responsibilities; semester preparation; programme and service quality"
+          }
+        }
+      ],
+      "tasks": [
+        {
+          "id": "administration-work-plan",
+          "phase": "prepare",
+          "title": {
+            "ar": "أوضح توزيع العمل والبديل",
+            "en": "Clarify work allocation and cover"
+          },
+          "purpose": {
+            "ar": "ليعرف كل موظف خدمته وحدودها ومن يسانده وقت الغياب.",
+            "en": "Help every employee know their service, authority and cover during absence."
+          },
+          "when": {
+            "ar": "قبل دورة العمل وعند تغير الموظف أو التكليف.",
+            "en": "Before a work cycle and when staff or assignments change."
+          },
+          "with": {
+            "ar": "الرؤساء المباشرون والموظفون والعمادة بحسب الاختصاص.",
+            "en": "Line managers, employees and the Dean's Office as appropriate."
+          },
+          "keep": {
+            "ar": "التكليفات وبطاقات المهام وقائمة البدلاء القائمة.",
+            "en": "Existing assignments, task cards and substitute list."
+          }
+        },
+        {
+          "id": "administration-needs",
+          "phase": "prepare",
+          "title": {
+            "ar": "أربط الاحتياج بالخطة",
+            "en": "Link needs to the plan"
+          },
+          "purpose": {
+            "ar": "لأرفع احتياجاً يوضح الخدمة المتأثرة والموارد والمخرج المتوقع.",
+            "en": "Submit needs that identify the affected service, resources and expected output."
+          },
+          "when": {
+            "ar": "عند إعداد خطة الجهة واحتياج العام أو الفصل التالي.",
+            "en": "When preparing the office plan and needs for the next year or semester."
+          },
+          "with": {
+            "ar": "أصحاب الخدمات والمرافق والعمادة والجهات المختصة بالجامعة.",
+            "en": "Service and facilities owners, the Dean's Office and competent University offices."
+          },
+          "keep": {
+            "ar": "بيان الاحتياج الموثق وموضعه في الخطة التشغيلية القائمة.",
+            "en": "The documented need and its link in the existing operational plan."
+          }
+        },
+        {
+          "id": "administration-personnel",
+          "phase": "semester",
+          "title": {
+            "ar": "أتابع الملف الوظيفي والمعاملة",
+            "en": "Follow personnel records and requests"
+          },
+          "purpose": {
+            "ar": "لتكون بيانات الموظف ومستنداته وإحالته للجامعة صحيحة وقابلة للمتابعة.",
+            "en": "Keep employee data, documents and University referrals accurate and traceable."
+          },
+          "when": {
+            "ar": "عند المباشرة أو تغير البيانات أو طلب وظيفي.",
+            "en": "On joining, a data change or an employment request."
+          },
+          "with": {
+            "ar": "الموظف والرئيس المباشر والجهة المختصة بالجامعة.",
+            "en": "The employee, line manager and competent University office."
+          },
+          "keep": {
+            "ar": "الملف الرسمي ومرجع الإحالة والنقص والرد بصلاحيات مقيدة.",
+            "en": "The restricted official file, referral, missing items and response."
+          }
+        },
+        {
+          "id": "administration-leave",
+          "phase": "semester",
+          "title": {
+            "ar": "أنظم الإجازات واستمرار الخدمة",
+            "en": "Coordinate leave and service continuity"
+          },
+          "purpose": {
+            "ar": "لتتابع الأرصدة والقرارات والمباشرة مع ترتيب تغطية العمل.",
+            "en": "Track balances, decisions and return to work while arranging service cover."
+          },
+          "when": {
+            "ar": "مع طلب الإجازة وقبل الغياب المتوقع وعند العودة.",
+            "en": "With a leave request, before planned absence and on return."
+          },
+          "with": {
+            "ar": "الرئيس المباشر وصاحب الصلاحية والبديل المكلف.",
+            "en": "The line manager, authorised decision maker and assigned substitute."
+          },
+          "keep": {
+            "ar": "طلب الجامعة والقرار وتحديث الرصيد والمباشرة وقائمة التسليم القائمة.",
+            "en": "The University request, decision, balance update, return and existing handover list."
+          }
+        },
+        {
+          "id": "administration-resources",
+          "phase": "semester",
+          "title": {
+            "ar": "أتابع المرافق والعهد والاحتياج",
+            "en": "Follow facilities, assets and needs"
+          },
+          "purpose": {
+            "ar": "لأعرف ما تعطل وما استلم وما يحتاج إحالة للجهة المخولة.",
+            "en": "Know what is faulty, received or awaiting referral to an authorised office."
+          },
+          "when": {
+            "ar": "أثناء تقديم الخدمات وعند الاستلام أو العطل أو طلب تجهيز.",
+            "en": "During service and on receipt, a fault or an equipment request."
+          },
+          "with": {
+            "ar": "مسؤول المرافق والعهد والمستلم والعمادة والجهة المالية أو الفنية بالجامعة.",
+            "en": "Facilities and asset officers, the recipient, Dean's Office and University finance or technical office."
+          },
+          "keep": {
+            "ar": "بلاغات الصيانة وحالة العهد ومحاضر المطابقة والإحالات الحالية.",
+            "en": "Existing maintenance reports, asset status, receipt checks and referrals."
+          }
+        },
+        {
+          "id": "administration-finance-path",
+          "phase": "semester",
+          "title": {
+            "ar": "أستكمل المسار الجامعي للتمويل",
+            "en": "Complete the University funding route"
+          },
+          "purpose": {
+            "ar": "ليصل الطلب للجهة المالية المختصة دون التزام مالي يتجاوز التفويض.",
+            "en": "Route needs to the competent finance office within delegated authority."
+          },
+          "when": {
+            "ar": "عند احتياج شراء أو تجهيز أو مصروف يتطلب إجراءً مالياً.",
+            "en": "When a purchase, equipment need or expense requires financial action."
+          },
+          "with": {
+            "ar": "العمادة والجهات المالية والمخازن المختصة بالجامعة.",
+            "en": "The Dean's Office and competent University finance and stores offices."
+          },
+          "keep": {
+            "ar": "الاحتياج والموافقة والإحالة والاستلام في المسار القائم؛ والقرار المالي لدى صاحبه المخول.",
+            "en": "The existing need, approval, referral and receipt records; financial decisions remain with the authorised office."
+          }
+        },
+        {
+          "id": "administration-close",
+          "phase": "semester-close",
+          "title": {
+            "ar": "أراجع المفتوح والتسليم والحفظ",
+            "en": "Review open work, handover and records"
+          },
+          "purpose": {
+            "ar": "لأوضح ما اكتمل وما يحتاج قراراً، وأضمن الوصول إلى أصول العمل.",
+            "en": "Show completed work and pending decisions and keep originals accessible."
+          },
+          "when": {
+            "ar": "عند إقفال دورة عمل أو تغير مسؤول أو غياب ممتد.",
+            "en": "At a work-cycle close, change of officer or extended absence."
+          },
+          "with": {
+            "ar": "الرؤساء المباشرون والأرشفة والدعم التقني والبديل.",
+            "en": "Line managers, records staff, IT support and substitutes."
+          },
+          "keep": {
+            "ar": "قائمة المفتوح والتسليم وفهرس الأصول وتحديث الصلاحيات عبر المختص.",
+            "en": "The open-work list, handover, original-record index and authorised access updates."
+          }
+        },
+        {
+          "id": "administration-year-review",
+          "phase": "year-review",
+          "title": {
+            "ar": "أراجع الأثر واحتياج العام التالي",
+            "en": "Review results and next-year needs"
+          },
+          "purpose": {
+            "ar": "لأربط التعثر المتكرر والتدريب والموارد بتحسين يمكن التحقق منه.",
+            "en": "Link recurring delays, development and resources to a verifiable improvement."
+          },
+          "when": {
+            "ar": "ضمن تقرير الجهة السنوي ومراجعة الخطة القائمة.",
+            "en": "Within the office's annual report and existing plan review."
+          },
+          "with": {
+            "ar": "أصحاب الخدمات والعمادة والجودة والجهات الجامعية عند الحاجة.",
+            "en": "Service owners, the Dean's Office, QA and University offices as needed."
+          },
+          "keep": {
+            "ar": "التقرير القائم وبيانات الخدمة المجمعة واحتياج العام التالي وشاهد أثر التحسين.",
+            "en": "The existing report, aggregate service data, next-year needs and evidence of improvement."
+          }
+        }
+      ]
+    },
+    {
+      "id": "student-affairs",
+      "audience": "staff",
+      "title": {
+        "ar": "المكلف بشؤون الطلبة",
+        "en": "Assigned Student Affairs Officer"
+      },
+      "intro": {
+        "ar": "مساعدة الطالب على معرفة الخدمة والوصول إلى الدعم، مع إحالة واضحة ومتابعة هادئة.",
+        "en": "Help students find services and support through clear referrals and follow-up."
+      },
+      "responsibility": {
+        "ar": "أنسق التهيئة وخدمات الطلبة والدعم والأنشطة بحسب التكليف، وأتابع الإحالة والرد مع حفظ الخصوصية.",
+        "en": "Coordinate orientation, student services, support and activities within the assignment, following referrals and responses while protecting privacy."
+      },
+      "sources": [
+        {
+          "title": {
+            "ar": "دليل الطالب",
+            "en": "Student Guide"
+          },
+          "url": "",
+          "section": {
+            "ar": "القيد والخدمة؛ الحضور والامتحانات؛ الدعم والتهيئة؛ التخرج، وآليات القبول والخدمة",
+            "en": "Registration and services; attendance and examinations; support and orientation; graduation, and admission/service mechanisms"
+          }
+        },
+        {
+          "title": {
+            "ar": "دليل الموظف وجودة الخدمات الإدارية",
+            "en": "Employee and Administrative Service Quality Guide"
+          },
+          "url": "../guides/employee-guide.pdf",
+          "section": {
+            "ar": "حدود المسؤولية؛ بطاقة الخدمة؛ تنفيذ المعاملة؛ الإجازات والتسليم؛ الخطة والمؤشرات والسجلات",
+            "en": "Responsibilities; service cards; request handling; leave and handover; planning, indicators and records"
+          }
+        }
+      ],
+      "tasks": [
+        {
+          "id": "student-affairs-orientation",
+          "phase": "prepare",
+          "title": {
+            "ar": "أهيئ استقبال المستجدين",
+            "en": "Prepare the welcome for new students"
+          },
+          "purpose": {
+            "ar": "ليجد الطالب نظام الدراسة والجدول والأدلة والخدمات والسلامة بصورة مفهومة.",
+            "en": "Help students understand study arrangements, timetables, guides, services and safety."
+          },
+          "when": {
+            "ar": "عند فتح التسجيل واستقبال المستجدين وبداية الفصل.",
+            "en": "When registration opens, new students arrive and the semester begins."
+          },
+          "with": {
+            "ar": "المسجل والشؤون العلمية والمعيدون وممثلو الطلبة حسب التكليف.",
+            "en": "The Registrar, Academic Affairs, TAs and student representatives as assigned."
+          },
+          "keep": {
+            "ar": "مواد التهيئة وجدولها وروابطها في الملف القائم، مع إتاحتها لمن فاته اللقاء.",
+            "en": "Existing orientation materials, schedule and links, available to those who missed the session."
+          }
+        },
+        {
+          "id": "student-affairs-services",
+          "phase": "prepare",
+          "title": {
+            "ar": "أراجع خريطة الخدمات والتواصل",
+            "en": "Check the service and contact map"
+          },
+          "purpose": {
+            "ar": "لأحيل الطالب إلى خدمة متاحة فعلاً وجهة اتصال محدثة.",
+            "en": "Refer students to services that are actually available and current contacts."
+          },
+          "when": {
+            "ar": "قبل استقبال الطلبة وعند تغير خدمة أو جهة اتصال.",
+            "en": "Before receiving students and when a service or contact changes."
+          },
+          "with": {
+            "ar": "المسجل وأصحاب الخدمات والجهات المركزية بالجامعة.",
+            "en": "The Registrar, service owners and central University offices."
+          },
+          "keep": {
+            "ar": "قائمة الخدمات والاتصال وساعات الإتاحة الحالية وروابط مجربة.",
+            "en": "The current service and contact list, availability and checked links."
+          }
+        },
+        {
+          "id": "student-affairs-support",
+          "phase": "semester",
+          "title": {
+            "ar": "أساعد في الوصول إلى الدعم",
+            "en": "Help students reach support"
+          },
+          "purpose": {
+            "ar": "لأوصل صعوبة التعلم أو عائق الوصول إلى المختص مع أقل قدر لازم من البيانات.",
+            "en": "Route learning or access needs to the appropriate specialist using only necessary information."
+          },
+          "when": {
+            "ar": "عند طلب الطالب أو ظهور حاجة خلال الفصل.",
+            "en": "When a student asks or a need appears during the semester."
+          },
+          "with": {
+            "ar": "أستاذ المادة والمرشد المكلف والمسجل والجهة الجامعية المختصة.",
+            "en": "The course teacher, assigned adviser, Registrar and competent University office."
+          },
+          "keep": {
+            "ar": "مرجع إحالة ورد أو خطة دعم قصيرة في السجل المقيد القائم.",
+            "en": "A referral and response or short support plan in the existing restricted record."
+          }
+        },
+        {
+          "id": "student-affairs-feedback",
+          "phase": "semester",
+          "title": {
+            "ar": "أتابع الطلب والشكوى والمقترح",
+            "en": "Follow requests, complaints and suggestions"
+          },
+          "purpose": {
+            "ar": "لأميز الخدمة عن مراجعة النتيجة أو بلاغ الخطر وأوضح للطالب وجهة طلبه.",
+            "en": "Distinguish service needs from grade appeals or safety reports and explain the correct route."
+          },
+          "when": {
+            "ar": "عند الاستلام وخلال متابعة الرد في مسار الطلب المختص.",
+            "en": "On receipt and while following the response through the relevant route."
+          },
+          "with": {
+            "ar": "مالك الخدمة؛ والدراسة والامتحانات أو جهة السلامة بحسب الموضوع.",
+            "en": "The service owner, or Study and Examinations or safety office according to the issue."
+          },
+          "keep": {
+            "ar": "إثبات استلام وإحالة ورد في السجل القائم، دون تداول التفاصيل في قناة عامة.",
+            "en": "Receipt, referral and response in the existing record without public sharing of details."
+          }
+        },
+        {
+          "id": "student-affairs-activities",
+          "phase": "semester",
+          "title": {
+            "ar": "أنسق مشاركة مناسبة للطلبة",
+            "en": "Coordinate suitable student participation"
+          },
+          "purpose": {
+            "ar": "لتتصل الأنشطة بالحاجة والفرص المعتمدة والتأهيل والإشراف المتاح.",
+            "en": "Match activities with student needs, authorised opportunities, preparation and supervision."
+          },
+          "when": {
+            "ar": "عند تنظيم نشاط أو مشاركة ضمن تكليف الجهة.",
+            "en": "When arranging an activity or participation within the office's assignment."
+          },
+          "with": {
+            "ar": "ممثلو الطلبة والمشرف المكلف ومالك النشاط.",
+            "en": "Student representatives, the assigned supervisor and activity owner."
+          },
+          "keep": {
+            "ar": "البرنامج أو الموافقة القائمة وملخص المشاركة والتغذية الراجعة المناسبة.",
+            "en": "The existing programme or approval and a suitable participation and feedback summary."
+          }
+        },
+        {
+          "id": "student-affairs-response-review",
+          "phase": "semester-close",
+          "title": {
+            "ar": "أجمع ما تغير للطالب",
+            "en": "Collect what changed for students"
+          },
+          "purpose": {
+            "ar": "لأوضح الاستجابة للملاحظات المتكررة وما بقي يحتاج معالجة.",
+            "en": "Show responses to recurring feedback and issues still needing action."
+          },
+          "when": {
+            "ar": "ضمن مراجعة خدمات الفصل مع أصحابها.",
+            "en": "During the semester service review with its owners."
+          },
+          "with": {
+            "ar": "المسجل وأصحاب الخدمات والجودة للتحليل المجمع.",
+            "en": "The Registrar and service owners, with QA supporting aggregate analysis."
+          },
+          "keep": {
+            "ar": "ملخص محجوب في تقرير الخدمة القائم: المشكلة والاستجابة والمتبقي.",
+            "en": "A de-identified summary in the existing service report: issue, response and outstanding work."
+          }
+        },
+        {
+          "id": "student-affairs-next-year",
+          "phase": "year-review",
+          "title": {
+            "ar": "أختار تحسيناً للتهيئة أو الدعم",
+            "en": "Choose an orientation or support improvement"
+          },
+          "purpose": {
+            "ar": "لأستفيد من تجربة الطلبة في استقبال ودعم أفضل للدورة التالية.",
+            "en": "Use student experience to improve the next welcome or support cycle."
+          },
+          "when": {
+            "ar": "عند مراجعة تقرير الجهة وخطة العام التالي.",
+            "en": "When reviewing the office report and next-year plan."
+          },
+          "with": {
+            "ar": "أصحاب الخدمات والشؤون العلمية والطلبة عبر القنوات المعتمدة.",
+            "en": "Service owners, Academic Affairs and students through authorised channels."
+          },
+          "keep": {
+            "ar": "توصية محددة ومتابعتها ضمن الخطة والتقرير القائمين.",
+            "en": "A specific recommendation and follow-up in the existing plan and report."
+          }
+        }
+      ]
+    },
+    {
+      "id": "exams",
+      "audience": "staff",
+      "title": {
+        "ar": "الدراسة والامتحانات",
+        "en": "Study and Examinations"
+      },
+      "intro": {
+        "ar": "من جدول واضح إلى نتيجة مدققة: خريطة تنسيق تساعدك على متابعة كل مرحلة.",
+        "en": "From a clear timetable to checked results: a coordination map for each stage."
+      },
+      "responsibility": {
+        "ar": "أنسق الجداول وتنظيم الامتحانات وتجميع النتائج وتسليمها وفق الضوابط، وتبقى المراجعة العلمية والاعتماد لدى أصحابها.",
+        "en": "Coordinate timetables, examination arrangements and result collection under the rules, with academic review and approval by the competent authorities."
+      },
+      "sources": [
+        {
+          "title": {
+            "ar": "دليل الكلية والبرنامج",
+            "en": "College and Programme Guide"
+          },
+          "url": "",
+          "section": {
+            "ar": "القبول والقيد؛ توزيع المسؤوليات؛ إعداد الفصل؛ جودة البرنامج والخدمات",
+            "en": "Admission and registration; responsibilities; semester preparation; programme and service quality"
+          }
+        },
+        {
+          "title": {
+            "ar": "دليل عضو هيئة التدريس والمعيد",
+            "en": "Faculty and Teaching Assistant Guide"
+          },
+          "url": "../guides/faculty-ta-guide.pdf",
+          "section": {
+            "ar": "التكليف؛ دورة المقرر؛ الدعم والتقويم؛ تقرير المقرر والتطوير",
+            "en": "Assignments; course cycle; support and assessment; course reporting and development"
+          }
+        },
+        {
+          "title": {
+            "ar": "دليل الطالب",
+            "en": "Student Guide"
+          },
+          "url": "",
+          "section": {
+            "ar": "القيد والخدمة؛ الحضور والامتحانات؛ الدعم والتهيئة؛ التخرج، وآليات القبول والخدمة",
+            "en": "Registration and services; attendance and examinations; support and orientation; graduation, and admission/service mechanisms"
+          }
+        }
+      ],
+      "tasks": [
+        {
+          "id": "exams-timetable",
+          "phase": "prepare",
+          "title": {
+            "ar": "أراجع تعارضات الجدول",
+            "en": "Check timetable conflicts"
+          },
+          "purpose": {
+            "ar": "ليتوافق الجدول مع تكليفات التدريس والقاعات والتدريب والتقويم الفعلي.",
+            "en": "Align the timetable with teaching assignments, rooms, training and the academic calendar."
+          },
+          "when": {
+            "ar": "قبل إعلان جدول الفصل وعند تغير مؤثر.",
+            "en": "Before publishing the semester timetable and after a significant change."
+          },
+          "with": {
+            "ar": "الشؤون العلمية وأساتذة المواد والتدريب والمرافق.",
+            "en": "Academic Affairs, course teachers, Clinical Training and facilities."
+          },
+          "keep": {
+            "ar": "الجدول المؤرخ ونسخته ومرجع إقراره وسجل التعديل القائم.",
+            "en": "The dated timetable, version, approval reference and existing change record."
+          }
+        },
+        {
+          "id": "exams-arrangements",
+          "phase": "assessment",
+          "title": {
+            "ar": "أتأكد من ترتيبات الامتحان",
+            "en": "Confirm examination arrangements"
+          },
+          "purpose": {
+            "ar": "لتتضح القوائم والقاعات والتكليفات والتعليمات قبل التنفيذ.",
+            "en": "Clarify lists, rooms, assignments and instructions before delivery."
+          },
+          "when": {
+            "ar": "قبل كل فترة امتحانات وفق الجدول المعتمد.",
+            "en": "Before each examination period under the approved timetable."
+          },
+          "with": {
+            "ar": "لجنة تسيير الامتحانات المكلفة والشؤون العلمية والمسجل والمرافق.",
+            "en": "The assigned examination committee, Academic Affairs, Registrar and facilities."
+          },
+          "keep": {
+            "ar": "الجدول والقوائم والتكليفات ومحضر الجاهزية الموجود إن وجد.",
+            "en": "The timetable, lists, assignments and existing readiness record where used."
+          }
+        },
+        {
+          "id": "exams-secure-receipt",
+          "phase": "assessment",
+          "title": {
+            "ar": "أضبط استلام المواد وتسليمها",
+            "en": "Control receipt and handover of materials"
+          },
+          "purpose": {
+            "ar": "لأحافظ على سرية الأسئلة وسلامة تسلسل الاستلام والطباعة والحفظ بحسب التكليف.",
+            "en": "Protect question confidentiality and the assigned receipt, printing and storage route."
+          },
+          "when": {
+            "ar": "عند استلام الامتحانات ونماذج الإجابة وأثناء تداولها المصرح.",
+            "en": "On receipt of examinations and answer keys and during authorised handling."
+          },
+          "with": {
+            "ar": "أستاذ المادة والمسؤول المكلف بالطباعة والحفظ واللجنة.",
+            "en": "The course teacher, assigned printing and storage officer and committee."
+          },
+          "keep": {
+            "ar": "محاضر أو سجل التسلم والتسليم القائم بصلاحيات مقيدة.",
+            "en": "The existing restricted receipt and handover record."
+          }
+        },
+        {
+          "id": "exams-incidents",
+          "phase": "assessment",
+          "title": {
+            "ar": "أتابع الملاحظة أو الخلل في مساره",
+            "en": "Route examination issues correctly"
+          },
+          "purpose": {
+            "ar": "لتصل الوقائع والتعديلات إلى المختص ويبلغ المعنيون بالتساوي.",
+            "en": "Route facts and changes to the competent authority and inform affected students equally."
+          },
+          "when": {
+            "ar": "عند حدوث خلل أو واقعة أو تعديل أثناء الامتحان.",
+            "en": "When a fault, incident or change occurs during an examination."
+          },
+          "with": {
+            "ar": "المراقب واللجنة وأستاذ المادة والجهة المختصة بالقرار.",
+            "en": "The invigilator, committee, course teacher and competent decision maker."
+          },
+          "keep": {
+            "ar": "محضر الواقعة أو التعديل وأثر إبلاغه في السجل القائم.",
+            "en": "The existing incident or change record and evidence that it was communicated."
+          }
+        },
+        {
+          "id": "exams-results",
+          "phase": "semester-close",
+          "title": {
+            "ar": "أطابق النتائج قبل إحالتها",
+            "en": "Reconcile results before referral"
+          },
+          "purpose": {
+            "ar": "لأكشف نقص الكشف أو التوقيع أو فرق الرصد دون تغيير تقدير علمي من عندي.",
+            "en": "Identify missing lists, signatures or transcription differences within your authority."
+          },
+          "when": {
+            "ar": "عند استلام النتائج وقبل إحالتها للاعتماد والإعلان.",
+            "en": "On receipt of results and before referral for approval and publication."
+          },
+          "with": {
+            "ar": "أستاذ المادة والمراجع الأكاديمي والمسجل وصاحب الاعتماد المختص.",
+            "en": "The course teacher, academic reviewer, Registrar and competent approving authority."
+          },
+          "keep": {
+            "ar": "الكشوف المدققة ومحضر التسليم والإحالة مع تمييز الإعداد والمراجعة والاعتماد.",
+            "en": "Checked lists and handover/referral records distinguishing preparation, review and approval."
+          }
+        },
+        {
+          "id": "exams-appeals-records",
+          "phase": "semester-close",
+          "title": {
+            "ar": "أوضح المراجعة وأحفظ السجلات",
+            "en": "Explain review routes and retain records"
+          },
+          "purpose": {
+            "ar": "ليعرف الطالب مسار التظلم المعلن وتبقى الأوراق والتصحيحات قابلة للتتبع.",
+            "en": "Help students find the announced appeal route and keep papers and corrections traceable."
+          },
+          "when": {
+            "ar": "بعد إعلان النتائج ومع الطلبات المستوفية في الميعاد النظامي المعلن.",
+            "en": "After results are published and for eligible requests within the announced formal period."
+          },
+          "with": {
+            "ar": "المسجل واللجنة المختصة وأستاذ المادة والأرشفة بحسب الصلاحية.",
+            "en": "The Registrar, competent committee, course teacher and records staff within authority."
+          },
+          "keep": {
+            "ar": "مرجع الطلب والإحالة والقرار وأصول أوراق الامتحان وفق سياسة الحفظ القائمة.",
+            "en": "Request, referral and decision references and original examination papers under the existing retention policy."
+          }
+        },
+        {
+          "id": "exams-improve",
+          "phase": "year-review",
+          "title": {
+            "ar": "أراجع انتظام الدورة وأبسطها",
+            "en": "Review and simplify the cycle"
+          },
+          "purpose": {
+            "ar": "لأعالج تعارضاً أو نقصاً متكرراً ظهر في الجدول أو التسليم أو الرصد.",
+            "en": "Address a recurring conflict or gap in scheduling, handover or recording."
+          },
+          "when": {
+            "ar": "ضمن تقرير الامتحانات أو الجهة القائم ومراجعة الدورة التالية.",
+            "en": "Within the existing examination or office report and review of the next cycle."
+          },
+          "with": {
+            "ar": "الشؤون العلمية واللجنة والمسجل؛ والجودة لتحليل الأنماط.",
+            "en": "Academic Affairs, the committee and Registrar, with QA supporting pattern analysis."
+          },
+          "keep": {
+            "ar": "خلاصة مجمعة وإجراء محدد وشاهد متابعة في التقرير القائم.",
+            "en": "An aggregate summary, specific action and follow-up evidence in the existing report."
+          }
+        }
+      ]
+    },
+    {
+      "id": "clinical-training",
+      "audience": "staff",
+      "title": {
+        "ar": "رئيس قسم التدريب السريري والامتياز",
+        "en": "Head of Clinical Training and Internship"
+      },
+      "intro": {
+        "ar": "أرتب الموقع والمجموعة والإشراف، وأتابع ما تعلمه الطالب بأمان حتى الاستيفاء.",
+        "en": "Coordinate sites, groups and supervision, following safe learning through to completion."
+      },
+      "responsibility": {
+        "ar": "أتحقق من الموقع والسعة والجاهزية، وأنسق الروتيشن والمشرفين والسجلات، وأحيل النتائج والاحتياج إلى مسارهما المختص.",
+        "en": "Check sites, capacity and readiness, coordinate rotations, supervisors and records, and refer results and needs through their proper routes."
+      },
+      "sources": [
+        {
+          "title": {
+            "ar": "دليل التدريب السريري والسلامة",
+            "en": "Clinical Training and Safety Guide"
+          },
+          "url": "",
+          "section": {
+            "ar": "المسؤوليات؛ جاهزية الموقع والروتيشن؛ التهيئة والتقييم؛ الاستيفاء والسلامة والتحسين",
+            "en": "Responsibilities; site and rotation readiness; orientation and assessment; completion, safety and improvement"
+          }
+        }
+      ],
+      "tasks": [
+        {
+          "id": "clinical-site",
+          "phase": "prepare",
+          "title": {
+            "ar": "أراجع الموقع والسعة والموافقات",
+            "en": "Review sites, capacity and permissions"
+          },
+          "purpose": {
+            "ar": "ليتيح الموقع خبرات مناسبة للمقرر مع إشراف وسلامة وخصوصية.",
+            "en": "Ensure sites offer relevant experience with supervision, safety and privacy."
+          },
+          "when": {
+            "ar": "قبل كل فترة تدريب وعند تغير الموقع أو السعة أو الاتفاق.",
+            "en": "Before each training period and when sites, capacity or arrangements change."
+          },
+          "with": {
+            "ar": "الشؤون العلمية ومنسق الموقع والجهة المخولة بالاتفاق.",
+            "en": "Academic Affairs, site coordinator and authorised agreement owner."
+          },
+          "keep": {
+            "ar": "ملف الموقع وموافقاته الحالية وبيان السعة والنقص أو البديل.",
+            "en": "The existing site file, current permissions, capacity and gaps or alternatives."
+          }
+        },
+        {
+          "id": "clinical-rotation",
+          "phase": "prepare",
+          "title": {
+            "ar": "أنسق الروتيشن والمشرفين",
+            "en": "Coordinate rotations and supervisors"
+          },
+          "purpose": {
+            "ar": "لتتصل المجموعة والمكان والساعات والمهارات والأداة والتقييم بخطة المقرر.",
+            "en": "Link groups, sites, hours, skills, tools and assessment to the course plan."
+          },
+          "when": {
+            "ar": "قبل إعلان فترة التدريب وعند تعديل الجدول.",
+            "en": "Before the training period is announced and when the timetable changes."
+          },
+          "with": {
+            "ar": "الشؤون العلمية والمسجل والمشرفون ومنسقو المواقع.",
+            "en": "Academic Affairs, Registrar, supervisors and site coordinators."
+          },
+          "keep": {
+            "ar": "جدول الروتيشن وقائمة الطلبة والتكليفات والنسخة المحدثة القائمة.",
+            "en": "The existing rotation timetable, student list, assignments and current version."
+          }
+        },
+        {
+          "id": "clinical-orientation",
+          "phase": "prepare",
+          "title": {
+            "ar": "أتأكد من التهيئة والاتصال",
+            "en": "Check orientation and contacts"
+          },
+          "purpose": {
+            "ar": "ليعرف الطالب حدوده والمساعدة والإبلاغ، ويتحقق المشرف من فهمه.",
+            "en": "Help students know practice limits, support and reporting routes, with understanding checked by the supervisor."
+          },
+          "when": {
+            "ar": "قبل النزول أو نشاط جديد وعند تغير متطلبات الموقع.",
+            "en": "Before placement or a new activity and when site requirements change."
+          },
+          "with": {
+            "ar": "المشرف ومنسق الموقع والجهة الصحية المختصة بمتطلباته.",
+            "en": "The supervisor, site coordinator and competent health office for site requirements."
+          },
+          "keep": {
+            "ar": "بيان التهيئة والاستيفاء وبطاقة اتصال وبديل محدثة؛ دون تكرار التفاصيل الصحية.",
+            "en": "The orientation/completion record and current contacts and substitute, without duplicating health details."
+          }
+        },
+        {
+          "id": "clinical-delivery",
+          "phase": "semester",
+          "title": {
+            "ar": "أتابع فرصة التعلم والإشراف الفعلي",
+            "en": "Follow actual learning and supervision"
+          },
+          "purpose": {
+            "ar": "لأميز الحضور عن فرصة الممارسة والأداء الذي تمت ملاحظته.",
+            "en": "Distinguish attendance from practice opportunities and directly observed performance."
+          },
+          "when": {
+            "ar": "أثناء الفترة وعند ظهور نقص خبرة أو إشراف أو مورد.",
+            "en": "During the period and when experience, supervision or resources are missing."
+          },
+          "with": {
+            "ar": "المشرف الأكاديمي ومشرف الموقع والشؤون العلمية.",
+            "en": "The academic supervisor, site supervisor and Academic Affairs."
+          },
+          "keep": {
+            "ar": "سجلات الحضور والخبرات والتغذية الراجعة والاحتياج القائمة.",
+            "en": "Existing attendance, experience, feedback and needs records."
+          }
+        },
+        {
+          "id": "clinical-safety",
+          "phase": "semester",
+          "title": {
+            "ar": "أتابع الخطر والمساندة فوراً",
+            "en": "Respond to risk and seek support promptly"
+          },
+          "purpose": {
+            "ar": "لأتأكد من وقف النشاط غير الآمن ووصول الواقعة إلى مسارها المختص.",
+            "en": "Ensure unsafe activity stops and the incident reaches the competent response route."
+          },
+          "when": {
+            "ar": "عند الخطر أو الحادث أو التعرض؛ لا ينتظر مراجعة الفصل.",
+            "en": "Whenever a risk, incident or exposure occurs; do not wait for a semester review."
+          },
+          "with": {
+            "ar": "مشرف الموقع والجهة الصحية المختصة والعمادة والشؤون العلمية بحسب الحاجة.",
+            "en": "The site supervisor, competent health office, Dean's Office and Academic Affairs as needed."
+          },
+          "keep": {
+            "ar": "مرجع الواقعة والإحالة وقرار العودة الآمنة في السجل المقيد القائم.",
+            "en": "The incident and referral reference and safe-return decision in the existing restricted record."
+          }
+        },
+        {
+          "id": "clinical-assessment",
+          "phase": "assessment",
+          "title": {
+            "ar": "أراجع اكتمال التقييم والدعم",
+            "en": "Check assessment and support completion"
+          },
+          "purpose": {
+            "ar": "لأثبت الأداء الفعلي وأتابع المهارة الناقصة وفرصة الدعم وإعادة التقييم.",
+            "en": "Record actual performance and follow missing skills, support and reassessment opportunities."
+          },
+          "when": {
+            "ar": "عند نقاط التقييم ونهاية كل روتيشن في موعده المعتمد.",
+            "en": "At assessment points and each rotation close under its approved schedule."
+          },
+          "with": {
+            "ar": "المشرف المقيم والشؤون العلمية وأستاذ المادة بحسب التكليف.",
+            "en": "The assigned assessor, Academic Affairs and course teacher as assigned."
+          },
+          "keep": {
+            "ar": "أداة التقييم المعتمدة وسجل الأداء وخطة الدعم ونتيجة إعادة التقييم القائمة.",
+            "en": "The approved tool and existing performance, support and reassessment records."
+          }
+        },
+        {
+          "id": "clinical-completion",
+          "phase": "semester-close",
+          "title": {
+            "ar": "أطابق الاستيفاء وأحيل النتيجة",
+            "en": "Reconcile completion and refer results"
+          },
+          "purpose": {
+            "ar": "لأوضح المكتمل والمعلق والتعويض، وأفصل نهاية الجدول عن استيفاء التدريب أو الامتياز.",
+            "en": "Show completed, pending and make-up work, distinguishing timetable end from training or internship completion."
+          },
+          "when": {
+            "ar": "عند نهاية الفترة أو استكمال الامتياز وقبل إحالة النتيجة أو بيان الاستيفاء.",
+            "en": "At period end or internship completion, before referring results or completion statements."
+          },
+          "with": {
+            "ar": "الشؤون العلمية والدراسة والامتحانات والمسجل والجهة المخولة.",
+            "en": "Academic Affairs, Study and Examinations, Registrar and competent authority."
+          },
+          "keep": {
+            "ar": "مطابقة الروتيشن والحضور والتقييم وبيان الاستيفاء والإحالة في السجلات القائمة.",
+            "en": "Rotation, attendance and assessment reconciliation and the existing completion statement and referral."
+          }
+        },
+        {
+          "id": "clinical-review",
+          "phase": "year-review",
+          "title": {
+            "ar": "أحول الملاحظات إلى تحسين محدد",
+            "en": "Turn feedback into a specific improvement"
+          },
+          "purpose": {
+            "ar": "لأربط رأي الطالب والمشرف والموقع بنتيجة تعلم أو سلامة يمكن متابعتها.",
+            "en": "Link student, supervisor and site feedback to a learning or safety result that can be followed."
+          },
+          "when": {
+            "ar": "ضمن مراجعة الفترة وتقرير القسم السنوي القائم.",
+            "en": "Within the period review and existing annual department report."
+          },
+          "with": {
+            "ar": "الشؤون العلمية والمشرفون والمواقع؛ والجودة للمساندة في القياس.",
+            "en": "Academic Affairs, supervisors and sites, with QA supporting measurement."
+          },
+          "keep": {
+            "ar": "التقرير القائم وإجراء قليل محدد وشاهد أثره واحتياج الدورة التالية.",
+            "en": "The existing report, a small specific action, its effect and next-cycle needs."
+          }
+        }
+      ]
+    },
+    {
+      "id": "ta",
+      "audience": "ta",
+      "title": {
+        "ar": "المعيد",
+        "en": "Teaching Assistant"
+      },
+      "intro": {
+        "ar": "أعرف دوري ومشرفي، وأساند تعلم الطلبة، وأبني خبرتي خطوة بخطوة.",
+        "en": "Know your role and supervisor, support student learning and build your experience step by step."
+      },
+      "responsibility": {
+        "ar": "أساند التعلم والبحث والمهارات وفق تكليف واضح وإشراف محدد، وأرفع ما يتجاوز حدود دوري.",
+        "en": "Support learning, research and skills under a clear assignment and named supervision, referring matters beyond your role."
+      },
+      "sources": [
+        {
+          "title": {
+            "ar": "دليل عضو هيئة التدريس والمعيد",
+            "en": "Faculty and Teaching Assistant Guide"
+          },
+          "url": "../guides/faculty-ta-guide.pdf",
+          "section": {
+            "ar": "التكليف وحدود دور المعيد؛ دورة المقرر والدعم والتقويم؛ الإسهام في البحث والخدمة والتطوير",
+            "en": "Assignments and TA role limits; course cycle, support and assessment; research, service and development contributions"
+          }
+        },
+        {
+          "title": {
+            "ar": "دليل التدريب السريري والسلامة",
+            "en": "Clinical Training and Safety Guide"
+          },
+          "url": "",
+          "section": {
+            "ar": "المسؤوليات؛ جاهزية الموقع والروتيشن؛ التهيئة والتقييم؛ الاستيفاء والسلامة والتحسين",
+            "en": "Responsibilities; site and rotation readiness; orientation and assessment; completion, safety and improvement"
+          }
+        },
+        {
+          "title": {
+            "ar": "دليل الطالب",
+            "en": "Student Guide"
+          },
+          "url": "",
+          "section": {
+            "ar": "القيد والخدمة؛ الحضور والامتحانات؛ الدعم والتهيئة؛ التخرج، وآليات القبول والخدمة",
+            "en": "Registration and services; attendance and examinations; support and orientation; graduation, and admission/service mechanisms"
+          }
+        }
+      ],
+      "tasks": [
+        {
+          "id": "ta-assignment",
+          "phase": "prepare",
+          "title": {
+            "ar": "أفهم التكليف وحدود دوري",
+            "en": "Understand my assignment and role"
+          },
+          "purpose": {
+            "ar": "لأعرف النشاط والمشرف وما أستطيع تنفيذه وما يحتاج مراجعة أو حضوراً مختصاً.",
+            "en": "Know the activity, supervisor, work you may carry out and what needs specialist review or presence."
+          },
+          "when": {
+            "ar": "قبل بدء الفصل أو التدريب وعند تكليف جديد.",
+            "en": "Before the semester or training and when given a new assignment."
+          },
+          "with": {
+            "ar": "المشرف المكلف وأستاذ المادة أو رئيس التدريب بحسب النشاط.",
+            "en": "The assigned supervisor and course teacher or Head of Clinical Training according to the activity."
+          },
+          "keep": {
+            "ar": "التكليف والجدول وتحديد المشرف في السجل القائم.",
+            "en": "The existing assignment, timetable and named supervisor."
+          }
+        },
+        {
+          "id": "ta-preparation",
+          "phase": "prepare",
+          "title": {
+            "ar": "أستعد للنشاط وأعرف موارده",
+            "en": "Prepare for the activity and resources"
+          },
+          "purpose": {
+            "ar": "لأراجع الخطة والأداة والوسيلة وأطلب ما ينقص قبل التنفيذ.",
+            "en": "Review the plan, tool and resources and request missing items before delivery."
+          },
+          "when": {
+            "ar": "قبل جلسة دعم أو مهارة أو نشاط مكلف به.",
+            "en": "Before an assigned support, skills or other activity."
+          },
+          "with": {
+            "ar": "أستاذ المادة أو المشرف ومسؤول المعمل عند الحاجة.",
+            "en": "The course teacher or supervisor and lab officer when needed."
+          },
+          "keep": {
+            "ar": "خطة النشاط أو قائمته والموارد وطلب النقص ضمن ملف المقرر أو التدريب القائم.",
+            "en": "The activity plan/checklist, resources and missing-item request within the existing course or training file."
+          }
+        },
+        {
+          "id": "ta-support",
+          "phase": "semester",
+          "title": {
+            "ar": "أساند التعلم وأتابع الفهم",
+            "en": "Support learning and understanding"
+          },
+          "purpose": {
+            "ar": "لأساعد الطالب في صعوبة محددة وأعيد الملاحظة للمشرف دون تجاوز التكليف.",
+            "en": "Help with a specific learning need and return observations to the supervisor within the assignment."
+          },
+          "when": {
+            "ar": "أثناء النشاط أو الدعم المقرر وخلال متابعة المحاولة اللاحقة.",
+            "en": "During assigned activities or support and when reviewing the next attempt."
+          },
+          "with": {
+            "ar": "الطالب وأستاذ المادة أو المشرف والمرشد المكلف عند الإحالة.",
+            "en": "The student, course teacher or supervisor, and assigned adviser on referral."
+          },
+          "keep": {
+            "ar": "ملاحظة موجزة أو مثال تقدم في سجل النشاط أو الدعم القائم.",
+            "en": "A short observation or progress example in the existing activity or support record."
+          }
+        },
+        {
+          "id": "ta-attendance-safety",
+          "phase": "semester",
+          "title": {
+            "ar": "أثبت ما حدث وأبلغ مبكراً",
+            "en": "Record actual work and flag issues early"
+          },
+          "purpose": {
+            "ar": "لأحافظ على دقة الحضور والنشاط وأوصل الغياب أو الخطر إلى المسؤول المناسب.",
+            "en": "Keep attendance and activity records accurate and route absence or risk to the right officer."
+          },
+          "when": {
+            "ar": "مع النشاط وعند ظهور غياب أو نقص أو خطر؛ والخطر يبلغ فوراً.",
+            "en": "During activities and when absence, a gap or risk appears; report risks immediately."
+          },
+          "with": {
+            "ar": "أستاذ المادة أو المشرف ورئيس التدريب حسب الحالة.",
+            "en": "The course teacher or supervisor and Head of Clinical Training as relevant."
+          },
+          "keep": {
+            "ar": "سجل الحضور أو النشاط ومرجع الإبلاغ القائم، دون بيانات مرضى في المواد التعليمية.",
+            "en": "The existing attendance/activity record and report reference, with no patient identifiers in teaching materials."
+          }
+        },
+        {
+          "id": "ta-qualification-research",
+          "phase": "semester",
+          "title": {
+            "ar": "أتابع تأهيلي ومساهمتي البحثية مع مشرفي",
+            "en": "Follow my qualification and research contribution with my supervisor"
+          },
+          "purpose": {
+            "ar": "لأبني خبرتي البحثية بالتدرج وأنجز الجزء المكلف به تحت المراجعة.",
+            "en": "Build research experience progressively and complete assigned work under review."
+          },
+          "when": {
+            "ar": "عند مراجعة احتياج التأهيل أو تكليفي بدعم بحثي، عبر المسار القائم.",
+            "en": "When reviewing qualification needs or receiving a research-support assignment, through the existing route."
+          },
+          "with": {
+            "ar": "المشرف وشؤون هيئة التدريس وجهة الجامعة المختصة بالتأهيل.",
+            "en": "The supervisor, Faculty Affairs and competent University qualification office."
+          },
+          "keep": {
+            "ar": "التكليف ومراجعة المشرف ومرجع معاملة التأهيل أو المخرج البحثي القائم بحسب الحالة.",
+            "en": "The assignment, supervisor review and relevant qualification-request reference or existing research output."
+          }
+        },
+        {
+          "id": "ta-assessment-support",
+          "phase": "assessment",
+          "title": {
+            "ar": "أساند التقييم في حدود تكليفي",
+            "en": "Support assessment within my assignment"
+          },
+          "purpose": {
+            "ar": "لأسجل ما كلفت بملاحظته وأعيده للمراجع المختص؛ فالقرار النهائي يحتاج صلاحية مستقلة.",
+            "en": "Record assigned observations for the competent reviewer; final decisions require their own authority."
+          },
+          "when": {
+            "ar": "عند نشاط تقييم أو متابعة مهارة مكلف به.",
+            "en": "During an assigned assessment or skills follow-up."
+          },
+          "with": {
+            "ar": "أستاذ المادة أو المقيم والمشرف المخول.",
+            "en": "The course teacher or assessor and authorised supervisor."
+          },
+          "keep": {
+            "ar": "الأداة القائمة والملاحظة الفعلية وأثر مراجعة المشرف.",
+            "en": "The existing tool, actual observation and supervisor review."
+          }
+        },
+        {
+          "id": "ta-handover",
+          "phase": "semester-close",
+          "title": {
+            "ar": "أسلم مساهمتي في الملف القائم",
+            "en": "Hand over my contribution to the existing file"
+          },
+          "purpose": {
+            "ar": "ليكتمل ملف المقرر أو التدريب دون إنشاء تقرير مواز لكل مساعد.",
+            "en": "Complete the course or training file through the existing reporting route."
+          },
+          "when": {
+            "ar": "عند انتهاء النشاط أو الفصل أو تغير التكليف.",
+            "en": "At the end of an activity, semester or assignment."
+          },
+          "with": {
+            "ar": "أستاذ المادة أو منسق المقرر أو رئيس التدريب.",
+            "en": "The course teacher, course coordinator or Head of Clinical Training."
+          },
+          "keep": {
+            "ar": "السجلات والمواد المكلف بها وملاحظة تحسين قصيرة ضمن الملف القائم.",
+            "en": "Assigned records and materials and a short improvement note within the existing file."
+          }
+        },
+        {
+          "id": "ta-development",
+          "phase": "year-review",
+          "title": {
+            "ar": "أختار مهارة وأطبقها",
+            "en": "Choose and apply a skill"
+          },
+          "purpose": {
+            "ar": "لأربط التطوير والبحث أو المشاركة المكلف بها بحاجتي الفعلية وبأثر في عملي.",
+            "en": "Link development, research or assigned participation to a real need and its effect on your work."
+          },
+          "when": {
+            "ar": "عند مراجعة الاحتياج وبعد تدريب أو فرصة تطبيق مناسبة.",
+            "en": "When reviewing needs and after learning or a suitable practice opportunity."
+          },
+          "with": {
+            "ar": "المشرف وشؤون هيئة التدريس والجهة الجامعية المختصة بالتأهيل عند الحاجة.",
+            "en": "The supervisor, Faculty Affairs and competent University development office when needed."
+          },
+          "keep": {
+            "ar": "سجل التطوير ومثال تطبيق أو مخرج مكلف به في الملف القائم.",
+            "en": "The existing development record and an application example or assigned output."
+          }
+        }
+      ]
+    },
+    {
+      "id": "faculty",
+      "audience": "faculty",
+      "title": {
+        "ar": "عضو هيئة التدريس",
+        "en": "Faculty Member"
+      },
+      "intro": {
+        "ar": "أرى دورة مقرري ومسؤولياتي في مسار واضح، وأستفيد من ملف واحد وتحسين صغير يمكن متابعته.",
+        "en": "See the course cycle and responsibilities clearly, using one course file and a small improvement you can follow."
+      },
+      "responsibility": {
+        "ar": "أنفذ التكليف الأكاديمي، وأوضح خطة المادة، وأدعم تعلم الطلبة، وأضبط التقييم والسجلات، وأسهم بحسب تكليفي في البحث والخدمة والتطوير.",
+        "en": "Carry out the academic assignment, explain the course plan, support learning, maintain assessment and records, and contribute to assigned research, service and development."
+      },
+      "sources": [
+        {
+          "title": {
+            "ar": "دليل عضو هيئة التدريس والمعيد",
+            "en": "Faculty and Teaching Assistant Guide"
+          },
+          "url": "../guides/faculty-ta-guide.pdf",
+          "section": {
+            "ar": "التكليف وحدود دور المعيد؛ دورة المقرر والدعم والتقويم؛ الإسهام في البحث والخدمة والتطوير",
+            "en": "Assignments and TA role limits; course cycle, support and assessment; research, service and development contributions"
+          }
+        },
+        {
+          "title": {
+            "ar": "دليل الطالب",
+            "en": "Student Guide"
+          },
+          "url": "",
+          "section": {
+            "ar": "القيد والخدمة؛ الحضور والامتحانات؛ الدعم والتهيئة؛ التخرج، وآليات القبول والخدمة",
+            "en": "Registration and services; attendance and examinations; support and orientation; graduation, and admission/service mechanisms"
+          }
+        },
+        {
+          "title": {
+            "ar": "دليل التدريب السريري والسلامة",
+            "en": "Clinical Training and Safety Guide"
+          },
+          "url": "",
+          "section": {
+            "ar": "المسؤوليات؛ جاهزية الموقع والروتيشن؛ التهيئة والتقييم؛ الاستيفاء والسلامة والتحسين",
+            "en": "Responsibilities; site and rotation readiness; orientation and assessment; completion, safety and improvement"
+          }
+        }
+      ],
+      "tasks": [
+        {
+          "id": "faculty-ready",
+          "phase": "prepare",
+          "title": {
+            "ar": "أراجع خطة المادة واحتياجها",
+            "en": "Review the course plan and needs"
+          },
+          "purpose": {
+            "ar": "لأطابق التوصيف والتكليف والتقويم والموارد، وأرفع مبكراً ما يعوق مخرجاً تعليمياً.",
+            "en": "Match the specification, assignment, calendar and resources and flag barriers to learning outcomes early."
+          },
+          "when": {
+            "ar": "قبل بدء تدريس المادة وعند تغيير جوهري.",
+            "en": "Before teaching starts and after a significant change."
+          },
+          "with": {
+            "ar": "الشؤون العلمية ومنسق المقرر والتدريب أو المعمل بحسب المكون.",
+            "en": "Academic Affairs, course coordinator and Training or lab staff as relevant."
+          },
+          "keep": {
+            "ar": "التوصيف والخطة والجدول وطلب الاحتياج في ملف المقرر القائم.",
+            "en": "The specification, plan, timetable and needs request in the existing course file."
+          }
+        },
+        {
+          "id": "faculty-plan",
+          "phase": "prepare",
+          "title": {
+            "ar": "أوضح للطلبة كيف تسير المادة",
+            "en": "Explain how the course will work"
+          },
+          "purpose": {
+            "ar": "ليعرف الطلبة المخرجات والتقييم والحضور والتواصل والتحديثات من مصدر واضح.",
+            "en": "Give students a clear source for outcomes, assessment, attendance, contact and updates."
+          },
+          "when": {
+            "ar": "في بداية المادة وعند تحديث يؤثر في الطلبة.",
+            "en": "At the course start and when an update affects students."
+          },
+          "with": {
+            "ar": "الطلبة والمدرسون المشاركون ومنسق المقرر.",
+            "en": "Students, co-teachers and course coordinator."
+          },
+          "keep": {
+            "ar": "خطة واحدة معلنة وأثر إتاحتها وتحديثها ضمن الملف القائم.",
+            "en": "One published plan and its availability/update record within the existing file."
+          }
+        },
+        {
+          "id": "faculty-learning",
+          "phase": "semester",
+          "title": {
+            "ar": "أتابع التعلم والحضور والدعم",
+            "en": "Follow learning, attendance and support"
+          },
+          "purpose": {
+            "ar": "لأكتشف التعثر والغياب مبكراً، وأقدم تغذية راجعة أو أحيل إلى الدعم المناسب.",
+            "en": "Identify learning difficulty and absence early and give feedback or refer to suitable support."
+          },
+          "when": {
+            "ar": "خلال التدريس والأنشطة؛ ويطبق الإنذار وفق الحد والمسار المعتمدين المعلنين.",
+            "en": "Throughout teaching and activities; apply attendance warnings under the approved, announced threshold and route."
+          },
+          "with": {
+            "ar": "الطالب والمعيد تحت الإشراف والمرشد أو جهة الدعم المكلفة.",
+            "en": "The student, supervised TA and assigned adviser or support office."
+          },
+          "keep": {
+            "ar": "سجل التنفيذ والحضور والإنذار النظامي عند انطباقه وملاحظة الدعم في الملف القائم.",
+            "en": "Existing delivery, attendance, applicable formal warning and support records."
+          }
+        },
+        {
+          "id": "faculty-research-service",
+          "phase": "semester",
+          "title": {
+            "ar": "أسهم في البحث وخدمة الكلية بحسب تكليفي",
+            "en": "Contribute to assigned research and college service"
+          },
+          "purpose": {
+            "ar": "لأربط البحث أو الإشراف أو المشاركة في الخدمة بحاجة واضحة وموافقة لازمة ومخرج مفيد.",
+            "en": "Connect research, supervision or service participation to a clear need, required permissions and a useful output."
+          },
+          "when": {
+            "ar": "خلال نشاط بحثي أو إشراف أو خدمة مكلف به، وفق خطة النشاط القائمة.",
+            "en": "During assigned research, supervision or service, following the existing activity plan."
+          },
+          "with": {
+            "ar": "الجهة الأكاديمية والمشرفون ومالك النشاط أو الشريك، كل ضمن اختصاصه.",
+            "en": "The academic office, supervisors and activity owner or partner, each within their role."
+          },
+          "keep": {
+            "ar": "الخطة والموافقة والمخرج أو ملخص المنفعة ومتابعته في ملف النشاط القائم.",
+            "en": "The plan, permission and output or benefit summary and follow-up in the existing activity file."
+          }
+        },
+        {
+          "id": "faculty-assessment-design",
+          "phase": "assessment",
+          "title": {
+            "ar": "أعد تقييماً واضحاً ومتسقاً",
+            "en": "Prepare clear and aligned assessment"
+          },
+          "purpose": {
+            "ar": "لأقيس المخرجات التي أتيحت دراستها بأداة وتعليمات ودرجات ومعيار تصحيح واضح.",
+            "en": "Assess taught outcomes with a clear tool, instructions, marks and marking criteria."
+          },
+          "when": {
+            "ar": "قبل كل تقييم وفق التوصيف والإجراء المعتمد.",
+            "en": "Before each assessment under the specification and approved procedure."
+          },
+          "with": {
+            "ar": "المراجع الأكاديمي أو النظير المكلف ومنسق المقرر.",
+            "en": "The assigned academic or peer reviewer and course coordinator."
+          },
+          "keep": {
+            "ar": "أداة التقييم ونموذج الإجابة والتوزيع وأثر المراجعة في المسار المقيد القائم.",
+            "en": "The assessment tool, answer key, mark allocation and review record in the existing restricted route."
+          }
+        },
+        {
+          "id": "faculty-feedback",
+          "phase": "assessment",
+          "title": {
+            "ar": "أحول التصحيح إلى تعلم",
+            "en": "Use marking to support learning"
+          },
+          "purpose": {
+            "ar": "ليعرف الطالب خطأه وطريق تحسينه، مع الفصل بين الحضور والأداء في المهارات.",
+            "en": "Help students understand errors and improve, distinguishing attendance from skills performance."
+          },
+          "when": {
+            "ar": "بعد التقييم الجزئي وعند الملاحظة العملية أو السريرية.",
+            "en": "After partial assessments and during practical or clinical observation."
+          },
+          "with": {
+            "ar": "الطالب وأستاذ المادة أو المقيم المكلف عند تعدد المدرسين.",
+            "en": "The student and assigned course teacher or assessor where teaching is shared."
+          },
+          "keep": {
+            "ar": "التغذية الراجعة وإعادة أوراق الجزئي وسجل الأداء القائم بحسب المكون.",
+            "en": "Existing feedback, returned partial-assessment papers and performance records as applicable."
+          }
+        },
+        {
+          "id": "faculty-results",
+          "phase": "semester-close",
+          "title": {
+            "ar": "أراجع الدرجات وأسلمها في مسارها",
+            "en": "Check and hand over grades correctly"
+          },
+          "purpose": {
+            "ar": "لأحافظ على صحة الجمع والرصد والأعذار وسرية النتيجة وإمكان تتبع أي تصحيح.",
+            "en": "Keep totals, transcription and excuses accurate, results confidential and corrections traceable."
+          },
+          "when": {
+            "ar": "عند التصحيح والرصد وتسليم النتائج والأوراق وفق التقويم المعتمد.",
+            "en": "When marking, recording and handing over results and papers under the approved calendar."
+          },
+          "with": {
+            "ar": "المراجع المختص والدراسة والامتحانات وصاحب اعتماد النتيجة.",
+            "en": "The competent reviewer, Study and Examinations and result approving authority."
+          },
+          "keep": {
+            "ar": "كشف مدقق ومحضر تسليم وأصل الأوراق وأثر التصحيح المخول في السجلات القائمة.",
+            "en": "A checked grade list, handover record, original papers and authorised correction trail in existing records."
+          }
+        },
+        {
+          "id": "faculty-course-report",
+          "phase": "semester-close",
+          "title": {
+            "ar": "أجمع قصة المادة في تقرير واحد",
+            "en": "Bring the course together in one report"
+          },
+          "purpose": {
+            "ar": "لأوضح ما نفذ ونتائجه ورأي الطلبة والموارد وتوصية تحسين قابلة للمتابعة.",
+            "en": "Show delivery, results, student feedback, resources and a practical improvement to follow."
+          },
+          "when": {
+            "ar": "بعد استكمال الدورة وعند مراجعة المقرر مع المسؤول الأكاديمي.",
+            "en": "After the course cycle and during its review with the academic lead."
+          },
+          "with": {
+            "ar": "منسق المقرر والمدرسون المشاركون والتدريب حيث ينطبق والجودة للتحليل.",
+            "en": "The coordinator, co-teachers, Training where relevant and QA for analysis."
+          },
+          "keep": {
+            "ar": "تقرير مقرر واحد بمكوناته المنطبقة وعينات مناسبة وشاهد المشكلة في الملف القائم.",
+            "en": "One course report covering applicable components, suitable samples and evidence of the issue in the existing file."
+          }
+        },
+        {
+          "id": "faculty-improvement",
+          "phase": "year-review",
+          "title": {
+            "ar": "أراجع التحسين وأبني خبرتي",
+            "en": "Review improvement and develop my practice"
+          },
+          "purpose": {
+            "ar": "لأعرف ما تغير فعلاً وأربط التطوير والبحث والخدمة المكلف بها باحتياج واقعي.",
+            "en": "Identify actual change and link assigned development, research and service to a real need."
+          },
+          "when": {
+            "ar": "قبل تقديم المادة مجدداً وعند مراجعة خطة التطوير والمهام السنوية المكلف بها.",
+            "en": "Before teaching the course again and when reviewing development and assigned annual work."
+          },
+          "with": {
+            "ar": "المسؤول الأكاديمي والمشرفون وشؤون هيئة التدريس والجهة المالكة للنشاط.",
+            "en": "The academic lead, supervisors, Faculty Affairs and activity owner."
+          },
+          "keep": {
+            "ar": "متابعة توصية الدورة السابقة ومثال تطبيق التدريب ومخرجات التكليف في الملفات القائمة.",
+            "en": "Follow-up of the previous recommendation, a learning-application example and assigned outputs in existing files."
+          }
+        }
+      ]
+    }
+  ]
+}

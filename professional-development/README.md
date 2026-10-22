@@ -33,3 +33,11 @@ The general catalogue contains 63 resources and guides, including 17 additional 
 Ten university design references appear together in the general benchmark list. Each records its source, design idea and local adaptation. External documents stay linked at their official source and are not imported as Faculty policy or reposted copies.
 
 `needs.js` offers one local work-priority choice, three matching resources and a safe handoff to the personal development plan. It pre-fills a wholly blank draft only; existing text is preserved and no automatic save occurs. Dates and outcomes remain blank. Fixed need-choice identifiers are optionally measured; no plan text or personal response is sent.
+
+## Annual work companion — 22 October 2026
+
+`my-work/` adds a bilingual visual work companion with 62 short tasks across eight roles: general employee, registrar, head of administrative affairs, student affairs, examinations, clinical training, teaching assistant and faculty member. The five-stage path follows the work cycle rather than invented calendar deadlines. Role and task summaries derive from the approved institutional guides; they do not add a new reporting form or alter the guides. Each task explains purpose, timing, collaborators and the existing record to return to. References name their relevant sections; links are shown only for published protected PDF copies.
+
+Role selection, phase filters and search help users find the relevant summary. Optional task statuses stay in this browser and are never sent to the Faculty or the metrics collector. They organise personal work; they are not institutional completion records or staff performance scores. No completion percentages, overdue labels or rankings are generated.
+
+The hub entry follows its current audience and language. Opt-in measurement captures only fixed role, phase and reference identifiers alongside the existing page-use and usefulness events. Opening a summary or reference does not establish that work was completed. Coverage includes the new page; central public totals retain the existing section/event grouping.

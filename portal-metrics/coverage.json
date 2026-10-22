@@ -1,5 +1,5 @@
 {
-  "version": "20261022-development-5",
+  "version": "20261022-workguide-1",
   "tracking": "visitor_opt_in",
   "pages": [
     "body-mechanics-learning-01/index.html",
@@ -32,6 +32,7 @@
     "nursing-skills/index.html",
     "patient-positioning-learning-01/index.html",
     "professional-development/index.html",
+    "professional-development/my-work/index.html",
     "range-of-motion-learning-01/index.html",
     "safety360/index.html",
     "skills-lab/index.html",
@@ -61,6 +62,7 @@
     "PDF guide clicks do not establish download completion or reading",
     "Shared public summaries remain grouped by section/event; role and resource detail is local only",
     "Workbench and pathway interactions do not establish completed training; personal plan text is never collected",
-    "Development need selections are optional fixed-ID choices, not a staff survey or performance evaluation"
+    "Development need selections are optional fixed-ID choices, not a staff survey or performance evaluation",
+    "Annual work companion interactions measure use only; personal task statuses and search text are never collected"
   ]
 }
