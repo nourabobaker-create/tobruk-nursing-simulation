@@ -46,6 +46,9 @@ jobs:
       - name: Verify rendered simulation metrics, loader rebinding and visible completion in Chromium
         run: |
           PLAYWRIGHT_MODULE=/tmp/scenario-browser/node_modules/playwright CHROME_BIN="$(command -v google-chrome)" node portal-metrics/tests/activities.browser.cjs
+      - name: Verify connected-empty dashboard, read errors and mobile layout in Chromium
+        run: |
+          PLAYWRIGHT_MODULE=/tmp/scenario-browser/node_modules/playwright CHROME_BIN="$(command -v google-chrome)" DASHBOARD_SCREENSHOT_DIR=/tmp/tobruk-metrics-dashboard node portal-metrics/tests/dashboard.browser.cjs
       - run: python -m pip install playwright --quiet
       - name: Verify the 17 active simulations and language persistence
         run: python simulation-language-review/verify_browser.py
@@ -56,4 +59,6 @@ jobs:
           path: |
             /tmp/tobruk-language-qa
             /tmp/clinical-100-*.png
+            /tmp/tobruk-metrics-consent
+            /tmp/tobruk-metrics-dashboard
           retention-days: 7

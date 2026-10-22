@@ -3,14 +3,16 @@
 if(window.PortalMetrics?.documentRoot===document.documentElement)return;
 window.PortalMetrics?.detach?.();
 const C=window.PortalMetricsConfig||{},core=window.PortalMetricsCore;if(!core)return;
+function preferenceChoice(){if(typeof core.preferenceChoice==='function')return core.preferenceChoice();try{const p=localStorage.getItem('nur-portal-metrics-choice-v1');return ['off','local','shared'].includes(p)?p:null;}catch(_){return null;}}
 const script=document.currentScript,base=new URL('../',script.src),path=location.pathname.startsWith(base.pathname)?location.pathname.slice(base.pathname.length):'';
 if(path.startsWith('portal-metrics/'))return;
 let parentFrame=null;try{if(window.top!==window.self){if(window.top.location.origin!==location.origin)return;parentFrame=window.frameElement;}}catch(_){return;}
-const sessionKey='nur-portal-metrics-session-v1',queueKey='nur-portal-metrics-outbox-v1';
+const sessionKey='nur-portal-metrics-session-v1',queueKey='nur-portal-metrics-outbox-v1',laterKey='nur-portal-metrics-prompt-later-v1';
 const testMode=(()=>{try{return new URL(location.href).searchParams.get('metrics_test')==='1'||(parentFrame&&new URL(window.top.location.href).searchParams.get('metrics_test')==='1');}catch(_){return true;}})();
 const uid=()=>{try{return crypto.randomUUID().replace(/-/g,'');}catch(_){return Date.now().toString(36)+Math.random().toString(36).slice(2,14);}};
 const ar=()=>document.documentElement.lang!=='en',t=(a,e)=>ar()?a:e;
-let memorySession=null,lastView='',flushBusy=false,message='',started=false,intervalId=null,languageObserver=null;
+let memorySession=null,lastView='',flushBusy=false,message='',started=false,intervalId=null,languageObserver=null,later=false;
+try{later=sessionStorage.getItem(laterKey)==='1';}catch(_){}
 function sectionFor(p,h=''){
  if(p.startsWith('e-library'))return 'library';if(p.startsWith('clinical-discovery'))return 'atlas';if(p.startsWith('community-health'))return 'community';if(p.startsWith('strategic-plan'))return 'strategy';if(p.startsWith('spss-course'))return 'research';
  if(/^(english-ii|study-companion)\//.test(p))return 'courses';
@@ -27,7 +29,7 @@ function record(name,item='',section=currentSection()){
  if(testMode||core.preference()==='off'||!visible())return false;
  const e=core.cleanEvent({id:uid(),session:session(),at:new Date().toISOString(),section,event:name,item,language:ar()?'ar':'en'});if(!e)return false;
  if(!core.append(e)){message=t('تعذّر الحفظ في هذا المتصفح.','Browser storage is unavailable.');render();return false;}
- if(core.preference()==='shared'&&core.endpointValid(C.endpoint)){const q=queueRead();q.push(e);queueWrite(q);}
+ if(core.preference()==='shared'&&core.endpointValid(C.endpoint)){const q=queueRead();q.push(e);queueWrite(q);if(name!=='page_view'&&name!=='section_view')flush();}
  return true;
 }
 function view(){if(!visible()||core.preference()==='off')return;const signature=currentSection()+':'+path+':'+location.hash;if(signature===lastView)return;const item=currentSection()+':'+path.replace(/[^A-Za-z0-9_./:#-]/g,'').slice(0,100);if(record(started?'section_view':'page_view',item.slice(0,120))){lastView=signature;started=true;}render();}
@@ -42,7 +44,17 @@ async function flush(){
  message=t('أُرسلت محاولة المشاركة؛ الاستلام يُتحقّق منه في اللوحة المشتركة.','Sharing attempted; receipt is verified in the shared dashboard.');
  }catch(_){message=t('تعذّر الاتصال؛ تبقى البيانات محلية وتُعاد المحاولة لاحقًا.','Connection failed; data stays local for a later retry.');}finally{flushBusy=false;render();}
 }
-function setMode(mode){if(mode===core.preference())return true;if(mode==='shared'&&!core.endpointValid(C.endpoint))return false;if(!core.setPreference(mode))return false;if(mode!=='shared')queueWrite([]);if(mode==='off'){memorySession=null;try{sessionStorage.removeItem(sessionKey);}catch(_){}}lastView='';view();render();flush();return true;}
+function flushOnExit(){
+ if(testMode||core.preference()!=='shared'||!core.endpointValid(C.endpoint)||navigator.onLine===false)return;
+ const now=Date.now(),batch=queueRead().filter(e=>e._attempts<3&&now-e._lastAttempt>300000).slice(0,25);if(!batch.length)return;
+ const ids=new Set(batch.map(e=>e.id));queueWrite(queueRead().map(e=>ids.has(e.id)?{...e,_attempts:e._attempts+1,_lastAttempt:now}:e));
+ const body=JSON.stringify({schema:1,events:batch.map(core.cleanEvent)});
+ try{if(typeof navigator.sendBeacon==='function'&&navigator.sendBeacon(C.endpoint,body))return;}catch(_){}
+ // A queued beacon and an opaque response are attempts, never receipt proofs.
+ // The same bounded outbox IDs remain available for receiver-deduplicated retries.
+ try{fetch(C.endpoint,{method:'POST',mode:'no-cors',credentials:'omit',headers:{'Content-Type':'text/plain;charset=UTF-8'},body,keepalive:true,redirect:'follow'}).catch(()=>{});}catch(_){}
+}
+function setMode(mode){if(mode===core.preference()&&preferenceChoice()!==null)return true;if(mode==='shared'&&!core.endpointValid(C.endpoint))return false;if(!core.setPreference(mode))return false;later=false;try{sessionStorage.removeItem(laterKey);}catch(_){}if(mode!=='shared')queueWrite([]);if(mode==='off'){memorySession=null;try{sessionStorage.removeItem(sessionKey);}catch(_){}}lastView='';view();render();flush();return true;}
 function itemId(el){return String(el.dataset.metricsItem||el.dataset.resourceId||el.dataset.saveId||el.dataset.id||el.id||'').replace(/[^A-Za-z0-9_./:#-]/g,'').slice(0,120);}
 const onClick=e=>{
  const el=e.target.closest?.('a,button,[data-route],[data-panel],[data-guide]');if(!el||el.closest('[data-portal-metrics-widget]'))return;
@@ -53,12 +65,27 @@ const onClick=e=>{
  }catch(_){} }
  if(el.matches('[data-route],[data-panel],[data-guide],[data-nav]')||href?.startsWith('#'))setTimeout(view,80);
 };document.addEventListener('click',onClick,true);
-const onVisibility=()=>{view();flush();},onStorage=e=>{if(e.key==='nur-portal-metrics-choice-v1'){if(core.preference()==='off'){memorySession=null;try{sessionStorage.removeItem(sessionKey);}catch(_){}}lastView='';view();render();}};
+const onVisibility=()=>{if(document.visibilityState==='hidden')flushOnExit();else{view();flush();}},onPageHide=()=>flushOnExit(),onStorage=e=>{if(e.key==='nur-portal-metrics-choice-v1'){if(core.preference()==='off'){memorySession=null;try{sessionStorage.removeItem(sessionKey);}catch(_){}}lastView='';view();render();flush();}};
 window.addEventListener('hashchange',view);window.addEventListener('popstate',view);document.addEventListener('visibilitychange',onVisibility);window.addEventListener('online',flush);
 window.addEventListener('storage',onStorage);
+window.addEventListener('pagehide',onPageHide);
 const style=document.createElement('style');style.textContent='.portal-metrics-widget{font:inherit;font-size:14px;line-height:1.8;color:#405c50;background:#f1f6f3;border:1px solid #d4e1d9;border-radius:12px;padding:10px 16px;margin:22px auto;max-width:1060px;text-align:start;box-sizing:border-box}.portal-metrics-widget summary{cursor:pointer;padding:4px;min-height:28px}.portal-metrics-widget p{font:inherit!important;line-height:1.8!important;margin:8px 0!important}.portal-metrics-widget button,.portal-metrics-widget a{font:inherit;display:inline-block;padding:8px 11px;margin:4px;border:1px solid #a8bfb0;background:white;color:#174b3b;border-radius:8px;text-decoration:none;cursor:pointer}.portal-metrics-widget button[aria-pressed=true]{background:#174b3b;color:white}.portal-metrics-widget button:focus-visible,.portal-metrics-widget a:focus-visible{outline:3px solid #b7903c;outline-offset:2px}.portal-metrics-widget .pm-status{font-size:12px!important}.portal-metrics-widget .pm-actions{display:flex;flex-wrap:wrap;gap:2px}';document.head.append(style);
-let widget=null,widgetLanguage=null;
-function render(){if(!widget)return;widgetLanguage=document.documentElement.lang;const open=widget.open;widget.replaceChildren();widget.open=open;const summary=document.createElement('summary');summary.textContent=t('قياس الاستخدام والاستفادة · اختياري','Usage and usefulness measurement · optional');widget.append(summary);
+style.textContent+=' .portal-metrics-consent{margin:12px auto;padding:14px 16px;border:2px solid #8aa998;background:#f1f6f3}.portal-metrics-consent[hidden]{display:none!important}.portal-metrics-consent h2{font:inherit!important;font-weight:700!important;font-size:17px!important;margin:0 0 6px!important}.portal-metrics-consent .pm-actions{gap:4px}.portal-metrics-consent button{min-height:44px}.portal-metrics-consent .pm-share{background:#174b3b;color:white}@media(max-width:600px){.portal-metrics-consent{margin:8px;padding:12px}.portal-metrics-consent .pm-actions button{flex:1 1 145px;margin:2px}}';
+let widget=null,consent=null,widgetLanguage=null;
+function renderConsent(){
+ if(!consent)return;const show=!testMode&&!later&&preferenceChoice()===null;consent.hidden=!show;if(!show)return;consent.replaceChildren();consent.dir=ar()?'rtl':'ltr';
+ const heading=document.createElement('h2');heading.id='pm-consent-heading';heading.textContent=t('إحصاءات الاستخدام: القرار لك','Optional usage statistics');consent.append(heading);
+ const explanation=document.createElement('p');explanation.textContent=t('قياس اختياري دون أسماء أو إجابات تعليمية. المشاركة ترسل نوع التفاعل ومعرّف المحتوى والوقت؛ خيار الجهاز يبقيها محلية. يمكنك الإيقاف في أي وقت من إعدادات القياس أسفل الصفحة.','Optional measurement without names or learning answers. Sharing sends interaction type, content identifier and time; the device option keeps them local. You can stop at any time using the measurement settings below.');consent.append(explanation);
+ const actions=document.createElement('div');actions.className='pm-actions';consent.append(actions);
+ const add=(label,fn,cls)=>{const b=document.createElement('button');b.type='button';b.textContent=label;if(cls)b.className=cls;b.onclick=fn;actions.append(b);};
+ const choose=mode=>{message='';if(!setMode(mode)){message=t('تعذّر حفظ اختيارك؛ يبقى القياس متوقفًا.','Your choice could not be saved; measurement stays off.');render();}};
+ if(core.endpointValid(C.endpoint))add(t('مشاركة إحصاءات مجهولة','Share anonymous statistics'),()=>choose('shared'),'pm-share');
+ add(t('هذا الجهاز فقط','This device only'),()=>choose('local'));
+ add(t('لاحقًا','Later'),()=>{later=true;try{sessionStorage.setItem(laterKey,'1');}catch(_){}render();});
+ add(t('إبقاء القياس متوقفًا','Keep measurement off'),()=>choose('off'));
+ if(message){const status=document.createElement('p');status.textContent=message;status.setAttribute('role','status');consent.append(status);}
+}
+function render(){widgetLanguage=document.documentElement.lang;renderConsent();if(!widget)return;const open=widget.open;widget.replaceChildren();widget.open=open;const summary=document.createElement('summary');summary.textContent=t('قياس الاستخدام والاستفادة · اختياري','Usage and usefulness measurement · optional');widget.append(summary);
  const add=(tag,txt,cls)=>{const x=document.createElement(tag);x.textContent=txt;if(cls)x.className=cls;widget.append(x);return x;};
  const mode=core.preference();add('p',t('نسجّل نوع التفاعل والقسم ومعرّف المحتوى والوقت واللغة، مع رمز جلسة عشوائي مؤقت، دون أسماء أو أسئلة أو إجابات. يبدأ القياس باختيارك، ويمكن إيقافه في أي وقت.','We record interaction type, section, content identifier, time and language, with a temporary random session token, without names, questions or answers. Measurement starts when you choose and can be stopped at any time.'));
  add('p',t(mode==='off'?'الحالة: القياس متوقف.':mode==='local'?'الحالة: القياس على هذا الجهاز فقط.':'الحالة: مشاركة اختيارية بإحصاءات مجهولة؛ الاستلام يخضع للاتصال.',mode==='off'?'Status: measurement is off.':mode==='local'?'Status: this device only.':'Status: optional anonymous sharing; delivery depends on connectivity.'),'pm-status');
@@ -70,8 +97,8 @@ function render(){if(!widget)return;widgetLanguage=document.documentElement.lang
  add('p',t('هل أفادك هذا القسم؟','Was this section useful?'));const feedback=add('div','','pm-actions');for(const [label,event]of[[t('أفادني','Useful'),'feedback_useful'],[t('لم يفدني بعد','Not useful yet'),'feedback_not_useful']]){const b=document.createElement('button');b.type='button';b.textContent=label;b.onclick=()=>{if(mode==='off'){message=t('اختر أولًا تفعيل القياس على هذا الجهاز لتسجيل إجابتك.','Enable measurement on this device first to record your answer.');render();return;}const k='nur-feedback:'+session()+':'+currentSection();try{if(sessionStorage.getItem(k)){message=t('سُجّل رأيك لهذا القسم في هذه الجلسة.','Your response for this section has already been recorded this session.');render();return;}}catch(_){}if(record(event,'section-usefulness')){try{sessionStorage.setItem(k,'1');}catch(_){}message=t('شكرًا، سُجّل رأيك على هذا الجهاز.','Thank you, your response was recorded on this device.');render();flush();}};feedback.append(b);}
  if(message){const status=add('p',message,'pm-status');status.setAttribute('role','status');}
 }
-function start(){if(!parentFrame){widget=document.createElement('details');widget.className='portal-metrics-widget';widget.dataset.portalMetricsWidget='1';widget.dataset.noTranslate='1';document.body.append(widget);if(typeof MutationObserver==='function'){languageObserver=new MutationObserver(()=>{if(widgetLanguage!==document.documentElement.lang){message='';render();}});languageObserver.observe(document.documentElement,{attributes:true,attributeFilter:['lang']});}}render();view();intervalId=setInterval(()=>{view();flush();},15000);flush();}
-function detach(){if(intervalId!==null)clearInterval(intervalId);languageObserver?.disconnect?.();document.removeEventListener?.('click',onClick,true);document.removeEventListener?.('visibilitychange',onVisibility);document.removeEventListener?.('DOMContentLoaded',start);window.removeEventListener?.('hashchange',view);window.removeEventListener?.('popstate',view);window.removeEventListener?.('online',flush);window.removeEventListener?.('storage',onStorage);widget?.remove?.();style.remove?.();}
+function start(){if(!parentFrame&&!testMode){consent=document.createElement('section');consent.className='portal-metrics-widget portal-metrics-consent';consent.dataset.portalMetricsWidget='consent';consent.dataset.portalMetricsConsent='1';consent.dataset.noTranslate='1';consent.setAttribute('role','region');consent.setAttribute('aria-labelledby','pm-consent-heading');document.body.prepend(consent);widget=document.createElement('details');widget.className='portal-metrics-widget';widget.dataset.portalMetricsWidget='1';widget.dataset.noTranslate='1';document.body.append(widget);if(typeof MutationObserver==='function'){languageObserver=new MutationObserver(()=>{if(widgetLanguage!==document.documentElement.lang){message='';render();}});languageObserver.observe(document.documentElement,{attributes:true,attributeFilter:['lang']});}}render();view();intervalId=setInterval(()=>{view();flush();},15000);flush();}
+function detach(){if(intervalId!==null)clearInterval(intervalId);languageObserver?.disconnect?.();document.removeEventListener?.('click',onClick,true);document.removeEventListener?.('visibilitychange',onVisibility);document.removeEventListener?.('DOMContentLoaded',start);window.removeEventListener?.('hashchange',view);window.removeEventListener?.('popstate',view);window.removeEventListener?.('online',flush);window.removeEventListener?.('storage',onStorage);window.removeEventListener?.('pagehide',onPageHide);consent?.remove?.();widget?.remove?.();style.remove?.();}
 window.PortalMetrics=Object.freeze({record,setMode,sectionFor,flush,documentRoot:document.documentElement,detach});
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start,{once:true});else start();
 })();

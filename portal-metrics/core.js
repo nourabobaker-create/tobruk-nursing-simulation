@@ -17,7 +17,8 @@ function storageAvailable(){try{const k='nur-metrics-test';root.localStorage.set
 function readEvents(){try{const raw=JSON.parse(root.localStorage.getItem(key)||'[]');if(!Array.isArray(raw))return [];const seen=new Set();return raw.map(cleanEvent).filter(e=>e&&!seen.has(e.id)&&seen.add(e.id));}catch(_){return [];}}
 function writeEvents(rows){try{root.localStorage.setItem(key,JSON.stringify(rows.slice(-(config.maxLocalEvents||12000))));return true;}catch(_){return false;}}
 function append(event){const e=cleanEvent(event);if(!e)return false;const all=readEvents();if(all.some(x=>x.id===e.id))return true;all.push(e);return writeEvents(all);}
-function preference(){try{const p=root.localStorage.getItem(prefKey);return ['local','shared'].includes(p)?p:'off';}catch(_){return 'off';}}
+function preferenceChoice(){try{const p=root.localStorage.getItem(prefKey);return ['off','local','shared'].includes(p)?p:null;}catch(_){return null;}}
+function preference(){return preferenceChoice()||'off';}
 function setPreference(p){if(!['off','local','shared'].includes(p))return false;try{root.localStorage.setItem(prefKey,p);return true;}catch(_){return false;}}
 function clear(){try{root.localStorage.removeItem(key);root.localStorage.removeItem('nur-portal-metrics-outbox-v1');root.localStorage.setItem(prefKey,'off');try{root.sessionStorage.removeItem('nur-portal-metrics-session-v1');for(let i=root.sessionStorage.length-1;i>=0;i--){const k=root.sessionStorage.key(i);if(k&&k.startsWith('nur-feedback:'))root.sessionStorage.removeItem(k);}}catch(_){}return true;}catch(_){return false;}}
 function aggregate(all,range={}){
@@ -31,5 +32,5 @@ function aggregate(all,range={}){
  return {schema:1,mode:'local',generatedAt:new Date().toISOString(),collectionStartedAt:source.length?source.map(e=>e.at).sort()[0]:null,from,to,rows,sessions:sessions.size,engagedSessions:engaged.size,sectionSessions:toCounts(sectionSessions),engagedSectionSessions:toCounts(engagedSectionSessions),feedbackResponses:items.filter(e=>e.event.startsWith('feedback_')).length,coverage:'opt_in',truncated:source.length>=(config.maxLocalEvents||12000)};
 }
 function endpointValid(url){try{const u=new URL(url);return u.protocol==='https:'&&u.hostname==='script.google.com'&&/^\/macros\/s\/[A-Za-z0-9_-]+\/exec$/.test(u.pathname)&&!u.username&&!u.password&&!u.search&&!u.hash;}catch(_){return false;}}
-return Object.freeze({sections,events,day,validDate,cleanEvent,readEvents,append,aggregate,preference,setPreference,clear,storageAvailable,endpointValid});
+return Object.freeze({sections,events,day,validDate,cleanEvent,readEvents,append,aggregate,preferenceChoice,preference,setPreference,clear,storageAvailable,endpointValid});
 });

@@ -13,7 +13,7 @@ const viewEvents = new Set(['page_view','section_view']);
 const number = n => new Intl.NumberFormat('ar-LY').format(n);
 const pct = (a,b) => b ? new Intl.NumberFormat('ar-LY',{style:'percent',maximumFractionDigits:1}).format(a / b) : 'لا توجد إجابات';
 const sourceNames = {local:'هذا الجهاز فقط',shared:'ملخص الأجهزة المشاركة',import:'ملخص مستورد'};
-let source = safeEndpoint(config.endpoint) ? 'shared' : 'local', summary = null, imported = null, importedName = '', sequence = 0, sharedState = 'idle';
+let source = safeEndpoint(config.endpoint) ? 'shared' : 'local', summary = null, imported = null, importedName = '', sequence = 0, sharedState = 'idle', readFailed = false;
 function day(value = new Date()) { return new Intl.DateTimeFormat('en-CA',{timeZone:'Africa/Tripoli',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date(value)); }
 function validDay(value) { return typeof value === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(value) && Number.isFinite(Date.parse(value+'T12:00:00Z')) && new Date(value+'T12:00:00Z').toISOString().slice(0,10) === value; }
 function shiftDay(value, amount) { const d = new Date(value+'T12:00:00Z');d.setUTCDate(d.getUTCDate()+amount);return d.toISOString().slice(0,10); }
@@ -68,7 +68,7 @@ function jsonp(endpoint, dates) {
  return new Promise((resolve,reject)=>{
   const callback='PortalMetricsSummary_'+Date.now()+'_'+Math.random().toString(36).slice(2),script=document.createElement('script');let done=false;
   const cleanup=()=>{if(done)return;done=true;clearTimeout(timer);script.remove();delete window[callback];};
-  const timer=setTimeout(()=>{cleanup();reject(Error('لم تصل بيانات التجميع في الوقت المحدد. تحقق من النشر والصلاحيات ثم أعد التحديث.'));},15000);
+  const timer=setTimeout(()=>{cleanup();reject(Error('لم تصل قراءة التجميع خلال 30 ثانية. تعذّرت القراءة الآن؛ لا نعرض صفرًا أو بيانات هذا الجهاز بدلًا منها. أعد التحديث عند تحسن الاتصال.'));},30000);
   window[callback]=result=>{try{const clean=validateSummary(result);if(clean.from!==dates.from||clean.to!==dates.to)throw Error('الفترة التي أعادها المصدر لا تطابق الفترة المطلوبة.');cleanup();resolve(clean);}catch(error){cleanup();reject(error);}};
   script.onerror=()=>{cleanup();reject(Error('تعذّر الاتصال بمصدر التجميع. لا تُعرض بيانات هذا الجهاز بدلًا منه تلقائيًا.'));};
   const u=new URL(endpoint);u.searchParams.set('action','summary');u.searchParams.set('from',dates.from);u.searchParams.set('to',dates.to);u.searchParams.set('callback',callback);u.searchParams.set('_',Date.now());script.src=u.href;script.referrerPolicy='no-referrer';document.head.append(script);
@@ -76,18 +76,45 @@ function jsonp(endpoint, dates) {
 }
 function filteredRows() { const selected=$('section').value;return (summary?.rows||[]).filter(row=>selected==='all'||row.section===selected); }
 function count(rows,events) { return rows.reduce((total,row)=>total+(events.has(row.event)?row.count:0),0); }
+function coverageStart() {
+ if(!summary)return '';
+ const starts=[summary.coverageFrom,summary.collectionStartedAt?day(summary.collectionStartedAt):''].filter(validDay);
+ return starts.length?starts.sort().at(-1):'';
+}
+function readingState(rows=filteredRows()) {
+ if(!summary)return {available:false,kind:source==='shared'&&sharedState==='loading'?'loading':readFailed||source==='shared'&&sharedState==='error'?'error':'unavailable'};
+ const hasEvents=rows.some(row=>row.count>0),start=coverageStart();
+ if(!hasEvents&&start&&summary.to<start)return {available:false,kind:'outside',start};
+ return {available:true,kind:hasEvents?'events':'empty',start};
+}
+function unavailableValue(state) {
+ return state.kind==='loading'?'جارٍ القراءة…':state.kind==='outside'?'خارج التغطية':state.kind==='error'?'تعذّرت القراءة':'غير متاح';
+}
+function renderMeasurementContext(rows) {
+ const state=readingState(rows),message=$('reading-context');
+ if(state.kind==='loading')message.textContent='جارٍ طلب ملخص واحد من الجامع؛ قد يستغرق الاتصال حتى 30 ثانية. الأرقام لا تظهر قبل اكتمال القراءة.';
+ else if(state.kind==='error')message.textContent=source==='local'?'تعذّرت قراءة السجل المحلي؛ لا نعرض صفرًا بدلًا من تخزين غير متاح. تحقق من إعدادات التخزين في المتصفح.':'فشلت قراءة المصدر المشترك حاليًا. لا يمكن استنتاج عدد الزيارات من فشل الاتصال، ولم تُستبدل القراءة بسجل هذا الجهاز.';
+ else if(state.kind==='outside')message.textContent='الفترة المختارة تسبق التغطية المتاحة من '+displayDay(state.start)+'. لا تُفسر هذه الفترة على أنها صفر زيارات.';
+ else if(state.available&&state.kind==='empty'){
+  if(source==='local')message.textContent='تمت قراءة سجل هذا الجهاز؛ لا توجد أحداث محفوظة للفترة والقسم المختارين. هذا وصف للسجل المحلي، ولا يحصي زيارات أشخاص آخرين.';
+  else message.textContent=summary.rows.some(row=>row.count>0)?'نجحت القراءة؛ لا توجد أحداث مستلمة للقسم المختار في هذه الفترة، مع وجود أحداث لأقسام أخرى. الصفر يخص الأحداث المسجلة فقط.':'نجح الاتصال بالجامع، لكن لم تُستقبل أحداث للفترة المختارة. الصفر هنا يعني صفر أحداث مستلمة، ولا يعني عدم وجود زيارات إلى البوابة.';
+ }else if(state.available)message.textContent='تعرض الأرقام ما حُفظ في المصدر والفترة والقسم المختارين فقط؛ ولا تمثل جميع زوار البوابة أو أفرادًا مختلفين.';
+ else message.textContent='اختر مصدرًا متاحًا ثم حدّث القراءة. لا توجد أرقام مؤكدة لعرضها الآن.';
+ const preference=core?.preference?.()||'off';
+ $('device-measurement-state').textContent=preference==='shared'?'حالة هذا الجهاز الآن: مشاركة الإحصاءات مفعّلة؛ نجاح الاستلام يخضع للاتصال.':preference==='local'?'حالة هذا الجهاز الآن: حفظ محلي فقط؛ تفاعلاته الجديدة لا تُرسل إلى اللوحة المشتركة.':'حالة هذا الجهاز الآن: القياس متوقف؛ استخدامه لا يولّد أحداث قياس جديدة.';
+}
 function status() {
  const box=$('source-status');box.replaceChildren();box.classList.toggle('shared',source==='shared'&&!!summary);
  const title=element('strong');const detail=element('p');
  if(source==='local'){
   title.textContent='هذا الجهاز فقط — لا يمثل إجمالي البوابة';
-  detail.textContent='يبدأ القياس بعد تفعيله من خيار «قياس الاستخدام» أسفل صفحات البوابة. زيارة هذه اللوحة لا تُحسب ضمن الاستخدام. لا تُرسل الأرقام المحلية للفريق تلقائيًا.';
+  detail.textContent='يبدأ القياس بعد اختيارك في شريط الزيارة الأولى أعلى الصفحة، أو من «قياس الاستخدام والاستفادة · اختياري» أسفل صفحات البوابة. زيارة هذه اللوحة لا تُحسب ضمن الاستخدام. لا تُرسل الأرقام المحلية للفريق تلقائيًا.';
   if(core?.preference?.()==='off')detail.textContent+=' القياس متوقف الآن على هذا الجهاز؛ تظل البيانات السابقة، إن وجدت، قابلة للعرض.';
   if(core?.storageAvailable && !core.storageAvailable())detail.textContent+=' التخزين غير متاح في هذا المتصفح؛ قد لا يمكن الاحتفاظ بالقياس.';
  }else if(source==='shared'){
-  title.textContent=summary?'ملخص الأجهزة المشاركة — الاتصال يعمل':sharedState==='loading'?'جارٍ قراءة ملخص الأجهزة المشاركة':safeEndpoint(config.endpoint)?'تعذّرت قراءة التجميع المشترك حاليًا':'الجمع المشترك غير مفعّل';
-  detail.textContent=safeEndpoint(config.endpoint)?'يشمل الملخص الأحداث المستلمة من الصفحات المشاركة فقط؛ لا يشمل جميع الزوار بالضرورة.':'لوحة المؤشرات وأداة القياس جاهزتان؛ يلزم نشر نقطة التجميع وربطها قبل عرض إجمالي البوابة. لا تتوفر أرقام مشتركة الآن.';
-  if(summary&&!summary.rows.some(row=>row.count>0))detail.textContent+=' لم تُستقبل أحداث للفترة المختارة؛ نجاح الاتصال لا يعني وجود زيارات مسجلة.';
+  title.textContent=summary?'ملخص الأجهزة المشاركة — الاتصال يعمل':sharedState==='loading'?'جارٍ قراءة ملخص الأجهزة المشاركة · حتى 30 ثانية':safeEndpoint(config.endpoint)?'تعذّرت قراءة التجميع المشترك حاليًا':'الجمع المشترك غير مفعّل';
+  detail.textContent=safeEndpoint(config.endpoint)?'يشمل فقط الأحداث المستلمة بعد أن يختار الزائر «مشاركة إحصاءات مجهولة». زيارة البوابة وحدها لا تفعّل المشاركة، و«هذا الجهاز فقط» لا يرسل أحداثه إلى هذا المصدر.':'لوحة المؤشرات وأداة القياس جاهزتان؛ يلزم نشر نقطة التجميع وربطها قبل عرض إجمالي البوابة. لا تتوفر أرقام مشتركة الآن.';
+  if(summary&&!summary.rows.some(row=>row.count>0))detail.textContent+=' لم تُستقبل أحداث للفترة المختارة؛ هذا لا يعني أن البوابة لم تُزر.';
  }else{title.textContent='ملخص مستورد — لقطة محفوظة';detail.textContent='المصدر: '+importedName+' · يعرض فترة الملف الأصلية. لا يُدمج مع بيانات هذا الجهاز ولا يُحدّث تلقائيًا.';}
  if(summary?.partialCoverage)detail.textContent+=' تغطية جزئية: يبدأ السجل المحتفظ به من '+displayDay(summary.coverageFrom)+'.';
  if(summary?.truncated)detail.textContent+=' تنبيه: وصل السجل المحلي إلى حد الاحتفاظ، وقد تكون بعض الأحداث الأقدم غير متاحة.';
@@ -96,24 +123,24 @@ function status() {
 }
 function makeKpi(label,value,note,empty=false) { const card=element('article','kpi');card.append(element('span','kpi-label',label),element('strong','kpi-value'+(empty?' empty-value':''),value),element('small','',note));return card; }
 function renderKpis(rows) {
- const hasData=rows.some(r=>r.count>0),selected=$('section').value;
- const sessions=selected==='all'?summary?.sessions:summary?.sectionSessions?.[selected];
+ const state=readingState(rows),available=state.available,selected=$('section').value;
+ const sessions=selected==='all'?summary?.sessions:summary?.sectionSessions?.[selected]??(available&&!rows.some(r=>r.count>0)?0:undefined);
  const engaged=selected==='all'?summary?.engagedSessions:summary?.engagedSectionSessions?.[selected];
  const views=count(rows,viewEvents),interactions=count(rows,meaningful),useful=count(rows,new Set(['feedback_useful'])),responses=useful+count(rows,new Set(['feedback_not_useful']));
- const target=$('kpis');target.replaceChildren();
- const sessionKnown=hasData&&Number.isSafeInteger(sessions);
- target.append(makeKpi('جلسات الاستخدام',sessionKnown?number(sessions):'لا تتوفر بيانات','جلسات، وليست أشخاصًا مختلفين',!sessionKnown));
- target.append(makeKpi('مرات فتح المحتوى',hasData?number(views):'لا تتوفر بيانات','فتح الصفحات والأقسام',!hasData));
- target.append(makeKpi('التفاعلات',hasData?number(interactions):'لا تتوفر بيانات',sessionKnown&&sessions>0&&Number.isSafeInteger(engaged)?'الجلسات المتفاعلة: '+pct(engaged,sessions)+' ('+number(engaged)+' من '+number(sessions)+')':'فتح مصادر أو خدمات أو تفاعل مع نشاط',!hasData));
- target.append(makeKpi('بدايات الأنشطة المسجلة',hasData?number(count(rows,new Set(['activity_start']))):'لا تتوفر بيانات','أحداث بدء من الأنشطة المدعومة، وليست عدد طلاب',!hasData));
- target.append(makeKpi('إتمامات الأنشطة المسجلة',hasData?number(count(rows,new Set(['activity_complete']))):'لا تتوفر بيانات','بلوغ مراجعة تعلم أو نشاط أو إقرار ذاتي؛ لا يثبت نجاح إجراء أو كفاية سريرية',!hasData));
- target.append(makeKpi('الاستفادة المبلّغ عنها',responses?pct(useful,responses):(hasData?'لا توجد إجابات':'لا تتوفر بيانات'),responses?number(useful)+' «أفادني» من '+number(responses)+' إجابة':'رأي المجيبين عن الإفادة، لا اختبار تعلّم',!responses));
+ const target=$('kpis');target.replaceChildren();const missing=unavailableValue(state);
+ const sessionKnown=available&&Number.isSafeInteger(sessions),origin=source==='local'?'المحفوظة على هذا الجهاز':'المستلمة في المصدر المختار';
+ target.append(makeKpi('جلسات مسجلة',sessionKnown?number(sessions):missing,'جلسات '+origin+'، وليست عدد زوار أو أفراد مختلفين',!sessionKnown));
+ target.append(makeKpi('مرات فتح المحتوى',available?number(views):missing,'أحداث فتح الصفحات والأقسام '+origin,!available));
+ target.append(makeKpi('التفاعلات',available?number(interactions):missing,sessionKnown&&sessions>0&&Number.isSafeInteger(engaged)?'الجلسات المتفاعلة: '+pct(engaged,sessions)+' ('+number(engaged)+' من '+number(sessions)+')':'فتح مصادر أو خدمات أو تفاعل مع نشاط مسجل',!available));
+ target.append(makeKpi('بدايات الأنشطة المسجلة',available?number(count(rows,new Set(['activity_start']))):missing,'أحداث بدء من الأنشطة المدعومة، وليست عدد طلاب',!available));
+ target.append(makeKpi('إتمامات الأنشطة المسجلة',available?number(count(rows,new Set(['activity_complete']))):missing,'بلوغ مراجعة تعلم أو نشاط أو إقرار ذاتي؛ لا يثبت نجاح إجراء أو كفاية سريرية',!available));
+ target.append(makeKpi('الاستفادة المبلّغ عنها',responses?pct(useful,responses):available?'لا توجد إجابات':missing,responses?number(useful)+' «أفادني» من '+number(responses)+' إجابة':'رأي المجيبين عن الإفادة، لا اختبار تعلّم',!responses));
 }
 function renderSections(rows) {
- const target=$('section-rows');target.replaceChildren();const selected=$('section').value,hasData=rows.some(r=>r.count>0);
+ const target=$('section-rows');target.replaceChildren();const selected=$('section').value,state=readingState(rows),available=state.available;
  const data=Object.entries(sections).filter(([id])=>selected==='all'||id===selected).map(([id,label])=>{const entries=rows.filter(row=>row.section===id);return {id,label,views:count(entries,viewEvents),interactions:count(entries,meaningful),useful:count(entries,new Set(['feedback_useful'])),responses:count(entries,new Set(['feedback_useful','feedback_not_useful']))};}).sort((a,b)=>b.views-a.views||b.interactions-a.interactions);
- const max=Math.max(1,...data.map(x=>x.views));
- data.forEach(row=>{const tr=element('tr'),name=element('td');name.append(element('span','section-name',row.label));const track=element('span','bar-track'),fill=element('span','bar-fill');fill.style.width=(hasData?row.views/max*100:0)+'%';track.setAttribute('aria-hidden','true');track.append(fill);name.append(track);tr.append(name,element('td',!hasData?'muted':'',hasData?number(row.views):'غير مقاس'),element('td',!hasData?'muted':'',hasData?number(row.interactions):'غير مقاس'));const benefit=element('td');benefit.append(element('span','',row.responses?pct(row.useful,row.responses):'—'));if(row.responses)benefit.append(element('div','small-text',number(row.responses)+' إجابة'));else benefit.append(element('div','small-text',hasData?'لا توجد إجابات':'غير مقاس'));tr.append(benefit);target.append(tr);});
+ const max=Math.max(1,...data.map(x=>x.views)),missing=unavailableValue(state);
+ data.forEach(row=>{const tr=element('tr'),name=element('td');name.append(element('span','section-name',row.label));const track=element('span','bar-track'),fill=element('span','bar-fill');fill.style.width=(available?row.views/max*100:0)+'%';track.setAttribute('aria-hidden','true');track.append(fill);name.append(track);tr.append(name,element('td',!available?'muted':'',available?number(row.views):missing),element('td',!available?'muted':'',available?number(row.interactions):missing));const benefit=element('td');benefit.append(element('span','',row.responses?pct(row.useful,row.responses):'—'));benefit.append(element('div','small-text',row.responses?number(row.responses)+' إجابة':available?'لا توجد إجابات':missing));tr.append(benefit);target.append(tr);});
 }
 function summarizeScenarioEvents(all, dates) {
  if(!validDay(dates?.from)||!validDay(dates?.to)||dates.from>dates.to)throw Error('فترة تفصيل الموضوعات غير صالحة.');
@@ -146,34 +173,39 @@ function renderScenarioTopics() {
  }
 }
 function renderDaily(rows) {
- const chart=$('daily-chart'),table=$('daily-rows');chart.replaceChildren();table.replaceChildren();
- if(!summary||!rows.some(r=>r.count>0)){chart.append(element('div','empty-state',source==='shared'&&summary?'الاتصال يعمل؛ لا توجد أحداث مستلمة لهذه الفترة والقسم.':'لا تتوفر بيانات مقاسة لهذه الفترة والقسم.'));const tr=element('tr'),td=element('td','','لا تتوفر بيانات');td.colSpan=3;tr.append(td);table.append(tr);return;}
- const data=[];for(let d=summary.from;d<=summary.to;d=shiftDay(d,1)){const subset=rows.filter(r=>r.day===d);const measured=summary.collectionStartedAt&&d>=day(summary.collectionStartedAt)&&(!summary.coverageFrom||d>=summary.coverageFrom);data.push({day:d,views:count(subset,viewEvents),interactions:count(subset,meaningful),measured});}
- const max=Math.max(1,...data.map(r=>r.views));
- data.forEach((row,index)=>{const col=element('div','day-col'),bar=element('span','day-bar');bar.style.height=(row.views/max*100)+'%';col.title=displayDay(row.day)+' · '+(row.measured?number(row.views)+' فتح · '+number(row.interactions)+' تفاعل':'قبل بدء القياس');bar.setAttribute('aria-hidden','true');col.append(bar);if(index===0||index===data.length-1||index===Math.floor(data.length/2))col.append(element('span','day-label',row.day.slice(5)));chart.append(col);const tr=element('tr');tr.append(element('td','',displayDay(row.day)),element('td','',row.measured?number(row.views):'غير مقاس'),element('td','',row.measured?number(row.interactions):'غير مقاس'));table.append(tr);});
- chart.setAttribute('role','img');chart.setAttribute('aria-label','أعمدة مرات فتح المحتوى يوميًا؛ الأرقام التفصيلية في الجدول التالي.');
+ const chart=$('daily-chart'),table=$('daily-rows');chart.replaceChildren();table.replaceChildren();const state=readingState(rows);
+ if(!summary){chart.append(element('div','empty-state',state.kind==='loading'?'جارٍ قراءة المصدر…':state.kind==='error'?'تعذّرت قراءة المصدر؛ لا توجد أرقام مؤكدة الآن.':'لا توجد قراءة متاحة.'));const tr=element('tr'),td=element('td','',unavailableValue(state));td.colSpan=3;tr.append(td);table.append(tr);return;}
+ const start=coverageStart(),data=[];
+ for(let d=summary.from;d<=summary.to;d=shiftDay(d,1)){const subset=rows.filter(r=>r.day===d),observed=subset.some(r=>r.count>0),covered=observed||!!start&&d>=start;data.push({day:d,views:count(subset,viewEvents),interactions:count(subset,meaningful),covered});}
+ const hasEvents=rows.some(r=>r.count>0),max=Math.max(1,...data.map(r=>r.views));
+ if(!hasEvents)chart.append(element('div','empty-state',state.kind==='outside'?'الفترة خارج التغطية المتاحة؛ لا تُعرض أصفار عن أيام غير مقاسة.':source==='local'?'لا توجد أحداث محفوظة على هذا الجهاز للفترة والقسم المختارين.':'نجحت القراءة؛ لا توجد أحداث مستلمة للفترة والقسم المختارين. هذا لا يحصي جميع الزيارات.'));
+ data.forEach((row,index)=>{
+  if(hasEvents){const col=element('div','day-col'),bar=element('span','day-bar');bar.style.height=(row.views/max*100)+'%';col.title=displayDay(row.day)+' · '+(row.covered?number(row.views)+' فتح · '+number(row.interactions)+' تفاعل':'خارج التغطية المتاحة');bar.setAttribute('aria-hidden','true');col.append(bar);if(index===0||index===data.length-1||index===Math.floor(data.length/2))col.append(element('span','day-label',row.day.slice(5)));chart.append(col);}
+  const tr=element('tr');tr.append(element('td','',displayDay(row.day)),element('td','',row.covered?number(row.views):'خارج التغطية'),element('td','',row.covered?number(row.interactions):'خارج التغطية'));table.append(tr);
+ });
+ chart.setAttribute('role',hasEvents?'img':'status');chart.setAttribute('aria-label',hasEvents?'أعمدة أحداث فتح المحتوى المسجلة يوميًا؛ الأرقام والتغطية في الجدول التالي.':'حالة وصول أحداث القياس للفترة والقسم المختارين.');
 }
 function render() {
  status();const dates=summary||{from:$('from').value,to:$('to').value};$('period-label').textContent=displayDay(dates.from)+' — '+displayDay(dates.to)+' · '+(sections[$('section').value]||'كل الأقسام');
  $('updated-label').textContent=summary?'آخر قراءة: '+displayTime(summary.generatedAt):'لا توجد قراءة متاحة';
- $('collection-label').textContent=summary?.collectionStartedAt?'بداية القياس: '+displayTime(summary.collectionStartedAt)+'؛ ولا توجد بيانات عن الزيارات الأسبق.':'لم يُسجّل بدء قياس متاح في هذا المصدر بعد.';
+ $('collection-label').textContent=summary?(summary.collectionStartedAt?'بداية السجل المتاح: '+displayTime(summary.collectionStartedAt)+'؛ ولا تُستعاد الزيارات الأسبق.':source==='local'?'لا توجد أحداث محفوظة تحدد بداية السجل المحلي.':'لم يحدد الملخص تاريخ بدء القياس.'):source==='shared'&&sharedState==='loading'?'يجري التحقق من بداية السجل والتغطية.':'تعذّر تحديد بداية السجل والتغطية حتى تتوفر قراءة ناجحة.';
  if(summary?.coverageFrom)$('collection-label').textContent+=' البيانات المحتفظ بها تبدأ من '+displayDay(summary.coverageFrom)+'.';
  if(summary?.partialCoverage)$('collection-label').textContent+=' تنبيه: جزء من الفترة المختارة يسبق التغطية المتاحة.';
  if(summary?.truncated)$('collection-label').textContent+=' بلغ السجل المحلي حد الاحتفاظ؛ قد لا يشمل جميع أحداث الفترة.';
- const rows=filteredRows();renderKpis(rows);renderSections(rows);renderDaily(rows);renderScenarioTopics();$('export').disabled=!summary||!rows.length;
+ const rows=filteredRows();renderMeasurementContext(rows);renderKpis(rows);renderSections(rows);renderDaily(rows);renderScenarioTopics();$('export').disabled=!summary||!rows.length;
 }
 async function refresh() {
- const request=++sequence;setError('');summary=null;if(source==='shared')sharedState=safeEndpoint(config.endpoint)?'loading':'unconfigured';render();$('refresh').disabled=true;
+ const request=++sequence;setError('');summary=null;readFailed=false;if(source==='shared')sharedState=safeEndpoint(config.endpoint)?'loading':'unconfigured';render();$('refresh').disabled=true;
  try{
   if(!core)throw Error('تعذّر تحميل أداة المؤشرات؛ حدّث الصفحة وتحقق من اتصالك.');
   const dates=source==='import'?{from:imported?.from,to:imported?.to}:range();
   let result;
-  if(source==='local')result=core.aggregate(core.readEvents(),dates);
+  if(source==='local'){if(core.storageAvailable&&!core.storageAvailable())throw Error('التخزين المحلي غير متاح في هذا المتصفح؛ تعذّرت قراءة السجل، ولا يمكن عرض صفر بدلًا منه. تحقق من إعدادات الخصوصية والتخزين.');result=core.aggregate(core.readEvents(),dates);}
   else if(source==='import'){if(!imported)throw Error('استورد ملخصًا إجماليًا أولًا.');result=imported;}
   else{const endpoint=safeEndpoint(config.endpoint);if(!endpoint){render();return;}result=await jsonp(endpoint,dates);}
   if(request!==sequence)return;
   summary=result;if(source==='shared')sharedState='connected';render();
- }catch(error){if(request===sequence){summary=null;if(source==='shared')sharedState='error';setError(error.message||'تعذّر تحميل المؤشرات.');render();}}
+ }catch(error){if(request===sequence){summary=null;readFailed=true;if(source==='shared')sharedState='error';setError(error.message||'تعذّر تحميل المؤشرات.');render();}}
  finally{if(request===sequence)$('refresh').disabled=false;}
 }
 function setSource(value) {
