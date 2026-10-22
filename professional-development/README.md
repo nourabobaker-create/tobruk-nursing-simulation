@@ -1,6 +1,6 @@
 # Staff, teaching assistant and faculty development
 
-Publication refresh: 22 October 2026 (`20261022-3`). The owner explicitly authorised publication on `main`, approved guide status and protected PDF copies. Cache versions are refreshed for the guide catalogue and follow-up interface. Read-only verification confirmed all 81 PDF pages have no text layer, AES-256 permissions prohibit printing/copying/modification, and the 24 existing metrics checks pass.
+Publication refresh: 22 October 2026 (`20261022-5`). The owner explicitly authorised publication on `main`, approved guide status and protected PDF copies. Cache versions are refreshed for the guide catalogue and follow-up interface. Read-only verification confirmed all 81 PDF pages have no text layer, AES-256 permissions prohibit printing/copying/modification, and the 24 existing metrics checks pass.
 
 Public entry points: `?role=staff`, `?role=ta`, `?role=faculty`; add `&lang=en` for English. Arabic and English controls describe the actual language of each resource. Institutional guides are presented as approved according to the user's explicit instruction of 21 October 2026. This instruction does not invent formal decision numbers or resolve operational gaps in the underlying references. The employee and faculty/TA guides are Arabic; the research guide is English. Version 0.3 source content was prepared on 14 October 2026; protected publication copies are dated 21 October 2026.
 
@@ -26,12 +26,10 @@ The second release contains 46 curated resources, nine role-specific pathways (t
 
 New fixed-ID events distinguish pathway opens, self-reported pathway steps and work-tool opens in the local follow-up panel. Programmatic re-rendering must not emit pathway-open events. Work-tool save/clear and preparation ticks do not imply training completion and do not transmit text. The existing central collector remains grouped by section/event; per-role details remain local. No synthetic events are sent to the shared collector for QA.
 
-## Saudi university review - 22 October 2026
+## General resource and benchmark enrichment - 22 October 2026
 
-The Saudi section documents selected public/officially indexed development pages from 29 universities, not every Saudi university or every programme. It contains 17 additional public references (63 general catalogue entries in total) and 7 separately labelled conditional/historical links. No new unverified live session is added. The legacy SEU 2020 recording links were omitted from recommendations because playback was not verified. Where direct retrieval was unavailable, the coverage table explicitly labels reliance on officially indexed descriptions and unverified access conditions; these entries are not course recommendations.
+The general catalogue contains 63 resources and guides, including 17 additional public university references. Sources are organised by role, topic and language. University names identify providers within this common catalogue; there are no country-specific sections, provider spotlights or national-policy content. No new unverified live session is added. Older references retain their archive and access notices; reference reading does not establish course enrolment, eligibility or a certificate.
 
-Jouf receives a dedicated spotlight and public Outlook/OneDrive reading guides. Its 8 June 2026 technical training announcement explicitly charges fees; no future free public Jouf course was verified. KSU affiliate training and restricted/closed Qassim courses are information links with eligibility notices, not offers of open enrolment. Old guides/archives remain labelled. Saudi university documents are linked at their official source; they are not imported as Faculty policy or reposted copies.
-
-Five direct-read Saudi service-design references (Jouf, KSU, PNU, KAU and Hail) join the five earlier international/Arab benchmarks. Saudi Vision 2030/HCDP is presented separately as a national direction reference, with no affiliation claim.
+Ten university design references appear together in the general benchmark list. Each records its source, design idea and local adaptation. External documents stay linked at their official source and are not imported as Faculty policy or reposted copies.
 
 `needs.js` offers one local work-priority choice, three matching resources and a safe handoff to the personal development plan. It pre-fills a wholly blank draft only; existing text is preserved and no automatic save occurs. Dates and outcomes remain blank. Fixed need-choice identifiers are optionally measured; no plan text or personal response is sent.
