@@ -94,6 +94,70 @@
       }
     },
     {
+      "id": "guide-ethics-charter",
+      "title": {
+        "ar": "الميثاق الأخلاقي والسلوك المؤسسي",
+        "en": "Workplace ethics and conduct"
+      },
+      "description": {
+        "ar": "متن الميثاق بالعربية مع ملخص إنجليزي للتعريف بحقوق العاملين ومسؤولياتهم وقنوات الاستفسار والإبلاغ؛ النماذج الإدارية محفوظة مع الأصل المؤسسي.",
+        "en": "The Arabic charter body with an English orientation summary on staff responsibilities, rights and enquiry/reporting routes. Administrative forms remain with the institutional source."
+      },
+      "provider": "كلية التمريض · Tobruk University",
+      "roles": [
+        "staff",
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "أدلة الكلية",
+        "en": "Faculty guides"
+      },
+      "language": "multi",
+      "url": "./guides/ethics-charter.pdf",
+      "access": {
+        "ar": "نسخة PDF محمية للقراءة. أصل عربي وملخص إنجليزي. نشر 24 أكتوبر 2026.",
+        "en": "Protected reading PDF: Arabic charter body and an English summary. Published 24 October 2026."
+      },
+      "kind": "guide",
+      "status": {
+        "ar": "معتمد للعمل · الميثاق v0.3",
+        "en": "Approved for operational use · Charter v0.3"
+      }
+    },
+    {
+      "id": "guide-recognition-accountability",
+      "title": {
+        "ar": "الثواب والعقاب: التقدير والمساءلة النظامية",
+        "en": "Recognition and fair accountability"
+      },
+      "description": {
+        "ar": "النظام القائم للتقدير والمساءلة، مع الحقوق والصلاحيات وطرق الاستفسار والتظلم؛ لا يضيف جزاءات أو استحقاقات مالية.",
+        "en": "Existing recognition and accountability arrangements, responsibilities and appeal routes; it creates no new penalties or financial entitlements."
+      },
+      "provider": "كلية التمريض · Tobruk University",
+      "roles": [
+        "staff",
+        "ta",
+        "faculty"
+      ],
+      "topic": {
+        "ar": "أدلة الكلية",
+        "en": "Faculty guides"
+      },
+      "language": "multi",
+      "url": "./guides/recognition-accountability.pdf",
+      "access": {
+        "ar": "نسخة PDF محمية للقراءة بالعربية مع ملخص إنجليزي. نشر 24 أكتوبر 2026.",
+        "en": "Protected reading PDF in Arabic with an English summary. Published 24 October 2026."
+      },
+      "kind": "guide",
+      "status": {
+        "ar": "معتمد للعمل · إتاحة النظام القائم",
+        "en": "Approved for operational use · Existing arrangements"
+      }
+    },
+    {
       "id": "ms-excel",
       "title": {
         "ar": "تعلّم Excel خطوة بخطوة",
@@ -1984,5 +2048,18 @@
         "en": "Check each new announcement for price, language and dates."
       }
     }
-  ]
+  ],
+  "governancePublication": {
+    "date": "2026-10-24",
+    "indicators": [
+      "2.17",
+      "2.18"
+    ],
+    "resourceIds": [
+      "guide-ethics-charter",
+      "guide-recognition-accountability"
+    ],
+    "scope": "Publication and orientation support only. Does not establish notification, understanding, application or effectiveness.",
+    "existingCalendarAndResourceChecksPreserved": true
+  }
 }

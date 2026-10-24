@@ -1,0 +1,24 @@
+{
+  "publicationDate": "2026-10-24",
+  "purpose": "Staff orientation; publication does not establish notification, understanding, implementation or effectiveness.",
+  "documents": [
+    {
+      "file": "ethics-charter.pdf",
+      "pages": 8,
+      "sha256": "6cb94d5b6c0ac8f4f89519c5a08d41560dac78ba9edd8b74cc21e675966d98f0",
+      "source": "NUR-MAN-ETH-001 v0.3; Arabic charter body, English orientation summary; editorial and administrative form appendices retained with institutional source."
+    },
+    {
+      "file": "recognition-accountability.pdf",
+      "pages": 5,
+      "sha256": "31b493fd84ac6b56652685e0815b1bde0284571804569fee623d45cc7b0ba7ec",
+      "source": "NUR-MEC-012 in NUR-MAN-GOV-001 v1.2; NUR-POL-HR-001 v1.0 accountability policy; NUR-POL-GOV-004 v1.1 recognition policy."
+    }
+  ],
+  "format": {
+    "readingPasswordRequired": false,
+    "permissions": "AES-256: printing, copy/extraction, modification and annotation disallowed in compliant readers; screenshots and OCR cannot be prevented.",
+    "textLayer": false
+  },
+  "operationalStatus": "Approved for operational use under the owner's instruction of21October2026. No new formal decision reference or authority is created."
+}

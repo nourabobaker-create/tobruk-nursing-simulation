@@ -1,5 +1,7 @@
 # Staff, teaching assistant and faculty development
 
+Latest scoped publication: 24 October 2026. Two governance reading PDFs were added, taking the resource catalogue from63to65; this does not refresh or re-verify the22October event/resource catalogue. Earlier publication entries below remain history.
+
 Publication refresh: 22 October 2026 (`20261022-5`). The owner explicitly authorised publication on `main`, approved guide status and protected PDF copies. Cache versions are refreshed for the guide catalogue and follow-up interface. Read-only verification confirmed all 81 PDF pages have no text layer, AES-256 permissions prohibit printing/copying/modification, and the 24 existing metrics checks pass.
 
 Public entry points: `?role=staff`, `?role=ta`, `?role=faculty`; add `&lang=en` for English. Arabic and English controls describe the actual language of each resource. Institutional guides are presented as approved according to the user's explicit instruction of 21 October 2026. This instruction does not invent formal decision numbers or resolve operational gaps in the underlying references. The employee and faculty/TA guides are Arabic; the research guide is English. Version 0.3 source content was prepared on 14 October 2026; protected publication copies are dated 21 October 2026.
@@ -41,3 +43,10 @@ Ten university design references appear together in the general benchmark list. 
 Role selection, phase filters and search help users find the relevant summary. Optional task statuses stay in this browser and are never sent to the Faculty or the metrics collector. They organise personal work; they are not institutional completion records or staff performance scores. No completion percentages, overdue labels or rankings are generated.
 
 The hub entry follows its current audience and language. Opt-in measurement captures only fixed role, phase and reference identifiers alongside the existing page-use and usefulness events. Opening a summary or reference does not establish that work was completed. Coverage includes the new page; central public totals retain the existing section/event grouping.
+
+
+## Governance documents — 24 October 2026
+
+Two protected PDF reading copies were added to My Guides for staff, teaching assistants and teaching staff. `guide-ethics-charter` presents the Arabic charter body (NUR-MAN-ETH-001 v0.3), omitting editorial notes and administrative form appendices, with an English orientation summary. `guide-recognition-accountability` explains the existing NUR-MEC-012, HR disciplinary policy and NUR-POL-GOV-004 v1.1, with an English summary. Operational-use status follows the owner's 21 October instruction; no formal decision number is invented. The PDF source manifest records the precise source editions and publication scope. Do not publish editable drafts, PDF owner passwords, private Drive links, internal review notes or individual cases.
+
+All 63 prior resources, calendars, events, journal behavior and measurement consent remain preserved. Existing fixed-ID guide-open instrumentation applies to both added cards. Those counts establish technical access only; they do not establish notification of every person, understanding, ethics implementation or effective accountability. Use the Faculty's existing archive and meeting minutes to retain the owner's actual announcement and orientation record. No acknowledgement form, individual registry, automatic notification, penalty or financial award was created. Publication supports indicators2.17/2.18 and does not automatically change their internal review status.
