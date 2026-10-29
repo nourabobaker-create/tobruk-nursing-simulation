@@ -9,7 +9,7 @@ const byId = new Map(resources.map(r => [String(r.id), r]));
 const TYPES = {book:'كتاب',chapter:'فصل تعليمي',article:'مقال تثقيفي',paper:'مقالة بحثية',guide:'دليل أو قائمة تحقق',video:'فيديو',course:'دورة',journal:'مجلة أو دورية',tool:'أداة'};
 const LANGUAGES = {ar:'العربية',en:'الإنجليزية',multi:'متعدد اللغات'};
 const LEVELS = {foundation:'تأسيسي',clinical:'سريري',graduate:'الاستعداد للمهنة',all:'جميع المستويات'};
-const ACCESS = {free:'مجاني',free_registration:'مجاني بحساب مجاني',free_learning_paid_certificate:'التعلّم مجاني؛ الشهادة مدفوعة',mixed:'وصول متنوع'};
+const ACCESS = {free:'مجاني',free_registration:'مجاني بحساب مجاني',free_learning_paid_certificate:'التعلّم مجاني؛ الشهادة مدفوعة',mixed:'وصول متنوع',paid:'شراء أو ترخيص مطلوب',trial:'تجربة محدودة؛ الكامل باشتراك',conditional:'وصول مشروط',restricted:'مقيّد جغرافيًا'};
 const PAGE_SIZE = 24;
 let filtered = [], visible = PAGE_SIZE, courseVisible = PAGE_SIZE, journalVisible = PAGE_SIZE;
 const storeKey = 'tobruk-library-v4-personal';
@@ -18,7 +18,7 @@ let storageAvailable = true;
 try { const prior = JSON.parse(localStorage.getItem(storeKey) || '{}'); local.saved = Array.isArray(prior.saved) ? prior.saved : []; local.progress = Array.isArray(prior.progress) ? prior.progress : []; } catch (_) { storageAvailable = false; }
 const saved = new Set(local.saved.map(String));
 const progress = new Set(local.progress.map(String));
-const number = n => new Intl.NumberFormat('ar').format(Number(n) || 0);
+const number = n => new Intl.NumberFormat('en').format(Number(n) || 0);
 const normalize = value => String(value || '').toLowerCase().normalize('NFKD').replace(/[\u064b-\u065f\u0670\u0640]/g,'').replace(/[أإآٱ]/g,'ا').replace(/ى/g,'ي').replace(/ة/g,'ه').replace(/[^\p{L}\p{N}\s]/gu,' ').replace(/\s+/g,' ').trim();
 const safeUrl = value => { try { const u = new URL(String(value || ''), location.href); return ['http:','https:'].includes(u.protocol) ? u.href : '#'; } catch (_) { return '#'; } };
 function node(tag, cls, text) { const e = document.createElement(tag); if (cls) e.className = cls; if (text !== undefined && text !== null) e.textContent = String(text); return e; }
@@ -39,6 +39,7 @@ function saveButtons() { document.querySelectorAll('[data-save-id]').forEach(b =
 function toggleSave(id) { saved.has(id) ? saved.delete(id) : saved.add(id); persist(); saveButtons(); if (activePanel === 'saved') renderSaved(); toast(saved.has(id) ? 'أُضيف المصدر إلى قائمتك على هذا الجهاز.' : 'أُزيل المصدر من قائمتك.'); }
 function resourceCard(r) {
  const card = node('article','resource-card');
+ card.dataset.resourceId = String(r.id);
  if (r.type === 'paper') card.classList.add('is-paper');
  const top = node('div','card-top'); top.append(node('span','type-label',TYPES[r.type] || 'مصدر'));
  const save = node('button','save-button'); save.type = 'button'; save.dataset.saveId = String(r.id); save.setAttribute('aria-pressed',String(saved.has(String(r.id)))); save.setAttribute('aria-label','حفظ في قائمتي: ' + r.title_ar); save.textContent = saved.has(String(r.id)) ? '★' : '☆'; save.addEventListener('click',() => toggleSave(String(r.id))); top.append(save);
@@ -63,6 +64,7 @@ function resourceCard(r) {
  const cert = r.certificate_note_ar || r.certificate_ar || r.certificate;
  if (r.type === 'course' && cert) card.append(node('p','access-note','الشهادة: ' + (typeof cert === 'string' ? cert : JSON.stringify(cert))));
  const bottom = node('div','card-bottom'); bottom.append(link(r.type === 'paper' ? 'اقرأ النص الكامل ↗' : 'افتح المصدر ↗',r.url,'open-source'),node('span','verification',r.verification === 'page_checked' ? 'الصفحة مفحوصة' : r.verification === 'index_checked' ? 'الفهرس مفحوص' : 'راجع تقرير التحقق')); card.append(bottom);
+ card.querySelectorAll('a').forEach(a => { a.dataset.metricsItem = String(r.id); });
  return card;
 }
 function fillCards(target,items) { resetElement(target); if (!items.length) { target.append(empty('لا توجد مواد مطابقة')); return; } const f = document.createDocumentFragment(); items.forEach(r => f.append(resourceCard(r))); target.append(f); }
@@ -121,7 +123,7 @@ const paperPicks = [], paperTopics = new Set();
 for (const [language,limit] of [['ar',2],['en',4]]) { let picked=0; for (const p of papers.filter(r=>r.language===language)) { const topic=(p.topics || [p.provider])[0]; if (!paperTopics.has(topic)) { paperPicks.push(p); paperTopics.add(topic); picked++; } if (picked>=limit) break; } }
 for (const p of papers) { if (paperPicks.length>=6) break; if (!paperPicks.includes(p)) paperPicks.push(p); }
 fillCards($('papers-featured'),paperPicks);
-const bookPicks = [...ranked.filter(r => r.type === 'book' && r.language === 'ar').slice(0,2),...resources.filter(r => r.type === 'book' && r.language !== 'ar').slice(0,4)];
+const bookPicks = [...ranked.filter(r => r.type === 'book' && r.language === 'ar' && r.access === 'free').slice(0,2),...resources.filter(r => r.type === 'book' && r.language !== 'ar' && r.access === 'free').slice(0,4)];
 fillCards($('books-featured'),bookPicks);
 function yearLabel(year) { const names = {1:'السنة الأولى',2:'السنة الثانية',3:'السنة الثالثة',4:'السنة الرابعة'}; return names[year] || String(year || 'غير محدد'); }
 [...new Set(curriculum.map(c => String(c.year)))].sort().forEach(y => { const o = node('option','',yearLabel(y)); o.value = y; $('year-filter').append(o); });
@@ -136,6 +138,7 @@ function renderCurriculum() {
  if (!items.length) { target.append(empty('لا توجد مقررات مطابقة')); return; }
  items.forEach(c => { const d = node('details','course-card'); const s = node('summary'); const names = node('span'); names.append(node('span','course-title',c.title_ar),node('span','course-meta',[yearLabel(c.year),c.semester ? 'الفصل '+number(c.semester) : '',c.code || '',number((c.resource_ids || []).length)+' رابطًا مقترحًا'].filter(Boolean).join(' · '))); s.append(names); d.append(s);
  const content = node('div','course-content'); content.append(node('p','',c.title_original || 'موضوعات المقرر'));
+ if (c.id === 'CRS-017') content.append(link('مجموعة علم الأدوية: الكتب والشروحات والتطبيقات / Pharmacology collection ←','pharmacology/','primary-button'));
  const modules = Array.isArray(c.modules) && c.modules.length ? c.modules : (c.topics || []).map(t => ({title_ar:t,resource_ids:[]}));
  modules.forEach(m => {
   const md = node('details','module'); const matches = relatedForModule(c,m); const review = m.mapping_review;
@@ -202,4 +205,5 @@ applyFilters(); renderCurriculum(); renderSkills(); renderCourses(); renderJourn
 showPanel(location.hash.slice(1) || 'discover',false);
 window.addEventListener('hashchange',() => showPanel(location.hash.slice(1) || 'discover',false));
 })();
+
 
