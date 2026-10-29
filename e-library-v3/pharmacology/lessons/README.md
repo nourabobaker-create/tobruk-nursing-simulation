@@ -1,0 +1,9 @@
+# Original pharmacology lessons — 29 October 2026
+
+`beta-blockers/index.html` is a self-contained Arabic/English lesson with two fictional pre-dose assessment cases and six original decision questions. It links to the official RegisteredNurseRN lecture as suggested viewing and topic inspiration. It does not contain or translate a transcript, reproduce the provider's quiz, use its distinctive mnemonics, or reuse its images, audio or footage. No video was downloaded. No provider endorsement or faculty review is asserted.
+
+Scientific content was independently checked against NCI's metoprolol mechanism entry, the DailyMed metoprolol tartrate label updated 25 June 2026, and Open RN Nursing Pharmacology. The source section keeps the viewing source separate from the clinical references. Case pulse/BP limits belong to explicit fictional orders and are not general administration rules. The activity checks interpretation, action under an order, communication and documentation; it is not a physiological engine or clinical competency assessment.
+
+The downloaded HTML embeds its text, styles and case logic. The video and external references still require internet access. Existing optional PortalMetrics scripts record only bounded activity-start/completion identifiers and outbound-resource identifiers under the existing consent settings; choices, feedback text and learner scores are not transmitted. Completion means reaching the case review. It does not mean demonstrated clinical competence.
+
+Provider reuse policy checked: https://www.registerednursern.com/legal-disclosure/ . Linking and official player sharing are permitted; transcripts, quiz copying and redistribution are excluded. Future lessons must be independently authored from verified scientific facts and original cases, retaining exact video provenance as suggested viewing rather than claiming an authorized adaptation.
