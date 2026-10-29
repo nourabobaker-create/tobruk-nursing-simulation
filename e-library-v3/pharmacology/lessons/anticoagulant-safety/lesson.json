@@ -1,0 +1,1625 @@
+{
+  "id": "anticoagulant-safety",
+  "title": {
+    "ar": "مضادات التخثر: أخطاء صغيرة ونزف كبير",
+    "en": "Anticoagulants: small errors, major bleeding risk"
+  },
+  "subtitle": {
+    "ar": "الهيبارين نموذجًا: طابق المستحضر، تحقق من آخر إعطاء، وانتبه للضرر الخفي.",
+    "en": "Heparin as a model: match the product, verify the last administration and recognize hidden harm."
+  },
+  "goals": [
+    {
+      "ar": "ميّز مستحضر القسطرة عن الحقن العلاجي.",
+      "en": "Distinguish catheter products from therapeutic injections."
+    },
+    {
+      "ar": "تتبّع تكرار الجرعة خلال التسليم.",
+      "en": "Trace duplicate-dose risk at handoff."
+    },
+    {
+      "ar": "صعّد علامات النزف وإصابة الرأس دون انتظار الدم المرئي.",
+      "en": "Escalate bleeding concerns and head injury without waiting for visible blood."
+    }
+  ],
+  "concepts": [
+    {
+      "id": "purpose",
+      "title": {
+        "ar": "الاسم وحده لا يكفي",
+        "en": "The name alone is not enough"
+      },
+      "body": {
+        "ar": "الهيبارين يقلل قابلية التخثر، وقد يُوصف للوقاية من الجلطات أو لعلاجها. مستحضر قفل القسطرة له غرض وتركيز محددان؛ لا يُستبدل بحقن علاجي لتشابه الاسم.",
+        "en": "Heparin reduces clotting and may be prescribed for prevention or treatment. A catheter-lock product has a specific purpose and strength; a similar name does not authorize substitution with therapeutic injection."
+      },
+      "sourceIds": [
+        "medline",
+        "flush"
+      ]
+    },
+    {
+      "id": "strength",
+      "title": {
+        "ar": "الحجم لا يساوي التركيز",
+        "en": "Volume is not strength"
+      },
+      "body": {
+        "ar": "اقرأ units/mL ونوع المستحضر قبل الإعطاء. اللون وحجم العبوة ومكانها في الدرج ليست بدائل لمطابقة الأمر والملصق.",
+        "en": "Read units/mL and product type before administration. Colour, container volume and drawer location do not replace matching the order to the label."
+      },
+      "sourceIds": [
+        "label"
+      ]
+    },
+    {
+      "id": "record",
+      "title": {
+        "ar": "خانة فارغة ليست جرعة فائتة",
+        "en": "A blank box is not a missed dose"
+      },
+      "body": {
+        "ar": "عند تعارض MAR مع التسليم، تحقق من آخر إعطاء موثوق قبل تكرار الجرعة. يصحح السجل مع حفظ وقت التصحيح وسببه ومن تحقق.",
+        "en": "When MAR and handoff disagree, establish the last verified administration before repeating a dose. Correct the record with an auditable time, reason and verifier."
+      },
+      "sourceIds": [
+        "who"
+      ]
+    },
+    {
+      "id": "monitor",
+      "title": {
+        "ar": "المراقبة مرتبطة بالعلاج",
+        "en": "Monitoring is treatment-specific"
+      },
+      "body": {
+        "ar": "الهيبارين غير المجزأ والوارفارين والهيبارين منخفض الوزن الجزيئي ليست أدوية متبادلة. لا يجعل INR طبيعي التعرض الزائد آمنًا. يتبع الفريق خطة التحاليل والمراقبة المناسبة، دون تعديل مستقل من الطالب.",
+        "en": "Unfractionated heparin, warfarin and low-molecular-weight heparin are not interchangeable. A normal INR does not make excessive exposure safe. Follow the drug-specific laboratory and monitoring plan; students do not independently change treatment."
+      },
+      "sourceIds": [
+        "label"
+      ]
+    },
+    {
+      "id": "hidden",
+      "title": {
+        "ar": "انتبه للضرر الخفي",
+        "en": "Recognize hidden harm"
+      },
+      "body": {
+        "ar": "قد لا يكون النزف ظاهرًا. عرض جديد غير مفسر أو إصابة رأس أثناء مضاد التخثر يستحق التقييم؛ لا تُستنتج السلامة من الحديث الطبيعي أو الجلد السليم.",
+        "en": "Bleeding may not be visible. A new unexplained symptom or head injury during anticoagulation warrants assessment; normal conversation and intact skin do not establish safety."
+      },
+      "sourceIds": [
+        "medline",
+        "nice"
+      ]
+    }
+  ],
+  "terms": [
+    {
+      "term": "Anticoagulant",
+      "ar": "مضاد التخثر: يقلل قابلية الدم للتخثر",
+      "en": "A medicine that reduces clotting ability"
+    },
+    {
+      "term": "units/mL",
+      "ar": "عدد وحدات الدواء في كل ملليلتر",
+      "en": "Drug units in each millilitre"
+    },
+    {
+      "term": "MAR",
+      "ar": "سجل إعطاء الدواء",
+      "en": "Medication Administration Record"
+    },
+    {
+      "term": "aPTT",
+      "ar": "فحص تخثر قد يدخل خطة متابعة الهيبارين غير المجزأ بحسب البروتوكول",
+      "en": "A coagulation test that may be used in unfractionated-heparin protocols"
+    },
+    {
+      "term": "HIT",
+      "ar": "نقص الصفائح المحرّض بالهيبارين؛ يحتاج تقييمًا متخصصًا وقد يرتبط بالتخثر",
+      "en": "Heparin-induced thrombocytopenia; requires specialist assessment and may involve thrombosis"
+    },
+    {
+      "term": "Near miss",
+      "ar": "خطأ أُمسك قبل وصوله إلى المريض",
+      "en": "An error intercepted before it reached the patient"
+    }
+  ],
+  "errorChains": [
+    {
+      "id": "zeros",
+      "title": {
+        "ar": "ثلاثة أصفار إضافية",
+        "en": "Three extra zeroes"
+      },
+      "tinyStep": {
+        "ar": "قراءة الاسم والحجم فقط.",
+        "en": "Reading only name and volume."
+      },
+      "mechanism": {
+        "ar": "الملصقان التعليميان 10 و10,000 units/mL يختلفان 1000 مرة للكمية في الحجم نفسه.",
+        "en": "Teaching labels of 10 and 10,000 units/mL have a 1000-fold difference in amount per equal volume."
+      },
+      "harm": {
+        "ar": "وصول التركيز الأعلى بدل الموصوف قد يسبب تعرضًا زائدًا ونزفًا خطيرًا.",
+        "en": "The higher strength replacing the prescribed product may cause excessive exposure and serious bleeding."
+      },
+      "breakPoint": {
+        "ar": "طابق الغرض والتركيز والمنتج، واطلب مراجعة الصيدلة عند الاختلاف.",
+        "en": "Match purpose, strength and product; seek pharmacy review of any mismatch."
+      },
+      "sourceIds": [
+        "label",
+        "flush"
+      ]
+    },
+    {
+      "id": "signature",
+      "title": {
+        "ar": "توقيع متأخر",
+        "en": "A late signature"
+      },
+      "tinyStep": {
+        "ar": "اعتبار خانة غير موقعة جرعة لم تُعطَ.",
+        "en": "Assuming an unsigned box means no dose was given."
+      },
+      "mechanism": {
+        "ar": "قد تكون الجرعة أُعطيت بالفعل ويؤدي التكرار إلى تعرض إضافي.",
+        "en": "The dose may already have been given; repeating it adds exposure."
+      },
+      "harm": {
+        "ar": "قد يزيد خطر النزف ويتأخر اكتشافه إن بقي السجل متناقضًا.",
+        "en": "Bleeding risk may increase and detection may be delayed by conflicting records."
+      },
+      "breakPoint": {
+        "ar": "راجع آخر إعطاء وتسليم الرعاية قبل التنفيذ ووثق الحقيقة.",
+        "en": "Reconcile last administration and handoff before acting; document the facts."
+      },
+      "sourceIds": [
+        "who",
+        "medline"
+      ]
+    },
+    {
+      "id": "head",
+      "title": {
+        "ar": "ارتطام يبدو بسيطًا",
+        "en": "A bump that looks minor"
+      },
+      "tinyStep": {
+        "ar": "طمأنة المريض لأن الرأس لا ينزف خارجيًا.",
+        "en": "Reassuring because there is no external head bleeding."
+      },
+      "mechanism": {
+        "ar": "قد تكون الإصابة داخلية، ومضاد التخثر يغيّر سياق تقييمها.",
+        "en": "The injury may be internal; anticoagulation changes the assessment context."
+      },
+      "harm": {
+        "ar": "قد يتأخر تقييم نزف داخل القحف وعلاجه.",
+        "en": "Assessment and treatment of intracranial bleeding can be delayed."
+      },
+      "breakPoint": {
+        "ar": "بلغ عن الإصابة والدواء وآخر تعرض والأعراض واتبع مسار إصابة الرأس.",
+        "en": "Report injury, medicine, last exposure and symptoms; follow the head-injury pathway."
+      },
+      "sourceIds": [
+        "nice"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "label",
+      "title": "DailyMed — Heparin Sodium Injection; updated 25 August 2026",
+      "url": "https://www.dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c8c4edd2-ee9e-4558-6b8c-b83adc242a0a",
+      "scope": {
+        "ar": "اختلاف التركيزات وخلط منتج الحقن بقفل القسطرة، والنزف والمراقبة.",
+        "en": "Strength and catheter-lock mixups, hemorrhage and monitoring."
+      },
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "ismp",
+      "title": "ISMP — High-Alert Medications in Acute Care Settings, 2024",
+      "url": "https://www.ismp.org/system/files/resources/2024-01/ISMP_HighAlert_AcuteCare_List_010924_MS5760.pdf",
+      "scope": {
+        "ar": "مضادات التخثر عالية الخطورة وتحتاج حواجز متعددة؛ لا يعاد نشر القائمة.",
+        "en": "Anticoagulants are high-alert medicines needing layered safeguards; the list is not reproduced."
+      },
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "medline",
+      "title": "MedlinePlus — Heparin Injection",
+      "url": "https://medlineplus.gov/druginfo/meds/a682826.html",
+      "scope": {
+        "ar": "وظيفة الهيبارين والتركيزات وأمثلة أعراض النزف.",
+        "en": "Heparin action, strengths and examples of bleeding symptoms."
+      },
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "nice",
+      "title": "NICE NG232 — Head injury, recommendation 1.5.13",
+      "url": "https://www.nice.org.uk/guidance/NG232/chapter/recommendations",
+      "scope": {
+        "ar": "تقييم إصابة الرأس لدى متلقي مضاد التخثر، والتصوير قرار للفريق.",
+        "en": "Head-injury assessment during anticoagulation; imaging is a team decision."
+      },
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "flush",
+      "title": "FDA — Heparin Lock Flush, USP, K133446",
+      "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf13/k133446.pdf",
+      "scope": {
+        "ar": "غرض منتج قفل القسطرة وتركيز 10 units/mL كمثال، لا كتوصية عامة.",
+        "en": "Catheter-lock purpose and 10 units/mL as a product example, not a universal recommendation."
+      },
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "who",
+      "title": "WHO — Medication safety in transitions of care",
+      "url": "https://www.who.int/publications/i/item/WHO-UHC-SDS-2019.9",
+      "scope": {
+        "ar": "مراجعة اختلافات الدواء وتبادل المعلومات عند تسليم الرعاية.",
+        "en": "Medication discrepancy review and information exchange at care transitions."
+      },
+      "checked": "2026-10-29"
+    }
+  ],
+  "cases": [
+    {
+      "id": "heparin-strength",
+      "title": {
+        "ar": "عبوتان بحجم متشابه",
+        "en": "Two containers of similar size"
+      },
+      "summary": {
+        "ar": "طالب تمريض تحت الإشراف يراجع منتج قفل قسطرة لمريض افتراضي بالغ. جميع الملصقات أمثلة تعليمية، لا تعليمات عامة لاختيار القفل.",
+        "en": "A supervised student reviews a catheter-lock product for a fictional adult. Labels are teaching examples, not general catheter-lock instructions."
+      },
+      "record": [
+        {
+          "label": {
+            "ar": "المنتج المحدد في الأمر",
+            "en": "Ordered product"
+          },
+          "value": {
+            "ar": "Heparin Lock Flush 10 units/mL",
+            "en": "Heparin Lock Flush 10 units/mL"
+          }
+        },
+        {
+          "label": {
+            "ar": "المستحضر الآخر",
+            "en": "Other product"
+          },
+          "value": {
+            "ar": "Heparin Sodium Injection 10,000 units/mL",
+            "en": "Heparin Sodium Injection 10,000 units/mL"
+          }
+        },
+        {
+          "label": {
+            "ar": "المعلومة المضللة",
+            "en": "Misleading cue"
+          },
+          "value": {
+            "ar": "حجم ظاهر متشابه 1 mL في بطاقتي المقارنة",
+            "en": "Similar visible 1 mL volume on the comparison cards"
+          }
+        },
+        {
+          "label": {
+            "ar": "الدور",
+            "en": "Role"
+          },
+          "value": {
+            "ar": "طالب تحت إشراف؛ لا تبديل منتج أو تركيز بصورة مستقلة",
+            "en": "Supervised student; no independent product or strength substitution"
+          }
+        }
+      ],
+      "order": {
+        "ar": "طابق مستحضر القفل الموصوف وتركيزه والغرض قبل الاستخدام. إذا اختلف المنتج أوقف التحضير واستوضح. هذه حالة تحقق، وليست إرشادات لحساب حجم القفل.",
+        "en": "Match the prescribed lock product, strength and purpose before use. Pause preparation and clarify a mismatch. This case checks verification; it does not teach calculation of catheter-lock volume."
+      },
+      "start": "choose",
+      "nodes": [
+        {
+          "id": "choose",
+          "type": "decision",
+          "scene": {
+            "ar": "أمر القسطرة يحدد مستحضر قفل معينًا. عبوتان متشابهتان أمامك، ولم يصل دواء إلى المريض.",
+            "en": "A catheter order specifies one lock product. Two similar containers are before you; no medicine has reached the patient."
+          },
+          "prompt": {
+            "ar": "كيف تختار؟",
+            "en": "How do you select?"
+          },
+          "choices": [
+            {
+              "id": "label",
+              "text": {
+                "ar": "أقرأ نوع المنتج وunits/mL وأطابقهما بالأمر.",
+                "en": "Read product type and units/mL and match them to the order."
+              },
+              "next": "check",
+              "effect": "protect",
+              "feedback": {
+                "ar": "الاسم والحجم ليسا تحققًا كاملًا.",
+                "en": "Name and volume are not complete verification."
+              },
+              "consequence": {
+                "ar": "يمكن اكتشاف الاختلاف قبل التعرض.",
+                "en": "The mismatch can be detected before exposure."
+              },
+              "sourceIds": [
+                "label"
+              ]
+            },
+            {
+              "id": "drawer",
+              "text": {
+                "ar": "أختار عبوة الدرج المعتاد ثم أستخدمها؛ كلتاهما 1 mL.",
+                "en": "Select the usual drawer container and use it; both show 1 mL."
+              },
+              "next": "exposure",
+              "effect": "exposure",
+              "feedback": {
+                "ar": "الحجم نفسه قد يحمل كمية مختلفة جدًا.",
+                "en": "The same volume can contain a very different amount."
+              },
+              "consequence": {
+                "ar": "في هذا الفرع المتخيل وصل مستحضر الحقن الأعلى تركيزًا بدل منتج القفل. قد يحدث نزف مهم؛ لا يظهر بالضرورة فورًا.",
+                "en": "In this fictional branch, the higher-strength injection reached the patient instead of the lock product. Significant bleeding is possible and may not be immediately apparent."
+              },
+              "sourceIds": [
+                "label"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "check",
+          "type": "decision",
+          "scene": {
+            "ar": "تكتشف أن العبوة المختارة Heparin Sodium Injection 10,000 units/mL، بينما المنتج المكتوب Heparin Lock Flush 10 units/mL. لم تُستخدم.",
+            "en": "The selected container is Heparin Sodium Injection 10,000 units/mL; the written product is Heparin Lock Flush 10 units/mL. It has not been used."
+          },
+          "prompt": {
+            "ar": "ما الخطوة التالية؟",
+            "en": "What follows?"
+          },
+          "choices": [
+            {
+              "id": "separate",
+              "text": {
+                "ar": "أوقف التحضير وأفصل العبوة وأطلب المنتج المطابق مع مراجعة الصيدلة.",
+                "en": "Pause preparation, separate the container and obtain the matching product with pharmacy review."
+              },
+              "next": "prevention",
+              "effect": "protect",
+              "feedback": {
+                "ar": "أمسكت الخطأ قبل وصوله إلى المريض.",
+                "en": "You intercepted the error before it reached the patient."
+              },
+              "consequence": {
+                "ar": "بقي الحدث خطأ كاد يقع، ويمكن معالجة خلط التخزين.",
+                "en": "The event remains a near miss; mixed storage can be addressed."
+              },
+              "sourceIds": [
+                "label",
+                "ismp"
+              ]
+            },
+            {
+              "id": "little",
+              "text": {
+                "ar": "أستخدم قليلًا من المتاح لتجنب التأخير.",
+                "en": "Use a little of the available product to avoid delay."
+              },
+              "next": "exposure",
+              "effect": "exposure",
+              "feedback": {
+                "ar": "صغر الحجم لا يصحح خطأ المستحضر والتركيز.",
+                "en": "A small volume does not correct a product and strength error."
+              },
+              "consequence": {
+                "ar": "في هذا الفرع وصل المستحضر غير المطابق للمريض. يلزم تقييم التعرض، وليس مجرد استبدال العبوة لاحقًا.",
+                "en": "The mismatched product reached the patient in this branch. Exposure needs assessment, not merely a later container replacement."
+              },
+              "sourceIds": [
+                "label"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "exposure",
+          "type": "decision",
+          "scene": {
+            "ar": "تم التعرف على اختلاف التركيز بعد وصول المستحضر إلى المريض. المريض لا يشتكي الآن.",
+            "en": "The concentration mismatch has been recognized after the product reached the patient. The patient has no complaint now."
+          },
+          "prompt": {
+            "ar": "كيف تتعامل مع عدم ظهور أعراض؟",
+            "en": "How do you interpret the lack of symptoms?"
+          },
+          "choices": [
+            {
+              "id": "notify",
+              "text": {
+                "ar": "أبلغ المشرف والفريق الآن وأحفظ بيانات العبوة والوقت والكمية.",
+                "en": "Notify the supervisor and team now; retain product, time and amount details."
+              },
+              "next": "report",
+              "effect": "escalate",
+              "feedback": {
+                "ar": "وصول مستحضر خاطئ يستدعي تقييمًا ولو دون شكوى.",
+                "en": "A wrong product reaching the patient requires assessment even without a complaint."
+              },
+              "consequence": {
+                "ar": "يبدأ الفريق مراجعة التعرض والمراقبة اللازمة قبل انتظار نزف مرئي.",
+                "en": "The team can assess exposure and monitoring needs without waiting for visible bleeding."
+              },
+              "sourceIds": [
+                "label"
+              ]
+            },
+            {
+              "id": "wait",
+              "text": {
+                "ar": "أنتظر الدم المرئي قبل إزعاج الفريق.",
+                "en": "Wait for visible bleeding before disturbing the team."
+              },
+              "next": "danger",
+              "effect": "miss",
+              "feedback": {
+                "ar": "قد يكون النزف خفيًا أو يظهر لاحقًا.",
+                "en": "Bleeding may be hidden or become apparent later."
+              },
+              "consequence": {
+                "ar": "تظهر في هذا الفرع المتخيل دوخة وألم جديد غير مفسر؛ يلزم تقييم عاجل، ولا تشخص الشاشة السبب.",
+                "en": "This fictional branch develops dizziness and new unexplained pain; urgent assessment is needed, while the screen does not diagnose the cause."
+              },
+              "sourceIds": [
+                "medline"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "prevention",
+          "type": "decision",
+          "scene": {
+            "ar": "لم يصل المنتج غير المطابق إلى المريض. يسأل المشرف عما يجب فعله بالعبوة وملاحظة التخزين.",
+            "en": "The mismatched product did not reach the patient. Your supervisor asks about the container and storage finding."
+          },
+          "prompt": {
+            "ar": "كيف تمنع التكرار؟",
+            "en": "How do you prevent recurrence?"
+          },
+          "choices": [
+            {
+              "id": "system",
+              "text": {
+                "ar": "أبلغ عن الخطأ الذي كاد يقع وخلط التخزين، وأشارك في فصل المنتجات وفق السياسة.",
+                "en": "Report the near miss and mixed storage and help separate products under policy."
+              },
+              "next": "safe-end",
+              "effect": "protect",
+              "feedback": {
+                "ar": "الحماية تشمل النظام إلى جانب قراءة الملصق.",
+                "en": "Protection includes system design as well as label reading."
+              },
+              "consequence": {
+                "ar": "يستطيع الفريق إصلاح موضع التخزين ومسار التوريد.",
+                "en": "The team can correct storage and supply processes."
+              },
+              "sourceIds": [
+                "ismp"
+              ]
+            },
+            {
+              "id": "return",
+              "text": {
+                "ar": "أعيد العبوة إلى الدرج نفسه؛ لا مشكلة ما دام لم يحدث نزف.",
+                "en": "Return the container to the same drawer; no bleeding means no problem."
+              },
+              "next": "unsafe-end",
+              "effect": "miss",
+              "feedback": {
+                "ar": "لم يتعرض هذا المريض، لكن الخطر بقي لمريض آخر.",
+                "en": "This patient was not exposed, but the risk remains for another."
+              },
+              "consequence": {
+                "ar": "يسهل أن يتكرر الاختيار الخاطئ عند ضغط العمل التالي.",
+                "en": "The selection error can recur during a later interruption."
+              },
+              "sourceIds": [
+                "ismp"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "report",
+          "type": "decision",
+          "scene": {
+            "ar": "الفريق يتعامل مع التعرض ويحتاج معلومات دقيقة وخطة متابعة.",
+            "en": "The team is managing the exposure and needs accurate information and follow-up."
+          },
+          "prompt": {
+            "ar": "ما مساهمتك المناسبة؟",
+            "en": "What is your appropriate contribution?"
+          },
+          "choices": [
+            {
+              "id": "facts",
+              "text": {
+                "ar": "أقدم بيانات المنتج والإعطاء وأتابع خطة الفريق دون تغيير دواء من تلقاء نفسي.",
+                "en": "Provide product and administration facts and follow the team plan without independently changing medicines."
+              },
+              "next": "managed-end",
+              "effect": "escalate",
+              "feedback": {
+                "ar": "التقييم والعلاج يعتمدان على أوامر الفريق والبروتوكول.",
+                "en": "Assessment and treatment follow authorized team orders and protocol."
+              },
+              "consequence": {
+                "ar": "يبقى التعرض جزءًا من السجل وتستمر المراقبة؛ الإبلاغ لا يمحو ما حدث.",
+                "en": "The exposure remains in the record and monitoring continues; reporting does not erase the incident."
+              },
+              "sourceIds": [
+                "label"
+              ]
+            },
+            {
+              "id": "normal",
+              "text": {
+                "ar": "أغلق البلاغ لأن تحليل INR قديمًا كان طبيعيًا.",
+                "en": "Close the concern because an earlier INR was normal."
+              },
+              "next": "danger",
+              "effect": "miss",
+              "feedback": {
+                "ar": "تحليل قديم لا يثبت سلامة تعرض جديد.",
+                "en": "An old test does not establish safety after a new exposure."
+              },
+              "consequence": {
+                "ar": "قد تتأخر متابعة مضاعفات النزف أو الحاجة إلى تدخل مأذون به.",
+                "en": "Follow-up of bleeding complications or authorized intervention may be delayed."
+              },
+              "sourceIds": [
+                "label"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "danger",
+          "type": "decision",
+          "scene": {
+            "ar": "في هذا الفرع ظهرت علامات جديدة أو استمر تأخر تقييم التعرض.",
+            "en": "In this branch, new warning findings appeared or exposure assessment remained delayed."
+          },
+          "prompt": {
+            "ar": "ما الأولوية؟",
+            "en": "What is the priority?"
+          },
+          "choices": [
+            {
+              "id": "urgent",
+              "text": {
+                "ar": "أستدعي المشرف والاستجابة العاجلة حسب مسار المؤسسة، وأبلغ بما أُعطي وما تغير.",
+                "en": "Call the supervisor and urgent response under the local pathway; report what was given and what changed."
+              },
+              "next": "managed-end",
+              "effect": "escalate",
+              "feedback": {
+                "ar": "تغير الحالة بعد خطأ دوائي يستدعي استجابة سريرية عاجلة.",
+                "en": "A change after medication error requires urgent clinical response."
+              },
+              "consequence": {
+                "ar": "قد يقل التأخير، مع بقاء الحاجة لتقييم النزف وعلاج يقرره الفريق.",
+                "en": "Delay may be reduced, while bleeding assessment and team-directed treatment remain necessary."
+              },
+              "sourceIds": [
+                "medline"
+              ]
+            },
+            {
+              "id": "appearance",
+              "text": {
+                "ar": "أطمئن المريض وأنتظر نزفًا خارجيًا واضحًا.",
+                "en": "Reassure and wait for obvious external bleeding."
+              },
+              "next": "unsafe-end",
+              "effect": "miss",
+              "feedback": {
+                "ar": "المظهر وحده لا يستبعد نزفًا داخليًا.",
+                "en": "Appearance alone does not exclude internal bleeding."
+              },
+              "consequence": {
+                "ar": "قد يتفاقم ضرر خفي أثناء تأخر التقييم؛ النتيجة ليست محسوبة آليًا.",
+                "en": "Hidden harm may worsen during delayed assessment; no outcome is calculated by the activity."
+              },
+              "sourceIds": [
+                "label"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "safe-end",
+          "type": "debrief",
+          "title": {
+            "ar": "أُمسك الخطأ قبل الإعطاء",
+            "en": "Intercepted before administration"
+          },
+          "body": {
+            "ar": "لم يصل المستحضر غير المطابق، وتم الإبلاغ عن سبب الالتباس. هذا خطأ كاد يقع، وليس حادث تعرض للمريض.",
+            "en": "The mismatched product did not reach the patient and its cause was reported. This is a near miss, not patient exposure."
+          },
+          "points": [
+            {
+              "ar": "اقرأ التركيز لا حجم العبوة فقط.",
+              "en": "Read strength, not only container volume."
+            },
+            {
+              "ar": "أغلق خطر التخزين أيضًا.",
+              "en": "Close the storage failure point too."
+            }
+          ]
+        },
+        {
+          "id": "managed-end",
+          "type": "debrief",
+          "title": {
+            "ar": "حادث وصل للمريض ويحتاج متابعة",
+            "en": "An incident reached the patient and needs follow-up"
+          },
+          "body": {
+            "ar": "تم التصعيد بعد التعرض أو ظهور إشارات جديدة. تستمر مراجعة الحدث والمراقبة والعلاج المأذون به؛ اختيار استجابة صحيحة لاحقًا لا يلغي احتمال الضرر السابق.",
+            "en": "Escalation followed exposure or new findings. Review, monitoring and authorized treatment continue; a later appropriate response does not erase the possibility of earlier harm."
+          },
+          "points": [
+            {
+              "ar": "احفظ المنتج والوقت والكمية والتواصل.",
+              "en": "Preserve product, time, amount and communication."
+            },
+            {
+              "ar": "لا تُعد كتابة السجل كأن الخطأ لم يقع.",
+              "en": "Do not rewrite the record as if the incident never happened."
+            }
+          ]
+        },
+        {
+          "id": "unsafe-end",
+          "type": "debrief",
+          "title": {
+            "ar": "الخطر بقي مفتوحًا",
+            "en": "The risk remains open"
+          },
+          "body": {
+            "ar": "بقي خطر تخزين لم يُعالج، أو تعرض لم يُقيّم بسرعة. يلزم إبلاغ المشرف والفريق ومتابعة الحالة وفق السياسة؛ لا يمكن ضمان عدم الضرر من غياب الدم المرئي.",
+            "en": "A storage risk remained uncorrected or exposure assessment was delayed. Notify the supervisor and team and follow the local pathway; lack of visible blood cannot guarantee no harm."
+          },
+          "points": [
+            {
+              "ar": "السيناريو لا يتنبأ بتوقيت النزف أو شدته.",
+              "en": "The case does not predict bleeding timing or severity."
+            },
+            {
+              "ar": "الإبلاغ المبكر يفتح باب التقييم.",
+              "en": "Early reporting enables assessment."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "heparin-handoff",
+      "title": {
+        "ar": "خانة MAR غير الموقعة",
+        "en": "An unsigned MAR box"
+      },
+      "summary": {
+        "ar": "مريض افتراضي بالغ موصوف له هيبارين غير مجزأ للوقاية تحت الجلد. لا يطلب النشاط حساب جرعة أو ضبط مضخة، بل التحقق من آخر إعطاء.",
+        "en": "A fictional adult has prescribed subcutaneous unfractionated heparin for prophylaxis. This activity concerns last-administration verification, not dose calculation or pump programming."
+      },
+      "record": [
+        {
+          "label": {
+            "ar": "السجل",
+            "en": "Record"
+          },
+          "value": {
+            "ar": "خانة الجرعة الحالية غير موقعة",
+            "en": "Current dose box is unsigned"
+          }
+        },
+        {
+          "label": {
+            "ar": "التسليم",
+            "en": "Handoff"
+          },
+          "value": {
+            "ar": "تعرض التوثيق لمقاطعة أثناء الوردية السابقة",
+            "en": "Documentation was interrupted during the prior shift"
+          }
+        },
+        {
+          "label": {
+            "ar": "التحليل السابق",
+            "en": "Prior laboratory result"
+          },
+          "value": {
+            "ar": "INR قديم موصوف بأنه طبيعي؛ لا يثبت سلامة تعرض جديد",
+            "en": "An earlier INR is described as normal; it does not establish safety after new exposure"
+          }
+        }
+      ],
+      "order": {
+        "ar": "تحقق من آخر إعطاء قبل تنفيذ الجرعة. عند التعارض استوضح مع المسؤول؛ لا تكرر جرعة لتعويض توقيع ناقص ولا تغير العلاج بصورة مستقلة.",
+        "en": "Verify last administration before dosing. Clarify discrepancies with the responsible clinician; do not repeat a dose to replace a missing signature or independently change treatment."
+      },
+      "start": "blank",
+      "nodes": [
+        {
+          "id": "blank",
+          "type": "decision",
+          "scene": {
+            "ar": "في تسليم الوردية، تظهر خانة جرعة الهيبارين الوقائية غير موقعة. لا توجد إفادة موثوقة بعد عن آخر إعطاء.",
+            "en": "At handoff, a prophylactic-heparin dose box is unsigned. Last administration has not yet been verified."
+          },
+          "prompt": {
+            "ar": "كيف تبدأ؟",
+            "en": "How do you start?"
+          },
+          "choices": [
+            {
+              "id": "reconcile",
+              "text": {
+                "ar": "أتحقق من آخر إعطاء مع الممرض المسؤول والسجل قبل الجرعة.",
+                "en": "Verify the last administration with the responsible nurse and record before dosing."
+              },
+              "next": "checked",
+              "effect": "protect",
+              "feedback": {
+                "ar": "الخانة الفارغة تعني نقص معلومة، لا إثبات عدم الإعطاء.",
+                "en": "A blank box means missing information, not proof of non-administration."
+              },
+              "consequence": {
+                "ar": "يظل التعرض الإضافي قابلًا للمنع.",
+                "en": "Additional exposure can still be prevented."
+              },
+              "sourceIds": [
+                "who"
+              ]
+            },
+            {
+              "id": "give",
+              "text": {
+                "ar": "أعطي الجرعة المستحقة الآن؛ الخانة فارغة.",
+                "en": "Give the scheduled dose now because the box is blank."
+              },
+              "next": "exposure",
+              "effect": "exposure",
+              "feedback": {
+                "ar": "خانة غير موقعة قد تخفي جرعة أُعطيت.",
+                "en": "An unsigned box may conceal an administered dose."
+              },
+              "consequence": {
+                "ar": "في هذا الفرع أُعطيت جرعة إضافية، ثم يؤكد الزميل أنه أعطى الجرعة الأولى ولم يسجلها بعد.",
+                "en": "In this branch an additional dose was administered; the colleague then confirms an earlier dose that had not yet been recorded."
+              },
+              "sourceIds": [
+                "who",
+                "medline"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "checked",
+          "type": "decision",
+          "scene": {
+            "ar": "يتحقق الزميل من أنه أعطى الجرعة ووقت إعطائها. بقيت الخانة بلا توقيع بسبب انقطاع أثناء التوثيق.",
+            "en": "The colleague verifies that the dose was given and confirms the time. Documentation was interrupted."
+          },
+          "prompt": {
+            "ar": "ما الخطوة التالية؟",
+            "en": "What follows?"
+          },
+          "choices": [
+            {
+              "id": "correct",
+              "text": {
+                "ar": "أمنع التكرار وأصحح التوثيق مع المسؤول بما يحفظ الحقائق.",
+                "en": "Prevent repeat dosing and reconcile documentation with the responsible nurse, preserving the facts."
+              },
+              "next": "prevention",
+              "effect": "protect",
+              "feedback": {
+                "ar": "ثبت آخر إعطاء فلا تُصنع جرعة ثانية لتعبئة خانة.",
+                "en": "Last administration is verified; do not create a second dose to fill a box."
+              },
+              "consequence": {
+                "ar": "لم يصل تعرض إضافي؛ يلزم توثيق موثوق وخطة للجرعة التالية يراجعها الفريق.",
+                "en": "No additional exposure occurred; reliable documentation and team review of the next scheduled dose are needed."
+              },
+              "sourceIds": [
+                "who"
+              ]
+            },
+            {
+              "id": "schedule",
+              "text": {
+                "ar": "أعطيها لأن شاشة الجدول لا تزال تعرضها مستحقة.",
+                "en": "Give it because the schedule screen still shows it as due."
+              },
+              "next": "exposure",
+              "effect": "exposure",
+              "feedback": {
+                "ar": "تنبيه الجدول لا يلغي معلومة إعطاء موثوقة.",
+                "en": "A schedule display does not override verified administration."
+              },
+              "consequence": {
+                "ar": "في هذا الفرع وصلت جرعة مكررة إلى المريض رغم اكتشاف نقص التوثيق.",
+                "en": "A duplicate dose reached the patient in this branch despite recognition of the documentation gap."
+              },
+              "sourceIds": [
+                "who",
+                "medline"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "exposure",
+          "type": "decision",
+          "scene": {
+            "ar": "تأكد أن جرعتين أُعطيتا. المريض لا يذكر أعراضًا، ويوجد INR طبيعي من فحص سابق.",
+            "en": "Two administrations are confirmed. The patient reports no symptoms; an earlier INR was normal."
+          },
+          "prompt": {
+            "ar": "كيف تقيّم الموقف؟",
+            "en": "How do you assess the situation?"
+          },
+          "choices": [
+            {
+              "id": "assess",
+              "text": {
+                "ar": "أبلغ عن الجرعتين والوقتين وأطلب مراجعة خطة المراقبة.",
+                "en": "Report both doses and times and request review of the monitoring plan."
+              },
+              "next": "report",
+              "effect": "escalate",
+              "feedback": {
+                "ar": "INR القديم لا ينفي خطر تعرض جديد ولا يلائم كل خطط الهيبارين.",
+                "en": "An old INR excludes neither new exposure risk nor the need for heparin-specific monitoring."
+              },
+              "consequence": {
+                "ar": "يمكن للفريق تقييم خطر النزف ومراجعة الأوامر قبل حدوث جرعة أخرى.",
+                "en": "The team can assess bleeding risk and review orders before another dose is given."
+              },
+              "sourceIds": [
+                "label"
+              ]
+            },
+            {
+              "id": "normal",
+              "text": {
+                "ar": "أغلق الموضوع؛ INR طبيعي ولا توجد شكوى.",
+                "en": "Close the concern; INR is normal and there is no complaint."
+              },
+              "next": "danger",
+              "effect": "miss",
+              "feedback": {
+                "ar": "نتيجة منفردة ومظهر مطمئن ليسا ضمانًا.",
+                "en": "One result and a reassuring appearance are not guarantees."
+              },
+              "consequence": {
+                "ar": "في الفرع المتخيل تظهر لاحقًا كدمات غير معتادة ودوخة. يلزم تقييم، ولا يثبت السيناريو سببًا أو تشخيصًا حتميًا.",
+                "en": "This fictional branch later shows unusual bruising and dizziness. Assessment is needed; the activity does not establish a definite cause or diagnosis."
+              },
+              "sourceIds": [
+                "medline"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "prevention",
+          "type": "decision",
+          "scene": {
+            "ar": "مُنع التكرار. يسأل الفريق كيف يُصحح السجل ويُمنع انقطاع التوثيق القادم.",
+            "en": "The duplicate was prevented. The team asks how to correct the record and prevent the next documentation interruption."
+          },
+          "prompt": {
+            "ar": "أي خطة أدق؟",
+            "en": "Which plan is more accurate?"
+          },
+          "choices": [
+            {
+              "id": "audit",
+              "text": {
+                "ar": "أوثق وقت الإعطاء الحقيقي ووقت التصحيح وسببه وفق السياسة، مع تسليم واضح.",
+                "en": "Record actual administration, correction time and reason under policy, with a clear handoff."
+              },
+              "next": "safe-end",
+              "effect": "protect",
+              "feedback": {
+                "ar": "الفرق بين وقت الإعطاء ووقت الإدخال مهم لفهم التسلسل.",
+                "en": "Administration time and entry time must be distinguishable to reconstruct events."
+              },
+              "consequence": {
+                "ar": "يبقى سجل قابل للمراجعة دون اختراع إعطاء جديد.",
+                "en": "An auditable record remains without inventing a new administration."
+              },
+              "sourceIds": [
+                "who"
+              ]
+            },
+            {
+              "id": "erase",
+              "text": {
+                "ar": "أمحو الخانة وأكتب وقتًا يناسب شاشة الجدول.",
+                "en": "Erase the entry and substitute a time matching the schedule screen."
+              },
+              "next": "unsafe-end",
+              "effect": "miss",
+              "feedback": {
+                "ar": "ترتيب شكل السجل لا يبرر تغيير الحقيقة.",
+                "en": "Making the record look tidy does not justify changing the facts."
+              },
+              "consequence": {
+                "ar": "قد يفقد الفريق تسلسل الجرعات وتبقى فرصة التكرار عند التسليم التالي.",
+                "en": "The team may lose the dose timeline and repeat risk can persist at the next handoff."
+              },
+              "sourceIds": [
+                "who"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "report",
+          "type": "decision",
+          "scene": {
+            "ar": "الفريق علم بالتكرار وبدأ التقييم. يُطلب منك تسليم معلومات دقيقة.",
+            "en": "The team knows about the duplicate and has begun assessment. You are asked for accurate handoff information."
+          },
+          "prompt": {
+            "ar": "ماذا تتضمن رسالتك؟",
+            "en": "What should the handoff include?"
+          },
+          "choices": [
+            {
+              "id": "timeline",
+              "text": {
+                "ar": "الدواء والصيغة والجرعتان والوقتان والأعراض ومن أُبلغ والتوجيهات.",
+                "en": "Medicine, formulation, both doses and times, symptoms, notification and instructions."
+              },
+              "next": "managed-end",
+              "effect": "escalate",
+              "feedback": {
+                "ar": "تسلسل الحقائق يساعد تقدير التعرض وخطة المتابعة.",
+                "en": "A factual timeline supports exposure assessment and follow-up."
+              },
+              "consequence": {
+                "ar": "لا يمحو التصعيد الجرعة الإضافية؛ تستمر المتابعة والتوثيق.",
+                "en": "Escalation does not erase the additional dose; follow-up and documentation continue."
+              },
+              "sourceIds": [
+                "who",
+                "label"
+              ]
+            },
+            {
+              "id": "antidote",
+              "text": {
+                "ar": "أعطي جرعة عكسية من تلقاء نفسي بدل إبلاغ التفاصيل.",
+                "en": "Give an independently chosen reversal dose instead of reporting the details."
+              },
+              "next": "danger",
+              "effect": "exposure",
+              "feedback": {
+                "ar": "الطالب لا يختار علاجًا عكسيًا؛ ذلك يحتاج أمرًا وتقييمًا.",
+                "en": "A student does not select reversal treatment; it needs assessment and an order."
+              },
+              "consequence": {
+                "ar": "في هذا الفرع أضيف دواء غير مأذون إلى التعرض الأصلي، ما يفتح خطر خطأ آخر.",
+                "en": "This branch adds an unauthorized medicine to the original exposure and creates another medication risk."
+              },
+              "sourceIds": [
+                "label"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "danger",
+          "type": "decision",
+          "scene": {
+            "ar": "التعرض لم يُقيّم في الوقت المناسب، أو أضيف دواء دون أمر. تظهر علامات جديدة مقلقة في هذا الفرع.",
+            "en": "Exposure assessment was delayed or a medicine was added without an order. This branch now includes concerning new findings."
+          },
+          "prompt": {
+            "ar": "كيف تستجيب؟",
+            "en": "How do you respond?"
+          },
+          "choices": [
+            {
+              "id": "response",
+              "text": {
+                "ar": "أستدعي المشرف والفريق العاجل وفق المسار وأبلغ بكل الأدوية والوقائع.",
+                "en": "Call the supervisor and urgent team under the pathway and report every medicine and event."
+              },
+              "next": "managed-end",
+              "effect": "escalate",
+              "feedback": {
+                "ar": "الوصف الكامل يتيح تقييم النزف وغيره من الأسباب.",
+                "en": "A complete account supports assessment of bleeding and other causes."
+              },
+              "consequence": {
+                "ar": "قد يحد ذلك من التأخير، مع بقاء احتمال ضرر يحتاج معالجة ومراقبة.",
+                "en": "This may limit delay while possible harm still requires management and monitoring."
+              },
+              "sourceIds": [
+                "medline"
+              ]
+            },
+            {
+              "id": "later",
+              "text": {
+                "ar": "أترك ملاحظة للوردية التالية بدل التصعيد الآن.",
+                "en": "Leave a note for the next shift rather than escalating now."
+              },
+              "next": "unsafe-end",
+              "effect": "miss",
+              "feedback": {
+                "ar": "تغير الحالة بعد تعرض زائد لا ينتظر تسليمًا روتينيًا.",
+                "en": "A change after excessive exposure cannot wait for routine handoff."
+              },
+              "consequence": {
+                "ar": "قد يتأخر اكتشاف نزف مهم أو علاج مناسب؛ لا يُتنبأ بالمآل آليًا.",
+                "en": "Recognition of significant bleeding or appropriate treatment may be delayed; the activity does not predict the outcome."
+              },
+              "sourceIds": [
+                "medline"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "safe-end",
+          "type": "debrief",
+          "title": {
+            "ar": "معلومة صحيحة منعت جرعة ثانية",
+            "en": "Verified information prevented a second dose"
+          },
+          "body": {
+            "ar": "تم إثبات آخر إعطاء وتصحيح السجل دون تعرض إضافي. عاد التسليم مصدر معلومات موثوقة بدل التخمين.",
+            "en": "Last administration was established and the record reconciled without additional exposure. Handoff became a reliable information source rather than a guess."
+          },
+          "points": [
+            {
+              "ar": "الخانة الفارغة ليست دليل عدم الإعطاء.",
+              "en": "A blank box is not evidence of non-administration."
+            },
+            {
+              "ar": "وثق أوقات الأحداث والتصحيحات بدقة.",
+              "en": "Distinguish event and correction times accurately."
+            }
+          ]
+        },
+        {
+          "id": "managed-end",
+          "type": "debrief",
+          "title": {
+            "ar": "التكرار حُفظ في التسلسل ولم يُمحَ",
+            "en": "The duplicate remains in the timeline"
+          },
+          "body": {
+            "ar": "أُبلغ الفريق بعد وصول جرعة إضافية أو بعد ظهور مؤشرات جديدة. يتطلب المسار تقييمًا ومتابعة وفق الأوامر، مع حفظ الوقائع بدل تعديلها لتبدو سليمة.",
+            "en": "The team was informed after an extra dose or new warning findings. The path requires assessment and follow-up under authorized orders, preserving rather than rewriting the facts."
+          },
+          "points": [
+            {
+              "ar": "قدم تسلسلًا دوائيًا كاملًا.",
+              "en": "Provide the complete medication timeline."
+            },
+            {
+              "ar": "قرار لاحق سليم لا يلغي تعرضًا سابقًا.",
+              "en": "A later appropriate decision does not cancel earlier exposure."
+            }
+          ]
+        },
+        {
+          "id": "unsafe-end",
+          "type": "debrief",
+          "title": {
+            "ar": "فجوة تسليم لم تُغلق",
+            "en": "The handoff gap remains open"
+          },
+          "body": {
+            "ar": "بقيت فجوة السجل أو تأخر تقييم تعرض وصل للمريض. يلزم تصحيح المسار مع المشرف والفريق؛ عدم الشكوى لا يثبت عدم الضرر.",
+            "en": "A record gap remains or assessment of patient exposure was delayed. Reopen the pathway with the supervisor and team; absence of a complaint does not establish absence of harm."
+          },
+          "points": [
+            {
+              "ar": "لا تحول خطأ توثيق إلى خطأ إعطاء.",
+              "en": "Do not turn a documentation error into an administration error."
+            },
+            {
+              "ar": "أبلغ عن الأعراض الجديدة فور ظهورها.",
+              "en": "Escalate new warning symptoms promptly."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "anticoagulant-head-injury",
+      "title": {
+        "ar": "ارتطام بلا دم ظاهر",
+        "en": "A bump without visible blood"
+      },
+      "summary": {
+        "ar": "مريض افتراضي بالغ يتلقى هيبارين غير مجزأ وريديًا وفق أمر ومراقبة الفريق. يبلغ عن ارتطام الرأس أثناء النهوض؛ لا يوجد خطأ جرعة في بداية الحالة. الهدف اكتشاف خطر تأخير التقييم.",
+        "en": "A fictional adult receives prescribed IV unfractionated heparin with team monitoring. They report a head strike while getting up; there is no dosing error at the start. The focus is harm from delayed assessment."
+      },
+      "record": [
+        {
+          "label": {
+            "ar": "الحدث",
+            "en": "Event"
+          },
+          "value": {
+            "ar": "ارتطام بالرأس أبلغ عنه المريض",
+            "en": "A head strike reported by the patient"
+          }
+        },
+        {
+          "label": {
+            "ar": "المظهر الأول",
+            "en": "Initial appearance"
+          },
+          "value": {
+            "ar": "يتحدث طبيعيًا ولا يوجد نزف خارجي",
+            "en": "Normal conversation; no external bleeding"
+          }
+        },
+        {
+          "label": {
+            "ar": "الدواء",
+            "en": "Medicine"
+          },
+          "value": {
+            "ar": "هيبارين وريدي بأمر وخطة مراقبة، وليست حالة لضبط الجرعة",
+            "en": "Prescribed IV heparin with monitoring; this is not a dose-adjustment case"
+          }
+        },
+        {
+          "label": {
+            "ar": "الدور",
+            "en": "Role"
+          },
+          "value": {
+            "ar": "طالب تحت إشراف؛ يتبع مسار إصابة الرأس والاستجابة العاجلة",
+            "en": "Supervised student; follow head-injury and urgent-response pathways"
+          }
+        }
+      ],
+      "order": {
+        "ar": "أبلغ المشرف والفريق عن الإصابة والدواء وآخر تعرض موثق وأي تغير. اتبع خطة التقييم والمراقبة والأوامر؛ لا تقرر تصويرًا أو علاجًا عكسيًا أو إيقافًا مستقلًا.",
+        "en": "Report injury, medicine, last documented exposure and changes to the supervisor and team. Follow assessment, monitoring and authorized orders; do not independently decide imaging, reversal or discontinuation."
+      },
+      "start": "bump",
+      "nodes": [
+        {
+          "id": "bump",
+          "type": "decision",
+          "scene": {
+            "ar": "أبلغ المريض أنه اصطدم برأسه أثناء النهوض. يتحدث طبيعيًا ولا يوجد جرح ينزف، وهو يتلقى مضاد تخثر موصوفًا.",
+            "en": "The patient reports striking their head while getting up. They speak normally and have no bleeding wound, while receiving prescribed anticoagulation."
+          },
+          "prompt": {
+            "ar": "ما القرار الأول؟",
+            "en": "What is the first decision?"
+          },
+          "choices": [
+            {
+              "id": "pathway",
+              "text": {
+                "ar": "أبلغ المشرف والفريق وأبدأ تقييم إصابة الرأس حسب المسار.",
+                "en": "Notify the supervisor and team and begin head-injury assessment under the pathway."
+              },
+              "next": "review",
+              "effect": "protect",
+              "feedback": {
+                "ar": "مضاد التخثر معلومة مهمة حتى دون نزف خارجي.",
+                "en": "Anticoagulation matters even without external bleeding."
+              },
+              "consequence": {
+                "ar": "تبدأ مراجعة الإصابة ومخاطرها دون استنتاج سلامة من المظهر.",
+                "en": "Injury and risk assessment begin without inferring safety from appearance."
+              },
+              "sourceIds": [
+                "nice"
+              ]
+            },
+            {
+              "id": "minor",
+              "text": {
+                "ar": "أعتبرها ضربة بسيطة ولا أذكر مضاد التخثر؛ المريض يتحدث.",
+                "en": "Treat it as a minor bump and omit anticoagulation because the patient is talking."
+              },
+              "next": "delayed",
+              "effect": "miss",
+              "feedback": {
+                "ar": "المحادثة الطبيعية لا تستبعد إصابة داخلية.",
+                "en": "Normal conversation does not rule out internal injury."
+              },
+              "consequence": {
+                "ar": "في هذا الفرع يتأخر التقييم. لاحقًا في السيناريو يظهر صداع جديد وقيء؛ ليست هذه نتيجة حتمية لكل ارتطام.",
+                "en": "Assessment is delayed in this branch. The fictional follow-up adds a new headache and vomiting; these are not inevitable after every bump."
+              },
+              "sourceIds": [
+                "nice",
+                "medline"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "review",
+          "type": "decision",
+          "scene": {
+            "ar": "الفريق يقيم الحالة، ويطلب معلومات الدواء والإصابة والأعراض قبل تحديد الفحوص والمراقبة.",
+            "en": "The team is assessing the patient and asks about the medicine, injury and symptoms before deciding tests and monitoring."
+          },
+          "prompt": {
+            "ar": "ما المعلومات المفيدة؟",
+            "en": "Which information is useful?"
+          },
+          "choices": [
+            {
+              "id": "details",
+              "text": {
+                "ar": "أذكر اسم مضاد التخثر وطريقه وآخر تعرض موثق وتوقيت الإصابة والأعراض والتغيرات.",
+                "en": "Give anticoagulant name, route, last documented exposure, injury timing, symptoms and changes."
+              },
+              "next": "plan",
+              "effect": "protect",
+              "feedback": {
+                "ar": "الأدوية المضادة للتخثر تختلف، والتفاصيل تؤثر في القرار السريري.",
+                "en": "Anticoagulants differ and details affect clinical decisions."
+              },
+              "consequence": {
+                "ar": "يقرر الفريق الحاجة إلى تصوير أو مراقبة وفق التقييم؛ لا يقرر الطالب ذلك من مظهر الرأس وحده.",
+                "en": "The team decides imaging or monitoring from assessment; a student does not decide from head appearance alone."
+              },
+              "sourceIds": [
+                "nice"
+              ]
+            },
+            {
+              "id": "noct",
+              "text": {
+                "ar": "أطلب إغلاق التقييم لأن الجرح غير موجود ولا حاجة للتصوير بالتأكيد.",
+                "en": "Ask to close assessment because there is no wound and imaging is certainly unnecessary."
+              },
+              "next": "delayed",
+              "effect": "miss",
+              "feedback": {
+                "ar": "الجلد السليم لا يكفي لاستبعاد نزف داخل القحف.",
+                "en": "Intact skin is insufficient to exclude intracranial bleeding."
+              },
+              "consequence": {
+                "ar": "قد تتأخر الفحوص أو المراقبة التي كان سيقررها الفريق بعد مراجعة كاملة.",
+                "en": "Testing or monitoring that the team might select after full review can be delayed."
+              },
+              "sourceIds": [
+                "nice"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "delayed",
+          "type": "decision",
+          "scene": {
+            "ar": "في هذا الفرع المتخيل يعقب تأخر التقييم صداع جديد وقيء. يظل الرأس بلا نزف خارجي.",
+            "en": "In this fictional branch, delayed assessment is followed by a new headache and vomiting. There is still no external head bleeding."
+          },
+          "prompt": {
+            "ar": "كيف تفسر التغير؟",
+            "en": "How do you interpret the change?"
+          },
+          "choices": [
+            {
+              "id": "urgent",
+              "text": {
+                "ar": "أتعامل معه كتغير مقلق وأصعّد فورًا مع ذكر إصابة الرأس ومضاد التخثر.",
+                "en": "Treat it as concerning deterioration and escalate promptly, reporting head injury and anticoagulation."
+              },
+              "next": "handoff",
+              "effect": "escalate",
+              "feedback": {
+                "ar": "الأعراض الجديدة تحتاج تقييمًا عاجلًا ولا تُفسر بالمظهر الخارجي.",
+                "en": "New symptoms need urgent assessment rather than reassurance from external appearance."
+              },
+              "consequence": {
+                "ar": "يبدأ الفريق تقييم الأسباب المحتملة، ومنها نزف داخل القحف؛ هذا احتمال يحتاج فحصًا لا تشخيصًا من الشاشة.",
+                "en": "The team evaluates possible causes, including intracranial bleeding; this is a concern to investigate, not a screen-generated diagnosis."
+              },
+              "sourceIds": [
+                "nice",
+                "medline"
+              ]
+            },
+            {
+              "id": "analgesic",
+              "text": {
+                "ar": "أطمئن المريض وأعطي مسكنًا متاحًا دون إبلاغ؛ الصداع متوقع بعد الضربة.",
+                "en": "Reassure and give an available analgesic without reporting; headache is expected after a bump."
+              },
+              "next": "danger",
+              "effect": "miss",
+              "feedback": {
+                "ar": "إخفاء الأعراض أو اعتبارها عادية قد يؤخر التقييم.",
+                "en": "Dismissing or masking symptoms can delay assessment."
+              },
+              "consequence": {
+                "ar": "في امتداد هذا الفرع تظهر صعوبة أكبر في الإيقاظ؛ هذه واقعة مكتوبة للحالة وليست تنبؤًا بزمن أو شدة.",
+                "en": "This branch then scripts increasing difficulty waking the patient; it is an authored case event, not a prediction of timing or severity."
+              },
+              "sourceIds": [
+                "nice"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "plan",
+          "type": "decision",
+          "scene": {
+            "ar": "تم التقييم ووضع الفريق خطة مراقبة وتعليمات للإبلاغ عن التغيرات. لا يطلب السيناريو من الطالب تحديد CT أو إيقاف مضاد التخثر وحده.",
+            "en": "Assessment is complete and the team sets a monitoring and escalation plan. The scenario does not ask the student to decide CT or stop anticoagulation independently."
+          },
+          "prompt": {
+            "ar": "كيف تُكمل الرعاية؟",
+            "en": "How do you continue care?"
+          },
+          "choices": [
+            {
+              "id": "follow",
+              "text": {
+                "ar": "أتبع الخطة وأوثق الملاحظات وأتحقق من فهم المريض لعلامات الإبلاغ.",
+                "en": "Follow the plan, document observations and check the patient understands what changes to report."
+              },
+              "next": "safe-end",
+              "effect": "protect",
+              "feedback": {
+                "ar": "المتابعة والتعليم جزء من الاستجابة وليس مجرد استمارة.",
+                "en": "Monitoring and education are part of the response, not just paperwork."
+              },
+              "consequence": {
+                "ar": "تبقى التغيرات الجديدة قابلة للاكتشاف والتصعيد وفق تعليمات الفريق.",
+                "en": "New changes remain detectable and can be escalated under team instructions."
+              },
+              "sourceIds": [
+                "nice"
+              ]
+            },
+            {
+              "id": "forget",
+              "text": {
+                "ar": "أترك المراقبة لأن التقييم الأول لم يظهر مشكلة واضحة.",
+                "en": "Stop monitoring because the first assessment found no obvious problem."
+              },
+              "next": "unsafe-end",
+              "effect": "miss",
+              "feedback": {
+                "ar": "خطة الفريق لا تُلغى باستنتاج الطالب أن المظهر مطمئن.",
+                "en": "The team plan is not cancelled by a student’s impression that the patient looks well."
+              },
+              "consequence": {
+                "ar": "قد تضيع فرصة رصد تغير مهم لاحقًا وتبقى فجوة في المتابعة.",
+                "en": "An important later change may be missed and a follow-up gap remains."
+              },
+              "sourceIds": [
+                "nice"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "handoff",
+          "type": "decision",
+          "scene": {
+            "ar": "تستجيب المساعدة العاجلة للتغير الجديد. يطلب الفريق تلخيصًا واضحًا بدل استنتاج أن السبب معروف.",
+            "en": "Urgent help responds to the change. The team asks for a clear summary rather than an assumed diagnosis."
+          },
+          "prompt": {
+            "ar": "كيف تسلم الحالة؟",
+            "en": "How do you hand over?"
+          },
+          "choices": [
+            {
+              "id": "sbar",
+              "text": {
+                "ar": "أذكر الإصابة وتسلسل الأعراض والدواء وآخر إعطاء وما رُصد وما تأخر، وأتبع التوجيهات.",
+                "en": "Report injury, symptom timeline, medicine, last administration, observations and any delay, then follow instructions."
+              },
+              "next": "managed-end",
+              "effect": "escalate",
+              "feedback": {
+                "ar": "وصف الحقائق يساعد الفريق على اختيار التقييم والعلاج.",
+                "en": "A factual account helps the team select assessment and treatment."
+              },
+              "consequence": {
+                "ar": "يبقى التأخير جزءًا من القصة والمتابعة؛ لا يختفي بمجرد اختيار التصعيد الآن.",
+                "en": "The earlier delay remains part of the case and follow-up; it does not disappear when escalation is selected now."
+              },
+              "sourceIds": [
+                "nice",
+                "who"
+              ]
+            },
+            {
+              "id": "guess",
+              "text": {
+                "ar": "أقول إنها دوخة من الدواء فقط وأحذف خبر إصابة الرأس.",
+                "en": "Call it medication dizziness only and omit the head injury."
+              },
+              "next": "danger",
+              "effect": "miss",
+              "feedback": {
+                "ar": "نسبة الأعراض لسبب واحد دون تقييم قد تضلل الفريق.",
+                "en": "Assigning one cause without assessment can mislead the team."
+              },
+              "consequence": {
+                "ar": "قد يتأخر التعرف إلى إصابة داخلية أو سبب آخر مهم.",
+                "en": "Recognition of internal injury or another important cause may be delayed."
+              },
+              "sourceIds": [
+                "nice"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "danger",
+          "type": "decision",
+          "scene": {
+            "ar": "في هذا الفرع أصبح إيقاظ المريض أصعب أو استمر تأخير التقييم مع أعراض جديدة.",
+            "en": "In this branch, waking the patient becomes more difficult or assessment remains delayed despite new symptoms."
+          },
+          "prompt": {
+            "ar": "ما الأولوية الآن؟",
+            "en": "What is the priority now?"
+          },
+          "choices": [
+            {
+              "id": "response",
+              "text": {
+                "ar": "أفعّل الاستجابة العاجلة وفق السياسة وأبقى مع المريض وأبلغ بتاريخ الإصابة والدواء.",
+                "en": "Activate urgent response under policy, stay with the patient and report injury and medication history."
+              },
+              "next": "managed-end",
+              "effect": "escalate",
+              "feedback": {
+                "ar": "التدهور يحتاج استجابة فورية من الفريق.",
+                "en": "Deterioration requires an immediate team response."
+              },
+              "consequence": {
+                "ar": "قد تُحد المخاطر الإضافية، لكن الضرر المحتمل يحتاج تقييمًا وعلاجًا متخصصًا ولا يُمحى من التسلسل.",
+                "en": "Further risk may be limited, while possible harm requires specialist assessment and treatment and remains in the timeline."
+              },
+              "sourceIds": [
+                "nice",
+                "medline"
+              ]
+            },
+            {
+              "id": "sleep",
+              "text": {
+                "ar": "أتركه ينام؛ لا توجد نقطة دم على الرأس.",
+                "en": "Let the patient sleep because there is no blood on the head."
+              },
+              "next": "unsafe-end",
+              "effect": "miss",
+              "feedback": {
+                "ar": "الدم المرئي ليس شرطًا لإصابة خطرة.",
+                "en": "Visible blood is not required for a serious injury."
+              },
+              "consequence": {
+                "ar": "قد يفوت التدهور العصبي ويستمر تأخير تقييم نزف محتمل داخل القحف.",
+                "en": "Neurological deterioration may be missed and assessment of possible intracranial bleeding remains delayed."
+              },
+              "sourceIds": [
+                "nice"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "safe-end",
+          "type": "debrief",
+          "title": {
+            "ar": "التقييم لم ينتظر علامة خارجية",
+            "en": "Assessment did not wait for an external sign"
+          },
+          "body": {
+            "ar": "أُبلغ عن الإصابة ومضاد التخثر واتُّبعت خطة الفريق. لا تثبت هذه النهاية خلو المريض من إصابة؛ إنها توضح مسار تقييم ومتابعة مناسبًا.",
+            "en": "Injury and anticoagulation were reported and the team plan followed. This ending does not prove absence of injury; it demonstrates appropriate assessment and follow-up."
+          },
+          "points": [
+            {
+              "ar": "أبلغ عن الدواء ضمن قصة الإصابة.",
+              "en": "Include medication in the injury history."
+            },
+            {
+              "ar": "التصوير والعلاج قرارات سريرية للفريق.",
+              "en": "Imaging and treatment are clinical team decisions."
+            }
+          ]
+        },
+        {
+          "id": "managed-end",
+          "type": "debrief",
+          "title": {
+            "ar": "التدهور استُدرك بعد تأخير",
+            "en": "Deterioration was escalated after delay"
+          },
+          "body": {
+            "ar": "تعرّف الطالب إلى تغير مقلق وصعّد بعد مسار سابق من التأخير. تظل الحاجة إلى تقييم إصابة داخلية واحتمال ضرر سابق؛ لا يوفر النشاط تشخيصًا أو نتيجة نهائية.",
+            "en": "The learner recognized and escalated a concerning change after an earlier delay. Possible internal injury and earlier harm still require assessment; the activity provides neither a diagnosis nor a final clinical outcome."
+          },
+          "points": [
+            {
+              "ar": "لا تنسب عرضًا جديدًا لسبب واحد بالتخمين.",
+              "en": "Do not guess one cause for a new symptom."
+            },
+            {
+              "ar": "احتفظ بتوقيت الإصابة والأعراض والتواصل.",
+              "en": "Preserve injury, symptom and notification timing."
+            }
+          ]
+        },
+        {
+          "id": "unsafe-end",
+          "type": "debrief",
+          "title": {
+            "ar": "غياب الدم أخفى الحاجة للتقييم",
+            "en": "No visible blood obscured the need for assessment"
+          },
+          "body": {
+            "ar": "استُخدم المظهر المطمئن لتأخير التقييم أو إلغاء المتابعة. هذه نهاية غير آمنة تحتاج إبلاغ الفريق ومسار إصابة الرأس فورًا؛ شدة النتيجة ليست متوقعة من النموذج.",
+            "en": "Reassuring appearance was used to delay assessment or cancel follow-up. This unsafe ending requires prompt team notification and the head-injury pathway; the model does not predict outcome severity."
+          },
+          "points": [
+            {
+              "ar": "المخاطر الخفية تحتاج تاريخًا ومتابعة، لا مظهرًا فقط.",
+              "en": "Hidden risks require history and follow-up, not appearance alone."
+            },
+            {
+              "ar": "التغير في الوعي علامة تصعيد.",
+              "en": "A change in responsiveness requires escalation."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

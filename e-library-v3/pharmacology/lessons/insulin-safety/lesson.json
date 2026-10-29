@@ -1,0 +1,1630 @@
+{
+  "id": "insulin-safety",
+  "title": {
+    "ar": "الإنسولين: أخطاء صغيرة وتعرّض كبير",
+    "en": "Insulin: small errors, substantial exposure"
+  },
+  "subtitle": {
+    "ar": "اقرأ الوحدة والتركيز، واربط الجرعة بالطعام، وأغلق فجوة التسليم.",
+    "en": "Read units and strength, connect the dose to food, and close handoff gaps."
+  },
+  "goals": [
+    {
+      "ar": "تمييز الوحدات من حجم السائل ومطابقة الجهاز بالمنتج.",
+      "en": "Distinguish units from liquid volume and match the device to the product."
+    },
+    {
+      "ar": "اكتشاف تغير خطة الطعام أو احتمال تكرار الجرعة قبل التنفيذ.",
+      "en": "Detect a changed food plan or a possible duplicate before administration."
+    },
+    {
+      "ar": "التصرف بعد تعرض محتمل دون إخفاء الواقعة أو افتراض زوال الخطر.",
+      "en": "Respond to possible exposure without concealing it or assuming risk has ended."
+    }
+  ],
+  "concepts": [
+    {
+      "id": "effect",
+      "title": {
+        "ar": "الأثر يرتبط بالكمية والنوع والتوقيت",
+        "en": "Amount, product and timing matter"
+      },
+      "body": {
+        "ar": "يخفض الإنسولين سكر الدم. اختلاف النوع أو الكمية أو توقيت الطعام قد يجعل التعرض غير مناسب. لا يكفي أن يبدو حجم السائل صغيرًا؛ يراجع الطالب الأمر والمنتج وحالة المريض مع المشرف.",
+        "en": "Insulin lowers blood glucose. A mismatch in product, amount or food timing may make exposure inappropriate. A small-looking liquid volume is insufficient reassurance; review the order, product and patient with the supervisor."
+      },
+      "sourceIds": [
+        "lispro-label",
+        "ismp-high-alert"
+      ]
+    },
+    {
+      "id": "units",
+      "title": {
+        "ar": "الوحدات ليست mL",
+        "en": "Units are not mL"
+      },
+      "body": {
+        "ar": "الوحدات تصف كمية الإنسولين، وmL تصف الحجم، والتركيز يربطهما. قد تغيّر فاصلة أو وحدة مفقودة الكمية كثيرًا. تُحل المعلومة الملتبسة ويُفحص الجهاز المطابق قبل الإعطاء؛ لا يُسحب الإنسولين المركز من قلم إلى سرنجة لاستخدامها بديلًا للقلم.",
+        "en": "Units describe insulin amount, mL describes volume, and concentration connects them. A decimal or missing unit can greatly alter the amount. Resolve ambiguity and verify the matched device before administration; do not withdraw concentrated insulin from a pen into a syringe as a substitute for the pen."
+      },
+      "sourceIds": [
+        "lispro-label",
+        "fda-concentrated"
+      ]
+    },
+    {
+      "id": "meal",
+      "title": {
+        "ar": "خطة الطعام معلومة دوائية",
+        "en": "The food plan is medication information"
+      },
+      "body": {
+        "ar": "يرتبط الإنسولين الوجبي السريع بتوقيت تناول الطعام. تأخر الوجبة أو تعذر تناولها يستدعي مراجعة السكر والأمر والخطة مع الفريق. لا يختار الطالب جرعة بديلة، ولا يعمم قرارًا لجرعة وجبية على الإنسولين القاعدي كله.",
+        "en": "Rapid mealtime insulin is linked to food intake. A delayed or unavailable meal requires review of glucose, the order and the plan with the team. The student does not choose a replacement dose or extend a mealtime-dose decision to all basal insulin."
+      },
+      "sourceIds": [
+        "lispro-label"
+      ]
+    },
+    {
+      "id": "handoff",
+      "title": {
+        "ar": "الخانة الفارغة ليست إثباتًا",
+        "en": "A blank entry is not proof"
+      },
+      "body": {
+        "ar": "قد تتأخر الكتابة بعد إعطاء الدواء. قبل إعادة جرعة محتملة، يُطابق السجل مع التوقيت الفعلي والممرض المسؤول والأوامر النشطة. التواصل المباشر ثم التوثيق الصحيح حاجزان أمام التكرار.",
+        "en": "Documentation may lag after administration. Before a possible repeat dose, reconcile the record with actual timing, the responsible nurse and active orders. Direct communication followed by accurate documentation helps prevent duplication."
+      },
+      "sourceIds": [
+        "ahrq-duplicate"
+      ]
+    },
+    {
+      "id": "followup",
+      "title": {
+        "ar": "اكتشاف الخطأ يبدأ المتابعة",
+        "en": "Detection starts follow-up"
+      },
+      "body": {
+        "ar": "قد لا تظهر آثار التعرض الزائد فورًا. يبلّغ الطالب مع المشرف وتستمر المراقبة وفق الفريق. التحسن أو قراءة واحدة مطمئنة لا يمحوان الواقعة، ولا يحلان محل خطة متابعة وتوثيق دقيقة.",
+        "en": "Excess exposure may not produce immediate warning signs. Report with the supervisor and continue team-directed monitoring. Improvement or one reassuring reading does not erase the incident or replace follow-up and accurate documentation."
+      },
+      "sourceIds": [
+        "lispro-label",
+        "ahrq-duplicate"
+      ]
+    }
+  ],
+  "terms": [
+    {
+      "term": "Insulin units",
+      "ar": "وحدات الإنسولين",
+      "en": "The prescribed amount of insulin"
+    },
+    {
+      "term": "Concentration",
+      "ar": "التركيز: عدد الوحدات في mL",
+      "en": "Insulin units per mL"
+    },
+    {
+      "term": "Prandial insulin",
+      "ar": "إنسولين مرتبط بالوجبة",
+      "en": "Insulin linked to mealtime intake"
+    },
+    {
+      "term": "Basal insulin",
+      "ar": "إنسولين قاعدي؛ تُراجع خطته بصورة مستقلة",
+      "en": "Background insulin with its own prescribed plan"
+    },
+    {
+      "term": "Hypoglycaemia",
+      "ar": "نقص سكر الدم",
+      "en": "Low blood glucose"
+    },
+    {
+      "term": "MAR / eMAR",
+      "ar": "سجل إعطاء الدواء الورقي أو الإلكتروني",
+      "en": "Paper or electronic medication administration record"
+    }
+  ],
+  "errorChains": [
+    {
+      "id": "decimal",
+      "title": {
+        "ar": "فاصلة تغيّر الكمية",
+        "en": "A decimal changes the amount"
+      },
+      "tinyStep": {
+        "ar": "أمر 8 وحدات يُنقل إلى ملاحظة 0.8 mL من U-100.",
+        "en": "An 8-unit order is copied as 0.8 mL of U-100."
+      },
+      "mechanism": {
+        "ar": "في هذا المثال الحسابي، U-100 يعني 100 وحدة/mL؛ 0.8 mL تحتوي 80 وحدة، لا 8.",
+        "en": "In this arithmetic example, U-100 means 100 units/mL; 0.8 mL contains 80 units, not 8."
+      },
+      "harm": {
+        "ar": "وصول كمية زائدة قد يسبب نقص سكر شديدًا؛ ليس لصِغر الحجم معنى أمان مستقل.",
+        "en": "An excess amount may cause severe hypoglycaemia; small volume alone does not imply safety."
+      },
+      "breakPoint": {
+        "ar": "مطابقة الأمر بالوحدات والملصق والجهاز وإعادة التحقق المطلوبة محليًا قبل التنفيذ.",
+        "en": "Match the order in units, label and device, with locally required verification before administration."
+      },
+      "sourceIds": [
+        "lispro-label",
+        "ismp-high-alert"
+      ]
+    },
+    {
+      "id": "food",
+      "title": {
+        "ar": "الوجبة «ستصل بعد قليل»",
+        "en": "The meal is “coming soon”"
+      },
+      "tinyStep": {
+        "ar": "إعطاء جرعة وجبية سريعة اعتمادًا على توقع وصول الطعام.",
+        "en": "Giving rapid mealtime insulin based on expected food arrival."
+      },
+      "mechanism": {
+        "ar": "قد يبدأ خفض السكر بينما يتأخر الطعام أو يتعذر تناوله.",
+        "en": "Glucose lowering may occur while food is delayed or cannot be eaten."
+      },
+      "harm": {
+        "ar": "قد يظهر نقص السكر ويتطور إلى اضطراب وعي.",
+        "en": "Hypoglycaemia may develop and progress to altered consciousness."
+      },
+      "breakPoint": {
+        "ar": "تأكيد الطعام والأمر والسكر، وطلب مراجعة الفريق عند تغير الخطة.",
+        "en": "Confirm food, the order and glucose; seek team review when the plan changes."
+      },
+      "sourceIds": [
+        "lispro-label"
+      ]
+    },
+    {
+      "id": "blank",
+      "title": {
+        "ar": "توثيق مؤجل يصبح جرعة مكررة",
+        "en": "Delayed documentation becomes a duplicate"
+      },
+      "tinyStep": {
+        "ar": "اعتبار فراغ السجل دليلًا أن الجرعة لم تعطَ.",
+        "en": "Treating an empty record as proof that a dose was not given."
+      },
+      "mechanism": {
+        "ar": "يغيب التعرض السابق عن الممرض المستلم فتتكرر الجرعة.",
+        "en": "The receiving nurse lacks the earlier exposure information and may repeat the dose."
+      },
+      "harm": {
+        "ar": "قد يزداد التعرض ويحدث نقص سكر، مع غياب علامة واضحة أولًا.",
+        "en": "Exposure may increase and hypoglycaemia may occur without an obvious early warning."
+      },
+      "breakPoint": {
+        "ar": "تسليم مباشر ومطابقة السجل والأمر والوقت الفعلي قبل التكرار.",
+        "en": "Use direct handoff and reconcile the record, order and actual time before repeating."
+      },
+      "sourceIds": [
+        "ahrq-duplicate"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "lispro-label",
+      "title": "DailyMed — HUMALOG / insulin lispro; updated 16 June 2026",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c8ecbd7a-0e22-4fc7-a503-faa58c1b6f3f",
+      "scope": {
+        "ar": "توقيت الإنسولين الوجبي ونقص السكر ومطابقة التركيز والجهاز.",
+        "en": "Mealtime timing, hypoglycaemia and strength/device verification."
+      },
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "ismp-high-alert",
+      "title": "ISMP — High-Alert Medications in Acute Care Settings (2024)",
+      "url": "https://www.ismp.org/system/files/resources/2024-01/ISMP_HighAlert_AcuteCare_List_010924_MS5760.pdf",
+      "scope": {
+        "ar": "خطر الأذى الشديد وحواجز منع أخطاء الإنسولين.",
+        "en": "Serious-harm risk and safeguards against insulin errors."
+      },
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "fda-concentrated",
+      "title": "FDA — Safe Use of Insulin; concentrated-insulin errors (2023)",
+      "url": "https://www.fda.gov/media/168391/download",
+      "scope": {
+        "ar": "خطر سحب الإنسولين المركز من الأقلام بأجهزة غير مطابقة؛ لم تُستخدم رسوم المصدر.",
+        "en": "Risks of withdrawing concentrated insulin from pens with mismatched devices; no source illustrations reused."
+      },
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "ahrq-duplicate",
+      "title": "AHRQ PSNet — Duplicate Insulin Order; Acquisto and Cobaugh (2019)",
+      "url": "https://psnet.ahrq.gov/web-mm/duplicate-insulin-order",
+      "scope": {
+        "ar": "تكرار الجرعة وفجوات السجل والتسليم؛ الحالات هنا مؤلفة بصورة مستقلة.",
+        "en": "Dose duplication and documentation/handoff gaps; the cases here are independently authored."
+      },
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "nhs-hypo",
+      "title": "NHS — Low blood sugar (hypoglycaemia); reviewed 3 August 2023",
+      "url": "https://www.nhs.uk/conditions/low-blood-sugar-hypoglycaemia/",
+      "scope": {
+        "ar": "علامات نقص السكر وطلب المساعدة وعدم تقديم طعام أو شراب عند عدم أمان البلع. لم تُنقل جرعات علاج أو أرقام طوارئ أجنبية.",
+        "en": "Hypoglycaemia signs, urgent help and avoiding oral intake when swallowing is unsafe. No treatment doses or foreign emergency numbers are reproduced."
+      },
+      "checked": "2026-10-29"
+    }
+  ],
+  "cases": [
+    {
+      "id": "units-and-volume",
+      "title": {
+        "ar": "الحالة 1: رقم منقول في ورقة التحضير",
+        "en": "Case 1: A copied number on the preparation sheet"
+      },
+      "summary": {
+        "ar": "طالب تمريض تحت الإشراف يراجع جرعة إنسولين وجبية موصوفة لشخص بالغ افتراضي. الطعام حاضر، والهدف فحص توافق الأمر والملصق والملاحظة المنقولة؛ لا تغيير لخطة العلاج.",
+        "en": "A supervised nursing student reviews a prescribed mealtime insulin dose for a fictional adult. Food is present. The task is to reconcile order, label and copied note, without changing the regimen."
+      },
+      "record": [
+        {
+          "label": {
+            "ar": "الأمر الأصلي",
+            "en": "Original order"
+          },
+          "value": {
+            "ar": "Insulin lispro U-100 — 8 وحدات تحت الجلد مع الوجبة، وفق الخطة المكتوبة.",
+            "en": "Insulin lispro U-100 — 8 units subcutaneously with the meal, under the written plan."
+          }
+        },
+        {
+          "label": {
+            "ar": "ملصق القارورة",
+            "en": "Vial label"
+          },
+          "value": {
+            "ar": "100 وحدة/mL (U-100)",
+            "en": "100 units/mL (U-100)"
+          }
+        },
+        {
+          "label": {
+            "ar": "الملاحظة المنقولة",
+            "en": "Copied note"
+          },
+          "value": {
+            "ar": "0.8 mL — لم يجرِ التحقق منها",
+            "en": "0.8 mL — not yet verified"
+          }
+        },
+        {
+          "label": {
+            "ar": "حالة التنفيذ",
+            "en": "Administration status"
+          },
+          "value": {
+            "ar": "لم تُعطَ الجرعة بعد؛ توجد أداة إنسولين U-100 مطابقة.",
+            "en": "No dose given yet; a matching U-100 insulin device is available."
+          }
+        }
+      ],
+      "order": {
+        "ar": "يُنفذ الأمر الأصلي بالوحدات بعد مطابقة المنتج والجهاز وإكمال التحقق المطلوب في المؤسسة. أي تعارض في الملاحظة يُحل قبل الإعطاء.",
+        "en": "Follow the original order expressed in units after product/device matching and the institution’s required verification. Resolve any copied-note discrepancy before administration."
+      },
+      "start": "read",
+      "nodes": [
+        {
+          "id": "read",
+          "type": "decision",
+          "scene": {
+            "ar": "الجرعة لم تُعطَ. أمامك أمر 8 وحدات وملاحظة حجمها 0.8 mL.",
+            "en": "No dose has been given. You have an 8-unit order and a copied volume of 0.8 mL."
+          },
+          "prompt": {
+            "ar": "ما أول قرار؟",
+            "en": "What is your first decision?"
+          },
+          "choices": [
+            {
+              "id": "reconcile",
+              "text": {
+                "ar": "أتوقف لأطابق الوحدة والحجم والتركيز مع المشرف.",
+                "en": "Pause and reconcile units, volume and concentration with the supervisor."
+              },
+              "next": "verify",
+              "effect": "protect",
+              "feedback": {
+                "ar": "صحيح؛ الرقم المنقول لا يحل محل الأمر الأصلي.",
+                "en": "Correct; a copied number does not replace the original order."
+              },
+              "consequence": {
+                "ar": "يمكن كشف خطأ النقل قبل التعرض.",
+                "en": "The transcription error can be detected before exposure."
+              },
+              "sourceIds": [
+                "lispro-label",
+                "ismp-high-alert"
+              ]
+            },
+            {
+              "id": "administer",
+              "text": {
+                "ar": "أُعطي 0.8 mL لأنها مكتوبة في ورقة التحضير.",
+                "en": "Administer 0.8 mL because it appears on the preparation sheet."
+              },
+              "next": "exposed",
+              "effect": "exposure",
+              "feedback": {
+                "ar": "في هذا الفرع وصلت الكمية المنقولة إلى المريض دون مطابقة.",
+                "en": "In this branch the copied amount reached the patient without reconciliation."
+              },
+              "consequence": {
+                "ar": "في U-100 تحتوي 0.8 mL على 80 وحدة، أي عشرة أمثال الأمر التعليمي 8 وحدات؛ نقص السكر الشديد ضرر ممكن.",
+                "en": "For U-100, 0.8 mL contains 80 units, ten times this fictional 8-unit order; severe hypoglycaemia is a possible harm."
+              },
+              "sourceIds": [
+                "lispro-label",
+                "ismp-high-alert"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "verify",
+          "type": "decision",
+          "scene": {
+            "ar": "المقارنة الحسابية تكشف أن 0.8 mL من U-100 تحتوي 80 وحدة. ملاحظة الحجم لا تطابق الأمر.",
+            "en": "Arithmetic shows that 0.8 mL of U-100 contains 80 units. The copied volume does not match the order."
+          },
+          "prompt": {
+            "ar": "كيف تتقدم دون الاعتماد على التخمين؟",
+            "en": "How do you proceed without guessing?"
+          },
+          "choices": [
+            {
+              "id": "match",
+              "text": {
+                "ar": "أُصحح الملاحظة، وأراجع المنتج وأداة الوحدات المطابقة مع المشرف، وأكمل التحقق المؤسسي.",
+                "en": "Correct the note, verify the product and matching unit-marked device with the supervisor, and complete institutional checks."
+              },
+              "next": "record",
+              "effect": "protect",
+              "feedback": {
+                "ar": "التصحيح يشمل المعلومة والجهاز والتحقق، لا الذاكرة فقط.",
+                "en": "Correction includes the information, device and verification, not memory alone."
+              },
+              "consequence": {
+                "ar": "تُمنع الكمية الخاطئة ويصبح التصحيح قابلاً للتسليم.",
+                "en": "The incorrect amount is prevented and the correction can be handed over."
+              },
+              "sourceIds": [
+                "lispro-label",
+                "ismp-high-alert"
+              ]
+            },
+            {
+              "id": "memory",
+              "text": {
+                "ar": "أستخدم سرنجة غير مطابقة ثم أقدّر الكمية بالعين.",
+                "en": "Use a mismatched syringe and estimate the amount visually."
+              },
+              "next": "exposed",
+              "effect": "exposure",
+              "feedback": {
+                "ar": "في هذا الفرع أُعطي مقدار غير موثوق باستخدام جهاز غير مطابق.",
+                "en": "In this branch an unreliable amount was administered with a mismatched device."
+              },
+              "consequence": {
+                "ar": "التعرض الزائد أو الناقص ممكن؛ يجب كشفه والإبلاغ عنه دون افتراض سلامة الحجم الصغير.",
+                "en": "Excess or insufficient exposure is possible; detect and report it without assuming a small volume is safe."
+              },
+              "sourceIds": [
+                "fda-concentrated"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "record",
+          "type": "decision",
+          "scene": {
+            "ar": "اعتُرض الخلل قبل الإعطاء. الآن سيستلم زميل آخر متابعة المريض.",
+            "en": "The discrepancy was intercepted before administration. Another colleague will take over care."
+          },
+          "prompt": {
+            "ar": "كيف تمنع عودة الالتباس في التسليم؟",
+            "en": "How do you prevent the ambiguity returning at handoff?"
+          },
+          "choices": [
+            {
+              "id": "close",
+              "text": {
+                "ar": "أوضح ما أُعطي وما لم يُعطَ، والتوقيت والخطة المتفق عليها، وأوثق تصحيح المعلومة.",
+                "en": "State what was and was not given, actual timing and the agreed plan, and document the corrected information."
+              },
+              "next": "near-miss",
+              "effect": "protect",
+              "feedback": {
+                "ar": "تسليم واضح يغلق فجوة قد يعبر منها خطأ جديد.",
+                "en": "A clear handoff closes a gap through which another error could pass."
+              },
+              "consequence": {
+                "ar": "تُحفظ معلومة الاعتراض وتصل إلى الممرض المستلم.",
+                "en": "The interception information is preserved and reaches the receiving nurse."
+              },
+              "sourceIds": [
+                "lispro-label",
+                "ismp-high-alert"
+              ]
+            },
+            {
+              "id": "private",
+              "text": {
+                "ar": "أكتفي بتذكر التصحيح لأنني اكتشفت المشكلة بنفسي.",
+                "en": "Rely on remembering the correction because I found the problem myself."
+              },
+              "next": "near-miss",
+              "effect": "miss",
+              "feedback": {
+                "ar": "اعتراضك مهم، لكن الذاكرة الشخصية لا تنقل المعلومة للفريق.",
+                "en": "Interception matters, but personal memory does not communicate with the team."
+              },
+              "consequence": {
+                "ar": "لم تصل الجرعة الخاطئة هنا، إلا أن فجوة التوثيق قد تسمح بتكرار المحاولة.",
+                "en": "The incorrect dose has not reached the patient here, but the documentation gap may permit another attempt."
+              },
+              "sourceIds": [
+                "ahrq-duplicate"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "exposed",
+          "type": "decision",
+          "scene": {
+            "ar": "مشهد مكتوب لهذا الفرع بعد الإعطاء: تعرق ورجفة جديدان، والسكر لم يُقَس بعد. هذه علامات محتملة وليست نتيجة حتمية لكل خطأ.",
+            "en": "A scripted post-administration scene: new sweating and trembling, with glucose not yet checked. These are possible signs, not an inevitable result of every error."
+          },
+          "prompt": {
+            "ar": "وصلت الكمية المشتبه بها للمريض؛ ماذا تفعل الآن؟",
+            "en": "The suspected amount reached the patient; what do you do now?"
+          },
+          "choices": [
+            {
+              "id": "call",
+              "text": {
+                "ar": "أطلب المساعدة السريرية العاجلة فورًا مع المشرف، وأقيّم المريض والسكر وأتبع بروتوكول الاستجابة.",
+                "en": "Immediately seek urgent clinical help with the supervisor, assess the patient and glucose, and follow the response protocol."
+              },
+              "next": "followup",
+              "effect": "escalate",
+              "feedback": {
+                "ar": "التعرض الكبير الموصوف مع أعراض جديدة يستلزم استجابة عاجلة؛ لا يُنتظر إثبات الأذى أو انتهاء التسليم.",
+                "en": "The substantial exposure described with new symptoms warrants an urgent response; do not wait for proof of harm or completion of handoff."
+              },
+              "consequence": {
+                "ar": "يستطيع الفريق تقدير التعرض وتحديد العلاج والمراقبة؛ لا تُمحى واقعة الإعطاء.",
+                "en": "The team can assess exposure and determine treatment and monitoring; administration is not erased."
+              },
+              "sourceIds": [
+                "lispro-label",
+                "ismp-high-alert"
+              ]
+            },
+            {
+              "id": "wait",
+              "text": {
+                "ar": "أنتظر قبل الإبلاغ، لعل الأمر يمر دون مشكلة.",
+                "en": "Delay reporting and wait to see whether the problem passes."
+              },
+              "next": "warning",
+              "effect": "miss",
+              "feedback": {
+                "ar": "الانتظار قد يؤخر اكتشاف نقص السكر وتدبيره.",
+                "en": "Waiting may delay recognition and management of hypoglycaemia."
+              },
+              "consequence": {
+                "ar": "قد تستمر السلسلة إلى تغير وعي أو حاجة لمساعدة عاجلة؛ ليست هذه نتيجة حتمية لكل تعرض.",
+                "en": "The chain may progress to altered consciousness or urgent assistance; this is not inevitable after every exposure."
+              },
+              "sourceIds": [
+                "lispro-label"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "warning",
+          "type": "decision",
+          "scene": {
+            "ar": "مشهد افتراضي لاحق: تزداد صعوبة إيقاظ المريض، ولا يمكن تأكيد أمان البلع. هذه أحداث مكتوبة لمسار ممكن وليست توقعًا زمنيًا.",
+            "en": "A later fictional scene: the patient becomes harder to rouse and safe swallowing cannot be confirmed. These are authored events in a possible path, not a timed prediction."
+          },
+          "prompt": {
+            "ar": "ما القرار المناسب لهذه العلامات؟",
+            "en": "What response is appropriate to these signs?"
+          },
+          "choices": [
+            {
+              "id": "urgent",
+              "text": {
+                "ar": "أطلب استجابة عاجلة وأبقى مع المريض، ولا أقدم شيئًا بالفم عندما يكون البلع غير آمن.",
+                "en": "Seek urgent response, remain with the patient, and give nothing by mouth when swallowing is unsafe."
+              },
+              "next": "followup",
+              "effect": "escalate",
+              "feedback": {
+                "ar": "تحتاج العلامات لتقييم ودعم وعلاج بواسطة الفريق وفق البروتوكول.",
+                "en": "These signs require team assessment, support and treatment under protocol."
+              },
+              "consequence": {
+                "ar": "تبدأ محاولة تقليل الضرر؛ التعرض السابق يبقى جزءًا من التسليم.",
+                "en": "Harm mitigation begins; earlier exposure remains part of handoff information."
+              },
+              "sourceIds": [
+                "nhs-hypo"
+              ]
+            },
+            {
+              "id": "sleep",
+              "text": {
+                "ar": "أعتبره نائمًا وأترك الطعام أو الشراب بجواره ثم أعود لاحقًا.",
+                "en": "Assume the patient is sleeping, leave food or drink nearby, and return later."
+              },
+              "next": "unresolved",
+              "effect": "miss",
+              "feedback": {
+                "ar": "صعوبة الإيقاظ علامة مهمة؛ الطعام أو الشراب لا يؤمنان استجابة عاجلة، وقد يكون البلع غير آمن.",
+                "en": "Difficulty rousing is important; food or drink does not provide urgent response and swallowing may be unsafe."
+              },
+              "consequence": {
+                "ar": "يبقى خطر نقص السكر دون تقييم عاجل، وقد يضاف خطر دخول الطعام أو السائل للمجرى الهوائي.",
+                "en": "Hypoglycaemia risk remains without urgent assessment, and oral intake may add aspiration risk."
+              },
+              "sourceIds": [
+                "nhs-hypo"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "followup",
+          "type": "decision",
+          "scene": {
+            "ar": "استجاب الفريق وبدأ التدبير وفق بروتوكول المؤسسة. تبدو الحالة أفضل في هذا المشهد الافتراضي، لكن خطة المراقبة لم تنتهِ.",
+            "en": "The team has responded and protocol-based management has begun. The patient appears better in this fictional scene, but the monitoring plan is not complete."
+          },
+          "prompt": {
+            "ar": "ما الخطوة التي تحافظ على سلامة المتابعة؟",
+            "en": "Which step maintains safe follow-up?"
+          },
+          "choices": [
+            {
+              "id": "facts",
+              "text": {
+                "ar": "أوثق المنتج والكمية والتوقيت والأعراض والقياسات وما اتخذه الفريق، وأسلم خطة المراقبة.",
+                "en": "Document product, amount, time, symptoms, measurements and team actions, and hand over the monitoring plan."
+              },
+              "next": "incident",
+              "effect": "escalate",
+              "feedback": {
+                "ar": "الدقة تمنع ضياع معلومة التعرض وتدعم استمرار الرعاية.",
+                "en": "Accuracy preserves exposure information and supports continuity of care."
+              },
+              "consequence": {
+                "ar": "تبقى الواقعة معلنة وتستمر المتابعة حتى يحدد الفريق نهايتها.",
+                "en": "The incident remains disclosed and monitoring continues until the team defines its endpoint."
+              },
+              "sourceIds": [
+                "lispro-label",
+                "ismp-high-alert"
+              ]
+            },
+            {
+              "id": "erase",
+              "text": {
+                "ar": "أحذف المعلومة الخطأ وأغلق الواقعة لأن المريض تحسن.",
+                "en": "Remove the error information and close the incident because the patient improved."
+              },
+              "next": "unresolved",
+              "effect": "miss",
+              "feedback": {
+                "ar": "التحسن لا يلغي التعرض، وإخفاء التسلسل يضعف المتابعة.",
+                "en": "Improvement does not undo exposure; hiding the sequence weakens follow-up."
+              },
+              "consequence": {
+                "ar": "قد تضيع معلومات يحتاجها الفريق أو تتكرر الجرعة؛ يلزم تسليم أمين.",
+                "en": "The team may lose needed information or another dose may be repeated; an accurate handoff is required."
+              },
+              "sourceIds": [
+                "ahrq-duplicate"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "near-miss",
+          "type": "debrief",
+          "title": {
+            "ar": "اعتراض قبل وصول الإعطاء غير المناسب",
+            "en": "Interception before inappropriate administration"
+          },
+          "body": {
+            "ar": "لم يصل الإعطاء غير المناسب للمريض في هذا المسار. راجع سجل قراراتك: الاعتراض المبكر مهم، وتبقى دقة التسليم والتوثيق وإغلاق مصدر الالتباس جزءًا من الوقاية.",
+            "en": "Inappropriate administration did not reach the patient in this path. Review your decision log: early interception matters, and accurate handoff, documentation and removal of ambiguity remain part of prevention."
+          },
+          "points": [
+            {
+              "ar": "حدد الحاجز الذي منع الوصول، وأي خطوة متابعة فاتتك.",
+              "en": "Identify the barrier that prevented exposure and any follow-up step you missed."
+            },
+            {
+              "ar": "لا يكفي أن يصل شخص واحد إلى المعلومة الصحيحة؛ يجب أن تصل إلى الفريق.",
+              "en": "It is insufficient for one person to know the correct information; the team needs it."
+            }
+          ]
+        },
+        {
+          "id": "incident",
+          "type": "debrief",
+          "title": {
+            "ar": "تعرض وصل للمريض ثم تصعيد",
+            "en": "Patient exposure followed by escalation"
+          },
+          "body": {
+            "ar": "وصلت جرعة غير مناسبة أو مكررة للمريض في هذا الفرع، ثم جرى التصعيد والمتابعة. القرار اللاحق المناسب قد يقلل الضرر، لكنه لا يحول الواقعة إلى محاولة بلا خطأ. يظل التقييم والتوثيق والمراقبة حسب خطة الفريق ضروريًا.",
+            "en": "An inappropriate or duplicate dose reached the patient in this branch, followed by escalation and follow-up. Appropriate later action may limit harm, but does not turn the incident into an error-free attempt. Team-directed assessment, documentation and monitoring remain necessary."
+          },
+          "points": [
+            {
+              "ar": "الأحداث المعروضة فرع افتراضي محتمل، وليست توقعًا لزمن ظهور الأذى أو شدته.",
+              "en": "The events shown are one possible fictional branch, not a prediction of harm onset or severity."
+            },
+            {
+              "ar": "ما المعلومة أو الحاجز الذي كان يمكن أن يقطع السلسلة قبل الإعطاء؟",
+              "en": "What information or barrier could have interrupted the chain before administration?"
+            }
+          ]
+        },
+        {
+          "id": "unresolved",
+          "type": "debrief",
+          "title": {
+            "ar": "تعرض مع خطر لم يُغلق",
+            "en": "Exposure with unresolved risk"
+          },
+          "body": {
+            "ar": "يبقى في المسار تأخر أو إخفاء معلومات بعد تعرض وصل للمريض. لا تعد هذه نهاية علاجية؛ في الممارسة تستدعي الحالة المساعدة والتقييم والمراقبة وفق بروتوكول المؤسسة، مع حفظ الوقائع والتوقيت.",
+            "en": "This path retains delay or withheld information after patient exposure. It is not a treatment endpoint. In practice, help, assessment and protocol-based monitoring are required, with facts and timing preserved."
+          },
+          "points": [
+            {
+              "ar": "الانتظار حتى ظهور عرض أشد ليس حاجز أمان.",
+              "en": "Waiting for a worse sign is not a safety barrier."
+            },
+            {
+              "ar": "التحسن الملاحظ لا يبرر إخفاء الخطأ أو إلغاء خطة المتابعة.",
+              "en": "Observed improvement does not justify concealing the error or cancelling follow-up."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "meal-interrupted",
+      "title": {
+        "ar": "الحالة 2: الوجبة التي لم تصل",
+        "en": "Case 2: The meal that did not arrive"
+      },
+      "summary": {
+        "ar": "يحضر الطالب مع المشرف جرعة insulin lispro وجبية لشخص بالغ افتراضي. تتغير خطة الطعام أثناء التحضير. الهدف تمييز قرار قبل التعرض من متابعة بعد وصول الجرعة.",
+        "en": "A supervised student prepares prescribed mealtime insulin lispro for a fictional adult. The food plan changes during preparation. Distinguish a pre-exposure decision from follow-up after administration."
+      },
+      "record": [
+        {
+          "label": {
+            "ar": "الدواء",
+            "en": "Medicine"
+          },
+          "value": {
+            "ar": "Insulin lispro وجبي؛ الجرعة الموصوفة مراجَعة مع المشرف.",
+            "en": "Prescribed mealtime insulin lispro; the ordered dose has been verified with the supervisor."
+          }
+        },
+        {
+          "label": {
+            "ar": "الطعام",
+            "en": "Food"
+          },
+          "value": {
+            "ar": "قيل إن الصينية ستصل؛ الآن أبلغ المريض أنه سيذهب لإجراء ولا توجد وجبة جاهزة.",
+            "en": "The tray was expected; the patient now reports an upcoming procedure and no meal is ready."
+          }
+        },
+        {
+          "label": {
+            "ar": "معلومات ناقصة",
+            "en": "Unresolved information"
+          },
+          "value": {
+            "ar": "لم يُحسم أمر الصيام أو بديل التغذية أو خطة هذه الجرعة.",
+            "en": "Fasting status, alternative nutrition and the plan for this dose are unresolved."
+          }
+        },
+        {
+          "label": {
+            "ar": "السكر",
+            "en": "Glucose"
+          },
+          "value": {
+            "ar": "القياس الحالي موجود في السجل؛ الخطة تحتاج مراجعة بسبب تغير الطعام.",
+            "en": "A current reading is in the record; the changed food plan still requires review."
+          }
+        }
+      ],
+      "order": {
+        "ar": "أمر تعليمي لجرعة وجبية مرتبطة بخطة الطعام. إذا تغيرت الخطة، اطلب مراجعة الأمر والسكر مع المشرف والفريق قبل التنفيذ. لا تغيّر جرعات أخرى أو الإنسولين القاعدي بصورة مستقلة.",
+        "en": "A fictional mealtime order linked to the food plan. If the plan changes, review the order and glucose with the supervisor and team before administration. Do not independently change other doses or basal insulin."
+      },
+      "start": "read",
+      "nodes": [
+        {
+          "id": "read",
+          "type": "decision",
+          "scene": {
+            "ar": "لم تُعطَ الجرعة بعد، والطعام غير حاضر مع احتمال إجراء يتطلب صيامًا.",
+            "en": "The dose has not been given; food is absent and a procedure may require fasting."
+          },
+          "prompt": {
+            "ar": "هل تكفي عبارة «الوجبة ستأتي»؟",
+            "en": "Is “the meal will arrive” sufficient?"
+          },
+          "choices": [
+            {
+              "id": "verify-food",
+              "text": {
+                "ar": "أؤكد خطة الطعام والصيام والأمر والسكر مع المشرف قبل إعطاء الجرعة الوجبية.",
+                "en": "Confirm food, fasting status, the order and glucose with the supervisor before this mealtime dose."
+              },
+              "next": "verify",
+              "effect": "protect",
+              "feedback": {
+                "ar": "صحيح؛ تغير الطعام معلومة تؤثر في الخطة الدوائية.",
+                "en": "Correct; a changed food plan is medication-relevant information."
+              },
+              "consequence": {
+                "ar": "يمكن منع عدم التوافق بين التعرض للإنسولين والطعام قبل الإعطاء.",
+                "en": "A mismatch between insulin exposure and food can be prevented before administration."
+              },
+              "sourceIds": [
+                "lispro-label"
+              ]
+            },
+            {
+              "id": "assume-tray",
+              "text": {
+                "ar": "أعطي الجرعة الآن اعتمادًا على توقع وصول الصينية.",
+                "en": "Give the dose now because the tray is expected."
+              },
+              "next": "exposed",
+              "effect": "exposure",
+              "feedback": {
+                "ar": "في هذا الفرع أُعطيت الجرعة بينما بقي الطعام غير مؤكد.",
+                "en": "In this branch the dose was administered while food remained uncertain."
+              },
+              "consequence": {
+                "ar": "قد يبدأ خفض السكر دون تناول الطعام المخطط؛ غياب الأعراض الأولية لا يثبت الأمان.",
+                "en": "Glucose lowering may occur without the planned intake; absent early symptoms do not establish safety."
+              },
+              "sourceIds": [
+                "lispro-label"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "verify",
+          "type": "decision",
+          "scene": {
+            "ar": "أوضح الفريق أن الطعام سيتأخر، وطلب مراجعة خطة الجرعة الوجبية مع متابعة السكر. لم تصدر للطالب صلاحية تغيير بقية العلاج.",
+            "en": "The team confirms that food will be delayed and arranges review of the mealtime-dose plan with glucose monitoring. The student has no authority to change the rest of the regimen."
+          },
+          "prompt": {
+            "ar": "كيف تتابع تغير الخطة؟",
+            "en": "How do you follow the changed plan?"
+          },
+          "choices": [
+            {
+              "id": "team-plan",
+              "text": {
+                "ar": "أحصل على تعليمات واضحة لهذه الجرعة وأوثقها وأسلمها؛ لا أغيّر القاعدي تلقائيًا.",
+                "en": "Obtain, document and hand over clear instructions for this dose; do not automatically change basal insulin."
+              },
+              "next": "record",
+              "effect": "protect",
+              "feedback": {
+                "ar": "صحيح؛ القرار يخص أمرًا محددًا ويحتاج خطة معلنة للفريق.",
+                "en": "Correct; the decision concerns a specific order and needs a communicated team plan."
+              },
+              "consequence": {
+                "ar": "تتناسق الجرعة المعنية والتغذية والمراقبة وفق توجيهات الفريق.",
+                "en": "The relevant dose, nutrition and monitoring are coordinated under team instructions."
+              },
+              "sourceIds": [
+                "lispro-label"
+              ]
+            },
+            {
+              "id": "give-despite",
+              "text": {
+                "ar": "أعطي الجرعة الأصلية دون انتظار الخطة لأن موعدها حلّ.",
+                "en": "Give the original dose without awaiting the reviewed plan because it is due."
+              },
+              "next": "exposed",
+              "effect": "exposure",
+              "feedback": {
+                "ar": "في هذا الفرع وصلت الجرعة للمريض رغم أن خطة الطعام لم تُحسم.",
+                "en": "In this branch the dose reached the patient despite an unresolved food plan."
+              },
+              "consequence": {
+                "ar": "يحتاج التعرض الآن إلى تقييم ومتابعة، لا إلى محو التأخير من السجل.",
+                "en": "The exposure now needs assessment and follow-up, not removal of the delay from the record."
+              },
+              "sourceIds": [
+                "lispro-label"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "record",
+          "type": "decision",
+          "scene": {
+            "ar": "اعتُرض الخلل قبل الإعطاء. الآن سيستلم زميل آخر متابعة المريض.",
+            "en": "The discrepancy was intercepted before administration. Another colleague will take over care."
+          },
+          "prompt": {
+            "ar": "كيف تمنع عودة الالتباس في التسليم؟",
+            "en": "How do you prevent the ambiguity returning at handoff?"
+          },
+          "choices": [
+            {
+              "id": "close",
+              "text": {
+                "ar": "أوضح ما أُعطي وما لم يُعطَ، والتوقيت والخطة المتفق عليها، وأوثق تصحيح المعلومة.",
+                "en": "State what was and was not given, actual timing and the agreed plan, and document the corrected information."
+              },
+              "next": "near-miss",
+              "effect": "protect",
+              "feedback": {
+                "ar": "تسليم واضح يغلق فجوة قد يعبر منها خطأ جديد.",
+                "en": "A clear handoff closes a gap through which another error could pass."
+              },
+              "consequence": {
+                "ar": "تُحفظ معلومة الاعتراض وتصل إلى الممرض المستلم.",
+                "en": "The interception information is preserved and reaches the receiving nurse."
+              },
+              "sourceIds": [
+                "lispro-label",
+                "ismp-high-alert"
+              ]
+            },
+            {
+              "id": "private",
+              "text": {
+                "ar": "أكتفي بتذكر التصحيح لأنني اكتشفت المشكلة بنفسي.",
+                "en": "Rely on remembering the correction because I found the problem myself."
+              },
+              "next": "near-miss",
+              "effect": "miss",
+              "feedback": {
+                "ar": "اعتراضك مهم، لكن الذاكرة الشخصية لا تنقل المعلومة للفريق.",
+                "en": "Interception matters, but personal memory does not communicate with the team."
+              },
+              "consequence": {
+                "ar": "لم تصل الجرعة الخاطئة هنا، إلا أن فجوة التوثيق قد تسمح بتكرار المحاولة.",
+                "en": "The incorrect dose has not reached the patient here, but the documentation gap may permit another attempt."
+              },
+              "sourceIds": [
+                "ahrq-duplicate"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "exposed",
+          "type": "decision",
+          "scene": {
+            "ar": "مشهد افتراضي بعد إعطاء الجرعة دون طعام مؤكد: يظهر تعرق وجوع وصعوبة تركيز جديدة. لم يجرِ تقييم جديد بعد. هذه علامات محتملة لا تظهر عند الجميع.",
+            "en": "A fictional scene after administration without confirmed food: new sweating, hunger and difficulty concentrating. No reassessment has occurred yet. These are possible signs, not findings in every patient."
+          },
+          "prompt": {
+            "ar": "كيف تتعامل مع علامات جديدة بعد الجرعة؟",
+            "en": "How do you respond to new signs after the dose?"
+          },
+          "choices": [
+            {
+              "id": "call",
+              "text": {
+                "ar": "أبلغ المشرف فورًا بالتعرض المحتمل، وأقيّم المريض والسكر وأتبع الاستجابة المؤسسية.",
+                "en": "Tell the supervisor promptly about possible exposure, assess the patient and glucose, and follow the institutional response."
+              },
+              "next": "followup",
+              "effect": "escalate",
+              "feedback": {
+                "ar": "صحيح؛ الإبلاغ لا ينتظر ظهور أذى مؤكد.",
+                "en": "Correct; reporting does not wait for confirmed harm."
+              },
+              "consequence": {
+                "ar": "يستطيع الفريق تقدير التعرض وتحديد العلاج والمراقبة؛ لا تُمحى واقعة الإعطاء.",
+                "en": "The team can assess exposure and determine treatment and monitoring; administration is not erased."
+              },
+              "sourceIds": [
+                "lispro-label",
+                "ismp-high-alert"
+              ]
+            },
+            {
+              "id": "wait",
+              "text": {
+                "ar": "أنتظر قبل الإبلاغ، لعل الأمر يمر دون مشكلة.",
+                "en": "Delay reporting and wait to see whether the problem passes."
+              },
+              "next": "warning",
+              "effect": "miss",
+              "feedback": {
+                "ar": "الانتظار قد يؤخر اكتشاف نقص السكر وتدبيره.",
+                "en": "Waiting may delay recognition and management of hypoglycaemia."
+              },
+              "consequence": {
+                "ar": "قد تستمر السلسلة إلى تغير وعي أو حاجة لمساعدة عاجلة؛ ليست هذه نتيجة حتمية لكل تعرض.",
+                "en": "The chain may progress to altered consciousness or urgent assistance; this is not inevitable after every exposure."
+              },
+              "sourceIds": [
+                "lispro-label"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "warning",
+          "type": "decision",
+          "scene": {
+            "ar": "مشهد افتراضي لاحق: تزداد صعوبة إيقاظ المريض، ولا يمكن تأكيد أمان البلع. هذه أحداث مكتوبة لمسار ممكن وليست توقعًا زمنيًا.",
+            "en": "A later fictional scene: the patient becomes harder to rouse and safe swallowing cannot be confirmed. These are authored events in a possible path, not a timed prediction."
+          },
+          "prompt": {
+            "ar": "ما القرار المناسب لهذه العلامات؟",
+            "en": "What response is appropriate to these signs?"
+          },
+          "choices": [
+            {
+              "id": "urgent",
+              "text": {
+                "ar": "أطلب استجابة عاجلة وأبقى مع المريض، ولا أقدم شيئًا بالفم عندما يكون البلع غير آمن.",
+                "en": "Seek urgent response, remain with the patient, and give nothing by mouth when swallowing is unsafe."
+              },
+              "next": "followup",
+              "effect": "escalate",
+              "feedback": {
+                "ar": "تحتاج العلامات لتقييم ودعم وعلاج بواسطة الفريق وفق البروتوكول.",
+                "en": "These signs require team assessment, support and treatment under protocol."
+              },
+              "consequence": {
+                "ar": "تبدأ محاولة تقليل الضرر؛ التعرض السابق يبقى جزءًا من التسليم.",
+                "en": "Harm mitigation begins; earlier exposure remains part of handoff information."
+              },
+              "sourceIds": [
+                "nhs-hypo"
+              ]
+            },
+            {
+              "id": "sleep",
+              "text": {
+                "ar": "أعتبره نائمًا وأترك الطعام أو الشراب بجواره ثم أعود لاحقًا.",
+                "en": "Assume the patient is sleeping, leave food or drink nearby, and return later."
+              },
+              "next": "unresolved",
+              "effect": "miss",
+              "feedback": {
+                "ar": "صعوبة الإيقاظ علامة مهمة؛ الطعام أو الشراب لا يؤمنان استجابة عاجلة، وقد يكون البلع غير آمن.",
+                "en": "Difficulty rousing is important; food or drink does not provide urgent response and swallowing may be unsafe."
+              },
+              "consequence": {
+                "ar": "يبقى خطر نقص السكر دون تقييم عاجل، وقد يضاف خطر دخول الطعام أو السائل للمجرى الهوائي.",
+                "en": "Hypoglycaemia risk remains without urgent assessment, and oral intake may add aspiration risk."
+              },
+              "sourceIds": [
+                "nhs-hypo"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "followup",
+          "type": "decision",
+          "scene": {
+            "ar": "استجاب الفريق وبدأ التدبير وفق بروتوكول المؤسسة. تبدو الحالة أفضل في هذا المشهد الافتراضي، لكن خطة المراقبة لم تنتهِ.",
+            "en": "The team has responded and protocol-based management has begun. The patient appears better in this fictional scene, but the monitoring plan is not complete."
+          },
+          "prompt": {
+            "ar": "ما الخطوة التي تحافظ على سلامة المتابعة؟",
+            "en": "Which step maintains safe follow-up?"
+          },
+          "choices": [
+            {
+              "id": "facts",
+              "text": {
+                "ar": "أوثق المنتج والكمية والتوقيت والأعراض والقياسات وما اتخذه الفريق، وأسلم خطة المراقبة.",
+                "en": "Document product, amount, time, symptoms, measurements and team actions, and hand over the monitoring plan."
+              },
+              "next": "incident",
+              "effect": "escalate",
+              "feedback": {
+                "ar": "الدقة تمنع ضياع معلومة التعرض وتدعم استمرار الرعاية.",
+                "en": "Accuracy preserves exposure information and supports continuity of care."
+              },
+              "consequence": {
+                "ar": "تبقى الواقعة معلنة وتستمر المتابعة حتى يحدد الفريق نهايتها.",
+                "en": "The incident remains disclosed and monitoring continues until the team defines its endpoint."
+              },
+              "sourceIds": [
+                "lispro-label",
+                "ismp-high-alert"
+              ]
+            },
+            {
+              "id": "erase",
+              "text": {
+                "ar": "أحذف المعلومة الخطأ وأغلق الواقعة لأن المريض تحسن.",
+                "en": "Remove the error information and close the incident because the patient improved."
+              },
+              "next": "unresolved",
+              "effect": "miss",
+              "feedback": {
+                "ar": "التحسن لا يلغي التعرض، وإخفاء التسلسل يضعف المتابعة.",
+                "en": "Improvement does not undo exposure; hiding the sequence weakens follow-up."
+              },
+              "consequence": {
+                "ar": "قد تضيع معلومات يحتاجها الفريق أو تتكرر الجرعة؛ يلزم تسليم أمين.",
+                "en": "The team may lose needed information or another dose may be repeated; an accurate handoff is required."
+              },
+              "sourceIds": [
+                "ahrq-duplicate"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "near-miss",
+          "type": "debrief",
+          "title": {
+            "ar": "اعتراض قبل وصول الإعطاء غير المناسب",
+            "en": "Interception before inappropriate administration"
+          },
+          "body": {
+            "ar": "لم يصل الإعطاء غير المناسب للمريض في هذا المسار. راجع سجل قراراتك: الاعتراض المبكر مهم، وتبقى دقة التسليم والتوثيق وإغلاق مصدر الالتباس جزءًا من الوقاية.",
+            "en": "Inappropriate administration did not reach the patient in this path. Review your decision log: early interception matters, and accurate handoff, documentation and removal of ambiguity remain part of prevention."
+          },
+          "points": [
+            {
+              "ar": "حدد الحاجز الذي منع الوصول، وأي خطوة متابعة فاتتك.",
+              "en": "Identify the barrier that prevented exposure and any follow-up step you missed."
+            },
+            {
+              "ar": "لا يكفي أن يصل شخص واحد إلى المعلومة الصحيحة؛ يجب أن تصل إلى الفريق.",
+              "en": "It is insufficient for one person to know the correct information; the team needs it."
+            }
+          ]
+        },
+        {
+          "id": "incident",
+          "type": "debrief",
+          "title": {
+            "ar": "تعرض وصل للمريض ثم تصعيد",
+            "en": "Patient exposure followed by escalation"
+          },
+          "body": {
+            "ar": "وصلت جرعة غير مناسبة أو مكررة للمريض في هذا الفرع، ثم جرى التصعيد والمتابعة. القرار اللاحق المناسب قد يقلل الضرر، لكنه لا يحول الواقعة إلى محاولة بلا خطأ. يظل التقييم والتوثيق والمراقبة حسب خطة الفريق ضروريًا.",
+            "en": "An inappropriate or duplicate dose reached the patient in this branch, followed by escalation and follow-up. Appropriate later action may limit harm, but does not turn the incident into an error-free attempt. Team-directed assessment, documentation and monitoring remain necessary."
+          },
+          "points": [
+            {
+              "ar": "الأحداث المعروضة فرع افتراضي محتمل، وليست توقعًا لزمن ظهور الأذى أو شدته.",
+              "en": "The events shown are one possible fictional branch, not a prediction of harm onset or severity."
+            },
+            {
+              "ar": "ما المعلومة أو الحاجز الذي كان يمكن أن يقطع السلسلة قبل الإعطاء؟",
+              "en": "What information or barrier could have interrupted the chain before administration?"
+            }
+          ]
+        },
+        {
+          "id": "unresolved",
+          "type": "debrief",
+          "title": {
+            "ar": "تعرض مع خطر لم يُغلق",
+            "en": "Exposure with unresolved risk"
+          },
+          "body": {
+            "ar": "يبقى في المسار تأخر أو إخفاء معلومات بعد تعرض وصل للمريض. لا تعد هذه نهاية علاجية؛ في الممارسة تستدعي الحالة المساعدة والتقييم والمراقبة وفق بروتوكول المؤسسة، مع حفظ الوقائع والتوقيت.",
+            "en": "This path retains delay or withheld information after patient exposure. It is not a treatment endpoint. In practice, help, assessment and protocol-based monitoring are required, with facts and timing preserved."
+          },
+          "points": [
+            {
+              "ar": "الانتظار حتى ظهور عرض أشد ليس حاجز أمان.",
+              "en": "Waiting for a worse sign is not a safety barrier."
+            },
+            {
+              "ar": "التحسن الملاحظ لا يبرر إخفاء الخطأ أو إلغاء خطة المتابعة.",
+              "en": "Observed improvement does not justify concealing the error or cancelling follow-up."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "duplicate-handoff",
+      "title": {
+        "ar": "الحالة 3: السجل فارغ والتسليم ناقص",
+        "en": "Case 3: A blank record and incomplete handoff"
+      },
+      "summary": {
+        "ar": "أثناء تبديل المناوبة يتولى الطالب مع المشرف متابعة مريض افتراضي له أمر إنسولين. توجد فجوة بين حديث التسليم وسجل الإعطاء. لا تفترض أن غياب النقرة يساوي غياب التعرض.",
+        "en": "At shift change, a supervised student helps care for a fictional patient with an insulin order. Spoken handoff and the administration record disagree. A missing chart entry is not proof of no exposure."
+      },
+      "record": [
+        {
+          "label": {
+            "ar": "سجل الإعطاء",
+            "en": "Administration record"
+          },
+          "value": {
+            "ar": "خانة جرعة الإنسولين الأخيرة فارغة.",
+            "en": "The latest insulin administration cell is blank."
+          }
+        },
+        {
+          "label": {
+            "ar": "التسليم الشفهي",
+            "en": "Spoken handoff"
+          },
+          "value": {
+            "ar": "زميل: «أظن أنها أُعطيت، لكن لم أؤكد مع الممرض المسؤول».",
+            "en": "A colleague says: “I think it was given, but I have not checked with the responsible nurse.”"
+          }
+        },
+        {
+          "label": {
+            "ar": "الأوامر",
+            "en": "Orders"
+          },
+          "value": {
+            "ar": "يوجد أمر نشط؛ لم تطابَق احتمالات أمر مكرر أو وقت إعطاء سابق.",
+            "en": "An active order exists; possible duplicate orders and earlier administration time have not been reconciled."
+          }
+        },
+        {
+          "label": {
+            "ar": "حالة المريض",
+            "en": "Patient status"
+          },
+          "value": {
+            "ar": "مستيقظ ولا يذكر أعراضًا جديدة عند بدء الحالة.",
+            "en": "Awake with no new symptoms reported at case start."
+          }
+        }
+      ],
+      "order": {
+        "ar": "قبل جرعة يمكن أن تكون تكرارًا، طابق الأمر وسجل الإعطاء والتوقيت مع الممرض المسؤول والمشرف. لا تعِد الجرعة اعتمادًا على فراغ السجل وحده؛ اطلب تعليمات الفريق عند بقاء شك.",
+        "en": "Before a dose that may be a repeat, reconcile the order, administration record and actual timing with the responsible nurse and supervisor. Do not repeat based only on a blank cell; seek team instructions if uncertainty remains."
+      },
+      "start": "read",
+      "nodes": [
+        {
+          "id": "read",
+          "type": "decision",
+          "scene": {
+            "ar": "هناك اختلاف بين السجل وحديث التسليم. لم تُعطَ جرعة جديدة في هذه الحالة بعد.",
+            "en": "The record and handoff disagree. No new dose has been given in this case yet."
+          },
+          "prompt": {
+            "ar": "ما المعلومة التي تحتاجها قبل التكرار؟",
+            "en": "What information do you need before repeating a dose?"
+          },
+          "choices": [
+            {
+              "id": "trace",
+              "text": {
+                "ar": "أتحقق مباشرة من الممرض المسؤول والتوقيت الفعلي، وأطابق السجل والأوامر مع المشرف.",
+                "en": "Check directly with the responsible nurse and actual timing, and reconcile record and orders with the supervisor."
+              },
+              "next": "verify",
+              "effect": "protect",
+              "feedback": {
+                "ar": "صحيح؛ تحتاج إثبات الإعطاء أو عدمه، لا افتراضًا من خانة فارغة.",
+                "en": "Correct; establish whether administration occurred rather than inferring it from a blank cell."
+              },
+              "consequence": {
+                "ar": "يمكن كشف تعرض سابق قبل إضافة جرعة جديدة.",
+                "en": "Earlier exposure can be detected before another dose is added."
+              },
+              "sourceIds": [
+                "ahrq-duplicate"
+              ]
+            },
+            {
+              "id": "repeat",
+              "text": {
+                "ar": "أعيد الجرعة لأن خانتها غير مؤشرة.",
+                "en": "Repeat the dose because the cell is unchecked."
+              },
+              "next": "exposed",
+              "effect": "exposure",
+              "feedback": {
+                "ar": "في هذا الفرع تأكد لاحقًا أن الجرعة الأولى كانت قد أُعطيت؛ وصلت جرعة مكررة للمريض.",
+                "en": "In this branch it is later confirmed that the first dose had been given; a duplicate reached the patient."
+              },
+              "consequence": {
+                "ar": "قد يزداد خطر نقص السكر حتى لو بدا المريض بخير مباشرة بعد التكرار.",
+                "en": "Hypoglycaemia risk may increase even if the patient initially appears well after the duplicate."
+              },
+              "sourceIds": [
+                "ahrq-duplicate",
+                "lispro-label"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "verify",
+          "type": "decision",
+          "scene": {
+            "ar": "أكد الممرض المسؤول أن الجرعة أُعطيت بالفعل، وتوفر وقتها. تأخرت كتابة السجل أثناء انشغاله بمريض آخر.",
+            "en": "The responsible nurse confirms that the dose was already given and provides the time. Documentation was delayed while attending another patient."
+          },
+          "prompt": {
+            "ar": "كيف تمنع جرعة ثانية من هذه الفجوة؟",
+            "en": "How do you prevent a second dose through this gap?"
+          },
+          "choices": [
+            {
+              "id": "reconcile",
+              "text": {
+                "ar": "أمنع تكرار الجرعة المراجَعة، وأطابق الأوامر وأصحح السجل بالتوقيت الحقيقي مع المسؤول والمشرف.",
+                "en": "Prevent repetition of the reviewed dose, reconcile orders and correct the record with actual timing through the responsible nurse and supervisor."
+              },
+              "next": "record",
+              "effect": "protect",
+              "feedback": {
+                "ar": "صحيح؛ التوثيق المتأخر يحتاج حقيقة وتوقيتًا واضحين، لا إشارة مبهمة.",
+                "en": "Correct; delayed documentation needs facts and clear timing, not an ambiguous mark."
+              },
+              "consequence": {
+                "ar": "يظهر التعرض السابق للفريق وتقل فرصة التكرار.",
+                "en": "Earlier exposure becomes visible to the team, reducing the opportunity for duplication."
+              },
+              "sourceIds": [
+                "ahrq-duplicate"
+              ]
+            },
+            {
+              "id": "blank-wins",
+              "text": {
+                "ar": "أعطي جرعة أخرى لأن السجل الإلكتروني أهم من التسليم المباشر.",
+                "en": "Give another dose because the electronic record overrides the direct handoff."
+              },
+              "next": "exposed",
+              "effect": "exposure",
+              "feedback": {
+                "ar": "في هذا الفرع أُضيفت جرعة رغم تأكد إعطاء الجرعة السابقة.",
+                "en": "In this branch another dose was added despite confirmation of earlier administration."
+              },
+              "consequence": {
+                "ar": "المصدر الإلكتروني لا يبرر تجاهل تعارض مثبت؛ أصبح هناك تعرض مكرر يحتاج تصعيدًا.",
+                "en": "An electronic source does not justify ignoring a confirmed discrepancy; duplicate exposure now requires escalation."
+              },
+              "sourceIds": [
+                "ahrq-duplicate"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "record",
+          "type": "decision",
+          "scene": {
+            "ar": "اعتُرض الخلل قبل الإعطاء. الآن سيستلم زميل آخر متابعة المريض.",
+            "en": "The discrepancy was intercepted before administration. Another colleague will take over care."
+          },
+          "prompt": {
+            "ar": "كيف تمنع عودة الالتباس في التسليم؟",
+            "en": "How do you prevent the ambiguity returning at handoff?"
+          },
+          "choices": [
+            {
+              "id": "close",
+              "text": {
+                "ar": "أوضح ما أُعطي وما لم يُعطَ، والتوقيت والخطة المتفق عليها، وأوثق تصحيح المعلومة.",
+                "en": "State what was and was not given, actual timing and the agreed plan, and document the corrected information."
+              },
+              "next": "near-miss",
+              "effect": "protect",
+              "feedback": {
+                "ar": "تسليم واضح يغلق فجوة قد يعبر منها خطأ جديد.",
+                "en": "A clear handoff closes a gap through which another error could pass."
+              },
+              "consequence": {
+                "ar": "تُحفظ معلومة الاعتراض وتصل إلى الممرض المستلم.",
+                "en": "The interception information is preserved and reaches the receiving nurse."
+              },
+              "sourceIds": [
+                "lispro-label",
+                "ismp-high-alert"
+              ]
+            },
+            {
+              "id": "private",
+              "text": {
+                "ar": "أكتفي بتذكر التصحيح لأنني اكتشفت المشكلة بنفسي.",
+                "en": "Rely on remembering the correction because I found the problem myself."
+              },
+              "next": "near-miss",
+              "effect": "miss",
+              "feedback": {
+                "ar": "اعتراضك مهم، لكن الذاكرة الشخصية لا تنقل المعلومة للفريق.",
+                "en": "Interception matters, but personal memory does not communicate with the team."
+              },
+              "consequence": {
+                "ar": "لم تصل الجرعة الخاطئة هنا، إلا أن فجوة التوثيق قد تسمح بتكرار المحاولة.",
+                "en": "The incorrect dose has not reached the patient here, but the documentation gap may permit another attempt."
+              },
+              "sourceIds": [
+                "ahrq-duplicate"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "exposed",
+          "type": "decision",
+          "scene": {
+            "ar": "بعد الجرعة المكررة أكد الفريق التعرضين والتوقيتين. المريض لا يذكر أعراضًا جديدة في هذا المشهد. لا يعني ذلك أن الخطر انتهى.",
+            "en": "After the repeat dose, the team confirms both exposures and times. The patient reports no new symptoms in this scene. That does not mean the risk has ended."
+          },
+          "prompt": {
+            "ar": "هل تنتظر عرضًا قبل الإبلاغ عن الجرعة المكررة؟",
+            "en": "Do you wait for symptoms before reporting the duplicate dose?"
+          },
+          "choices": [
+            {
+              "id": "call",
+              "text": {
+                "ar": "أبلغ المشرف فورًا بالتعرض المحتمل، وأقيّم المريض والسكر وأتبع الاستجابة المؤسسية.",
+                "en": "Tell the supervisor promptly about possible exposure, assess the patient and glucose, and follow the institutional response."
+              },
+              "next": "followup",
+              "effect": "escalate",
+              "feedback": {
+                "ar": "صحيح؛ الإبلاغ لا ينتظر ظهور أذى مؤكد.",
+                "en": "Correct; reporting does not wait for confirmed harm."
+              },
+              "consequence": {
+                "ar": "يستطيع الفريق تقدير التعرض وتحديد العلاج والمراقبة؛ لا تُمحى واقعة الإعطاء.",
+                "en": "The team can assess exposure and determine treatment and monitoring; administration is not erased."
+              },
+              "sourceIds": [
+                "lispro-label",
+                "ismp-high-alert"
+              ]
+            },
+            {
+              "id": "wait",
+              "text": {
+                "ar": "أنتظر قبل الإبلاغ، لعل الأمر يمر دون مشكلة.",
+                "en": "Delay reporting and wait to see whether the problem passes."
+              },
+              "next": "warning",
+              "effect": "miss",
+              "feedback": {
+                "ar": "الانتظار قد يؤخر اكتشاف نقص السكر وتدبيره.",
+                "en": "Waiting may delay recognition and management of hypoglycaemia."
+              },
+              "consequence": {
+                "ar": "قد تستمر السلسلة إلى تغير وعي أو حاجة لمساعدة عاجلة؛ ليست هذه نتيجة حتمية لكل تعرض.",
+                "en": "The chain may progress to altered consciousness or urgent assistance; this is not inevitable after every exposure."
+              },
+              "sourceIds": [
+                "lispro-label"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "warning",
+          "type": "decision",
+          "scene": {
+            "ar": "مشهد افتراضي لاحق: تزداد صعوبة إيقاظ المريض، ولا يمكن تأكيد أمان البلع. هذه أحداث مكتوبة لمسار ممكن وليست توقعًا زمنيًا.",
+            "en": "A later fictional scene: the patient becomes harder to rouse and safe swallowing cannot be confirmed. These are authored events in a possible path, not a timed prediction."
+          },
+          "prompt": {
+            "ar": "ما القرار المناسب لهذه العلامات؟",
+            "en": "What response is appropriate to these signs?"
+          },
+          "choices": [
+            {
+              "id": "urgent",
+              "text": {
+                "ar": "أطلب استجابة عاجلة وأبقى مع المريض، ولا أقدم شيئًا بالفم عندما يكون البلع غير آمن.",
+                "en": "Seek urgent response, remain with the patient, and give nothing by mouth when swallowing is unsafe."
+              },
+              "next": "followup",
+              "effect": "escalate",
+              "feedback": {
+                "ar": "تحتاج العلامات لتقييم ودعم وعلاج بواسطة الفريق وفق البروتوكول.",
+                "en": "These signs require team assessment, support and treatment under protocol."
+              },
+              "consequence": {
+                "ar": "تبدأ محاولة تقليل الضرر؛ التعرض السابق يبقى جزءًا من التسليم.",
+                "en": "Harm mitigation begins; earlier exposure remains part of handoff information."
+              },
+              "sourceIds": [
+                "nhs-hypo"
+              ]
+            },
+            {
+              "id": "sleep",
+              "text": {
+                "ar": "أعتبره نائمًا وأترك الطعام أو الشراب بجواره ثم أعود لاحقًا.",
+                "en": "Assume the patient is sleeping, leave food or drink nearby, and return later."
+              },
+              "next": "unresolved",
+              "effect": "miss",
+              "feedback": {
+                "ar": "صعوبة الإيقاظ علامة مهمة؛ الطعام أو الشراب لا يؤمنان استجابة عاجلة، وقد يكون البلع غير آمن.",
+                "en": "Difficulty rousing is important; food or drink does not provide urgent response and swallowing may be unsafe."
+              },
+              "consequence": {
+                "ar": "يبقى خطر نقص السكر دون تقييم عاجل، وقد يضاف خطر دخول الطعام أو السائل للمجرى الهوائي.",
+                "en": "Hypoglycaemia risk remains without urgent assessment, and oral intake may add aspiration risk."
+              },
+              "sourceIds": [
+                "nhs-hypo"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "followup",
+          "type": "decision",
+          "scene": {
+            "ar": "استجاب الفريق وبدأ التدبير وفق بروتوكول المؤسسة. تبدو الحالة أفضل في هذا المشهد الافتراضي، لكن خطة المراقبة لم تنتهِ.",
+            "en": "The team has responded and protocol-based management has begun. The patient appears better in this fictional scene, but the monitoring plan is not complete."
+          },
+          "prompt": {
+            "ar": "ما الخطوة التي تحافظ على سلامة المتابعة؟",
+            "en": "Which step maintains safe follow-up?"
+          },
+          "choices": [
+            {
+              "id": "facts",
+              "text": {
+                "ar": "أوثق المنتج والكمية والتوقيت والأعراض والقياسات وما اتخذه الفريق، وأسلم خطة المراقبة.",
+                "en": "Document product, amount, time, symptoms, measurements and team actions, and hand over the monitoring plan."
+              },
+              "next": "incident",
+              "effect": "escalate",
+              "feedback": {
+                "ar": "الدقة تمنع ضياع معلومة التعرض وتدعم استمرار الرعاية.",
+                "en": "Accuracy preserves exposure information and supports continuity of care."
+              },
+              "consequence": {
+                "ar": "تبقى الواقعة معلنة وتستمر المتابعة حتى يحدد الفريق نهايتها.",
+                "en": "The incident remains disclosed and monitoring continues until the team defines its endpoint."
+              },
+              "sourceIds": [
+                "lispro-label",
+                "ismp-high-alert"
+              ]
+            },
+            {
+              "id": "erase",
+              "text": {
+                "ar": "أحذف المعلومة الخطأ وأغلق الواقعة لأن المريض تحسن.",
+                "en": "Remove the error information and close the incident because the patient improved."
+              },
+              "next": "unresolved",
+              "effect": "miss",
+              "feedback": {
+                "ar": "التحسن لا يلغي التعرض، وإخفاء التسلسل يضعف المتابعة.",
+                "en": "Improvement does not undo exposure; hiding the sequence weakens follow-up."
+              },
+              "consequence": {
+                "ar": "قد تضيع معلومات يحتاجها الفريق أو تتكرر الجرعة؛ يلزم تسليم أمين.",
+                "en": "The team may lose needed information or another dose may be repeated; an accurate handoff is required."
+              },
+              "sourceIds": [
+                "ahrq-duplicate"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "near-miss",
+          "type": "debrief",
+          "title": {
+            "ar": "اعتراض قبل وصول الإعطاء غير المناسب",
+            "en": "Interception before inappropriate administration"
+          },
+          "body": {
+            "ar": "لم يصل الإعطاء غير المناسب للمريض في هذا المسار. راجع سجل قراراتك: الاعتراض المبكر مهم، وتبقى دقة التسليم والتوثيق وإغلاق مصدر الالتباس جزءًا من الوقاية.",
+            "en": "Inappropriate administration did not reach the patient in this path. Review your decision log: early interception matters, and accurate handoff, documentation and removal of ambiguity remain part of prevention."
+          },
+          "points": [
+            {
+              "ar": "حدد الحاجز الذي منع الوصول، وأي خطوة متابعة فاتتك.",
+              "en": "Identify the barrier that prevented exposure and any follow-up step you missed."
+            },
+            {
+              "ar": "لا يكفي أن يصل شخص واحد إلى المعلومة الصحيحة؛ يجب أن تصل إلى الفريق.",
+              "en": "It is insufficient for one person to know the correct information; the team needs it."
+            }
+          ]
+        },
+        {
+          "id": "incident",
+          "type": "debrief",
+          "title": {
+            "ar": "تعرض وصل للمريض ثم تصعيد",
+            "en": "Patient exposure followed by escalation"
+          },
+          "body": {
+            "ar": "وصلت جرعة غير مناسبة أو مكررة للمريض في هذا الفرع، ثم جرى التصعيد والمتابعة. القرار اللاحق المناسب قد يقلل الضرر، لكنه لا يحول الواقعة إلى محاولة بلا خطأ. يظل التقييم والتوثيق والمراقبة حسب خطة الفريق ضروريًا.",
+            "en": "An inappropriate or duplicate dose reached the patient in this branch, followed by escalation and follow-up. Appropriate later action may limit harm, but does not turn the incident into an error-free attempt. Team-directed assessment, documentation and monitoring remain necessary."
+          },
+          "points": [
+            {
+              "ar": "الأحداث المعروضة فرع افتراضي محتمل، وليست توقعًا لزمن ظهور الأذى أو شدته.",
+              "en": "The events shown are one possible fictional branch, not a prediction of harm onset or severity."
+            },
+            {
+              "ar": "ما المعلومة أو الحاجز الذي كان يمكن أن يقطع السلسلة قبل الإعطاء؟",
+              "en": "What information or barrier could have interrupted the chain before administration?"
+            }
+          ]
+        },
+        {
+          "id": "unresolved",
+          "type": "debrief",
+          "title": {
+            "ar": "تعرض مع خطر لم يُغلق",
+            "en": "Exposure with unresolved risk"
+          },
+          "body": {
+            "ar": "يبقى في المسار تأخر أو إخفاء معلومات بعد تعرض وصل للمريض. لا تعد هذه نهاية علاجية؛ في الممارسة تستدعي الحالة المساعدة والتقييم والمراقبة وفق بروتوكول المؤسسة، مع حفظ الوقائع والتوقيت.",
+            "en": "This path retains delay or withheld information after patient exposure. It is not a treatment endpoint. In practice, help, assessment and protocol-based monitoring are required, with facts and timing preserved."
+          },
+          "points": [
+            {
+              "ar": "الانتظار حتى ظهور عرض أشد ليس حاجز أمان.",
+              "en": "Waiting for a worse sign is not a safety barrier."
+            },
+            {
+              "ar": "التحسن الملاحظ لا يبرر إخفاء الخطأ أو إلغاء خطة المتابعة.",
+              "en": "Observed improvement does not justify concealing the error or cancelling follow-up."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -6,7 +6,7 @@ const resources = Array.isArray(catalogue.resources) ? catalogue.resources : [];
 const curriculum = Array.isArray(catalogue.curriculum) ? catalogue.curriculum : [];
 const skills = Array.isArray(catalogue.skills) ? catalogue.skills : [];
 const byId = new Map(resources.map(r => [String(r.id), r]));
-const TYPES = {book:'كتاب',chapter:'فصل تعليمي',article:'مقال تثقيفي',paper:'مقالة بحثية',guide:'دليل أو قائمة تحقق',video:'فيديو',course:'دورة',journal:'مجلة أو دورية',tool:'أداة'};
+const TYPES = {book:'كتاب',chapter:'فصل تعليمي',article:'مقال تثقيفي',paper:'مقالة بحثية',guide:'دليل أو قائمة تحقق',video:'فيديو',course:'دورة',journal:'مجلة أو دورية',tool:'أداة',lesson:'درس تفاعلي'};
 const LANGUAGES = {ar:'العربية',en:'الإنجليزية',multi:'متعدد اللغات'};
 const LEVELS = {foundation:'تأسيسي',clinical:'سريري',graduate:'الاستعداد للمهنة',all:'جميع المستويات'};
 const ACCESS = {free:'مجاني',free_registration:'مجاني بحساب مجاني',free_learning_paid_certificate:'التعلّم مجاني؛ الشهادة مدفوعة',mixed:'وصول متنوع',paid:'شراء أو ترخيص مطلوب',trial:'تجربة محدودة؛ الكامل باشتراك',conditional:'وصول مشروط',restricted:'مقيّد جغرافيًا'};

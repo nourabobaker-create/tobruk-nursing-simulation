@@ -1,0 +1,1542 @@
+{
+  "id": "opioid-safety",
+  "title": {
+    "ar": "الأفيونات: خطأ صغير قد يخفي خطرًا على التنفس",
+    "en": "Opioids: small omissions can hide a breathing emergency"
+  },
+  "subtitle": {
+    "ar": "درس أصلي وحالات متفرعة عن oxycodone الفموي سريع التحرر؛ التوقيت والتداخلات والمراقبة.",
+    "en": "An original lesson and branching cases about oral immediate-release oxycodone: timing, interactions and monitoring."
+  },
+  "goals": [
+    {
+      "ar": "تحقق من الجرعات السابقة قبل تكرار جرعة عند اللزوم.",
+      "en": "Reconcile previous doses before repeating a PRN dose."
+    },
+    {
+      "ar": "اربط الأدوية المهدئة بمستوى الوعي والتنفس.",
+      "en": "Connect sedating medicines with arousal and breathing assessment."
+    },
+    {
+      "ar": "تعرّف إلى الخطر حتى عندما يبدو تشبع الأكسجين مطمئنًا.",
+      "en": "Recognize danger even when oxygen saturation appears reassuring."
+    },
+    {
+      "ar": "صعّد الحالة وبلّغ الحقائق، ثم استمر في المتابعة بعد التدخل.",
+      "en": "Escalate, communicate accurately and continue monitoring after intervention."
+    }
+  ],
+  "concepts": [
+    {
+      "id": "pain-plus-safety",
+      "title": {
+        "ar": "درجة الألم لا تكفي وحدها",
+        "en": "A pain score is only one part of the assessment"
+      },
+      "body": {
+        "ar": "يُراجع الألم مع يقظة المريض وتنفسه والاستجابة للجرعة السابقة. بقاء الألم لا يجيز تكرار الجرعة قبل شروط الأمر أو تجاوز تقييم السلامة.",
+        "en": "Review pain together with arousal, breathing and the response to the previous dose. Persistent pain does not authorize an early repeat or bypass safety assessment."
+      },
+      "sourceIds": [
+        "oxy-ir",
+        "fda-opioid"
+      ]
+    },
+    {
+      "id": "prn-order",
+      "title": {
+        "ar": "عند اللزوم تعني أمرًا مشروطًا",
+        "en": "PRN means a conditional order"
+      },
+      "body": {
+        "ar": "تحقق من المستحضر والطريق والجرعة الأخيرة ووقت إعطائها، بما في ذلك ما حدث أثناء النقل أو التسليم. فراغ خانة في السجل لا يثبت أن الجرعة لم تُعطَ.",
+        "en": "Check the formulation, route and last administered dose and time, including transfer and handover information. A blank record field does not establish that a dose was not given."
+      },
+      "sourceIds": [
+        "oxy-ir"
+      ]
+    },
+    {
+      "id": "combined-sedation",
+      "title": {
+        "ar": "الحبة الصغيرة قد تغيّر الصورة",
+        "en": "A small sedative tablet can change the risk"
+      },
+      "body": {
+        "ar": "قد تزيد البنزوديازيبينات وغيرها من مثبطات الجهاز العصبي خطر التهدئة العميقة وتثبيط التنفس عند جمعها مع الأفيونات. يلزم تقييم مشترك وخطة مراقبة، دون تعديل العلاج المزمن بصورة مستقلة.",
+        "en": "Benzodiazepines and other CNS depressants can increase profound sedation and respiratory-depression risk with opioids. Coordinated review and a monitoring plan are needed; do not independently alter chronic treatment."
+      },
+      "sourceIds": [
+        "fda-combination"
+      ]
+    },
+    {
+      "id": "oxygenation-ventilation",
+      "title": {
+        "ar": "الأكسجة والتهوية ليستا الشيء نفسه",
+        "en": "Oxygenation and ventilation are different"
+      },
+      "body": {
+        "ar": "قد يؤخر الأكسجين الإضافي انخفاض قراءة التشبع رغم ضعف التهوية. راقب القدرة على الاستيقاظ ونمط التنفس واتجاه التغير، مع وسائل مراقبة التهوية وفق الخطة المتاحة.",
+        "en": "Supplemental oxygen can delay a fall in saturation despite inadequate ventilation. Assess arousability, breathing pattern and trends, with ventilation monitoring as specified in the care plan."
+      },
+      "sourceIds": [
+        "apsf-monitoring"
+      ]
+    },
+    {
+      "id": "follow-through",
+      "title": {
+        "ar": "التحسن الأول ليس نهاية المتابعة",
+        "en": "Initial improvement is not the end of monitoring"
+      },
+      "body": {
+        "ar": "النعاس الشديد أو صعوبة الإيقاظ أو التنفس البطيء والسطحي يستدعي مسار الاستجابة العاجلة. تُراجع الجرعات والأدوية المصاحبة ويستمر التقييم بعد تدخل الفريق؛ لا تُمحى واقعة التعرض من السجل.",
+        "en": "Marked sleepiness, difficulty waking or slow, shallow breathing calls for urgent response. Review exposure and co-medications and continue assessment after team intervention; the exposure remains part of the record."
+      },
+      "sourceIds": [
+        "fda-opioid",
+        "apsf-monitoring"
+      ]
+    }
+  ],
+  "terms": [
+    {
+      "term": "PRN",
+      "ar": "عند اللزوم وفق شروط الأمر؛ ليس موعدًا مفتوحًا للتكرار.",
+      "en": "As needed under the order’s conditions; not unrestricted repeat dosing."
+    },
+    {
+      "term": "Immediate-release / IR",
+      "ar": "سريع التحرر؛ يجب التحقق من الصيغة الدوائية الدقيقة.",
+      "en": "Immediate-release; verify the exact formulation."
+    },
+    {
+      "term": "Sedation / arousability",
+      "ar": "التهدئة ومدى استجابة المريض ومحاولة إيقاظه.",
+      "en": "Sedation and the patient’s response when roused."
+    },
+    {
+      "term": "Ventilation",
+      "ar": "حركة الهواء للداخل والخارج؛ لا تقيسها قراءة التشبع وحدها.",
+      "en": "Movement of air in and out; saturation alone does not measure it."
+    }
+  ],
+  "errorChains": [
+    {
+      "id": "blank-mar",
+      "title": {
+        "ar": "خانة فارغة ثم جرعة مكررة",
+        "en": "A blank field becomes a duplicate dose"
+      },
+      "tinyStep": {
+        "ar": "اعتبار الخانة الفارغة دليلًا على عدم الإعطاء.",
+        "en": "Treating a blank field as proof of no administration."
+      },
+      "mechanism": {
+        "ar": "قد تكون جرعة سابقة أُعطيت ولم يكتمل توثيقها؛ يتراكم التعرض عند التكرار المبكر.",
+        "en": "A previous dose may have been given but not fully recorded; early repetition adds exposure."
+      },
+      "harm": {
+        "ar": "قد يظهر نعاس عميق أو تثبيط للتنفس؛ وقوع ذلك وتوقيته يختلفان باختلاف الحالة.",
+        "en": "Profound sedation or respiratory depression may follow; occurrence and timing vary by case."
+      },
+      "breakPoint": {
+        "ar": "مطابقة وقت الجرعة مع السجل والتسليم والممرض المعني قبل التحضير.",
+        "en": "Reconcile dose time with the record, handover and responsible nurse before preparation."
+      },
+      "sourceIds": [
+        "oxy-ir"
+      ]
+    },
+    {
+      "id": "sleep-pill",
+      "title": {
+        "ar": "«مجرد حبة للنوم»",
+        "en": "“Just a sleeping tablet”"
+      },
+      "tinyStep": {
+        "ar": "إهمال دواء مهدئ لأنه ليس مسكنًا.",
+        "en": "Ignoring a sedative because it is not an analgesic."
+      },
+      "mechanism": {
+        "ar": "تجتمع آثار التثبيط المركزي مع الأفيون.",
+        "en": "CNS-depressant effects combine with the opioid."
+      },
+      "harm": {
+        "ar": "قد تتطور تهدئة شديدة أو صعوبة تنفس تصل إلى خطر يهدد الحياة.",
+        "en": "Severe sedation or breathing difficulty can become life-threatening."
+      },
+      "breakPoint": {
+        "ar": "مراجعة كل الأدوية، بما فيها ما أُخذ من المنزل، والتواصل قبل الجرعة التالية.",
+        "en": "Review all medicines, including home supplies, and coordinate review before the next dose."
+      },
+      "sourceIds": [
+        "fda-combination"
+      ]
+    },
+    {
+      "id": "normal-oximeter",
+      "title": {
+        "ar": "رقم مطمئن يؤخر النظر إلى المريض",
+        "en": "A reassuring number delays looking at the patient"
+      },
+      "tinyStep": {
+        "ar": "الاكتفاء بالتشبع بينما المريض على أكسجين إضافي.",
+        "en": "Relying on saturation while supplemental oxygen is being given."
+      },
+      "mechanism": {
+        "ar": "قد تبقى الأكسجة الظاهرة مقبولة فترةً رغم ضعف حركة الهواء.",
+        "en": "Apparent oxygenation may remain acceptable while air movement is inadequate."
+      },
+      "harm": {
+        "ar": "قد يتأخر اكتشاف ضعف التهوية والاستجابة له.",
+        "en": "Recognition and response to impaired ventilation may be delayed."
+      },
+      "breakPoint": {
+        "ar": "الجمع بين الملاحظة السريرية وتقييم التنفس والوعي ووسائل المراقبة المقررة.",
+        "en": "Combine bedside observation, breathing and arousal assessment and prescribed monitoring."
+      },
+      "sourceIds": [
+        "apsf-monitoring"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "oxy-ir",
+      "title": "DailyMed — Oxycodone hydrochloride immediate-release tablets; revised June 2026",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=094b64b3-cd32-4de5-afb6-ea00d9caad74",
+      "scope": {
+        "ar": "مخاطر تثبيط التنفس، الجرعات والتهدئة والأدوية المصاحبة؛ صيغة فموية سريعة التحرر.",
+        "en": "Respiratory-depression risk, dosing, sedation and concomitant medicines for oral immediate-release tablets."
+      },
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "fda-opioid",
+      "title": "FDA — Updated prescribing information for opioid pain medicines (13 April 2023)",
+      "url": "https://www.fda.gov/drugs/drug-safety-communications/fda-updates-prescribing-information-all-opioid-pain-medicines-provide-additional-guidance-safe-use",
+      "scope": {
+        "ar": "التحذيرات وعلامات الخطر التي تستدعي طلب المساعدة العاجلة.",
+        "en": "Warnings and danger signs requiring urgent help."
+      },
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "fda-combination",
+      "title": "FDA — Opioid and benzodiazepine combined-use safety measures (31 August 2016)",
+      "url": "https://www.fda.gov/drugs/food-and-drug-administration-overdose-prevention-framework/new-safety-measures-announced-opioid-analgesics-prescription-opioid-cough-products-and",
+      "scope": {
+        "ar": "مخاطر الجمع مع البنزوديازيبينات ومثبطات الجهاز العصبي المركزي.",
+        "en": "Risks from combining opioids with benzodiazepines and other CNS depressants."
+      },
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "apsf-monitoring",
+      "title": "APSF — Monitoring for Opioid-Induced Respiratory Depression (2017)",
+      "url": "https://www.apsf.org/article/monitoring-for-opioid-induced-respiratory-depression/",
+      "scope": {
+        "ar": "العلاقة بين التهدئة وضعف التهوية وحدود التشبع أثناء الأكسجين الإضافي؛ توصيات اختصاصية تُكيّف مع بروتوكول المؤسسة.",
+        "en": "Sedation, ventilation and oximetry limitations during supplemental oxygen; specialist recommendations adapted to local protocols."
+      },
+      "checked": "2026-10-29"
+    }
+  ],
+  "cases": [
+    {
+      "id": "duplicate-prn",
+      "title": {
+        "ar": "الحالة 1: الخانة الفارغة",
+        "en": "Case 1: The blank field"
+      },
+      "summary": {
+        "ar": "تأخير بسيط في التوثيق قد يتحول إلى جرعة مكررة.",
+        "en": "A small documentation delay can become a duplicate dose."
+      },
+      "record": [
+        {
+          "label": {
+            "ar": "الدواء والصيغة",
+            "en": "Medicine and formulation"
+          },
+          "value": {
+            "ar": "oxycodone فموي سريع التحرر، حسب أمر افتراضي موثق.",
+            "en": "Oral immediate-release oxycodone under a documented fictional order."
+          }
+        },
+        {
+          "label": {
+            "ar": "السياق",
+            "en": "Context"
+          },
+          "value": {
+            "ar": "انتقال مريض بالغ؛ الألم مستمر وخانة الجرعة السابقة غير مكتملة.",
+            "en": "Adult transfer; ongoing pain and incomplete previous-dose entry."
+          }
+        }
+      ],
+      "order": {
+        "ar": "لهذه الحالة فقط: الجرعة الموصوفة PRN لا تتكرر قبل 4 ساعات، وبعد تحقق تقييم السلامة؛ لا يسمح الأمر بتغيير الجرعة بصورة مستقلة.",
+        "en": "For this case only: the prescribed PRN dose must not be repeated before four hours and requires safety assessment; independent dose changes are not authorized."
+      },
+      "start": "a-start",
+      "nodes": [
+        {
+          "id": "a-start",
+          "type": "decision",
+          "scene": {
+            "ar": "مريض افتراضي بالغ يطلب مسكنًا. خانة الجرعة السابقة فارغة، لكن ورقة النقل تذكر مسكنًا قبل الوصول.",
+            "en": "A fictional adult asks for analgesia. The previous-dose field is blank, but the transfer note mentions analgesia before arrival."
+          },
+          "prompt": {
+            "ar": "ما أول قرار قبل تحضير جرعة PRN؟",
+            "en": "What comes before preparing a PRN dose?"
+          },
+          "choices": [
+            {
+              "id": "a-check",
+              "text": {
+                "ar": "أراجع وقت الجرعة مع السجل والتسليم والممرض المسؤول.",
+                "en": "Reconcile dose time with the record, handover and responsible nurse."
+              },
+              "next": "a-verified",
+              "effect": "protect",
+              "feedback": {
+                "ar": "الفراغ يحتاج تحققًا، لا افتراضًا.",
+                "en": "The gap needs verification, not an assumption."
+              },
+              "consequence": {
+                "ar": "لم تصل جرعة إضافية إلى المريض أثناء التحقق.",
+                "en": "No additional dose reaches the patient while checks are completed."
+              },
+              "sourceIds": [
+                "oxy-ir"
+              ]
+            },
+            {
+              "id": "a-repeat",
+              "text": {
+                "ar": "أعطي الجرعة لأن الخانة فارغة والمريض ما زال يتألم.",
+                "en": "Give the dose because the field is blank and pain persists."
+              },
+              "next": "a-symptoms",
+              "effect": "exposure",
+              "feedback": {
+                "ar": "فراغ السجل لا يلغي احتمال الجرعة السابقة.",
+                "en": "A blank record does not rule out an earlier dose."
+              },
+              "consequence": {
+                "ar": "في هذا الفرع التعليمي تصل جرعة مكررة مبكرة إلى المريض؛ قد تزيد التهدئة وتثبيط التنفس.",
+                "en": "In this scripted branch an early duplicate reaches the patient; sedation and respiratory-depression risk can increase."
+              },
+              "sourceIds": [
+                "oxy-ir"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a-verified",
+          "type": "decision",
+          "scene": {
+            "ar": "أكد الممرض السابق أن جرعة oral IR oxycodone أُعطيت قبل 30 دقيقة. الأمر الافتراضي يشترط فاصلًا لا يقل عن 4 ساعات، مع تحقق معايير التقييم.",
+            "en": "The previous nurse confirms oral IR oxycodone was given 30 minutes ago. This fictional order requires at least four hours between doses plus assessment criteria."
+          },
+          "prompt": {
+            "ar": "كيف تتعامل مع الألم المستمر؟",
+            "en": "How do you respond to ongoing pain?"
+          },
+          "choices": [
+            {
+              "id": "a-plan",
+              "text": {
+                "ar": "لا أكرر الآن؛ أبلغ المشرف لتقييم الألم وخطة تخفيفه وفق الأمر.",
+                "en": "Do not repeat now; involve the supervisor to reassess pain and the ordered plan."
+              },
+              "next": "a-document",
+              "effect": "protect",
+              "feedback": {
+                "ar": "يُعالج الألم ضمن الخطة مع احترام شرط التوقيت.",
+                "en": "Pain is addressed within the plan while respecting the timing condition."
+              },
+              "consequence": {
+                "ar": "تُمنع الجرعة المكررة، ويستمر الاهتمام بالألم.",
+                "en": "The duplicate is prevented and pain remains actively addressed."
+              },
+              "sourceIds": [
+                "oxy-ir",
+                "fda-opioid"
+              ]
+            },
+            {
+              "id": "a-half",
+              "text": {
+                "ar": "أعطي كمية أقل من تلقاء نفسي بدل التواصل.",
+                "en": "Independently give a smaller amount instead of seeking review."
+              },
+              "next": "a-symptoms",
+              "effect": "exposure",
+              "feedback": {
+                "ar": "لم يمنح الأمر إذنًا بإعادة حساب جرعة مبكرة.",
+                "en": "The order does not authorize an independently selected early dose."
+              },
+              "consequence": {
+                "ar": "يصل تعرض إضافي غير مأذون به في هذا الفرع؛ لا تضمن الكمية الأصغر زوال الخطر.",
+                "en": "An unauthorized additional exposure occurs in this branch; a smaller amount does not establish safety."
+              },
+              "sourceIds": [
+                "oxy-ir"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a-document",
+          "type": "decision",
+          "scene": {
+            "ar": "اتفق الفريق على مواصلة تقييم الألم دون جرعة مكررة الآن. ما زالت خانة الجرعة السابقة تحتاج إغلاقًا موثقًا.",
+            "en": "The team continues pain assessment without an early repeat. The earlier administration still needs reconciled documentation."
+          },
+          "prompt": {
+            "ar": "ما الذي يمنع تكرار المشكلة في التسليم التالي؟",
+            "en": "What prevents recurrence at the next handover?"
+          },
+          "choices": [
+            {
+              "id": "a-record",
+              "text": {
+                "ar": "أوثق الحقائق ووقت الجرعة بعد مطابقتها وأسلّم خطة المتابعة.",
+                "en": "Reconcile and document the facts and dose time, then hand over the follow-up plan."
+              },
+              "next": "a-prevented",
+              "effect": "protect",
+              "feedback": {
+                "ar": "المعلومة المشتركة تغلق الفجوة.",
+                "en": "Shared verified information closes the gap."
+              },
+              "consequence": {
+                "ar": "لم تقع الجرعة المكررة في هذا المسار، وأُصلح سبب الخطر.",
+                "en": "No duplicate occurred on this route and the information gap was repaired."
+              },
+              "sourceIds": [
+                "oxy-ir"
+              ]
+            },
+            {
+              "id": "a-leave-blank",
+              "text": {
+                "ar": "أترك الخانة فارغة لأنني لم أعطِ الجرعة بنفسي.",
+                "en": "Leave the field blank because I did not give that dose myself."
+              },
+              "next": "a-symptoms",
+              "effect": "exposure",
+              "feedback": {
+                "ar": "يجب تصحيح الفجوة من خلال المسار المعتمد، مع تمييز مصدر المعلومات.",
+                "en": "Resolve the gap through the approved process, identifying the information source."
+              },
+              "consequence": {
+                "ar": "يصور هذا الفرع لاحقًا خطأً آخر: يرى زميل الخانة الفارغة ويكرر الجرعة قبل توضيحها.",
+                "en": "This branch later depicts another error: a colleague sees the unresolved blank and repeats the dose."
+              },
+              "sourceIds": [
+                "oxy-ir"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a-symptoms",
+          "type": "decision",
+          "scene": {
+            "ar": "في هذا الفرع، حدث التعرض الإضافي بالفعل. تظهر لاحقًا علامات مكتوبة للحالة: صعوبة في إبقاء المريض مستيقظًا وتنفس أبطأ وأسطح من تقييمه السابق. هذه ليست توقعًا زمنيًا ثابتًا لكل جرعة.",
+            "en": "In this branch additional exposure has occurred. Later scripted findings include difficulty staying awake and breathing that is slower and shallower than before. This is not a fixed time-course prediction for every dose."
+          },
+          "prompt": {
+            "ar": "ما الأولوية الآن؟",
+            "en": "What is the priority now?"
+          },
+          "choices": [
+            {
+              "id": "a-escalate",
+              "text": {
+                "ar": "أطلب الاستجابة العاجلة وأبلغ المشرف؛ أقيّم التنفس والوعي ولا أقدم جرعة أخرى، وأتبع بروتوكول المؤسسة ضمن دوري.",
+                "en": "Activate urgent help and inform the supervisor; assess breathing and arousal, give no further dose and follow the institutional emergency protocol within my role."
+              },
+              "next": "a-support",
+              "effect": "escalate",
+              "feedback": {
+                "ar": "الخطر التنفسي يحتاج مساعدة مؤهلة فورًا.",
+                "en": "A breathing threat needs immediate qualified assistance."
+              },
+              "consequence": {
+                "ar": "يبدأ الفريق التقييم والدعم؛ تبقى واقعة الجرعة الإضافية معلومة أساسية.",
+                "en": "The team begins assessment and support; the extra exposure remains essential information."
+              },
+              "sourceIds": [
+                "fda-opioid",
+                "apsf-monitoring"
+              ]
+            },
+            {
+              "id": "a-wait",
+              "text": {
+                "ar": "أنتظر حتى يحين قياس العلامات التالي؛ المريض يبدو نائمًا.",
+                "en": "Wait for the next scheduled observations because the patient appears asleep."
+              },
+              "next": "a-worse",
+              "effect": "miss",
+              "feedback": {
+                "ar": "المظهر الهادئ لا يستبعد خطر ضعف التهوية.",
+                "en": "A quiet appearance does not rule out impaired ventilation."
+              },
+              "consequence": {
+                "ar": "في هذا الفرع تتأخر المساعدة، وتصبح الاستجابة لمحاولة الإيقاظ أضعف.",
+                "en": "In this branch help is delayed and response to attempts at rousing becomes weaker."
+              },
+              "sourceIds": [
+                "apsf-monitoring"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a-support",
+          "type": "decision",
+          "scene": {
+            "ar": "بدأ فريق الاستجابة التدخل وفق بروتوكوله. صار المريض يستجيب أكثر، لكن الفريق لم ينهِ خطة المراقبة.",
+            "en": "The response team intervenes under its protocol. The patient becomes more responsive, but the monitoring plan has not ended."
+          },
+          "prompt": {
+            "ar": "ما المتابعة المناسبة؟",
+            "en": "What follow-through is appropriate?"
+          },
+          "choices": [
+            {
+              "id": "a-continue",
+              "text": {
+                "ar": "أواصل المراقبة وأسلم كل أوقات الأدوية وأوثق التعرض والتدخلات والاستجابة.",
+                "en": "Continue monitoring, communicate all medication times and record exposure, actions and response."
+              },
+              "next": "a-supported",
+              "effect": "protect",
+              "feedback": {
+                "ar": "التحسن الأول لا يغلق المتابعة.",
+                "en": "Initial improvement does not close follow-up."
+              },
+              "consequence": {
+                "ar": "أُدخل المريض في رعاية مؤهلة مع بقاء الحادث موثقًا للتعلم والمتابعة.",
+                "en": "Qualified care and continued observation are established, with the incident preserved in the record."
+              },
+              "sourceIds": [
+                "fda-opioid",
+                "apsf-monitoring"
+              ]
+            },
+            {
+              "id": "a-relax",
+              "text": {
+                "ar": "أعتبر أن الخطر انتهى وأكتفي بتصحيح خانة الدواء.",
+                "en": "Assume the danger is over and only correct the medication field."
+              },
+              "next": "a-worse",
+              "effect": "miss",
+              "feedback": {
+                "ar": "السجل مهم، لكنه لا يحل محل استمرار تقييم المريض.",
+                "en": "The record matters but cannot replace ongoing patient assessment."
+              },
+              "consequence": {
+                "ar": "يُفقد حاجز متابعة مهم في هذه الحالة، ولا يُعد الحادث منتهيًا.",
+                "en": "An important monitoring barrier is lost and this incident is not considered resolved."
+              },
+              "sourceIds": [
+                "apsf-monitoring"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a-worse",
+          "type": "decision",
+          "scene": {
+            "ar": "الحالة المكتوبة الآن: المريض أصعب إيقاظًا وتنفسه غير مطمئن؛ لم تحصل استجابة كافية بعد.",
+            "en": "The scripted patient is now harder to rouse and breathing remains concerning; an adequate response is not yet established."
+          },
+          "prompt": {
+            "ar": "هل تصحح المسار أم تستمر في الانتظار؟",
+            "en": "Will you correct the response or keep waiting?"
+          },
+          "choices": [
+            {
+              "id": "a-recover",
+              "text": {
+                "ar": "أفعّل أو أعيد تصعيد طلب المساعدة العاجلة وأسلّم معلومات التعرض بدقة.",
+                "en": "Activate or re-escalate urgent help and give an accurate exposure handover."
+              },
+              "next": "a-supported",
+              "effect": "escalate",
+              "feedback": {
+                "ar": "يمكن تقليل الضرر بطلب الدعم حتى بعد وقوع الخطأ.",
+                "en": "Escalation can reduce harm even after an error has occurred."
+              },
+              "consequence": {
+                "ar": "يصل التدخل المؤهل؛ لا تعود القصة إلى «لم يحدث خطأ».",
+                "en": "Qualified intervention is reached; the story does not reset to “no error occurred.”"
+              },
+              "sourceIds": [
+                "fda-opioid"
+              ]
+            },
+            {
+              "id": "a-isolate",
+              "text": {
+                "ar": "أتركه ليستريح وأؤجل الإبلاغ.",
+                "en": "Leave the patient to rest and delay reporting."
+              },
+              "next": "a-unresolved",
+              "effect": "miss",
+              "feedback": {
+                "ar": "يستمر تأخير الاستجابة لخطر قائم.",
+                "en": "Response to an active threat remains delayed."
+              },
+              "consequence": {
+                "ar": "ينتهي هذا المسار بخطر تنفسي غير معالج بما يكفي، لا بنتيجة مضمونة أو تعافٍ تلقائي.",
+                "en": "This route ends with an insufficiently addressed respiratory threat, not a guaranteed outcome or automatic recovery."
+              },
+              "sourceIds": [
+                "fda-opioid",
+                "apsf-monitoring"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a-prevented",
+          "type": "debrief",
+          "title": {
+            "ar": "جرعة مكررة مُنعت",
+            "en": "Duplicate prevented"
+          },
+          "body": {
+            "ar": "عولجت فجوة المعلومات قبل أن تصل جرعة إضافية إلى المريض.",
+            "en": "The information gap was addressed before another dose reached the patient."
+          },
+          "points": [
+            {
+              "ar": "الخانة الفارغة سؤال يجب حله.",
+              "en": "A blank field is a question to resolve."
+            },
+            {
+              "ar": "احترام التوقيت لا يعني إهمال الألم.",
+              "en": "Respecting timing does not mean neglecting pain."
+            }
+          ]
+        },
+        {
+          "id": "a-supported",
+          "type": "debrief",
+          "title": {
+            "ar": "حادث وصل للمريض ثم استُدعي الدعم",
+            "en": "Exposure occurred; support was activated"
+          },
+          "body": {
+            "ar": "وصل تعرض إضافي في هذا المسار. ساعد اكتشاف العلامات والتصعيد والتوثيق والمتابعة على استعادة حواجز الحماية، دون محو الحادث.",
+            "en": "Additional exposure occurred on this route. Recognition, escalation, documentation and follow-up rebuilt protective barriers without erasing the incident."
+          },
+          "points": [
+            {
+              "ar": "أبلغ عن الدواء ووقته وما هو مؤكد وما لم يُحسم.",
+              "en": "Report the medicine, timing and what is confirmed or uncertain."
+            },
+            {
+              "ar": "النتائج الواقعية لا تُستنتج من هذا السيناريو وحده.",
+              "en": "Real outcomes cannot be predicted from this scenario alone."
+            }
+          ]
+        },
+        {
+          "id": "a-unresolved",
+          "type": "debrief",
+          "title": {
+            "ar": "حاجز استجابة ما زال مفتوحًا",
+            "en": "Response barrier remains open"
+          },
+          "body": {
+            "ar": "وقع تعرض وتأخر التصعيد. ينتهي الفرع عند حاجة واضحة لتدخل عاجل؛ لا يتنبأ بوفاة أو وقت تدهور محدد.",
+            "en": "Exposure occurred and escalation was delayed. The branch ends at a clear need for urgent intervention, without predicting death or a fixed deterioration time."
+          },
+          "points": [
+            {
+              "ar": "النعاس غير المعتاد والتنفس غير الكافي لا ينتظران دور السجل.",
+              "en": "Unusual somnolence and inadequate breathing do not wait for routine charting."
+            },
+            {
+              "ar": "أعد الحالة واختر نقطة توقف مبكرة.",
+              "en": "Replay and identify an earlier interruption point."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sedative-overlooked",
+      "title": {
+        "ar": "الحالة 2: حبة صغيرة خارج القائمة",
+        "en": "Case 2: A small tablet outside the list"
+      },
+      "summary": {
+        "ar": "دواء يبدو منفصلًا عن المسكن قد يغير المخاطر عند الجمع.",
+        "en": "A medicine that seems separate from analgesia can change combined-use risk."
+      },
+      "record": [
+        {
+          "label": {
+            "ar": "دواء الحالة",
+            "en": "Case medicine"
+          },
+          "value": {
+            "ar": "oxycodone فموي سريع التحرر، جرعة موصوفة لم تُعطَ عند البداية.",
+            "en": "Oral immediate-release oxycodone; the prescribed dose has not been given at the start."
+          }
+        },
+        {
+          "label": {
+            "ar": "المعلومة الجديدة",
+            "en": "New information"
+          },
+          "value": {
+            "ar": "مرافق أعطى حبة من المنزل؛ هوية الحبة ووقتها تحتاجان تحققًا.",
+            "en": "A relative administered a home-supply tablet; identity and timing require verification."
+          }
+        }
+      ],
+      "order": {
+        "ar": "لهذه الحالة: تُراجع الأدوية المصاحبة والتقييم قبل الجرعة. لا توجد موافقة ضمن المعطيات على جمع غير منسق أو على تعديل علاج مزمن بواسطة الطالب.",
+        "en": "For this case: review concomitant medicines and assessment before the dose. The case provides no authorization for uncoordinated combination or student-led changes to chronic therapy."
+      },
+      "start": "b-start",
+      "nodes": [
+        {
+          "id": "b-start",
+          "type": "decision",
+          "scene": {
+            "ar": "قبل جرعة oral IR oxycodone، يذكر مرافق المريض أنه أعطاه «حبة صغيرة للنوم» من حقيبة المنزل. الدواء غير ظاهر في القائمة التي أمامك.",
+            "en": "Before oral IR oxycodone, a relative says they gave “a small sleeping tablet” from a home supply. It is not on the list in front of you."
+          },
+          "prompt": {
+            "ar": "ما قرارك؟",
+            "en": "What do you do?"
+          },
+          "choices": [
+            {
+              "id": "b-identify",
+              "text": {
+                "ar": "أوقف التحضير مؤقتًا وأتحقق من اسم الحبة ووقت تناولها وأبلغ المشرف.",
+                "en": "Pause preparation, identify the tablet and time taken, and inform the supervisor."
+              },
+              "next": "b-clarify",
+              "effect": "protect",
+              "feedback": {
+                "ar": "كل الأدوية ذات صلة، حتى ما لم يكن مسكنًا.",
+                "en": "All medicines matter, including those that are not analgesics."
+              },
+              "consequence": {
+                "ar": "تُكتشف المعلومة قبل إضافة الأفيون في هذا المسار.",
+                "en": "The information is identified before adding the opioid on this route."
+              },
+              "sourceIds": [
+                "fda-combination"
+              ]
+            },
+            {
+              "id": "b-ignore",
+              "text": {
+                "ar": "أعتبرها غير مهمة لأن حجمها صغير وأعطي المسكن.",
+                "en": "Dismiss it because the tablet was small and give the analgesic."
+              },
+              "next": "b-sedation",
+              "effect": "exposure",
+              "feedback": {
+                "ar": "حجم الحبة ليس مقياسًا لتأثيرها المهدئ أو تداخلها.",
+                "en": "Tablet size does not establish sedative potency or interaction risk."
+              },
+              "consequence": {
+                "ar": "في هذا الفرع تصل الجرعة الأفيونية بعد المهدئ؛ يزداد خطر التهدئة وتثبيط التنفس.",
+                "en": "In this branch the opioid follows the sedative; profound sedation and respiratory-depression risk increases."
+              },
+              "sourceIds": [
+                "fda-combination"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b-clarify",
+          "type": "decision",
+          "scene": {
+            "ar": "تُعرَّف الحبة بأنها lorazepam، ولم تكن ضمن خطة مشتركة محدثة مع الأفيون في هذه الحالة. المريض يستجيب لكنه أكثر نعاسًا من سابقه.",
+            "en": "The tablet is identified as lorazepam. This case has no updated coordinated plan for its use with the opioid. The patient responds but is sleepier than before."
+          },
+          "prompt": {
+            "ar": "كيف تطلب المراجعة؟",
+            "en": "How do you seek review?"
+          },
+          "choices": [
+            {
+              "id": "b-review",
+              "text": {
+                "ar": "أقدم قائمة الأدوية والوقت والتقييم للصيدلي أو الواصف عبر المشرف، وأطلب خطة للألم والمراقبة قبل الجرعة التالية.",
+                "en": "Through the supervisor, communicate medicine, timing and assessment to the pharmacist or prescriber and request a pain and monitoring plan before the next dose."
+              },
+              "next": "b-plan",
+              "effect": "protect",
+              "feedback": {
+                "ar": "المطلوب قرار منسق، مع استمرار الاهتمام بالألم.",
+                "en": "Coordinated review is needed while pain remains actively addressed."
+              },
+              "consequence": {
+                "ar": "يُحافظ على حاجز المراجعة قبل التعرض الإضافي.",
+                "en": "The review barrier remains in place before further exposure."
+              },
+              "sourceIds": [
+                "fda-combination",
+                "fda-opioid"
+              ]
+            },
+            {
+              "id": "b-just-oral",
+              "text": {
+                "ar": "أعطي الأوكسيكودون لأن الطريق فموي، وأتجاهل النعاس.",
+                "en": "Give oxycodone because it is oral and ignore the drowsiness."
+              },
+              "next": "b-sedation",
+              "effect": "exposure",
+              "feedback": {
+                "ar": "الطريق الفموي لا يلغي خطر تثبيط التنفس مع المهدئات.",
+                "en": "An oral route does not remove the risk of respiratory depression with sedatives."
+              },
+              "consequence": {
+                "ar": "يصوّر الفرع وصول جرعة إضافية رغم علامة تتطلب المراجعة.",
+                "en": "This branch depicts additional exposure despite a finding requiring review."
+              },
+              "sourceIds": [
+                "oxy-ir",
+                "fda-combination"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b-plan",
+          "type": "decision",
+          "scene": {
+            "ar": "راجع الفريق المؤهل الخطة ووثق تعليمات المراقبة. في هذا المسار أُعطيت جرعة oral IR oxycodone بعد المراجعة وفق الخطة، ويريد المرافق الآن إعطاء حبة أخرى من المنزل خارجها.",
+            "en": "The qualified team reviews the plan and records monitoring instructions. On this route oral IR oxycodone is administered after review under that plan; the relative now offers another home-supply tablet outside it."
+          },
+          "prompt": {
+            "ar": "كيف تغلق فجوة السلامة؟",
+            "en": "How do you close the safety gap?"
+          },
+          "choices": [
+            {
+              "id": "b-teach",
+              "text": {
+                "ar": "أشرح عدم إعطاء أدوية منزلية دون تنسيق، وأوثق ما تناوله وأسلّم خطة المراقبة.",
+                "en": "Explain that home medicines must be coordinated, record what was taken and hand over the monitoring plan."
+              },
+              "next": "b-prevented",
+              "effect": "protect",
+              "feedback": {
+                "ar": "المريض والأسرة جزء من حاجز المعلومات.",
+                "en": "The patient and family are part of the information barrier."
+              },
+              "consequence": {
+                "ar": "لم تُضف جرعة غير مراجعة في هذا المسار، وأصبحت الخطة مشتركة.",
+                "en": "No unreviewed dose was added on this route and the plan became shared."
+              },
+              "sourceIds": [
+                "fda-combination"
+              ]
+            },
+            {
+              "id": "b-home",
+              "text": {
+                "ar": "أسمح بالحبة لأن أدوية المنزل لا تدخل ضمن سجل القسم.",
+                "en": "Allow it because home medicines are outside the ward record."
+              },
+              "next": "b-sedation",
+              "effect": "exposure",
+              "feedback": {
+                "ar": "المصدر لا يفصل الدواء عن تأثيره داخل الجسم.",
+                "en": "Where a medicine comes from does not separate it from its effect in the body."
+              },
+              "consequence": {
+                "ar": "يمثل الفرع تعرضًا إضافيًا غير منسق بعد المراجعة، مع احتمال زيادة التهدئة.",
+                "en": "The branch depicts uncoordinated added exposure after review, with a potential increase in sedation."
+              },
+              "sourceIds": [
+                "fda-combination"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b-sedation",
+          "type": "decision",
+          "scene": {
+            "ar": "بعد التعرض المصور في هذا الفرع، تظهر صعوبة في الإيقاظ وتنفس سطحي. تُستخدم هذه العلامات لتدريب الاكتشاف، وليست توقعًا حتميًا لكل جمع دوائي.",
+            "en": "After the exposure depicted on this branch, difficulty waking and shallow breathing appear. These signs train recognition; they are not an inevitable outcome of every combination."
+          },
+          "prompt": {
+            "ar": "ما التصرف الأول؟",
+            "en": "What is the first response?"
+          },
+          "choices": [
+            {
+              "id": "b-help",
+              "text": {
+                "ar": "أفعّل الاستجابة العاجلة، ولا أضيف مهدئًا أو جرعة أفيونية، وأدعم التقييم وفق دوري والبروتوكول.",
+                "en": "Activate urgent response, add no sedative or opioid dose, and support assessment within my role and protocol."
+              },
+              "next": "b-support",
+              "effect": "escalate",
+              "feedback": {
+                "ar": "الاستجابة تُبنى على حالة المريض لا على افتراض أنه يحتاج النوم.",
+                "en": "Respond to the patient’s condition rather than assuming sleep is beneficial."
+              },
+              "consequence": {
+                "ar": "يُستدعى الدعم المؤهل مع معلومات الأفيون والمهدئ معًا.",
+                "en": "Qualified help is activated with information about both the opioid and sedative."
+              },
+              "sourceIds": [
+                "fda-opioid",
+                "fda-combination"
+              ]
+            },
+            {
+              "id": "b-sleep",
+              "text": {
+                "ar": "أتركه ينام وأطلب من الأسرة ألا تزعجه.",
+                "en": "Let the patient sleep and ask the family not to disturb them."
+              },
+              "next": "b-worse",
+              "effect": "miss",
+              "feedback": {
+                "ar": "صعوبة الإيقاظ والتنفس السطحي علامتان تحتاجان استجابة.",
+                "en": "Difficulty waking and shallow breathing require a response."
+              },
+              "consequence": {
+                "ar": "في هذا المسار يتأخر التدخل وتستمر علامات الخطر.",
+                "en": "Intervention is delayed and danger signs persist on this route."
+              },
+              "sourceIds": [
+                "fda-opioid"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b-support",
+          "type": "decision",
+          "scene": {
+            "ar": "بدأ فريق الاستجابة التعامل مع الحالة. يسأل عن الأدوية المنزلية والأوامر ووقت كل تعرض.",
+            "en": "The response team begins care and asks about home medicines, orders and the timing of each exposure."
+          },
+          "prompt": {
+            "ar": "أي تسليم يساعد الفريق؟",
+            "en": "Which handover helps the team?"
+          },
+          "choices": [
+            {
+              "id": "b-full",
+              "text": {
+                "ar": "أذكر جميع الأدوية وأوقاتها المعروفة وعدم اليقين والقياسات والتغير في الوعي والتنفس.",
+                "en": "Report every medicine, known time, uncertainty, observations and the change in arousal and breathing."
+              },
+              "next": "b-supported",
+              "effect": "protect",
+              "feedback": {
+                "ar": "تفاصيل التعرض توجه التقييم وتمنع افتراضًا ناقصًا.",
+                "en": "Exposure details support assessment and prevent an incomplete assumption."
+              },
+              "consequence": {
+                "ar": "يستمر التدخل والمراقبة وفق الخطة؛ الحادث لا يُمحى.",
+                "en": "Intervention and monitoring continue under the plan; the incident is not erased."
+              },
+              "sourceIds": [
+                "fda-opioid",
+                "fda-combination"
+              ]
+            },
+            {
+              "id": "b-hide",
+              "text": {
+                "ar": "أبلغ عن الأفيون فقط حتى لا يتشتت الفريق.",
+                "en": "Report only the opioid so the team is not distracted."
+              },
+              "next": "b-worse",
+              "effect": "miss",
+              "feedback": {
+                "ar": "إخفاء المهدئ يحذف معلومة مركزية عن التعرض.",
+                "en": "Omitting the sedative removes key exposure information."
+              },
+              "consequence": {
+                "ar": "يظل حاجز المعلومات مكسورًا بينما الحالة تحتاج متابعة عاجلة.",
+                "en": "The information barrier remains broken while urgent follow-up is needed."
+              },
+              "sourceIds": [
+                "fda-combination"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b-worse",
+          "type": "decision",
+          "scene": {
+            "ar": "تبقى الاستجابة لمحاولة الإيقاظ والتنفس غير مطمئنتين، والمعلومات لم تصل كاملة بعد.",
+            "en": "Arousal and breathing remain concerning and a complete handover has not yet been delivered."
+          },
+          "prompt": {
+            "ar": "ما نقطة استعادة الحماية؟",
+            "en": "Where can protection be restored?"
+          },
+          "choices": [
+            {
+              "id": "b-reescalate",
+              "text": {
+                "ar": "أعيد التصعيد فورًا وأصحح تسليم كل الأدوية، وأواصل المراقبة تحت توجيه الفريق.",
+                "en": "Re-escalate immediately, correct the complete medication handover and continue monitoring under team direction."
+              },
+              "next": "b-supported",
+              "effect": "escalate",
+              "feedback": {
+                "ar": "التصحيح الصريح يساعد حتى بعد وصول الخطأ للمريض.",
+                "en": "An accurate correction helps even after exposure reaches the patient."
+              },
+              "consequence": {
+                "ar": "يصل الفريق إلى صورة أوضح ويتولى الاستجابة؛ لا يختفي أثر التأخير من السجل.",
+                "en": "The team receives a clearer picture and takes over the response; the delay remains part of the record."
+              },
+              "sourceIds": [
+                "fda-opioid",
+                "fda-combination"
+              ]
+            },
+            {
+              "id": "b-delay",
+              "text": {
+                "ar": "أؤجل التصحيح إلى نهاية النوبة.",
+                "en": "Postpone the correction until the end of the shift."
+              },
+              "next": "b-unresolved",
+              "effect": "miss",
+              "feedback": {
+                "ar": "الخطر الحالي لا ينتظر التسليم الروتيني.",
+                "en": "An active threat cannot wait for routine handover."
+              },
+              "consequence": {
+                "ar": "ينتهي الفرع مع تعرض وخطر قائمين دون استجابة كافية.",
+                "en": "The branch ends with exposure and ongoing danger without an adequate response."
+              },
+              "sourceIds": [
+                "fda-opioid"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b-prevented",
+          "type": "debrief",
+          "title": {
+            "ar": "تداخل محتمل اكتُشف قبل إضافة غير مراجعة",
+            "en": "Potential interaction caught before an unreviewed addition"
+          },
+          "body": {
+            "ar": "كشف السؤال عن أدوية المنزل معلومة غائبة، ثم أصبحت الخطة منسقة وواضحة للأسرة.",
+            "en": "Asking about home medicines revealed missing information and enabled a coordinated plan shared with the family."
+          },
+          "points": [
+            {
+              "ar": "لا تعني هذه الحالة حظر كل جمع موصوف؛ يلزم قرار فردي ومراقبة.",
+              "en": "This case does not prohibit every prescribed combination; individualized decisions and monitoring are required."
+            },
+            {
+              "ar": "لا يغير الطالب علاجًا مزمنًا من تلقاء نفسه.",
+              "en": "A student does not independently change chronic treatment."
+            }
+          ]
+        },
+        {
+          "id": "b-supported",
+          "type": "debrief",
+          "title": {
+            "ar": "تعرض حدث ومعلوماته وصلت للفريق",
+            "en": "Exposure occurred and the team received the information"
+          },
+          "body": {
+            "ar": "حدث تعرض غير منسق في هذا المسار، وتلت ذلك علامات خطورة مصورة. أُصلحت استجابة المساعدة وتسليم المعلومات مع استمرار المتابعة.",
+            "en": "Uncoordinated exposure occurred on this route, followed by scripted danger signs. Urgent response and information handover were repaired while follow-up continued."
+          },
+          "points": [
+            {
+              "ar": "لا تُخفِ الدواء الذي يبدو صغيرًا أو غير مهم.",
+              "en": "Do not omit a medicine that seems small or unimportant."
+            },
+            {
+              "ar": "لا يساوي بدء التدخل ضمان التعافي.",
+              "en": "Starting intervention does not guarantee recovery."
+            }
+          ]
+        },
+        {
+          "id": "b-unresolved",
+          "type": "debrief",
+          "title": {
+            "ar": "المعلومات والتصعيد لم يكتَملا",
+            "en": "Information and escalation remain incomplete"
+          },
+          "body": {
+            "ar": "يترك هذا المسار خطرًا تنفسيًا غير معالج بما يكفي بعد التعرض. لا يحدد السيناريو نتيجة نهائية أو زمنًا لها.",
+            "en": "This route leaves a respiratory threat insufficiently addressed after exposure. The scenario does not specify a final outcome or its timing."
+          },
+          "points": [
+            {
+              "ar": "العلامات الحالية مقدمة على الروتين.",
+              "en": "Current danger signs take priority over routine."
+            },
+            {
+              "ar": "يمكن تحديد نقطة مبكرة للسؤال عن أدوية المنزل.",
+              "en": "Identify an earlier opportunity to ask about home medicines."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reassuring-spo2",
+      "title": {
+        "ar": "الحالة 3: المريض أم الشاشة؟",
+        "en": "Case 3: Patient or screen?"
+      },
+      "summary": {
+        "ar": "تشبع يبدو طبيعيًا أثناء الأكسجين لا يلغي علامة صعوبة الإيقاظ.",
+        "en": "Apparently normal saturation on oxygen does not cancel difficulty waking."
+      },
+      "record": [
+        {
+          "label": {
+            "ar": "دواء الحالة",
+            "en": "Case medicine"
+          },
+          "value": {
+            "ar": "جرعة oral IR oxycodone أُعطيت حسب أمر موثق؛ ليست هناك جرعة إضافية مطلوبة في هذا النشاط.",
+            "en": "Oral IR oxycodone was given under a documented order; no additional dose is requested in this activity."
+          }
+        },
+        {
+          "label": {
+            "ar": "التشبع والأكسجين",
+            "en": "Saturation and oxygen"
+          },
+          "value": {
+            "ar": "SpO₂ 97% على الأكسجين الموصوف.",
+            "en": "SpO₂ 97% while prescribed oxygen is being administered."
+          }
+        },
+        {
+          "label": {
+            "ar": "الملاحظة",
+            "en": "Observation"
+          },
+          "value": {
+            "ar": "المرافق يلاحظ صعوبة أكبر في الإيقاظ.",
+            "en": "A relative notices increased difficulty waking."
+          }
+        }
+      ],
+      "order": {
+        "ar": "لهذه الحالة: تستمر المراقبة المقررة بعد الأفيون. صعوبة الإيقاظ أو التنفس غير الكافي تستدعي الاستجابة العاجلة وفق بروتوكول المؤسسة؛ لا تتغير الأدوية أو الأكسجين بواسطة الطالب مستقلًا.",
+        "en": "For this case: prescribed post-opioid monitoring continues. Difficulty waking or inadequate breathing requires urgent institutional response; the student does not independently alter medicines or oxygen."
+      },
+      "start": "c-start",
+      "nodes": [
+        {
+          "id": "c-start",
+          "type": "decision",
+          "scene": {
+            "ar": "بعد جرعة oral IR oxycodone أُعطيت وفق الأمر، يبدو المريض نائمًا. جهاز التشبع يعرض 97% أثناء الأكسجين الموصوف، لكن المرافق يقول إنه أصعب إيقاظًا.",
+            "en": "After oral IR oxycodone administered under the order, the patient appears asleep. Oximetry reads 97% on prescribed oxygen, but the relative says the patient is harder to wake."
+          },
+          "prompt": {
+            "ar": "كيف تفسر الرقم مع الملاحظة؟",
+            "en": "How do you interpret the number and observation together?"
+          },
+          "choices": [
+            {
+              "id": "c-assess",
+              "text": {
+                "ar": "أذهب للمريض وأقيّم الاستجابة ونمط التنفس واتجاه التغير، ولا أكتفي بالتشبع.",
+                "en": "Assess the patient’s response, breathing pattern and trend at the bedside rather than relying on saturation alone."
+              },
+              "next": "c-assessment",
+              "effect": "protect",
+              "feedback": {
+                "ar": "التشبع لا يقيس التهوية وحده، خصوصًا مع الأكسجين الإضافي.",
+                "en": "Saturation alone does not measure ventilation, especially with supplemental oxygen."
+              },
+              "consequence": {
+                "ar": "تبدأ ملاحظة مبكرة بدل الاعتماد على رقم منفرد.",
+                "en": "Early assessment begins instead of reliance on a single number."
+              },
+              "sourceIds": [
+                "apsf-monitoring"
+              ]
+            },
+            {
+              "id": "c-number",
+              "text": {
+                "ar": "أطمئن المرافق لأن 97% تعني أن التنفس آمن.",
+                "en": "Reassure the relative that 97% means breathing is safe."
+              },
+              "next": "c-delay",
+              "effect": "miss",
+              "feedback": {
+                "ar": "لا يكفي هذا الرقم لتفسير صعوبة الإيقاظ.",
+                "en": "That number is insufficient to explain difficulty waking."
+              },
+              "consequence": {
+                "ar": "في هذا الفرع يتأخر تقييم علامة إنذار رغم بقاء الشاشة مطمئنة ظاهريًا.",
+                "en": "This branch delays assessment of a warning sign despite an apparently reassuring screen."
+              },
+              "sourceIds": [
+                "apsf-monitoring"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c-assessment",
+          "type": "decision",
+          "scene": {
+            "ar": "التقييم السريري في هذه الحالة يجد استجابة لا تدوم إلا لحظات وتنفسًا بطيئًا سطحيًا. قراءة التشبع ما زالت 97% على الأكسجين.",
+            "en": "The scripted bedside assessment finds a response lasting only moments and slow, shallow breathing. Saturation remains 97% on oxygen."
+          },
+          "prompt": {
+            "ar": "ما الأولوية؟",
+            "en": "What is the priority?"
+          },
+          "choices": [
+            {
+              "id": "c-call",
+              "text": {
+                "ar": "أفعّل المساعدة العاجلة وأبلغ المشرف، وأتبع دعم التنفس والمراقبة حسب دوري وبروتوكول المؤسسة دون جرعة أفيونية أخرى.",
+                "en": "Activate urgent assistance and inform the supervisor; support breathing assessment and monitoring within my role and institutional protocol, without another opioid dose."
+              },
+              "next": "c-support",
+              "effect": "escalate",
+              "feedback": {
+                "ar": "العلامات السريرية تتطلب استجابة عاجلة حتى مع رقم تشبع مرتفع.",
+                "en": "The clinical signs require urgent response despite a high saturation number."
+              },
+              "consequence": {
+                "ar": "يتولى الفريق المؤهل تقييم السبب والتدخل، مع متابعة مستمرة.",
+                "en": "The qualified team takes over assessment and intervention with continued monitoring."
+              },
+              "sourceIds": [
+                "fda-opioid",
+                "apsf-monitoring"
+              ]
+            },
+            {
+              "id": "c-probe",
+              "text": {
+                "ar": "أغيّر موضع الحساس فقط وأؤجل تقييم التنفس.",
+                "en": "Only reposition the sensor and delay the breathing assessment."
+              },
+              "next": "c-worse",
+              "effect": "miss",
+              "feedback": {
+                "ar": "فحص الجهاز لا يحل مشكلة سريرية مثبتة.",
+                "en": "Checking the device does not address established clinical findings."
+              },
+              "consequence": {
+                "ar": "يتأخر التدخل بينما يستمر ضعف الاستجابة والتنفس في هذا الفرع.",
+                "en": "Intervention is delayed while poor responsiveness and breathing continue in this branch."
+              },
+              "sourceIds": [
+                "apsf-monitoring"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c-delay",
+          "type": "decision",
+          "scene": {
+            "ar": "في الفرع الذي اعتمد على التشبع وحده، يبلغ المرافق مجددًا أن المريض لا يبقى مستيقظًا. لم يُجرَ تقييم تنفس كافٍ بعد.",
+            "en": "On the saturation-only branch, the relative again reports that the patient cannot stay awake. An adequate breathing assessment has not yet occurred."
+          },
+          "prompt": {
+            "ar": "هل تُعيد النظر؟",
+            "en": "Will you reassess?"
+          },
+          "choices": [
+            {
+              "id": "c-correct",
+              "text": {
+                "ar": "أصعّد الآن وأقيّم التنفس والوعي بجانب السرير مع الفريق.",
+                "en": "Escalate now and assess breathing and arousal at the bedside with the team."
+              },
+              "next": "c-support",
+              "effect": "escalate",
+              "feedback": {
+                "ar": "تصحيح الافتراض مهم حتى بعد التأخير.",
+                "en": "Correcting the assumption matters even after a delay."
+              },
+              "consequence": {
+                "ar": "يبدأ الدعم المؤهل، ويظل التأخير جزءًا من مراجعة الحالة.",
+                "en": "Qualified support begins and the delay remains part of the case review."
+              },
+              "sourceIds": [
+                "fda-opioid",
+                "apsf-monitoring"
+              ]
+            },
+            {
+              "id": "c-silence",
+              "text": {
+                "ar": "أطلب تقليل الإزعاج وأنتظر إنذار التشبع.",
+                "en": "Ask for less disturbance and wait for the saturation alarm."
+              },
+              "next": "c-worse",
+              "effect": "miss",
+              "feedback": {
+                "ar": "لا ينبغي انتظار إنذار آخر أمام علامات سريرية مقلقة.",
+                "en": "Do not wait for another alarm when concerning clinical signs are present."
+              },
+              "consequence": {
+                "ar": "ينتقل الفرع إلى تأخر أطول في طلب المساعدة، لا إلى طمأنة مثبتة.",
+                "en": "The branch moves to a longer delay in seeking help, not to established reassurance."
+              },
+              "sourceIds": [
+                "apsf-monitoring"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c-support",
+          "type": "decision",
+          "scene": {
+            "ar": "استجاب الفريق وبدأ التعامل مع ضعف التنفس. يسأل عن وقت الأفيون والأدوية المصاحبة والأكسجين والتقييم السابق.",
+            "en": "The team responds and begins addressing impaired breathing. It asks about opioid timing, co-medications, oxygen and previous assessments."
+          },
+          "prompt": {
+            "ar": "كيف تساند الاستجابة؟",
+            "en": "How do you support the response?"
+          },
+          "choices": [
+            {
+              "id": "c-facts",
+              "text": {
+                "ar": "أسلم الحقائق والاتجاهات وأستمر في المراقبة حسب الخطة، ولا أغير الأكسجين أو الأدوية من تلقاء نفسي.",
+                "en": "Hand over the facts and trends and continue monitoring under the plan, without independently changing oxygen or medicines."
+              },
+              "next": "c-followup",
+              "effect": "protect",
+              "feedback": {
+                "ar": "المطلوب صورة كاملة وتعاون ضمن الدور.",
+                "en": "A complete picture and role-appropriate teamwork are needed."
+              },
+              "consequence": {
+                "ar": "يُحافظ على حواجز المساعدة والمراقبة.",
+                "en": "Assistance and monitoring barriers remain in place."
+              },
+              "sourceIds": [
+                "fda-opioid",
+                "apsf-monitoring"
+              ]
+            },
+            {
+              "id": "c-oxygen",
+              "text": {
+                "ar": "أوقف الأكسجين فقط لأرى هل تنخفض القراءة.",
+                "en": "Stop oxygen simply to see whether the reading falls."
+              },
+              "next": "c-worse",
+              "effect": "miss",
+              "feedback": {
+                "ar": "لا يُستخدم سحب علاج موصوف كاختبار لإثبات الخطر.",
+                "en": "Withdrawing prescribed treatment is not a test to prove danger."
+              },
+              "consequence": {
+                "ar": "يضيع وقت الاستجابة وقد تُضاف مشكلة للأكسجة في هذا الفرع.",
+                "en": "Response time is lost and an oxygenation problem may be added on this branch."
+              },
+              "sourceIds": [
+                "apsf-monitoring"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c-followup",
+          "type": "decision",
+          "scene": {
+            "ar": "صار المريض يستجيب بصورة أفضل بعد تدخل الفريق. ما زالت خطة متابعة الوعي والتنفس قائمة.",
+            "en": "After team intervention the patient responds better. The arousal and breathing follow-up plan remains active."
+          },
+          "prompt": {
+            "ar": "متى تُغلق المتابعة؟",
+            "en": "When is follow-up closed?"
+          },
+          "choices": [
+            {
+              "id": "c-plan",
+              "text": {
+                "ar": "أستكمل التقييم والتسليم وفق توجيه الفريق، وأبلغ عن أي عودة للنعاس أو ضعف التنفس.",
+                "en": "Continue assessment and handover under team direction and report recurrent drowsiness or breathing difficulty."
+              },
+              "next": "c-managed",
+              "effect": "protect",
+              "feedback": {
+                "ar": "تحدد الخطة السريرية استمرار المتابعة، لا قراءة واحدة أو استجابة أولى.",
+                "en": "The clinical plan governs follow-up, not one reading or initial response."
+              },
+              "consequence": {
+                "ar": "ينتهي الفرع بمتابعة مؤهلة قائمة، دون وعد بنتيجة مضمونة.",
+                "en": "The branch ends with qualified follow-up in place, without a guaranteed outcome."
+              },
+              "sourceIds": [
+                "fda-opioid",
+                "apsf-monitoring"
+              ]
+            },
+            {
+              "id": "c-first",
+              "text": {
+                "ar": "أغلق المتابعة لأن المريض فتح عينيه مرة.",
+                "en": "End monitoring because the patient opened their eyes once."
+              },
+              "next": "c-worse",
+              "effect": "miss",
+              "feedback": {
+                "ar": "الاستجابة العابرة لا تثبت زوال الخطر.",
+                "en": "A transient response does not establish that the threat has resolved."
+              },
+              "consequence": {
+                "ar": "يُفقد حاجز متابعة، ويعود الفرع إلى حاجة عاجلة لإعادة التقييم.",
+                "en": "A follow-up barrier is lost and the branch returns to a need for urgent reassessment."
+              },
+              "sourceIds": [
+                "apsf-monitoring"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c-worse",
+          "type": "decision",
+          "scene": {
+            "ar": "المريض صعب الإيقاظ والتنفس ما زال غير كافٍ في معطيات الفرع. التأخير أو الاكتفاء بالجهاز لم يحل المشكلة.",
+            "en": "The scripted patient is hard to wake and breathing remains inadequate. Delay or reliance on the device has not addressed the problem."
+          },
+          "prompt": {
+            "ar": "ما القرار الآن؟",
+            "en": "What is the decision now?"
+          },
+          "choices": [
+            {
+              "id": "c-rescue",
+              "text": {
+                "ar": "أفعّل أو أصعّد الاستجابة العاجلة فورًا، وأسلم ما حدث وأتبع توجيه الفريق.",
+                "en": "Immediately activate or escalate urgent response, report what happened and follow team direction."
+              },
+              "next": "c-managed",
+              "effect": "escalate",
+              "feedback": {
+                "ar": "لا يُؤجَّل طلب المساعدة لإكمال السجل أو انتظار رقم آخر.",
+                "en": "Do not delay assistance for chart completion or another number."
+              },
+              "consequence": {
+                "ar": "يبدأ مسار رعاية مؤهلة مع احتفاظ المراجعة بما حدث من تأخير.",
+                "en": "Qualified care begins and the review retains the delay that occurred."
+              },
+              "sourceIds": [
+                "fda-opioid",
+                "apsf-monitoring"
+              ]
+            },
+            {
+              "id": "c-wait-again",
+              "text": {
+                "ar": "أواصل مراقبة التشبع وحده.",
+                "en": "Continue watching saturation alone."
+              },
+              "next": "c-unresolved",
+              "effect": "miss",
+              "feedback": {
+                "ar": "يبقى الخطر السريري دون استجابة كافية.",
+                "en": "The clinical threat remains insufficiently addressed."
+              },
+              "consequence": {
+                "ar": "ينتهي الفرع عند حاجة عاجلة غير ملباة؛ لا يفترض السيناريو تعافيًا أو نتيجة نهائية.",
+                "en": "The branch ends at an unmet urgent need; it does not assume recovery or a final outcome."
+              },
+              "sourceIds": [
+                "fda-opioid",
+                "apsf-monitoring"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c-managed",
+          "type": "debrief",
+          "title": {
+            "ar": "الأولوية للمريض مع استمرار المتابعة",
+            "en": "Patient-focused response and continued monitoring"
+          },
+          "body": {
+            "ar": "استُدعيت المساعدة المؤهلة واستمرت المتابعة. قد يكون الطريق مبكرًا أو بعد تأخير؛ يحتفظ سجل اختياراتك بما حدث فعلًا في الفرع.",
+            "en": "Qualified assistance and continued observation were established. Your route may have been early or delayed; the choice record preserves what actually occurred."
+          },
+          "points": [
+            {
+              "ar": "يمكن أن تقع استجابة ضارة رغم جرعة أُعطيت وفق الأمر؛ المراقبة تظل ضرورية.",
+              "en": "An adverse response can occur after a dose given under an order; monitoring remains necessary."
+            },
+            {
+              "ar": "رقم التشبع لا يغني عن تقييم الوعي والتهوية.",
+              "en": "A saturation number does not replace arousal and ventilation assessment."
+            }
+          ]
+        },
+        {
+          "id": "c-unresolved",
+          "type": "debrief",
+          "title": {
+            "ar": "الشاشة لم تعالج المريض",
+            "en": "The screen did not treat the patient"
+          },
+          "body": {
+            "ar": "استمر الاعتماد على مؤشر منفرد رغم علامات سريرية تستدعي الاستجابة. ينتهي المسار بحاجز اكتشاف وتصعيد غير مستعاد.",
+            "en": "Reliance on one indicator continued despite clinical signs requiring response. The route ends without restoring recognition and escalation barriers."
+          },
+          "points": [
+            {
+              "ar": "الأكسجين قد يؤخر ظهور انخفاض التشبع.",
+              "en": "Oxygen may delay desaturation."
+            },
+            {
+              "ar": "اختر نقطة مبكرة للذهاب إلى المريض وطلب المساعدة.",
+              "en": "Identify an earlier point to assess the patient and call for help."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
