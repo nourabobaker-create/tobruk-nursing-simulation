@@ -1,5 +1,17 @@
 # Staff, teaching assistant and faculty development
 
+## Institutional work and role-based development — 30 October 2026
+
+The owner requested a broader institutional structure before any new poster image, and explicitly authorised adding missing support for strategic-plan contributions, community service, role-based skills, time/project/initiative management, and research/work ethics. `institutional/` is the public, bilingual support area. Seven stable theme anchors cover quality, digital working, strategy, skills, community, ethics, and teaching/research. The existing three role spaces retain their content and link to it through `institutional-entry.js`; the public Faculty Hub also has an entry.
+
+The new area maps 12 practical contributions across the three audiences to the six axes in the current strategic-plan presentation. Thirteen recommended skill packages cover the eight existing work-guide roles and five additional development roles, without changing official assignments or the work-guide task data. Each package contains three skills with an application and a sign of useful learning. Three shared modules explain time, project and initiative management; the 35 linked resources reuse 32 catalogue resources and add three checked OpenLearn references. A section of a course is not advertised as a separate credential.
+
+Work and research ethics link to the existing protected Faculty PDFs and distinguish them from external CIOMS, WHO and ICMJE references. The research guide is not renamed as a separately adopted research-ethics charter. No charter body, editable guide, internal accreditation workspace, private Drive link, personal record or reviewer data is published by this addition.
+
+The optional working initiative draft is a personal tool: one draft per selected role, saved only in this browser, with text/JSON export and print. It does not create an institutional submission, approval, completion record or monitoring system. Draft text is never added to metrics. Existing opt-in measurement records fixed theme/resource/role identifiers only. Quality content explains the limits of access counts and self-reports; no accreditation status, institutional performance score or unverified outcome is asserted. Digital-working guidance does not claim a central archive or a new transaction system.
+
+The publication entries below describe the earlier releases and remain historical scope records.
+
 Latest scoped publication: 24 October 2026. Two governance reading PDFs were added, taking the resource catalogue from63to65; this does not refresh or re-verify the22October event/resource catalogue. Earlier publication entries below remain history.
 
 Publication refresh: 22 October 2026 (`20261022-5`). The owner explicitly authorised publication on `main`, approved guide status and protected PDF copies. Cache versions are refreshed for the guide catalogue and follow-up interface. Read-only verification confirmed all 81 PDF pages have no text layer, AES-256 permissions prohibit printing/copying/modification, and the 24 existing metrics checks pass.

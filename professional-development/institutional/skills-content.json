@@ -1,0 +1,1653 @@
+{
+  "updated": "2026-10-30",
+  "roles": [
+    {
+      "id": "employee",
+      "audience": "staff",
+      "label": {
+        "ar": "الموظف",
+        "en": "Employee"
+      },
+      "focus": {
+        "ar": "مسار تطوير مقترح لدقة الخدمة وتنظيم العمل اليومي، ضمن تكليفك القائم؛ اختر مهارة واحدة وطبّقها قبل الانتقال إلى التالية.",
+        "en": "A recommended path for accurate service and organised daily work within your existing assignment. Choose and apply one skill before moving to the next."
+      },
+      "skills": [
+        {
+          "id": "employee-clear-response",
+          "title": {
+            "ar": "التواصل الواضح مع المستفيد",
+            "en": "Clear service communication"
+          },
+          "practice": {
+            "ar": "اكتب ردًا قصيرًا يوضح المتطلبات وحالة الطلب والخطوة التالية والجهة المختصة؛ اذكر موعدًا فقط إذا كان مؤكدًا.",
+            "en": "Write a short reply stating requirements, request status, the next step and the responsible office. Give a date only when it is confirmed."
+          },
+          "evidence": {
+            "ar": "مثال رد منزوع البيانات وملاحظة من زميل عن وضوحه.",
+            "en": "An anonymised reply example and a colleague’s feedback on its clarity."
+          },
+          "resourceIds": [
+            "guide-staff",
+            "workplace-communication"
+          ]
+        },
+        {
+          "id": "employee-digital-records",
+          "title": {
+            "ar": "تنظيم الملفات وحماية الوصول",
+            "en": "Organising files and access"
+          },
+          "practice": {
+            "ar": "نظّم ملفات إحدى مهامك بأسماء وتواريخ ونسخ واضحة، ثم راجع صلاحيات الوصول على الأداة المعتمدة لدى جهتك.",
+            "en": "Organise the files for one of your tasks with clear names, dates and versions, then review access permissions in your office’s approved tool."
+          },
+          "evidence": {
+            "ar": "فهرس محدث وروابط إلى الأصول، مع حفظ سجلات الأفراد في المساحات المخولة.",
+            "en": "An updated index and links to original files, with personal records kept in authorised storage."
+          },
+          "resourceIds": [
+            "drive-organisation",
+            "account-security"
+          ]
+        },
+        {
+          "id": "employee-service-improvement",
+          "title": {
+            "ar": "تحسين خطوة متكررة في الخدمة",
+            "en": "Improving a recurring service step"
+          },
+          "practice": {
+            "ar": "اختر سببًا متكررًا للخطأ أو التأخير، واقترح تبسيط خطوة واحدة مع مسؤول الخدمة، ثم جرّبها ضمن صلاحيتك.",
+            "en": "Choose a recurring cause of error or delay, agree one simpler step with the service owner, and try it within your authority."
+          },
+          "evidence": {
+            "ar": "ملاحظة قبل التطبيق وبعده في سجل الخدمة الموجود، مع بيان ما تغير وما يحتاج متابعة.",
+            "en": "A before-and-after note in the existing service record, stating what changed and what still needs follow-up."
+          },
+          "resourceIds": [
+            "guide-staff",
+            "edraak-feedback"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "registrar",
+      "audience": "staff",
+      "label": {
+        "ar": "مسجل الكلية",
+        "en": "College Registrar"
+      },
+      "focus": {
+        "ar": "مسار تطوير مقترح لتحسين دقة القيد ووضوح الخدمة وحماية السجل، وفق الإجراءات والصلاحيات المعمول بها.",
+        "en": "A recommended path for accurate registration, clear service and protected records, following established procedures and permissions."
+      },
+      "skills": [
+        {
+          "id": "registrar-data-quality",
+          "title": {
+            "ar": "تدقيق البيانات ومطابقة المجاميع",
+            "en": "Checking data and reconciling totals"
+          },
+          "practice": {
+            "ar": "راجع بيانات القيد التي يحق لك الاطلاع عليها: القيم المفقودة والتكرار واختلاف الحالة. طابق المجاميع مع المصدر وتاريخ الاستخراج، وأحِل التصحيحات عبر المسار المخول.",
+            "en": "Review registration data you are authorised to access for missing values, duplicates and inconsistent status. Reconcile totals to the source and extraction date, and refer corrections through the authorised route."
+          },
+          "evidence": {
+            "ar": "نتيجة التدقيق وملخص التصحيحات والإحالات في سجل المتابعة القائم.",
+            "en": "The check results and a summary of corrections and referrals in the existing follow-up record."
+          },
+          "resourceIds": [
+            "ms-excel",
+            "edraak-data"
+          ]
+        },
+        {
+          "id": "registrar-service-guidance",
+          "title": {
+            "ar": "شرح إجراءات القيد بوضوح",
+            "en": "Explaining registration procedures"
+          },
+          "practice": {
+            "ar": "حوّل إجراءً قائمًا إلى شرح موجز يبين المستندات والخطوات وموضع الاستفسار، واطلب من زميل تجربة فهمه.",
+            "en": "Turn an existing procedure into brief guidance on documents, steps and where to ask questions, then ask a colleague to test its clarity."
+          },
+          "evidence": {
+            "ar": "نسخة مراجعة من الإرشاد وملاحظة عن نقطة غموض عولجت، مع مرجع الإجراء الأصلي.",
+            "en": "A reviewed guidance example, a resolved ambiguity and a reference to the original procedure."
+          },
+          "resourceIds": [
+            "accessible-word",
+            "workplace-communication"
+          ]
+        },
+        {
+          "id": "registrar-traceable-records",
+          "title": {
+            "ar": "حماية السجل وتتبع التحديث",
+            "en": "Protecting records and tracing changes"
+          },
+          "practice": {
+            "ar": "راجع ربط تحديث الحالة بالقرار وصاحبه وتاريخه، وتحقق من اقتصار الاطلاع على المخولين.",
+            "en": "Check that a status change is linked to its decision, author and date, and that access is limited to authorised users."
+          },
+          "evidence": {
+            "ar": "مرجع للتحديث والقرار والأصل في السجل القائم، مع حماية بيانات الطلبة.",
+            "en": "References to the change, decision and original in the existing register, with student data protected."
+          },
+          "resourceIds": [
+            "guide-staff",
+            "guide-ethics-charter",
+            "account-security"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "administration",
+      "audience": "staff",
+      "label": {
+        "ar": "رئيس قسم الشؤون الإدارية",
+        "en": "Head of Administrative Affairs"
+      },
+      "focus": {
+        "ar": "مسار تطوير مقترح لتنظيم الفريق واستمرار الخدمة وربط تطوير المهارات باحتياج العمل، ضمن التفويض والإجراءات القائمة.",
+        "en": "A recommended path for team organisation, service continuity and development linked to work needs, within existing delegation and procedures."
+      },
+      "skills": [
+        {
+          "id": "administration-capacity-handover",
+          "title": {
+            "ar": "توزيع الجهد والتسليم المنظم",
+            "en": "Workload and orderly handover"
+          },
+          "practice": {
+            "ar": "راجع الأعمال المفتوحة مع الفريق، وحدد نقاط التعثر وما يحتاج بديلًا؛ استخدم الخطة الأسبوعية الشخصية لتوزيع وقت متابعتك.",
+            "en": "Review open work with the team, identify bottlenecks and cover needs, and use the personal weekly planner to allocate your follow-up time."
+          },
+          "evidence": {
+            "ar": "تحديث لقائمة التسليم أو محضر المتابعة الموجود، يوضح المسؤولية المتفق عليها والطلب الذي يحتاج تصعيدًا.",
+            "en": "An update to the existing handover list or follow-up minutes, recording agreed responsibility and matters needing escalation."
+          },
+          "resourceIds": [
+            "guide-staff",
+            "teamwork",
+            "workspace-admin"
+          ]
+        },
+        {
+          "id": "administration-workflow",
+          "title": {
+            "ar": "تبسيط سير العمل الرقمي",
+            "en": "Simplifying a digital workflow"
+          },
+          "practice": {
+            "ar": "ارسم خطوات معاملة متكررة وحدد تكرار الإدخال أو الإحالة؛ اقترح تجربة صغيرة على أداة معتمدة قبل توسيع التغيير.",
+            "en": "Map a recurring transaction and identify repeated entry or hand-offs; propose a small trial in an approved tool before widening the change."
+          },
+          "evidence": {
+            "ar": "وصف مختصر للمسار الحالي والمقترح، ونتيجة تجربة محفوظة ضمن ملف الخدمة القائم.",
+            "en": "A short description of the current and proposed process, with trial findings in the existing service file."
+          },
+          "resourceIds": [
+            "workspace-admin",
+            "drive-organisation"
+          ]
+        },
+        {
+          "id": "administration-development-impact",
+          "title": {
+            "ar": "ربط التدريب بتحسين الخدمة",
+            "en": "Linking training to service improvement"
+          },
+          "practice": {
+            "ar": "اختر فجوة مهارية تظهر في العمل، وحدد تطبيقًا صغيرًا بعد التعلم؛ قيّم جودة المخرج بدل الاكتفاء بعدد الدورات.",
+            "en": "Choose a skill gap visible in the work and define a small application after learning; review output quality rather than course counts alone."
+          },
+          "evidence": {
+            "ar": "مثال عمل قبل التعلم وبعده واحتياج متابعة في سجل التطوير القائم.",
+            "en": "Before-and-after work examples and a follow-up need in the existing development record."
+          },
+          "resourceIds": [
+            "sa-pnu-training-plan-1448",
+            "edraak-feedback"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "student-affairs",
+      "audience": "staff",
+      "label": {
+        "ar": "المكلف بشؤون الطلبة",
+        "en": "Assigned Student Affairs Officer"
+      },
+      "focus": {
+        "ar": "مسار تطوير مقترح للاستماع والتهيئة والدعم والمشاركة المجتمعية، مع الالتزام بحدود التكليف وخصوصية الطلبة.",
+        "en": "A recommended path for listening, orientation, support and community participation, respecting assignment limits and student privacy."
+      },
+      "skills": [
+        {
+          "id": "student-affairs-listening",
+          "title": {
+            "ar": "الاستماع والإحالة الواضحة",
+            "en": "Listening and clear referral"
+          },
+          "practice": {
+            "ar": "لخّص طلب الطالب دون أحكام، ووضح الجهة المختصة والخطوة التالية، وتحقق من وصول الإحالة عبر المسار القائم.",
+            "en": "Summarise the student’s request without judgement, explain the relevant office and next step, and check referral receipt through the existing route."
+          },
+          "evidence": {
+            "ar": "ملاحظة متابعة توضح الإحالة والخطوة التالية في سجل الحالة ذي الوصول المقيد.",
+            "en": "A follow-up note recording the referral and next step in the case’s restricted-access record."
+          },
+          "resourceIds": [
+            "workplace-communication",
+            "guide-ethics-charter"
+          ]
+        },
+        {
+          "id": "student-affairs-accessible-orientation",
+          "title": {
+            "ar": "تهيئة مفهومة ومتاحة",
+            "en": "Clear and accessible orientation"
+          },
+          "practice": {
+            "ar": "أعد جزءًا قصيرًا من تهيئة الطلبة يشرح خدمة واحدة وحقوق المستفيد ومسؤولياته بلغة واضحة، مع رابط الدليل الساري.",
+            "en": "Prepare a short orientation segment explaining one service and users’ rights and responsibilities in clear language, with the current guide reference."
+          },
+          "evidence": {
+            "ar": "مادة راجعها المسؤول المختص وملاحظات مجموعة صغيرة عن الفهم والنقاط التي تحتاج توضيحًا.",
+            "en": "Material reviewed by the relevant officer and a small group’s feedback on understanding and points needing clarification."
+          },
+          "resourceIds": [
+            "accessible-word",
+            "stanford-inclusion"
+          ]
+        },
+        {
+          "id": "student-affairs-community-activity",
+          "title": {
+            "ar": "تنظيم مشاركة طلابية هادفة",
+            "en": "Organising purposeful student participation"
+          },
+          "practice": {
+            "ar": "صمّم مع صاحب النشاط فكرة مشاركة مجتمعية محدودة: حاجة واضحة، دور للطلبة، شريك مناسب ورسالة صحية مراجعة.",
+            "en": "With the activity owner, design a bounded community contribution: a clear need, a student role, a suitable partner and a reviewed health message."
+          },
+          "evidence": {
+            "ar": "مقترح أو ملاحظة تطبيق في ملف النشاط، يوضح أدوار الطلبة وطريقة مراجعة الفائدة.",
+            "en": "A proposal or application note in the activity file describing student roles and how benefit will be reviewed."
+          },
+          "resourceIds": [
+            "teamwork",
+            "openwho"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exams",
+      "audience": "staff",
+      "label": {
+        "ar": "الدراسة والامتحانات",
+        "en": "Study and Examinations"
+      },
+      "focus": {
+        "ar": "مسار تطوير مقترح لدقة التنسيق والتوثيق وسرية الامتحانات؛ تبقى القرارات العلمية واعتماد النتائج لدى الجهات المختصة.",
+        "en": "A recommended path for accurate coordination, documentation and examination confidentiality; academic decisions and result approval stay with the competent authorities."
+      },
+      "skills": [
+        {
+          "id": "exams-scheduling",
+          "title": {
+            "ar": "تنسيق الجداول ومتطلبات التنفيذ",
+            "en": "Coordinating timetables and delivery needs"
+          },
+          "practice": {
+            "ar": "راجع الجدول للتحقق من تعارض القاعات والمجموعات والمراقبين وتسلسل الاستلام والتسليم، وحدد ما يحتاج تأكيدًا مبكرًا.",
+            "en": "Review the timetable for room, group and invigilator clashes and handover requirements; identify items needing early confirmation."
+          },
+          "evidence": {
+            "ar": "جدول مراجع وقائمة نقاط عولجت ضمن متابعة الجدول القائمة.",
+            "en": "A reviewed timetable and resolved points within the existing timetable follow-up."
+          },
+          "resourceIds": [
+            "ms-excel",
+            "outlook-organisation"
+          ]
+        },
+        {
+          "id": "exams-data-checks",
+          "title": {
+            "ar": "تدقيق الرصد ومتابعة التصحيحات",
+            "en": "Checking recorded results and following up corrections"
+          },
+          "practice": {
+            "ar": "تدرّب ببيانات افتراضية على مطابقة المجموع والمكوّنات والأرقام المرجعية، وفصل خطأ الإدخال عن قرار التصحيح الأكاديمي.",
+            "en": "Use fictional data to reconcile totals, components and references, distinguishing transcription errors from academic marking decisions."
+          },
+          "evidence": {
+            "ar": "نتيجة تدقيق التمرين توضح المطابقة والكشف عن الأخطاء وإحالتها إلى الجهة المختصة.",
+            "en": "The exercise results showing reconciliation, error detection and referral to the responsible office."
+          },
+          "resourceIds": [
+            "ms-excel",
+            "guide-staff"
+          ]
+        },
+        {
+          "id": "exams-secure-handover",
+          "title": {
+            "ar": "التسليم السري وتتبع النسخ",
+            "en": "Confidential handover and version tracing"
+          },
+          "practice": {
+            "ar": "راجع مسار استلام ملف امتحاني وتسليمه: المخولون، النسخة الصحيحة، موضع الأصل وأثر التسليم؛ اختبره بمثال غير حساس.",
+            "en": "Review an examination file’s handover route: authorised recipients, correct version, original location and handover record; test it with a non-sensitive example."
+          },
+          "evidence": {
+            "ar": "ملاحظة تحسين في إجراء التسليم القائم، مع حفظ الأوراق والنتائج الفعلية في مسارها المقيد.",
+            "en": "An improvement note in the existing handover process, keeping actual papers and results in their restricted route."
+          },
+          "resourceIds": [
+            "guide-ethics-charter",
+            "account-security",
+            "drive-organisation"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clinical-training",
+      "audience": "staff",
+      "label": {
+        "ar": "رئيس قسم التدريب السريري والامتياز",
+        "en": "Head of Clinical Training and Internship"
+      },
+      "focus": {
+        "ar": "مسار تطوير مقترح لتنسيق التدريب والإشراف والتغذية الراجعة؛ المواد التعليمية مساندة ولا تستبدل الإشراف السريري أو الإجراءات المعتمدة.",
+        "en": "A recommended path for training coordination, supervision and feedback. Learning resources support, rather than replace, clinical supervision and approved procedures."
+      },
+      "skills": [
+        {
+          "id": "clinical-training-readiness",
+          "title": {
+            "ar": "تنسيق جاهزية الموقع والروتيشن",
+            "en": "Coordinating site and rotation readiness"
+          },
+          "practice": {
+            "ar": "راجع روتيشن واحدًا مع الشريك والمشرف: السعة، توزيع الطلبة، أهداف التعلم والاحتياج؛ حدّد تعارضًا يمكن معالجته قبل البدء.",
+            "en": "Review one rotation with the partner and supervisor: capacity, student allocation, learning goals and needs; identify a conflict that can be addressed before starting."
+          },
+          "evidence": {
+            "ar": "ملاحظة جاهزية أو تعديل متفق عليه في جدول الروتيشن وسجل التنسيق القائمين.",
+            "en": "A readiness note or agreed adjustment in the existing rotation timetable and coordination record."
+          },
+          "resourceIds": [
+            "nursing-leadership",
+            "guide-faculty-ta"
+          ]
+        },
+        {
+          "id": "clinical-training-feedback",
+          "title": {
+            "ar": "الملاحظة والتغذية الراجعة العملية",
+            "en": "Observation and practical feedback"
+          },
+          "practice": {
+            "ar": "في موقف محاكاة، استخدم معيار ملاحظة متفقًا عليه، ثم قدم تعليقًا يصف الأداء وخطوة تحسين محددة.",
+            "en": "In a simulation, use an agreed observation criterion and give feedback describing performance and one specific improvement step."
+          },
+          "evidence": {
+            "ar": "مثال تغذية راجعة ومراجعة المشرف، ضمن سجل التدريب أو المقرر الموجود.",
+            "en": "A feedback example and supervisor review in the existing training or course record."
+          },
+          "resourceIds": [
+            "clinical-sims",
+            "stanford-feedback"
+          ]
+        },
+        {
+          "id": "clinical-training-safety-learning",
+          "title": {
+            "ar": "التعلم من مخاطر التدريب",
+            "en": "Learning from training risks"
+          },
+          "practice": {
+            "ar": "ناقش سيناريو سلامة تعليميًا، وحدد نقطة اتصال أو تسليم تحتاج تحسينًا ومسار الإبلاغ المختص؛ استخدم أمثلة بلا بيانات مرضى.",
+            "en": "Discuss an educational safety scenario, identify a communication or handover point to improve and the appropriate reporting route; use examples without patient data."
+          },
+          "evidence": {
+            "ar": "خلاصة تعلم وإجراء مقترح في مراجعة التدريب القائمة؛ تُتابع الوقائع الحقيقية عبر مسارها المعتمد.",
+            "en": "A learning summary and proposed action in the existing training review; actual incidents follow their approved route."
+          },
+          "resourceIds": [
+            "patient-safety",
+            "guide-ethics-charter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ta",
+      "audience": "ta",
+      "label": {
+        "ar": "المعيد",
+        "en": "Teaching Assistant"
+      },
+      "focus": {
+        "ar": "مسار تطوير مقترح لمساندة التعلم والبحث تحت الإشراف، مع اختيار تطبيق يناسب التكليف الفعلي وحدود دور المعيد.",
+        "en": "A recommended path for supporting learning and research under supervision, choosing applications that fit the actual assignment and TA role limits."
+      },
+      "skills": [
+        {
+          "id": "ta-microteaching",
+          "title": {
+            "ar": "شرح قصير ومشاركة نشطة",
+            "en": "Microteaching and active participation"
+          },
+          "practice": {
+            "ar": "حضّر شرحًا من خمس دقائق لهدف واحد وسؤال تحقق، وجرّبه مع المشرف أو زميل قبل استخدامه في النشاط المكلف به.",
+            "en": "Prepare a five-minute explanation for one objective and a checking question; rehearse with a supervisor or colleague before using it in your assigned activity."
+          },
+          "evidence": {
+            "ar": "خطة الشرح وملاحظة التغذية الراجعة والتعديل ضمن مواد النشاط القائم.",
+            "en": "The explanation plan, feedback and revision within the existing activity materials."
+          },
+          "resourceIds": [
+            "berkeley-ta-start",
+            "stanford-feedback"
+          ]
+        },
+        {
+          "id": "ta-accessible-materials",
+          "title": {
+            "ar": "مواد تعليمية واضحة ومتاحة",
+            "en": "Clear and accessible learning materials"
+          },
+          "practice": {
+            "ar": "راجع ورقة تعليمية واحدة: تسلسل العناوين، وضوح المصطلحات، وصف الصورة والتباين؛ اطلب من طالب أو زميل تجربة فهمها.",
+            "en": "Review one learning sheet for heading order, clear terminology, image descriptions and contrast; ask a student or colleague to test its clarity."
+          },
+          "evidence": {
+            "ar": "نسخة محسّنة وملاحظة عن عائق أزيل، مع إبقاء اعتماد المادة لدى أستاذ المقرر.",
+            "en": "An improved version and a note on a removed barrier, with material approval remaining with the course teacher."
+          },
+          "resourceIds": [
+            "accessible-word",
+            "edinburgh-accessibility"
+          ]
+        },
+        {
+          "id": "ta-research-foundations",
+          "title": {
+            "ar": "بداية بحثية موثقة وأخلاقية",
+            "en": "Documented and ethical research foundations"
+          },
+          "practice": {
+            "ar": "صغ سؤالًا أوليًا مع المشرف، وابحث عن ثلاثة مصادر مناسبة وسجّلها بدقة؛ ناقش الموافقات اللازمة قبل أي جمع بيانات.",
+            "en": "Draft an initial question with your supervisor, find and accurately record three suitable sources, and discuss required approvals before collecting data."
+          },
+          "evidence": {
+            "ar": "سؤال منقح وقائمة مصادر وملاحظة توجيه من المشرف تحدد الخطوة التالية.",
+            "en": "A refined question, source list and supervisor guidance note identifying the next step."
+          },
+          "resourceIds": [
+            "pubmed-search",
+            "zotero-references",
+            "research-ethics"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "faculty",
+      "audience": "faculty",
+      "label": {
+        "ar": "عضو هيئة التدريس",
+        "en": "Faculty Member"
+      },
+      "focus": {
+        "ar": "مسار تطوير مقترح يربط تصميم التعلم والتقييم والبحث باحتياج المقرر وخطة التطوير الشخصية، ضمن التكليف الأكاديمي القائم.",
+        "en": "A recommended path linking learning design, assessment and research to course needs and the personal development plan, within the existing academic assignment."
+      },
+      "skills": [
+        {
+          "id": "faculty-alignment",
+          "title": {
+            "ar": "مواءمة المخرجات والتدريس والتقييم",
+            "en": "Aligning outcomes, teaching and assessment"
+          },
+          "practice": {
+            "ar": "اختر مخرج تعلم واحدًا، واربطه بنشاط تدريسي وطريقة تحقق مناسبة، ثم راجع الاتساق مع توصيف المقرر الساري.",
+            "en": "Choose one learning outcome, connect it to a teaching activity and a suitable assessment approach, then check alignment with the current course specification."
+          },
+          "evidence": {
+            "ar": "مثال مواءمة وملاحظة مراجعة نظير ضمن ملف المقرر القائم، مع اتباع مسار اعتماد أي تغيير رسمي.",
+            "en": "An alignment example and peer-review note in the existing course file, following the approval route for any formal change."
+          },
+          "resourceIds": [
+            "stanford-outcomes",
+            "assessment"
+          ]
+        },
+        {
+          "id": "faculty-assessment-feedback",
+          "title": {
+            "ar": "معايير واضحة وتغذية راجعة قابلة للتطبيق",
+            "en": "Clear criteria and usable feedback"
+          },
+          "practice": {
+            "ar": "جرّب مع زميل معيار تصحيح على عينات تدريبية، وناقشا الاختلاف؛ اكتب تعليقًا يوضح للطالب كيف يحسن المحاولة التالية.",
+            "en": "Try a marking criterion with a colleague on practice samples and discuss differences; write feedback explaining how a student can improve the next attempt."
+          },
+          "evidence": {
+            "ar": "مثال معيار وتعليق محسّنين في ملف المقرر؛ لا تُنشر أعمال أو درجات تكشف هوية الطلبة.",
+            "en": "An improved criterion and feedback example in the course file; do not publish student work or grades that reveal students’ identities."
+          },
+          "resourceIds": [
+            "berkeley-rubrics",
+            "stanford-feedback"
+          ]
+        },
+        {
+          "id": "faculty-responsible-research",
+          "title": {
+            "ar": "البحث والإشراف المسؤول",
+            "en": "Responsible research and supervision"
+          },
+          "practice": {
+            "ar": "راجع سؤالًا بحثيًا ومصادره وحدود الاستنتاج وخطة حفظ البيانات مع الفريق، ووضح الإسناد والموافقات المطلوبة قبل التنفيذ.",
+            "en": "Review a research question, sources, limits of inference and data-handling plan with the team, clarifying attribution and required approvals before implementation."
+          },
+          "evidence": {
+            "ar": "ملاحظة إشراف أو مراجعة منهجية وقائمة مصادر في ملف البحث القائم.",
+            "en": "A supervision or methods-review note and source list in the existing research file."
+          },
+          "resourceIds": [
+            "guide-research-en",
+            "research-ethics",
+            "zotero-references"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quality",
+      "audience": "staff",
+      "label": {
+        "ar": "ضمان الجودة وتقييم الأداء",
+        "en": "Quality Assurance and Performance Evaluation"
+      },
+      "focus": {
+        "ar": "مسار تطوير مقترح لربط الشواهد بمصادرها، وقراءة البيانات، ومتابعة التحسين من التطبيق إلى النتيجة.",
+        "en": "A recommended path for linking evidence to its sources, interpreting data and following improvement from application to results."
+      },
+      "skills": [
+        {
+          "id": "quality-evidence-traceability",
+          "title": {
+            "ar": "ربط الادعاء بالشاهد ومصدره",
+            "en": "Linking a claim to evidence and its source"
+          },
+          "practice": {
+            "ar": "اختر بندًا واحدًا، وحدد ما يراد إثباته والشاهد المناسب ومالك الأصل وتاريخه وحالته؛ حدّث الفهرس القائم بدل تكرار الملفات.",
+            "en": "Choose one item and identify the claim, suitable evidence, original owner, date and status; update the existing index rather than duplicating files."
+          },
+          "evidence": {
+            "ar": "شاهد موثق يمكن الرجوع إلى أصله، مع بيان حالته والنقص الذي يحتاج استكمالًا.",
+            "en": "Documented evidence traceable to its original, with its status and any gaps to address."
+          },
+          "resourceIds": [
+            "guide-staff",
+            "drive-organisation"
+          ]
+        },
+        {
+          "id": "quality-indicator-definition",
+          "title": {
+            "ar": "تعريف المؤشر وقراءة البيانات",
+            "en": "Defining indicators and interpreting data"
+          },
+          "practice": {
+            "ar": "صغ تعريفًا لمؤشر قائم: ما الذي يقيسه، وطريقة حسابه ومصدره وفترته؛ افصل الاستخدام عن الإنجاز والنتيجة الفعلية.",
+            "en": "Define an existing indicator: what it measures, its calculation, source and period; distinguish use from completion and actual outcomes."
+          },
+          "evidence": {
+            "ar": "حساب موثق ببيانات مجمعة وملاحظة عن النقص أو حدود المقارنة، ضمن مراجعة المؤشر القائمة.",
+            "en": "A documented calculation with aggregate data and a note on gaps or comparison limits in the existing indicator review."
+          },
+          "resourceIds": [
+            "ms-excel",
+            "edraak-data"
+          ]
+        },
+        {
+          "id": "quality-improvement-cycle",
+          "title": {
+            "ar": "اختبار التحسين ومتابعة النتيجة",
+            "en": "Testing improvement and following the result"
+          },
+          "practice": {
+            "ar": "مع مالك العملية، اختر مشكلة صغيرة وشاهدها، واقترح تغييرًا محدودًا وموعد مراجعة؛ قارن النتيجة بالسابق قبل التوسع.",
+            "en": "With the process owner, choose a small evidenced problem, propose a limited change and review date, and compare results with the baseline before expanding."
+          },
+          "evidence": {
+            "ar": "متابعة في خطة التحسين أو محضر اللجنة الموجود تبين التطبيق والنتيجة وقرار الاستمرار أو التعديل.",
+            "en": "Follow-up in the existing improvement plan or committee minutes recording application, results and the decision to continue or adjust."
+          },
+          "resourceIds": [
+            "teamwork",
+            "edraak-feedback"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "faculty_affairs",
+      "audience": "staff",
+      "label": {
+        "ar": "شؤون أعضاء هيئة التدريس",
+        "en": "Faculty Affairs"
+      },
+      "focus": {
+        "ar": "مسار تطوير مقترح لدعم أعضاء هيئة التدريس والمعيدين وتنسيق احتياجاتهم، مع حماية الملفات واتباع إجراءات العمل القائمة.",
+        "en": "A recommended path for supporting faculty and teaching assistants, coordinating their needs and protecting records within established work procedures."
+      },
+      "skills": [
+        {
+          "id": "faculty-affairs-needs",
+          "title": {
+            "ar": "تحديد احتياج التطوير بحسب الدور",
+            "en": "Identifying development needs by role"
+          },
+          "practice": {
+            "ar": "حوّل حاجة عملية متفقًا عليها إلى مهارة وتطبيق متوقع، ثم رشّح موردًا مناسبًا بلغته وشروطه ووقت تعلمه.",
+            "en": "Translate an agreed work need into a skill and expected application, then suggest a resource suited to language, access conditions and available learning time."
+          },
+          "evidence": {
+            "ar": "توصية تطوير ومثال التطبيق المتوقع ضمن الخطة أو سجل الاحتياج القائم.",
+            "en": "A development recommendation and expected application in the existing plan or needs record."
+          },
+          "resourceIds": [
+            "sa-hail-development-process",
+            "sa-pnu-training-plan-1448"
+          ]
+        },
+        {
+          "id": "faculty-affairs-records",
+          "title": {
+            "ar": "تنظيم الملف والتواصل بشأنه",
+            "en": "Organising records and related communication"
+          },
+          "practice": {
+            "ar": "راجع مسار طلب وظيفي يحق لك الاطلاع عليه: المستند الناقص والجهة المختصة والرد ومكان الأصل، مع ضبط صلاحية الوصول.",
+            "en": "Review an employment request you are authorised to access: missing document, responsible office, response and original location, with appropriate access permissions."
+          },
+          "evidence": {
+            "ar": "تحسين موثق في سجل المعاملة أو فهرس الملف القائم، دون نسخ ملفات الأفراد إلى أدوات التطوير الشخصية.",
+            "en": "An improvement recorded in the existing request log or file index, without copying personnel files into personal learning tools."
+          },
+          "resourceIds": [
+            "guide-staff",
+            "drive-organisation",
+            "account-security"
+          ]
+        },
+        {
+          "id": "faculty-affairs-orientation",
+          "title": {
+            "ar": "شرح الحقوق والمسؤوليات وأخلاقيات العمل",
+            "en": "Explaining rights, responsibilities and workplace ethics"
+          },
+          "practice": {
+            "ar": "حضّر حوار تهيئة قصيرًا حول موقف مهني واقعي، واربطه بالدليل والميثاق ومسار الاستفسار أو الإحالة القائم.",
+            "en": "Prepare a short orientation discussion around a realistic workplace situation, linking it to the guide, charter and existing enquiry or referral route."
+          },
+          "evidence": {
+            "ar": "مادة التهيئة وخلاصة الأسئلة والنقاط التي تحتاج توضيحًا في سجل النشاط القائم.",
+            "en": "Orientation material and a summary of questions and points needing clarification in the existing activity record."
+          },
+          "resourceIds": [
+            "guide-faculty-ta",
+            "guide-ethics-charter",
+            "guide-recognition-accountability"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "community_service",
+      "audience": "staff",
+      "label": {
+        "ar": "خدمة المجتمع",
+        "en": "Community Service"
+      },
+      "focus": {
+        "ar": "مسار تطوير مقترح لمبادرات مجتمعية مبنية على حاجة وشراكة ورسالة موثوقة؛ التنفيذ يخضع لتكليف النشاط وموافقاته القائمة.",
+        "en": "A recommended path for community initiatives based on a need, partnership and reliable message; delivery follows the activity’s existing assignment and approvals."
+      },
+      "skills": [
+        {
+          "id": "community-needs-listening",
+          "title": {
+            "ar": "الاستماع للحاجة وتحديد المستفيد",
+            "en": "Listening to needs and identifying beneficiaries"
+          },
+          "practice": {
+            "ar": "ناقش مع الشريك حاجة محددة وفئة مستفيدة، وافصل ما يمكن للكلية تقديمه عما يحتاج جهة مختصة أو موارد إضافية.",
+            "en": "Discuss a specific need and beneficiary group with the partner, distinguishing what the Faculty can offer from needs requiring another authority or additional resources."
+          },
+          "evidence": {
+            "ar": "خلاصة حاجة متفق عليها في ملف النشاط القائم، مع غرض واضح وحدود للمشاركة.",
+            "en": "An agreed needs summary in the existing activity file, with a clear purpose and participation boundaries."
+          },
+          "resourceIds": [
+            "workplace-communication",
+            "teamwork"
+          ]
+        },
+        {
+          "id": "community-health-communication",
+          "title": {
+            "ar": "صياغة رسالة صحية مفهومة",
+            "en": "Creating an understandable health message"
+          },
+          "practice": {
+            "ar": "حوّل مادة موثوقة إلى رسالة قصيرة تلائم الجمهور، وراجعها مع المختص واختبر فهمها قبل نشرها عبر القناة المصرح بها.",
+            "en": "Turn a reliable resource into a brief audience-appropriate message, obtain subject review and test understanding before publishing through the authorised channel."
+          },
+          "evidence": {
+            "ar": "نسخة مراجعة مع مرجع المصدر وتاريخه وملاحظة اختبار الفهم، دون صور أو بيانات تعريفية بلا إذن.",
+            "en": "A reviewed version with source and date plus comprehension feedback, without unauthorised identifiable images or data."
+          },
+          "resourceIds": [
+            "openwho",
+            "accessible-word",
+            "guide-ethics-charter"
+          ]
+        },
+        {
+          "id": "community-initiative-learning",
+          "title": {
+            "ar": "تنفيذ مبادرة محدودة وقياس فائدتها",
+            "en": "Delivering a bounded initiative and reviewing its benefit"
+          },
+          "practice": {
+            "ar": "حدد مخرجًا صغيرًا وأدوار الفريق والوقت والموارد، ثم اختر سؤالًا بسيطًا لقياس الفهم أو الفائدة بدل الاكتفاء بالحضور.",
+            "en": "Define a small output, team roles, time and resources, then choose a simple question about understanding or usefulness rather than attendance alone."
+          },
+          "evidence": {
+            "ar": "مخرج النشاط وتغذية راجعة مجمعة وتوصية للخطوة التالية في ملف النشاط.",
+            "en": "The activity output, aggregate feedback and a recommendation for the next step in the activity file."
+          },
+          "resourceIds": [
+            "teamwork",
+            "forms-basics",
+            "edraak-feedback"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dean",
+      "audience": "faculty",
+      "label": {
+        "ar": "عميد الكلية",
+        "en": "Dean"
+      },
+      "focus": {
+        "ar": "مسار تطوير مقترح للقيادة وربط الأولويات بالموارد والنتائج، وفق صلاحيات العميد والمجلس والجامعة.",
+        "en": "A recommended leadership path linking priorities, resources and results within the authority of the Dean, Council and University."
+      },
+      "skills": [
+        {
+          "id": "dean-strategy-to-action",
+          "title": {
+            "ar": "ترجمة الأولوية الاستراتيجية إلى عمل",
+            "en": "Translating a strategic priority into action"
+          },
+          "practice": {
+            "ar": "اختر أولوية من الخطة السارية، وحدد مخرجًا واقعيًا وجهة مسؤولة وموارد مطلوبة وموعد مراجعة، مع بيان ما يحتاج قرارًا أو تنسيقًا قبل التنفيذ.",
+            "en": "Choose a priority from the current plan and define a realistic output, responsible office, required resources and review date. Identify decisions or coordination needed before implementation."
+          },
+          "evidence": {
+            "ar": "ربط واضح بين الهدف والعمل والمؤشر في خطة التنفيذ أو محضر المتابعة، مع حالة البنود التي تحتاج قرارًا.",
+            "en": "A clear link between the objective, action and indicator in the implementation plan or follow-up minutes, including the status of items needing a decision."
+          },
+          "resourceIds": [
+            "nursing-leadership",
+            "teamwork"
+          ]
+        },
+        {
+          "id": "dean-evidence-led-decisions",
+          "title": {
+            "ar": "اتخاذ قرار واضح ومسند",
+            "en": "Making clear, evidence-informed decisions"
+          },
+          "practice": {
+            "ar": "راجع قرارًا مطروحًا ضمن عملك: قارن البدائل والموارد والأثر، وحدد المعلومات الناقصة وأي تعارض مصالح، وما يدخل في صلاحيتك وما يلزم رفعه للجهة المختصة.",
+            "en": "Review a decision arising in your work: compare options, resources and impact; identify missing information, conflicts of interest and matters within your authority or needing referral."
+          },
+          "evidence": {
+            "ar": "مذكرة توضح البدائل وأسباب الترجيح والجهة صاحبة الصلاحية والخطوة التالية في مسار القرار.",
+            "en": "A note setting out the options, reasons for the preferred option, decision-making authority and next step."
+          },
+          "resourceIds": [
+            "guide-ethics-charter",
+            "guide-recognition-accountability",
+            "nursing-leadership"
+          ]
+        },
+        {
+          "id": "dean-supporting-improvement",
+          "title": {
+            "ar": "قيادة التحسين وتنمية الفريق",
+            "en": "Leading improvement and developing the team"
+          },
+          "practice": {
+            "ar": "راجع مع مسؤول عملية عائقًا في الجودة أو الخدمة الرقمية، واتفقا على الدعم المطلوب وخطوة تحسين وموعد لمراجعة النتيجة.",
+            "en": "Review a quality or digital-service barrier with its process owner, and agree the support needed, an improvement action and a date to review the result."
+          },
+          "evidence": {
+            "ar": "متابعة في محضر المجلس أو خطة التحسين القائمة تبين الدعم والنتيجة والقرار التالي.",
+            "en": "Follow-up in existing Council minutes or the improvement plan recording support, results and the next decision."
+          },
+          "resourceIds": [
+            "nursing-leadership",
+            "sa-pnu-training-plan-1448",
+            "edraak-feedback"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "academic_vice_dean",
+      "audience": "faculty",
+      "label": {
+        "ar": "وكيل الكلية للشؤون العلمية",
+        "en": "Vice Dean for Academic Affairs"
+      },
+      "focus": {
+        "ar": "مسار تطوير مقترح لتنسيق التعليم ومتابعة اتساقه وتحسينه، مع العمل وفق التوصيفات والقرارات والصلاحيات السارية.",
+        "en": "A recommended path for coordinating teaching, reviewing alignment and improving provision under current specifications, decisions and authority."
+      },
+      "skills": [
+        {
+          "id": "academic-vice-dean-alignment",
+          "title": {
+            "ar": "مراجعة اتساق البرنامج والمقررات",
+            "en": "Reviewing programme and course alignment"
+          },
+          "practice": {
+            "ar": "راجع مخرجات مقررات محددة وطرق تدريسها وتقييمها مع المنسقين، وحدد فجوة تستحق المعالجة، ثم ارفع التوصية عبر مسار المراجعة المعمول به.",
+            "en": "Review selected courses’ outcomes, teaching and assessment with coordinators, identify a gap to address and submit the recommendation through the established review process."
+          },
+          "evidence": {
+            "ar": "ملاحظة مراجعة تربط المخرج بالفجوة والتوصية، وتحدد جهة المتابعة والخطوة التالية.",
+            "en": "A review note linking the outcome, gap and recommendation, and identifying the follow-up office and next step."
+          },
+          "resourceIds": [
+            "stanford-outcomes",
+            "assessment",
+            "guide-faculty-ta"
+          ]
+        },
+        {
+          "id": "academic-vice-dean-coordination",
+          "title": {
+            "ar": "تنسيق التدريس والتدريب والدعم",
+            "en": "Coordinating teaching, training and support"
+          },
+          "practice": {
+            "ar": "عالج مع الأطراف المعنية تعارضًا في الجدول أو السعة أو احتياج الدعم، وحدد متطلبات الحل والخطوة التالية ومن يتابعها.",
+            "en": "Work with the relevant colleagues to resolve a timetable, capacity or support conflict, identifying what the solution needs, the next step and who will follow it up."
+          },
+          "evidence": {
+            "ar": "تحديث متفق عليه في محضر التنسيق أو الجدول القائم، يوضح من يتابع وما يحتاج تأكيدًا.",
+            "en": "An agreed update in existing coordination minutes or the timetable, showing who follows up and what needs confirmation."
+          },
+          "resourceIds": [
+            "teamwork",
+            "workplace-communication",
+            "stanford-inclusion"
+          ]
+        },
+        {
+          "id": "academic-vice-dean-teaching-improvement",
+          "title": {
+            "ar": "متابعة تحسين التعليم والأدوات الرقمية",
+            "en": "Following up improvements in teaching and digital tools"
+          },
+          "practice": {
+            "ar": "اختر مع فريق المقرر تحسينًا واحدًا، مثل إتاحة المادة أو التغذية الراجعة. حدد الوضع الحالي وخطوة التنفيذ وموعد المراجعة، ثم استخدم النتيجة لتقرير التوسع أو التعديل.",
+            "en": "With the course team, choose one improvement, such as accessible materials or feedback. Establish the current position, implementation step and review date, then use the result to decide whether to expand or adjust."
+          },
+          "evidence": {
+            "ar": "خلاصة تطبيق ونتيجة وتوصية في تقرير المقرر أو خطة التحسين القائمة، مع ربطها بالهدف ذي الصلة.",
+            "en": "An application summary, result and recommendation in the existing course report or improvement plan, linked to the relevant objective."
+          },
+          "resourceIds": [
+            "edinburgh-accessibility",
+            "stanford-feedback",
+            "edraak-feedback"
+          ]
+        }
+      ]
+    }
+  ],
+  "commonModules": [
+    {
+      "id": "time",
+      "title": {
+        "ar": "إدارة الوقت والأولويات",
+        "en": "Time and priority management"
+      },
+      "intro": {
+        "ar": "نظّم أسبوعك حول أولوية إلى ثلاث أولويات، وحدد لكل عمل موعدًا وخطوة تالية. استخدم الخطة الأسبوعية لتوزيع الوقت ومراجعة التقدم. تُحفظ مسودتك في هذا المتصفح ويمكنك تصدير نسخة منها؛ وتُوثّق الأعمال الرسمية في سجلات الكلية المعتادة.",
+        "en": "Organise your week around one to three priorities, with a date and next step for each task. Use the weekly planner to allocate time and review progress. Your draft is saved in this browser and can be exported; official work is documented in the Faculty’s usual records."
+      },
+      "steps": [
+        {
+          "title": {
+            "ar": "ابدأ بالمخرج",
+            "en": "Start with the output"
+          },
+          "body": {
+            "ar": "سمِّ ما يجب أن يكتمل ولماذا، واستند إلى موعد حقيقي أو اتفاق قائم؛ افصل المهم عن الاستعجال الظاهري.",
+            "en": "Name what needs to be completed and why, using an actual deadline or existing agreement; distinguish importance from apparent urgency."
+          }
+        },
+        {
+          "title": {
+            "ar": "احجز وقتًا واقعيًا",
+            "en": "Reserve realistic time"
+          },
+          "body": {
+            "ar": "قسّم العمل إلى خطوة يمكن إنجازها في جلسة، واحجز لها وقتًا يناسب جدولك واترك مساحة للطلبات الطارئة.",
+            "en": "Break work into a step that fits one session, reserve a suitable time and leave room for unexpected requests."
+          }
+        },
+        {
+          "title": {
+            "ar": "حدّد ما تحتاجه لإنجاز العمل",
+            "en": "Identify what you need to complete the work"
+          },
+          "body": {
+            "ar": "حدد المستند أو الرد أو الموافقة التي تنتظرها، وتواصل مع صاحبها قبل أن تتوقف الخطوة التالية.",
+            "en": "Identify documents, responses or approvals you need and contact their owners before the next step becomes blocked."
+          }
+        },
+        {
+          "title": {
+            "ar": "راجع ثم عدّل",
+            "en": "Review and adjust"
+          },
+          "body": {
+            "ar": "راجع آخر اليوم ما أُنجز وما تعثر وسببه. حدّث خطتك وحدد الخطوة التالية وموعدها.",
+            "en": "At the end of the day, review progress, blockers and their causes. Update your plan and set the next step and its date."
+          }
+        },
+        {
+          "title": {
+            "ar": "اختر مهارة للأسبوع التالي",
+            "en": "Choose a skill for the next week"
+          },
+          "body": {
+            "ar": "قارن الوقت المتوقع بالفعلي، وحدد مشتتًا أو فجوة مهارية واحدة؛ انقل هدف التعلم إلى خطة التطوير الحالية مع مثال تطبيق.",
+            "en": "Compare expected and actual time, identify one distraction or skill gap, and add a learning goal with an application example to the existing development plan."
+          }
+        }
+      ],
+      "example": {
+        "ar": "مثال للمسجل: تخصيص جلسة لتدقيق بيانات القيد، وأخرى لمراجعة متطلبات إفادة، ثم متابعة رد مطلوب في موعد محدد.",
+        "en": "Registrar example: reserve one session to check registration data, another to review statement requirements, and a scheduled follow-up for a needed response."
+      },
+      "resourceIds": [
+        "openlearn-time-management",
+        "outlook-organisation",
+        "workspace-admin"
+      ]
+    },
+    {
+      "id": "project",
+      "title": {
+        "ar": "إدارة مشروع صغير",
+        "en": "Managing a small project"
+      },
+      "intro": {
+        "ar": "نظّم مشروعًا محدودًا من تحديد النتيجة إلى التنفيذ والتسليم، مع توضيح المسؤوليات والوقت والموارد وطريقة المتابعة. اتفق على التنفيذ مع المسؤول المختص، ووزّع خطواتك في الخطة الأسبوعية.",
+        "en": "Organise a small project from defining the result to delivery and handover, with clear responsibilities, time, resources and progress reviews. Agree implementation with the responsible person and allocate your steps in the weekly planner."
+      },
+      "steps": [
+        {
+          "title": {
+            "ar": "حدد النطاق والمخرج",
+            "en": "Define scope and output"
+          },
+          "body": {
+            "ar": "اكتب المشكلة والمستفيد والمخرج المتوقع ومعيار قبوله؛ وضح ما يشمله المشروع وما يؤجل.",
+            "en": "State the problem, beneficiary, expected output and acceptance criterion; clarify what the project includes and what is deferred."
+          }
+        },
+        {
+          "title": {
+            "ar": "رتّب الخطوات ومسؤولياتها",
+            "en": "Order the steps and assign responsibilities"
+          },
+          "body": {
+            "ar": "قسّم المخرج إلى مراحل قليلة، وحدد مع الفريق من ينفذ ومن يراجع وما يحتاج موافقة أو موردًا قبل البدء.",
+            "en": "Break the output into a few stages and agree who does and reviews each part and which approvals or resources are needed first."
+          }
+        },
+        {
+          "title": {
+            "ar": "قدّر الوقت والمخاطر",
+            "en": "Estimate time and risks"
+          },
+          "body": {
+            "ar": "ضع مواعيد واقعية متفقًا عليها، وحدد أهم عائق وخيارًا بديلًا، مع احترام خصوصية البيانات وصلاحيات الأدوات.",
+            "en": "Agree realistic dates, identify the main obstacle and a fallback, and respect data privacy and tool permissions."
+          }
+        },
+        {
+          "title": {
+            "ar": "نفّذ وتابع التقدم",
+            "en": "Implement and review progress"
+          },
+          "body": {
+            "ar": "نفّذ الخطوات المتفق عليها، وراجع التقدم والاحتياجات مع الفريق؛ وثّق القرارات والتغييرات في ملف العمل الموجود.",
+            "en": "Carry out the agreed steps and review progress and needs with the team; record decisions and changes in the existing work file."
+          }
+        },
+        {
+          "title": {
+            "ar": "سلّم وتعلّم",
+            "en": "Hand over and learn"
+          },
+          "body": {
+            "ar": "راجع قبول المخرج مع صاحبه، ووضح موضع الأصل وطريقة استخدامه وما يحتاج متابعة؛ سجّل درسًا تطبقه في العمل التالي.",
+            "en": "Review acceptance with the owner, explain the original location, use and follow-up needs, and record one lesson for the next task."
+          }
+        }
+      ],
+      "example": {
+        "ar": "مثال: تنظيم أرشيف مقرر واحد في المساحة المعتمدة وفق الفهرس القائم، ثم مقارنة سهولة استرجاع ملفات محددة قبل التنظيم وبعده.",
+        "en": "Example: organise one course archive in approved storage using the existing index, then compare how easily selected files can be retrieved before and after."
+      },
+      "resourceIds": [
+        "openlearn-project-start",
+        "openlearn-virtual-project-teams",
+        "teamwork"
+      ]
+    },
+    {
+      "id": "initiative",
+      "title": {
+        "ar": "من الفكرة إلى مبادرة ذات فائدة",
+        "en": "From an idea to a useful initiative"
+      },
+      "intro": {
+        "ar": "حوّل حاجة واضحة إلى مبادرة قابلة للتنفيذ والمتابعة، بالتنسيق مع المسؤول والشركاء. حدد المساهمة والموارد والنتيجة المتوقعة، واربط ما تتعلمه بخطة تطويرك.",
+        "en": "Turn a clear need into an initiative that can be delivered and reviewed, in coordination with the lead and partners. Define contributions, resources and the expected result, and link what you learn to your development plan."
+      },
+      "steps": [
+        {
+          "title": {
+            "ar": "ابدأ بحاجة واضحة",
+            "en": "Start with a clear need"
+          },
+          "body": {
+            "ar": "استمع إلى الفئة المستفيدة والشريك، وحدد المشكلة أو فرصة التحسين ودليلًا بسيطًا على وجودها.",
+            "en": "Listen to beneficiaries and the partner, then identify the problem or opportunity and simple evidence that it exists."
+          }
+        },
+        {
+          "title": {
+            "ar": "اربط الفكرة بهدف واضح",
+            "en": "Connect the idea to a clear objective"
+          },
+          "body": {
+            "ar": "اربط المبادرة بهدف من الخطة السارية، وحدد النتيجة التي تتوقعها وما يستطيع الفريق تقديمه.",
+            "en": "Connect the initiative to an objective in the current plan, and define the expected result and what the team can provide."
+          }
+        },
+        {
+          "title": {
+            "ar": "اتفق على النطاق والشراكة",
+            "en": "Agree scope and partnership"
+          },
+          "body": {
+            "ar": "حدد نطاقًا صغيرًا وشريكًا ومسؤول متابعة وموارد متاحة، واستكمل الموافقات المطلوبة قبل التواصل أو النشر أو جمع البيانات.",
+            "en": "Define a small scope, partner, follow-up owner and available resources, and obtain required approvals before outreach, publication or data collection."
+          }
+        },
+        {
+          "title": {
+            "ar": "قِس الفائدة بصورة مناسبة",
+            "en": "Review benefit appropriately"
+          },
+          "body": {
+            "ar": "اختر سؤال فهم أو فائدة أو تغييرًا قابلًا للملاحظة، واجمع أقل قدر لازم من المعلومات عبر الوسيلة المعتمدة.",
+            "en": "Choose a comprehension or usefulness question or an observable change, and collect only necessary information through an approved method."
+          }
+        },
+        {
+          "title": {
+            "ar": "قرر الخطوة التالية",
+            "en": "Decide the next step"
+          },
+          "body": {
+            "ar": "راجع النتيجة مع المستفيد والشريك: هل تكرر الفكرة أو تعدلها أو توقفها؟ احتفظ بالمخرج والخلاصة في ملف النشاط القائم.",
+            "en": "Review the result with beneficiaries and the partner: repeat, adjust or stop? Retain the output and summary in the existing activity file."
+          }
+        }
+      ],
+      "example": {
+        "ar": "مثال: جلسة توعية مجتمعية برسالة صحية مراجعة، يشارك فيها عضو هيئة تدريس ومعيد وموظف وفق أدوار متفق عليها، ثم تُجمع ملاحظات المشاركين عن وضوح الرسالة وفائدتها لتطوير الجلسة التالية.",
+        "en": "Example: a community session using a reviewed health message, with a faculty member, TA and employee in agreed roles, followed by participants’ feedback on clarity and usefulness to improve the next session."
+      },
+      "resourceIds": [
+        "openlearn-project-start",
+        "openlearn-virtual-project-teams",
+        "workplace-communication",
+        "edraak-feedback"
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "id": "guide-staff",
+      "title": {
+        "ar": "دليل الموظف",
+        "en": "Employee guide"
+      },
+      "url": "./guides/employee-guide.pdf",
+      "provider": "كلية التمريض · Tobruk University",
+      "language": "ar",
+      "access": {
+        "ar": "ملف PDF بالعربية للقراءة، مع قيود الطباعة والنسخ واستخراج النص. نسخة النشر: 21 أكتوبر 2026.",
+        "en": "Arabic PDF for reading, with printing, copying and text-extraction restrictions. Published edition: 21 October 2026."
+      }
+    },
+    {
+      "id": "guide-faculty-ta",
+      "title": {
+        "ar": "دليل عضو هيئة التدريس والمعيد",
+        "en": "Faculty and teaching assistant guide"
+      },
+      "url": "./guides/faculty-ta-guide.pdf",
+      "provider": "كلية التمريض · Tobruk University",
+      "language": "ar",
+      "access": {
+        "ar": "ملف PDF بالعربية للقراءة، مع قيود الطباعة والنسخ واستخراج النص. نسخة النشر: 21 أكتوبر 2026.",
+        "en": "Arabic PDF for reading, with printing, copying and text-extraction restrictions. Published edition: 21 October 2026."
+      }
+    },
+    {
+      "id": "guide-research-en",
+      "title": {
+        "ar": "دليل البحث العلمي وبحوث التخرج – الإنجليزية",
+        "en": "Research and Graduation Research Guide"
+      },
+      "url": "./guides/research-guide-en.pdf",
+      "provider": "كلية التمريض · Tobruk University",
+      "language": "en",
+      "access": {
+        "ar": "ملف PDF بالإنجليزية للقراءة، مع قيود الطباعة والنسخ واستخراج النص. نسخة النشر: 21 أكتوبر 2026.",
+        "en": "English PDF for reading, with printing, copying and text-extraction restrictions. Published edition: 21 October 2026."
+      }
+    },
+    {
+      "id": "guide-ethics-charter",
+      "title": {
+        "ar": "الميثاق الأخلاقي والسلوك المؤسسي",
+        "en": "Workplace ethics and conduct"
+      },
+      "url": "./guides/ethics-charter.pdf",
+      "provider": "كلية التمريض · Tobruk University",
+      "language": "multi",
+      "access": {
+        "ar": "نسخة PDF محمية للقراءة. أصل عربي وملخص إنجليزي. نشر 24 أكتوبر 2026.",
+        "en": "Protected reading PDF: Arabic charter body and an English summary. Published 24 October 2026."
+      }
+    },
+    {
+      "id": "guide-recognition-accountability",
+      "title": {
+        "ar": "الثواب والعقاب: التقدير والمساءلة النظامية",
+        "en": "Recognition and fair accountability"
+      },
+      "url": "./guides/recognition-accountability.pdf",
+      "provider": "كلية التمريض · Tobruk University",
+      "language": "multi",
+      "access": {
+        "ar": "نسخة PDF محمية للقراءة بالعربية مع ملخص إنجليزي. نشر 24 أكتوبر 2026.",
+        "en": "Protected reading PDF in Arabic with an English summary. Published 24 October 2026."
+      }
+    },
+    {
+      "id": "ms-excel",
+      "title": {
+        "ar": "تعلّم Excel خطوة بخطوة",
+        "en": "Excel help and learning"
+      },
+      "url": "https://support.microsoft.com/ar-sa/excel/",
+      "provider": "Microsoft",
+      "language": "multi",
+      "access": {
+        "ar": "مواد تعليمية مجانية؛ لا شهادة. ترخيص برنامج Excel منفصل. غيّر لغة الموقع للإنجليزية عند الحاجة.",
+        "en": "Free learning materials; no certificate. Excel software licence is separate. Switch the provider website to English if needed."
+      }
+    },
+    {
+      "id": "workspace-admin",
+      "title": {
+        "ar": "تنظيم العمل الإداري بأدوات Google",
+        "en": "Google Workspace for administrative assistants"
+      },
+      "url": "https://support.google.com/a/users/answer/9282973?hl=ar",
+      "provider": "Google",
+      "language": "multi",
+      "access": {
+        "ar": "إرشادات مجانية؛ لا شهادة. بعض الوظائف تتطلب حساب Workspace مناسبًا. يمكن تغيير لغة المصدر.",
+        "en": "Free guidance; no certificate. Some features require an appropriate Workspace account. Provider language can be changed."
+      }
+    },
+    {
+      "id": "edraak-data",
+      "title": {
+        "ar": "تحليل البيانات باستخدام Excel",
+        "en": "Data analysis with Excel"
+      },
+      "url": "https://www.edraak.org/programs/course/dae101-vt1-2021/",
+      "provider": "إدراك · Edraak",
+      "language": "ar",
+      "access": {
+        "ar": "التعلّم عبر إدراك مجاني ويلزم حساب. راجع شروط الإتمام؛ ترخيص Excel منفصل.",
+        "en": "Edraak learning is free; account required. Check completion conditions; Excel software licence is separate."
+      }
+    },
+    {
+      "id": "assessment",
+      "title": {
+        "ar": "أساليب التقييم المبتكرة",
+        "en": "Exploring innovative assessment methods"
+      },
+      "url": "https://www.open.edu/openlearn/education-development/exploring-innovative-assessment-methods",
+      "provider": "The Open University · OpenLearn",
+      "language": "en",
+      "access": {
+        "ar": "دورة مجانية وإفادة مشاركة مجانية؛ يلزم حساب لتتبع التقدم والإفادة.",
+        "en": "Free course and free participation statement; account needed for progress tracking and the statement."
+      }
+    },
+    {
+      "id": "research-ethics",
+      "title": {
+        "ar": "أخلاقيات البحث العلمي",
+        "en": "Research Ethics Online Training V2"
+      },
+      "url": "https://globalhealthtrainingcentre.tghn.org/research-ethics-online-training-v2/",
+      "provider": "The Global Health Network",
+      "language": "en",
+      "access": {
+        "ar": "تعلم وشهادات وحدات مجانًا؛ يلزم حساب و80% في التقييم.",
+        "en": "Free learning and module certificates; account and assessment score of 80% required."
+      }
+    },
+    {
+      "id": "patient-safety",
+      "title": {
+        "ar": "سلامة المرضى",
+        "en": "Patient Safety"
+      },
+      "url": "https://courses.nextgenu.org/course/view.php?id=313",
+      "provider": "NextGenU",
+      "language": "en",
+      "access": {
+        "ar": "الدورة وشهادة الإتمام مجانًا؛ يلزم حساب واستيفاء متطلبات الدورة.",
+        "en": "Free course and completion certificate; account and course requirements apply."
+      }
+    },
+    {
+      "id": "nursing-leadership",
+      "title": {
+        "ar": "القيادة والإدارة في التمريض",
+        "en": "Leadership and Management in Nursing"
+      },
+      "url": "https://courses.nextgenu.org/course/view.php?id=486",
+      "provider": "NextGenU",
+      "language": "en",
+      "access": {
+        "ar": "الدورة وشهادة الإتمام مجانًا؛ يلزم حساب واستيفاء متطلبات الدورة.",
+        "en": "Free course and completion certificate; account and course requirements apply."
+      }
+    },
+    {
+      "id": "clinical-sims",
+      "title": {
+        "ar": "المحاكاة والمهارات التمريضية",
+        "en": "Nursing simulations and skills"
+      },
+      "url": "../clinical-simulations/",
+      "provider": "كلية التمريض · Tobruk University",
+      "language": "multi",
+      "access": {
+        "ar": "نماذج تعليمية تجريبية مجانية؛ تُستخدم مع إشراف وتحقق أستاذ المادة.",
+        "en": "Free experimental learning models; use with instructor supervision and verification."
+      }
+    },
+    {
+      "id": "openwho",
+      "title": {
+        "ar": "مواد منظمة الصحة العالمية للتعلم",
+        "en": "WHO learning resources"
+      },
+      "url": "https://openwho.org/",
+      "provider": "OpenWHO",
+      "language": "multi",
+      "access": {
+        "ar": "مجانية دون تسجيل؛ لا يقدم OpenWHO حاليًا شهادات. تحقق من لغة كل مادة.",
+        "en": "Free without registration; OpenWHO currently does not issue certificates. Check each resource language."
+      }
+    },
+    {
+      "id": "stanford-feedback",
+      "title": {
+        "ar": "التقييم البنائي والتغذية الراجعة",
+        "en": "Formative assessment and feedback"
+      },
+      "url": "https://teachingcommons.stanford.edu/teaching-guides/foundations-course-design/feedback-and-assessment/formative-assessment-and-feedback",
+      "provider": "Stanford University",
+      "language": "en",
+      "access": {
+        "ar": "مرجع مفتوح للقراءة مجانًا دون تسجيل؛ لا يمنح شهادة. تُكيّف الأفكار مع لوائح الكلية ومقرراتها.",
+        "en": "Open reference, free to read without registration; no certificate. Adapt ideas to Faculty regulations and courses."
+      }
+    },
+    {
+      "id": "stanford-outcomes",
+      "title": {
+        "ar": "صياغة مخرجات تعلّم واضحة",
+        "en": "Creating learning outcomes"
+      },
+      "url": "https://teachingcommons.stanford.edu/teaching-guides/foundations-course-design/course-planning/creating-learning-outcomes",
+      "provider": "Stanford University",
+      "language": "en",
+      "access": {
+        "ar": "مرجع مفتوح للقراءة مجانًا دون تسجيل؛ لا يمنح شهادة. تُكيّف الأفكار مع لوائح الكلية ومقرراتها.",
+        "en": "Open reference, free to read without registration; no certificate. Adapt ideas to Faculty regulations and courses."
+      }
+    },
+    {
+      "id": "stanford-inclusion",
+      "title": {
+        "ar": "تدريس يراعي تنوّع احتياجات الطلبة",
+        "en": "Inclusive teaching practices"
+      },
+      "url": "https://teachingcommons.stanford.edu/teaching-guides/inclusive-teaching-guide/getting-started-inclusive-teaching/overview-inclusive",
+      "provider": "Stanford University",
+      "language": "en",
+      "access": {
+        "ar": "مرجع مفتوح للقراءة مجانًا دون تسجيل؛ لا يمنح شهادة. تُكيّف الأفكار مع لوائح الكلية ومقرراتها.",
+        "en": "Open reference, free to read without registration; no certificate. Adapt ideas to Faculty regulations and courses."
+      }
+    },
+    {
+      "id": "berkeley-ta-start",
+      "title": {
+        "ar": "استعداد المعيد قبل بدء التدريس",
+        "en": "TA preparation before the semester"
+      },
+      "url": "https://gsi.berkeley.edu/gsi-guide-contents/pre-semester-intro/",
+      "provider": "University of California, Berkeley",
+      "language": "en",
+      "access": {
+        "ar": "مرجع مفتوح للقراءة مجانًا دون تسجيل؛ لا يمنح شهادة. تُكيّف الأفكار مع لوائح الكلية ومقرراتها.",
+        "en": "Open reference, free to read without registration; no certificate. Adapt ideas to Faculty regulations and courses."
+      }
+    },
+    {
+      "id": "berkeley-rubrics",
+      "title": {
+        "ar": "معايير التصحيح والتعليق على أعمال الطلبة",
+        "en": "Grading criteria and comments on student work"
+      },
+      "url": "https://gsi.berkeley.edu/gsi-guide-contents/grading-intro/",
+      "provider": "University of California, Berkeley",
+      "language": "en",
+      "access": {
+        "ar": "مرجع مفتوح للقراءة مجانًا دون تسجيل؛ لا يمنح شهادة. تُكيّف الأفكار مع لوائح الكلية ومقرراتها.",
+        "en": "Open reference, free to read without registration; no certificate. Adapt ideas to Faculty regulations and courses."
+      }
+    },
+    {
+      "id": "zotero-references",
+      "title": {
+        "ar": "تنظيم المراجع والتوثيق باستخدام Zotero",
+        "en": "Managing references with Zotero"
+      },
+      "url": "https://www.zotero.org/support/quick_start_guide",
+      "provider": "Zotero",
+      "language": "en",
+      "access": {
+        "ar": "الشرح والبرنامج الأساسي مجانيان؛ لا شهادة. حساب للمزامنة؛ سعات تخزين الملفات الإضافية اختيارية ومدفوعة.",
+        "en": "Free documentation and core software; no certificate. Account for sync; extra attachment storage is optional and paid."
+      }
+    },
+    {
+      "id": "pubmed-search",
+      "title": {
+        "ar": "مهارات البحث في PubMed",
+        "en": "Searching PubMed effectively"
+      },
+      "url": "https://pubmed.ncbi.nlm.nih.gov/help/",
+      "provider": "U.S. National Library of Medicine",
+      "language": "en",
+      "access": {
+        "ar": "الدليل والبحث مجانيان دون تسجيل؛ لا شهادة. بعض النصوص الكاملة لدى الناشرين قد تحتاج اشتراكًا.",
+        "en": "Free guide and searching without registration; no certificate. Some publishers’ full-text articles may require a subscription."
+      }
+    },
+    {
+      "id": "edraak-feedback",
+      "title": {
+        "ar": "إعطاء واستقبال التغذية الراجعة بنجاح",
+        "en": "Giving and receiving feedback successfully"
+      },
+      "url": "https://www.edraak.org/programs/course/agr-v1/",
+      "provider": "إدراك · Edraak",
+      "language": "ar",
+      "access": {
+        "ar": "التعلّم مجاني ويلزم حساب. راجع التوفر ومتطلبات الإتمام والشهادة في صفحة الدورة.",
+        "en": "Free learning; account required. Check availability and completion/certificate requirements on the course page."
+      }
+    },
+    {
+      "id": "drive-organisation",
+      "title": {
+        "ar": "تنظيم الملفات والسجلات الرقمية",
+        "en": "Organising digital files and records"
+      },
+      "url": "https://support.google.com/drive/answer/2375091?co=GENIE.Platform%3DDesktop&hl=ar",
+      "provider": "Google",
+      "language": "multi",
+      "access": {
+        "ar": "إرشادات مجانية دون تسجيل للقراءة؛ التطبيق يحتاج حساب Google وصلاحيات مناسبة. لا شهادة.",
+        "en": "Free guidance without sign-in; practice requires a Google account and appropriate permissions. No certificate."
+      }
+    },
+    {
+      "id": "accessible-word",
+      "title": {
+        "ar": "مستندات Word أسهل للجميع",
+        "en": "Accessible Word documents"
+      },
+      "url": "https://support.microsoft.com/ar-sa/accessibility/word/make-your-word-documents-accessible-to-people-with-disabilities",
+      "provider": "Microsoft",
+      "language": "multi",
+      "access": {
+        "ar": "إرشادات مجانية؛ لا شهادة. استخدام Word وترخيصه منفصلان. يمكن تغيير لغة موقع Microsoft.",
+        "en": "Free guidance; no certificate. Word access and licensing are separate. Microsoft website language can be changed."
+      }
+    },
+    {
+      "id": "workplace-communication",
+      "title": {
+        "ar": "التواصل الفعّال في العمل",
+        "en": "Effective communication in the workplace"
+      },
+      "url": "https://www.open.edu/openlearn/money-business/effective-communication-the-workplace/content-section-overview",
+      "provider": "The Open University · OpenLearn",
+      "language": "en",
+      "access": {
+        "ar": "دورة مجانية، نحو 24 ساعة. المحتوى متاح دون تسجيل؛ حساب للتتبع وإفادة المشاركة والشارة بعد استيفاء المتطلبات.",
+        "en": "Free course, about 24 hours. Content is readable without signing up; an account is required for tracking, participation statement and badge after meeting requirements."
+      }
+    },
+    {
+      "id": "teamwork",
+      "title": {
+        "ar": "العمل ضمن فريق",
+        "en": "Working in teams"
+      },
+      "url": "https://www.open.edu/openlearn/money-business/working-teams",
+      "provider": "The Open University · OpenLearn",
+      "language": "en",
+      "access": {
+        "ar": "دورة مجانية، نحو 24 ساعة؛ المحتوى متاح دون تسجيل، وحساب للتتبع وإفادة المشاركة والشارة وفق متطلبات الإتمام.",
+        "en": "Free course, about 24 hours; content is readable without signing up, with an account required for tracking, participation statement and badge subject to completion requirements."
+      }
+    },
+    {
+      "id": "forms-basics",
+      "title": {
+        "ar": "إنشاء النماذج ومتابعة الردود",
+        "en": "Creating forms and reviewing responses"
+      },
+      "url": "https://support.google.com/docs/answer/6281888?co=GENIE.Platform%3DDesktop&hl=ar",
+      "provider": "Google",
+      "language": "multi",
+      "access": {
+        "ar": "إرشادات مجانية؛ لا شهادة. إنشاء النماذج يحتاج حساب Google؛ بعض مزايا المؤسسة تتطلب خطة مناسبة.",
+        "en": "Free guidance; no certificate. Creating forms requires a Google account; some organisational features require an eligible plan."
+      }
+    },
+    {
+      "id": "account-security",
+      "title": {
+        "ar": "حماية حساب العمل بالتحقق بخطوتين",
+        "en": "Protecting work accounts with two-step verification"
+      },
+      "url": "https://support.google.com/accounts/answer/185839?co=GENIE.Platform%3DDesktop&hl=ar",
+      "provider": "Google",
+      "language": "multi",
+      "access": {
+        "ar": "إرشادات مجانية؛ لا شهادة. الحساب المؤسسي يخضع لإعدادات المشرف.",
+        "en": "Free guidance; no certificate. Institutional accounts follow administrator settings."
+      }
+    },
+    {
+      "id": "outlook-organisation",
+      "title": {
+        "ar": "تنظيم البريد والمواعيد والمهام",
+        "en": "Organising email, appointments and tasks"
+      },
+      "url": "https://support.microsoft.com/ar-sa/outlook/best-practices-for-outlook",
+      "provider": "Microsoft",
+      "language": "multi",
+      "access": {
+        "ar": "إرشادات مجانية؛ لا شهادة. التطبيق يحتاج إصدار Outlook وحسابًا مناسبين؛ الترخيص منفصل.",
+        "en": "Free guidance; no certificate. Practice requires a suitable Outlook version and account; licensing is separate."
+      }
+    },
+    {
+      "id": "edinburgh-accessibility",
+      "title": {
+        "ar": "قائمة فحص إتاحة مواد التعلم",
+        "en": "Learning-material accessibility checklist"
+      },
+      "url": "https://information-services.ed.ac.uk/learning-technology/accessibility/accessibility-checklist",
+      "provider": "University of Edinburgh",
+      "language": "en",
+      "access": {
+        "ar": "مرجع جامعي عام مجاني بالإنجليزية؛ ليس دورة أو شهادة. بعض روابط الدعم والخدمات المضمنة تخص منسوبي جامعة إدنبرة.",
+        "en": "Free public university reference in English, not a course or certificate. Some linked support services are for Edinburgh members."
+      }
+    },
+    {
+      "id": "sa-pnu-training-plan-1448",
+      "title": {
+        "ar": "خطة تطوير القدرات وربط التدريب بالأثر — 1448 هـ",
+        "en": "Capacity-development plan linking training to impact —1448 H"
+      },
+      "url": "https://pnu.edu.sa/ar/Deanship/Devandskilldean/ViceDeanshipofdevelopment/Documents/dqd-mdcm1163.pdf",
+      "provider": "جامعة الأميرة نورة بنت عبدالرحمن · Princess Nourah bint Abdulrahman University",
+      "language": "multi",
+      "access": {
+        "ar": "خطة جامعية عامة من 137 صفحة مفتوحة للقراءة. للمقارنة المرجعية والتخطيط؛ ليست تسجيلًا في دورة أو وعدًا بمجانية الدورات أو أهلية منسوبي طبرق. ترتيبات الجامعة لا تحل محل لوائح الكلية.",
+        "en": "Public 137-page university plan for benchmarking and planning. It is not course enrolment and does not establish free tuition or Tobruk eligibility. University arrangements do not replace local Faculty regulations."
+      }
+    },
+    {
+      "id": "sa-hail-development-process",
+      "title": {
+        "ar": "تنظيم التطوير المهني من الاحتياج إلى المراجعة",
+        "en": "Professional development from needs to review"
+      },
+      "url": "https://www.uoh.edu.sa/Ar/Deanships/Deanship-Q-D/S-K-Department/Pages/default.aspx",
+      "provider": "جامعة حائل · University of Hail",
+      "language": "ar",
+      "access": {
+        "ar": "صفحة مرجعية عامة، وليست دورة أو شهادة. البرامج التدريبية موجهة لمنسوبي الجامعة، وبعض الأهداف المنشورة تاريخية؛ لا تُنقل كأهداف للكلية.",
+        "en": "A public reference page, not a course or certificate. Training targets university members and some published targets are historical; they are not adopted as Faculty targets."
+      }
+    },
+    {
+      "id": "openlearn-time-management",
+      "title": {
+        "ar": "تنظيم الذات وإدارة الوقت — قسم من مقرر الموارد البشرية",
+        "en": "Organising yourself and managing your time"
+      },
+      "url": "https://www.open.edu/openlearn/money-business/developing-your-skills-hr-professional/content-section-3.4",
+      "provider": "The Open University · OpenLearn",
+      "language": "en",
+      "access": {
+        "ar": "قراءة وتمرين مجانيان بالإنجليزية دون حساب، ضمن القسم 3.4 من مقرر أكبر في الموارد البشرية. ليس هذا القسم دورة مستقلة أو وعدًا بشهادة؛ شروط المشاركة تخص المقرر الكامل.",
+        "en": "Free English reading and an exercise without an account, in section 3.4 of a larger HR course. This section is not a separate course or a certificate promise; participation conditions belong to the full course."
+      }
+    },
+    {
+      "id": "openlearn-project-start",
+      "title": {
+        "ar": "إدارة المشروعات: بداية رحلة المشروع",
+        "en": "Project management: the start of the project journey"
+      },
+      "url": "https://www.open.edu/openlearn/money-business/leadership-management/project-management-the-start-the-project-journey",
+      "provider": "The Open University · OpenLearn",
+      "language": "en",
+      "access": {
+        "ar": "تعلم مجاني بالإنجليزية؛ القراءة لا تتطلب حسابًا. يلزم حساب لتتبع التقدم والحصول على إفادة مشاركة بعد الإتمام الكامل وفق شروط الجهة؛ لا تعني الإفادة اعتمادًا مهنيًا.",
+        "en": "Free English learning; reading does not require an account. An account is needed for progress tracking and a statement of participation after full completion under the provider’s conditions; the statement is not professional accreditation."
+      }
+    },
+    {
+      "id": "openlearn-virtual-project-teams",
+      "title": {
+        "ar": "إدارة فرق المشروعات الافتراضية",
+        "en": "Managing virtual project teams"
+      },
+      "url": "https://www.open.edu/openlearn/money-business/managing-virtual-project-teams/content-section-0",
+      "provider": "The Open University · OpenLearn",
+      "language": "en",
+      "access": {
+        "ar": "مقرر مجاني بالإنجليزية، والقراءة لا تتطلب حسابًا. راجع صفحة المقرر لشروط تتبع التقدم وإفادة المشاركة؛ لا يُوعد هنا بشهادة.",
+        "en": "A free English course; reading does not require an account. Check the course page for progress-tracking and participation-statement conditions; no certificate is promised here."
+      }
+    }
+  ]
+}

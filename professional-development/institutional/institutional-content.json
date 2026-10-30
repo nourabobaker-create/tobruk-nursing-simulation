@@ -1,0 +1,728 @@
+{
+  "updated": "2026-10-30",
+  "axes": [
+    {
+      "id": "1",
+      "title": {
+        "ar": "1. التعليم والتعلم ونجاح الطلبة",
+        "en": "1. Teaching, learning and student success"
+      },
+      "summary": {
+        "ar": "تحسين التدريس والتقييم والدعم الأكاديمي وفق احتياجات الطلبة في جميع السنوات.",
+        "en": "Improve teaching, assessment and academic support in response to students' needs across all years."
+      }
+    },
+    {
+      "id": "2",
+      "title": {
+        "ar": "2. التدريب السريري وجاهزية الخريج",
+        "en": "2. Clinical training and graduate readiness"
+      },
+      "summary": {
+        "ar": "تنظيم الخبرات والإشراف والتقييم بما يدعم أداءً آمنًا يمكن ملاحظته.",
+        "en": "Organise experience, supervision and assessment to support safe performance that can be observed."
+      }
+    },
+    {
+      "id": "3",
+      "title": {
+        "ar": "3. بحث محلي جيد يمكن الاستفادة منه",
+        "en": "3. Good local research that can be used"
+      },
+      "summary": {
+        "ar": "ربط البحث بالحاجات المحلية، مع سلامة المنهج والأخلاقيات ومتابعة استخدام النتائج.",
+        "en": "Connect research to local needs, with sound methods, ethical practice and follow-up of how findings are used."
+      }
+    },
+    {
+      "id": "4",
+      "title": {
+        "ar": "4. خدمة مجتمع وشراكات ذات فائدة",
+        "en": "4. Useful community work and partnerships"
+      },
+      "summary": {
+        "ar": "تنفيذ أنشطة محددة مع المستفيدين والشركاء، ومراجعة ما نتج عنها.",
+        "en": "Deliver focused activities with beneficiaries and partners, and review their results."
+      }
+    },
+    {
+      "id": "5",
+      "title": {
+        "ar": "5. قدرات ومصادر وبيئة تساعد على التعلم",
+        "en": "5. People, resources and a supportive learning environment"
+      },
+      "summary": {
+        "ar": "تطوير مهارات العاملين وحسن استخدام المصادر، وترتيب احتياجات البيئة التعليمية بحسب الأولوية.",
+        "en": "Develop staff skills, use resources well and prioritise needs in the learning environment."
+      }
+    },
+    {
+      "id": "6",
+      "title": {
+        "ar": "6. عمل مؤسسي واضح ومستمر",
+        "en": "6. Clear, reliable and continuous institutional work"
+      },
+      "summary": {
+        "ar": "توضيح المسؤوليات، وتنظيم الوثائق والبيانات، ودعم استمرارية الخدمة والتسليم.",
+        "en": "Clarify responsibilities, organise documents and data, and support service continuity and handover."
+      }
+    }
+  ],
+  "roleContributions": {
+    "staff": [
+      {
+        "id": "staff-service-clarity",
+        "axes": [
+          "6",
+          "5"
+        ],
+        "title": {
+          "ar": "توضيح الخدمة ومتابعة الطلب",
+          "en": "Clarify a service and follow requests"
+        },
+        "action": {
+          "ar": "اختر مع رئيسك خدمة تقع ضمن تكليفك. راجع متطلباتها ومسار الإحالة والرد، واقترح توضيح خطوة تسبب تكرار النقص أو التأخير.",
+          "en": "Choose a service within your assignment with your manager. Review its requirements, referral and response steps, and propose clarifying a step that repeatedly causes missing information or delay."
+        },
+        "record": {
+          "ar": "سجل الخدمة القائم، ومراجع الطلبات والإحالات والردود المرتبطة بها.",
+          "en": "The existing service register and relevant request, referral and response references."
+        },
+        "review": {
+          "ar": "راجع خلال فترة محددة تكرار إعادة الطلبات الناقصة أو زمن الرد، مع توضيح ما تغير في حجم العمل.",
+          "en": "Review repeated returns for missing information or response times over a defined period, noting changes in workload."
+        }
+      },
+      {
+        "id": "staff-digital-handover",
+        "axes": [
+          "6",
+          "5"
+        ],
+        "title": {
+          "ar": "تنظيم الملفات واستمرار العمل",
+          "en": "Organise files and support continuity"
+        },
+        "action": {
+          "ar": "نظّم ملفات مهمة قائمة بتسمية وتاريخ وإصدار واضحين، واتفق مع رئيسك على موقع الأصل وصلاحيات البديل المكلف عند التسليم.",
+          "en": "Organise an existing task's files with clear names, dates and versions. Agree the original location and the assigned substitute's access with your manager."
+        },
+        "record": {
+          "ar": "فهرس الملفات أو قائمة التسليم المستخدمة في الجهة، مع مرجع النسخة الحالية.",
+          "en": "The office's existing file index or handover list, with a reference to the current version."
+        },
+        "review": {
+          "ar": "جرّب استرجاع ملف محدد مع الشخص المخول؛ راجع سهولة الوصول إلى النسخة الصحيحة دون مشاركة كلمات المرور.",
+          "en": "Try retrieving a selected file with an authorised colleague. Review whether the correct version can be found without sharing passwords."
+        }
+      },
+      {
+        "id": "staff-data-needs",
+        "axes": [
+          "5",
+          "6"
+        ],
+        "title": {
+          "ar": "بيانات أدق لاحتياج واقعي",
+          "en": "Use accurate data to explain a need"
+        },
+        "action": {
+          "ar": "راجع رقمًا أو احتياجًا من عملك مع مصدره وفترته، ثم ارفع ملخصًا مجمعًا للرئيس المباشر ضمن متابعة خطة الجهة.",
+          "en": "Check a figure or need from your work against its source and period, then give your manager an aggregate summary through the office's existing plan review."
+        },
+        "record": {
+          "ar": "التقرير القائم أو طلب الاحتياج المعمول به، مع مرجع مصدر البيانات.",
+          "en": "The existing report or needs request, with a reference to the data source."
+        },
+        "review": {
+          "ar": "تحقق من اتساق الرقم مع الأصل، وهل ساعد الملخص في تحديد أولوية أو تصحيح نقص.",
+          "en": "Check consistency with the source and whether the summary helped identify a priority or correct a gap."
+        }
+      },
+      {
+        "id": "staff-community-support",
+        "axes": [
+          "4",
+          "6"
+        ],
+        "title": {
+          "ar": "تنظيم مبادرة معتمدة",
+          "en": "Support an approved initiative"
+        },
+        "action": {
+          "ar": "ضمن دورك في نشاط معتمد، رتّب المواعيد والمواد والمراسلات المخولة، وحدد ما يلزم تسليمه ومتى وبالتنسيق مع مسؤول النشاط.",
+          "en": "Within your assigned role in an approved activity, organise timing, materials and authorised correspondence. Agree deliverables and dates with the activity lead."
+        },
+        "record": {
+          "ar": "خطة النشاط وتقريره القائمان، ومراجع المراسلات والتسليم ذات الصلة.",
+          "en": "The existing activity plan and report, with relevant correspondence and delivery references."
+        },
+        "review": {
+          "ar": "راجع جاهزية المتطلبات في موعدها والعوائق التي عولجت؛ يراجع فريق النشاط استفادة المشاركين.",
+          "en": "Review whether requirements were ready on time and which obstacles were resolved. The activity team reviews participant benefit."
+        }
+      }
+    ],
+    "faculty": [
+      {
+        "id": "faculty-learning-improvement",
+        "axes": [
+          "1",
+          "5"
+        ],
+        "title": {
+          "ar": "تحسين محدد في التدريس والتقييم",
+          "en": "Make a focused teaching improvement"
+        },
+        "action": {
+          "ar": "اختر صعوبة تعلم ظهرت في مقررك، وعدّل نشاطًا أو تغذية راجعة بما يتفق مع توصيف المقرر، وحدد موعدًا لمراجعة الاستجابة.",
+          "en": "Choose a learning difficulty seen in your course. Adjust an activity or feedback in line with the course specification, and set a date to review the response."
+        },
+        "record": {
+          "ar": "ملف المقرر وتقريره القائمان، ونماذج التقييم المستخدمة فيه.",
+          "en": "The existing course file and report, and assessment materials already used in the course."
+        },
+        "review": {
+          "ar": "راجع إجابات أو أداءً وفق معيار متسق؛ بيّن ما تحسن وما بقي، وحدود المقارنة بين المجموعات.",
+          "en": "Review responses or performance against consistent criteria. Note improvement, remaining difficulties and limits to comparisons between groups."
+        }
+      },
+      {
+        "id": "faculty-clinical-preparation",
+        "axes": [
+          "2",
+          "5"
+        ],
+        "title": {
+          "ar": "ربط التحضير بالممارسة السريرية",
+          "en": "Connect preparation to clinical practice"
+        },
+        "action": {
+          "ar": "بالتنسيق مع مسؤول التدريب، اختر مهارة ضمن تكليفك، وراجع وسيلة التحضير وتوزيع فرص الممارسة والإشراف ومعيار التقييم المستخدم.",
+          "en": "With the training lead, choose a skill within your assignment. Review preparation resources, practice opportunities, supervision and the existing assessment criteria."
+        },
+        "record": {
+          "ar": "خطة التدريب وسجل المهارات أو التقييم السريري المعمول بهما.",
+          "en": "The existing training plan and skills or clinical assessment record."
+        },
+        "review": {
+          "ar": "راجع الأداء الملاحظ وملاحظات المشرفين لتحديد الحاجة إلى دعم إضافي.",
+          "en": "Review observed performance and supervisors’ feedback to identify further support."
+        }
+      },
+      {
+        "id": "faculty-research-use",
+        "axes": [
+          "3",
+          "4"
+        ],
+        "title": {
+          "ar": "توظيف نتيجة بحثية مناسبة",
+          "en": "Put an appropriate research finding to use"
+        },
+        "action": {
+          "ar": "ضمن البحث أو الإشراف المكلف به، راجع سؤالًا محليًا والمنهج والأخلاقيات، واختر نتيجة يمكن مناقشة استخدامها في التعليم أو نشاط مجتمعي معتمد.",
+          "en": "Within your research or supervision assignment, review a local question, methods and ethics. Select a finding whose use in teaching or an approved community activity can be considered."
+        },
+        "record": {
+          "ar": "ملف البحث أو متابعة مشروع التخرج، وتقرير النشاط القائم إن نُفّذ تطبيق.",
+          "en": "The research file or graduation-project follow-up, and the existing activity report if an application takes place."
+        },
+        "review": {
+          "ar": "راجع كيف استُخدمت النتيجة ومدى ملاءمتها للمستفيدين، مع بيان حدود الدراسة.",
+          "en": "Review how the finding was used and its suitability for beneficiaries, stating the study’s limits."
+        }
+      },
+      {
+        "id": "faculty-team-development",
+        "axes": [
+          "5",
+          "6",
+          "1"
+        ],
+        "title": {
+          "ar": "تطوير الفريق بممارسة مسؤولة",
+          "en": "Develop the team through responsible practice"
+        },
+        "action": {
+          "ar": "اتفق مع الفريق على احتياج تطوير يخدم خطة القسم، وخصص له وقتًا واقعيًا. جرّب تحسينًا يحفظ عدالة التقييم وحقوق المصادر وسرية المعلومات.",
+          "en": "Agree a development need that serves the department plan and allow realistic time. Try an improvement that respects fair assessment, source attribution and confidentiality."
+        },
+        "record": {
+          "ar": "خطة القسم أو محضر الفريق القائم، وملف المقرر أو سجل التدريب بحسب التطبيق.",
+          "en": "The existing department plan or team minutes, and the course file or training record relevant to the application."
+        },
+        "review": {
+          "ar": "راجع مع الفريق ما تغيّر في وضوح العمل أو اتساق التقييم، وما يحتاج تعديلًا في الخطوة التالية.",
+          "en": "Review with the team what changed in work clarity or assessment consistency, and what should be adjusted next."
+        }
+      }
+    ],
+    "ta": [
+      {
+        "id": "ta-session-preparation",
+        "axes": [
+          "1",
+          "5"
+        ],
+        "title": {
+          "ar": "الاستعداد لجلسة تعليمية واضحة",
+          "en": "Prepare a clear teaching session"
+        },
+        "action": {
+          "ar": "اتفق مع أستاذ المادة على الهدف وحدود دورك، وراجع المصدر والوسيلة التعليمية، ورتّب وقت التحضير وخطوة تحقق قصيرة من فهم الطلبة.",
+          "en": "Agree the objective and your role with the course instructor. Review the source and teaching aid, schedule preparation and plan a brief check of students' understanding."
+        },
+        "record": {
+          "ar": "خطة الجلسة أو سجل الدروس العملية المستخدم في المقرر.",
+          "en": "The session plan or practical-class record already used in the course."
+        },
+        "review": {
+          "ar": "ناقش مع أستاذ المادة ما أظهرته إجابات الطلبة أو أداؤهم، واختر نقطة واحدة لتحسين الجلسة التالية.",
+          "en": "Discuss students' responses or performance with the instructor, and choose one point to improve in the next session."
+        }
+      },
+      {
+        "id": "ta-supervised-practice",
+        "axes": [
+          "2"
+        ],
+        "title": {
+          "ar": "مساندة التدريب تحت الإشراف",
+          "en": "Support supervised practice"
+        },
+        "action": {
+          "ar": "ضمن تكليفك، ساعد في تجهيز الممارسة وتوضيح التعليمات وتنظيم فرص التدريب، وأحل الصعوبات والتقييمات التي تتجاوز دورك إلى المشرف.",
+          "en": "Within your assignment, help prepare practice, clarify instructions and organise training opportunities. Refer difficulties and assessments beyond your role to the supervisor."
+        },
+        "record": {
+          "ar": "خطة الجلسة وسجل التدريب أو المهارات القائم، بحسب صلاحية الاطلاع والتدوين.",
+          "en": "The existing session plan and training or skills record, within your permission to view and record information."
+        },
+        "review": {
+          "ar": "راجع مع المشرف فرصة ممارسة المهارة ونقطة التحسن الملاحظة والحاجة إلى متابعة.",
+          "en": "Review practice opportunities, an observed point of improvement and any follow-up need with the supervisor."
+        }
+      },
+      {
+        "id": "ta-research-support",
+        "axes": [
+          "3",
+          "5"
+        ],
+        "title": {
+          "ar": "إنجاز مهمة بحثية موثقة",
+          "en": "Complete a traceable research task"
+        },
+        "action": {
+          "ar": "اتفق مع المشرف على مهمة محددة، مثل البحث عن مراجع أو مراجعة بيانات مخولة. وثّق المصادر وافحص دقتها واحترم ضوابط البحث والخصوصية.",
+          "en": "Agree a defined task with the supervisor, such as finding references or checking authorised data. Record sources, check accuracy and follow research and privacy requirements."
+        },
+        "record": {
+          "ar": "ملف البحث وقائمة المراجع أو سجل المتابعة المستخدم في المشروع.",
+          "en": "The research file and reference list or follow-up record already used by the project."
+        },
+        "review": {
+          "ar": "راجع ملاءمة المصادر وإمكان تتبعها، وهل أوضحت المهمة سؤالًا أو صححت نقصًا في العمل.",
+          "en": "Review source relevance and traceability, and whether the task clarified a question or corrected a gap."
+        }
+      },
+      {
+        "id": "ta-community-learning",
+        "axes": [
+          "4",
+          "5",
+          "6"
+        ],
+        "title": {
+          "ar": "المشاركة المجتمعية والتعلم من التطبيق",
+          "en": "Contribute to community work and learn from practice"
+        },
+        "action": {
+          "ar": "ضمن نشاط معتمد وتحت الإشراف، ساعد في إعداد رسالة صحية مراجعة وشرحها، واجمع الملاحظات المسموح بها، ثم حدد مهارة تحتاج تطويرًا.",
+          "en": "Within an approved, supervised activity, help prepare and explain a reviewed health message, collect permitted feedback and identify a skill to develop."
+        },
+        "record": {
+          "ar": "تقرير النشاط وسجل متابعة الفريق القائمان، مع ملاحظات مجمعة عن التطبيق.",
+          "en": "The existing activity report and team follow-up record, with aggregate notes on the application."
+        },
+        "review": {
+          "ar": "راجع مع المشرف وضوح الرسالة واستجابة المشاركين وما ستغيره في شرحك أو تنظيمك لاحقًا.",
+          "en": "Review message clarity, participants' responses and a future change to your explanation or organisation with the supervisor."
+        }
+      }
+    ]
+  },
+  "quality": {
+    "intro": {
+      "ar": "تبدأ الجودة بمشكلة واضحة وخطوة قابلة للمراجعة. الأمثلة هنا تُختار ضمن التكليف الحالي وخطة الجهة المعتمدة، وتستند إلى سجلات العمل القائمة.",
+      "en": "Quality starts with a clear problem and an action whose result can be reviewed. Choose these examples within current assignments and the approved office or department plan, using existing work records."
+    },
+    "steps": [
+      {
+        "title": {
+          "ar": "حدّد الحاجة واربطها بالخطة",
+          "en": "Identify a need and connect it to the plan"
+        },
+        "body": {
+          "ar": "اختر صعوبة متكررة في التعلم أو الخدمة، واستمع إلى المستفيدين. حدّد المحور الذي تخدمه، والجهة صاحبة الاختصاص، والمعلومة المتاحة عن الوضع الحالي.",
+          "en": "Choose a recurring learning or service difficulty and listen to users. Identify the relevant plan axis, the responsible office and available information about the current situation."
+        }
+      },
+      {
+        "title": {
+          "ar": "اتفق على خطوة ونتيجة",
+          "en": "Agree an action and a result to review"
+        },
+        "body": {
+          "ar": "مع المسؤول المختص، حدّد تغييرًا محدودًا، ومن ينفذه، وموعد المراجعة والموارد المتاحة. اختر نتيجة يمكن ملاحظتها في السجل القائم.",
+          "en": "With the responsible person, define a focused change, its owner, review date and available resources. Choose a result observable in an existing record."
+        }
+      },
+      {
+        "title": {
+          "ar": "نفّذ واحفظ مرجع العمل",
+          "en": "Act and retain the work reference"
+        },
+        "body": {
+          "ar": "نفّذ ضمن الصلاحية المتفق عليها، واحفظ مرجع الإجراء أو المخرج في ملفه المعتاد. استخدم النسخة الحالية واحمِ المعلومات الفردية.",
+          "en": "Act within the agreed authority and retain the action or output reference in its usual file. Use the current version and protect individual information."
+        }
+      },
+      {
+        "title": {
+          "ar": "راجع النتيجة وصوت المستفيد",
+          "en": "Review the result and user feedback"
+        },
+        "body": {
+          "ar": "قارن بما يتاح من معلومات متسقة، واذكر الفترة والعينة والحدود. ميّز بين الوصول للمورد، واستخدامه، والإتمام المبلّغ عنه، وتحسن الأداء المثبت.",
+          "en": "Compare consistent information where available, stating the period, sample and limits. Distinguish access, use, self-reported completion and demonstrated performance improvement."
+        }
+      },
+      {
+        "title": {
+          "ar": "قرّر الخطوة التالية",
+          "en": "Decide the next step"
+        },
+        "body": {
+          "ar": "ناقش النتيجة مع مالك العمل؛ تساعد الجودة في التحليل والمتابعة. أثبت الاستمرار أو التعديل أو التوقف في التقرير أو المحضر القائم، وأبلغ المعنيين عبر القنوات المعتادة.",
+          "en": "Discuss the result with the work owner, with QA supporting analysis and follow-up. Record continuation, adjustment or stopping in existing reports or minutes, and inform relevant people through normal channels."
+        }
+      }
+    ],
+    "links": [
+      {
+        "id": "quality-strategy",
+        "title": {
+          "ar": "الخطة الاستراتيجية ومتابعة التنفيذ",
+          "en": "Strategic plan and implementation follow-up"
+        },
+        "url": "https://nourabobaker-create.github.io/tobruk-nursing-simulation/strategic-plan/"
+      },
+      {
+        "id": "quality-work-roles",
+        "title": {
+          "ar": "الأدوار والمهام خلال العام",
+          "en": "Roles and tasks through the year"
+        },
+        "url": "https://nourabobaker-create.github.io/tobruk-nursing-simulation/professional-development/my-work/?role=employee&audience=staff&lang=ar"
+      },
+      {
+        "id": "quality-ethics",
+        "title": {
+          "ar": "الميثاق الأخلاقي والسلوك المؤسسي",
+          "en": "Ethical charter and institutional conduct"
+        },
+        "url": "https://nourabobaker-create.github.io/tobruk-nursing-simulation/professional-development/guides/ethics-charter.pdf"
+      },
+      {
+        "id": "quality-feedback",
+        "title": {
+          "ar": "الملاحظات والمقترحات وقنوات المشاركة",
+          "en": "Feedback, suggestions and participation"
+        },
+        "url": "https://nourabobaker-create.github.io/tobruk-nursing-simulation/#participate"
+      },
+      {
+        "id": "quality-metrics",
+        "title": {
+          "ar": "مؤشرات استخدام البوابة وحدود قراءتها",
+          "en": "Portal usage indicators and their interpretation"
+        },
+        "url": "https://nourabobaker-create.github.io/tobruk-nursing-simulation/portal-metrics/"
+      }
+    ]
+  },
+  "digital": {
+    "intro": {
+      "ar": "العمل الرقمي الجيد يسهّل العثور على المعلومة الصحيحة وإنجاز الخطوة وتسليمها. اختر تطبيقًا محدودًا في أدوات الجهة المسموح بها، ثم راجع فائدته.",
+      "en": "Good digital work helps people find the right information, complete a task and hand it over. Choose a focused application using tools permitted by your office, then review its usefulness."
+    },
+    "steps": [
+      {
+        "title": {
+          "ar": "نظّم الأصل والنسخة الحالية",
+          "en": "Organise the original and current version"
+        },
+        "body": {
+          "ar": "استخدم تسمية واضحة وتاريخًا وإصدارًا مناسبًا، وحدّد مكان الأصل والمسؤول عنه. حدّث فهرس الجهة القائم عند تغير النسخة أو موقعها.",
+          "en": "Use a clear name, date and suitable version label, and identify the original's location and owner. Update the existing office index when the version or location changes."
+        }
+      },
+      {
+        "title": {
+          "ar": "افحص البيانات قبل استخدامها",
+          "en": "Check data before using it"
+        },
+        "body": {
+          "ar": "تحقق من مصدر البيانات وفترتها واكتمال الحقول اللازمة، وميّز البيانات الأولية من النهائية. استخدم البيانات التي يحق لك الاطلاع عليها، والمجاميع عند كفايتها لغرض المتابعة.",
+          "en": "Check the data source, period and required fields, and distinguish provisional from final data. Use data you are authorised to access, and aggregates when sufficient for follow-up."
+        }
+      },
+      {
+        "title": {
+          "ar": "وضّح مسار المهمة",
+          "en": "Clarify the task workflow"
+        },
+        "body": {
+          "ar": "حدّد المدخل المطلوب وصاحب الصلاحية والخطوة التالية ومرجع الرد. رتّب الأولويات والموعد المتوقع، وسجّل التعثر في متابعة العمل المعتادة.",
+          "en": "Identify the required input, authorised decision maker, next step and response reference. Set priorities and an expected date, and record delays through normal work follow-up."
+        }
+      },
+      {
+        "title": {
+          "ar": "احمِ الوصول ونظّم التسليم",
+          "en": "Protect access and arrange handover"
+        },
+        "body": {
+          "ar": "استخدم حسابًا وصلاحيات مخولة ومكان حفظ مسموحًا. نسّق وصول البديل المكلف مع المسؤول، ولا تشارك كلمة المرور أو تنقل الملفات السرية إلى أداة شخصية.",
+          "en": "Use an authorised account, permissions and storage location. Arrange the assigned substitute's access with the responsible person; do not share passwords or move confidential files to personal tools."
+        }
+      },
+      {
+        "title": {
+          "ar": "راجع الاستمرارية والفائدة",
+          "en": "Review continuity and usefulness"
+        },
+        "body": {
+          "ar": "اتفق على بديل مناسب عند التعطل واختبره في حدود صلاحيتك. راجع سهولة استرجاع ملف صحيح أو إكمال خطوة، وما بقي من تكرار أو تأخير.",
+          "en": "Agree a suitable fallback for disruption and test it within your authority. Review retrieval of a correct file or completion of a task, and remaining duplication or delay."
+        }
+      }
+    ],
+    "links": [
+      {
+        "id": "digital-pathways",
+        "title": {
+          "ar": "مسارات تنظيم السجلات والعمل الرقمي",
+          "en": "Records and digital-work pathways"
+        },
+        "url": "https://nourabobaker-create.github.io/tobruk-nursing-simulation/professional-development/?role=staff&lang=ar#pathways"
+      },
+      {
+        "id": "digital-planning",
+        "title": {
+          "ar": "خطة التطوير والأسبوع والاستعداد",
+          "en": "Development, weekly planning and preparation"
+        },
+        "url": "https://nourabobaker-create.github.io/tobruk-nursing-simulation/professional-development/?role=staff&lang=ar#workbench"
+      },
+      {
+        "id": "digital-resources",
+        "title": {
+          "ar": "مراجع الملفات والنماذج وحماية الحسابات",
+          "en": "References for files, forms and account security"
+        },
+        "url": "https://nourabobaker-create.github.io/tobruk-nursing-simulation/professional-development/?role=staff&lang=ar#tools"
+      },
+      {
+        "id": "digital-training",
+        "title": {
+          "ar": "مصادر المهارات الرقمية والتواصل",
+          "en": "Digital-skills and communication learning"
+        },
+        "url": "https://nourabobaker-create.github.io/tobruk-nursing-simulation/professional-development/?role=staff&lang=ar#courses"
+      }
+    ]
+  },
+  "community": {
+    "intro": {
+      "ar": "تُبنى المبادرة على حاجة يحددها المستفيدون مع الكلية، ونطاق يمكن تنفيذه ومراجعته. المساهمات التالية أمثلة ضمن التكليف وخطة النشاط المعتمدة، وبالتنسيق مع المسؤول والشركاء.",
+      "en": "Build an initiative around a need identified with beneficiaries and a scope that can be delivered and reviewed. These contributions are examples within current assignments and an approved activity plan, coordinated with the lead and partners."
+    },
+    "steps": [
+      {
+        "title": {
+          "ar": "ابدأ من حاجة محددة",
+          "en": "Start with a specific need"
+        },
+        "body": {
+          "ar": "استمع إلى المستفيدين والشريك، وراجع ما يتاح من معلومات. اختر حاجة صحية أو تعليمية واضحة يمكن لفريقك الإسهام فيها ضمن اختصاصه.",
+          "en": "Listen to beneficiaries and the partner, and review available information. Choose a clear health or learning need to which the team can contribute within its expertise."
+        }
+      },
+      {
+        "title": {
+          "ar": "صمّم مبادرة محدودة",
+          "en": "Design a focused initiative"
+        },
+        "body": {
+          "ar": "حدّد المستفيدين والرسالة أو المهارة المقصودة، والوقت والموارد ونتيجة المراجعة. نسّق اعتماد النشاط عبر المسار المعمول به قبل التنفيذ.",
+          "en": "Define the beneficiaries, intended message or skill, time, resources and result to review. Arrange activity approval through the existing process before implementation."
+        }
+      },
+      {
+        "title": {
+          "ar": "اتفق على الأدوار والمساهمات",
+          "en": "Agree roles and contributions"
+        },
+        "body": {
+          "ar": "وضح مسؤول النشاط ومساهمة كل طرف وموعدها، ومن يراجع المحتوى ويتابع النتيجة. أثبت الاتفاق في خطة النشاط أو المراسلات القائمة.",
+          "en": "Clarify the activity lead, each party's contribution and timing, and who reviews content and results. Record the agreement in the existing activity plan or correspondence."
+        }
+      },
+      {
+        "title": {
+          "ar": "نفّذ برسالة مراجعة",
+          "en": "Deliver reviewed content"
+        },
+        "body": {
+          "ar": "راجع صحة الرسالة وملاءمتها للمستفيدين، ثم نفّذ النشاط بالإشراف المتفق عليه. احفظ مخرجاته المعتادة واحترم الخصوصية في التوثيق والمشاركة.",
+          "en": "Review the message's accuracy and suitability, then deliver the activity with the agreed supervision. Retain its usual outputs and respect privacy in recording and sharing."
+        }
+      },
+      {
+        "title": {
+          "ar": "راجع ما تغير وما يحتاج متابعة",
+          "en": "Review change and follow-up needs"
+        },
+        "body": {
+          "ar": "اختر وسيلة مناسبة لمراجعة الفهم أو المهارة أو الاستخدام بعد النشاط. بيّن المشاركين والفترة والحدود، ثم قرر التعديل أو المتابعة.",
+          "en": "Use a suitable way to review understanding, skill or use after the activity. State participants, period and limits, then decide on adjustment or follow-up."
+        }
+      }
+    ],
+    "roles": {
+      "staff": {
+        "ar": "يساند التنظيم والمواعيد والمواد والمراسلات ضمن تكليفه، ويحفظ مراجع التنفيذ في السجلات القائمة ويرفع التعثر لمسؤول النشاط.",
+        "en": "Supports organisation, timing, materials and correspondence within the assignment, retains delivery references in existing records and reports obstacles to the activity lead."
+      },
+      "faculty": {
+        "ar": "يسهم في تحديد الهدف ومراجعة المحتوى العلمي والإشراف على مشاركة الطلبة بحسب التكليف، ويراجع مع الفريق ملاءمة النتيجة وخطوة المتابعة.",
+        "en": "Helps define the objective, review scientific content and supervise student participation as assigned, and reviews the result and next step with the team."
+      },
+      "ta": {
+        "ar": "يساند الإعداد والشرح وتيسير المشاركة تحت الإشراف، وينقل الملاحظات المسموح بها إلى المسؤول، ويستفيد منها في تطوير مهاراته.",
+        "en": "Supports preparation, explanation and participation under supervision, passes permitted feedback to the lead and uses it to develop personal skills."
+      }
+    },
+    "links": [
+      {
+        "id": "community-health",
+        "title": {
+          "ar": "تمريض من أجل المجتمع: موارد التوعية",
+          "en": "Nursing for the community: health-awareness resources"
+        },
+        "url": "https://nourabobaker-create.github.io/tobruk-nursing-simulation/community-health/"
+      },
+      {
+        "id": "community-activities",
+        "title": {
+          "ar": "أنشطة الكلية المجتمعية والشراكات",
+          "en": "Faculty community activities and partnerships"
+        },
+        "url": "https://nourabobaker-create.github.io/tobruk-nursing-simulation/#community"
+      },
+      {
+        "id": "community-strategy",
+        "title": {
+          "ar": "المجتمع والشراكات في الخطة الاستراتيجية",
+          "en": "Community and partnerships in the strategic plan"
+        },
+        "url": "https://nourabobaker-create.github.io/tobruk-nursing-simulation/strategic-plan/"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "strategic-plan",
+      "title": {
+        "ar": "عرض الخطة الاستراتيجية 2026–2030",
+        "en": "Strategic plan presentation 2026–2030"
+      },
+      "url": "https://nourabobaker-create.github.io/tobruk-nursing-simulation/strategic-plan/"
+    },
+    {
+      "id": "annual-work",
+      "title": {
+        "ar": "الدليل العملي للأدوار خلال العام",
+        "en": "Annual work companion for Faculty roles"
+      },
+      "url": "https://nourabobaker-create.github.io/tobruk-nursing-simulation/professional-development/my-work/?role=employee&audience=staff&lang=ar"
+    },
+    {
+      "id": "employee-guide",
+      "title": {
+        "ar": "دليل الموظف: نسخة القراءة المنشورة",
+        "en": "Employee guide: published reading copy"
+      },
+      "url": "https://nourabobaker-create.github.io/tobruk-nursing-simulation/professional-development/guides/employee-guide.pdf"
+    },
+    {
+      "id": "faculty-ta-guide",
+      "title": {
+        "ar": "دليل عضو هيئة التدريس والمعيد: نسخة القراءة المنشورة",
+        "en": "Faculty and teaching-assistant guide: published reading copy"
+      },
+      "url": "https://nourabobaker-create.github.io/tobruk-nursing-simulation/professional-development/guides/faculty-ta-guide.pdf"
+    },
+    {
+      "id": "research-guide",
+      "title": {
+        "ar": "دليل البحث العلمي وبحوث التخرج: النسخة الإنجليزية",
+        "en": "Research and graduation-project guide: English edition"
+      },
+      "url": "https://nourabobaker-create.github.io/tobruk-nursing-simulation/professional-development/guides/research-guide-en.pdf"
+    },
+    {
+      "id": "ethical-charter",
+      "title": {
+        "ar": "الميثاق الأخلاقي والسلوك المؤسسي",
+        "en": "Ethical charter and institutional conduct"
+      },
+      "url": "https://nourabobaker-create.github.io/tobruk-nursing-simulation/professional-development/guides/ethics-charter.pdf"
+    },
+    {
+      "id": "accountability-guide",
+      "title": {
+        "ar": "التقدير والمساءلة النظامية",
+        "en": "Recognition and formal accountability"
+      },
+      "url": "https://nourabobaker-create.github.io/tobruk-nursing-simulation/professional-development/guides/recognition-accountability.pdf"
+    },
+    {
+      "id": "portal-measurement",
+      "title": {
+        "ar": "تعريف مؤشرات البوابة وحدودها",
+        "en": "Portal indicator definitions and limits"
+      },
+      "url": "https://nourabobaker-create.github.io/tobruk-nursing-simulation/portal-metrics/"
+    },
+    {
+      "id": "community-health",
+      "title": {
+        "ar": "موارد تمريض من أجل المجتمع",
+        "en": "Nursing for the community resources"
+      },
+      "url": "https://nourabobaker-create.github.io/tobruk-nursing-simulation/community-health/"
+    },
+    {
+      "id": "professional-development",
+      "title": {
+        "ar": "موارد التطوير والأدوات العملية",
+        "en": "Development resources and practical tools"
+      },
+      "url": "https://nourabobaker-create.github.io/tobruk-nursing-simulation/professional-development/?role=staff&lang=ar"
+    }
+  ]
+}

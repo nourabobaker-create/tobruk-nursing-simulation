@@ -1,5 +1,5 @@
 {
-  "version": "20261022-simulation-instrumentation-1",
+  "version": "20261030-institutional-support-1",
   "tracking": "visitor_opt_in",
   "pages": [
     "body-mechanics-learning-01/index.html",
@@ -33,6 +33,7 @@
     "nursing-skills/index.html",
     "patient-positioning-learning-01/index.html",
     "professional-development/index.html",
+    "professional-development/institutional/index.html",
     "professional-development/my-work/index.html",
     "range-of-motion-learning-01/index.html",
     "safety360/index.html",
@@ -65,6 +66,7 @@
     "Workbench and pathway interactions do not establish completed training; personal plan text is never collected",
     "Development need selections are optional fixed-ID choices, not a staff survey or performance evaluation",
     "Annual work companion interactions measure use only; personal task statuses and search text are never collected",
+    "Institutional support records fixed navigation and resource IDs only; working initiative drafts are browser-local and never collected",
     "Advanced simulation completion means the selected learning attempt reached its generated debrief; focused drills and appropriate safety stops are not full procedures or competency passes",
     "Seven older simulation completion hooks measure knowledge-review result panels only; procedural-training completion remains partial",
     "Legacy activity completions require a start accepted after opt-in; earlier unconsented attempts are not backfilled",

@@ -1,0 +1,278 @@
+{
+  "updated": "2026-10-30",
+  "intro": {
+    "ar": "مدخل عملي لأخلاقيات العمل والبحث، مع وثائق الكلية المنشورة ومراجع دولية مختارة. ابدأ بوثيقة الكلية المناسبة لدورك أو بحثك، ثم استخدم المبادئ المختصرة للتوجيه والمراجعة.",
+    "en": "A practical introduction to work and research ethics, with published Faculty documents and selected international references. Start with the Faculty document relevant to your role or study, then use these brief principles for orientation and reflection."
+  },
+  "sections": [
+    {
+      "id": "work",
+      "title": {
+        "ar": "أخلاقيات العمل والسلوك المهني",
+        "en": "Work ethics and professional conduct"
+      },
+      "summary": {
+        "ar": "للموظفين وأعضاء هيئة التدريس والمعيدين: ارجع إلى الميثاق الأخلاقي والسلوك المؤسسي، وإلى دليل دورك، لفهم الحقوق والمسؤوليات وقنوات الاستفسار والإبلاغ.",
+        "en": "For employees, faculty members and teaching assistants: consult the workplace ethics charter and your role guide for rights, responsibilities, and enquiry and reporting routes."
+      },
+      "principles": [
+        {
+          "title": {
+            "ar": "احترام وعدالة",
+            "en": "Respect and fairness"
+          },
+          "body": {
+            "ar": "تعامل باحترام مع الزملاء والطلبة والمرضى، وراعِ حقوقهم. قدّم الخدمة والتقييم بإنصاف، وتجنب الإهانة والتحيز واستغلال العلاقة الوظيفية أو التعليمية.",
+            "en": "Respect colleagues, students and patients and their rights. Provide services and assessment fairly, avoiding humiliation, bias or misuse of a work or teaching relationship."
+          }
+        },
+        {
+          "title": {
+            "ar": "مسؤولية وأمانة",
+            "en": "Responsibility and honesty"
+          },
+          "body": {
+            "ar": "اعمل ضمن اختصاصك وتكليفك، واستخدم موارد الكلية لأغراض العمل. وثّق ما أُنجز بدقة، ووضّح النواقص والأخطاء بدل تسجيل إنجاز لم يحدث.",
+            "en": "Work within your competence and assigned responsibilities, and use Faculty resources for work purposes. Record completed work accurately and identify gaps or errors rather than claiming work that was not done."
+          }
+        },
+        {
+          "title": {
+            "ar": "سرية وخصوصية",
+            "en": "Confidentiality and privacy"
+          },
+          "body": {
+            "ar": "اطّلع على المعلومات اللازمة لعملك فقط، وشاركها مع المخولين عبر القنوات المناسبة. احمِ بيانات الطلبة والعاملين والمرضى، ولا تنشر ملفاتهم أو صورهم في مساحات عامة.",
+            "en": "Access only the information needed for your work and share it with authorised people through appropriate channels. Protect student, staff and patient information; do not publish their records or images in public spaces."
+          }
+        },
+        {
+          "title": {
+            "ar": "إفصاح وإبلاغ مسؤول",
+            "en": "Disclosure and responsible reporting"
+          },
+          "body": {
+            "ar": "أفصح عن المصلحة الشخصية التي قد تؤثر في حيادك، واطلب التوجيه عند التعارض. أحِل المخاوف والملاحظات وفق قنوات الميثاق، مع حفظ السرية واحترام حقوق الأطراف.",
+            "en": "Disclose personal interests that could affect your impartiality and seek guidance on conflicts. Refer concerns through the charter's channels while preserving confidentiality and respecting everyone involved."
+          }
+        }
+      ],
+      "documentIds": [
+        "guide-ethics-charter",
+        "guide-staff",
+        "guide-faculty-ta"
+      ]
+    },
+    {
+      "id": "research",
+      "title": {
+        "ar": "أخلاقيات البحث والنزاهة العلمية",
+        "en": "Research ethics and integrity"
+      },
+      "summary": {
+        "ar": "المرجع المؤسسي المنشور هنا هو دليل البحث العلمي وبحوث التخرج باللغة الإنجليزية، ويتناول أدوار البحث وأخلاقياته والإشراف. استخدمه مع توجيه المشرف والإجراءات المختصة قبل بدء الدراسة.",
+        "en": "The published institutional reference here is the English Research and Graduation Research Guide, covering research roles, ethics and supervision. Use it with supervisory guidance and the relevant institutional procedures before starting a study."
+      },
+      "principles": [
+        {
+          "title": {
+            "ar": "الموافقات قبل جمع البيانات",
+            "en": "Approvals before data collection"
+          },
+          "body": {
+            "ar": "قبل إشراك أشخاص أو جمع بياناتهم للبحث، استكمل الموافقات الأخلاقية والمؤسسية المطلوبة وإذن موقع الدراسة عند لزومه. اطلب قرار الجهة المختصة بشأن أي إعفاء؛ لا تفترضه بنفسك.",
+            "en": "Before involving people or collecting their data for research, obtain the required ethics and institutional approvals, including site permission where needed. Ask the competent body to determine any exemption; do not assume one yourself."
+          }
+        },
+        {
+          "title": {
+            "ar": "موافقة مستنيرة وطوعية",
+            "en": "Informed and voluntary consent"
+          },
+          "body": {
+            "ar": "اشرح الغرض والإجراءات والمخاطر بلغة يفهمها المشارك، وأتح له السؤال والاختيار دون ضغط. وضّح حق الرفض والانسحاب دون عقوبة، والتزم بترتيبات الموافقة التي أجازتها الجهة الأخلاقية المختصة.",
+            "en": "Explain the purpose, procedures and risks in language the participant understands, allowing questions and a choice without pressure. Explain the right to decline or withdraw without penalty, and follow the consent arrangements authorised by the competent ethics body."
+          }
+        },
+        {
+          "title": {
+            "ar": "حماية البيانات والمشاركين",
+            "en": "Protect data and participants"
+          },
+          "body": {
+            "ar": "اجمع ما تحتاجه الدراسة فقط، واستخدم الترميز وحدّد المخولين بالوصول. احفظ البيانات وفق الخطة المعتمدة، وتجنب كشف هوية المشاركين في العروض أو الأدوات العامة أو المواد المنشورة.",
+            "en": "Collect only what the study needs, use coding and specify authorised access. Store data according to the approved plan and avoid identifying participants in presentations, public tools or published material."
+          }
+        },
+        {
+          "title": {
+            "ar": "دقة وتوثيق للمصادر",
+            "en": "Accuracy and source attribution"
+          },
+          "body": {
+            "ar": "سجّل البيانات والنتائج بأمانة، ولا تختلقها أو تغيّرها لتوافق توقعاتك. انسب الأفكار والنصوص والصور إلى مصادرها، وتحقق من صحة المراجع، وميّز نتائج الدراسة عن تفسيرك لها.",
+            "en": "Record data and results honestly; never fabricate or alter them to fit expectations. Attribute ideas, text and images to their sources, verify references and distinguish study findings from your interpretation."
+          }
+        },
+        {
+          "title": {
+            "ar": "تأليف عادل وإفصاح واضح",
+            "en": "Fair authorship and clear disclosure"
+          },
+          "body": {
+            "ar": "اتفق مبكرًا على المساهمات والمسؤوليات. اربط التأليف بالمساهمة الفعلية واستيفاء معاييره، لا بالمنصب وحده. أفصح عن التمويل والعلاقات والمصالح ذات الصلة وفق متطلبات الجهة البحثية والمجلة.",
+            "en": "Agree contributions and responsibilities early. Base authorship on actual contributions and the applicable criteria, not position alone. Disclose funding, relationships and relevant interests under the research institution's and journal's requirements."
+          }
+        }
+      ],
+      "documentIds": [
+        "guide-research-en",
+        "cioms-2016",
+        "who-informed-consent",
+        "icmje-recommendations"
+      ]
+    }
+  ],
+  "documents": [
+    {
+      "id": "guide-ethics-charter",
+      "title": {
+        "ar": "الميثاق الأخلاقي والسلوك المؤسسي",
+        "en": "Workplace ethics and conduct"
+      },
+      "url": "https://nourabobaker-create.github.io/tobruk-nursing-simulation/professional-development/guides/ethics-charter.pdf",
+      "scope": "institutional",
+      "language": "multi",
+      "description": {
+        "ar": "ميثاق الكلية لأخلاقيات العمل والسلوك المؤسسي، بمتن عربي وملخص تعريفي بالإنجليزية.",
+        "en": "The Faculty’s workplace ethics and conduct charter, with Arabic text and an English orientation summary."
+      }
+    },
+    {
+      "id": "guide-staff",
+      "title": {
+        "ar": "دليل الموظف",
+        "en": "Employee guide"
+      },
+      "url": "https://nourabobaker-create.github.io/tobruk-nursing-simulation/professional-development/guides/employee-guide.pdf",
+      "scope": "institutional",
+      "language": "ar",
+      "description": {
+        "ar": "مرجع باللغة العربية للمهام وجودة الخدمة وتنظيم العمل والمسؤوليات المهنية.",
+        "en": "An Arabic reference for responsibilities, service quality, work organisation and professional duties."
+      }
+    },
+    {
+      "id": "guide-faculty-ta",
+      "title": {
+        "ar": "دليل عضو هيئة التدريس والمعيد",
+        "en": "Faculty and teaching assistant guide"
+      },
+      "url": "https://nourabobaker-create.github.io/tobruk-nursing-simulation/professional-development/guides/faculty-ta-guide.pdf",
+      "scope": "institutional",
+      "language": "ar",
+      "description": {
+        "ar": "مرجع باللغة العربية للمسؤوليات الأكاديمية وجودة التدريس ودعم الطلبة والتطوير المهني.",
+        "en": "An Arabic reference for academic responsibilities, teaching quality, student support and professional development."
+      }
+    },
+    {
+      "id": "guide-research-en",
+      "title": {
+        "ar": "دليل البحث العلمي وبحوث التخرج — الإنجليزية",
+        "en": "Research and Graduation Research Guide"
+      },
+      "url": "https://nourabobaker-create.github.io/tobruk-nursing-simulation/professional-development/guides/research-guide-en.pdf",
+      "scope": "institutional",
+      "language": "en",
+      "description": {
+        "ar": "دليل الكلية باللغة الإنجليزية لأدوار البحث وأخلاقياته والإشراف على بحوث التخرج.",
+        "en": "The Faculty’s English guide to research roles, ethics and graduation research supervision."
+      }
+    },
+    {
+      "id": "cioms-2016",
+      "title": {
+        "ar": "CIOMS: الإرشادات الأخلاقية للبحوث الصحية التي تشمل البشر",
+        "en": "CIOMS: International Ethical Guidelines for Health-related Research Involving Humans"
+      },
+      "url": "https://cioms.ch/wp-content/uploads/2017/01/WEB-CIOMS-EthicalGuidelines.pdf",
+      "scope": "external",
+      "language": "en",
+      "description": {
+        "ar": "مرجع دولي أُعد بالتعاون مع منظمة الصحة العالمية، يتناول المراجعة الأخلاقية والموافقة وحماية البيانات. النسخة الإنجليزية لعام 2016 متاحة للقراءة.",
+        "en": "An international reference developed with WHO, covering ethics review, consent and data protection. The 2016 English edition is available to read."
+      }
+    },
+    {
+      "id": "who-informed-consent",
+      "title": {
+        "ar": "منظمة الصحة العالمية: إرشاد ونماذج للموافقة المستنيرة",
+        "en": "WHO: Guidance and templates for informed consent"
+      },
+      "url": "https://www.who.int/groups/research-ethics-review-committee/guidelines-on-submitting-research-proposals-for-ethics-review/templates-for-informed-consent-forms",
+      "scope": "external",
+      "language": "en",
+      "description": {
+        "ar": "أمثلة لإعداد معلومات المشارك والموافقة بلغة واضحة، تُكيّف للدراسة وتُراجع عبر الجهة المختصة.",
+        "en": "Examples for clear participant information and consent, adapted to the study and reviewed through the relevant authority."
+      }
+    },
+    {
+      "id": "icmje-recommendations",
+      "title": {
+        "ar": "ICMJE: توصيات النزاهة والتأليف والنشر الطبي",
+        "en": "ICMJE: Recommendations on integrity, authorship and medical publishing"
+      },
+      "url": "https://www.icmje.org/recommendations/",
+      "scope": "external",
+      "language": "en",
+      "description": {
+        "ar": "مرجع رسمي مفتوح يوضح مسؤوليات المؤلفين والمساهمين، والإفصاح عن المصالح، وأمانة إعداد العمل العلمي ونشره.",
+        "en": "A public official reference on author and contributor responsibilities, disclosure of interests, and integrity in preparing and publishing scholarly work."
+      }
+    }
+  ],
+  "notes": {
+    "ar": "يُرجع في التطبيق إلى وثائق الكلية وإجراءاتها. المراجع الخارجية مساندة للتعلّم.",
+    "en": "Follow the Faculty’s documents and procedures in practice. External references support learning."
+  },
+  "sources": [
+    {
+      "title": "Faculty of Nursing — Workplace ethics and conduct",
+      "url": "https://nourabobaker-create.github.io/tobruk-nursing-simulation/professional-development/guides/ethics-charter.pdf"
+    },
+    {
+      "title": "Faculty of Nursing — Employee guide",
+      "url": "https://nourabobaker-create.github.io/tobruk-nursing-simulation/professional-development/guides/employee-guide.pdf"
+    },
+    {
+      "title": "Faculty of Nursing — Faculty and teaching assistant guide",
+      "url": "https://nourabobaker-create.github.io/tobruk-nursing-simulation/professional-development/guides/faculty-ta-guide.pdf"
+    },
+    {
+      "title": "Faculty of Nursing — Research and Graduation Research Guide",
+      "url": "https://nourabobaker-create.github.io/tobruk-nursing-simulation/professional-development/guides/research-guide-en.pdf"
+    },
+    {
+      "title": "CIOMS — International Ethical Guidelines for Health-related Research Involving Humans, 2016",
+      "url": "https://cioms.ch/wp-content/uploads/2017/01/WEB-CIOMS-EthicalGuidelines.pdf"
+    },
+    {
+      "title": "WHO Research Ethics Review Committee — Templates for informed consent forms",
+      "url": "https://www.who.int/groups/research-ethics-review-committee/guidelines-on-submitting-research-proposals-for-ethics-review/templates-for-informed-consent-forms"
+    },
+    {
+      "title": "ICMJE — Defining the Role of Authors and Contributors",
+      "url": "https://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html"
+    },
+    {
+      "title": "ICMJE — Disclosure of Relationships, Activities, and Conflicts of Interest",
+      "url": "https://www.icmje.org/recommendations/browse/roles-and-responsibilities/author-responsibilities--conflicts-of-interest.html"
+    },
+    {
+      "title": "ICMJE — Scientific Misconduct",
+      "url": "https://www.icmje.org/recommendations/browse/publishing-and-editorial-issues/scientific-misconduct-expressions-of-concern-and-retraction.html"
+    }
+  ]
+}
