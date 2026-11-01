@@ -1,0 +1,82 @@
+{
+  "date": "2026-11-01",
+  "base_commit": "78d78928897126414dcead798fdadc0d7a6e3755",
+  "priority_ar": "تمريض: تعزيز الصحة والتثقيف ورعاية المسنين. المطابقة السابقة جزئية؛ الأعداد لا تقيس جودة التغطية.",
+  "added": [
+    {
+      "id": "openrn-health-promotion-2025",
+      "title_ar": "تعزيز الصحة في التمريض",
+      "title_original": "Nursing Health Promotion",
+      "url": "https://wtcs.pressbooks.pub/healthpromo/",
+      "provider": "Open RN · WisTech Open / Chippewa Valley Technical College",
+      "authors": "Kimberly Ernstmeyer; Elizabeth Christman (editors)",
+      "language": "en",
+      "type": "book",
+      "topics": [
+        "تعزيز الصحة",
+        "التثقيف الصحي",
+        "تغيير السلوك",
+        "الثقافة الصحية"
+      ],
+      "level": "foundation",
+      "description_ar": "كتاب تمريضي مفتوح عن التثقيف الصحي وتغيير السلوك والوقاية؛ يدعم تقييم المتعلم واختيار طريقة التعليم والتحقق من الفهم.",
+      "description_en": "An open nursing textbook supporting learner assessment, health teaching, prevention and behavior change across the lifespan.",
+      "access": "free",
+      "access_note_ar": "النص الكامل مجاني دون حساب، مع تنزيل PDF وEPUB من الناشر. CC BY 4.0 مع استثناء المواد المنسوبة لأطراف أخرى؛ بعض السياقات التنظيمية أمريكية.",
+      "verified_at": "2026-11-01",
+      "verification": "page_checked",
+      "evidence_url": "https://wtcs.pressbooks.pub/healthpromo/front-matter/introduction/",
+      "source_collection": "daily_search_20261101",
+      "course_ids": [
+        "CRS-025",
+        "CRS-027"
+      ],
+      "year": 2025,
+      "edition": "1",
+      "isbn": "9781957068183",
+      "license": "CC BY 4.0",
+      "download_url": "https://wtcs.pressbooks.pub/healthpromo/open/download?type=pdf",
+      "coverage_note_ar": "دعم جزئي لتعزيز الصحة ومستويات الوقاية وتقييم المتعلم والتثقيف وتغيير السلوك؛ لا يغطي وحده تقييم المجتمع أو طرائق التدريس والتقويم الجامعي كاملة. مواضع مفحوصة: الفصل 1، والأقسام 1.6 و2.7. الربط يحتاج مراجعة منسق المقرر.",
+      "coverage_note_en": "Partial support for health teaching, learner assessment, prevention and behavior change; not a complete community assessment or university teaching methods text. Local policy adaptation and course coordinator review required.",
+      "review_note_ar": "مراجعة الأقران موثقة في مقدمة الناشر؛ فُحصت بيانات المحررين والنص التعليمي في الفصل الأول ومواضع التعليم وتغيير السلوك. ليس مقالة بحثية.",
+      "alternate_urls": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK615319/"
+      ]
+    }
+  ],
+  "updated": [
+    {
+      "id": "review-icope2-ar",
+      "description_en": "WHO second-edition handbook supporting person-centred assessment, care pathways and carer support for older people.",
+      "year": 2025,
+      "edition": "2",
+      "isbn": "9789240116290",
+      "authors": "World Health Organization",
+      "verified_at": "2026-11-01",
+      "download_url": "https://iris.who.int/bitstreams/00a41385-6cac-4a1b-8192-fe346f1f6deb/download",
+      "alternate_urls": [
+        "https://www.who.int/publications/i/item/9789240103726",
+        "https://iris.who.int/server/api/core/bitstreams/7516b015-e205-43d1-883f-01f2c31af261/content"
+      ],
+      "edition_note_ar": "النسخة العربية 2025؛ الأصل الإنجليزي 2024، ISBN 9789240103726. تاريخ صفحة منظمة الصحة العالمية 22 سبتمبر 2025. نسختان لغويتان للعمل نفسه، وليستا إضافتين.",
+      "access_note_ar": "نص عربي كامل PDF مجاني دون حساب، ونسخة إنجليزية عبر صفحة WHO. CC BY-NC-SA 3.0 IGO؛ مع مراعاة حقوق مواد الأطراف الأخرى والإسناد وعدم الإيحاء بتأييد WHO."
+    }
+  ],
+  "counts": {
+    "before": 2560,
+    "after": 2561,
+    "new_books": 1,
+    "new_chapters": 0,
+    "new_papers": 0,
+    "updated_existing_guides": 1
+  },
+  "excluded_duplicates": [
+    "openrn-nursingfundamentals",
+    "review-medterm2e",
+    "review-icope2-ar"
+  ],
+  "deduplication_ar": "فُحصت كامل الموارد 2560 بالعنوان والرابط وISBN وDOI حيث وجد. لم توجد مطابقة لكتاب Health Promotion أو ISBN 9781957068183 أو NBK615319. نسخة NCBI من الكتاب ليست إضافة مستقلة؛ أقسامه روابط دعم وليست فصولا مضافة.",
+  "verification_ar": "فُتح النص الكامل لفصل Teaching & Learning في NCBI ومواضع 1.6 و2.7 في الناشر. جُلب ملفا WHO العربي والإنجليزي: HTTP 200 وPDF فعلي؛ فُحصت صفحة الحقوق والفهرس ومسارات الرعاية. واجهت أداة الويب 403 لبعض الروابط؛ نجح الجلب المباشر من الجهات نفسها. لا مقالات جديدة، لذا لا توجد إضافة تستدعي فحص السحب أو التصحيح.",
+  "next_priority_ar": "مصادر مصطلحات/تواصل إنجليزية ملائمة للمفردات اللغوية الفعلية، ثم رعاية المسنين بمراجعة منهجية بعد فحص النص الكامل والسحب والتصحيح. لا تُكرر هذا الكتاب أو ترجمتي ICOPE. قائمة المقررات ما زالت تتضمن Islamic Studies رغم قرار الإزالة؛ لم تُغير بنية المنهج ضمن هذه الدفعة.",
+  "publication_ar": "يُتحقق من النشر بعد حفظ commit؛ هذا السجل يوثق الاختيار والبيانات، ولا يثبت وحده نجاح النشر."
+}
