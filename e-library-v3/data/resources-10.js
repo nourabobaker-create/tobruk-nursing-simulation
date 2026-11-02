@@ -1,0 +1,158 @@
+/* Verified nursing selection, 2 November 2026. */
+(() => {const c=window.LIBRARY_CATALOG;const additions=[
+  {
+    "id": "springer-orthogeriatric-nursing-2e",
+    "title_ar": "تمريض كسور الهشاشة ورعاية المسنين — الطبعة الثانية",
+    "title_original": "Fragility Fracture and Orthogeriatric Nursing: Holistic Care and Management of the Fragility Fracture and Orthogeriatric Patient",
+    "url": "https://link.springer.com/book/10.1007/978-3-031-33484-9",
+    "year": 2024,
+    "type": "book",
+    "authors": "Karen Hertz; Julie Santy-Tomlinson (editors)",
+    "provider": "Springer Cham",
+    "isbn": "9783031334849",
+    "license": "CC BY 4.0",
+    "course_ids": [
+      "CRS-047",
+      "CRS-029"
+    ],
+    "description_ar": "كتاب تمريضي متخصص في تقييم المسن المصاب بكسور الهشاشة، والوقاية من السقوط والرعاية متعددة التخصصات والتأهيل.",
+    "description_en": "A specialist nursing book on fragility fractures, geriatric assessment, falls prevention and rehabilitation.",
+    "coverage_note_ar": "دعم جزئي لتقييم المسن والسقوط والتأهيل ورعاية الكسور؛ ليس تغطية شاملة لتمريض المسنين أو تمريض البالغين.",
+    "coverage_note_en": "Partial educational support only; local protocols and course coordinator review are required.",
+    "review_note_ar": "محررتان متخصصتان في التمريض ومؤلفون سريريون مسمون؛ فُتح متن فصلي الوقاية من السقوط والتقييم الشامل بالمراجع والأنشطة. لا يُدّعى تحكيم خارجي شامل لم يثبت.",
+    "reviewed_sections": [
+      "https://link.springer.com/chapter/10.1007/978-3-031-33484-9_4",
+      "https://link.springer.com/chapter/10.1007/978-3-031-33484-9_6"
+    ],
+    "language": "en",
+    "access": "free",
+    "level": "clinical",
+    "verified_at": "2026-11-02",
+    "verification": "page_checked",
+    "evidence_url": "https://link.springer.com/book/10.1007/978-3-031-33484-9",
+    "source_collection": "daily_search_20261102",
+    "topics": [
+      "تمريض كسور الهشاشة ورعاية المسنين — الطبعة الثانية"
+    ],
+    "edition": "2",
+    "doi": "10.1007/978-3-031-33484-9",
+    "access_note_ar": "نص كامل مجاني دون حساب؛ CC BY 4.0 مع استثناء مواد الأطراف الأخرى. القراءة عبر فصول الناشر متحققة؛ تعذر التحقق من تنزيل الكتاب PDF. للاستخدام التعليمي مع مراعاة الإرشادات والسياسات المحلية الحديثة.",
+    "edition_note_ar": "سنة حقوق الطبعة 2024؛ تاريخ نشر النسخة الإلكترونية 8 نوفمبر 2023. لا تُحسب فصول الكتاب كمصادر إضافية."
+  },
+  {
+    "id": "who-early-newborn-2e-2022",
+    "title_ar": "الرعاية الأساسية المبكرة لحديثي الولادة — الطبعة الثانية",
+    "title_original": "Early essential newborn care: clinical practice pocket guide, 2nd edition",
+    "url": "https://www.who.int/publications/i/item/9789290619659",
+    "year": 2022,
+    "type": "guide",
+    "authors": "WHO Regional Office for the Western Pacific",
+    "provider": "World Health Organization / WPRO",
+    "isbn": "9789290619659",
+    "license": "CC BY-NC-SA 3.0 IGO",
+    "course_ids": [
+      "CRS-020",
+      "CRS-030"
+    ],
+    "description_ar": "دليل مهني متكامل للرعاية في الساعات والأيام الأولى، يشمل التحضير للولادة والتدفئة ودعم الرضاعة والمتابعة قبل الخروج.",
+    "description_en": "A complete clinical pocket guide to early newborn care, birth preparation, warmth, breastfeeding support and predischarge care.",
+    "coverage_note_ar": "دعم جزئي لرعاية حديث الولادة في الأمومة والأطفال، وخاصة الرعاية المبكرة ودعم الرضاعة؛ لا يحل محل تدريب الإنعاش أو بروتوكول المؤسسة.",
+    "coverage_note_en": "Partial educational support only; local protocols and course coordinator review are required.",
+    "review_note_ar": "WHO/WPRO؛ يوضح تطوير الدليل ومراجعه، وفُحص PDF الكامل وصفحة الحقوق وأقسام أول90دقيقة ودعم الرضاعة ص37–39.",
+    "reviewed_sections": [
+      "PDF: sections 2–4; printed pp 37–39"
+    ],
+    "language": "en",
+    "access": "free",
+    "level": "clinical",
+    "verified_at": "2026-11-02",
+    "verification": "page_checked",
+    "evidence_url": "https://www.who.int/publications/i/item/9789290619659",
+    "source_collection": "daily_search_20261102",
+    "topics": [
+      "الرعاية الأساسية المبكرة لحديثي الولادة — الطبعة الثانية"
+    ],
+    "edition": "2",
+    "download_url": "https://iris.who.int/server/api/core/bitstreams/be675faf-b002-48f7-81bd-44f6e3751895/content",
+    "access_note_ar": "نص كامل مجاني دون حساب؛ CC BY-NC-SA 3.0 IGO مع استثناء مواد الأطراف الأخرى. تحقق تنزيل PDF من الجهة الأصلية. للاستخدام التعليمي مع مراعاة الإرشادات والسياسات المحلية الحديثة."
+  },
+  {
+    "id": "who-postnatal-positive-2022",
+    "title_ar": "توصيات منظمة الصحة العالمية لرعاية الأم والوليد بعد الولادة",
+    "title_original": "WHO recommendations on maternal and newborn care for a positive postnatal experience",
+    "url": "https://www.who.int/publications/i/item/9789240045989",
+    "year": 2022,
+    "type": "guide",
+    "authors": "World Health Organization",
+    "provider": "World Health Organization",
+    "isbn": "9789240045989",
+    "license": "CC BY-NC-SA 3.0 IGO",
+    "course_ids": [
+      "CRS-020",
+      "CRS-025"
+    ],
+    "description_ar": "إرشادات مبنية على الأدلة للرعاية الروتينية بعد الولادة للأم والوليد، والتثقيف والدعم النفسي والمتابعة بالمرافق والمجتمع.",
+    "description_en": "Evidence-based guidance on routine postnatal care for women and newborns, education, mental health and facility/community follow-up.",
+    "coverage_note_ar": "دعم جزئي للرعاية النفاسية والمتابعة المجتمعية؛ قوة التوصيات وتوافر الموارد والسياق المحلي يجب أن تراجع في أصل الدليل.",
+    "coverage_note_en": "Partial educational support only; local protocols and course coordinator review are required.",
+    "review_note_ar": "WHO Guidelines Review Committee؛ مجموعات تطوير وخبراء مسمون وGRADE وقاعدة أدلة منفصلة. فُحص متن PDF الكامل والمنهجية وتوصيات الدعم النفسي والتثقيف.",
+    "reviewed_sections": [
+      "PDF: methods; recommendation 19; routine postnatal care"
+    ],
+    "language": "en",
+    "access": "free",
+    "level": "clinical",
+    "verified_at": "2026-11-02",
+    "verification": "page_checked",
+    "evidence_url": "https://www.who.int/publications/i/item/9789240045989",
+    "source_collection": "daily_search_20261102",
+    "topics": [
+      "توصيات منظمة الصحة العالمية لرعاية الأم والوليد بعد الولادة"
+    ],
+    "edition": "",
+    "download_url": "https://iris.who.int/server/api/core/bitstreams/73dec697-c033-449c-8323-1cd04a8d8f20/content",
+    "access_note_ar": "نص كامل مجاني دون حساب؛ CC BY-NC-SA 3.0 IGO مع استثناء مواد الأطراف الأخرى. تحقق تنزيل PDF من الجهة الأصلية. للاستخدام التعليمي مع مراعاة الإرشادات والسياسات المحلية الحديثة.",
+    "correction_url": "https://cdn.who.int/media/docs/default-source/reproductive-health/maternal-health/9789240046177-corrigendum.pdf?sfvrsn=dba99d0b_3",
+    "correction_note_ar": "فُحص تصحيح26مايو2022؛ يخص مرجع مراجعة منع الإمساك في الملحق الدليلي ص93 (2015 إلى2020)، وقد أدمج في النسخة الإلكترونية؛ ليس سحبًا للدليل."
+  },
+  {
+    "id": "who-primary-child-adolescent-2022",
+    "title_ar": "دليل الرعاية الصحية الأولية للأطفال والمراهقين",
+    "title_original": "Pocket book of primary health care for children and adolescents: guidelines for health promotion, disease prevention and management from the newborn period to adolescence",
+    "url": "https://www.who.int/europe/publications/i/item/9789289057622",
+    "year": 2022,
+    "type": "guide",
+    "authors": "WHO Regional Office for Europe",
+    "provider": "World Health Organization / Europe",
+    "isbn": "9789289057622",
+    "license": "CC BY-NC-SA 3.0 IGO",
+    "course_ids": [
+      "CRS-030",
+      "CRS-025",
+      "CRS-023"
+    ],
+    "description_ar": "دليل كامل للزيارات الوقائية وتقييم الطفل ومتابعة النمو والتطور والتثقيف والإحالة من مرحلة الوليد إلى المراهقة.",
+    "description_en": "A complete primary care guide covering well-child visits, assessment, development, counselling and referral from birth to adolescence.",
+    "coverage_note_ar": "دعم جزئي لتمريض الأطفال وصحة المجتمع والنمو والتطور؛ أُعد للسياق الأوروبي ويحتاج مواءمة محلية، وليس مقررًا تمريضيًا كاملًا أو بديلًا عن الإشراف.",
+    "coverage_note_en": "Partial educational support only; local protocols and course coordinator review are required.",
+    "review_note_ar": "WHO/Europe؛ يلخص إرشادات قائمة على الأدلة ومراجعها. فُتح PDF الرسمي الكامل وفُحصت الحقوق وأقسام الزيارات الوقائية وأخذ التاريخ والفحص ص9–17.",
+    "reviewed_sections": [
+      "PDF: Chapter 2, sections 2.1–2.5, printed pp 9–17"
+    ],
+    "language": "en",
+    "access": "free",
+    "level": "clinical",
+    "verified_at": "2026-11-02",
+    "verification": "page_checked",
+    "evidence_url": "https://www.who.int/europe/publications/i/item/9789289057622",
+    "source_collection": "daily_search_20261102",
+    "topics": [
+      "دليل الرعاية الصحية الأولية للأطفال والمراهقين"
+    ],
+    "edition": "",
+    "download_url": "https://iris.who.int/server/api/core/bitstreams/a484e069-51b4-4f27-933f-18d025350299/content",
+    "access_note_ar": "نص كامل مجاني دون حساب؛ CC BY-NC-SA 3.0 IGO مع استثناء مواد الأطراف الأخرى. تحقق تنزيل PDF من الجهة الأصلية. للاستخدام التعليمي مع مراعاة الإرشادات والسياسات المحلية الحديثة."
+  }
+];
+for(const r of additions){if(c.resources.some(x=>x.id===r.id||x.url===r.url))throw new Error('Duplicate resource '+r.id);c.resources.push(r);for(const id of r.course_ids){const course=c.curriculum.find(x=>x.id===id);if(course)course.resource_ids=[...new Set([...course.resource_ids,r.id])];}}
+const r=c.resources;Object.assign(c.stats,{total:r.length,arabic:r.filter(x=>x.language==='ar').length,providers:new Set(r.map(x=>x.provider).filter(Boolean)).size,types:r.reduce((a,x)=>(a[x.type]=(a[x.type]||0)+1,a),{}),verified_page:r.filter(x=>x.verification==='page_checked').length,verified_index:r.filter(x=>x.verification==='index_checked').length});c.release={...c.release,id:'20261102-geriatric-maternal-child',date:'2 نوفمبر 2026'};})();
