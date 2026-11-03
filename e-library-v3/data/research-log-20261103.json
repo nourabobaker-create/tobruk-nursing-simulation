@@ -1,0 +1,157 @@
+{
+  "date": "2026-11-03",
+  "base_commit": "54be5c057337cf9f83ecf69024d221624e203f5f",
+  "priority_ar": "المصطلحات والتواصل والمورد العربي بعد دفعة المسنين والأم والطفل؛ فجوة جودة الدعم لا تقاس بعدد الروابط وحده.",
+  "search_families": [
+    "Open RN/NCBI",
+    "Georgian College/eCampusOntario",
+    "MacEwan Open Books",
+    "Dementia Australia"
+  ],
+  "added": [
+    {
+      "id": "georgian-medical-terminology-foundation-2e",
+      "title_original": "Building a Medical Terminology Foundation 2e",
+      "title_ar": "بناء أساس المصطلحات الطبية — الطبعة الثانية",
+      "url": "https://ecampusontario.pressbooks.pub/medicalterminology2/",
+      "provider": "Georgian College / eCampusOntario",
+      "authors": "Kimberlee Carter; Marie Rutherford; Connie Stevens",
+      "year": 2024,
+      "edition": "2",
+      "license": "CC BY 4.0",
+      "course_ids": [
+        "CRS-033",
+        "CRS-044"
+      ],
+      "description_ar": "كتاب جامعي لبناء الكلمات الطبية ونطقها وفهم مصطلحات أجهزة الجسم والفحوص، مع أنشطة تفاعلية وتمارين.",
+      "description_en": "A college textbook on medical word parts, pronunciation, body-system terminology and diagnostic vocabulary, with interactive exercises.",
+      "coverage_note_ar": "دعم جزئي لبناء المصطلح ومصطلحات الأجهزة؛ فُحصت أجزاء الكلمة ومفردات القلب والفحوص. الجمهور الأصلي طلاب إدارة المكاتب والخدمات الصحية؛ ليس مرجعًا تمريضيًا للعلاج أو تغطية كاملة لمصطلحات الطوارئ والعناية المركزة.",
+      "coverage_note_en": "Partial educational support for the specified courses; coordinator review and local adaptation are required.",
+      "review_note_ar": "إنتاج أكاديمي مسمى ومراجعة تحريرية وإتاحة تقرير مراجعة خارجية في مستودع eCampusOntario. فُحص متن HTML وPDF الكامل والحقوق. هذا عمل معاد تكييفه من OpenStax ومصادر أخرى بأنشطة مصطلحات، وليس مرآة لكتاب Open RN الموجود. لا يُدّعى تحكيم شامل لم يثبت.",
+      "reviewed_sections": [
+        "https://ecampusontario.pressbooks.pub/medicalterminology2/chapter/word-parts/",
+        "https://ecampusontario.pressbooks.pub/medicalterminology2/chapter/diseases-heart/",
+        "https://ecampusontario.pressbooks.pub/medicalterminology2/front-matter/acknowledgements/"
+      ],
+      "download_url": "https://ecampusontario.pressbooks.pub/medicalterminology2/open/download?type=pdf",
+      "language": "en",
+      "type": "book",
+      "access": "free",
+      "verified_at": "2026-11-03",
+      "verification": "page_checked",
+      "evidence_url": "https://ecampusontario.pressbooks.pub/medicalterminology2/",
+      "source_collection": "daily_search_20261103",
+      "level": "foundation",
+      "topics": [
+        "المصطلحات الطبية",
+        "بناء الكلمات",
+        "النطق"
+      ],
+      "access_note_ar": "نص كامل وPDF رسمي مجانيان دون حساب؛ الملف نحو98 MB لذا القراءة عبر الويب أخف. CC BY 4.0 مع استثناء الغلاف وبعض المواد المقتبسة. لغة النص الإنجليزية."
+    },
+    {
+      "id": "macewan-professional-communication-2023",
+      "title_original": "Professional Communication Skills for Health Studies",
+      "title_ar": "مهارات التواصل المهني للدراسات الصحية",
+      "url": "https://openbooks.macewan.ca/professionalcommunication/",
+      "provider": "MacEwan Open Books / MacEwan University",
+      "authors": "Andrea Chute; Sharon Johnston; Brandi Pawliuk; Deb Troendle Scott (editor)",
+      "year": 2023,
+      "edition": "1",
+      "license": "CC BY-NC-SA 4.0",
+      "course_ids": [
+        "CRS-009",
+        "CRS-011",
+        "CRS-045"
+      ],
+      "description_ar": "كتاب جامعي للتواصل اللفظي وغير اللفظي والإصغاء والتعاطف والمقابلة وإدارة الخلاف والعمل بين المهن الصحية.",
+      "description_en": "A university textbook on verbal and nonverbal communication, listening, empathy, interviewing, conflict and interprofessional collaboration.",
+      "coverage_note_ar": "دعم جزئي للمقابلة في التقييم الصحي وعلاقة الممرض بالمريض وإدارة الخلاف في القيادة. لا يغطي قواعد ونطق اللغة الإنجليزية 1–2 كاملة، ولا تدريب الجداول والرسوم في مهارات التواصل4.",
+      "coverage_note_en": "Partial educational support for the specified courses; coordinator review and local adaptation are required.",
+      "review_note_ar": "ناشر جامعي ومؤلفون ومحررة ومراجعان مسمون: Dave Kato وMargart Swedish. فُحص متن القسمين3.4 و5.4 وPDF الكامل. كتاب موسع معاد المزج، يتضمن مواد من كتاب TMU الموجود؛ لا تُحسب تلك الفصول اقتناءات مستقلة أو يُعاد عد المصدر الأصلي.",
+      "reviewed_sections": [
+        "https://openbooks.macewan.ca/professionalcommunication/chapter/3-4-improving-verbal-communication/",
+        "https://openbooks.macewan.ca/professionalcommunication/chapter/5-4-barriers-to-effective-listening/"
+      ],
+      "download_url": "https://openbooks.macewan.ca/professionalcommunication/open/download?type=pdf",
+      "language": "en",
+      "type": "book",
+      "access": "free",
+      "verified_at": "2026-11-03",
+      "verification": "page_checked",
+      "evidence_url": "https://openbooks.macewan.ca/professionalcommunication/",
+      "source_collection": "daily_search_20261103",
+      "level": "foundation",
+      "topics": [
+        "التواصل المهني",
+        "الإصغاء والتعاطف",
+        "المقابلة التمريضية"
+      ],
+      "doi": "10.31542/b.gm.3",
+      "isbn": "9781777061111",
+      "access_note_ar": "كتاب كامل وPDF نحو4.9 MB مجانيان دون حساب؛ CC BY-NC-SA 4.0 مع الاستثناءات. الأمثلة والسياقات المهنية تحتاج مواءمة محلية."
+    },
+    {
+      "id": "dementia-australia-guide-ar-3e",
+      "title_original": "دليل مرضى الخرف",
+      "title_ar": "دليل مرضى الخرف — النسخة العربية، الطبعة الثالثة",
+      "url": "https://www.dementia.org.au/sites/default/files/2023-10/The-Dementia-Guide-Arabic.pdf",
+      "provider": "Dementia Australia",
+      "authors": "Dementia Australia",
+      "year": 2022,
+      "edition": "3",
+      "license": "حقوق النشر محفوظة؛ لم يثبت ترخيص مفتوح",
+      "course_ids": [
+        "CRS-047",
+        "CRS-036"
+      ],
+      "description_ar": "دليل عربي كامل للمصابين بالخرف وعائلاتهم ومقدمي الرعاية؛ يدعم فهم التغيرات والتواصل والحياة اليومية ودعم الأسرة.",
+      "description_en": "A complete Arabic patient and carer guide supporting understanding of dementia, communication, daily life and family support.",
+      "coverage_note_ar": "دعم تثقيفي جزئي لرعاية المسنين والصحة النفسية؛ فُحصت إرشادات التواصل ص69–71. موجه للمرضى والأسر؛ ليس كتابًا سريريًا أو بديلًا عن التقييم المتخصص، والخدمات والأرقام والإجراءات القانونية أسترالية.",
+      "coverage_note_en": "Partial educational support for the specified courses; coordinator review and local adaptation are required.",
+      "review_note_ar": "مؤسسة وطنية متخصصة؛ يوثق الدليل مشاركة مهنيي الصحة ورعاية المسنين والأسر ولجنة استشارية. تنص صفحة اللغات على الاستعانة بمترجمين معتمدين. فُحص PDF العربي الكامل وصفحات الحقوق والطبعة والتواصل؛ لا يُدّعى تحكيم أكاديمي.",
+      "reviewed_sections": [
+        "https://www.dementia.org.au/languages/arabic",
+        "PDF: printed pp 2–5 and 69–71"
+      ],
+      "download_url": "https://www.dementia.org.au/sites/default/files/2023-10/The-Dementia-Guide-Arabic.pdf",
+      "language": "ar",
+      "type": "guide",
+      "access": "free",
+      "verified_at": "2026-11-03",
+      "verification": "page_checked",
+      "evidence_url": "https://www.dementia.org.au/sites/default/files/2023-10/The-Dementia-Guide-Arabic.pdf",
+      "source_collection": "daily_search_20261103",
+      "level": "foundation",
+      "topics": [
+        "رعاية المسنين",
+        "الخرف",
+        "تثقيف المريض والأسرة"
+      ],
+      "title_en": "The Dementia Guide — Arabic translation",
+      "access_note_ar": "PDF عربي كامل مجاني من الجهة الأصلية (نحو1.9 MB)، طبعة ثالثة يونيو2022. حقوق النشر محفوظة؛ تُضاف الروابط فقط ولا تُعاد استضافة الملف. أرقام الدعم والخدمات تخص أستراليا."
+    }
+  ],
+  "counts": {
+    "before": 2574,
+    "after": 2577,
+    "books": 2,
+    "guides": 1,
+    "chapters": 0,
+    "papers": 0
+  },
+  "deduplication_ar": "مطابقة كامل2574مدخلًا بالعنوان والمؤلف والرابط وDOI/ISBN المتاحين والطبعة. كتاب المصطلحات الموجود Open RNومراياه لم تُعد إضافات؛ المصدران الجامعيان الجديدان عملان مختلفان بالعنوان والمؤلفين والأنشطة/النطاق، مع توثيق الاقتباس من مصادر قائمة. لا يُعد الفصل أو ملف PDFمرآة إضافة مستقلة.",
+  "excluded_duplicates": [
+    "Medical Terminology 2e — Open RN / NCBI NBK607454",
+    "Introduction to Communication in Nursing — TMU / eCampusOntario mirror"
+  ],
+  "access_checks": {
+    "all_pdf_status": 200,
+    "dementia_pdf_bytes": 1886949,
+    "communication_pdf_bytes": 4858843,
+    "terminology_pdf_bytes": 97680405
+  },
+  "limits_ar": "لا مقالات جديدة؛ research-papers.csv باقٍ بـ220بحثًا دون تغيير. لا ترخيص مفتوح مثبت لدليل الخرف، والربط إلى الناشر فقط. فحص الملاءمة لمواضع محددة وليس مراجعة كل معلومة. لم تتغير المفردات600 أو اختيارات القياس والمفضلة.",
+  "next_priority_ar": "تدوير إلى أبحاث تدخلات السقوط/تعليم المريض ذات النص الكامل مع فحص السحب والتصحيح، ثم مصادر لغة إنجليزية تمريضية ملائمة لقواعد ومفردات المقررات الفعلية؛ لا تكرر الكتب والمرايا الحالية.",
+  "publication_ar": "يثبت النشر بمطابقة النسخة العامة بعد حفظ التغيير؛ هذا سجل الفحص والاختيار."
+}
