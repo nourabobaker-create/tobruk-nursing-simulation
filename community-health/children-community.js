@@ -16,9 +16,24 @@
     "https://www.nhs.uk/conditions/head-lice-and-nits/"
   ],
   "kidLiceAR": [
-    "وزارة الصحة السعودية",
-    "القمل: معلومات عامة بالعربية",
-    "https://www.moh.gov.sa/awarenessplateform/varioustopics/pages/lice.aspx"
+    "هيلث لينك كولومبيا البريطانية (HealthLink BC)",
+    "قمل الرأس: نشرة عربية للأسر (PDF)",
+    "https://www.healthlinkbc.ca/sites/default/files/documents/hfile06-A.pdf"
+  ],
+  "kidLiceTreatmentCDC": [
+    "مراكز مكافحة الأمراض CDC",
+    "علاج قمل الرأس والمتابعة",
+    "https://www.cdc.gov/lice/treatment/index.html"
+  ],
+  "kidLiceClinicalCDC": [
+    "مراكز مكافحة الأمراض CDC",
+    "احتياطات استعمال علاجات قمل الرأس",
+    "https://www.cdc.gov/lice/hcp/clinical-care/index.html"
+  ],
+  "kidLiceSeattle": [
+    "مستشفى سياتل للأطفال",
+    "فحص قمل الرأس والعناية الآمنة",
+    "https://www.seattlechildrens.org/conditions/head-lice"
   ],
   "kidFood": [
     "منظمة الصحة العالمية",
@@ -902,22 +917,22 @@ const topics=[
       "child"
     ],
     "audience": "للأطفال 6–12 سنة؛ الأصغر مع بالغ",
-    "title": "إذا حكني رأسي… أخبر أسرتي",
+    "title": "قمل الرأس: إذا حكني رأسي… أخبر أسرتي",
     "art": "sensory-space",
     "hook": "القمل ليس سببًا للسخرية أو الخجل.",
-    "about": "القمل حشرات صغيرة تزحف بين الشعر المتلامس؛ لا تطير ولا تقفز. يمكن أن يصاب بها أي طفل، حتى مع الشعر النظيف.",
+    "about": "القمل حشرات صغيرة تنتقل غالبًا عندما يتلامس شعر طفلين أثناء اللعب. تزحف ولا تطير ولا تقفز. يمكن أن يصاب بها أي طفل، حتى مع الشعر النظيف.",
     "symptoms": [
-      "إذا شعرت بحكة أو شيء يتحرك في شعري أخبر أسرتي؛ ليست كل حكة قملًا."
+      "إذا شعرت بحكة أو كأن شيئًا يتحرك في شعري، أخبر أسرتي. قد تحدث الحكة لأسباب أخرى أيضًا."
     ],
     "actions": [
-      "أترك فحص الشعر والعلاج للكبار.",
+      "أطلب من شخص بالغ أن يفحص شعري بمشط دقيق الأسنان.",
       "أستعمل مشطي وقبعتي، وأتجنب تلامس الشعر بالشعر أثناء اللعب.",
       "أحافظ على سر زميلي ولا أنشر اسمه أو صورته."
     ],
     "prevention": [
-      "أطلب من أسرتي فحص الشعر عند وجود إصابة قريبة. لا يوجد تصرف يضمن منع القمل تمامًا."
+      "إذا أصيب شخص أخالطه بقمل الرأس، أطلب من أسرتي أن تفحص شعري."
     ],
-    "treatment": "قد يزيله الكبار بمشط خاص أو علاج مناسب للعمر حسب الإرشادات. لا أضع دواء على رأسي وحدي.",
+    "treatment": "إذا وجد الكبار قملة حية، يساعدونني بتمشيط الشعر الرطب أو باستعمال علاج يناسب عمري. أطلب مساعدتهم عند استعمال أي دواء.",
     "avoid": "لا أستعمل مبيدًا منزليًا أو بنزينًا أو كيروسينًا أو خلطة حارقة على شعري.",
     "warning": "إذا ظهرت جروح مؤلمة أو صديد أو دخل علاج في العين، أخبر بالغًا فورًا.",
     "scene": "شعرت هناء بحكة، فأخبرت أمها بهدوء. ساعدتها الأسرة ولم يسخر منها أحد.",
@@ -932,7 +947,8 @@ const topics=[
     ],
     "sources": [
       "kidLiceCDC",
-      "kidLiceNHS"
+      "kidLiceNHS",
+      "kidLiceSeattle"
     ],
     "tags": [
       "family",
@@ -942,7 +958,8 @@ const topics=[
     "related": [
       "head-lice-family"
     ],
-    "reviewedSources": "2026-10-16",
+    "reviewedSources": "2026-11-11",
+    "sourceChecked": "2026-11-11",
     "childLesson": true,
     "sectionSources": {
       "about": [
@@ -966,12 +983,11 @@ const topics=[
         "kidLiceNHS"
       ],
       "avoid": [
-        "kidLiceCDC",
-        "kidLiceNHS"
+        "kidLiceSeattle"
       ],
       "warning": [
         "kidLiceCDC",
-        "kidLiceNHS"
+        "kidLiceClinicalCDC"
       ],
       "scene": [
         "kidLiceCDC",
@@ -1110,24 +1126,24 @@ const topics=[
     "title": "قمل الرأس: استعداد الأسرة والمدرسة",
     "audience": "الأسر والمعلمات ومقدمو الرعاية",
     "hook": "اكتشاف مبكر وعلاج صحيح، دون وصم أو مبيدات منزلية.",
-    "about": "قمل الرأس يزحف وينتقل غالبًا بتلامس الشعر، ولا يدل على قلة النظافة. ليست الحكة وحدها تشخيصًا؛ العثور على قملة حية بمشط كشف دقيق أهم من الاعتماد على بقايا البيض وحدها.",
+    "about": "ينتقل قمل الرأس غالبًا بتلامس الشعر، ويمكن أن يصيب أي أسرة مهما كانت عادات النظافة. العثور على قملة حية هو أوضح علامة على وجود إصابة نشطة.",
     "symptoms": [
-      "حكة أو إحساس بالحركة أو خدوش بالفروة؛ قد تتأخر الحكة عند أول إصابة.",
-      "قد يشبه البيض القشرة، لذلك اطلبوا تأكيدًا من صيدلي أو مختص عند الشك."
+      "قد تظهر حكة أو إحساس بالحركة أو خدوش في فروة الرأس. وقد تتأخر الحكة عند أول إصابة.",
+      "قد تشبه بيوض القمل القشرة، لكنها تلتصق بالشعرة. إذا وجدتم نقاطًا فقط ولم تتأكدوا من الإصابة، استشيروا صيدليًا أو مختصًا قبل العلاج."
     ],
     "actions": [
-      "جهزوا مشط كشف دقيقًا وإضاءة مناسبة وافحصوا الشعر بهدوء وخصوصية، خاصة عند ظهور إصابة قريبة.",
-      "افحصوا أفراد البيت والمخالطين القريبين، وعالجوا من ثبتت إصابته في اليوم نفسه وفق المشورة، لا الجميع تلقائيًا.",
-      "يمكن التمشيط الرطب المنظم أو علاج ملائم للعمر والحمل والحالة الصحية؛ اتبعوا النشرة وتوقيت التكرار لأن المنتجات تختلف.",
-      "نظفوا أدوات الشعر وما لامس الرأس مؤخرًا بحسب إرشادات المختص؛ لا حاجة لرش البيت أو التخلص من كل الأغراض."
+      "في إضاءة جيدة وبخصوصية، افحصوا الشعر بمشط دقيق الأسنان، خصوصًا خلف الأذنين وعند مؤخرة الرقبة.",
+      "افحصوا أفراد المنزل والمخالطين القريبين، وعالجوا المصابين في اليوم نفسه. اسألوا المختص عن التعامل مع من يشارك المصاب سريره.",
+      "يمكن إزالة القمل بالتمشيط الرطب المتكرر. عند اختيار مستحضر، اسألوا الصيدلي أو الطبيب عمّا يناسب العمر أو الحمل أو الرضاعة، واتبعوا النشرة وموعد التكرار إن لزم.",
+      "نظفوا الأمشاط والفرش التي استعملها المصاب. تجنبوا رش البيت بالمبيدات."
     ],
     "prevention": [
       "تجنبوا تلامس الشعر ومشاركة الأمشاط والقبعات والمناشف.",
-      "لا يستعمل دواء القمل وقائيًا؛ الفحص المبكر يقلل الانتشار ولا يضمن منعه تمامًا."
+      "افحصوا الشعر مبكرًا عند المخالطة القريبة، وتجنبوا استخدام دواء القمل للوقاية."
     ],
-    "treatment": "إذا استمر وجود قمل حي بعد استعمال صحيح، راجعوا الصيدلي أو الطبيب لتقييم التشخيص والمقاومة وإعادة العدوى؛ لا تخلطوا علاجات ولا تضاعفوا الجرعة. التمشيط الرطب له جدول متكرر وليس جلسة واحدة.",
+    "treatment": "إذا بقي القمل حيًا بعد إكمال العلاج وفق تعليمات العبوة، استشيروا الصيدلي أو الطبيب قبل تكراره أو تغييره. قد تستمر الحكة لبعض الوقت بعد زوال القمل. استخدموا مستحضرًا واحدًا فقط بالكمية الموصى بها.",
     "avoid": "لا بنزين أو كيروسين أو مبيد منزلي أو رذاذ تبخير، ولا أداة مشتركة لتفتيش الرؤوس. لا حاجة لحلاقة قسرية أو التشهير بالطفل.",
-    "warning": "اطلبوا المشورة عند صديد أو احمرار مؤلم متزايد أو إصابة رموش، وللرضيع قبل استعمال علاج. التعرض السمي أو صعوبة التنفس بعد منتج يستدعي مساعدة عاجلة.",
+    "warning": "استشيروا الطبيب إذا ظهر صديد أو ازداد احمرار فروة الرأس وألمها، أو إذا لاحظتم قملًا في الرموش. استشيروا مختصًا قبل استعمال مستحضر للرضيع. اطلبوا مساعدة طبية عاجلة عند صعوبة التنفس بعد استعمال أي منتج.",
     "art": "sensory-space",
     "scene": "أبلغت الأسرة المدرسة سرًا، وبدأ العلاج المناسب دون إعلان اسم الطفل أو اتهام زملائه.",
     "question": [
@@ -1142,7 +1158,9 @@ const topics=[
     "sources": [
       "kidLiceCDC",
       "kidLiceNHS",
-      "kidLiceAR"
+      "kidLiceAR",
+      "kidLiceTreatmentCDC",
+      "kidLiceSeattle"
     ],
     "tags": [
       "family",
@@ -1153,23 +1171,23 @@ const topics=[
       "kids-lice",
       "kids-my-tools"
     ],
-    "reviewedSources": "2026-10-16",
+    "reviewedSources": "2026-11-11",
+    "sourceChecked": "2026-11-11",
     "learningSections": [
       {
         "title": "المدرسة: تعامل صحي بلا إحراج",
-        "body": "توصي CDC بعدم إخراج الطفل مبكرًا لمجرد القمل، وبالعودة بعد بدء العلاج المناسب؛ وجود البيض وحده لا يستلزم الإقصاء. نسقوا بسرية مع الأسرة واتبعوا توجيهات الصحة المحلية. بعض المنشورات القديمة تقترح عزلًا أو حلاقة؛ لا نعتمد ذلك كقاعدة عامة.",
+        "body": "وفق إرشادات CDC، يمكن للطفل إكمال يومه الدراسي والعودة إلى الصف بعد بدء العلاج المناسب. بقاء البيض وحده لا يستلزم الإقصاء. تواصلوا مع الأسرة بسرية واتبعوا التوجيهات الصحية المحلية.",
         "sources": [
           "kidLiceCDC",
           "kidLiceNHS"
         ]
       },
       {
-        "title": "خطة بسيطة يمكن تكرارها",
-        "body": "تحققوا من وجود قمل حي، اختاروا وسيلة مناسبة مع المختص، دوّنوا موعد المتابعة وتكرار العلاج إن نصت النشرة، وأعيدوا الفحص. لا تنسبوا الحكة المستمرة وحدها إلى فشل العلاج.",
+        "title": "خطوات التمشيط الرطب",
+        "body": "إذا اخترتم التمشيط الرطب، اغسلوا الشعر بشامبو عادي، وضعوا بلسمًا، ثم مرّروا مشط القمل من الجذور إلى الأطراف. توصي NHS بالتمشيط في الأيام 1 و5 و9 و13، وإعادة الفحص في اليوم 17. إذا استعملتم مستحضرًا، اتبعوا نشرته بشأن البلسم وموعد التكرار.",
         "sources": [
-          "kidLiceCDC",
           "kidLiceNHS",
-          "kidLiceAR"
+          "kidLiceTreatmentCDC"
         ]
       }
     ],
@@ -1187,7 +1205,8 @@ const topics=[
       "actions": [
         "kidLiceCDC",
         "kidLiceNHS",
-        "kidLiceAR"
+        "kidLiceAR",
+        "kidLiceTreatmentCDC"
       ],
       "prevention": [
         "kidLiceCDC",
@@ -1195,19 +1214,18 @@ const topics=[
         "kidLiceAR"
       ],
       "treatment": [
-        "kidLiceCDC",
-        "kidLiceNHS",
-        "kidLiceAR"
+        "kidLiceTreatmentCDC",
+        "kidLiceClinicalCDC",
+        "kidLiceSeattle"
       ],
       "avoid": [
-        "kidLiceCDC",
-        "kidLiceNHS",
-        "kidLiceAR"
+        "kidLiceTreatmentCDC",
+        "kidLiceSeattle"
       ],
       "warning": [
         "kidLiceCDC",
-        "kidLiceNHS",
-        "kidLiceAR"
+        "kidLiceTreatmentCDC",
+        "kidLiceSeattle"
       ],
       "scene": [
         "kidLiceCDC",
@@ -1217,6 +1235,98 @@ const topics=[
     }
   }
 ];R.extra.push(...topics);
+
+const headLiceEnglish = {};
+function addLiceEnglish(arabic, english) {
+  if (typeof english === "string") {
+    headLiceEnglish[arabic] = english;
+    return;
+  }
+  for (const [key, value] of Object.entries(english)) addLiceEnglish(arabic[key], value);
+}
+
+addLiceEnglish(topics.find(topic => topic.id === "kids-lice"), {
+  audience: "For children aged 6–12. Younger children can read with an adult.",
+  title: "Head lice: If my head itches, I tell my family",
+  hook: "Anyone can get head lice. Be kind if it happens to a friend.",
+  about: "Head lice are tiny insects that usually spread when two children’s hair touches during play. They crawl and cannot fly or jump. Any child can get them, even with clean hair.",
+  symptoms: ["If my head itches or I feel something moving in my hair, I tell my family. An itchy head can have other causes too."],
+  actions: [
+    "I ask a grown-up to check my hair with a fine-toothed comb.",
+    "I use my own comb and hat, and try to keep my hair from touching other children’s hair when we play.",
+    "I respect my classmate’s privacy and do not share their name or photo."
+  ],
+  prevention: ["If someone I have been close to gets head lice, I ask my family to check my hair."],
+  treatment: "If a grown-up finds a live louse, they can help by wet combing or using a treatment suitable for my age. I ask them for help with any medicine.",
+  avoid: "I keep household insect spray, petrol, kerosene and anything that can burn my skin away from my hair.",
+  warning: "I tell a grown-up straight away if I see painful sores or pus, or if a lice treatment gets in my eye.",
+  scene: "Hanaa told her mum when her head itched. Her family helped her, and everyone treated her kindly.",
+  question: [
+    "What should I do if my head itches?",
+    ["Use insect spray", "Tell my family calmly", "Always keep it secret"]
+  ],
+  learningSections: [
+    {
+      title: "Activity: Something kind to say",
+      body: "Practise saying: ‘This can happen to any child. A grown-up can help.’ In class, we leave hair checks to adults."
+    },
+    {
+      title: "For families and teachers",
+      body: "See the family head lice guide. Use separate tools for each child, protect their privacy, and save treatment for cases where it is needed."
+    }
+  ]
+});
+
+addLiceEnglish(topics.find(topic => topic.id === "head-lice-family"), {
+  title: "Head lice: A guide for families and schools",
+  audience: "Families, teachers and caregivers",
+  hook: "Check early, treat safely and protect the child’s privacy.",
+  about: "Head lice spread mainly through hair-to-hair contact and can affect any family, regardless of hygiene. Finding a live louse is the clearest sign of an active infestation.",
+  symptoms: [
+    "An itchy scalp, a feeling of movement or scratch marks may occur. Itching can take time to appear the first time a child has lice.",
+    "Lice eggs can look like dandruff, but they stick to the hair. If you see only specks and are unsure, ask a pharmacist or other health professional before treating."
+  ],
+  actions: [
+    "In good light and in private, use a fine-toothed comb to check the hair, particularly behind the ears and at the back of the neck.",
+    "Check household members and close contacts. Treat anyone with head lice on the same day. Ask a health professional about anyone who shares a bed with the affected person.",
+    "Repeated wet combing can remove lice. If you choose a product, ask a pharmacist or clinician what is suitable for the person’s age and for use during pregnancy or breastfeeding. Follow the label, including whether and when to repeat treatment.",
+    "Clean the combs and brushes the affected person used. Keep insect sprays out of the home when treating lice."
+  ],
+  prevention: [
+    "Avoid hair-to-hair contact and sharing combs, hats and towels.",
+    "Check hair early after close contact. Use lice medicines to treat an infestation, rather than to prevent one."
+  ],
+  treatment: "If you still find live lice after completing treatment as directed on the label, ask a pharmacist or clinician before repeating or changing the product. Itching can continue for a while after the lice are gone. Use one product at the recommended amount.",
+  avoid: "Keep petrol, kerosene, household insect sprays and foggers away from the child. Use a separate tool for each hair check and protect the child’s privacy. A child does not need to have their head shaved.",
+  warning: "Ask a clinician if the scalp develops pus, increasing redness and pain, or if you see lice on the eyelashes. Consult a health professional before using a lice product on a baby. Get urgent medical help for breathing trouble after using any product.",
+  scene: "The family informed the school privately and started treatment while protecting the child’s privacy.",
+  question: [
+    "Should all children receive preventive treatment?",
+    ["Yes, every week", "Check first and treat confirmed cases with suitable guidance", "Spray the classroom with insecticide"]
+  ],
+  learningSections: [
+    {
+      title: "At school: Help without embarrassment",
+      body: "CDC guidance says children can finish the school day and return to class after starting appropriate treatment. Remaining eggs alone do not require keeping a child out of school. Contact the family privately and follow local health guidance."
+    },
+    {
+      title: "How to wet comb",
+      body: "For wet combing, wash with ordinary shampoo, apply conditioner and pass a lice comb through the hair from the roots to the ends. The NHS recommends combing on days 1, 5, 9 and 13 and checking again on day 17. If you use a lice product, follow the label on conditioner use and when to repeat it."
+    }
+  ]
+});
+
+for (const [key, english] of Object.entries({
+  kidLiceCDC: ["US Centers for Disease Control and Prevention (CDC)", "About head lice and how they spread"],
+  kidLiceNHS: ["UK National Health Service (NHS)", "Head lice and nits"],
+  kidLiceAR: ["HealthLink BC", "Head lice: Arabic family handout (PDF)"],
+  kidLiceTreatmentCDC: ["US Centers for Disease Control and Prevention (CDC)", "Head lice treatment and follow-up"],
+  kidLiceClinicalCDC: ["US Centers for Disease Control and Prevention (CDC)", "Precautions when using head lice treatments"],
+  kidLiceSeattle: ["Seattle Children’s", "Checking for and treating head lice safely"]
+})) addLiceEnglish(R.sources[key], english);
+
+window.CommunityHeadLiceEnglish = headLiceEnglish;
+
 C.categories.push(["kids","أتعلم وأحمي صحتي","توعية للأطفال عن المدرسة والغذاء والبيئة"]);
 R.healthHubs.splice(0,0,{key:"kids",label:"للأطفال: صحتي وبيئتي",art:"school",value:"kids"});
 R.kidsIds=topics.filter(x=>x.childLesson).map(x=>x.id);

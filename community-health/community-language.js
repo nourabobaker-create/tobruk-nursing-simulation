@@ -1,6 +1,10 @@
 /* Local, complete English catalogue. Original Arabic remains the default. */
 (()=>{
- const code=window.CommunityLocale==='en'?'en':'ar',english=code==='en',dictionary=window.CommunityEnglishText||{},ui=window.CommunityEnglishUI||{};
+ const code=window.CommunityLocale==='en'?'en':'ar',english=code==='en',dictionary=Object.assign(window.CommunityEnglishText||{}, window.CommunityHeadLiceEnglish, window.CommunityLibraryUpdatesEnglish, {
+  'للأهل: حساسية الطعام':'For parents: food allergy'
+ }),ui=Object.assign(window.CommunityEnglishUI||{}, {
+  'مصدرًا عربيًا موثوقًا +':'trusted Arabic sources +'
+ });
  const escapeRegex=s=>s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
  const keys=Object.keys(ui).sort((a,b)=>b.length-a.length);
  const uiPattern=keys.length?new RegExp('(^|[^\\p{L}\\p{M}])('+keys.map(escapeRegex).join('|')+')(?=$|[^\\p{L}\\p{M}])','gu'):null;

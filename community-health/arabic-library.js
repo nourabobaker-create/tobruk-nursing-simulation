@@ -1828,22 +1828,22 @@ window.CommunityArabicLibrary=[
   },
   {
     "id": "head-lice-ar-011",
-    "title": "قمل الرأس: مرجع عربي للأسرة",
-    "url": "https://www.moh.gov.sa/awarenessplateform/varioustopics/pages/lice.aspx",
-    "publisher": "وزارة الصحة السعودية",
+    "title": "قمل الرأس: دليل الأسرة",
+    "url": "https://www.healthlinkbc.ca/sites/default/files/documents/hfile06-A.pdf",
+    "publisher": "هيلث لينك بريتيش كولومبيا (HealthLinkBC)",
     "language": "العربية",
-    "checked": "2026-10-16",
+    "checked": "2026-11-11",
     "category": "الأم والطفل",
-    "description": "معلومات عن القمل وعلاماته وانتقاله والعناية الآمنة بالشعر.",
+    "description": "نشرة عربية تشرح كيف ينتقل قمل الرأس وكيف يفحص الأهل الشعر ويتعاملون مع الإصابة دون إحراج الطفل.",
     "topic": "head-lice-family",
     "audiences": [
       "public",
       "teacher"
     ],
-    "kind": "article",
+    "kind": "book",
     "age": "للكبار ومقدمي الرعاية",
-    "level": "مقال عربي",
-    "tip": "راجعوا درس التطبيق لخطة المدرسة الأحدث؛ لا يُستخدم عزل الطفل أو حلاقة الشعر القسرية كقاعدة عامة، ولا علاج وقائي أو مبيد منزلي."
+    "level": "نشرة توعوية للأسر والمدارس",
+    "tip": "استخدموا الدليل للتعرف على القمل الحي، واسألوا الصيدلي عن العلاج المناسب لعمر الطفل."
   },
   {
     "id": "work-eyes-ar",
@@ -1882,5 +1882,152 @@ window.CommunityArabicLibrary=[
     ],
     "age": "للعاملين والمشرفين والكبار",
     "tip": "ابدأ بالدرس المبسط داخل التطبيق. التشريعات والخدمات المذكورة بالمصدر تخص سياقه ولا تثبت أحكامًا محلية."
+  },
+  {
+    "id": "food-allergy-ar",
+    "title": "حساسية الطعام لدى الأطفال والبالغين",
+    "url": "https://www.mayoclinic.org/ar/diseases-conditions/food-allergy/symptoms-causes/syc-20355095",
+    "publisher": "مايو كلينك",
+    "language": "العربية",
+    "checked": "2026-11-11",
+    "category": "غذاء وحركة",
+    "description": "يوضح كيف تظهر حساسية الطعام، والأطعمة الشائعة المرتبطة بها لدى الأطفال والبالغين، ومتى تصبح الحالة طارئة.",
+    "topic": "food-allergy-family",
+    "audiences": [
+      "public",
+      "teacher"
+    ],
+    "kind": "article",
+    "age": "للأسر والبالغين ومقدمي الرعاية",
+    "level": "شرح عام للكبار",
+    "tip": "راجعوا أمثلة الأعراض، وسجّلوا الطعام ووقت تناول الوجبة ووقت ظهور الأعراض لمناقشتها مع الطبيب."
+  },
+  {
+    "id": "anaphylaxis-ar",
+    "title": "التأق: علامات الحساسية المفرطة",
+    "url": "https://www.moh.gov.sa/healthawareness/educationalcontent/firstaid/pages/009.aspx",
+    "publisher": "وزارة الصحة السعودية",
+    "language": "العربية",
+    "checked": "2026-11-11",
+    "category": "إسعاف وتكافل",
+    "description": "علامات التحسس الشديد ودور حقنة الأدرينالين الذاتية وضرورة طلب الطوارئ فورًا.",
+    "topic": "food-allergy-family",
+    "audiences": [
+      "public",
+      "teacher"
+    ],
+    "kind": "article",
+    "age": "للأسر والبالغين ومقدمي الرعاية",
+    "level": "شرح عام للكبار",
+    "tip": "تعرّفوا مسبقًا على خطة الطوارئ التي يحددها الطبيب وطريقة استخدام جهاز الأدرينالين الموصوف."
+  },
+  {
+    "id": "milk-allergy-lactose-ar",
+    "title": "حساسية الحليب وعدم تحمّل اللاكتوز",
+    "url": "https://www.moh.gov.sa/awarenessplateform/healthylifestyle/pages/lactoseintolerance.aspx",
+    "publisher": "وزارة الصحة السعودية",
+    "language": "العربية",
+    "checked": "2026-11-11",
+    "category": "غذاء وحركة",
+    "description": "مقارنة بين الأعراض الهضمية لصعوبة هضم اللاكتوز وردة فعل الجهاز المناعي على بروتين الحليب.",
+    "topic": "food-allergy-family",
+    "audiences": [
+      "public"
+    ],
+    "kind": "article",
+    "age": "للأسر والبالغين ومقدمي الرعاية",
+    "level": "مقارنة مبسطة مع رسوم توضيحية",
+    "tip": "ناقشوا الأعراض مع الطبيب قبل استبعاد الحليب من غذاء الطفل. الحليب البقري الخالي من اللاكتوز يظل محتويًا على بروتينات الحليب."
+  },
+  {
+    "id": "home-poison-prevention-ar",
+    "title": "الوقاية من التسمم المنزلي",
+    "url": "https://www.kfmc.med.sa/AR/Patient/Poison-Control/Pages/Tips.aspx",
+    "publisher": "مدينة الملك فهد الطبية",
+    "language": "العربية",
+    "checked": "2026-11-11",
+    "category": "الصحة والبيئة",
+    "description": "نصائح عملية لحفظ الأدوية والمنظفات بعيدًا عن الأطفال، والإبقاء عليها في عبواتها الأصلية، وتجنّب خلط المنظفات.",
+    "topic": "safe-home",
+    "audiences": [
+      "public",
+      "teacher"
+    ],
+    "kind": "article",
+    "age": "للكبار ومقدمي الرعاية",
+    "level": "خطوات وقائية للأسرة",
+    "tip": "تفقدوا خزانة الأدوية والمنظفات اليوم، وانقلوا أي عبوة يمكن للطفل الوصول إليها إلى خزانة مغلقة."
+  },
+  {
+    "id": "food-storage-ramadan-ar",
+    "title": "حفظ الطعام بأمان في تجمعات رمضان",
+    "url": "https://applications.emro.who.int/docs/WHOEMCEH167A-ara.pdf",
+    "publisher": "منظمة الصحة العالمية – إقليم شرق المتوسط",
+    "language": "العربية",
+    "checked": "2026-11-11",
+    "category": "غذاء وحركة",
+    "description": "ملصق عملي عن حفظ الطعام بعد التسوق، ومكان اللحوم النيئة في الثلاجة، ودرجات التبريد والتجميد.",
+    "topic": "food-safety",
+    "audiences": [
+      "public"
+    ],
+    "kind": "book",
+    "age": "لمن يحضّر الطعام في المنزل",
+    "level": "ملصق قابل للطباعة",
+    "tip": "استخدموا الملصق عند ترتيب الثلاجة، وضعوا اللحوم النيئة في عبوة مغلقة على الرف السفلي."
+  },
+  {
+    "id": "generator-safety-ar",
+    "title": "سلامة المولّد الكهربائي عند انقطاع التيار",
+    "url": "https://www.cdc.gov/carbon-monoxide/media/pdfs/CO_Generator_Safety_Arabic_1.pdf",
+    "publisher": "مراكز مكافحة الأمراض والوقاية منها (CDC)",
+    "language": "العربية",
+    "checked": "2026-11-11",
+    "category": "الصحة والبيئة",
+    "description": "نشرة تشرح أين يوضع المولّد خارج المبنى وكيف تساعد أجهزة كشف أول أكسيد الكربون في حماية الأسرة.",
+    "topic": "carbon-monoxide-home",
+    "audiences": [
+      "public"
+    ],
+    "kind": "book",
+    "age": "للكبار ومقدمي الرعاية",
+    "level": "نشرة توعوية للأسر",
+    "tip": "حدّدوا مسبقًا مكانًا خارجيًا للمولّد يبعد 6.1 أمتار على الأقل عن المبنى وفتحات الأبواب والنوافذ."
   }
 ];
+
+window.CommunityLibraryUpdatesEnglish = {
+  "قمل الرأس: دليل الأسرة": "Head lice: a guide for families",
+  "هيلث لينك بريتيش كولومبيا (HealthLinkBC)": "HealthLink BC",
+  "نشرة عربية تشرح كيف ينتقل قمل الرأس وكيف يفحص الأهل الشعر ويتعاملون مع الإصابة دون إحراج الطفل.": "An Arabic handout on how head lice spread, how to check your child's hair, and how to respond without embarrassing them.",
+  "نشرة توعوية للأسر والمدارس": "Handout for families and schools",
+  "استخدموا الدليل للتعرف على القمل الحي، واسألوا الصيدلي عن العلاج المناسب لعمر الطفل.": "Use the guide to recognise live lice and ask your pharmacist about treatment suitable for your child's age.",
+  "حساسية الطعام لدى الأطفال والبالغين": "Food allergy in children and adults",
+  "مايو كلينك": "Mayo Clinic",
+  "يوضح كيف تظهر حساسية الطعام، والأطعمة الشائعة المرتبطة بها لدى الأطفال والبالغين، ومتى تصبح الحالة طارئة.": "Explains the signs of food allergy, common triggers in children and adults, and when to seek emergency care.",
+  "للأسر والبالغين ومقدمي الرعاية": "For families, adults and caregivers",
+  "راجعوا أمثلة الأعراض، وسجّلوا الطعام ووقت تناول الوجبة ووقت ظهور الأعراض لمناقشتها مع الطبيب.": "Review the examples of symptoms. Note what you ate, when you ate it, and when symptoms began so you can discuss them with your doctor.",
+  "التأق: علامات الحساسية المفرطة": "Anaphylaxis: signs of a severe allergic reaction",
+  "علامات التحسس الشديد ودور حقنة الأدرينالين الذاتية وضرورة طلب الطوارئ فورًا.": "Covers the signs of a severe reaction, the role of an adrenaline auto-injector, and the need for immediate emergency help.",
+  "تعرّفوا مسبقًا على خطة الطوارئ التي يحددها الطبيب وطريقة استخدام جهاز الأدرينالين الموصوف.": "Get to know your doctor's emergency plan and how to use your prescribed adrenaline device before you need it.",
+  "حساسية الحليب وعدم تحمّل اللاكتوز": "Milk allergy and lactose intolerance",
+  "مقارنة بين الأعراض الهضمية لصعوبة هضم اللاكتوز وردة فعل الجهاز المناعي على بروتين الحليب.": "Compares digestive symptoms caused by difficulty digesting lactose with the immune response to milk proteins.",
+  "مقارنة مبسطة مع رسوم توضيحية": "Plain-language comparison with illustrations",
+  "ناقشوا الأعراض مع الطبيب قبل استبعاد الحليب من غذاء الطفل. الحليب البقري الخالي من اللاكتوز يظل محتويًا على بروتينات الحليب.": "Discuss symptoms with your doctor before removing milk from your child's diet. Lactose-free cow's milk still contains milk proteins.",
+  "الوقاية من التسمم المنزلي": "Preventing poisoning at home",
+  "مدينة الملك فهد الطبية": "King Fahad Medical City",
+  "نصائح عملية لحفظ الأدوية والمنظفات بعيدًا عن الأطفال، والإبقاء عليها في عبواتها الأصلية، وتجنّب خلط المنظفات.": "Practical advice on keeping medicines and cleaners out of children's reach, storing them in their original containers, and avoiding mixing cleaning products.",
+  "خطوات وقائية للأسرة": "Prevention steps for families",
+  "تفقدوا خزانة الأدوية والمنظفات اليوم، وانقلوا أي عبوة يمكن للطفل الوصول إليها إلى خزانة مغلقة.": "Check where you store medicines and cleaners today. Move anything a child could reach into a locked cupboard.",
+  "حفظ الطعام بأمان في تجمعات رمضان": "Storing food safely for Ramadan gatherings",
+  "منظمة الصحة العالمية – إقليم شرق المتوسط": "WHO Regional Office for the Eastern Mediterranean",
+  "ملصق عملي عن حفظ الطعام بعد التسوق، ومكان اللحوم النيئة في الثلاجة، ودرجات التبريد والتجميد.": "A practical poster on storing food after shopping, placing raw meat in the fridge, and choosing safe fridge and freezer temperatures.",
+  "لمن يحضّر الطعام في المنزل": "For people who prepare food at home",
+  "ملصق قابل للطباعة": "Printable poster",
+  "استخدموا الملصق عند ترتيب الثلاجة، وضعوا اللحوم النيئة في عبوة مغلقة على الرف السفلي.": "Use the poster to organise your fridge. Keep raw meat in a sealed container on the bottom shelf.",
+  "سلامة المولّد الكهربائي عند انقطاع التيار": "Generator safety during a power cut",
+  "مراكز مكافحة الأمراض والوقاية منها (CDC)": "Centers for Disease Control and Prevention (CDC)",
+  "نشرة تشرح أين يوضع المولّد خارج المبنى وكيف تساعد أجهزة كشف أول أكسيد الكربون في حماية الأسرة.": "Explains where to place a generator outdoors and how carbon monoxide alarms help protect your family.",
+  "نشرة توعوية للأسر": "Handout for families",
+  "حدّدوا مسبقًا مكانًا خارجيًا للمولّد يبعد 6.1 أمتار على الأقل عن المبنى وفتحات الأبواب والنوافذ.": "Choose an outdoor spot for the generator in advance, at least 6.1 metres from the building, doors and windows."
+};

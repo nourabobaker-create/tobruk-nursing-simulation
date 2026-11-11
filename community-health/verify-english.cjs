@@ -30,10 +30,10 @@ const testForm={url:'https://docs.google.com/forms/d/e/test-community-survey/vie
  const r=runtime({'nur-community-language':'en'},{surveyForm:testForm});assert.equal(r.eval('Language.code'),'en');assert.equal(r.context.document.documentElement.lang,'en');assert.equal(r.context.document.documentElement.dir,'ltr');
  inspectMarkup(r,indexMarkup,'persistent shell');
  const articleIds=Array.from(r.eval('ARTICLES.map(a=>a.id)')),storyIds=Array.from(r.eval('window.CommunityClassroomStories.map(s=>s.id)')),scenarioIds=Array.from(r.eval('window.CommunityScenarios.items.map(s=>s.id)'));
- assert.equal(articleIds.length,197);assert.equal(storyIds.length,12);assert.equal(scenarioIds.length,32);
+ assert.equal(articleIds.length,199);assert.equal(storyIds.length,12);assert.equal(scenarioIds.length,32);
  for(const hash of ['home','updates','urgent','workers','kids','saved','feedback','measure=diabetes&stage=before','measure=diabetes&stage=after','measure=diabetes&stage=followup','about','dashboard','students','install-help','library','classroom','simulations','topic=missing','story=missing','sim=missing','measure=missing']){r.route('#'+hash);inspect(r,'#'+hash);}
  for(const id of articleIds){r.route('#topic='+id);inspect(r,'#topic='+id);for(const stage of ['before','after','followup']){r.route('#measure='+id+'&stage='+stage);inspect(r,'#measure='+id+'&stage='+stage);}}
- checks.push('197 topic pages and all 591 assessment stages');
+ checks.push('199 topic pages and all 597 assessment stages');
  for(const id of articleIds){const text=r.eval('Language.text(articleText(byId['+JSON.stringify(id)+']))');if(arabic.test(text))for(const run of text.matchAll(/[\u0600-\u06ff][\u0600-\u06ff\s،؛؟:]+/g))addIssue('#topic='+id+' full audio','audio label',run[0].trim());}
  r.route('#home');await r.click({'data-save':'diabetes'});r.route('#saved');inspect(r,'#saved with diabetes');assert(r.html().includes('#topic=diabetes'));await r.click({'data-save':'diabetes'});inspect(r,'#saved after removal');
  const measurementForm={id:'measureForm',dataset:{topic:'diabetes'},values:{stage:'before',answer:'0',confidence:'1',behavior:'notyet',campaign:'EN-TEST',consent:'on'}};r.route('#measure=diabetes&stage=before');await r.handlers.submit({target:measurementForm,preventDefault(){}});inspect(r,'#measure=diabetes result before');measurementForm.values.stage='after';await r.handlers.submit({target:measurementForm,preventDefault(){}});inspect(r,'#measure=diabetes result after');
@@ -54,9 +54,9 @@ const testForm={url:'https://docs.google.com/forms/d/e/test-community-survey/vie
  for(const h of r.eval('R.healthHubs')){await r.click({'data-health-hub':h.value});if(!r.elements.get('cards').innerHTML.includes('class="story-card"'))addIssue('#home field '+h.key,'filter','No visible cards for '+h.label);inspect(r,'#home field '+h.key);}
  checks.push('English topic search and all health field filters');
  r.route('#library');await r.click({id:'resetLibrary'});for(const [term,kind]of [['diabetes','article'],['bullying','article'],['play','any']]){await r.handlers.input({target:{id:'librarySearch',value:term}});if(!r.eval('arabicLibraryCards().length'))addIssue('#library search '+term,'search','No library matches');inspect(r,'#library search '+term);}
- r.eval("libraryQuery='';libraryCategory='all';libraryAudience='all';libraryKind='all';libraryVisible=1000;arabicLibraryResults()");inspect(r,'#library all resources');assert.equal(r.eval('libraryAllItems().length'),112);
+ r.eval("libraryQuery='';libraryCategory='all';libraryAudience='all';libraryKind='all';libraryVisible=1000;arabicLibraryResults()");inspect(r,'#library all resources');assert.equal(r.eval('libraryAllItems().length'),118);
  for(const preset of ['stories','teacher','preschool','environment','brain','firstaid','teen','mental']){r.eval('applyLibraryPreset('+JSON.stringify(preset)+')');if(!r.eval('arabicLibraryCards().length'))addIssue('#library preset '+preset,'filter','No library matches');inspect(r,'#library preset '+preset);}
- checks.push('112 library entries, English search, and all eight presets');
+ checks.push('118 library entries, English search, and all eight presets');
  const from=r.spoken.length;r.route('#topic=diabetes');await r.click({id:'readTopic'});let audioSteps=0;while(r.eval('speechActive')&&audioSteps++<1000)r.spoken.at(-1).onend();assert(audioSteps<1000);assert(r.spoken.length>from);for(const speech of r.spoken.slice(from)){assert(/^en(?:[-_]|$)/i.test(speech.lang),'English voice selected');if(arabic.test(speech.text))addIssue('#topic=diabetes audio','audio',speech.text);}
  r.route('#sim='+scenarioIds[0]);const simFrom=r.spoken.length;await r.click({id:'readSimulation'});let simAudio=0;while(r.eval('speechActive')&&simAudio++<1000)r.spoken.at(-1).onend();for(const speech of r.spoken.slice(simFrom))if(arabic.test(speech.text))addIssue('#sim='+scenarioIds[0]+' audio','audio',speech.text);
  checks.push('English topic and scenario voices');

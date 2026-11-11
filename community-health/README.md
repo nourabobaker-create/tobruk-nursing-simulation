@@ -1,10 +1,16 @@
 # تمريض من أجل المجتمع
 
-Faculty of Nursing, Tobruk University — community health education prototype, release 0.12.3, updated 18 October 2026. The initiative has its own Google Form embedded in a contextual in-app dialog; the earlier portal-form handoff has been removed.
+Faculty of Nursing, Tobruk University — community health education prototype, release 0.14.0, updated 11 November 2026. The initiative has its own Google Form embedded in a contextual in-app dialog; the earlier portal-form handoff has been removed.
+
+## Release 0.14.0 — family and household safety
+
+- The existing child and family head lice guides now include clearer checks, practical care and school guidance. The Arabic library links a new family handout under the same resource ID.
+- Food allergy guidance covers children and adults, including the differences between food allergy, lactose intolerance and coeliac disease, and an emergency response example for anaphylaxis. A new home guide covers carbon monoxide hazards from generators, charcoal and fuel-burning appliances.
+- The Arabic library adds six resources, with the source audit retaining individual check dates. The site update date is listed separately from changes in health recommendations.
 
 ## Public experience
 
-197 original Arabic topic guides. Each combines an explanation, relevant symptoms or observations, practical actions, prevention, general treatment information, avoid/seek-help advice, a real-life example, and authoritative references. The public content is plain-language community education with authoritative references. Actual contributors are credited only after participation and consent.
+199 community education guides in Arabic and English. Each combines an explanation, relevant symptoms or observations, practical actions, prevention, general treatment information, avoid/seek-help advice, a real-life example, and authoritative references. The public content is plain-language community education with authoritative references. Actual contributors are credited only after participation and consent.
 
 The home page introduces the students' community service and self-funded voluntary effort, with an AI-generated illustrative community scene (not real students/patients). Original lightweight SVG drawings illustrate each topic. Everyday audience paths, Arabic search, favorites, print/share, larger text and device Arabic speech are available. Speech requires an available Arabic voice; local/offline and remote voices depend on the device. It never silently substitutes an English voice. Navigation stops speech.
 
@@ -28,7 +34,7 @@ The home-kit checklist can be repeated and is stored locally. No fixed water int
 - `measure.js`: opt-in local repeated measurement, explicit cycle linkage, summaries and safe CSV export.
 - `sw.js`: scoped offline cache; previous app cache is migrated while unrelated caches remain untouched.
 - `measurement-protocol.md`: feedback reception, local measurement consent and pairing rules, limitations, exports and requirements for later institutional quality integration.
-- `review-register.csv`: 197 article entries, 24 scenario entries and 12 classroom story/activity entries; human review and approval fields remain blank.
+- `review-register.csv`: topic, scenario and classroom story/activity entries, with separate fields for documented faculty review and approval.
 - `activity-record.csv`, `improvement-register.csv`: blank bilingual institutional work registers.
 - `plan.html`: original eight-week plan (v0.1 historical starting plan); `style.css` remains for that page. `app.js` is an unused baseline retained for reference. The public app does not load it.
 

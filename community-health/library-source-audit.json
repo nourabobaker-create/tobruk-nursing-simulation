@@ -1,6 +1,6 @@
 {
-  "checked": "2026-10-17",
-  "method": "HTTPS GET with browser User-Agent; Arabic page text or publisher Arabic PDF; source checks are not faculty clinical approval",
+  "checked": "2026-11-11",
+  "method": "HTTPS GET with browser User-Agent; Arabic page text or publisher Arabic PDF. Per-resource dates mark entries verified in the latest pass. Entries without a date retain prior audit results. Source checks are not faculty clinical approval.",
   "resources": [
     {
       "id": "diabetes",
@@ -772,11 +772,12 @@
     },
     {
       "id": "head-lice-ar-011",
-      "url": "https://www.moh.gov.sa/awarenessplateform/varioustopics/pages/lice.aspx",
+      "url": "https://www.healthlinkbc.ca/sites/default/files/documents/hfile06-A.pdf",
       "status": 200,
       "arabic": true,
-      "type": "text/html; charset=utf-8",
-      "size": 120290
+      "type": "application/pdf",
+      "size": 227415,
+      "checked": "2026-11-11"
     },
     {
       "id": "family-heat-011",
@@ -801,6 +802,60 @@
       "arabic": true,
       "type": "text/html; charset=utf-8",
       "size": 118344
+    },
+    {
+      "id": "food-allergy-ar",
+      "url": "https://www.mayoclinic.org/ar/diseases-conditions/food-allergy/symptoms-causes/syc-20355095",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 1999167,
+      "checked": "2026-11-11"
+    },
+    {
+      "id": "anaphylaxis-ar",
+      "url": "https://www.moh.gov.sa/healthawareness/educationalcontent/firstaid/pages/009.aspx",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 110128,
+      "checked": "2026-11-11"
+    },
+    {
+      "id": "milk-allergy-lactose-ar",
+      "url": "https://www.moh.gov.sa/awarenessplateform/healthylifestyle/pages/lactoseintolerance.aspx",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 117863,
+      "checked": "2026-11-11"
+    },
+    {
+      "id": "home-poison-prevention-ar",
+      "url": "https://www.kfmc.med.sa/AR/Patient/Poison-Control/Pages/Tips.aspx",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "size": 143908,
+      "checked": "2026-11-11"
+    },
+    {
+      "id": "food-storage-ramadan-ar",
+      "url": "https://applications.emro.who.int/docs/WHOEMCEH167A-ara.pdf",
+      "status": 200,
+      "arabic": true,
+      "type": "application/pdf",
+      "size": 1034527,
+      "checked": "2026-11-11"
+    },
+    {
+      "id": "generator-safety-ar",
+      "url": "https://www.cdc.gov/carbon-monoxide/media/pdfs/CO_Generator_Safety_Arabic_1.pdf",
+      "status": 200,
+      "arabic": true,
+      "type": "application/pdf",
+      "size": 456734,
+      "checked": "2026-11-11"
     }
   ]
 }
