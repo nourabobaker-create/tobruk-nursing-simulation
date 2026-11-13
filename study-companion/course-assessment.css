@@ -1,0 +1,32 @@
+[data-course-assessment] { min-width: 0; scroll-margin-block-start: 1rem; }
+.course-assessment-card {
+  margin-block: 1rem;
+  padding: 1rem;
+  border: 1px solid #bedbd2;
+  border-radius: 14px;
+  background: #f7fbf9;
+  color: #16372e;
+}
+.course-assessment-card h3 { margin: 0 0 .45rem; font-size: 1.1rem; }
+.course-assessment-card h4 { margin: 0 0 .45rem; font-size: .92rem; }
+.course-assessment-pass, .course-assessment-status {
+  display: inline-block;
+  border-radius: 999px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+.course-assessment-pass { margin: 0 0 .65rem; padding: .35rem .65rem; background: #dcefe5; color: #144636; }
+.course-assessment-status { margin-inline-start: .45rem; padding: .15rem .4rem; background: #fff0cb; color: #664508; font-size: .75rem; }
+.course-assessment-distributions { display: grid; gap: .6rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); }
+.course-assessment-distribution { padding: .65rem .75rem; border: 1px solid #d5e6e0; border-radius: 9px; background: #fff; }
+.course-assessment-pending { border-color: #ead6a4; background: #fffdf7; }
+.course-assessment-list { margin: 0; }
+.course-assessment-list > div { display: flex; justify-content: space-between; align-items: baseline; gap: .5rem; padding-block: .2rem; }
+.course-assessment-list > div + div { border-block-start: 1px solid #e2ece8; }
+.course-assessment-list dt { font-size: .875rem; }
+.course-assessment-list dd { margin: 0; font-weight: 700; flex-shrink: 0; }
+.course-assessment-note { margin: .6rem 0 0; color: #394c46; font-size: .875rem; line-height: 1.5; }
+.course-assessment-note a { color: #095a42; font-weight: 700; }
+.course-assessment-guide { margin-block-start: .65rem; }
+.course-assessment-guide summary { width: fit-content; color: #095a42; cursor: pointer; font-weight: 700; }
+.course-assessment-guide > section { margin-block-start: .45rem; }

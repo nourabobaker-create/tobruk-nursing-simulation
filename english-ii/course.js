@@ -162,9 +162,19 @@ function challenge(){
  $$('.mixCheck').forEach(b=>b.onclick=()=>{const i=+b.dataset.i,sel=document.querySelector('input[name="mix'+i+'"]:checked'),fb=$('#mixfb'+i);if(!sel){fb.className='feedback show bad';fb.textContent='Choose an answer first.';return}const ok=+sel.value===qs[i].q.a;fb.className='feedback show '+(ok?'good':'bad');fb.textContent=(ok?'Correct. ':'Try again. ')+qs[i].q.ex});
 }
 function route(){const h=decodeURIComponent(location.hash.slice(1));if(h==='challenge')challenge();else if(lessonById(h))lesson(h);else home()}
-function toggleLang(){state.lang=state.lang==='en'?'ar':'en';localStorage.setItem('e2lang',state.lang);document.body.classList.toggle('arabic-on',state.lang==='ar');$('#langBtn').classList.toggle('active',state.lang==='ar')}
+function syncLanguage(){
+ const arabic=state.lang==='ar';
+ document.body.classList.toggle('arabic-on',arabic);
+ $('#langBtn').classList.toggle('active',arabic);
+ const assessment=$('[data-course-assessment="english2"]');
+ if(assessment){
+  assessment.lang=state.lang;
+  window.TobrukCourseAssessment?.render(assessment,'english2',state.lang);
+ }
+}
+function toggleLang(){state.lang=state.lang==='en'?'ar':'en';localStorage.setItem('e2lang',state.lang);syncLanguage()}
 function init(){
- $('#langBtn').onclick=toggleLang;$('#homeTopBtn').onclick=()=>{location.hash=''};document.body.classList.toggle('arabic-on',state.lang==='ar');$('#langBtn').classList.toggle('active',state.lang==='ar');window.addEventListener('hashchange',route);route()
+ $('#langBtn').onclick=toggleLang;$('#homeTopBtn').onclick=()=>{location.hash=''};syncLanguage();window.addEventListener('hashchange',route);route()
 }
 init();
 })();

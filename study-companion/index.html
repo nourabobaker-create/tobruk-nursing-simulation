@@ -77,7 +77,7 @@ details.q{border:1px solid var(--line);border-radius:15px;padding:11px 13px;marg
 .courseReturn{display:flex;justify-content:space-between;gap:8px;align-items:center;margin:0 0 10px}
 .courseReturn .btn{background:#fff}
 .courseReturn{flex-wrap:wrap}
-.courseReturn>.assessmentCard{flex:1 0 100%;width:100%;margin:4px 0 0}
+.courseReturn>
 .courseToolsInline{display:flex;gap:7px;flex-wrap:wrap}
 .studyDock{position:fixed;left:16px;bottom:16px;z-index:55;display:flex;gap:8px;flex-direction:column;align-items:flex-start}
 .fab{border:0;border-radius:999px;padding:11px 15px;background:var(--green);color:#fff;font-weight:900;box-shadow:0 12px 26px rgba(20,61,46,.22);cursor:pointer}
@@ -112,15 +112,6 @@ details.q{border:1px solid var(--line);border-radius:15px;padding:11px 13px;marg
 @media(max-width:980px){.courseDashboard{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:560px){.courseDashboard{grid-template-columns:1fr}.studyDock{left:10px;bottom:10px}.chatLauncher{right:10px;bottom:10px}.fab{padding:10px 12px}.chatbox{right:10px;bottom:65px}.courseReturn{align-items:flex-start;flex-direction:column}}
 
-
-.assessmentCard{margin:12px 0 16px;border:1px solid #d7e5de;border-radius:17px;padding:14px;background:#f8fbfa}
-.assessmentCard h3{margin:0 0 7px;color:var(--green);font-size:15px}
-.assessmentGrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px;margin-top:9px}
-.assess{border:1px solid var(--line);border-radius:12px;padding:9px;background:#fff;text-align:center}
-.assess b{display:block;color:var(--green);font-size:16px}.assess small{color:var(--muted)}
-.passTag{display:inline-block;background:var(--gold2);color:#6b5016;border-radius:999px;padding:6px 10px;font-weight:900;font-size:12px}
-.ruleNote{margin-top:9px;color:var(--muted);font-size:12px}
-@media(max-width:650px){.assessmentGrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 </style>
 <link rel="stylesheet" href="companion.css?v=20261012-1">
 <link rel="stylesheet" href="course-references.css?v=20261113">
@@ -131,6 +122,8 @@ details.q{border:1px solid var(--line);border-radius:15px;padding:11px 13px;marg
 <script defer src="../portal-metrics/core.js?v=20261022-consent-2"></script>
 <script defer src="../portal-metrics/tracker.js?v=20261022-consent-2"></script>
 <script defer src="../portal-metrics/activity-hooks.js?v=20261021-1"></script>
+
+<link rel="stylesheet" href="course-assessment.css?v=20261113-assessment-1">
 </head>
 <body>
 <header class="top"><div class="topin">
@@ -146,7 +139,7 @@ details.q{border:1px solid var(--line);border-radius:15px;padding:11px 13px;marg
 </section>
 
 <div class="notice"><b>استخدم رفيق الدراسة لبناء الفهم أولًا.</b> ثم ارجع إلى المحاضرات وأستاذ المقرر والمواد المعتمدة للتفاصيل المطلوبة في الدراسة والتقييم.</div>
-<div class="notice"><b>النجاح والتقييم حسب دليل كليات التمريض:</b> الدرجة النهائية لكل مقرر من 100. الحد الأدنى للنجاح هو <b>60%</b> في المقررات التمريضية الأساسية والطبية المساندة، و<b>50%</b> في المقررات العامة. التقديرات: ممتاز 85–100، جيد جدًا 75–أقل من 85، جيد 65–أقل من 75، ثم مقبول حسب حد النجاح الخاص بنوع المقرر. ستجد داخل كل مقرر توزيع الدرجات الوارد في توصيفه.</div>
+<div class="notice"><b>حد النجاح المرجعي:</b> <b>50 من 100</b> للمقررات العامة و<b>60 من 100</b> للمقررات التمريضية والطبية المساندة. تظهر أوزان كل مقرر والتوزيعات قيد المراجعة داخل صفحته.</div>
 
 
 <div class="notice"><b>المسار الدراسي:</b> أنت الآن في السنة الأولى – الفصل الأول. <a href="year1-sem2.html" style="color:var(--green);font-weight:900">الفصل الثاني ←</a> · <a href="year2.html" style="color:var(--green);font-weight:900">السنة الثانية ←</a> · <a href="../english-ii/?v=5" style="color:var(--green);font-weight:900">📖 إنجليزي 2: خمسة دروس تفاعلية ↗</a></div>
@@ -170,7 +163,7 @@ details.q{border:1px solid var(--line);border-radius:15px;padding:11px 13px;marg
  </div>
  <div class="courseBody">
   <div class="courseReturn"><button class="btn" type="button" data-course-home>← كل المقررات</button><div class="courseToolsInline"><button class="btn" type="button" data-open-notes="arabic">📝 ملاحظاتي في هذا المقرر</button></div>
-<div class="assessmentCard"><h3>📊 التقييم والنجاح</h3><span class="passTag">درجة النجاح: 50% · مقرر عام</span><div class="assessmentGrid"><div class="assess"><b>20%</b><small>حضور ومشاركة</small></div><div class="assess"><b>30%</b><small>اختبارات / جزئي</small></div><div class="assess"><b>50%</b><small>نهائي</small></div></div><div class="ruleNote">التوزيع أعلاه هو الوارد في توصيف المقرر بالدليل.</div></div></div>
+<div data-course-assessment="arabic"></div></div>
   <div class="compactGrid">
    <div class="box"><h3>ما الذي يفيدك فيه هذا المقرر؟</h3><p>اللغة أداة للفهم والتواصل. يحتاج طالب التمريض إلى قراءة السؤال والتعليمات بدقة، ترتيب أفكاره، والتعبير عنها بصورة واضحة في الحديث والكتابة.</p></div>
    <div class="scenario"><h3>🩺 موقف قد تواجهه</h3><p>عند سؤال مريض عن علاجه، قد يعطي السؤال العام إجابة عامة. صياغة سؤال محدد وواضح تساعدك على الحصول على معلومة أدق.</p></div>
@@ -195,7 +188,7 @@ details.q{border:1px solid var(--line);border-radius:15px;padding:11px 13px;marg
  </div>
  <div class="courseBody">
   <div class="courseReturn"><button class="btn" type="button" data-course-home>← كل المقررات</button><div class="courseToolsInline"><button class="btn" type="button" data-open-notes="english">📝 ملاحظاتي في هذا المقرر</button></div>
-<div class="assessmentCard"><h3>📊 التقييم والنجاح</h3><span class="passTag">درجة النجاح: 50% · مقرر عام</span><div class="assessmentGrid"><div class="assess"><b>15%</b><small>حضور ومشاركة</small></div><div class="assess"><b>20%</b><small>اختبار / جزئي</small></div><div class="assess"><b>15%</b><small>نشاط كتابي</small></div><div class="assess"><b>50%</b><small>نهائي</small></div></div><div class="ruleNote">التوزيع أعلاه هو الوارد في توصيف English Language 1 بالدليل.</div></div></div>
+<div data-course-assessment="english"></div></div>
   <div class="compactGrid">
    <div class="box"><h3>لماذا تهم طالب التمريض؟</h3><p>الإنجليزية في التمريض ليست حفظ كلمات فقط. هي أداة لفهم المصطلح والتعليمات، طرح سؤال واضح، التأكد من أنك فهمت المريض أو الزميل بصورة صحيحة، ونقل معلومة دون لبس.</p></div>
    <div class="scenario"><h3>🩺 موقف قد تواجهه</h3><p>المريض يقول لك كلمة أو وصفًا لم تفهمه جيدًا. بدل التخمين، تحتاج إلى جملة بسيطة تطلب بها التوضيح ثم تعيد المعنى للتأكد من أنكما تقصدان الشيء نفسه.</p></div>
@@ -267,7 +260,7 @@ details.q{border:1px solid var(--line);border-radius:15px;padding:11px 13px;marg
  </div>
  <div class="courseBody">
   <div class="courseReturn"><button class="btn" type="button" data-course-home>← كل المقررات</button><div class="courseToolsInline"><button class="btn" type="button" data-open-notes="anatomy">📝 ملاحظاتي في هذا المقرر</button></div>
-<div class="assessmentCard"><h3>📊 التقييم والنجاح</h3><span class="passTag">درجة النجاح: 60% · مقرر طبي مساند</span><div class="assessmentGrid"><div class="assess"><b>20%</b><small>حضور ومشاركة</small></div><div class="assess"><b>10%</b><small>أعمال المعمل</small></div><div class="assess"><b>30%</b><small>اختبارات / جزئي</small></div><div class="assess"><b>40%</b><small>نهائي</small></div></div><div class="ruleNote">هذا توزيع توصيف المقرر. توجد في المادة (20) من الدليل قاعدة عامة مختلفة للمقررات ذات الجزء العملي؛ لذلك عند بدء الفصل يُعتمد توزيع الدرجات الذي تعلنه الكلية/أستاذ المقرر رسميًا.</div></div></div>
+<div data-course-assessment="anatomy"></div></div>
   <div class="bigIdea">الفكرة الكبرى: <span dir="ltr">Anatomy</span> يشرح <b>بناء الجسم ومواقع أجزائه</b>، و<span dir="ltr">Physiology</span> يشرح <b>كيف تعمل هذه الأجزاء</b>. عندما تجمع الاثنين تبدأ في فهم ما هو طبيعي، ولماذا تظهر علامة أو مشكلة عندما يتغير هذا الطبيعي.</div>
 
   <h3 class="sectionTitle">الصورة العامة للجسم</h3>
@@ -331,7 +324,7 @@ details.q{border:1px solid var(--line);border-radius:15px;padding:11px 13px;marg
  </div>
  <div class="courseBody">
   <div class="courseReturn"><button class="btn" type="button" data-course-home>← كل المقررات</button><div class="courseToolsInline"><button class="btn" type="button" data-open-notes="sociology">📝 ملاحظاتي في هذا المقرر</button></div>
-<div class="assessmentCard"><h3>📊 التقييم والنجاح</h3><span class="passTag">درجة النجاح: 50% · مقرر عام</span><div class="assessmentGrid"><div class="assess"><b>20%</b><small>حضور ومشاركة</small></div><div class="assess"><b>30%</b><small>اختبار / جزئي</small></div><div class="assess"><b>50%</b><small>نهائي</small></div></div></div></div>
+<div data-course-assessment="sociology"></div></div>
   <div class="bigIdea">الصحة والمرض لا يحدثان داخل الجسم فقط. ظروف الأسرة، التعليم، الدخل، العمل، السكن، العلاقات الاجتماعية، الثقافة والوصول إلى الخدمات قد تؤثر في السلوك الصحي وفي تجربة المريض مع المرض والعلاج.</div>
 
   <h3 class="sectionTitle">ما الذي يفتح عينيك عليه هذا المقرر؟</h3>
@@ -368,7 +361,7 @@ details.q{border:1px solid var(--line);border-radius:15px;padding:11px 13px;marg
  </div>
  <div class="courseBody">
   <div class="courseReturn"><button class="btn" type="button" data-course-home>← كل المقررات</button><div class="courseToolsInline"><button class="btn" type="button" data-open-notes="theory">📝 ملاحظاتي في هذا المقرر</button></div>
-<div class="assessmentCard"><h3>📊 التقييم والنجاح</h3><span class="passTag">درجة النجاح: 60% · مقرر تمريضي تخصصي</span><div class="assessmentGrid"><div class="assess"><b>20%</b><small>حضور ومشاركة</small></div><div class="assess"><b>30%</b><small>اختبارات / جزئي</small></div><div class="assess"><b>50%</b><small>نهائي</small></div></div></div></div>
+<div data-course-assessment="theory"></div></div>
   <div class="bigIdea">التمريض ليس قائمة إجراءات. النظرية تساعدك على الإجابة عن أسئلة أعمق: من هو الإنسان الذي أرعاه؟ ماذا تعني الصحة؟ كيف تؤثر البيئة؟ وما دور الممرض؟</div>
 
   <h3 class="sectionTitle">أربع أفكار مركزية</h3>
@@ -412,7 +405,7 @@ details.q{border:1px solid var(--line);border-radius:15px;padding:11px 13px;marg
  </div>
  <div class="courseBody">
   <div class="courseReturn"><button class="btn" type="button" data-course-home>← كل المقررات</button><div class="courseToolsInline"><button class="btn" type="button" data-open-notes="biochem">📝 ملاحظاتي في هذا المقرر</button></div>
-<div class="assessmentCard"><h3>📊 التقييم والنجاح</h3><span class="passTag">درجة النجاح: 60% · مقرر طبي مساند</span><div class="assessmentGrid"><div class="assess"><b>20%</b><small>حضور ومشاركة</small></div><div class="assess"><b>10%</b><small>أعمال المعمل</small></div><div class="assess"><b>30%</b><small>اختبارات / جزئي</small></div><div class="assess"><b>40%</b><small>نهائي</small></div></div><div class="ruleNote">هذا توزيع توصيف المقرر. توجد في المادة (20) قاعدة عامة للمقررات ذات الجزء العملي؛ يعتمد الطالب التوزيع الرسمي المعلن للمقرر في الفصل الحالي.</div></div></div>
+<div data-course-assessment="biochem"></div></div>
   <div class="bigIdea">الكيمياء الحيوية تشرح ما يحدث داخل الجسم على مستوى الجزيئات: كيف نحصل على الطاقة، لماذا يحتاج الجسم الماء والأملاح، كيف تعمل الإنزيمات، وكيف ترتبط الجلوكوز والدهون والبروتينات والفيتامينات بالصحة والمرض.</div>
 
   <h3 class="sectionTitle">ابدأ بهذه الخريطة</h3>
@@ -453,7 +446,7 @@ details.q{border:1px solid var(--line);border-radius:15px;padding:11px 13px;marg
  </div>
  <div class="courseBody">
   <div class="courseReturn"><button class="btn" type="button" data-course-home>← كل المقررات</button><div class="courseToolsInline"><button class="btn" type="button" data-open-notes="rle1">📝 ملاحظاتي في هذا المقرر</button></div>
-<div class="assessmentCard"><h3>📊 التقييم والنجاح</h3><span class="passTag">درجة النجاح: 60% · مقرر تمريضي عملي</span><div class="assessmentGrid"><div class="assess"><b>70%</b><small>Return Demonstrations / أداء عملي</small></div><div class="assess"><b>10%</b><small>حضور</small></div><div class="assess"><b>20%</b><small>نهائي</small></div></div><div class="ruleNote">يتطابق هذا التوزيع مع توصيف المقرر ونظام المقررات العملية/السريرية الوارد بالدليل.</div></div></div>
+<div data-course-assessment="rle1"></div></div>
   <div class="bigIdea">هنا تبدأ المعرفة بالتحول إلى أداء. الهدف ليس أن «تقلد خطوات» فقط، بل أن تعرف لماذا تفعل الخطوة، كيف تحمي المريض ونفسك، وكيف تلاحظ الخطأ وتصححه.</div>
 
   <h3 class="sectionTitle">المحاور الأساسية</h3>
@@ -504,7 +497,7 @@ details.q{border:1px solid var(--line);border-radius:15px;padding:11px 13px;marg
  </div>
  <div class="courseBody">
   <div class="courseReturn"><button class="btn" type="button" data-course-home>← كل المقررات</button><div class="courseToolsInline"><button class="btn" type="button" data-open-notes="islamic">📝 ملاحظاتي في هذا المقرر</button></div>
-<div class="assessmentCard"><h3>📊 التقييم والنجاح</h3><span class="passTag">درجة النجاح: 50% · مقرر عام</span><div class="assessmentGrid"><div class="assess"><b>10%</b><small>حضور</small></div><div class="assess"><b>20%</b><small>أنشطة وتكليفات</small></div><div class="assess"><b>20%</b><small>اختبار / جزئي</small></div><div class="assess"><b>50%</b><small>نهائي</small></div></div><div class="ruleNote">التوزيع أعلاه هو الوارد في توصيف المقرر بالدليل.</div></div></div>
+<div data-course-assessment="islamic"></div></div>
   <div class="compactGrid">
    <div class="box"><h3>ما الذي يتناوله المقرر؟</h3><p>مدخل إلى القرآن والسنة والسيرة، وأسس الفقه، والثقافة والحضارة الإسلامية، وعلاقة الإسلام بالحياة الاجتماعية والعلم وغيرها من القضايا العامة.</p></div>
    <div class="scenario"><h3>🩺 صلة مفيدة بالممارسة</h3><p>العمل مع الناس يتطلب احترام معتقداتهم وقيمهم وخصوصيتهم. فهم الخلفية الدينية والثقافية يساعد على التواصل باحترام، مع الرجوع إلى المختصين عند وجود مسألة شرعية أو سريرية تحتاج حكمًا دقيقًا.</p></div>
@@ -605,5 +598,8 @@ document.getElementById("exportNotes").onclick=()=>{
 <script src="qa-corpus.js?v=20261012-1"></script><script src="../english-ii/course-data.js?v=20261012-1"></script><script src="tools-core.js?v=20261012-1"></script><script src="qa-engine.js?v=20261012-1"></script><script>RafeqQA.init({lang:"ar"});</script>
 <aside style="padding:16px;background:#edf5ef" dir="rtl"><h2>رفيق الدراسة دون اتصال</h2><p>نسخة السنة الأولى، الفصل الأول؛ المصادر الخارجية وباقي السنوات تحتاج الإنترنت. قياس خطوات التنزيل يتبع خيارك الحالي للإحصاءات؛ لا يجمع أسماء أو ملاحظات.</p><button id="companion-offline-download">تنزيل النسخة المحلية</button><p id="companion-offline-status" role="status"></p></aside><script src="offline-download.js?v=20261102"></script><script src="../e-library-v3/data/course-references.js?v=20261113"></script>
 <script src="course-references.js?v=20261113"></script>
+
+<script src="../student-learning-hub/data/assessment-weights.js?v=20261113-assessment-1"></script>
+<script src="course-assessment.js?v=20261113-assessment-1"></script>
 </body>
 </html>
