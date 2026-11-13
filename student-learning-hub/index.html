@@ -790,6 +790,8 @@ function renderCourseCatalog(){
      : `<div class="courseArabicTitle">${ar}</div><div class="courseOfficialTitle">${en}</div>`;
    const contactLabel=lang==="en"?"Contact hours":"ساعات الاتصال";
    const workloadLabel=lang==="en"?"Workload":"عبء العمل";
+   const studyLink=embeddedStudyLinks[en][lang];
+   const courseId=studyLink.split("#")[1];
    return `<div class="courseCatalogCard">
      <span class="courseCatalogCode">${code}</span>
      ${title}
@@ -799,7 +801,10 @@ function renderCourseCatalog(){
       <span>${workloadLabel}: ${workload}h</span>
       <span>${ects} ECTS</span>
      </div>
-     <a class="btn primary" href="../study-companion/${embeddedStudyLinks[en][lang]}">${lang==="en"?"Open course + Study Companion":"افتح المقرر ورفيق الدراسة"}</a>
+     <div class="actions">
+      <a class="btn primary" href="../study-companion/${studyLink}">${lang==="en"?"Open course + Study Companion":"افتح المقرر ورفيق الدراسة"}</a>
+      <a class="btn soft" href="../e-library-v3/#course-references/${encodeURIComponent(courseId)}">${lang==="en"?"Course references":"مراجع المقرر"}</a>
+     </div>
    </div>`;
  }).join("");
 }

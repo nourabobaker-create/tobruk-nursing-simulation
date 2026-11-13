@@ -69,10 +69,13 @@ test('course-to-Library mapping has 50 unambiguous courses and all 600 topics wi
  }
 });
 test('all ten course pages load the new engine after its dependencies and contain no floating chatbot',()=>{
- const files=fs.readdirSync(__dirname).filter(f=>f.endsWith('.html'));assert.equal(files.length,10);
+ const files=fs.readdirSync(__dirname).filter(f=>f.endsWith('.html')&&!f.startsWith('offline-'));assert.equal(files.length,10);
  for(const file of files){const html=fs.readFileSync(path.join(__dirname,file),'utf8');
   assert(html.indexOf('tools-core.js?v=20261012-1')<html.indexOf('qa-engine.js?v=20261012-1'),file);
   assert(html.includes('companion.css?v=20261012-1'),file);
+  const data=html.indexOf('../e-library-v3/data/course-references.js');
+  const panel=html.indexOf('src="course-references.js');
+  assert(data>=0&&panel>data,file);
   assert(!html.includes('id="chatLauncher"'),file);assert(!html.includes('id="chatbox"'),file);
  }
 });

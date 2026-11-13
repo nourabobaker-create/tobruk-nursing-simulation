@@ -16,3 +16,118 @@
 .mapping-meta{display:block;color:#667b6e;font-size:.8rem;line-height:1.7;margin-top:.4rem;overflow-wrap:anywhere}
 .mapping-support,.mapping-limit{font-size:.9rem;line-height:1.8;margin:.4rem 0!important}
 .mapping-limit{color:#79582d}
+
+.course-reference-filters {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  gap: 16px;
+  margin-block: 24px 32px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--paper);
+}
+.course-reference-filters label {
+  display: block;
+  margin-block-end: 6px;
+  color: var(--muted);
+  font-size: 18px;
+}
+.course-reference-filters select,
+.course-reference-filters input {
+  width: 100%;
+  min-width: 0;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--ink);
+  background: var(--bg);
+  font-size: 18px;
+}
+.course-reference-year + .course-reference-year {
+  margin-block-start: 38px;
+  padding-block-start: 24px;
+  border-block-start: 1px solid var(--line);
+}
+.course-reference-semester {
+  margin-block-start: 16px;
+}
+.course-reference-semester h3 {
+  margin-block-end: 12px;
+  color: var(--muted);
+  font-size: 22px;
+}
+.course-reference-card {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  scroll-margin-block-start: 74px;
+}
+.course-reference-content {
+  display: grid;
+  gap: 12px;
+}
+.course-reference-content > p {
+  margin-block-end: 0;
+}
+.course-reference-group h4 {
+  margin-block: 12px 6px;
+  color: var(--green);
+  font-size: 20px;
+}
+.course-reference-items,
+.course-reference-links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.course-reference-item {
+  display: grid;
+  gap: 6px;
+  padding-block: 10px;
+  border-block-end: 1px solid var(--line);
+}
+.course-reference-name {
+  font-size: 19px;
+  line-height: 1.4;
+}
+.course-reference-meta,
+.course-reference-unlinked {
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+}
+.course-reference-unlinked {
+  color: #76551f;
+}
+.course-reference-links li,
+.course-reference-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px 12px;
+  font-size: 17px;
+}
+.course-reference-links a,
+.course-reference-actions a {
+  padding-block: 3px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.reference-access-open {
+  color: var(--green);
+  background: var(--mint);
+}
+.reference-access-paid,
+.reference-access-institutional {
+  color: #6c501b;
+  background: var(--gold-soft);
+}
+@media (max-width: 720px) {
+  .course-reference-filters {
+    grid-template-columns: 1fr 1fr;
+  }
+  .course-reference-filters > :last-child {
+    grid-column: 1 / -1;
+  }
+}

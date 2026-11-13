@@ -1,0 +1,77 @@
+.course-references-panel {
+  margin-block: 0 16px;
+  border: 1px solid #cdded5;
+  border-radius: 16px;
+  background: #f8fbf9;
+  color: #193c31;
+}
+
+.course-references-panel > summary {
+  padding: 12px 16px;
+  cursor: pointer;
+  font-weight: 750;
+}
+
+.course-references-panel > summary:focus-visible,
+.course-references-panel a:focus-visible {
+  outline: 2px solid #236953;
+  outline-offset: 2px;
+}
+
+.course-references-content {
+  padding: 0 16px 15px;
+}
+
+.course-references-content h3 {
+  margin: 13px 0 4px;
+  font-size: 1rem;
+}
+
+.course-reference-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.course-reference-item {
+  padding-block: 8px;
+  border-block-start: 1px solid #dbe6df;
+  overflow-wrap: anywhere;
+}
+
+.course-reference-item > bdi {
+  font-weight: 700;
+}
+
+.course-reference-note {
+  margin: 4px 0;
+  color: #475e54;
+  font-size: .875rem;
+}
+
+.course-reference-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-block-start: 6px;
+}
+
+.course-reference-links a,
+.course-reference-library {
+  color: #14533f;
+  font-weight: 650;
+  text-decoration: underline;
+  text-underline-offset: .15em;
+}
+
+.course-reference-links a {
+  padding: 4px 9px;
+  border-radius: 8px;
+  background: #e6f0ea;
+  font-size: .875rem;
+}
+
+.course-reference-library {
+  display: inline-block;
+  margin-block-start: 8px;
+}

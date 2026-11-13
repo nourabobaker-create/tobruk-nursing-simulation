@@ -69,7 +69,32 @@ function resourceCard(r) {
 }
 function fillCards(target,items) { resetElement(target); if (!items.length) { target.append(empty('لا توجد مواد مطابقة')); return; } const f = document.createDocumentFragment(); items.forEach(r => f.append(resourceCard(r))); target.append(f); }
 let activePanel = 'discover';
-function showPanel(name, scroll = true) { if (!$ (name) || !$(name).classList.contains('panel')) name = 'discover'; activePanel = name; document.querySelectorAll('.panel').forEach(p => { p.hidden = p.id !== name; }); document.querySelectorAll('[data-panel]').forEach(b => { const current = b.dataset.panel === name; b.classList.toggle('active',current); current ? b.setAttribute('aria-current','page') : b.removeAttribute('aria-current'); }); if (name === 'saved') renderSaved(); history.replaceState(null,'','#' + name); if (scroll) { const top = $('main').getBoundingClientRect().top + scrollY - 70; window.scrollTo({top:Math.max(0,top),behavior:'auto'}); const heading = $(name).querySelector('h1,h2'); if (heading) { heading.tabIndex = -1; heading.focus({preventScroll:true}); } } }
+function showPanel(route, scroll = true) {
+ const [panel, encodedCourse] = route.split('/');
+ const name = $(panel)?.classList.contains('panel') ? panel : 'discover';
+ const courseId = name === 'course-references' ? referenceCourseId(encodedCourse) : '';
+ activePanel = name;
+ document.querySelectorAll('.panel').forEach(p => { p.hidden = p.id !== name; });
+ document.querySelectorAll('[data-panel]').forEach(b => {
+  const current = b.dataset.panel === name;
+  b.classList.toggle('active',current);
+  current ? b.setAttribute('aria-current','page') : b.removeAttribute('aria-current');
+ });
+ if (name === 'saved') renderSaved();
+ const selectedCourse = name === 'course-references' ? openReferencePanel(courseId) : null;
+ history.replaceState(null,'','#' + name + (selectedCourse ? '/' + encodeURIComponent(courseId) : ''));
+ if (selectedCourse) {
+  requestAnimationFrame(() => {
+   selectedCourse.scrollIntoView({block:'start',behavior:'instant'});
+   selectedCourse.querySelector('summary').focus({preventScroll:true});
+  });
+ } else if (scroll) {
+  const top = $('main').getBoundingClientRect().top + scrollY - 70;
+  window.scrollTo({top:Math.max(0,top),behavior:'auto'});
+  const heading = $(name).querySelector('h1,h2');
+  if (heading) { heading.tabIndex = -1; heading.focus({preventScroll:true}); }
+ }
+}
 document.querySelectorAll('[data-panel]').forEach(b => b.addEventListener('click',() => showPanel(b.dataset.panel)));
 document.querySelectorAll('[data-go]').forEach(b => b.addEventListener('click',() => showPanel(b.dataset.go)));
 const filterDefinitions = [
@@ -138,6 +163,12 @@ function renderCurriculum() {
  if (!items.length) { target.append(empty('لا توجد مقررات مطابقة')); return; }
  items.forEach(c => { const d = node('details','course-card'); const s = node('summary'); const names = node('span'); names.append(node('span','course-title',c.title_ar),node('span','course-meta',[yearLabel(c.year),c.semester ? 'الفصل '+number(c.semester) : '',c.code || '',number((c.resource_ids || []).length)+' رابطًا مقترحًا'].filter(Boolean).join(' · '))); s.append(names); d.append(s);
  const content = node('div','course-content'); content.append(node('p','',c.title_original || 'موضوعات المقرر'));
+ const courseReference = referenceCoursesBySpecId.get(String(c.id));
+ if (courseReference) {
+  const referenceLink = node('a','secondary-button','مراجع هذا المقرر ←');
+  referenceLink.href = referenceCourseHash(courseReference.id);
+  content.append(referenceLink);
+ }
  if (c.id === 'CRS-017') content.append(link('مجموعة علم الأدوية: الكتب والشروحات والتطبيقات / Pharmacology collection ←','pharmacology/','primary-button'));
  const modules = Array.isArray(c.modules) && c.modules.length ? c.modules : (c.topics || []).map(t => ({title_ar:t,resource_ids:[]}));
  modules.forEach(m => {
@@ -164,6 +195,241 @@ function renderCurriculum() {
  const b = node('button','link-button module-more','تصفح جميع مصادر المقرر ←'); b.addEventListener('click',() => goResources({course:String(c.id)})); content.append(b); d.append(content); target.append(d); });
 }
 $('year-filter').addEventListener('change',renderCurriculum); $('curriculum-search').addEventListener('input',renderCurriculum);
+const referenceData = window.TOBRUK_COURSE_REFERENCES || {};
+const referenceCourses = Array.isArray(referenceData.courses) ? referenceData.courses : [];
+const referenceCoursesBySpecId = new Map(referenceCourses.filter(course => course.specId).map(course => [String(course.specId),course]));
+const referenceGroups = [
+ {id:'description',title:'المراجع الواردة في توصيف المقرر',badge:'توصيف المقرر'},
+ {id:'ministry',title:'المراجع الواردة في دليل الوزارة',badge:'دليل الوزارة'},
+ {id:'additional',title:'مراجع إضافية',badge:'مرجع إضافي'},
+ {id:'external',title:'مصادر تعليمية خارجية',badge:'مصدر خارجي'}
+];
+const referenceAccess = {
+ open:'متاح مجانًا',
+ paid:'يتطلب شراءً أو اشتراكًا',
+ institutional:'الوصول عبر المؤسسة',
+ preview:'معاينة',
+ unknown:'الإتاحة غير مؤكدة'
+};
+const referenceLinkText = {
+ open:'فتح المصدر',
+ paid:'صفحة الناشر أو الشراء',
+ institutional:'الوصول عبر المؤسسة',
+ preview:'عرض المعاينة',
+ unknown:'الاطلاع على صفحة المصدر'
+};
+const referenceYear = $('reference-year');
+const referenceSemester = $('reference-semester');
+const referenceQuery = $('reference-query');
+const referenceList = $('course-reference-list');
+const referenceGuide = $('course-reference-guide');
+if (referenceData.ministryGuide && safeUrl(referenceData.ministryGuide) !== '#') {
+ referenceGuide.href = safeUrl(referenceData.ministryGuide);
+ referenceGuide.hidden = false;
+}
+const referenceOrder = (a,b) => a.localeCompare(b,'ar',{numeric:true});
+function semesterLabel(semester) {
+ return ({1:'الفصل الأول',2:'الفصل الثاني',annual:'مقرر سنوي',internship:'الامتياز'})[semester] ||
+  (semester && semester !== 'undefined' ? semester : 'الفصل غير محدد');
+}
+function referenceCourseId(encoded) {
+ try { return decodeURIComponent(encoded || ''); } catch (_) { return ''; }
+}
+function referenceCourseHash(id) {
+ return '#course-references/'+encodeURIComponent(id);
+}
+function referenceOptions(select,values,label) {
+ [...new Set(values.filter(Boolean).map(String))].sort(referenceOrder).forEach(value => {
+  const option = node('option','',label(value));
+  option.value = value;
+  select.append(option);
+ });
+}
+referenceOptions(referenceYear,referenceCourses.map(course => course.year),yearLabel);
+referenceOptions(referenceSemester,referenceCourses.map(course => course.semester),semesterLabel);
+function referenceOrigins(reference) {
+ return [...new Set([reference.origin,...(reference.origins || [])].filter(Boolean))];
+}
+function referenceEntries(course) {
+ return Array.isArray(course.references) ? course.references : [];
+}
+function referenceSearchText(course) {
+ return [course.titleAr,course.titleEn,course.code,...referenceEntries(course).flatMap(reference =>
+  [reference.title,reference.titleAr,reference.titleEn,reference.author,reference.publisher,reference.isbn])].filter(Boolean).join(' ');
+}
+function referenceBidi(text) {
+ const e = node('bdi','',text);
+ e.dir = 'auto';
+ return e;
+}
+function courseReferenceItem(reference,primaryGroup) {
+ const item = node('li','course-reference-item');
+ const name = node('strong','course-reference-name');
+ const title = reference.titleAr || reference.title || reference.titleEn;
+ name.append(referenceBidi(title));
+ item.append(name);
+ const originalTitle = reference.titleEn || reference.title;
+ const details = [originalTitle !== title ? originalTitle : '',reference.author,reference.publisher,reference.edition,reference.isbn ? 'ISBN '+reference.isbn : ''].filter(Boolean);
+ if (details.length) {
+  const meta = node('p','course-reference-meta');
+  details.forEach((part,index) => {
+   if (index) meta.append(' · ');
+   meta.append(referenceBidi(part));
+  });
+  item.append(meta);
+ }
+ const origins = referenceOrigins(reference);
+ const badges = node('div','badges');
+ referenceGroups.filter(group => origins.includes(group.id) && (group.id !== primaryGroup || group.id === 'external')).forEach(group => {
+  badges.append(node('span','badge',group.badge));
+ });
+ if (badges.childElementCount) item.append(badges);
+ if (reference.note) {
+  const note = node('p','course-reference-meta',reference.note);
+  note.dir = 'auto';
+  item.append(note);
+ }
+ const links = Array.isArray(reference.links) ? [...reference.links] : [];
+ if (reference.url && !links.some(entry => entry.url === reference.url)) links.unshift(reference);
+ const validLinks = links.filter(entry => entry.url && /^https?:\/\//i.test(entry.url) && safeUrl(entry.url) !== '#');
+ if (!validLinks.length) {
+  item.append(node('p','course-reference-unlinked','رابط مطابق غير مؤكد'));
+  return item;
+ }
+ const actions = node('ul','course-reference-links');
+ validLinks.forEach(entry => {
+  const row = node('li');
+  const access = entry.access || reference.access || 'unknown';
+  const label = entry.labelAr || entry.label || referenceLinkText[access] || referenceLinkText.unknown;
+  const a = link(label+' ↗',entry.url);
+  const accessLabel = referenceAccess[access] || referenceAccess.unknown;
+  a.setAttribute('aria-label',[label,title,accessLabel].join(' · '));
+  row.append(a,node('span','badge reference-access reference-access-'+access,accessLabel));
+  actions.append(row);
+ });
+ item.append(actions);
+ return item;
+}
+function courseReferenceCard(course,expanded) {
+ const card = node('details','course-card course-reference-card');
+ card.dataset.referenceCourse = String(course.id);
+ const summary = node('summary');
+ const names = node('span');
+ names.append(node('span','course-title',course.titleAr || course.titleEn));
+ if (course.titleAr && course.titleEn) {
+  const original = node('span','course-meta');
+  original.append(referenceBidi(course.titleEn));
+  names.append(original);
+ }
+ const references = referenceEntries(course);
+ names.append(node('span','course-meta',[course.code,number(references.length)+' من المراجع والمصادر'].filter(Boolean).join(' · ')));
+ summary.append(names);
+ card.append(summary);
+ if (expanded) {
+  card.append(courseReferenceBody(course,references));
+  card.open = true;
+ } else {
+  card.addEventListener('toggle',() => {
+   if (card.open) card.append(courseReferenceBody(course,references));
+  },{once:true});
+ }
+ return card;
+}
+function courseReferenceBody(course,references) {
+ const body = node('div','course-content course-reference-content');
+ if (course.note || course.descriptionStatus) {
+  const note = node('p','course-reference-meta',course.note || course.descriptionStatus);
+  note.dir = 'auto';
+  body.append(note);
+ }
+ const hasDocumentReferences = references.some(reference => referenceOrigins(reference).some(origin => origin === 'description' || origin === 'ministry'));
+ if (!hasDocumentReferences) body.append(node('p','course-reference-meta','لا توجد مراجع موثّقة من التوصيف أو دليل الوزارة لهذا المقرر ضمن الوثائق التي أمكن مراجعتها.'));
+ const referenceBuckets = new Map(referenceGroups.map(group => [group.id,[]]));
+ references.forEach(reference => {
+  const origins = referenceOrigins(reference);
+  const group = referenceBuckets.has(reference.origin) ? reference.origin : referenceGroups.find(entry => origins.includes(entry.id))?.id;
+  referenceBuckets.get(group || 'additional').push(reference);
+ });
+ referenceGroups.forEach(group => {
+  const entries = referenceBuckets.get(group.id);
+  if (!entries.length) return;
+  const block = node('section','course-reference-group');
+  const list = node('ul','course-reference-items');
+  entries.forEach(reference => list.append(courseReferenceItem(reference,group.id)));
+  block.append(node('h4','',group.title),list);
+  body.append(block);
+ });
+ const actions = node('div','course-reference-actions');
+ const direct = node('a','','رابط مراجع هذا المقرر');
+ direct.href = referenceCourseHash(course.id);
+ actions.append(direct);
+ if (course.courseUrl && safeUrl(course.courseUrl) !== '#') {
+  const courseLink = node('a','','مساحة المقرر ←');
+  courseLink.href = safeUrl(course.courseUrl);
+  actions.append(courseLink);
+ }
+ body.append(actions);
+ return body;
+}
+function renderCourseReferences(selectedId = '') {
+ referenceList.replaceChildren();
+ const year = referenceYear.value;
+ const semester = referenceSemester.value;
+ const query = referenceQuery.value.trim();
+ const filtered = referenceCourses.filter(course =>
+  (!year || String(course.year) === year) &&
+  (!semester || String(course.semester) === semester) &&
+  searchMatch(query,referenceSearchText(course)));
+ $('reference-course-count').textContent = number(filtered.length)+' مقررًا';
+ if (!filtered.length) {
+  referenceList.append(referenceCourses.length
+   ? empty('لا توجد مقررات مطابقة')
+   : empty('تعذّر عرض مراجع المقررات','حدّث الصفحة لإعادة تحميل المراجع.'));
+  return null;
+ }
+ const years = new Map();
+ filtered.forEach(course => {
+  const yearKey = String(course.year || '');
+  const semesterKey = String(course.semester || '');
+  if (!years.has(yearKey)) years.set(yearKey,new Map());
+  const semesters = years.get(yearKey);
+  if (!semesters.has(semesterKey)) semesters.set(semesterKey,[]);
+  semesters.get(semesterKey).push(course);
+ });
+ let selected = null;
+ [...years.keys()].sort(referenceOrder).forEach(yearKey => {
+  const yearSection = node('section','course-reference-year');
+  yearSection.append(node('h2','',yearLabel(yearKey)));
+  const semesters = years.get(yearKey);
+  [...semesters.keys()].sort(referenceOrder).forEach(semesterKey => {
+   const semesterSection = node('section','course-reference-semester');
+   const grid = node('div','curriculum-grid');
+   semesters.get(semesterKey).forEach(course => {
+    const isSelected = String(course.id) === selectedId;
+    const card = courseReferenceCard(course,isSelected || (query && filtered.length === 1));
+    if (isSelected) selected = card;
+    grid.append(card);
+   });
+   semesterSection.append(node('h3','',semesterLabel(semesterKey)),grid);
+   yearSection.append(semesterSection);
+  });
+  referenceList.append(yearSection);
+ });
+ return selected;
+}
+function openReferencePanel(courseId) {
+ if (courseId && referenceCourses.some(course => String(course.id) === courseId)) {
+  referenceYear.value = referenceSemester.value = referenceQuery.value = '';
+ }
+ return renderCourseReferences(courseId);
+}
+function updateReferenceFilters() {
+ history.replaceState(null,'','#course-references');
+ renderCourseReferences();
+}
+referenceYear.addEventListener('change',updateReferenceFilters);
+referenceSemester.addEventListener('change',updateReferenceFilters);
+referenceQuery.addEventListener('input',updateReferenceFilters);
 [...new Set(skills.map(s => s.domain_ar).filter(Boolean))].sort().forEach(domain => { const o = node('option','',domain); o.value = domain; $('skill-domain').append(o); });
 function appendSkillBlock(target,title,value) { if (!value) return; const block = node('div','skill-block'); block.append(node('h4','',title)); if (Array.isArray(value)) { const list = node('ul'); value.forEach(v => list.append(node('li','',typeof v === 'string' ? v : v.title_ar || v.text_ar || JSON.stringify(v)))); block.append(list); } else block.append(node('p','',String(value))); target.append(block); }
 function sourceItem(source,index) { if (typeof source === 'string') { const found = resources.find(r => r.url === source); return {url:source,title:found?.title_ar || 'المصدر ' + number(index+1)}; } return {url:source.url || source.href || source.source_url,title:source.title_ar || source.title || source.label || 'المصدر ' + number(index+1)}; }
