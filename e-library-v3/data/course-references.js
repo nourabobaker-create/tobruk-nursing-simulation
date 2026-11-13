@@ -114,10 +114,10 @@ window.TOBRUK_COURSE_REFERENCES = {
               "labelEn": "Publisher edition record"
             },
             {
-              "url": "https://assets.cambridge.org/97805211/41338/excerpt/9780521141338_excerpt.pdf",
+              "url": "https://assets.cambridge.org/97805211/41338/frontmatter/9780521141338_frontmatter.pdf",
               "access": "preview",
-              "labelAr": "عينة الناشر",
-              "labelEn": "Publisher sample"
+              "labelAr": "صفحات تمهيدية من الناشر",
+              "labelEn": "Publisher front matter"
             }
           ]
         },
@@ -142,7 +142,15 @@ window.TOBRUK_COURSE_REFERENCES = {
             "ministry"
           ],
           "isbn": "9780367148683",
-          "url": "https://www.routledge.com/Essential-Grammar-for-Todays-Writers-Students-and-Teachers/Sullivan/p/book/9780367148683"
+          "url": "https://www.routledge.com/The-Good-Grammar-Guide/Palmer/p/book/9780367148683",
+          "links": [
+            {
+              "url": "https://api.pageplace.de/preview/DT0400.9780429624759_A39256731/preview-9780429624759_A39256731.pdf",
+              "access": "preview",
+              "labelAr": "معاينة الطبعة الثانية",
+              "labelEn": "Second-edition preview"
+            }
+          ]
         },
         {
           "title": "McGraw-Hill Education Handbook of English Grammar & Usage",
@@ -288,7 +296,7 @@ window.TOBRUK_COURSE_REFERENCES = {
             "ministry"
           ],
           "isbn": "9781265348441",
-          "url": "https://www.mheducation.com.sg/seeley-s-essentials-of-anatomy-and-physiology-ise-9781265348441-asia-group"
+          "url": "https://www.foyles.co.uk/book/seeleys-essentials-of-anatomy-and-physiology-ise/cinnamon-vanputte/9781265348441"
         },
         {
           "title": "Human Anatomy & Physiology",
@@ -481,7 +489,9 @@ window.TOBRUK_COURSE_REFERENCES = {
             "ministry"
           ],
           "isbn": "9780323757027",
-          "url": "https://shop.elsevier.com/books/nursing-theorists-and-their-work/alligood/978-0-323-75702-7"
+          "url": "https://www.vitalsource.com/products/nursing-theorists-and-their-work-e-book-martha-raile-alligood-v9780323777988",
+          "note": "نسخة إلكترونية من الطبعة نفسها، برقم ISBN مختلف عن النسخة الورقية.",
+          "noteEn": "Digital format of the same edition, with a different ISBN from print."
         },
         {
           "title": "Theoretical Basis for Nursing",
@@ -830,8 +840,10 @@ window.TOBRUK_COURSE_REFERENCES = {
           "origins": [
             "ministry"
           ],
-          "isbn": "9781138486980",
-          "url": "https://www.routledge.com/Varieties-of-Opposition-to-Gender-Equality-in-Europe/Verloo/p/book/9781138486980"
+          "isbn": "9781351044158",
+          "url": "https://www.routledge.com/Islam-and-Politics-3rd-edition/Mandaville/p/book/9781351044158",
+          "note": "رقم الدليل يعود إلى عنوان مختلف. الرابط للطبعة الثالثة من كتاب Peter Mandaville لدى الناشر.",
+          "noteEn": "The guide’s ISBN belongs to a different title. The link is to the publisher’s third edition of Peter Mandaville’s book."
         },
         {
           "title": "Islam Explained: A Short Introduction to History, Teachings, and Culture",
@@ -845,7 +857,7 @@ window.TOBRUK_COURSE_REFERENCES = {
             "ministry"
           ],
           "isbn": "9781646113231",
-          "url": "https://www.sourcebooks.com/9781646113231-islam-explained-tp.html"
+          "url": "https://www.penguin.com.au/books/islam-explained-9781646113231"
         },
         {
           "title": "Introduction to Arabic — The contribution of Arab: Muslim scholars to different science fields",
@@ -901,7 +913,9 @@ window.TOBRUK_COURSE_REFERENCES = {
             "ministry"
           ],
           "isbn": "9780323661195",
-          "url": "https://shop.elsevier.com/books/health-assessment-for-nursing-practice/wilson/978-0-323-66119-5"
+          "url": "https://www.vitalsource.com/products/health-assessment-for-nursing-practice-e-book-susan-fickertt-wilson-jean-v9780323763196",
+          "note": "نسخة إلكترونية من الطبعة نفسها، برقم ISBN مختلف عن النسخة الورقية.",
+          "noteEn": "Digital format of the same edition, with a different ISBN from print."
         },
         {
           "title": "Health Assessment in Nursing",
@@ -1024,7 +1038,7 @@ window.TOBRUK_COURSE_REFERENCES = {
             "ministry"
           ],
           "isbn": "9781265348441",
-          "url": "https://www.mheducation.com.sg/seeley-s-essentials-of-anatomy-and-physiology-ise-9781265348441-asia-group"
+          "url": "https://www.foyles.co.uk/book/seeleys-essentials-of-anatomy-and-physiology-ise/cinnamon-vanputte/9781265348441"
         },
         {
           "title": "Human Anatomy & Physiology",
@@ -1135,7 +1149,9 @@ window.TOBRUK_COURSE_REFERENCES = {
             "ministry"
           ],
           "isbn": "9780323484374",
-          "url": "https://shop.elsevier.com/books/foundations-and-adult-health-nursing/cooper/978-0-323-48437-4"
+          "url": "https://www.vitalsource.com/products/foundations-and-adult-health-nursing-e-book-kim-cooper-kelly-gosnell-v9780323550307",
+          "note": "نسخة إلكترونية من الطبعة نفسها، برقم ISBN مختلف عن النسخة الورقية.",
+          "noteEn": "Digital format of the same edition, with a different ISBN from print."
         },
         {
           "title": "Nursing Fundamentals 2e",
@@ -1550,10 +1566,10 @@ window.TOBRUK_COURSE_REFERENCES = {
               "labelEn": "Publisher edition record"
             },
             {
-              "url": "https://assets.cambridge.org/97805217/15409/excerpt/9780521715409_excerpt.pdf",
+              "url": "https://assets.cambridge.org/97805217/15409/frontmatter/9780521715409_frontmatter.pdf",
               "access": "preview",
-              "labelAr": "عينة الناشر",
-              "labelEn": "Publisher sample"
+              "labelAr": "صفحات تمهيدية من الناشر",
+              "labelEn": "Publisher front matter"
             }
           ],
           "note": "توقفت طبعة الأقراص الصوتية لدى الناشر. تحقّق من مخزون البائع والشحن.",
@@ -1623,10 +1639,10 @@ window.TOBRUK_COURSE_REFERENCES = {
               "labelEn": "Publisher edition record"
             },
             {
-              "url": "https://assets.cambridge.org/97805211/41338/excerpt/9780521141338_excerpt.pdf",
+              "url": "https://assets.cambridge.org/97805211/41338/frontmatter/9780521141338_frontmatter.pdf",
               "access": "preview",
-              "labelAr": "عينة الناشر",
-              "labelEn": "Publisher sample"
+              "labelAr": "صفحات تمهيدية من الناشر",
+              "labelEn": "Publisher front matter"
             }
           ]
         },
@@ -1760,7 +1776,9 @@ window.TOBRUK_COURSE_REFERENCES = {
             "ministry"
           ],
           "isbn": "9780323761550",
-          "url": "https://shop.elsevier.com/books/pathophysiology/banasik/978-0-323-76155-0"
+          "url": "https://www.vitalsource.com/products/pathophysiology-e-book-jacquelyn-l-banasik-v9780323825481",
+          "note": "نسخة إلكترونية من الطبعة نفسها، برقم ISBN مختلف عن النسخة الورقية.",
+          "noteEn": "Digital format of the same edition, with a different ISBN from print."
         },
         {
           "title": "Davis Advantage for Pathophysiology: Introductory Concepts and Clinical Perspectives",
@@ -1781,16 +1799,16 @@ window.TOBRUK_COURSE_REFERENCES = {
           "author": "Lachel Story",
           "edition": "4th ed.",
           "origin": "description",
-          "access": "institutional",
+          "access": "paid",
           "citation": "Story, L., 2020. Pathophysiology: A practical approach. 4th Ed. Jones & Bartlett Publishers. ISBN-13: 978-1284205435; ISBN-10: 1284205436",
           "publisher": "Jones & Bartlett Learning",
           "origins": [
             "ministry"
           ],
           "isbn": "9781284205435",
-          "url": "https://www.r2library.com/Resource/Title/1284205436",
-          "note": "الوصول عبر اشتراك مكتبة في R2.",
-          "noteEn": "Access through an R2 library subscription."
+          "url": "https://www.vitalsource.com/products/pathophysiology-a-practical-approach-lachel-story-v9781284229967",
+          "note": "نسخة إلكترونية من الطبعة نفسها، برقم ISBN مختلف عن النسخة الورقية.",
+          "noteEn": "Digital format of the same edition, with a different ISBN from print."
         },
         {
           "title": "Understanding Pathophysiology",
@@ -1820,7 +1838,9 @@ window.TOBRUK_COURSE_REFERENCES = {
             "ministry"
           ],
           "isbn": "9780323354813",
-          "url": "https://shop.elsevier.com/books/pathophysiology/banasik/978-0-323-35481-3"
+          "url": "https://www.vitalsource.com/products/pathophysiology-e-book-jacquelyn-l-banasik-v9780323510424",
+          "note": "نسخة إلكترونية من الطبعة نفسها، برقم ISBN مختلف عن النسخة الورقية.",
+          "noteEn": "Digital format of the same edition, with a different ISBN from print."
         },
         {
           "title": "Pathophysiology and Pharmacology Basics for Nurses",
@@ -1911,7 +1931,9 @@ window.TOBRUK_COURSE_REFERENCES = {
             "ministry"
           ],
           "isbn": "9780323827973",
-          "url": "https://shop.elsevier.com/books/pharmacology-and-the-nursing-process/lilley/978-0-323-82797-3"
+          "url": "https://www.vitalsource.com/products/pharmacology-and-the-nursing-process-e-book-linda-lane-lilley-shelly-v9780323828017",
+          "note": "نسخة إلكترونية من الطبعة نفسها، برقم ISBN مختلف عن النسخة الورقية.",
+          "noteEn": "Digital format of the same edition, with a different ISBN from print."
         },
         {
           "title": "Pharmacology: A Patient-Centered Nursing Process Approach",
@@ -1967,7 +1989,9 @@ window.TOBRUK_COURSE_REFERENCES = {
             "ministry"
           ],
           "isbn": "9780323594370",
-          "url": "https://shop.elsevier.com/books/study-guide-for-pharmacology-and-the-nursing-process/lilley/978-0-323-59437-0"
+          "url": "https://www.vitalsource.com/nl/products/study-guide-for-pharmacology-and-the-nursing-linda-lane-lilley-julie-s-v9780323594363",
+          "note": "نسخة إلكترونية من الطبعة نفسها، برقم ISBN مختلف عن النسخة الورقية.",
+          "noteEn": "Digital format of the same edition, with a different ISBN from print."
         },
         {
           "title": "Nursing Pharmacology 2e — Open RN",
@@ -2014,11 +2038,12 @@ window.TOBRUK_COURSE_REFERENCES = {
           "author": "Jacqueline Rosenjack Burchum, Laura D. Rosenthal",
           "publisher": "Elsevier",
           "edition": "12th ed.",
-          "url": "https://shop.elsevier.com/books/lehnes-pharmacology-for-nursing-care/burchum/978-0-443-10710-8",
+          "isbn": "9780443107108",
+          "url": "https://www.vitalsource.com/products/lehne-39-s-pharmacology-for-nursing-care-e-book-jacqueline-rosenjack-burchum-v9780443108679",
           "access": "paid",
           "origin": "additional",
-          "note": "كتاب مساند اقترحته منسقة المقرر.",
-          "noteEn": "Supplementary textbook suggested by the course coordinator."
+          "note": "كتاب مساند اقترحته منسقة المقرر. نسخة إلكترونية من الطبعة نفسها، برقم ISBN مختلف عن النسخة الورقية.",
+          "noteEn": "Supplementary textbook suggested by the course coordinator. Digital format of the same edition, with a different ISBN from print."
         },
         {
           "title": "RegisteredNurseRN — Pharmacology and Quizzes",
@@ -2166,7 +2191,15 @@ window.TOBRUK_COURSE_REFERENCES = {
             "ministry"
           ],
           "isbn": "9780367148683",
-          "url": "https://www.routledge.com/Essential-Grammar-for-Todays-Writers-Students-and-Teachers/Sullivan/p/book/9780367148683"
+          "url": "https://www.routledge.com/The-Good-Grammar-Guide/Palmer/p/book/9780367148683",
+          "links": [
+            {
+              "url": "https://api.pageplace.de/preview/DT0400.9780429624759_A39256731/preview-9780429624759_A39256731.pdf",
+              "access": "preview",
+              "labelAr": "معاينة الطبعة الثانية",
+              "labelEn": "Second-edition preview"
+            }
+          ]
         },
         {
           "title": "McGraw-Hill Education Handbook of English Grammar & Usage",
@@ -2228,10 +2261,10 @@ window.TOBRUK_COURSE_REFERENCES = {
               "labelEn": "Publisher edition record"
             },
             {
-              "url": "https://assets.cambridge.org/97805217/15409/excerpt/9780521715409_excerpt.pdf",
+              "url": "https://assets.cambridge.org/97805217/15409/frontmatter/9780521715409_frontmatter.pdf",
               "access": "preview",
-              "labelAr": "عينة الناشر",
-              "labelEn": "Publisher sample"
+              "labelAr": "صفحات تمهيدية من الناشر",
+              "labelEn": "Publisher front matter"
             }
           ]
         },
@@ -2252,10 +2285,10 @@ window.TOBRUK_COURSE_REFERENCES = {
               "labelEn": "Publisher edition record"
             },
             {
-              "url": "https://assets.cambridge.org/97805211/41338/excerpt/9780521141338_excerpt.pdf",
+              "url": "https://assets.cambridge.org/97805211/41338/frontmatter/9780521141338_frontmatter.pdf",
               "access": "preview",
-              "labelAr": "عينة الناشر",
-              "labelEn": "Publisher sample"
+              "labelAr": "صفحات تمهيدية من الناشر",
+              "labelEn": "Publisher front matter"
             }
           ],
           "note": "توقفت طبعة القرص الصوتي لدى الناشر. تحقّق من مخزون البائع والشحن.",
@@ -2372,7 +2405,7 @@ window.TOBRUK_COURSE_REFERENCES = {
             "ministry"
           ],
           "isbn": "9780323697880",
-          "url": "https://shop.elsevier.com/books/maternal-child-nursing/mckinney/978-0-323-69788-0"
+          "url": "https://campusstore.miamioh.edu/maternalchild-nursing-6th-mckinney-emily/bk/9780323697880"
         },
         {
           "title": "Maternity and Pediatric Nursing",
@@ -2400,7 +2433,7 @@ window.TOBRUK_COURSE_REFERENCES = {
             "ministry"
           ],
           "isbn": "9780323554190",
-          "url": "https://shop.elsevier.com/books/core-curriculum-for-neonatal-intensive-care-nursing/awhonn/978-0-323-55419-0"
+          "url": "https://www.aacn.org/store/books/128710/core-curriculum-for-neonatal-intensive-care-nursing-6th-ed"
         },
         {
           "title": "Maternity, Newborn, and Women’s Health Nursing: A Case-Based Approach",
@@ -2764,7 +2797,9 @@ window.TOBRUK_COURSE_REFERENCES = {
             "ministry"
           ],
           "isbn": "9780323484374",
-          "url": "https://shop.elsevier.com/books/foundations-and-adult-health-nursing/cooper/978-0-323-48437-4"
+          "url": "https://www.vitalsource.com/products/foundations-and-adult-health-nursing-e-book-kim-cooper-kelly-gosnell-v9780323550307",
+          "note": "نسخة إلكترونية من الطبعة نفسها، برقم ISBN مختلف عن النسخة الورقية.",
+          "noteEn": "Digital format of the same edition, with a different ISBN from print."
         },
         {
           "title": "Foundations of Adult Nursing",
@@ -2778,9 +2813,9 @@ window.TOBRUK_COURSE_REFERENCES = {
             "ministry"
           ],
           "isbn": "9781446267912",
-          "url": "https://uk.sagepub.com/sites/default/files/newbooks_1.pdf",
-          "note": "فهرس الناشر للطبعة الأولى.",
-          "noteEn": "Publisher catalog for the first edition."
+          "url": "https://research.manchester.ac.uk/en/publications/foundations-of-adult-nursing-2/",
+          "note": "سجل ببليوغرافي جامعي للطبعة الأولى. إتاحة النص الكامل غير مؤكدة.",
+          "noteEn": "University bibliography record for the first edition. Full-text access is unconfirmed."
         },
         {
           "title": "الرعاية من أجل تطوّر الطفل: دليل المشارك",
@@ -2861,7 +2896,9 @@ window.TOBRUK_COURSE_REFERENCES = {
             "ministry"
           ],
           "isbn": "9780323484374",
-          "url": "https://shop.elsevier.com/books/foundations-and-adult-health-nursing/cooper/978-0-323-48437-4"
+          "url": "https://www.vitalsource.com/products/foundations-and-adult-health-nursing-e-book-kim-cooper-kelly-gosnell-v9780323550307",
+          "note": "نسخة إلكترونية من الطبعة نفسها، برقم ISBN مختلف عن النسخة الورقية.",
+          "noteEn": "Digital format of the same edition, with a different ISBN from print."
         },
         {
           "title": "Foundations of Adult Nursing",
@@ -2875,9 +2912,9 @@ window.TOBRUK_COURSE_REFERENCES = {
             "ministry"
           ],
           "isbn": "9781446267912",
-          "url": "https://uk.sagepub.com/sites/default/files/newbooks_1.pdf",
-          "note": "فهرس الناشر للطبعة الأولى.",
-          "noteEn": "Publisher catalog for the first edition."
+          "url": "https://research.manchester.ac.uk/en/publications/foundations-of-adult-nursing-2/",
+          "note": "سجل ببليوغرافي جامعي للطبعة الأولى. إتاحة النص الكامل غير مؤكدة.",
+          "noteEn": "University bibliography record for the first edition. Full-text access is unconfirmed."
         },
         {
           "title": "Medical-Surgical Nursing: Clinical Management for Positive Outcomes",
@@ -2987,7 +3024,9 @@ window.TOBRUK_COURSE_REFERENCES = {
             "ministry"
           ],
           "isbn": "9780323776882",
-          "url": "https://shop.elsevier.com/books/foundations-for-population-health-in-community-public-health-nursing/stanhope/978-0-323-77688-2"
+          "url": "https://www.vitalsource.com/products/foundations-for-population-health-in-marcia-stanhope-jeanette-v9780323776899",
+          "note": "نسخة إلكترونية من الطبعة نفسها، برقم ISBN مختلف عن النسخة الورقية.",
+          "noteEn": "Digital format of the same edition, with a different ISBN from print."
         },
         {
           "title": "Public/Community Health and Nursing Practice: Caring for Populations",
@@ -3045,9 +3084,9 @@ window.TOBRUK_COURSE_REFERENCES = {
             "ministry"
           ],
           "isbn": "9781284036596",
-          "url": "https://library.kmtc.ac.ke/cgi-bin/koha/opac-detail.pl?biblionumber=42680",
-          "note": "سجل فهرسة للطبعة المذكورة.",
-          "noteEn": "Catalog record for the cited edition."
+          "url": "https://www.campusbooks.com/books/9781284036596-an-introduction-to-community-and-public-health",
+          "note": "صفحة للطبعة الثامنة مع خيارات بحث عن النسخة. توافر الكتاب غير مؤكد.",
+          "noteEn": "Record for the eighth edition with options to look for a copy. Availability is unconfirmed."
         },
         {
           "title": "Community and Public Health Nursing: A Call to Action",
@@ -3126,7 +3165,7 @@ window.TOBRUK_COURSE_REFERENCES = {
             "ministry"
           ],
           "isbn": "9781526490155",
-          "url": "https://www.sagepub.com/shop/buy-a-book/communication-skills-in-nursing-health-and-social-care-5-265641"
+          "url": "https://www.brownsbfs.co.uk/Product/Moss-Bernard/Communication-Skills-in-Nursing-Health-and-Social-Care/9781526490155"
         },
         {
           "title": "Communication in Nursing",
@@ -3184,8 +3223,8 @@ window.TOBRUK_COURSE_REFERENCES = {
             "ministry"
           ],
           "isbn": "9781315378398",
-          "url": "https://www.routledge.com/Teaching-and-Learning-Communication-Skills-in-Medicine/Draper-Silverman-Kurtz/p/book/9781138443419",
-          "note": "إعادة نشر الطبعة الثانية إلكترونيًا. DOI النسخة الإلكترونية هو 10.1201/9781315378398."
+          "url": "https://www.vitalsource.com/en-uk/products/teaching-and-learning-communication-skills-in-suzanne-kurtz-v9781315358611",
+          "note": "الرابط يعرض الصيغة الرقمية للطبعة الثانية. DOI للصيغة المذكورة في الدليل: 10.1201/9781315378398."
         },
         {
           "title": "Oxford English for Careers: Nursing 1 — Student’s Book",
@@ -3216,10 +3255,10 @@ window.TOBRUK_COURSE_REFERENCES = {
               "labelEn": "Publisher edition record"
             },
             {
-              "url": "https://assets.cambridge.org/97805217/15409/excerpt/9780521715409_excerpt.pdf",
+              "url": "https://assets.cambridge.org/97805217/15409/frontmatter/9780521715409_frontmatter.pdf",
               "access": "preview",
-              "labelAr": "عينة الناشر",
-              "labelEn": "Publisher sample"
+              "labelAr": "صفحات تمهيدية من الناشر",
+              "labelEn": "Publisher front matter"
             }
           ]
         },
@@ -3301,10 +3340,10 @@ window.TOBRUK_COURSE_REFERENCES = {
               "labelEn": "Publisher edition record"
             },
             {
-              "url": "https://assets.cambridge.org/97805211/41338/excerpt/9780521141338_excerpt.pdf",
+              "url": "https://assets.cambridge.org/97805211/41338/frontmatter/9780521141338_frontmatter.pdf",
               "access": "preview",
-              "labelAr": "عينة الناشر",
-              "labelEn": "Publisher sample"
+              "labelAr": "صفحات تمهيدية من الناشر",
+              "labelEn": "Publisher front matter"
             }
           ]
         },
@@ -5198,7 +5237,7 @@ window.TOBRUK_COURSE_REFERENCES = {
             "ministry"
           ],
           "isbn": "9781526490155",
-          "url": "https://www.sagepub.com/shop/buy-a-book/communication-skills-in-nursing-health-and-social-care-5-265641"
+          "url": "https://www.brownsbfs.co.uk/Product/Moss-Bernard/Communication-Skills-in-Nursing-Health-and-Social-Care/9781526490155"
         },
         {
           "title": "Communication in Nursing",
@@ -5262,8 +5301,8 @@ window.TOBRUK_COURSE_REFERENCES = {
           "citation": "Kurtz, S., Silverman, J., Draper, J., van Dalen, J. and Platt, F.W., 2017. Teaching and learning communication skills in medicine. CRC press. ISBN-13: 9781315378398",
           "isbn": "9781315378398",
           "publisher": "CRC Press / Routledge",
-          "url": "https://www.routledge.com/Teaching-and-Learning-Communication-Skills-in-Medicine/Draper-Silverman-Kurtz/p/book/9781138443419",
-          "note": "إعادة نشر الطبعة الثانية إلكترونيًا. DOI النسخة الإلكترونية هو 10.1201/9781315378398."
+          "url": "https://www.vitalsource.com/en-uk/products/teaching-and-learning-communication-skills-in-suzanne-kurtz-v9781315358611",
+          "note": "الرابط يعرض الصيغة الرقمية للطبعة الثانية. DOI للصيغة المذكورة في الدليل: 10.1201/9781315378398."
         },
         {
           "title": "Oxford English for Careers: Nursing 2 Student’s Book",
@@ -5864,7 +5903,9 @@ window.TOBRUK_COURSE_REFERENCES = {
             "ministry"
           ],
           "isbn": "9781975141851",
-          "url": "https://www.harvard.com/book/9781975141851"
+          "url": "https://www.vitalsource.com/in/products/essentials-of-nursing-research-denise-polit-cheryl-beck-v9781975171667",
+          "note": "نسخة إلكترونية من الطبعة نفسها، برقم ISBN مختلف عن النسخة الورقية.",
+          "noteEn": "Digital format of the same edition, with a different ISBN from print."
         },
         {
           "title": "Introduction to Research in the Health Sciences",
@@ -6337,11 +6378,11 @@ window.TOBRUK_COURSE_REFERENCES = {
           "note": "الرابط يعرض الطبعة نفسها بصيغة أو حزمة مختلفة."
         },
         {
-          "title": "International Best Practices in Critical Care Nursing, Third Edition",
-          "titleAr": "أفضل الممارسات الدولية في تمريض العناية الحرجة — الطبعة الثالثة",
-          "titleEn": "International Best Practices in Critical Care Nursing, Third Edition",
-          "publisher": "World Federation of Critical Care Nurses (WFCCN)",
-          "url": "https://wfccn.org/resources/ebook/",
+          "title": "دليل الرعاية التمريضية لحزم الرعاية الحرجة بوحده الرعايه المركزه",
+          "titleAr": "دليل حزم الرعاية التمريضية الحرجة",
+          "titleEn": "دليل الرعاية التمريضية لحزم الرعاية الحرجة بوحده الرعايه المركزه",
+          "publisher": "Egyptian Health Council",
+          "url": "https://lms.ehc.gov.eg/lms/mod/book/tool/print/index.php?id=482",
           "access": "open",
           "origin": "additional",
           "note": "مدرج في المكتبة الرقمية للمساندة الدراسية.",
@@ -6597,11 +6638,11 @@ window.TOBRUK_COURSE_REFERENCES = {
           "note": "الرابط يعرض الطبعة نفسها بصيغة أو حزمة مختلفة."
         },
         {
-          "title": "International Best Practices in Critical Care Nursing, Third Edition",
-          "titleAr": "أفضل الممارسات الدولية في تمريض العناية الحرجة — الطبعة الثالثة",
-          "titleEn": "International Best Practices in Critical Care Nursing, Third Edition",
-          "publisher": "World Federation of Critical Care Nurses (WFCCN)",
-          "url": "https://wfccn.org/resources/ebook/",
+          "title": "Basic Principles of Mechanical Ventilation",
+          "titleAr": "المبادئ الأساسية للتهوية الميكانيكية",
+          "titleEn": "Basic Principles of Mechanical Ventilation",
+          "publisher": "Sault College / Seven Generations Education Institute",
+          "url": "https://ecampusontario.pressbooks.pub/mechanicalventilators/",
           "access": "open",
           "origin": "additional",
           "note": "مدرج في المكتبة الرقمية للمساندة الدراسية.",
@@ -6676,7 +6717,9 @@ window.TOBRUK_COURSE_REFERENCES = {
             "ministry"
           ],
           "isbn": "9781975141851",
-          "url": "https://www.harvard.com/book/9781975141851"
+          "url": "https://www.vitalsource.com/in/products/essentials-of-nursing-research-denise-polit-cheryl-beck-v9781975171667",
+          "note": "نسخة إلكترونية من الطبعة نفسها، برقم ISBN مختلف عن النسخة الورقية.",
+          "noteEn": "Digital format of the same edition, with a different ISBN from print."
         },
         {
           "title": "Introduction to Research in the Health Sciences",
@@ -6801,7 +6844,7 @@ window.TOBRUK_COURSE_REFERENCES = {
             "ministry"
           ],
           "isbn": "9781526490155",
-          "url": "https://www.sagepub.com/shop/buy-a-book/communication-skills-in-nursing-health-and-social-care-5-265641"
+          "url": "https://www.brownsbfs.co.uk/Product/Moss-Bernard/Communication-Skills-in-Nursing-Health-and-Social-Care/9781526490155"
         },
         {
           "title": "Communication in Nursing",
@@ -6865,8 +6908,8 @@ window.TOBRUK_COURSE_REFERENCES = {
           "citation": "Kurtz, S., Silverman, J., Draper, J., van Dalen, J. and Platt, F.W., 2017. Teaching and learning communication skills in medicine. CRC press. ISBN-13: 9781315378398",
           "isbn": "9781315378398",
           "publisher": "CRC Press / Routledge",
-          "url": "https://www.routledge.com/Teaching-and-Learning-Communication-Skills-in-Medicine/Draper-Silverman-Kurtz/p/book/9781138443419",
-          "note": "إعادة نشر الطبعة الثانية إلكترونيًا. DOI النسخة الإلكترونية هو 10.1201/9781315378398."
+          "url": "https://www.vitalsource.com/en-uk/products/teaching-and-learning-communication-skills-in-suzanne-kurtz-v9781315358611",
+          "note": "الرابط يعرض الصيغة الرقمية للطبعة الثانية. DOI للصيغة المذكورة في الدليل: 10.1201/9781315378398."
         },
         {
           "title": "Oxford English for Careers: Nursing 2 Student’s Book",
