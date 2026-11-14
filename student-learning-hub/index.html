@@ -723,7 +723,7 @@ html:not([lang="en"]) .discovery-en{display:none!important}
  </div>
 </footer>
 
-<script src="data/assessment-weights.js?v=20261113-assessment-1"></script>
+<script src="data/assessment-weights.js?v=20261114-inps"></script>
 <script>
 const courses=[
 [1,1,"LANG 100ly","Arabic Language","اللغة العربية",32,72,3],
@@ -799,6 +799,7 @@ function renderCourseCatalog(){
    const assessment=assessmentByCourse.get(courseId);
    const passMark=assessment?.passMark;
    const assessmentLink=studyLink.replace("#","&assessment=1#");
+   const instructorWeights=assessment?.statusKey==="instructor-reported" ? assessment.suggested : null;
    return `<div class="courseCatalogCard">
      <span class="courseCatalogCode">${code}</span>
      ${title}
@@ -809,6 +810,7 @@ function renderCourseCatalog(){
       <span>${ects} ECTS</span>
       ${Number.isInteger(passMark)?`<span>${lang==="en"?"Reference pass mark":"حد النجاح المرجعي"} <bdi>${passMark}/100</bdi></span>`:""}
      </div>
+     ${instructorWeights?`<p class="courseCatalogNote"><strong>${assessment.suggestedLabel[lang]}</strong> · ${lang==="en"?"Formal approval unconfirmed":"بانتظار تأكيد الاعتماد"}<br>${instructorWeights.map(({label,weight})=>`${label[lang]} <bdi>${weight}%</bdi>`).join(" · ")}<br>${assessment.note[lang]}</p>`:""}
      <div class="actions">
       <a class="btn primary" href="../study-companion/${studyLink}">${lang==="en"?"Open course + Study Companion":"افتح المقرر ورفيق الدراسة"}</a>
       <a class="btn soft" href="../e-library-v3/#course-references/${encodeURIComponent(courseId)}">${lang==="en"?"Course references":"مراجع المقرر"}</a>

@@ -8,6 +8,7 @@
     ar: {
       title: 'التقييم والنجاح', pass: 'حد النجاح المرجعي', current: 'الوارد في توصيف المقرر',
       suggested: 'توزيع قيد المراجعة', guide: 'نموذج دليل الوزارة', pending: 'قيد المراجعة',
+      approval: 'بانتظار تأكيد الاعتماد',
       missing: 'أوزان هذا المقرر غير متاحة حاليًا.',
       notice: 'تُطبّق الأوزان المعتمدة التي أعلنها أستاذ المقرر للطلبة.',
       ministry: 'دليل كليات التمريض · المادة 21',
@@ -15,6 +16,7 @@
     en: {
       title: 'Assessment and pass mark', pass: 'Reference pass mark', current: 'In the course specification',
       suggested: 'Distribution under review', guide: 'Ministry guide model', pending: 'Under review',
+      approval: 'Formal approval unconfirmed',
       missing: 'Assessment weights for this course are currently unavailable.',
       notice: 'Use the approved weights announced to students by the course instructor.',
       ministry: 'Nursing Faculties Guide · Article 21',
@@ -74,12 +76,18 @@
     const main = element('div', 'course-assessment-distributions');
     const currentPending = ['reviewer-recorded','reviewer-pending','course-specific','verify'].includes(course.statusKey) && Boolean(course.currentLabel);
     const current = distribution(course.current, course.currentLabel?.[lang] || words.current, currentPending ? words.pending : '', lang);
-    const suggested = distribution(course.suggested, course.suggestedLabel?.[lang] || words.suggested, words.pending, lang);
-    if (current) main.append(current);
+    const instructorReported = course.statusKey === 'instructor-reported';
+    const suggested = distribution(course.suggested, course.suggestedLabel?.[lang] || words.suggested, instructorReported ? words.approval : words.pending, lang);
+    if (current && !instructorReported) main.append(current);
     if (suggested) main.append(suggested);
     card.append(main);
 
     if (course.note?.[lang]) card.append(element('p', 'course-assessment-note', course.note[lang]));
+    if (current && instructorReported) {
+      const details = element('details', 'course-assessment-guide');
+      details.append(element('summary', '', course.currentLabel?.[lang] || words.current), current);
+      card.append(details);
+    }
     const guide = distribution(course.guide, course.guideLabel?.[lang] || words.guide, '', lang);
     if (guide) {
       const details = element('details', 'course-assessment-guide');

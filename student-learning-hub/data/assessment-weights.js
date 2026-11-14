@@ -1,5 +1,5 @@
 window.TOBRUK_ASSESSMENT_WEIGHTS = {
-  "updatedAt": "2026-11-13",
+  "updatedAt": "2026-11-14",
   "ministryUrl": "https://nursing.tu.edu.ly/gen-guid/",
   "reviewUrl": "https://nursing-course-review-2026.noura-bobaker734508.chatgpt.site/",
   "overview": {
@@ -2298,7 +2298,7 @@ window.TOBRUK_ASSESSMENT_WEIGHTS = {
         "en": "Clinical nursing"
       },
       "passMark": 60,
-      "statusKey": "guide-detail",
+      "statusKey": "instructor-reported",
       "current": [
         {
           "weight": 70,
@@ -2323,7 +2323,38 @@ window.TOBRUK_ASSESSMENT_WEIGHTS = {
         }
       ],
       "code": "NURS 304ly",
-      "specId": "CRS-032"
+      "specId": "CRS-032",
+      "suggested": [
+        {
+          "weight": 20,
+          "label": {
+            "ar": "دراسة الحالة",
+            "en": "Case study"
+          }
+        },
+        {
+          "weight": 50,
+          "label": {
+            "ar": "العمل بالمستشفى",
+            "en": "Hospital duty"
+          }
+        },
+        {
+          "weight": 30,
+          "label": {
+            "ar": "الامتحان العملي",
+            "en": "Practical exam"
+          }
+        }
+      ],
+      "suggestedLabel": {
+        "ar": "توزيع الدرجات حسب ملاحظة الأستاذ",
+        "en": "Assessment weights reported by the instructor"
+      },
+      "note": {
+        "ar": "دراسة الحالة والعمل بالمستشفى يشكّلان 70 درجة من أصل 100.",
+        "en": "The case study and hospital duty together account for 70 marks out of 100."
+      }
     },
     {
       "id": "medterm1",
@@ -2703,7 +2734,7 @@ window.TOBRUK_ASSESSMENT_WEIGHTS = {
         "en": "Clinical nursing"
       },
       "passMark": 60,
-      "statusKey": "guide-detail",
+      "statusKey": "instructor-reported",
       "current": [
         {
           "weight": 70,
@@ -2728,7 +2759,38 @@ window.TOBRUK_ASSESSMENT_WEIGHTS = {
         }
       ],
       "code": "NURS 307ly",
-      "specId": "CRS-038"
+      "specId": "CRS-038",
+      "suggested": [
+        {
+          "weight": 20,
+          "label": {
+            "ar": "دراسة الحالة",
+            "en": "Case study"
+          }
+        },
+        {
+          "weight": 50,
+          "label": {
+            "ar": "العمل بالمستشفى",
+            "en": "Hospital duty"
+          }
+        },
+        {
+          "weight": 30,
+          "label": {
+            "ar": "الامتحان العملي",
+            "en": "Practical exam"
+          }
+        }
+      ],
+      "suggestedLabel": {
+        "ar": "توزيع الدرجات حسب ملاحظة الأستاذ",
+        "en": "Assessment weights reported by the instructor"
+      },
+      "note": {
+        "ar": "دراسة الحالة والعمل بالمستشفى يشكّلان 70 درجة من أصل 100.",
+        "en": "The case study and hospital duty together account for 70 marks out of 100."
+      }
     },
     {
       "id": "comm3",
@@ -2990,7 +3052,7 @@ window.TOBRUK_ASSESSMENT_WEIGHTS = {
         "en": "Clinical nursing"
       },
       "passMark": 60,
-      "statusKey": "guide-detail",
+      "statusKey": "instructor-reported",
       "current": [
         {
           "weight": 70,
@@ -3015,7 +3077,38 @@ window.TOBRUK_ASSESSMENT_WEIGHTS = {
         }
       ],
       "code": "NURS 403ly",
-      "specId": "CRS-042"
+      "specId": "CRS-042",
+      "suggested": [
+        {
+          "weight": 20,
+          "label": {
+            "ar": "دراسة الحالة",
+            "en": "Case study"
+          }
+        },
+        {
+          "weight": 50,
+          "label": {
+            "ar": "العمل بالمستشفى",
+            "en": "Hospital duty"
+          }
+        },
+        {
+          "weight": 30,
+          "label": {
+            "ar": "الامتحان العملي",
+            "en": "Practical exam"
+          }
+        }
+      ],
+      "suggestedLabel": {
+        "ar": "توزيع الدرجات حسب ملاحظة الأستاذ",
+        "en": "Assessment weights reported by the instructor"
+      },
+      "note": {
+        "ar": "دراسة الحالة والعمل بالمستشفى يشكّلان 70 درجة من أصل 100.",
+        "en": "The case study and hospital duty together account for 70 marks out of 100."
+      }
     },
     {
       "id": "research1",
@@ -3290,7 +3383,7 @@ window.TOBRUK_ASSESSMENT_WEIGHTS = {
         "en": "Clinical nursing"
       },
       "passMark": 60,
-      "statusKey": "verify",
+      "statusKey": "instructor-reported",
       "current": [
         {
           "weight": 70,
@@ -3315,8 +3408,8 @@ window.TOBRUK_ASSESSMENT_WEIGHTS = {
         }
       ],
       "note": {
-        "ar": "التوصيف يعرض 20% مشتركة للجزئي والنهائي بصفة مقترح. بطاقة المقرر في دليل الوزارة تذكر أدوات التقييم من دون نسب، وتضع المادة 21 نسبة 20% للنهائي ضمن نموذج العملي والسريري.",
-        "en": "The working specification proposes a combined 20% for the midterm and final. The detailed Ministry course entry lists methods without weights. The Article 21 practical and clinical model assigns 20% to the final."
+        "ar": "دراسة الحالة والعمل بالمستشفى يشكّلان 70 درجة من أصل 100. التوصيف يعرض 20% مشتركة للجزئي والنهائي بصفة مقترح. بطاقة المقرر في دليل الوزارة تذكر أدوات التقييم من دون نسب، وتضع المادة 21 نسبة 20% للنهائي ضمن نموذج العملي والسريري.",
+        "en": "The case study and hospital duty together account for 70 marks out of 100. The working specification proposes a combined 20% for the midterm and final. The detailed Ministry course entry lists methods without weights. The Article 21 practical and clinical model assigns 20% to the final."
       },
       "guide": [
         {
@@ -3348,8 +3441,35 @@ window.TOBRUK_ASSESSMENT_WEIGHTS = {
       "code": "NURS 406ly",
       "specId": "CRS-046",
       "currentLabel": {
-        "ar": "توزيع التدريب المقترح",
-        "en": "Proposed practicum distribution"
+        "ar": "الوارد في مسودة توصيف المقرر",
+        "en": "In the draft course specification"
+      },
+      "suggested": [
+        {
+          "weight": 20,
+          "label": {
+            "ar": "دراسة الحالة",
+            "en": "Case study"
+          }
+        },
+        {
+          "weight": 50,
+          "label": {
+            "ar": "العمل بالمستشفى",
+            "en": "Hospital duty"
+          }
+        },
+        {
+          "weight": 30,
+          "label": {
+            "ar": "الامتحان العملي",
+            "en": "Practical exam"
+          }
+        }
+      ],
+      "suggestedLabel": {
+        "ar": "توزيع الدرجات حسب ملاحظة الأستاذ",
+        "en": "Assessment weights reported by the instructor"
       }
     },
     {
