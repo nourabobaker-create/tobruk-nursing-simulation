@@ -7,7 +7,8 @@
   },
   "screening_scope_ar": "فُحص 145 مرشحًا فعليًا عبر ستة مسارات. فُتح النص الكامل أو المحتوى الأصلي الجوهري للمقبولين، ولم تُحسب نتيجة البحث أو صفحة الفهرس أو الملخص وحدها فحصًا للنص الكامل. طوبقت DOI وISBN والعناوين والمؤلفون والروابط مع كامل الفهرس قبل الكتابة.",
   "screening_summary": {
-    "screened_unique": 145,
+    "screened_assessments": 145,
+    "candidate_records_after_canonical_url_title_dedup": 143,
     "accepted": 40,
     "duplicate": 35,
     "excluded": 21,
