@@ -1,0 +1,46 @@
+name: Repair e-library publication 2026-11-20
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/repair-e-library-20261120.yml"
+      - "e-library-v3/data/_repair-catalog-20261120.csv"
+      - "e-library-v3/data/_repair-report-20261120.html"
+permissions:
+  contents: write
+jobs:
+  repair:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Reconstruct complete catalog and source report
+        shell: bash
+        run: |
+          set -euo pipefail
+          git show 9cd0eac16996c3978e2c7dd3bd3c1549a61062b4:e-library-v3/data/catalog.csv > e-library-v3/data/catalog.csv
+          cat e-library-v3/data/_repair-catalog-20261120.csv >> e-library-v3/data/catalog.csv
+          python - <<'PY'
+          from pathlib import Path
+          import subprocess
+          baseline = subprocess.check_output([
+              "git", "show",
+              "9cd0eac16996c3978e2c7dd3bd3c1549a61062b4:e-library-v3/data/source-report.html"
+          ], text=True)
+          fragment = Path("e-library-v3/data/_repair-report-20261120.html").read_text()
+          if "<main>" not in baseline:
+              raise SystemExit("source report main marker missing")
+          Path("e-library-v3/data/source-report.html").write_text(
+              baseline.replace("<main>", "<main>" + fragment, 1)
+          )
+          PY
+          git rm e-library-v3/data/_repair-catalog-20261120.csv
+          git rm e-library-v3/data/_repair-report-20261120.html
+          git rm .github/workflows/repair-e-library-20261120.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add e-library-v3/data/catalog.csv e-library-v3/data/source-report.html
+          git commit -m "Repair complete e-library catalog and source report"
+          git push
