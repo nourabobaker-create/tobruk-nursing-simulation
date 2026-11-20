@@ -1,10 +1,12 @@
 const VERSION='20261012-1';
 const REFERENCES_VERSION='20261113';
 const ASSESSMENT_VERSION='20261113-assessment-1';
-const CACHE='tobruk-english2-five-lessons-'+ASSESSMENT_VERSION;
+const GLOSSARY_VERSION='20261120';
+const CACHE='tobruk-english2-five-lessons-'+GLOSSARY_VERSION;
 const ASSETS=['./','./index.html','./course.css?v='+VERSION,'./course-data.js?v='+VERSION,'./course.js?v='+ASSESSMENT_VERSION,'./manifest.webmanifest','./icon.svg',
  '../study-companion/companion.css?v='+VERSION,'../study-companion/qa-corpus.js?v='+VERSION,'../study-companion/tools-core.js?v='+VERSION,'../study-companion/qa-engine.js?v='+VERSION,'../study-companion/course-sources.json?v='+VERSION,
- '../e-library-v3/data/course-references.js?v='+REFERENCES_VERSION,'../study-companion/course-references.css?v='+REFERENCES_VERSION,'../study-companion/course-references.js?v='+REFERENCES_VERSION,
+ '../e-library-v3/data/course-references.js?v='+REFERENCES_VERSION,'../study-companion/course-references.css?v='+REFERENCES_VERSION,'../study-companion/course-references.js?v='+GLOSSARY_VERSION,
+ '../course-language/glossary.js?v='+GLOSSARY_VERSION,'../course-language/glossary.css?v='+GLOSSARY_VERSION,'../course-language/years12.js',
  '../student-learning-hub/data/assessment-weights.js?v='+ASSESSMENT_VERSION,'../study-companion/course-assessment.css?v='+ASSESSMENT_VERSION,'../study-companion/course-assessment.js?v='+ASSESSMENT_VERSION];
 const ALLOWED=new Set(ASSETS.map(path=>new URL(path,self.location.href).pathname));
 self.addEventListener('install',e=>{self.skipWaiting();e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)))});

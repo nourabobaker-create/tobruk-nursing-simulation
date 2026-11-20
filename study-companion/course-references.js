@@ -127,7 +127,7 @@
   }
 
   const standalone = document.querySelector('#english2-course-references');
-  let current;
+  let current, glossary;
   function mount() {
     const staticCourse = document.querySelector('.course.active');
     const host = standalone || staticCourse?.querySelector('.courseBody') || document.querySelector('#courseView.active #courseContent .courseBody');
@@ -136,6 +136,7 @@
     if (current?.parentElement === host && current?.dataset.courseReferences === id && current?.lang === lang) return;
     const wasOpen = current?.dataset.courseReferences === id && current.open;
     current?.remove();
+    glossary?.remove();
     if (!host || !id) return;
 
     current = panelFor(id, lang);
@@ -143,6 +144,11 @@
     const navigation = host.querySelector('.courseReturn');
     if (navigation) navigation.after(current);
     else host.prepend(current);
+    const course = courses.get(id);
+    if (course && window.CourseGlossary) {
+      glossary = window.CourseGlossary.panel(course, lang);
+      current.before(glossary);
+    }
   }
 
   const observer = new MutationObserver(mount);

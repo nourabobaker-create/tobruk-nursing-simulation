@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#164d42">
+  <title>محاكاة حساب الجرعات الدوائية | كلية التمريض، جامعة طبرق</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="../portal-metrics/config.js"></script>
+  <script defer src="../portal-metrics/core.js"></script>
+  <script defer src="../portal-metrics/tracker.js"></script>
+  <script defer src="cases.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a href="#practice" class="skip">انتقل إلى الحالة</a>
+  <header><div class="bar"><div class="brand"><img src="../hub-branding/university-logo.webp" width="48" height="48" alt="شعار جامعة طبرق"><strong>كلية التمريض، جامعة طبرق</strong><img src="../hub-branding/faculty-logo.webp" width="48" height="48" alt="شعار كلية التمريض"></div>
+    <nav aria-label="روابط البوابة"><a href="english.html" id="language" lang="en" hreflang="en">English</a><a href="../clinical-simulations/">مكتبة المحاكاة</a><a href="../student-learning-hub/">بوابة الطالب</a></nav></div></header>
+  <main>
+    <section class="hero">
+      <div><h1>محاكاة حساب الجرعات الدوائية</h1><p>اقرأ الوصفة والملصق، ثم اكتب قيمة كل خطوة ووحدتها. الأدوية والأوامر والأوزان افتراضية للتدرّب على الحساب.</p></div>
+      <div class="progressblock"><label for="progress">الحالات التي أكملتَ حلّها</label><strong id="progressText">0</strong><progress id="progress" value="0" max="34"></progress><span id="progressNote">يُحفظ تقدّمك على هذا الجهاز.</span></div>
+    </section>
+    <noscript><p>فعّل JavaScript لتظهر الحالات والتصحيح التفاعلي.</p></noscript>
+    <section class="selects">
+      <div><label for="topic">المهارة</label><select id="topic"></select></div>
+      <div><label for="scenario">الحالة التدريبية</label><select id="scenario"></select></div>
+    </section>
+    <section id="practice" class="practice" aria-labelledby="caseTitle" tabindex="-1">
+      <div class="titles"><span id="topicEn" lang="en" dir="ltr"></span><h2 id="caseTitle"></h2></div>
+      <div class="cards">
+        <section><h3>الوصفة أو الموقف</h3><p id="order"></p></section>
+        <section><h3>معطيات الحالة</h3><p id="labelText"></p></section>
+      </div>
+      <details id="method"><summary>كيف أبدأ؟</summary><p id="methodText"></p><p id="worked" dir="ltr" class="formula" lang="en"></p></details>
+      <div id="stage"></div>
+      <div id="feedback" role="status" aria-live="polite"></div>
+      <div id="actions"></div>
+      <div id="solution" hidden></div>
+    </section>
+    <details class="references"><summary>كيف أقرأ لغة مسائل الجرعات؟</summary><dl class="terms">
+      <dt lang="en" dir="ltr">How many tablets? / How much volume?</dt><dd>الأول يسأل عن عدد الأقراص، والثاني عن حجم السائل. اختر وحدة الإجابة قبل الحساب.</dd>
+      <dt lang="en" dir="ltr">Prescribed dose / Available strength</dt><dd>الجرعة الموصوفة هي كمية المادة المطلوبة. التركيز أو العيار المتاح يبيّن ما في قرص واحد أو حجم محدد.</dd>
+      <dt lang="en" dir="ltr">Per dose / Per day in divided doses</dt><dd>الأولى تعني «لكل جرعة». الثانية تعطي مجموع اليوم الذي تقسّمه على عدد الجرعات المذكور.</dd>
+      <dt lang="en" dir="ltr">Final volume / Volume of diluent</dt><dd>الحجم النهائي هو حجم المحلول بعد التحضير. حجم المذيب هو مقدار السائل المضاف.</dd>
+      <dt lang="en" dir="ltr">Over / Drop factor</dt><dd>كلمة <bdi>over</bdi> قبل مدة زمنية تحدد زمن التسريب. معامل التنقيط هو عدد القطرات لكل ملليلتر المدون على الأنبوب.</dd>
+    </dl></details>
+    <details class="references"><summary>مراجع الحساب والتوثيق الآمن</summary><ul>
+      <li>تحليل الوحدات وقراءة الجرعة المتاحة والمطلوبة. <a href="https://openstax.org/books/clinical-nursing-skills/pages/11-2-dosing" lang="en">OpenStax · Clinical Nursing Skills, Dosing</a></li>
+      <li>حساب الجرعة حسب الوزن، وكمية المادة وحجم السائل. <a href="https://wtcs.pressbooks.pub/nursingskills/chapter/5-11-weight-based-calculations/" lang="en">Open RN · Weight-Based Calculations</a></li>
+      <li>قراءة التركيز والحجم النهائي بعد التحضير. <a href="https://wtcs.pressbooks.pub/nursingskills/chapter/5-10-reconstituted-medication/" lang="en">Open RN · Reconstituted Medication</a></li>
+      <li>تحويل معدل الجرعة الوزني إلى معدل ضخ. الفصل 8 من <a href="https://wtcs.pressbooks.pub/nursingdosagecalculations/table-of-contents/" lang="en">WisTech Open · Nursing Dosage Calculations</a></li>
+      <li>قراءة معامل الأنبوب وحساب القطرات في الدقيقة. <a href="https://wtcs.pressbooks.pub/nursingskills/chapter/5-14-iv-infusion-by-gravity/" lang="en">Open RN · IV Infusion by Gravity</a></li>
+      <li>تمييز المضخة عن التسريب بالجاذبية ووحدات معدل التدفق. <a href="https://wtcs.pressbooks.pub/nursingskills/chapter/5-13-intravenous-infusions/" lang="en">Open RN · Intravenous Infusions</a></li>
+      <li>كتابة الكسور العشرية ووحدات الجرعة. <a href="https://www.ismp.org/system/files/resources/2024-04/ISMP_ErrorProneAbbreviation_List.pdf" lang="en">ISMP · Error-Prone Abbreviations, Symbols, and Dose Designations</a></li>
+    </ul></details>
+  </main>
+</body></html>

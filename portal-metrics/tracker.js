@@ -15,8 +15,8 @@ let memorySession=null,lastView='',flushBusy=false,message='',started=false,inte
 try{later=sessionStorage.getItem(laterKey)==='1';}catch(_){}
 function sectionFor(p,h=''){
  if(p.startsWith('e-library'))return 'library';if(p.startsWith('clinical-discovery'))return 'atlas';if(p.startsWith('community-health'))return 'community';if(p.startsWith('strategic-plan'))return 'strategy';if(p.startsWith('spss-course'))return 'research';
- if(/^(english-ii|study-companion)\//.test(p))return 'courses';
- if(/^(clinical-simulations|nursing-skills|skills|handwash|clean-gloving|body|patient-positioning|range-of-motion|turning-moving|wound-dressing|safety360)/.test(p))return 'simulations';
+ if(/^(english-ii|study-companion|course-language|exam-language)\//.test(p))return 'courses';
+ if(/^(dose-math|clinical-simulations|nursing-skills|skills|handwash|clean-gloving|body|patient-positioning|range-of-motion|turning-moving|wound-dressing|safety360)/.test(p))return 'simulations';
  if(p.startsWith('student-learning-hub'))return ({library:'library',simulation:'simulations',english:'courses',spss:'research',guide:'guides'})[h.replace(/^#/,'').split('/')[0]]||'students';
  if(/admission|guide/.test(h))return 'guides';if(/participate/.test(h))return 'services';if(/community/.test(h))return 'community';return 'faculty';
 }

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#164d42">
+  <title>Medication dosage simulation | Faculty of Nursing, Tobruk University</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="../portal-metrics/config.js"></script>
+  <script defer src="../portal-metrics/core.js"></script>
+  <script defer src="../portal-metrics/tracker.js"></script>
+  <script defer src="cases.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a href="#practice" class="skip">Skip to the case</a>
+  <header><div class="bar"><div class="brand"><img src="../hub-branding/university-logo.webp" width="48" height="48" alt="Tobruk University logo"><strong>Faculty of Nursing, Tobruk University</strong><img src="../hub-branding/faculty-logo.webp" width="48" height="48" alt="Faculty of Nursing logo"></div>
+    <nav aria-label="Hub navigation"><a href="index.html" id="language" lang="ar" hreflang="ar">العربية</a><a href="../clinical-simulations/">Simulation library</a><a href="../student-learning-hub/">Student hub</a></nav></div></header>
+  <main>
+    <section class="hero">
+      <div><h1>Medication dosage simulation</h1><p>Read the order and label, then enter a value and unit for each step. The orders, weights and products are fictional and designed for calculation practice.</p></div>
+      <div class="progressblock"><label for="progress">Cases you have completed</label><strong id="progressText">0</strong><progress id="progress" value="0" max="34"></progress><span id="progressNote">Your progress is saved on this device.</span></div>
+    </section>
+    <noscript><p>Enable JavaScript to use the interactive cases and feedback.</p></noscript>
+    <section class="selects">
+      <div><label for="topic">Skill</label><select id="topic"></select></div>
+      <div><label for="scenario">Practice case</label><select id="scenario"></select></div>
+    </section>
+    <section id="practice" class="practice" aria-labelledby="caseTitle" tabindex="-1">
+      <div class="titles"><span id="topicEn" lang="en" dir="ltr"></span><h2 id="caseTitle"></h2></div>
+      <div class="cards">
+        <section><h3>Order or situation</h3><p id="order"></p></section>
+        <section><h3>Information provided</h3><p id="labelText"></p></section>
+      </div>
+      <details id="method"><summary>How do I get started?</summary><p id="methodText"></p><p id="worked" dir="ltr" class="formula" lang="en"></p></details>
+      <div id="stage"></div>
+      <div id="feedback" role="status" aria-live="polite"></div>
+      <div id="actions"></div>
+      <div id="solution" hidden></div>
+    </section>
+    <details class="references"><summary>Reading the language of dosage questions</summary><dl class="terms">
+      <dt>How many tablets? / How much volume?</dt><dd>The first asks for a tablet count. The second asks for the volume of liquid. Identify the answer unit before calculating.</dd>
+      <dt>Prescribed dose / Available strength</dt><dd>The prescribed dose is the amount of drug required. The available strength tells you the amount in each tablet or in a stated volume.</dd>
+      <dt>Per dose / Per day in divided doses</dt><dd>“Per dose” applies to one dose. “Per day in divided doses” gives a daily total that you divide by the stated number of doses.</dd>
+      <dt>Final volume / Volume of diluent</dt><dd>Final volume is the total volume after reconstitution. Volume of diluent is the amount of liquid added.</dd>
+      <dt>Over / Drop factor</dt><dd>“Over” followed by a duration specifies the infusion time. The drop factor is the number of drops per millilitre printed on the tubing package.</dd>
+    </dl></details>
+    <details class="references"><summary>Calculation and safe notation references</summary><ul>
+      <li>Dimensional analysis and interpreting prescribed and available amounts. <a href="https://openstax.org/books/clinical-nursing-skills/pages/11-2-dosing">OpenStax · Clinical Nursing Skills, Dosing</a></li>
+      <li>Converting body weight into a dose and a volume. <a href="https://wtcs.pressbooks.pub/nursingskills/chapter/5-11-weight-based-calculations/">Open RN · Weight-Based Calculations</a></li>
+      <li>Reading the final concentration and volume after reconstitution. <a href="https://wtcs.pressbooks.pub/nursingskills/chapter/5-10-reconstituted-medication/">Open RN · Reconstituted Medication</a></li>
+      <li>Converting a weight-based order to a pump rate. Chapter 8 in <a href="https://wtcs.pressbooks.pub/nursingdosagecalculations/table-of-contents/">WisTech Open · Nursing Dosage Calculations</a></li>
+      <li>Reading the tubing drop factor and calculating drops per minute. <a href="https://wtcs.pressbooks.pub/nursingskills/chapter/5-14-iv-infusion-by-gravity/">Open RN · IV Infusion by Gravity</a></li>
+      <li>Pump and gravity infusions and flow-rate units. <a href="https://wtcs.pressbooks.pub/nursingskills/chapter/5-13-intravenous-infusions/">Open RN · Intravenous Infusions</a></li>
+      <li>Writing decimal doses and units of measure. <a href="https://www.ismp.org/system/files/resources/2024-04/ISMP_ErrorProneAbbreviation_List.pdf">ISMP · Error-Prone Abbreviations, Symbols, and Dose Designations</a></li>
+    </ul></details>
+  </main>
+</body></html>

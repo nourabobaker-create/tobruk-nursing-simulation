@@ -30,7 +30,9 @@ let passed=0;
 const pass=name=>{passed++;console.log('PASS',name);};
 (async()=>{
  for(const en of [false,true])for(const c of corpus){const page=await open(route(c,en));
-  try{assert.equal(page.d.querySelectorAll('.rafeq').length,1,route(c,en));assert.equal(page.d.querySelector('.rafeq').dataset.course,c.id);assert.equal(page.d.querySelector('.rafeq').dir,en?'ltr':'rtl');assert.equal(page.d.querySelectorAll('#chatLauncher,#chatbox').length,0);assert.deepEqual(page.errors,[],route(c,en));}
+  try{const glossary=page.d.querySelector('[data-glossary]');assert(glossary,route(c,en));glossary.open=true;await delay();await delay();
+   assert(glossary.querySelectorAll('.gl-term').length>=1,route(c,en));assert.equal(glossary.lang,en?'en':'ar');
+   assert.equal(page.d.querySelectorAll('.rafeq').length,1,route(c,en));assert.equal(page.d.querySelector('.rafeq').dataset.course,c.id);assert.equal(page.d.querySelector('.rafeq').dir,en?'ltr':'rtl');assert.equal(page.d.querySelectorAll('#chatLauncher,#chatbox').length,0);assert.deepEqual(page.errors,[],route(c,en));}
   finally{page.close();}
  }
  pass('all 100 Arabic/English course routes mount exactly one scoped companion without script errors');
@@ -55,6 +57,8 @@ const pass=name=>{passed++;console.log('PASS',name);};
  pass('all five English II lessons embed the companion with real lesson material');
  const english=await open('english-ii/index.html#wound');try{english.d.getElementById('langBtn').click();await delay();assert.equal(english.d.querySelector('.rafeq').dir,'rtl');english.w.location.hash='diabetes';await delay();assert(english.d.querySelector('.rq-head').textContent.includes('السكري'));assert.deepEqual(english.errors,[]);pass('English II language toggle and lesson navigation rebuild the correct companion');}finally{english.close();}
  const library=await open('e-library-v3/index.html?course=CRS-012#resources');try{assert.equal(library.d.getElementById('filter-course').value,'CRS-012');assert.deepEqual(library.errors,[]);pass('Library link selects the intended course');}finally{library.close();}
- const hub=await open('student-learning-hub/index.html');try{const links=[...hub.d.querySelectorAll('#courseCatalogGrid a')];assert.equal(links.length,50);assert(links.every(a=>a.href.includes('study-companion/')&&a.href.includes('#')));assert.deepEqual(hub.errors,[]);pass('all 50 Hub course cards open their own course companion');}finally{hub.close();}
+ const hub=await open('student-learning-hub/index.html');try{const links=[...hub.d.querySelectorAll('#courseCatalogGrid .courseCatalogCard a.primary')];assert.equal(links.length,50);assert(links.every(a=>a.href.includes('study-companion/')&&a.href.includes('#')));const glossaryLinks=[...hub.d.querySelectorAll('#courseCatalogGrid a[href*="course-language/"]')];
+  assert.deepEqual(glossaryLinks.map(a=>a.hash),links.map(a=>a.hash));assert.deepEqual(hub.errors,[]);
+  pass('all 50 Hub course cards open their own companion and glossary');}finally{hub.close();}
  console.log('COMPLETE',passed,'integration checks');
 })().catch(error=>{console.error(error);process.exitCode=1;});

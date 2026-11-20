@@ -1,0 +1,19 @@
+*{box-sizing:border-box}
+body.gl-page{margin:0;background:#f6f8f6;color:#173b33;font:1.06rem/1.65 "Sakkal Majalla",Tahoma,Arial,sans-serif}
+header{background:#153f35;color:white}
+.gl-shell{width:min(69rem,100%);margin:auto;padding:1rem clamp(1rem,4vw,3rem)}
+.gl-brand,.gl-brand a{display:flex;gap:.8rem;align-items:center;justify-content:space-between}
+.gl-brand a{color:white;text-decoration:none;font-weight:bold}
+.gl-brand img{object-fit:contain;background:white;border-radius:50%}
+#language{border:1px solid #83ab97;border-radius:.4rem;padding:.15rem .6rem}
+main.gl-shell{padding-bottom:4rem}
+h1,h2{line-height:1.28;letter-spacing:0;margin:.6em 0 .25em}
+h1{font-size:clamp(2rem,5vw,3.2rem)}
+.gl-intro{margin:.25rem 0 1.5rem;color:#3d6056}
+#chooser>.gl-tools{padding:1rem;background:#e6efe8;border-block-start:3px solid #41755e;border-radius:.6rem}
+.gl-catalogue{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,17rem),1fr));gap:.8rem}
+.gl-course{background:white;border:1px solid #cbded3;border-radius:.65rem;padding:.9rem 1rem}
+.gl-course h2{font-size:1.13rem;margin:0}.gl-course small{color:#47645a}.gl-course p{margin:.3rem 0 0;font-size:.95rem}
+#detail{background:white;border:1px solid #cddfd7;border-radius:.7rem;padding:clamp(.75rem,3vw,1.8rem)}
+#course-title{font-size:clamp(1.55rem,4vw,2.15rem)}
+[hidden]{display:none!important}
