@@ -32,7 +32,7 @@ jobs:
               rows=list(csv.DictReader(f))
           assert len(rows)==3326, len(rows)
           assert len({r["id"] for r in rows})==3326
-          assert len({r["read_url"] for r in rows})==3326
+          assert len({r["url"] for r in rows})==3326
           with (p/"research-papers.csv").open(encoding="utf-8-sig", newline="") as f:
               papers=list(csv.DictReader(f))
           assert len(papers)==311, len(papers)
