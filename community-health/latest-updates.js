@@ -10,7 +10,7 @@ window.CommunityLatestUpdates = {
     {
       id: 'rsv-maternal-2026',
       topic: 'vaccines',
-      relatedTopics: ['flu-covid', 'pregnancy-nutrition'],
+      relatedTopics: ['rsv-bronchiolitis', 'flu-covid', 'pregnancy-nutrition'],
       category: 'prevention',
       title: 'حماية الرضع من RSV: تطور جديد في إتاحة لقاح الأم',
       titleEn: 'Protecting babies from RSV: a new step in maternal vaccine access',
@@ -29,7 +29,7 @@ window.CommunityLatestUpdates = {
       action: 'اسألي فريق متابعة الحمل عن الوقاية المتاحة والمناسبة، وتوقيت اللقاح وفق المنتج المرخص والسياسة المحلية؛ لا ترتبي جرعة من نفسك.',
       actionEn: 'Ask your maternity team which protection is available and appropriate, and about timing under the licensed product and local policy. Do not arrange an extra dose yourself.',
       sourceDate: '2026-09-09',
-      checked: '2026-10-18',
+      checked: '2026-11-22',
       sources: [
         {title: 'WHO — تأهيل العبوة متعددة الجرعات للقاح RSV للأمهات، 9 سبتمبر 2026', titleEn: 'WHO — Maternal RSV vaccine multidose-vial prequalification, 9 September 2026', url: 'https://www.who.int/news/item/09-09-2026-who-prequalifies-multi-dose-rsv-vaccine-vial--paving-the-way-to-protecting-more-infants-globally'},
         {title: 'WHO — توصيات حماية الرضع من RSV، 30 مايو 2025', titleEn: 'WHO — Recommendations to protect infants against RSV, 30 May 2025', url: 'https://www.who.int/news/item/30-05-2025-who-outlines-recommendations-to-protect-infants-against-rsv-respiratory-syncytial-virus'}

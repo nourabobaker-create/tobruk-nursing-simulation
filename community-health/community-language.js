@@ -1,6 +1,6 @@
 /* Local, complete English catalogue. Original Arabic remains the default. */
 (()=>{
- const code=window.CommunityLocale==='en'?'en':'ar',english=code==='en',dictionary=Object.assign(window.CommunityEnglishText||{}, window.CommunityHeadLiceEnglish, window.CommunityLibraryUpdatesEnglish, {
+ const code=window.CommunityLocale==='en'?'en':'ar',english=code==='en',dictionary=Object.assign(window.CommunityEnglishText||{}, window.CommunityHeadLiceEnglish, window.CommunityLibraryUpdatesEnglish, window.CommunityRSVEnglish, {
   'للأهل: حساسية الطعام':'For parents: food allergy'
  }),ui=Object.assign(window.CommunityEnglishUI||{}, {
   'مصدرًا عربيًا موثوقًا +':'trusted Arabic sources +'

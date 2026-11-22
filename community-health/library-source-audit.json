@@ -1,6 +1,6 @@
 {
-  "checked": "2026-11-11",
-  "method": "HTTPS GET with browser User-Agent; Arabic page text or publisher Arabic PDF. Per-resource dates mark entries verified in the latest pass. Entries without a date retain prior audit results. Source checks are not faculty clinical approval.",
+  "checked": "2026-11-22",
+  "method": "Official Arabic page read and link checked; earlier resources retain their individual audit dates. A source check is not faculty clinical approval.",
   "resources": [
     {
       "id": "diabetes",
@@ -856,6 +856,15 @@
       "type": "application/pdf",
       "size": 456734,
       "checked": "2026-11-11"
+    },
+    {
+      "id": "rsv-who-ar",
+      "url": "https://www.who.int/ar/news-room/fact-sheets/detail/respiratory-syncytial-virus-%28rsv%29",
+      "status": 200,
+      "arabic": true,
+      "type": "text/html; charset=utf-8",
+      "checked": "2026-11-22",
+      "sourcePublished": "2025-02-03"
     }
   ]
 }

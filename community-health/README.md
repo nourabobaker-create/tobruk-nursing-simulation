@@ -1,6 +1,12 @@
 # تمريض من أجل المجتمع
 
-Faculty of Nursing, Tobruk University — community health education prototype, release 0.14.0, updated 11 November 2026. The initiative has its own Google Form embedded in a contextual in-app dialog; the earlier portal-form handoff has been removed.
+Faculty of Nursing, Tobruk University — community health education prototype, release 0.15.0, updated 22 November 2026. The initiative has its own Google Form embedded in a contextual in-app dialog; the earlier portal-form handoff has been removed.
+
+## Release 0.15.0 — seasonal respiratory safety
+
+- Added a bilingual RSV/bronchiolitis guide for families, babies and higher-risk older adults. It emphasizes breathing, feeding, hydration and alertness, and separates emergency signs from home care.
+- Linked the existing dated RSV immunization update to the practical guide without claiming that a vaccine or monoclonal antibody is available in Tobruk. WHO recommendation/publication dates remain separate from the 22 November 2026 source check and site update.
+- Added the WHO Arabic RSV fact sheet to the practical library after reading and checking the live link. The new topic and resource remain awaiting documented faculty review.
 
 ## Release 0.14.0 — family and household safety
 
@@ -10,7 +16,7 @@ Faculty of Nursing, Tobruk University — community health education prototype, 
 
 ## Public experience
 
-199 community education guides in Arabic and English. Each combines an explanation, relevant symptoms or observations, practical actions, prevention, general treatment information, avoid/seek-help advice, a real-life example, and authoritative references. The public content is plain-language community education with authoritative references. Actual contributors are credited only after participation and consent.
+200 community education guides in Arabic and English. Each combines an explanation, relevant symptoms or observations, practical actions, prevention, general treatment information, avoid/seek-help advice, a real-life example, and authoritative references. The public content is plain-language community education with authoritative references. Actual contributors are credited only after participation and consent.
 
 The home page introduces the students' community service and self-funded voluntary effort, with an AI-generated illustrative community scene (not real students/patients). Original lightweight SVG drawings illustrate each topic. Everyday audience paths, Arabic search, favorites, print/share, larger text and device Arabic speech are available. Speech requires an available Arabic voice; local/offline and remote voices depend on the device. It never silently substitutes an English voice. Navigation stops speech.
 
@@ -20,7 +26,7 @@ The home-kit checklist can be repeated and is stored locally. No fixed water int
 
 - `index.html`, `style-v2.css`, `app-v2.js`: current application.
 - `content.js`: baseline content and reference registry; obsolete nursing-role fields are not displayed by v2.
-- `rich-content.js`: topic expansions, 18 added topics and audience paths. Earlier general college-form configuration is not a current response channel.
+- `rich-content.js`: topic expansions, 18 added topics and audience paths. `rsv-family-health.js` adds the seasonal bilingual RSV/bronchiolitis guide and its dated official references. Earlier general college-form configuration is not a current response channel.
 - `community-extension.js`: 16 practical environmental/community guides with primary references and two audience paths.
 - `diabetes-content.js`: expanded diabetes overview and seven linked adult guides covering daily care, portion misconceptions, correction education, sick days/dehydration, hypoglycemia, feet and activity/follow-up.
 - `common-health.js`: 14 additional kidney/gout/women/addiction/mental guides and expanded blood-pressure care.

@@ -1993,6 +1993,22 @@ window.CommunityArabicLibrary=[
     "age": "للكبار ومقدمي الرعاية",
     "level": "نشرة توعوية للأسر",
     "tip": "حدّدوا مسبقًا مكانًا خارجيًا للمولّد يبعد 6.1 أمتار على الأقل عن المبنى وفتحات الأبواب والنوافذ."
+  },
+  {
+    "id": "rsv-who-ar",
+    "title": "الفيروس المخلوي التنفسي: دليل الأسرة",
+    "url": "https://www.who.int/ar/news-room/fact-sheets/detail/respiratory-syncytial-virus-%28rsv%29",
+    "publisher": "منظمة الصحة العالمية",
+    "language": "العربية",
+    "checked": "2026-11-22",
+    "category": "الأم والطفل",
+    "description": "صحيفة عربية تشرح انتقال RSV وأعراضه لدى الرضع وكبار السن والرعاية الداعمة ووسائل الوقاية من المرض الشديد.",
+    "topic": "rsv-bronchiolitis",
+    "audiences": ["public", "teacher"],
+    "kind": "article",
+    "age": "للأسر ومقدمي الرعاية وكبار السن",
+    "level": "صحيفة معلومات عملية",
+    "tip": "اقرؤوا قسم الأعراض ثم تدربوا على ملاحظة التنفس والرضاعة واليقظة؛ لا تنتظروا الحمى عند ظهور صعوبة التنفس."
   }
 ];
 
@@ -2029,5 +2045,10 @@ window.CommunityLibraryUpdatesEnglish = {
   "مراكز مكافحة الأمراض والوقاية منها (CDC)": "Centers for Disease Control and Prevention (CDC)",
   "نشرة تشرح أين يوضع المولّد خارج المبنى وكيف تساعد أجهزة كشف أول أكسيد الكربون في حماية الأسرة.": "Explains where to place a generator outdoors and how carbon monoxide alarms help protect your family.",
   "نشرة توعوية للأسر": "Handout for families",
-  "حدّدوا مسبقًا مكانًا خارجيًا للمولّد يبعد 6.1 أمتار على الأقل عن المبنى وفتحات الأبواب والنوافذ.": "Choose an outdoor spot for the generator in advance, at least 6.1 metres from the building, doors and windows."
+  "حدّدوا مسبقًا مكانًا خارجيًا للمولّد يبعد 6.1 أمتار على الأقل عن المبنى وفتحات الأبواب والنوافذ.": "Choose an outdoor spot for the generator in advance, at least 6.1 metres from the building, doors and windows.",
+  "الفيروس المخلوي التنفسي: دليل الأسرة": "Respiratory syncytial virus: a family guide",
+  "صحيفة عربية تشرح انتقال RSV وأعراضه لدى الرضع وكبار السن والرعاية الداعمة ووسائل الوقاية من المرض الشديد.": "An Arabic fact sheet explaining how RSV spreads, its symptoms in babies and older adults, supportive care and prevention of severe illness.",
+  "للأسر ومقدمي الرعاية وكبار السن": "For families, caregivers and older adults",
+  "صحيفة معلومات عملية": "Practical fact sheet",
+  "اقرؤوا قسم الأعراض ثم تدربوا على ملاحظة التنفس والرضاعة واليقظة؛ لا تنتظروا الحمى عند ظهور صعوبة التنفس.": "Read the symptoms section, then practise watching breathing, feeding and alertness. Do not wait for fever when breathing becomes difficult."
 };
