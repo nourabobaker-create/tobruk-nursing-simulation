@@ -1,0 +1,54 @@
+name: Publish e-library expansion 2026-11-23
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.codex-upload-2311/**'
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Reconstruct and validate expansion
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat .codex-upload-2311/chunk-* | base64 --decode > /tmp/elib2311.tar.gz
+          tar -xzf /tmp/elib2311.tar.gz
+          node --check e-library-v3/data/resources-31.js
+          python - <<'PY'
+          import csv, json
+          root = 'e-library-v3/data/'
+          with open(root + 'catalog.csv', encoding='utf-8-sig', newline='') as f:
+              rows = list(csv.DictReader(f))
+          assert len(rows) == 3366, len(rows)
+          assert len({r['id'] for r in rows}) == 3366
+          assert len({r['url'] for r in rows}) == 3366
+          assert sum(r['language'] == 'ar' for r in rows) == 1283
+          with open(root + 'research-papers.csv', encoding='utf-8-sig', newline='') as f:
+              papers = list(csv.DictReader(f))
+          assert len(papers) == 319, len(papers)
+          assert len({r['id'] for r in papers}) == 319
+          with open(root + 'research-log-20261123.json', encoding='utf-8') as f:
+              log = json.load(f)
+          assert log['summary']['screened'] == 121
+          assert log['summary']['published'] == 40
+          assert len(log['selected_resources']) == 40
+          PY
+      - name: Commit published sources
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf .codex-upload-2311 .github/workflows/codex-publish-elibrary-20261123.yml
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m 'Expand nursing e-library with 40 verified sources'
+          git push origin HEAD:main
