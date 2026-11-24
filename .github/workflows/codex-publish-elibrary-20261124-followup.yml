@@ -1,0 +1,56 @@
+name: Publish nursing e-library follow-up
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.codex-upload-elibrary-20261124-followup/**'
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: Verify and apply the library update
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git rev-parse HEAD^)" = '3b71ab732b8528be28b8804888559f52fd23bab1'
+          cat .codex-upload-elibrary-20261124-followup/part-* | base64 --decode > /tmp/nursing-elibrary-followup.patch.gz
+          printf '%s  %s\n' 'fa53e4fa8806b893b8217113e2740b09eaa5f1d1247ff65a06ee43defe96f81f' /tmp/nursing-elibrary-followup.patch.gz | sha256sum --check
+          gzip -dc /tmp/nursing-elibrary-followup.patch.gz > /tmp/nursing-elibrary-followup.patch
+          git apply --check --whitespace=nowarn --include='e-library-v3/**' /tmp/nursing-elibrary-followup.patch
+          git apply --whitespace=nowarn --include='e-library-v3/**' /tmp/nursing-elibrary-followup.patch
+          node --check e-library-v3/data/resources-33.js
+          python3 - <<'PYTHON'
+          import csv, json
+          from pathlib import Path
+          root = Path('e-library-v3/data')
+          def read(name):
+              with (root / name).open(encoding='utf-8-sig', newline='') as f:
+                  return list(csv.DictReader(f))
+          catalog = read('catalog.csv')
+          papers = read('research-papers.csv')
+          assert len(catalog) == len({r['id'] for r in catalog}) == len({r['url'] for r in catalog}) == 3432
+          assert len(papers) == len({r['id'] for r in papers}) == 323
+          assert sum(r['language'] == 'ar' for r in catalog) == 1294
+          assert all(None not in r for r in catalog + papers)
+          log = json.loads((root / 'research-log-20261124-followup.json').read_text())
+          assert len(log['selected_resources']) == log['summary']['published'] == 26
+          assert set(r['id'] for r in log['selected_resources']) <= set(r['id'] for r in catalog)
+          PYTHON
+      - name: Publish and remove the temporary transport
+        shell: bash
+        run: |
+          set -euo pipefail
+          git rm -r -- .codex-upload-elibrary-20261124-followup '.github/workflows/codex-publish-elibrary-20261124-followup.yml'
+          git add -- e-library-v3
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Add 26 verified nursing library references'
+          git push origin HEAD:main
