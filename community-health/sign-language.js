@@ -19,7 +19,7 @@ const SignLanguageLessons = (() => {
       nextCard: 'البطاقة التالية', previousCard: 'البطاقة السابقة', remember: 'أحتاج مراجعتها', remembered: 'أزيلت من قائمة المراجعة', saved: 'أضيفت إلى قائمة المراجعة',
       allCards: 'كل بطاقات الدرس', reviewCards: 'بطاقات المراجعة', reviewDone: 'أُكملت بطاقات المراجعة لهذا الدرس.', count: 'بطاقة',
       dictionary: 'القاموس الإشاري الليبي المصوّر', openPdf: 'افتح القاموس في تبويب جديد', loading: 'جارٍ عرض الصفحة من القاموس. قد يستغرق التحميل الأول لحظات.',
-      pdfError: 'تعذّر عرض الصورة هنا. افتح القاموس في تبويب جديد وانتقل إلى الصفحة الموضّحة.', zoom: 'تكبير الصفحة', close: 'إغلاق العرض',
+      pdfError: 'انتقل إلى رقم الصفحة الموضّح أعلاه في عارض القاموس. يمكنك فتح القاموس في تبويب جديد إذا تعذّر العرض المضمّن.', zoom: 'تكبير الصفحة', close: 'إغلاق العرض',
       task: 'تطبيق مع زميل', finish: 'سجّل إتمام التدريب', finished: 'تم تسجيل التدريب على هذا الجهاز', next: 'الدرس التالي', previous: 'الدرس السابق',
       health: 'إرشادات التواصل الميسّر', care: 'إتاحة التواصل في الرعاية الصحية (بالإنجليزية)', resources: 'مصادر المشاهدة',
       video: 'شاهد الحركة في مقاطع تطبيق «لغتي إشارتي» من مشروع تأهيل.', android: 'أندرويد', iphone: 'آيفون',
@@ -33,7 +33,7 @@ const SignLanguageLessons = (() => {
       nextCard: 'Next card', previousCard: 'Previous card', remember: 'Review this card again', remembered: 'Removed from review', saved: 'Added to review',
       allCards: 'All lesson cards', reviewCards: 'Cards to review', reviewDone: 'There are no cards left to review for this lesson.', count: 'Card',
       dictionary: 'Illustrated Libyan Sign Language dictionary', openPdf: 'Open the dictionary in a new tab', loading: 'Loading the dictionary page. The first page may take a moment.',
-      pdfError: 'The illustration could not be displayed here. Open the dictionary in a new tab and go to the page shown.', zoom: 'Magnify the page', close: 'Close the viewer',
+      pdfError: 'Go to the page number shown above in the dictionary viewer. You can open the dictionary in a new tab if the embedded viewer is unavailable.', zoom: 'Magnify the page', close: 'Close the viewer',
       task: 'Practise with a partner', finish: 'Mark practice complete', finished: 'Practice marked on this device', next: 'Next lesson', previous: 'Previous lesson',
       health: 'Guidance on accessible communication', care: 'Communication access in health care', resources: 'Video resources',
       video: 'Watch how signs move in the My Language Is Sign Language app by Project Tahil.', android: 'Android', iphone: 'iPhone',
@@ -102,6 +102,7 @@ const SignLanguageLessons = (() => {
       </div>
       <p class="sign-source-loading" id="signSourceStatus" role="status"></p>
       <div class="sign-source-canvas" id="signSourceCanvas" tabindex="0"></div>
+      <div id="signSourceFallback" hidden></div>
     </section>`;
   }
 
@@ -192,6 +193,7 @@ const SignLanguageLessons = (() => {
     const sourceTitle = main.querySelector('#signSourceTitle');
     const sourceStatus = main.querySelector('#signSourceStatus');
     const sourceCanvas = main.querySelector('#signSourceCanvas');
+    const sourceFallback = main.querySelector('#signSourceFallback');
     const zoom = main.querySelector('#signSourceZoom');
     const sectionCards = [...main.querySelectorAll('[data-sign-card]')];
     let reviewOnly = false;
@@ -239,6 +241,8 @@ const SignLanguageLessons = (() => {
       zoom.setAttribute('aria-pressed', 'false');
       sourceCanvas.classList.remove('is-zoomed');
       sourceCanvas.replaceChildren();
+      sourceFallback.hidden = true;
+      sourceFallback.replaceChildren();
       sourceTitle.focus();
       try {
         const pdf = await loadPdf();
@@ -256,7 +260,14 @@ const SignLanguageLessons = (() => {
         zoom.disabled = false;
         sourceStatus.textContent = '';
       } catch {
-        if (current === request && source.isConnected) sourceStatus.textContent = strings.pdfError;
+        if (current !== request || !source.isConnected) return;
+        const frame = document.createElement('iframe');
+        frame.src = dictionary;
+        frame.title = strings.dictionary;
+        frame.referrerPolicy = 'no-referrer';
+        sourceFallback.replaceChildren(frame);
+        sourceFallback.hidden = false;
+        sourceStatus.textContent = strings.pdfError;
       }
     }
 
@@ -295,6 +306,8 @@ const SignLanguageLessons = (() => {
       request += 1;
       source.hidden = true;
       sourceCanvas.replaceChildren();
+      sourceFallback.hidden = true;
+      sourceFallback.replaceChildren();
       (returnFocus?.isConnected ? returnFocus : complete).focus();
     });
     select(0);
