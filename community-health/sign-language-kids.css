@@ -393,3 +393,117 @@
     transition-duration: 0s !important;
   }
 }
+
+.sign-kids-overview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  padding: 0;
+  margin: .65rem 0 0;
+  list-style: none;
+}
+
+.sign-kids-overview li {
+  padding: .25rem .65rem;
+  border: 1px solid #b0d2c5;
+  border-radius: 2rem;
+  background: #effaf1;
+  color: #1b534b;
+  font-size: .86rem;
+}
+
+.sign-kids-word-nav,
+.sign-kids-decks,
+.sign-kids-spelling-examples,
+.sign-kids-spelling-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem;
+  align-items: center;
+}
+
+.sign-kids-word-nav {
+  min-inline-size: 0;
+  padding: .55rem;
+  border: 1px solid #c3d9cf;
+  border-radius: 1rem;
+  background: #f5faf1;
+  overflow: visible;
+}
+
+.sign-kids :is(.sign-kids-word-nav a, .sign-kids-decks button, .sign-kids-spelling-examples button, .sign-kids-spelling-controls button) {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  min-block-size: 44px;
+  padding: .35rem .72rem;
+  border: 1px solid #bad1c6;
+  border-radius: .65rem;
+  background: #eff8f3;
+  color: #1b504a;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: normal;
+}
+
+.sign-kids .sign-kids-decks button span {
+  font-size: .8rem;
+}
+
+.sign-kids :is(.sign-kids-word-nav a[aria-current], .sign-kids-decks button[aria-pressed="true"]) {
+  border-color: #175850;
+  background: #175850;
+  color: #fff;
+}
+
+.sign-kids-spelling form {
+  margin-block: .7rem;
+}
+
+.sign-kids-spelling-controls input,
+.sign-kids-game-filter select {
+  max-inline-size: 100%;
+  min-block-size: 44px;
+  padding: .4rem .65rem;
+  border: 1px solid #9bbdb0;
+  border-radius: .6rem;
+  background: #fff;
+  color: #214943;
+  font: inherit;
+}
+
+.sign-kids-spelling-controls input {
+  inline-size: min(100%, 14rem);
+}
+
+.sign-kids-spelling-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 5.25rem), 1fr));
+  gap: .55rem;
+  padding: 0;
+  list-style: none;
+}
+
+.sign-kids-spelling-cards li {
+  min-inline-size: 0;
+  padding: .3rem;
+  border: 1px solid #d0dfd4;
+  border-radius: .7rem;
+  background: #fffef5;
+  text-align: center;
+}
+
+.sign-kids-spelling-cards svg {
+  display: block;
+  inline-size: 100%;
+  block-size: auto;
+}
+
+.sign-kids-game-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem .85rem;
+  align-items: center;
+  margin-block: .35rem 1rem;
+  font-weight: 700;
+}

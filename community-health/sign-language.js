@@ -30,21 +30,52 @@ const SignLanguageLessons = (() => {
     hand('there', 'words', 'هناك', 'There', ['مدّ سبابة يدك اليمنى باتجاه المكان البعيد وثنِ الأصابع الباقية. اتبع السهم القصير في الرسم.', 'Extend your right index finger towards the distant spot and curl your other fingers. Follow the short arrow in the drawing.']),
   ];
 
+  const arabicAlphabet = [...'ابتثجحخدذرزسشصضطظعغفقكلمنهوي'];
+  const starterWordPages = [66, 236, 236, 219, 233, 233];
+  const withArt = (module, group) => module.items.map(item => ({
+    ...item, group: group ?? item.group, page: item.page ?? item.sourcePage ?? (group === 'letters' ? 12 : undefined), render: module.render,
+  }));
+  const starterWords = words.map((word, index) => ({ ...word, page: starterWordPages[index], render: SignKidsWordArt.render }));
+  const wordById = new Map(starterWords.map(item => [item.id, item]));
+  const alphabetIndex = new Map([...alphabet.map(item => ({ ...item, page: 12, render: SignKidsHandArt.render })),
+    ...withArt(SignKidsMoreLetters, 'letters')].map(item => [item.ar, { ...item, artId: item.id, id: `letter-${item.id}` }]));
+  const letters = arabicAlphabet.map(letter => alphabetIndex.get(letter));
+  const numberCards = [...numbers.map(item => ({ ...item, page: Number(item.ar) <= 5 ? 239 : 240, render: SignKidsHandArt.render })),
+    ...withArt(SignKidsMoreNumbers, 'numbers')].sort((a, b) => Number(a.ar) - Number(b.ar));
+  const daily = withArt(SignKidsDailyArt);
+  const community = withArt(SignKidsCommunityArt);
+  const speech = withArt(SignKidsConversationArt);
+  const makeWords = (id, titles, lead, cards) => ({ id, titles, lead, items: cards.map(item => ({ ...item, group: id })), kind: 'words' });
+  const vocabulary = [
+    makeWords('greetings', ['التحية والأسئلة', 'Greetings and questions'], ['حيِّ صديقك، واشكره، وجرّب كيف تسأله عن المكان أو الموعد.', 'Greet a friend, thank them, and practise asking about a place or time.'],
+      [wordById.get('thank-you'), wordById.get('please'), ...speech]),
+    makeWords('family', ['البيت والأسرة والطعام', 'Home, family and food'], ['جرّب إشارات الأسرة. ثم اختَر شيئًا تأكله أو تشربه.', 'Try signs for family members, then choose something to eat or drink.'],
+      [...withArt(SignKidsHomeArt), wordById.get('water'), wordById.get('sleep')]),
+    makeWords('daily', ['يومي ومشاعري', 'My day and feelings'], ['جرّب إشارة تصف شعورك أو شيئًا تفعله في يومك.', 'Try a sign for how you feel or something you do during the day.'], daily),
+    makeWords('places', ['الأماكن والاتجاهات', 'Places and directions'], ['دلّ صديقك على شيء قريب أو بعيد. جرّبا الإشارة مع لعبة أو رسمة.', 'Show a friend something near or far. Practise with a toy or drawing.'],
+      [wordById.get('here'), wordById.get('there'), ...community.filter(item => item.topic === 'place')]),
+    makeWords('time', ['الوقت', 'Time'], ['تحدّث بالإشارة عمّا فعلته أمس وما ستفعله غدًا.', 'Sign about something you did yesterday and something you will do tomorrow.'], community.filter(item => item.topic === 'time')),
+    makeWords('colors', ['الألوان', 'Colours'], ['ابحث عن لون في الغرفة وجرّب إشارته.', 'Find a colour in the room and try its sign.'], community.filter(item => item.topic === 'colors')),
+  ];
   const units = [
-    { id: 'alphabet', titles: ['الحروف', 'Letters'], lead: ['ابدأ بالحروف ا، ب، ت، ث. جرّب الإشارة بيدك، ثم انتقل إلى حروف أخرى من أسماء تعرفها.', 'Start with Alif, Ba, Ta and Tha. Try each sign, then explore letters you recognise from names.'], items: alphabet },
-    { id: 'numbers', titles: ['الأرقام', 'Numbers'], lead: ['نعدُّ من 1 إلى 5، ثم نجرّب 7 و10. قارن بين 2 و7. لاحظ كيف يتغيّر اتجاه الكف.', 'Count from 1 to 5, then try 7 and 10. Compare 2 and 7 and watch how the palm turns.'], items: numbers },
-    { id: 'greetings', titles: ['كلمات نستخدمها', 'Everyday signs'], lead: ['أين نضع اليد عندما نقول «شكرًا»؟ كيف نقول «ماء»؟ اختر كلمة وجرّبها.', 'Where does your hand go when you say “thank you”? How can you sign “water”? Choose a word and try it.'], items: words },
+    { id: 'alphabet', titles: ['الحروف', 'Letters'], lead: ['تعلّم الحروف العربية الـ28 في أربع مجموعات. شاهد الرسمة، ثم استخدم الحروف لتهجئة كلمة.', 'Learn all 28 Arabic letters in four sets. Watch each drawing, then use the letters to fingerspell a word.'], items: letters },
+    { id: 'numbers', titles: ['الأرقام', 'Numbers'], lead: ['عدّ من 0 إلى 20 على أربع دفعات. اتبع الأسهم أو ترتيب اللقطات حين تتحرّك اليد.', 'Count from 0 to 20 in four sets. Follow the arrows or panels when the hand moves.'], items: numberCards },
+    { id: 'greetings', titles: ['الكلمات', 'Words'] },
     { id: 'game', titles: ['لعبة الإشارات', 'Sign game'] },
     { id: 'conversations', titles: ['محاكاة يوم مع الأصدقاء', 'A day with friends'] },
   ];
-  const items = [...alphabet, ...numbers, ...words];
-  const aliases = { everyday: 'greetings', questions: 'greetings', health: 'conversations' };
+  const wordCount = vocabulary.reduce((total, unit) => total + unit.items.length, 0);
+  const items = [...letters, ...numberCards, ...vocabulary.flatMap(unit => unit.items)];
+  const byId = new Map(items.map(item => [item.id, item]));
+  const aliases = { everyday: 'family', questions: 'greetings', health: 'conversations' };
   const phrases = {
     ar: {
       title: 'رحلة اليدين', subtitle: 'نتعلّم لغة الإشارة الليبية باللعب', intro: 'شاهد شكل اليد في الرسمة، جرّبه، ثم استخدمه في اللعبة والمحاكاة.',
       lessons: 'اختر كيف تبدأ', card: 'البطاقة', of: 'من', focus: 'انظر إلى اليد', try: 'جرّبها الآن', tryText: 'قلّد الرسمة أمام مرآة أو مع صديق. بدّلا الأدوار ثم جرّبا بطاقة جديدة.',
       back: 'السابقة', next: 'التالية', sources: 'مصدر الإشارات وملاحظات للأهل',
-      sourceText: 'رسومات وتمارين من إعداد «تمريض من أجل المجتمع» للأطفال بعد زيارة الكلية للتضامن الاجتماعي بالبطنان. مرجع أشكال الحروف صفحة 12، والأرقام صفحتا 239 و240، والكلمات صفحات 66 و219 و233 و236 من عارض القاموس. راجعوا الإشارات مع مستخدم متمكّن من لغة الإشارة الليبية عند التدرّب مع الأطفال.',
+      sourceText: 'أعدّت مبادرة «تمريض من أجل المجتمع» الرسومات والتمارين للأطفال بعد زيارة الكلية للتضامن الاجتماعي بالبطنان. عند التدرّب مع الأطفال، راجعوا أداء الإشارات مع شخص أصم متمكّن من لغة الإشارة الليبية.',
+      pages: 'صفحات المرجع في هذا الدرس', set: 'مجموعة', wordGroups: 'اختر مجموعة الكلمات', overview: ['حرفًا', 'رقمًا', 'كلمة'],
+      spelling: 'لنتهجَّ كلمة!', spellIntro: 'اختر كلمة أو اكتب كلمة قصيرة من حروف الدرس.', spellLabel: 'كلمة من ثمانية حروف أو أقل', spellButton: 'اعرض الإشارات', spellingError: 'اختر كلمة من 1 إلى 8 حروف من الأبجدية الأساسية.',
       sourceLink: 'القاموس الإشاري الليبي المصوّر', playNow: 'العب الآن', nextLesson: 'الدرس التالي',
       simIntro: 'اختر صورة الإشارة التي تناسب الموقف. يمكنك المحاولة أكثر من مرة.', step: 'الموقف', choose: 'اختر الإشارة رقم', correct: 'أحسنت! الإشارة هي', retry: 'حاول مرة أخرى. انظر إلى موضع اليد.', nextScene: 'الموقف التالي', finish: 'أنهِ اللعبة',
       done: 'أكملت يومًا مع الأصدقاء!', doneText: 'اختر إشارة أعجبتك وجرّبها مع شخص تحبّه.', replay: 'أعد المحاكاة',
@@ -53,7 +84,9 @@ const SignLanguageLessons = (() => {
       title: 'A Journey with Our Hands', subtitle: 'Learn Libyan Sign Language through play', intro: 'Look at the illustrated sign, try it yourself, and use it in the game and story.',
       lessons: 'Choose where to start', card: 'Card', of: 'of', focus: 'Look at the hand', try: 'Try it now', tryText: 'Copy the drawing in a mirror or with a friend. Swap roles and choose a new card.',
       back: 'Previous', next: 'Next', sources: 'Sign reference and notes for families',
-      sourceText: 'Nursing for the Community made these illustrations and activities for children after the Faculty’s visit to Social Solidarity in Al Butnan. See PDF viewer page 12 for letters, 239 and 240 for numbers, and 66, 219, 233 and 236 for everyday words. Practise with a fluent Libyan Sign Language user when you can.',
+      sourceText: 'Nursing for the Community made these illustrations and activities for children after the Faculty’s visit to Social Solidarity in Al Butnan. For practice with children, check how signs are performed with a fluent Deaf Libyan Sign Language user.',
+      pages: 'Reference pages for this lesson', set: 'Set', wordGroups: 'Choose a word group', overview: ['letters', 'numbers', 'words'],
+      spelling: 'Let’s fingerspell a word!', spellIntro: 'Choose a word or enter a short word using the letters in this lesson.', spellLabel: 'An Arabic word of up to eight letters', spellButton: 'Show the signs', spellingError: 'Choose a word of 1 to 8 letters from the basic Arabic alphabet.',
       sourceLink: 'Illustrated Libyan Sign Language dictionary', playNow: 'Play now', nextLesson: 'Next lesson',
       simIntro: 'Choose the picture that fits the situation. You can try again.', step: 'Scene', choose: 'Choose sign', correct: 'Great work! The sign is', retry: 'Try again. Look at the position of the hand.', nextScene: 'Next scene', finish: 'Finish',
       done: 'You spent a day with friends!', doneText: 'Choose a sign you liked and try it with someone you know.', replay: 'Play again',
@@ -61,13 +94,17 @@ const SignLanguageLessons = (() => {
   };
 
   const scenes = [
+    { id: 'meet', title: ['بداية اليوم', 'The start of the day'], prompt: ['وصل صديقك. كيف تحيّيه بإشارة «السلام عليكم»؟', 'Your friend arrives. How do you sign “Peace be upon you”?'], choices: ['welcome', 'peace', 'thank-you'], answer: 'peace' },
     { id: 'picture', title: ['رسمة لك', 'A drawing for you'], prompt: ['قدّم لك صديقك رسمة جميلة. كيف تقول «شكرًا»؟', 'Your friend gives you a drawing. How do you say “thank you”?'], choices: ['here','thank-you','sleep'], answer: 'thank-you' },
+    { id: 'snack', title: ['استراحة صغيرة', 'A short break'], prompt: ['عطشت بعد اللعب. كيف تطلب «ماء» بالإشارة؟', 'You are thirsty after playing. How do you ask for “water”?'], choices: ['milk','bread','water'], answer: 'water' },
     { id: 'bench', title: ['المقعد القريب', 'The nearby bench'], prompt: ['وجدت مكانًا بجانبك لجلوس صديقك. كيف تشير إلى «هنا»؟', 'There is a seat right beside you for your friend. How do you sign “here”?'], choices: ['here','there','please'], answer: 'here' },
     { id: 'kite', title: ['الطائرة البعيدة', 'The faraway kite'], prompt: ['ترى طائرة ورقية بعيدة. كيف تُري صديقك أن مكانها «هناك»؟', 'You see a kite far away. How do you tell your friend it is “there”?'], choices: ['sleep','please','there'], answer: 'there' },
+    { id: 'color', title: ['طائرة بلون جميل', 'A colourful kite'], prompt: ['طائرتكما لونها أحمر. أي رسم يعني «أحمر»؟', 'Your kite is red. Which drawing signs “red”?'], choices: ['green','red','yellow'], answer: 'red' },
+    { id: 'goodnight', title: ['حان وقت الراحة', 'Time to rest'], prompt: ['عاد صديقك إلى البيت وأراد أن ينام. ما إشارة «ينام»؟', 'Your friend came home and wanted to sleep. How do you sign “sleep”?'], choices: ['sleep','here','water'], answer: 'sleep' },
   ];
 
   function illustration(item) {
-    return item.group === 'words' ? SignKidsWordArt.render(item.id) : SignKidsHandArt.render(item.id);
+    return item.render(item.artId ?? item.id);
   }
 
   function name(item, english) {
@@ -99,9 +136,13 @@ const SignLanguageLessons = (() => {
 
   function sceneArt(id) {
     const props = {
+      meet: '<path d="M125 103h56l18 9-17 11h-56z" fill="#f8c477" stroke="#925d45" stroke-width="2"/><path d="M126 84h42m-29-9h29" stroke="#e98776" stroke-width="3" stroke-linecap="round"/>',
       picture: '<path d="M137 87h53v40h-53z" fill="#fff7d4"/><path d="m141 120 12-15 11 12 9-13 13 16z" fill="#69ae9d"/><circle cx="173" cy="99" r="5" fill="#f3ab49"/>',
+      snack: '<path d="M127 108h67v14h-67z" fill="#e5b78a"/><path d="M151 76h32l-5 31h-22z" fill="#fff" stroke="#486787" stroke-width="2"/><path d="M153 88q7 3 15 0t13 0l-3 18h-22z" fill="#76c3dd"/>',
       bench: '<path d="M127 112h74v13h-74zM138 126v13m52-13v13M132 110V95h65v15" fill="#f3ba69" stroke="#946237" stroke-width="3"/>',
       kite: '<path d="m257 27 24 22-22 30-21-32z" fill="#e58873" stroke="#694f5e" stroke-width="2"/><path d="m257 27 2 52m-21-32 43 2m-22 30q-3 12 7 15t10 12" fill="none" stroke="#694f5e" stroke-width="2"/>',
+      color: '<path d="m162 71 25 23-25 36-24-36z" fill="#d95e57" stroke="#71394b" stroke-width="2"/><path d="M162 71v60m-24-37h49m-25 36q17 0 25 12" fill="none" stroke="#823848" stroke-width="2"/>',
+      goodnight: '<path d="M168 29a17 17 0 1 0 8 32 17 17 0 0 1-8-32z" fill="#ffe085" stroke="#b08137" stroke-width="2"/><path d="M143 41v12m-6-6h12m44-13v10m-5-5h10" stroke="#eeb357" stroke-width="2.4" stroke-linecap="round"/>',
     };
     return `<svg viewBox="0 0 324 154" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <rect width="324" height="154" rx="22" fill="#eaf4df"/><path d="M0 135Q145 113 324 135v19H0z" fill="#d2e8c7"/>
@@ -112,7 +153,8 @@ const SignLanguageLessons = (() => {
   }
 
   function unitFor(id) {
-    return units.find(unit => unit.id === (Object.hasOwn(aliases, id) ? aliases[id] : id)) || units[0];
+    const key = Object.hasOwn(aliases, id) ? aliases[id] : id;
+    return vocabulary.find(unit => unit.id === key) || units.find(unit => unit.id === key) || units[0];
   }
 
   function title(english) {
@@ -129,19 +171,56 @@ const SignLanguageLessons = (() => {
     </div>`;
   }
 
+  function deckSize(unit) {
+    return unit.id === 'alphabet' ? 7 : 6;
+  }
+
+  function wordNav(unit, language, text) {
+    return `<nav class="sign-kids-word-nav" aria-label="${text.wordGroups}">${vocabulary.map(entry => `<a href="#sign-language=${entry.id}" ${entry === unit ? 'aria-current="page"' : ''}>${entry.titles[language]}</a>`).join('')}</nav>`;
+  }
+
+  function deckButtons(unit, active, text) {
+    const size = deckSize(unit);
+    return Array.from({ length: Math.ceil(unit.items.length / size) }, (_, index) => {
+      const first = index * size;
+      const last = Math.min(first + size, unit.items.length) - 1;
+      const range = unit.kind === 'words' ? `${first + 1}–${last + 1}` : `${unit.items[first].ar}–${unit.items[last].ar}`;
+      return `<button type="button" data-sign-kids-set="${first}" aria-pressed="${index === active}">${text.set} ${index + 1}<span dir="auto"${unit.id === 'alphabet' ? ' lang="ar" data-keep-language' : ''}>${range}</span></button>`;
+    }).join('');
+  }
+
+  function tiles(unit, current, english) {
+    const pageSize = deckSize(unit);
+    const start = Math.floor(current / pageSize) * pageSize;
+    return unit.items.slice(start, start + pageSize).map((item, local) => {
+      const index = start + local;
+      return `<button class="sign-kids-tile" type="button" data-sign-kids-item="${index}" aria-pressed="${index === current}">${name(item, english)}</button>`;
+    }).join('');
+  }
+
+  function spelling(text) {
+    return `<details class="sign-kids-note sign-kids-spelling"><summary>${text.spelling}</summary>
+      <p>${text.spellIntro}</p><div class="sign-kids-spelling-examples">${['باب', 'قلم', 'ورد', 'بيت'].map(word => `<button type="button" lang="ar" dir="rtl" data-keep-language data-sign-kids-example="${word}">${word}</button>`).join('')}</div>
+      <form id="signKidsSpellForm"><label for="signKidsSpellInput">${text.spellLabel}</label><div class="sign-kids-spelling-controls"><input id="signKidsSpellInput" type="text" dir="rtl" lang="ar" maxlength="16" autocomplete="off" spellcheck="false"><button>${text.spellButton}</button></div></form>
+      <div id="signKidsSpellingResult" aria-live="polite"></div>
+    </details>`;
+  }
+
   function lesson(unit, english, text) {
     const language = english ? 1 : 0;
-    const after = units[units.indexOf(unit) + 1];
-    return `<section class="sign-kids-stage" aria-labelledby="signKidsLessonHeading">
+    const after = unit.kind === 'words' ? vocabulary[vocabulary.indexOf(unit) + 1] : units[units.indexOf(unit) + 1];
+    return `${unit.kind === 'words' ? wordNav(unit, language, text) : ''}<section class="sign-kids-stage" id="signKidsStage" aria-labelledby="signKidsLessonHeading">
       <h2 id="signKidsLessonHeading">${unit.titles[language]}</h2><p class="sign-kids-instruction">${unit.lead[language]}</p>
-      <div class="sign-kids-gallery" ${unit.id !== 'greetings' ? 'data-sign-kids-compact' : ''} role="group" aria-label="${unit.titles[language]}">
-        ${unit.items.map((item, index) => `<button class="sign-kids-tile" type="button" data-sign-kids-item="${index}" aria-pressed="${index === 0}">${name(item, english)}</button>`).join('')}
+      ${unit.items.length > deckSize(unit) ? `<div class="sign-kids-decks" id="signKidsDecks">${deckButtons(unit, 0, text)}</div>` : ''}
+      <div class="sign-kids-gallery" id="signKidsGallery" ${unit.kind !== 'words' ? 'data-sign-kids-compact' : ''} role="group" aria-label="${unit.titles[language]}">
+        ${tiles(unit, 0, english)}
       </div>
       <div class="sign-kids-view" id="signKidsView" aria-live="polite">${drawingCard(unit.items[0], 0, unit.items.length, english, text)}</div>
       <div class="sign-kids-controls">
         <button type="button" id="signKidsBack" disabled>${text.back}</button><button type="button" id="signKidsNext">${text.next}</button>
       </div>
-      <div class="sign-kids-actions"><a href="#sign-language=${after.id}">${text.nextLesson} · ${after.titles[language]}</a><a href="#sign-language=game">${text.playNow}</a></div>
+      ${unit.id === 'alphabet' ? spelling(text) : ''}
+      <div class="sign-kids-actions">${after ? `<a href="#sign-language=${after.id}">${text.nextLesson} · ${after.titles[language]}</a>` : ''}<a href="#sign-language=game">${text.playNow}</a></div>
     </section>`;
   }
 
@@ -153,7 +232,7 @@ const SignLanguageLessons = (() => {
       <div class="sign-kids-sim-copy"><p class="sign-kids-count">${text.step} ${index + 1} ${text.of} ${scenes.length}</p>
       <h3>${scene.title[language]}</h3><p>${scene.prompt[language]}</p></div></div>
       <div class="sign-kids-sim-options">${scene.choices.map((id, choice) => {
-        const item = words.find(word => word.id === id);
+        const item = byId.get(id);
         return `<button type="button" data-sign-kids-choice="${choice}" aria-label="${esc(`${text.choose} ${choice + 1}. ${item.describe[language]}`)}"><span aria-hidden="true">${illustration(item)}</span></button>`;
       }).join('')}</div>
       <p class="sign-kids-status" id="signKidsSimStatus" role="status"></p>
@@ -169,15 +248,20 @@ const SignLanguageLessons = (() => {
     const language = english ? 1 : 0;
     const unit = unitFor(id);
     const content = unit.items ? lesson(unit, english, text)
-      : unit.id === 'game' ? SignKidsGame.markup(english, items) : simulation(english, text);
+      : unit.id === 'game' ? SignKidsGame.markup(english, items, [
+        ['letters', units[0].titles[language]], ['numbers', units[1].titles[language]], ...vocabulary.map(entry => [entry.id, entry.titles[language]]),
+      ]) : simulation(english, text);
+    const pages = [...new Set(unit.items?.map(item => item.page).filter(Number.isInteger))].sort((a, b) => a - b);
+    const totals = [letters.length, numberCards.length, wordCount];
     return `<div class="sign-kids">
       <section class="sign-kids-header" aria-labelledby="signKidsTitle">
-        <div class="sign-kids-heading"><h1 id="signKidsTitle">${text.title}</h1><p><strong>${text.subtitle}</strong></p><p>${text.intro}</p></div>
+        <div class="sign-kids-heading"><h1 id="signKidsTitle">${text.title}</h1><p><strong>${text.subtitle}</strong></p><p>${text.intro}</p>
+          <ul class="sign-kids-overview">${totals.map((count, i) => `<li><strong>${count}</strong> ${text.overview[i]}</li>`).join('')}</ul></div>
         <div class="sign-kids-hero-art">${heroArt()}</div>
       </section>
-      <nav class="sign-kids-nav" aria-label="${text.lessons}">${units.map(entry => `<a href="#sign-language=${entry.id}" ${entry === unit ? 'aria-current="step"' : ''}>${entry.titles[language]}</a>`).join('')}</nav>
+      <nav class="sign-kids-nav" aria-label="${text.lessons}">${units.map(entry => `<a href="#sign-language=${entry.id}" ${entry.id === unit.id || (entry.id === 'greetings' && unit.kind === 'words') ? 'aria-current="step"' : ''}>${entry.titles[language]}</a>`).join('')}</nav>
       ${content}
-      <details class="sign-kids-note"><summary>${text.sources}</summary><p>${text.sourceText}</p>
+      <details class="sign-kids-note"><summary>${text.sources}</summary><p>${text.sourceText}</p>${pages.length ? `<p>${text.pages} <bdi>${pages.join(' · ')}</bdi></p>` : ''}
         <a href="${dictionary}" target="_blank" rel="noopener noreferrer">${text.sourceLink} ↗</a>
       </details>
     </div>`;
@@ -185,20 +269,52 @@ const SignLanguageLessons = (() => {
 
   function bindLesson(main, unit, english, text) {
     const view = main.querySelector('#signKidsView');
-    const tiles = [...main.querySelectorAll('[data-sign-kids-item]')];
+    const stage = main.querySelector('#signKidsStage');
+    const gallery = main.querySelector('#signKidsGallery');
+    const sets = [...main.querySelectorAll('[data-sign-kids-set]')];
     const back = main.querySelector('#signKidsBack');
     const next = main.querySelector('#signKidsNext');
     let current = 0;
     function select(index) {
+      const previousGroup = Math.floor(current / deckSize(unit));
       current = index;
-      tiles.forEach((tile, i) => tile.setAttribute('aria-pressed', String(i === current)));
+      const group = Math.floor(current / deckSize(unit));
+      if (group !== previousGroup) gallery.innerHTML = tiles(unit, current, english);
+      gallery.querySelectorAll('[data-sign-kids-item]').forEach(tile => tile.setAttribute('aria-pressed', String(Number(tile.dataset.signKidsItem) === current)));
+      sets.forEach((button, i) => button.setAttribute('aria-pressed', String(i === group)));
       view.innerHTML = drawingCard(unit.items[current], current, unit.items.length, english, text);
       back.disabled = current === 0;
       next.disabled = current === unit.items.length - 1;
     }
-    tiles.forEach((tile, index) => tile.addEventListener('click', () => select(index)));
+    stage.addEventListener('click', event => {
+      const button = event.target.closest('button');
+      if (!button) return;
+      const index = button.dataset.signKidsItem ?? button.dataset.signKidsSet;
+      if (index !== undefined) select(Number(index));
+    });
     back.addEventListener('click', () => select(current - 1));
     next.addEventListener('click', () => select(current + 1));
+    if (unit.id === 'alphabet') bindSpelling(main, english, text);
+  }
+
+  function bindSpelling(main, english, text) {
+    const form = main.querySelector('#signKidsSpellForm');
+    const input = main.querySelector('#signKidsSpellInput');
+    const result = main.querySelector('#signKidsSpellingResult');
+    function show() {
+      const clean = input.value.normalize('NFC').replace(/[\u0640\u064b-\u065f\s]+/g, '');
+      const requested = [...clean].map(letter => alphabetIndex.get(letter));
+      if (!requested.length || requested.length > 8 || requested.some(item => !item)) {
+        result.textContent = text.spellingError;
+        return;
+      }
+      result.innerHTML = `<ol class="sign-kids-spelling-cards" dir="rtl">${requested.map(item => `<li><div aria-hidden="true">${illustration(item)}</div><strong>${name(item, english)}</strong></li>`).join('')}</ol>`;
+    }
+    form.addEventListener('submit', event => { event.preventDefault(); show(); });
+    main.querySelectorAll('[data-sign-kids-example]').forEach(button => button.addEventListener('click', () => {
+      input.value = button.dataset.signKidsExample;
+      show();
+    }));
   }
 
   function bindSimulation(main, english, text) {
@@ -229,7 +345,7 @@ const SignLanguageLessons = (() => {
         return;
       }
       button.classList.add('is-correct');
-      const answer = words.find(word => word.id === choice);
+      const answer = byId.get(choice);
       status.textContent = `${text.correct} ${english ? answer.en : answer.ar}`;
       round.querySelectorAll('[data-sign-kids-choice]').forEach(option => { option.disabled = true; });
       const next = round.querySelector('#signKidsSimNext');

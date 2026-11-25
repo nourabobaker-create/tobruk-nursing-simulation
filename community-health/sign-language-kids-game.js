@@ -14,6 +14,8 @@ const SignKidsGame = (() => {
       summary: 'أكملت جولات التحدّي!',
       firstTry: 'طابقت من المحاولة الأولى',
       replay: 'العب من جديد',
+      topic: 'بأي إشارات تريد أن تلعب؟',
+      all: 'كل الإشارات',
     },
     en: {
       title: 'Play and recognise the sign',
@@ -29,6 +31,8 @@ const SignKidsGame = (() => {
       summary: 'You finished the challenge!',
       firstTry: 'Matched on the first try',
       replay: 'Play again',
+      topic: 'Which signs would you like to play with?',
+      all: 'All signs',
     },
   };
 
@@ -47,7 +51,7 @@ const SignKidsGame = (() => {
     return result;
   }
 
-  function markup(english, bank) {
+  function markup(english, bank, groups) {
     if (bank.length < 2) return '';
     const copy = text[english ? 'en' : 'ar'];
     return `<section class="sign-kids-game" aria-labelledby="signKidsGameHeading">
@@ -55,6 +59,9 @@ const SignKidsGame = (() => {
         <h2 id="signKidsGameHeading">${copy.title}</h2>
         <p>${copy.intro}</p>
       </div>
+      <label class="sign-kids-game-filter" for="signKidsGameGroup">${copy.topic}
+        <select id="signKidsGameGroup"><option value="">${copy.all}</option>${groups.map(([id, label]) => `<option value="${escapeLabel(id)}">${escapeLabel(label)}</option>`).join('')}</select>
+      </label>
       <div data-sign-kids-game-round></div>
     </section>`;
   }
@@ -62,6 +69,7 @@ const SignKidsGame = (() => {
   function bind(main, english, bank, art) {
     const game = main.querySelector('[data-sign-kids-game-round]');
     if (!game) return;
+    const group = main.querySelector('#signKidsGameGroup');
     const copy = text[english ? 'en' : 'ar'];
     const languageIndex = english ? 1 : 0;
     let rounds;
@@ -70,9 +78,10 @@ const SignKidsGame = (() => {
     let tried;
     let answered;
     let correctIndex;
+    let activeBank = bank;
 
     function choicesFor(item) {
-      const others = bank.filter(choice => choice.id !== item.id);
+      const others = activeBank.filter(choice => choice.id !== item.id);
       const sameGroup = shuffle(others.filter(choice => choice.group === item.group));
       const differentGroup = shuffle(others.filter(choice => choice.group !== item.group));
       return shuffle([item, ...[...sameGroup, ...differentGroup].slice(0, 2)]);
@@ -96,7 +105,8 @@ const SignKidsGame = (() => {
     }
 
     function start(focusQuestion) {
-      rounds = shuffle(bank).slice(0, 6);
+      activeBank = group.value ? bank.filter(item => item.group === group.value) : bank;
+      rounds = shuffle(activeBank).slice(0, 6);
       roundIndex = 0;
       score = 0;
       showRound(focusQuestion);
@@ -146,6 +156,7 @@ const SignKidsGame = (() => {
       next.hidden = false;
       next.focus();
     });
+    group.addEventListener('change', () => start(false));
     start(false);
   }
 
