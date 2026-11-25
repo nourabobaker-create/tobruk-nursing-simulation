@@ -1,0 +1,395 @@
+.sign-kids {
+  --sk-ink: #183b40;
+  --sk-green: #20605a;
+  --sk-teal: #277873;
+  --sk-focus: #83411e;
+  --sk-paper: #fffdf8;
+  --sk-line: #d2ded5;
+  --sk-mint: #e2f3e8;
+  --sk-sun: #f7d579;
+  --sk-peach: #ffede0;
+  --sk-coral: #d66c50;
+  min-inline-size: 0;
+  margin-block: .75rem 2.5rem;
+  color: var(--sk-ink);
+}
+
+.sign-kids [hidden] { display: none !important; }
+
+.sign-kids :is(a, button, summary, [tabindex]):focus-visible {
+  outline: 3px solid var(--sk-focus);
+  outline-offset: 3px;
+}
+
+.sign-kids :is(h1, h2, h3, p, figure) { margin-block-start: 0; }
+.sign-kids :is(h1, h2, h3) { color: var(--sk-ink); line-height: 1.3; }
+.sign-kids p { line-height: 1.75; }
+.sign-kids p:last-child { margin-block-end: 0; }
+
+.sign-kids-header {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(12rem, .63fr);
+  align-items: center;
+  gap: clamp(.5rem, 3vw, 2rem);
+  padding: clamp(1.15rem, 4.4vw, 3.25rem);
+  border: 1px solid #aad4c6;
+  border-radius: clamp(1.25rem, 4vw, 2rem);
+  background: radial-gradient(ellipse at 96% 95%, #f9e7b1 0, transparent 45%), #e0f4ed;
+}
+
+.sign-kids-heading { min-inline-size: 0; }
+
+.sign-kids-header h1 {
+  margin-block-end: .7rem;
+  font-size: clamp(1.85rem, 5vw, 3.65rem);
+  font-weight: 850;
+  text-wrap: balance;
+}
+
+.sign-kids-header p {
+  max-inline-size: 34rem;
+  margin-block-end: 0;
+  color: #33565a;
+  font-size: clamp(1rem, 1.7vw, 1.22rem);
+}
+
+.sign-kids-hero-art {
+  display: grid;
+  place-items: center;
+  min-inline-size: 0;
+  margin: 0;
+  padding: .3rem;
+}
+
+.sign-kids-hero-art svg {
+  display: block;
+  inline-size: 100%;
+  max-inline-size: 23rem;
+  block-size: auto;
+}
+
+.sign-kids .sign-kids-nav {
+  display: flex;
+  gap: .55rem;
+  flex-wrap: wrap;
+  margin-block: .95rem 1.1rem;
+  padding: .6rem;
+  border: 1px solid var(--sk-line);
+  border-radius: 1rem;
+  background: var(--sk-paper);
+  overflow: visible;
+}
+
+.sign-kids-nav :is(ol, ul) {
+  display: flex;
+  gap: .55rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  inline-size: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sign-kids .sign-kids-nav :is(a, button) {
+  display: inline-flex;
+  gap: .4rem;
+  align-items: center;
+  justify-content: center;
+  min-block-size: 2.75rem;
+  padding: .5rem .85rem;
+  border: 1px solid transparent;
+  border-radius: .7rem;
+  background: #e9f5ee;
+  color: var(--sk-ink);
+  font-weight: 750;
+  text-align: center;
+  text-decoration: none;
+  white-space: normal;
+}
+
+.sign-kids .sign-kids-nav :is(a, button):hover { border-color: #a9cabd; }
+
+.sign-kids .sign-kids-nav :is([aria-current="step"], [aria-current="page"], [aria-selected="true"], [aria-pressed="true"]) {
+  background: var(--sk-green);
+  color: #fff;
+}
+
+.sign-kids :is(.sign-kids-stage, .sign-kids-sim, .sign-kids-game) {
+  display: grid;
+  gap: 1rem;
+  min-inline-size: 0;
+  padding: clamp(1rem, 3vw, 2rem);
+  border: 1px solid var(--sk-line);
+  border-radius: 1.4rem;
+  background: var(--sk-paper);
+}
+
+.sign-kids :is(.sign-kids-stage, .sign-kids-sim, .sign-kids-game) h2 {
+  margin-block-end: .3rem;
+  font-size: clamp(1.35rem, 3vw, 2rem);
+}
+
+.sign-kids-instruction {
+  padding: .7rem .9rem;
+  border-inline-start: 4px solid var(--sk-teal);
+  border-radius: .5rem;
+  background: var(--sk-mint);
+}
+
+.sign-kids-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 10.5rem), 1fr));
+  gap: clamp(.65rem, 1.65vw, 1rem);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sign-kids-tile {
+  display: grid;
+  justify-items: center;
+  align-content: start;
+  gap: .4rem;
+  inline-size: 100%;
+  min-block-size: 3rem;
+  min-inline-size: 0;
+  margin: 0;
+  padding: .45rem .45rem .65rem;
+  border: 1px solid #b8d4ca;
+  border-radius: 1rem;
+  background: #f1f9f3;
+  color: var(--sk-ink);
+  font-size: 1.035rem;
+  font-weight: 750;
+  text-align: center;
+}
+
+.sign-kids-tile:nth-child(3n+2) { background: #fdf2df; border-color: #e7d6a9; }
+.sign-kids-tile:nth-child(3n+3) { background: #fff1e9; border-color: #efcebd; }
+
+.sign-kids :is(button, a).sign-kids-tile:hover { border-color: var(--sk-teal); }
+
+.sign-kids-tile:is([aria-pressed="true"], [aria-selected="true"], [aria-current="true"]) {
+  border-color: var(--sk-green);
+  box-shadow: inset 0 0 0 1px var(--sk-green);
+}
+
+.sign-kids-figure {
+  display: grid;
+  place-items: center;
+  min-inline-size: 0;
+  inline-size: 100%;
+  margin: 0;
+}
+
+.sign-kids-figure svg,
+.sign-kids-tile svg,
+.sign-kids-game-art svg,
+.sign-kids-sim-character svg,
+.sign-kids-sim-options svg,
+.sign-kids-view-current svg {
+  display: block;
+  inline-size: 100%;
+  block-size: auto;
+}
+
+.sign-kids-view-current {
+  display: grid;
+  align-items: center;
+  gap: .85rem;
+  min-inline-size: 0;
+  max-inline-size: 40rem;
+}
+
+.sign-kids-view-current :is(.sign-kids-figure, svg) { max-inline-size: 23rem; }
+
+.sign-kids-controls,
+.sign-kids-steps,
+.sign-kids-actions,
+.sign-kids-game-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .65rem;
+}
+
+.sign-kids :is(.sign-kids-controls, .sign-kids-actions, .sign-kids-game-actions, .sign-kids-steps) :is(a, button) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .35rem;
+  min-block-size: 2.75rem;
+  padding: .55rem .9rem;
+  border: 1px solid var(--sk-green);
+  border-radius: .75rem;
+  background: var(--sk-green);
+  color: #fff;
+  font-size: .97rem;
+  font-weight: 750;
+  text-align: center;
+  text-decoration: none;
+}
+
+.sign-kids :is(.sign-kids-controls, .sign-kids-actions, .sign-kids-game-actions, .sign-kids-steps) :is(a, button):hover {
+  background: #174d49;
+}
+
+.sign-kids :is(button, a):disabled { cursor: default; opacity: .62; }
+
+.sign-kids-note {
+  padding: .7rem .9rem;
+  border: 1px solid #e6d398;
+  border-radius: .82rem;
+  background: #fff4d6;
+  color: #553d1c;
+}
+
+.sign-kids-status { min-block-size: 1.25rem; color: var(--sk-green); font-weight: 750; }
+.sign-kids-view { min-inline-size: 0; }
+
+.sign-kids-sim-stage {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+  min-inline-size: 0;
+  gap: clamp(.6rem, 3vw, 1.65rem);
+  padding: clamp(.7rem, 2vw, 1.25rem);
+  border: 1px solid #b9d6d0;
+  border-radius: 1rem;
+  background: #e7f4ee;
+}
+
+.sign-kids-sim-character {
+  align-self: center;
+  min-inline-size: 0;
+  max-inline-size: 18rem;
+  margin: 0;
+  text-align: center;
+}
+
+.sign-kids-sim-options,
+.sign-kids-game-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 8.5rem), 1fr));
+  gap: .62rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sign-kids-sim-options button > span { display: block; inline-size: 100%; }
+
+.sign-kids-sim-options button svg { aspect-ratio: 300 / 220; }
+
+.sign-kids .sign-kids-game { border-color: #dfbd76; background: #fffaf0; }
+
+.sign-kids-game-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: .4rem 1rem;
+}
+
+.sign-kids-game-top p { margin-block-end: 0; }
+
+.sign-kids-game [data-sign-kids-game-round] {
+  display: grid;
+  gap: .8rem;
+}
+
+.sign-kids-game-progress {
+  min-inline-size: 0;
+  color: #624518;
+  font-size: 1rem;
+  font-weight: 750;
+}
+
+.sign-kids-game progress { accent-color: var(--sk-teal); max-inline-size: 100%; }
+
+.sign-kids-game-art {
+  inline-size: min(100%, 23rem);
+  min-inline-size: 0;
+  padding: .5rem;
+  border: 1px solid #d6dcbc;
+  border-radius: 1.25rem;
+  background: #f2f7e8;
+  justify-self: center;
+}
+
+.sign-kids-game-question { color: var(--sk-ink); font-weight: 750; }
+
+.sign-kids :is(.sign-kids-game-option, .sign-kids-sim-options button) {
+  min-block-size: 3rem;
+  min-inline-size: 0;
+  padding: .5rem .8rem;
+  border: 1px solid #b8cfc1;
+  border-radius: .8rem;
+  background: #fffef9;
+  color: var(--sk-ink);
+  font-size: 1.03rem;
+  font-weight: 750;
+  text-align: center;
+}
+
+.sign-kids :is(.sign-kids-game-option, .sign-kids-sim-options button):hover { border-color: var(--sk-teal); }
+
+.sign-kids :is(.sign-kids-game-option, .sign-kids-sim-options button).is-correct {
+  border-color: var(--sk-green);
+  background: var(--sk-mint);
+  color: #124d3c;
+  opacity: 1;
+}
+
+.sign-kids :is(.sign-kids-game-option, .sign-kids-sim-options button).is-retry {
+  border-color: #b76b4b;
+  background: var(--sk-peach);
+  color: #6a341f;
+  opacity: 1;
+}
+
+.sign-kids-game-feedback {
+  min-block-size: 1.7rem;
+  margin: 0;
+  color: #275753;
+  font-weight: 750;
+}
+
+.sign-kids-game-feedback.is-retry { color: #6a341f; }
+
+.sign-kids-game-result {
+  display: grid;
+  gap: .65rem;
+  padding: 1rem;
+  border-radius: .9rem;
+  background: #fff0c8;
+}
+
+.sign-kids-game-result :is(h3, p) { margin-block-end: 0; }
+
+@media (max-width: 640px) {
+  .sign-kids-header { grid-template-columns: 1fr; }
+  .sign-kids-hero-art { justify-items: start; }
+  .sign-kids-hero-art svg { max-inline-size: 9rem; }
+  .sign-kids-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .sign-kids-gallery[data-sign-kids-compact] { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: .45rem; }
+  .sign-kids-gallery[data-sign-kids-compact] .sign-kids-tile { padding-inline: .18rem; font-size: .98rem; }
+  .sign-kids .sign-kids-nav :is(a, button) { padding-inline: .65rem; }
+}
+
+@media (max-width: 355px) {
+  .sign-kids-gallery[data-sign-kids-compact] { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .sign-kids-sim-stage { grid-template-columns: 1fr; }
+  .sign-kids-game-options { grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sign-kids *, .sign-kids *::before, .sign-kids *::after {
+    animation-duration: 0s !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0s !important;
+  }
+}

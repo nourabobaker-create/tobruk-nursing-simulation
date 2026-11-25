@@ -4,7 +4,8 @@
   'للأهل: حساسية الطعام':'For parents: food allergy'
  }),ui=Object.assign(window.CommunityEnglishUI||{}, {
   'مصدرًا عربيًا موثوقًا +':'trusted Arabic sources +',
-  'لغة الإشارة الليبية':'Libyan Sign Language'
+  'لغة الإشارة الليبية':'Libyan Sign Language',
+  'رحلة اليدين · تعلّم لغة الإشارة باللعب':'A Journey with Our Hands · Learn Sign Language through play'
  });
  const escapeRegex=s=>s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
  const keys=Object.keys(ui).sort((a,b)=>b.length-a.length);

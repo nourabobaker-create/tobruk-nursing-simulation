@@ -1,6 +1,12 @@
 # تمريض من أجل المجتمع
 
-Faculty of Nursing, Tobruk University — community health education prototype, release 0.17.0, updated 25 November 2026. The initiative has its own Google Form embedded in a contextual in-app dialog; the earlier portal-form handoff has been removed.
+Faculty of Nursing, Tobruk University — community health education prototype, release 0.18.0, updated 25 November 2026. The initiative has its own Google Form embedded in a contextual in-app dialog; the earlier portal-form handoff has been removed.
+
+## Release 0.18.0 — A Journey with Our Hands
+
+- Reworked the sign-language section as bilingual, illustrated children’s lessons with a direct entry from the children’s corner. The first release covers nine letters, seven numbers and six everyday signs. The 22 original vector illustrations use verified handshapes and orientations from the cited Libyan Sign Language dictionary. The publisher is credited in family notes.
+- Added a six-round visual matching game and a selectable three-scene story. The lesson illustrations, game and simulation are available offline and do not collect children’s data. The existing general feedback channel remains separate.
+- The review register records these five units and outstanding review with a fluent Libyan Sign Language user.
 
 ## Release 0.17.0 — Libyan Sign Language learning path
 
