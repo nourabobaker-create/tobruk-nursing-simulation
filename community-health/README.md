@@ -1,6 +1,12 @@
 # تمريض من أجل المجتمع
 
-Faculty of Nursing, Tobruk University — community health education prototype, release 0.15.0, updated 22 November 2026. The initiative has its own Google Form embedded in a contextual in-app dialog; the earlier portal-form handoff has been removed.
+Faculty of Nursing, Tobruk University — community health education prototype, release 0.16.0, updated 25 November 2026. The initiative has its own Google Form embedded in a contextual in-app dialog; the earlier portal-form handoff has been removed.
+
+## Release 0.16.0 — Libyan Sign Language for nursing
+
+- Added `#sign-language`, accessible from the home page and main navigation, following the faculty visit to Social Solidarity in Al Butnan on 25 November 2026.
+- Four introductory Arabic and English lessons cover greetings, fingerspelling, reception and communication preferences, and a clinic simulation. The learning page links to existing Libyan Sign Language resources and accessible communication guidance. Lesson text is cached locally. External resources require internet access.
+- Four entries in the existing review register record sources and pending faculty and local sign-language review. The simulation offers an observation checklist for future supervised use.
 
 ## Release 0.15.0 — seasonal respiratory safety
 
