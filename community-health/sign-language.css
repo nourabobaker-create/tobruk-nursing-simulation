@@ -1,0 +1,581 @@
+.sign-course {
+  --sign-ink: #17362f;
+  --sign-green: #175f4e;
+  --sign-deep: #104538;
+  --sign-muted: #4c6358;
+  --sign-line: #cbdcd0;
+  --sign-paper: #fffef9;
+  --sign-wash: #eaf3eb;
+  --sign-sand: #f7ebd4;
+  display: grid;
+  gap: clamp(1rem, 2.7vw, 1.75rem);
+  padding-block: .5rem 2rem;
+  color: var(--sign-ink);
+}
+
+.sign-course :is(h1, h2, h3, p) {
+  margin-block-start: 0;
+}
+
+.sign-course :is(h1, h2, h3) {
+  line-height: 1.45;
+}
+
+.sign-course p {
+  line-height: 1.8;
+}
+
+.sign-course :is(a, button, summary, input):focus-visible {
+  outline: 3px solid #78410b;
+  outline-offset: 3px;
+}
+
+.sign-course [hidden] {
+  display: none !important;
+}
+
+.sign-course-hero {
+  display: grid;
+  gap: .75rem;
+  padding: clamp(1.15rem, 3.8vw, 2.7rem);
+  border: 1px solid var(--sign-line);
+  border-radius: 1.25rem;
+  background: linear-gradient(135deg, #e8f5e9 0%, #eff4e7 62%, #f9eed8 100%);
+}
+
+.sign-course-hero h1 {
+  max-inline-size: 34ch;
+  margin-block-end: .4rem;
+  color: var(--sign-deep);
+  font-size: clamp(1.6rem, 4.8vw, 2.65rem);
+  font-weight: 800;
+  text-wrap: balance;
+}
+
+.sign-course-hero p {
+  max-inline-size: 68ch;
+  margin-block-end: .35rem;
+}
+
+.sign-course-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem 1.4rem;
+  max-inline-size: 72ch;
+  color: var(--sign-muted);
+}
+
+.sign-course-actions,
+.sign-practice-controls,
+.sign-board-controls,
+.sign-lesson-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+  align-items: center;
+}
+
+.sign-course-progress {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem 1rem;
+  align-items: center;
+  margin-block-start: .2rem;
+  color: var(--sign-deep);
+  font-size: .85rem;
+  font-weight: 700;
+}
+
+.sign-course-progress progress {
+  inline-size: min(13rem, 100%);
+  block-size: .7rem;
+  accent-color: var(--sign-green);
+}
+
+.sign-course-layout {
+  display: grid;
+  grid-template-columns: minmax(12.5rem, 1fr) minmax(0, 3fr);
+  align-items: start;
+  gap: clamp(.8rem, 2.4vw, 1.45rem);
+}
+
+.sign-course .sign-course-nav,
+.sign-course-content {
+  min-inline-size: 0;
+}
+
+.sign-course .sign-course-nav {
+  display: block;
+  overflow: visible;
+  padding: .8rem;
+  border: 1px solid var(--sign-line);
+  border-radius: 1rem;
+  background: var(--sign-paper);
+}
+
+.sign-course-nav h2 {
+  padding-inline: .45rem;
+  margin-block-end: .55rem;
+  color: var(--sign-deep);
+  font-size: 1rem;
+}
+
+.sign-course-nav ol {
+  display: grid;
+  gap: .22rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sign-course-nav li {
+  min-inline-size: 0;
+}
+
+.sign-course .sign-course-nav a {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  min-block-size: 2.55rem;
+  padding: .45rem .55rem;
+  border: 1px solid transparent;
+  border-radius: .6rem;
+  color: var(--sign-deep);
+  font-size: .85rem;
+  font-weight: 700;
+  line-height: 1.45;
+  white-space: normal;
+  text-align: start;
+}
+
+.sign-course .sign-course-nav a:hover {
+  background: var(--sign-wash);
+}
+
+.sign-course .sign-course-nav a[aria-current="step"] {
+  border-color: #9bc0ac;
+  background: #e1eee4;
+  box-shadow: inset 0 -2px #abc8b8;
+}
+
+.sign-course-content,
+.sign-unit-sets {
+  display: grid;
+  gap: .85rem;
+}
+
+.sign-course-content {
+  align-content: start;
+}
+
+.sign-unit-lead,
+.sign-unit-set,
+.sign-practice,
+.sign-course-source,
+.sign-course-footer,
+.sign-board {
+  min-inline-size: 0;
+  padding: clamp(.8rem, 2.1vw, 1.35rem);
+  border: 1px solid var(--sign-line);
+  border-radius: 1rem;
+  background: var(--sign-paper);
+}
+
+.sign-unit-lead {
+  border-inline-start: .25rem solid var(--sign-green);
+  background: #f5f8ee;
+}
+
+.sign-unit-lead h2 {
+  margin-block-end: .35rem;
+  color: var(--sign-deep);
+  font-size: clamp(1.25rem, 3vw, 1.7rem);
+}
+
+.sign-unit-count {
+  color: var(--sign-green);
+  font-size: .8rem;
+  font-weight: 700;
+  margin-block-end: .35rem;
+}
+
+.sign-course p:last-child {
+  margin-block-end: 0;
+}
+
+.sign-unit-sets {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.sign-unit-set h3 {
+  margin-block-end: .45rem;
+  color: var(--sign-deep);
+  font-size: 1rem;
+}
+
+.sign-unit-set p {
+  margin-block-end: .5rem;
+  color: var(--sign-muted);
+  font-size: .87rem;
+}
+
+.sign-token-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+  padding: 0;
+  margin-block: .55rem 0;
+  list-style: none;
+}
+
+.sign-course .sign-token {
+  min-inline-size: 2.55rem;
+  min-block-size: 2.55rem;
+  padding: .32rem .6rem;
+  border-color: var(--sign-line);
+  border-radius: .55rem;
+  background: #f5f8f1;
+  color: var(--sign-deep);
+  font-size: .92rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.sign-course button.sign-token:hover,
+.sign-course .sign-token[aria-pressed="true"],
+.sign-course .sign-token[aria-current="true"] {
+  border-color: var(--sign-green);
+  background: #dfeee4;
+}
+
+.sign-course .sign-token[aria-pressed="true"],
+.sign-course .sign-token[aria-current="true"] {
+  box-shadow: 0 0 0 1px var(--sign-green);
+}
+
+.sign-token-details {
+  display: grid;
+  gap: .55rem;
+  padding: .85rem 1rem;
+  border: 1px solid #aac7b4;
+  border-radius: .75rem;
+  background: var(--sign-wash);
+}
+
+.sign-token-details :is(h3, p) {
+  margin-block-end: 0;
+}
+
+.sign-review-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+  align-items: center;
+  margin-block: .7rem;
+}
+
+.sign-review-items {
+  display: grid;
+  gap: .5rem;
+  margin-block: .5rem 0;
+  padding-inline-start: 1.25rem;
+}
+
+.sign-practice {
+  background: var(--sign-wash);
+}
+
+.sign-practice-card {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: .5rem;
+  min-block-size: 9rem;
+  margin-block: .85rem;
+  padding: 1rem;
+  border: 1px solid var(--sign-line);
+  border-radius: .8rem;
+  background: var(--sign-paper);
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.sign-practice-card :is(strong, b) {
+  color: var(--sign-deep);
+  font-size: clamp(1.25rem, 3.6vw, 1.9rem);
+}
+
+.sign-practice-controls button:disabled,
+.sign-board-controls button:disabled {
+  cursor: default;
+  opacity: .65;
+}
+
+.sign-course-source h2,
+.sign-practice h2,
+.sign-board h2 {
+  margin-block-end: .4rem;
+  color: var(--sign-deep);
+  font-size: 1.2rem;
+}
+
+.sign-course-source iframe {
+  display: block;
+  inline-size: 100%;
+  block-size: clamp(18rem, 76vh, 42rem);
+  margin-block-start: .75rem;
+  border: 1px solid var(--sign-line);
+  border-radius: .65rem;
+  background: #f0f4ec;
+}
+
+.sign-source-canvas {
+  direction: ltr;
+  inline-size: 100%;
+  max-block-size: min(70vh, 42rem);
+  overflow: auto;
+  margin-block-start: .8rem;
+  border: 1px solid var(--sign-line);
+  border-radius: .75rem;
+  background: #edf3eb;
+}
+
+.sign-source-canvas:empty {
+  display: none;
+}
+
+.sign-source-canvas canvas {
+  display: block;
+  inline-size: min(100%, 34rem);
+  block-size: auto;
+  margin-inline: auto;
+  background: #fff;
+}
+
+.sign-source-canvas.is-zoomed canvas {
+  inline-size: max(145%, 46rem);
+  max-inline-size: none;
+  margin-inline: 0;
+}
+
+.sign-source-loading {
+  margin-block-end: .55rem;
+  padding: .45rem .7rem;
+  border-radius: .55rem;
+  background: var(--sign-sand);
+  color: #553e26;
+  font-size: .84rem;
+}
+
+.sign-course-footer {
+  background: #f7f4e9;
+}
+
+.sign-course-footer a:not(.button),
+.sign-course-source a:not(.button),
+.sign-practice-card a:not(.button) {
+  color: var(--sign-deep);
+  text-decoration: underline;
+  text-underline-offset: .2em;
+}
+
+.sign-lesson-navigation {
+  justify-content: space-between;
+}
+
+.sign-board-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-block: .85rem;
+}
+
+.sign-course .sign-board-tabs > button[aria-pressed="true"],
+.sign-course .sign-board-tabs > button[aria-selected="true"] {
+  border-color: var(--sign-green);
+  background: var(--sign-green);
+  color: white;
+}
+
+.sign-board-stage {
+  display: grid;
+  gap: .75rem;
+  margin-block-end: .75rem;
+  padding: clamp(.65rem, 2vw, 1.1rem);
+  border: 1px solid var(--sign-line);
+  border-radius: .85rem;
+  background: #f4f8ee;
+}
+
+.sign-board-stage h3 {
+  margin-block-end: .3rem;
+}
+
+.sign-board-art {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.35fr) minmax(0, 1fr);
+  gap: clamp(.2rem, 2vw, .6rem);
+  align-items: center;
+  justify-items: center;
+  min-block-size: clamp(6rem, 18vw, 8.75rem);
+  padding: .7rem .55rem;
+  border-radius: .75rem;
+  background: linear-gradient(0deg, #e0ead7 0 24%, #ecf2e4 24% 100%);
+  isolation: isolate;
+}
+
+.sign-board-stage[data-sign-board-setting="1"] .sign-board-art {
+  background: linear-gradient(0deg, #e8dec9 0 24%, #f5edde 24% 100%);
+}
+
+.sign-board-stage[data-sign-board-setting="2"] .sign-board-art {
+  background: linear-gradient(0deg, #dbe7e4 0 24%, #eef5f3 24% 100%);
+}
+
+.sign-board-counter {
+  color: var(--sign-muted);
+  font-size: .8rem;
+  margin-block-end: 0;
+}
+
+.sign-board-person {
+  --sign-character-skin: #a26842;
+  --sign-character-shirt: #237360;
+  --sign-character-hair: #302b2d;
+  position: relative;
+  display: block;
+  inline-size: min(100%, 4.5rem);
+  min-block-size: 4.65rem;
+  padding-block-start: 4.8rem;
+  color: var(--sign-deep);
+  font-size: .72rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.sign-board-person-second {
+  --sign-character-skin: #bb8054;
+  --sign-character-shirt: #93613d;
+  --sign-character-hair: #3b362d;
+}
+
+.sign-board-person::before,
+.sign-board-person::after {
+  position: absolute;
+  inset-inline: 0;
+  display: block;
+  margin-inline: auto;
+  content: "";
+}
+
+.sign-board-person::before {
+  z-index: 1;
+  inset-block-start: .3rem;
+  inline-size: 45%;
+  block-size: 2.2rem;
+  border: 1px solid #4a332b;
+  border-radius: 55% 52% 45% 43%;
+  background:
+    radial-gradient(circle at 36% 60%, #2c2927 0 1px, transparent 1.5px),
+    radial-gradient(circle at 68% 60%, #2c2927 0 1px, transparent 1.5px),
+    linear-gradient(170deg, var(--sign-character-hair) 0 36%, var(--sign-character-skin) 37% 100%);
+}
+
+.sign-board-person::after {
+  inset-block-start: 2.25rem;
+  inline-size: 84%;
+  block-size: 2.35rem;
+  border: 1px solid #3b5248;
+  border-radius: 48% 48% 18% 18% / 56% 56% 22% 22%;
+  background:
+    radial-gradient(ellipse at 50% 0%, var(--sign-character-skin) 0 13%, transparent 14%),
+    var(--sign-character-shirt);
+}
+
+.sign-board-prop {
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  min-inline-size: 0;
+  max-inline-size: 100%;
+  min-block-size: 2.65rem;
+  padding: .35rem .45rem;
+  border: 1px solid #cba879;
+  border-radius: .65rem;
+  background: #fff7e8;
+  color: #563a1f;
+  font-size: clamp(.68rem, 2.5vw, .9rem);
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 760px) {
+  .sign-course-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .sign-course-nav ol {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 500px) {
+  .sign-unit-sets {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .sign-lesson-navigation {
+    justify-content: start;
+  }
+}
+
+@media (max-width: 360px) {
+  .sign-course-nav ol {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sign-course *,
+  .sign-course *::before,
+  .sign-course *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+@media print {
+  .sign-course .sign-course-nav,
+  .sign-course-actions,
+  .sign-course-progress,
+  .sign-practice-controls,
+  .sign-board-controls,
+  .sign-board-tabs,
+  .sign-course-source iframe,
+  .sign-lesson-navigation {
+    display: none;
+  }
+
+  .sign-course-layout {
+    display: block;
+  }
+}
+
+
+.sign-course-summary > div {
+  display: flex;
+  align-items: baseline;
+  gap: .42rem;
+}
+
+.sign-course-summary strong {
+  color: var(--sign-deep);
+  font-size: 1.18rem;
+}
+
+.sign-source-canvas:focus-visible {
+  outline: 3px solid #78410b;
+  outline-offset: 3px;
+}

@@ -1,6 +1,12 @@
 # تمريض من أجل المجتمع
 
-Faculty of Nursing, Tobruk University — community health education prototype, release 0.16.0, updated 25 November 2026. The initiative has its own Google Form embedded in a contextual in-app dialog; the earlier portal-form handoff has been removed.
+Faculty of Nursing, Tobruk University — community health education prototype, release 0.17.0, updated 25 November 2026. The initiative has its own Google Form embedded in a contextual in-app dialog; the earlier portal-form handoff has been removed.
+
+## Release 0.17.0 — Libyan Sign Language learning path
+
+- Replaced the four introductory exercises with seven shareable lessons from the manual alphabet and numbers to everyday, health and conversation practice. Each card identifies its exact page in the illustrated Libyan Sign Language dictionary. The viewer renders the publisher-hosted document on request. The course also links the Project Tahil app for modelled movement.
+- Added three original short animated practice scenes and a study deck with local lesson progress and review marks. Scenario animation shows the practice context. Learners consult the linked materials for sign performance and work with a partner for feedback.
+- Lesson text, cards and animated practice scenes are bundled offline. The illustrated dictionary viewer and the Project Tahil links need an internet connection. Learner records remain on the device. The review register records planned local review for each lesson.
 
 ## Release 0.16.0 — Libyan Sign Language for nursing
 
