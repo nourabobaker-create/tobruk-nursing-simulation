@@ -1,6 +1,12 @@
 # تمريض من أجل المجتمع
 
-Faculty of Nursing, Tobruk University — community health education prototype, release 0.19.0, updated 25 November 2026. The initiative has its own Google Form embedded in a contextual in-app dialog; the earlier portal-form handoff has been removed.
+Faculty of Nursing, Tobruk University — community health education prototype, release 0.20.0, updated 25 November 2026. The initiative has its own Google Form embedded in a contextual in-app dialog; the earlier portal-form handoff has been removed.
+
+## Release 0.20.0 — A greeting in accessible formats
+
+- The children’s corner and the autism and Down syndrome guides link to `visit-greeting.html`, an Arabic greeting for the children at Social Solidarity in Al Butnan. The three illustrated cards can be read one at a time or printed with the communication choices.
+- The page offers optional Arabic reading when the device has a compatible voice, Arabic Grade 1 Braille for the message, the full 28-letter Arabic alphabet, and a six-dot practice cell. Families can download the Arabic source for preparation on a Braille embosser. The digital Braille output was checked against Mada’s reference table. Tactile production and review with local Braille readers are pending.
+- The cards and exercises are served with the community site’s offline cache. This page does not ask for children’s data, record their choices, or submit a score.
 
 ## Release 0.19.0 — Complete beginner alphabet and expanded sign vocabulary
 

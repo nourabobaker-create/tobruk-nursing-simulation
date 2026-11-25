@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#185e4c">
+  <meta name="description" content="تحية مصوّرة من طلبة كلية التمريض بجامعة طبرق، وبطاقات للتواصل ودرس أول في برايل العربي.">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="visit-greeting.css">
+  <script src="braille-visit.js" defer></script>
+  <script src="visit-greeting.js" defer></script>
+  <title>سعدنا بلقائكم | تمريض من أجل المجتمع</title>
+</head>
+<body>
+  <a class="skip" href="#main">انتقل إلى المحتوى</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="./?lang=ar#kids">تمريض من أجل المجتمع</a>
+      <span>كلية التمريض · جامعة طبرق</span>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    <section class="intro" aria-labelledby="title">
+      <p class="eyebrow">إلى أصدقائنا في التضامن الاجتماعي بالبطنان</p>
+      <h1 id="title">سعدنا بلقائكم!</h1>
+      <nav aria-label="أقسام الصفحة">
+        <a href="#message">الرسالة المصوّرة</a>
+        <a href="#choose">كيف أحب أن أشارك؟</a>
+        <a href="#braille">برايل العربي</a>
+      </nav>
+    </section>
+
+    <section class="panel" id="message" aria-labelledby="message-title">
+      <div class="section-head">
+        <h2 id="message-title">رسالة من طلبة التمريض</h2>
+        <div class="actions">
+          <button type="button" id="listen" hidden>استمع للرسالة</button>
+          <button type="button" id="pace" aria-pressed="false" hidden>بطاقة واحدة في كل مرة</button>
+          <button type="button" id="print" hidden>اطبع البطاقات</button>
+        </div>
+      </div>
+      <p id="audio-status" role="status"></p>
+      <ol class="message-cards">
+        <li>
+          <img src="assets/visit-greeting-meeting.svg" alt="" width="240" height="144">
+          <p data-message-line>سعدنا بلقائكم!</p>
+        </li>
+        <li>
+          <img src="assets/visit-greeting-nursing.svg" alt="" width="240" height="144">
+          <p data-message-line>نحن طلبة كلية التمريض بجامعة طبرق.</p>
+        </li>
+        <li>
+          <img src="assets/visit-greeting-return.svg" alt="" width="240" height="144">
+          <p data-message-line>نتعلّم كيف نتواصل معكم. إلى لقاء قريب!</p>
+        </li>
+      </ol>
+      <div class="actions" id="card-navigation" hidden>
+        <button type="button" id="previous-card">السابق</button>
+        <span id="card-position" role="status"></span>
+        <button type="button" id="next-card">التالي</button>
+      </div>
+      <a class="text-link" href="./?lang=ar#sign-language=greetings">تعلّم التحية بلغة الإشارة الليبية</a>
+    </section>
+
+    <section class="panel" id="choose" aria-labelledby="choose-title">
+      <h2 id="choose-title">كيف أحب أن أشارك؟</h2>
+      <p>اختر ما يناسبك. يمكنك أن تشير إلى البطاقة، أو تقول ما فيها، أو تضغط عليها.</p>
+      <div class="choice-grid" role="group" aria-label="خيارات المشاركة">
+        <button type="button" aria-pressed="false" data-choice="أريد أن أرى صورة واحدة في كل مرة.">
+          <svg viewBox="0 0 40 40" aria-hidden="true"><rect x="5" y="8" width="30" height="24" rx="3"/><path d="m8 27 8-8 6 6 5-4 5 6"/><circle cx="26" cy="15" r="2"/></svg>
+          أريد أن أرى صورة
+        </button>
+        <button type="button" aria-pressed="false" data-choice="أريد أن أسمع الرسالة على مهلي.">
+          <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M7 16h6l8-7v22l-8-7H7zM26 14a8 8 0 0 1 0 12m4-17a14 14 0 0 1 0 22"/></svg>
+          أريد أن أسمع
+        </button>
+        <button type="button" aria-pressed="false" data-choice="أحتاج وقتًا قبل أن نكمل.">
+          <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="14"/><path d="M20 13v8l5 4"/></svg>
+          أحتاج وقتًا
+        </button>
+      </div>
+      <p class="feedback" id="choice-status" role="status"></p>
+    </section>
+
+    <section class="panel" id="braille" aria-labelledby="braille-title">
+      <h2 id="braille-title">أول درس في برايل العربي</h2>
+      <p>برايل طريقة للقراءة والكتابة باللمس. تتكوّن الخلية الأساسية من ستة مواضع للنقاط، وتُقرأ خلايا برايل العربي من اليسار إلى اليمين.</p>
+      <details open>
+        <summary>الرسالة بخلايا برايل</summary>
+        <p>رموز هذه الرسالة مكتوبة ببرايل العربي من الدرجة الأولى.</p>
+        <div data-braille-message></div>
+        <p>للقراءة باللمس تُستخدم شاشة برايل أو ورقة ذات نقاط بارزة. يمكن تنزيل النص العربي لإعداده مع مختص على طابعة برايل.</p>
+        <div class="actions">
+          <a data-braille-download download="tobruk-greeting-arabic-braille.txt" hidden>تنزيل خلايا برايل الرقمية</a>
+          <a href="visit-greeting-ar.txt" download>تنزيل النص العربي</a>
+        </div>
+      </details>
+      <details>
+        <summary>الحروف العربية الـ28</summary>
+        <div data-braille-alphabet></div>
+      </details>
+      <div class="practice" id="practice" hidden>
+        <h3>جرّب تكوين حرف</h3>
+        <p id="prompt"></p>
+        <div class="dots" role="group" aria-labelledby="prompt">
+          <button type="button" data-dot="1" aria-label="النقطة 1" aria-pressed="false">1</button>
+          <button type="button" data-dot="2" aria-label="النقطة 2" aria-pressed="false">2</button>
+          <button type="button" data-dot="3" aria-label="النقطة 3" aria-pressed="false">3</button>
+          <button type="button" data-dot="4" aria-label="النقطة 4" aria-pressed="false">4</button>
+          <button type="button" data-dot="5" aria-label="النقطة 5" aria-pressed="false">5</button>
+          <button type="button" data-dot="6" aria-label="النقطة 6" aria-pressed="false">6</button>
+        </div>
+        <div class="actions">
+          <button type="button" id="check">تحقّق</button>
+          <button type="button" id="next">جرّب حرفًا آخر</button>
+        </div>
+        <p class="feedback" id="practice-status" role="status"></p>
+      </div>
+    </section>
+
+    <section class="panel" id="learning" aria-labelledby="learning-title">
+      <h2 id="learning-title">للأهل وطلبة التمريض</h2>
+      <div class="learning-grid">
+        <article>
+          <h3>متلازمة داون · اختر كيف ترد</h3>
+          <p>اعرض بطاقة واحدة. قل الجملة بوضوح، ثم انتظر الرد بالطريقة التي يختارها الطفل. اسأل الأهل عن الصور أو الكلمات التي يعرفها.</p>
+          <a href="./?lang=ar#topic=down-understanding">اقرأ الدليل الموجود عن متلازمة داون</a>
+        </article>
+        <article>
+          <h3>طيف التوحّد · الآن ثم</h3>
+          <p>قبل بدء النشاط، جرّب «الآن نرى الصورة، ثم نختار ما نريد». اعرض صورة واحدة في مكان هادئ، واترك للطفل اختيار التوقف أو الإكمال.</p>
+          <a href="./?lang=ar#topic=autism-daily-support">اقرأ الدليل الموجود عن الدعم اليومي</a>
+        </article>
+      </div>
+      <p>اختروا طريقة التواصل مع الطفل وأسرته، وابدؤوا بالوسيلة المألوفة لديه.</p>
+      <details>
+        <summary>المراجع</summary>
+        <ul>
+          <li><a href="https://www.leicspart.nhs.uk/autism-space/health-and-lifestyle/using-visuals-to-support-autistic-people/">الدعم البصري مع طيف التوحّد · هيئة الصحة البريطانية</a></li>
+          <li><a href="https://cdn.down-syndrome.org/resources/slt-toolkit/down-syndrome-slt-toolkit.pdf">أدوات دعم التواصل للأطفال ذوي متلازمة داون · Down Syndrome Education International</a></li>
+          <li><a href="https://braille.mada.org.qa/braille-module-1-reference/?lang=en">برايل العربي الموحّد من الدرجة الأولى · مركز مدى</a></li>
+        </ul>
+      </details>
+    </section>
+  </main>
+</body>
+</html>
