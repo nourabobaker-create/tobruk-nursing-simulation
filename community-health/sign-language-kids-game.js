@@ -2,13 +2,15 @@ const SignKidsGame = (() => {
   const text = {
     ar: {
       title: 'العب وتعرّف على الإشارة',
-      intro: 'انظر إلى اليد واختر معنى الإشارة. يمكنك المحاولة مرة أخرى.',
+      intro: 'انظر إلى الرسم واختر الحرف أو الرقم أو الكلمة المناسبة. يمكنك المحاولة مرة أخرى.',
       cue: 'رسم لوضع اليد في الإشارة',
       round: 'جولة',
       of: 'من',
       question: 'ماذا تعني هذه الإشارة؟',
+      letterQuestion: 'أيّ حرف يمثّله هذا الرسم؟',
+      numberQuestion: 'أيّ رقم يمثّله هذا الرسم؟',
       correct: 'أحسنت! طابقت الإشارة مع معناها.',
-      retry: 'انظر مرة أخرى إلى وضع الأصابع وجرّب اختيارًا آخر.',
+      retry: 'لاحظ الأصابع والجهة الظاهرة من اليد وأيّ سهم في الرسم. ثم جرّب اختيارًا آخر.',
       next: 'الإشارة التالية',
       finish: 'اعرض نتيجة اللعب',
       summary: 'أكملت جولات التحدّي!',
@@ -19,13 +21,15 @@ const SignKidsGame = (() => {
     },
     en: {
       title: 'Play and recognise the sign',
-      intro: 'Look at the hand and choose what the sign means. You can try again.',
+      intro: 'Look at the drawing and choose the matching letter, number or word. You can try again.',
       cue: 'Drawing of the handshape for this sign',
       round: 'Round',
       of: 'of',
       question: 'What does this sign mean?',
+      letterQuestion: 'Which letter does this drawing show?',
+      numberQuestion: 'Which number does this drawing show?',
       correct: 'Well done! You matched the sign to its meaning.',
-      retry: 'Look at the fingers again and try a different answer.',
+      retry: 'Check the fingers, the side of the hand you can see and any arrows. Then try another answer.',
       next: 'Next sign',
       finish: 'Show my result',
       summary: 'You finished the challenge!',
@@ -66,7 +70,7 @@ const SignKidsGame = (() => {
     </section>`;
   }
 
-  function bind(main, english, bank, art) {
+  function bind(main, english, bank, art, name) {
     const game = main.querySelector('[data-sign-kids-game-round]');
     if (!game) return;
     const group = main.querySelector('#signKidsGameGroup');
@@ -93,11 +97,12 @@ const SignKidsGame = (() => {
       correctIndex = choices.indexOf(item);
       tried = false;
       answered = false;
+      const question = item.group === 'letters' ? copy.letterQuestion : item.group === 'numbers' ? copy.numberQuestion : copy.question;
       game.innerHTML = `<p class="sign-kids-game-progress">${copy.round} ${roundIndex + 1} ${copy.of} ${rounds.length}</p>
-        <h3 class="sign-kids-game-question" id="signKidsGameQuestion" tabindex="-1">${copy.question}</h3>
+        <h3 class="sign-kids-game-question" id="signKidsGameQuestion" tabindex="-1">${question}</h3>
         <div class="sign-kids-game-art" role="img" aria-label="${escapeLabel(item.describe?.[languageIndex] || copy.cue)}"><div aria-hidden="true">${art(item)}</div></div>
         <div class="sign-kids-game-options" role="group" aria-labelledby="signKidsGameQuestion">
-          ${choices.map((choice, index) => `<button class="sign-kids-game-option" type="button" data-sign-kids-option="${index}">${escapeLabel(english ? choice.en : choice.ar)}</button>`).join('')}
+          ${choices.map((choice, index) => `<button class="sign-kids-game-option" type="button" data-sign-kids-option="${index}">${name(choice, english)}</button>`).join('')}
         </div>
         <p class="sign-kids-game-feedback" role="status" data-sign-kids-feedback></p>
         <div class="sign-kids-game-actions"><button class="sign-kids-game-next" type="button" data-sign-kids-next hidden>${roundIndex + 1 === rounds.length ? copy.finish : copy.next}</button></div>`;

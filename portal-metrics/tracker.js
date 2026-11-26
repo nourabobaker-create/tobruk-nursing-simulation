@@ -21,20 +21,28 @@ function sectionFor(p,h=''){
  if(/admission|guide/.test(h))return 'guides';if(/participate/.test(h))return 'services';if(/community/.test(h))return 'community';return 'faculty';
 }
 function currentSection(){return sectionFor(path,location.hash);}
+const isCommunityApp=path==='community-health/'||path==='community-health/index.html';
+function isSignLesson(){return isCommunityApp&&new URLSearchParams(location.hash.slice(1)).has('sign-language');}
 function visible(){if(document.visibilityState==='hidden')return false;try{if(parentFrame){let el=parentFrame;while(el){const s=el.ownerDocument.defaultView.getComputedStyle(el);if(el.hidden||s.display==='none'||s.visibility==='hidden')return false;el=el.parentElement;}if(!parentFrame.getClientRects().length)return false;}}catch(_){return false;}return true;}
 function session(){let s=memorySession;try{s=JSON.parse(sessionStorage.getItem(sessionKey)||'null')||s;}catch(_){}const now=Date.now();if(!s||typeof s.id!=='string'||!/^[A-Za-z0-9_-]{8,80}$/.test(s.id)||!Number.isFinite(s.last)||s.last>now+300000||now-s.last>=1800000)s={id:uid(),last:now};s.last=now;memorySession=s;try{sessionStorage.setItem(sessionKey,JSON.stringify(s));}catch(_){}return s.id;}
 function queueRead(){try{const q=JSON.parse(localStorage.getItem(queueKey)||'[]');return Array.isArray(q)?q.map(x=>{const e=core.cleanEvent(x);return e?{...e,_attempts:Number(x._attempts)||0,_lastAttempt:Number(x._lastAttempt)||0}:null;}).filter(e=>e&&Date.now()-Date.parse(e.at)<86400000).slice(-250):[];}catch(_){return [];}}
 function queueWrite(q){try{localStorage.setItem(queueKey,JSON.stringify(q.slice(-250)));return true;}catch(_){return false;}}
 function record(name,item='',section=currentSection()){
- if(testMode||core.preference()==='off'||!visible())return false;
+ if(isSignLesson()||testMode||core.preference()==='off'||!visible())return false;
  const e=core.cleanEvent({id:uid(),session:session(),at:new Date().toISOString(),section,event:name,item,language:ar()?'ar':'en'});if(!e)return false;
  if(!core.append(e)){message=t('تعذّر الحفظ في هذا المتصفح.','Browser storage is unavailable.');render();return false;}
  if(core.preference()==='shared'&&core.endpointValid(C.endpoint)){const q=queueRead();q.push(e);queueWrite(q);if(name!=='page_view'&&name!=='section_view')flush();}
  return true;
 }
-function view(){if(!visible()||core.preference()==='off')return;const signature=currentSection()+':'+path+':'+location.hash;if(signature===lastView)return;const item=currentSection()+':'+path.replace(/[^A-Za-z0-9_./:#-]/g,'').slice(0,100);if(record(started?'section_view':'page_view',item.slice(0,120))){lastView=signature;started=true;}render();}
+function view(){
+ const signLesson=isSignLesson();
+ if(widget&&widget.hidden!==signLesson)render();
+ if(signLesson){lastView='';return;}
+ if(!visible()||core.preference()==='off')return;
+ const signature=currentSection()+':'+path+':'+location.hash;if(signature===lastView)return;const item=currentSection()+':'+path.replace(/[^A-Za-z0-9_./:#-]/g,'').slice(0,100);if(record(started?'section_view':'page_view',item.slice(0,120))){lastView=signature;started=true;}render();
+}
 async function flush(){
- if(flushBusy||testMode||core.preference()!=='shared'||!core.endpointValid(C.endpoint)||!navigator.onLine)return;
+ if(isSignLesson()||flushBusy||testMode||core.preference()!=='shared'||!core.endpointValid(C.endpoint)||!navigator.onLine)return;
  const now=Date.now(),pending=queueRead();queueWrite(pending);const batch=pending.filter(e=>e._attempts<3&&now-e._lastAttempt>300000).slice(0,25);if(!batch.length)return;flushBusy=true;
  const ids=new Set(batch.map(e=>e.id));queueWrite(queueRead().map(e=>ids.has(e.id)?{...e,_attempts:e._attempts+1,_lastAttempt:now}:e));
  try{await fetch(C.endpoint,{method:'POST',mode:'no-cors',credentials:'omit',headers:{'Content-Type':'text/plain;charset=UTF-8'},body:JSON.stringify({schema:1,events:batch.map(core.cleanEvent)}),keepalive:true,redirect:'follow'});
@@ -45,7 +53,7 @@ async function flush(){
  }catch(_){message=t('تعذّر الاتصال؛ تبقى البيانات محلية وتُعاد المحاولة لاحقًا.','Connection failed; data stays local for a later retry.');}finally{flushBusy=false;render();}
 }
 function flushOnExit(){
- if(testMode||core.preference()!=='shared'||!core.endpointValid(C.endpoint)||navigator.onLine===false)return;
+ if(isSignLesson()||testMode||core.preference()!=='shared'||!core.endpointValid(C.endpoint)||navigator.onLine===false)return;
  const now=Date.now(),batch=queueRead().filter(e=>e._attempts<3&&now-e._lastAttempt>300000).slice(0,25);if(!batch.length)return;
  const ids=new Set(batch.map(e=>e.id));queueWrite(queueRead().map(e=>ids.has(e.id)?{...e,_attempts:e._attempts+1,_lastAttempt:now}:e));
  const body=JSON.stringify({schema:1,events:batch.map(core.cleanEvent)});
@@ -57,6 +65,7 @@ function flushOnExit(){
 function setMode(mode){if(mode===core.preference()&&preferenceChoice()!==null)return true;if(mode==='shared'&&!core.endpointValid(C.endpoint))return false;if(!core.setPreference(mode))return false;later=false;try{sessionStorage.removeItem(laterKey);}catch(_){}if(mode!=='shared')queueWrite([]);if(mode==='off'){memorySession=null;try{sessionStorage.removeItem(sessionKey);}catch(_){}}lastView='';view();render();flush();return true;}
 function itemId(el){return String(el.dataset.metricsItem||el.dataset.resourceId||el.dataset.saveId||el.dataset.id||el.id||'').replace(/[^A-Za-z0-9_./:#-]/g,'').slice(0,120);}
 const onClick=e=>{
+ if(isSignLesson())return;
  const el=e.target.closest?.('a,button,[data-route],[data-panel],[data-guide]');if(!el||el.closest('[data-portal-metrics-widget]'))return;
  if(el.dataset.metricsEvent){record(el.dataset.metricsEvent,itemId(el));return;}
  const href=el.getAttribute('href');if(href){try{const u=new URL(href,location.href);if(!['http:','https:'].includes(u.protocol))return;if(u.origin===base.origin&&u.pathname.startsWith(base.pathname+'portal-metrics/'))return;
@@ -73,7 +82,7 @@ const style=document.createElement('style');style.textContent='.portal-metrics-w
 style.textContent+=' .portal-metrics-consent{margin:12px auto;padding:14px 16px;border:2px solid #8aa998;background:#f1f6f3}.portal-metrics-consent[hidden]{display:none!important}.portal-metrics-consent h2{font:inherit!important;font-weight:700!important;font-size:17px!important;margin:0 0 6px!important}.portal-metrics-consent .pm-actions{gap:4px}.portal-metrics-consent button{min-height:44px}.portal-metrics-consent .pm-share{background:#174b3b;color:white}@media(max-width:600px){.portal-metrics-consent{margin:8px;padding:12px}.portal-metrics-consent .pm-actions button{flex:1 1 145px;margin:2px}}';
 let widget=null,consent=null,widgetLanguage=null;
 function renderConsent(){
- if(!consent)return;const show=!testMode&&!later&&preferenceChoice()===null;consent.hidden=!show;if(!show)return;consent.replaceChildren();consent.dir=ar()?'rtl':'ltr';
+ if(!consent)return;const show=!isSignLesson()&&!testMode&&!later&&preferenceChoice()===null;consent.hidden=!show;if(!show)return;consent.replaceChildren();consent.dir=ar()?'rtl':'ltr';
  const heading=document.createElement('h2');heading.id='pm-consent-heading';heading.textContent=t('إحصاءات الاستخدام: القرار لك','Optional usage statistics');consent.append(heading);
  const explanation=document.createElement('p');explanation.textContent=t('قياس اختياري دون أسماء أو إجابات تعليمية. المشاركة ترسل نوع التفاعل ومعرّف المحتوى والوقت؛ خيار الجهاز يبقيها محلية. يمكنك الإيقاف في أي وقت من إعدادات القياس أسفل الصفحة.','Optional measurement without names or learning answers. Sharing sends interaction type, content identifier and time; the device option keeps them local. You can stop at any time using the measurement settings below.');consent.append(explanation);
  const actions=document.createElement('div');actions.className='pm-actions';consent.append(actions);
@@ -85,7 +94,7 @@ function renderConsent(){
  add(t('إبقاء القياس متوقفًا','Keep measurement off'),()=>choose('off'));
  if(message){const status=document.createElement('p');status.textContent=message;status.setAttribute('role','status');consent.append(status);}
 }
-function render(){widgetLanguage=document.documentElement.lang;renderConsent();if(!widget)return;const open=widget.open;widget.replaceChildren();widget.open=open;const summary=document.createElement('summary');summary.textContent=t('قياس الاستخدام والاستفادة · اختياري','Usage and usefulness measurement · optional');widget.append(summary);
+function render(){widgetLanguage=document.documentElement.lang;renderConsent();if(!widget)return;widget.hidden=isSignLesson();if(widget.hidden)return;const open=widget.open;widget.replaceChildren();widget.open=open;const summary=document.createElement('summary');summary.textContent=t('قياس الاستخدام والاستفادة · اختياري','Usage and usefulness measurement · optional');widget.append(summary);
  const add=(tag,txt,cls)=>{const x=document.createElement(tag);x.textContent=txt;if(cls)x.className=cls;widget.append(x);return x;};
  const mode=core.preference();add('p',t('نسجّل نوع التفاعل والقسم ومعرّف المحتوى والوقت واللغة، مع رمز جلسة عشوائي مؤقت، دون أسماء أو أسئلة أو إجابات. يبدأ القياس باختيارك، ويمكن إيقافه في أي وقت.','We record interaction type, section, content identifier, time and language, with a temporary random session token, without names, questions or answers. Measurement starts when you choose and can be stopped at any time.'));
  add('p',t(mode==='off'?'الحالة: القياس متوقف.':mode==='local'?'الحالة: القياس على هذا الجهاز فقط.':'الحالة: مشاركة اختيارية بإحصاءات مجهولة؛ الاستلام يخضع للاتصال.',mode==='off'?'Status: measurement is off.':mode==='local'?'Status: this device only.':'Status: optional anonymous sharing; delivery depends on connectivity.'),'pm-status');
