@@ -11,11 +11,11 @@ const SignKidsCommunityArt = (() => {
   // PDF viewer page numbers, one greater than the printed page numbers.
   const items = [
     card('near', 'place', 231, 'قريب', 'Near',
-      'أبقِ يسراك قرب صدرك، واجعل اليمنى مفتوحة والأصابع إلى أعلى. مدّ اليمنى قليلًا إلى الأمام.',
-      'Keep your left hand by your chest. Hold your right hand open with the fingers up, and move it a short way forward.'),
+      'ثبّت قبضتك اليسرى قرب صدرك. اجعل يدك اليمنى على جانبها، بالإبهام إلى أعلى والأصابع الأربعة متقاربة. حرّك اليمنى قليلًا إلى الأمام.',
+      'Keep your left fist still near your chest. Hold your right hand on its side with the thumb up and the four fingers together. Move it a short way forward.'),
     card('far', 'place', 231, 'بعيد', 'Far',
-      'أبقِ يسراك قرب صدرك. مدّ ذراعك اليمنى مسافة أطول إلى الأمام والكف مفتوحة والأصابع إلى أعلى.',
-      'Keep your left hand by your chest. Extend your right arm further forward with the hand open and the fingers up.'),
+      'ثبّت قبضتك اليسرى قرب صدرك. اجعل يدك اليمنى على جانبها، بالإبهام إلى أعلى والأصابع الأربعة متقاربة. مدّ اليمنى إلى الأمام مسافة أطول من إشارة «قريب».',
+      'Keep your left fist still near your chest. Hold your right hand on its side with the thumb up and the four fingers together. Reach farther forward than for “Near”.'),
     card('above', 'place', 232, 'فوق', 'Above',
       'اجعل راحتي يديك للأسفل. ثبّت اليسرى أمامك، وضع اليمنى أعلى منها مع ترك مسافة بينهما.',
       'Face both palms down. Hold your left hand steady in front of you and place the right one above it, leaving a gap.'),
@@ -26,8 +26,8 @@ const SignKidsCommunityArt = (() => {
       'اجعل أصابع اليدين تتدلّى إلى الأسفل. ثبّت يسراك، وقرّب اليمنى منها من الجانب.',
       'Let the fingers of both hands point down. Keep your left hand still and move your right hand in beside it.'),
     card('around', 'place', 233, 'حول', 'Around',
-      'ثبّت سبّابة اليسرى متجهة إلى أعلى. أشِر بسبّابة اليمنى إلى أسفل وحرّكها في دائرة حول سبّابة اليسرى.',
-      'Hold your left index finger pointing up. Point your right index finger down and circle it around the left index finger.'),
+      'اثنِ أصابع يسراك وارفع إبهامها. أبقِ اليسرى ثابتة عند علامة ⊗. وجّه سبّابة اليمنى إلى أسفل وحرّكها في دائرة حول الإبهام الأيسر.',
+      'Curl the fingers of your left hand and point its thumb up. Keep the left hand still at the ⊗ mark. Point your right index finger down and circle it around your left thumb.'),
     card('today', 'time', 179, 'اليوم', 'Today',
       'مدّ إبهام اليمنى وخنصرها، واثنِ الأصابع الثلاثة الباقية، ثم حرّك اليد إلى الأسفل.',
       'Extend the thumb and little finger of your right hand, fold the three middle fingers, then lower the hand.'),
@@ -89,7 +89,7 @@ const SignKidsCommunityArt = (() => {
   const poses = {
     point: ['M-8 3l-3-14q-2-10 2-15l4-6 2-22q1-5 5-5 4 0 4 5l-1 23q7-3 9 4 7-2 9 5 6 0 6 7 0 10-8 14l-6 5z', 'M7-28l3 7m5-4 3 8m5-3 1 6'],
     flat: ['M-9 3l-2-17-4-16q-1-5 3-6 3-1 5 3l2 9-2-25q0-5 4-5t4 4l1 21 1-23q0-4 4-4 4 0 4 4l-1 22 3-22q1-5 5-4 4 1 3 6l-2 21 3-13q1-5 5-4 4 1 3 6l-4 23q-2 12-11 16l-5 7z', 'M1-30l1 8m8-8v8m9-8-1 9'],
-    edge: ['M-8 4l-4-18q-2-10 2-20l4-17q2-5 6-5 5 0 4 7l1-1q5-7 9-3 3 2 0 8l-1 3q5-2 8 1 4 3 0 9l-4 7q5-1 7 2 3 4-2 9l-8 7-6 5-2 6z', 'M3-47l-4 12m13-13-5 13m10-6-4 11m-15 9q7-8 13-9 4 5-1 10l-7 5'],
+    thumbUpEdge: ['M5 8q-10 2-17 0l-16-5q-6-2-5-7 0-3 5-3l-5-3q-6-3-4-8 1-3 6-2l-3-4q-3-4 1-7 3-2 8 0l-1-2q-2-4 2-6 3-2 8 1l6 3-3-11q-2-8 4-10 6-1 9 7l5 14q9 5 11 13 3 12-3 22L9 8Z', 'M-27-7q9 3 18 1m-22-14q9 5 20 4m-14-15q7 5 15 6m10-10q4 6 4 12'],
     fist: ['M-8 6l-4-17q-2-11 4-17l7-6q6-4 10 1 5-3 9 1 5-2 9 3 5 0 6 7 1 13-8 20l-7 8z', 'M-1-27q6 1 8 6m3-10 4 9m5-8 4 9m-27 3q7 6 14 3'],
     thumb: ['M-9 6l-3-16q-3-11 2-19 4-6 9-5 4-4 9-1 5-3 10 1l4-15q2-6 7-4 5 2 4 8l-3 22q-2 14-12 22l-3 7z', 'M-3-28l1 7m9-9 2 8m8-8 2 8m-26 4q7 4 14 3'],
     shaka: ['M-7 6l-7-16-10-14-5-12q-2-6 3-8 5-2 8 4l6 12 7-8q4-4 9 0 5-4 10 0 5-2 9 4l9-12q4-5 8-2 4 3 1 8l-9 20-14 17-2 6z', 'M-8-26q2 4 7 6m3-13q1 6 5 10m7-10q1 5 5 9m-25 6q8 8 17 10'],
@@ -124,7 +124,7 @@ const SignKidsCommunityArt = (() => {
     const wrist = far ? 72 : 122;
     const start = far ? 151 : 156;
     return `${body(209)}${face(201, 'side')}${sleeve('184 139', far ? '147 162' : '153 180', `${wrist} 151`)}
-      ${hand('edge', wrist, 151, -7, false, .72)}${sleeve('228 140', '243 183', '189 157')}${hand('fist', 190, 157, -65, true, .68)}
+      ${hand('thumbUpEdge', wrist, 151, -7, false, .83)}${sleeve('228 140', '243 183', '189 157')}${hand('fist', 190, 157, -65, true, .68)}
       ${stationary(194, 170)}${move(`M${start} 139 H${wrist + 13}`, wrist + 13, 139, 180)}`;
   }
 
@@ -146,7 +146,7 @@ const SignKidsCommunityArt = (() => {
 
   function around() {
     return `${body(153)}${face(153)}${sleeve('115 139', '94 138', '111 129')}${hand('point', 110, 128, 162, false, .77)}
-      ${sleeve('187 143', '208 192', '170 187')}${hand('point', 170, 184, -8, true, .66)}${stationary(173, 193)}
+      ${sleeve('187 143', '208 192', '170 187')}${hand('thumb', 170, 184, -8, true, .72)}${stationary(173, 193)}
       ${move('M179 144c39 6 37 36-3 39-44 5-55-22-33-37h11', 154, 146, 0)}`;
   }
 
