@@ -142,7 +142,7 @@ window.TOBRUK_COURSE_REFERENCES = {
             "ministry"
           ],
           "isbn": "9780367148683",
-          "url": "https://www.routledge.com/The-Good-Grammar-Guide/Palmer/p/book/9780367148683",
+          "url": "https://www.routledge.com/Essential-Grammar-for-Todays-Writers-Students-and-Teachers/Sullivan/p/book/9780429053672",
           "links": [
             {
               "url": "https://api.pageplace.de/preview/DT0400.9780429624759_A39256731/preview-9780429624759_A39256731.pdf",
@@ -2191,7 +2191,7 @@ window.TOBRUK_COURSE_REFERENCES = {
             "ministry"
           ],
           "isbn": "9780367148683",
-          "url": "https://www.routledge.com/The-Good-Grammar-Guide/Palmer/p/book/9780367148683",
+          "url": "https://www.routledge.com/Essential-Grammar-for-Todays-Writers-Students-and-Teachers/Sullivan/p/book/9780429053672",
           "links": [
             {
               "url": "https://api.pageplace.de/preview/DT0400.9780429624759_A39256731/preview-9780429624759_A39256731.pdf",

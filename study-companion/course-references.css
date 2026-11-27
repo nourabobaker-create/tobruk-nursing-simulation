@@ -75,3 +75,30 @@
   display: inline-block;
   margin-block-start: 8px;
 }
+
+.course-guide-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-block: 0 16px;
+}
+
+.course-guide-actions a {
+  padding: 8px 14px;
+  border: 1px solid #b9d1c4;
+  border-radius: 10px;
+  background: #fff;
+  color: #174b3b;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.course-guide-actions a:first-child {
+  background: #174b3b;
+  color: #fff;
+}
+
+.course-guide-actions a:focus-visible {
+  outline: 2px solid #987021;
+  outline-offset: 2px;
+}

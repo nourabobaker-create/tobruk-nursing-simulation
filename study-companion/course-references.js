@@ -2,9 +2,11 @@
   'use strict';
 
   const base = new URL('../e-library-v3/', document.currentScript.src);
+  const guideBase = new URL('guides/', document.currentScript.src);
   const courses = new Map((window.TOBRUK_COURSE_REFERENCES?.courses ?? []).map(course => [course.id, course]));
   const labels = {
     ar: {
+      guide: 'اقرأ دليل المقرر', pdf: 'تحميل الدليل PDF',
       title: 'مراجع المقرر', library: 'مراجع هذا المقرر في المكتبة الرقمية',
       missing: 'قائمة المراجع غير متاحة حاليًا.', noLink: 'رابط مطابق غير مؤكد',
       provenance: 'تبيّن عناوين الأقسام مصدر كل مرجع، وتبيّن الروابط طريقة إتاحته.',
@@ -13,6 +15,7 @@
       access: { open: 'متاح مجانًا', paid: 'يتطلب شراءً أو اشتراكًا', institutional: 'الوصول عبر المؤسسة', preview: 'معاينة', unknown: 'الإتاحة غير مؤكدة' },
     },
     en: {
+      guide: 'Read course guide (Arabic)', pdf: 'Download guide PDF (Arabic)',
       title: 'Course references', library: 'View references for this course in the digital library',
       missing: 'The reference list is currently unavailable.', noLink: 'Matching link unconfirmed',
       provenance: 'Section headings identify where each reference was listed. Links show how it can be accessed.',
@@ -87,6 +90,22 @@
     return row;
   }
 
+  function guideActions(id, lang) {
+    const wording = labels[lang];
+    const nav = element('nav', '', 'course-guide-actions');
+    nav.setAttribute('aria-label', wording.guide);
+    for (const [suffix, label] of [['html', wording.guide], ['pdf', wording.pdf]]) {
+      const link = element('a', label);
+      link.href = new URL(encodeURIComponent(id) + '.' + suffix, guideBase).href;
+      link.hreflang = 'ar';
+      link.dataset.metricsEvent = 'resource_open';
+      link.dataset.metricsItem = 'course-guide/' + id + '/' + suffix;
+      if (suffix === 'pdf') link.download = id + '.pdf';
+      nav.append(link);
+    }
+    return nav;
+  }
+
   function panelFor(id, lang) {
     const course = courses.get(id);
     const wording = labels[lang];
@@ -127,7 +146,7 @@
   }
 
   const standalone = document.querySelector('#english2-course-references');
-  let current, glossary;
+  let current, glossary, guide;
   function mount() {
     const staticCourse = document.querySelector('.course.active');
     const host = standalone || staticCourse?.querySelector('.courseBody') || document.querySelector('#courseView.active #courseContent .courseBody');
@@ -137,6 +156,7 @@
     const wasOpen = current?.dataset.courseReferences === id && current.open;
     current?.remove();
     glossary?.remove();
+    guide?.remove();
     if (!host || !id) return;
 
     current = panelFor(id, lang);
@@ -145,6 +165,10 @@
     if (navigation) navigation.after(current);
     else host.prepend(current);
     const course = courses.get(id);
+    if (course) {
+      guide = guideActions(id, lang);
+      host.prepend(guide);
+    }
     if (course && window.CourseGlossary) {
       glossary = window.CourseGlossary.panel(course, lang);
       current.before(glossary);

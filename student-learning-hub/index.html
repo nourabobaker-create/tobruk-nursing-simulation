@@ -812,9 +812,12 @@ function renderCourseCatalog(){
       <span>${ects} ECTS</span>
       ${Number.isInteger(passMark)?`<span>${lang==="en"?"Reference pass mark":"حد النجاح المرجعي"} <bdi>${passMark}/100</bdi></span>`:""}
      </div>
+     ${assessment?`<p class="courseCatalogNote"><strong>${lang==="en"?"Check with your course instructor to confirm the grading breakdown and assessment dates for this semester.":"راجِع أستاذ المادة للتأكّد من توزيع الدرجات المعتمد لهذا الفصل ومواعيد التقييم."}</strong></p>`:""}
      ${instructorWeights?`<p class="courseCatalogNote"><strong>${assessment.suggestedLabel[lang]}</strong> · ${lang==="en"?"Formal approval unconfirmed":"بانتظار تأكيد الاعتماد"}<br>${instructorWeights.map(({label,weight})=>`${label[lang]} <bdi>${weight}%</bdi>`).join(" · ")}<br>${assessment.note[lang]}</p>`:""}
      <div class="actions">
       <a class="btn primary" href="../study-companion/${studyLink}">${lang==="en"?"Open course + Study Companion":"افتح المقرر ورفيق الدراسة"}</a>
+      <a class="btn soft" hreflang="ar" data-metrics-event="resource_open" data-metrics-item="course-guide/${courseId}/html" href="../study-companion/guides/${encodeURIComponent(courseId)}.html">${lang==="en"?"Read course guide (Arabic)":"اقرأ دليل المقرر"}</a>
+      <a class="btn soft" hreflang="ar" download="${courseId}.pdf" data-metrics-event="resource_open" data-metrics-item="course-guide/${courseId}/pdf" href="../study-companion/guides/${encodeURIComponent(courseId)}.pdf">${lang==="en"?"Download guide PDF (Arabic)":"تحميل الدليل PDF"}</a>
       <a class="btn soft" href="../course-language/?lang=${lang}#${encodeURIComponent(courseId)}">${lang==="en"?"Course glossary":"مصطلحات المقرر"}</a>
       <a class="btn soft" href="../e-library-v3/#course-references/${encodeURIComponent(courseId)}">${lang==="en"?"Course references":"مراجع المقرر"}</a>
       ${assessment?`<a class="btn soft" href="../study-companion/${assessmentLink}">${lang==="en"?"Assessment weights":"أوزان التقييم"}</a>`:""}

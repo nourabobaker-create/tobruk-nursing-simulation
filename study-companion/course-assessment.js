@@ -10,7 +10,7 @@
       suggested: 'توزيع قيد المراجعة', guide: 'نموذج دليل الوزارة', pending: 'قيد المراجعة',
       approval: 'بانتظار تأكيد الاعتماد',
       missing: 'أوزان هذا المقرر غير متاحة حاليًا.',
-      notice: 'تُطبّق الأوزان المعتمدة التي أعلنها أستاذ المقرر للطلبة.',
+      notice: 'راجِع أستاذ المادة للتأكّد من توزيع الدرجات المعتمد لهذا الفصل ومواعيد التقييم.',
       ministry: 'دليل كليات التمريض · المادة 21',
     },
     en: {
@@ -18,7 +18,7 @@
       suggested: 'Distribution under review', guide: 'Ministry guide model', pending: 'Under review',
       approval: 'Formal approval unconfirmed',
       missing: 'Assessment weights for this course are currently unavailable.',
-      notice: 'Use the approved weights announced to students by the course instructor.',
+      notice: 'Check with your course instructor to confirm the grading breakdown and assessment dates for this semester.',
       ministry: 'Nursing Faculties Guide · Article 21',
     },
   };
@@ -60,7 +60,9 @@
     card.dir = lang === 'ar' ? 'rtl' : 'ltr';
     const title = element('h3', '', words.title);
     title.tabIndex = -1;
-    card.append(title);
+    const guidance = element('p', 'course-assessment-note');
+    guidance.append(element('strong', '', words.notice));
+    card.append(title, guidance);
     if (!course) {
       card.append(element('p', 'course-assessment-note', words.missing));
       container.replaceChildren(card);
@@ -94,15 +96,15 @@
       details.append(element('summary', '', words.guide), guide);
       card.append(details);
     }
-    const notice = element('p', 'course-assessment-note', words.notice);
     if (data.ministryUrl?.startsWith('https://')) {
       const source = element('a', '', words.ministry);
       source.href = data.ministryUrl;
       source.target = '_blank';
       source.rel = 'noopener noreferrer';
-      notice.append(' ', source);
+      const sourceNote = element('p', 'course-assessment-note');
+      sourceNote.append(source);
+      card.append(sourceNote);
     }
-    card.append(notice);
     container.replaceChildren(card);
   }
 
