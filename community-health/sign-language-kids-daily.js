@@ -60,6 +60,12 @@ const SignKidsDailyArt = (() => {
       ${ends.map(([x, y, angle]) => `<path d="M0 0l-9-5v10z" transform="translate(${x} ${y}) rotate(${angle})" fill="${palette.arrow}"/>`).join('')}`;
   }
 
+  function stationary(x, y) {
+    return `<g transform="translate(${x} ${y})" stroke="${palette.outline}" stroke-width="2">
+      <circle r="8" fill="#f4effd"/><path d="m-3.5-3.5 7 7m0-7-7 7"/>
+    </g>`;
+  }
+
   const drawings = {
     happy: () => `${person(150, 'front', 'happy')}
       ${arms('106 144', '78 193', '98 166')}${arms('194 144', '223 193', '202 166')}
@@ -70,7 +76,7 @@ const SignKidsDailyArt = (() => {
     afraid: () => `${person(150, 'front', 'afraid')}
       ${arms('105 148', '77 151', '103 156')}${arms('195 151', '202 198', '157 190')}
       ${hand('flat', 159, 190, 179, true, true)}${hand('pair', 103, 151, 72)}
-      ${arrow('M133 155h18m-13 11h-15', [[151,155,0],[123,166,180]])}`,
+      ${arrow('M133 155h18m-13 11h-15', [[151,155,0],[123,166,180]])}${stationary(168, 196)}`,
     tired: () => `${person(172, 'left')}
       ${arms('208 143', '214 204', '103 186')}${hand('fist', 105, 189, 178, true)}
       ${arms('123 145', '94 173', '96 161')}${hand('fist', 98, 158, -68)}
@@ -82,7 +88,8 @@ const SignKidsDailyArt = (() => {
       ${arrow('M145 78l4 27', [[145,78,-99],[149,105,81]])}`,
     open: () => `${person()}${arms('108 145', '106 196', '73 173')}${arms('192 145', '194 196', '227 173')}
       ${hand('flat', 74, 171, 195, true, true)}${hand('flat', 226, 171, -15, false, true)}
-      ${arrow('M142 182q-24 12-48-3m64 3q24 12 48-3', [[94,179,-148],[206,179,-32]])}`,
+      ${arrow('M142 182q-24 12-48-3m64 3q24 12 48-3', [[94,179,-148],[206,179,-32]])}
+      <circle cx="142" cy="182" r="3.6" fill="${palette.arrow}"/><circle cx="158" cy="182" r="3.6" fill="${palette.arrow}"/>`,
     close: () => `${person()}${arms('107 144', '89 170', '109 177')}${arms('193 144', '211 170', '191 177')}
       ${hand('flat', 109, 177, 0)}${hand('flat', 191, 177, 180, true)}`,
     help: () => `${person(196, 'left')}${arms('215 152', '191 202', '122 188')}${hand('flat', 122, 188, 187, true, true)}
@@ -94,7 +101,8 @@ const SignKidsDailyArt = (() => {
       ${hand('point', 92, 116, -43)}${arrow('M99 104a17 17 0 1 1 16 15', [[115,119,173]])}`,
     football: () => `${person()}${arms('105 145', '96 156', '118 197')}${hand('fist', 118, 194, -27)}
       ${arms('195 145', '205 155', '167 170')}${hand('flat', 167, 170, 177)}
-      ${arrow('M99 204q27 16 47-11', [[146,193,-55]])}`,
+      ${arrow('M99 204q27 16 47-11', [[146,193,-55]])}
+      <circle cx="99" cy="204" r="3.6" fill="${palette.arrow}"/>${stationary(184, 174)}`,
     basketball: () => `${person(176, 'left', 'neutral', 90)}
       ${arms('213 145', '191 199', '126 183')}${hand('cupped', 126, 183, 172, true, true)}
       ${arms('134 145', '112 80', '100 61')}${hand('cupped', 100, 61, 183, false)}
@@ -106,16 +114,16 @@ const SignKidsDailyArt = (() => {
   const entries = [
     ['happy', 'feelings', 'سعيد', 'Happy', 95, 'قرّب يديك المفتوحتين من صدرك وباعِد بين أصابعك. حرّك اليدين إلى الجانبين كما في السهمين.', 'Hold both open hands near your chest with the fingers spread. Move your hands out to the sides as shown.'],
     ['sad', 'feelings', 'حزين', 'Sad', 95, 'قرّب سبابة اليد اليمنى من جانب أنفك. حرّكها قليلًا إلى أسفل وبعيدًا عن الأنف.', 'Bring your right index finger beside your nose. Move it a little down and away.'],
-    ['afraid', 'feelings', 'خائف', 'Afraid', 95, 'ثبّت كفّك اليسرى مفتوحة إلى أعلى. ضع السبابة والوسطى اليمنيين نحو الكف، وحرّكهما بحركة قصيرة ذهابًا وإيابًا.', 'Hold your left palm steady, facing up. Point your right index and middle fingers down to it and make a small shaking motion.'],
+    ['afraid', 'feelings', 'خائف', 'Afraid', 95, 'ثبّت يدك اليسرى عند علامة ⊗، وراحتها إلى أعلى. وجّه السبابة والوسطى اليمنيين إلى الكف، وحرّكهما قليلًا ذهابًا وإيابًا.', 'Keep your left hand still at the ⊗ mark, palm up. Point your right index and middle fingers down towards it and move them a little back and forth.'],
     ['tired', 'feelings', 'تعبان', 'Tired', 98, 'ضع ساعدك الأيسر أمامك. اجعل يدك اليمنى فوقه على شكل قبضة خفيفة، واتبع السهم المتموّج نحو جسمك.', 'Hold your left forearm across your body. Place your loosely closed right hand above it. Follow the wavy arrow towards your body.'],
     ['hear', 'actions', 'يسمع', 'Hear', 219, 'قرّب يدك اليمنى المفتوحة والمقوّسة قليلًا من أذنك اليمنى. دع الأصابع تشير لأعلى.', 'Cup your open right hand beside your right ear, with the fingers pointing up.'],
     ['wake', 'actions', 'يستيقظ', 'Wake up', 219, 'اجعل السبابة والإبهام في يدك اليمنى على شكل قوس صغير قرب طرف العين. لاحظ الحركة القصيرة أعلى وأسفل في الرسم.', 'Make a small C with your right thumb and index finger beside the outer corner of your eye. Follow the short up-and-down cue.'],
-    ['open', 'actions', 'يفتح', 'Open', 220, 'افتح كفّيك نحو من أمامك، ثم ابعد اليدين عن بعضهما في قوسين صغيرين.', 'Face both open palms forward and move your hands apart in two small arcs.'],
+    ['open', 'actions', 'يفتح', 'Open', 220, 'ابدأ ويداك متقاربتان عند النقطتين، وراحتاهما نحو من أمامك. باعد بين يديك باتّباع السهمين المقوّسين.', 'Start with your hands close together at the two dots, palms facing forward. Follow the curved arrows to move your hands apart.'],
     ['close', 'actions', 'يغلق', 'Close', 220, 'ضع يديك أفقيّتين أمام الصدر بحيث تتلاقى أطراف الأصابع في الوسط، ويظهر ظهر اليدين.', 'Hold your hands horizontally in front of your chest. Bring the fingertips together at the middle, with the backs of your hands showing.'],
     ['help', 'actions', 'يساعد', 'Help', 222, 'افتح يدك اليسرى والكفّ إلى أعلى. ضع يدك اليمنى فوقها والكفّ إلى أسفل، ثم ادفعهما معًا قليلًا نحو الأمام.', 'Hold your left palm facing up. Place your right hand on top, palm down, then move both hands a little forward.'],
     ['silent', 'actions', 'يسكت', 'Be quiet', 219, 'ارفع سبابة اليد اليمنى عموديًّا أمام شفتيك مع ثني باقي الأصابع.', 'Hold your right index finger upright in front of your lips. Curl the other fingers.'],
     ['think', 'actions', 'يفكّر', 'Think', 222, 'قرّب سبابة اليد اليمنى من جانب رأسك. حرّكها في دائرة صغيرة باتجاه السهم.', 'Bring your right index finger beside your temple. Move it in a small circle in the arrow’s direction.'],
-    ['football', 'play', 'كرة القدم', 'Football', 151, 'ثبّت يدك اليسرى مفتوحة وأفقية أمام جسمك. حرّك يدك اليمنى المنحنية من أسفلها في القوس المبيّن.', 'Keep your left hand open and flat in front of your body. Curve your bent right hand up underneath it as shown.'],
+    ['football', 'play', 'كرة القدم', 'Football', 151, 'ثبّت يدك اليسرى مفتوحة وأفقية عند علامة ⊗. حرّك يدك اليمنى المنحنية من النقطة في اتجاه السهم المقوّس، أسفل اليسرى.', 'Keep your left hand open and flat at the ⊗ mark. Move your bent right hand from the dot along the curved arrow beneath the left hand.'],
     ['basketball', 'play', 'كرة السلة', 'Basketball', 151, 'اترك يدك اليسرى مفتوحة قرب الخصر وارفع اليمنى فوق رأسك. اثنِ رسغ اليمنى واتبع القوس القصير نحو الأمام.', 'Keep your left hand open near your waist. Raise your right hand above your head, bend the wrist, and follow the short forward arc.'],
     ['sports-field', 'play', 'ملعب', 'Sports field', 153, 'ارفع مرفقيك إلى الجانبين. وجّه اليدين إلى أسفل واجعل السبابتين تشير كلّ منهما إلى الأرض.', 'Hold your elbows out at the sides. Bend both wrists so the index fingers point down.'],
   ];

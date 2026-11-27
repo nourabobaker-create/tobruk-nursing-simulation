@@ -84,6 +84,8 @@ const SignLanguageLessons = (() => {
       compareCorrect: 'أحسنت! في إشارة 7 يرى زميلك راحة يدك، وفي إشارة 2 يرى ظهرها.',
       placesPracticeTitle: 'لعبتان ومسافتان',
       placesPractice: 'ضع لعبة بجانبك وأخرى أبعد. اختَر بطاقة «قريب» للأولى وبطاقة «بعيد» للثانية، وقارن طول السهم في الرسمين. بدّل موضعي اللعبتين وجرّب من جديد.',
+      dailyPracticeTitle: 'صندوق الألعاب',
+      dailyPractice: 'تخيّل صندوق ألعاب مغلقًا. أي بطاقة تختار لتفتحه؟ وبعد وضع اللعبة داخله، أي بطاقة تختار؟ راجع «يفتح» و«يغلق» في المجموعة الثانية. أشر بإصبعك إلى نقطتي البداية في «يفتح»، وإلى مكان التقاء الأصابع في «يغلق».',
       simIntro: 'اختر صورة الإشارة التي تناسب الموقف. يمكنك المحاولة أكثر من مرة.', step: 'الموقف', choose: 'اختر الإشارة رقم', correct: 'أحسنت! الإشارة هي', retry: 'حاول مرة أخرى. انظر إلى موضع اليد.', nextScene: 'الموقف التالي', finish: 'أنهِ اللعبة',
       done: 'أكملت يومًا مع الأصدقاء!', doneText: 'اختر إشارة أعجبتك وجرّبها مع شخص تحبّه.', replay: 'أعد المحاكاة',
     },
@@ -101,6 +103,8 @@ const SignLanguageLessons = (() => {
       compareCorrect: 'Well done! For 7, your partner sees your palm. For 2, they see the back of your hand.',
       placesPracticeTitle: 'Two toys, two distances',
       placesPractice: 'Put one toy beside you and another farther away. Choose the “Near” card for the first and the “Far” card for the second. Compare the lengths of the arrows. Swap the toys and try again.',
+      dailyPracticeTitle: 'The toy box',
+      dailyPractice: 'Imagine a closed toy box. Which card would you choose to open it? Which card would you choose after putting the toy inside? Check “Open” and “Close” in Set 2. Point to the two starting dots for “Open” and where the fingertips meet for “Close”.',
       simIntro: 'Choose the picture that fits the situation. You can try again.', step: 'Scene', choose: 'Choose sign', correct: 'Great work! The sign is', retry: 'Try again. Look at the position of the hand.', nextScene: 'Next scene', finish: 'Finish',
       done: 'You spent a day with friends!', doneText: 'Choose a sign you liked and try it with someone you know.', replay: 'Play again',
     },
@@ -236,6 +240,7 @@ const SignLanguageLessons = (() => {
   function lesson(unit, english, text) {
     const language = english ? 1 : 0;
     const after = unit.kind === 'words' ? vocabulary[vocabulary.indexOf(unit) + 1] : units[units.indexOf(unit) + 1];
+    const practice = { places: [text.placesPracticeTitle, text.placesPractice], daily: [text.dailyPracticeTitle, text.dailyPractice] }[unit.id];
     return `${unit.kind === 'words' ? wordNav(unit, language, text) : ''}<section class="sign-kids-stage" id="signKidsStage" aria-labelledby="signKidsLessonHeading">
       <h2 id="signKidsLessonHeading">${unit.titles[language]}</h2><p class="sign-kids-instruction">${unit.lead[language]}</p>
       ${unit.items.length > deckSize(unit) ? `<div class="sign-kids-decks" id="signKidsDecks">${deckButtons(unit, 0, text)}</div>` : ''}
@@ -248,7 +253,7 @@ const SignLanguageLessons = (() => {
       </div>
       ${unit.id === 'alphabet' ? spelling(text) : ''}
       ${unit.id === 'numbers' ? numberContrast(english, text) : ''}
-      ${unit.id === 'places' ? `<details class="sign-kids-note"><summary>${text.placesPracticeTitle}</summary><p>${text.placesPractice}</p></details>` : ''}
+      ${practice ? `<details class="sign-kids-note"><summary>${practice[0]}</summary><p>${practice[1]}</p></details>` : ''}
       <div class="sign-kids-actions">${after ? `<a href="#sign-language=${after.id}">${text.nextLesson} · ${after.titles[language]}</a>` : ''}<a href="#sign-language=game">${text.playNow}</a></div>
     </section>`;
   }
