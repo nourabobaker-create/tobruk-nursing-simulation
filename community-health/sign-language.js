@@ -68,6 +68,10 @@ const SignLanguageLessons = (() => {
   const wordCount = vocabulary.reduce((total, unit) => total + unit.items.length, 0);
   const items = [...letters, ...numberCards, ...vocabulary.flatMap(unit => unit.items)];
   const byId = new Map(items.map(item => [item.id, item]));
+  const comparisons = {
+    alphabet: { choices: ['letter-ayn', 'letter-ghayn'], answer: 'letter-ghayn' },
+    numbers: { choices: ['two', 'seven'], answer: 'seven' },
+  };
   const aliases = { everyday: 'family', questions: 'greetings', health: 'conversations' };
   const phrases = {
     ar: {
@@ -78,10 +82,20 @@ const SignLanguageLessons = (() => {
       pages: 'صفحات عارض القاموس في هذا الدرس', set: 'مجموعة', wordGroups: 'اختر مجموعة الكلمات', overview: ['حرفًا', 'رقمًا', 'كلمة'],
       spelling: 'لنتهجَّ كلمة!', spellIntro: 'اختر كلمة أو اكتب كلمة قصيرة من حروف الدرس.', spellLabel: 'كلمة من ثمانية حروف أو أقل', spellButton: 'اعرض الإشارات', spellingError: 'اختر كلمة من 1 إلى 8 حروف من الأبجدية الأساسية.',
       sourceLink: 'القاموس الإشاري الليبي المصوّر', publisherLink: 'صفحة القاموس لدى الناشر', playNow: 'العب الآن', nextLesson: 'الدرس التالي',
-      compareTitle: 'تحدّي الرقمين 2 و7',
-      comparePrompt: 'ترتفع السبابة والوسطى في الرسمين. أيّ رسم يمثّل 7؟',
-      compareRetry: 'جرّب الرسم الآخر. في إشارة 7 يرى زميلك راحة يدك.',
-      compareCorrect: 'أحسنت! في إشارة 7 يرى زميلك راحة يدك، وفي إشارة 2 يرى ظهرها.',
+      compare: {
+        alphabet: {
+          title: 'تحدّي حرفَي العين والغين',
+          prompt: 'تمتد السبابة والوسطى إلى الجانب في الرسمين. أيّ رسم يمثّل حرف الغين؟',
+          retry: 'انظر إلى الإبهام. في الغين يرتفع فوق الإصبعين الممدودين.',
+          correct: 'أحسنت! الإبهام مرفوع في الغين (غ) ومطويّ في العين (ع).',
+        },
+        numbers: {
+          title: 'تحدّي الرقمين 2 و7',
+          prompt: 'ترتفع السبابة والوسطى في الرسمين. أيّ رسم يمثّل 7؟',
+          retry: 'جرّب الرسم الآخر. في إشارة 7 يرى زميلك راحة يدك.',
+          correct: 'أحسنت! في إشارة 7 يرى زميلك راحة يدك، وفي إشارة 2 يرى ظهرها.',
+        },
+      },
       placesPracticeTitle: 'لعبتان ومسافتان',
       placesPractice: 'ضع لعبة بجانبك وأخرى أبعد. اختَر بطاقة «قريب» للأولى وبطاقة «بعيد» للثانية، وقارن طول السهم في الرسمين. بدّل موضعي اللعبتين وجرّب من جديد.',
       dailyPracticeTitle: 'صندوق الألعاب',
@@ -97,10 +111,20 @@ const SignLanguageLessons = (() => {
       pages: 'Dictionary viewer pages for this lesson', set: 'Set', wordGroups: 'Choose a word group', overview: ['letters', 'numbers', 'words'],
       spelling: 'Let’s fingerspell a word!', spellIntro: 'Choose a word or enter a short word using the letters in this lesson.', spellLabel: 'An Arabic word of up to eight letters', spellButton: 'Show the signs', spellingError: 'Choose a word of 1 to 8 letters from the basic Arabic alphabet.',
       sourceLink: 'Illustrated Libyan Sign Language dictionary', publisherLink: 'Dictionary page on the publisher’s website', playNow: 'Play now', nextLesson: 'Next lesson',
-      compareTitle: 'The 2 and 7 challenge',
-      comparePrompt: 'The index and middle fingers are raised in both drawings. Which drawing shows 7?',
-      compareRetry: 'Try the other drawing. For 7, your partner sees your palm.',
-      compareCorrect: 'Well done! For 7, your partner sees your palm. For 2, they see the back of your hand.',
+      compare: {
+        alphabet: {
+          title: 'The Ayn and Ghayn challenge',
+          prompt: 'The index and middle fingers point to the side in both drawings. Which drawing shows Ghayn?',
+          retry: 'Look at the thumb. For Ghayn, it sticks up above the two fingers.',
+          correct: 'Well done! The thumb is raised for Ghayn and folded for Ayn.',
+        },
+        numbers: {
+          title: 'The 2 and 7 challenge',
+          prompt: 'The index and middle fingers are raised in both drawings. Which drawing shows 7?',
+          retry: 'Try the other drawing. For 7, your partner sees your palm.',
+          correct: 'Well done! For 7, your partner sees your palm. For 2, they see the back of your hand.',
+        },
+      },
       placesPracticeTitle: 'Two toys, two distances',
       placesPractice: 'Put one toy beside you and another farther away. Choose the “Near” card for the first and the “Far” card for the second. Compare the lengths of the arrows. Swap the toys and try again.',
       dailyPracticeTitle: 'The toy box',
@@ -223,14 +247,14 @@ const SignLanguageLessons = (() => {
     </details>`;
   }
 
-  function numberContrast(english, text) {
-    return `<details class="sign-kids-note" id="signKidsNumberContrast">
-      <summary>${text.compareTitle}</summary>
-      <p id="signKidsNumberQuestion">${text.comparePrompt}</p>
-      <div class="sign-kids-sim-options" role="group" aria-labelledby="signKidsNumberQuestion">
-        ${['two', 'seven'].map(id => {
+  function contrast(choices, english, text) {
+    return `<details class="sign-kids-note" id="signKidsContrast">
+      <summary>${text.title}</summary>
+      <p id="signKidsContrastQuestion">${text.prompt}</p>
+      <div class="sign-kids-sim-options" role="group" aria-labelledby="signKidsContrastQuestion">
+        ${choices.map(id => {
           const item = byId.get(id);
-          return `<button type="button" data-sign-kids-number="${id}" aria-label="${esc(item.describe[english ? 1 : 0])}"><span aria-hidden="true">${illustration(item)}</span></button>`;
+          return `<button type="button" data-sign-kids-contrast="${id}" aria-label="${esc(item.describe[english ? 1 : 0])}"><span aria-hidden="true">${illustration(item)}</span></button>`;
         }).join('')}
       </div>
       <p class="sign-kids-status" role="status"></p>
@@ -252,7 +276,7 @@ const SignLanguageLessons = (() => {
         <button type="button" id="signKidsBack" disabled>${text.back}</button><button type="button" id="signKidsNext">${text.next}</button>
       </div>
       ${unit.id === 'alphabet' ? spelling(text) : ''}
-      ${unit.id === 'numbers' ? numberContrast(english, text) : ''}
+      ${comparisons[unit.id] ? contrast(comparisons[unit.id].choices, english, text.compare[unit.id]) : ''}
       ${practice ? `<details class="sign-kids-note"><summary>${practice[0]}</summary><p>${practice[1]}</p></details>` : ''}
       <div class="sign-kids-actions">${after ? `<a href="#sign-language=${after.id}">${text.nextLesson} · ${after.titles[language]}</a>` : ''}<a href="#sign-language=game">${text.playNow}</a></div>
     </section>`;
@@ -330,20 +354,20 @@ const SignLanguageLessons = (() => {
     back.addEventListener('click', () => select(current - 1));
     next.addEventListener('click', () => select(current + 1));
     if (unit.id === 'alphabet') bindSpelling(main, english, text);
-    if (unit.id === 'numbers') bindNumberContrast(main, text);
+    if (comparisons[unit.id]) bindContrast(main, comparisons[unit.id].answer, text.compare[unit.id]);
   }
 
-  function bindNumberContrast(main, text) {
-    const exercise = main.querySelector('#signKidsNumberContrast');
+  function bindContrast(main, answer, text) {
+    const exercise = main.querySelector('#signKidsContrast');
     const status = exercise.querySelector('[role="status"]');
     exercise.addEventListener('click', event => {
-      const choice = event.target.closest('[data-sign-kids-number]');
+      const choice = event.target.closest('[data-sign-kids-contrast]');
       if (!choice || choice.getAttribute('aria-disabled') === 'true') return;
-      const correct = choice.dataset.signKidsNumber === 'seven';
+      const correct = choice.dataset.signKidsContrast === answer;
       choice.classList.add(correct ? 'is-correct' : 'is-retry');
       choice.setAttribute('aria-disabled', 'true');
-      status.textContent = correct ? text.compareCorrect : text.compareRetry;
-      if (correct) exercise.querySelectorAll('[data-sign-kids-number]').forEach(button => button.setAttribute('aria-disabled', 'true'));
+      status.textContent = correct ? text.correct : text.retry;
+      if (correct) exercise.querySelectorAll('[data-sign-kids-contrast]').forEach(button => button.setAttribute('aria-disabled', 'true'));
     });
   }
 
@@ -358,7 +382,10 @@ const SignLanguageLessons = (() => {
         result.textContent = text.spellingError;
         return;
       }
-      result.innerHTML = `<ol class="sign-kids-spelling-cards" dir="rtl">${requested.map(item => `<li><div aria-hidden="true">${illustration(item)}</div><strong>${name(item, english)}</strong></li>`).join('')}</ol>`;
+      result.innerHTML = `<ol class="sign-kids-spelling-cards" dir="rtl">${requested.map(item => {
+        const description = esc(item.describe[english ? 1 : 0]);
+        return `<li><div role="img" aria-label="${description}">${illustration(item)}</div><strong>${name(item, english)}</strong></li>`;
+      }).join('')}</ol>`;
     }
     form.addEventListener('submit', event => { event.preventDefault(); show(); });
     main.querySelectorAll('[data-sign-kids-example]').forEach(button => button.addEventListener('click', () => {
