@@ -226,7 +226,7 @@ const SignLanguageLessons = (() => {
   }
 
   function deckSize(unit) {
-    return unit.id === 'alphabet' ? 7 : 6;
+    return unit.id === 'alphabet' || unit.id === 'colors' ? 7 : 6;
   }
 
   function wordNav(unit, language, text) {

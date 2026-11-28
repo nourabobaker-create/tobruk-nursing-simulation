@@ -43,9 +43,12 @@ const SignKidsCommunityArt = (() => {
     card('brown', 'colors', 227, 'بني', 'Brown',
       'ارفع سبّابة اليمنى بجانب الخد الأيمن وحرّكها صعودًا ونزولًا، مع بقاء باقي الأصابع مثنية.',
       'Raise the right index finger beside your right cheek and move it up and down, keeping the other fingers folded.'),
+    card('blue', 'colors', 227, 'أزرق', 'Blue',
+      'اثنِ طرف سبّابة اليمنى قرب مستوى الشفتين، واطوِ باقي الأصابع. اتبع السهم من النقطة عند يسار فمك إلى اليمين.',
+      'Curve the tip of your right index finger at lip level and fold the other fingers. Follow the arrow from the dot at the left side of your mouth to the right.'),
     card('red', 'colors', 228, 'أحمر', 'Red',
-      'وجّه طرف سبّابة اليمنى نحو الشفتين، وحرّكه بحركة قصيرة إلى الأمام وإلى الخلف.',
-      'Point the tip of your right index finger towards your lips. Move it a short way forwards and back.'),
+      'وجّه طرف سبّابة اليمنى نحو الشفتين. قرّبه منهما ثم أبعده قليلًا، كما يوضّح السهم المتقطّع.',
+      'Point the tip of your right index finger towards your lips. Move it a little closer and then away, following the dashed arrow.'),
     card('white', 'colors', 228, 'أبيض', 'White',
       'افتح الإبهام والسبّابة من يدك اليمنى على جانبي الذقن، مع ثني باقي الأصابع.',
       'Spread the right thumb and index finger on either side of your chin and curl the other fingers.'),
@@ -88,6 +91,7 @@ const SignKidsCommunityArt = (() => {
 
   const poses = {
     point: ['M-8 3l-3-14q-2-10 2-15l4-6 2-22q1-5 5-5 4 0 4 5l-1 23q7-3 9 4 7-2 9 5 6 0 6 7 0 10-8 14l-6 5z', 'M7-28l3 7m5-4 3 8m5-3 1 6'],
+    bentPoint: ['M-9 5l-4-17q-5-14-4-26 1-11 9-18l9-6q5-3 8 1 3 4-2 7l-7 5q-5 4-5 12l-1 8 7-4q5-3 8 2 5-1 8 5 6 0 7 7 2 9-6 16l-5 8z', 'M-9-43q3-1 7 0m8 14 3 6m6-3 2 6m5-3 1 5m-29 7q7 3 14 0'],
     flat: ['M-9 3l-2-17-4-16q-1-5 3-6 3-1 5 3l2 9-2-25q0-5 4-5t4 4l1 21 1-23q0-4 4-4 4 0 4 4l-1 22 3-22q1-5 5-4 4 1 3 6l-2 21 3-13q1-5 5-4 4 1 3 6l-4 23q-2 12-11 16l-5 7z', 'M1-30l1 8m8-8v8m9-8-1 9'],
     thumbUpEdge: ['M5 8q-10 2-17 0l-16-5q-6-2-5-7 0-3 5-3l-5-3q-6-3-4-8 1-3 6-2l-3-4q-3-4 1-7 3-2 8 0l-1-2q-2-4 2-6 3-2 8 1l6 3-3-11q-2-8 4-10 6-1 9 7l5 14q9 5 11 13 3 12-3 22L9 8Z', 'M-27-7q9 3 18 1m-22-14q9 5 20 4m-14-15q7 5 15 6m10-10q4 6 4 12'],
     fist: ['M-8 6l-4-17q-2-11 4-17l7-6q6-4 10 1 5-3 9 1 5-2 9 3 5 0 6 7 1 13-8 20l-7 8z', 'M-1-27q6 1 8 6m3-10 4 9m5-8 4 9m-27 3q7 6 14 3'],
@@ -175,6 +179,12 @@ const SignKidsCommunityArt = (() => {
       ${move('M91 96h47', 138, 96, 0, true)}${head(91, 96, 180)}`;
   }
 
+  function blue() {
+    return `${body(161)}${face(161)}${sleeve('119 140', '93 176', '125 144')}
+      ${hand('bentPoint', 125, 146, 12, false, .76, 1)}
+      ${move('M181 101h-38', 143, 101, 180)}<circle cx="181" cy="101" r="3.4" fill="${palette.motion}"/>`;
+  }
+
   function white() {
     return `${body(151)}${face(151)}${sleeve('115 143', '105 174', '145 147')}${hand('split', 144, 147, 26, false, .88)}`;
   }
@@ -194,7 +204,7 @@ const SignKidsCommunityArt = (() => {
 
   const scenes = {
     near: () => distance(false), far: () => distance(true), above: () => aboveBelow(true), below: () => aboveBelow(false),
-    beside, around, today, tomorrow: () => dayOffset(true), yesterday: () => dayOffset(false), black, brown, red, white, green, yellow,
+    beside, around, today, tomorrow: () => dayOffset(true), yesterday: () => dayOffset(false), black, brown, blue, red, white, green, yellow,
   };
 
   function render(id) {
