@@ -71,6 +71,7 @@ const SignLanguageLessons = (() => {
   const comparisons = {
     alphabet: { choices: ['letter-ayn', 'letter-ghayn'], answer: 'letter-ghayn' },
     numbers: { choices: ['two', 'seven'], answer: 'seven' },
+    greetings: { choices: ['where', 'when'], answer: 'when' },
   };
   const aliases = { everyday: 'family', questions: 'greetings', health: 'conversations' };
   const phrases = {
@@ -94,6 +95,12 @@ const SignLanguageLessons = (() => {
           prompt: 'ترتفع السبابة والوسطى في الرسمين. أيّ رسم يمثّل 7؟',
           retry: 'جرّب الرسم الآخر. في إشارة 7 يرى زميلك راحة يدك.',
           correct: 'أحسنت! في إشارة 7 يرى زميلك راحة يدك، وفي إشارة 2 يرى ظهرها.',
+        },
+        greetings: {
+          title: 'أين أم متى؟',
+          prompt: 'تريد أن تسأل عن موعد اللعب. أيُّ رسم يمثّل «متى؟»؟ ركّز على اللقطة رقم 1.',
+          retry: 'جرّب الرسم الآخر. في «متى؟» تشير السبابة إلى معصم اليد اليسرى.',
+          correct: 'أحسنت! تبدأ «متى؟» بالإشارة إلى المعصم، وتبدأ «أين؟» بوضع أطراف الأصابع على راحة اليد.',
         },
       },
       placesPracticeTitle: 'لعبتان ومسافتان',
@@ -123,6 +130,12 @@ const SignLanguageLessons = (() => {
           prompt: 'The index and middle fingers are raised in both drawings. Which drawing shows 7?',
           retry: 'Try the other drawing. For 7, your partner sees your palm.',
           correct: 'Well done! For 7, your partner sees your palm. For 2, they see the back of your hand.',
+        },
+        greetings: {
+          title: 'Where or when?',
+          prompt: 'You want to ask when it’s time to play. Which drawing shows “When?” Look at panel 1.',
+          retry: 'Try the other drawing. For “When?”, the index finger points at the left wrist.',
+          correct: 'Well done! “When?” starts by pointing at the wrist. “Where?” starts with the fingertips on the palm.',
         },
       },
       placesPracticeTitle: 'Two toys, two distances',
